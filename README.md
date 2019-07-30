@@ -1,2 +1,4 @@
 # postgis-jena
-Extending Apache jena with more geospatial functions
+Extending Apache Jena with more geospatial functions
+
+Testbench at: http://www.i3mainz.de/projekte/semgis/postgis-jena
