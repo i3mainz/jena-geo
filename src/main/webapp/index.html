@@ -1,0 +1,100 @@
+<html>
+<head><title>GeoSPARQL-ext Testbench</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+var prefixList="PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xerl: <http://www.xerleben.de/schema/2.0_1#>\nPREFIX xplan5: <http://www.xplanung.de/xplangml/5/0#>\nPREFIX semgis: <http://www.semgis.de/geodata#> "
+
+var overlayMaps={}
+  function clearMap() {
+    for(i in mymap._layers) {
+        if(mymap._layers[i]._path != undefined) {
+            try {
+                mymap.removeLayer(mymap._layers[i]);
+            }
+            catch(e) {
+                console.log("problem with " + e + mymap._layers[i]);
+            }
+        }
+    }
+	for(marker in markercollection){
+		mymap.removeLayer(markercollection[marker])
+	}
+	markercollection=[]
+        for(decorator in decorators){
+		mymap.removeLayer(decorators[decorator])
+	}
+	decorators=[]
+}
+  function sendQuery(){
+  $("button").click(function(){
+    $.get("executeQuery?queryString="+encodeURL($('#queryinput').val()), function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+});
+  }
+  
+  function chooseSampleQuery(){
+        $('#queryinput').val(prefixList+"\n"+$('#samplequeries :selected').val().replace(".",".\n").replace("}","\n}\n").replace("{","{\n"));
+  }
+  </script>
+  <style>
+  #mapid { height: 500px; }
+  </style>
+</head>
+<body>
+<h1>GeoSPARQL-ext Testbench</h1>
+Query Input:<br/>
+Example Queries for New Functions:<select id="samplequeries" onChange="chooseSampleQuery()">
+<option value="SELECT ?geom ?wkt WHERE { ?geom geo:asWKT ?wkt .  FILTER(geo:ST_IsCollection(?wkt)) }">geo:ST_IsCollection</option>
+<option value="SELECT ?geom ?wkt WHERE { ?geom geo:asWKT ?wkt .  FILTER(geo:ST_IsRing(?wkt)) }">geo:ST_IsRing</option>
+</select>
+<table width="100%"><tr><td width="50%">
+<textarea id="queryinput" rows=30 cols=100>
+</textarea>
+</td><td width="50%"><div id="mapid" >
+<script>
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+	//var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+	var layer=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	});
+	var wmsLayer = L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_topplus_web_open', {
+layers: 'web',
+format: 'image/png',
+ transparent: true,
+attribution: '&copy; Bundesamt f&uuml;r Kartographie und Geod&auml;sie 2017, <a href="http://sg.geodatenzentrum.de/web_public/Datenquellen_TopPlus_Open.pdf">Datenquellen</a>'
+});
+	var baseMaps = {
+    "BKG": wmsLayer,
+        "OSM": layer
+	};
+	baseMaps["OSM"].addTo(mymap);
+	L.control.scale({
+	position: 'bottomright',
+	imperial: false
+}).addTo(mymap);
+layercontrol=L.control.layers(baseMaps,overlayMaps).addTo(mymap);
+</script>
+</div></td></tr></table>
+<br/>
+<button id="sendQueryButton" onClick="sendQuery()">Query</button>
+
+
+<table width="100%">
+<tr><td>
+QueryResult:
+<div id="queryresult">
+</div>
+</td></tr>
+</table>
+</body>
+</html>
