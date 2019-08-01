@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
-import de.hsmainz.cs.semgis.arqextension.linestring.IsValidTrajectory;
+import de.hsmainz.cs.semgis.arqextension.linestring.attribute.IsValidTrajectory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class IsValidTrajectoryTest {

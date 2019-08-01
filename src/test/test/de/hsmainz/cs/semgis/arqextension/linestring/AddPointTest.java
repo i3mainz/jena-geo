@@ -9,7 +9,7 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Coordinate;
 
-import de.hsmainz.cs.semgis.arqextension.linestring.AddPoint;
+import de.hsmainz.cs.semgis.arqextension.linestring.editor.AddPoint;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
