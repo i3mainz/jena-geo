@@ -1,10 +1,11 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; 
-import io.github.galbiston.geosparql_jena.implementation.vocabulary.Geo;
 import org.locationtech.jts.io.kml.KMLWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 
 /**
  *
@@ -18,7 +19,7 @@ public class KMLDatatype extends GeometryDatatype {
     /**
      * The default GML type URI.
      */
-    public static final String URI = Geo.GML;
+    public static final String URI = PostGISGeo.KML;
 
     /**
      * A static instance of GMLDatatype.

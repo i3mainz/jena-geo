@@ -12,7 +12,8 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.linestring;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 import org.apache.jena.datatypes.DatatypeFormatException;
@@ -52,7 +53,7 @@ public class IsClosed extends FunctionBase1 {
                 return NodeValue.TRUE;
             }
 
-            return NodeValue.FALSE;
+            return NodeValue.FALSE; 
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

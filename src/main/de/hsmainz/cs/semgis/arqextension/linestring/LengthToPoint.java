@@ -26,7 +26,7 @@ public class LengthToPoint extends FunctionBase2 {
 					LineString line=(LineString) geom1.getXYGeometry();
 					Point point=(Point) transGeom2.getXYGeometry();
 					//Double minDistance=Double.MAX_VALUE;
-					com.vividsolutions.jump.algorithm.LengthToPoint ltop=new com.vividsolutions.jump.algorithm.LengthToPoint(line, point.getCoordinate());
+					org.locationtech.jump.algorithm.LengthToPoint ltop=new org.locationtech.jump.algorithm.LengthToPoint(line, point.getCoordinate());
 					return NodeValue.makeDouble(ltop.getLength());
 				}
 				throw new ExprEvalException("Input geometries were not a point and a linestring");

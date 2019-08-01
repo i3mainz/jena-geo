@@ -83,7 +83,20 @@ public class PostGISGeo {
    public static final Property st_bandmetadata = property("ST_BandMetaData");
    public static final Property st_bandnodatavalue = property("ST_BandNoDataValue");
    public static final Property st_bandpixeltype = property("ST_BandPixelType");
+   public static final Property st_bboxabove = property("ST_BBOXAbove");
+   public static final Property st_bboxbelow = property("ST_BBOXBelow");
+   public static final Property st_bboxcontains = property("ST_BBOXContains");
+   public static final Property st_bboxdistance = property("ST_BBOXDistance");
+   public static final Property st_bboxequals = property("ST_BBOXEquals");
+   public static final Property st_bboxfpintersects = property("ST_BBOXFPIntersects");
    public static final Property st_bboxintersect = property("ST_BBOXIntersect");
+   public static final Property st_bboxiscontainedby = property("ST_BBOXIsContainedBy");
+   public static final Property st_bboxleftof = property("ST_BBOXLeftOf");
+   public static final Property st_bboxoverlapsabove = property("ST_BBOXOverlapsAbove");
+   public static final Property st_bboxoverlapsbelow = property("ST_BBOXOverlapsBelow");
+   public static final Property st_bboxoverlapsleft = property("ST_BBOXOverlapsLeft");
+   public static final Property st_bboxoverlapsright = property("ST_BBOXOverlapsRight");
+   public static final Property st_bboxrightof = property("ST_BBOXRightOf");
    public static final Property st_bezierSmoothing = property("ST_BezierSmoothing");
    public static final Property st_boundary = property("ST_Boundary");
    public static final Property st_boundingdiagonal = property("ST_BoundingDiagonal");
@@ -151,6 +164,7 @@ public class PostGISGeo {
    public static final Property st_geometryType = property("ST_GeometryType");
    public static final Property st_gmlToSQL = property("ST_GMLToSQL");
    public static final Property st_grayscale = property("ST_Grayscale");
+   public static final Property st_hasHorizontalCRS = property("ST_HasHorizontalCRS");
    public static final Property st_hasNoBand = property("ST_HasNoBand");
    public static final Property st_hasRepeatedPoints = property("ST_HasRepeatedPoints");
    public static final Property st_hausdorffDistance = property("ST_HausdorffDistance");
@@ -387,6 +401,8 @@ public static final String HexWKBRaster = "HexWKBRaster";
 public static final String TopoJSON = "TopoJSON";
 public static final String TemporalRange="TemporalRange";
 public static final String CoverageJSON = "CoverageJSON";
+
+
 
 
 

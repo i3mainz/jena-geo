@@ -27,7 +27,7 @@ public class ChaikinSmoothing extends FunctionBase3{
         throw new UnsupportedOperationException("Not supported yet.");
 	}
 	
-	public Coordinate[] refinePath(Coordinate[] path)
+	/*public Coordinate[] refinePath(Coordinate[] path)
 	{
 	  List<Coordinate> ret = new LinkedList<Coordinate>();
 	  Queue<Coordinate> procPath = new Queue<Coordinate>(path);
@@ -73,6 +73,6 @@ public class ChaikinSmoothing extends FunctionBase3{
 	  if(ret.contains(path[path.length - 1]) == false) 
 	    ret.add(path[path.length - 1]);
 	  return ret;
-	}
+	}*/
 
 }
