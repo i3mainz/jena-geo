@@ -10,7 +10,7 @@
  *
  *
  ****************************************************************************** */
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 
