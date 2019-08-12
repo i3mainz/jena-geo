@@ -194,6 +194,19 @@ $( document ).ready(function() {
 <option value='SELECT ?twkb ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_AsTWKB(?the_geom,"XDR") AS ?twkb) } LIMIT 100'>geo:ST_AsTWKB</option>
 <option value='SELECT ?wkb ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_AsWKB(?the_geom,"XDR") AS ?wkb) } LIMIT 100'>geo:ST_AsWKB</option>
 <option value='SELECT ?x3d ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_AsX3D(?the_geom,"","") AS ?x3d) } LIMIT 100'>geo:ST_AsX3D</option>
+<option value="SELECT ?bboxabove ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXAbove(?the_geom,?the_geom) AS ?bboxabove) } LIMIT 100">geo:ST_BBOXAbove</option>
+<option value="SELECT ?bboxbelow ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXBelow(?the_geom,?the_geom) AS ?bboxbelow) } LIMIT 100">geo:ST_BBOXBelow</option>
+<option value="SELECT ?bboxcontains ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXContains(?the_geom,?the_geom) AS ?bboxcontains) } LIMIT 100">geo:ST_BBOXContains</option>
+<option value="SELECT ?bboxequals ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXEquals(?the_geom,?the_geom) AS ?bboxequals) } LIMIT 100">geo:ST_BBOXEquals</option>
+<option value="SELECT ?bboxfpintersects ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXFPIntersects(?the_geom,?the_geom) AS ?bboxfpintersects) } LIMIT 100">geo:ST_BBOXFPIntersects</option>
+<option value="SELECT ?bboxintersects ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXIntersects(?the_geom,?the_geom) AS ?bboxintersects) } LIMIT 100">geo:ST_BBOXIntersects</option>
+<option value="SELECT ?bboxiscontainedby ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXIsContainedBy(?the_geom,?the_geom) AS ?bboxiscontainedby) } LIMIT 100">geo:ST_BBOXIsContainedBy</option>
+<option value="SELECT ?bboxleftof ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXLeftOf(?the_geom,?the_geom) AS ?bboxleftof) } LIMIT 100">geo:ST_BBOXLeftOf</option>
+<option value="SELECT ?bboxoverlapsabove ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXOverlapsAbove(?the_geom,?the_geom) AS ?bboxoverlapsabove) } LIMIT 100">geo:ST_BBOXOverlapsAbove</option>
+<option value="SELECT ?bboxoverlapsbelow ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXOverlapsBelow(?the_geom,?the_geom) AS ?bboxoverlapsbelow) } LIMIT 100">geo:ST_BBOXOverlapsBelow</option>
+<option value="SELECT ?bboxoverlapsleft ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXOverlapsLeft(?the_geom,?the_geom) AS ?bboxoverlapsleft) } LIMIT 100">geo:ST_BBOXOverlapsLeft</option>
+<option value="SELECT ?bboxoverlapsright ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXOverlapsRight(?the_geom,?the_geom) AS ?bboxoverlapsright) } LIMIT 100">geo:ST_BBOXOverlapsRight</option>
+<option value="SELECT ?bboxrightof ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BBOXRightOf(?the_geom,?the_geom) AS ?bboxrightof) } LIMIT 100">geo:ST_BBOXRightOf</option>
 <option value="SELECT ?bandnodataval ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BandNoDataValue(?the_geom,3) AS ?bandnodataval) } LIMIT 100">geo:ST_BandNoDataValue</option>
 <option value="SELECT ?smoothed_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_BezierSmoothing(?the_geom,1) AS ?smoothed_geom) } LIMIT 100">geo:ST_BezierSmoothing</option>
 <option value="SELECT ?boundary_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_Boundary(?the_geom) AS ?boundary_geom) } LIMIT 100">geo:ST_Boundary</option>
@@ -247,6 +260,7 @@ $( document ).ready(function() {
 <option value='SELECT ?the_geom WHERE { BIND(geo:ST_GeomFromWKB("\\001\\002\\000\\000\\000\\002\\000\\000\\000\\037\\205\\353Q\\270~\\\\\\300\\323Mb\\020X\\231C@\\020X9\\264\\310~\\\\\\300)\\\\\\217\\302\\365\\230C@",4326) AS ?the_geom) }'>geo:ST_GeomFromWKB</option>
 <option value='SELECT ?geohash ?the_geom WHERE { BIND(geo:ST_GeoHash(geo:ST_MakePoint(-126,48),0) AS ?geohash) }'>geo:ST_GeoHash</option>
 <option value="SELECT ?hausdorff ?the_geom WHERE { ?geom geo:asWKT ?the_geom . ?geom geo:asWKT ?the_geom2 . BIND(geo:ST_HausdorffDistance(?the_geom,geo:ST_MakePoint(21.7967578, 37.5847536)) AS ?hausdorff) } LIMIT 100">geo:ST_HausdorffDistance</option>
+<option value="SELECT ?hasHorizontalCRS ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_HasHorizontalCRS(?the_geom) AS ?hasHorizontalCRS) } LIMIT 100">geo:ST_HasHorizontalCRS</option>
 <option value="SELECT ?hasRepeatedPoints ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_HasRepeatedPoints(?the_geom) AS ?hasRepeatedPoints) } LIMIT 100">geo:ST_HasRepeatedPoints</option>
 <option value="SELECT ?hasNoBand ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_HasNoBand(?the_geom,2) AS ?hasNoBand) } LIMIT 100">geo:ST_HasNoBand</option>
 <option value="SELECT ?height ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_Height(?the_geom,1) AS ?height) } LIMIT 100">geo:ST_Height</option>
@@ -335,6 +349,9 @@ $( document ).ready(function() {
 <option value="SELECT ?removeRepeatedPoints_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_RemoveRepeatedPoints(?the_geom,0) AS ?removeRepeatedPoints_geom) } LIMIT 100">geo:ST_RemoveRepeatedPoints</option>
 <option value="SELECT ?raster_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_RastFromWKB(?the_geom,12.0) AS ?raster_geom) } LIMIT 100">geo:ST_RastFromWKB</option>
 <option value="SELECT ?raster_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_RastFromHexWKB(?the_geom,12.0) AS ?raster_geom) } LIMIT 100">geo:ST_RastFromHexWKB</option>
+<option value="SELECT ?rastercoord_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_RasterToWorldCoord(?the_geom,10,10) AS ?rastercoord_geom) } LIMIT 100">geo:ST_RasterToWorldCoord</option>
+<option value="SELECT ?rastercoordx_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_RasterToWorldCoordX(?the_geom,10,10) AS ?rastercoordx_geom) } LIMIT 100">geo:ST_RasterToWorldCoordX</option>
+<option value="SELECT ?rastercoordy_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_RasterToWorldCoordY(?the_geom,10,10) AS ?rastercoordy_geom) } LIMIT 100">geo:ST_RasterToWorldCoordY</option>
 <option value="SELECT ?scaled_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_Scale(?the_geom,2,2) AS ?scaled_geom) } LIMIT 100">geo:ST_Scale</option>
 <option value='SELECT ?setPoint_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_SetPoint(?the_geom,0,"POINT(1,1)"^^geo:wktLiteral) AS ?setPoint_geom) } LIMIT 100'>geo:ST_SetPoint</option>
 <option value='SELECT ?segmentized_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_Segmentize(?the_geom,5) AS ?segmentized_geom) } LIMIT 100'>geo:ST_Segmentize</option>
@@ -367,6 +384,9 @@ $( document ).ready(function() {
 <option value="SELECT ?voro_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_VoronoiPolygons(?the_geom,1,2) AS ?voro_geom) } LIMIT 100">geo:ST_VoronoiPolygons</option>
 <option value="SELECT ?width ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_Width(?the_geom) AS ?width) } LIMIT 100">geo:ST_Width</option>
 <option value="SELECT ?within ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_Within(?the_geom,?the_geom) AS ?within) } LIMIT 100">geo:ST_Within</option>
+<option value="SELECT ?rastercoord_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_WorldToRasterCoord(?the_geom,10,10) AS ?rastercoord_geom) } LIMIT 100">geo:ST_WorldToRasterCoord</option>
+<option value="SELECT ?rastercoordx_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_WorldToRasterCoordX(?the_geom,10,10) AS ?rastercoordx_geom) } LIMIT 100">geo:ST_WorldToRasterCoordX</option>
+<option value="SELECT ?rastercoordy_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_WorldToRasterCoordY(?the_geom,10,10) AS ?rastercoordy_geom) } LIMIT 100">geo:ST_WorldToRasterCoordY</option>
 <option value="SELECT ?x WHERE { BIND(geo:ST_X(geo:ST_MakePoint(0,0)) AS ?x) } LIMIT 100">geo:ST_X</option>
 <option value="SELECT ?xMax ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_XMax(?the_geom) AS ?xMax) } LIMIT 100">geo:ST_XMax</option>
 <option value="SELECT ?xMin ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_XMin(?the_geom) AS ?xMin) } LIMIT 100">geo:ST_XMin</option>

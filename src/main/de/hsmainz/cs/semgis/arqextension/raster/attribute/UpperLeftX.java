@@ -17,9 +17,8 @@ import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import java.awt.geom.Point2D;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoordinates2D;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.InvalidGridGeometryException;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.IllegalGridGeometryException;
 import org.opengis.referencing.operation.TransformException;
 
 
@@ -32,12 +31,13 @@ public class UpperLeftX extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();	
+		
+		GridCoverage raster=wrapper.getXYGeometry();	
 		Point2D position;
 		try {
-			position = raster.getGridGeometry().getGridToCRS2D().transform(new GridCoordinates2D(0, 0),null);
+			position = raster.getGridGeometry().getGridToCRS2D().transform(new GridCoordinates(0, 0),null);
 			return NodeValue.makeDouble(position.getX());
-		} catch (InvalidGridGeometryException | TransformException e) {
+		} catch (IllegalGridGeometryException | TransformException e) {
 			throw new AssertionError("InvalidGeometryException");
 		}
         

@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.geometry;
+package de.hsmainz.cs.semgis.arqextension.geometry.editor;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;

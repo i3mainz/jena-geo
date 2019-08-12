@@ -10,16 +10,17 @@
  *
  *
  ****************************************************************************** */
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+
+import java.awt.geom.AffineTransform;
+
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.jena.sparql.function.FunctionEnv;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-
-import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
-import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.opengis.referencing.datum.PixelInCell;
 
 /**
  * Returns the georeference X skew (or rotation parameter).
@@ -29,9 +30,10 @@ public class SkewX extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
         CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();
-		//raster.getGridGeometry().
-		throw new UnsupportedOperationException("Not supported yet.");
+		GridCoverage raster=wrapper.getXYGeometry();
+		GridGeometry gridGeometry2D = raster.getGridGeometry();
+        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(PixelInCell.CELL_CENTER);
+        return NodeValue.makeDouble(gridToWorld.getShearX());
 	}
 
 }

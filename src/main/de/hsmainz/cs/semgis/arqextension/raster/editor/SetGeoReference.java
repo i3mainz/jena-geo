@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.editor;
 
 public class SetGeoReference {
 

@@ -15,11 +15,9 @@ package de.hsmainz.cs.semgis.arqextension.raster.relation;
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
-import java.awt.geom.Rectangle2D;
-
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
@@ -35,22 +33,22 @@ public class Contains extends FunctionBase2 {
 		if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {
 			return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().contains(((GeometryWrapper)wrapper2).getXYGeometry()));
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
-	        Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
-	        Rectangle2D bbox2 = raster2.getEnvelope2D().getBounds2D();
-	        return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1.getBounds()).contains(LiteralUtils.toGeometry(bbox2.getBounds())));			
-		}else {
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
+			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
+		    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
+		    return NodeValue.makeBoolean(bbox1.covers(bbox2));	
+		    }else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
-				return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1.getBounds()).contains(geom));
+				return NodeValue.makeBoolean(bbox1.contains(geom));
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
-				return NodeValue.makeBoolean(geom.contains(LiteralUtils.toGeometry(bbox1.getBounds())));				
+				return NodeValue.makeBoolean(geom.contains(bbox1));				
 			}
 		}
 	}

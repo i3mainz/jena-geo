@@ -10,21 +10,20 @@
  *
  *
  ****************************************************************************** */
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import java.util.List;
-
-import org.geotoolkit.coverage.grid.GridCoordinates2D;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.locationtech.jts.geom.Coordinate;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.jena.sparql.function.FunctionEnv;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.DirectPosition2D;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 /**
  * Returns the row in the raster of the point geometry (pt) or a X and Y world coordinate (xw, yw) represented in world spatial reference system of raster.
@@ -34,13 +33,20 @@ public class WorldToRasterCoordY extends FunctionBase3 {
 
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3) {
-        Integer longitude = v2.getInteger().intValue();
+		Integer longitude = v2.getInteger().intValue();
         Integer latitude = v3.getInteger().intValue();
         try {
         	CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-        	GridCoverage2D raster=wrapper.getXYGeometry();
-            GridCoordinates2D position = raster.getGridGeometry().worldToGrid(new DirectPosition2D(longitude, latitude));
-            return NodeValue.makeDouble(position.getY());
+        	GridCoverage raster=wrapper.getXYGeometry();
+        	
+        	 GridGeometry gg2D = raster.getGridGeometry();
+             MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
+             MathTransform crsToGrid = gridToCRS.inverse();
+             DirectPosition realPos=new DirectPosition2D(latitude, longitude);
+             DirectPosition gridPos = new DirectPosition2D();
+             DirectPosition res=crsToGrid.transform(realPos, gridPos);
+             Coordinate coord=new Coordinate(res.getCoordinate()[0],res.getCoordinate()[1]);
+             return NodeValue.makeDouble(coord.y);
         } catch (TransformException e) {
             return NodeValue.nvNothing;
         }

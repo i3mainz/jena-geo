@@ -15,13 +15,15 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 public class NumBands extends FunctionBase1 {
 
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		return NodeValue.makeInteger(wrapper.getXYGeometry().getRenderedImage().getData().getNumBands());
+		GridCoverage raster=wrapper.getXYGeometry();
+		return NodeValue.makeInteger(raster.getSampleDimensions().size());
 	}
 
 }

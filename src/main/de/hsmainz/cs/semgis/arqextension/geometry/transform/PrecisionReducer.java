@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.geometry;
+package de.hsmainz.cs.semgis.arqextension.geometry.transform;
 
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;

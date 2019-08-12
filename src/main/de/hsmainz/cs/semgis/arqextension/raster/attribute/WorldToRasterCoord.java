@@ -10,24 +10,20 @@
  *
  *
  ****************************************************************************** */
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import java.util.List;
-import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.jena.sparql.function.FunctionEnv;
-import org.apache.jena.vocabulary.XSD;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.locationtech.jts.geom.CoordinateXY;
-import org.opengis.coverage.grid.GridCoordinates;
-import org.opengis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.geometry.DirectPosition2D;
+import org.locationtech.jts.geom.Coordinate;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
-
-import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
-import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
 
 
 /**
@@ -40,15 +36,19 @@ public class WorldToRasterCoord extends FunctionBase3 {
 	public NodeValue exec(NodeValue v1, NodeValue v2,NodeValue v3) {
         Integer longitude = v2.getInteger().intValue();
         Integer latitude = v3.getInteger().intValue();
-
         try {
         	CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-        	GridCoverage2D raster=wrapper.getXYGeometry();
-            GridCoordinates position = raster.getGridGeometry().getworldToGrid(new org.apache.sis.geometry.DirectPosition2D(longitude, latitude));
-            CoordinateXY coord = new CoordinateXY(position.getX(), position.getY());
-            GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, geometryWrapper.getSrsURI(), geometryWrapper.getGeometryDatatypeURI());
-            return pointWrapper.asNodeValue();
-
+        	GridCoverage raster=wrapper.getXYGeometry();
+        	
+        	 GridGeometry gg2D = raster.getGridGeometry();
+             MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
+             MathTransform crsToGrid = gridToCRS.inverse();
+             DirectPosition realPos=new DirectPosition2D(latitude, longitude);
+             DirectPosition gridPos = new DirectPosition2D();
+             DirectPosition res=crsToGrid.transform(realPos, gridPos);
+             Coordinate coord=new Coordinate(res.getCoordinate()[0],res.getCoordinate()[1]);
+             GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
+             return pointWrapper.asNodeValue();
         } catch (TransformException e) {
             return NodeValue.nvNothing;
         }

@@ -92,7 +92,7 @@ import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.ProgressListener;
 
-import de.hsmainz.cs.semgis.arqextension.raster.Vectorize;
+import de.hsmainz.cs.semgis.arqextension.raster.transform.Vectorize;
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 
 /**

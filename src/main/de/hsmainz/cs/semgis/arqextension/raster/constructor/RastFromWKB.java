@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.constructor;
 
 import java.io.IOException;
 
@@ -6,6 +6,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.opengis.referencing.NoSuchAuthorityCodeException;
@@ -22,7 +23,7 @@ public class RastFromWKB extends FunctionBase1 {
         try {
             String wkbstring=arg0.getString();
     		WKBRasterReader reader=new WKBRasterReader();
-    		GridCoverage2D coverage=reader.readCoverage(wkbstring.getBytes(),null);
+    		GridCoverage coverage=reader.readCoverage(wkbstring.getBytes(),null);
     		CoverageWrapper wrapper=CoverageWrapper.createGeometry(coverage,null , HexWKBRastDatatype.URI);
     		return wrapper.asNodeValue();
             

@@ -66,6 +66,7 @@ public class PostGISGeo {
    public static final Property st_aslatlontext = property("ST_AsLatLonText");
    public static final Property st_asmvt = property("ST_AsMVT");
    public static final Property st_asmvtgeom = property("ST_AsMVTGeom");
+   public static final Property st_aspect = property("ST_Aspect");
    public static final Property st_aspng = property("ST_AsPNG");
    public static final Property st_aspolyshape = property("ST_AsPolyshape");
    public static final Property st_assvg = property("ST_AsSVG");
@@ -135,6 +136,7 @@ public class PostGISGeo {
    public static final Property st_equalSRS = property("ST_EqualSRS");
    public static final Property st_equalsNorm = property("ST_EqualsNorm");
    public static final Property st_equalsTopo = property("ST_EqualsTopo");
+   public static final Property st_explode = property("ST_Explode");
    public static final Property st_filterByM = property("ST_FilterByM");
    public static final Property st_filterByT = property("ST_FilterByT");
    public static final Property st_flipCoordinates = property("ST_FlipCoordinates");
@@ -177,6 +179,8 @@ public class PostGISGeo {
    public static final Property st_isCollection = property("ST_IsCollection");
    public static final Property st_isConvex = property("ST_IsConvex");
    public static final Property st_isEmpty = property("ST_IsEmpty");
+   public static final Property st_isGrayscale = property("ST_IsGrayscale");
+   public static final Property st_isIndexed = property("ST_IsIndexed");
    public static final Property st_isMeasured = property("ST_IsMeasured");
    public static final Property st_isMorePrecise = property("ST_IsMorePrecise");
    public static final Property st_isNodingValid = property("ST_IsNodingValid");
@@ -186,6 +190,8 @@ public class PostGISGeo {
    public static final Property st_isPolygonCCW = property("ST_IsPolygonCCW");
    public static final Property st_isRing = property("ST_IsRing");
    public static final Property st_isSimple = property("ST_IsSimple");
+   public static final Property st_isTiled = property("ST_IsTiled");
+   public static final Property st_isTranslucent = property("ST_IsTranslucent");
    public static final Property st_isValid = property("ST_IsValid");
    public static final Property st_isValidDetail = property("ST_IsValidDetail");
    public static final Property st_isValidReason = property("ST_IsValidReason");
@@ -236,6 +242,8 @@ public class PostGISGeo {
    public static final Property st_minimumDiameterLine = property("ST_MinimumDiameterLine");
    public static final Property st_minimumRectangle = property("ST_MinimumRectangle");
    public static final Property st_minConvexHull = property("ST_MinConvexHull");
+   public static final Property st_mintilex = property("ST_MinTileX");
+   public static final Property st_mintiley = property("ST_MinTileY");
    public static final Property st_mMin = property("ST_MMin");
    public static final Property st_mMax = property("ST_MMax");
    public static final Property st_multi = property("ST_Multi");
@@ -254,6 +262,8 @@ public class PostGISGeo {
    public static final Property st_numInteriorRings = property("ST_NumInteriorRings");
    public static final Property st_numPatches = property("ST_NumPatches");
    public static final Property st_numPoints = property("ST_NumPoints");
+   public static final Property st_numXTiles = property("ST_NumXTiles");
+   public static final Property st_numYTiles = property("ST_NumYTiles");
    public static final Property st_nPoints = property("ST_NPoints");
    public static final Property st_octogonalEnvelope = property("ST_OctogonalEnvelope");
    public static final Property st_orientation = property("ST_Orientation");
@@ -319,6 +329,7 @@ public class PostGISGeo {
    public static final Property st_rotateY = property("ST_RotateY");
    public static final Property st_rotateZ = property("ST_RotateZ");
    public static final Property st_rotation = property("ST_Rotation");
+   public static final Property st_roughness = property("ST_Roughness");
    public static final Property st_sameAlignment = property("ST_SameAlignment");
    public static final Property st_scale = property("ST_Scale");
    public static final Property st_scaleX = property("ST_ScaleX");
@@ -336,6 +347,7 @@ public class PostGISGeo {
    public static final Property st_simplifyVW = property("ST_SimplifyVW");
    public static final Property st_skewX = property("ST_SkewX");
    public static final Property st_skewY = property("ST_SkewY");
+   public static final Property st_slope = property("ST_Slope");
    public static final Property st_snap = property("ST_Snap");
    public static final Property st_snapToGrid = property("ST_SnapToGrid");
    public static final Property st_split = property("ST_Split");
@@ -349,8 +361,14 @@ public class PostGISGeo {
    public static final Property st_symDifference = property("ST_SymDifference");
    public static final Property st_tesselate = property("ST_Tesselate");
    public static final Property st_t = property("ST_T");
+   public static final Property st_tilegridxoffset = property("ST_TileGridXOffset");
+   public static final Property st_tilegridyoffset = property("ST_TileGridYOffset");
+   public static final Property st_tileheight = property("ST_TileHeight");
+   public static final Property st_tilewidth = property("ST_TileWidth");
    public static final Property st_tMax = property("ST_TMax");
    public static final Property st_tMin = property("ST_TMin");
+   public static final Property st_tpi = property("ST_TPI");
+   public static final Property st_tri = property("ST_TRI");
    public static final Property st_transform = property("ST_Transform");
    public static final Property st_translate = property("ST_Translate");
    public static final Property st_transscale = property("ST_TransScale");
@@ -401,6 +419,12 @@ public static final String HexWKBRaster = "HexWKBRaster";
 public static final String TopoJSON = "TopoJSON";
 public static final String TemporalRange="TemporalRange";
 public static final String CoverageJSON = "CoverageJSON";
+
+
+
+
+
+
 
 
 

@@ -19,7 +19,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 
 public class GeoReference extends FunctionBase3 {
 

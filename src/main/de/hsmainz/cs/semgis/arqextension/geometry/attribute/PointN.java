@@ -10,7 +10,7 @@
  *
  *
  ****************************************************************************** */
-package de.hsmainz.cs.semgis.arqextension.geometry;
+package de.hsmainz.cs.semgis.arqextension.geometry.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;

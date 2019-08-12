@@ -19,14 +19,14 @@ import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.jena.sparql.function.FunctionEnv;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 public class Summary extends FunctionBase1 {
 
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		StringBuilder builder = new StringBuilder();
         builder.append("Raster of " + raster.getRenderedImage().getWidth() + "x" + raster.getRenderedImage().getHeight() + " pixels has " + raster.getNumSampleDimensions() + " bands and extent of " + raster.getEnvelope().toString() + System.lineSeparator());
         for (int i = 0; i < raster.getNumSampleDimensions(); i++) {

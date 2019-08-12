@@ -2,7 +2,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.editor;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 /**
@@ -13,7 +13,8 @@ public class AddBand extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
+		raster.getGridGeometry().getGridToCRS()
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 

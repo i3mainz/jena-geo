@@ -17,7 +17,7 @@ import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 /**
  * Returns true if there is no band with given band number. If no band number is specified, then band number 1 is assumed.
@@ -29,12 +29,9 @@ public class HasNoBand extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v, NodeValue v1) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		BigInteger noband=v1.getInteger();
-		if(noband.intValue()>raster.getRenderedImage().getData().getNumBands()) {
-			return NodeValue.FALSE;
-		}
-		return NodeValue.TRUE;
+		return NodeValue.makeBoolean(raster.getSampleDimensions().size()>=noband.intValue());
 	}
 
 }

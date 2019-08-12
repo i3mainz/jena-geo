@@ -17,7 +17,7 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
@@ -30,7 +30,7 @@ public class IsEmpty extends FunctionBase1 {
 		if(wrapper1 instanceof GeometryWrapper) {
 			return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().isEmpty());
 		}else{
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
 	        return NodeValue.makeBoolean(raster.getRenderedImage().getWidth() == 0 && raster.getRenderedImage().getHeight() == 0);			
 		}
 	}

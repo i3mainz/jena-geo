@@ -81,6 +81,18 @@ public class LiteralUtils {
                     new Coordinate(envelope.getMinX(), envelope.getMinY())
                 }), null);
     }
+
+	public static Geometry toGeometry(final org.opengis.geometry.Envelope envelope) {
+        GeometryFactory gf = new GeometryFactory();
+        return gf.createPolygon(gf.createLinearRing(
+                new Coordinate[]{
+                    new Coordinate(envelope.getMinimum(0), envelope.getMinimum(1)),
+                    new Coordinate(envelope.getMaximum(0), envelope.getMinimum(1)),
+                    new Coordinate(envelope.getMaximum(0), envelope.getMaximum(1)),
+                    new Coordinate(envelope.getMinimum(0), envelope.getMaximum(1)),
+                    new Coordinate(envelope.getMinimum(0), envelope.getMinimum(1))
+                }), null);
+    }
 	
 	public static Geometry toGeometry(final BoundingBox envelope) {
         GeometryFactory gf = new GeometryFactory();

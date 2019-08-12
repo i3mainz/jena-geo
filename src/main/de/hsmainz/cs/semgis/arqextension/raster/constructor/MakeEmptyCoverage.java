@@ -8,10 +8,10 @@ import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase0;
 import org.apache.jena.sparql.function.FunctionEnv;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
+import org.apache.sis.internal.coverage.RasterFactory;
 import org.apache.sis.referencing.CommonCRS;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
@@ -56,7 +56,7 @@ raster.setSample(x, y, 0, x+y);
         gcb.setName("My grayscale coverage");
         gcb.setRenderedImage(raster);
         gcb.setEnvelope(envelope);
-        GridCoverage2D gc = gcb.getGridCoverage2D();
+        GridCoverage gc = gcb.getGridCoverage2D();
         return null;
 	}
 

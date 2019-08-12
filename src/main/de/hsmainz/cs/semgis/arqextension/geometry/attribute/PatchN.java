@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.geometry;
+package de.hsmainz.cs.semgis.arqextension.geometry.attribute;
 
 import java.math.BigInteger;
 

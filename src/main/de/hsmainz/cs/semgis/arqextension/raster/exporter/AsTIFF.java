@@ -7,6 +7,7 @@ import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.jena.sparql.function.FunctionEnv;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.image.io.SpatialImageWriteParam;
 import org.geotoolkit.image.io.plugin.TiffImageWriter;
@@ -18,7 +19,7 @@ public class AsTIFF extends FunctionBase1{
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();	
+		GridCoverage raster=wrapper.getXYGeometry();	
 		TiffImageWriter writer=new TiffImageWriter(null);
 		SpatialImageWriteParam writerParam = writer.getDefaultWriteParam();
 		String compression=null;

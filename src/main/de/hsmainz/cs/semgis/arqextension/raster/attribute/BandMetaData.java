@@ -17,23 +17,22 @@ import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 public class BandMetaData extends FunctionBase2 {
 
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		BigInteger bandNum=v2.getInteger();
-        if (bandNum.intValue() > raster.getNumSampleDimensions()) {
+        if (bandNum.intValue() > raster.getSampleDimensions().size()) {
             return NodeValue.nvNothing;
         }
         StringBuilder builder = new StringBuilder();
         builder.append("rid \t pixeltype \t nodatavalue \t isoutdb \t path" + System.lineSeparator());
-        builder.append(bandNum + "\t" + raster.getSampleDimension(bandNum.intValue()).getColorModel().getTransferType()
-                + "\t" + raster.getSampleDimension(bandNum.intValue()).getNoDataValues() + "\t\t\t" + System.lineSeparator());
+        builder.append(bandNum + "\t" + raster.getSampleDimensions().get(bandNum.intValue()).getColorModel().getTransferType()
+                + "\t" + raster.getSampleDimensions().get(bandNum.intValue()).getNoDataValues() + "\t\t\t" + System.lineSeparator());
         return NodeValue.makeString(builder.toString());
 	}
 

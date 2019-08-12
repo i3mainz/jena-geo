@@ -10,15 +10,19 @@
  *
  *
  ****************************************************************************** */
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 
-import java.awt.geom.Point2D;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.geotoolkit.coverage.grid.GridCoordinates2D;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.geometry.DirectPosition2D;
+import org.locationtech.jts.geom.Coordinate;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
 
 /**
@@ -31,13 +35,18 @@ public class RasterToWorldCoordY extends FunctionBase3 {
 	@Override
 	public NodeValue exec(NodeValue v,NodeValue v1,NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();	
+		GridCoverage raster=wrapper.getXYGeometry();	
 		Integer column = v1.getInteger().intValue();
         Integer row = v2.getInteger().intValue();
         try {
-        	raster.getGridGeometry().getGridToCRS2D().transform(new GridCoordinates2D(0, 0),null);
-            Point2D position = raster.getGridGeometry().getGridToCRS2D().transform(new GridCoordinates2D(column, row),null);
-            return NodeValue.makeDouble(position.getY());
+        	
+        	 GridGeometry gg2D = raster.getGridGeometry();
+             MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
+             DirectPosition realPos=new DirectPosition2D(column, row);
+             DirectPosition gridPos = new DirectPosition2D();
+             DirectPosition res=gridToCRS.transform(realPos, gridPos);
+             Coordinate coord=new Coordinate(res.getCoordinate()[0],res.getCoordinate()[1]);
+             return NodeValue.makeDouble(coord.y);
         } catch (TransformException e) {
             return NodeValue.nvNothing;
         }
