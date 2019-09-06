@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
-import de.hsmainz.cs.semgis.arqextension.envelope.BBOXAbove;
+import de.hsmainz.cs.semgis.arqextension.envelope.relation.BBOXAbove;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class BBOXAboveTest {
