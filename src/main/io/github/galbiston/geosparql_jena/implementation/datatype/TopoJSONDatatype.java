@@ -18,7 +18,13 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+
+import java.util.List;
+
 import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.mibcxb.McException;
+import org.mibcxb.topojson.McTopoJSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.wololo.geojson.GeoJSON;
@@ -78,6 +84,7 @@ public class TopoJSONDatatype extends GeometryDatatype {
 
         if (geometry instanceof GeometryWrapper) {
             GeometryWrapper geometryWrapper = (GeometryWrapper) geometry;
+            McTopoJSON topo=new McTopoJSON();
             GeoJSONWriter writer = new GeoJSONWriter();
             GeoJSON json = writer.write(geometryWrapper.getXYGeometry());
             String jsonstring = json.toString();
@@ -90,6 +97,14 @@ public class TopoJSONDatatype extends GeometryDatatype {
     @Override
     public GeometryWrapper read(String geometryLiteral) {
 		GeoJSONReader reader = new GeoJSONReader();
+		McTopoJSON topo=new McTopoJSON();
+		try {
+			List<Geometry> geoms=topo.decode(geometryLiteral, new GeometryFactory());
+		} catch (McException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		Geometry geom = reader.read(geometryLiteral);
         GeometryWrapper wrapper = GeometryWrapperFactory.createGeometry(geom, "<http://www.opengis.net/def/crs/EPSG/0/"+geom.getSRID()+">", GeoJSONDatatype.URI);	
         return wrapper;

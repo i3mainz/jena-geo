@@ -1,13 +1,9 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
-import org.apache.jena.datatypes.DatatypeFormatException;
-import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.operation.distance3d.Distance3DOp;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.util.FactoryException;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 

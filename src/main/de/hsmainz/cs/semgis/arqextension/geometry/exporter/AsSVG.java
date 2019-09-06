@@ -19,7 +19,7 @@ public class AsSVG extends FunctionBase1 {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             SVGWriter writer=new SVGWriter();
             String result=writer.write(geometry.getParsingGeometry());
-            return NodeValue.makeString(result.toString());
+            return NodeValue.makeString("<svg>"+result.toString()+"</svg>");
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

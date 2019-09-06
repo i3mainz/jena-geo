@@ -16,7 +16,7 @@ public class ZMin extends FunctionBase1 {
     public NodeValue exec(NodeValue arg0) {
         GeometryWrapper geometry = GeometryWrapper.extract(arg0);
         Geometry geo=geometry.getXYGeometry();
-        Double minZ=0.;
+        Double minZ=Double.MAX_VALUE;
         for(Coordinate coord:geo.getCoordinates()) {
         	if(minZ>coord.getZ()) {
         		minZ=coord.getZ();

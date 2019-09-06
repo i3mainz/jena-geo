@@ -1,5 +1,6 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.exporter;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
@@ -27,10 +28,10 @@ public class AsBinary extends FunctionBase2 {
             	}else if("NDR".equals(endianness)) {
             		bb.order( ByteOrder.LITTLE_ENDIAN);
             	}
-                return NodeValue.makeString(bb.toString());
+                return NodeValue.makeString(new String(bb.array(),"UTF-8"));
             }
-            return NodeValue.makeString(result.toString());
-        } catch (DatatypeFormatException ex) {
+            return NodeValue.makeString(new String(result,"UTF-8"));
+        } catch (DatatypeFormatException | UnsupportedEncodingException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }
 	}

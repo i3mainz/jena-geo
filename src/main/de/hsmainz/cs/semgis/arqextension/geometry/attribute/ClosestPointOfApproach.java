@@ -7,7 +7,7 @@ import org.apache.jena.sparql.function.FunctionBase2;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Returns the measure at which points interpolated along two lines are closest. 

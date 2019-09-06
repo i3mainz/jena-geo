@@ -28,7 +28,7 @@ public class XMin extends FunctionBase1 {
     public NodeValue exec(NodeValue arg0) {
         GeometryWrapper geometry = GeometryWrapper.extract(arg0);
         Geometry geo=geometry.getXYGeometry();
-        Double minX=0.;
+        Double minX=Double.MAX_VALUE;
         for(Coordinate coord:geo.getCoordinates()) {
         	if(minX>coord.getX()) {
         		minX=coord.getX();

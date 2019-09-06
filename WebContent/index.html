@@ -19,7 +19,7 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-   <script src="js/tablesorter.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
    
@@ -72,7 +72,11 @@ function clearMap() {
 
 
   function sendQuery(){
-    $.get(document.location.href+"rest/service/queryservice?query="+encodeURIComponent($('#queryinput').val())+"&dataset="+encodeURIComponent($('#dataset').val()), function(data, status){
+	var url=document.location.href
+	if(!url.endsWith("/")){
+		url+="/"
+	}
+    $.get(url+"rest/service/queryservice?query="+encodeURIComponent($('#queryinput').val())+"&dataset="+encodeURIComponent($('#dataset').val()), function(data, status){
         //alert("Data: " + data + "\nStatus: " + status);
         var json=JSON.parse(data)
                 $('#number').text(json["size"]+" Results");
@@ -95,7 +99,7 @@ function clearMap() {
         	table+="</tr>"
         }
         $('#queryres').html(table+"</tbody>")
-        $("#queryres").tablesorter();      
+     
         clearMap();
         var overlays={}
         for(layer in json["geojson"]){
@@ -127,6 +131,7 @@ function clearMap() {
 		// add one with the cities
 		overlayControl = L.control.layers(baseMaps, overlays).addTo(mymap);
         mymap.fitBounds(officiallayer.getBounds());
+        $("#queryres").tablesorter(); 
     });
   }
   
