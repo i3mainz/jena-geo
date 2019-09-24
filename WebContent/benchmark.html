@@ -1,0 +1,157 @@
+<html>
+<title>GeoSPARQL 2.0 Benchmark</title>
+<script src="js/postgis_result.js"></script>
+<script src="js/utils.js"></script>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> 
+   
+<script>
+var reslabels=[];
+
+var geosparql20results=[]; 
+
+var postgisresults=[]; 
+
+function loadAllBenchmarks(){
+var url=document.location.href
+if(!url.endsWith("/")){
+	url+="/"
+}
+for(ps in postgis){
+	postgisresults.push(postgis[ps]["result"])
+}
+var table="<thead><tr><th>Benchmarks</th><th>POSTGIS</th><th>GeoSPARQL2.0</td></tr></thead><tbody>"
+    for(obj in postgis){
+    	reslabels.push(postgis[obj]["experiment"]);
+    	geosparql20results.push(postgis[obj]["experiment"]);
+    	table+="<tr><td>"+postgis[obj]["experiment"]+"</td><td>"+postgis[obj]["result"]+"</td><td></td></tr>"
+    }
+$('#queryres').html(table+"</tbody>")
+console.log(postgisresults)
+$.get(url+"rest/service/benchmark?query=all&dataset="+encodeURIComponent($('#benchmarktest').val()), function(data, status){
+    //alert("Data: " + data + "\nStatus: " + status);
+    var json=JSON.parse(data)
+    var i=1;
+    var table="<thead><tr><th>Benchmarks</th><th>POSTGIS</th><th>GeoSPARQL2.0</td></tr></thead><tbody>"
+    for(obj in json){
+    	reslabels.push(json[obj]["experiment"]);
+    	geosparql20results.push(json[obj]["experiment"]);
+    	table+="<tr><td>"+json[obj]["experiment"]+"</td><td>"+postgisresults[obj]["result"]+"</td><td>"+json[obj]["result"]+"</td></tr>"
+    }
+    $('#queryres').html(table+"</tbody>")
+
+});
+var config = {
+		type: 'line',
+		data: {
+			labels: reslabels,
+			datasets: [{
+				label: 'GeoSPARQL 2.0',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.red,
+				data: [
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor()
+				],
+				fill: false,
+			}, {
+				label: 'POSTGIS',
+				fill: false,
+				backgroundColor: window.chartColors.blue,
+				borderColor: window.chartColors.blue,
+				data: postgisresults,
+			}]
+		},
+		options: {
+			responsive: true,
+			title: {
+				display: true,
+				text: 'GeoSPARQL 2.0 Benchmark Results'
+			},
+			tooltips: {
+				mode: 'index',
+				intersect: false,
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
+			},
+			scales: {
+				xAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Experiment'
+					}
+				}],
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Time'
+					}
+				}]
+			}
+		}
+	};
+var ctx = document.getElementById('myChart').getContext('2d');
+window.myLine = new Chart(ctx, config);
+}
+</script>
+<body>
+<header>
+<div class="page-header">
+<h1 align="center">GeoSPARQL 2.0 Benchmark</h1>
+</div>
+</header>
+<div class="container" role="main">
+  <div class="row">
+  <div class="col-sm-6">
+  <canvas id="myChart" width="400" height="400"></canvas><br/>
+<select id="dataset">
+<option value="testdata2.ttl" selected="selected">Geographica LinkedGeoData Set</option>
+<option value="rasterexample.ttl">Example Raster Data Set</option>
+<!--<option value="testdata.ttl">Rheinland Pfalz Testset</option>
+<option value="testdata3.ttl">Brandenburg TestSet</option>
+<option value="testdata4.ttl">Hospital TestSet</option>-->
+</select>
+<br/>
+<select id="benchmarktest">
+<option value="all" selected="selected">All</option>
+<option value="rasterexample.ttl" selected="selected">LoadRaster</option>
+<option value="rasterexample.ttl">ModifyRaster</option>
+<option value="rasterexample.ttl">Import/Export Raster</option>
+<option value="testdata2.ttl">GeometryModification Vector</option>
+<option value="testdata2.ttl">GeometryExporter Vector</option>
+</select><br/>
+<button onclick="loadAllBenchmarks()">Load All Benchmarks</button>
+  </div>
+  <div class="col-sm-6" id="queryresult" class="table-wrapper-scroll-y">
+Benchmark Result:
+<table align="center" id="queryres" class="tablesorter" border="1" width="100%">
+</table>
+</div></div></div>
+</body>
+</html>
