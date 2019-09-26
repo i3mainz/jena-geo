@@ -31,12 +31,14 @@ public class TripleStoreConnection {
 	
 	public final Map<String,OntModel> modelmap;
 	
+	public static Integer resultSetSize=0;
+	
 	public TripleStoreConnection() {
 		GeoSPARQLConfig.setupMemoryIndex();
 		PostGISConfig.setup();
 		modelmap=new TreeMap<String,OntModel>();
 		modelmap.put("testdata.ttl", ModelFactory.createOntologyModel());
-		modelmap.put("testdata2.ttl", ModelFactory.createOntologyModel());
+		modelmap.put("linkedgeodata.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("rasterexample.ttl", ModelFactory.createOntologyModel());
 		//modelmap.put("testdata3.ttl", ModelFactory.createOntologyModel());
 		//modelmap.put("testdata4.ttl", ModelFactory.createOntologyModel());
@@ -69,6 +71,7 @@ public class TripleStoreConnection {
 		    JSONObject result=new JSONObject();
 		    JSONArray obj=new JSONArray();
 	    	Boolean first=true;
+	    	resultSetSize=test.size();
 		    for(QuerySolution solu:test) {
 		    	JSONObject jsonobj=new JSONObject();
 		    	Iterator<String> varnames = solu.varNames();
@@ -118,7 +121,7 @@ public class TripleStoreConnection {
 		    result.put("geojson", geojsonresults);
 		    result.put("data", obj);
 		    result.put("size", test.size());
-		    return result.toString();
+		    return geojsonresults.toString(2);
 		}
 	}
 	
