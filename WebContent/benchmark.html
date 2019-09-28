@@ -2,6 +2,7 @@
 <title>GeoSPARQL 2.0 Benchmark</title>
 <script src="js/postgis_result.js"></script>
 <script src="js/utils.js"></script>
+<script src="js/benchmarkresult.js"></script>
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -39,18 +40,6 @@ url=url.replace("benchmark.html","")
 if(!url.endsWith("/")){
 	url+="/"
 }
-for(ps in postgis){
-	//postgisresults.push(postgis[ps]["result"])
-}
-var table="<thead><tr><th>Benchmark</th><th>Dataset</th><th>POSTGIS</th><th>GeoSPARQL2.0</td><th>Resultset Size</th></tr></thead><tbody>"
-    for(obj in postgis){
-    	//reslabels.push(postgis[obj]["experiment"]);
-    	postgisresults.push(postgis[obj]["experiment"]);
-    	table+="<tr><td>"+postgis[obj]["experiment"]+"</td><td>"+("dataset" in postgis[obj]?postgis[obj]["dataset"]:"")+"</td><td>"+postgis[obj]["result"]+"</td><td></td></tr>"
-    }
-$('#queryres').html(table+"</tbody>")
-$("#queryres").tablesorter();
-console.log(postgisresults)
 console.log(url)
 $.get(url+"rest/service/benchmark?query="+encodeURIComponent($('#benchmarktest').val())+"&dataset="+encodeURIComponent($('#dataset').val()), function(data, status){
     webserviceresult=JSON.parse(data)
@@ -61,20 +50,26 @@ $.get(url+"rest/service/benchmark?query="+encodeURIComponent($('#benchmarktest')
 
 function paintResults(){
 	geosparql20results=[];
+	postgisresults=[];
 	reslabels=[];
 	if(window.myLine!=null){
 		window.myLine.destroy();
 	}
     var json=webserviceresult["sparql"]
+    var sqlresult=webserviceresult["sql"]
     var i=1;
-    var table="<thead><tr><th>Benchmarks</th><th>Dataset</th><th>Category</th><th>POSTGIS (ms)</th><th>GeoSPARQL2.0 (ms)</th><th>Resultset Size</th></tr></thead><tbody>"
-    for(cat in json){
-    	table+="<tr style=\"background-color:gray\"><td>"+cat+"</td><td>Total</td><td>"+cat+"</td><td></td><td>"+json[cat]["cattotal"]+"</td><td>"+json[cat]["catobjtotal"]+"</td></tr>"
+    var sqlcounter=0;
+    var table="<thead><tr><th>Benchmarks</th><th>Dataset</th><th>Category</th><th>POSTGIS (ms)</th><th>GeoSPARQL2.0 (ms)</th><th>Resultset Size</th></tr></thead><tbody>"    
+    Object.keys(json).sort().forEach(function(cat) {
+    //for(cat in json){
+    	table+="<tr style=\"background-color:gray\"><td>"+cat+"</td><td>Total</td><td>"+cat+"</td><td>"+sqlresult[cat]["cattotal"]+"</td><td>"+json[cat]["cattotal"]+"</td><td>"+json[cat]["catobjtotal"]+"</td></tr>"
     	reslabels.push(cat);
     	if(!document.getElementById('nocategories').checked){
     		geosparql20results.push(json[cat]["cattotal"]);
+    		postgisresults.push(sqlresult[cat]["cattotal"]);
     	}
-    	for(obj in json[cat]["array"]){
+    	sqlcounter=0;
+    	Object.keys(json[cat]["array"]).sort().forEach(function(obj) {
     		var category="",experiment="";
     		if(json[cat]["array"][obj]["experiment"].includes("_")){
     			var spl=json[cat]["array"][obj]["experiment"].split("_");
@@ -91,10 +86,18 @@ function paintResults(){
     		}
     		if(!document.getElementById('onlycategories').checked){
     			geosparql20results.push(json[cat]["array"][obj]["result"]);
+    			if(obj in sqlresult[cat]["array"]){
+    				postgisresults.push(sqlresult[cat]["array"][obj]["result"]);
+    				sqlcounter++;
+    			}else{
+    				postgisresults.push(-1000);
+    			}			
     		}
-    		table+="<tr><td>"+experiment+"</td><td>"+("dataset" in json[cat]["array"][obj]?json[cat]["array"][obj]["dataset"]:"")+"</td><td>"+cat+"</td><td>"+((obj in postgis)?postgis[obj]["result"]:"")+"</td><td>"+json[cat]["array"][obj]["result"]+"</td><td>"+json[cat]["array"][obj]["resultsize"]+"</td></tr>"
-    	}
-    }
+    		table+="<tr><td>"+experiment+"</td><td>"+("dataset" in json[cat]["array"][obj]?json[cat]["array"][obj]["dataset"]:"")+"</td>"
+    		+"<td>"+cat+"</td><td>"+(obj in sqlresult[cat]["array"]?sqlresult[cat]["array"][obj]["result"]:"N/A")+"</td><td>"+json[cat]["array"][obj]["result"]+"</td>"
+    		+"<td>"+json[cat]["array"][obj]["resultsize"]+"</td></tr>"
+    	});
+    });
     $('#queryres').html(table+"</tbody>")
     $("#queryres").tablesorter();
     var config = {
@@ -159,6 +162,21 @@ function paintResults(){
 		myWindow.focus()
 
 	}
+	
+	 function downloadObjectAsJson(exportObj, exportName){
+		    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent("var benchmarkresult="+JSON.stringify(exportObj,null,2));
+		    var downloadAnchorNode = document.createElement('a');
+		    downloadAnchorNode.setAttribute("href",     dataStr);
+		    downloadAnchorNode.setAttribute("download", exportName + ".json");
+		    document.body.appendChild(downloadAnchorNode); // required for firefox
+		    downloadAnchorNode.click();
+		    downloadAnchorNode.remove();
+		  }
+	 
+	 $(function() {
+		  webserviceresult=benchmarkresult;
+		  paintResults();
+		});
 </script>
   <style>
 .table-wrapper-scroll-y {
@@ -177,7 +195,7 @@ function paintResults(){
 </header>
 <div class="container" role="main">
   <div class="row">
-  <div class="col-sm-9">
+  <div class="col-sm-12">
   <div id="graphContainer">
   <canvas id="myChart" width="400" height="400"></canvas></div><br/>
 <select id="dataset">
@@ -189,7 +207,9 @@ function paintResults(){
 <option value="testdata4.ttl">Hospital TestSet</option>-->
 </select>
 <input type="checkbox" name="onlycategories" id="onlycategories" value="cats" onClick="paintResults()">Show only categories
-<br/><input type="checkbox" name="nocategories" id="nocategories" value="nocats" onClick="paintResults()">No categories<button id="downloadImageButton" onclick="downloadImage()">Download Image</button><br/>
+<br/><input type="checkbox" name="nocategories" id="nocategories" value="nocats" onClick="paintResults()">No categories
+<button id="downloadImageButton" onclick="downloadImage()">Download Image</button>
+<button id="downloadJSONButton" onclick='downloadObjectAsJson(webserviceresult,"result")'>Download JSON Result</button><br/>
 <select id="benchmarktest">
 <option value="all" selected="selected">All</option>
 <option value="raster_accessor">Raster Accessor</option>
