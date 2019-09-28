@@ -18,7 +18,6 @@ import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 
 public class BandPixelType extends FunctionBase2 {
 

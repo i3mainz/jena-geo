@@ -17,15 +17,16 @@
  */
 package io.github.galbiston.geosparql_jena.implementation.datatype;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; 
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
-import java.text.ParseException;
-
-import org.apache.sis.index.GeoHashCoder;
+import org.apache.sis.referencing.CommonCRS;
+import org.apache.sis.referencing.gazetteer.AbstractLocation;
+import org.apache.sis.referencing.gazetteer.GeohashReferenceSystem;
 import org.locationtech.jts.algorithm.Angle;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
-import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.operation.TransformException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -67,8 +68,6 @@ public class GeoHashDatatype extends GeometryDatatype {
     private GeoHashDatatype() {
         super(URI);
     }
-    
-    GeoHashCoder coder=new GeoHashCoder();
 
     /**
      * This method Un-parses the JTS Geometry to the WKT literal
@@ -83,12 +82,19 @@ public class GeoHashDatatype extends GeometryDatatype {
     public String unparse(Object geometry) {
     	if (geometry instanceof GeometryWrapper) {
             Geometry geom1 = ((GeometryWrapper)geometry).getXYGeometry();
-            if(geom1.getGeometryType().equalsIgnoreCase("Point")) {
-            	String geohash = coder.encode(Angle.toDegrees(geom1.getCoordinate().getX()), Angle.toDegrees(geom1.getCoordinate().getY()));
-            	return geohash;
-            } else {
-                throw new AssertionError("Object passed to GeoHashDatatype is not a Point: " + geometry);
-            }
+            GeohashReferenceSystem refsys;
+    		try {
+    			refsys = new GeohashReferenceSystem(GeohashReferenceSystem.Format.BASE32, CommonCRS.WGS84.normalizedGeographic());
+    			GeohashReferenceSystem.Coder coder=refsys.createCoder();
+    			if(geom1.getGeometryType().equalsIgnoreCase("Point")) {
+    				String geohash = coder.encode(Angle.toDegrees(geom1.getCoordinate().getX()), Angle.toDegrees(geom1.getCoordinate().getY()));
+    				return geohash;
+    			}
+    			throw new AssertionError("Object passed to GeoHashDatatype is not a Point: " + geometry);
+    		} catch (TransformException e) {
+    			// TODO Auto-generated catch block
+    			throw new RuntimeException(e.getMessage());
+    		}
     	} else {
             throw new AssertionError("Object passed to GeoHashDatatype is not a GeometryWrapper: " + geometry);
         }	
@@ -97,9 +103,11 @@ public class GeoHashDatatype extends GeometryDatatype {
     @Override
     public GeometryWrapper read(String geometryLiteral) {
     	try {
-			DirectPosition pos=coder.decode(geometryLiteral);
-			return GeometryWrapperFactory.createPoint(new Coordinate(pos.getCoordinate()[0],pos.getCoordinate()[1]), URI);
-		} catch (ParseException e) {
+            GeohashReferenceSystem refsys= new GeohashReferenceSystem(GeohashReferenceSystem.Format.BASE32, CommonCRS.WGS84.normalizedGeographic());
+    		GeohashReferenceSystem.Coder coder=refsys.createCoder();
+			AbstractLocation pos=coder.decode(geometryLiteral);
+			return GeometryWrapperFactory.createPoint(new Coordinate(pos.getPosition().getDirectPosition().getCoordinate()[0],pos.getPosition().getDirectPosition().getCoordinate()[1]), URI);
+		} catch (TransformException e) {
 			throw new AssertionError("Could not read GeoHash representation of: " + geometryLiteral);
 		}
 

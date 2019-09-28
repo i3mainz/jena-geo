@@ -15,12 +15,12 @@ public class Intersection3D extends FunctionBase2 {
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		GeometryWrapper geom1 = GeometryWrapper.extract(v1);
         GeometryWrapper geom2 = GeometryWrapper.extract(v2);
-        Vector3D vec=new Vec
+        /*Vector3D vec=new Vec
 		Bounds quadArrayBounds = quadArrayShape.getBounds();
 		if (quadArrayBounds.intersect(new Point3d(startLine.x, startLine.y, startLine.z), 
 		new Vector3d(endLine.x, endLine.y, endLine.z))){
 		               // Action to do if Intesect is true
-		            }
+		            }*/
 
 		return null;
 	}

@@ -50,7 +50,7 @@ public class BenchmarkExecutor {
 						});
 						Arrays.sort(directories2);
 						for(String cat:directories2) {
-							JSONArray catarray=new JSONArray();
+							JSONObject catarray=new JSONObject();
 							resultjson.put(datatype+"_"+cat, catarray);
 							JSONObject category=new JSONObject();
 							resultjson.put(datatype+"_"+cat, category);
@@ -67,28 +67,31 @@ public class BenchmarkExecutor {
 										System.out.println("Substarttime: " + sTime);
 										content = readFile("queries/"+datatype+"/"+cat+"/" + queryfile, StandardCharsets.UTF_8);
 										System.out.println("Query: " + content);
+										Integer resultSize=0;
 										if(sql) {
 											try {
-												JDBCConnection.executeQuery(content);
+												JDBCConnection.getInstance().executeQuery(content);
+												resultSize=JDBCConnection.getInstance().resultSize;
 											} catch (SQLException e) {
 												// TODO Auto-generated catch block
 												e.printStackTrace();
 											}
 										}else {
 											TripleStoreConnection.executeQuery(content, model);
+											resultSize=TripleStoreConnection.resultSetSize;
 										}
 										long eTime = System.nanoTime();
 										System.out.println("Subendtime: " + eTime);
 										JSONObject res=new JSONObject();
-										res.put("experiment", queryfile.replace(".sparql", ""));
+										res.put("experiment", queryfile.replace(".sparql", "").replace(".sql",""));
 										res.put("result", (eTime - sTime) / 1000000);
 										res.put("dataset", model);
-										res.put("resultsize", TripleStoreConnection.resultSetSize);
-										catarray.put(res);
-										result.put(queryfile.replace(".sparql", "") + ";" + model + ";"
-												+ TripleStoreConnection.resultSetSize, (eTime - sTime) / 1000000);
+										res.put("resultsize", resultSize);
+										catarray.put(queryfile.replace(".sparql", "").replace(".sql",""),res);
+										result.put(queryfile.replace(".sparql", "").replace(".sql","") + ";" + model + ";"
+												+ resultSize, (eTime - sTime) / 1000000);
 										cattotal+=(eTime - sTime) / 1000000;
-										catobjtotal+=TripleStoreConnection.resultSetSize;
+										catobjtotal+=resultSize;
 									} catch (IOException e) {
 										// TODO Auto-generated catch block
 										e.printStackTrace();
@@ -119,7 +122,7 @@ public class BenchmarkExecutor {
 					});
 				Arrays.sort(directories2);
 				for(String cat:directories2) {	
-					JSONArray catarray=new JSONArray();
+					JSONObject catarray=new JSONObject();
 					resultjson.put(datatype+"_"+cat, catarray);
 					JSONObject category=new JSONObject();
 					resultjson.put(datatype+"_"+cat, category);
@@ -138,9 +141,11 @@ public class BenchmarkExecutor {
 									long sTime = System.nanoTime();
 									content = readFile("queries/"+datatype+"/"+cat+"/" + queryfile, StandardCharsets.UTF_8);
 									System.out.println("Query: " + content);
+									Integer resultSize=0;
 									if(sql) {
 										try {
-											JDBCConnection.executeQuery(content);
+											JDBCConnection.getInstance().executeQuery(content);
+											resultSize=JDBCConnection.getInstance().resultSize;
 										} catch (SQLException e) {
 											// TODO Auto-generated catch block
 											e.printStackTrace();
@@ -148,24 +153,25 @@ public class BenchmarkExecutor {
 									}else {
 										try {
 										TripleStoreConnection.executeQuery(content, dataset);
-										}catch(QueryParseException e) {
+										resultSize=TripleStoreConnection.resultSetSize;
+										}catch(Exception e) {
 											e.printStackTrace();
 										}
 									}
 									long eTime = System.nanoTime();
 									JSONObject res=new JSONObject();
-									res.put("experiment", queryfile.replace(".sparql", ""));
+									res.put("experiment", queryfile.replace(".sparql", "").replace(".sql",""));
 									res.put("result", (eTime - sTime) / 1000000);
 									res.put("dataset", dataset);
-									res.put("resultsize", TripleStoreConnection.resultSetSize);
-									catarray.put(res);
-									result.put(queryfile.replace(".sparql", "") + ";" + dataset + ";"
-											+ TripleStoreConnection.resultSetSize, (eTime - sTime) / 1000000);
+									res.put("resultsize", resultSize);
+									catarray.put(queryfile.replace(".sparql", "").replace(".sql",""),res);
+									result.put(queryfile.replace(".sparql", "").replace(".sql","") + ";" + dataset + ";"
+											+ resultSize, (eTime - sTime) / 1000000);
 									cattotal+=(eTime - sTime) / 1000000;
-									catobjtotal+=TripleStoreConnection.resultSetSize;
+									catobjtotal+=resultSize;
 								} catch (IOException e) {
 									// TODO Auto-generated catch block
-									e.printStackTrace();
+									//e.printStackTrace();
 								}
 							}
 						}

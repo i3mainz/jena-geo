@@ -121,7 +121,7 @@ public class TripleStoreConnection {
 		    result.put("geojson", geojsonresults);
 		    result.put("data", obj);
 		    result.put("size", test.size());
-		    return geojsonresults.toString(2);
+		    return result.toString();
 		}
 	}
 	

@@ -1,11 +1,10 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
-import java.awt.geom.Rectangle2D;
-
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
+import org.opengis.geometry.Envelope;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
@@ -33,22 +32,22 @@ public class Difference extends FunctionBase2 {
 				return NodeValue.makeString(e.getMessage());
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
-	        Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
-	        Rectangle2D bbox2 = raster2.getEnvelope2D().getBounds2D();
-	        return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1.getBounds()).difference(LiteralUtils.toGeometry(bbox2.getBounds())),((GeometryWrapper)wrapper1).getGeometryDatatypeURI()).asNodeValue();			
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
+	        Envelope bbox1 = raster.getGridGeometry().getEnvelope();
+	        Envelope bbox2 = raster2.getGridGeometry().getEnvelope();
+	        return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).difference(LiteralUtils.toGeometry(bbox2)),((GeometryWrapper)wrapper1).getGeometryDatatypeURI()).asNodeValue();			
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
-				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1.getBounds()).difference(geom),((CoverageWrapper) wrapper1).getSrsURI()).asNodeValue();
+				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).difference(geom),((CoverageWrapper) wrapper1).getSrsURI()).asNodeValue();
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
-				return GeometryWrapperFactory.createGeometry(geom.difference(LiteralUtils.toGeometry(bbox1.getBounds())),((CoverageWrapper) wrapper1).getSrsURI()).asNodeValue();				
+				return GeometryWrapperFactory.createGeometry(geom.difference(LiteralUtils.toGeometry(bbox1)),((CoverageWrapper) wrapper1).getSrsURI()).asNodeValue();				
 			}
 		}
 	}

@@ -5,7 +5,6 @@ import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 

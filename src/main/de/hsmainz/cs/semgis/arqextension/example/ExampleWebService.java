@@ -6,8 +6,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import org.apache.jena.atlas.json.JsonObject;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import de.hsmainz.cs.semgis.arqextension.benchmark.BenchmarkExecutor;
@@ -39,16 +37,20 @@ public class ExampleWebService {
 		System.out.println("BENCHMARK QUERY!!!");
 		final String dir = System.getProperty("user.dir");
         System.out.println("current dir = " + dir); 
-        JSONObject sparqlresults=BenchmarkExecutor.benchmark(query,dataset,false);
         JSONObject sqlresults=BenchmarkExecutor.benchmark(query,dataset,true);
+        JSONObject sparqlresults=BenchmarkExecutor.benchmark(query,dataset,false);
+        System.out.println("FINISHED BENCHMARKS!");
 		JSONObject result=new JSONObject();
 		result.put("sparql",sparqlresults);
 		result.put("sql", sqlresults);
-		return result.toString(2);
+		System.out.println("PACKING JSON");
+		return result.toString();
 	}
 	
 	public static void main (String[] args) {
 		TripleStoreConnection.executeQuery("","testdata2.ttl");
+        //JSONObject sparqlresults=BenchmarkExecutor.benchmark("all","all",false);
+        //JSONObject sqlresults=BenchmarkExecutor.benchmark("all","all",true);
 	}
 	
 }

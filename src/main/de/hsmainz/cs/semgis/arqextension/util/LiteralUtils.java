@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.media.j3d.BoundingBox;
+
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.geometry.Envelope2D;
 import org.locationtech.jts.geom.Coordinate;
@@ -14,7 +16,6 @@ import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.geom.LineString;
 import org.locationtech.jts.geom.OctagonalEnvelope;
 import org.locationtech.jts.geom.Polygon;
-import org.opengis.geometry.BoundingBox;
 
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
@@ -42,7 +43,7 @@ public class LiteralUtils {
 		if(wrapper instanceof GeometryWrapper) {
 			return ((GeometryWrapper) wrapper).getXYGeometry();
 		}else {
-			return toGeometry(((CoverageWrapper) wrapper).getXYGeometry().getEnvelope2D());
+			return toGeometry(((CoverageWrapper) wrapper).getXYGeometry().getGridGeometry().getEnvelope());
 		}
 	}
 	
@@ -94,7 +95,7 @@ public class LiteralUtils {
                 }), null);
     }
 	
-	public static Geometry toGeometry(final BoundingBox envelope) {
+	/*public static Geometry toGeometry(final BoundingBox envelope) {
         GeometryFactory gf = new GeometryFactory();
         return gf.createPolygon(gf.createLinearRing(
                 new Coordinate[]{
@@ -104,7 +105,7 @@ public class LiteralUtils {
                     new Coordinate(envelope.getMinX(), envelope.getMaxY()),
                     new Coordinate(envelope.getMinX(), envelope.getMinY())
                 }), null);
-    }
+    }*/
 	
 	 public static Geometry toGeometry(final Rectangle envelope) {
 	        GeometryFactory gf = new GeometryFactory();

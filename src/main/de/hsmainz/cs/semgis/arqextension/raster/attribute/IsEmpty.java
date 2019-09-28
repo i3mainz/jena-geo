@@ -31,7 +31,7 @@ public class IsEmpty extends FunctionBase1 {
 			return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().isEmpty());
 		}else{
 			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-	        return NodeValue.makeBoolean(raster.getRenderedImage().getWidth() == 0 && raster.getRenderedImage().getHeight() == 0);			
+	        return NodeValue.makeBoolean(raster.getSampleDimensions().isEmpty());			
 		}
 	}
 

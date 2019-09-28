@@ -12,8 +12,10 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
-import java.awt.geom.Rectangle2D;
 import org.locationtech.jts.geom.Geometry;
+import org.opengis.geometry.MismatchedDimensionException;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
@@ -35,7 +37,13 @@ public class Within extends FunctionBase2{
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v);
 		Wrapper wrapper2=LiteralUtils.rasterOrVector(v);
 		if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {
-			return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().within(((GeometryWrapper)wrapper2).getXYGeometry()));
+			GeometryWrapper transGeom2;
+			try {
+				transGeom2 = ((GeometryWrapper)wrapper2).transform(((GeometryWrapper)wrapper1).getSrsInfo());
+				return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().within(transGeom2.getXYGeometry()));
+			} catch (MismatchedDimensionException | TransformException | FactoryException e) {
+				throw new RuntimeException("CRS transformation failed");
+			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
 			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
 			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		

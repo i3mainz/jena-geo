@@ -27,7 +27,7 @@ public class Envelope extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();
-	       Geometry envelope = LiteralUtils.toGeometry(raster.getEnvelope2D());
+	       Geometry envelope = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 	        GeometryWrapper envelopeWrapper = GeometryWrapperFactory.createGeometry(envelope, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
 	        return envelopeWrapper.asNodeValue();
 	}

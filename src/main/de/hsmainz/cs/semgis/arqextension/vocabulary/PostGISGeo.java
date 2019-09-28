@@ -20,14 +20,6 @@ import org.apache.jena.rdf.model.ResourceFactory;
 public class PostGISGeo {
    public static final String uri = "http://www.opengis.net/ont/geosparql#";
 
-
-
-
-
-
-
-
-
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -299,6 +291,22 @@ public class PostGISGeo {
    public static final Property st_precisionReducer = property("ST_PrecisionReducer");
    public static final Property st_rastFromHexWKB = property("ST_RastFromHexWKB");
    public static final Property st_rastFromWKB = property("ST_RastFromWKB");
+   public static final Property st_rast_algebra_add = property("ST_Add");
+   public static final Property st_rast_algebra_addconst = property("ST_AddConst");
+   public static final Property st_rast_algebra_and = property("ST_And");
+   public static final Property st_rast_algebra_andconst = property("ST_AndConst");
+   public static final Property st_rast_algebra_div = property("ST_Div");
+   public static final Property st_rast_algebra_divconst = property("ST_DivConst");
+   public static final Property st_rast_algebra_log = property("ST_Log");
+   public static final Property st_rast_algebra_mult = property("ST_Mult");
+   public static final Property st_rast_algebra_multconst = property("ST_MultConst");
+   public static final Property st_rast_algebra_not = property("ST_Not");
+   public static final Property st_rast_algebra_or = property("ST_Or");
+   public static final Property st_rast_algebra_orconst = property("ST_OrConst");
+   public static final Property st_rast_algebra_subtract = property("ST_Subtract");
+   public static final Property st_rast_algebra_subtractconst = property("ST_SubtractConst");
+   public static final Property st_rast_algebra_xor = property("ST_Xor");
+   public static final Property st_rast_algebra_xorconst = property("ST_XorConst");
    public static final Property st_rast_isEmpty = property("ST_isEmpty");
    public static final Property st_rast_Contains = property("ST_Contains");
    public static final Property st_rast_Covers = property("ST_Covers");
@@ -415,10 +423,12 @@ public static final String DXF="DXF";
 public static final String MVT = "MVT";
 public static final String X3D = "X3D";
 public static final String OSM= "OSM";
+public static final String NetCDF="NetCDF";
 public static final String HexWKBRaster = "HexWKBRaster";
 public static final String TopoJSON = "TopoJSON";
 public static final String TemporalRange="TemporalRange";
 public static final String CoverageJSON = "CoverageJSON";
+
 
 
 

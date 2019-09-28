@@ -1,11 +1,12 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype;
 
-	import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
-	import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; 
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.parsers.wkt.WKTReader;
-	import io.github.galbiston.geosparql_jena.implementation.parsers.wkt.WKTWriter;
-	import io.github.galbiston.geosparql_jena.implementation.vocabulary.Geo;
-	import io.github.galbiston.geosparql_jena.implementation.vocabulary.SRS_URI;
+import io.github.galbiston.geosparql_jena.implementation.parsers.wkt.WKTWriter;
+import io.github.galbiston.geosparql_jena.implementation.vocabulary.Geo;
+import io.github.galbiston.geosparql_jena.implementation.vocabulary.SRS_URI;
 
 import org.geotoolkit.data.osm.OSMMemoryFeatureStore;
 import org.geotoolkit.data.osm.OSMMemoryFeatureStoreFactory;
@@ -15,7 +16,7 @@ import org.locationtech.jts.io.ParseException;
 import org.locationtech.jts.io.WKBReader;
 import org.locationtech.jts.io.WKBWriter;
 import org.slf4j.Logger;
-	import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactory;
 import org.wololo.jts2geojson.GeoJSONReader;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;

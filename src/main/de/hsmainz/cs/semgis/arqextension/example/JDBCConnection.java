@@ -1,21 +1,17 @@
 package de.hsmainz.cs.semgis.arqextension.example;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.postgis.PGgeometry;
 import org.postgresql.jdbc2.optional.ConnectionPool;
-import org.postgresql.util.PGobject;
 
 public class JDBCConnection {
 
 	public static Connection jdbcConnection;
 	
-	Integer resultSize=0;
+	public static Integer resultSize=0;
 	
 	static java.sql.Connection conn; 
 	
@@ -87,16 +83,23 @@ public class JDBCConnection {
 	}
 	
 	public static void executeQuery(String query) throws SQLException {
+		System.out.println(query);
 		if(conn==null) {
 			conn=pool.getConnection();
 		}
 		Statement s = conn.createStatement(); 
 	    ResultSet r = s.executeQuery(query); 
+	    resultSize=0;
+	    while (r.next()) {        
+	    	resultSize++;
+	    }
+	    r.close();
 	    s.close(); 
-	    conn.close(); 
+	    //conn.close(); 
 	}
 	
 	public static void main(String[] args) throws SQLException {
 		JDBCConnection.getInstance().executeQuery("select * from geographica_vector");
+		System.out.println(JDBCConnection.resultSize);
 	}
 }
