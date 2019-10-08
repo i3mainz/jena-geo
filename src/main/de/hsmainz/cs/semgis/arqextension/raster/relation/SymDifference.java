@@ -1,18 +1,17 @@
-package de.hsmainz.cs.semgis.arqextension.geometry.transform;
+package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
-import java.awt.geom.Rectangle2D;
-
-import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
+import org.opengis.geometry.Envelope;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
+import de.hsmainz.cs.semgis.arqextension.vocabulary.WKT;
 import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
@@ -30,40 +29,30 @@ public class SymDifference extends FunctionBase2 {
 				return GeometryWrapperFactory.createGeometry(((GeometryWrapper)wrapper1).getXYGeometry().symDifference(transGeom2.getXYGeometry()), ((GeometryWrapper)wrapper1).getGeometryDatatypeURI()).asNodeValue();
 
 			} catch (MismatchedDimensionException | TransformException | FactoryException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				throw new RuntimeException("CRS transformation failed");
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
-	        Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
-	        Rectangle2D bbox2 = raster2.getEnvelope2D().getBounds2D();
-	        throw new UnsupportedOperationException("Not supported yet.");
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
+	        Envelope bbox1 = raster.getGridGeometry().getEnvelope();
+	        Envelope bbox2 = raster2.getGridGeometry().getEnvelope();
+	        return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).symDifference(LiteralUtils.toGeometry(bbox2)),WKT.DATATYPE_URI).asNodeValue();
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
-				throw new UnsupportedOperationException("Not supported yet.");
+				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).symDifference(geom),WKT.DATATYPE_URI).asNodeValue();
 				//return GeometryWrapperFactory.createGeometry(geom.symDifference(raster.get).getParsingGeometry(), ((GeometryWrapper)wrapper1).getSrsURI(), ((GeometryWrapper)wrapper1).getGeometryDatatypeURI()).asNodeValue();
 
 				//return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1.getBounds()).coveredBy(geom));
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
-				throw new UnsupportedOperationException("Not supported yet.");
+				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).symDifference(geom),WKT.DATATYPE_URI).asNodeValue();
 				//return NodeValue.makeBoolean(geom.coveredBy(LiteralUtils.toGeometry(bbox1.getBounds())));				
 			}
-		}
-		GeometryWrapper geom1 = GeometryWrapper.extract(v1);
-		GeometryWrapper geom2 = GeometryWrapper.extract(v2);
-		try {
-			GeometryWrapper transGeom2 = geom2.transform(geom1.getSrsInfo());
-			return GeometryWrapperFactory.createGeometry(geom1.symDifference(geom2).getParsingGeometry(), geom1.getSrsURI(), geom1.getGeometryDatatypeURI()).asNodeValue();
-		} catch (MismatchedDimensionException | TransformException | FactoryException e) {
-			// TODO Auto-generated catch block
-			throw new ExprEvalException("A transformation exception occured");
 		}
 		
 	}

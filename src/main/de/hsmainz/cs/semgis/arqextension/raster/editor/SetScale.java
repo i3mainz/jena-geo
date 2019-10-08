@@ -10,12 +10,9 @@ import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.geotoolkit.coverage.CoverageFactoryFinder;
-import org.geotoolkit.coverage.GridSampleDimension;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridCoverageFactory;
-import org.geotoolkit.coverage.grid.GridGeometry2D;
-import org.geotoolkit.image.ImageWorker;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.util.resources.Vocabulary;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.parameter.InvalidParameterValueException;
@@ -28,7 +25,7 @@ public class SetScale extends FunctionBase3{
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		Double xScale=v2.getDouble();
 		Double yScale=v3.getDouble();
 		if (xScale <= 0) {
@@ -43,10 +40,10 @@ public class SetScale extends FunctionBase3{
 
         //this.initilizeVariables(raster);
 
-        final int numBands = raster.getNumSampleDimensions();
+        final int numBands = raster.sagetNumSampleDimensions();
 
         Envelope extent = (Envelope) raster.getEnvelope();
-        GridGeometry2D gridGeometry2D = raster.getGridGeometry();
+        GridGeometry gridGeometry2D = raster.getGridGeometry();
         AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS2D();
         Double cellSizeX = Math.abs(gridToWorld.getScaleX()) * xScale;
         Double cellSizeY = Math.abs(gridToWorld.getScaleY()) * yScale;
@@ -72,7 +69,6 @@ public class SetScale extends FunctionBase3{
 
         if (numBands == 1) {
         	GridCoverageFactory fact=new GridCoverageFactory();
-        	fact.
             return createGridCoverage(raster.getName(), inputImage);
         } else {
             GridSampleDimension[] bands = raster.getSampleDimensions();

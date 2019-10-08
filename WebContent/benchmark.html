@@ -2,12 +2,20 @@
 <title>GeoSPARQL 2.0 Benchmark</title>
 <script src="js/postgis_result.js"></script>
 <script src="js/utils.js"></script>
+<script src="js/benchmarkresult.js"></script>
+<script src="js/lgdbenchmark.js"></script>
+<script src="js/geonamesbenchmark.js"></script>
+<!-- <script src="js/greekbenchmark.js"></script>-->
+<script src="js/hotspotsbenchmark.js"></script>
+<script src="js/dbpediabenchmark.js"></script>
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"/>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
@@ -19,107 +27,212 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> 
    
 <script>
+$( function() {
+  $( "#tabs" ).tabs();
+  $( "#tabsgraph" ).tabs();
+  $( "#tabsmacrograph" ).tabs();
+  $( "#tabsmacroresult" ).tabs();
+} );
 var reslabels=[];
 
 var geosparql20results=[]; 
 
 var postgisresults=[]; 
 
+var webserviceresult;
+
 function loadAllBenchmarks(){
+geosparql20results=[];
+reslabels=[];
 var url=document.location.href
+url=url.replace("benchmark.html","")
 if(!url.endsWith("/")){
 	url+="/"
 }
-for(ps in postgis){
-	postgisresults.push(postgis[ps]["result"])
-}
-var table="<thead><tr><th>Benchmarks</th><th>POSTGIS</th><th>GeoSPARQL2.0</td></tr></thead><tbody>"
-    for(obj in postgis){
-    	reslabels.push(postgis[obj]["experiment"]);
-    	geosparql20results.push(postgis[obj]["experiment"]);
-    	table+="<tr><td>"+postgis[obj]["experiment"]+"</td><td>"+postgis[obj]["result"]+"</td><td></td></tr>"
-    }
-$('#queryres').html(table+"</tbody>")
-console.log(postgisresults)
-$.get(url+"rest/service/benchmark?query=all&dataset="+encodeURIComponent($('#benchmarktest').val()), function(data, status){
-    //alert("Data: " + data + "\nStatus: " + status);
-    var json=JSON.parse(data)
-    var i=1;
-    var table="<thead><tr><th>Benchmarks</th><th>POSTGIS</th><th>GeoSPARQL2.0</td></tr></thead><tbody>"
-    for(obj in json){
-    	reslabels.push(json[obj]["experiment"]);
-    	geosparql20results.push(json[obj]["experiment"]);
-    	table+="<tr><td>"+json[obj]["experiment"]+"</td><td>"+postgisresults[obj]["result"]+"</td><td>"+json[obj]["result"]+"</td></tr>"
-    }
-    $('#queryres').html(table+"</tbody>")
-
+console.log(url)
+$.get(url+"rest/service/benchmark?query="+encodeURIComponent($('#benchmarktest').val())+"&dataset="+encodeURIComponent($('#dataset').val()), function(data, status){
+    webserviceresult=JSON.parse(data)
+	paintResults();
 });
-var config = {
-		type: 'line',
-		data: {
-			labels: reslabels,
-			datasets: [{
-				label: 'GeoSPARQL 2.0',
-				backgroundColor: window.chartColors.red,
-				borderColor: window.chartColors.red,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				],
-				fill: false,
-			}, {
-				label: 'POSTGIS',
-				fill: false,
-				backgroundColor: window.chartColors.blue,
-				borderColor: window.chartColors.blue,
-				data: postgisresults,
-			}]
-		},
-		options: {
-			responsive: true,
-			title: {
-				display: true,
-				text: 'GeoSPARQL 2.0 Benchmark Results'
-			},
-			tooltips: {
-				mode: 'index',
-				intersect: false,
-			},
-			hover: {
-				mode: 'nearest',
-				intersect: true
-			},
-			scales: {
-				xAxes: [{
-					display: true,
-					scaleLabel: {
-						display: true,
-						labelString: 'Experiment'
-					}
-				}],
-				yAxes: [{
-					display: true,
-					scaleLabel: {
-						display: true,
-						labelString: 'Time'
-					}
-				}]
-			}
-		}
-	};
-var ctx = document.getElementById('myChart').getContext('2d');
-window.myLine = new Chart(ctx, config);
+
 }
+
+function paintResults(){
+	paintResults("queryres","myChart","LinkedGeoData")
+}
+
+function paintResults(tablelink,graphlink,benchmarkname){
+	geosparql20results=[];
+	postgisresults=[];
+	reslabels=[];
+	if(window.myLine!=null){
+		window.myLine.destroy();
+	}
+    var json=webserviceresult["sparql"]
+    var sqlresult=webserviceresult["sql"]
+    var i=1;
+    var sqlcounter=0;
+  	var diff=0;
+  	var catdiff=0;
+    var table="<thead><tr><th>Benchmarks</th><th>Dataset</th><th>Category</th><th>POSTGIS (ms)</th><th>GeoSPARQL2.0 (ms)</th><th>Resultset Size</th></tr></thead><tbody>"    
+    Object.keys(json).sort().forEach(function(cat) {
+    //for(cat in json){
+        	catcounter=0;
+  		catdiff=0;
+    	table+="<tr style=\"background-color:gray\"><td>"+cat+"</td><td>Total</td><td>"+cat+"</td><td>"+sqlresult[cat]["cattotal"]+"</td><td>"+json[cat]["cattotal"]+"</td><td>"+json[cat]["catobjtotal"]+"</td></tr>"
+    	reslabels.push(cat);
+    	if(!document.getElementById('nocategories').checked){
+    		geosparql20results.push(json[cat]["cattotal"]);
+    		postgisresults.push(sqlresult[cat]["cattotal"]);
+    	}
+    	sqlcounter=0;
+    	linecounter=0;
+
+    	Object.keys(json[cat]["array"]).sort().forEach(function(obj) {
+    		var category="",experiment="";
+    		if(json[cat]["array"][obj]["experiment"].includes("_")){
+    			var spl=json[cat]["array"][obj]["experiment"].split("_");
+        		if(!document.getElementById('onlycategories').checked){
+    				reslabels.push(spl[0]+"_"+spl[2])
+        		}
+    			experiment=spl[0]+"_"+spl[2]
+    			category=spl[1];
+    		}else{
+        		if(!document.getElementById('onlycategories').checked){
+    				reslabels.push(json[cat]["array"][obj]["experiment"]); 
+        		}
+        		experiment=json[cat]["array"][obj]["experiment"]
+    		}
+    		if(!document.getElementById('onlycategories').checked){
+    			geosparql20results.push(json[cat]["array"][obj]["result"]);
+    			if(obj in sqlresult[cat]["array"]){
+    				postgisresults.push(sqlresult[cat]["array"][obj]["result"]);
+    				sqlcounter++;
+    			}else{
+    				postgisresults.push(-1000);
+    			}			
+    		}
+    		table+="<tr><td>"+experiment+"</td><td>"+("dataset" in json[cat]["array"][obj]?json[cat]["array"][obj]["dataset"]:"")+"</td>"
+    		+"<td>"+cat+"</td><td>"+(obj in sqlresult[cat]["array"]?sqlresult[cat]["array"][obj]["result"]:"N/A")+"</td><td>"+json[cat]["array"][obj]["result"]+"</td>"
+    		+"<td>"+json[cat]["array"][obj]["resultsize"]+"</td></tr>"
+    		if((obj in sqlresult[cat]["array"])){
+    			var tempdiff=(json[cat]["array"][obj]["result"]-(obj in sqlresult[cat]["array"]?sqlresult[cat]["array"][obj]["result"]:0))
+    			if(tempdiff<0)
+    				tempdiff*=-1;
+    			diff+=tempdiff;
+    			catdiff+=tempdiff;
+    		}
+    		linecounter++;
+    		catcounter++;
+    	});
+        table+="<tr style=\"background-color:green\"><td>Cat Diff</td><td>"+catdiff+"</td><td>Average Diff</td><td>"+(catdiff/catcounter)+"ms</td></tr>"
+    });
+    table+="<tr><td>Total Diff</td><td>"+diff+"</td><td>Average Diff</td><td>"+(diff/linecounter)+"ms</td></tr>"
+    $('#'+tablelink).html(table+"</tbody>")
+    $("#"+tablelink).tablesorter();
+    var config = {
+    		type: 'line',
+    		data: {
+    			labels: reslabels,
+    			datasets: [{
+    				label: 'GeoSPARQL 2.0',
+    				backgroundColor: window.chartColors.red,
+    				borderColor: window.chartColors.red,
+    				data: geosparql20results,
+    				fill: false,
+    			}, {
+    				label: 'POSTGIS',
+    				fill: false,
+    				backgroundColor: window.chartColors.blue,
+    				borderColor: window.chartColors.blue,
+    				data: postgisresults,
+    			}]
+    		},
+    		options: {
+    			responsive: true,
+    			title: {
+    				display: true,
+    				text: 'GeoSPARQL 2.0 Benchmark Results ('+benchmarkname+')'
+    			},
+    			tooltips: {
+    				mode: 'index',
+    				intersect: false,
+    			},
+    			hover: {
+    				mode: 'nearest',
+    				intersect: true
+    			},
+    			scales: {
+    				xAxes: [{
+    					display: true,
+    					scaleLabel: {
+    						display: true,
+    						labelString: 'Experiment'
+    					}
+    				}],
+    				yAxes: [{
+    					display: true,
+    					scaleLabel: {
+    						display: true,
+    						labelString: 'Time (ms)'
+    					}
+    				}]
+    			}
+    		}
+    	};
+    console.log(graphlink);
+    var ctx = document.getElementById(graphlink).getContext('2d');
+    var cht = new Chart(ctx, config);
+	
+}
+	function downloadImage(){
+		var can = document.getElementsByTagName("canvas");
+		var img = can[0].toDataURL("image/png");
+		myWindow=window.open('','','width=800,height=800')
+		myWindow.document.write('<img src="'+img+'"/>');
+		myWindow.focus()
+
+	}
+	
+	 function downloadObjectAsJson(exportObj, exportName){
+		    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent("var benchmarkresult="+JSON.stringify(exportObj,null,2));
+		    var downloadAnchorNode = document.createElement('a');
+		    downloadAnchorNode.setAttribute("href",     dataStr);
+		    downloadAnchorNode.setAttribute("download", exportName + ".json");
+		    document.body.appendChild(downloadAnchorNode); // required for firefox
+		    downloadAnchorNode.click();
+		    downloadAnchorNode.remove();
+		  }
+	 
+	 $(function() {
+		  webserviceresult=benchmarkresult;
+		  paintResults("queryres","myChart","LinkedGeoData");
+		  webserviceresult=hotspotsresult;
+		  paintResults("queryres_hotspots","myChartHotspots","Hotspots");
+		  webserviceresult=dbpediaresult;
+		  paintResults("queryres_dbpedia","myChartDBPedia","DBPedia");		  
+		  //webserviceresult=cologneresult;
+		  //paintResults("queryres_cologne","myChartCologne","Cologne");
+		  //webserviceresult=greekresult;
+		  //paintResults("queryres_greek","myChartGreek","Greek Administrative");
+		  webserviceresult=geonamesresult;
+		  paintResults("queryres_geonames","myChartGeonames","Geonames");
+		});
 </script>
+  <style>
+.table-wrapper-scroll-y {
+  display: block;
+  max-height: 500px;
+  max-width: 100%;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+</style>
 <body>
 <header>
 <div class="page-header">
@@ -128,30 +241,114 @@ window.myLine = new Chart(ctx, config);
 </header>
 <div class="container" role="main">
   <div class="row">
-  <div class="col-sm-6">
-  <canvas id="myChart" width="400" height="400"></canvas><br/>
+  <div class="col-sm-12">
+<!-- <canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChartHotspots" width="400" height="400"></canvas>
+<canvas id="myChartDBPedia" width="400" height="400"></canvas>
+<canvas id="myChartGeonames" width="400" height="400"></canvas>
+  --><div id="tabsgraph">
+  <ul>
+    <li><a href="#lgdgraph">LinkedGeoData</a></li>
+    <li><a href="#hotspotsgraph">Hotspots</a></li>
+    <!-- <li><a href="#greekgraph">Greek Administrative</a></li>-->
+    <li><a href="#dbpediagraph">DBPedia</a></li>
+    <li><a href="#geonamesgraph">Geonames</a></li>
+  </ul>
+  <div id="lgdgraph">
+    <canvas id="myChart" width="400" height="400"></canvas> </div>
+  <div id="hotspotsgraph">
+  <canvas id="myChartHotspots" width="400" height="400"></canvas>
+     </div>
+  <!-- div id="greekgraph">
+    <canvas id="myChartGreek" width="400" height="400"></canvas>
+  </div>-->
+    <div id="dbpediagraph" >
+   <canvas id="myChartDBPedia" width="400" height="400"></canvas>
+  </div>
+    <div id="geonamesgraph">
+   <canvas id="myChartGeonames" width="400" height="400"></canvas>
+  </div>
+</div>
+  <br/>
 <select id="dataset">
-<option value="testdata2.ttl" selected="selected">Geographica LinkedGeoData Set</option>
+<option value="linkedgeodata.ttl" selected="selected">Geographica LinkedGeoData Set</option>
+<option value="cologne.ttl">Cologne Street Dataset</option>
+<option value="gag.ttl">Greek Administrative Set</option>
+<option value="hotspots.ttl">Geographica Hotspots Set</option>
+<option value="dbpedia.ttl">Geographica DBPedia Set</option>
+<option value="geonames.ttl">Geographica Geonames Set</option>
 <option value="rasterexample.ttl">Example Raster Data Set</option>
+<option value="all">All</option>
 <!--<option value="testdata.ttl">Rheinland Pfalz Testset</option>
 <option value="testdata3.ttl">Brandenburg TestSet</option>
 <option value="testdata4.ttl">Hospital TestSet</option>-->
 </select>
-<br/>
+<input type="checkbox" name="onlycategories" id="onlycategories" value="cats" onClick="paintResults()">Show only categories
+<br/><input type="checkbox" name="nocategories" id="nocategories" value="nocats" onClick="paintResults()">No categories
+<button id="downloadImageButton" onclick="downloadImage()">Download Image</button>
+<button id="downloadJSONButton" onclick='downloadObjectAsJson(webserviceresult,"result")'>Download JSON Result</button><br/>
 <select id="benchmarktest">
 <option value="all" selected="selected">All</option>
-<option value="rasterexample.ttl" selected="selected">LoadRaster</option>
-<option value="rasterexample.ttl">ModifyRaster</option>
-<option value="rasterexample.ttl">Import/Export Raster</option>
-<option value="testdata2.ttl">GeometryModification Vector</option>
-<option value="testdata2.ttl">GeometryExporter Vector</option>
+<option value="raster_accessor">Raster Accessor</option>
+<option value="raster_algebra">Raster Algebra</option>
+<option value="raster_creation">Raster Creation</option>
+<option value="raster_export">Raster Export</option>
+<option value="raster_modification">Raster Modification</option>
+<option value="raster_relation">Raster Relation</option>
+<option value="raster_vectorrelation">Raster/Vector Relation</option>
+<option value="vector_accessor">Vector Accessor</option>
+<option value="vector_creation">Vector Creation</option>
+<option value="vector_exporter">Vector Exporter</option>
+<option value="vector_modification">Vector Modification</option>
+<option value="vector_relation">Vector Relation</option>
 </select><br/>
-<button onclick="loadAllBenchmarks()">Load All Benchmarks</button>
+<button onclick="loadAllBenchmarks()">Load All Benchmarks</button><br/>
+<h4 align="center">Microbenchmark Result</h4>
+</div>
+<div class="col-sm-12" id="queryresult" class="table-wrapper-scroll-y">
+<div id="tabs">
+  <ul>
+    <li><a href="#lgdresult">LinkedGeoData</a></li>
+    <li><a href="#hotspotsresult">Hotspots</a></li>
+    <!-- <li><a href="#greekresult">Greek Administrative</a></li>-->
+    <li><a href="#dbpediaresult">DBPedia</a></li>
+    <li><a href="#geonamesresult">Geonames</a></li>
+  </ul>
+  <div id="lgdresult" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres" class="tablesorter" border="1" width="100%">
+</table>  </div>
+  <div id="hotspotsresult" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres_hotspots" class="tablesorter" border="1" width="100%">
+</table>  </div>
+  <!-- <div id="greekresult" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres_greek" class="tablesorter" border="1" width="100%">
+	</table>
+  </div>-->
+    <div id="dbpediaresult" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres_dbpedia" class="tablesorter" border="1" width="100%">
+	</table>
   </div>
-  <div class="col-sm-6" id="queryresult" class="table-wrapper-scroll-y">
-Benchmark Result:
-<table align="center" id="queryres" class="tablesorter" border="1" width="100%">
-</table>
-</div></div></div>
+    <div id="geonamesresult" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres_geonames" class="tablesorter" border="1" width="100%">
+	</table>
+  </div>
+</div>
+<h4 align="center">Macrobenchmark Result</h4>
+<div id="tabsmacrograph">
+  <ul>
+    <li><a href="#cologneflood">Cologne Flood</a></li>
+  </ul>
+  <div id="colognefloodgraph">
+    <canvas id="myChartCologne" width="400" height="400"></canvas> 
+  </div>
+</div>
+<div id="tabsmacroresult">
+  <div id="cologneflood" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres" class="tablesorter" border="1" width="100%">
+    <tr><td>Result</td></tr>
+</table>  </div>
+</div>
+</div>
+</div></div>
 </body>
 </html>

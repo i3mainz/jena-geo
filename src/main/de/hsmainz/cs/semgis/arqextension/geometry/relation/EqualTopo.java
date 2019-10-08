@@ -1,11 +1,13 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
-import java.awt.geom.Rectangle2D;
-
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
+import org.opengis.geometry.Envelope;
+import org.opengis.geometry.MismatchedDimensionException;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
@@ -20,22 +22,28 @@ public class EqualTopo extends FunctionBase2 {
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v1);
 		Wrapper wrapper2=LiteralUtils.rasterOrVector(v2);
 		if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {
-			return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().equalsTopo(((GeometryWrapper)wrapper2).getXYGeometry()));
+			GeometryWrapper transGeom2;
+			try {
+				transGeom2 = ((GeometryWrapper)wrapper2).transform(((GeometryWrapper)wrapper1).getSrsInfo());
+				return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().equalsTopo(transGeom2.getXYGeometry()));
+			} catch (MismatchedDimensionException | TransformException | FactoryException e) {
+				throw new RuntimeException("CRS transformation failed");
+			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
-			return NodeValue.makeBoolean(raster.getEnvelope2D().equals(raster2.getEnvelope2D()));		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
+			return NodeValue.makeBoolean(raster.getGridGeometry().getEnvelope().equals(raster2.getGridGeometry().getEnvelope()));		
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
-				return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1.getBounds()).equalsTopo((geom)));
+				return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1).equalsTopo((geom)));
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
-				return NodeValue.makeBoolean(geom.equalsTopo(LiteralUtils.toGeometry(bbox1.getBounds())));				
+				return NodeValue.makeBoolean(geom.equalsTopo(LiteralUtils.toGeometry(bbox1)));				
 			}
 		}
 	}

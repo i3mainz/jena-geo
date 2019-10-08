@@ -10,7 +10,7 @@ import org.apache.jena.sparql.function.FunctionBase1;
 import com.conveyal.data.geobuf.GeobufEncoder;
 
 import geobuf.Geobuf.Data.Geometry;
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Return a Geobuf representation of a set of rows.

@@ -1,12 +1,17 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 import org.apache.jena.sparql.expr.NodeValue;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.io.CoverageIO;
-import org.geotoolkit.coverage.io.CoverageStoreException;
-import org.geotoolkit.image.io.SpatialImageWriteParam;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.StorageConnector;
+import org.apache.sis.storage.geotiff.GeoTiffStore;
+import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
 import org.geotoolkit.image.io.plugin.TiffImageWriter;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
@@ -26,6 +31,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 	public String unparse(Object geometry) {
 		if (geometry instanceof CoverageWrapper) {
 			CoverageWrapper geometryWrapper = (CoverageWrapper) geometry;
+			
 			TiffImageWriter writer = new TiffImageWriter(null);
 			SpatialImageWriteParam writerParam = writer.getDefaultWriteParam();
 			String compression = null;
@@ -35,7 +41,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 			 * writerParam.setCompressionType(compression); }
 			 */
 			try {
-				writer.write(((CoverageWrapper) geometry).getXYGeometry().getRenderedImage());
+				writer.write(((CoverageWrapper) geometry).getXYGeometry().render(null).getData());
 				writer.endWriteSequence();
 				return writer.getOutput().toString();
 			} catch (IOException e) {
@@ -49,14 +55,16 @@ public class GeoTIFFDatatype extends RasterDataType {
 
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
-		GridCoverage2D coverage;
+		InputStream stream = new ByteArrayInputStream(geometryLiteral.getBytes(StandardCharsets.UTF_8));
+		final StorageConnector c = new StorageConnector(stream);
+		GeoTiffStoreProvider prov=new GeoTiffStoreProvider();
+		GridCoverage cov;
 		try {
-			coverage = CoverageIO.read(geometryLiteral);
-			return new CoverageWrapper(coverage, URI);
-		} catch (CoverageStoreException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			throw new RuntimeException();
+			GeoTiffStore store=new GeoTiffStore(prov,c);
+			cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
+			return new CoverageWrapper(cov, URI);
+		} catch (DataStoreException e) {
+			throw new RuntimeException(e.getMessage());
 		}
 
 	}

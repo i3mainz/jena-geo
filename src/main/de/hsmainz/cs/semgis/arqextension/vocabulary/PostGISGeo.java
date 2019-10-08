@@ -98,6 +98,7 @@ public class PostGISGeo {
    public static final Property st_chaikinSmooting = property("ST_ChaikinSmoothing");
    public static final Property st_clip = property("ST_Clip");
    public static final Property st_clipByBox2D = property("ST_ClipByBox2D");
+   public static final Property st_closestCooordinate = property("ST_ClosestCoordinate");
    public static final Property st_closestPoint = property("ST_ClosestPoint");
    public static final Property st_closestPoint3d = property("ST_3DClosestPoint");
    public static final Property st_closestPointOfApproach = property("ST_ClosestPointOfApproach");
@@ -144,6 +145,7 @@ public class PostGISGeo {
    public static final Property st_forcePolygonCCW = property("ST_ForcePolygonCCW");
    public static final Property st_forceSFS = property("ST_ForceSFS");
    public static final Property st_frechetDistance = property("ST_FrechetDistance");
+   public static final Property st_furthestCoordinate = property("ST_FurthestCoordinate");
    public static final Property st_generatePoints = property("ST_GeneratePoints");
    public static final Property st_geohash = property("ST_GeoHash");
    public static final Property st_geomCollFromText = property("ST_CollFromText");
@@ -428,6 +430,8 @@ public static final String HexWKBRaster = "HexWKBRaster";
 public static final String TopoJSON = "TopoJSON";
 public static final String TemporalRange="TemporalRange";
 public static final String CoverageJSON = "CoverageJSON";
+
+
 
 
 

@@ -14,7 +14,6 @@ public class PixelSize extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();
-		raster.getGridGeometry().getEnvelope().
 		return NodeValue.makeInteger(raster.render(raster.getGridGeometry().getExtent()).getTileGridXOffset());
 
 	}

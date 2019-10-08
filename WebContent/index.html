@@ -24,6 +24,22 @@
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
    
   <script>
+  function saveTextAsFile(tosave,fileext,filename)
+  {
+      var a = document.createElement('a');
+      a.style = "display: none";  
+      var blob= new Blob([tosave], {type:'text/plain'});
+      var url = window.URL.createObjectURL(blob);
+      var filename = filename+fileext;
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function(){
+          document.body.removeChild(a);
+          window.URL.revokeObjectURL(url);  
+      }, 1000);
+  }
 var prefixList="PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xerl: <http://www.xerleben.de/schema/2.0_1#>\nPREFIX xplan5: <http://www.xplanung.de/xplangml/5/0#>\nPREFIX semgis: <http://www.semgis.de/geodata#> "
 
 	var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
@@ -71,7 +87,7 @@ function clearMap() {
 
 
 
-  function sendQuery(){
+  function sendQuery(geojsonres){
 	var url=document.location.href
 	if(!url.endsWith("/")){
 		url+="/"
@@ -105,7 +121,12 @@ function clearMap() {
         for(layer in json["geojson"]){
             var officiallayer=L.geoJSON(json["geojson"][layer],{
             	coordsToLatLng: function (coords) {
-                    return new L.LatLng(coords[0], coords[1], coords[2]);
+            		//console.log($('#dataset').val())
+            		/*if($('#dataset').val()=="linkedgeodata.ttl"){
+            			return new L.LatLng(coords[0], coords[1], coords[2]);
+            		}*/
+            		return new L.LatLng(coords[1], coords[0], coords[2]);
+                    
                 },
                 style: function(){
                 	return {fillColor: ("color" in json["geojson"][layer]?json["geojson"][layer]["color"]:colorArray[layer%colorArray.length]),
@@ -132,6 +153,9 @@ function clearMap() {
 		overlayControl = L.control.layers(baseMaps, overlays).addTo(mymap);
         mymap.fitBounds(officiallayer.getBounds());
         $("#queryres").tablesorter(); 
+        if(geojsonres){
+        	saveTextAsFile(JSON.stringify(json["geojson"][0],null, 2),".geojson","queryresult")
+        }
     });
   }
   
@@ -407,7 +431,12 @@ $( document ).ready(function() {
 <textarea id="queryinput" rows=16 cols=45>
 </textarea><br/>
 <select id="dataset">
-<option value="testdata2.ttl" selected="selected">Geographica LinkedGeoData Set</option>
+<option value="linkedgeodata.ttl" selected="selected">Geographica LinkedGeoData Set</option>
+<option value="cologne.ttl">Cologne Street Dataset</option>
+<option value="gag.ttl">Greek Administrative Dataset</option>
+<option value="hotspots.ttl">Geographica Hotspots Set</option>
+<option value="dbpedia.ttl">Geographica DBPedia Set</option>
+<option value="geonames.ttl">Geographica Geonames Set</option>
 <option value="rasterexample.ttl">Example Raster Data Set</option>
 <!--<option value="testdata.ttl">Rheinland Pfalz Testset</option>
 <option value="testdata3.ttl">Brandenburg TestSet</option>
@@ -418,7 +447,8 @@ $( document ).ready(function() {
 <br/>
 <b>Note2: </b> Egenhofer relation functions beginning with ST can take both raster and vector data as input.
 <br/>
-<button id="sendQueryButton" onClick="sendQuery()">Query</button>
+<button id="sendQueryButton" onClick="sendQuery(false)">Query</button>
+<button id="sendQueryGeoJSONButton" onClick="sendQuery(true)">Query with GeoJSON result</button>
 </div>
    
     <div class="col-sm-7" id="mapid">

@@ -17,7 +17,10 @@ import org.locationtech.jts.geom.Polygon;
 import org.locationtech.jts.geom.Triangle;
 import org.twak.camp.Edge;
 import org.twak.camp.Machine;
+import org.twak.camp.Output.SharedEdge;
+import org.twak.camp.Skeleton;
 import org.twak.utils.collections.Loop;
+import org.twak.utils.collections.LoopL;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 

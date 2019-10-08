@@ -28,11 +28,11 @@ public class FilterByT extends FunctionBase3 {
             Days tolerance=Days.days(5);
             List<Coordinate> result=new ArrayList<Coordinate>();
             for(Coordinate coord:geom.getCoordinates()) {
-            	if(coord.getT()!=null && coord.getT()>precisionMin && coord.getM()<precisionMax) {
-            		if(returnM)
+            	if(coord.getT()!=null && coord.getT()>precisionMin && coord.getT()<precisionMax) {
+            		if(returnT)
             			result.add(coord);
             	}else {
-            		if(!returnM)
+            		if(!returnT)
             			result.add(coord);
             	}
             }

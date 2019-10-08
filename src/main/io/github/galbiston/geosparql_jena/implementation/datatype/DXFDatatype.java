@@ -83,15 +83,15 @@ public class DXFDatatype extends GeometryDatatype {
             	DXFPoint point=new DXFPoint();
             	point.setX(((Point)geom).getX());
             	point.setY(((Point)geom).getY());
-            	doc.add
             }else if(geom instanceof LineString) {
             	DXFLine line=new DXFLine();
             }
-            if(geometryWrapper.getXYGeometry().getGeometryType().equals("LineString")){
+            return null;
+            /*if(geometryWrapper.getXYGeometry().getGeometryType().equals("LineString")){
                 return encodePolyline((LineString)geometryWrapper.getXYGeometry());            	
             }else {
                 throw new AssertionError("Object passed to EncodedPolylineDatatype is not a LineString: " + geometry);
-            }
+            }*/
         } else {
             throw new AssertionError("Object passed to EncodedPolylineDatatype is not a GeometryWrapper: " + geometry);
         }

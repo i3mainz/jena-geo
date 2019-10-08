@@ -5,8 +5,7 @@ import javax.media.jai.iterator.WritableRectIter;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
-import org.geotoolkit.coverage.grid.GridCoordinates2D;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.jaitools.tiledimage.DiskMemImage;
 
 public class Roughness extends FunctionBase4{
@@ -17,7 +16,7 @@ public class Roughness extends FunctionBase4{
 		return null;
 	}
 	
-	 public GridCoverage2D execute(GridCoverage2D inputGc) {
+	 public GridCoverage execute(GridCoverage inputGc) {
 	        this.initSurface(inputGc);
 
 	        DiskMemImage outputImage = this.createDiskMemImage(inputGc, RasterPixelType.FLOAT);

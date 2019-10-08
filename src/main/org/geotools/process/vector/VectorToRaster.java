@@ -43,6 +43,8 @@ import java.util.logging.Logger;
 import javax.media.jai.RasterFactory;
 import javax.media.jai.TiledImage;
 
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.DirectPosition2D;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.util.iso.SimpleInternationalString;
@@ -132,13 +134,13 @@ public class VectorToRaster implements VectorProcess {
 
     private ValueSource valueSource;
 
-    GridCoverage2D result;
+    GridCoverage result;
     private Number minAttValue;
     private Number maxAttValue;
 
     private ReferencedEnvelope extent;
     private Geometry extentGeometry;
-    private GridGeometry2D gridGeom;
+    private GridGeometry gridGeom;
 
     private boolean transformFeatures;
     private MathTransform featureToRasterTransform;

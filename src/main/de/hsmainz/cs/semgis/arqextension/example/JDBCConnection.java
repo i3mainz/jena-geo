@@ -1,65 +1,105 @@
 package de.hsmainz.cs.semgis.arqextension.example;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.postgis.PGgeometry;
-import org.postgresql.util.PGobject;
+import org.postgresql.jdbc2.optional.ConnectionPool;
 
 public class JDBCConnection {
 
 	public static Connection jdbcConnection;
 	
-	Integer resultSize=0;
+	public static Integer resultSize=0;
 	
-	java.sql.Connection conn; 
+	static java.sql.Connection conn; 
 	
-	public JDBCConnection() {
+	static ConnectionPool pool;
 	
+	public static JDBCConnection INSTANCE;
+	
+	public JDBCConnection() {	
 		try { 
+			
+			this.pool=new ConnectionPool();
+		    pool.setUrl("jdbc:postgresql://localhost:5432/geographica_raster");
+		    pool.setUser("postgres");
+		    pool.setPassword("postgres");
+		    pool.setProtocolVersion(3);
+		    conn = pool.getConnection();
 		    /* 
 		    * Load the JDBC driver and establish a connection. 
 		    */
 		    Class.forName("org.postgresql.Driver"); 
-		    String url = "jdbc:postgresql://localhost:5432/database"; 
-		    conn = DriverManager.getConnection(url, "postgres", ""); 
+		    String url = "jdbc:postgresql://127.0.0.1:5432/postgres"; 
+		   	
+		    ConnectionPool pool = new ConnectionPool();
+		    pool.setUrl("jdbc:postgresql://localhost:5432/geographica_raster");
+		    pool.setUser("postgres");
+		    pool.setPassword("postgres");
+		    pool.setProtocolVersion(3);
+		    Connection conn = pool.getConnection();
+		    
+		    //conn = DriverManager.getConnection(url, "postgres", "postgres"); 
+		    
+		    
 		    /* 
 		    * Add the geometry types to the connection. Note that you 
 		    * must cast the connection to the pgsql-specific connection 
 		    * implementation before calling the addDataType() method. 
 		    */
-		    ((org.postgresql.PGConnection)conn).addDataType("geometry",(Class<? extends PGobject>) Class.forName("org.postgis.PGgeometry"));
-		    ((org.postgresql.PGConnection)conn).addDataType("box3d",(Class<? extends PGobject>) Class.forName("org.postgis.PGbox3d"));
+		    //((org.postgresql.PGConnection)conn).addDataType("geometry",(Class<? extends PGobject>) Class.forName("org.postgis.PGgeometry"));
+		    //((org.postgresql.PGConnection)conn).addDataType("box3d",(Class<? extends PGobject>) Class.forName("org.postgis.PGbox3d"));
 
 		    /* 
 		    * Create a statement and execute a select query. 
 		    */ 
-		    Statement s = conn.createStatement(); 
-		    ResultSet r = s.executeQuery("select geom,id from geomtable"); 
+		   /* Statement s = conn.createStatement(); 
+		    ResultSet r = s.executeQuery("select wkb_geometry from geographica_vector"); 
 		    while( r.next() ) { 
 		      /* 
 		      * Retrieve the geometry as an object then cast it to the geometry type. 
 		      * Print things out. 
-		      */ 
+		      
 		      PGgeometry geom = (PGgeometry)r.getObject(1); 
-		      int id = r.getInt(2); 
+		      int id = r.getInt(1); 
 		      System.out.println("Row " + id + ":");
 		      System.out.println(geom.toString()); 
 		    } 
 		    s.close(); 
-		    conn.close(); 
+		    conn.close(); */
 		  } 
 		catch( Exception e ) { 
 		  e.printStackTrace(); 
 		  } 
-		}  	
+		}  
+	
+	public static JDBCConnection getInstance() {
+		if(INSTANCE==null) {
+			INSTANCE=new JDBCConnection();
+		}
+		return INSTANCE;
+	}
 	
 	public static void executeQuery(String query) throws SQLException {
-		PreparedStatement p = jdbcConnection.prepareStatement(query);
-		p.executeQuery();
+		System.out.println(query);
+		if(conn==null) {
+			conn=pool.getConnection();
+		}
+		Statement s = conn.createStatement(); 
+	    ResultSet r = s.executeQuery(query); 
+	    resultSize=0;
+	    while (r.next()) {        
+	    	resultSize++;
+	    }
+	    r.close();
+	    s.close(); 
+	    //conn.close(); 
+	}
+	
+	public static void main(String[] args) throws SQLException {
+		JDBCConnection.getInstance().executeQuery("select * from geographica_vector");
+		System.out.println(JDBCConnection.resultSize);
 	}
 }
