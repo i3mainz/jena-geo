@@ -65,3 +65,4 @@ public class Xor extends FunctionBase2  {
 	} 
 
 }
+

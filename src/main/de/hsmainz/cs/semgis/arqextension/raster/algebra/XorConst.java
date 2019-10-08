@@ -64,3 +64,4 @@ public class XorConst extends FunctionBase2  {
 	} 
 
 }
+

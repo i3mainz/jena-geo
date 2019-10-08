@@ -8,10 +8,20 @@ import java.nio.charset.StandardCharsets;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
+<<<<<<< HEAD
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.geotiff.GeoTiffStore;
 import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
+=======
+import org.apache.sis.storage.StorageConnector;
+import org.apache.sis.storage.geotiff.;
+import org.apache.sis.storage.geotiff.GeoTiffStore;
+import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
+import org.geotoolkit.coverage.io.CoverageIO;
+import org.geotoolkit.coverage.io.CoverageStoreException;
+import org.geotoolkit.image.io.SpatialImageWriteParam;
+>>>>>>> 914d7d9f3ec4aad04f53948ee35645f876dc4b77
 import org.geotoolkit.image.io.plugin.TiffImageWriter;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
@@ -66,7 +76,6 @@ public class GeoTIFFDatatype extends RasterDataType {
 		} catch (DataStoreException e) {
 			throw new RuntimeException(e.getMessage());
 		}
-
 	}
 
 }

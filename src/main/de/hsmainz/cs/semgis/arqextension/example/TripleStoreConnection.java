@@ -45,7 +45,6 @@ public class TripleStoreConnection {
 		modelmap.put("gag.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("geonames.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("hotspots.ttl", ModelFactory.createOntologyModel());
-		modelmap.put("dbpedia.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("rasterexample.ttl", ModelFactory.createOntologyModel());
 		// modelmap.put("testdata3.ttl", ModelFactory.createOntologyModel());
 		// modelmap.put("testdata4.ttl", ModelFactory.createOntologyModel());
@@ -168,7 +167,6 @@ public class TripleStoreConnection {
 						jsonobj.put(name, solu.get(name));
 						obj.put(jsonobj);
 					}
-
 				}
 				first = false;
 			}
@@ -201,5 +199,4 @@ public class TripleStoreConnection {
 		System.out.println(res);
 		System.out.println(res);
 	}
-
 }
