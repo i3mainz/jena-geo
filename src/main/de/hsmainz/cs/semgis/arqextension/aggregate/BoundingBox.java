@@ -1,5 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.aggregate;
 
+import java.util.Arrays;
+
 import org.apache.jena.graph.Node;
 import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.Expr;
@@ -11,9 +13,12 @@ import org.apache.jena.sparql.expr.aggregate.Aggregator;
 import org.apache.jena.sparql.expr.aggregate.AggregatorBase;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.Geometry;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class BoundingBox extends AggregatorBase {
 
@@ -71,27 +76,25 @@ public class BoundingBox extends AggregatorBase {
         { 
         	GeometryWrapper geometry = GeometryWrapper.extract(nv);
             Geometry geo=geometry.getXYGeometry();
-            geo.getEnvelope().getCoordinates()
-            Double localmaxZ=0.,Double localmax;
-        	for(Coordinate coord:geo.getCoordinates()) {
-            	if(localmaxZ<coord.getZ()) {
-            		localmaxZ=coord.getZ();
-            	}
-            }
-        	NodeValue localMax=NodeValue.makeDouble(localmaxZ);
-        	
-            if ( maxSoFar == null )
-            {
-                maxSoFar = localMax ;
-                if ( DEBUG ) System.out.println("max: init : "+localMax) ;
-                return ;
-            }
-
-            int x = NodeValue.compareAlways(maxSoFar, localMax) ;
+        	NodeValue localMaxX=NodeValue.makeDouble(geo.getEnvelopeInternal().getMaxX());
+        	NodeValue localMaxY=NodeValue.makeDouble(geo.getEnvelopeInternal().getMaxY());
+        	NodeValue localMinX=NodeValue.makeDouble(geo.getEnvelopeInternal().getMinX());
+        	NodeValue localMinY=NodeValue.makeDouble(geo.getEnvelopeInternal().getMinY());
+        	if(minXSoFar==null) {
+        		minXSoFar=localMinX;
+        	}
+            int x = NodeValue.compareAlways(maxXSoFar, localMaxX) ;
             if ( x < 0 )
-                maxSoFar = localMax ;
-
-            if ( DEBUG ) System.out.println("max: "+localMax+" ==> "+maxSoFar) ;
+                maxXSoFar = localMaxX ;
+            x = NodeValue.compareAlways(maxYSoFar, localMaxY) ;
+            if ( x < 0 )
+                maxYSoFar = localMaxY ;
+            x = NodeValue.compareAlways(maxYSoFar, localMinX) ;
+            if ( x > 0 )
+                minXSoFar = localMinX ;
+            x = NodeValue.compareAlways(maxYSoFar, localMinY) ;
+            if ( x > 0 )
+                minYSoFar = localMinY ;
         }
 
         @Override
@@ -100,7 +103,10 @@ public class BoundingBox extends AggregatorBase {
 
         @Override
         public NodeValue getAccValue()
-        { return maxSoFar ; }
+        { 
+        	Envelope env=new Envelope(new Coordinate(minXSoFar.getDouble(), minYSoFar.getDouble()), new Coordinate(maxXSoFar.getDouble(),maxYSoFar.getDouble()));
+        	return GeometryWrapperFactory.createPolygon(env, "http://www.opengis.net/ont/geosparql#wktLiteral").asNodeValue();
+        }
     }
 
 }
