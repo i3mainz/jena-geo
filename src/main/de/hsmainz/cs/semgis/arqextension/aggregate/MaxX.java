@@ -18,7 +18,7 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 public class MaxX extends AggregatorBase {
 
 	protected MaxX(String name, boolean isDistinct, Expr expr) {
-		super("MAXX", true, expr);
+		super("MAXX", false, expr);
 		// TODO Auto-generated constructor stub
 	}
 	

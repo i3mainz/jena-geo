@@ -17,6 +17,11 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class MinX extends AggregatorBase {
 
+	protected MinX(String name, boolean isDistinct, Expr expr) {
+		super("MINX", false, expr);
+		// TODO Auto-generated constructor stub
+	}
+	
 	protected MinX(Expr expr) {
 		super("MINX", true, expr);
 		// TODO Auto-generated constructor stub

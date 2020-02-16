@@ -16,8 +16,9 @@ import org.locationtech.jts.geom.Geometry;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class MinY extends AggregatorBase {
-	protected MinY(Expr expr,boolean isDistinct) {
-		super("MINY", isDistinct, expr);
+	protected MinY(String name, boolean isDistinct, Expr expr) {
+		super("MINY", false, expr);
+		// TODO Auto-generated constructor stub
 	}
 	
 	protected MinY(Expr expr) {
