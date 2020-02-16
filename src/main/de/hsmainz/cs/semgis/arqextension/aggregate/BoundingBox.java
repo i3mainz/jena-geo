@@ -1,7 +1,5 @@
 package de.hsmainz.cs.semgis.arqextension.aggregate;
 
-import java.util.Arrays;
-
 import org.apache.jena.graph.Node;
 import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.Expr;
@@ -18,7 +16,6 @@ import org.locationtech.jts.geom.Geometry;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class BoundingBox extends AggregatorBase {
 
@@ -29,32 +26,32 @@ public class BoundingBox extends AggregatorBase {
 
 	@Override
 	public Aggregator copy(ExprList exprs) {
-		// TODO Auto-generated method stub
-		return null;
+		return new BoundingBox(exprs.get(0)) ;
 	}
 
 	@Override
 	public boolean equals(Aggregator other, boolean bySyntax) {
-		// TODO Auto-generated method stub
-		return false;
+		if ( other == null ) return false ;
+        if ( this == other ) return true ; 
+        if ( ! ( other instanceof BoundingBox ) )
+            return false ;
+        BoundingBox agg = (BoundingBox)other ;
+        return exprList.equals(agg.exprList, bySyntax) ;
 	}
 
 	@Override
 	public Accumulator createAccumulator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new AccBBOX(getExpr());
 	}
 
 	@Override
 	public Node getValueEmpty() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getExpr().hashCode() ;
 	}
 	
 	private static class AccBBOX extends AccumulatorExpr
@@ -62,14 +59,10 @@ public class BoundingBox extends AggregatorBase {
         // Non-empty case but still can be nothing because the expression may be undefined.
         private NodeValue maxXSoFar = null ;     
         private NodeValue maxYSoFar = null ;
-        private NodeValue maxZSoFar = null ;
         private NodeValue minXSoFar = null ;
         private NodeValue minYSoFar = null ;
-        private NodeValue minZSoFar = null ;
 
         public AccBBOX(Expr expr) { super(expr, false) ; }
-
-        static final boolean DEBUG = false ;
 
         @Override
         public void accumulate(NodeValue nv, Binding binding, FunctionEnv functionEnv)
