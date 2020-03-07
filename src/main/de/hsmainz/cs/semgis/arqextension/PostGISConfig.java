@@ -208,8 +208,10 @@ import de.hsmainz.cs.semgis.arqextension.polygon.Polygon;
 import de.hsmainz.cs.semgis.arqextension.polygon.Tesselate;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.InteriorRingN;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsConvex;
+import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsIsocelesTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsPolygonCCW;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsPolygonCW;
+import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.NumInteriorRings;
 import de.hsmainz.cs.semgis.arqextension.polygon.constructor.MPolyFromText;
 import de.hsmainz.cs.semgis.arqextension.polygon.constructor.MakePolygon;
@@ -439,6 +441,7 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_isEmpty.getURI(), IsEmpty.class);
             functionRegistry.put(PostGISGeo.st_isGrayscale.getURI(), IsGrayscale.class);
             functionRegistry.put(PostGISGeo.st_isIndexed.getURI(), IsIndexed.class);
+            functionRegistry.put(PostGISGeo.st_isIsocelesTriangle.getURI(), IsIsocelesTriangle.class);
             functionRegistry.put(PostGISGeo.st_isMeasured.getURI(), IsMeasured.class);
             functionRegistry.put(PostGISGeo.st_isMorePrecise.getURI(), IsMorePrecise.class);
             functionRegistry.put(PostGISGeo.st_isNodingValid.getURI(), IsNodingValid.class);
@@ -450,6 +453,7 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_isSimple.getURI(), IsSimpleFF.class);
             functionRegistry.put(PostGISGeo.st_isTiled.getURI(), IsTiled.class);
             functionRegistry.put(PostGISGeo.st_isTranslucent.getURI(), IsTranslucent.class);
+            functionRegistry.put(PostGISGeo.st_isTriangle.getURI(), IsTriangle.class);
             functionRegistry.put(PostGISGeo.st_isValid.getURI(), IsValidFF.class);
             functionRegistry.put(PostGISGeo.st_isValidTrajectory.getURI(), IsValidTrajectory.class);
             functionRegistry.put(PostGISGeo.st_isValidReason.getURI(), IsValidReason.class);

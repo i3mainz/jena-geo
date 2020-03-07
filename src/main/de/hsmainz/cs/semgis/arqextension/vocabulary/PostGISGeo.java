@@ -20,6 +20,9 @@ import org.apache.jena.rdf.model.ResourceFactory;
 public class PostGISGeo {
    public static final String uri = "http://www.opengis.net/ont/geosparql#";
 
+
+
+
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -175,6 +178,7 @@ public class PostGISGeo {
    public static final Property st_isEmpty = property("ST_IsEmpty");
    public static final Property st_isGrayscale = property("ST_IsGrayscale");
    public static final Property st_isIndexed = property("ST_IsIndexed");
+   public static final Property st_isIsocelesTriangle= property("ST_IsIsocelesTriangle");
    public static final Property st_isMeasured = property("ST_IsMeasured");
    public static final Property st_isMorePrecise = property("ST_IsMorePrecise");
    public static final Property st_isNodingValid = property("ST_IsNodingValid");
@@ -186,6 +190,7 @@ public class PostGISGeo {
    public static final Property st_isSimple = property("ST_IsSimple");
    public static final Property st_isTiled = property("ST_IsTiled");
    public static final Property st_isTranslucent = property("ST_IsTranslucent");
+   public static final Property st_isTriangle= property("ST_IsTriangle");
    public static final Property st_isValid = property("ST_IsValid");
    public static final Property st_isValidDetail = property("ST_IsValidDetail");
    public static final Property st_isValidReason = property("ST_IsValidReason");
@@ -252,7 +257,9 @@ public class PostGISGeo {
    public static final Property st_nDims = property("ST_NDims");
    public static final Property st_nRings = property("ST_NRings");
    public static final Property st_numBands = property("ST_NumBands");
+   public static final Property st_numDistinctPoints=property("ST_NumDistinctPoints");
    public static final Property st_numGeometries = property("ST_NumGeometries");
+   public static final Property st_numDistinctGeometries=property("ST_NumDistinctGeometries");
    public static final Property st_numInteriorRings = property("ST_NumInteriorRings");
    public static final Property st_numPatches = property("ST_NumPatches");
    public static final Property st_numPoints = property("ST_NumPoints");
@@ -377,6 +384,8 @@ public class PostGISGeo {
    public static final Property st_tilewidth = property("ST_TileWidth");
    public static final Property st_tMax = property("ST_TMax");
    public static final Property st_tMin = property("ST_TMin");
+   public static final Property st_toDegrees=property("ST_ToDegrees");
+   public static final Property st_toRadians=property("ST_ToRadians");
    public static final Property st_tpi = property("ST_TPI");
    public static final Property st_tri = property("ST_TRI");
    public static final Property st_transform = property("ST_Transform");
