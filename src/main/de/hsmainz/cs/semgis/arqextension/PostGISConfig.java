@@ -505,9 +505,11 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_multiplyz.getURI(), MultiplyZ.class);
             functionRegistry.put(PostGISGeo.st_nearestValue.getURI(), NearestValue.class);
             functionRegistry.put(PostGISGeo.st_numBands.getURI(), NumBands.class);
+            functionRegistry.put(PostGISGeo.st_numDistinctGeometries.getURI(), NumGeometries.class);
             functionRegistry.put(PostGISGeo.st_numGeometries.getURI(), NumGeometries.class);
             functionRegistry.put(PostGISGeo.st_numInteriorRings.getURI(), NumInteriorRings.class);
             functionRegistry.put(PostGISGeo.st_numPatches.getURI(), NumPatches.class);
+            functionRegistry.put(PostGISGeo.st_numDistinctPoints.getURI(), NumGeometries.class);
             functionRegistry.put(PostGISGeo.st_numPoints.getURI(), NumPoints.class);
             functionRegistry.put(PostGISGeo.st_numXTiles.getURI(), NumXTiles.class);
             functionRegistry.put(PostGISGeo.st_numYTiles.getURI(), NumYTiles.class);
