@@ -211,6 +211,7 @@ import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsConvex;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsIsocelesTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsPolygonCCW;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsPolygonCW;
+import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsRightTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.NumInteriorRings;
 import de.hsmainz.cs.semgis.arqextension.polygon.constructor.MPolyFromText;
@@ -289,6 +290,7 @@ import io.github.galbiston.geosparql_jena.geof.topological.filter_functions.geom
 import io.github.galbiston.geosparql_jena.geof.topological.filter_functions.geometry_property.IsValidFF;
 
 import org.apache.jena.sparql.function.FunctionRegistry;
+
 
 public class PostGISConfig {
 
@@ -449,6 +451,7 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_isPointInRing.getURI(), IsPointInRing.class);
             functionRegistry.put(PostGISGeo.st_isPolygonCW.getURI(), IsPolygonCW.class);
             functionRegistry.put(PostGISGeo.st_isPolygonCCW.getURI(), IsPolygonCCW.class);
+            functionRegistry.put(PostGISGeo.st_isRightTriangle.getURI(), IsRightTriangle.class);
             functionRegistry.put(PostGISGeo.st_isRing.getURI(), IsRing.class);
             functionRegistry.put(PostGISGeo.st_isSimple.getURI(), IsSimpleFF.class);
             functionRegistry.put(PostGISGeo.st_isTiled.getURI(), IsTiled.class);

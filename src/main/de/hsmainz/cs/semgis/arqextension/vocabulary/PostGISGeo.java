@@ -20,9 +20,6 @@ import org.apache.jena.rdf.model.ResourceFactory;
 public class PostGISGeo {
    public static final String uri = "http://www.opengis.net/ont/geosparql#";
 
-
-
-
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -186,6 +183,7 @@ public class PostGISGeo {
    public static final Property st_isPointInRing = property("ST_IsPointInRing");
    public static final Property st_isPolygonCW = property("ST_IsPolygonCW");
    public static final Property st_isPolygonCCW = property("ST_IsPolygonCCW");
+   public static final Property st_isRightTriangle= property("ST_IsRightTriangle");
    public static final Property st_isRing = property("ST_IsRing");
    public static final Property st_isSimple = property("ST_IsSimple");
    public static final Property st_isTiled = property("ST_IsTiled");
