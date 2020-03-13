@@ -18,7 +18,6 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.apache.sis.referencing.GeodeticCalculator;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Point;
 import org.opengis.geometry.MismatchedDimensionException;
@@ -33,39 +32,23 @@ public class Azimuth extends FunctionBase2 {
 
     @Override
     public NodeValue exec(NodeValue arg0, NodeValue argeom1) {
-
-        try {
             GeometryWrapper geometry1 = GeometryWrapper.extract(arg0);
             GeometryWrapper geometry2 = GeometryWrapper.extract(argeom1);
-            GeometryWrapper transGeometry2 = geometry2.transform(geometry1.getSrsInfo());
-
-            Geometry geom1 = geometry1.getXYGeometry();
-            Geometry geom2 = transGeometry2.getXYGeometry();
-
-            GeodeticCalculator calc = new GeodeticCalculator();
-
-            if (geom1 instanceof Point && geom2 instanceof Point) {
-                Point2D point1 = new java.awt.Point();
-                point1.setLocation(geom1.getCoordinate().x, geom1.getCoordinate().y);
-                Point2D point2 = new java.awt.Point();
-                point2.setLocation(geom2.getCoordinate().x, geom2.getCoordinate().y);
-                calc.setStartingGeographicPoint(point1);
-                calc.setDestinationGeographicPoint(point2);
-                return NodeValue.makeDouble(calc.getAzimuth());
-            }else {
-                Point2D point1 = new java.awt.Point();
-                point1.setLocation(geom1.getCentroid().getCoordinate().x, geom1.getCentroid().getCoordinate().y);
-                Point2D point2 = new java.awt.Point();
-                point2.setLocation(geom2.getCentroid().getCoordinate().x, geom2.getCentroid().getCoordinate().y);
-                calc.setStartingGeographicPoint(point1);
-                calc.setDestinationGeographicPoint(point2);
-                return NodeValue.makeDouble(calc.getAzimuth());
-            }
-
-        } catch (DatatypeFormatException | FactoryException | MismatchedDimensionException | TransformException ex) {
-            throw new ExprEvalException(ex.getMessage(), ex);
-        }
-
+            GeometryWrapper transGeometry2;
+			try {
+				transGeometry2 = geometry2.transform(geometry1.getSrsInfo());
+	            Geometry geom1 = geometry1.getXYGeometry();
+	            Geometry geom2 = transGeometry2.getXYGeometry();
+	            if (geom1 instanceof Point && geom2 instanceof Point) {
+	            	return NodeValue.makeDouble(io.github.galbiston.geosparql_jena.implementation.great_circle.Azimuth.find(geom1.getCoordinate(), geom2.getCoordinate()));
+	            }else {
+	            	return NodeValue.makeDouble(io.github.galbiston.geosparql_jena.implementation.great_circle.Azimuth.find(geom1.getCentroid().getCoordinate(), geom2.getCentroid().getCoordinate()));
+	            }
+			} catch (MismatchedDimensionException | TransformException | FactoryException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return NodeValue.makeDouble(-1);
+			}
     }
 
 }

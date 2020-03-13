@@ -42,9 +42,11 @@ public class TripleStoreConnection {
 		modelmap = new TreeMap<String, OntModel>();
 		modelmap.put("testdata.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("linkedgeodata.ttl", ModelFactory.createOntologyModel());
+		modelmap.put("cologne.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("gag.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("geonames.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("hotspots.ttl", ModelFactory.createOntologyModel());
+		modelmap.put("synthetic.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("rasterexample.ttl", ModelFactory.createOntologyModel());
 		// modelmap.put("testdata3.ttl", ModelFactory.createOntologyModel());
 		// modelmap.put("testdata4.ttl", ModelFactory.createOntologyModel());
@@ -91,9 +93,8 @@ public class TripleStoreConnection {
 			int geomvars=0;
 			while (rs.hasNext()) {
 				QuerySolution solu=rs.next();
-				counter++;
 				if(!first) {
-					if(solu.get(geomvarname).toString().equals(lastgeom)) {
+					if(!geomvarname.isEmpty() && solu.get(geomvarname)!=null && solu.get(geomvarname).toString().equals(lastgeom)) {
 						newobject=false;
 					}else {
 						newobject=true;

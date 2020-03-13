@@ -15,7 +15,7 @@ public class InteriorPoint extends FunctionBase1 {
     public NodeValue exec(NodeValue arg0) {
 
         try {
-            GeometryWrapper geometry = GeometryWrapper.extract(arg0);           
+            GeometryWrapper geometry = GeometryWrapper.extract(arg0);   
             Geometry result = geometry.getParsingGeometry().getInteriorPoint();
             GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(result.getCoordinate(), geometry.getSrsURI(), geometry.getGeometryDatatypeURI());
             return pointWrapper.asNodeValue();

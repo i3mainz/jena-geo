@@ -20,6 +20,7 @@ import org.apache.jena.rdf.model.ResourceFactory;
 public class PostGISGeo {
    public static final String uri = "http://www.opengis.net/ont/geosparql#";
 
+
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -368,6 +369,11 @@ public class PostGISGeo {
    public static final Property st_split = property("ST_Split");
    public static final Property st_srid = property("ST_SRID");
    public static final Property st_sridToEPSG = property("ST_SRIDToEPSG");
+   public static final Property st_sridGetAxis1Name= property("ST_SRIDGetAxis1Name");
+   public static final Property st_sridGetAxis1Orientation= property("ST_SRIDGetAxis1Orientation");
+   public static final Property st_sridGetAxis2Name= property("ST_SRIDGetAxis2Name");
+   public static final Property st_sridGetAxis2Orientation= property("ST_SRIDGetAxis2Orientation");
+   public static final Property st_sridHasFlippedAxis= property("ST_SRIDHasFlippedAxis");
    public static final Property st_startPoint = property("ST_StartPoint");
    public static final Property st_straightSkeleton = property("ST_StraightSkeleton");
    public static final Property st_summary = property("ST_Summary");
