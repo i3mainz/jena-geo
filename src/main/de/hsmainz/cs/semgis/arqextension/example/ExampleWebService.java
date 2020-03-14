@@ -46,12 +46,12 @@ public class ExampleWebService {
 		System.out.println("BENCHMARK QUERY!!!");
 		final String dir = System.getProperty("user.dir");
         System.out.println("current dir = " + dir); 
-        JSONObject sqlresults=BenchmarkExecutor.benchmark(query,dataset,true);
+        //JSONObject sqlresults=BenchmarkExecutor.benchmark(query,dataset,true);
         JSONObject sparqlresults=BenchmarkExecutor.benchmark(query,dataset,false);
         System.out.println("FINISHED BENCHMARKS!");
 		JSONObject result=new JSONObject();
 		result.put("sparql",sparqlresults);
-		result.put("sql", sqlresults);
+		//result.put("sql", sqlresults);
 		System.out.println("PACKING JSON");
 		return result.toString();
 	}

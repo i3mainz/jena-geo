@@ -63,6 +63,8 @@ $.get(url+"rest/service/benchmark?query="+encodeURIComponent($('#benchmarktest')
 }
 
 function paintResults(){
+	var active = $( ".selector" ).tabs( "option", "active" );
+	console.log(active.id)
 	paintResults("queryres","myChart","LinkedGeoData")
 }
 
@@ -84,11 +86,12 @@ function paintResults(tablelink,graphlink,benchmarkname){
     //for(cat in json){
         	catcounter=0;
   		catdiff=0;
-    	table+="<tr style=\"background-color:gray\"><td>"+cat+"</td><td>Total</td><td>"+cat+"</td><td>"+sqlresult[cat]["cattotal"]+"</td><td>"+json[cat]["cattotal"]+"</td><td>"+json[cat]["catobjtotal"]+"</td></tr>"
+    	table+="<tr style=\"background-color:gray\"><td>"+cat+"</td><td>Total</td><td>"+cat+"</td><td>"+(cat in sqlresult?sqlresult[cat]["cattotal"]:"")+"</td><td>"+(cat in json?json[cat]["cattotal"]:"")+"</td><td>"+(cat in json?json[cat]["catobjtotal"]:"")+"</td></tr>"
     	reslabels.push(cat);
     	if(!document.getElementById('nocategories').checked){
     		geosparql20results.push(json[cat]["cattotal"]);
-    		postgisresults.push(sqlresult[cat]["cattotal"]);
+    		if(cat in sqlresult)
+    			postgisresults.push(sqlresult[cat]["cattotal"]);
     	}
     	sqlcounter=0;
     	linecounter=0;
@@ -109,7 +112,7 @@ function paintResults(tablelink,graphlink,benchmarkname){
     		}
     		if(!document.getElementById('onlycategories').checked){
     			geosparql20results.push(json[cat]["array"][obj]["result"]);
-    			if(obj in sqlresult[cat]["array"]){
+    			if(cat in sqlresult && "array" in sqlresult[cat] && obj in sqlresult[cat]["array"]){
     				postgisresults.push(sqlresult[cat]["array"][obj]["result"]);
     				sqlcounter++;
     			}else{
@@ -117,10 +120,11 @@ function paintResults(tablelink,graphlink,benchmarkname){
     			}			
     		}
     		table+="<tr><td>"+experiment+"</td><td>"+("dataset" in json[cat]["array"][obj]?json[cat]["array"][obj]["dataset"]:"")+"</td>"
-    		+"<td>"+cat+"</td><td>"+(obj in sqlresult[cat]["array"]?sqlresult[cat]["array"][obj]["result"]:"N/A")+"</td><td>"+json[cat]["array"][obj]["result"]+"</td>"
-    		+"<td>"+json[cat]["array"][obj]["resultsize"]+"</td></tr>"
-    		if((obj in sqlresult[cat]["array"])){
-    			var tempdiff=(json[cat]["array"][obj]["result"]-(obj in sqlresult[cat]["array"]?sqlresult[cat]["array"][obj]["result"]:0))
+    		+"<td>"+cat+"</td><td>"+((cat in sqlresult && "array" in sqlresult[cat] && obj in sqlresult[cat]["array"])?sqlresult[cat]["array"][obj]["result"]:"N/A")+"</td><td>"
+    		+json[cat]["array"][obj]["result"]+"</td>"
+    		+"<td>"+("array" in json[cat]?json[cat]["array"][obj]["resultsize"]:"")+"</td></tr>"
+    		if((cat in sqlresult && "array" in sqlresult[cat] && obj in sqlresult[cat]["array"])){
+    			var tempdiff=(json[cat]["array"][obj]["result"]-("array" in sqlresult && obj in sqlresult[cat]["array"]?sqlresult[cat]["array"][obj]["result"]:0))
     			if(tempdiff<0)
     				tempdiff*=-1;
     			diff+=tempdiff;
@@ -249,23 +253,27 @@ function paintResults(tablelink,graphlink,benchmarkname){
   <ul>
     <li><a href="#lgdgraph">LinkedGeoData</a></li>
     <li><a href="#hotspotsgraph">Hotspots</a></li>
-    <!-- <li><a href="#greekgraph">Greek Administrative</a></li>-->
+    <li><a href="#greekgraph">Greek Administrative</a></li>
     <li><a href="#dbpediagraph">DBPedia</a></li>
     <li><a href="#geonamesgraph">Geonames</a></li>
+    <li><a href="#syntheticgraph">Synthetic</a></li>
   </ul>
   <div id="lgdgraph">
     <canvas id="myChart" width="400" height="400"></canvas> </div>
   <div id="hotspotsgraph">
   <canvas id="myChartHotspots" width="400" height="400"></canvas>
      </div>
-  <!-- div id="greekgraph">
+  <div id="greekgraph">
     <canvas id="myChartGreek" width="400" height="400"></canvas>
-  </div>-->
+  </div>-
     <div id="dbpediagraph" >
    <canvas id="myChartDBPedia" width="400" height="400"></canvas>
   </div>
     <div id="geonamesgraph">
    <canvas id="myChartGeonames" width="400" height="400"></canvas>
+  </div>
+  <div id="syntheticgraph">
+   <canvas id="myChartSynthetic" width="400" height="400"></canvas>
   </div>
 </div>
   <br/>
@@ -276,6 +284,7 @@ function paintResults(tablelink,graphlink,benchmarkname){
 <option value="hotspots.ttl">Geographica Hotspots Set</option>
 <option value="dbpedia.ttl">Geographica DBPedia Set</option>
 <option value="geonames.ttl">Geographica Geonames Set</option>
+<option value="synthetic.ttl">Synthetic Data Set</option>
 <option value="rasterexample.ttl">Example Raster Data Set</option>
 <option value="all">All</option>
 <!--<option value="testdata.ttl">Rheinland Pfalz Testset</option>
@@ -309,9 +318,10 @@ function paintResults(tablelink,graphlink,benchmarkname){
   <ul>
     <li><a href="#lgdresult">LinkedGeoData</a></li>
     <li><a href="#hotspotsresult">Hotspots</a></li>
-    <!-- <li><a href="#greekresult">Greek Administrative</a></li>-->
+    <li><a href="#greekresult">Greek Administrative</a></li>
     <li><a href="#dbpediaresult">DBPedia</a></li>
     <li><a href="#geonamesresult">Geonames</a></li>
+    <li><a href="#syntheticresult">Synthetic</a></li>
   </ul>
   <div id="lgdresult" class="table-wrapper-scroll-y">
     <table align="center" id="queryres" class="tablesorter" border="1" width="100%">
@@ -319,10 +329,10 @@ function paintResults(tablelink,graphlink,benchmarkname){
   <div id="hotspotsresult" class="table-wrapper-scroll-y">
     <table align="center" id="queryres_hotspots" class="tablesorter" border="1" width="100%">
 </table>  </div>
-  <!-- <div id="greekresult" class="table-wrapper-scroll-y">
+  <div id="greekresult" class="table-wrapper-scroll-y">
     <table align="center" id="queryres_greek" class="tablesorter" border="1" width="100%">
 	</table>
-  </div>-->
+  </div>
     <div id="dbpediaresult" class="table-wrapper-scroll-y">
     <table align="center" id="queryres_dbpedia" class="tablesorter" border="1" width="100%">
 	</table>
@@ -331,19 +341,35 @@ function paintResults(tablelink,graphlink,benchmarkname){
     <table align="center" id="queryres_geonames" class="tablesorter" border="1" width="100%">
 	</table>
   </div>
+  <div id="syntheticresult" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres_synthetic" class="tablesorter" border="1" width="100%">
+	</table>
+  </div>
 </div>
 <h4 align="center">Macrobenchmark Result</h4>
 <div id="tabsmacrograph">
   <ul>
-    <li><a href="#cologneflood">Cologne Flood</a></li>
+    <li><a href="#colognefloodgraph">Cologne Flood</a></li>
+    <li><a href="#portograph">Porto Parishes</a></li>
   </ul>
   <div id="colognefloodgraph">
     <canvas id="myChartCologne" width="400" height="400"></canvas> 
   </div>
+   <div id="portograph">
+    <canvas id="myChartPorto" width="400" height="400"></canvas> 
+  </div>
 </div>
 <div id="tabsmacroresult">
+  <ul>
+    <li><a href="#cologneflood">Cologne Flood</a></li>
+    <li><a href="#porto">Porto</a></li>
+  </ul>
   <div id="cologneflood" class="table-wrapper-scroll-y">
-    <table align="center" id="queryres" class="tablesorter" border="1" width="100%">
+    <table align="center" id="queryres_cologne" class="tablesorter" border="1" width="100%">
+    <tr><td>Result</td></tr>
+</table>  </div>
+  <div id="porto" class="table-wrapper-scroll-y">
+    <table align="center" id="queryres_porto" class="tablesorter" border="1" width="100%">
     <tr><td>Result</td></tr>
 </table>  </div>
 </div>

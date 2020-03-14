@@ -44,6 +44,8 @@ import de.hsmainz.cs.semgis.arqextension.geometry.attribute.MinimumDiameter;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.MinimumDiameterLine;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.MinimumRectangle;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.NDims;
+import de.hsmainz.cs.semgis.arqextension.geometry.attribute.NumDistinctGeometries;
+import de.hsmainz.cs.semgis.arqextension.geometry.attribute.NumDistinctPoints;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.NumGeometries;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.NumPatches;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.NumPoints;
@@ -107,6 +109,17 @@ import de.hsmainz.cs.semgis.arqextension.geometry.relation.MaxDistance3D;
 import de.hsmainz.cs.semgis.arqextension.geometry.relation.Relate;
 import de.hsmainz.cs.semgis.arqextension.geometry.relation.ShortestLine;
 import de.hsmainz.cs.semgis.arqextension.geometry.relation.ShortestLine3D;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.EPSGToSRID;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SRIDGetAxis1Name;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SRIDGetAxis1Orientation;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SRIDGetAxis2Name;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SRIDGetAxis2Orientation;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SRIDHasFlippedAxis;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SRIDToEPSG;
+import de.hsmainz.cs.semgis.arqextension.geometry.srid.SetSRID;
+import de.hsmainz.cs.semgis.arqextension.geometry.temporal.FilterByT;
+import de.hsmainz.cs.semgis.arqextension.geometry.temporal.PartOfGeometryAfter;
+import de.hsmainz.cs.semgis.arqextension.geometry.temporal.PartOfGeometryBefore;
 import de.hsmainz.cs.semgis.arqextension.geometry.transform.ChaikinSmoothing;
 import de.hsmainz.cs.semgis.arqextension.geometry.transform.CollectionExtract;
 import de.hsmainz.cs.semgis.arqextension.geometry.transform.CollectionHomogenize;
@@ -206,8 +219,11 @@ import de.hsmainz.cs.semgis.arqextension.polygon.Polygon;
 import de.hsmainz.cs.semgis.arqextension.polygon.Tesselate;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.InteriorRingN;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsConvex;
+import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsIsocelesTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsPolygonCCW;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsPolygonCW;
+import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsRightTriangle;
+import de.hsmainz.cs.semgis.arqextension.polygon.attribute.IsTriangle;
 import de.hsmainz.cs.semgis.arqextension.polygon.attribute.NumInteriorRings;
 import de.hsmainz.cs.semgis.arqextension.polygon.constructor.MPolyFromText;
 import de.hsmainz.cs.semgis.arqextension.polygon.constructor.MakePolygon;
@@ -276,6 +292,8 @@ import de.hsmainz.cs.semgis.arqextension.raster.relation.SymDifference;
 import de.hsmainz.cs.semgis.arqextension.raster.transform.Resize;
 import de.hsmainz.cs.semgis.arqextension.raster.transform.Reskew;
 import de.hsmainz.cs.semgis.arqextension.raster.transform.Retile;
+import de.hsmainz.cs.semgis.arqextension.util.function.ToDegrees;
+import de.hsmainz.cs.semgis.arqextension.util.function.ToRadians;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.configuration.GeoSPARQLConfig;
 import io.github.galbiston.geosparql_jena.geof.nontopological.filter_functions.GetSRIDFF;
@@ -283,6 +301,7 @@ import io.github.galbiston.geosparql_jena.geof.topological.filter_functions.geom
 import io.github.galbiston.geosparql_jena.geof.topological.filter_functions.geometry_property.IsValidFF;
 
 import org.apache.jena.sparql.function.FunctionRegistry;
+
 
 public class PostGISConfig {
 
@@ -435,6 +454,7 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_isEmpty.getURI(), IsEmpty.class);
             functionRegistry.put(PostGISGeo.st_isGrayscale.getURI(), IsGrayscale.class);
             functionRegistry.put(PostGISGeo.st_isIndexed.getURI(), IsIndexed.class);
+            functionRegistry.put(PostGISGeo.st_isIsocelesTriangle.getURI(), IsIsocelesTriangle.class);
             functionRegistry.put(PostGISGeo.st_isMeasured.getURI(), IsMeasured.class);
             functionRegistry.put(PostGISGeo.st_isMorePrecise.getURI(), IsMorePrecise.class);
             functionRegistry.put(PostGISGeo.st_isNodingValid.getURI(), IsNodingValid.class);
@@ -442,10 +462,12 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_isPointInRing.getURI(), IsPointInRing.class);
             functionRegistry.put(PostGISGeo.st_isPolygonCW.getURI(), IsPolygonCW.class);
             functionRegistry.put(PostGISGeo.st_isPolygonCCW.getURI(), IsPolygonCCW.class);
+            functionRegistry.put(PostGISGeo.st_isRightTriangle.getURI(), IsRightTriangle.class);
             functionRegistry.put(PostGISGeo.st_isRing.getURI(), IsRing.class);
             functionRegistry.put(PostGISGeo.st_isSimple.getURI(), IsSimpleFF.class);
             functionRegistry.put(PostGISGeo.st_isTiled.getURI(), IsTiled.class);
             functionRegistry.put(PostGISGeo.st_isTranslucent.getURI(), IsTranslucent.class);
+            functionRegistry.put(PostGISGeo.st_isTriangle.getURI(), IsTriangle.class);
             functionRegistry.put(PostGISGeo.st_isValid.getURI(), IsValidFF.class);
             functionRegistry.put(PostGISGeo.st_isValidTrajectory.getURI(), IsValidTrajectory.class);
             functionRegistry.put(PostGISGeo.st_isValidReason.getURI(), IsValidReason.class);
@@ -505,9 +527,11 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_multiplyz.getURI(), MultiplyZ.class);
             functionRegistry.put(PostGISGeo.st_nearestValue.getURI(), NearestValue.class);
             functionRegistry.put(PostGISGeo.st_numBands.getURI(), NumBands.class);
+            functionRegistry.put(PostGISGeo.st_numDistinctGeometries.getURI(), NumDistinctGeometries.class);
             functionRegistry.put(PostGISGeo.st_numGeometries.getURI(), NumGeometries.class);
             functionRegistry.put(PostGISGeo.st_numInteriorRings.getURI(), NumInteriorRings.class);
             functionRegistry.put(PostGISGeo.st_numPatches.getURI(), NumPatches.class);
+            functionRegistry.put(PostGISGeo.st_numDistinctPoints.getURI(), NumDistinctPoints.class);
             functionRegistry.put(PostGISGeo.st_numPoints.getURI(), NumPoints.class);
             functionRegistry.put(PostGISGeo.st_numXTiles.getURI(), NumXTiles.class);
             functionRegistry.put(PostGISGeo.st_numYTiles.getURI(), NumYTiles.class);
@@ -616,6 +640,11 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_split.getURI(), Split.class);
             functionRegistry.put(PostGISGeo.st_srid.getURI(), GetSRIDFF.class);
             functionRegistry.put(PostGISGeo.st_sridToEPSG.getURI(), SRIDToEPSG.class);
+            functionRegistry.put(PostGISGeo.st_sridGetAxis1Name.getURI(), SRIDGetAxis1Name.class);
+            functionRegistry.put(PostGISGeo.st_sridGetAxis1Orientation.getURI(), SRIDGetAxis1Orientation.class);
+            functionRegistry.put(PostGISGeo.st_sridGetAxis2Name.getURI(), SRIDGetAxis2Name.class);
+            functionRegistry.put(PostGISGeo.st_sridGetAxis2Orientation.getURI(), SRIDGetAxis2Orientation.class);
+            functionRegistry.put(PostGISGeo.st_sridHasFlippedAxis.getURI(), SRIDHasFlippedAxis.class);
             functionRegistry.put(PostGISGeo.st_startPoint.getURI(), StartPoint.class);
             functionRegistry.put(PostGISGeo.st_straightSkeleton.getURI(), StraightSkeleton.class);
             functionRegistry.put(PostGISGeo.st_summary.getURI(), Summary.class);
@@ -629,6 +658,8 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_tileheight.getURI(), TileHeight.class);
             functionRegistry.put(PostGISGeo.st_tMin.getURI(), TMin.class);
             functionRegistry.put(PostGISGeo.st_tMax.getURI(), TMax.class);
+            functionRegistry.put(PostGISGeo.st_toDegrees.getURI(), ToDegrees.class);
+            functionRegistry.put(PostGISGeo.st_toRadians.getURI(), ToRadians.class);
             functionRegistry.put(PostGISGeo.st_transscale.getURI(), TransScale.class);
             functionRegistry.put(PostGISGeo.st_translate.getURI(), Translate.class);
             functionRegistry.put(PostGISGeo.st_transform.getURI(), Transform.class);

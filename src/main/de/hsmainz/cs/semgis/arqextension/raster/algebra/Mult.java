@@ -30,7 +30,7 @@ public class Mult extends FunctionBase2  {
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 
 	     pbSubtracted.addSource(raster2.render(raster2.getGridGeometry().getExtent())); 
-	     RenderedOp subtractedImage = JAI.create("muliply",pbSubtracted);
+	     RenderedOp subtractedImage = JAI.create("multiply",pbSubtracted);
 			/*
 			 * final GridGeometry grid = new
 			 * GridGeometry(raster.getGridGeometry().getExtent(), PixelInCell.CELL_CENTER,

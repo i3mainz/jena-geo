@@ -18,6 +18,7 @@ public class MinimumClearance extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
+            geometry.getParsingGeometry().getInteriorPoint()
             org.locationtech.jts.precision.MinimumClearance clearance=new org.locationtech.jts.precision.MinimumClearance(geometry.getParsingGeometry());
             return NodeValue.makeDouble(clearance.getDistance());
         } catch (DatatypeFormatException ex) {

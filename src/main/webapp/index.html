@@ -14,7 +14,20 @@
 var prefixList="PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX wd: <http://www.wikidata.org/entity/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xerl: <http://www.xerleben.de/schema/2.0_1#>\nPREFIX xplan5: <http://www.xplanung.de/xplangml/5/0#>\nPREFIX semgis: <http://www.semgis.de/geodata#> "
 
 var overlayMaps={}
-  function clearMap() {
+function toggle_visibility(id) 
+{
+    var e = document.getElementById(id);
+    if (e.style.display == 'block' || e.style.display=='')
+    {
+        e.style.display = 'none';
+    }
+    else 
+    {
+        e.style.display = 'block';
+    }
+}
+
+function clearMap() {
     for(i in mymap._layers) {
         if(mymap._layers[i]._path != undefined) {
             try {
