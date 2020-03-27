@@ -22,6 +22,9 @@ public class PostGISGeo {
 
 
 
+
+
+
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -98,6 +101,7 @@ public class PostGISGeo {
    public static final Property st_boundingdiagonal = property("ST_BoundingDiagonal");
    public static final Property st_centroid = property("ST_Centroid");
    public static final Property st_centroidDistance = property("ST_CentroidDistance");
+   public static final Property st_circularity= property("ST_Circularity");
    public static final Property st_chaikinSmooting = property("ST_ChaikinSmoothing");
    public static final Property st_clip = property("ST_Clip");
    public static final Property st_clipByBox2D = property("ST_ClipByBox2D");
@@ -176,12 +180,14 @@ public class PostGISGeo {
    public static final Property st_isCollection = property("ST_IsCollection");
    public static final Property st_isConvex = property("ST_IsConvex");
    public static final Property st_isEmpty = property("ST_IsEmpty");
+   public static final Property st_isEquilateralTriangle= property("ST_IsEquilateralTriangle");
    public static final Property st_isGrayscale = property("ST_IsGrayscale");
    public static final Property st_isIndexed = property("ST_IsIndexed");
    public static final Property st_isIsocelesTriangle= property("ST_IsIsocelesTriangle");
    public static final Property st_isMeasured = property("ST_IsMeasured");
    public static final Property st_isMorePrecise = property("ST_IsMorePrecise");
    public static final Property st_isNodingValid = property("ST_IsNodingValid");
+   public static final Property st_isPlanar= property("ST_IsPlanar");
    public static final Property st_isPointOnLine = property("ST_IsPointOnLine");
    public static final Property st_isPointInRing = property("ST_IsPointInRing");
    public static final Property st_isPolygonCW = property("ST_IsPolygonCW");
@@ -189,6 +195,7 @@ public class PostGISGeo {
    public static final Property st_isRightTriangle= property("ST_IsRightTriangle");
    public static final Property st_isRing = property("ST_IsRing");
    public static final Property st_isSimple = property("ST_IsSimple");
+   public static final Property st_isSolid= property("ST_IsSolid");
    public static final Property st_isTiled = property("ST_IsTiled");
    public static final Property st_isTranslucent = property("ST_IsTranslucent");
    public static final Property st_isTriangle= property("ST_IsTriangle");
