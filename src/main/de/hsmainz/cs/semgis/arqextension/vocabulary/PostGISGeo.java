@@ -25,6 +25,12 @@ public class PostGISGeo {
 
 
 
+
+
+
+
+
+
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -130,12 +136,14 @@ public class PostGISGeo {
    public static final Property st_dWithin = property("ST_DWithin");
    public static final Property st_dwithin3d = property("ST_DWithin3D");
    public static final Property st_endPoint = property("ST_EndPoint");
+   public static final Property st_ensureClosed = property("ST_EnsureClosed");
    public static final Property st_envelope = property("ST_Envelope");
    public static final Property st_epsgToSRID = property("ST_EPSGToSRID");
    public static final Property st_equals = property("ST_Equals");
    public static final Property st_equalSRS = property("ST_EqualSRS");
    public static final Property st_equalsNorm = property("ST_EqualsNorm");
    public static final Property st_equalsTopo = property("ST_EqualsTopo");
+   public static final Property st_equalType = property("ST_EqualType");
    public static final Property st_explode = property("ST_Explode");
    public static final Property st_filterByM = property("ST_FilterByM");
    public static final Property st_filterByT = property("ST_FilterByT");
@@ -174,6 +182,7 @@ public class PostGISGeo {
    public static final Property st_height = property("ST_Height");
    public static final Property st_interiorRingN = property("ST_InteriorRingN");
    public static final Property st_interpolatePoint = property("ST_InterpolatePoint");
+   public static final Property st_intersectionMatrix= property("ST_IntersectionMatrix");
    public static final Property st_intersectionPercentage = property("ST_IntersectionPercentage");
    public static final Property st_is3D = property("ST_Is3D");
    public static final Property st_isClosed = property("ST_IsClosed");
@@ -192,6 +201,7 @@ public class PostGISGeo {
    public static final Property st_isPointInRing = property("ST_IsPointInRing");
    public static final Property st_isPolygonCW = property("ST_IsPolygonCW");
    public static final Property st_isPolygonCCW = property("ST_IsPolygonCCW");
+   public static final Property st_isRectangle = property("ST_IsRectangle");
    public static final Property st_isRightTriangle= property("ST_IsRightTriangle");
    public static final Property st_isRing = property("ST_IsRing");
    public static final Property st_isSimple = property("ST_IsSimple");
@@ -360,7 +370,10 @@ public class PostGISGeo {
    public static final Property st_scaleX = property("ST_ScaleX");
    public static final Property st_scaleY = property("ST_ScaleY");
    public static final Property st_segmentize = property("ST_Segmentize");
+   public static final Property st_selfIntersections = property("ST_SelfIntersections");
+   public static final Property st_setEndPoint = property("ST_SetEndPoint");
    public static final Property st_setPoint = property("ST_SetPoint");
+   public static final Property st_setStartPoint = property("ST_SetStartPoint");
    public static final Property st_setSRID = property("ST_SetSRID");
    public static final Property st_sharedPaths = property("ST_SharedPaths");
    public static final Property st_shearTransformation = property("ST_ShearTransformation");
