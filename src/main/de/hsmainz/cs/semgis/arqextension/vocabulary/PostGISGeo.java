@@ -21,6 +21,16 @@ public class PostGISGeo {
    public static final String uri = "http://www.opengis.net/ont/geosparql#";
 
 
+
+
+
+
+
+
+
+
+
+
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -42,6 +52,7 @@ public class PostGISGeo {
    public static final Property st_addband = property("ST_AddBand");
    public static final Property st_addpoint = property("ST_AddPoint");
    public static final Property st_addz = property("ST_AddZ");
+   public static final Property st_angle= property("ST_Angle");
    public static final Property st_area = property("ST_Area");
    public static final Property st_areasimilarity = property("ST_AreaSimilarity");
    public static final Property st_asbinary = property("ST_AsBinary");
@@ -96,6 +107,7 @@ public class PostGISGeo {
    public static final Property st_boundingdiagonal = property("ST_BoundingDiagonal");
    public static final Property st_centroid = property("ST_Centroid");
    public static final Property st_centroidDistance = property("ST_CentroidDistance");
+   public static final Property st_circularity= property("ST_Circularity");
    public static final Property st_chaikinSmooting = property("ST_ChaikinSmoothing");
    public static final Property st_clip = property("ST_Clip");
    public static final Property st_clipByBox2D = property("ST_ClipByBox2D");
@@ -124,12 +136,14 @@ public class PostGISGeo {
    public static final Property st_dWithin = property("ST_DWithin");
    public static final Property st_dwithin3d = property("ST_DWithin3D");
    public static final Property st_endPoint = property("ST_EndPoint");
+   public static final Property st_ensureClosed = property("ST_EnsureClosed");
    public static final Property st_envelope = property("ST_Envelope");
    public static final Property st_epsgToSRID = property("ST_EPSGToSRID");
    public static final Property st_equals = property("ST_Equals");
    public static final Property st_equalSRS = property("ST_EqualSRS");
    public static final Property st_equalsNorm = property("ST_EqualsNorm");
    public static final Property st_equalsTopo = property("ST_EqualsTopo");
+   public static final Property st_equalType = property("ST_EqualType");
    public static final Property st_explode = property("ST_Explode");
    public static final Property st_filterByM = property("ST_FilterByM");
    public static final Property st_filterByT = property("ST_FilterByT");
@@ -168,25 +182,30 @@ public class PostGISGeo {
    public static final Property st_height = property("ST_Height");
    public static final Property st_interiorRingN = property("ST_InteriorRingN");
    public static final Property st_interpolatePoint = property("ST_InterpolatePoint");
+   public static final Property st_intersectionMatrix= property("ST_IntersectionMatrix");
    public static final Property st_intersectionPercentage = property("ST_IntersectionPercentage");
    public static final Property st_is3D = property("ST_Is3D");
    public static final Property st_isClosed = property("ST_IsClosed");
    public static final Property st_isCollection = property("ST_IsCollection");
    public static final Property st_isConvex = property("ST_IsConvex");
    public static final Property st_isEmpty = property("ST_IsEmpty");
+   public static final Property st_isEquilateralTriangle= property("ST_IsEquilateralTriangle");
    public static final Property st_isGrayscale = property("ST_IsGrayscale");
    public static final Property st_isIndexed = property("ST_IsIndexed");
    public static final Property st_isIsocelesTriangle= property("ST_IsIsocelesTriangle");
    public static final Property st_isMeasured = property("ST_IsMeasured");
    public static final Property st_isMorePrecise = property("ST_IsMorePrecise");
    public static final Property st_isNodingValid = property("ST_IsNodingValid");
+   public static final Property st_isPlanar= property("ST_IsPlanar");
    public static final Property st_isPointOnLine = property("ST_IsPointOnLine");
    public static final Property st_isPointInRing = property("ST_IsPointInRing");
    public static final Property st_isPolygonCW = property("ST_IsPolygonCW");
    public static final Property st_isPolygonCCW = property("ST_IsPolygonCCW");
+   public static final Property st_isRectangle = property("ST_IsRectangle");
    public static final Property st_isRightTriangle= property("ST_IsRightTriangle");
    public static final Property st_isRing = property("ST_IsRing");
    public static final Property st_isSimple = property("ST_IsSimple");
+   public static final Property st_isSolid= property("ST_IsSolid");
    public static final Property st_isTiled = property("ST_IsTiled");
    public static final Property st_isTranslucent = property("ST_IsTranslucent");
    public static final Property st_isTriangle= property("ST_IsTriangle");
@@ -351,7 +370,10 @@ public class PostGISGeo {
    public static final Property st_scaleX = property("ST_ScaleX");
    public static final Property st_scaleY = property("ST_ScaleY");
    public static final Property st_segmentize = property("ST_Segmentize");
+   public static final Property st_selfIntersections = property("ST_SelfIntersections");
+   public static final Property st_setEndPoint = property("ST_SetEndPoint");
    public static final Property st_setPoint = property("ST_SetPoint");
+   public static final Property st_setStartPoint = property("ST_SetStartPoint");
    public static final Property st_setSRID = property("ST_SetSRID");
    public static final Property st_sharedPaths = property("ST_SharedPaths");
    public static final Property st_shearTransformation = property("ST_ShearTransformation");
