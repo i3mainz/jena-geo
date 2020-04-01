@@ -23,7 +23,7 @@ public static final String testGeometry="LINESTRING(0 0, 1 1, 2 4, 1 1,6 8)";
 public static final String testGeometry2="LINESTRING(0 0, 1 1, 2 4,6 8)";
 
 	@Test
-	public void testCollectionHomogenize() throws ParseException {
+	public void testHasRepeatedPoints() throws ParseException {
         HasRepeatedPoints instance=new HasRepeatedPoints();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(0.,0.)); 
@@ -36,7 +36,7 @@ public static final String testGeometry2="LINESTRING(0 0, 1 1, 2 4,6 8)";
 	}
 
 	@Test
-	public void testCollectionHomogenize2() throws ParseException {
+	public void testHasRepeatedPoints2() throws ParseException {
         HasRepeatedPoints instance=new HasRepeatedPoints();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(0.,0.)); 

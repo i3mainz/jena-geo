@@ -12,7 +12,6 @@ import org.locationtech.jts.io.ParseException;
 
 import de.hsmainz.cs.semgis.arqextension.geometry.transform.CollectionHomogenize;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeoJSONDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class GeomFromTextTest {

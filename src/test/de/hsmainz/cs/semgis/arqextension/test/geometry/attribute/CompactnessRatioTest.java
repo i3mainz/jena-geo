@@ -12,7 +12,6 @@ import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.io.ParseException;
 import org.locationtech.jts.io.WKTReader;
 
-import de.hsmainz.cs.semgis.arqextension.geometry.transform.CollectionHomogenize;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.CompactnessRatio;
@@ -22,7 +21,7 @@ public class CompactnessRatioTest {
 	public static final String testGeometry="GEOMETRYCOLLECTION(POINT(0 0))";
 	
 	@Test
-	public void testCollectionHomogenize() throws ParseException {
+	public void testCompactnessRatio() throws ParseException {
         CompactnessRatio instance=new CompactnessRatio();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(0.,0.)); 

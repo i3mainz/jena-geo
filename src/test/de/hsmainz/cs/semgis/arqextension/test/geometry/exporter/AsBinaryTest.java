@@ -26,7 +26,7 @@ public class AsBinaryTest {
         		"\\000\\000\\000\\000\\000\\000\\000\\000\\000\\000\\000\n" + 
         		"\\000\\000\\000\\000\\000\\000\\000\\000");
         NodeValue result = instance.exec(geometryLiteral,NodeValue.makeString("XDR"));
-        assertEquals(expResult, result.e);
+        assertEquals(expResult, result);
 	}
 	
 }
