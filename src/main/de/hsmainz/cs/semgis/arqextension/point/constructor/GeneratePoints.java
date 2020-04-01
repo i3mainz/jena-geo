@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.point;
+package de.hsmainz.cs.semgis.arqextension.point.constructor;
 
 import java.math.BigInteger;
 

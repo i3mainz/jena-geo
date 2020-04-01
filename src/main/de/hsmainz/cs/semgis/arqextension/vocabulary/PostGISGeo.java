@@ -20,17 +20,6 @@ import org.apache.jena.rdf.model.ResourceFactory;
 public class PostGISGeo {
    public static final String uri = "http://www.opengis.net/ont/geosparql#";
 
-
-
-
-
-
-
-
-
-
-
-
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -50,7 +39,9 @@ public class PostGISGeo {
    public static final Property st_3dshortestline = property("ST_3DShortestLine");
    public static final Property st_accum = property("ST_Accum");
    public static final Property st_addband = property("ST_AddBand");
+   public static final Property st_addgeometry = property("ST_AddGeometry");
    public static final Property st_addpoint = property("ST_AddPoint");
+   public static final Property st_addRing= property("ST_AddRing");
    public static final Property st_addz = property("ST_AddZ");
    public static final Property st_angle= property("ST_Angle");
    public static final Property st_area = property("ST_Area");
@@ -133,6 +124,7 @@ public class PostGISGeo {
    public static final Property st_distance = property("ST_Distance");
    public static final Property st_distance3d = property("ST_3DDistance");
    public static final Property st_distancesphere = property("ST_DistanceSphere");
+   public static final Property st_dumpRings = property("ST_DumpRings");
    public static final Property st_dWithin = property("ST_DWithin");
    public static final Property st_dwithin3d = property("ST_DWithin3D");
    public static final Property st_endPoint = property("ST_EndPoint");
@@ -185,6 +177,7 @@ public class PostGISGeo {
    public static final Property st_intersectionMatrix= property("ST_IntersectionMatrix");
    public static final Property st_intersectionPercentage = property("ST_IntersectionPercentage");
    public static final Property st_is3D = property("ST_Is3D");
+   public static final Property st_isAcute = property("ST_IsAcute");
    public static final Property st_isClosed = property("ST_IsClosed");
    public static final Property st_isCollection = property("ST_IsCollection");
    public static final Property st_isConvex = property("ST_IsConvex");
@@ -206,6 +199,7 @@ public class PostGISGeo {
    public static final Property st_isRing = property("ST_IsRing");
    public static final Property st_isSimple = property("ST_IsSimple");
    public static final Property st_isSolid= property("ST_IsSolid");
+   public static final Property st_isSquare= property("ST_IsSquare");
    public static final Property st_isTiled = property("ST_IsTiled");
    public static final Property st_isTranslucent = property("ST_IsTranslucent");
    public static final Property st_isTriangle= property("ST_IsTriangle");
@@ -353,12 +347,15 @@ public class PostGISGeo {
    public static final Property st_removePoints = property("ST_RemovePoints");
    public static final Property st_removeRepeatedPoints = property("ST_RemoveRepeatedPoints");
    public static final Property st_reflect = property("ST_Reflect");
+   public static final Property st_removegeometry = property("ST_RemoveGeometry");
+   public static final Property st_removeRing= property("ST_RemoveRing");
    public static final Property st_relate = property("ST_Relate");
    public static final Property st_relateMatch = property("ST_RelateMatch");
    public static final Property st_resize = property("ST_Resize");
    public static final Property st_reskew = property("ST_Reskew");
    public static final Property st_retile = property("ST_Retile");
    public static final Property st_reverse = property("ST_Reverse");
+   public static final Property st_reverseRing = property("ST_ReverseRing");
    public static final Property st_rotate = property("ST_Rotate");
    public static final Property st_rotateX = property("ST_RotateX");
    public static final Property st_rotateY = property("ST_RotateY");
@@ -372,7 +369,9 @@ public class PostGISGeo {
    public static final Property st_segmentize = property("ST_Segmentize");
    public static final Property st_selfIntersections = property("ST_SelfIntersections");
    public static final Property st_setEndPoint = property("ST_SetEndPoint");
+   public static final Property st_setGeometry = property("ST_SetGeometry");
    public static final Property st_setPoint = property("ST_SetPoint");
+   public static final Property st_setRing = property("ST_SetRing");
    public static final Property st_setStartPoint = property("ST_SetStartPoint");
    public static final Property st_setSRID = property("ST_SetSRID");
    public static final Property st_sharedPaths = property("ST_SharedPaths");
