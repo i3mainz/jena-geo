@@ -11,6 +11,7 @@ import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.LineSegment;
 import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.LinearRing;
 import org.locationtech.jts.geom.MultiLineString;
 import org.locationtech.jts.geom.MultiPolygon;
 import org.locationtech.jts.geom.Polygon;
@@ -47,17 +48,17 @@ public class StraightSkeleton extends FunctionBase1 {
 
 		    // when the geometry is too big, it needs to be simplified first
 		    Polygon geom = polygon;
-		    if (polygon.numPoints() > 500) {
+		    if (polygon.getNumPoints() > 500) {
 		      geom = (Polygon) Filtering.DouglasPeucker(polygon, 15.0);
 		    }
-		    if (polygon.numPoints() > 1000) {
+		    if (polygon.getNumPoints() > 1000) {
 		      geom = (Polygon) Filtering.DouglasPeucker(polygon, 30.0);
 		    }
 
 		    Polygon p = (Polygon) geom.reverse();
 		    LoopL<Edge> input = new LoopL<Edge>();
 
-		    Ring rExt = p.getExterior();
+		    LineString rExt = p.getExteriorRing();
 
 		    Loop<Edge> loop = new Loop<Edge>();
 		    List<Edge> lEExt = fromDPLToEdges(rExt.coord());
@@ -68,7 +69,7 @@ public class StraightSkeleton extends FunctionBase1 {
 
 		    input.add(loop);
 
-		    for (Ring rInt : p.getInterior()) {
+		    for (LinearRing rInt : p.getInteriorRingN(n)) {
 
 		      Loop<Edge> loopIn = new Loop<Edge>();
 		      input.add(loopIn);
@@ -91,7 +92,8 @@ public class StraightSkeleton extends FunctionBase1 {
 		              edge.getEnd(edge.left).y));
 		      if (segment.intersects(polygon.getExterior().getPrimitive()))
 		        continue;
-		      for (Ring hole : polygon.getInterior()) {
+		      for (int i=0;i<polygon.getNumInteriorRing();i++) {
+		    	  LineString hole=polygon.getInteriorRingN(i);
 		        if (segment.intersects(hole.getPrimitive()))
 		          continue;
 		      }

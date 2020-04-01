@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.polygon;
+package de.hsmainz.cs.semgis.arqextension.polygon.exporter;
 
 import java.util.ArrayList;
 import java.util.List;

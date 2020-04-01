@@ -6,7 +6,7 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Geometry;
 
-import de.hsmainz.cs.semgis.arqextension.linestring.LineLength3D;
+import de.hsmainz.cs.semgis.arqextension.linestring.attribute.LineLength3D;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class Length3D extends FunctionBase1 {

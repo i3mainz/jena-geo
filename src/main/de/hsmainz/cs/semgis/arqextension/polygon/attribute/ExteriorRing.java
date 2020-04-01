@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.polygon;
+package de.hsmainz.cs.semgis.arqextension.polygon.attribute;
 
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;

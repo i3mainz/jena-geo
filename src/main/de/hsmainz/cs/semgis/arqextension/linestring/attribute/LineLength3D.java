@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.linestring;
+package de.hsmainz.cs.semgis.arqextension.linestring.attribute;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;

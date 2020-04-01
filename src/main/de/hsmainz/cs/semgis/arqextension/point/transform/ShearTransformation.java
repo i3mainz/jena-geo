@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.point;
+package de.hsmainz.cs.semgis.arqextension.point.transform;
 
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
