@@ -17,7 +17,7 @@ public class ExteriorRing extends FunctionBase1 {
 	public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             if (geom instanceof Polygon) {
             	
             	LineString result=((Polygon) geom).getExteriorRing();

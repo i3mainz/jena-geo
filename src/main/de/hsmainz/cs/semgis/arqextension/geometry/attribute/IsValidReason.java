@@ -28,7 +28,7 @@ public class IsValidReason extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             IsValidOp isvalid = new IsValidOp(geom);
             TopologyValidationError error = isvalid.getValidationError();
             if (error != null) {

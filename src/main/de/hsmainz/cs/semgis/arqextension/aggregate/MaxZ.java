@@ -69,7 +69,7 @@ public class MaxZ extends AggregatorBase {
 	        public void accumulate(NodeValue nv, Binding binding, FunctionEnv functionEnv)
 	        { 
 	        	GeometryWrapper geometry = GeometryWrapper.extract(nv);
-	            Geometry geo=geometry.getXYGeometry();
+	            Geometry geo=geometry.getParsingGeometry();
 	            Double localmaxZ=0.;
 	        	for(Coordinate coord:geo.getCoordinates()) {
 	            	if(localmaxZ<coord.getZ()) {

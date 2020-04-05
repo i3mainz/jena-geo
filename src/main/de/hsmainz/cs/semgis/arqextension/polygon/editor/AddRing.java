@@ -20,9 +20,9 @@ public class AddRing extends FunctionBase2 {
 	public NodeValue exec(NodeValue v,NodeValue v2) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             GeometryWrapper geometry2 = GeometryWrapper.extract(v2);
-            Geometry geom2 = geometry2.getXYGeometry();
+            Geometry geom2 = geometry2.getParsingGeometry();
             if(geom instanceof Polygon) {   
             	Polygon poly=(Polygon) geom;
             	List<LinearRing> rings=new LinkedList<LinearRing>();

@@ -18,7 +18,7 @@ public class NumDistinctGeometries extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             Set<Geometry> geoms=new HashSet<Geometry>();
             for(int i=0;i<geom.getNumGeometries();i++) {
             	geoms.add(geom.getGeometryN(i));

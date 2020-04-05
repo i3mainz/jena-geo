@@ -21,7 +21,7 @@ public class PatchN extends FunctionBase2 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             BigInteger n=arg1.getInteger();
             return GeometryWrapperFactory.createGeometry(((PolyhedralSurface)geom).getPatches().get(n.intValue()), geometry.getSrsURI(), geometry.getGeometryDatatypeURI()).asNodeValue();
         } catch (DatatypeFormatException ex) {

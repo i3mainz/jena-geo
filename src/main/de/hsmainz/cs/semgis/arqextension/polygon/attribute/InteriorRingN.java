@@ -19,7 +19,7 @@ public class InteriorRingN extends FunctionBase2 {
 	public NodeValue exec(NodeValue arg0, NodeValue arg1) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             if (geom instanceof Polygon) {
             	BigInteger ringN = arg1.getInteger();
             	LineString result=((Polygon) geom).getInteriorRingN(ringN.intValue());

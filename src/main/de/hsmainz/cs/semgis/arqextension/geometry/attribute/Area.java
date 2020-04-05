@@ -30,7 +30,7 @@ public class Area extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
 
             return NodeValue.makeDouble(geom.getArea());
         } catch (DatatypeFormatException ex) {

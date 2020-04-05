@@ -23,7 +23,7 @@ public class ForcePolygonCCW extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             if (geom instanceof Polygon) {
             	if(Orientation.isCCW(geom.getCoordinates())) {
             		return geometry.asNodeValue();

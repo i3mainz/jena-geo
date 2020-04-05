@@ -26,7 +26,7 @@ public class Perimeter extends FunctionBase1 {
     public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
 
             return NodeValue.makeDouble(geom.getLength());
         } catch (DatatypeFormatException ex) {

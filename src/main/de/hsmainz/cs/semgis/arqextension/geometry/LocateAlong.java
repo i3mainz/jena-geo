@@ -23,7 +23,7 @@ public class LocateAlong extends FunctionBase3{
 		GeometryWrapper geom1 = GeometryWrapper.extract(arg0);
         Double a_measure=arg1.getDouble();
         Double offset=arg2.getDouble();
-        MultiPoint mp=locateAlong(geom1.getXYGeometry(), a_measure, offset);
+        MultiPoint mp=locateAlong(geom1.getParsingGeometry(), a_measure, offset);
 		return GeometryWrapperFactory.createMultiPoint(Arrays.asList(mp.getCoordinates()), geom1.getSrsURI(),geom1.getGeometryDatatypeURI()).asNodeValue();
 	}
 

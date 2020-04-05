@@ -32,7 +32,7 @@ public class GeometryN extends FunctionBase2 {
 
         try {
             GeometryWrapper geom = GeometryWrapper.extract(arg0);
-            Geometry geometry = geom.getXYGeometry();
+            Geometry geometry = geom.getParsingGeometry();
 
             BigInteger n = arg1.getInteger();
 

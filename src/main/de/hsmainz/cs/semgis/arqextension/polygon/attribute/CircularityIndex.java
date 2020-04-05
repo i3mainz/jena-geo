@@ -15,7 +15,7 @@ public class CircularityIndex extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		 try {
 	            GeometryWrapper geometry = GeometryWrapper.extract(v);
-	            Geometry geom = geometry.getXYGeometry();
+	            Geometry geom = geometry.getParsingGeometry();
 		if (geom instanceof Polygon) {
         	double areasum=0.,perimetersum=0.;
         	for(int i=0;i<geom.getNumGeometries();i++) {

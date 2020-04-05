@@ -34,7 +34,7 @@ public class MakePolygon extends FunctionBase1 {
         //TODO method can accept array of LinearRing holes but unclear how this would be passed in query.
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             if (geom instanceof LinearRing) {
                 GeometryWrapper polygonWrapper = GeometryWrapperFactory.createPolygon((LinearRing) geom, geometry.getSrsURI(), geometry.getGeometryDatatypeURI());
                 return polygonWrapper.asNodeValue();

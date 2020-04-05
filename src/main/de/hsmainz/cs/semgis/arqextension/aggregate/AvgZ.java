@@ -72,7 +72,7 @@ public class AvgZ extends AggregatorBase {
   { 
 			log.debug("avg {}", nv);
 			GeometryWrapper geometry = GeometryWrapper.extract(nv);
-      Geometry geo=geometry.getXYGeometry();
+      Geometry geo=geometry.getParsingGeometry();
       if ( nv.isNumber() ) {
       for(Coordinate coord:geo.getCoordinates()) {
       	NodeValue nvz=NodeValue.makeDouble(coord.getZ());            	

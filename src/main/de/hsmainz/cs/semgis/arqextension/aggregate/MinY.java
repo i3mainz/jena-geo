@@ -39,7 +39,7 @@ public class MinY extends AggregatorBase {
         { 
         	
         	GeometryWrapper geometry = GeometryWrapper.extract(nv);
-            Geometry geo=geometry.getXYGeometry();
+            Geometry geo=geometry.getParsingGeometry();
             Double localminY=0.;
             Double minY=Double.MAX_VALUE;
             for(Coordinate coord:geo.getCoordinates()) {

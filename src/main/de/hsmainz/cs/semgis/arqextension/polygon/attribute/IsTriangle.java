@@ -15,7 +15,7 @@ public class IsTriangle extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             if (geom instanceof Polygon) {
             	if(geom.getCoordinates().length==4 && geom.getCoordinates()[0].equals(geom.getCoordinates()[geom.getNumPoints()-1])) {
             		return NodeValue.TRUE;

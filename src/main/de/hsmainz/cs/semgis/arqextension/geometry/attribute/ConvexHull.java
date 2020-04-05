@@ -16,7 +16,7 @@ public class ConvexHull extends FunctionBase1 {
 
         try {
             GeometryWrapper geom = GeometryWrapper.extract(arg0);
-            org.locationtech.jts.algorithm.ConvexHull convex=new org.locationtech.jts.algorithm.ConvexHull(geom.getXYGeometry());
+            org.locationtech.jts.algorithm.ConvexHull convex=new org.locationtech.jts.algorithm.ConvexHull(geom.getParsingGeometry());
 
             Geometry convexHull = convex.getConvexHull();
             GeometryWrapper concaveWrapper = GeometryWrapperFactory.createGeometry(convexHull, geom.getSrsURI(), geom.getGeometryDatatypeURI());

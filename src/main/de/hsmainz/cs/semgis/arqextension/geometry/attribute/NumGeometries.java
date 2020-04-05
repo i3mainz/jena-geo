@@ -27,7 +27,7 @@ public class NumGeometries extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
 
             return NodeValue.makeInteger(geom.getNumGeometries());
         } catch (DatatypeFormatException ex) {

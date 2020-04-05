@@ -20,7 +20,7 @@ public class BoundingDiagonal extends FunctionBase1{
 	public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             org.locationtech.jts.geom.Envelope env=geom.getEnvelopeInternal();
             Coordinate lowerCorner=new Coordinate(env.getMinX(),env.getMinY());
             Coordinate upperCorner=new Coordinate(env.getMaxX(),env.getMaxY());

@@ -68,7 +68,7 @@ public class BoundingBox extends AggregatorBase {
         public void accumulate(NodeValue nv, Binding binding, FunctionEnv functionEnv)
         { 
         	GeometryWrapper geometry = GeometryWrapper.extract(nv);
-            Geometry geo=geometry.getXYGeometry();
+            Geometry geo=geometry.getParsingGeometry();
         	NodeValue localMaxX=NodeValue.makeDouble(geo.getEnvelopeInternal().getMaxX());
         	NodeValue localMaxY=NodeValue.makeDouble(geo.getEnvelopeInternal().getMaxY());
         	NodeValue localMinX=NodeValue.makeDouble(geo.getEnvelopeInternal().getMinX());

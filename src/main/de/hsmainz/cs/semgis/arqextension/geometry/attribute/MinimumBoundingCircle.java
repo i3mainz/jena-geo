@@ -31,7 +31,7 @@ public class MinimumBoundingCircle extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
 
             org.locationtech.jts.algorithm.MinimumBoundingCircle minCircle = new org.locationtech.jts.algorithm.MinimumBoundingCircle(geom);
             GeometryWrapper minCircleWrapper = GeometryWrapperFactory.createGeometry(minCircle.getCircle(), geometry.getSrsURI(), geometry.getGeometryDatatypeURI());

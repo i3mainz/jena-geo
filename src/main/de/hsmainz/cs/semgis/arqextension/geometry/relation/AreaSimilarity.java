@@ -15,9 +15,9 @@ public class AreaSimilarity extends FunctionBase2 {
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		try {
 	        GeometryWrapper geometry = GeometryWrapper.extract(v1);
-	        Geometry geom = geometry.getXYGeometry();
+	        Geometry geom = geometry.getParsingGeometry();
 	        GeometryWrapper geometry2 = GeometryWrapper.extract(v2);
-	        Geometry geom2 = geometry2.getXYGeometry();
+	        Geometry geom2 = geometry2.getParsingGeometry();
 	        AreaSimilarityMeasure areasim=new AreaSimilarityMeasure();
 	        return NodeValue.makeDouble(areasim.measure(geom, geom2));
 	    } catch (DatatypeFormatException ex) {

@@ -18,7 +18,7 @@ public class HasRepeatedPoints extends FunctionBase1{
 	public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             RepeatedPointTester tester=new RepeatedPointTester();
             return NodeValue.makeNodeBoolean(tester.hasRepeatedPoint(geom));
         } catch (DatatypeFormatException ex) {

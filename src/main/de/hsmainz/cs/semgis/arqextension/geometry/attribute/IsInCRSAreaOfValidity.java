@@ -13,7 +13,7 @@ public class IsInCRSAreaOfValidity extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
 		 GeometryWrapper geometry = GeometryWrapper.extract(v);
-         Geometry geom = geometry.getXYGeometry();
+         Geometry geom = geometry.getParsingGeometry();
 		CoordinateSystemAxis x = crs.getCoordinateSystem().getAxis(0);
 	    CoordinateSystemAxis y = crs.getCoordinateSystem().getAxis(1);
 	    boolean xUnbounded = Double.isInfinite(x.getMinimumValue()) && Double.isInfinite(x.getMaximumValue());

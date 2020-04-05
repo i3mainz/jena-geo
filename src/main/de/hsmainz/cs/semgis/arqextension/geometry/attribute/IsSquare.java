@@ -14,7 +14,7 @@ public class IsSquare extends FunctionBase1{
 	public NodeValue exec(NodeValue v) {
 	       try {
 	            GeometryWrapper geometry = GeometryWrapper.extract(v);
-	            Geometry geom = geometry.getXYGeometry();
+	            Geometry geom = geometry.getParsingGeometry();
 	        	if(geom.isRectangle()) {
 	        		Double distance01=geom.getCoordinates()[0].distance(geom.getCoordinates()[1]);
 	        		Double distance12=geom.getCoordinates()[1].distance(geom.getCoordinates()[2]);

@@ -21,7 +21,7 @@ public class RemoveRing extends FunctionBase2 {
 	public NodeValue exec(NodeValue v,NodeValue v2) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             BigInteger index=v2.getInteger();
             if(geom instanceof Polygon) {   
             	Polygon poly=(Polygon) geom;

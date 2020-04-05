@@ -34,7 +34,7 @@ public class PointN extends FunctionBase2 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
 
             BigInteger n = arg1.getInteger();
             if (n.intValue() >= geom.getCoordinates().length) {

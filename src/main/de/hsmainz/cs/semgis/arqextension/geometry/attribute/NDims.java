@@ -15,7 +15,7 @@ public class NDims extends FunctionBase1 {
 	public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             Coordinate coord=geom.getCoordinates()[0];
             if(!Double.isNaN(coord.getM()) || !Double.isNaN(coord.getZ())){
             	return NodeValue.makeInteger(3);

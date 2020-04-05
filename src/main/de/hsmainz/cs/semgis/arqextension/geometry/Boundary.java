@@ -19,7 +19,7 @@ public class Boundary extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             BoundaryOp boundop=new BoundaryOp(geom);
             GeometryWrapper wrapper = GeometryWrapperFactory.createGeometry(boundop.getBoundary(), geometry.getSrsURI(), geometry.getGeometryDatatypeURI());
             return wrapper.asNodeValue();                 

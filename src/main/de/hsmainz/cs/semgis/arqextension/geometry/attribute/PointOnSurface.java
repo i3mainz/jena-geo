@@ -13,7 +13,7 @@ public class PointOnSurface extends FunctionBase1{
 	@Override
 	public NodeValue exec(NodeValue arg0) {
        GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-       Geometry geom = geometry.getXYGeometry();
+       Geometry geom = geometry.getParsingGeometry();
        GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(geom.getInteriorPoint().getCoordinate(), SRS_URI.DEFAULT_WKT_CRS84, WKTDatatype.URI);
        return pointWrapper.asNodeValue();
 	}

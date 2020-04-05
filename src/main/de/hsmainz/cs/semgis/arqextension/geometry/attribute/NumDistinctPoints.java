@@ -19,7 +19,7 @@ public class NumDistinctPoints extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             Set<Coordinate> coords=new HashSet<Coordinate>();
             for(Coordinate coord:geom.getCoordinates()) {
             	coords.add(coord);

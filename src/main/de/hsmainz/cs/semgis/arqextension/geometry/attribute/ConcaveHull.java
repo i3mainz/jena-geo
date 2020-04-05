@@ -33,7 +33,7 @@ public class ConcaveHull extends FunctionBase3 {
             float targetPercent = arg1.getFloat();
             boolean allowHoles = arg2.getBoolean();
 
-            org.opensphere.geometry.algorithm.ConcaveHull hull = new org.opensphere.geometry.algorithm.ConcaveHull(geom.getXYGeometry(), targetPercent);
+            org.opensphere.geometry.algorithm.ConcaveHull hull = new org.opensphere.geometry.algorithm.ConcaveHull(geom.getParsingGeometry(), targetPercent);
 
             Geometry concaveHull = hull.getConcaveHull();
             GeometryWrapper concaveWrapper = GeometryWrapperFactory.createGeometry(concaveHull, geom.getSrsURI(), geom.getGeometryDatatypeURI());

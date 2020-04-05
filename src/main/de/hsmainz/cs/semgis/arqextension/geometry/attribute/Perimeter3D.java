@@ -16,7 +16,7 @@ public class Perimeter3D extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             double sum = 0;
             for (int i = 0; i < geom.getNumGeometries(); i++) {
                 Geometry subGeom = geom.getGeometryN(i);

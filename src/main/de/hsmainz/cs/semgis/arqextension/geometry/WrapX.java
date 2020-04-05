@@ -15,7 +15,7 @@ public class WrapX extends FunctionBase3 {
 	@Override
 	public NodeValue exec(NodeValue arg0, NodeValue arg1, NodeValue arg2) {
         GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-        Geometry geom = geometry.getXYGeometry();
+        Geometry geom = geometry.getParsingGeometry();
         Double wrap=arg1.getDouble();
         Double move=arg2.getDouble();
         throw new UnsupportedOperationException("Not supported yet.");

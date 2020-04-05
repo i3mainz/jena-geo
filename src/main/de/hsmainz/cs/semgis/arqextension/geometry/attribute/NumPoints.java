@@ -27,7 +27,7 @@ public class NumPoints extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
 
             return NodeValue.makeInteger(geom.getNumPoints());
         } catch (DatatypeFormatException ex) {

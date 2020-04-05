@@ -15,7 +15,7 @@ public class IsPlanar extends FunctionBase1{
 	public NodeValue exec(NodeValue v) {
 	       try {
 	            GeometryWrapper geometry = GeometryWrapper.extract(v);
-	            Geometry geom = geometry.getXYGeometry();
+	            Geometry geom = geometry.getParsingGeometry();
 	            Boolean is3D=true;
 	            for(Coordinate coord:geom.getCoordinates()) {
 	            	if(Double.isNaN(coord.getZ())) {

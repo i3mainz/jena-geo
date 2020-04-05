@@ -39,7 +39,7 @@ public class MinZ extends AggregatorBase {
         { 
         	
         	GeometryWrapper geometry = GeometryWrapper.extract(nv);
-            Geometry geo=geometry.getXYGeometry();
+            Geometry geo=geometry.getParsingGeometry();
             Double localminZ=0.;
             Double minZ=Double.MAX_VALUE;
             for(Coordinate coord:geo.getCoordinates()) {

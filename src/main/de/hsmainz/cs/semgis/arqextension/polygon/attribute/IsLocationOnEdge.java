@@ -24,7 +24,7 @@ public class IsLocationOnEdge extends FunctionBase2 {
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		try {
             GeometryWrapper geometry = GeometryWrapper.extract(v1);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             if (geom instanceof Polygon) {
             	BigInteger ringN = v2.getInteger();
             	LineString result=((Polygon) geom).getInteriorRingN(ringN.intValue());

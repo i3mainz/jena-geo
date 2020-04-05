@@ -14,7 +14,7 @@ public class MinimumDiameter extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		try {
 	        GeometryWrapper geometry = GeometryWrapper.extract(v);
-	        Geometry geom = geometry.getXYGeometry();
+	        Geometry geom = geometry.getParsingGeometry();
 	        org.locationtech.jts.algorithm.MinimumDiameter mindiam=new org.locationtech.jts.algorithm.MinimumDiameter(geom);
 	        return NodeValue.makeDouble(mindiam.getDiameter().getLength());
 	    } catch (DatatypeFormatException ex) {

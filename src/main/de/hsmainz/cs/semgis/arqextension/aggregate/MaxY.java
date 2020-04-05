@@ -69,7 +69,7 @@ public class MaxY extends AggregatorBase {
 	        public void accumulate(NodeValue nv, Binding binding, FunctionEnv functionEnv)
 	        { 
 	        	GeometryWrapper geometry = GeometryWrapper.extract(nv);
-	            Geometry geo=geometry.getXYGeometry();
+	            Geometry geo=geometry.getParsingGeometry();
 	            Double localmaxY=0.;
 	        	for(Coordinate coord:geo.getCoordinates()) {
 	            	if(localmaxY<coord.getY()) {

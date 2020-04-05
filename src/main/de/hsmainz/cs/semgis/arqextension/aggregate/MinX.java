@@ -41,7 +41,7 @@ public class MinX extends AggregatorBase {
         { 
         	
         	GeometryWrapper geometry = GeometryWrapper.extract(nv);
-            Geometry geo=geometry.getXYGeometry();
+            Geometry geo=geometry.getParsingGeometry();
             Double localminX=0.;
             Double minX=Double.MAX_VALUE;
             for(Coordinate coord:geo.getCoordinates()) {

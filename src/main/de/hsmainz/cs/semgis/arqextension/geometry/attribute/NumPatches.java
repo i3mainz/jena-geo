@@ -19,7 +19,7 @@ public class NumPatches extends FunctionBase1 {
 	public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             return NodeValue.makeInteger(((PolyhedralSurface)geom).getPatches().size());
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);

@@ -21,7 +21,7 @@ public class SetRing extends FunctionBase3 {
 	public NodeValue exec(NodeValue v,NodeValue v2,NodeValue v3) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             BigInteger index=v2.getInteger();
             if(geom instanceof Polygon) {   
             	Polygon poly=(Polygon) geom;
