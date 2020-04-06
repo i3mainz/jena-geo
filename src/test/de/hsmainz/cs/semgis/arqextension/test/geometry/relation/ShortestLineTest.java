@@ -17,7 +17,7 @@ public class ShortestLineTest {
 	public static final String result="LINESTRING(77.29 29.07, 10 10)";
 	
 	@Test
-	public void testReverseRing() {
+	public void testShortestLine() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(testGeom2, WKTDatatype.INSTANCE);
         ShortestLine instance=new ShortestLine();

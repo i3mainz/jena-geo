@@ -14,8 +14,6 @@ public class MaxDistanceTest {
 	
 	public static final String testGeom2="LINESTRING(5 5 ,10 10)";
 	
-	public static final String result="LINESTRING(77.42 29.26, 5 5)";
-	
 	@Test
 	public void testReverseRing() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);

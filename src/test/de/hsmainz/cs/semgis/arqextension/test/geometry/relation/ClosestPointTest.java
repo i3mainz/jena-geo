@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.test.geometry;
+package de.hsmainz.cs.semgis.arqextension.test.geometry.relation;
 
 import static org.junit.Assert.assertEquals;
 
