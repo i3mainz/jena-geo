@@ -18,7 +18,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class DelaunayTrianglesTest {
 
-	public static final String testGeometry="GEOMETRYCOLLECTION(POINT(0 0))";
+	public static final String testGeometry="POINT(0 0)";
 	
 	@Test
 	public void testDelaunayTriangles() throws ParseException {

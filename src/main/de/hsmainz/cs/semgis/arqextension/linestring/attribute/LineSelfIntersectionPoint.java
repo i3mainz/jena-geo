@@ -8,6 +8,7 @@ import org.locationtech.jts.geom.Geometry;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class LineSelfIntersectionPoint extends FunctionBase1 {
 
@@ -17,7 +18,7 @@ public class LineSelfIntersectionPoint extends FunctionBase1 {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
             Geometry geom = geometry.getXYGeometry();
             if(geom.isSimple()) {
-            	return NodeValue.makeString("POINT EMPTY");
+            	return NodeValue.makeNode("POINT EMPTY",WKTDatatype.INSTANCE);
             }else {
             	return GeometryWrapperFactory.createGeometry(geom.intersection(geom), geometry.getGeometryDatatypeURI()).asNodeValue();
             }

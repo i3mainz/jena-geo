@@ -7,7 +7,7 @@ import org.apache.jena.sparql.function.FunctionBase2;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class OrderingEquals extends FunctionBase2 {
 
@@ -17,7 +17,7 @@ public class OrderingEquals extends FunctionBase2 {
 			GeometryWrapper geom1 = GeometryWrapper.extract(arg0);
 			GeometryWrapper geom2 = GeometryWrapper.extract(arg1);
 			GeometryWrapper transGeom2 = geom2.transform(geom1.getSrsInfo());
-			boolean equalsExact = geom1.equalsExact(geom2);
+			boolean equalsExact = geom1.equalsExact(transGeom2);
 			return NodeValue.makeNodeBoolean(equalsExact);
 		} catch (DatatypeFormatException | FactoryException | TransformException ex) {
 			throw new ExprEvalException(ex.getMessage(), ex);

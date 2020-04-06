@@ -32,7 +32,7 @@ public class LongestLine extends FunctionBase2 {
 					}
 				}
 			}
-			return GeometryWrapperFactory.createLineString(new Coordinate[] {maxCoord1,maxCoord2}, "<http://www.opengis.net/def/crs/EPSG/0/"+geom1.getSRID()+">", WKTDatatype.URI).asNodeValue();
+			return GeometryWrapperFactory.createLineString(new Coordinate[] {maxCoord1,maxCoord2}, geom1.getSRID(), WKTDatatype.URI).asNodeValue();
         } catch (MismatchedDimensionException | TransformException | FactoryException e) {
         	throw new ExprEvalException("Error in distance calculation");
 		}

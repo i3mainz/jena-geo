@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
-import de.hsmainz.cs.semgis.arqextension.point.attribute.M;
 import de.hsmainz.cs.semgis.arqextension.point.attribute.X;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 

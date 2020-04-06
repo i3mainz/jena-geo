@@ -33,7 +33,7 @@ public class IsValidTrajectory extends FunctionBase1 {
 				}
 				return NodeValue.TRUE;
 			}
-			return NodeValue.nvNothing;
+			return NodeValue.FALSE;
 		} catch (DatatypeFormatException ex) {
 			throw new ExprEvalException(ex.getMessage(), ex);
 		}

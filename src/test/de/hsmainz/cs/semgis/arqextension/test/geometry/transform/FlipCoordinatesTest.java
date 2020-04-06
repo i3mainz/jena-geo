@@ -18,7 +18,7 @@ public class FlipCoordinatesTest {
 	public static final String testPolygon="POLYGON((0 0 2,0 5 2,5 0 2,0 0 2))";
 	
 	@Test
-	public void testForce2D() {
+	public void testFlipCoordinates() {
         NodeValue geometryLiteral = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
         FlipCoordinates instance=new FlipCoordinates();
         List<Coordinate> coords=new LinkedList<Coordinate>();

@@ -19,6 +19,7 @@ package io.github.galbiston.geosparql_jena.implementation.datatype;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.topo.TopoJSONDatatype;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
 import org.apache.jena.datatypes.BaseDatatype;

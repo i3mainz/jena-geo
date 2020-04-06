@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Coordinate;
 
 import de.hsmainz.cs.semgis.arqextension.geometry.transform.SimplifyPreserveTopology;
-import de.hsmainz.cs.semgis.arqextension.geometry.transform.SimplifyVW;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
@@ -19,7 +18,7 @@ public class SimplifyPreserveTopologyTest {
 public static final String testGeom="LINESTRING(5 2, 3 8, 6 20, 7 25, 10 10)";
 	
 	@Test
-	public void testSimplifyVW() {
+	public void testSimplifyPreserveTopology() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         SimplifyPreserveTopology instance=new SimplifyPreserveTopology();
         List<Coordinate> coords=new LinkedList<Coordinate>();
@@ -27,7 +26,7 @@ public static final String testGeom="LINESTRING(5 2, 3 8, 6 20, 7 25, 10 10)";
         coords.add(new Coordinate(7.,25.));
         coords.add(new Coordinate(10.,10.));
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
-        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeInteger(30));
+        NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}
 	

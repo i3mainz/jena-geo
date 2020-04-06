@@ -15,7 +15,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class ShiftLongitudeTest {
 
-public static final String testPolygon="POLYGON((-340 0 2,0 5 2,5 0 2,-340 0 2))";
+	public static final String testPolygon="POLYGON((-340 0 2,0 5 2,5 0 2,-340 0 2))";
 	
 	@Test
 	public void testFlipCoordinates() {

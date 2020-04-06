@@ -21,7 +21,7 @@ public class SelfIntersections extends FunctionBase1 {
     public NodeValue exec(NodeValue arg0) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geom = geometry.getXYGeometry();
+            Geometry geom = geometry.getParsingGeometry();
             	Set<Coordinate> coords=new HashSet<Coordinate>();
             	List<Coordinate> results=new LinkedList<Coordinate>();
             	for(Coordinate coord:geom.getCoordinates()) {
@@ -30,7 +30,7 @@ public class SelfIntersections extends FunctionBase1 {
             		}
             		coords.add(coord);
             	}
-            	return GeometryWrapperFactory.createMultiPoint(results, geometry.getSrsURI()).asNodeValue();
+            	return GeometryWrapperFactory.createMultiPoint(results, geometry.getSrsURI(), geometry.getGeometryDatatypeURI()).asNodeValue();
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

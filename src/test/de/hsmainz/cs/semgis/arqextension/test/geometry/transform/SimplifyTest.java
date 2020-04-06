@@ -9,24 +9,24 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Coordinate;
 
-import de.hsmainz.cs.semgis.arqextension.geometry.transform.PrecisionReducer;
+import de.hsmainz.cs.semgis.arqextension.geometry.transform.Simplify;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
-public class PrecisionReducerTest {
+public class SimplifyTest {
 
-public static final String testGeom="POINT(0.3424 0.3424)";
-
-public static final String resultGeom="POINT(0.34 0.34)";
-
+	public static final String testGeom="LINESTRING(5 2, 3 8, 6 20, 7 25, 10 10)";
+	
 	@Test
-	public void testPrecisionReducer() {
+	public void testSimplify() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
-        PrecisionReducer instance=new PrecisionReducer();
+        Simplify instance=new Simplify();
         List<Coordinate> coords=new LinkedList<Coordinate>();
-        coords.add(new Coordinate(0.34,0.34));
-        NodeValue expResult = GeometryWrapperFactory.createPoint(coords.get(0), WKTDatatype.URI).asNodeValue();
-        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeDouble(2));
+        coords.add(new Coordinate(5.,2.));
+        coords.add(new Coordinate(7.,25.));
+        coords.add(new Coordinate(10.,10.));
+        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
+        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeInteger(30),NodeValue.TRUE);
         assertEquals(expResult, result);
 	}
 	

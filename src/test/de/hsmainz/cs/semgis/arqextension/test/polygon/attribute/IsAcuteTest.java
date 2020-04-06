@@ -10,7 +10,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class IsAcuteTest {
 
-public static final String isocelesTriangle="POLYGON((8 2, 11 13, 2 6, 8 2))";
+	public static final String isocelesTriangle="POLYGON((8 2, 11 13, 2 6, 8 2))";
 	
 	public static final String notIsocelesTriangle="POLYGON((1 2, 3 4, 5 6, 1 2))";
 	

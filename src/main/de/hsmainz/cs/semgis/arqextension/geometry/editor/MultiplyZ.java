@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.geometry;
+package de.hsmainz.cs.semgis.arqextension.geometry.editor;
 
 import java.util.LinkedList;
 import java.util.List;

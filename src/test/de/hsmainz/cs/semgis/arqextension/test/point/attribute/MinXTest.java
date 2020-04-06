@@ -13,7 +13,7 @@ public class MinXTest {
 		public static final String testPoint="LINESTRING(1 2,3 4,5 6,7 8)";
 		
 		@Test
-		public void testX() {
+		public void testMinX() {
 	        NodeValue geometryLiteral = NodeValue.makeNode(testPoint, WKTDatatype.INSTANCE);
 	        XMin instance=new XMin();
 	        NodeValue expResult = NodeValue.makeDouble(1);

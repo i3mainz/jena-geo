@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.test.point;
+package de.hsmainz.cs.semgis.arqextension.test.point.attribute;
 
 import static org.junit.Assert.assertEquals;
 

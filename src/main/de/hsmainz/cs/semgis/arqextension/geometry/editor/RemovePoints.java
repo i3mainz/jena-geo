@@ -11,8 +11,6 @@ import org.locationtech.jts.geom.LinearRing;
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
-import io.github.galbiston.geosparql_jena.implementation.vocabulary.SRS_URI;
 
 /**
  * Removes the points contained in the second geometry from the first geometry.

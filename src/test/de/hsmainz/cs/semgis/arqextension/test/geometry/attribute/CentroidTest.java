@@ -15,8 +15,8 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class CentroidTest {
 
-	public static final String testGeometry="MULTIPOINT (( -1 0, -1 2, -1 3, -1 4, -1 7, 0 1, 0 3, 1 1, 2 0, 6 0, 7 8, 9 8, 10 6 ))";
-	
+	public static final String testGeometry="MULTIPOINT (( -1 0), (-1 2), (-1 3), (-1 4), (-1 7), (0 1), (0 3), (1 1), (2 0), (6 0), (7 8), (9 8), (10 6))";
+
 	@Test
 	public void testCentroid() {
         Centroid instance=new Centroid();
