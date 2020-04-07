@@ -15,7 +15,7 @@ public class MaxDistanceTest {
 	public static final String testGeom2="LINESTRING(5 5 ,10 10)";
 	
 	@Test
-	public void testReverseRing() {
+	public void testMaxDistance() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(testGeom2, WKTDatatype.INSTANCE);
         MaxDistance instance=new MaxDistance();

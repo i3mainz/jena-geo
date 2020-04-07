@@ -29,7 +29,6 @@ public class ClosestPointTest {
         coords.add(new Coordinate(110.,180.));
         coords.add(new Coordinate(50.,75.));
         NodeValue geom2 = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
-        NodeValue expResult = NodeValue.makeDouble(42.2736890060937);
         NodeValue result = instance.exec(geom1,geom2);
         assertEquals(geom1, result);
 	}

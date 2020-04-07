@@ -17,7 +17,7 @@ public class DistanceSphereTest {
 	public static final String result="POINT(5 5)";
 	
 	@Test
-	public void testDifference() {
+	public void testDistanceSphere() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         DistanceSphere instance=new DistanceSphere();
@@ -27,7 +27,7 @@ public class DistanceSphereTest {
 	}
 	
 	@Test
-	public void testDifference2() {
+	public void testDistanceSphere2() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(testGeom2, WKTDatatype.INSTANCE);
         DistanceSphere instance=new DistanceSphere();
