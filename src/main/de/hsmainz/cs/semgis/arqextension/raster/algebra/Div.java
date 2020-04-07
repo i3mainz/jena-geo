@@ -16,7 +16,7 @@ import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.internal.coverage.BufferedGridCoverage;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class Div extends FunctionBase2  {
 

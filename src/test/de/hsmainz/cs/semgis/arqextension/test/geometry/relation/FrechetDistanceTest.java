@@ -6,7 +6,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.geometry.relation.FrechetDistance;
-import de.hsmainz.cs.semgis.arqextension.geometry.relation.HausdorffDistance;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class FrechetDistanceTest {

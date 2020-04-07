@@ -15,7 +15,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class MinimumDiameterLineTest {
 
-public static final String testPolygon="POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))";
+	public static final String testPolygon="POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))";
 	
 	@Test
 	public void testMinimumDiameterLine() {

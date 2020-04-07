@@ -1,6 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.editor;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.jena.sparql.expr.NodeValue;
@@ -19,7 +20,10 @@ public class EnsureClosed extends FunctionBase1 {
 		Geometry geom=geometry.getXYGeometry();
 		Coordinate[] array=geom.getCoordinates();
 		if(!array[0].equals(array[array.length-1])) {
-			List<Coordinate> coords=Arrays.asList(array);
+			List<Coordinate> coords=new LinkedList<Coordinate>();
+			for(Coordinate coord:Arrays.asList(array)) {
+				coords.add(coord);
+			}
 			coords.add(array[0]);
 			GeometryWrapper res=LiteralUtils.createGeometry(coords, geometry.getGeometryType(), geometry);
             return res.asNodeValue();
