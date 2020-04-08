@@ -11,8 +11,8 @@ import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class Equals extends FunctionBase2 {
 
@@ -29,17 +29,17 @@ public class Equals extends FunctionBase2 {
 				throw new RuntimeException("CRS transformation failed");
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();	
 			return NodeValue.makeBoolean(raster.equals(raster2));		
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1).equals(geom));
 			}else {
-				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				return NodeValue.makeBoolean(geom.equals(LiteralUtils.toGeometry(bbox1)));				

@@ -2,7 +2,9 @@ package de.hsmainz.cs.semgis.arqextension.raster.editor;
 
 import java.awt.geom.AffineTransform;
 import java.awt.image.renderable.ParameterBlock;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.media.jai.JAI;
 import javax.media.jai.PlanarImage;
@@ -10,6 +12,7 @@ import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
+import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.util.resources.Vocabulary;
@@ -18,7 +21,7 @@ import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.parameter.InvalidParameterValueException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class SetScale extends FunctionBase3{
 
@@ -71,9 +74,9 @@ public class SetScale extends FunctionBase3{
         	GridCoverageFactory fact=new GridCoverageFactory();
             return createGridCoverage(raster.getName(), inputImage);
         } else {
-            GridSampleDimension[] bands = raster.getSampleDimensions();
+            List<SampleDimension> bands = raster.getSampleDimensions();
 
-            double[] nodataValues = bands[0].getNoDataValues();
+            Set<Number> nodataValues = bands.get(0).getNoDataValues();
             Object noData = nodataValues == null ? Integer.MAX_VALUE : nodataValues[0];
 
             Map properties = raster.getProperties();

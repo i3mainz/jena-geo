@@ -13,7 +13,6 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.attribute;
 
 import org.apache.jena.sparql.expr.NodeValue;
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 import java.util.Arrays;
 
@@ -23,6 +22,8 @@ import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.operation.valid.IsValidOp;
 import org.locationtech.jts.operation.valid.TopologyValidationError;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class IsValidDetail extends FunctionBase1 {
 

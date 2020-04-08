@@ -12,8 +12,6 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.sis.coverage.grid.GridCoverage;
@@ -24,6 +22,8 @@ import org.opengis.geometry.DirectPosition;
 import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the geometric Y coordinate upper left corner of a raster, column and row. Numbering of columns and rows starts at 1.

@@ -12,12 +12,12 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.grid.GridCoverage;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class BandMetaData extends FunctionBase2 {
 

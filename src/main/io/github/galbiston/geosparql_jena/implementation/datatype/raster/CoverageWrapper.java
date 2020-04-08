@@ -16,12 +16,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.galbiston.geosparql_jena.implementation;
+package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
-import io.github.galbiston.geosparql_jena.implementation.datatype.GMLDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
+import io.github.galbiston.geosparql_jena.implementation.GeometryReverse;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.SRSInfo;
+import io.github.galbiston.geosparql_jena.implementation.UnitsOfMeasure;
+import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.RasterDataType;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GMLDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.great_circle.CoordinatePair;
 import io.github.galbiston.geosparql_jena.implementation.great_circle.GreatCircleDistance;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
@@ -73,15 +78,15 @@ import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
  *
  *
  */
-public class CoverageWrapper implements Serializable,Wrapper {
+public class CoverageWrapper extends SpatialWrapper {
 
     private final DimensionInfo dimensionInfo;
     private final SRSInfo srsInfo;
-    private final GridCoverage xyGeometry;
+    private final Geometry xyGeometry;
     private final GridCoverage parsingGeometry;
     private PreparedGeometry preparedGeometry;
     private Envelope envelope;
-    private Geometry translateXYGeometry;
+    private GridCoverage translateXYGeometry;
     private final String geometryDatatypeURI;
     private RasterDataType geometryDatatype;
     private String lexicalForm;
@@ -201,9 +206,9 @@ public class CoverageWrapper implements Serializable,Wrapper {
      * @throws MismatchedDimensionException
      * @throws TransformException
      */
-    public GeometryWrapper checkTransformSRS(GeometryWrapper targetGeometryWrapper) throws FactoryException, MismatchedDimensionException, TransformException {
+    public CoverageWrapper checkTransformSRS(CoverageWrapper targetGeometryWrapper) throws FactoryException, MismatchedDimensionException, TransformException {
 
-        GeometryWrapper transformedGeometryWrapper;
+        CoverageWrapper transformedGeometryWrapper;
         String srsURI = srsInfo.getSrsURI();
         if (srsURI.equals(targetGeometryWrapper.srsInfo.getSrsURI())) {
             transformedGeometryWrapper = targetGeometryWrapper;
@@ -224,7 +229,7 @@ public class CoverageWrapper implements Serializable,Wrapper {
      * @throws TransformException
      * @throws FactoryException
      */
-    public GeometryWrapper transform(String srsURI) throws MismatchedDimensionException, TransformException, FactoryException {
+    public CoverageWrapper transform(String srsURI) throws MismatchedDimensionException, TransformException, FactoryException {
         return transform(srsURI, true);
     }
 
@@ -280,7 +285,7 @@ public class CoverageWrapper implements Serializable,Wrapper {
      * @throws MismatchedDimensionException
      * @throws TransformException
      */
-    public GeometryWrapper convertSRS(String srsURI) throws FactoryException, MismatchedDimensionException, TransformException {
+    public CoverageWrapper convertSRS(String srsURI) throws FactoryException, MismatchedDimensionException, TransformException {
         return transform(srsURI);
     }
 
@@ -296,7 +301,7 @@ public class CoverageWrapper implements Serializable,Wrapper {
      *
      * @return Geometry with coordinates in x,y order, regardless of SRS_URI.
      */
-    public GridCoverage getXYGeometry() {
+    public GridCoverage getGridGeometry() {
         return xyGeometry;
     }
 
@@ -308,29 +313,7 @@ public class CoverageWrapper implements Serializable,Wrapper {
         return parsingGeometry;
     }
 
-    /**
-     * XY geometry translated by the domain range of the SRS, if a Geographic
-     * SRS.<br>
-     * Returns XY geometry if not a Geographic SRS.
-     *
-     * @return Geometry after translation in X direction.
-     */
-    public GridCoverage translateXYGeometry() {
-
-        if (translateXYGeometry == null) {
-
-            if (srsInfo.isGeographic()) {
-                double xTranslate = srsInfo.getDomainRangeX();
-                AffineTransformation translation = AffineTransformation.translationInstance(xTranslate, 0);
-                translateXYGeometry = translation.transform(xyGeometry); //Translate seems to be copying Y values into Z and M.
-            } else {
-                translateXYGeometry = xyGeometry;
-            }
-
-        }
-
-        return translateXYGeometry;
-    }
+   
 
     /**
      *
@@ -608,19 +591,6 @@ public class CoverageWrapper implements Serializable,Wrapper {
         RasterDataType datatype = RasterDataType.get(datatypeURI);
         CoverageWrapper geometry = datatype.parse(lexicalForm, targetIndex);
         return geometry;
-    }
-
-    /**
-     * Builds a WKT Point of Geometry Wrapper.<br>
-     * This method does not use the GeometryLiteralIndex and so is best used for
-     * one of Geometry Wrappers.
-     *
-     * @return Geometry Wrapper of WKT Point.
-     */
-    public static final CoverageWrapper fromPoint(double x, double y, String srsURI) {
-        CustomCoordinateSequence coordSequence = CustomCoordinateSequence.createPoint(x, y);
-        CoverageWrapper geometryWrapper = new CoverageWrapper(coordSequence, WKTDatatype.URI, srsURI);
-        return geometryWrapper;
     }
 
     /**

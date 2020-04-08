@@ -5,7 +5,8 @@ import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.operation.distance3d.Distance3DOp;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 public class ShortestLine3D extends FunctionBase2 {
 

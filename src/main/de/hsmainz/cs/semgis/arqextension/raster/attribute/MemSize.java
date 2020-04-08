@@ -4,7 +4,7 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.sis.coverage.grid.GridCoverage;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the amount of space (in bytes) the raster takes.

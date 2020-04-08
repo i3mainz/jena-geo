@@ -6,7 +6,7 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class PixelSize extends FunctionBase1 {
 

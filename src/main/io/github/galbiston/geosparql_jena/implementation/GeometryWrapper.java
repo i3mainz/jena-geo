@@ -17,9 +17,14 @@
  */
 package io.github.galbiston.geosparql_jena.implementation;
 
-import io.github.galbiston.geosparql_jena.implementation.datatype.GMLDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
+import io.github.galbiston.geosparql_jena.implementation.GeometryReverse;
+import io.github.galbiston.geosparql_jena.implementation.SRSInfo;
+import io.github.galbiston.geosparql_jena.implementation.UnitsOfMeasure;
+import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GMLDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.great_circle.CoordinatePair;
 import io.github.galbiston.geosparql_jena.implementation.great_circle.GreatCircleDistance;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
@@ -62,7 +67,7 @@ import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
  *
  *
  */
-public class GeometryWrapper implements Serializable,Wrapper {
+public class GeometryWrapper extends SpatialWrapper {
 
     private final DimensionInfo dimensionInfo;
     private final SRSInfo srsInfo;

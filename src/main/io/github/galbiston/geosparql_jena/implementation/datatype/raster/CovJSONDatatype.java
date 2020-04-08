@@ -1,7 +1,6 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import uk.ac.rdg.resc.edal.covjson.CoverageJsonConverterImpl;
 import uk.ac.rdg.resc.edal.covjson.CoverageJsonWriter;
 import uk.ac.rdg.resc.edal.covjson.StreamingEncoder;

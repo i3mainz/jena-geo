@@ -6,7 +6,7 @@ import org.apache.sis.coverage.grid.GridCoverage;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class IsTranslucent extends FunctionBase1 {
 

@@ -17,10 +17,10 @@ import org.locationtech.jts.geom.LineString;
 import org.locationtech.jts.geom.OctagonalEnvelope;
 import org.locationtech.jts.geom.Polygon;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.RasterDataType;
 
 public class LiteralUtils {
@@ -43,7 +43,7 @@ public class LiteralUtils {
 		if(wrapper instanceof GeometryWrapper) {
 			return ((GeometryWrapper) wrapper).getXYGeometry();
 		}else {
-			return toGeometry(((CoverageWrapper) wrapper).getXYGeometry().getGridGeometry().getEnvelope());
+			return toGeometry(((CoverageWrapper) wrapper).getParsingGeometry().getGridGeometry().getEnvelope());
 		}
 	}
 	

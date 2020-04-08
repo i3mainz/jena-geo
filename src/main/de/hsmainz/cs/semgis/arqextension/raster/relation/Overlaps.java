@@ -12,8 +12,8 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
@@ -40,19 +40,19 @@ public class Overlaps extends FunctionBase2 {
 				throw new RuntimeException("CRS transformation failed");
 			}		
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
 			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 		    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 		    return NodeValue.makeBoolean(bbox1.overlaps(bbox2));			
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				return NodeValue.makeBoolean(bbox1.overlaps(geom));
 			}else {
-				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				return NodeValue.makeBoolean(geom.overlaps(bbox1));				

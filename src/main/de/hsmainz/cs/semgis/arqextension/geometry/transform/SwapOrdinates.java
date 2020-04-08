@@ -12,8 +12,6 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.geometry.transform;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +24,7 @@ import org.locationtech.jts.geom.CoordinateXYM;
 import org.locationtech.jts.geom.CoordinateXYZM;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class SwapOrdinates extends FunctionBase2 {
 

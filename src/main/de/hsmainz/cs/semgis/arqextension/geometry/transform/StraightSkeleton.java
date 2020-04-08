@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.geometry;
+package de.hsmainz.cs.semgis.arqextension.geometry.transform;
 
 import java.util.HashSet;
 import java.util.List;
@@ -23,7 +23,8 @@ import org.twak.camp.Skeleton;
 import org.twak.utils.collections.Loop;
 import org.twak.utils.collections.LoopL;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 /**
  * Compute a straight skeleton from a geometry

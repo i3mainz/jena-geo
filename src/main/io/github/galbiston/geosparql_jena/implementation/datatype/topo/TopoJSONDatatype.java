@@ -15,10 +15,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.galbiston.geosparql_jena.implementation.datatype;
+package io.github.galbiston.geosparql_jena.implementation.datatype.topo;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeoJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
 
 import java.util.List;
 

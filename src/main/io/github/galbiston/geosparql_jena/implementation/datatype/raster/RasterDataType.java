@@ -1,21 +1,15 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
-import org.apache.jena.datatypes.BaseDatatype;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.datatypes.RDFDatatype;
 import org.apache.jena.datatypes.TypeMapper;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GMLDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeoJSONDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.KMLDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
 
-public abstract class RasterDataType extends BaseDatatype {
+public abstract class RasterDataType extends SpatialDatatype {
 
     public RasterDataType(String uri) {
         super(uri);
@@ -42,6 +36,7 @@ public abstract class RasterDataType extends BaseDatatype {
         try {
             return GeometryLiteralIndex.retrieve(lexicalForm, this, targetIndex);
         } catch (IllegalArgumentException ex) {
+        	ex.printStackTrace();
             throw new DatatypeFormatException(ex.getMessage() + " - Illegal Geometry Literal: " + lexicalForm);
         }
     }
@@ -52,8 +47,8 @@ public abstract class RasterDataType extends BaseDatatype {
     public static final void registerDatatypes() {
         if (!isDatatypesRegistered) {
             TYPE_MAPPER.registerDatatype(CovJSONDatatype.INSTANCE);
-        	TYPE_MAPPER.registerDatatype(GeoTIFFDatatype.INSTANCE);
-            TYPE_MAPPER.registerDatatype(GMLCOVDatatype.INSTANCE);
+        	//TYPE_MAPPER.registerDatatype(GeoTIFFDatatype.INSTANCE);
+            //TYPE_MAPPER.registerDatatype(GMLCOVDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(HexWKBRastDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(WKBRastDatatype.INSTANCE);
             isDatatypesRegistered = true;
@@ -61,10 +56,10 @@ public abstract class RasterDataType extends BaseDatatype {
     }
 
     public static final RasterDataType get(RDFDatatype rdfDatatype) {
-        if (rdfDatatype instanceof GeometryDatatype) {
+        if (rdfDatatype instanceof RasterDataType) {
             return (RasterDataType) rdfDatatype;
         } else {
-            throw new DatatypeFormatException("Unrecognised Geometry Datatype: " + rdfDatatype.getURI() + " Ensure that Datatype is extending GeometryDatatype.");
+            throw new DatatypeFormatException("Unrecognised Raster Datatype: " + rdfDatatype.getURI() + " Ensure that Datatype is extending GeometryDatatype.");
         }
     }
 

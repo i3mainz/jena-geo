@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
+import javax.imageio.ImageWriteParam;
+
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
@@ -24,8 +26,9 @@ import org.geotoolkit.image.io.SpatialImageWriteParam;
 >>>>>>> 914d7d9f3ec4aad04f53948ee35645f876dc4b77
 import org.geotoolkit.image.io.plugin.TiffImageWriter;
 
+import com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriter;
+
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 
 public class GeoTIFFDatatype extends RasterDataType {
 
@@ -42,8 +45,8 @@ public class GeoTIFFDatatype extends RasterDataType {
 		if (geometry instanceof CoverageWrapper) {
 			CoverageWrapper geometryWrapper = (CoverageWrapper) geometry;
 			
-			TiffImageWriter writer = new TiffImageWriter(null);
-			SpatialImageWriteParam writerParam = writer.getDefaultWriteParam();
+			TIFFImageWriter writer = new TIFFImageWriter(null);
+			ImageWriteParam writerParam = writer.getDefaultWriteParam();
 			String compression = null;
 			/*
 			 * if (compression != null) {

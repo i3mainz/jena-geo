@@ -12,7 +12,6 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
@@ -20,6 +19,8 @@ import org.apache.jena.sparql.function.FunctionBase2;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class DistanceSphere extends FunctionBase2 {
 

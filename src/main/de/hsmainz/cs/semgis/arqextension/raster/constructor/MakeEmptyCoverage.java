@@ -12,9 +12,11 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.internal.coverage.RasterFactory;
 import org.apache.sis.referencing.CommonCRS;
+import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 public class MakeEmptyCoverage extends FunctionBase0 {
 

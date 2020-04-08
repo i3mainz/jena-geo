@@ -8,7 +8,7 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
 import org.opengis.referencing.datum.PixelInCell;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 /**
  * Returns the X component of the pixel width in units of coordinate reference system.
  *

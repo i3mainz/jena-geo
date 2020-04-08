@@ -12,7 +12,6 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
@@ -20,6 +19,8 @@ import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.algorithm.distance.DiscreteHausdorffDistance;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Implements algorithm for computing a distance metric which can be thought of as the "Discrete Hausdorff Distance".

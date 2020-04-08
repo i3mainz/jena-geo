@@ -12,10 +12,11 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.sis.coverage.grid.GridCoverage;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the height of the raster in pixels.
