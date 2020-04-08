@@ -1,7 +1,6 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 
 public class GMLCOVDatatype extends RasterDataType {
 	

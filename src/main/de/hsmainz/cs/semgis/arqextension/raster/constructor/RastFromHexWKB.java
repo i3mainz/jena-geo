@@ -13,7 +13,7 @@ import org.opengis.util.FactoryException;
 
 import com.vividsolutions.jts.io.WKBReader;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class RastFromHexWKB extends FunctionBase1 {

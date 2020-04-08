@@ -6,8 +6,10 @@ import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
 import org.opengis.util.FactoryException;
 
+import com.sun.jersey.core.util.Base64;
+import com.vividsolutions.jts.io.WKBReader;
+
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 
 public class WKBRastDatatype extends RasterDataType {
 
@@ -33,7 +35,7 @@ public class WKBRastDatatype extends RasterDataType {
 			}
 
         } else {
-            throw new AssertionError("Object passed to GeoJSONDatatype is not a GeometryWrapper: " + geometry);
+            throw new AssertionError("Object passed to WKBRastDatatype is not a CoverageWrapper: " + geometry);
         }
 	}
 
@@ -42,9 +44,11 @@ public class WKBRastDatatype extends RasterDataType {
 		WKBRasterReader reader2=new WKBRasterReader();
 		GridCoverage coverage;
 		try {
-			coverage = reader2.readCoverage(geometryLiteral.getBytes(), null);
+			coverage = reader2.readCoverage(Base64.decode(geometryLiteral), null);
+			System.out.println(coverage);
 			return new CoverageWrapper(coverage, URI);
 		} catch (IOException | FactoryException e) {
+			e.printStackTrace();
 			throw new RuntimeException(e.getMessage());
 		}
 

@@ -12,7 +12,9 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.geometry.exporter;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.jena.datatypes.DatatypeFormatException;

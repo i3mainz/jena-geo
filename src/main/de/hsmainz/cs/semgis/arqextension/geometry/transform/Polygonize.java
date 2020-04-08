@@ -13,6 +13,7 @@
 package de.hsmainz.cs.semgis.arqextension.geometry.transform;
 
 import org.apache.jena.sparql.expr.NodeValue;
+
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;

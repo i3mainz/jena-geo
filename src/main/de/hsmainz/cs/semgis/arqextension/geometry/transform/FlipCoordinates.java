@@ -12,8 +12,6 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.geometry.transform;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +25,7 @@ import org.locationtech.jts.geom.CoordinateXYZM;
 import org.locationtech.jts.geom.Geometry;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Returns a version of the given geometry with X and Y axis flipped.
@@ -46,7 +45,7 @@ public class FlipCoordinates extends FunctionBase1 {
             		}else if(coord instanceof CoordinateXYZM) {
             			newcoords.add(new CoordinateXYZM(coord.getY(),coord.getX(),coord.getZ(),coord.getM()));
             		}else {
-                		newcoords.add(new Coordinate(coord.getX(),coord.getY()));            			
+                		newcoords.add(new Coordinate(coord.getY(),coord.getX()));            			
             		}
             	}
             	 return LiteralUtils.createGeometry(newcoords, geometry.getGeometryType(), geometry).asNodeValue();

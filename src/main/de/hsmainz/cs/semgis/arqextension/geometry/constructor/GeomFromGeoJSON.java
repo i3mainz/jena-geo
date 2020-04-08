@@ -5,9 +5,9 @@ import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Geometry;
 import org.wololo.jts2geojson.GeoJSONReader;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; 
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeoJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeoJSONDatatype;
 
 /**
  * Takes as input a geojson representation of a geometry and outputs a PostGIS geometry object

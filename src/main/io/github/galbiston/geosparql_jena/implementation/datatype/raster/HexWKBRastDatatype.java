@@ -5,15 +5,16 @@ import java.io.IOException;
 
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.crs.DefaultGeographicCRS;
 import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
+import org.geotoolkit.factory.Factories;
 import org.locationtech.jts.io.WKBReader;
 import org.locationtech.jts.io.WKBWriter;
 import org.opengis.referencing.crs.CRSAuthorityFactory;
 import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 
 public class HexWKBRastDatatype extends RasterDataType {
 
@@ -49,10 +50,11 @@ public class HexWKBRastDatatype extends RasterDataType {
 		GridCoverage coverage;
 		try {
 			BufferedImage img=reader2.read(WKBReader.hexToBytes(geometryLiteral));
-			coverage = reader2.readCoverage(WKBReader.hexToBytes(geometryLiteral), (CRSAuthorityFactory) CRS.forCode("EPSG:4326"));
+			coverage = reader2.readCoverage(WKBReader.hexToBytes(geometryLiteral),Factories.getCRSAuthorityFactory("EPSG"));
 			return new CoverageWrapper(coverage, URI);
 		} catch (IOException | FactoryException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
 			throw new RuntimeException(e.getMessage());
 		}
 

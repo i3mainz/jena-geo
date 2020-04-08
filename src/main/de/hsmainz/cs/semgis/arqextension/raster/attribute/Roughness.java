@@ -7,6 +7,7 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.jaitools.tiledimage.DiskMemImage;
+import org.opengis.coverage.grid.GridCoordinates;
 
 public class Roughness extends FunctionBase4{
 
@@ -23,7 +24,7 @@ public class Roughness extends FunctionBase4{
 	        WritableRectIter writer = RectIterFactory.createWritable(outputImage,
 	                outputImage.getBounds());
 
-	        GridCoordinates2D pos = new GridCoordinates2D();
+	        GridCoordinates pos = new GridCoordinates();
 
 	        int y = bounds.y;
 	        writer.startLines();
@@ -47,7 +48,7 @@ public class Roughness extends FunctionBase4{
 	        return createGridCoverage("Roughness", outputImage);
 	    }
 
-	    private void visitRoughness(WritableRectIter writer, GridCoordinates2D pos) {
+	    private void visitRoughness(WritableRectIter writer, GridCoordinates pos) {
 	        // +-------+ +-------+
 	        // | 0 1 2 | | a b c |
 	        // | 3 4 5 |>| d e f |

@@ -12,7 +12,8 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.constructor;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 import java.awt.image.DataBuffer;
 import java.awt.image.WritableRaster;
@@ -26,6 +27,7 @@ import org.apache.jena.sparql.function.FunctionBase0;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
 import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridCoverageBuilder;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.referencing.CommonCRS;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
@@ -49,13 +51,13 @@ raster.setSample(x, y, 0, x+y);
         CoordinateReferenceSystem crs = CommonCRS.WGS84.normalizedGeographic();
         Envelope2D envelope = new Envelope2D(crs, 0, 0, 30, 30);
 
-        GridCoverageBuilder gcb = new GridCoverageBuilder();
+        GridCoverageBuilder gcb = new org.apache.sis.coverage.grid.GridCoverageBuilder();
         gcb.setName("My grayscale coverage");
         gcb.setRenderedImage(raster);
         gcb.setEnvelope(envelope);
         GridCoverage gc = gcb.getGridCoverage2D();
 
-		return null;
+		return CoverageWrapper. gc;
 	}
 
 }

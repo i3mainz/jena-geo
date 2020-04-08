@@ -7,6 +7,7 @@ import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.Geometry;
+
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 public class AsOSMLink extends FunctionBase1{

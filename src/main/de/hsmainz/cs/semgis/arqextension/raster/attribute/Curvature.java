@@ -9,6 +9,7 @@ import javax.media.jai.iterator.WritableRectIter;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.geotoolkit.coverage.grid.GridCoordinates2D;
+import org.opengis.coverage.grid.GridCoordinates;
 
 public class Curvature extends FunctionBase1 {
 
@@ -32,7 +33,7 @@ public class Curvature extends FunctionBase1 {
 
 	    private int maxRow;
 	
-	private void visitCurvature(WritableRectIter writer, GridCoordinates2D pos, double zFactor) {
+	private void visitCurvature(WritableRectIter writer, GridCoordinates pos, double zFactor) {
         // http://resources.arcgis.com/en/help/main/10.1/#/How_Curvature_works/009z000000vs000000/
         // Zeverbergen, L. W., and C. R. Thorne. 1987. Quantitative Analysis of Land Surface
         // Topography.

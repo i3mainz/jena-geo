@@ -10,7 +10,8 @@ import org.apache.jena.sparql.function.FunctionBase3;
 import org.jaitools.jts.LineSmoother;
 import org.locationtech.jts.geom.Coordinate;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 /**
  * Returns a "smoothed" version of the given geometry using the Chaikin algorithm.

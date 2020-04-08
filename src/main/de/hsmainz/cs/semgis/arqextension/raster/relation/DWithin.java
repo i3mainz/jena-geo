@@ -12,8 +12,8 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 import java.awt.geom.Rectangle2D;
 import org.apache.jena.sparql.expr.NodeValue;
@@ -39,8 +39,8 @@ public class DWithin extends FunctionBase3 {
 			Double actualDistance=((GeometryWrapper)wrapper1).getXYGeometry().distance(((GeometryWrapper)wrapper2).getXYGeometry());
 			return NodeValue.makeBoolean(actualDistance<=withinDistance);
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();	
 			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 		    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 			Coordinate[] points = DistanceOp.nearestPoints(bbox1,bbox2);
@@ -50,8 +50,8 @@ public class DWithin extends FunctionBase3 {
 			return NodeValue.makeBoolean(actualdistance<=withinDistance);		
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+				Rectangle2D bbox1 = raster.getGridGeometry().getEnvelope().getBounds();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				Coordinate[] points = DistanceOp.nearestPoints(LiteralUtils.toGeometry(bbox1.getBounds()), geom);
 		        calc.setStartingGeographicPoint(points[0].x, points[0].y);
@@ -59,7 +59,7 @@ public class DWithin extends FunctionBase3 {
 		        Double actualdistance = calc.getOrthodromicDistance();
 				return NodeValue.makeBoolean(actualdistance<=withinDistance);
 			}else {
-				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				Coordinate[] points = DistanceOp.nearestPoints(LiteralUtils.toGeometry(bbox1.getBounds()), geom);

@@ -12,14 +12,14 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-
 import java.awt.geom.Point2D;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.IllegalGridGeometryException;
 import org.opengis.referencing.operation.TransformException;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the upper left Y coordinate of raster in projected spatial ref.

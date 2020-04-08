@@ -12,12 +12,12 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.grid.GridCoverage;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns true if there is no band with given band number. If no band number is specified, then band number 1 is assumed.
@@ -29,7 +29,7 @@ public class HasNoBand extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v, NodeValue v1) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getParsingGeometry();
 		BigInteger noband=v1.getInteger();
 		return NodeValue.makeBoolean(raster.getSampleDimensions().size()>=noband.intValue());
 	}

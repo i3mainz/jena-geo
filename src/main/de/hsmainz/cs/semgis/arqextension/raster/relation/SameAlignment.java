@@ -12,10 +12,13 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import java.awt.image.RenderedImage;
+
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.grid.GridCoverage;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns true if rasters have same skew, scale, spatial ref, and offset (pixels can be put on same grid without cutting into pixels) and false if they don't with notice detailing issue.
@@ -27,12 +30,25 @@ public class SameAlignment extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
         CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getGridGeometry();
         CoverageWrapper wrapper2=CoverageWrapper.extract(v2);
-		GridCoverage raster2=wrapper2.getXYGeometry();
-        Integer raster1_offset = raster.render(raster.getGridGeometry().getExtent()).getData().getDataBuffer().getOffset();
-        Integer raster2_offset = raster.render(raster.getGridGeometry().getExtent()).getData().getDataBuffer().getOffset();
-		throw new UnsupportedOperationException("Not supported yet.");
+		GridCoverage raster2=wrapper2.getGridGeometry();
+		RenderedImage image1 = raster.render(raster.getGridGeometry().getExtent());
+		RenderedImage image2 = raster2.render(raster2.getGridGeometry().getExtent());
+        Integer raster1_offset = image1.getData().getDataBuffer().getOffset();
+        Integer raster2_offset = image2.getData().getDataBuffer().getOffset();
+        if(raster1_offset==raster2_offset && 
+          raster.getGridGeometry().getCoordinateReferenceSystem().
+          equals(raster.getGridGeometry().getCoordinateReferenceSystem())
+          && (
+             raster.getGridGeometry().getEnvelope().getUpperCorner().
+             equals(raster.getGridGeometry().getEnvelope().getUpperCorner())
+           || raster.getGridGeometry().getEnvelope().getLowerCorner().
+           equals(raster.getGridGeometry().getEnvelope().getLowerCorner())
+        		  )) {
+        	return NodeValue.TRUE;
+        }
+        return NodeValue.FALSE;
 	}
 
 }

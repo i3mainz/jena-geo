@@ -12,9 +12,9 @@ import org.opengis.util.FactoryException;
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.WKT;
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class SymDifference extends FunctionBase2 {
 
@@ -32,14 +32,14 @@ public class SymDifference extends FunctionBase2 {
 				throw new RuntimeException("CRS transformation failed");
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
 	        Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 	        Envelope bbox2 = raster2.getGridGeometry().getEnvelope();
 	        return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).symDifference(LiteralUtils.toGeometry(bbox2)),WKT.DATATYPE_URI).asNodeValue();
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).symDifference(geom),WKT.DATATYPE_URI).asNodeValue();
@@ -47,7 +47,7 @@ public class SymDifference extends FunctionBase2 {
 
 				//return NodeValue.makeBoolean(LiteralUtils.toGeometry(bbox1.getBounds()).coveredBy(geom));
 			}else {
-				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).symDifference(geom),WKT.DATATYPE_URI).asNodeValue();
