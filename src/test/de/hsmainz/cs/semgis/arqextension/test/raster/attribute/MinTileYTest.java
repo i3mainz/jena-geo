@@ -1,24 +1,21 @@
-package de.hsmainz.cs.semgis.arqextension.test.raster.algebra;
+package de.hsmainz.cs.semgis.arqextension.test.raster.attribute;
 
 import static org.junit.Assert.assertEquals;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
-import de.hsmainz.cs.semgis.arqextension.raster.algebra.Not;
+import de.hsmainz.cs.semgis.arqextension.raster.attribute.MinTileY;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
-public class NotTest extends SampleRasters {
+public class MinTileYTest extends SampleRasters {
 
-	public static final String combinedRasterLiteral="";
-	
 	@Test
-	public void testNot() {
+	public void testMinTileY() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-        Not instance=new Not();
-        NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        MinTileY instance=new MinTileY();
+        NodeValue expResult = NodeValue.makeInteger(10);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}
