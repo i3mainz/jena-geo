@@ -28,7 +28,7 @@ public class WKBRastDatatype extends RasterDataType {
             WKBRasterWriter writer=new WKBRasterWriter();
 			String rasterWKB;
 			try {
-				rasterWKB = writer.write(geometryWrapper.getXYGeometry()).toString();
+				rasterWKB = writer.write(geometryWrapper.getGridGeometry()).toString();
 				return rasterWKB.toString();
 			} catch (IOException | FactoryException e) {
 				throw new AssertionError(e.getMessage());
