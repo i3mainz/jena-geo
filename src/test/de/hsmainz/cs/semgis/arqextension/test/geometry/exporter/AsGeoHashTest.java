@@ -2,9 +2,6 @@ package de.hsmainz.cs.semgis.arqextension.test.geometry.exporter;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Coordinate;
@@ -24,7 +21,7 @@ public class AsGeoHashTest {
         NodeValue geometryLiteral = GeometryWrapperFactory.createPoint(new Coordinate(-126.,48.),WKTDatatype.URI).asNodeValue();
         AsGeoHash instance=new AsGeoHash();
         NodeValue expResult = NodeValue.makeString("c0w3hf1s70w3hf1s70w3");
-        NodeValue result = instance.exec(geometryLiteral);
+        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeDouble(0.));
         assertEquals(expResult, result);
 	}
 	

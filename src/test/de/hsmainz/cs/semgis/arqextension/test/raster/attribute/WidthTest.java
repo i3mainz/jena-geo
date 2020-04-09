@@ -7,15 +7,15 @@ import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.raster.attribute.Width;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class WidthTest extends SampleRasters {
 	
 	@Test
 	public void testRasterWidth() {
-		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         Width instance=new Width();
-        NodeValue expResult = NodeValue.makeDouble(10.);
+        NodeValue expResult = NodeValue.makeDouble(1.);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

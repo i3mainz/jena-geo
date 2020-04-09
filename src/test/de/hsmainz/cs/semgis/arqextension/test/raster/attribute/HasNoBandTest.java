@@ -6,18 +6,17 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.raster.attribute.HasNoBand;
-import de.hsmainz.cs.semgis.arqextension.raster.attribute.Height;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class HasNoBandTest extends SampleRasters {
 	
 	@Test
 	public void testRasterHeight() {
-        NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
-        NodeValue noband = NodeValue.makeInteger(1);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        NodeValue noband = NodeValue.makeInteger(10);
         HasNoBand instance=new HasNoBand();
-        NodeValue expResult = NodeValue.makeDouble(10.);
+        NodeValue expResult = NodeValue.FALSE;
         NodeValue result = instance.exec(covLiteral,noband);
         assertEquals(expResult, result);
 	}
