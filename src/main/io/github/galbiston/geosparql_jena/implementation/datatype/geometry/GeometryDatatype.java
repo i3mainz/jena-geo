@@ -73,7 +73,7 @@ public abstract class GeometryDatatype extends SpatialDatatype {
             TYPE_MAPPER.registerDatatype(KMLDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(WKBDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(TWKBDatatype.INSTANCE);
-            TYPE_MAPPER.registerDatatype(TopoJSONDatatype.INSTANCE);
+            //TYPE_MAPPER.registerDatatype(TopoJSONDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(GeobufDatatype.INSTANCE);
             //TYPE_MAPPER.registerDatatype(GeoHashDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(EncodedPolylineDatatype.INSTANCE);

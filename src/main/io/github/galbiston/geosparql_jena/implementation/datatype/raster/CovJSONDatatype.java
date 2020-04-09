@@ -1,11 +1,13 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.wkb.WKBRasterWriter;
+import org.json.JSONObject;
+
+import de.hsmainz.cs.semgis.arqextension.util.parsers.CoverageJSONReader;
+import de.hsmainz.cs.semgis.arqextension.util.parsers.CoverageJsonWriter;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
-import uk.ac.rdg.resc.edal.covjson.CoverageJsonConverterImpl;
-import uk.ac.rdg.resc.edal.covjson.CoverageJsonWriter;
-import uk.ac.rdg.resc.edal.covjson.StreamingEncoder;
-import uk.ac.rdg.resc.edal.covjson.writers.Coverage;
-import uk.ac.rdg.resc.edal.feature.Feature;
+
 
 public class CovJSONDatatype extends RasterDataType{
 
@@ -19,17 +21,19 @@ public class CovJSONDatatype extends RasterDataType{
 
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
-		CoverageJsonConverterImpl covjsonconverter=new CoverageJsonConverterImpl();
-		Feature feat;
-		Coverage coverage;
-		covjsonconverter.convertFeatureToJson(os, feat);
+		GridCoverage coverage=CoverageJSONReader.covJSONStringToCoverage(geometryLiteral);
+		return new CoverageWrapper(coverage, URI);
 	}
 	
 	@Override
 	public String unparse(Object value) {
-		CoverageJsonWriter writer=new CoverageJsonWriter(new StreamingEncoder());
-		// TODO Auto-generated method stub
-		return super.unparse(value);
+		if (value instanceof CoverageWrapper) {
+			CoverageWrapper covWrapper = (CoverageWrapper) value;
+			JSONObject res=CoverageJsonWriter.coverageToCovJSON(covWrapper.getGridGeometry());
+			return res.toString();
+		}else {
+            throw new AssertionError("Object passed to CoverageJSONDatatype is not a CoverageWrapper: " + value);
+        }
 	}
 
 }
