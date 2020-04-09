@@ -21,11 +21,12 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 import org.apache.sis.referencing.CommonCRS;
+import org.apache.sis.referencing.gazetteer.AbstractLocation;
 import org.apache.sis.referencing.gazetteer.GeohashReferenceSystem;
 import org.locationtech.jts.algorithm.Angle;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
-import org.opengis.referencing.gazetteer.Location;
+import org.locationtech.jts.geom.Location;
 import org.opengis.referencing.operation.TransformException;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
@@ -101,7 +102,7 @@ public class GeoHashDatatype extends GeometryDatatype {
     	try {
             GeohashReferenceSystem refsys= new GeohashReferenceSystem(GeohashReferenceSystem.Format.BASE32, CommonCRS.WGS84.normalizedGeographic());
     		GeohashReferenceSystem.Coder coder=refsys.createCoder();
-			Location pos=coder.decode(geometryLiteral);
+			AbstractLocation pos=coder.decode(geometryLiteral);
 			return GeometryWrapperFactory.createPoint(new Coordinate(pos.getPosition().getDirectPosition().getCoordinate()[0],pos.getPosition().getDirectPosition().getCoordinate()[1]), URI);
 		} catch (TransformException e) {
 			throw new AssertionError("Could not read GeoHash representation of: " + geometryLiteral);
