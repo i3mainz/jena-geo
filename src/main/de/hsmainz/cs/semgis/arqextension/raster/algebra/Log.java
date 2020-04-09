@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBuffer;
 import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
+import java.math.BigInteger;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -11,24 +12,38 @@ import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
-import org.apache.jena.sparql.function.FunctionBase2;
+import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.internal.coverage.BufferedGridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
-public class Log extends FunctionBase2  {
+public class Log extends FunctionBase3  {
 
 	@Override
-	public NodeValue exec(NodeValue v1, NodeValue v2) {
+	public NodeValue exec(NodeValue v1, NodeValue v2,NodeValue v3) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage raster=wrapper.getXYGeometry();
-		Integer addconst=v2.getInteger().intValue();
-	     Integer rd1 = 0, rd2 = 0;
+		BigInteger bandnum=v2.getInteger();
+		Double constval=v3.getDouble();
+		double[] consts=new double[raster.getSampleDimensions().size()];
+		if(bandnum.intValue()<0) {
+			for(int i=0;i<consts.length;i++) {
+				consts[i]=constval;
+			}
+		}else {
+			for(int i=0;i<consts.length;i++) {
+				if(i==bandnum.intValue()) {
+					consts[i]=constval;
+				}else {
+					consts[i]=0;
+				}
+			}
+		}
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 
-	     pbSubtracted.add(addconst);
+	     pbSubtracted.add(consts);
 	     RenderedOp subtractedImage = JAI.create("log",pbSubtracted);
 			/*
 			 * final GridGeometry grid = new
@@ -41,11 +56,11 @@ public class Log extends FunctionBase2  {
 			 */
 			final SampleDimension sd = new SampleDimension.Builder().setName("t")
 					.addQuantitative(
-							(raster.getSampleDimensions().get(rd1).getName() + " log "
-									+ addconst).toString(),
-							raster.getSampleDimensions().get(0).getMeasurementRange().get(),
-							raster.getSampleDimensions().get(0).getTransferFunction().get(),
-							raster.getSampleDimensions().get(0).getUnits().get())
+							(raster.getSampleDimensions().get(bandnum.intValue()).getName() + " log "
+									+ constval).toString(),
+							raster.getSampleDimensions().get(bandnum.intValue()).getMeasurementRange().get(),
+							raster.getSampleDimensions().get(bandnum.intValue()).getTransferFunction().get(),
+							raster.getSampleDimensions().get(bandnum.intValue()).getUnits().get())
 					.build();
 			
 			List<SampleDimension>sds=new LinkedList<SampleDimension>();
