@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.raster.algebra.AndConst;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class AndConstTest extends SampleRasters {
 
@@ -15,11 +15,12 @@ public class AndConstTest extends SampleRasters {
 	
 	@Test
 	public void testAndConst() {
-        NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        NodeValue bandnum = NodeValue.makeInteger(0);
         NodeValue covLiteral2 = NodeValue.makeInteger(10);
         AndConst instance=new AndConst();
-        NodeValue expResult = NodeValue.makeNode(combinedRasterLiteral, CovJSONDatatype.INSTANCE);
-        NodeValue result = instance.exec(covLiteral,covLiteral2);
+        NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        NodeValue result = instance.exec(covLiteral,bandnum,covLiteral2);
         assertEquals(expResult, result);
 	}
 

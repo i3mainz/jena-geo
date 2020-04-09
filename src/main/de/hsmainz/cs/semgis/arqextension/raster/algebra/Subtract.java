@@ -25,7 +25,7 @@ public class Subtract extends FunctionBase2  {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage raster=wrapper.getXYGeometry();
 		CoverageWrapper wrapper2=CoverageWrapper.extract(v2);
-		GridCoverage raster2=wrapper.getXYGeometry();
+		GridCoverage raster2=wrapper2.getXYGeometry();
 	     Integer rd1 = 0, rd2 = 0;
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 

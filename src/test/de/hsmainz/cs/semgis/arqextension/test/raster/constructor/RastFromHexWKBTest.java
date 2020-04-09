@@ -7,15 +7,15 @@ import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.raster.constructor.RastFromHexWKB;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class RastFromHexWKBTest extends SampleRasters {
 	
 	@Test
-	public void testTileHeight() {
+	public void testRasterFromHexWKB() {
 		NodeValue covLiteral = NodeValue.makeString(wkbString1);
         RastFromHexWKB instance=new RastFromHexWKB();
-        NodeValue expResult = NodeValue.makeNode(rasterLiteral1,CovJSONDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(rasterLiteral1,HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

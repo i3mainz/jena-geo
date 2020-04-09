@@ -33,7 +33,7 @@ public class HexWKBRastDatatype extends RasterDataType {
             WKBRasterWriter writer=new WKBRasterWriter();
 			String rasterWKB;
 			try {
-				rasterWKB = WKBWriter.toHex(writer.write(geometryWrapper.getParsingGeometry())).toString();
+				rasterWKB = WKBWriter.toHex(writer.write(geometryWrapper.getGridGeometry())).toString();
 				return rasterWKB.toString();
 			} catch (IOException | FactoryException e) {
 				throw new AssertionError(e.getMessage());

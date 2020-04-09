@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.raster.attribute.RasterToWorldCoord;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class RasterToWorldCoordTest extends SampleRasters {
 	
 	@Test
 	public void testRasterToWorldCoord() {
-		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
 		NodeValue x = NodeValue.makeInteger(1);
 		NodeValue y = NodeValue.makeInteger(1);
 		RasterToWorldCoord instance=new RasterToWorldCoord();

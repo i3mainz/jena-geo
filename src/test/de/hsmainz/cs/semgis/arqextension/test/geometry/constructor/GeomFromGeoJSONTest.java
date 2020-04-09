@@ -11,7 +11,7 @@ import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.io.ParseException;
 
 import de.hsmainz.cs.semgis.arqextension.geometry.constructor.GeomFromGeoJSON;
-import io.github.galbiston.geosparql_jena.implementation.datatype.GeoJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeoJSONDatatype;
 
 public class GeomFromGeoJSONTest {
 
