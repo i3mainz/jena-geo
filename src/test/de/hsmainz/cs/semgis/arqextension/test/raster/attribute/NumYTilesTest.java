@@ -11,8 +11,6 @@ import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
 
 public class NumYTilesTest extends SampleRasters {
-
-	GridCoverage cov;
 	
 	@Test
 	public void testNumYTiles() {
