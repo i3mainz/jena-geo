@@ -30,6 +30,7 @@ public class And extends FunctionBase2  {
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 
 	     pbSubtracted.addSource(raster2.render(raster2.getGridGeometry().getExtent())); 
+	     //System.out.println(raster2);
 	     RenderedOp subtractedImage = JAI.create("and",pbSubtracted);
 			/*
 			 * final GridGeometry grid = new
@@ -40,6 +41,7 @@ public class And extends FunctionBase2  {
 			 * final MathTransform1D toUnits = (MathTransform1D) MathTransforms.linear(0.5,
 			 * 100);
 			 */
+	     System.out.println(raster.getSampleDimensions().size());
 			final SampleDimension sd = new SampleDimension.Builder().setName("t")
 					.addQuantitative(
 							(raster.getSampleDimensions().get(rd1).getName() + " & "

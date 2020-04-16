@@ -49,8 +49,9 @@ public class HexWKBRastDatatype extends RasterDataType {
 		WKBRasterReader reader2=new WKBRasterReader();
 		GridCoverage coverage;
 		try {
-			BufferedImage img=reader2.read(WKBReader.hexToBytes(geometryLiteral));
+			//BufferedImage img=reader2.read(WKBReader.hexToBytes(geometryLiteral));
 			coverage = reader2.readCoverage(WKBReader.hexToBytes(geometryLiteral),Factories.getCRSAuthorityFactory("EPSG"));
+			//System.out.println(coverage);
 			return new CoverageWrapper(coverage, URI);
 		} catch (IOException | FactoryException e) {
 			// TODO Auto-generated catch block

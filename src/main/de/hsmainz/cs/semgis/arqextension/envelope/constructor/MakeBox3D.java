@@ -6,7 +6,8 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.geom.Envelope;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class MakeBox3D extends FunctionBase2 {

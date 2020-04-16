@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.util.function;
+package de.hsmainz.cs.semgis.arqextension.math;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;

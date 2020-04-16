@@ -11,8 +11,8 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.geotoolkit.image.io.SpatialImageWriteParam;
 import org.geotoolkit.image.io.plugin.TiffImageWriter;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; 
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper; 
 public class AsTIFF extends FunctionBase1{
 
 	@Override

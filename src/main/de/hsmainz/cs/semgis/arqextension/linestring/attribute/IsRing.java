@@ -12,13 +12,14 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.linestring.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.LineString;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Returns TRUE if this LINESTRING is both closed and simple.

@@ -3,7 +3,8 @@ package de.hsmainz.cs.semgis.arqextension.linestring.attribute;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 /**
  * Returns one or more points interpolated along a line.

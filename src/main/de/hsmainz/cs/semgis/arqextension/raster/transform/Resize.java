@@ -10,9 +10,10 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.ImageRenderer;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class Resize extends FunctionBase3{
 
@@ -22,8 +23,8 @@ public class Resize extends FunctionBase3{
 		GridCoverage raster=wrapper.getXYGeometry();
 		BigInteger width=v2.getInteger();
 		BigInteger height=v3.getInteger();
-		raster.render(raster.getGridGeometry().getExtent()).
-		ImageWorker w = new ImageWorker(img);
+
+		ImageRenderer w = new ImageRenderer(img);
 		// Setting RenderingHints
 		w.setRenderingHints(img);
 		// Setting ROI and NoData

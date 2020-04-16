@@ -26,7 +26,7 @@ public class BandPixelType extends FunctionBase2 {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage raster=wrapper.getXYGeometry();
 		BigInteger bandNum=v2.getInteger();
-        return NodeValue.makeString(raster.getSampleDimensions().get(bandNum.intValue()).getSampleDimensionType() + "");
+        return NodeValue.makeString(raster.getSampleDimensions().get(bandNum.intValue()).getSampleRange() + "");
 	}
 
 }

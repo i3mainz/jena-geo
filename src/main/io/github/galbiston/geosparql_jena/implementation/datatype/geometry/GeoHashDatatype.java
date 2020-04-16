@@ -102,7 +102,7 @@ public class GeoHashDatatype extends GeometryDatatype {
     	try {
             GeohashReferenceSystem refsys= new GeohashReferenceSystem(GeohashReferenceSystem.Format.BASE32, CommonCRS.WGS84.normalizedGeographic());
     		GeohashReferenceSystem.Coder coder=refsys.createCoder();
-			AbstractLocation pos=coder.decode(geometryLiteral);
+			org.opengis.referencing.gazetteer.Location pos=coder.decode(geometryLiteral);
 			return GeometryWrapperFactory.createPoint(new Coordinate(pos.getPosition().getDirectPosition().getCoordinate()[0],pos.getPosition().getDirectPosition().getCoordinate()[1]), URI);
 		} catch (TransformException e) {
 			throw new AssertionError("Could not read GeoHash representation of: " + geometryLiteral);

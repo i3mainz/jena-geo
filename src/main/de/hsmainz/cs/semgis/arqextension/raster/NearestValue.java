@@ -12,11 +12,11 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
-
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
 import org.apache.sis.coverage.grid.GridCoverage;
+
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the nearest non-NODATA value of a given band's pixel specified by a columnx and rowy or a geometric point expressed in the same spatial reference coordinate system as the raster. 

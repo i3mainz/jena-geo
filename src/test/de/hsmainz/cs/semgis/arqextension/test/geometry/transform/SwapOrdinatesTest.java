@@ -20,7 +20,7 @@ public static final String testPolygon="POLYGON((0 0 2,0 5 2,5 0 2,0 0 2))";
 	@Test
 	public void testSwapOrdinates() {
         NodeValue geometryLiteral = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
-        FlipCoordinates instance=new FlipCoordinates();
+        SwapOrdinates instance=new FlipCoordinates();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(0,0));
         coords.add(new Coordinate(5,0));

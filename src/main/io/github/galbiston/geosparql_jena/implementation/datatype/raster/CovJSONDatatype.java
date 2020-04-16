@@ -1,7 +1,6 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.geotoolkit.coverage.wkb.WKBRasterWriter;
 import org.json.JSONObject;
 
 import de.hsmainz.cs.semgis.arqextension.util.parsers.CoverageJSONReader;

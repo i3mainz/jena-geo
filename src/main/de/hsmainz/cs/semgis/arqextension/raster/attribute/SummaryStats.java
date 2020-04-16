@@ -24,6 +24,7 @@ import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
+import org.apache.sis.geometry.GeneralEnvelope;
 import org.locationtech.jts.geom.CoordinateXY;
 import org.opengis.referencing.operation.TransformException;
 
@@ -37,7 +38,7 @@ public class SummaryStats extends FunctionBase3 {
         Integer y = v3.getInteger().intValue();
         Envelope2D pixelEnvelop;
         try {
-            pixelEnvelop = raster.getGridGeometry().gridToWorld(new GridEnvelope(x, y, 1, 1));
+            pixelEnvelop = raster.getGridGeometry().gridToWorld(new GeneralEnvelope(x, y, 1, 1));
             CoordinateXY coord = new CoordinateXY(pixelEnvelop.getCenterX(), pixelEnvelop.getCenterY());
             GeometryWrapper summaryWrapper = GeometryWrapperFactory.createPoint(coord, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
             return summaryWrapper.asNodeValue();

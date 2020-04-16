@@ -12,20 +12,22 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.linestring.transform;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
-import org.apache.jena.sparql.function.FunctionBase3;
+import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.operation.buffer.BufferParameters;
 import org.locationtech.jts.operation.buffer.OffsetCurveBuilder;
 
-public class OffsetCurve extends FunctionBase3 {
+public class OffsetCurve extends FunctionBase2 {
 
     @Override
-    public NodeValue exec(NodeValue arg0, NodeValue arg1, NodeValue arg2) {
+    public NodeValue exec(NodeValue arg0, NodeValue arg1) {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);

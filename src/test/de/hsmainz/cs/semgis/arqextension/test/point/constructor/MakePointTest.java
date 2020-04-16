@@ -8,7 +8,6 @@ import java.util.List;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.CoordinateXYM;
 
 import de.hsmainz.cs.semgis.arqextension.point.constructor.MakePoint;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;

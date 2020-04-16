@@ -1,4 +1,4 @@
-package de.hsmainz.cs.semgis.arqextension.raster;
+package de.hsmainz.cs.semgis.arqextension.raster.exporter;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;

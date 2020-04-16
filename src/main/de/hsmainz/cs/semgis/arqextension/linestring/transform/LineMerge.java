@@ -12,7 +12,8 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.linestring.transform;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 import java.util.Arrays;
 import java.util.LinkedList;

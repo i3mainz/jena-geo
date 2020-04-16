@@ -15,7 +15,7 @@ public class AddBandTest extends SampleRasters {
 	@Test
 	public void testTileHeight() {
 		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
-		NodeValue rasterBand = NodeValue.makeNode(rasterBand, WKTDatatype.INSTANCE);
+		NodeValue rasterBand = NodeValue.makeNode(rasterBand, CovJSONDatatype.INSTANCE);
         AddBand instance=new AddBand();
         NodeValue expResult = NodeValue.makeInteger(10);
         NodeValue result = instance.exec(covLiteral,rasterBand);

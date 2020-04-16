@@ -12,11 +12,12 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.point.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Returns X minima of a bounding box 2d or 3d or a geometry.

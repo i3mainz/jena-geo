@@ -17,7 +17,7 @@ public class MemSize extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();	
-        return NodeValue.makeInteger(raster.getRenderedImage().getData().getDataBuffer().getSize());
+        return NodeValue.makeInteger(raster.render(null).getData().getDataBuffer().getSize());
 	}
 
 }

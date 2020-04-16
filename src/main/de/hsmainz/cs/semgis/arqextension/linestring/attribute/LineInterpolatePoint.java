@@ -7,7 +7,8 @@ import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.linearref.LengthLocationMap;
 import org.locationtech.jts.linearref.LinearLocation;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 /**

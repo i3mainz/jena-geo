@@ -25,9 +25,6 @@ public class AsTextRound extends FunctionBase2 {
             PrecisionModel pm = new PrecisionModel(Math.pow(10.0, v2.getDouble()));
             Geometry geom_mod=GeometryPrecisionReducer.reduce(geom, pm);
             GeometryWrapper wrapper=GeometryWrapperFactory.createGeometry(geom_mod, geometry.getGeometryDatatypeURI());
-            //FlipCoordinates flip=new FlipCoordinates();
-            //NodeValue wrapper2=flip.exec(wrapper.asNodeValue());
-            //GeometryWrapper resultwrapper=GeometryWrapper.extract(wrapper2);
             return NodeValue.makeString(wrapper.getXYGeometry().toText());
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
