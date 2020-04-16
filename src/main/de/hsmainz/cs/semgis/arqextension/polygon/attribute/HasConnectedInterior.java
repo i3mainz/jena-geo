@@ -11,7 +11,7 @@ import org.locationtech.jts.operation.valid.ConnectedInteriorTester;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
-public class HasConnectedInteriorTest extends FunctionBase1 {
+public class HasConnectedInterior extends FunctionBase1 {
 
 		@Override
 		public NodeValue exec(NodeValue v) {
