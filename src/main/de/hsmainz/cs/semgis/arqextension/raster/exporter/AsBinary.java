@@ -8,7 +8,7 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
 import org.opengis.util.FactoryException;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class AsBinary extends FunctionBase1{
 

@@ -54,7 +54,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 			 * writerParam.setCompressionType(compression); }
 			 */
 			try {
-				writer.write(((CoverageWrapper) geometry).getXYGeometry().render(null).getData());
+				writer.write(((CoverageWrapper) geometry).getParsingGeometry().render(null).getData());
 				writer.endWriteSequence();
 				return writer.getOutput().toString();
 			} catch (IOException e) {

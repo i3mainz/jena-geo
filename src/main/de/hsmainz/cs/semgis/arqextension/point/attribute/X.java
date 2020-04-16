@@ -12,13 +12,14 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.point.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Point;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Return the X coordinate of the point, or NULL if not available. Input must be a point.

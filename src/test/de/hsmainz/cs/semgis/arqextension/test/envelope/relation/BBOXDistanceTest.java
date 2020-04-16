@@ -10,7 +10,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class BBOXDistanceTest {
 
-public static final String testGeom1="LINESTRING (1 4, 1 7)";
+	public static final String testGeom1="LINESTRING (1 4, 1 7)";
 	
 	public static final String testGeom2="LINESTRING (0 0, 4 2)";
 	

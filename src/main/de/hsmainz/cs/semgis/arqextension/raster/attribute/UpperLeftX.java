@@ -12,11 +12,13 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import java.awt.geom.Point2D;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.IllegalGridGeometryException;
+import org.apache.sis.geometry.GeneralDirectPosition;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.TransformException;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
@@ -30,17 +32,17 @@ public class UpperLeftX extends FunctionBase1 {
 
 	@Override
 	public NodeValue exec(NodeValue v) {
-		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		
+		CoverageWrapper wrapper=CoverageWrapper.extract(v);		
 		GridCoverage raster=wrapper.getXYGeometry();	
-		Point2D position;
+		double[] coords=new double[] {0,0};
+		GeneralDirectPosition pos = new GeneralDirectPosition(coords);
+		DirectPosition position;
 		try {
-			position = raster.getGridGeometry().getGridToCRS2D().transform(new GridCoordinates(0, 0),null);
-			return NodeValue.makeDouble(position.getX());
+			position = raster.getGridGeometry().getGridToCRS(PixelInCell.CELL_CENTER).transform(pos,null);
+			return NodeValue.makeDouble(position.getCoordinate()[0]);
 		} catch (IllegalGridGeometryException | TransformException e) {
 			throw new AssertionError("InvalidGeometryException");
-		}
-        
+		}        
 	}
 
 }

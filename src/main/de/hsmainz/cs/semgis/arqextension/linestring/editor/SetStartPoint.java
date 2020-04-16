@@ -1,7 +1,5 @@
 package de.hsmainz.cs.semgis.arqextension.linestring.editor;
 
-import java.math.BigInteger;
-
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;

@@ -12,14 +12,13 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
-import java.util.List;
-import org.apache.jena.sparql.engine.binding.Binding;
+
+import java.awt.image.RenderedImage;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.sis.coverage.grid.GridCoverage;
 
 public class Summary extends FunctionBase1 {
@@ -29,9 +28,10 @@ public class Summary extends FunctionBase1 {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();
 		StringBuilder builder = new StringBuilder();
-        builder.append("Raster of " + raster.getGridGeometry().getWidth() + "x" + raster.getRenderedImage().getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getEnvelope().toString() + System.lineSeparator());
+		RenderedImage rendered=raster.render(null);
+        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getGridGeometry().toString() + System.lineSeparator());
         for (int i = 0; i < raster.getSampleDimensions().size(); i++) {
-            builder.append("band " + i + " of pixtype " + raster.getSampleDimensions.get(i).getColorModel().getTransferType() + " is in-db with NODATA value of " + raster.getSampleDimension(i).getNoDataValues()[0] + System.lineSeparator());
+            builder.append("band " + i + " of pixtype " + raster.getSampleDimensions().get(i).getCategories() + " is in-db with NODATA value of " + raster.getSampleDimensions().get(i).getNoDataValues() + System.lineSeparator());
         }
         return NodeValue.makeString(builder.toString());
 	}

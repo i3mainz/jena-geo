@@ -12,7 +12,8 @@ import org.locationtech.jts.geom.Point;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class SetPoint extends FunctionBase3 {

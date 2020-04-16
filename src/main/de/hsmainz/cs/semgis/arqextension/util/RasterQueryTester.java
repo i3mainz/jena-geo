@@ -11,7 +11,7 @@ import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.geotiff.GeoTiffStore;
 import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
 
-import io.github.galbiston.geosparql_jena.implementation.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class RasterQueryTester {
 
@@ -37,7 +37,7 @@ public class RasterQueryTester {
 		GridCoverage cov;
 
 			GeoTiffStore store=new GeoTiffStore(prov,c);
-			store.getProvider().open(c).
-			cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
+			//store.getProvider().open(c).
+			//cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
 	}
 }

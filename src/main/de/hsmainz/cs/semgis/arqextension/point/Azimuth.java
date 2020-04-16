@@ -12,7 +12,6 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.point;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import java.awt.geom.Point2D;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
@@ -23,6 +22,8 @@ import org.locationtech.jts.geom.Point;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
+
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 
 /**
  * Returns the north-based azimuth as the angle in radians measured clockwise from the vertical on pointA to pointB.

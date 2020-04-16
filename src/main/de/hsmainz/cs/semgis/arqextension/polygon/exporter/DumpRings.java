@@ -13,7 +13,8 @@ import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.LineString;
 import org.locationtech.jts.geom.Polygon;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper; import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 public class DumpRings extends FunctionBase1 {
 
@@ -27,8 +28,8 @@ public class DumpRings extends FunctionBase1 {
 				Polygon poly=(Polygon)geom;
 				for (int i = 0; i < poly.getNumInteriorRing(); i++) {
 					LineString n=poly.getInteriorRingN(i);
-					Coordinate coord = coordinates[i];
-					GeometryWrapper resWrapper = GeometryWrapperFactory.createPoint(coord, srsURI, geometryDatatypeURI);
+					Coordinate coord = n.getCoordinateN(i);
+					GeometryWrapper resWrapper = GeometryWrapperFactory.createPoint(coord, geometry.getSrsURI(), geometry.getGeometryDatatypeURI());
 					Literal resLiteral = resWrapper.asLiteral();
 					String resString = resLiteral.toString();
 					results.add(resString);
