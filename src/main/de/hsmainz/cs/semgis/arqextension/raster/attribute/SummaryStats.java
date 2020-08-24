@@ -37,14 +37,16 @@ public class SummaryStats extends FunctionBase3 {
 		Integer x = v2.getInteger().intValue();
         Integer y = v3.getInteger().intValue();
         Envelope2D pixelEnvelop;
+        /*
         try {
-            pixelEnvelop = raster.getGridGeometry().gridToWorld(new GeneralEnvelope(x, y, 1, 1));
+            pixelEnvelop = raster.getGridGeometry().getGridToCRS(new GeneralEnvelope(x, y, 1, 1));
             CoordinateXY coord = new CoordinateXY(pixelEnvelop.getCenterX(), pixelEnvelop.getCenterY());
             GeometryWrapper summaryWrapper = GeometryWrapperFactory.createPoint(coord, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
             return summaryWrapper.asNodeValue();
         } catch (TransformException e) {
             return NodeValue.nvNothing;
-        }
+        }*/
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 }

@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridCoverage2D;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.geotiff.GeoTiffStore;
@@ -20,8 +21,8 @@ public class RasterQueryTester {
 	}
 	
 	public static void main(String[] args) throws DataStoreException {
-		/*GridCoverage2D coverage;
-		try {
+		GridCoverage2D coverage;
+		/*try {
 			coverage = CoverageIO.read(geometryLiteral);
 			return new CoverageWrapper(coverage, URI);
 		} catch (CoverageStoreException e) {
@@ -35,9 +36,8 @@ public class RasterQueryTester {
 		c=new StorageConnector(new File("flood/hochwasser.tif"));
 		GeoTiffStoreProvider prov=new GeoTiffStoreProvider();
 		GridCoverage cov;
-
-			GeoTiffStore store=new GeoTiffStore(prov,c);
-			//store.getProvider().open(c).
-			//cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
+		GeoTiffStore store=new GeoTiffStore(prov,c);
+		store.getProvider().open(c);
+		cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
 	}
 }

@@ -43,7 +43,7 @@ public class StraightSkeleton extends FunctionBase1 {
         throw new UnsupportedOperationException("Not supported yet.");
 	}
 	
-	public Set<LineSegment> skeletonizeStraightSkeleton(Polygon polygon) {
+	/*public Set<LineSegment> skeletonizeStraightSkeleton(Polygon polygon) {
 		    Set<LineSegment> skeletonSegments = new HashSet<LineSegment>();
 		    Machine directionMachine = new Machine();
 
@@ -104,6 +104,6 @@ public class StraightSkeleton extends FunctionBase1 {
 		    }
 
 		    return skeletonSegments;
-		  }
+		  }*/
 }
 

@@ -41,7 +41,7 @@ public class Rotation extends FunctionBase1{
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 	
-	public GridCoverage execute(GridCoverage inputCoverage, Coordinate anchorPoint, double angle) {
+	/*public GridCoverage execute(GridCoverage inputCoverage, Coordinate anchorPoint, double angle) {
         this.initilizeVariables(inputCoverage);
 
         final PlanarImage inputImage = (PlanarImage) inputCoverage.getRenderedImage();
@@ -122,6 +122,6 @@ public class Rotation extends FunctionBase1{
             GridCoverageFactory factory = CoverageFactoryFinder.getGridCoverageFactory(null);
             return factory.create(inputCoverage.getName(), outputImage, Extent, bands, null,
                     properties);
-        }
+        }*/
 
 }

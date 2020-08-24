@@ -15,11 +15,10 @@ public class Curvature extends FunctionBase1 {
 
 	@Override
 	public NodeValue exec(NodeValue v) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 	
-	    protected double srcNoData = -Float.MAX_VALUE;
+	/*    protected double srcNoData = -Float.MAX_VALUE;
 
 	    protected double _8DX = CellSizeX * 8;
 
@@ -160,6 +159,6 @@ public class Curvature extends FunctionBase1 {
         }
 
         return false;
-	}
+	}*/
 
 }

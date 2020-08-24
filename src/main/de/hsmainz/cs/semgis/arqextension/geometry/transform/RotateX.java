@@ -4,7 +4,6 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.geometry.jts.JTS;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.util.AffineTransformation;
 
@@ -22,7 +21,7 @@ public class RotateX extends FunctionBase2 {
 
             float rotRadians = arg1.getFloat();
             AffineTransformation trans = new AffineTransformation();
-            trans.rotate(rotRadians);
+            Geometry transformGeom=trans.rotate(rotRadians).transform(geom);
       
 
             GeometryWrapper transformGeomWrapper = GeometryWrapperFactory.createGeometry(transformGeom, geometry.getSrsURI(), geometry.getGeometryDatatypeURI());

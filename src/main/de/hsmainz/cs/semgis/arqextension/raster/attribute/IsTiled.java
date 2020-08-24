@@ -16,8 +16,9 @@ public class IsTiled extends FunctionBase1{
 		
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v);
 		GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-	    ImageRenderer worker=new ImageRenderer(raster.getRenderedImage());
-		return NodeValue.makeBoolean(worker.isTiled());
+	    //ImageRenderer worker=new ImageRenderer(raster);
+		//return NodeValue.makeBoolean(worker.isTiled());
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 }

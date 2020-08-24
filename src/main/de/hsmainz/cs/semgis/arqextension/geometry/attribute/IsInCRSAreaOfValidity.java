@@ -14,23 +14,23 @@ public class IsInCRSAreaOfValidity extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		 GeometryWrapper geometry = GeometryWrapper.extract(v);
          Geometry geom = geometry.getParsingGeometry();
-		CoordinateSystemAxis x = crs.getCoordinateSystem().getAxis(0);
-	    CoordinateSystemAxis y = crs.getCoordinateSystem().getAxis(1);
+		CoordinateSystemAxis x = geometry.getCRS().getCoordinateSystem().getAxis(0);
+	    CoordinateSystemAxis y = geometry.getCRS().getCoordinateSystem().getAxis(1);
 	    boolean xUnbounded = Double.isInfinite(x.getMinimumValue()) && Double.isInfinite(x.getMaximumValue());
         boolean yUnbounded = Double.isInfinite(y.getMinimumValue()) && Double.isInfinite(y.getMaximumValue());
         if (xUnbounded && yUnbounded) {
-            return false;
+            return NodeValue.makeBoolean(false);
         }
         Coordinate[] c = geom.getCoordinates();
         for (int i = 0; i < c.length; i++) {
             if (!xUnbounded && ((c[i].x < x.getMinimumValue()) || (c[i].x > x.getMaximumValue()))) {
-            	return false;
+            	return NodeValue.makeBoolean(false);
             }
             if (!yUnbounded && ((c[i].y < y.getMinimumValue()) || (c[i].y > y.getMaximumValue()))) {
-                return false;
+                return NodeValue.makeBoolean(false);
             }
         }
-		return true;
+		return NodeValue.makeBoolean(true);
 	}
 
 }

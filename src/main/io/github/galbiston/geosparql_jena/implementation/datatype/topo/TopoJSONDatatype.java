@@ -26,8 +26,8 @@ import java.util.List;
 
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryFactory;
-import org.mibcxb.McException;
-import org.mibcxb.topojson.McTopoJSON;
+//import org.mibcxb.McException;
+//import org.mibcxb.topojson.McTopoJSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.wololo.geojson.GeoJSON;
@@ -84,7 +84,7 @@ public class TopoJSONDatatype extends GeometryDatatype {
      */
     @Override
     public String unparse(Object geometry) {
-
+/*
         if (geometry instanceof GeometryWrapper) {
             GeometryWrapper geometryWrapper = (GeometryWrapper) geometry;
             McTopoJSON topo=new McTopoJSON();
@@ -94,13 +94,15 @@ public class TopoJSONDatatype extends GeometryDatatype {
             return jsonstring;
         } else {
             throw new AssertionError("Object passed to TopoJSONDatatype is not a GeometryWrapper: " + geometry);
-        }
+        }*/
+    	throw new UnsupportedOperationException("Not yet implemented");
     }
 
     @Override
     public GeometryWrapper read(String geometryLiteral) {
 		GeoJSONReader reader = new GeoJSONReader();
-		McTopoJSON topo=new McTopoJSON();
+    	throw new UnsupportedOperationException("Not yet implemented");
+		/*McTopoJSON topo=new McTopoJSON();
 		try {
 			List<Geometry> geoms=topo.decode(geometryLiteral, new GeometryFactory());
 		} catch (McException e) {
@@ -110,7 +112,7 @@ public class TopoJSONDatatype extends GeometryDatatype {
 		
 		Geometry geom = reader.read(geometryLiteral);
         GeometryWrapper wrapper = GeometryWrapperFactory.createGeometry(geom, "<http://www.opengis.net/def/crs/EPSG/0/"+geom.getSRID()+">", GeoJSONDatatype.URI);	
-        return wrapper;
+        return wrapper;*/
     }
 
 

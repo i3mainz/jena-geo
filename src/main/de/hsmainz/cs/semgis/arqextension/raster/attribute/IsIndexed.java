@@ -15,8 +15,9 @@ public class IsIndexed extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v);
 		GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-	    ImageWorker worker=new ImageWorker(raster.getRenderedImage());
-		return NodeValue.makeBoolean(worker.isIndexed());
+	    //ImageWorker worker=new ImageWorker(raster.getRenderedImage());
+		//return NodeValue.makeBoolean(worker.isIndexed());
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 }

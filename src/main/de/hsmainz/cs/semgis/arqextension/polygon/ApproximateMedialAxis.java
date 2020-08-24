@@ -17,11 +17,10 @@ public class ApproximateMedialAxis extends FunctionBase1 {
 
 	@Override
 	public NodeValue exec(NodeValue v) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException("Not implemented yet");
 	}
 
-	private MultiLineString getMedialAxis(final Polygon poly) {
+	/*private MultiLineString getMedialAxis(final Polygon poly) {
 
 	      final ArrayList<LineString> list = new ArrayList<LineString>();
 	      final GeometryFactory gf = new GeometryFactory();
@@ -48,6 +47,6 @@ public class ApproximateMedialAxis extends FunctionBase1 {
 	      return gf.createMultiLineString(list.toArray(new LineString[0]));
 
 
-	   }
+	   }*/
 	
 }

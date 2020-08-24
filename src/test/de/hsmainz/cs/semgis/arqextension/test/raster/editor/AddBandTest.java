@@ -13,12 +13,12 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSON
 public class AddBandTest extends SampleRasters {
 	
 	@Test
-	public void testTileHeight() {
+	public void testAddBand() {
 		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
-		NodeValue rasterBand = NodeValue.makeNode(rasterBand, CovJSONDatatype.INSTANCE);
+		NodeValue rasterBandd = NodeValue.makeNode(rasterBand, CovJSONDatatype.INSTANCE);
         AddBand instance=new AddBand();
         NodeValue expResult = NodeValue.makeInteger(10);
-        NodeValue result = instance.exec(covLiteral,rasterBand);
+        NodeValue result = instance.exec(covLiteral,rasterBandd);
         assertEquals(expResult, result);
 	}
 }

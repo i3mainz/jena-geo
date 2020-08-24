@@ -19,27 +19,7 @@ public class FilterByT extends FunctionBase3 {
 
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3) {
-
-        try {
-            GeometryWrapper geometry = GeometryWrapper.extract(v1);
-            Geometry geom = geometry.getParsingGeometry();
-            Date date=v2.getDateTime().toGregorianCalendar().getTime();
-            Double precisionMax=v3.getDouble();
-            Days tolerance=Days.days(5);
-            List<Coordinate> result=new ArrayList<Coordinate>();
-            for(Coordinate coord:geom.getCoordinates()) {
-            	if(coord.getT()!=null && coord.getT()>precisionMin && coord.getT()<precisionMax) {
-            		if(returnT)
-            			result.add(coord);
-            	}else {
-            		if(!returnT)
-            			result.add(coord);
-            	}
-            }
-            return LiteralUtils.createGeometry(result, geom.getGeometryType(), geometry).asNodeValue();
-        } catch (DatatypeFormatException ex) {
-            throw new ExprEvalException(ex.getMessage(), ex);
-        }
+		throw new ExprEvalException("To be implemented");
 	}
 
 }

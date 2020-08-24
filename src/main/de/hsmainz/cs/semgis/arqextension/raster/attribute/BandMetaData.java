@@ -29,11 +29,12 @@ public class BandMetaData extends FunctionBase2 {
         if (bandNum.intValue() > raster.getSampleDimensions().size()) {
             return NodeValue.nvNothing;
         }
-        StringBuilder builder = new StringBuilder();
+		throw new UnsupportedOperationException("Not yet implemented");
+        /*StringBuilder builder = new StringBuilder();
         builder.append("rid \t pixeltype \t nodatavalue \t isoutdb \t path" + System.lineSeparator());
         builder.append(bandNum + "\t" + raster.getSampleDimensions().get(bandNum.intValue()).getColorModel().getTransferType()
                 + "\t" + raster.getSampleDimensions().get(bandNum.intValue()).getNoDataValues() + "\t\t\t" + System.lineSeparator());
-        return NodeValue.makeString(builder.toString());
+        return NodeValue.makeString(builder.toString());*/
 	}
 
 }

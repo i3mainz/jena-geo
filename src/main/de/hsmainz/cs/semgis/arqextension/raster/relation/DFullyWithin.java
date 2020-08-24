@@ -22,7 +22,8 @@ public class DFullyWithin extends FunctionBase3 {
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v1);
 		Wrapper wrapper2=LiteralUtils.rasterOrVector(v2);
         Double withinDistance = v3.getDouble();
-        GeodeticCalculator calc = new GeodeticCalculator();
+		throw new UnsupportedOperationException("Not yet implemented");
+       /* GeodeticCalculator calc = new GeodeticCalculator();
 		if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {
 			Double actualDistance=((GeometryWrapper)wrapper1).getXYGeometry().distance(((GeometryWrapper)wrapper2).getXYGeometry());
 			return NodeValue.makeBoolean(actualDistance<=withinDistance);
@@ -56,7 +57,7 @@ public class DFullyWithin extends FunctionBase3 {
 		        Double actualdistance = calc.getOrthodromicDistance();
 				return NodeValue.makeBoolean(actualdistance<=withinDistance);				
 			}
-		}
+		}*/
 	}
 
 }

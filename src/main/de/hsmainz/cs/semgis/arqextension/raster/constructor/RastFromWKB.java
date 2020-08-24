@@ -23,7 +23,7 @@ public class RastFromWKB extends FunctionBase1 {
             String wkbstring=arg0.getString();
     		WKBRasterReader reader=new WKBRasterReader();
     		GridCoverage coverage=reader.readCoverage(wkbstring.getBytes(),null);
-    		CoverageWrapper wrapper=CoverageWrapper.createGeometry(coverage,null , HexWKBRastDatatype.URI);
+    		CoverageWrapper wrapper=CoverageWrapper.createCoverage(coverage,null , HexWKBRastDatatype.URI);
     		return wrapper.asNodeValue();
             
         } catch (DatatypeFormatException ex) {

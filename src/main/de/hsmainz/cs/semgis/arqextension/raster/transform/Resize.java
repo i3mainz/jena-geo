@@ -24,7 +24,7 @@ public class Resize extends FunctionBase3{
 		BigInteger width=v2.getInteger();
 		BigInteger height=v3.getInteger();
 
-		ImageRenderer w = new ImageRenderer(img);
+		/*ImageRenderer w = new ImageRenderer(img);
 		// Setting RenderingHints
 		w.setRenderingHints(img);
 		// Setting ROI and NoData
@@ -39,7 +39,7 @@ public class Resize extends FunctionBase3{
 		ImageWorker worker;
 		worker.setROI(new ROI);
 		CoverageUtilities.
-		CoverageUtilities.setNoDataProperty(properties, container);
+		CoverageUtilities.setNoDataProperty(properties, container);*/
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 }

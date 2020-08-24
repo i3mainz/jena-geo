@@ -6,8 +6,8 @@ import java.text.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.hsmainz.cs.semgis.arqextension.util.JtsPolyshapeWriter;
-import de.hsmainz.cs.semgis.arqextension.util.PolyshapeReader;
+//import de.hsmainz.cs.semgis.arqextension.util.JtsPolyshapeWriter;
+//import de.hsmainz.cs.semgis.arqextension.util.PolyshapeReader;
 import de.hsmainz.cs.semgis.arqextension.util.PolyshapeWriter;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
@@ -27,9 +27,9 @@ public class PolyshapeDatatype extends GeometryDatatype {
      */
     public static final PolyshapeDatatype INSTANCE = new PolyshapeDatatype();
     
-    private static final PolyshapeReader reader=new PolyshapeReader();
+   // private static final PolyshapeReader reader=new PolyshapeReader();
     
-    private static final JtsPolyshapeWriter writer=new JtsPolyshapeWriter();
+    //private static final JtsPolyshapeWriter writer=new JtsPolyshapeWriter();
 
     /**
      * private constructor - single global instance.
@@ -52,7 +52,8 @@ public class PolyshapeDatatype extends GeometryDatatype {
 
         if (geometry instanceof GeometryWrapper) {
             GeometryWrapper geometryWrapper = (GeometryWrapper) geometry;
-            return writer.toString(geometryWrapper.getXYGeometry());           	
+            throw new UnsupportedOperationException("Not yet implemented");
+            //return writer.toString();           	
         } else {
             throw new AssertionError("Object passed to PolyshapeDatatype is not a GeometryWrapper: " + geometry);
         }
@@ -61,12 +62,13 @@ public class PolyshapeDatatype extends GeometryDatatype {
     @Override
     public GeometryWrapper read(String geometryLiteral) {
 	    GeometryWrapper wrapper;
-		try {
+		/*try {
 			wrapper = GeometryWrapperFactory.createGeometry(reader.read(geometryLiteral), "<http://www.opengis.net/def/crs/EPSG/0/4326>", PolyshapeDatatype.URI);
 			return wrapper;
 		} catch (IOException | ParseException e) {
 			// TODO Auto-generated catch block
 			throw new RuntimeException(e.getMessage());
-		}
+		}*/
+        throw new UnsupportedOperationException("Not yet implemented");
     }
 }

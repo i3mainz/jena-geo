@@ -15,8 +15,10 @@ public class IsGrayscale extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v);
 		GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-	    ImageRenderer worker=new ImageRenderer(raster.getRenderedImage());
-		return NodeValue.makeBoolean(worker.image().getColorModel().getColorSpace(). isGrayScale());
+	    //ImageRenderer worker=new ImageRenderer(raster.getRenderedImage());
+	    
+		//return NodeValue.makeBoolean(worker.image().getColorModel().getColorSpace(). isGrayScale());
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 }

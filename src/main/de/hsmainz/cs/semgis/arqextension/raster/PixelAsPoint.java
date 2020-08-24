@@ -24,6 +24,7 @@ import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
+import org.geotoolkit.coverage.grid.GeneralGridEnvelope;
 import org.locationtech.jts.geom.CoordinateXY;
 import org.opengis.referencing.operation.TransformException;
 
@@ -37,15 +38,16 @@ public class PixelAsPoint extends FunctionBase3{
         Integer y = v3.getInteger().intValue();
         
         Envelope2D pixelEnvelop;
-        try {
-            pixelEnvelop = raster.getGridGeometry().getGridToCRS2D().transform(new GridEnvelope(x, y, 1, 1),null);
+        /*try {
+            pixelEnvelop = raster.getGridGeometry().getGridToCRS(null).transform(new GeneralGridEnvelope(x, y, 1, 1),null);
 
             CoordinateXY coord = new CoordinateXY(pixelEnvelop.getCenterX(), pixelEnvelop.getCenterY());
             GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, geometryWrapper.getSrsURI(), geometryWrapper.getGeometryDatatypeURI());
             return pointWrapper.asNodeValue();
         } catch (TransformException e) {
             return NodeValue.nvNothing;
-        }
+        }*/
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 }
