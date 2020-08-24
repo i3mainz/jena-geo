@@ -31,9 +31,11 @@ public class NetCDFDatatype extends RasterDataType {
 		InputStream stream = new ByteArrayInputStream(geometryLiteral.getBytes(StandardCharsets.UTF_8));
 		final StorageConnector c = new StorageConnector(stream);
 		NetcdfStoreProvider prov=new NetcdfStoreProvider();
-		NetcdfStore store=new NetcdfStore(prov,c);
-		GridCoverage cov=store.components().read(store.components().iterator().next().getGridGeometry(), 1);
-		return new CoverageWrapper(cov, URI);
+		throw new UnsupportedOperationException("Not yet implemented");
+		//NetcdfStore store=new NetcdfStore(prov,c);
+		
+		//GridCoverage cov=store.components().read(store.components().iterator().next().getGridGeometry(), 1);
+		//return new CoverageWrapper(cov, URI);
 	}
 	
 	@Override

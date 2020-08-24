@@ -30,18 +30,18 @@ public class Affine extends FunctionBase {
 
     @Override
     public NodeValue exec(List<NodeValue> args) {
-		try {
+		/*try {
 	        GeometryWrapper geometry = GeometryWrapper.extract(args.get(0));
 	        Geometry geom = geometry.getXYGeometry();
 	        /*Double xShear=v1.getDouble();
 	        Double yShear=v2.getDouble();
 	        AffineTransformation trans = new AffineTransformation();
 	        trans.setTransformation(m00, m01, m02, m10, m11, m12)
-	        trans.setToShear(xShear, yShear);*/
+	        trans.setToShear(xShear, yShear);
 	        return GeometryWrapperFactory.createGeometry(trans.transform(geom), geometry.getSrsURI(), geometry.getGeometryDatatypeURI()).asNodeValue();
 	    } catch (DatatypeFormatException ex) {
 	        throw new ExprEvalException(ex.getMessage(), ex);
-	    }
+	    }*/
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

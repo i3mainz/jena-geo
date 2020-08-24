@@ -73,7 +73,7 @@ public class AddConst extends FunctionBase3  {
 					sds, DataBuffer.TYPE_SHORT);
 			WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();
 			rasterr.setRect(subtractedImage.getSourceImage(0).getData());
-			return CoverageWrapper.createGeometry(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+			return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
 					.asNodeValue();	     
 	} 
 

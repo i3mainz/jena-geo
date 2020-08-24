@@ -9,6 +9,7 @@ import org.apache.jena.sparql.function.FunctionBase2;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.geometry.coordinate.PolyhedralSurface;
 
+import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 /**
@@ -24,7 +25,7 @@ public class PatchN extends FunctionBase2 {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             Geometry geom = geometry.getParsingGeometry();
             BigInteger n=arg1.getInteger();
-            return GeometryWrapperFactory.createGeometry(((PolyhedralSurface)geom).getPatches().get(n.intValue()), geometry.getSrsURI(), geometry.getGeometryDatatypeURI()).asNodeValue();
+            return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(((PolyhedralSurface)geom).getPatches().get(n.intValue()).getSurface().getEnvelope()), geometry.getSrsURI(), geometry.getGeometryDatatypeURI()).asNodeValue();
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

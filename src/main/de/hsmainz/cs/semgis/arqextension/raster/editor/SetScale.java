@@ -43,11 +43,11 @@ public class SetScale extends FunctionBase3{
 
         //this.initilizeVariables(raster);
 
-        final int numBands = raster.sagetNumSampleDimensions();
+        final int numBands = raster.getSampleDimensions().size();
 
-        Envelope extent = (Envelope) raster.getEnvelope();
+        Envelope extent = (Envelope) raster.getGridGeometry().getEnvelope();
         GridGeometry gridGeometry2D = raster.getGridGeometry();
-        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS2D();
+        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(null);
         Double cellSizeX = Math.abs(gridToWorld.getScaleX()) * xScale;
         Double cellSizeY = Math.abs(gridToWorld.getScaleY()) * yScale;
 
@@ -62,7 +62,8 @@ public class SetScale extends FunctionBase3{
         // resulting in a smaller extent because of a smaller cell size.
 
         // Rescale extent
-        final PlanarImage inputImage = (PlanarImage) raster.getRenderedImage();
+		throw new UnsupportedOperationException("Not yet implemented");
+        /*final PlanarImage inputImage = (PlanarImage) raster.getRenderedImage();
         double maxX = extent.getMinX() + (inputImage.getWidth() * cellSizeX);
         double maxY = extent.getMinY() + (inputImage.getHeight() * cellSizeY);
 
@@ -86,7 +87,7 @@ public class SetScale extends FunctionBase3{
             GridCoverageFactory factory = CoverageFactoryFinder.getGridCoverageFactory(null);
             return factory.create(raster.getName(), inputImage, Extent, bands, null,
                     properties);
-        }
+        }*/
 	}
 
 }

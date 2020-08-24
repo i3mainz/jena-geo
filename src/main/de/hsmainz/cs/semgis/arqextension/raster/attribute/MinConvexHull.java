@@ -29,9 +29,10 @@ public class MinConvexHull extends FunctionBase1{
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();	
-        Geometry convexHull = LiteralUtils.toGeometry(raster.getGridGeometry().getExtent().getEnvelope2D()).convexHull();
-        GeometryWrapper hullWrapper = GeometryWrapperFactory.createGeometry(convexHull, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
-        return hullWrapper.asNodeValue();
+        //Geometry convexHull = LiteralUtils.toGeometry(raster.getGridGeometry()).convexHull();
+        //GeometryWrapper hullWrapper = GeometryWrapperFactory.createGeometry(convexHull, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
+        //return hullWrapper.asNodeValue();
+        throw new UnsupportedOperationException("Not yet implemented");
 	}
 
 }

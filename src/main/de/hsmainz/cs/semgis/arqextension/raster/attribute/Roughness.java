@@ -13,11 +13,10 @@ public class Roughness extends FunctionBase4{
 
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3, NodeValue v4) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException("Not yet implemented");
 	}
 	
-	 public GridCoverage execute(GridCoverage inputGc) {
+	 /*public GridCoverage execute(GridCoverage inputGc) {
 	        this.initSurface(inputGc);
 
 	        DiskMemImage outputImage = this.createDiskMemImage(inputGc, RasterPixelType.FLOAT);
@@ -75,6 +74,6 @@ public class Roughness extends FunctionBase4{
 	        writer.setSample(0, roughness);
 	        updateStatistics(roughness);
 	    }
-	}
+	}*/
 
 }

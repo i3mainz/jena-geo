@@ -18,6 +18,8 @@
 
 package de.hsmainz.cs.semgis.arqextension.util;
 
+import java.awt.Rectangle;
+import java.awt.geom.Rectangle2D;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
@@ -55,10 +57,11 @@ public class PolyshapeWriter {
     if (shape == null) {
       throw new NullPointerException("Shape can not be null");
     }
-    write(new Encoder(output), shape);
+    throw new UnsupportedOperationException("Not implemented yet");
+    //write(new Encoder(output), shape);
   }
 
-  public void write(Encoder enc, Geometry shape) throws IOException {
+ /* public void write(Encoder enc, Geometry shape) throws IOException {
     if (shape instanceof Point) {
       Point v = (Point) shape;
       enc.write(KEY_POINT);
@@ -152,7 +155,7 @@ public class PolyshapeWriter {
    * 
    * from Apache 2.0 licensed:
    * https://github.com/googlemaps/android-maps-utils/blob/master/library/src/com/google/maps/android/PolyUtil.java
-   */
+   
   public static class Encoder {
     long lastLat = 0;
     long lastLng = 0;
@@ -207,5 +210,5 @@ public class PolyshapeWriter {
       }
       writer.write(Character.toChars((int) (v + 63)));
     }
-  }
+  }*/
 }

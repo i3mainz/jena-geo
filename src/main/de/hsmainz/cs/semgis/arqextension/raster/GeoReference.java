@@ -26,14 +26,15 @@ public class GeoReference extends FunctionBase3 {
 
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3) {
-        String format = evalArgs.get(0).getString();
+       /* String format = evalArgs.get(0).getString();
         Boolean gdal = false, esri = false;
         if (format == null || format.equals("GDAL")) {
             gdal = true;
         } else if (format.equals("ESRI")) {
             esri = true;
         }
-        return null;
+        return null;*/
+		throw new UnsupportedOperationException("Not implemented yet");
 	}
 
 }

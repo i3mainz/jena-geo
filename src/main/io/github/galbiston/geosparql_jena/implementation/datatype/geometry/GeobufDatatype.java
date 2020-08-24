@@ -53,8 +53,9 @@ public class GeobufDatatype extends GeometryDatatype  {
 	        if (geometry instanceof GeometryWrapper) {
 	            GeometryWrapper geometryWrapper = (GeometryWrapper) geometry;
 	            ByteArrayOutputStream output=new ByteArrayOutputStream();
-	            GeobufEncoder enc=new GeobufEncoder(output,geometryWrapper.getXYGeometry().getPrecisionModel().getMaximumSignificantDigits());
-	            return enc.geomToGeobuf(geometryWrapper.getXYGeometry()).toString();
+	            //GeobufEncoder enc=new GeobufEncoder(output,geometryWrapper.getXYGeometry().getPrecisionModel().getMaximumSignificantDigits());
+	            throw new UnsupportedOperationException("Not yet implemented");
+	            //return enc.geomToGeobuf(geometryWrapper.getXYGeometry()).toString();
 	        } else {
 	            throw new AssertionError("Object passed to WKBDatatype is not a GeometryWrapper: " + geometry);
 	        }
@@ -63,7 +64,7 @@ public class GeobufDatatype extends GeometryDatatype  {
 	    @Override
 	    public GeometryWrapper read(String geometryLiteral) {
 	    	InputStream stream = new ByteArrayInputStream(geometryLiteral.getBytes(StandardCharsets.UTF_8));
-	    	GeobufDecoder decoder;
+	    	/*GeobufDecoder decoder;
 			try {
 				decoder = new GeobufDecoder(stream);
 		    	Geometry geom=decoder.next().geometry;
@@ -73,7 +74,8 @@ public class GeobufDatatype extends GeometryDatatype  {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				throw new RuntimeException();
-			}
+			}*/
+            throw new UnsupportedOperationException("Not yet implemented");
 	    }
 
 

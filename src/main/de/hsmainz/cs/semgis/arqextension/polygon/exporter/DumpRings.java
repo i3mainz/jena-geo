@@ -32,13 +32,14 @@ public class DumpRings extends FunctionBase1 {
 					GeometryWrapper resWrapper = GeometryWrapperFactory.createPoint(coord, geometry.getSrsURI(), geometry.getGeometryDatatypeURI());
 					Literal resLiteral = resWrapper.asLiteral();
 					String resString = resLiteral.toString();
-					results.add(resString);
+					//results.add(resString);
 				}
 
 				// Returning the list of space delimited literals. This is the same as
 				// GROUP_CONCAT.
 				// Correct splitting of results for use in query would need a Property Function.
-				return NodeValue.makeString(String.join(" ", results));
+				//return NodeValue.makeString(String.join(" ", results));
+				throw new UnsupportedOperationException("Not implemented yet");
 			}
 			return NodeValue.nvNothing;
 

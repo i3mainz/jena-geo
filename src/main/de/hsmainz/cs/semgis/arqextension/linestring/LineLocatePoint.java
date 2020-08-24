@@ -33,7 +33,9 @@ public class LineLocatePoint extends FunctionBase2 {
 				LineString line=(LineString) geom1.getXYGeometry();
 				Point point=(Point) transGeom2.getXYGeometry();
 				//Double minDistance=Double.MAX_VALUE;
-				LengthToPoint ltop=new LengthToPoint(line, point.getCoordinate());
+				throw new ExprEvalException("Not implemented yet");
+				/*LengthToPoint ltop=new LengthToPoint(line, point.getCoordinate());
+				ltop.
 				return NodeValue.makeDouble(ltop.getLength()/line.getLength());
 				/*Coordinate closestPoint=null;
 				Integer index=-1;
