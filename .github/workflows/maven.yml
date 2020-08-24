@@ -13,10 +13,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
-      run:  | 
-         mvn -B package --file pom.xml
-         echo "test"
     - name: Create Doxygen Documentation 🔧
       run: |
          sudo apt-get install doxygen graphviz -y
@@ -27,4 +23,9 @@ jobs:
       with:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          BRANCH: gh-pages
-         FOLDER: docs/html/
+         FOLDER: docs/html/ 
+    - name: Build with Maven
+      run:  | 
+         mvn -B package --file pom.xml
+         echo "test"
+
