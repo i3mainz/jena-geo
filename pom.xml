@@ -4,8 +4,8 @@
     <artifactId>SpatialIndexProcessor</artifactId>
     <version>0.0.2-SNAPSHOT</version>
     <build>
-        <sourceDirectory>src</sourceDirectory>
-        <testSourceDirectory>test</testSourceDirectory>
+        <sourceDirectory>src/main</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
         <resources>
             <resource>
                 <directory>src</directory>
@@ -53,11 +53,11 @@
  <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<geotools.version>15.1</geotools.version>
-		  <geotk.version>5.0-SNAPSHOT</geotk.version>
+		  <geotk.version>4.0.4</geotk.version>
 		 <!-- <sis.version>0.8-jdk7-M1</sis.version>-->
 		  <sis.version>1.0</sis.version>
 		  <geoapi.version>4.0-SNAPSHOT</geoapi.version>
-		  <jena.version>3.10.0</jena.version>
+		  <jena.version>3.16.0</jena.version>
 		  <maven.compiler.source>1.8</maven.compiler.source>
    		  <maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -102,12 +102,12 @@
     <version>1.16.1</version>
     <type>pom</type>
 </dependency>
-
+<!-- 
  <dependency>
     <groupId>com.wdtinc</groupId>
     <artifactId>mapbox-vector-tile</artifactId>
     <version>3.0.0</version>
-</dependency>
+</dependency>-->
 <dependency>
     <groupId>net.postgis</groupId>
     <artifactId>postgis-jdbc</artifactId>
@@ -242,12 +242,12 @@
             <artifactId>sis-utility</artifactId>
             <version>${sis.version}</version>
         </dependency>
- <!--        <dependency>
+        <dependency>
     <groupId>org.apache.sis.non-free</groupId>
     <artifactId>sis-embedded-data</artifactId>
-    <version>${sis.version}</version>
+    <version>1.0</version>
     <scope>runtime</scope>
-  </dependency>
+  </dependency><!-- 
   <dependency>
     <groupId>org.apache.sis.non-free</groupId>
     <artifactId>sis-embedded-data</artifactId>
@@ -284,11 +284,11 @@
 
 
 <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
-<dependency>
+<!-- <dependency>
     <groupId>org.apache.sis.non-free</groupId>
     <artifactId>sis-epsg</artifactId>
     <version>${sis.version}</version>
-  </dependency>
+  </dependency>-->
   <!-- https://mvnrepository.com/artifact/java3d/j3d-core -->
 <dependency>
     <groupId>java3d</groupId>
