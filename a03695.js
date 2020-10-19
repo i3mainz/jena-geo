@@ -1,4 +1,5 @@
 var a03695 =
 [
-    [ "TopoJSONDatatype", "a06323.html", "a06323" ]
+    [ "CoverageJSONReader", "a06050.html", "a06050" ],
+    [ "CoverageJsonWriter", "a06054.html", "a06054" ]
 ];

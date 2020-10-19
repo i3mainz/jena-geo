@@ -1,6 +1,0 @@
-var a08227 =
-[
-    [ "testMinimumBoundingCircle", "a08227.html#ae83e48bad70898d10790438246feadad", null ],
-    [ "result", "a08227.html#aab356d6554a7301750f11ec7a85ac47d", null ],
-    [ "testPolygon", "a08227.html#a1e3187cbc25299380589200c398b3ffd", null ]
-];

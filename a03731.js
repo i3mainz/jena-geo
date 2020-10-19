@@ -1,4 +1,4 @@
 var a03731 =
 [
-    [ "IGNF", "a06979.html", "a06979" ]
+    [ "Classification", "a06650.html", "a06650" ]
 ];

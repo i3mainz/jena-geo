@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: NodeTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,87 +56,25 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08515.html','');});
+$(document).ready(function(){initNavTree('a08518.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a08512.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">NodeTest Class Reference</div>  </div>
+<div class="title">Force2DTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for NodeTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08513.png" border="0" usemap="#NodeTest_coll__map" alt="Collaboration graph"/></div>
-<map name="NodeTest_coll__map" id="NodeTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:afddc561f05c41e1e550b54ca967bd2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08515.html#afddc561f05c41e1e550b54ca967bd2e9">testNode</a> ()</td></tr>
-<tr class="separator:afddc561f05c41e1e550b54ca967bd2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08515.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;POLYGON((0 0 1,0 5 1,5 0 1,0 0 1),(1 1 1,3 1 1,1 3 1,1 1 1))&quot;</td></tr>
-<tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="afddc561f05c41e1e550b54ca967bd2e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afddc561f05c41e1e550b54ca967bd2e9">&#9670;&nbsp;</a></span>testNode()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testNode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06095.html#a6596ed1bf3821ce6746ebcf116d8effa">WKT.DATATYPE_URI</a>, and <a class="el" href="a04759.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">Node.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                               {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08515.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        Node instance=<span class="keyword">new</span> Node();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        coords.add(<span class="keyword">new</span> CoordinateXYZM(0,0,0,1));</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        coords.add(<span class="keyword">new</span> CoordinateXYZM(0,5,0,2));</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        coords.add(<span class="keyword">new</span> CoordinateXYZM(5,0,0,0));</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        coords.add(<span class="keyword">new</span> CoordinateXYZM(0,0,0,0));</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        Polygon poly=(Polygon) GeometryWrapperFactory.createPolygon(coords, WKT.DATATYPE_URI).getXYGeometry();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        List&lt;Geometry&gt; polylist=<span class="keyword">new</span> LinkedList&lt;Geometry&gt;();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        polylist.add(poly);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">//        POLYGON((0 0,0 5,5 0,0 0),(1 1,3 1,1 3,1 1))</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createGeometryCollection(polylist, <span class="stringliteral">&quot;&quot;</span>+poly.getSRID(), WKT.DATATYPE_URI).asNodeValue();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="ttc" id="a08515_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a08515.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.transform.NodeTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> NodeTest.java:22</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeom =&quot;POLYGON((0 0 1,0 5 1,5 0 1,0 0 1),(1 1 1,3 1 1,1 3 1,1 1 1))&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a08518.html">Force2DTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a08518.html#ac1b65b91741abc3458f3a8303d7c0388">testForce2D</a>()</td><td class="entry"><a class="el" href="a08518.html">Force2DTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a08518.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a></td><td class="entry"><a class="el" href="a08518.html">Force2DTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03799.html">transform</a></li><li class="navelem"><a class="el" href="a08515.html">NodeTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

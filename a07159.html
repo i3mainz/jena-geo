@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Extrapolation Interface Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,247 +56,32 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07159.html','');});
+$(document).ready(function(){initNavTree('a07162.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a07156.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Extrapolation Interface Reference</div>  </div>
+<div class="title">Setup Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for Extrapolation:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07158.png" border="0" usemap="#Extrapolation_inherit__map" alt="Inheritance graph"/></div>
-<map name="Extrapolation_inherit__map" id="Extrapolation_inherit__map">
-<area shape="rect" id="node2" href="a07203.html" title="Classe de base pour les interpolations à une dimension. " alt="" coords="173,80,243,107"/>
-<area shape="rect" id="node3" href="a07195.html" title="Table sans interpolation. " alt="" coords="168,155,248,181"/>
-<area shape="rect" id="node4" href="a07167.html" title="Hermite Spline interpolation. " alt="" coords="5,229,91,256"/>
-<area shape="rect" id="node5" href="a07179.html" title="Table avec interpolations linéaires. " alt="" coords="115,229,189,256"/>
-<area shape="rect" id="node6" href="a07191.html" title="Table avec interpolations polynomiales. " alt="" coords="214,229,317,256"/>
-<area shape="rect" id="node7" href="a07199.html" title="Table avec interpolations cubiques B&#45;Spline. " alt="" coords="341,229,416,256"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d73c08fc54fdcdae1be8c9386aa09c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07159.html#a0d73c08fc54fdcdae1be8c9386aa09c4">setData</a> (double[] x, double[] y)  throws MismatchedSizeException</td></tr>
-<tr class="memdesc:a0d73c08fc54fdcdae1be8c9386aa09c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définies les vecteurs <em>x</em> et <em>y</em> de cette table.  <a href="#a0d73c08fc54fdcdae1be8c9386aa09c4">More...</a><br /></td></tr>
-<tr class="separator:a0d73c08fc54fdcdae1be8c9386aa09c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07159.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
-<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oublie toutes références vers les données.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">More...</a><br /></td></tr>
-<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43ba393bb8bd89882094eb499ffe6d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07159.html#a43ba393bb8bd89882094eb499ffe6d7f">recompute</a> ()</td></tr>
-<tr class="memdesc:a43ba393bb8bd89882094eb499ffe6d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signale à la table que des données du vecteurs des <em>x</em> ou du vecteur des <em>y</em> ont été changées.  <a href="#a43ba393bb8bd89882094eb499ffe6d7f">More...</a><br /></td></tr>
-<tr class="separator:a43ba393bb8bd89882094eb499ffe6d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1517e3a45a24ac5064697425f166106d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07159.html#a1517e3a45a24ac5064697425f166106d">ignoreNaN</a> (boolean ignore)</td></tr>
-<tr class="memdesc:a1517e3a45a24ac5064697425f166106d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si les interpolations devront ignorer les NaN dans le vecteur des <em>y</em>.  <a href="#a1517e3a45a24ac5064697425f166106d">More...</a><br /></td></tr>
-<tr class="separator:a1517e3a45a24ac5064697425f166106d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07267a6bc652113ccbd0c9ed3d6a028f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07159.html#a07267a6bc652113ccbd0c9ed3d6a028f">interpolate</a> (double xi)  throws ExtrapolationException</td></tr>
-<tr class="memdesc:a07267a6bc652113ccbd0c9ed3d6a028f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la valeur <em>yi</em> interpolé au <em>xi</em> spécifié.  <a href="#a07267a6bc652113ccbd0c9ed3d6a028f">More...</a><br /></td></tr>
-<tr class="separator:a07267a6bc652113ccbd0c9ed3d6a028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea3de656c067193af599449a739e1c6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07159.html#a5ea3de656c067193af599449a739e1c6">interpolateAt</a> (int index)  throws ExtrapolationException</td></tr>
-<tr class="memdesc:a5ea3de656c067193af599449a739e1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la valeur <em>y</em> interpolé à <code>x[index]</code> mais sans utiliser la valeur de <code>y[index]</code>.  <a href="#a5ea3de656c067193af599449a739e1c6">More...</a><br /></td></tr>
-<tr class="separator:a5ea3de656c067193af599449a739e1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd>
-<dd>
-Johann Sorel, portage geotoolkit (Geomatys)  </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8bb3912a3ce86b15842e79d0b421204">&#9670;&nbsp;</a></span>clear()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Oublie toutes références vers les données. </p>
-<p>Vous pouvez appeller cette méthode lorsque vous en avez terminé avec les interpolations et que vous voulez laisser le nettoyeur faire son travail. </p>
-
-<p>Implemented in <a class="el" href="a07167.html#ac8bb3912a3ce86b15842e79d0b421204">Hermite1D</a>, <a class="el" href="a07199.html#ac8bb3912a3ce86b15842e79d0b421204">Spline1D</a>, <a class="el" href="a07203.html#ac8bb3912a3ce86b15842e79d0b421204">Table1D</a>, and <a class="el" href="a07195.html#ac8bb3912a3ce86b15842e79d0b421204">Search1D</a>.</p>
-
-</div>
-</div>
-<a id="a1517e3a45a24ac5064697425f166106d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1517e3a45a24ac5064697425f166106d">&#9670;&nbsp;</a></span>ignoreNaN()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean ignoreNaN </td>
-          <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>ignore</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Indique si les interpolations devront ignorer les NaN dans le vecteur des <em>y</em>. </p>
-<p>Par défaut, les NaN ne seront pas ignorés de sorte qu'ils pourront être retournés par la méthode <a class="el" href="a07159.html#a07267a6bc652113ccbd0c9ed3d6a028f">interpolate(double)</a> s'ils apparaissent dans le vecteur des <em>y</em>. Si vous demandez à ignorer les NaN, alors la méthode <code>interpole</code> tentera de toujours utiliser des données valides pour ses calculs. Cette méthode n'a aucun effet sur les vecteur des <em>x</em>. Pour ce dernier, les NaN seront toujours ignorés.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ignore</td><td><code>true</code> si la méthode <a class="el" href="a07159.html#a07267a6bc652113ccbd0c9ed3d6a028f">interpolate(double)</a> doit agir comme si elle utilisait des copies des données dans lesquelles on avait retiré tout les NaN.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>l'ancien état. </dd></dl>
-
-<p>Implemented in <a class="el" href="a07203.html#a22e218505813600e1844d7b4d899f57d">Table1D</a>.</p>
-
-</div>
-</div>
-<a id="a07267a6bc652113ccbd0c9ed3d6a028f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07267a6bc652113ccbd0c9ed3d6a028f">&#9670;&nbsp;</a></span>interpolate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double interpolate </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>xi</em></td><td>)</td>
-          <td> throws <a class="el" href="a07163.html">ExtrapolationException</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Renvoie la valeur <em>yi</em> interpolé au <em>xi</em> spécifié. </p>
-<p>Le type d'interpolation effectué dépendra de la classe de cet objet. Par exemple la classe <code><a class="el" href="a07199.html" title="Table avec interpolations cubiques B-Spline. ">Spline1D</a></code> effectuera une interpolation cubique B-Spline.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">xi</td><td>valeur de <em>x</em> pour laquelle on veut interpoler un <em>y</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a07163.html" title="Exception lancée lorsqu&#39;une extrapolation a été effectuée alors que ce n&#39;était pas permis...">ExtrapolationException</a></td><td>si une extrapolation non-permise a eu lieu. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07203.html#ae939fecd3ed5b2d3fea7056d8c7d04e9">Table1D</a>, and <a class="el" href="a07195.html#a46a84161c0d1e56b5f278501918a2bf6">Search1D</a>.</p>
-
-</div>
-</div>
-<a id="a5ea3de656c067193af599449a739e1c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ea3de656c067193af599449a739e1c6">&#9670;&nbsp;</a></span>interpolateAt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double interpolateAt </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> throws <a class="el" href="a07163.html">ExtrapolationException</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Renvoie la valeur <em>y</em> interpolé à <code>x[index]</code> mais sans utiliser la valeur de <code>y[index]</code>. </p>
-<p>Cette méthode est utile pour boucher les trous causé par les données manquantes (NaN). Cette méthode est plus rapide que <code>interpole</code> car elle ne nécessite pas que l'on recherche la position de <em>xi</em> dans le vecteur des <em>x</em>.</p>
-<p>Vous pouvez aussi utiliser cette méthode pour interpoler des pics isolés qui vous semble suspects. Toutefois s'il y a une possibilité que deux pics soient collés, il est préférable de remplacer tous les pics par des NaN et ensuite d'utiliser cette méthode pour combler les trous.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>index du <em>x</em> pour lequel on veut interpoler un <em>y</em>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a07163.html" title="Exception lancée lorsqu&#39;une extrapolation a été effectuée alors que ce n&#39;était pas permis...">ExtrapolationException</a></td><td>si une extrapolation non-permise a eu lieu. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07203.html#a3c28c1a787c8f0515aec182729e29a6c">Table1D</a>, and <a class="el" href="a07195.html#abbc443ef87b961024d521d7790097d86">Search1D</a>.</p>
-
-</div>
-</div>
-<a id="a43ba393bb8bd89882094eb499ffe6d7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43ba393bb8bd89882094eb499ffe6d7f">&#9670;&nbsp;</a></span>recompute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void recompute </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Signale à la table que des données du vecteurs des <em>x</em> ou du vecteur des <em>y</em> ont été changées. </p>
-<p>Certains types d'interpolations telle que l'interpolation cubique B-Spline ont besoin de savoir s'ils doivent recalculer leurs champs internes. L'implémentation par défaut ne fait rien. </p>
-
-<p>Implemented in <a class="el" href="a07199.html#a43ba393bb8bd89882094eb499ffe6d7f">Spline1D</a>, and <a class="el" href="a07203.html#a43ba393bb8bd89882094eb499ffe6d7f">Table1D</a>.</p>
-
-</div>
-</div>
-<a id="a0d73c08fc54fdcdae1be8c9386aa09c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d73c08fc54fdcdae1be8c9386aa09c4">&#9670;&nbsp;</a></span>setData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setData </td>
-          <td>(</td>
-          <td class="paramtype">double []&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double []&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws MismatchedSizeException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Définies les vecteurs <em>x</em> et <em>y</em> de cette table. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">MismatchedSizeException</td><td>si les deux vecteurs n'ont pas la même longueur. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07167.html#a7f4c5cdce430473a76ee647f0a041023">Hermite1D</a>, and <a class="el" href="a07203.html#a7f4c5cdce430473a76ee647f0a041023">Table1D</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a07162.html">Setup</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a07162.html#acbce7c4d6911636b5b423e88512e2e5b">EPSG</a></td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07162.html#a5270a83b4b60ba9ccac3369d81d17692">get</a>(final Properties properties, final String key, final String def)</td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07162.html#a40798f96683725af80d75c04742b0a1f">getEPSG</a>()</td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07162.html#a7eb4963cb16f3cd5d889227796e5245c">initialize</a>(final Properties properties)</td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07162.html#a8f77e69842d5f20bbfaa01f1e9e6d541">setEPSG</a>(final DataSource source)</td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07162.html#ae0d0a5184ef101bd0fed0f1904ca7094">Setup</a>()</td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07162.html#a4cfa1af04e925fc21518fe880df9e408">shutdown</a>()</td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07162.html#a89f234133d3efe315836311cbf21c64b">state</a></td><td class="entry"><a class="el" href="a07162.html">Setup</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07166.html#a6713f4ef0e5017eefa1b00c080924796">Static</a>()</td><td class="entry"><a class="el" href="a07166.html">Static</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03739.html">math</a></li><li class="navelem"><a class="el" href="a07159.html">Extrapolation</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

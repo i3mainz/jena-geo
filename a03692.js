@@ -1,9 +1,27 @@
 var a03692 =
 [
-    [ "geometry", "a03686.html", "a03686" ],
-    [ "raster", "a03693.html", "a03693" ],
-    [ "temporal", "a03694.html", "a03694" ],
-    [ "topo", "a03695.html", "a03695" ],
-    [ "SpatialDatatype", "a06303.html", "a06303" ],
-    [ "SpatialWrapper", "a06307.html", null ]
+    [ "After", "a05806.html", "a05806" ],
+    [ "Before", "a05810.html", "a05810" ],
+    [ "Between", "a05814.html", "a05814" ],
+    [ "During", "a05818.html", "a05818" ],
+    [ "EqualsPeriod", "a05822.html", "a05822" ],
+    [ "Finishes", "a05826.html", "a05826" ],
+    [ "IsMetBy", "a05830.html", "a05830" ],
+    [ "Meets", "a05834.html", "a05834" ],
+    [ "MeetsAfter", "a05838.html", "a05838" ],
+    [ "MeetsBefore", "a05842.html", "a05842" ],
+    [ "Minus", "a05846.html", "a05846" ],
+    [ "NotEqualsPeriod", "a05850.html", "a05850" ],
+    [ "Overleft", "a05854.html", "a05854" ],
+    [ "Overright", "a05858.html", "a05858" ],
+    [ "Period", "a05862.html", "a05862" ],
+    [ "PeriodContains", "a05866.html", "a05866" ],
+    [ "PeriodEnd", "a05870.html", "a05870" ],
+    [ "PeriodIntersect", "a05874.html", "a05874" ],
+    [ "PeriodOverlaps", "a05878.html", "a05878" ],
+    [ "PeriodPreceding", "a05882.html", "a05882" ],
+    [ "PeriodStart", "a05886.html", "a05886" ],
+    [ "PeriodSucceding", "a05890.html", "a05890" ],
+    [ "PeriodUnion", "a05894.html", "a05894" ],
+    [ "Starts", "a05898.html", "a05898" ]
 ];

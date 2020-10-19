@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: RemoveRepeatedPointsTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,112 +56,25 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08303.html','');});
+$(document).ready(function(){initNavTree('a08306.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a08300.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RemoveRepeatedPointsTest Class Reference</div>  </div>
+<div class="title">GeomFromGeoJSONTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for RemoveRepeatedPointsTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08301.png" border="0" usemap="#RemoveRepeatedPointsTest_coll__map" alt="Collaboration graph"/></div>
-<map name="RemoveRepeatedPointsTest_coll__map" id="RemoveRepeatedPointsTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a473d131a5f96a89f9502570a50d06e65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08303.html#a473d131a5f96a89f9502570a50d06e65">testRemoveRepeatedPoints</a> ()  throws ParseException </td></tr>
-<tr class="separator:a473d131a5f96a89f9502570a50d06e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08303.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;LINESTRING(0 0, 1 1, 2 4, 1 1,6 8)&quot;</td></tr>
-<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1173652e671b8f9051f8630b98c73fb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08303.html#af1173652e671b8f9051f8630b98c73fb">testGeometry2</a> =&quot;LINESTRING(0 0, 2 4,6 8)&quot;</td></tr>
-<tr class="separator:af1173652e671b8f9051f8630b98c73fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a473d131a5f96a89f9502570a50d06e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a473d131a5f96a89f9502570a50d06e65">&#9670;&nbsp;</a></span>testRemoveRepeatedPoints()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testRemoveRepeatedPoints </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws ParseException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04371.html#af5337fd861ad4940c5025973eef782d5">RemoveRepeatedPoints.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                                     {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        RemoveRepeatedPoints instance=<span class="keyword">new</span> RemoveRepeatedPoints();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        NodeValue tolerance=NodeValue.makeDouble(0.);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        WKTReader reader=<span class="keyword">new</span> WKTReader();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        Geometry geom=reader.read(<a class="code" href="a08303.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        Geometry geom2=reader.read(<a class="code" href="a08303.html#af1173652e671b8f9051f8630b98c73fb">testGeometry2</a>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue input=GeometryWrapperFactory.createLineString(geom.getCoordinates(), WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(geom2.getCoordinates(), WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        NodeValue result = instance.exec(input,tolerance);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div><div class="ttc" id="a08303_html_af1173652e671b8f9051f8630b98c73fb"><div class="ttname"><a href="a08303.html#af1173652e671b8f9051f8630b98c73fb">de.hsmainz.cs.semgis.arqextension.test.geometry.editor.RemoveRepeatedPointsTest.testGeometry2</a></div><div class="ttdeci">static final String testGeometry2</div><div class="ttdef"><b>Definition:</b> editor/RemoveRepeatedPointsTest.java:19</div></div>
-<div class="ttc" id="a08303_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08303.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.geometry.editor.RemoveRepeatedPointsTest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> editor/RemoveRepeatedPointsTest.java:17</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abc3f514f005cba49e406658e2d3086eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeometry =&quot;LINESTRING(0 0, 1 1, 2 4, 1 1,6 8)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1173652e671b8f9051f8630b98c73fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1173652e671b8f9051f8630b98c73fb">&#9670;&nbsp;</a></span>testGeometry2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeometry2 =&quot;LINESTRING(0 0, 2 4,6 8)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a08306.html">GeomFromGeoJSONTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a08306.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a></td><td class="entry"><a class="el" href="a08306.html">GeomFromGeoJSONTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08306.html#a64b3f7b5bcdec5b93820a9958c0622a3">testGeomFromGeoJSON</a>()</td><td class="entry"><a class="el" href="a08306.html">GeomFromGeoJSONTest</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03796.html">editor</a></li><li class="navelem"><a class="el" href="a08303.html">RemoveRepeatedPointsTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

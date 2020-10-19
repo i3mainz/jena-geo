@@ -1,32 +1,4 @@
 var a03799 =
 [
-    [ "CollectionExtractTest", "a08471.html", "a08471" ],
-    [ "CollectionHomogenizeTest", "a08475.html", "a08475" ],
-    [ "DelaunayTrianglesTest", "a08479.html", "a08479" ],
-    [ "DensifyTest", "a08483.html", "a08483" ],
-    [ "FlipCoordinatesTest", "a08487.html", "a08487" ],
-    [ "Force2DTest", "a08491.html", "a08491" ],
-    [ "Force3DMTest", "a08495.html", "a08495" ],
-    [ "Force3DTest", "a08499.html", "a08499" ],
-    [ "Force4DTest", "a08503.html", "a08503" ],
-    [ "ForceCollectionTest", "a08507.html", "a08507" ],
-    [ "MultiTest", "a08511.html", "a08511" ],
-    [ "NodeTest", "a08515.html", "a08515" ],
-    [ "NormalizeTest", "a08519.html", "a08519" ],
-    [ "PrecisionReducerTest", "a08523.html", "a08523" ],
-    [ "ReflectTest", "a08527.html", "a08527" ],
-    [ "RemoveRepeatedPointsTest", "a08531.html", "a08531" ],
-    [ "ReverseTest", "a08535.html", "a08535" ],
-    [ "RotateTest", "a08539.html", "a08539" ],
-    [ "ScaleTest", "a08543.html", "a08543" ],
-    [ "ShiftLongitudeTest", "a08547.html", "a08547" ],
-    [ "SimplifyPreserveTopologyTest", "a08551.html", "a08551" ],
-    [ "SimplifyTest", "a08555.html", "a08555" ],
-    [ "SimplifyVWTest", "a08559.html", "a08559" ],
-    [ "SnapTest", "a08563.html", "a08563" ],
-    [ "SplitTest", "a08567.html", "a08567" ],
-    [ "SwapOrdinatesTest", "a08571.html", "a08571" ],
-    [ "TransScaleTest", "a08575.html", "a08575" ],
-    [ "VoronoiLinesTest", "a08579.html", "a08579" ],
-    [ "VoronoiPolygonsTest", "a08583.html", "a08583" ]
+    [ "algorithm", "a03798.html", "a03798" ]
 ];

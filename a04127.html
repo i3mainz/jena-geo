@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ConcaveHull Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,93 +56,24 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04127.html','');});
+$(document).ready(function(){initNavTree('a04130.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a04124.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ConcaveHull Class Reference</div>  </div>
+<div class="title">Centroid Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The concave hull of a geometry represents a possibly concave geometry that encloses all geometries within the set.  
- <a href="a04127.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for ConcaveHull:</div>
-<div class="dyncontent">
-<div class="center"><img src="a04126.png" border="0" usemap="#ConcaveHull_inherit__map" alt="Inheritance graph"/></div>
-<map name="ConcaveHull_inherit__map" id="ConcaveHull_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for ConcaveHull:</div>
-<div class="dyncontent">
-<div class="center"><img src="a04125.png" border="0" usemap="#ConcaveHull_coll__map" alt="Collaboration graph"/></div>
-<map name="ConcaveHull_coll__map" id="ConcaveHull_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a084e892d3d5d0a47151e34261fac8052"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04127.html#a084e892d3d5d0a47151e34261fac8052">exec</a> (NodeValue arg0, NodeValue arg1, NodeValue arg2)</td></tr>
-<tr class="separator:a084e892d3d5d0a47151e34261fac8052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The concave hull of a geometry represents a possibly concave geometry that encloses all geometries within the set. </p>
-<p>You can think of it as shrink wrapping. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a084e892d3d5d0a47151e34261fac8052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a084e892d3d5d0a47151e34261fac8052">&#9670;&nbsp;</a></span>exec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06327.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06327.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a08103.html#adff6123dfd9fe0091f461a0e7e7d5a07">ConcaveHull.getConcaveHull()</a>, <a class="el" href="a06327.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06327.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>, and <a class="el" href="a06327.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                                          {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            GeometryWrapper geom = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">float</span> targetPercent = arg1.getFloat();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">boolean</span> allowHoles = arg2.getBoolean();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="a03698.html">org</a>.<a class="code" href="a03786.html">opensphere</a>.<a class="code" href="a03787.html">geometry</a>.<a class="code" href="a03785.html">algorithm</a>.<a class="code" href="a08103.html">ConcaveHull</a> hull = <span class="keyword">new</span> <a class="code" href="a03698.html">org</a>.<a class="code" href="a03786.html">opensphere</a>.<a class="code" href="a03787.html">geometry</a>.<a class="code" href="a03785.html">algorithm</a>.<a class="code" href="a08103.html">ConcaveHull</a>(geom.getParsingGeometry(), targetPercent);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Geometry concaveHull = hull.<a class="code" href="a08103.html#adff6123dfd9fe0091f461a0e7e7d5a07">getConcaveHull</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            GeometryWrapper concaveWrapper = GeometryWrapperFactory.createGeometry(concaveHull, geom.getSrsURI(), geom.getGeometryDatatypeURI());</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> concaveWrapper.asNodeValue();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="ttc" id="a03785_html"><div class="ttname"><a href="a03785.html">org.opensphere.geometry.algorithm</a></div><div class="ttdef"><b>Definition:</b> org/opensphere/geometry/algorithm/ConcaveHull.java:2</div></div>
-<div class="ttc" id="a08103_html_adff6123dfd9fe0091f461a0e7e7d5a07"><div class="ttname"><a href="a08103.html#adff6123dfd9fe0091f461a0e7e7d5a07">org.opensphere.geometry.algorithm.ConcaveHull.getConcaveHull</a></div><div class="ttdeci">Geometry getConcaveHull()</div><div class="ttdoc">Returns a Geometry that represents the concave hull of the input geometry according to the threshold...</div><div class="ttdef"><b>Definition:</b> org/opensphere/geometry/algorithm/ConcaveHull.java:138</div></div>
-<div class="ttc" id="a03787_html"><div class="ttname"><a href="a03787.html">org.opensphere.geometry</a></div></div>
-<div class="ttc" id="a03698_html"><div class="ttname"><a href="a03698.html">org</a></div></div>
-<div class="ttc" id="a03786_html"><div class="ttname"><a href="a03786.html">org.opensphere</a></div></div>
-<div class="ttc" id="a08103_html"><div class="ttname"><a href="a08103.html">org.opensphere.geometry.algorithm.ConcaveHull</a></div><div class="ttdoc">Computes a concave hull of a Geometry which is a concave Geometry that contains all the points in the...</div><div class="ttdef"><b>Definition:</b> org/opensphere/geometry/algorithm/ConcaveHull.java:46</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a04130.html">Centroid</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a04130.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a>(NodeValue arg0)</td><td class="entry"><a class="el" href="a04130.html">Centroid</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03642.html">geometry</a></li><li class="navelem"><a class="el" href="a03643.html">attribute</a></li><li class="navelem"><a class="el" href="a04127.html">ConcaveHull</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,4 +1,6 @@
 var a03804 =
 [
-    [ "AsEncodedPolylineTest", "a08667.html", "a08667" ]
+    [ "Edge", "a08138.html", "a08138" ],
+    [ "Triangle", "a08142.html", "a08142" ],
+    [ "Vertex", "a08146.html", "a08146" ]
 ];

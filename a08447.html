@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MaxDistanceTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,112 +56,27 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08447.html','');});
+$(document).ready(function(){initNavTree('a08450.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a08444.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MaxDistanceTest Class Reference</div>  </div>
+<div class="title">FurthestCoordinateTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for MaxDistanceTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08445.png" border="0" usemap="#MaxDistanceTest_coll__map" alt="Collaboration graph"/></div>
-<map name="MaxDistanceTest_coll__map" id="MaxDistanceTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:acd5d6c70876299a0278552ba577a7efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#acd5d6c70876299a0278552ba577a7efc">testMaxDistance</a> ()</td></tr>
-<tr class="separator:acd5d6c70876299a0278552ba577a7efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)&quot;</td></tr>
-<tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4be369c8f60e973cd5126e69cd33a4"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#a6b4be369c8f60e973cd5126e69cd33a4">testGeom2</a> =&quot;LINESTRING(5 5 ,10 10)&quot;</td></tr>
-<tr class="separator:a6b4be369c8f60e973cd5126e69cd33a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="acd5d6c70876299a0278552ba577a7efc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd5d6c70876299a0278552ba577a7efc">&#9670;&nbsp;</a></span>testMaxDistance()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testMaxDistance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04603.html#a892f62c3bf1ab2917fc8745f0b6da2a3">MaxDistance.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                      {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue geometryLiteral2 = NodeValue.makeNode(<a class="code" href="a08447.html#a6b4be369c8f60e973cd5126e69cd33a4">testGeom2</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        MaxDistance instance=<span class="keyword">new</span> MaxDistance();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue expResult = NodeValue.makeDouble(76.37541489249011e0);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        NodeValue result = instance.exec(geometryLiteral,geometryLiteral2);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div><div class="ttc" id="a08447_html_a6b4be369c8f60e973cd5126e69cd33a4"><div class="ttname"><a href="a08447.html#a6b4be369c8f60e973cd5126e69cd33a4">de.hsmainz.cs.semgis.arqextension.test.geometry.relation.MaxDistanceTest.testGeom2</a></div><div class="ttdeci">static final String testGeom2</div><div class="ttdef"><b>Definition:</b> MaxDistanceTest.java:15</div></div>
-<div class="ttc" id="a08447_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.relation.MaxDistanceTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> MaxDistanceTest.java:13</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeom =&quot;LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b4be369c8f60e973cd5126e69cd33a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4be369c8f60e973cd5126e69cd33a4">&#9670;&nbsp;</a></span>testGeom2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeom2 =&quot;LINESTRING(5 5 ,10 10)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a08450.html">FurthestCoordinateTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a08450.html#aab356d6554a7301750f11ec7a85ac47d">result</a></td><td class="entry"><a class="el" href="a08450.html">FurthestCoordinateTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08450.html#a5bf1108229fcb950f9fe74e48a8aee7c">testFurthestCoordinate</a>()</td><td class="entry"><a class="el" href="a08450.html">FurthestCoordinateTest</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a08450.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a></td><td class="entry"><a class="el" href="a08450.html">FurthestCoordinateTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08450.html#a6b4be369c8f60e973cd5126e69cd33a4">testGeom2</a></td><td class="entry"><a class="el" href="a08450.html">FurthestCoordinateTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03798.html">relation</a></li><li class="navelem"><a class="el" href="a08447.html">MaxDistanceTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

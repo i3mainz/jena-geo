@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: GeomFromWKBTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,87 +56,25 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08287.html','');});
+$(document).ready(function(){initNavTree('a08290.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a08284.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GeomFromWKBTest Class Reference</div>  </div>
+<div class="title">NumDistinctPointsTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for GeomFromWKBTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08285.png" border="0" usemap="#GeomFromWKBTest_coll__map" alt="Collaboration graph"/></div>
-<map name="GeomFromWKBTest_coll__map" id="GeomFromWKBTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a64b3f7b5bcdec5b93820a9958c0622a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08287.html#a64b3f7b5bcdec5b93820a9958c0622a3">testGeomFromGeoJSON</a> ()  throws ParseException </td></tr>
-<tr class="separator:a64b3f7b5bcdec5b93820a9958c0622a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a117e8ff340791b5aa0658f5840b5dcf4"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08287.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a> =&quot;\\001\\002\\000\\000\\000\\002\\000\\000\\000\\037\\205\\353Q\\270~\\\\\\300\\323Mb\\020X\\231C@\\020X9\\264\\310~\\\\\\300)\\\\\\217\\302\\365\\230C@&quot;</td></tr>
-<tr class="separator:a117e8ff340791b5aa0658f5840b5dcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a64b3f7b5bcdec5b93820a9958c0622a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64b3f7b5bcdec5b93820a9958c0622a3">&#9670;&nbsp;</a></span>testGeomFromGeoJSON()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testGeomFromGeoJSON </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws ParseException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04703.html#ae7a3cbabcf0592c2705ee280a231189a">CollectionHomogenize.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                                {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        CollectionHomogenize instance=<span class="keyword">new</span> CollectionHomogenize();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(-48.23456,20.12345)); </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createPoint(coords.get(0), WKTDatatype.URI).asNodeValue();      </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue result = instance.exec(WKTDatatype.INSTANCE.parse(<a class="code" href="a08287.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a>).asNodeValue());</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div><div class="ttc" id="a08287_html_a117e8ff340791b5aa0658f5840b5dcf4"><div class="ttname"><a href="a08287.html#a117e8ff340791b5aa0658f5840b5dcf4">de.hsmainz.cs.semgis.arqextension.test.geometry.constructor.GeomFromWKBTest.geoJsonTestGeom</a></div><div class="ttdeci">static final String geoJsonTestGeom</div><div class="ttdef"><b>Definition:</b> GeomFromWKBTest.java:19</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a117e8ff340791b5aa0658f5840b5dcf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a117e8ff340791b5aa0658f5840b5dcf4">&#9670;&nbsp;</a></span>geoJsonTestGeom</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String geoJsonTestGeom =&quot;\\001\\002\\000\\000\\000\\002\\000\\000\\000\\037\\205\\353Q\\270~\\\\\\300\\323Mb\\020X\\231C@\\020X9\\264\\310~\\\\\\300)\\\\\\217\\302\\365\\230C@&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a08290.html">NumDistinctPointsTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a08290.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a></td><td class="entry"><a class="el" href="a08290.html">NumDistinctPointsTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08290.html#aac9f79f9e21b36c6addad28b9e81bec6">testNumDistinctPoints</a>()</td><td class="entry"><a class="el" href="a08290.html">NumDistinctPointsTest</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03795.html">constructor</a></li><li class="navelem"><a class="el" href="a08287.html">GeomFromWKBTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

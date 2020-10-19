@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Combine.Transform Interface Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,106 +56,73 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06783.html','');});
+$(document).ready(function(){initNavTree('a06786.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a06780.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Combine.Transform Interface Reference</div>  </div>
+<div class="title">LargeRenderedImage Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Transforms the sample values for one pixel during a "{@link Combine Combine}" operation.  
- <a href="a06783.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ab1b203bc32272fc5b53cfa1ac73cf968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06783.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> (double[] values)</td></tr>
-<tr class="memdesc:ab1b203bc32272fc5b53cfa1ac73cf968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the sample values for one pixel before the linear combination.  <a href="#ab1b203bc32272fc5b53cfa1ac73cf968">More...</a><br /></td></tr>
-<tr class="separator:ab1b203bc32272fc5b53cfa1ac73cf968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a2c4463f22b0797ace90124bb9ecdc"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06783.html#a03a2c4463f22b0797ace90124bb9ecdc">isSeparable</a> ()</td></tr>
-<tr class="memdesc:a03a2c4463f22b0797ace90124bb9ecdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a03a2c4463f22b0797ace90124bb9ecdc">More...</a><br /></td></tr>
-<tr class="separator:a03a2c4463f22b0797ace90124bb9ecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Transforms the sample values for one pixel during a "{@link Combine Combine}" operation. </p>
-<p>The method <a class="el" href="a06783.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> is invoked by <a class="el" href="a06779.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect(...)</a> just before the sample values are combined as:</p>
-<p>{ java values[0]*row[0] + values[1]*row[1] + values[2]*row[2] + ... + row[sourceBands] }</p>
-<p>This interface provides a hook where non-linear transformations can be performed before the linear one. For example, the</p><div class="fragment"><div class="line"><a class="code" href="a06783.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> </div></div><!-- fragment --><p> method could substitutes some values by their logarithm.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.1  </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a03a2c4463f22b0797ace90124bb9ecdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a2c4463f22b0797ace90124bb9ecdc">&#9670;&nbsp;</a></span>isSeparable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean isSeparable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the transformation performed by <a class="el" href="a06783.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> does not depend on the ordering of samples in the</p><div class="fragment"><div class="line">values </div></div><!-- fragment --><p> array. This method can returns</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the</p><div class="fragment"><div class="line"><a class="code" href="a06783.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a>(<span class="keywordtype">double</span>[]) </div></div><!-- fragment --><p> implementation meet the following conditions: </p>
-<ul>
-<li>
-The transformation is separable, i.e. the output value<div class="fragment"><div class="line">values[i] </div></div><!-- fragment --> depends only on the input value<div class="fragment"><div class="line">values[i] </div></div><!-- fragment --> for all <em>i</em>. </li>
-<li>
-The transformation do not depends on the value of the index <em>i</em>. </li>
-</ul>
-<p>For example, the following implementations meets the above mentioned conditions:</p>
-<p>{ java for (int i=0; i&lt;values.length; i++) { values[i] = someFunction(values[i]); } }</p>
-<p>A</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> value will allows some optimizations inside the <a class="el" href="a06779.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect(...)</a> method. This method may conservatly returns</p><div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --><p> if this information is unknown.</p>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the transformation does not depend on the ordering of sample values. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06779.html#abc381ff2b8f349756a41d4ab95795238">Combine.Combine()</a>.</p>
-
-</div>
-</div>
-<a id="ab1b203bc32272fc5b53cfa1ac73cf968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1b203bc32272fc5b53cfa1ac73cf968">&#9670;&nbsp;</a></span>transformSamples()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void transformSamples </td>
-          <td>(</td>
-          <td class="paramtype">double []&#160;</td>
-          <td class="paramname"><em>values</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Transforms the sample values for one pixel before the linear combination. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">values</td><td>The sample values to transformation. Transformation are performed in-place. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="a06779.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a06786.html">LargeRenderedImage</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a4e9c183e95d3f78e009855c308964b57">cm</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#aea1c854683c572814de3ca72b6402ccd">copyData</a>(WritableRaster raster)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#ab953e90edb69534eb052f9064f6b40e9">dispose</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a32d626626eee0bc4ade146973f6abb1c">finalize</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a2e9f91617f2855770996f11b9d2dd94d">getColorModel</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a61598bd225152d9230163c37ec1013fa">getData</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a52bc3c08ed4b9653e2e7e03e3cbd8c7e">getData</a>(Rectangle rect)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a07efb2a4e9a982688c8bb3c3f21d1092">getHeight</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a5583e1bac8e604e2bb45632ce9610066">getNumXTiles</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#afbefd1ebc9e316c7274ee7475b1c1cfb">getNumYTiles</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#af356d9674d09e1cdb17e7029fdf93a31">getProperty</a>(String name)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a8fe92749c0f415ca061399e1a549f7c5">getPropertyNames</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a6fd28f1cc9555c50bbb29f4181d18ca5">getSampleModel</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a565050e7adf86a89e49c949b14af58bc">getTile</a>(int tileX, int tileY)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a9aa0e2adab20b73ac15d33a6b7319460">getTileGridXOffset</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#adcc0e92478ecf1053f868322615cb524">getTileGridYOffset</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a25fe2752749e8df21fc2a8656d76add2">getTileHeight</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a55691c79b5e75d785828fa7b6f279c06">getTileWidth</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a67a0997183f24da19b776d96c1052998">getWidth</a>()</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a575c5eb1900b2af25b9b9452f074bce3">height</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a1c15cba63835fa24d1ec920c9c767497">imageIndex</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#acab85a6898ef36b2e5e09ef64edb6d2a">imageReader</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#abf8f685d89f8c0a64886b6db721a479f">input</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a7ff679e91e8210e5d9783c813945900e">isRead</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#ae15bc4e4b92718b73c28d009a0ea20cb">LargeRenderedImage</a>(ImageReader imageReader, int imageIndex)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#af2a26d6fd84d8054600bceebb2e98ee4">LargeRenderedImage</a>(ImageReader imageReader, int imageIndex, TileCache tilecache, Dimension tileSize)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a58ab11ca41ea6f265cf1539fb1129eac">LargeRenderedImage</a>(ImageReader imageReader, ImageReadParam readParam, int imageIndex, TileCache tilecache, Dimension tileSize)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a0752aaec9e230060d7ceeea27ff7a320">LargeRenderedImage</a>(ImageReaderSpi spi, ImageReadParam readParam, final Object input, int imageIndex, TileCache tilecache, Dimension tileSize)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a44e0cf6846152ebf0b3050b1198c2134">LargeRenderedImage</a>(ImageReaderSpi spi, ImageReader imageReader, ImageReadParam readParam, final Object input, int imageIndex, TileCache tilecache, Dimension tileSize)</td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#af8b47f6dc31a66c0d49fdc2c7a58f2eb">MAX_TILE_SIZE</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a499a79f858e9562711a34eef5f6e7cb6">nbrTileX</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a42c837f1e5e9f4e14048a53301b1286a">nbrTileY</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#acbd611130795dd979b59f5d5b48050bf">RASTER_MAX_SIZE</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#ae4cfa48fe1064019ff51de0e1c1bf011">sm</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a1b416e9884d3148c47e6decf51457895">sourceReadParam</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a0bf6c4e8ba259848f6ade520d9f7b7f3">spi</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a852c4cdbd740399967d72f28cea70439">tilecache</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#ab96452cd7109fb18d757231e01ae6669">tileGridXOffset</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a2db9dee0c2d2e08d247f8ab34245b500">tileGridYOffset</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a9d9633645613f8b0c9bb85e627548d22">tileHeight</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#a8ea72e17282e1c1c728d5347e26ebb3c">tileLocks</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06786.html#a9be800ac701481ec89d5b03768bfa664">tileWidth</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06786.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a></td><td class="entry"><a class="el" href="a06786.html">LargeRenderedImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03715.html">image</a></li><li class="navelem"><a class="el" href="a03722.html">jai</a></li><li class="navelem"><a class="el" href="a06779.html">Combine</a></li><li class="navelem"><a class="el" href="a06783.html">Transform</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

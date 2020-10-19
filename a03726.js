@@ -1,13 +1,12 @@
 var a03726 =
 [
-    [ "CombineCRIF", "a06899.html", "a06899" ],
-    [ "CombineDescriptor", "a06903.html", "a06903" ],
-    [ "HysteresisCRIF", "a06907.html", "a06907" ],
-    [ "HysteresisDescriptor", "a06911.html", "a06911" ],
-    [ "MaskCRIF", "a06915.html", "a06915" ],
-    [ "MaskDescriptor", "a06919.html", "a06919" ],
-    [ "NodataFilterCRIF", "a06923.html", "a06923" ],
-    [ "NodataFilterDescriptor", "a06927.html", "a06927" ],
-    [ "SilhouetteMaskCRIF", "a06931.html", "a06931" ],
-    [ "SilhouetteMaskDescriptor", "a06935.html", "a06935" ]
+    [ "EmptyHints", "a06550.html", "a06550" ],
+    [ "Factories", "a06554.html", "a06554" ],
+    [ "FactoryNotFoundException", "a06558.html", "a06558" ],
+    [ "FactoryRegistryException", "a06562.html", "a06562" ],
+    [ "Hints", "a06566.html", "a06566" ],
+    [ "HintsPending", "a06594.html", "a06594" ],
+    [ "OrderedIterator", "a06598.html", "a06598" ],
+    [ "RecursiveSearchException", "a06602.html", "a06602" ],
+    [ "SerializedKey", "a06606.html", "a06606" ]
 ];
