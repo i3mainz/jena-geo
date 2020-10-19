@@ -8,19 +8,18 @@ import java.nio.charset.StandardCharsets;
 import javax.imageio.ImageWriteParam;
 
 import org.apache.jena.sparql.expr.NodeValue;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.geotiff.GeoTiffStore;
 import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
-import org.geotoolkit.coverage.io.CoverageIO;
-import org.geotoolkit.coverage.io.CoverageStoreException;
-import org.geotoolkit.image.io.SpatialImageWriteParam;
 
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriter;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 
 public class GeoTIFFDatatype extends RasterDataType {
 
@@ -49,7 +48,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 				writer.write(((CoverageWrapper) geometry).getParsingGeometry().render(null));
 				writer.endWriteSequence();
 				return writer.getOutput().toString();
-			} catch (IOException e) {
+			} catch (IOException | CannotEvaluateException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				throw new RuntimeException();

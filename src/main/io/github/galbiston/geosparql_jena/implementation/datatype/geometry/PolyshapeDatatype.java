@@ -12,6 +12,7 @@ import de.hsmainz.cs.semgis.arqextension.util.PolyshapeWriter;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 
 public class PolyshapeDatatype extends GeometryDatatype {
 

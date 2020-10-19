@@ -13,11 +13,13 @@
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import java.util.List;
+
 import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
@@ -33,8 +35,14 @@ public class Value extends FunctionBase4 {
 		Integer bandnum = v2.getInteger().intValue();
         Integer column = v3.getInteger().intValue();
         Integer row = v4.getInteger().intValue();
-        Double d = ((double[]) raster.render(null).getData().getDataElements(column, row, new double[]{0.}))[0];
-        return NodeValue.makeDouble(d);
+        Double d;
+		try {
+			d = ((double[]) raster.render(null).getData().getDataElements(column, row, new double[]{0.}))[0];
+	        return NodeValue.makeDouble(d);
+		} catch (CannotEvaluateException e) {
+			return null;
+		}
+
 	}
 
 }

@@ -8,8 +8,10 @@ import javax.media.jai.iterator.WritableRectIter;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+/*
 import org.geotoolkit.coverage.grid.GridCoordinates2D;
 import org.opengis.coverage.grid.GridCoordinates;
+*/
 
 public class Curvature extends FunctionBase1 {
 

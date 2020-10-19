@@ -17,6 +17,7 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.sparql.expr.ExprEvalException;

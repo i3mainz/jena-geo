@@ -19,10 +19,12 @@ package io.github.galbiston.geosparql_jena.implementation.datatype.geometry;
 
 import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.parsers.gml.GMLReader;
 import io.github.galbiston.geosparql_jena.implementation.parsers.gml.GMLWriter;
 import io.github.galbiston.geosparql_jena.implementation.vocabulary.Geo;
 import java.io.IOException;
+
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.jdom2.JDOMException;
 import org.locationtech.jts.geom.Geometry;

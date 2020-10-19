@@ -15,6 +15,7 @@ import org.apache.sis.storage.netcdf.NetcdfStore;
 import org.apache.sis.storage.netcdf.NetcdfStoreProvider;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 
 public class NetCDFDatatype extends RasterDataType {
 

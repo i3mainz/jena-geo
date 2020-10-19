@@ -3,7 +3,6 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.geotoolkit.image.ImageWorker;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;

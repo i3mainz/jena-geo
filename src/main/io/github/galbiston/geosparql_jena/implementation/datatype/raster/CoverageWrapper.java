@@ -23,10 +23,11 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryReverse;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.SRSInfo;
 import io.github.galbiston.geosparql_jena.implementation.UnitsOfMeasure;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GMLDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.great_circle.CoordinatePair;
 import io.github.galbiston.geosparql_jena.implementation.great_circle.GreatCircleDistance;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
@@ -42,6 +43,7 @@ import io.github.galbiston.geosparql_jena.implementation.vocabulary.Unit_URI;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
+
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.graph.Node;
 import org.apache.jena.rdf.model.Literal;
@@ -103,7 +105,7 @@ public class CoverageWrapper extends SpatialWrapper {
     public CoverageWrapper(GridCoverage geometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
         this(geometry, srsURI, geometryDatatypeURI, dimensionInfo, null);
     }
-
+    
     /**
      *
      * @param geometry In X/Y or Y/X coordinate order of the SRS URI.
@@ -169,9 +171,9 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param srsURI
      * @param geometryDatatypeURI
      */
-    public CoverageWrapper(String srsURI, String geometryDatatypeURI) {
+   /* public CoverageWrapper(String srsURI, String geometryDatatypeURI) {
         this(new CustomCoordinateSequence(DimensionInfo.XY_POINT.getDimensions()), geometryDatatypeURI, srsURI);
-    }
+    }*/
 
     
     /**
@@ -206,7 +208,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws MismatchedDimensionException
      * @throws TransformException
      */
-    public CoverageWrapper checkTransformSRS(CoverageWrapper targetGeometryWrapper) throws FactoryException, MismatchedDimensionException, TransformException {
+    /*public CoverageWrapper checkTransformSRS(CoverageWrapper targetGeometryWrapper) throws FactoryException, MismatchedDimensionException, TransformException {
 
         CoverageWrapper transformedGeometryWrapper;
         String srsURI = srsInfo.getSrsURI();
@@ -217,7 +219,7 @@ public class CoverageWrapper extends SpatialWrapper {
         }
 
         return transformedGeometryWrapper;
-    }
+    }*/
 
     /**
      * Transform the GeometryWrapper into another spatial reference system.<br>
@@ -229,7 +231,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws TransformException
      * @throws FactoryException
      */
-    public CoverageWrapper transform(String srsURI) throws MismatchedDimensionException, TransformException, FactoryException {
+   /* public CoverageWrapper transform(String srsURI) throws MismatchedDimensionException, TransformException, FactoryException {
         return transform(srsURI, true);
     }
 
@@ -243,38 +245,11 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws TransformException
      * @throws FactoryException
      */
-    public CoverageWrapper transform(SRSInfo srsInfo) throws MismatchedDimensionException, TransformException, FactoryException {
+    /*public CoverageWrapper transform(SRSInfo srsInfo) throws MismatchedDimensionException, TransformException, FactoryException {
         return transform(srsInfo.getSrsURI(), true);
-    }
+    }*/
 
-    /**
-     * Transform the GeometryWrapper into another spatial reference system.<br>
-     * Option to store the resulting GeometryWrapper in the index.
-     *
-     * @param srsURI
-     * @param storeSRSTransform
-     * @return GeometryWrapper after transformation.
-     * @throws MismatchedDimensionException
-     * @throws TransformException
-     * @throws FactoryException
-     */
-    protected CoverageWrapper transform(String srsURI, Boolean storeSRSTransform) throws MismatchedDimensionException, TransformException, FactoryException {
-        if (srsInfo.getSrsURI().equals(srsURI)) {
-            return this;
-        }
 
-        return GeometryTransformIndex.transform(this, srsURI, storeSRSTransform);
-    }
-
-    /**
-     * Checks whether the prepared geometry has been initialised.
-     * <br>Done lazily as expensive.
-     */
-    private void checkPreparedGeometry() {
-        if (preparedGeometry == null) {
-            this.preparedGeometry = PreparedGeometryFactory.prepare(xyGeometry);
-        }
-    }
 
     /**
      * Returns this geometry wrapper converted to the SRS_URI URI.
@@ -285,9 +260,9 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws MismatchedDimensionException
      * @throws TransformException
      */
-    public CoverageWrapper convertSRS(String srsURI) throws FactoryException, MismatchedDimensionException, TransformException {
+    /*public CoverageWrapper convertSRS(String srsURI) throws FactoryException, MismatchedDimensionException, TransformException {
         return transform(srsURI);
-    }
+    }*/
 
     /**
      *
@@ -629,12 +604,12 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param geometryDatatypeURI
      * @return GeometryWrapper with SRS URI and GeometryDatatype URI.
      */
-    public static final CoverageWrapper createGeometry(GridCoverage geometry, String srsURI, String geometryDatatypeURI) {
+    public static final CoverageWrapper createCoverage(GridCoverage geometry, String srsURI, String geometryDatatypeURI) {
         GridCoverage xyGeometry = geometry;
-        GridCoverage parsingGeometry = GeometryReverse.check(xyGeometry, srsURI);
-        DimensionInfo dimsInfo = DimensionInfo.find(geometry.getCoordinate(), xyGeometry);
+        //GridCoverage parsingGeometry = GeometryReverse.check(xyGeometry, srsURI);
+        DimensionInfo dimsInfo = DimensionInfo.XY_POINT;
 
-        return new CoverageWrapper(parsingGeometry, xyGeometry, srsURI, geometryDatatypeURI, dimsInfo);
+        return new CoverageWrapper(xyGeometry, xyGeometry, srsURI, geometryDatatypeURI, dimsInfo);
     }
 
 
@@ -678,5 +653,7 @@ public class CoverageWrapper extends SpatialWrapper {
     public String toString() {
         return "GeometryWrapper{" + "dimensionInfo=" + dimensionInfo + ", geometryDatatypeURI=" + geometryDatatypeURI + ", lexicalForm=" + lexicalForm + ", utmURI=" + utmURI + ", latitude=" + latitude + ", xyGeometry=" + xyGeometry + ", parsingGeometry=" + parsingGeometry + ", preparedGeometry=" + preparedGeometry + ", srsInfo=" + srsInfo + '}';
     }
+
+
 
 }

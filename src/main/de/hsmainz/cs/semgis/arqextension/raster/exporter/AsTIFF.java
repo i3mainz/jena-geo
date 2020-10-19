@@ -8,7 +8,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.geotoolkit.image.io.SpatialImageWriteParam;
 //import org.geotoolkit.image.io.plugin.TiffImageWriter;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;

@@ -1,11 +1,13 @@
-package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
+package io.github.galbiston.geosparql_jena.implementation.datatype;
 
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.datatypes.RDFDatatype;
 import org.apache.jena.datatypes.TypeMapper;
 
-import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.WKBRastDatatype;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
 

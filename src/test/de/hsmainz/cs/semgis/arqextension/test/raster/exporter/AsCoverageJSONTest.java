@@ -8,12 +8,13 @@ import org.junit.jupiter.api.Test;
 import de.hsmainz.cs.semgis.arqextension.raster.constructor.RastFromCoverageJSON;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.WKBRastDatatype;
 
 public class AsCoverageJSONTest extends SampleRasters {
 	
 	@Test
 	public void testAsCoverageJSON() {
-		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1,CovJSONDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(minwkbString,WKBRastDatatype.INSTANCE);
         RastFromCoverageJSON instance=new RastFromCoverageJSON();
         NodeValue expResult = NodeValue.makeString(covJSONString1);
         NodeValue result = instance.exec(covLiteral);
