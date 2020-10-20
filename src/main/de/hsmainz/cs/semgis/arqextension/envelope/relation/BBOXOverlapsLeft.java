@@ -21,7 +21,7 @@ public class BBOXOverlapsLeft extends FunctionBase2 {
             GeometryWrapper geom = GeometryWrapper.extract(v1);
             GeometryWrapper geom2 = GeometryWrapper.extract(v2);
 			GeometryWrapper transGeom2 = geom2.transform(geom.getSRID());
-			if(geom.getEnvelope().overlaps(transGeom2.getEnvelope())) {
+			if(geom.getEnvelope().intersects(transGeom2.getEnvelope())) {
 				return NodeValue.TRUE;
 			}
 			if(geom.getEnvelope().getMaxX()<transGeom2.getEnvelope().getMinX()) {

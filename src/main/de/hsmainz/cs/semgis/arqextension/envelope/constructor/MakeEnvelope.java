@@ -24,9 +24,7 @@ public class MakeEnvelope extends FunctionBase5 {
             env.init(arg0.getDouble(), arg2.getDouble(), arg1.getDouble(), arg3.getDouble());
             String srsURI = SRSInfo.convertSRID(arg4.getInteger());
             GeometryWrapper geometryWrapper = GeometryWrapperFactory.createPolygon(env, srsURI, WKTDatatype.URI);
-
-            //return geometryWrapper.asNodeValue();
-            throw new UnsupportedOperationException("Not supported yet.");
+            return geometryWrapper.asNodeValue();
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

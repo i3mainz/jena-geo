@@ -27,7 +27,7 @@ public class InteriorRingN extends FunctionBase2 {
             	GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createGeometry(result, "<http://www.opengis.net/def/crs/EPSG/0/"+geom.getSRID()+">", WKTDatatype.URI);
             	return lineStringWrapper.asNodeValue();
             }
-            return NodeValue.nvNothing;
+            throw new ExprEvalException("Given geometry has to be a polygon");
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

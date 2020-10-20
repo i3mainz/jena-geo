@@ -6,7 +6,7 @@ import javax.media.jai.iterator.WritableRectIter;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.jaitools.tiledimage.DiskMemImage;
+//import org.jaitools.tiledimage.DiskMemImage;
 import org.opengis.coverage.grid.GridCoordinates;
 
 public class Roughness extends FunctionBase4{

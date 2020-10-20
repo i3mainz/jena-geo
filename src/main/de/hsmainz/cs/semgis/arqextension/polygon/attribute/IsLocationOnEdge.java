@@ -31,7 +31,7 @@ public class IsLocationOnEdge extends FunctionBase2 {
             	GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createGeometry(result, geometry.getSrsURI(), WKTDatatype.URI);
             	return lineStringWrapper.asNodeValue();
             }
-            return NodeValue.nvNothing;
+            throw new ExprEvalException("Given geometry has to be a polygon");
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

@@ -22,7 +22,7 @@ public class Orientation extends FunctionBase1 {
             	}
                 return NodeValue.makeInteger(1);
             }
-            return NodeValue.nvNothing;
+            throw new ExprEvalException("Given geometry has to be a polygon");
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }

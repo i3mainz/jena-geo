@@ -17,10 +17,6 @@
  */
 package io.github.galbiston.geosparql_jena.implementation;
 
-import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
-import io.github.galbiston.geosparql_jena.implementation.GeometryReverse;
-import io.github.galbiston.geosparql_jena.implementation.SRSInfo;
-import io.github.galbiston.geosparql_jena.implementation.UnitsOfMeasure;
 import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GMLDatatype;
@@ -37,7 +33,6 @@ import io.github.galbiston.geosparql_jena.implementation.registry.SRSRegistry;
 import io.github.galbiston.geosparql_jena.implementation.registry.UnitsRegistry;
 import io.github.galbiston.geosparql_jena.implementation.vocabulary.SRS_URI;
 import io.github.galbiston.geosparql_jena.implementation.vocabulary.Unit_URI;
-import java.io.Serializable;
 import java.util.Objects;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.graph.Node;
@@ -61,15 +56,17 @@ import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
 
-import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
-
 /**
  *
  *
  */
 public class GeometryWrapper extends SpatialWrapper {
 
-    private final DimensionInfo dimensionInfo;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private final DimensionInfo dimensionInfo;
     private final SRSInfo srsInfo;
     private final Geometry xyGeometry;
     private final Geometry parsingGeometry;

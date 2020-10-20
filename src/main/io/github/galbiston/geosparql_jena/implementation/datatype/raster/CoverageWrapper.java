@@ -49,6 +49,7 @@ import org.apache.jena.rdf.model.ResourceFactory;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.DirectPosition2D;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.Geometry;
@@ -82,11 +83,11 @@ public class CoverageWrapper extends SpatialWrapper {
 
     private final DimensionInfo dimensionInfo;
     private final SRSInfo srsInfo;
-    private final GridCoverage xyGeometry;
-    private final GridCoverage parsingGeometry;
+    private final GridCoverage2D xyGeometry;
+    private final GridCoverage2D parsingGeometry;
     private PreparedGeometry preparedGeometry;
     private Envelope envelope;
-    private GridCoverage translateXYGeometry;
+    private GridCoverage2D translateXYGeometry;
     private final String geometryDatatypeURI;
     private RasterDataType geometryDatatype;
     private String lexicalForm;
@@ -95,13 +96,13 @@ public class CoverageWrapper extends SpatialWrapper {
 
     /**
      *
-     * @param geometry In X/Y or Y/X coordinate order of the SRS URI.
+     * @param coverage In X/Y or Y/X coordinate order of the SRS URI.
      * @param srsURI
      * @param geometryDatatypeURI
      * @param dimensionInfo
      */
-    public CoverageWrapper(GridCoverage geometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
-        this(geometry, srsURI, geometryDatatypeURI, dimensionInfo, null);
+    public CoverageWrapper(GridCoverage2D coverage, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
+        this(coverage, srsURI, geometryDatatypeURI, dimensionInfo, null);
     }
 
     /**
@@ -112,15 +113,15 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param dimensionInfo
      * @param geometryLiteral
      */
-    public CoverageWrapper(GridCoverage geometry,String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String geometryLiteral) {
+    public CoverageWrapper(GridCoverage2D geometry,String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String geometryLiteral) {
         this(geometry, geometry, srsURI.isEmpty() ? SRS_URI.DEFAULT_WKT_CRS84 : srsURI, geometryDatatypeURI, dimensionInfo, geometryLiteral);
     }
 
-    private CoverageWrapper(GridCoverage parsingGeometry, GridCoverage xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
+    private CoverageWrapper(GridCoverage2D parsingGeometry, GridCoverage2D xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
         this(parsingGeometry, xyGeometry, srsURI, geometryDatatypeURI, dimensionInfo, null);
     }
 
-    private CoverageWrapper(GridCoverage parsingGeometry, GridCoverage xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String lexicalForm) {
+    private CoverageWrapper(GridCoverage2D parsingGeometry, GridCoverage2D xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String lexicalForm) {
 
         this.parsingGeometry = parsingGeometry;
         this.xyGeometry = xyGeometry;
@@ -143,11 +144,11 @@ public class CoverageWrapper extends SpatialWrapper {
     /**
      * Default to WGS84 geometry and XY coordinate dimensions.
      *
-     * @param geometry In X/Y or Y/X coordinate order of WGS84.
+     * @param coverage In X/Y or Y/X coordinate order of WGS84.
      * @param geometryDatatypeURI
      */
-    public CoverageWrapper(GridCoverage geometry, String geometryDatatypeURI) {
-        this(geometry, "", geometryDatatypeURI, DimensionInfo.XY_POINT);
+    public CoverageWrapper(org.geotoolkit.coverage.grid.GridCoverage2D coverage, String geometryDatatypeURI) {
+        this(coverage, "", geometryDatatypeURI, DimensionInfo.XY_POINT);
     }
 
     /**
@@ -157,22 +158,22 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param srsURI
      * @param geometryDatatypeURI
      */
-    public CoverageWrapper(GridCoverage geometry, String srsURI, String geometryDatatypeURI) {
+    public CoverageWrapper(GridCoverage2D geometry, String srsURI, String geometryDatatypeURI) {
         this(geometry, srsURI, geometryDatatypeURI, DimensionInfo.XY_POINT);
     }
 
     transient private static final GeometryFactory GEOMETRY_FACTORY = CustomGeometryFactory.theInstance();
 
-    /**
+   /* /**
      * Empty geometry with specified parameters.
      *
      * @param srsURI
      * @param geometryDatatypeURI
-     */
+     *
     public CoverageWrapper(String srsURI, String geometryDatatypeURI) {
         this(new CustomCoordinateSequence(DimensionInfo.XY_POINT.getDimensions()), geometryDatatypeURI, srsURI);
     }
-
+*/
     
     /**
      * Copy GeometryWrapper.
@@ -206,7 +207,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws MismatchedDimensionException
      * @throws TransformException
      */
-    public CoverageWrapper checkTransformSRS(CoverageWrapper targetGeometryWrapper) throws FactoryException, MismatchedDimensionException, TransformException {
+    /*public CoverageWrapper checkTransformSRS(CoverageWrapper targetGeometryWrapper) throws FactoryException, MismatchedDimensionException, TransformException {
 
         CoverageWrapper transformedGeometryWrapper;
         String srsURI = srsInfo.getSrsURI();
@@ -217,7 +218,7 @@ public class CoverageWrapper extends SpatialWrapper {
         }
 
         return transformedGeometryWrapper;
-    }
+    }*/
 
     /**
      * Transform the GeometryWrapper into another spatial reference system.<br>
@@ -229,9 +230,9 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws TransformException
      * @throws FactoryException
      */
-    public CoverageWrapper transform(String srsURI) throws MismatchedDimensionException, TransformException, FactoryException {
+   /* public CoverageWrapper transform(String srsURI) throws MismatchedDimensionException, TransformException, FactoryException {
         return transform(srsURI, true);
-    }
+    }*/
 
     /**
      * Transform the GeometryWrapper into another spatial reference system.<br>
@@ -243,9 +244,9 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws TransformException
      * @throws FactoryException
      */
-    public CoverageWrapper transform(SRSInfo srsInfo) throws MismatchedDimensionException, TransformException, FactoryException {
+    /*public CoverageWrapper transform(SRSInfo srsInfo) throws MismatchedDimensionException, TransformException, FactoryException {
         return transform(srsInfo.getSrsURI(), true);
-    }
+    }*/
 
     /**
      * Transform the GeometryWrapper into another spatial reference system.<br>
@@ -258,7 +259,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws TransformException
      * @throws FactoryException
      */
-    protected CoverageWrapper transform(String srsURI, Boolean storeSRSTransform) throws MismatchedDimensionException, TransformException, FactoryException {
+   /* protected CoverageWrapper transform(String srsURI, Boolean storeSRSTransform) throws MismatchedDimensionException, TransformException, FactoryException {
         if (srsInfo.getSrsURI().equals(srsURI)) {
             return this;
         }
@@ -269,12 +270,12 @@ public class CoverageWrapper extends SpatialWrapper {
     /**
      * Checks whether the prepared geometry has been initialised.
      * <br>Done lazily as expensive.
-     */
+     *
     private void checkPreparedGeometry() {
         if (preparedGeometry == null) {
             this.preparedGeometry = PreparedGeometryFactory.prepare(xyGeometry);
         }
-    }
+    }*/
 
     /**
      * Returns this geometry wrapper converted to the SRS_URI URI.
@@ -285,9 +286,9 @@ public class CoverageWrapper extends SpatialWrapper {
      * @throws MismatchedDimensionException
      * @throws TransformException
      */
-    public CoverageWrapper convertSRS(String srsURI) throws FactoryException, MismatchedDimensionException, TransformException {
+    /*public CoverageWrapper convertSRS(String srsURI) throws FactoryException, MismatchedDimensionException, TransformException {
         return transform(srsURI);
-    }
+    }*/
 
     /**
      *
@@ -303,7 +304,7 @@ public class CoverageWrapper extends SpatialWrapper {
      *
      * @return Geometry with coordinates as originally provided.
      */
-    public GridCoverage getParsingGeometry() {
+    public GridCoverage2D getParsingGeometry() {
         return parsingGeometry;
     }
     
@@ -311,7 +312,7 @@ public class CoverageWrapper extends SpatialWrapper {
     *
     * @return Geometry with coordinates as originally provided.
     */
-   public GridCoverage getGridGeometry() {
+   public GridCoverage2D getGridGeometry() {
        return parsingGeometry;
    }
    
@@ -319,7 +320,7 @@ public class CoverageWrapper extends SpatialWrapper {
    *
    * @return Geometry with coordinates as originally provided.
    */
-  public GridCoverage getXYGeometry() {
+  public GridCoverage2D getXYGeometry() {
       return parsingGeometry;
   }
 
@@ -624,18 +625,30 @@ public class CoverageWrapper extends SpatialWrapper {
          /**
      * Create Geometry GeometryWrapper.
      *
-     * @param geometry In X/Y order.
+     * @param coverage In X/Y order.
      * @param srsURI
      * @param geometryDatatypeURI
      * @return GeometryWrapper with SRS URI and GeometryDatatype URI.
      */
-    public static final CoverageWrapper createGeometry(GridCoverage geometry, String srsURI, String geometryDatatypeURI) {
-        GridCoverage xyGeometry = geometry;
-        GridCoverage parsingGeometry = GeometryReverse.check(xyGeometry, srsURI);
-        DimensionInfo dimsInfo = DimensionInfo.find(geometry.getCoordinate(), xyGeometry);
+    /*public static final CoverageWrapper createCoverage(GridCoverage2D coverage, String srsURI, String geometryDatatypeURI) {
+        GridCoverage2D xyGeometry = coverage;
 
-        return new CoverageWrapper(parsingGeometry, xyGeometry, srsURI, geometryDatatypeURI, dimsInfo);
-    }
+        return new CoverageWrapper(xyGeometry, xyGeometry, srsURI, geometryDatatypeURI, null);
+    }*/
+    
+    /**
+* Create Geometry GeometryWrapper.
+*
+* @param geometry In X/Y order.
+* @param srsURI
+* @param geometryDatatypeURI
+* @return GeometryWrapper with SRS URI and GeometryDatatype URI.
+*/
+public static final CoverageWrapper createCoverage(GridCoverage2D geometry, String srsURI, String geometryDatatypeURI) {
+   GridCoverage2D xyGeometry = geometry;
+
+   return new CoverageWrapper(geometry, xyGeometry, srsURI, geometryDatatypeURI, null);
+}
 
 
 

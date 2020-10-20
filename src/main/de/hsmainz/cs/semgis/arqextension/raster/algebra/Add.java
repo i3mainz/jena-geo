@@ -1,5 +1,6 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBuffer;
 import java.awt.image.WritableRaster;
@@ -14,7 +15,10 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.internal.coverage.BufferedGridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -23,14 +27,28 @@ public class Add extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper = CoverageWrapper.extract(v1);
-		GridCoverage raster = wrapper.getXYGeometry();
+		GridCoverage2D raster = wrapper.getXYGeometry();
 		CoverageWrapper wrapper2 = CoverageWrapper.extract(v2);
-		GridCoverage raster2 = wrapper2.getXYGeometry();
+		GridCoverage2D raster2 = wrapper2.getXYGeometry();
 		Integer rd1 = 0, rd2 = 0;
 		ParameterBlock pbSubtracted = new ParameterBlock();
-		pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent()));
-		pbSubtracted.addSource(raster2.render(raster2.getGridGeometry().getExtent()));
+		pbSubtracted.addSource(raster.getEnvelope());
+		pbSubtracted.addSource(raster2.getEnvelope());
 		RenderedOp subtractedImage = JAI.create("add", pbSubtracted);
+		 final GridCoverageBuilder builder = new GridCoverageBuilder();
+	        builder.setName("SampleCoverage.SST");
+	        builder.setEnvelope(raster.getEnvelope());
+	        builder.setCoordinateReferenceSystem(raster.getCoordinateReferenceSystem());
+	        builder.variable(0).setSampleDimension(dim); getSampleDimension().
+	        builder.variable(0).setName(raster.getSampleDimensions()[rd1].getDescription() + "+"
+					+ raster2.getSampleDimensions()[rd2].getDescription());
+	        builder.variable(0).setSampleRange(30, 220);
+	        builder.variable(0).setLinearTransform(0.1, 10);
+	        builder.variable(0).addNodataValue("Missing values", 255, Color.GRAY);
+	        builder.setRenderedImage(subtractedImage);
+	        GridCoverage2D cov=(GridCoverage2D) builder.build();
+	        //builder.setValues(SampleCoverage.SST.raster());
+	        coverage = builder.getGridCoverage2D();
 		/*
 		 * final GridGeometry grid = new
 		 * GridGeometry(raster.getGridGeometry().getExtent(), PixelInCell.CELL_CENTER,
