@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TreeNodeFilter Interface Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,116 +56,31 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06607.html','');});
+$(document).ready(function(){initNavTree('a06610.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a06604.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TreeNodeFilter Interface Reference</div>  </div>
+<div class="title">DefaultMutableTreeNode Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A filter used during the  <a class="el" href="a06611.html#a4d28a2d328695c03f60f54b13b169736" title="Returns a copy of a subset of the tree starting at the given node. ">Trees::copy(TreeNode, TreeNodeFilter)</a> copy} of a tree.  
- <a href="a06607.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c8545105151b22fc5be3f10fe5f411d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a1c8545105151b22fc5be3f10fe5f411d">accept</a> (<a class="el" href="a06603.html">TreeNode</a> node)</td></tr>
-<tr class="memdesc:a1c8545105151b22fc5be3f10fe5f411d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a1c8545105151b22fc5be3f10fe5f411d">More...</a><br /></td></tr>
-<tr class="separator:a1c8545105151b22fc5be3f10fe5f411d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a7224de35404d4b737cd7b144de87d"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#ac7a7224de35404d4b737cd7b144de87d">convertUserObject</a> (<a class="el" href="a06603.html">TreeNode</a> node, Object userObject)</td></tr>
-<tr class="memdesc:ac7a7224de35404d4b737cd7b144de87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the user object to assign to the copied node.  <a href="#ac7a7224de35404d4b737cd7b144de87d">More...</a><br /></td></tr>
-<tr class="separator:ac7a7224de35404d4b737cd7b144de87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A filter used during the  <a class="el" href="a06611.html#a4d28a2d328695c03f60f54b13b169736" title="Returns a copy of a subset of the tree starting at the given node. ">Trees::copy(TreeNode, TreeNodeFilter)</a> copy} of a tree. </p>
-<p>This filter can be used for including only a subset of the original nodes, and to change the  <a class="el" href="a06603.html#a18ecb8d182a13d06a11322dcaf137806" title="Returns this node&#39;s user object. ">org.geotoolkit.gui.swing.tree.TreeNode::getUserObject()</a> user object} assigned to that node.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.04</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06611.html#a4d28a2d328695c03f60f54b13b169736" title="Returns a copy of a subset of the tree starting at the given node. ">Trees::copy(TreeNode, TreeNodeFilter)</a></dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.04 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03621.html#_deprecated000009">Deprecated:</a></b></dt><dd>The  org.apache.sis.util.collection.TreeTable tree model in Apache SIS} is no longer based on Swing tree interfaces. Swing dependencies will be phased out since Swing itself is likely to be replaced by JavaFX in future JDK versions. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1c8545105151b22fc5be3f10fe5f411d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c8545105151b22fc5be3f10fe5f411d">&#9670;&nbsp;</a></span>accept()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean accept </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a06603.html">TreeNode</a>&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the given node should be copied.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td>The tree node to test for inclusion. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the given node should be included in the copy. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06611.html#a4d28a2d328695c03f60f54b13b169736">Trees.copy()</a>.</p>
-
-</div>
-</div>
-<a id="ac7a7224de35404d4b737cd7b144de87d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7a7224de35404d4b737cd7b144de87d">&#9670;&nbsp;</a></span>convertUserObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Object convertUserObject </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a06603.html">TreeNode</a>&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>userObject</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the user object to assign to the copied node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td>The original node to copy. </td></tr>
-    <tr><td class="paramname">userObject</td><td>The user object of the original node. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The user object to assign to the copied node, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06611.html#a4d28a2d328695c03f60f54b13b169736">Trees.copy()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a06610.html">DefaultMutableTreeNode</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a06630.html#a4dd652bce4d0314f36b5a526d4a18cdd">children</a>()</td><td class="entry"><a class="el" href="a06630.html">TreeNode</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06610.html#a6984951f570e1a265e4332cb02850e18">DefaultMutableTreeNode</a>()</td><td class="entry"><a class="el" href="a06610.html">DefaultMutableTreeNode</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06610.html#a08ceb4a0f48a6d30d7b4ca2b91550fa2">DefaultMutableTreeNode</a>(Object userObject)</td><td class="entry"><a class="el" href="a06610.html">DefaultMutableTreeNode</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06610.html#a1cd77a00ed43155e7166b202a68a8cfa">DefaultMutableTreeNode</a>(Object userObject, boolean allowsChildren)</td><td class="entry"><a class="el" href="a06610.html">DefaultMutableTreeNode</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06610.html#a362cdcad5fb74c2d67494d65e9dfd1f4">getLocale</a>()</td><td class="entry"><a class="el" href="a06610.html">DefaultMutableTreeNode</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06630.html#a18ecb8d182a13d06a11322dcaf137806">getUserObject</a>()</td><td class="entry"><a class="el" href="a06630.html">TreeNode</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06610.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a></td><td class="entry"><a class="el" href="a06610.html">DefaultMutableTreeNode</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06610.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a>()</td><td class="entry"><a class="el" href="a06610.html">DefaultMutableTreeNode</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03713.html">gui</a></li><li class="navelem"><a class="el" href="a03714.html">swing</a></li><li class="navelem"><a class="el" href="a03712.html">tree</a></li><li class="navelem"><a class="el" href="a06607.html">TreeNodeFilter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

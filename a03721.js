@@ -1,5 +1,5 @@
 var a03721 =
 [
-    [ "large", "a03720.html", "a03720" ],
-    [ "WritableImageByteChannel", "a06775.html", "a06775" ]
+    [ "wkb", "a03723.html", "a03723" ],
+    [ "SampleDimensionType", "a06478.html", "a06478" ]
 ];

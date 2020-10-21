@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: And Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,77 +56,26 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05291.html','');});
+$(document).ready(function(){initNavTree('a05294.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a05288.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">And Class Reference</div>  </div>
+<div class="title">PostGISConfig Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for And:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05290.png" border="0" usemap="#And_inherit__map" alt="Inheritance graph"/></div>
-<map name="And_inherit__map" id="And_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for And:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05289.png" border="0" usemap="#And_coll__map" alt="Collaboration graph"/></div>
-<map name="And_coll__map" id="And_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05291.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
-<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06271.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, <a class="el" href="a06355.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a06271.html#a0904a51fde88c2b11db431c51711f7da">CoverageWrapper.getRasterDatatypeURI()</a>, <a class="el" href="a06355.html#a60e41e388a84548d37fa90cbd5dd8c8c">GridCoverage.getSampleDimensions()</a>, <a class="el" href="a06271.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">CoverageWrapper.getSrsURI()</a>, <a class="el" href="a06271.html#a71f11b05f3fe6a38e7781be178db85dd">CoverageWrapper.getXYGeometry()</a>, and <a class="el" href="a06355.html#a377e507a5ac3d5c1ad6b248064e77013">GridCoverage.render()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08867.html#ad8956827844f69009bc4c23a46ed322a">AndTest.testAnd()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                          {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v1);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                GridCoverage raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                CoverageWrapper wrapper2=CoverageWrapper.extract(v2);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                GridCoverage raster2=wrapper2.getXYGeometry();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                Integer rd1 = 0, rd2 = 0;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                 ParameterBlock pbSubtracted = <span class="keyword">new</span> ParameterBlock(); </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;             pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;             pbSubtracted.addSource(raster2.render(raster2.getGridGeometry().getExtent())); </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;             <span class="comment">//System.out.println(raster2);</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;             RenderedOp subtractedImage = JAI.create(<span class="stringliteral">&quot;and&quot;</span>,pbSubtracted);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <span class="comment">/*</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">                         * final GridGeometry grid = new</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">                         * GridGeometry(raster.getGridGeometry().getExtent(), PixelInCell.CELL_CENTER,</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">                         * MathTransforms.identity(2),</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">                         * raster.getGridGeometry().getCoordinateReferenceSystem());</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">                         * </span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">                         * final MathTransform1D toUnits = (MathTransform1D) MathTransforms.linear(0.5,</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">                         * 100);</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">                         */</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;             System.out.println(raster.getSampleDimensions().size());</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        <span class="keyword">final</span> SampleDimension sd = <span class="keyword">new</span> SampleDimension.Builder().setName(<span class="stringliteral">&quot;t&quot;</span>)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                        .addQuantitative(</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                        (raster.getSampleDimensions().get(rd1).getName() + <span class="stringliteral">&quot; &amp; &quot;</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                                        + raster2.getSampleDimensions().get(rd2).getName()).toString(),</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                        raster.getSampleDimensions().get(0).getMeasurementRange().get(),</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                        raster.getSampleDimensions().get(0).getTransferFunction().get(),</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                        raster.getSampleDimensions().get(0).getUnits().get())</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                        .build();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        List&lt;SampleDimension&gt;sds=<span class="keyword">new</span> LinkedList&lt;SampleDimension&gt;();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        sds.add(sd);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="comment">/*</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">                         * Create the grid coverage, gets its image and set values directly as short</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">                         * integers.</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">                         */</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        BufferedGridCoverage coverage = <span class="keyword">new</span> BufferedGridCoverage(raster2.getGridGeometry(),</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                        sds, DataBuffer.TYPE_SHORT);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        rasterr.setRect(subtractedImage.getSourceImage(0).getData());</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        <span class="keywordflow">return</span> CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                        .asNodeValue();      </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        } </div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a05294.html">PostGISConfig</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a05294.html#a86aaa6ea5831bd40db3fc8ee08dd761f">IS_FUNCTIONS_REGISTERED</a></td><td class="entry"><a class="el" href="a05294.html">PostGISConfig</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05294.html#a8b260eecbaabcef8473fd87ada040682">main</a>(String[] args)</td><td class="entry"><a class="el" href="a05294.html">PostGISConfig</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05294.html#ad08ca478894d6ef45195e56050e4ef2a">setup</a>()</td><td class="entry"><a class="el" href="a05294.html">PostGISConfig</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03670.html">raster</a></li><li class="navelem"><a class="el" href="a03669.html">algebra</a></li><li class="navelem"><a class="el" href="a05291.html">And</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

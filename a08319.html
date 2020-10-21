@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AsGeoHashTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,110 +56,29 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08319.html','');});
+$(document).ready(function(){initNavTree('a08322.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a08316.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsGeoHashTest Class Reference</div>  </div>
+<div class="title">EnsureClosedTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for AsGeoHashTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08317.png" border="0" usemap="#AsGeoHashTest_coll__map" alt="Collaboration graph"/></div>
-<map name="AsGeoHashTest_coll__map" id="AsGeoHashTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a3ff195dff03851a6d4c46d30a53b61fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08319.html#a3ff195dff03851a6d4c46d30a53b61fd">testAsGeobuf</a> ()</td></tr>
-<tr class="separator:a3ff195dff03851a6d4c46d30a53b61fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a17fb1516a3866b5917d2495998305fb3"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08319.html#a17fb1516a3866b5917d2495998305fb3">geoHashString</a> =&quot;c0w3hf1s70w3hf1s70w3&quot;</td></tr>
-<tr class="separator:a17fb1516a3866b5917d2495998305fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08319.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;POINT(-126,48)&quot;</td></tr>
-<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3ff195dff03851a6d4c46d30a53b61fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ff195dff03851a6d4c46d30a53b61fd">&#9670;&nbsp;</a></span>testAsGeobuf()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testAsGeobuf </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04391.html#a892f62c3bf1ab2917fc8745f0b6da2a3">AsGeoHash.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                   {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        NodeValue geometryLiteral = GeometryWrapperFactory.createPoint(<span class="keyword">new</span> Coordinate(-126.,48.),WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        AsGeoHash instance=<span class="keyword">new</span> AsGeoHash();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;c0w3hf1s70w3hf1s70w3&quot;</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeDouble(0.));</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a17fb1516a3866b5917d2495998305fb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17fb1516a3866b5917d2495998305fb3">&#9670;&nbsp;</a></span>geoHashString</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String geoHashString =&quot;c0w3hf1s70w3hf1s70w3&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abc3f514f005cba49e406658e2d3086eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeometry =&quot;POINT(-126,48)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a08322.html">EnsureClosedTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a08322.html#ad8efa97b8aa775164dc4836b505fc315">closed</a></td><td class="entry"><a class="el" href="a08322.html">EnsureClosedTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08322.html#a92f3ef00fc079a76b7f943d9ed6cec77">duplicateRings</a></td><td class="entry"><a class="el" href="a08322.html">EnsureClosedTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a08322.html#aff993a2133bc6c6afe1012e13b5c028d">nonClosed</a></td><td class="entry"><a class="el" href="a08322.html">EnsureClosedTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08322.html#a3e4a839eee2eb5791f90656e82eec721">ring</a></td><td class="entry"><a class="el" href="a08322.html">EnsureClosedTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a08322.html#ace1b0f448a93ab083e49e59b851b8094">testEnsureClosed</a>()</td><td class="entry"><a class="el" href="a08322.html">EnsureClosedTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a08322.html#a7a93140658cbcf5aea17d9f930cd5144">testEnsureClosed2</a>()</td><td class="entry"><a class="el" href="a08322.html">EnsureClosedTest</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03797.html">exporter</a></li><li class="navelem"><a class="el" href="a08319.html">AsGeoHashTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

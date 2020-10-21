@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: PosixDirectoryFilter Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,178 +56,29 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07255.html','');});
+$(document).ready(function(){initNavTree('a07258.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="a07252.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PosixDirectoryFilter Class Reference</div>  </div>
+<div class="title">CopyFileVisitor Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A <a class="el" href="">java.nio.file.DirectoryStream.Filter</a> implementation using Unix-style wildcards.  
- <a href="a07255.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for PosixDirectoryFilter:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07254.png" border="0" usemap="#PosixDirectoryFilter_inherit__map" alt="Inheritance graph"/></div>
-<map name="PosixDirectoryFilter_inherit__map" id="PosixDirectoryFilter_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for PosixDirectoryFilter:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07253.png" border="0" usemap="#PosixDirectoryFilter_coll__map" alt="Collaboration graph"/></div>
-<map name="PosixDirectoryFilter_coll__map" id="PosixDirectoryFilter_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae326683ddf04bdeaa400ac056dd8f89e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07255.html#ae326683ddf04bdeaa400ac056dd8f89e">PosixDirectoryFilter</a> (final String <a class="el" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>)</td></tr>
-<tr class="separator:ae326683ddf04bdeaa400ac056dd8f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0efc054bf1a5b2919cc422fb4c78da4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07255.html#af0efc054bf1a5b2919cc422fb4c78da4">PosixDirectoryFilter</a> (final String <a class="el" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>, boolean caseInsensitive)</td></tr>
-<tr class="memdesc:af0efc054bf1a5b2919cc422fb4c78da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a file filter for the specified pattern.  <a href="#af0efc054bf1a5b2919cc422fb4c78da4">More...</a><br /></td></tr>
-<tr class="separator:af0efc054bf1a5b2919cc422fb4c78da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197cb9c028bda2d86abe272422e59bb1"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07255.html#a197cb9c028bda2d86abe272422e59bb1">accept</a> (Path entry)  throws IOException </td></tr>
-<tr class="separator:a197cb9c028bda2d86abe272422e59bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:abb33befe85e6d355a89451ecc05cf784"><td class="memItemLeft" align="right" valign="top">final Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a></td></tr>
-<tr class="memdesc:abb33befe85e6d355a89451ecc05cf784"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pattern to matchs to filenames.  <a href="#abb33befe85e6d355a89451ecc05cf784">More...</a><br /></td></tr>
-<tr class="separator:abb33befe85e6d355a89451ecc05cf784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="">java.nio.file.DirectoryStream.Filter</a> implementation using Unix-style wildcards. </p>
-<p>A pattern is given to the constructor, which can contains the </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;*&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;?&quot;</span> </div></div><!-- fragment --><p> wildcards.</p>
-<p>Example : </p><pre>
-<code></code></pre><pre><code>DirectoryStream.Filter&lt;Path&gt; filter = new <a class="el" href="a07255.html" title="A java.nio.file.DirectoryStream.Filter implementation using Unix-style wildcards. ...">PosixDirectoryFilter</a>("*.png");</code></pre><pre><code>try (DirectoryStream&lt;Path&gt; stream = Files.newDirectoryStream(root, filter)) {
-     for (Path matching : stream) {
-         //file matching filter in root directory
-     }
-}
-</code>
-</pre><dl class="section author"><dt>Author</dt><dd>Quentin Boileau (Geomatys) </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae326683ddf04bdeaa400ac056dd8f89e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae326683ddf04bdeaa400ac056dd8f89e">&#9670;&nbsp;</a></span>PosixDirectoryFilter() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a07255.html">PosixDirectoryFilter</a> </td>
-          <td>(</td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>pattern</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">PosixDirectoryFilter.pattern</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                      {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">this</span>(<a class="code" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>, Boolean.FALSE);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="ttc" id="a07255_html_abb33befe85e6d355a89451ecc05cf784"><div class="ttname"><a href="a07255.html#abb33befe85e6d355a89451ecc05cf784">org.geotoolkit.nio.PosixDirectoryFilter.pattern</a></div><div class="ttdeci">final Pattern pattern</div><div class="ttdoc">The pattern to matchs to filenames. </div><div class="ttdef"><b>Definition:</b> PosixDirectoryFilter.java:50</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="af0efc054bf1a5b2919cc422fb4c78da4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0efc054bf1a5b2919cc422fb4c78da4">&#9670;&nbsp;</a></span>PosixDirectoryFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a07255.html">PosixDirectoryFilter</a> </td>
-          <td>(</td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>caseInsensitive</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs a file filter for the specified pattern. </p>
-<p>The pattern can contains the</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;*&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;?&quot;</span> </div></div><!-- fragment --><p> wildcards.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pattern</td><td>The pattern. Example:<div class="fragment"><div class="line"><span class="stringliteral">&quot;*.png&quot;</span> </div></div><!-- fragment --> </td></tr>
-    <tr><td class="paramname">caseInsensitive</td><td>use <a class="el" href="">Pattern#CASE_INSENSITIVE</a> flag </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                               {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> length = <a class="code" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>.length();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(length + 8);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;length; i++) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">char</span> c = <a class="code" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>.charAt(i);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (!Character.isLetterOrDigit(c)) {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">switch</span> (c) {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>: buffer.append(<span class="charliteral">&#39;.&#39;</span> ); <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">case</span> <span class="charliteral">&#39;*&#39;</span>: buffer.append(<span class="stringliteral">&quot;.*&quot;</span>); <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    default : buffer.append(<span class="charliteral">&#39;\\&#39;</span>); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            buffer.append(c);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (caseInsensitive) {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            this.<a class="code" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a> = Pattern.compile(buffer.toString(), Pattern.CASE_INSENSITIVE);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            this.<a class="code" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a> = Pattern.compile(buffer.toString());</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="ttc" id="a07255_html_abb33befe85e6d355a89451ecc05cf784"><div class="ttname"><a href="a07255.html#abb33befe85e6d355a89451ecc05cf784">org.geotoolkit.nio.PosixDirectoryFilter.pattern</a></div><div class="ttdeci">final Pattern pattern</div><div class="ttdoc">The pattern to matchs to filenames. </div><div class="ttdef"><b>Definition:</b> PosixDirectoryFilter.java:50</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a197cb9c028bda2d86abe272422e59bb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a197cb9c028bda2d86abe272422e59bb1">&#9670;&nbsp;</a></span>accept()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean accept </td>
-          <td>(</td>
-          <td class="paramtype">Path&#160;</td>
-          <td class="paramname"><em>entry</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                         {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> (entry != null) &amp;&amp; <a class="code" href="a07255.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>.matcher(entry.getFileName().toString()).matches();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="ttc" id="a07255_html_abb33befe85e6d355a89451ecc05cf784"><div class="ttname"><a href="a07255.html#abb33befe85e6d355a89451ecc05cf784">org.geotoolkit.nio.PosixDirectoryFilter.pattern</a></div><div class="ttdeci">final Pattern pattern</div><div class="ttdoc">The pattern to matchs to filenames. </div><div class="ttdef"><b>Definition:</b> PosixDirectoryFilter.java:50</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abb33befe85e6d355a89451ecc05cf784"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb33befe85e6d355a89451ecc05cf784">&#9670;&nbsp;</a></span>pattern</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Pattern pattern</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The pattern to matchs to filenames. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07255.html#ae326683ddf04bdeaa400ac056dd8f89e">PosixDirectoryFilter.PosixDirectoryFilter()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a07258.html">CopyFileVisitor</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a07258.html#a506296cf4fbe7ff5fee1328122f5c5ff">CopyFileVisitor</a>(Path targetPath, CopyOption... copyOption)</td><td class="entry"><a class="el" href="a07258.html">CopyFileVisitor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07258.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">copyOption</a></td><td class="entry"><a class="el" href="a07258.html">CopyFileVisitor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07258.html#ad59451ecc2d10d6b3129961f09586918">preVisitDirectory</a>(final Path dir, final BasicFileAttributes attrs)</td><td class="entry"><a class="el" href="a07258.html">CopyFileVisitor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07258.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a></td><td class="entry"><a class="el" href="a07258.html">CopyFileVisitor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07258.html#a70691204d0c20891b5d0769f07114761">targetPath</a></td><td class="entry"><a class="el" href="a07258.html">CopyFileVisitor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07258.html#a410300546ca54107427f10ad1fa4b26f">visitFile</a>(final Path file, final BasicFileAttributes attrs)</td><td class="entry"><a class="el" href="a07258.html">CopyFileVisitor</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03741.html">nio</a></li><li class="navelem"><a class="el" href="a07255.html">PosixDirectoryFilter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

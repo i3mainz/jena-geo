@@ -1,12 +1,11 @@
 var a03676 =
 [
-    [ "Grayscale", "a05755.html", "a05755" ],
-    [ "Reclass", "a05759.html", null ],
-    [ "Resize", "a05763.html", "a05763" ],
-    [ "Reskew", "a05767.html", null ],
-    [ "Retile", "a05771.html", null ],
-    [ "Rotation", "a05775.html", "a05775" ],
-    [ "SnapToGrid", "a05779.html", null ],
-    [ "SRID", "a05783.html", "a05783" ],
-    [ "Trim", "a05787.html", "a05787" ]
+    [ "GeneratePoints", "a05118.html", "a05118" ],
+    [ "MakePoint", "a05122.html", "a05122" ],
+    [ "MakePointM", "a05126.html", "a05126" ],
+    [ "MakePointT", "a05130.html", "a05130" ],
+    [ "MPointFromText", "a05134.html", "a05134" ],
+    [ "PointFromGeoHash", "a05138.html", "a05138" ],
+    [ "PointFromText", "a05142.html", "a05142" ],
+    [ "PointFromWKB", "a05146.html", "a05146" ]
 ];

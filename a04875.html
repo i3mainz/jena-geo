@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: IsClosed Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,73 +56,24 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04875.html','');});
+$(document).ready(function(){initNavTree('a04878.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a04872.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IsClosed Class Reference</div>  </div>
+<div class="title">VoronoiPolygons Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Returns TRUE if the LINESTRING's start and end points are coincident.  
- <a href="a04875.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for IsClosed:</div>
-<div class="dyncontent">
-<div class="center"><img src="a04874.png" border="0" usemap="#IsClosed_inherit__map" alt="Inheritance graph"/></div>
-<map name="IsClosed_inherit__map" id="IsClosed_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for IsClosed:</div>
-<div class="dyncontent">
-<div class="center"><img src="a04873.png" border="0" usemap="#IsClosed_coll__map" alt="Collaboration graph"/></div>
-<map name="IsClosed_coll__map" id="IsClosed_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7a3cbabcf0592c2705ee280a231189a"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04875.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a> (NodeValue arg0)</td></tr>
-<tr class="separator:ae7a3cbabcf0592c2705ee280a231189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Returns TRUE if the LINESTRING's start and end points are coincident. </p>
-<p>For Polyhedral surface is closed (volumetric). </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae7a3cbabcf0592c2705ee280a231189a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7a3cbabcf0592c2705ee280a231189a">&#9670;&nbsp;</a></span>exec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06327.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06327.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08591.html#a535dfcf17dd3d286958ec2268d19deb5">IsClosedTest.testLineStringClosed()</a>, <a class="el" href="a08595.html#a321e37eed11ab4c4fb34459ff2f0c8a4">IsRingTest.testLineStringIsNotRing()</a>, <a class="el" href="a08595.html#af99150f0a2baa803f3a32475e363a546">IsRingTest.testLineStringIsRing()</a>, <a class="el" href="a08591.html#a73d74b41617d10452367388732cfdc67">IsClosedTest.testLineStringNotClosed()</a>, <a class="el" href="a08591.html#a46c6b5fafb3fb83ca34bed8a76614a05">IsClosedTest.testMultiLineStringNotClosed()</a>, <a class="el" href="a08591.html#a3ccb0f6a8770f2a4ac3d61a34e17308e">IsClosedTest.testmultiPointClosed()</a>, and <a class="el" href="a08591.html#a833c7f3f2807c95b41de4f5c776b7eb0">IsClosedTest.testpointClosed()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                          {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Geometry geom = geometry.getXYGeometry();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span>(geom instanceof Point)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">return</span> NodeValue.TRUE;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span>(geom instanceof MultiPoint) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                LineString line=(LineString) GeometryWrapperFactory.createLineString(((MultiPoint)geom).getCoordinates(),  <span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + geom.getSRID() + <span class="stringliteral">&quot;&gt;&quot;</span>, WKTDatatype.URI).getXYGeometry();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordtype">boolean</span> isClosed = line.isClosed();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(isClosed);             </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (geom instanceof LineString) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordtype">boolean</span> isClosed = ((LineString) geom).isClosed();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(isClosed);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (geom instanceof Polygon) {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">return</span> NodeValue.TRUE;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> NodeValue.FALSE; </div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a04878.html">VoronoiPolygons</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a04878.html#a7351fc997d4a65d9e6f0355ba53dc072">exec</a>(NodeValue v1, NodeValue toleranceV, NodeValue extendto)</td><td class="entry"><a class="el" href="a04878.html">VoronoiPolygons</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03652.html">linestring</a></li><li class="navelem"><a class="el" href="a03651.html">attribute</a></li><li class="navelem"><a class="el" href="a04875.html">IsClosed</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

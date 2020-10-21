@@ -1,5 +1,6 @@
 var a03706 =
 [
-    [ "wkb", "a03708.html", "a03708" ],
-    [ "SampleDimensionType", "a06451.html", "a06451" ]
+    [ "datatype", "a03707.html", "a03707" ],
+    [ "index", "a03711.html", "a03711" ],
+    [ "GeometryWrapper", "a06354.html", "a06354" ]
 ];

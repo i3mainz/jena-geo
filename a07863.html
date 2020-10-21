@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: GridTraversal.PointList Interface Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,137 +56,86 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07863.html','');});
+$(document).ready(function(){initNavTree('a07866.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a07860.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GridTraversal.PointList Interface Reference</div>  </div>
+<div class="title">LazyLoadElement Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A simple abstraction allowing to access input polyline points, whatever structure it is in.  
- <a href="a07863.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for GridTraversal.PointList:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07862.png" border="0" usemap="#GridTraversal_8PointList_inherit__map" alt="Inheritance graph"/></div>
-<map name="GridTraversal_8PointList_inherit__map" id="GridTraversal_8PointList_inherit__map">
-<area shape="rect" id="node2" href="a07867.html" title="GridTraversal.Contiguous\lArrayPoint" alt="" coords="5,80,176,121"/>
-<area shape="rect" id="node3" href="a07871.html" title="GridTraversal.Point2DList" alt="" coords="201,87,373,114"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af4b57d21919c42d55af03391f91a1c08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07863.html#af4b57d21919c42d55af03391f91a1c08">size</a> ()</td></tr>
-<tr class="separator:af4b57d21919c42d55af03391f91a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07863.html#aa71d41fd3d95c354d4d5e922c6c21210">isEmpty</a> ()</td></tr>
-<tr class="separator:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a85c8e0e311f358dc68e6e38394ef48"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07863.html#a0a85c8e0e311f358dc68e6e38394ef48">getPoint</a> (int index)</td></tr>
-<tr class="separator:a0a85c8e0e311f358dc68e6e38394ef48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07863.html#a56e1ed7f77c1dad3205d8c25e62c0432">getDimension</a> ()</td></tr>
-<tr class="separator:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple abstraction allowing to access input polyline points, whatever structure it is in. </p>
-<p>For now, we only manage 1D array of value, but in the future, we could simply add a new <a class="el" href="a07863.html" title="A simple abstraction allowing to access input polyline points, whatever structure it is in...">PointList</a> using a JTS polyline as input, or any other structure.</p>
-<p>TODO : replace with true <a class="el" href="">List</a> interface. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a56e1ed7f77c1dad3205d8c25e62c0432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e1ed7f77c1dad3205d8c25e62c0432">&#9670;&nbsp;</a></span>getDimension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getDimension </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Number of coordinates in a single point (length of a point vector). </dd></dl>
-
-<p>Implemented in <a class="el" href="a07871.html#a56e1ed7f77c1dad3205d8c25e62c0432">GridTraversal.Point2DList</a>, and <a class="el" href="a07867.html#a56e1ed7f77c1dad3205d8c25e62c0432">GridTraversal.ContiguousArrayPoint</a>.</p>
-
-</div>
-</div>
-<a id="a0a85c8e0e311f358dc68e6e38394ef48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a85c8e0e311f358dc68e6e38394ef48">&#9670;&nbsp;</a></span>getPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double [] getPoint </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="a07871.html#a0a85c8e0e311f358dc68e6e38394ef48">GridTraversal.Point2DList</a>, and <a class="el" href="a07867.html#a0a85c8e0e311f358dc68e6e38394ef48">GridTraversal.ContiguousArrayPoint</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07859.html#a4b1bea983b6ac9a5f8c676d2639c07bb">GridTraversal.prepareSegment()</a>, and <a class="el" href="a07875.html#a2d349f14626a156d4206ab99c6eaf685">GridTraversal.Builder.stream()</a>.</p>
-
-</div>
-</div>
-<a id="aa71d41fd3d95c354d4d5e922c6c21210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71d41fd3d95c354d4d5e922c6c21210">&#9670;&nbsp;</a></span>isEmpty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean isEmpty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="a07871.html#aa71d41fd3d95c354d4d5e922c6c21210">GridTraversal.Point2DList</a>, and <a class="el" href="a07867.html#aa71d41fd3d95c354d4d5e922c6c21210">GridTraversal.ContiguousArrayPoint</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07875.html#a2d349f14626a156d4206ab99c6eaf685">GridTraversal.Builder.stream()</a>.</p>
-
-</div>
-</div>
-<a id="af4b57d21919c42d55af03391f91a1c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4b57d21919c42d55af03391f91a1c08">&#9670;&nbsp;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="a07871.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.Point2DList</a>, and <a class="el" href="a07867.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.ContiguousArrayPoint</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07859.html#a9d386a6ce9410626f6e5dde1029a6ecb">GridTraversal.GridTraversal()</a>, <a class="el" href="a07867.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.ContiguousArrayPoint.size()</a>, and <a class="el" href="a07875.html#a2d349f14626a156d4206ab99c6eaf685">GridTraversal.Builder.stream()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a07866.html">LazyLoadElement</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a590a9461bbda4f799ef4730bcfddf3bd">appendChild</a>(Node newChild)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a670eb9ef2a18804abbb8e72cb355c032">cloneNode</a>(boolean deep)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a8efc4771b25a74d1bf24c0c87ec03b94">compareDocumentPosition</a>(Node other)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a607107173a97bb00fbf046be8f73c34e">element</a></td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a86699b0689c9364232724caa67f3a006">getAttribute</a>(String name)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a67d851fdd43c3df7ec9427aeace0b3db">getAttributeNode</a>(String name)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a35a2c6c8daf862d04b93ac0974046147">getAttributeNodeNS</a>(String namespaceURI, String localName)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a8bf05d08e2d9d9faf7e14481f7e3ad8b">getAttributeNS</a>(String namespaceURI, String localName)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#abf839ecbfe9bf1233a96e6d57b0028bb">getAttributes</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a0ff9d31b48a6d306561bc2966527f37a">getBaseURI</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a6741f5f65ff8ff50425788c643b150e3">getChildNodes</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a93196f8953be08c6253b624433e659be">getElement</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#ad2533ee3b96336dd2f4217faaebbf318">getElementsByTagName</a>(String name)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ad8ef930f631f5a6ae260731025d9a62c">getElementsByTagNameNS</a>(String namespaceURI, String localName)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a9740c07ec1b4adcfa376617a6571e9e3">getFeature</a>(String feature, String version)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a72460191c6f9b627bc19c066c83b7c1e">getFirstChild</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a39eaf85e66f5066544d862366ba56a70">getLastChild</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a9e0dca1c6efc6550f1cea481c823960a">getLocalName</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a66cf4309f34e98a669bb28d93fd5615f">getNamespaceURI</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ab4f7f7fbb6a82fd31fdb3d7c21f4290a">getNextSibling</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#aef48c95a31e0e0f86a6e4280ef79c1af">getNodeName</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#adbe3ace82d6c7077f54ffcd6d8f7c106">getNodeType</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#ac2fab08d571c691385272f552b25a590">getNodeValue</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a41b1dea3d233b360110ac93dbd4b5289">getOwnerDocument</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a31f098e9f625d56890c40314cb0edd59">getParentNode</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a5b9a69b246225ec2eca3637f32437a16">getPrefix</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a8c37597ea6b9d1911ebf2c9b067c257e">getPreviousSibling</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ac02fc543098a12c612d1bb64615aa57c">getSchemaTypeInfo</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a8254c377f141b1133055f1a3b5aafffb">getTagName</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ae63aded059b60466f45ea2b9429c1a43">getTextContent</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#aa6e77954ef15a298f591f79b37dc7725">getUserData</a>(String key)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ae2875e7868e11770c94f67d394189fa3">hasAttribute</a>(String name)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a6fd215fd1a83ecce4cd956c3b25ec78c">hasAttributeNS</a>(String namespaceURI, String localName)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a5e905930194fa0298099c287ed7f99a7">hasAttributes</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a6c43afa3d19d364f91d8f3c70df123a6">hasChildNodes</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a73de98a53b3d876fe1175a8d3f8a80a4">insertBefore</a>(Node newChild, Node refChild)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a5c059fab4787aed5068a7d2744c7d201">isDefaultNamespace</a>(String namespaceURI)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#acb9a0139a293c114c25efe16f2c43170">isEqualNode</a>(Node arg)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a042872c216bceae9ce00f39c6e7835c8">isSameNode</a>(Node other)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a56978b10589fb937ea04da6b266d399e">isSupported</a>(String feature, String version)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a119dea8d17f6fbe27629e6c1546d71c8">LazyLoadElement</a>(Path xmlFile)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#af51421150057241c7ec61cef87db2168">loaded</a></td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a></td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#aa179073e64f78d0e7a9e581784541781">lookupNamespaceURI</a>(String prefix)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#aa43dbacc9629c901c773aca99e1b8c7f">lookupPrefix</a>(String namespaceURI)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#acd0de676568888d848beb97dcc53ae47">normalize</a>()</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a61d382abe31e96a09c4a26db6bf7c632">removeAttribute</a>(String name)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a4c1330cb7cd008ccf38fb9a5791557f1">removeAttributeNode</a>(Attr oldAttr)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a1a606aeff149066d1124649e7a1c0688">removeAttributeNS</a>(String namespaceURI, String localName)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a2a9d64a34ae7a4e02a28762a148cf3d1">removeChild</a>(Node oldChild)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a31b1c76bc41690a9205e4ae46b890a91">replaceChild</a>(Node newChild, Node oldChild)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ac08d84021fd313ec403f0df5b3aae30b">setAttribute</a>(String name, String value)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#ac87500e92830bcdc53921ca6d72c4c27">setAttributeNode</a>(Attr newAttr)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a5dd8013c4a8bb48a4422d65402a05eef">setAttributeNodeNS</a>(Attr newAttr)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a2bcce3e73b92fc017a9c536c6be9417a">setAttributeNS</a>(String namespaceURI, String qualifiedName, String value)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a3234e79b8deb2aa28ccbaa0c6939ff9d">setIdAttribute</a>(String name, boolean isId)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#aa47ef37f45650b9c87ee2cf7f18f3f76">setIdAttributeNode</a>(Attr idAttr, boolean isId)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a96bb79361cd2b6d71f5c19cc6b035396">setIdAttributeNS</a>(String namespaceURI, String localName, boolean isId)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#acb32632e6d4c5241583fcc443a39bc24">setNodeValue</a>(String nodeValue)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#ada648b27d91e0918aa0933c144d4cf0f">setPrefix</a>(String prefix)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#aa9040b2670b55d280955b706771abf9f">setTextContent</a>(String textContent)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07866.html#a078379a427a5cde64d60ab74a16a2407">setUserData</a>(String key, Object data, UserDataHandler handler)</td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07866.html#a70db650ad9c287dc1c1cdfc6733d7aa5">xmlFile</a></td><td class="entry"><a class="el" href="a07866.html">LazyLoadElement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03757.html">util</a></li><li class="navelem"><a class="el" href="a03761.html">grid</a></li><li class="navelem"><a class="el" href="a07859.html">GridTraversal</a></li><li class="navelem"><a class="el" href="a07863.html">PointList</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

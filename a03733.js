@@ -1,10 +1,12 @@
 var a03733 =
 [
-    [ "AuthenticatedDataSource", "a07003.html", "a07003" ],
-    [ "DefaultDataSource", "a07007.html", "a07007" ],
-    [ "DerbySqlScriptRunner", "a07011.html", "a07011" ],
-    [ "Dialect", "a07015.html", "a07015" ],
-    [ "Entry", "a07019.html", "a07019" ],
-    [ "ScriptRunner", "a07023.html", "a07023" ],
-    [ "Synchronizer", "a07027.html", "a07027" ]
+    [ "Adapters", "a06670.html", "a06670" ],
+    [ "ImageUtilities", "a06674.html", "a06674" ],
+    [ "ImageUtils", "a06678.html", "a06678" ],
+    [ "LookupTables", "a06686.html", "a06686" ],
+    [ "PhotometricInterpretation", "a06690.html", "a06690" ],
+    [ "PlanarConfiguration", "a06694.html", "a06694" ],
+    [ "SampleType", "a06698.html", "a06698" ],
+    [ "Setup", "a06702.html", "a06702" ],
+    [ "SimpleBufferedImageOp", "a06706.html", "a06706" ]
 ];

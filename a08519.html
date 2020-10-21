@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: NormalizeTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,87 +56,27 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08519.html','');});
+$(document).ready(function(){initNavTree('a08522.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a08516.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">NormalizeTest Class Reference</div>  </div>
+<div class="title">Force3DMTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for NormalizeTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08517.png" border="0" usemap="#NormalizeTest_coll__map" alt="Collaboration graph"/></div>
-<map name="NormalizeTest_coll__map" id="NormalizeTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ac38f1a963c4494ff939bad764b01b127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08519.html#ac38f1a963c4494ff939bad764b01b127">testReverse</a> ()</td></tr>
-<tr class="separator:ac38f1a963c4494ff939bad764b01b127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a33797029fadbcba01b4a4fafec88cf41"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08519.html#a33797029fadbcba01b4a4fafec88cf41">testLineString</a> =&quot;LINESTRING(1.42312321 2.34,1 10)&quot;</td></tr>
-<tr class="separator:a33797029fadbcba01b4a4fafec88cf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac38f1a963c4494ff939bad764b01b127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac38f1a963c4494ff939bad764b01b127">&#9670;&nbsp;</a></span>testReverse()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testReverse </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04763.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">Normalize.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08519.html#a33797029fadbcba01b4a4fafec88cf41">testLineString</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Normalize instance=<span class="keyword">new</span> Normalize();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,10));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,2));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="ttc" id="a08519_html_a33797029fadbcba01b4a4fafec88cf41"><div class="ttname"><a href="a08519.html#a33797029fadbcba01b4a4fafec88cf41">de.hsmainz.cs.semgis.arqextension.test.geometry.transform.NormalizeTest.testLineString</a></div><div class="ttdeci">static final String testLineString</div><div class="ttdef"><b>Definition:</b> NormalizeTest.java:18</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a33797029fadbcba01b4a4fafec88cf41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33797029fadbcba01b4a4fafec88cf41">&#9670;&nbsp;</a></span>testLineString</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testLineString =&quot;LINESTRING(1.42312321 2.34,1 10)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a08522.html">Force3DMTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a08522.html#a809df5824b4a08713e4ce726cb369a8d">testForce3DM</a>()</td><td class="entry"><a class="el" href="a08522.html">Force3DMTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a08522.html#a1efd448688434012347e3bc8972acb49">testForce3DM2</a>()</td><td class="entry"><a class="el" href="a08522.html">Force3DMTest</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a08522.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a></td><td class="entry"><a class="el" href="a08522.html">Force3DMTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a08522.html#a882729aec95621b4ad261714738ae3fd">testPolygon2</a></td><td class="entry"><a class="el" href="a08522.html">Force3DMTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03799.html">transform</a></li><li class="navelem"><a class="el" href="a08519.html">NormalizeTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

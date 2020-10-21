@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: GridType Enum Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,102 +56,31 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07563.html','');});
+$(document).ready(function(){initNavTree('a07566.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a07560.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GridType Enum Reference</div>  </div>
+<div class="title">AbstractMathTransform Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Whatever the grid values backing a <a class="el" href="a07551.html">GridTransform</a> are directly the target coordinates or offsets to apply on the source coordinates.  
- <a href="a07563.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a98bcca2bbefab54c92e47741132d25a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07563.html#a98bcca2bbefab54c92e47741132d25a9">LOCALIZATION</a></td></tr>
-<tr class="memdesc:a98bcca2bbefab54c92e47741132d25a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid values give directly the target coordinates.  <a href="#a98bcca2bbefab54c92e47741132d25a9">More...</a><br /></td></tr>
-<tr class="separator:a98bcca2bbefab54c92e47741132d25a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf4b83c5ad3ff0f7b84bc29139b0fdac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07563.html#abf4b83c5ad3ff0f7b84bc29139b0fdac">OFFSET</a></td></tr>
-<tr class="memdesc:abf4b83c5ad3ff0f7b84bc29139b0fdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid values are offsets to add to source coordinates.  <a href="#abf4b83c5ad3ff0f7b84bc29139b0fdac">More...</a><br /></td></tr>
-<tr class="separator:abf4b83c5ad3ff0f7b84bc29139b0fdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd3948b81f6ef0a1e6ad647a2f78078"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07563.html#a6fd3948b81f6ef0a1e6ad647a2f78078">NADCON</a></td></tr>
-<tr class="memdesc:a6fd3948b81f6ef0a1e6ad647a2f78078"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid values are offsets to apply on source coordinates in seconds of angle.  <a href="#a6fd3948b81f6ef0a1e6ad647a2f78078">More...</a><br /></td></tr>
-<tr class="separator:a6fd3948b81f6ef0a1e6ad647a2f78078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Whatever the grid values backing a <a class="el" href="a07551.html">GridTransform</a> are directly the target coordinates or offsets to apply on the source coordinates. </p>
-<p>If grid values are offsets, they may be added directly to the source coordinates (<a class="el" href="a07563.html#abf4b83c5ad3ff0f7b84bc29139b0fdac">OFFSET</a>) or they may be pre-multiplied by some factor before to be added to source coordinates (<a class="el" href="a07563.html#a6fd3948b81f6ef0a1e6ad647a2f78078">NADCON</a>, <a class="el" href="a07563.html#aaf78ccc107086a2d33445e3c1d02e8db">NTv2</a>).</p>
-<p>{</p><dl class="section note"><dt>Note</dt><dd>The special offset cases (<code>NADCON</code>, <code>NTv2</code>) are not strictly necessary since it would be possible to pre-multiply the scale factor straight in the grid. However the approach taken by <code><a class="el" href="a07551.html" title="Transforms a set of coordinate points using bilinear interpolation in a grid. ">GridTransform</a></code> is to keep major formats unchanged. This approach allows for example a <code>RenderedImage</code> to share the same <code>DataBuffer</code> than the one used by <code><a class="el" href="a07551.html" title="Transforms a set of coordinate points using bilinear interpolation in a grid. ">GridTransform</a></code>, and compare the visual aspect with publications.}</dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.12</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.00 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03621.html#_deprecated000075">Deprecated:</a></b></dt><dd>Replaced by <a class="el" href="">org.apache.sis.referencing.operation.transform.InterpolatedTransform</a> </dd></dl>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a98bcca2bbefab54c92e47741132d25a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98bcca2bbefab54c92e47741132d25a9">&#9670;&nbsp;</a></span>LOCALIZATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LOCALIZATION</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The grid values give directly the target coordinates. </p>
-<p>The source coordinates are discarded after the interpolation. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07551.html#aacf3000ea815f15781fad93b0e59dc39">GridTransform.create()</a>.</p>
-
-</div>
-</div>
-<a id="a6fd3948b81f6ef0a1e6ad647a2f78078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd3948b81f6ef0a1e6ad647a2f78078">&#9670;&nbsp;</a></span>NADCON</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NADCON</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The grid values are offsets to apply on source coordinates in seconds of angle. </p>
-<p>Longitude offset is positive toward <b>west</b> and latitude offset is positive toward north. Longitudes in the west hemisphere are negatives. </p>
-
-</div>
-</div>
-<a id="abf4b83c5ad3ff0f7b84bc29139b0fdac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf4b83c5ad3ff0f7b84bc29139b0fdac">&#9670;&nbsp;</a></span>OFFSET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OFFSET</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The grid values are offsets to add to source coordinates. </p>
-<p>The source and target coordinates can be in any <a class="el" href="a07351.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>. In the typical case where to source or the target <a class="el" href="a07351.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> is  org.geotoolkit.referencing.crs.DefaultGeographicCRS::WGS84 WGS84}, then the offsets are in decimal degrees with longitude offset positive toward east and latitude offset positive toward north. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a07566.html">AbstractMathTransform</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a07566.html#a8ae44eabafd231ad62a118a207a17d3b">AbstractMathTransform</a>()</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07566.html#a7c122bf019cb2cc5b390d2e3300e37d6">createTransformedShape</a>(final Shape shape)</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07566.html#ab9fc607009e9ce685be1d5f49fd5eb83">derivative</a>(final Point2D point)</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07566.html#a676c6e59e16b6f62dc142e287fbab5f9">ensureNonNull</a>(final String name, final Object object)</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07566.html#a25f94cf0f4c5e57980b944286464ec92">formatTo</a>(Formatter formatter)</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a07566.html#a78ee178b6a73658d65ca60da4d1e6683">getName</a>()</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a07566.html#ad2a419e3aa81af359b8f4b7515d0979b">mismatchedDimension</a>(final String argument, final int dimension, final int expected)</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"><span class="mlabel">package</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a07566.html#a44d37c18902f5d7e46ed007c000c6dda">transform</a>(final Point2D ptSrc, final Point2D ptDst)</td><td class="entry"><a class="el" href="a07566.html">AbstractMathTransform</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03745.html">referencing</a></li><li class="navelem"><a class="el" href="a03750.html">operation</a></li><li class="navelem"><a class="el" href="a03754.html">transform</a></li><li class="navelem"><a class="el" href="a07563.html">GridType</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

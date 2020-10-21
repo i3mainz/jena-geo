@@ -1,10 +1,9 @@
 var a03723 =
 [
-    [ "ContinuousPalette", "a06831.html", "a06831" ],
-    [ "IIOListeners", "a06835.html", "a06835" ],
-    [ "IIOReadProgressAdapter", "a06843.html", "a06843" ],
-    [ "IndexedPalette", "a06847.html", "a06847" ],
-    [ "Palette", "a06851.html", "a06851" ],
-    [ "PaletteDisposer", "a06855.html", "a06855" ],
-    [ "PaletteFactory", "a06859.html", "a06859" ]
+    [ "WKBRasterBand", "a06482.html", "a06482" ],
+    [ "WKBRasterConstants", "a06486.html", "a06486" ],
+    [ "WKBRasterImageReader", "a06490.html", "a06490" ],
+    [ "WKBRasterImageWriter", "a06502.html", "a06502" ],
+    [ "WKBRasterReader", "a06510.html", "a06510" ],
+    [ "WKBRasterWriter", "a06514.html", "a06514" ]
 ];
