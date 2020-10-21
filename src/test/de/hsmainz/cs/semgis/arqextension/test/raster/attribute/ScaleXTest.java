@@ -15,7 +15,7 @@ public class ScaleXTest extends SampleRasters {
 	public void testScaleX() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         ScaleX instance=new ScaleX();
-        NodeValue expResult = NodeValue.makeDouble(0);
+        NodeValue expResult = NodeValue.makeDouble(2);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

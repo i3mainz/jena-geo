@@ -1,7 +1,7 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
 import java.io.IOException;
-import org.apache.sis.coverage.grid.GridCoverage;
+
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
@@ -43,7 +43,7 @@ public class WKBRastDatatype extends RasterDataType {
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
 		WKBRasterReader reader2=new WKBRasterReader();
-		GridCoverage coverage;
+		GridCoverage2D coverage;
 		try {
 			coverage = reader2.readCoverage(Base64.decode(geometryLiteral), null);
 			System.out.println(coverage);

@@ -7,7 +7,7 @@ import java.awt.image.WritableRaster;
 
 import javax.media.jai.DataBufferFloat;
 
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
@@ -30,9 +30,9 @@ public class XYZDatatype extends RasterDataType {
 	
 	@Override
 	public String unparse(Object value) {
-		/*GridCoverageBuilder2 builder=new GridCoverageBuilder2();
+		GridCoverageBuilder builder=new GridCoverageBuilder();
 		DataBuffer buffer=new DataBufferFloat(10);
-		builder.setValues(buffer);
+		/*builder.setValues(buffer);
 		SampleModel sm=new BandedSampleModel(dataType, w, h, numBands);
 		WritableRaster rast=new WritableRaster(null, buffer, null);
 		Raster.createWritableRaster(sm, buffer, null);

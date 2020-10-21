@@ -3,6 +3,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBuffer;
+import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.LinkedList;
@@ -13,13 +14,10 @@ import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.CannotEvaluateException;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.geometry.Envelope2D;
-import org.apache.sis.internal.coverage.BufferedGridCoverage;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -32,12 +30,12 @@ public class Add extends FunctionBase2 {
 		CoverageWrapper wrapper2 = CoverageWrapper.extract(v2);
 		GridCoverage2D raster2 = wrapper2.getXYGeometry();
 		Integer rd1 = 0, rd2 = 0;
-		try {
+		
 		ParameterBlock pbSubtracted = new ParameterBlock();
-		pbSubtracted.addSource(raster.getEnvelope());
-		pbSubtracted.addSource(raster2.getEnvelope());
+		pbSubtracted.addSource(raster.getRenderedImage());
+		pbSubtracted.addSource(raster2.getRenderedImage());
 		RenderedOp subtractedImage = JAI.create("add", pbSubtracted);
-		 final GridCoverageBuilder builder = new GridCoverageBuilder();
+		/* final GridCoverageBuilder builder = new GridCoverageBuilder();
 	        builder.setName("SampleCoverage.SST");
 	        builder.setEnvelope(raster.getEnvelope());
 	        builder.setCoordinateReferenceSystem(raster.getCoordinateReferenceSystem());
@@ -60,7 +58,12 @@ public class Add extends FunctionBase2 {
 		 * final MathTransform1D toUnits = (MathTransform1D) MathTransforms.linear(0.5,
 		 * 100);
 		 */
-		final SampleDimension sd = new SampleDimension.Builder().setName("t")
+		GridCoverageBuilder builder=new GridCoverageBuilder();
+		builder.setGridGeometry(raster.getGridGeometry());
+		builder.setNumBands(raster.getNumSampleDimensions());
+		builder.setExtent(raster.getGridGeometry().getExtent());
+		builder.setRenderedImage(subtractedImage);
+		/*final SampleDimension sd = new SampleDimension.Builder().setName("t")
 				.addQuantitative(
 						(raster.getSampleDimensions().get(rd1).getName() + "+"
 								+ raster2.getSampleDimensions().get(rd2).getName()).toString(),
@@ -74,7 +77,7 @@ public class Add extends FunctionBase2 {
 		/*
 		 * Create the grid coverage, gets its image and set values directly as short
 		 * integers.
-		 */
+		 
 		BufferedGridCoverage coverage = new BufferedGridCoverage(raster2.getGridGeometry(),
 				sds, DataBuffer.TYPE_SHORT);
 		WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();
@@ -85,7 +88,10 @@ public class Add extends FunctionBase2 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return null;
-		} 
+		}*/
+		GridCoverage cov=builder.build();
+		return CoverageWrapper.createCoverage((GridCoverage2D)cov, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+				.asNodeValue();
 	}
 
 }

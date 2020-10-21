@@ -2,8 +2,8 @@ package de.hsmainz.cs.semgis.arqextension.geometry.srid;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.referencing.CRS;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.util.FactoryException;
 
@@ -23,7 +23,7 @@ public class SRIDGetAxis1Name extends FunctionBase1 {
 				crs = CRS.forCode("EPSG:"+((GeometryWrapper)wrapper1).getXYGeometry().getSRID());
 				return NodeValue.makeString(crs.getCoordinateSystem().getAxis(0).getName().toString());
 			}else if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+				GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				crs = CRS.forCode("EPSG:"+raster.getGridGeometry().CRS);
 				return NodeValue.makeString(crs.getCoordinateSystem().getAxis(0).getName().toString());		
 			}

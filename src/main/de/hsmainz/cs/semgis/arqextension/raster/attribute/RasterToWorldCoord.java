@@ -18,10 +18,10 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.DirectPosition2D;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Coordinate;
+import org.opengis.coverage.grid.GridGeometry;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.MathTransform;
@@ -36,13 +36,13 @@ public class RasterToWorldCoord extends FunctionBase3 {
 	@Override
 	public NodeValue exec(NodeValue v,NodeValue v1,NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage raster=wrapper.getXYGeometry();	
+		GridCoverage2D raster=wrapper.getXYGeometry();	
 		Integer column = v1.getInteger().intValue();
         Integer row = v2.getInteger().intValue();
         try {
         	
         	 GridGeometry gg2D = raster.getGridGeometry();
-             MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
+             MathTransform gridToCRS = gg2D.getGridToCRS();
              DirectPosition realPos=new DirectPosition2D(column, row);
              DirectPosition gridPos = new DirectPosition2D();
              DirectPosition res=gridToCRS.transform(realPos, gridPos);

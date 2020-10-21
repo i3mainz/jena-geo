@@ -79,7 +79,6 @@ import de.hsmainz.cs.semgis.arqextension.geometry.editor.SetGeometry;
 import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsBinary;
 import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGML;
 import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGPX;
-import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGeoHash;
 import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGeoJSON;
 import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGeoJSONLD;
 import de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGeoRSS;
@@ -490,7 +489,6 @@ public class PostGISConfig {
             functionRegistry.put(PostGISGeo.st_frechetDistance.getURI(), FrechetDistance.class);
             functionRegistry.put(PostGISGeo.st_furthestCoordinate.getURI(), FurthestCoordinate.class);
             functionRegistry.put(PostGISGeo.st_generatePoints.getURI(), GeneratePoints.class);
-            functionRegistry.put(PostGISGeo.st_geohash.getURI(), AsGeoHash.class);
             functionRegistry.put(PostGISGeo.st_geomFromGeoJSON.getURI(), GeomFromGeoJSON.class);
             functionRegistry.put(PostGISGeo.st_geomFromGeoHash.getURI(), GeomFromGeoHash.class);
             functionRegistry.put(PostGISGeo.st_geomFromGML.getURI(), GeomFromGML.class);

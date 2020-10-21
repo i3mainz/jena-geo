@@ -8,13 +8,10 @@ import java.nio.charset.StandardCharsets;
 import javax.imageio.ImageWriteParam;
 
 import org.apache.jena.sparql.expr.NodeValue;
-import org.apache.sis.coverage.grid.CannotEvaluateException;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.geotiff.GeoTiffStore;
-import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.opengis.coverage.CannotEvaluateException;
 
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriter;
 
@@ -45,7 +42,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 			 * writerParam.setCompressionType(compression); }
 			 */
 			try {
-				writer.write(((CoverageWrapper) geometry).getParsingGeometry().render(null));
+				writer.write(((CoverageWrapper) geometry).getParsingGeometry().getRenderedImage());
 				writer.endWriteSequence();
 				return writer.getOutput().toString();
 			} catch (IOException e) {
@@ -61,15 +58,16 @@ public class GeoTIFFDatatype extends RasterDataType {
 	public CoverageWrapper read(String geometryLiteral) {
 		InputStream stream = new ByteArrayInputStream(geometryLiteral.getBytes(StandardCharsets.UTF_8));
 		final StorageConnector c = new StorageConnector(stream);
-		GeoTiffStoreProvider prov=new GeoTiffStoreProvider();
-		GridCoverage cov;
+		/*GeoTiffStoreProvider prov=new GeoTiffStoreProvider();
+		GridCoverage2D cov;
 		try {
 			GeoTiffStore store=new GeoTiffStore(prov,c);
 			cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
 			return new CoverageWrapper(cov, URI);
 		} catch (DataStoreException e) {
 			throw new RuntimeException(e.getMessage());
-		}
+		}*/
+		return null;
 	}
 
 }

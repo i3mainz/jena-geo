@@ -1,10 +1,16 @@
 package de.hsmainz.cs.semgis.arqextension.test.util;
 
+import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.sis.geometry.Envelope2D;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.geotoolkit.coverage.grid.GridCoverageBuilder;
+import org.geotoolkit.coverage.grid.ViewType;
+import org.geotoolkit.referencing.crs.PredefinedCRS;
 
 import com.sun.jersey.core.util.Base64;
 
@@ -92,7 +98,16 @@ public class SampleRasters {
 	
 	public static String rasterWKB;
 		
-	public static SampleRasters rasters;		
+	public static SampleRasters rasters;	
+	
+	protected GridCoverage2D getSampleRGBRaster() {
+		 final GridCoverageBuilder builder = new GridCoverageBuilder();
+		 builder.setRenderedImage(new BufferedImage(2, 2, BufferedImage.TYPE_INT_RGB));
+	        builder.setEnvelope(new Envelope2D(null, 0, 0, 2, 2));
+	        builder.setCoordinateReferenceSystem(PredefinedCRS.GRID_2D);
+	        GridCoverage2D coverage = builder.getGridCoverage2D();
+	        return coverage;
+	}
 			
 	protected SampleRasters()  {
 		String inputFile = "wkb.bin";

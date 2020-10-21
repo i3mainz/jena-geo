@@ -28,21 +28,22 @@
 
 package de.hsmainz.cs.semgis.arqextension.util.parsers;
 
-import org.apache.sis.coverage.Category;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridCoverage;
+
+import org.geotoolkit.coverage.Category;
+import org.geotoolkit.coverage.GridSampleDimension;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.opengis.metadata.spatial.DimensionNameType;
 
 public class CoverageJsonWriter {
-	GridCoverage coverage;
+	GridCoverage2D coverage;
 
-	public CoverageJsonWriter(GridCoverage coverage) {
+	public CoverageJsonWriter(GridCoverage2D coverage) {
 		this.coverage=coverage;
 	}
 	
-	public static JSONObject coverageToCovJSON(GridCoverage coverage) {
+	public static JSONObject coverageToCovJSON(GridCoverage2D coverage) {
 		JSONObject result=new JSONObject();
 		result.put("type","Coverage");
 		JSONObject domain=new JSONObject();
@@ -53,15 +54,16 @@ public class CoverageJsonWriter {
 		JSONArray tempcoords=new JSONArray();
 		JSONObject axes=new JSONObject();
 		domain.put("axes",axes);
-		for(int i=0;i<coverage.getGridGeometry().getExtent().getDimension();i++) {
-			if(coverage.getGridGeometry().getExtent().getAxisType(i).get().equals(DimensionNameType.COLUMN)) {
-				axes.put("x",new JSONObject());
-				geocoords.put("x");
-			}
-			else if(coverage.getGridGeometry().getExtent().getAxisType(i).get().equals(DimensionNameType.ROW)) {
-				axes.put("y",new JSONObject());
-				geocoords.put("y");
-			}
+		if(coverage.getGridGeometry().getExtent2D().getDimension()>0) {
+			axes.put("x",new JSONObject());
+			geocoords.put("x");
+		}
+		else if(coverage.getGridGeometry().getExtent().getDimension()>1) {
+			axes.put("y",new JSONObject());
+			geocoords.put("y");
+		}
+		/*for(int i=0;i<coverage.getGridGeometry().getExtent().getDimension();i++) {
+
 			else if(coverage.getGridGeometry().getExtent().getAxisType(i).get().equals(DimensionNameType.VERTICAL)) {
 				axes.put("z",new JSONObject());
 				geocoords.put("z");
@@ -70,7 +72,7 @@ public class CoverageJsonWriter {
 				axes.put("t",new JSONObject());
 				tempcoords.put("t");
 			}
-		}
+		}*/
 		JSONArray referencing=new JSONArray();
 		domain.put("referencing", referencing);
 		if(!geocoords.isEmpty()) {
@@ -104,11 +106,11 @@ public class CoverageJsonWriter {
 		result.put("ranges",ranges);
 		JSONObject parameters=new JSONObject();
 		result.put("parameters", parameters);
-		for(SampleDimension dimension:coverage.getSampleDimensions()) {
+		for(GridSampleDimension dimension:coverage.getSampleDimensions()) {
 			JSONObject sampledim=new JSONObject();
-			parameters.put(dimension.getName().toString(),sampledim);
+			parameters.put(dimension.getCategoryNames()[0].toString(),sampledim);
 			JSONObject paramrange=new JSONObject();
-			ranges.put(dimension.getName().toString(),paramrange);
+			ranges.put(dimension.getCategoryNames()[0].toString(),paramrange);
 			paramrange.put("type","NdArray");
 			paramrange.put("dataType","float");
 			JSONArray axiss=new JSONArray();
@@ -121,16 +123,16 @@ public class CoverageJsonWriter {
 			sampledim.put("type","Parameter");
 			JSONObject description=new JSONObject();
 			sampledim.put("description",description);
-			description.put("en",dimension.getName().toString());
-			if(dimension.getUnits()!=null && dimension.getUnits().isPresent()) {
+			description.put("en",dimension.getCategoryNames().toString());
+			if(dimension.getUnits()!=null) {
 				JSONObject unit=new JSONObject();
 				sampledim.put("unit",unit);
 				JSONObject unitlabel=new JSONObject();
 				unit.put("label",unitlabel);
-				unitlabel.put("en",dimension.getUnits().get().getName());
+				unitlabel.put("en",dimension.getUnits().getName());
 				JSONObject symbol=new JSONObject();
 				unit.put("symbol",symbol);
-				symbol.put("value",dimension.getUnits().get());
+				symbol.put("value",dimension.getUnits().getName());
 			}
 			JSONObject observedProperty=new JSONObject();
 			sampledim.put("observedProperty",observedProperty);
@@ -143,10 +145,10 @@ public class CoverageJsonWriter {
 					JSONObject category=new JSONObject();
 					JSONObject catlabel=new JSONObject();
 					category.put("label",catlabel);
-					catlabel.put("en",dimension.getUnits().get().getName());
+					catlabel.put("en",dimension.getUnits().getName());
 					JSONObject catdesc=new JSONObject();
 					category.put("description",catdesc);
-					catdesc.put("en",dimension.getUnits().get().getName());
+					catdesc.put("en",dimension.getUnits().getName());
 					categories.put(category);
 				}
 			}

@@ -15,7 +15,7 @@ public class MinTileXTest extends SampleRasters {
 	public void testMinTileX() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         MinTileX instance=new MinTileX();
-        NodeValue expResult = NodeValue.makeInteger(10);
+        NodeValue expResult = NodeValue.makeInteger(0);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

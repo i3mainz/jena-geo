@@ -19,23 +19,27 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 import java.awt.image.RenderedImage;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.CannotEvaluateException;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.opengis.coverage.CannotEvaluateException;
 
 public class Summary extends FunctionBase1 {
 
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage raster=wrapper.getXYGeometry();
+		GridCoverage2D raster=wrapper.getXYGeometry();
 		StringBuilder builder = new StringBuilder();
 		RenderedImage rendered;
-		rendered = raster.render(null);
-      builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getGridGeometry().toString() + System.lineSeparator());
-      for (int i = 0; i < raster.getSampleDimensions().size(); i++) {
-		builder.append("band " + i + " of pixtype " + raster.getSampleDimensions().get(i).getCategories() + " is in-db with NODATA value of " + raster.getSampleDimensions().get(i).getNoDataValues() + System.lineSeparator());
-      }
-      return NodeValue.makeString(builder.toString());
+		try {
+			rendered = raster.getRenderedImage();
+        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getGridGeometry().toString() + System.lineSeparator());
+        for (int i = 0; i < raster.getNumSampleDimensions(); i++) {
+            builder.append("band " + i + " of pixtype " + raster.getSampleDimension(i).getCategories() + " is in-db with NODATA value of " + raster.getSampleDimension(i).getNoDataValues() + System.lineSeparator());
+        }
+        return NodeValue.makeString(builder.toString());
+		} catch (CannotEvaluateException e) {
+			return null;
+		}
 	}
 
 }

@@ -12,12 +12,11 @@ import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.util.resources.Vocabulary;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.GeometryFactory;
+import org.opengis.coverage.grid.GridCoverage;
+import org.opengis.coverage.grid.GridGeometry;
 import org.opengis.parameter.InvalidParameterValueException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
@@ -43,11 +42,11 @@ public class SetScale extends FunctionBase3{
 
         //this.initilizeVariables(raster);
 
-        final int numBands = raster.getSampleDimensions().size();
+        final int numBands = raster.getNumSampleDimensions();
 
-        Envelope extent = (Envelope) raster.getGridGeometry().getEnvelope();
+        Envelope extent = (Envelope) raster.getGridGeometry().getExtent();
         GridGeometry gridGeometry2D = raster.getGridGeometry();
-        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(null);
+        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS();
         Double cellSizeX = Math.abs(gridToWorld.getScaleX()) * xScale;
         Double cellSizeY = Math.abs(gridToWorld.getScaleY()) * yScale;
 

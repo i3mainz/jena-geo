@@ -56,8 +56,8 @@
 		<geotools.version>15.1</geotools.version>
 		  <geotk.version>4.0.4</geotk.version>
 		 <!-- <sis.version>0.8-jdk7-M1</sis.version>-->
-		  <sis.version>1.0</sis.version>
-		  <geoapi.version>4.0-SNAPSHOT</geoapi.version>
+		  <sis.version>0.8-jdk7-M1</sis.version>
+		  <geoapi.version>3.0.1</geoapi.version>
 		  <jena.version>3.16.0</jena.version>
 		  <maven.compiler.source>1.8</maven.compiler.source>
    		  <maven.compiler.target>1.8</maven.compiler.target>
@@ -119,7 +119,6 @@
     <artifactId>postgresql</artifactId>
     <version>42.1.1</version>
 </dependency>
-<!-- 
  <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-wcs</artifactId>
@@ -197,13 +196,13 @@
             <groupId>org.opengis</groupId>
             <artifactId>geoapi</artifactId>
             <version>${geoapi.version}</version>
-        </dependency> -->
+        </dependency> 
              <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-coverage</artifactId>
             <version>${geotk.version}</version>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.apache.sis.core</groupId>
             <artifactId>sis-feature</artifactId>
             <version>${sis.version}</version>
@@ -222,18 +221,18 @@
             <groupId>org.apache.sis.storage</groupId>
             <artifactId>sis-netcdf</artifactId>
             <version>${sis.version}</version>
-        </dependency>
+        </dependency>--> 
         <dependency>
             <groupId>org.apache.sis.core</groupId>
             <artifactId>sis-metadata</artifactId>
             <version>${sis.version}</version>
         </dependency>
-        <dependency>
+               <dependency>
             <groupId>org.apache.sis.core</groupId>
             <artifactId>sis-referencing</artifactId>
             <version>${sis.version}</version>
         </dependency>
-         <dependency>
+        <!-- <dependency>
             <groupId>org.apache.sis.core</groupId>
             <artifactId>sis-referencing-by-identifiers</artifactId>
             <version>${sis.version}</version>
@@ -243,12 +242,6 @@
             <artifactId>sis-utility</artifactId>
             <version>${sis.version}</version>
         </dependency>
-        <dependency>
-    <groupId>org.apache.sis.non-free</groupId>
-    <artifactId>sis-embedded-data</artifactId>
-    <version>1.0</version>
-    <scope>runtime</scope>
-  </dependency><!-- 
   <dependency>
     <groupId>org.apache.sis.non-free</groupId>
     <artifactId>sis-embedded-data</artifactId>
@@ -390,7 +383,7 @@
         <dependency>
             <groupId>io.github.galbiston</groupId>
             <artifactId>geosparql-jena</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/es.unex.sextante/sextante -->
 <dependency>

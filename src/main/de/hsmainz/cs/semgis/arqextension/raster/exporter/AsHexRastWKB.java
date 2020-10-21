@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
 import org.locationtech.jts.io.WKBWriter;
 import org.opengis.util.FactoryException;
@@ -17,7 +17,7 @@ public class AsHexRastWKB extends FunctionBase1{
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage raster=wrapper.getXYGeometry();	
+		GridCoverage2D raster=wrapper.getXYGeometry();	
 		WKBRasterWriter writer=new WKBRasterWriter();
 		String rasterWKB;
 		try {

@@ -18,7 +18,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Geometry;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
@@ -28,7 +28,7 @@ public class Envelope extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage raster=wrapper.getParsingGeometry();
+		GridCoverage2D raster=wrapper.getParsingGeometry();
 	       Geometry envelope = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 	        GeometryWrapper envelopeWrapper = GeometryWrapperFactory.createGeometry(envelope, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
 	        return envelopeWrapper.asNodeValue();

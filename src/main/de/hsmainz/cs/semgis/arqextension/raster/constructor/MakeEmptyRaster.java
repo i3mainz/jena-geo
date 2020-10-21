@@ -28,12 +28,11 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase0;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
-import org.apache.sis.coverage.grid.GridCoverage;
-//import org.apache.sis.coverage.grid.GridCoverageBuilder;
-import org.apache.sis.coverage.grid.GridCoverageBuilder2;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.referencing.CommonCRS;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
+import org.opengis.coverage.grid.GridCoverage;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 public class MakeEmptyRaster extends FunctionBase0 {
@@ -55,9 +54,8 @@ public class MakeEmptyRaster extends FunctionBase0 {
 		Envelope2D envelope = new Envelope2D(crs, 0, 0, 30, 30);
 
 		GridCoverageBuilder gcb = new GridCoverageBuilder();
-		gcb.
-		gcb.setValues(raster);
-		GridCoverage gc = gcb.build();
+		gcb.setRenderedImage(raster);
+		GridCoverage2D gc = (GridCoverage2D)gcb.build();
 		return CoverageWrapper.createCoverage(gc, "WGS84", WKBRastDatatype.URI.toString()).asNodeValue();
 	}
 
