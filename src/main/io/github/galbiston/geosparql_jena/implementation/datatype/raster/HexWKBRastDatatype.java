@@ -15,6 +15,7 @@ import org.opengis.referencing.crs.CRSAuthorityFactory;
 import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 
 public class HexWKBRastDatatype extends RasterDataType {
 

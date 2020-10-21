@@ -3,6 +3,7 @@ package io.github.galbiston.geosparql_jena.implementation.datatype.geometry;
 import io.github.galbiston.geosparql_jena.implementation.DimensionInfo;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.parsers.wkt.WKTReader;
 import io.github.galbiston.geosparql_jena.implementation.parsers.wkt.WKTWriter;
 import io.github.galbiston.geosparql_jena.implementation.vocabulary.Geo;

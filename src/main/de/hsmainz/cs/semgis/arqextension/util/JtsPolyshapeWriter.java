@@ -16,7 +16,7 @@ public class JtsPolyshapeWriter extends PolyshapeWriter {
   // --------------------------------------------------------------
   // Write JTS To GeoJSON
   // --------------------------------------------------------------
-
+/*
   protected void write(Encoder output, CoordinateSequence coordseq) throws IOException {
     int dim = coordseq.getDimension();
 //    if(dim>2) {
@@ -74,6 +74,6 @@ public class JtsPolyshapeWriter extends PolyshapeWriter {
       throw new UnsupportedOperationException("unknown: " + geom);
     }
   }
-
+*/
 
 }

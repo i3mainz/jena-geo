@@ -2,6 +2,7 @@ package io.github.galbiston.geosparql_jena.implementation.datatype.geometry;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 
 import java.util.ArrayList;
 import java.util.List;

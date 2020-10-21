@@ -10,6 +10,7 @@ import org.opengis.util.FactoryException;
 import com.sun.jersey.core.util.Base64;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 
 public class WKBRastDatatype extends RasterDataType {
 

@@ -14,6 +14,7 @@ package de.hsmainz.cs.semgis.arqextension.raster;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
@@ -31,8 +32,14 @@ public class NearestValue extends FunctionBase4 {
         Integer bandnum = v2.getInteger().intValue();
         Integer column = v3.getInteger().intValue();
         Integer row = v4.getInteger().intValue();
-        Double d = ((double[]) raster.render(raster.getGridGeometry().getExtent()).getData().getDataElements(column, row, new double[]{}))[0];
-        return NodeValue.makeDouble(d);
+        Double d;
+		try {
+			d = ((double[]) raster.render(raster.getGridGeometry().getExtent()).getData().getDataElements(column, row, new double[]{}))[0];
+	        return NodeValue.makeDouble(d);
+		} catch (CannotEvaluateException e) {
+			return null;
+		}
+
 	}
 
 }

@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import de.hsmainz.cs.semgis.arqextension.util.parsers.CoverageJSONReader;
 import de.hsmainz.cs.semgis.arqextension.util.parsers.CoverageJsonWriter;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 
 
 public class CovJSONDatatype extends RasterDataType{

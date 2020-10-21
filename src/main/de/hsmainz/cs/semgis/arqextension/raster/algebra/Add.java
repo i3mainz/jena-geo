@@ -14,6 +14,7 @@ import javax.media.jai.RenderedOp;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.internal.coverage.BufferedGridCoverage;
@@ -31,6 +32,7 @@ public class Add extends FunctionBase2 {
 		CoverageWrapper wrapper2 = CoverageWrapper.extract(v2);
 		GridCoverage2D raster2 = wrapper2.getXYGeometry();
 		Integer rd1 = 0, rd2 = 0;
+		try {
 		ParameterBlock pbSubtracted = new ParameterBlock();
 		pbSubtracted.addSource(raster.getEnvelope());
 		pbSubtracted.addSource(raster2.getEnvelope());
@@ -78,7 +80,12 @@ public class Add extends FunctionBase2 {
 		WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();
 		rasterr.setRect(subtractedImage.getSourceImage(0).getData());
 		return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
-				.asNodeValue();
+				.asNodeValue();	
+		} catch (CannotEvaluateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		} 
 	}
 
 }

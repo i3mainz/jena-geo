@@ -16,6 +16,7 @@ import java.awt.image.RenderedImage;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
@@ -33,6 +34,7 @@ public class SameAlignment extends FunctionBase2 {
 		GridCoverage raster=wrapper.getGridGeometry();
         CoverageWrapper wrapper2=CoverageWrapper.extract(v2);
 		GridCoverage raster2=wrapper2.getGridGeometry();
+		try {
 		RenderedImage image1 = raster.render(raster.getGridGeometry().getExtent());
 		RenderedImage image2 = raster2.render(raster2.getGridGeometry().getExtent());
         Integer raster1_offset = image1.getData().getDataBuffer().getOffset();
@@ -48,6 +50,10 @@ public class SameAlignment extends FunctionBase2 {
         		  )) {
         	return NodeValue.TRUE;
         }
+		} catch (CannotEvaluateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return NodeValue.FALSE;
 	}
 

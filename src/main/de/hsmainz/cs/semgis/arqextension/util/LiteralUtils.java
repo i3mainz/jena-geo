@@ -19,9 +19,9 @@ import org.locationtech.jts.geom.Polygon;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
-import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.RasterDataType;
 
 public class LiteralUtils {
 

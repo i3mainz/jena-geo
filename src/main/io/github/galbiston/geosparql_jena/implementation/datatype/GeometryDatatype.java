@@ -15,14 +15,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.github.galbiston.geosparql_jena.implementation.datatype.geometry;
+package io.github.galbiston.geosparql_jena.implementation.datatype;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
-import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.EncodedPolylineDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GMLDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GPXDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeoJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeoURIDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.HexWKBDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.KMLDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.TWKBDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.WKBDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.topo.TopoJSONDatatype;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex;
 import io.github.galbiston.geosparql_jena.implementation.index.GeometryLiteralIndex.GeometryIndex;
+
+import java.util.Iterator;
+
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.datatypes.RDFDatatype;
 import org.apache.jena.datatypes.TypeMapper;
@@ -66,7 +77,8 @@ public abstract class GeometryDatatype extends SpatialDatatype {
     private static boolean isDatatypesRegistered = false;
 
     public static final void registerDatatypes() {
-        if (!isDatatypesRegistered) {
+    	//System.out.println("Is")
+        //if (!isDatatypesRegistered) {
             TYPE_MAPPER.registerDatatype(WKTDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(GMLDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(GeoJSONDatatype.INSTANCE);
@@ -74,17 +86,23 @@ public abstract class GeometryDatatype extends SpatialDatatype {
             TYPE_MAPPER.registerDatatype(WKBDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(TWKBDatatype.INSTANCE);
             //TYPE_MAPPER.registerDatatype(TopoJSONDatatype.INSTANCE);
-            TYPE_MAPPER.registerDatatype(GeobufDatatype.INSTANCE);
+            //TYPE_MAPPER.registerDatatype(GeobufDatatype.INSTANCE);
             //TYPE_MAPPER.registerDatatype(GeoHashDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(EncodedPolylineDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(HexWKBDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(GeoURIDatatype.INSTANCE);
             TYPE_MAPPER.registerDatatype(GPXDatatype.INSTANCE);
             isDatatypesRegistered = true;
-        }
+        //}
     }
 
     public static final GeometryDatatype get(RDFDatatype rdfDatatype) {
+    	registerDatatypes();
+    	System.out.println(rdfDatatype);
+    	Iterator it=TYPE_MAPPER.listTypes();
+    	while(it.hasNext()) {
+    		System.out.println(it.next());
+    	}
         if (rdfDatatype instanceof GeometryDatatype) {
             return (GeometryDatatype) rdfDatatype;
         } else {

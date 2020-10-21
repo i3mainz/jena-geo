@@ -32,10 +32,185 @@ import org.opengis.referencing.operation.MathTransform;
 import org.opengis.util.FactoryException;
 import org.opengis.util.GenericName;
 
+import de.hsmainz.cs.semgis.arqextension.util.CovJSONCoverage;
+
 public class CoverageJSONReader {
 
 	public static GridCoverage covJSONStringToCoverage(String covjson) {
 		return covJSONToCoverage(new JSONObject(covjson));
+	}
+	
+	public static CovJSONCoverage covJSONToIntCoverage(JSONObject covjson) {
+		CovJSONCoverage result=new CovJSONCoverage();
+		JSONObject axes=covjson.getJSONObject("domain").getJSONObject("axes");
+		Integer minX=Integer.MAX_VALUE;
+		Integer maxX=0;
+		Integer minY=Integer.MAX_VALUE;
+		Integer maxY=0;
+		Integer minZ=Integer.MAX_VALUE;
+		Integer maxZ=0;
+		Integer minT=Integer.MAX_VALUE;
+		Integer maxT=0;
+		List<DimensionNameType> axestypes=new LinkedList<DimensionNameType>();
+		List<Long> mins=new LinkedList<Long>();
+		List<Long> maxs=new LinkedList<Long>();
+		if(axes.getJSONObject("x").has("values")) {
+			JSONArray xvalues=axes.getJSONObject("x").getJSONArray("values");
+			for(int i=0;i<xvalues.length();i++) {
+
+				if(xvalues.getInt(i)<minX) {
+					minX=xvalues.getInt(i);
+				}
+				if(xvalues.getInt(i)>maxX) {
+					maxX=xvalues.getInt(i);
+				}
+			}
+			System.out.println(minX+" - "+Long.valueOf(minX));
+			mins.add(Long.valueOf(minX));
+			maxs.add(Long.valueOf(maxX));
+			axestypes.add(DimensionNameType.COLUMN);
+		}else if(axes.getJSONObject("x").has("start") && axes.getJSONObject("x").has("stop")
+				&& axes.getJSONObject("x").has("num")) {
+			mins.add(axes.getJSONObject("x").getLong("start"));
+			maxs.add(axes.getJSONObject("x").getLong("stop"));
+			axestypes.add(DimensionNameType.COLUMN);
+		}
+		System.out.println(mins);
+		System.out.println(maxs);
+		if(axes.getJSONObject("y").has("values")) {
+			JSONArray yvalues=axes.getJSONObject("y").getJSONArray("values");
+			for(int i=0;i<yvalues.length();i++) {
+				if(yvalues.getInt(i)<minY) {
+					minY=yvalues.getInt(i);
+				}
+				if(yvalues.getInt(i)>maxY) {
+					maxY=yvalues.getInt(i);
+				}
+			}
+			mins.add(Long.valueOf(minY).longValue());
+			maxs.add(Long.valueOf(maxY).longValue());
+			axestypes.add(DimensionNameType.ROW);
+		}else if(axes.getJSONObject("y").has("start") && axes.getJSONObject("y").has("stop")
+				&& axes.getJSONObject("y").has("num")) {
+			mins.add(axes.getJSONObject("y").getLong("start"));
+			maxs.add(axes.getJSONObject("y").getLong("stop"));
+			axestypes.add(DimensionNameType.ROW);
+		}
+		System.out.println(mins);
+		System.out.println(maxs);
+		if(axes.has("z")) {
+			if(axes.getJSONObject("z").has("values")) {
+				JSONArray zvalues=axes.getJSONObject("z").getJSONArray("values");
+				for(int i=0;i<zvalues.length();i++) {
+					if(zvalues.getInt(i)<minZ) {
+						minZ=zvalues.getInt(i);
+					}
+					if(zvalues.getInt(i)>maxZ) {
+						maxZ=zvalues.getInt(i);
+					}
+				}
+				mins.add(Long.valueOf(minZ).longValue());
+				maxs.add(Long.valueOf(maxZ).longValue());
+				axestypes.add(DimensionNameType.VERTICAL);
+			}else if(axes.getJSONObject("z").has("start") && axes.getJSONObject("z").has("stop")
+					&& axes.getJSONObject("z").has("num")) {
+				mins.add(axes.getJSONObject("z").getLong("start"));
+				maxs.add(axes.getJSONObject("z").getLong("stop"));
+				axestypes.add(DimensionNameType.VERTICAL);
+			}
+		}
+		System.out.println(mins);
+		System.out.println(maxs);
+		/*if(axes.has("t")) {
+			if(axes.getJSONObject("t").has("values")) {
+				JSONArray tvalues=axes.getJSONObject("t").getJSONArray("values");
+				System.out.println(tvalues);
+				try {
+				for(int i=0;i<tvalues.length();i++) {
+					if(tvalues.getInt(i)<minT) {
+						minT=tvalues.getInt(i);
+					}
+					if(tvalues.getInt(i)>maxT) {
+						maxT=tvalues.getInt(i);
+					}
+				}
+				}catch(Exception e) {
+					e.printStackTrace();
+				}
+				mins.add(Long.valueOf(minT).longValue());
+				maxs.add(Long.valueOf(maxT).longValue());
+				axestypes.add(DimensionNameType.TIME);
+			}else if(axes.getJSONObject("t").has("start") && axes.getJSONObject("t").has("stop")
+					&& axes.getJSONObject("t").has("num")) {
+				mins.add(axes.getJSONObject("t").getLong("start"));
+				maxs.add(axes.getJSONObject("t").getLong("stop"));
+				axestypes.add(DimensionNameType.TIME);
+			}
+		}*/
+		String epsg="";
+		CoordinateReferenceSystem sys=null;
+		MathTransform transform;
+		if(covjson.getJSONObject("domain").has("referencing")) {
+			JSONArray refs=covjson.getJSONObject("domain").getJSONArray("referencing");
+			for(int i=0;i<refs.length();i++) {
+				JSONObject ref=refs.getJSONObject(i);
+				if(ref.getJSONObject("system").getString("type").equals("GeographicCRS")) {
+					epsg=ref.getJSONObject("system").getString("id").substring(ref.getJSONObject("system").getString("id").lastIndexOf('/')+1);
+					try {
+						//sys=CRS.decode("EPSG:"+epsg);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				/*if(ref.getJSONObject("system").getString("type").equals("TemporalRS")) {
+					TemporalDatum datum=new TemporalDatum
+					datum.
+				    DefaultTemporalCRS tcrs=DefaultTemporalCRS(new TreeMap<>(), datum, cs)
+				}*/
+			}
+			
+		}
+
+		System.out.println(mins);
+		System.out.println(maxs);
+		System.out.println("DimensionNameType: "+axestypes);
+		System.out.println("Mins: "+mins);
+		System.out.println("Maxs: "+maxs);
+		GridExtent extent=new GridExtent(axestypes.toArray(new DimensionNameType[0]),
+				ArrayUtils.toPrimitive(mins.toArray(new Long[0])), 
+				ArrayUtils.toPrimitive(maxs.toArray(new Long[0])),true);	
+		Envelope2D gridenv=new Envelope2D();
+		GridGeometry gridgeom=null;
+		if(sys!=null) {
+			gridgeom=new GridGeometry(extent,null,null,sys);//domain
+		}else {
+			gridgeom=new GridGeometry(extent, gridenv);//domain
+		}
+
+		Map<String,List<Category>> categories=new TreeMap<>();
+		for(String key:covjson.getJSONObject("ranges").keySet()) {
+			if(!categories.containsKey(key)) {
+				categories.put(key,new LinkedList<Category>());
+			}
+			if("NdArray".equals(covjson.getJSONObject("ranges").getJSONObject(key).getString("type"))) {
+				JSONArray values=covjson.getJSONObject("ranges").getJSONObject(key).getJSONArray("values");
+				Integer[] intrange=new Integer[values.length()];
+				for (int i = 0; i < values.length(); i++) {
+				    intrange[i] = values.optInt(i);
+				}
+				org.apache.sis.measure.NumberRange<?> range;
+				//NumberRange<Integer> range=new NumberRange<Integer>(null);
+				/*Category.
+				Category cat=new Category(key,range,null,null,null);
+				categories.get(key).add(cat);*/
+
+			}
+
+
+					
+		}
+		return result;
 	}
 	
 	public static GridCoverage covJSONToCoverage(JSONObject covjson) {

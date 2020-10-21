@@ -17,6 +17,7 @@ import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import io.github.galbiston.geosparql_jena.implementation.vocabulary.SRS_URI;
 import java.util.List;
+
 import org.apache.jena.atlas.lib.Lib;
 import org.apache.jena.query.QueryBuildException;
 import org.apache.jena.sparql.expr.ExprList;

@@ -16,7 +16,7 @@ public class ShearTransformation extends FunctionBase3{
 	public NodeValue exec(NodeValue v, NodeValue v1, NodeValue v2) {
 		try {
         GeometryWrapper geometry = GeometryWrapper.extract(v);
-        Geometry geom = geometry.getXYGeometry();
+        Geometry geom = geometry.getParsingGeometry();
         Double xShear=v1.getDouble();
         Double yShear=v2.getDouble();
         AffineTransformation trans = new AffineTransformation();

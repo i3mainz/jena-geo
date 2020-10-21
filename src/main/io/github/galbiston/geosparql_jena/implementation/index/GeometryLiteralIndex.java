@@ -24,9 +24,9 @@ import static io.github.galbiston.expiring_map.MapDefaultValues.UNLIMITED_MAP;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.SpatialWrapper;
-import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
-import io.github.galbiston.geosparql_jena.implementation.datatype.raster.RasterDataType;
+import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;
 
 import java.util.Map;
 

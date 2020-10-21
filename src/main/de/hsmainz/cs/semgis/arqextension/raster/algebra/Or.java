@@ -13,6 +13,7 @@ import javax.media.jai.RenderedOp;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.internal.coverage.BufferedGridCoverage;
 
@@ -28,8 +29,11 @@ public class Or extends FunctionBase2  {
 		GridCoverage raster2=wrapper2.getXYGeometry();
 		Integer rd1 = 0, rd2 = 0;
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
-	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 
-	     pbSubtracted.addSource(raster2.render(raster2.getGridGeometry().getExtent())); 
+	     try {
+			pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent()));
+		     pbSubtracted.addSource(raster2.render(raster2.getGridGeometry().getExtent())); 
+
+
 	     RenderedOp subtractedImage = JAI.create("or",pbSubtracted);
 			/*
 			 * final GridGeometry grid = new
@@ -55,12 +59,19 @@ public class Or extends FunctionBase2  {
 			 * Create the grid coverage, gets its image and set values directly as short
 			 * integers.
 			 */
-			BufferedGridCoverage coverage = new BufferedGridCoverage(raster2.getGridGeometry(),
+			GridCoverage coverage = new BufferedGridCoverage(raster2.getGridGeometry(),
 					sds, DataBuffer.TYPE_SHORT);
-			WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();
-			rasterr.setRect(subtractedImage.getSourceImage(0).getData());
-			return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
-					.asNodeValue();	     
+			WritableRaster rasterr;
+				rasterr = ((BufferedImage) coverage.render(null)).getRaster();
+				rasterr.setRect(subtractedImage.getSourceImage(0).getData());
+				return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+						.asNodeValue();	
+	     	} catch (CannotEvaluateException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return null;
+			}
+     
 	     
 	} 
 

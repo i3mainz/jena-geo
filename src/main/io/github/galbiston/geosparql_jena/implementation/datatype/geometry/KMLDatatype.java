@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 
 /**
  *

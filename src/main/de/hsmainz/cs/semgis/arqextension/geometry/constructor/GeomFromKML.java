@@ -6,7 +6,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.data.kml.xml.KmlReader;
+//import org.geotoolkit.data.kml.xml.KmlReader;
 import org.locationtech.jts.geom.Geometry;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
@@ -24,7 +24,7 @@ public class GeomFromKML  extends FunctionBase1{
 	public NodeValue exec(NodeValue arg0) {
         try {
             String wktstring=arg0.getString();
-            KmlReader kmlreader=new KmlReader();
+            //KmlReader kmlreader=new KmlReader();
             /*kmlreader.addDataReader(new Stax);
             kmlreader.addDataReader(new StringReader(s));
             kmlreader.read();

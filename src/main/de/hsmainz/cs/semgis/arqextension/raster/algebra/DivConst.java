@@ -14,6 +14,7 @@ import javax.media.jai.RenderedOp;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.CannotEvaluateException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.internal.coverage.BufferedGridCoverage;
 
@@ -41,6 +42,7 @@ public class DivConst extends FunctionBase3  {
 				}
 			}
 		}
+		try {
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 
 	     pbSubtracted.add(consts);
@@ -75,6 +77,11 @@ public class DivConst extends FunctionBase3  {
 			rasterr.setRect(subtractedImage.getSourceImage(0).getData());
 			return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
 					.asNodeValue();	
+			} catch (CannotEvaluateException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return null;
+			} 
 	     
 	} 
 

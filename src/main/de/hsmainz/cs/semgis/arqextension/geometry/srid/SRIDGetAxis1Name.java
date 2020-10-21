@@ -23,7 +23,7 @@ public class SRIDGetAxis1Name extends FunctionBase1 {
 				crs = CRS.forCode("EPSG:"+((GeometryWrapper)wrapper1).getXYGeometry().getSRID());
 				return NodeValue.makeString(crs.getCoordinateSystem().getAxis(0).getName().toString());
 			}else if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				crs = CRS.forCode("EPSG:"+raster.getGridGeometry().CRS);
 				return NodeValue.makeString(crs.getCoordinateSystem().getAxis(0).getName().toString());		
 			}

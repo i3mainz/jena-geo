@@ -20,6 +20,7 @@ import org.xml.sax.ext.DefaultHandler2;
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 
 public class GPXDatatype extends GeometryDatatype {
 

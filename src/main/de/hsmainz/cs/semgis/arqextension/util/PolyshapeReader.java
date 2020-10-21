@@ -75,6 +75,7 @@ public class PolyshapeReader {
     GeometryFactory fac=new GeometryFactory();     
     Geometry lastShape = null;
     List<Geometry> shapes = null;
+    /*
     while(!reader.isDone()) {
       char event = reader.readKey();
       if(event<'0' || event > '9') {
@@ -130,7 +131,7 @@ public class PolyshapeReader {
       	  lastShape=new Envelope(lat1, lon1, lat2, lon2).;
 
           break;
-        }*/
+        }
         case PolyshapeWriter.KEY_MULTIPOINT : {
         	lastShape=fac.createMultiPoint(reader.readPoints());
           break;
@@ -147,7 +148,7 @@ public class PolyshapeReader {
           circle.
           fac.createLinearRing(coordinates)
           lastShape = shpFactory.circle(shpFactory.normX(reader.readLat()), shpFactory.normY(reader.readLng()), 
-                shpFactory.normDist(arg.doubleValue()));*/
+                shpFactory.normDist(arg.doubleValue()));
           break;
         }
         case PolyshapeWriter.KEY_POLYGON: {
@@ -174,7 +175,8 @@ public class PolyshapeReader {
     	  }
       }
     }
-    return lastShape;
+    return lastShape;*/
+    return null;
   }
   
   protected Geometry readPolygon(XReader reader) throws IOException {

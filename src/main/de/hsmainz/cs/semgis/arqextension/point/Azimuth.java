@@ -13,6 +13,7 @@
 package de.hsmainz.cs.semgis.arqextension.point;
 
 import java.awt.geom.Point2D;
+
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;

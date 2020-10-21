@@ -19,8 +19,8 @@ package io.github.galbiston.geosparql_jena.implementation.datatype.topo;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeoJSONDatatype;
-import io.github.galbiston.geosparql_jena.implementation.datatype.geometry.GeometryDatatype;
 
 import java.util.List;
 
