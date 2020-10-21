@@ -22,9 +22,9 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.DirectPosition2D;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.geotoolkit.coverage.grid.GridGeometry2D;
 
 /**
  * Returns the row in the raster of the point geometry (pt) or a X and Y world coordinate (xw, yw) represented in world spatial reference system of raster.
@@ -38,9 +38,9 @@ public class WorldToRasterCoordY extends FunctionBase3 {
         Integer latitude = v3.getInteger().intValue();
         try {
         	CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-        	GridCoverage raster=wrapper.getXYGeometry();
+        	GridCoverage2D raster=wrapper.getXYGeometry();
         	
-        	 GridGeometry gg2D = raster.getGridGeometry();
+        	 GridGeometry2D gg2D = raster.getGridGeometry();
              MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
              MathTransform crsToGrid = gridToCRS.inverse();
              DirectPosition realPos=new DirectPosition2D(latitude, longitude);

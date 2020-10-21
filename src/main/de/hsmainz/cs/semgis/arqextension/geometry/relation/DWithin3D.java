@@ -2,7 +2,7 @@ package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.operation.distance3d.Distance3DOp;
 import org.opengis.geometry.Envelope;
@@ -22,19 +22,19 @@ public class DWithin3D extends FunctionBase3 {
 		if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {
 			return NodeValue.makeBoolean(Distance3DOp.isWithinDistance(((GeometryWrapper)wrapper1).getXYGeometry(), ((GeometryWrapper)wrapper2).getXYGeometry(), withinDistance));
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
+			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
 	        Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 	        Envelope bbox2 = raster2.getGridGeometry().getEnvelope();
 			return NodeValue.makeBoolean(Distance3DOp.isWithinDistance(LiteralUtils.toGeometry(bbox1), LiteralUtils.toGeometry(bbox2), withinDistance));		
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				return NodeValue.makeBoolean(Distance3DOp.isWithinDistance(LiteralUtils.toGeometry(bbox1), geom, withinDistance));
 			}else {
-				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				return NodeValue.makeBoolean(Distance3DOp.isWithinDistance(LiteralUtils.toGeometry(bbox1), geom, withinDistance));			

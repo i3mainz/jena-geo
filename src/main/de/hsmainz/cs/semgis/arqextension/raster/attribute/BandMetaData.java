@@ -15,7 +15,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -24,9 +24,9 @@ public class BandMetaData extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage raster=wrapper.getXYGeometry();
+		GridCoverage2D raster=wrapper.getXYGeometry();
 		BigInteger bandNum=v2.getInteger();
-        if (bandNum.intValue() > raster.getSampleDimensions().size()) {
+        if (bandNum.intValue() > raster.getNumSampleDimensions()) {
             return NodeValue.nvNothing;
         }
 		throw new UnsupportedOperationException("Not yet implemented");

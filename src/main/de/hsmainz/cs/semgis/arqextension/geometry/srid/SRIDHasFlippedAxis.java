@@ -2,8 +2,8 @@ package de.hsmainz.cs.semgis.arqextension.geometry.srid;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.referencing.CRS;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.util.FactoryException;
 
@@ -27,7 +27,7 @@ public class SRIDHasFlippedAxis extends FunctionBase1 {
 					return NodeValue.FALSE;
 				}
 			}else if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
 				crs = CRS.forCode("EPSG:"+raster.getGridGeometry().CRS);
 				if("Y".equals(crs.getCoordinateSystem().getAxis(0).getName().toString()) && "X".equals(crs.getCoordinateSystem().getAxis(1).getName().toString())){
 					return NodeValue.TRUE;

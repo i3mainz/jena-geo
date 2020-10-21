@@ -16,11 +16,11 @@ public class VoronoiLinesTest {
 	public static final String res="POINT(0 0)";
 		
 		@Test
-		public void testCollectionExtract() throws ParseException {
+		public void testVoronoiLines() throws ParseException {
 	        VoronoiLines instance=new VoronoiLines();
 	        NodeValue input=NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
 	        NodeValue expResult = NodeValue.makeNode(res, WKTDatatype.INSTANCE);
-	        NodeValue result = instance.exec(input,NodeValue.makeInteger(0),NodeValue.makeInteger(0));
+	        NodeValue result = instance.exec(input,NodeValue.makeInteger(0),input);
 	        assertEquals(expResult, result);
 		}
 	

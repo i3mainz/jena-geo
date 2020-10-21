@@ -3,9 +3,9 @@ package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.crs.DefaultGeographicCRS;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
 import org.geotoolkit.factory.Factories;
@@ -48,10 +48,11 @@ public class HexWKBRastDatatype extends RasterDataType {
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
 		WKBRasterReader reader2=new WKBRasterReader();
-		GridCoverage coverage;
+		GridCoverage2D coverage;
 		try {
 			//BufferedImage img=reader2.read(WKBReader.hexToBytes(geometryLiteral));
-			coverage = reader2.readCoverage(WKBReader.hexToBytes(geometryLiteral),Factories.getCRSAuthorityFactory("EPSG"));
+			//CRS.forCode("EPSG:4326").getCoordinateSystem().
+			coverage = reader2.readCoverage(WKBReader.hexToBytes(geometryLiteral),null);
 			//System.out.println(coverage);
 			return new CoverageWrapper(coverage, URI);
 		} catch (IOException | FactoryException e) {

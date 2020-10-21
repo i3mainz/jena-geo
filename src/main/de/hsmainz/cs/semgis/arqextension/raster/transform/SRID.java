@@ -17,7 +17,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
@@ -31,7 +31,7 @@ public class SRID extends FunctionBase1 {
 		if(wrapper1 instanceof GeometryWrapper) {
 			return NodeValue.makeString(((GeometryWrapper)wrapper1).getXYGeometry().getSRID()+"");
 		}else {
-			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
 	        return NodeValue.makeString(raster.getCoordinateReferenceSystem().getCoordinateSystem().getName().toString());			
 		}
 	}

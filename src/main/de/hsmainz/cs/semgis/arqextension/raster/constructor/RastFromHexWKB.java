@@ -6,7 +6,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.opengis.referencing.NoSuchAuthorityCodeException;
 import org.opengis.util.FactoryException;
@@ -24,7 +24,7 @@ public class RastFromHexWKB extends FunctionBase1 {
         try {
             String wkbstring=arg0.getString();
     		WKBRasterReader reader=new WKBRasterReader();
-    		GridCoverage coverage=reader.readCoverage(WKBReader.hexToBytes(wkbstring),null);
+    		GridCoverage2D coverage=reader.readCoverage(WKBReader.hexToBytes(wkbstring),null);
     		CoverageWrapper wrapper=CoverageWrapper.createCoverage(coverage,null , HexWKBRastDatatype.URI);
     		return wrapper.asNodeValue();
             

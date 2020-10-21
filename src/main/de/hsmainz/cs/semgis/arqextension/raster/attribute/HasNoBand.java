@@ -15,7 +15,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -29,9 +29,9 @@ public class HasNoBand extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v, NodeValue v1) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage raster=wrapper.getParsingGeometry();
+		GridCoverage2D raster=wrapper.getParsingGeometry();
 		BigInteger noband=v1.getInteger();
-		return NodeValue.makeBoolean(raster.getSampleDimensions().size()>=noband.intValue());
+		return NodeValue.makeBoolean(raster.getNumSampleDimensions()>=noband.intValue());
 	}
 
 }

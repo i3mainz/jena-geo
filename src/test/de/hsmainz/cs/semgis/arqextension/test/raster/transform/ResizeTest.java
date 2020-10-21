@@ -12,7 +12,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSON
 public class ResizeTest extends SampleRasters {
 	
 	@Test
-	public void testRasterValue() {
+	public void testResize() {
 		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
         Resize instance=new Resize();
         NodeValue width = NodeValue.makeDouble(10);

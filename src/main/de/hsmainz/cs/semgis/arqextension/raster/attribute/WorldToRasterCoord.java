@@ -18,9 +18,9 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.DirectPosition2D;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.geotoolkit.coverage.grid.GridGeometry2D;
 import org.locationtech.jts.geom.Coordinate;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.referencing.datum.PixelInCell;
@@ -40,9 +40,9 @@ public class WorldToRasterCoord extends FunctionBase3 {
         Integer latitude = v3.getInteger().intValue();
         try {
         	CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-        	GridCoverage raster=wrapper.getXYGeometry();
+        	GridCoverage2D raster=wrapper.getXYGeometry();
         	
-        	 GridGeometry gg2D = raster.getGridGeometry();
+        	 GridGeometry2D gg2D = raster.getGridGeometry();
              MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
              MathTransform crsToGrid = gridToCRS.inverse();
              DirectPosition realPos=new DirectPosition2D(latitude, longitude);

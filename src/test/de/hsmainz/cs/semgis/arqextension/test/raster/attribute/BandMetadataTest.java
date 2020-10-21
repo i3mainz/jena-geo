@@ -12,7 +12,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBR
 public class BandMetadataTest extends SampleRasters {
 	
 	@Test
-	public void testRasterHeight() {
+	public void testBandMetaData() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NodeValue noband = NodeValue.makeInteger(10);
         BandMetaData instance=new BandMetaData();

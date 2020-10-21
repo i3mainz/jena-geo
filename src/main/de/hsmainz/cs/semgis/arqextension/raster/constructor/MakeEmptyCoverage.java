@@ -8,9 +8,7 @@ import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase0;
 import org.apache.jena.sparql.function.FunctionEnv;
-import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
-import org.apache.sis.internal.coverage.RasterFactory;
 import org.apache.sis.referencing.CommonCRS;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 

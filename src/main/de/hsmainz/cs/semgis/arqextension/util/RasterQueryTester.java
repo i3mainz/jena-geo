@@ -5,12 +5,6 @@ import java.io.File;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridCoverage2D;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.geotiff.GeoTiffStore;
-import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -20,16 +14,16 @@ public class RasterQueryTester {
 
 	}
 	
-	public static void main(String[] args) throws DataStoreException {
-		GridCoverage2D coverage;
-		/*try {
+	public static void main(String[] args) {
+		/*GridCoverage2D coverage;
+		try {
 			coverage = CoverageIO.read(geometryLiteral);
 			return new CoverageWrapper(coverage, URI);
 		} catch (CoverageStoreException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			throw new RuntimeException();
-		}*/
+		}
 
 		//InputStream stream = new ByteArrayInputStream(geometryLiteral.getBytes(StandardCharsets.UTF_8));
 		final StorageConnector c;// = new StorageConnector(stream);
@@ -39,5 +33,6 @@ public class RasterQueryTester {
 		GeoTiffStore store=new GeoTiffStore(prov,c);
 		store.getProvider().open(c);
 		cov = store.components().get(0).read(store.components().get(0).getGridGeometry(), 1);
+		*/
 	}
 }

@@ -13,10 +13,10 @@ import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.CannotEvaluateException;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.internal.coverage.BufferedGridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.geotoolkit.coverage.grid.GridCoverageBuilder;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -25,10 +25,10 @@ public class AddConst extends FunctionBase3  {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2,NodeValue v3) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage raster=wrapper.getXYGeometry();
+		GridCoverage2D raster=wrapper.getXYGeometry();
 		BigInteger bandnum=v2.getInteger();
 		Double constval=v3.getDouble();
-		double[] consts=new double[raster.getSampleDimensions().size()];
+		double[] consts=new double[raster.getNumSampleDimensions()];
 		if(bandnum.intValue()<0) {
 			for(int i=0;i<consts.length;i++) {
 				consts[i]=constval;
@@ -42,27 +42,22 @@ public class AddConst extends FunctionBase3  {
 				}
 			}
 		}
-		try {
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
-	     pbSubtracted.addSource(raster.render(raster.getGridGeometry().getExtent())); 
+	     pbSubtracted.addSource(raster.getRenderedImage()); 
 	     pbSubtracted.add(consts);
 	     RenderedOp subtractedImage = JAI.create("addconst",pbSubtracted);
-			/*
-			 * final GridGeometry grid = new
-			 * GridGeometry(raster.getGridGeometry().getExtent(), PixelInCell.CELL_CENTER,
-			 * MathTransforms.identity(2),
-			 * raster.getGridGeometry().getCoordinateReferenceSystem());
-			 * 
-			 * final MathTransform1D toUnits = (MathTransform1D) MathTransforms.linear(0.5,
-			 * 100);
-			 */
-			final SampleDimension sd = new SampleDimension.Builder().setName("t")
+			GridCoverageBuilder builder=new GridCoverageBuilder();
+			builder.setGridGeometry(raster.getGridGeometry());
+			builder.setNumBands(raster.getNumSampleDimensions());
+			builder.setExtent(raster.getGridGeometry().getExtent());
+			builder.setRenderedImage(subtractedImage);
+			/*final SampleDimension sd = new SampleDimension.Builder().setName("t")
 					.addQuantitative(
-							(raster.getSampleDimensions().get(bandnum.intValue()).getName() + " addconst "
-									+ constval).toString(),
-							raster.getSampleDimensions().get(bandnum.intValue()).getMeasurementRange().get(),
-							raster.getSampleDimensions().get(bandnum.intValue()).getTransferFunction().get(),
-							raster.getSampleDimensions().get(bandnum.intValue()).getUnits().get())
+							(raster.getSampleDimensions().get(rd1).getName() + "+"
+									+ raster2.getSampleDimensions().get(rd2).getName()).toString(),
+							raster.getSampleDimensions().get(0).getMeasurementRange().get(),
+							raster.getSampleDimensions().get(0).getTransferFunction().get(),
+							raster.getSampleDimensions().get(0).getUnits().get())
 					.build();
 			
 			List<SampleDimension>sds=new LinkedList<SampleDimension>();
@@ -70,8 +65,8 @@ public class AddConst extends FunctionBase3  {
 			/*
 			 * Create the grid coverage, gets its image and set values directly as short
 			 * integers.
-			 */
-			BufferedGridCoverage coverage = new BufferedGridCoverage(raster.getGridGeometry(),
+			 
+			BufferedGridCoverage coverage = new BufferedGridCoverage(raster2.getGridGeometry(),
 					sds, DataBuffer.TYPE_SHORT);
 			WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();
 			rasterr.setRect(subtractedImage.getSourceImage(0).getData());
@@ -81,7 +76,10 @@ public class AddConst extends FunctionBase3  {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				return null;
-			}     
+			}*/
+			GridCoverage cov=builder.build();
+			return CoverageWrapper.createCoverage((GridCoverage2D)cov, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+					.asNodeValue();   
 	} 
 
 }

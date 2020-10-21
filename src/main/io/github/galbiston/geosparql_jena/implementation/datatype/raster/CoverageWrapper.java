@@ -49,8 +49,8 @@ import org.apache.jena.graph.Node;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.ResourceFactory;
 import org.apache.jena.sparql.expr.NodeValue;
-import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.DirectPosition2D;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.Geometry;
@@ -84,11 +84,11 @@ public class CoverageWrapper extends SpatialWrapper {
 
     private final DimensionInfo dimensionInfo;
     private final SRSInfo srsInfo;
-    private final GridCoverage xyGeometry;
-    private final GridCoverage parsingGeometry;
+    private final GridCoverage2D xyGeometry;
+    private final GridCoverage2D parsingGeometry;
     private PreparedGeometry preparedGeometry;
     private Envelope envelope;
-    private GridCoverage translateXYGeometry;
+    private GridCoverage2D translateXYGeometry;
     private final String geometryDatatypeURI;
     private RasterDataType geometryDatatype;
     private String lexicalForm;
@@ -102,7 +102,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param geometryDatatypeURI
      * @param dimensionInfo
      */
-    public CoverageWrapper(GridCoverage geometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
+    public CoverageWrapper(GridCoverage2D geometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
         this(geometry, srsURI, geometryDatatypeURI, dimensionInfo, null);
     }
     
@@ -114,15 +114,15 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param dimensionInfo
      * @param geometryLiteral
      */
-    public CoverageWrapper(GridCoverage geometry,String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String geometryLiteral) {
+    public CoverageWrapper(GridCoverage2D geometry,String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String geometryLiteral) {
         this(geometry, geometry, srsURI.isEmpty() ? SRS_URI.DEFAULT_WKT_CRS84 : srsURI, geometryDatatypeURI, dimensionInfo, geometryLiteral);
     }
 
-    private CoverageWrapper(GridCoverage parsingGeometry, GridCoverage xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
+    private CoverageWrapper(GridCoverage2D parsingGeometry, GridCoverage2D xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo) {
         this(parsingGeometry, xyGeometry, srsURI, geometryDatatypeURI, dimensionInfo, null);
     }
 
-    private CoverageWrapper(GridCoverage parsingGeometry, GridCoverage xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String lexicalForm) {
+    private CoverageWrapper(GridCoverage2D parsingGeometry, GridCoverage2D xyGeometry, String srsURI, String geometryDatatypeURI, DimensionInfo dimensionInfo, String lexicalForm) {
 
         this.parsingGeometry = parsingGeometry;
         this.xyGeometry = xyGeometry;
@@ -148,7 +148,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param geometry In X/Y or Y/X coordinate order of WGS84.
      * @param geometryDatatypeURI
      */
-    public CoverageWrapper(GridCoverage geometry, String geometryDatatypeURI) {
+    public CoverageWrapper(GridCoverage2D geometry, String geometryDatatypeURI) {
         this(geometry, "", geometryDatatypeURI, DimensionInfo.XY_POINT);
     }
 
@@ -159,7 +159,7 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param srsURI
      * @param geometryDatatypeURI
      */
-    public CoverageWrapper(GridCoverage geometry, String srsURI, String geometryDatatypeURI) {
+    public CoverageWrapper(GridCoverage2D geometry, String srsURI, String geometryDatatypeURI) {
         this(geometry, srsURI, geometryDatatypeURI, DimensionInfo.XY_POINT);
     }
 
@@ -278,7 +278,7 @@ public class CoverageWrapper extends SpatialWrapper {
      *
      * @return Geometry with coordinates as originally provided.
      */
-    public GridCoverage getParsingGeometry() {
+    public GridCoverage2D getParsingGeometry() {
         return parsingGeometry;
     }
     
@@ -286,7 +286,7 @@ public class CoverageWrapper extends SpatialWrapper {
     *
     * @return Geometry with coordinates as originally provided.
     */
-   public GridCoverage getGridGeometry() {
+   public GridCoverage2D getGridGeometry() {
        return parsingGeometry;
    }
    
@@ -294,7 +294,7 @@ public class CoverageWrapper extends SpatialWrapper {
    *
    * @return Geometry with coordinates as originally provided.
    */
-  public GridCoverage getXYGeometry() {
+  public GridCoverage2D getXYGeometry() {
       return parsingGeometry;
   }
 
@@ -604,8 +604,8 @@ public class CoverageWrapper extends SpatialWrapper {
      * @param geometryDatatypeURI
      * @return GeometryWrapper with SRS URI and GeometryDatatype URI.
      */
-    public static final CoverageWrapper createCoverage(GridCoverage geometry, String srsURI, String geometryDatatypeURI) {
-        GridCoverage xyGeometry = geometry;
+    public static final CoverageWrapper createCoverage(GridCoverage2D geometry, String srsURI, String geometryDatatypeURI) {
+        GridCoverage2D xyGeometry = geometry;
         //GridCoverage parsingGeometry = GeometryReverse.check(xyGeometry, srsURI);
         DimensionInfo dimsInfo = DimensionInfo.XY_POINT;
 

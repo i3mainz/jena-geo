@@ -23,7 +23,7 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 
 public class PixelAsPolygon extends FunctionBase3 {
 
@@ -33,7 +33,7 @@ public class PixelAsPolygon extends FunctionBase3 {
         Integer latitude = v3.getInteger().intValue();
 
         CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage raster=wrapper.getXYGeometry();
+		GridCoverage2D raster=wrapper.getXYGeometry();
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
