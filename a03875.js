@@ -1,0 +1,27 @@
+var a03875 =
+[
+    [ "createClusterResult", "a03875.html#aba00c6bd9b5cb02de81843b4586a1510", null ],
+    [ "createDocumentClusters", "a03875.html#a9c6ce79919583df5ed6d5b068182b2d5", null ],
+    [ "createFieldList", "a03875.html#aaa90e00daf1d2905859914ba7a92f893", null ],
+    [ "getDescription", "a03875.html#ac7feffb7a33f63504ff1f87f19e2d2d8", null ],
+    [ "getFieldString", "a03875.html#a374aa5c4984d6e8a59a397c34c8b826c", null ],
+    [ "getSource", "a03875.html#aaeb4161c8bd3d27854e39bfdcc84144f", null ],
+    [ "getStringArgument", "a03875.html#a7b65028929464011c54f717cc0bc8a4f", null ],
+    [ "getType", "a03875.html#a6d91eb63be089c7f5b3132a0f52af07e", null ],
+    [ "getVersion", "a03875.html#a12b5671e8920e8ce5c4457ea8d0d9fb2", null ],
+    [ "init", "a03875.html#a5048fa002bf3fee23af5ea7310e9f33b", null ],
+    [ "isNumeric", "a03875.html#ad2f0069be08e539be080c7da9309f068", null ],
+    [ "prepare", "a03875.html#afd14ba85a16655383f72ab350e864e79", null ],
+    [ "process", "a03875.html#a50ed99c2996b7aae72b00268d6bcfd71", null ],
+    [ "DEFAULT_CLUSTER_SIZE", "a03875.html#a45bfc05f28ab5bbf5a9dc368047b06f2", null ],
+    [ "FIELD_NAME_ID", "a03875.html#ae6b9973c17a0ebf6ee945a0b4850940d", null ],
+    [ "FIELD_NAME_LAT", "a03875.html#af725259ae7f0fe11d6fc8f3db222f7f8", null ],
+    [ "FIELD_NAME_LON", "a03875.html#ab86514be2e433000a8b002c6d235de99", null ],
+    [ "fieldNameId", "a03875.html#a4c17ab138514503292eaf7b63af0b912", null ],
+    [ "fieldNameLat", "a03875.html#a1d1f4b9177ff8e0546500ed226c230fa", null ],
+    [ "fieldNameLon", "a03875.html#a98a08facc5154b717e118f4fa2d8ada2", null ],
+    [ "PARAM_SPATIALCLUSTERING", "a03875.html#ac101389bab4245b0dc43bfe5d5cc8a03", null ],
+    [ "PARAM_SPATIALCLUSTERING_SIZE", "a03875.html#acfe876358181205b20e74b82fe6c7d20", null ],
+    [ "PIN_TYPE_CLUSTER", "a03875.html#acd45549e2db985c4d799e7fac97c22d0", null ],
+    [ "PIN_TYPE_SINGLE", "a03875.html#ace29433aec744dbacc44b1af872c640c", null ]
+];

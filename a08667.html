@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: AsEncodedPolylineTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,26 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08670.html','');});
+$(document).ready(function(){initNavTree('a08667.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a08664.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MakeLineTest Member List</div>  </div>
+<div class="title">AsEncodedPolylineTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for AsEncodedPolylineTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08665.png" border="0" usemap="#AsEncodedPolylineTest_coll__map" alt="Collaboration graph"/></div>
+<map name="AsEncodedPolylineTest_coll__map" id="AsEncodedPolylineTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a77e364f1e18fbe312ed563af435ddc8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08667.html#a77e364f1e18fbe312ed563af435ddc8f">testAsEncodedPolyline</a> ()</td></tr>
+<tr class="separator:a77e364f1e18fbe312ed563af435ddc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08667.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;LINESTRING(-120.2 38.5,-120.95 40.7,-126.453 43.252)&quot;</td></tr>
+<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a77e364f1e18fbe312ed563af435ddc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e364f1e18fbe312ed563af435ddc8f">&#9670;&nbsp;</a></span>testAsEncodedPolyline()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a08670.html">MakeLineTest</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a08670.html#ae1794702b16fed527256a87c40858865">testMakeLine1</a>()</td><td class="entry"><a class="el" href="a08670.html">MakeLineTest</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a08670.html#ab20d196cb6e34afc2e9cff8074e43bfd">testPoint1</a></td><td class="entry"><a class="el" href="a08670.html">MakeLineTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08670.html#a53dc8585c2a440c472be9609c86b0601">testPointM</a></td><td class="entry"><a class="el" href="a08670.html">MakeLineTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testAsEncodedPolyline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04967.html#ae7a3cbabcf0592c2705ee280a231189a">AsEncodedPolyline.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                            {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08667.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        AsEncodedPolyline instance=<span class="keyword">new</span> AsEncodedPolyline();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;|_p~iF~ps|U_ulLnnqC_mqNvxq`@&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08667_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08667.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.linestring.exporter.AsEncodedPolylineTest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> AsEncodedPolylineTest.java:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abc3f514f005cba49e406658e2d3086eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testGeometry =&quot;LINESTRING(-120.2 38.5,-120.95 40.7,-126.453 43.252)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03801.html">linestring</a></li><li class="navelem"><a class="el" href="a03804.html">exporter</a></li><li class="navelem"><a class="el" href="a08667.html">AsEncodedPolylineTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

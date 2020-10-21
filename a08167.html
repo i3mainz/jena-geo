@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: BoundingDiagonalTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,25 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08170.html','');});
+$(document).ready(function(){initNavTree('a08167.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a08164.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">XMaxTest Member List</div>  </div>
+<div class="title">BoundingDiagonalTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for BoundingDiagonalTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08165.png" border="0" usemap="#BoundingDiagonalTest_coll__map" alt="Collaboration graph"/></div>
+<map name="BoundingDiagonalTest_coll__map" id="BoundingDiagonalTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5905b320ef165de047ef4ff2e9167268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a5905b320ef165de047ef4ff2e9167268">testBoundingDiagonal</a> ()</td></tr>
+<tr class="separator:a5905b320ef165de047ef4ff2e9167268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1e3187cbc25299380589200c398b3ffd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a> =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td></tr>
+<tr class="separator:a1e3187cbc25299380589200c398b3ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5905b320ef165de047ef4ff2e9167268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5905b320ef165de047ef4ff2e9167268">&#9670;&nbsp;</a></span>testBoundingDiagonal()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a08170.html">XMaxTest</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a08170.html#a33797029fadbcba01b4a4fafec88cf41">testLineString</a></td><td class="entry"><a class="el" href="a08170.html">XMaxTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a08170.html#af45d6c06ced12c7882c5eab73bcc9ec8">testXMax</a>()</td><td class="entry"><a class="el" href="a08170.html">XMaxTest</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testBoundingDiagonal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04111.html#ae7a3cbabcf0592c2705ee280a231189a">BoundingDiagonal.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                           {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08167.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        BoundingDiagonal instance=<span class="keyword">new</span> BoundingDiagonal();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//LINESTRING(0.5 0.00032,0.5 0)</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(0,0));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,1));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="ttc" id="a08167_html_a1e3187cbc25299380589200c398b3ffd"><div class="ttname"><a href="a08167.html#a1e3187cbc25299380589200c398b3ffd">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.BoundingDiagonalTest.testPolygon</a></div><div class="ttdeci">static final String testPolygon</div><div class="ttdef"><b>Definition:</b> BoundingDiagonalTest.java:18</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1e3187cbc25299380589200c398b3ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3187cbc25299380589200c398b3ffd">&#9670;&nbsp;</a></span>testPolygon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testPolygon =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03793.html">attribute</a></li><li class="navelem"><a class="el" href="a08167.html">BoundingDiagonalTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

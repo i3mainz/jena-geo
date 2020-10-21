@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,31 +56,397 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06442.html','');});
+$(document).ready(function(){initNavTree('a06439.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="a06436.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RasterFactory Member List</div>  </div>
+<div class="title">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06442.html">RasterFactory</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06442.html#a08838b9702488c64ed7c49afad7af017">createGrayScaleImage</a>(final int dataType, final int width, final int height, final int numComponents, final int visibleBand, final double minimum, final double maximum)</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06442.html#a7d5cfb732965653960dbdc86f8c67708">createRaster</a>(final DataBuffer buffer, final int width, final int height, final int pixelStride, final int scanlineStride, int[] bankIndices, final int[] bandOffsets, final Point location)</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06442.html#a9d68b79d1acc3bf61f0f78737d368e3e">getDataType</a>(final Class&lt;?&gt; sample, final boolean unsigned)</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06442.html#ad5271e9e711f989b20b3a79660489a88">getDataType</a>(final NumberRange&lt;?&gt; range, final boolean keepFloat)</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06442.html#ae5ff5948eb064b4c357161e139ea3d49">POOL</a></td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06442.html#a70639ab78250a782cee96dc8d44068e7">RasterFactory</a>()</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06442.html#a7244c332272c4013889f65f00c83fb6c">unique</a>(final T sampleModel)</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06442.html#a95376763233bcb64d5c1889c5074860f">wrap</a>(final int dataType, final Buffer... data)</td><td class="entry"><a class="el" href="a06442.html">RasterFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p>Base class of workers which will read or write tiles.  
+ <a href="a06439.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06438.png" border="0" usemap="#TileOpExecutor_8Worker_3_01RI_01extends_01RenderedImage_00_01RT_01extends_01Raster_00_01A_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="TileOpExecutor_8Worker_3_01RI_01extends_01RenderedImage_00_01RT_01extends_01Raster_00_01A_01_4_inherit__map" id="TileOpExecutor_8Worker_3_01RI_01extends_01RenderedImage_00_01RT_01extends_01Raster_00_01A_01_4_inherit__map">
+<area shape="rect" id="node5" href="a06439.html" title="TileOpExecutor.Worker\l\&lt; RenderedImage, Raster, A \&gt;" alt="" coords="623,11,825,53"/>
+<area shape="rect" id="node7" href="a06439.html" title="TileOpExecutor.Worker\l\&lt; WritableRenderedImage,\l WritableRaster, A \&gt;" alt="" coords="635,77,813,133"/>
+<area shape="rect" id="node2" href="a13947.html" title="Runnable" alt="" coords="24,5,101,32"/>
+<area shape="rect" id="node3" href="a13531.html" title="RenderedImage" alt="" coords="5,56,120,83"/>
+<area shape="rect" id="node4" href="a13783.html" title="Raster" alt="" coords="32,107,93,133"/>
+<area shape="rect" id="node6" href="a06443.html" title="Worker which will read tiles. " alt="" coords="875,19,1085,45"/>
+<area shape="rect" id="node8" href="a06447.html" title="Worker which will write tiles. " alt="" coords="875,92,1085,119"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06437.png" border="0" usemap="#TileOpExecutor_8Worker_3_01RI_01extends_01RenderedImage_00_01RT_01extends_01Raster_00_01A_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="TileOpExecutor_8Worker_3_01RI_01extends_01RenderedImage_00_01RT_01extends_01Raster_00_01A_01_4_coll__map" id="TileOpExecutor_8Worker_3_01RI_01extends_01RenderedImage_00_01RT_01extends_01Raster_00_01A_01_4_coll__map">
+<area shape="rect" id="node2" href="a13947.html" title="Runnable" alt="" coords="909,5,987,32"/>
+<area shape="rect" id="node7" href="a06435.html" title="Tile indices of the next tile to process in a multi&#45;threaded computation. " alt="" coords="467,253,689,294"/>
+<area shape="rect" id="node6" href="a06435.html" title="TileOpExecutor.Cursor\l\&lt; RI, A \&gt;" alt="" coords="871,253,1025,294"/>
+<area shape="rect" id="node15" href="a13531.html" title="RenderedImage" alt="" coords="214,445,329,472"/>
+<area shape="rect" id="node16" href="a13783.html" title="Raster" alt="" coords="917,524,979,551"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c71443ed78646800cfa677fad85cacf"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#a2c71443ed78646800cfa677fad85cacf">run</a> ()</td></tr>
+<tr class="memdesc:a2c71443ed78646800cfa677fad85cacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles.  <a href="#a2c71443ed78646800cfa677fad85cacf">More...</a><br /></td></tr>
+<tr class="separator:a2c71443ed78646800cfa677fad85cacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae7dfd2c9f310cb8e7ad1c90c8e5481d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#ae7dfd2c9f310cb8e7ad1c90c8e5481d6">Worker</a> (final <a class="el" href="a06435.html">Cursor</a>&lt; RI, A &gt; <a class="el" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, final Collector&lt;? super RT, A,?&gt; collector)</td></tr>
+<tr class="memdesc:ae7dfd2c9f310cb8e7ad1c90c8e5481d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new worker for traversing the tiles identified by the given cursor.  <a href="#ae7dfd2c9f310cb8e7ad1c90c8e5481d6">More...</a><br /></td></tr>
+<tr class="separator:ae7dfd2c9f310cb8e7ad1c90c8e5481d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460b7efed78d9e1a0d37ae409e52f229"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile</a> ()</td></tr>
+<tr class="memdesc:a460b7efed78d9e1a0d37ae409e52f229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the tiles at the (<a class="el" href="a06439.html#a40590f55f82df430f8035df8dd4f03c2">tx</a>, <a class="el" href="a06439.html#a75f29260f9728325050cd039109732b7">ty</a>) indices and processes it.  <a href="#a460b7efed78d9e1a0d37ae409e52f229">More...</a><br /></td></tr>
+<tr class="separator:a460b7efed78d9e1a0d37ae409e52f229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a06435.html">Cursor</a>&lt; RI, A &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a></td></tr>
+<tr class="memdesc:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator over the indices of the next tiles to fetch.  <a href="#a21cca1f9a7342fbd8caeaf4e519c896a">More...</a><br /></td></tr>
+<tr class="separator:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40590f55f82df430f8035df8dd4f03c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#a40590f55f82df430f8035df8dd4f03c2">tx</a></td></tr>
+<tr class="memdesc:a40590f55f82df430f8035df8dd4f03c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices of the tile to fetch.  <a href="#a40590f55f82df430f8035df8dd4f03c2">More...</a><br /></td></tr>
+<tr class="separator:a40590f55f82df430f8035df8dd4f03c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbeac52d84508f2507ba8348aafab09"><td class="memItemLeft" align="right" valign="top">final BiConsumer&lt; A, ? super RT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#a5fbeac52d84508f2507ba8348aafab09">processor</a></td></tr>
+<tr class="memdesc:a5fbeac52d84508f2507ba8348aafab09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>.  <a href="#a5fbeac52d84508f2507ba8348aafab09">More...</a><br /></td></tr>
+<tr class="separator:a5fbeac52d84508f2507ba8348aafab09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f9097774c75a5f0677b1abad167637"><td class="memItemLeft" align="right" valign="top">final A&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a></td></tr>
+<tr class="memdesc:ae6f9097774c75a5f0677b1abad167637"><td class="mdescLeft">&#160;</td><td class="mdescRight">A thread-local variable which is given to each invocation of the <a class="el" href="a06439.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.  <a href="#ae6f9097774c75a5f0677b1abad167637">More...</a><br /></td></tr>
+<tr class="separator:ae6f9097774c75a5f0677b1abad167637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:afdff4aa4324ad7460be67cf5007b5e86"><td class="memItemLeft" align="right" valign="top">static ImagingOpException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#afdff4aa4324ad7460be67cf5007b5e86">rethrowOrWrap</a> (final Throwable ex)</td></tr>
+<tr class="memdesc:afdff4aa4324ad7460be67cf5007b5e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given exception can be propagated as an error or unchecked exception, throws it.  <a href="#afdff4aa4324ad7460be67cf5007b5e86">More...</a><br /></td></tr>
+<tr class="separator:afdff4aa4324ad7460be67cf5007b5e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:a75f29260f9728325050cd039109732b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06439.html#a75f29260f9728325050cd039109732b7">ty</a></td></tr>
+<tr class="separator:a75f29260f9728325050cd039109732b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class of workers which will read or write tiles. </p>
+<p>Exactly one</p><div class="fragment"><div class="line"><a class="code" href="a06439.html#ae7dfd2c9f310cb8e7ad1c90c8e5481d6">Worker</a> </div></div><!-- fragment --><p> instance is created for each thread which will perform the computation. The same</p><div class="fragment"><div class="line"><a class="code" href="a06439.html#ae7dfd2c9f310cb8e7ad1c90c8e5481d6">Worker</a> </div></div><!-- fragment --><p> instance can process an arbitrary amount of tiles.</p>
+<p>Subclasses must override <a class="el" href="a06439.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;RI&gt;</td><td><a class="el" href="">RenderedImage</a> or <a class="el" href="">WritableRenderedImage</a>. </td></tr>
+    <tr><td class="paramname">&lt;RT&gt;</td><td><a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>. </td></tr>
+    <tr><td class="paramname">&lt;A&gt;</td><td>type of the thread-local object (the accumulator) for holding intermediate results. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae7dfd2c9f310cb8e7ad1c90c8e5481d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7dfd2c9f310cb8e7ad1c90c8e5481d6">&#9670;&nbsp;</a></span>Worker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06439.html">Worker</a> </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a06435.html">Cursor</a>&lt; RI, A &gt;&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Collector&lt;? super RT, A,?&gt;&#160;</td>
+          <td class="paramname"><em>collector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new worker for traversing the tiles identified by the given cursor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cursor</td><td>iterator over the indices of the tiles to fetch. </td></tr>
+    <tr><td class="paramname">collector</td><td>provides the process to execute on each tile. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                                                                                               {</div><div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            this.<a class="code" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>      = <a class="code" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>;</div><div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;            this.<a class="code" href="a06439.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>   = collector.accumulator();</div><div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            this.<a class="code" href="a06439.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a> = collector.supplier().get();</div><div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        }</div><div class="ttc" id="a06439_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06439.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker.accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
+<div class="ttc" id="a06439_html_a5fbeac52d84508f2507ba8348aafab09"><div class="ttname"><a href="a06439.html#a5fbeac52d84508f2507ba8348aafab09">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker.processor</a></div><div class="ttdeci">final BiConsumer&lt; A, ? super RT &gt; processor</div><div class="ttdoc">The process to execute on each Raster or WritableRaster. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:742</div></div>
+<div class="ttc" id="a06439_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker.cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a460b7efed78d9e1a0d37ae409e52f229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460b7efed78d9e1a0d37ae409e52f229">&#9670;&nbsp;</a></span>executeOnCurrentTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void executeOnCurrentTile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the tiles at the (<a class="el" href="a06439.html#a40590f55f82df430f8035df8dd4f03c2">tx</a>, <a class="el" href="a06439.html#a75f29260f9728325050cd039109732b7">ty</a>) indices and processes it. </p>
+<p>If the process produces a result other than updating pixel values (for example if the process is computing statistics), then that result should be added to the <a class="el" href="a06439.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a> object.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a13855.html">RuntimeException</a></td><td>if any error occurred during the process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a06439.html#a2c71443ed78646800cfa677fad85cacf">TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;.run()</a>.</p>
+
+</div>
+</div>
+<a id="afdff4aa4324ad7460be67cf5007b5e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdff4aa4324ad7460be67cf5007b5e86">&#9670;&nbsp;</a></span>rethrowOrWrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ImagingOpException rethrowOrWrap </td>
+          <td>(</td>
+          <td class="paramtype">final Throwable&#160;</td>
+          <td class="paramname"><em>ex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the given exception can be propagated as an error or unchecked exception, throws it. </p>
+<p>Otherwise wraps it in an <a class="el" href="">ImagingOpException</a> with intentionally no error message (for allowing <a class="el" href="a06431.html#a517f50b4efda6d919cbe263504257ffb">trimImagingWrapper(Throwable)</a> to recognize and unwrap it).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ex</td><td>the exception to propagate if possible. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the exception to throw if the given exception can not be propagated. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06435.html#a05d387c70340867dffaf02228c4520cd">TileOpExecutor.Cursor&lt; RI, A &gt;.finish()</a>, <a class="el" href="a06431.html#abb7222f19b7bbc00c7c083ed400a256e">TileOpExecutor.parallelReadFrom()</a>, and <a class="el" href="a06431.html#abcc978b0c005c9252c7b82a4d638c985">TileOpExecutor.parallelWriteTo()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                                                                    {</div><div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            Throwable cause = ex.getCause();</div><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keywordflow">if</span> (cause instanceof <a class="code" href="a13855.html">RuntimeException</a>) {</div><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                <span class="keywordflow">throw</span> (RuntimeException) cause;</div><div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            }</div><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">if</span> (cause instanceof Error) {</div><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                <span class="keywordflow">throw</span> (Error) cause;</div><div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            }</div><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">             * May occur after call to `TileOpExecutor.readFrom(…)` or `TileOpExecutor.writeTo(…)`,</span></div><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">             * in which case that exception will be removed by `trimImagingWrapper(…)` method and</span></div><div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">             * replaced by another exception providing a more complete error message.</span></div><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">             *</span></div><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">             * Should not happen in other contexts because the other exception handlers where this</span></div><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">             * `rethrowOrWrap(…)` method is invoked expect (indirectly) only unchecked exceptions.</span></div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">return</span> (ImagingOpException) <span class="keyword">new</span> ImagingOpException(null).initCause(cause != null ? cause : ex);</div><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div><div class="ttc" id="a13855_html"><div class="ttname"><a href="a13855.html">RuntimeException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c71443ed78646800cfa677fad85cacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c71443ed78646800cfa677fad85cacf">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles. </p>
+<p>This method delegates to <a class="el" href="a06439.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile()</a> as long as there is tiles to process. Exceptions are handled (wrapped in a <a class="el" href="">LogRecord</a> or propagated). </p>
+<div class="fragment"><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                                {</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06435.html#a311addae5779cead65ffaaad5824007c">next</a>(<span class="keyword">this</span>)) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                <a class="code" href="a06439.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile</a>();</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            } <span class="keywordflow">catch</span> (<a class="code" href="a13907.html">Exception</a> ex) {</div><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                <a class="code" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06435.html#aabf3c338904bae76660fd721a7492e85">recordError</a>(<span class="keyword">this</span>, <a class="code" href="a06431.html#a517f50b4efda6d919cbe263504257ffb">trimImagingWrapper</a>(ex));</div><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            }</div><div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <a class="code" href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06435.html#a4b14b31f07a7b5de8420315b985e05a7">accumulate</a>(<a class="code" href="a06439.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>);</div><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        }</div><div class="ttc" id="a06439_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06439.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker.accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
+<div class="ttc" id="a06439_html_a460b7efed78d9e1a0d37ae409e52f229"><div class="ttname"><a href="a06439.html#a460b7efed78d9e1a0d37ae409e52f229">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker.executeOnCurrentTile</a></div><div class="ttdeci">abstract void executeOnCurrentTile()</div><div class="ttdoc">Gets the tiles at the (tx, ty) indices and processes it. </div></div>
+<div class="ttc" id="a06435_html_aabf3c338904bae76660fd721a7492e85"><div class="ttname"><a href="a06435.html#aabf3c338904bae76660fd721a7492e85">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.recordError</a></div><div class="ttdeci">final void recordError(final Worker&lt; RI,?, A &gt; indices, final Throwable ex)</div><div class="ttdoc">Stores the given exception in a log record. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:674</div></div>
+<div class="ttc" id="a06435_html_a4b14b31f07a7b5de8420315b985e05a7"><div class="ttname"><a href="a06435.html#a4b14b31f07a7b5de8420315b985e05a7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.accumulate</a></div><div class="ttdeci">final void accumulate(final A result)</div><div class="ttdoc">Invoked when a thread finished to process all its tiles for combining its result with the result of p...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:585</div></div>
+<div class="ttc" id="a06431_html_a517f50b4efda6d919cbe263504257ffb"><div class="ttname"><a href="a06431.html#a517f50b4efda6d919cbe263504257ffb">org.apache.sis.internal.coverage.j2d.TileOpExecutor.trimImagingWrapper</a></div><div class="ttdeci">static Throwable trimImagingWrapper(Throwable ex)</div><div class="ttdoc">If the given exception is a wrapper providing no useful information, returns its non-null cause...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:820</div></div>
+<div class="ttc" id="a06435_html_a311addae5779cead65ffaaad5824007c"><div class="ttname"><a href="a06435.html#a311addae5779cead65ffaaad5824007c">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.next</a></div><div class="ttdeci">final boolean next(final Worker&lt; RI,?, A &gt; indices)</div><div class="ttdoc">Sets the given worker to the indices of the next tile. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:569</div></div>
+<div class="ttc" id="a13907_html"><div class="ttname"><a href="a13907.html">Exception</a></div></div>
+<div class="ttc" id="a06439_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06439.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker.cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae6f9097774c75a5f0677b1abad167637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f9097774c75a5f0677b1abad167637">&#9670;&nbsp;</a></span>accumulator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final A accumulator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A thread-local variable which is given to each invocation of the <a class="el" href="a06439.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>. </p>
+<p>Processor implementation can use this instance for storing or updating information. No synchronization is needed since this instance is not shared by other threads. This value may be</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if no such object is needed. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06443.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.ReadWork&lt; A &gt;.executeOnCurrentTile()</a>, and <a class="el" href="a06447.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.WriteWork&lt; A &gt;.executeOnCurrentTile()</a>.</p>
+
+</div>
+</div>
+<a id="a21cca1f9a7342fbd8caeaf4e519c896a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21cca1f9a7342fbd8caeaf4e519c896a">&#9670;&nbsp;</a></span>cursor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06435.html">Cursor</a>&lt;RI,A&gt; cursor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An iterator over the indices of the next tiles to fetch. </p>
+<p>The same instance will be shared by all <a class="el" href="a06439.html">Worker</a> instances created by the same call to <a class="el" href="a06443.html#a897d4e476be84070570b5b2fffbe355c">ReadWork.execute(…)</a> or <a class="el" href="a06447.html#abbe05319666d3715eb016d69fe8426d4">WriteWork.execute(…)</a>. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06443.html#a897d4e476be84070570b5b2fffbe355c">TileOpExecutor.ReadWork&lt; A &gt;.execute()</a>, <a class="el" href="a06447.html#abbe05319666d3715eb016d69fe8426d4">TileOpExecutor.WriteWork&lt; A &gt;.execute()</a>, <a class="el" href="a06443.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.ReadWork&lt; A &gt;.executeOnCurrentTile()</a>, <a class="el" href="a06447.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.WriteWork&lt; A &gt;.executeOnCurrentTile()</a>, and <a class="el" href="a06439.html#ae7dfd2c9f310cb8e7ad1c90c8e5481d6">TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;.Worker()</a>.</p>
+
+</div>
+</div>
+<a id="a5fbeac52d84508f2507ba8348aafab09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fbeac52d84508f2507ba8348aafab09">&#9670;&nbsp;</a></span>processor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final BiConsumer&lt;A, ? super RT&gt; processor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>. </p>
+<p>Each invocation of that process will also receive the <a class="el" href="a06439.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a> value, which is an instance unique to each thread. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06443.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.ReadWork&lt; A &gt;.executeOnCurrentTile()</a>, and <a class="el" href="a06447.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.WriteWork&lt; A &gt;.executeOnCurrentTile()</a>.</p>
+
+</div>
+</div>
+<a id="a40590f55f82df430f8035df8dd4f03c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40590f55f82df430f8035df8dd4f03c2">&#9670;&nbsp;</a></span>tx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indices of the tile to fetch. </p>
+<p>Those indices are updated by <a class="el" href="">Cursor#next(Worker)</a>. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06443.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.ReadWork&lt; A &gt;.executeOnCurrentTile()</a>, <a class="el" href="a06447.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.WriteWork&lt; A &gt;.executeOnCurrentTile()</a>, <a class="el" href="a06435.html#a311addae5779cead65ffaaad5824007c">TileOpExecutor.Cursor&lt; RI, A &gt;.next()</a>, and <a class="el" href="a06435.html#aabf3c338904bae76660fd721a7492e85">TileOpExecutor.Cursor&lt; RI, A &gt;.recordError()</a>.</p>
+
+</div>
+</div>
+<a id="a75f29260f9728325050cd039109732b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f29260f9728325050cd039109732b7">&#9670;&nbsp;</a></span>ty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06443.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.ReadWork&lt; A &gt;.executeOnCurrentTile()</a>, <a class="el" href="a06447.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">TileOpExecutor.WriteWork&lt; A &gt;.executeOnCurrentTile()</a>, <a class="el" href="a06435.html#a311addae5779cead65ffaaad5824007c">TileOpExecutor.Cursor&lt; RI, A &gt;.next()</a>, and <a class="el" href="a06435.html#aabf3c338904bae76660fd721a7492e85">TileOpExecutor.Cursor&lt; RI, A &gt;.recordError()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03699.html">apache</a></li><li class="navelem"><a class="el" href="a03700.html">sis</a></li><li class="navelem"><a class="el" href="a03704.html">internal</a></li><li class="navelem"><a class="el" href="a03705.html">coverage</a></li><li class="navelem"><a class="el" href="a03703.html">j2d</a></li><li class="navelem"><a class="el" href="a06431.html">TileOpExecutor</a></li><li class="navelem"><a class="el" href="a06439.html">Worker</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

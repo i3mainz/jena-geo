@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: GeometryTypeTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,26 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08190.html','');});
+$(document).ready(function(){initNavTree('a08187.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a08184.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BoundaryTest Member List</div>  </div>
+<div class="title">GeometryTypeTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for GeometryTypeTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08185.png" border="0" usemap="#GeometryTypeTest_coll__map" alt="Collaboration graph"/></div>
+<map name="GeometryTypeTest_coll__map" id="GeometryTypeTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0444ce8df222ae81e1a33426a32d8d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08187.html#a0444ce8df222ae81e1a33426a32d8d7a">testLineString</a> ()</td></tr>
+<tr class="separator:a0444ce8df222ae81e1a33426a32d8d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08187.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;LINESTRING(743238 2967416,743238 2967450,743265 2967450, 743265.625 2967416,743238 2967416)&quot;</td></tr>
+<tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0444ce8df222ae81e1a33426a32d8d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0444ce8df222ae81e1a33426a32d8d7a">&#9670;&nbsp;</a></span>testLineString()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a08190.html">BoundaryTest</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a08190.html#aab356d6554a7301750f11ec7a85ac47d">result</a></td><td class="entry"><a class="el" href="a08190.html">BoundaryTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a08190.html#a5905b320ef165de047ef4ff2e9167268">testBoundingDiagonal</a>()</td><td class="entry"><a class="el" href="a08190.html">BoundaryTest</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08190.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a></td><td class="entry"><a class="el" href="a08190.html">BoundaryTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testLineString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04143.html#ae7a3cbabcf0592c2705ee280a231189a">GeometryType.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                     {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08187.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        GeometryType instance=<span class="keyword">new</span> GeometryType();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;LineString&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08187_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a08187.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.GeometryTypeTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> GeometryTypeTest.java:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testGeom =&quot;LINESTRING(743238 2967416,743238 2967450,743265 2967450, 743265.625 2967416,743238 2967416)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03793.html">attribute</a></li><li class="navelem"><a class="el" href="a08187.html">GeometryTypeTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

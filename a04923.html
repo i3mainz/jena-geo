@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: LineFromEncodedPolyline Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,82 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04926.html','');});
+$(document).ready(function(){initNavTree('a04923.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04920.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SelfIntersections Member List</div>  </div>
+<div class="title">LineFromEncodedPolyline Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a04926.html">SelfIntersections</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04926.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a>(NodeValue arg0)</td><td class="entry"><a class="el" href="a04926.html">SelfIntersections</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Creates a LineString from an Encoded Polyline.  
+ <a href="a04923.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for LineFromEncodedPolyline:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04922.png" border="0" usemap="#LineFromEncodedPolyline_inherit__map" alt="Inheritance graph"/></div>
+<map name="LineFromEncodedPolyline_inherit__map" id="LineFromEncodedPolyline_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for LineFromEncodedPolyline:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04921.png" border="0" usemap="#LineFromEncodedPolyline_coll__map" alt="Collaboration graph"/></div>
+<map name="LineFromEncodedPolyline_coll__map" id="LineFromEncodedPolyline_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:affcee5584600dcada95f339077c7aa60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04923.html#affcee5584600dcada95f339077c7aa60">exec</a> (NodeValue v, NodeValue v2)</td></tr>
+<tr class="separator:affcee5584600dcada95f339077c7aa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Creates a LineString from an Encoded Polyline. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="affcee5584600dcada95f339077c7aa60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affcee5584600dcada95f339077c7aa60">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a06327.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, and <a class="el" href="a06191.html#afdf77a0767731ca8ed4f32b202562e6c">EncodedPolylineDatatype.decodePolyline()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08627.html#a77e364f1e18fbe312ed563af435ddc8f">LineFromEncodedPolylineTest.testAsEncodedPolyline()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                        {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                 String polyline=v.asString();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                 BigInteger precision=v2.getInteger();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        GeometryWrapper pointWrapper = GeometryWrapperFactory.createLineString(EncodedPolylineDatatype.decodePolyline(polyline, precision.intValue()), <span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/4326&gt;&quot;</span>, WKTDatatype.URI);        </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03652.html">linestring</a></li><li class="navelem"><a class="el" href="a03653.html">constructor</a></li><li class="navelem"><a class="el" href="a04923.html">LineFromEncodedPolyline</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

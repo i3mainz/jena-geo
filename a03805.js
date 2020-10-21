@@ -1,8 +1,6 @@
 var a03805 =
 [
-    [ "BBOXAboveTest", "a08150.html", "a08150" ],
-    [ "BBOXBelowTest", "a08154.html", "a08154" ],
-    [ "BBOXDistanceTest", "a08158.html", "a08158" ],
-    [ "BBOXLeftOfTest", "a08162.html", "a08162" ],
-    [ "BBOXRightOfTest", "a08166.html", "a08166" ]
+    [ "BezierSmoothingTest", "a08671.html", "a08671" ],
+    [ "OffsetCurveTest", "a08675.html", "a08675" ],
+    [ "SegmentizeTest", "a08679.html", "a08679" ]
 ];

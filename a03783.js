@@ -1,4 +1,6 @@
 var a03783 =
 [
-    [ "VectorToRaster", "a08054.html", "a08054" ]
+    [ "LengthSubstring", "a08091.html", "a08091" ],
+    [ "LengthToPoint", "a08095.html", "a08095" ],
+    [ "LocatePoint", "a08099.html", "a08099" ]
 ];

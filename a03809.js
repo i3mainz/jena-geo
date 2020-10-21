@@ -1,11 +1,17 @@
 var a03809 =
 [
-    [ "attribute", "a03808.html", "a03808" ],
-    [ "constructor", "a03810.html", "a03810" ],
-    [ "editor", "a03811.html", "a03811" ],
-    [ "exporter", "a03812.html", "a03812" ],
-    [ "relation", "a03813.html", "a03813" ],
-    [ "transform", "a03814.html", "a03814" ],
-    [ "PointsTest", "a08402.html", "a08402" ],
-    [ "ShortestLineTest", "a08494.html", "a08494" ]
+    [ "CircularityIndexTest", "a08763.html", "a08763" ],
+    [ "CircumcentreTest", "a08767.html", "a08767" ],
+    [ "HasConnectedInteriorTest", "a08771.html", "a08771" ],
+    [ "HasDuplicateRingsTest", "a08775.html", "a08775" ],
+    [ "IsAcuteTest", "a08779.html", "a08779" ],
+    [ "IsConvexTest", "a08783.html", "a08783" ],
+    [ "IsIsocelesTriangleTest", "a08787.html", "a08787" ],
+    [ "IsPolygonCCWTest", "a08791.html", "a08791" ],
+    [ "IsPolygonCWTest", "a08795.html", "a08795" ],
+    [ "IsRightTriangleTest", "a08799.html", null ],
+    [ "IsScaleneTriangleTest", "a08803.html", "a08803" ],
+    [ "IsTriangleTest", "a08807.html", "a08807" ],
+    [ "NRingsTest", "a08811.html", "a08811" ],
+    [ "NumInteriorRingsTest", "a08815.html", null ]
 ];

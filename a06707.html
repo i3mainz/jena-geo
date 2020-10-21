@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: InterpolationCase Enum Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,61 +56,174 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06710.html','');});
+$(document).ready(function(){initNavTree('a06707.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a06704.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BiCubicInterpolation Member List</div>  </div>
+<div class="title">InterpolationCase Enum Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for InterpolationCase:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06705.png" border="0" usemap="#InterpolationCase_coll__map" alt="Collaboration graph"/></div>
+<map name="InterpolationCase_coll__map" id="InterpolationCase_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aad81949b89537d5869c85deec4d95979"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#aad81949b89537d5869c85deec4d95979">InterpolationCase</a> (final int <a class="el" href="a06707.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a>)</td></tr>
+<tr class="separator:aad81949b89537d5869c85deec4d95979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6ea6316ae077fef1db4977613c7b3374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a6ea6316ae077fef1db4977613c7b3374">NEIGHBOR</a> =(0)</td></tr>
+<tr class="separator:a6ea6316ae077fef1db4977613c7b3374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330cceaf462bb9b2c8d748b2e6f870f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a330cceaf462bb9b2c8d748b2e6f870f6">BILINEAR</a> =(1)</td></tr>
+<tr class="separator:a330cceaf462bb9b2c8d748b2e6f870f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae532779b4a97152af22fc25cd688ebe5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#ae532779b4a97152af22fc25cd688ebe5">BICUBIC</a> =(2)</td></tr>
+<tr class="separator:ae532779b4a97152af22fc25cd688ebe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1dc6fc0f37c3614207b5173fad9d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a0f1dc6fc0f37c3614207b5173fad9d9b">BICUBIC2</a> =(2)</td></tr>
+<tr class="separator:a0f1dc6fc0f37c3614207b5173fad9d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7905aa04510022c3f4be8eaebbf6e0d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a7905aa04510022c3f4be8eaebbf6e0d1">LANCZOS</a> =(-3)</td></tr>
+<tr class="separator:a7905aa04510022c3f4be8eaebbf6e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962b51c81e9bbe00d99fd54f39fd32b0"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a></td></tr>
+<tr class="separator:a962b51c81e9bbe00d99fd54f39fd32b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Choose interpolation :<br />
+</p><ul>
+<li>neighbor : find nearest pixel values.<br />
+</li>
+<li>bilinear : compute biLinear pixel value from nearest 4 pixels values.<br />
+</li>
+<li>biCubic : compute biCubic pixel value from nearest 16 pixels values.<br />
+</li>
+<li>lanczos : compute biCubic pixel value from nearest n * n pixels values.<br />
+ where n = 2 * <a class="el" href="a06711.html#a9d111acc533ad5d562844f7a4ce92a73">LanczosInterpolation#lanczosWindow</a> </li>
+</ul>
+<p>Note that a margin is defined for each value, specifying a radius in pixel unit. It's the maximal distance used by the interpolation to mix colors. This margin value can be &lt; 0 when the radius is not fixed. Therefore, it's user responsability to define the right value. However, when the margin is negative, it's absolute value should be a clue about a default acceptable margin to apply for this interpolation.</p>
+<dl class="section author"><dt>Author</dt><dd>Rémi Marechal (Geomatys). </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aad81949b89537d5869c85deec4d95979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad81949b89537d5869c85deec4d95979">&#9670;&nbsp;</a></span>InterpolationCase()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a06710.html">BiCubicInterpolation</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06710.html#ac9374079592f1ffcd46939b1d75a19ae">BiCubicInterpolation</a>(PixelIterator pixelIterator, ResampleBorderComportement borderChoice, double[] fillValue)</td><td class="entry"><a class="el" href="a06710.html">BiCubicInterpolation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06710.html#a29c348a5edf1dc786f5be14a6a271687">BiCubicInterpolation</a>(PixelIterator pixelIterator)</td><td class="entry"><a class="el" href="a06710.html">BiCubicInterpolation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a38130e0cd806218c1bc81f4e21a11ef4">bmaxX</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a52d067700bb464f256be0c065b05a909">bmaxY</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#aeeb8fb364ece6be311b9c5475e999ed5">bminX</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#ace2fec3b653a89fc3bf6e3c65a1194fd">bminY</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">boundMaxX</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a7f59e8ab3bd44a0daf9922e28771757d">boundMaxY</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a1a334a29e711865f882722211eb6e52c">boundMinX</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a65f31cecf0962014b738a78bd130b60c">boundMinY</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a4b1bd9debe6572e61954ebfc1f8caa49">checkInterpolate</a>(double x, double y)</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06710.html#a7e4fb3b1aca56d2d9717d791f0f2c843">checkValue</a>(double value)</td><td class="entry"><a class="el" href="a06710.html">BiCubicInterpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a6e1d891fd5124f008d2856ee73d6ecd7">create</a>(PixelIterator pixelIterator, InterpolationCase interpolationCase, int lanczosWindow)</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a39b990950ebf5c45d5f164d23b9a825a">create</a>(PixelIterator pixelIterator, InterpolationCase interpolationCase, int lanczosWindow, ResampleBorderComportement rbc, double[] fillValue)</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#ad6cce9bd1b67dabde20c4fdb7e5853bd">data</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#abd6343f5a460f071666409283cbfa487">fillValue</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">getBoundary</a>()</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06710.html#a702cde82ec7ced2557c014814d367e5f">getMinMaxValue</a>(Rectangle area)</td><td class="entry"><a class="el" href="a06710.html">BiCubicInterpolation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a1080c81ae0fa8f01367d9dc7e88a506d">getNumBands</a>()</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06766.html#aba915737216fb5286697ae93c4f8fd85">interpolate</a>(double x, double y, int b)</td><td class="entry"><a class="el" href="a06766.html">SeparableInterpolation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06766.html#adba6834e0984fd8dbe9e86df345890c1">interpolate</a>(double x, double y)</td><td class="entry"><a class="el" href="a06766.html">SeparableInterpolation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06766.html#ab7323cee2a3dbf807a7d233e0de02e08">interpolate1D</a>(double t0, double t, double...f)</td><td class="entry"><a class="el" href="a06766.html">SeparableInterpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#a136d5b1354a85d28b4d72da647556f04">Interpolation</a>(PixelIterator pixelIterator, int windowSize, ResampleBorderComportement borderChoice, double[] fillValue)</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation</a>(Interpolation source)</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06710.html#a5f3f8eb9843f9978cb90369aac2ca15f">maxValue</a></td><td class="entry"><a class="el" href="a06710.html">BiCubicInterpolation</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06710.html#a5c33f00ecf96f77fb4231bdd0ee9869d">minValue</a></td><td class="entry"><a class="el" href="a06710.html">BiCubicInterpolation</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a89c440999057ffb8b33b40958fb6f662">minX</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a0d8b817b89b958b862e489811688d6d7">numBands</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#af750c0c774a25ee7919fc55c69df0320">precMinMax</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#ac3412b568b1a72d0f0a6012a6e435bcb">result</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06766.html#a6e1070db0eaccda2c82b8f41227743fa">SeparableInterpolation</a>(PixelIterator pixelIterator, int windowSide, ResampleBorderComportement rbc, double[] fillValue)</td><td class="entry"><a class="el" href="a06766.html">SeparableInterpolation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06730.html#abadb0fdfdf8a652432232f7a91776919">setInterpolateMin</a>(double x, double y)</td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06730.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a></td><td class="entry"><a class="el" href="a06730.html">Interpolation</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06707.html">InterpolationCase</a> </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>margin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                        {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.<a class="code" href="a06707.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a> = <a class="code" href="a06707.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="ttc" id="a06707_html_a962b51c81e9bbe00d99fd54f39fd32b0"><div class="ttname"><a href="a06707.html#a962b51c81e9bbe00d99fd54f39fd32b0">org.geotoolkit.image.interpolation.InterpolationCase.margin</a></div><div class="ttdeci">final int margin</div><div class="ttdef"><b>Definition:</b> InterpolationCase.java:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae532779b4a97152af22fc25cd688ebe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae532779b4a97152af22fc25cd688ebe5">&#9670;&nbsp;</a></span>BICUBIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BICUBIC =(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f1dc6fc0f37c3614207b5173fad9d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1dc6fc0f37c3614207b5173fad9d9b">&#9670;&nbsp;</a></span>BICUBIC2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BICUBIC2 =(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a330cceaf462bb9b2c8d748b2e6f870f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330cceaf462bb9b2c8d748b2e6f870f6">&#9670;&nbsp;</a></span>BILINEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BILINEAR =(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7905aa04510022c3f4be8eaebbf6e0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7905aa04510022c3f4be8eaebbf6e0d1">&#9670;&nbsp;</a></span>LANCZOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LANCZOS =(-3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a962b51c81e9bbe00d99fd54f39fd32b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962b51c81e9bbe00d99fd54f39fd32b0">&#9670;&nbsp;</a></span>margin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int margin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ea6316ae077fef1db4977613c7b3374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea6316ae077fef1db4977613c7b3374">&#9670;&nbsp;</a></span>NEIGHBOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NEIGHBOR =(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06723.html#a156ba99c1858666613f70adbf1cebd94">Resample.Resample()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03715.html">image</a></li><li class="navelem"><a class="el" href="a03719.html">interpolation</a></li><li class="navelem"><a class="el" href="a06707.html">InterpolationCase</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

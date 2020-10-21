@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: BandNoDataValue Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,75 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05362.html','');});
+$(document).ready(function(){initNavTree('a05359.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a05356.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">XorConst Member List</div>  </div>
+<div class="title">BandNoDataValue Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for BandNoDataValue:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05358.png" border="0" usemap="#BandNoDataValue_inherit__map" alt="Inheritance graph"/></div>
+<map name="BandNoDataValue_inherit__map" id="BandNoDataValue_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for BandNoDataValue:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05357.png" border="0" usemap="#BandNoDataValue_coll__map" alt="Collaboration graph"/></div>
+<map name="BandNoDataValue_coll__map" id="BandNoDataValue_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05359.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
+<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a05362.html">XorConst</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a05362.html#a2c490cbe392d82e6bccb464329ee50f4">exec</a>(NodeValue v1, NodeValue v2, NodeValue v3)</td><td class="entry"><a class="el" href="a05362.html">XorConst</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a06271.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, <a class="el" href="a06355.html#a60e41e388a84548d37fa90cbd5dd8c8c">GridCoverage.getSampleDimensions()</a>, and <a class="el" href="a06271.html#a71f11b05f3fe6a38e7781be178db85dd">CoverageWrapper.getXYGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v1);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                GridCoverage raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                BigInteger bandnum=v2.getInteger();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (bandnum.intValue() &gt; raster.getSampleDimensions().size()) {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">return</span> NodeValue.nvNothing;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> NodeValue.makeDouble(raster.getSampleDimensions().get(bandnum.intValue()).getNoDataValues().iterator().next().doubleValue());</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03670.html">raster</a></li><li class="navelem"><a class="el" href="a03671.html">attribute</a></li><li class="navelem"><a class="el" href="a05359.html">BandNoDataValue</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

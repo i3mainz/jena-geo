@@ -1,11 +1,11 @@
 var a03737 =
 [
-    [ "Combine", "a06806.html", "a06806" ],
-    [ "FloodFill", "a06818.html", "a06818" ],
-    [ "Hysteresis", "a06822.html", "a06822" ],
-    [ "Mask", "a06826.html", "a06826" ],
-    [ "NodataFilter", "a06830.html", "a06830" ],
-    [ "Registry", "a06834.html", "a06834" ],
-    [ "SampleValues", "a06838.html", "a06838" ],
-    [ "SilhouetteMask", "a06854.html", "a06854" ]
+    [ "Builder", "a07119.html", "a07119" ],
+    [ "Configuration", "a07123.html", null ],
+    [ "Debug", "a07127.html", null ],
+    [ "Decorator", "a07131.html", "a07131" ],
+    [ "Setup", "a07135.html", "a07135" ],
+    [ "Static", "a07139.html", "a07139" ],
+    [ "SystemOverride", "a07143.html", "a07143" ],
+    [ "Workaround", "a07147.html", "a07147" ]
 ];

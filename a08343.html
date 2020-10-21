@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: AsOSMLinkTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,26 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08346.html','');});
+$(document).ready(function(){initNavTree('a08343.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a08340.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsGeoHashTest Member List</div>  </div>
+<div class="title">AsOSMLinkTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for AsOSMLinkTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08341.png" border="0" usemap="#AsOSMLinkTest_coll__map" alt="Collaboration graph"/></div>
+<map name="AsOSMLinkTest_coll__map" id="AsOSMLinkTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a31833fe8b6139bfbdcd328ee943729e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08343.html#a31833fe8b6139bfbdcd328ee943729e2">testAsOSMLink</a> ()</td></tr>
+<tr class="separator:a31833fe8b6139bfbdcd328ee943729e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08343.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;POINT(49.9928617 8.2472526)&quot;</td></tr>
+<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a31833fe8b6139bfbdcd328ee943729e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31833fe8b6139bfbdcd328ee943729e2">&#9670;&nbsp;</a></span>testAsOSMLink()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a08346.html">AsGeoHashTest</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a08346.html#a17fb1516a3866b5917d2495998305fb3">geoHashString</a></td><td class="entry"><a class="el" href="a08346.html">AsGeoHashTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a08346.html#a3ff195dff03851a6d4c46d30a53b61fd">testAsGeobuf</a>()</td><td class="entry"><a class="el" href="a08346.html">AsGeoHashTest</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08346.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a></td><td class="entry"><a class="el" href="a08346.html">AsGeoHashTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testAsOSMLink </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04439.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">AsOSMLink.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                    {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08343.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        AsOSMLink instance=<span class="keyword">new</span> AsOSMLink();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;http://www.openstreetmap.org/?minlon=8.2472526&amp;minlat=49.9928617&amp;maxlon=8.2472526&amp;maxlat=49.9928617&amp;mlat=49.9928617&amp;mlon=8.2472526&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08343_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08343.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.geometry.exporter.AsOSMLinkTest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> AsOSMLinkTest.java:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abc3f514f005cba49e406658e2d3086eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testGeometry =&quot;POINT(49.9928617 8.2472526)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03791.html">test</a></li><li class="navelem"><a class="el" href="a03794.html">geometry</a></li><li class="navelem"><a class="el" href="a03797.html">exporter</a></li><li class="navelem"><a class="el" href="a08343.html">AsOSMLinkTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

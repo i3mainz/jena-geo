@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: Within Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,84 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05746.html','');});
+$(document).ready(function(){initNavTree('a05743.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a05740.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SameAlignment Member List</div>  </div>
+<div class="title">Within Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a05746.html">SameAlignment</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a05746.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a>(NodeValue v1, NodeValue v2)</td><td class="entry"><a class="el" href="a05746.html">SameAlignment</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Inverse of contains, so it is sufficient to change the arguments.  
+ <a href="a05743.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Within:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05742.png" border="0" usemap="#Within_inherit__map" alt="Inheritance graph"/></div>
+<map name="Within_inherit__map" id="Within_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Within:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05741.png" border="0" usemap="#Within_coll__map" alt="Collaboration graph"/></div>
+<map name="Within_coll__map" id="Within_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad5a8389ba39a9efb6e460f29b7fb0156"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05743.html#ad5a8389ba39a9efb6e460f29b7fb0156">exec</a> (NodeValue v, NodeValue v1)</td></tr>
+<tr class="separator:ad5a8389ba39a9efb6e460f29b7fb0156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Inverse of contains, so it is sufficient to change the arguments. </p>
+<ul>
+<li></li>
+</ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad5a8389ba39a9efb6e460f29b7fb0156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a8389ba39a9efb6e460f29b7fb0156">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a06355.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a06327.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, <a class="el" href="a06023.html#a12e2b8ceb06209d8b13dc78d58cdad22">LiteralUtils.rasterOrVector()</a>, <a class="el" href="a06023.html#a70d2c83f032867b59a3af555f1ff6d98">LiteralUtils.toGeometry()</a>, and <a class="el" href="a06327.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                        {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                Wrapper wrapper1=LiteralUtils.rasterOrVector(v);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                Wrapper wrapper2=LiteralUtils.rasterOrVector(v);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">if</span>(wrapper1 instanceof GeometryWrapper &amp;&amp; wrapper2 instanceof GeometryWrapper) {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        GeometryWrapper transGeom2;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                transGeom2 = ((GeometryWrapper)wrapper2).transform(((GeometryWrapper)wrapper1).getSrsInfo());</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().within(transGeom2.getXYGeometry()));</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        } <span class="keywordflow">catch</span> (MismatchedDimensionException | TransformException | FactoryException e) {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13855.html">RuntimeException</a>(<span class="stringliteral">&quot;CRS transformation failed&quot;</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(wrapper1 instanceof CoverageWrapper &amp;&amp; wrapper2 instanceof CoverageWrapper) {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();             </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeBoolean(bbox1.within(bbox2));                      </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <span class="keywordflow">if</span>(wrapper1 instanceof CoverageWrapper) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeBoolean(bbox1.within(geom));</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeBoolean(geom.within(bbox1));                               </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div><div class="ttc" id="a13855_html"><div class="ttname"><a href="a13855.html">RuntimeException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03631.html">de</a></li><li class="navelem"><a class="el" href="a03632.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03633.html">cs</a></li><li class="navelem"><a class="el" href="a03634.html">semgis</a></li><li class="navelem"><a class="el" href="a03635.html">arqextension</a></li><li class="navelem"><a class="el" href="a03670.html">raster</a></li><li class="navelem"><a class="el" href="a03675.html">relation</a></li><li class="navelem"><a class="el" href="a05743.html">Within</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

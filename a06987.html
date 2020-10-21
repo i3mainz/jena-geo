@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: SetupService Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,28 +56,112 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06990.html','');});
+$(document).ready(function(){initNavTree('a06987.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a06984.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Listeners Member List</div>  </div>
+<div class="title">SetupService Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06990.html">Listeners</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06990.html#ad609b463c6367b8c1140f2e208d11f57">addListener</a>(final ChangeListener listener, ChangeListener[] listeners)</td><td class="entry"><a class="el" href="a06990.html">Listeners</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06990.html#a7606bf51bde5c63da37cd4542c653a14">fireChanged</a>(final Object source, final ChangeListener[] listeners)</td><td class="entry"><a class="el" href="a06990.html">Listeners</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06990.html#a1ea1523256bc6856d51cff5a0505c1d9">Listeners</a>()</td><td class="entry"><a class="el" href="a06990.html">Listeners</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06990.html#ac2b84d082d80fb2478baef6d643ab47c">removeListener</a>(final ChangeListener listener, ChangeListener[] listeners)</td><td class="entry"><a class="el" href="a06990.html">Listeners</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07166.html#a6713f4ef0e5017eefa1b00c080924796">Static</a>()</td><td class="entry"><a class="el" href="a07166.html">Static</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<p>An interface for modules which can perform some initialization and shutdown process.  
+ <a href="a06987.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for SetupService:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06986.png" border="0" usemap="#SetupService_inherit__map" alt="Inheritance graph"/></div>
+<map name="SetupService_inherit__map" id="SetupService_inherit__map">
+<area shape="rect" id="node2" href="a06675.html" title="Performs initialization and shutdown of the. " alt="" coords="27,80,83,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae68d46c6c1c83552cf82fcb91ab148b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06987.html#ae68d46c6c1c83552cf82fcb91ab148b9">initialize</a> (Properties properties, boolean reinit)</td></tr>
+<tr class="memdesc:ae68d46c6c1c83552cf82fcb91ab148b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when the module needs to be initialized.  <a href="#ae68d46c6c1c83552cf82fcb91ab148b9">More...</a><br /></td></tr>
+<tr class="separator:ae68d46c6c1c83552cf82fcb91ab148b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7861ee1569802186a619778efc85af13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06987.html#a7861ee1569802186a619778efc85af13">shutdown</a> ()</td></tr>
+<tr class="memdesc:a7861ee1569802186a619778efc85af13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when the module needs to be shutdown.  <a href="#a7861ee1569802186a619778efc85af13">More...</a><br /></td></tr>
+<tr class="separator:a7861ee1569802186a619778efc85af13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An interface for modules which can perform some initialization and shutdown process. </p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.11</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07135.html" title="A central place where to perform initialization and shutdown of all Geotk services. ">org.geotoolkit.lang.Setup</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.10  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae68d46c6c1c83552cf82fcb91ab148b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68d46c6c1c83552cf82fcb91ab148b9">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialize </td>
+          <td>(</td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>reinit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked when the module needs to be initialized. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">properties</td><td>The properties given by the user. </td></tr>
+    <tr><td class="paramname">reinit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a06675.html#acc3dd720cb527ba4e667680650bc2454">Setup</a>.</p>
+
+</div>
+</div>
+<a id="a7861ee1569802186a619778efc85af13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7861ee1569802186a619778efc85af13">&#9670;&nbsp;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked when the module needs to be shutdown. </p>
+
+<p>Implemented in <a class="el" href="a06675.html#a7861ee1569802186a619778efc85af13">Setup</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03698.html">org</a></li><li class="navelem"><a class="el" href="a03707.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03725.html">internal</a></li><li class="navelem"><a class="el" href="a06987.html">SetupService</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

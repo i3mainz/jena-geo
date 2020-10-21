@@ -1,6 +1,9 @@
 var a03681 =
 [
-    [ "AddRing", "a05258.html", "a05258" ],
-    [ "RemoveRing", "a05262.html", "a05262" ],
-    [ "SetRing", "a05266.html", "a05266" ]
+    [ "Geo", "a06055.html", "a06055" ],
+    [ "Geof", "a06063.html", "a06063" ],
+    [ "GML", "a06071.html", "a06071" ],
+    [ "PostGISGeo", "a06079.html", "a06079" ],
+    [ "Units", "a06087.html", "a06087" ],
+    [ "WKT", "a06095.html", "a06095" ]
 ];

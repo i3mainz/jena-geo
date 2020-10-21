@@ -1,6 +1,7 @@
 var a03637 =
 [
-    [ "GeobufDecoder", "a03874.html", "a03874" ],
-    [ "GeobufEncoder", "a03878.html", "a03878" ],
-    [ "GeobufFeature", "a03886.html", "a03886" ]
+    [ "MakeBox2D", "a04007.html", "a04007" ],
+    [ "MakeBox3D", "a04011.html", "a04011" ],
+    [ "MakeEnvelope", "a04015.html", "a04015" ],
+    [ "OctogonalEnvelope", "a04019.html", "a04019" ]
 ];
