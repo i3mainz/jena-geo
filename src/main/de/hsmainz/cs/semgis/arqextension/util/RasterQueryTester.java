@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridCoverage2D;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.geotiff.GeoTiffStore;
@@ -21,7 +20,7 @@ public class RasterQueryTester {
 	}
 	
 	public static void main(String[] args) throws DataStoreException {
-		GridCoverage2D coverage;
+		GridCoverage coverage;
 		/*try {
 			coverage = CoverageIO.read(geometryLiteral);
 			return new CoverageWrapper(coverage, URI);
