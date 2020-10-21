@@ -43,7 +43,7 @@ public class WKBRastDatatype extends RasterDataType {
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
 		WKBRasterReader reader2=new WKBRasterReader();
-		GridCoverage2D coverage;
+		GridCoverage coverage;
 		try {
 			coverage = reader2.readCoverage(Base64.decode(geometryLiteral), null);
 			System.out.println(coverage);

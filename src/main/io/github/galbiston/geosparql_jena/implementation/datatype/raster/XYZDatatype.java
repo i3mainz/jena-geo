@@ -8,8 +8,6 @@ import java.awt.image.WritableRaster;
 import javax.media.jai.DataBufferFloat;
 
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridCoverage2D;
-import org.apache.sis.coverage.grid.GridCoverageBuilder2;
 
 import de.hsmainz.cs.semgis.arqextension.vocabulary.PostGISGeo;
 import io.github.galbiston.geosparql_jena.implementation.datatype.RasterDataType;

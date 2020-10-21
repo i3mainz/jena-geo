@@ -48,7 +48,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 				writer.write(((CoverageWrapper) geometry).getParsingGeometry().render(null));
 				writer.endWriteSequence();
 				return writer.getOutput().toString();
-			} catch (IOException | CannotEvaluateException e) {
+			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				throw new RuntimeException();
