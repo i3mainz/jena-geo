@@ -14,6 +14,7 @@ public class AddBand extends FunctionBase2 {
 	public NodeValue exec(NodeValue v,NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();
+		raster.getSampleDimensions().add(arg0)
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 

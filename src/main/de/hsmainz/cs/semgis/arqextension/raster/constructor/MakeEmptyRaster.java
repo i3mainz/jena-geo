@@ -33,6 +33,7 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridCoverageBuilder2;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.referencing.CommonCRS;
+import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 public class MakeEmptyRaster extends FunctionBase0 {
@@ -53,7 +54,8 @@ public class MakeEmptyRaster extends FunctionBase0 {
 		CoordinateReferenceSystem crs = CommonCRS.WGS84.normalizedGeographic();
 		Envelope2D envelope = new Envelope2D(crs, 0, 0, 30, 30);
 
-		GridCoverageBuilder2 gcb = new GridCoverageBuilder2();
+		GridCoverageBuilder gcb = new GridCoverageBuilder();
+		gcb.
 		gcb.setValues(raster);
 		GridCoverage gc = gcb.build();
 		return CoverageWrapper.createCoverage(gc, "WGS84", WKBRastDatatype.URI.toString()).asNodeValue();

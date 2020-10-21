@@ -36,12 +36,8 @@ public class Value extends FunctionBase4 {
         Integer column = v3.getInteger().intValue();
         Integer row = v4.getInteger().intValue();
         Double d;
-		try {
-			d = ((double[]) raster.render(null).getData().getDataElements(column, row, new double[]{0.}))[0];
-	        return NodeValue.makeDouble(d);
-		} catch (CannotEvaluateException e) {
-			return null;
-		}
+		d = ((double[]) raster.render(null).getData().getDataElements(column, row, new double[]{0.}))[0];
+		return NodeValue.makeDouble(d);
 
 	}
 

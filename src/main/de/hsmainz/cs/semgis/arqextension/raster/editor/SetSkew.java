@@ -4,7 +4,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.sis.coverage.grid.GridCoverage;
 //import org.apache.sis.coverage.grid.GridCoverageBuilder;
-import org.apache.sis.internal.coverage.j2d.BufferedGridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 

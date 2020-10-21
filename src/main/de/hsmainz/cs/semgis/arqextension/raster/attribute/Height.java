@@ -29,11 +29,7 @@ public class Height extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();
-		try {
-			return NodeValue.makeInteger(raster.render(raster.getGridGeometry().getExtent()).getHeight());
-		} catch (CannotEvaluateException e) {
-			return null;
-		}
+		return NodeValue.makeInteger(raster.render(raster.getGridGeometry().getExtent()).getHeight());
 	}
 
 }

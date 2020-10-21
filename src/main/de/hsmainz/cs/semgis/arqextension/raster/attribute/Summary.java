@@ -30,16 +30,12 @@ public class Summary extends FunctionBase1 {
 		GridCoverage raster=wrapper.getXYGeometry();
 		StringBuilder builder = new StringBuilder();
 		RenderedImage rendered;
-		try {
-			rendered = raster.render(null);
-        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getGridGeometry().toString() + System.lineSeparator());
-        for (int i = 0; i < raster.getSampleDimensions().size(); i++) {
-            builder.append("band " + i + " of pixtype " + raster.getSampleDimensions().get(i).getCategories() + " is in-db with NODATA value of " + raster.getSampleDimensions().get(i).getNoDataValues() + System.lineSeparator());
-        }
-        return NodeValue.makeString(builder.toString());
-		} catch (CannotEvaluateException e) {
-			return null;
-		}
+		rendered = raster.render(null);
+      builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getGridGeometry().toString() + System.lineSeparator());
+      for (int i = 0; i < raster.getSampleDimensions().size(); i++) {
+		builder.append("band " + i + " of pixtype " + raster.getSampleDimensions().get(i).getCategories() + " is in-db with NODATA value of " + raster.getSampleDimensions().get(i).getNoDataValues() + System.lineSeparator());
+      }
+      return NodeValue.makeString(builder.toString());
 	}
 
 }
