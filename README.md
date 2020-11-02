@@ -232,7 +232,19 @@ Planned further implementations:
 
 #### Coordinate Reference System Functions
 
+<details>
+  <summary>These functions are applicable to raster and vector data as they aim to deal with their coordinate reference system.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_EPSGToSRID](http://www.opengis.net/ont/geosparqlplus#st_EPSGToSRID) (xsd:string epsg)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Converts an EPSG CRS representation to an SRID representation. | SRID  | No  | Yes  | Yes  |  
+| [geo2:ST_SetSRID](http://www.opengis.net/ont/geosparqlplus#st_SetSRID) (sf:Geometry geom, xsd:string epsg)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Sets the SRID of a given literal. | SRID  | No  | Yes  | Yes  |  
+</details>
+
 ### Raster/Coverage support
+
+
+#### Raster literals
 
 #### Raster Attribute Functions
 
@@ -256,5 +268,8 @@ Planned further implementations:
 
 #### Unit Conversion Functions
 
+## GeoSPARQL Ontology extension
 
+### Ontology of functions
 
+### Ontology for modelling geospatial data
