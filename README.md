@@ -23,8 +23,24 @@ The main contribution of this implementation is the provision of further geospat
   <summary>Spatial aggregate functions define aggregate functions which can be applied to geometry and coverage literals.</summary>
 
 
-| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+| Function  | Return Value  | Description | Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
+| [geo2:ST_AVGX](http://www.opengis.net/ont/geosparqlplus#st_avgx)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the aggregate of all given X coordinate values | Aggregate | No | Todo  | Yes  | 
+| [geo2:ST_AVGXDistinct](http://www.opengis.net/ont/geosparqlplus#st_avgxdistinct)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the aggregate of all given distinct X coordinate values | Aggregate | No  | Todo  | Yes  | 
+| [geo2:ST_AVGY](http://www.opengis.net/ont/geosparqlplus#st_avgy)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the aggregate of all given Y coordinate values | Aggregate | No | Todo  | Yes  |
+| [geo2:ST_AVGYDistinct](http://www.opengis.net/ont/geosparqlplus#st_avgydistinct)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the aggregate of all given Y coordinate values | Aggregate | No | Todo  | Yes  |
+| [geo2:ST_AVGZDistinct](http://www.opengis.net/ont/geosparqlplus#st_avgzdistinct)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the aggregate of all given Z coordinate values | Aggregate | No | Todo  | Yes  |
+| [geo2:ST_BoundingBox](http://www.opengis.net/ont/geosparqlplus#st_boundingbox)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Calculates an aggergate boundingbox of all given geometries | Aggregate | No | Todo  | Yes  |
+| [geo2:ST_BoundingBoxDistinct](http://www.opengis.net/ont/geosparqlplus#st_boundingboxdistinct)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Calculates an aggregate boundingbox of all given distinct geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MaxX](http://www.opengis.net/ont/geosparqlplus#st_maxx)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the maximum X coordinate of all given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MaxY](http://www.opengis.net/ont/geosparqlplus#st_maxy)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the maximum Y coordinate of all given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MaxZ](http://www.opengis.net/ont/geosparqlplus#st_maxz)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the maximum Z coordinate of all given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MinX](http://www.opengis.net/ont/geosparqlplus#st_minx)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the minimum X coordinate of all given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MinXDistinct](http://www.opengis.net/ont/geosparqlplus#st_minxdistinct)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the minimum X coordinate of all distinct given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MinY](http://www.opengis.net/ont/geosparqlplus#st_miny)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the minimum Y coordinate of all given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MinYDistinct](http://www.opengis.net/ont/geosparqlplus#st_minxdistinct)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the minimum Y coordinate of all distinct given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MinZ](http://www.opengis.net/ont/geosparqlplus#st_miny)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the minimum Z coordinate of all given geometries | Aggregate | No | Todo  | No  |
+| [geo2:ST_MinZDistinct](http://www.opengis.net/ont/geosparqlplus#st_minzdistinct)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Calculates the minimum Z coordinate of all distinct given geometries | Aggregate | No | Todo  | No  |
 
 </details>
 
