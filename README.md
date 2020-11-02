@@ -1,4 +1,4 @@
-# postgis-jena
+# jena-geo
 
 This implementation extends the ARQ query processor of Apache Jena GeoSPARQL with further functions to support geometry operations.
 This implementation builds upon and extends work by Greg Albiston:
@@ -184,7 +184,38 @@ Planned further implementations:
 
 #### Geometry Relation Functions
 
+<details>
+  <summary>These functions relate vector literals to other vector literals and/or raster data.</summary>
+  
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_AreaSimilarity](http://www.opengis.net/ont/geosparqlplus#st_AreaSimilarity) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the area similarity score of two vector geometry literals. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_CentroidDistance](http://www.opengis.net/ont/geosparqlplus#st_AreaSimilarity) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the centroid distance between two geometry literals. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_ClosestCoordinate](http://www.opengis.net/ont/geosparqlplus#st_ClosestCoordinate) (sf:Geometry geom, sf:Geometry geom2)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the closest coordinate between two geometry literals. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_Distance](http://www.opengis.net/ont/geosparqlplus#st_Distance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the difference between two geometry literals. | Relation  | Yes  | Todo  | Yes  |
+| [geo2:ST_DWithin](http://www.opengis.net/ont/geosparqlplus#st_DWithin) (sf:Geometry geom, sf:Geometry geom2, xsd:double distance)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#double) | Returns true if geometry literal one is within a given distance of geometry literal two. | Relation  | Yes  | Todo  | Yes  |
+| [geo2:ST_EqualNorm](http://www.opengis.net/ont/geosparqlplus#st_EqualNorm) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are equal in their normalized form. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_EqualSRS](http://www.opengis.net/ont/geosparqlplus#st_EqualSRS) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are using the same spatial reference system. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_EqualTopo](http://www.opengis.net/ont/geosparqlplus#st_EqualTopo) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are topologically equal. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_EqualType](http://www.opengis.net/ont/geosparqlplus#st_EqualTopo) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometry types are equal. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_FrechetDistance](http://www.opengis.net/ont/geosparqlplus#st_FrechetDistance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the Frechet Distance between two geometries. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_IntersectionMatrix](http://www.opengis.net/ont/geosparqlplus#st_IntersectionMatrix) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the intersection matrix between to geometries. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_IntersectionPercentage](http://www.opengis.net/ont/geosparqlplus#st_IntersectionPercentage) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the intersection matrix between to geometries. | Relation  | No  | Yes  | Yes  |
+
+</details>
+
 #### Geometry Transformation Functions
+
+<details>
+  <summary>These functions relate vector literals to other vector literals and/or raster data.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_CollectionExtract](http://www.opengis.net/ont/geosparqlplus#st_CollectionExtract) (sf:Geometry geom,xsd:string type)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a GeometryCollection version of the given geometry. | Relation  | No  | N/A  | Yes  |  
+| [geo2:ST_CollectionHomogenize](http://www.opengis.net/ont/geosparqlplus#st_CollectionExtract) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the simplest representation of a given geometry. | Relation  | No  | N/A  | Yes  |  
+ 
+</details>
+
 
 #### LineString Functions
 
