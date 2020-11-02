@@ -239,6 +239,12 @@ Planned further implementations:
 |---|---|---|---|---|---|---|
 | [geo2:ST_EPSGToSRID](http://www.opengis.net/ont/geosparqlplus#st_EPSGToSRID) (xsd:string epsg)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Converts an EPSG CRS representation to an SRID representation. | SRID  | No  | Yes  | Yes  |  
 | [geo2:ST_SetSRID](http://www.opengis.net/ont/geosparqlplus#st_SetSRID) (sf:Geometry geom, xsd:string epsg)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Sets the SRID of a given literal. | SRID  | No  | Yes  | Yes  |  
+| [geo2:ST_GetAxis1Name](http://www.opengis.net/ont/geosparqlplus#st_GetAxis1Name) (sf:Geometry geom)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the name of the first axis of the CRS. | SRID  | No  | Yes  | Yes  | 
+| [geo2:ST_GetAxis1Orientation](http://www.opengis.net/ont/geosparqlplus#st_GetAxis1Orientation) (sf:Geometry geom)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the orientation of the first axis of the CRS. | SRID  | No  | Yes  | Yes  | 
+| [geo2:ST_GetAxis2Name](http://www.opengis.net/ont/geosparqlplus#st_GetAxis2Name) (sf:Geometry geom)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the name of the second axis of the CRS. | SRID  | No  | Yes  | Yes  | 
+| [geo2:ST_GetAxis2Orientation](http://www.opengis.net/ont/geosparqlplus#st_GetAxis2Orientation) (sf:Geometry geom)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the orientation of the second axis of the CRS. | SRID  | No  | Yes  | Yes  | 
+| [geo2:ST_SRIDHasFlippedAxis](http://www.opengis.net/ont/geosparqlplus#st_SRIDHasFlippedAxis) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the SRID exhibits a flipped axis. | SRID  | No  | Yes  | Yes  | 
+| [geo2:ST_SRIDToEPSG](http://www.opengis.net/ont/geosparqlplus#st_SRIDHasFlippedAxis) (xsd:integer srid)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Converts an SRID CRS representation to an EPSG representation. | SRID  | No  | Yes  | Yes  | 
 </details>
 
 ### Raster/Coverage support
