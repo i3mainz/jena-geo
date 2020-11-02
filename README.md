@@ -207,13 +207,20 @@ Planned further implementations:
 #### Geometry Transformation Functions
 
 <details>
-  <summary>These functions relate vector literals to other vector literals and/or raster data.</summary>
+  <summary>These functions transform vector literals according to the specified function. They are mostly not applicable to raster data.</summary>
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
-| [geo2:ST_CollectionExtract](http://www.opengis.net/ont/geosparqlplus#st_CollectionExtract) (sf:Geometry geom,xsd:string type)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a GeometryCollection version of the given geometry. | Relation  | No  | N/A  | Yes  |  
-| [geo2:ST_CollectionHomogenize](http://www.opengis.net/ont/geosparqlplus#st_CollectionExtract) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the simplest representation of a given geometry. | Relation  | No  | N/A  | Yes  |  
- 
+| [geo2:ST_CollectionExtract](http://www.opengis.net/ont/geosparqlplus#st_CollectionExtract) (sf:Geometry geom,xsd:string type)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a GeometryCollection version of the given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_CollectionHomogenize](http://www.opengis.net/ont/geosparqlplus#st_CollectionExtract) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the simplest representation of a given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Densify](http://www.opengis.net/ont/geosparqlplus#st_Densify) (sf:Geometry geom, xsd:double tolerance)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a densified version of the given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_FlipCoordinates](http://www.opengis.net/ont/geosparqlplus#st_FlipCoordinates) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a given geometry with the X/Y axis flipped. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Force2D](http://www.opengis.net/ont/geosparqlplus#st_Force2D) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a 2D representation of a given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Force3D](http://www.opengis.net/ont/geosparqlplus#st_Force3D) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a 3D representation of a given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Force3DM](http://www.opengis.net/ont/geosparqlplus#st_Force3DM) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a 3DM representation of a given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Force4D](http://www.opengis.net/ont/geosparqlplus#st_Force4D) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a 4D representation of a given geometry. | Transformation  | No  | N/A  | Yes  |
+| [geo2:ST_ForceCollection](http://www.opengis.net/ont/geosparqlplus#st_ForceCollection) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a gepometry collection of a given geometry. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Reverse](http://www.opengis.net/ont/geosparqlplus#st_Reverse) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a geometry with reverse coordinates. | Transformation  | No  | N/A  | Yes  |  
 </details>
 
 
