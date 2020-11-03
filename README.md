@@ -238,7 +238,13 @@ Planned further implementations:
 | [geo2:ST_Force3DM](http://www.opengis.net/ont/geosparqlplus#st_Force3DM) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a 3DM representation of a given geometry. | Transformation  | No  | N/A  | Yes  |  
 | [geo2:ST_Force4D](http://www.opengis.net/ont/geosparqlplus#st_Force4D) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a 4D representation of a given geometry. | Transformation  | No  | N/A  | Yes  |
 | [geo2:ST_ForceCollection](http://www.opengis.net/ont/geosparqlplus#st_ForceCollection) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a gepometry collection of a given geometry. | Transformation  | No  | N/A  | Yes  |  
-| [geo2:ST_Reverse](http://www.opengis.net/ont/geosparqlplus#st_Reverse) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a geometry with reverse coordinates. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_Multi](http://www.opengis.net/ont/geosparqlplus#st_Multi) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a "Multi" version of the given geometry if applicable. | Transformation  | No  | N/A  | Yes  | 
+| [geo2:ST_Normalize](http://www.opengis.net/ont/geosparqlplus#st_Normalize) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a normalized version of the given geometry. | Transformation  | No  | N/A  | Yes  | 
+| [geo2:ST_PrecisionReducer](http://www.opengis.net/ont/geosparqlplus#st_PrecisionReducer) (sf:Geometry geom, xsd:double precisionvalue)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a version of the given geometry with reduced precision. | Transformation  | No  | N/A  | Yes  | 
+| [geo2:ST_Reverse](http://www.opengis.net/ont/geosparqlplus#st_Reverse) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a geometry with reverse coordinates. | Transformation  | No  | N/A  | Yes  | 
+| [geo2:ST_Simplify](http://www.opengis.net/ont/geosparqlplus#st_Simplify) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a simplified geometry according to the Douglas-Peucker algorithm. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_SimplifyPreserveTopology](http://www.opengis.net/ont/geosparqlplus#st_SimplifyPreserveTopology) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a simplified geometry preserving its topology. | Transformation  | No  | N/A  | Yes  |
+| [geo2:ST_SimplifyVW](http://www.opengis.net/ont/geosparqlplus#st_SimplifyVW) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a simplified geometry calculated with the Visvalingam-Whyatt algorithm. | Transformation  | No  | N/A  | Yes  |  
 </details>
 
 
