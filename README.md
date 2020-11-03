@@ -269,8 +269,13 @@ These functions are applicable to Polygon representations only and cannot be use
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
+| [geo2:ST_CircularityIndex](http://www.opengis.net/ont/geosparqlplus#st_CircularityIndex) (sf:Geometry geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double)| Calculates the circularity index of the Polygon. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_Circumcentre](http://www.opengis.net/ont/geosparqlplus#st_Circumcentre) (sf:Geometry geom)  | [sf:Point](http://www.opengis.net/ont/sf#Point)| Returns the circumcentre of the Polygon. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_ExteriorRing](http://www.opengis.net/ont/geosparqlplus#st_ExteriorRing) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry)| Returns the exterior ring of the Polygon. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_HasDuplicateRings](http://www.opengis.net/ont/geosparqlplus#st_HasDuplicateRings) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon has duplicate rings. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_InteriorRingN](http://www.opengis.net/ont/geosparqlplus#st_InteriorRingN) (sf:Geometry geom, xsd:integer ringnum)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry)| Returns the nth interior ring of the Polygon. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsAcute](http://www.opengis.net/ont/geosparqlplus#st_IsAcute) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is acute. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsConvex](http://www.opengis.net/ont/geosparqlplus#st_IsConvex) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is convex. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_IsEquilateralTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsEquilateralTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is an equilateral triangle. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_IsIsocelesTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsIsocelesTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is an isoceles triangle. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_IsPointedTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsPointedTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is a pointed triangle. | Attribute | No  | N/A  | Yes  | 
@@ -279,6 +284,31 @@ These functions are applicable to Polygon representations only and cannot be use
 | [geo2:ST_IsTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is a triangle. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_NRings](http://www.opengis.net/ont/geosparqlplus#st_Nrings) (sf:Geometry geom)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of rings of the polygon. | Attribute | No  | N/A  | Yes  | 
 | [geo2:ST_NumInteriorRings](http://www.opengis.net/ont/geosparqlplus#st_NInteriorRings) (sf:Geometry geom)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of interior rings of the polygon. | Attribute | No  | N/A  | Yes  | 
+</details>
+
+##### Polygon Constructor Functions
+
+<details>
+  <summary>These functions create Polygons from String representations.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_PolygonFromText](http://www.opengis.net/ont/geosparqlplus#st_PolygonFromText) (xsd:string text)  | [sf:Polygon](http://www.opengis.net/ont/sf#Polygon) | Parses a polygon from a given WKT string. | Editor | No  | N/A  | Yes  | 
+| [geo2:ST_PolygonFromWKB](http://www.opengis.net/ont/geosparqlplus#st_PolygonFromWKB) (xsd:string text)  | [sf:Polygon](http://www.opengis.net/ont/sf#Polygon) | Parses a polygon from a given WKB string. | Editor | No  | N/A  | Yes  | 
+
+</details>
+
+##### Polygon Editor Functions
+
+<details>
+  <summary>These functions modify Polygon representations.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_AddRing](http://www.opengis.net/ont/geosparqlplus#st_AddRing) (sf:Polygon geom, sf:LineString ring)  | [sf:Polygon](http://www.opengis.net/ont/sf#Polygon) | Adds a ring to the given Polygon. | Editor | No  | N/A  | Yes  | 
+| [geo2:ST_RemoveRing](http://www.opengis.net/ont/geosparqlplus#st_RemoveRing) (sf:Polygon geom, xsd:integer ringnum)  | [sf:Polygon](http://www.opengis.net/ont/sf#Polygon) | Removes a ring from the given Polygon. | Editor | No  | N/A  | Yes  | 
+| [geo2:ST_SetRing](http://www.opengis.net/ont/geosparqlplus#st_SetRing) (sf:Polygon geom, sf:LineString ring, xsd:integer ringnum)  | [sf:Polygon](http://www.opengis.net/ont/sf#Polygon) | Sets a ring in the given Polygon. | Editor | No  | N/A  | Yes  | 
+
 </details>
 
 #### Coordinate Reference System Functions
