@@ -49,10 +49,13 @@ Particular focus is given to highlight the compatibility of given functions with
 
 This section defines additional functions for vector geometries which are supported by the implementation.
 If functions from GeoSPARQL are reimplemented they are marked as such.
+If functions may also relate vector geometries to raster data, they are marked as such.
+Functions which are not fully implemented or unstable are marked in the table.
 
 #### Geometry Literals
 
-This implementation supports the following geometry literal types:
+<details>
+  <summary>This implementation supports the following geometry literal types:</summary>
 
 - [Encoded Polyline](https://developers.google.com/maps/documentation/utilities/polylinealgorithm)
 - [GeoURI](https://tools.ietf.org/html/rfc5870) Literals
@@ -70,6 +73,8 @@ Planned further implementations:
 - [ESRIJSON](https://doc.arcgis.com/en/iot/ingest/esrijson.htm)
 - [GeoBuf](https://github.com/mapbox/geobuf)
 - [TopoJSON](https://github.com/topojson/topojson)
+
+</details>
 
 #### Geometry Attribute Functions
 
@@ -341,7 +346,10 @@ This section introduces supported raster/coverage functions.
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
+| [geo2:ST_Envelope](http://www.opengis.net/ont/geosparqlplus#st_Envelope) (geo2:Raster rast)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the envelope/minimum bounding box of the given raster. | Attribute  | No  | Yes  | Yes  |
 | [geo2:ST_NumBands](http://www.opengis.net/ont/geosparqlplus#st_NumBands) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of raster bands of the given raster. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_NumXTiles](http://www.opengis.net/ont/geosparqlplus#st_NumXTiles) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of X tiles of the given raster. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_NumYTiles](http://www.opengis.net/ont/geosparqlplus#st_NumYTiles) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of Y tiles of the given raster. | Attribute  | No  | Yes  | Yes  | 
 </details>
 
 #### Raster Algebra Functions
