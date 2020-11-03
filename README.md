@@ -174,7 +174,8 @@ Planned further implementations:
   
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
-| [geo2:ST_AddGeometry](http://www.opengis.net/ont/geosparqlplus#st_addGeometry) (sf:Geometry geom,sf:Geometry toadd)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a GeometryCollection with the added Geometry. | Relation  | No  | N/A  | Yes  |
+| [geo2:ST_AddGeometry](http://www.opengis.net/ont/geosparqlplus#st_addGeometry) (sf:Geometry geom,sf:Geometry toadd)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a GeometryCollection with the added Geometry. | Editor  | No  | N/A  | Yes  |
+| [geo2:ST_EnsureClosed](http://www.opengis.net/ont/geosparqlplus#st_EnsureClosed) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a closed Geometry. | Editor  | No  | N/A  | Yes  |
 | [geo2:ST_RemoveGeometry](http://www.opengis.net/ont/geosparqlplus#st_removeGeometry)  (sf:Geometry geom,xsd:integer position) | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a GeometryCollection with a removed Geometry at a given position. | Editor  | No  | N/A | Yes  |
 | [geo2:ST_RemoveRepeatedPoints](http://www.opengis.net/ont/geosparqlplus#st_removeRepeatedPoints)  (sf:Geometry geom,xsd:double tolerance) | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a Geometry with repeated points remove according to a given tolerance. | Editor  | No  | N/A  | Yes  |
 | [geo2:ST_SetGeometry](http://www.opengis.net/ont/geosparqlplus#st_setGeometry)  (sf:Geometry geom,xsd:integer position) | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Sets a geometry at the given position of the GeometryCollection. | Editor  | No  | N/A  | Yes  |
