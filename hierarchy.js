@@ -1746,7 +1746,6 @@ var hierarchy =
       [ "Threads", "a07066.html", null ]
     ] ],
     [ "RenderedImage", "a13518.html", null ],
-    [ "RenderedImage", "a13518.html", null ],
     [ "RenderedImage", null, [
       [ "PlanarImage", "a06410.html", [
         [ "ReshapedImage", "a06406.html", null ],
@@ -1756,6 +1755,7 @@ var hierarchy =
       [ "LargeRenderedImage", "a06786.html", null ],
       [ "RecolorRenderedImage", "a06890.html", null ]
     ] ],
+    [ "RenderedImage", "a13518.html", null ],
     [ "RenderingHints", null, [
       [ "Hints", "a06566.html", [
         [ "EmptyHints", "a06550.html", null ],
