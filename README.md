@@ -330,10 +330,19 @@ These functions are applicable to Polygon representations only and cannot be use
 
 ### Raster/Coverage support
 
+This section introduces supported raster/coverage functions.
 
 #### Raster literals
 
 #### Raster Attribute Functions
+
+<details>
+  <summary>These functions returns attributes of a coverage/raster. They are not applicable to vector data.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_NumBands](http://www.opengis.net/ont/geosparqlplus#st_NumBands) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of raster bands of the given raster. | Attribute  | No  | Yes  | Yes  | 
+</details>
 
 #### Raster Algebra Functions
 
