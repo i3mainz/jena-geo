@@ -137,19 +137,19 @@ Planned further implementations:
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
-| [geo2:ST_BBOXAbove](http://www.opengis.net/ont/geosparqlplus#st_bboxabove) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely above the boundingbox of literal two. | Relation  | No  | Yes  | Todo  |
-| [geo2:ST_BBOXBelow](http://www.opengis.net/ont/geosparqlplus#st_bboxbelow) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely below the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXContains](http://www.opengis.net/ont/geosparqlplus#st_bboxcontains) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely contains the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXEquals](http://www.opengis.net/ont/geosparqlplus#st_bboxcontains) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one equals the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXFPIntersects](http://www.opengis.net/ont/geosparqlplus#st_bboxfpintersects) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one intersects the boundingbox of literal two measuring with floating point precision. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXIntersects](http://www.opengis.net/ont/geosparqlplus#st_bboxintersects) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one intersects the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXIsContainedBy](http://www.opengis.net/ont/geosparqlplus#st_bboxisContainedBy) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely contained by the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXLeftOf](http://www.opengis.net/ont/geosparqlplus#st_bboxLeftOf) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely left of the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXOverlapsAbove](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsAbove) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is above of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXOverlapsBelow](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsBelow) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is below of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXOverlapsLeft](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsLeft) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is left of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXOverlapsRight](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsRight) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is right of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Todo  | 
-| [geo2:ST_BBOXRightOf](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsRight) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely right of the boundingbox of literal two. | Relation  | No  | Yes  | Todo  | 
+| [geo2:ST_BBOXAbove](http://www.opengis.net/ont/geosparqlplus#st_bboxabove) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely above the boundingbox of literal two. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_BBOXBelow](http://www.opengis.net/ont/geosparqlplus#st_bboxbelow) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely below the boundingbox of literal two. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXContains](http://www.opengis.net/ont/geosparqlplus#st_bboxcontains) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely contains the boundingbox of literal two. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXEquals](http://www.opengis.net/ont/geosparqlplus#st_bboxcontains) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one equals the boundingbox of literal two. | Relation  | No  | Yes  | Yes | 
+| [geo2:ST_BBOXFPIntersects](http://www.opengis.net/ont/geosparqlplus#st_bboxfpintersects) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one intersects the boundingbox of literal two measuring with floating point precision. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXIntersects](http://www.opengis.net/ont/geosparqlplus#st_bboxintersects) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one intersects the boundingbox of literal two. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXIsContainedBy](http://www.opengis.net/ont/geosparqlplus#st_bboxisContainedBy) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely contained by the boundingbox of literal two. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXLeftOf](http://www.opengis.net/ont/geosparqlplus#st_bboxLeftOf) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely left of the boundingbox of literal two. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXOverlapsAbove](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsAbove) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is above of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Yes | 
+| [geo2:ST_BBOXOverlapsBelow](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsBelow) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is below of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXOverlapsLeft](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsLeft) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is left of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXOverlapsRight](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsRight) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is right of the boundingbox of literal two but overlaps with it. | Relation  | No  | Yes  | Yes  | 
+| [geo2:ST_BBOXRightOf](http://www.opengis.net/ont/geosparqlplus#st_bboxOverlapsRight) (sf:Geometry geom) | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the boundingbox of literal one is completely right of the boundingbox of literal two. | Relation  | No  | Yes  | Yes  | 
 </details>
 
 #### Geometry Constructors
@@ -200,7 +200,7 @@ Planned further implementations:
 
 </details>
 
-#### Geometry Relation Functions
+#### Geometry/Raster Relation Functions
 
 <details>
   <summary>These functions relate vector literals to other vector literals and/or raster data.</summary>
@@ -210,16 +210,28 @@ Planned further implementations:
 | [geo2:ST_AreaSimilarity](http://www.opengis.net/ont/geosparqlplus#st_AreaSimilarity) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the area similarity score of two vector geometry literals. | Relation  | No  | Todo  | Yes  |
 | [geo2:ST_CentroidDistance](http://www.opengis.net/ont/geosparqlplus#st_AreaSimilarity) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the centroid distance between two geometry literals. | Relation  | No  | Todo  | Yes  |
 | [geo2:ST_ClosestCoordinate](http://www.opengis.net/ont/geosparqlplus#st_ClosestCoordinate) (sf:Geometry geom, sf:Geometry geom2)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the closest coordinate between two geometry literals. | Relation  | No  | Todo  | Yes  |
-| [geo2:ST_Distance](http://www.opengis.net/ont/geosparqlplus#st_Distance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the difference between two geometry literals. | Relation  | Yes  | Todo  | Yes  |
+| [geo2:ST_Contains](http://www.opengis.net/ont/geosparqlplus#st_Contains) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry contains the second. | Relation  | Yes  | Yes  | Yes  |
+| [geo2:ST_ContainsProperly](http://www.opengis.net/ont/geosparqlplus#st_ContainsProperly) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry properly contains the second. | Relation  | Yes  | Yes  | Yes  |
+| [geo2:ST_CoveredBy](http://www.opengis.net/ont/geosparqlplus#st_CoveredBy) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry is covered by the second. | Relation  | Yes  | Yes  | Yes  |
+| [geo2:ST_Covers](http://www.opengis.net/ont/geosparqlplus#st_Covers) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry covers the second. | Relation  | Yes  | Yes  | Yes  |
+| [geo2:ST_Crosses](http://www.opengis.net/ont/geosparqlplus#st_Crosses) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry crosses the second. | Relation  | Yes  | Yes  | Yes  |
+| [geo2:ST_DFullyWithin](http://www.opengis.net/ont/geosparqlplus#st_DFullyWithin) (sf:Geometry geom, sf:Geometry geom2, xsd:double distance)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#double) | Returns true if geometry literal one is fully within a given distance of geometry literal two. | Relation  | Yes  | Todo  | Yes  |
+| [geo2:ST_Disjoint](http://www.opengis.net/ont/geosparqlplus#st_Disjoint) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry and second geometry are disjoint. | Relation  | Yes  | Yes  | Yes  |
+| [geo2:ST_Distance](http://www.opengis.net/ont/geosparqlplus#st_Distance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns the difference between two geometry literals. | Relation  | Yes  | Yes  | Yes  |
 | [geo2:ST_DWithin](http://www.opengis.net/ont/geosparqlplus#st_DWithin) (sf:Geometry geom, sf:Geometry geom2, xsd:double distance)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#double) | Returns true if geometry literal one is within a given distance of geometry literal two. | Relation  | Yes  | Todo  | Yes  |
+| [geo2:ST_Equals](http://www.opengis.net/ont/geosparqlplus#st_Equals) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are equal. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_EqualNorm](http://www.opengis.net/ont/geosparqlplus#st_EqualNorm) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are equal in their normalized form. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_EqualSRS](http://www.opengis.net/ont/geosparqlplus#st_EqualSRS) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are using the same spatial reference system. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_EqualTopo](http://www.opengis.net/ont/geosparqlplus#st_EqualTopo) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries are topologically equal. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_EqualType](http://www.opengis.net/ont/geosparqlplus#st_EqualTopo) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometry types are equal. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_FrechetDistance](http://www.opengis.net/ont/geosparqlplus#st_FrechetDistance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the Frechet Distance between two geometries. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_Intersection](http://www.opengis.net/ont/geosparqlplus#st_Intersection) (sf:Geometry geom, sf:Geometry geom2)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Calculates the intersection between two geometries. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_Intersects](http://www.opengis.net/ont/geosparqlplus#st_Intersects) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries intersect. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_IntersectionMatrix](http://www.opengis.net/ont/geosparqlplus#st_IntersectionMatrix) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the intersection matrix between to geometries. | Relation  | No  | Todo  | Yes  |
 | [geo2:ST_IntersectionPercentage](http://www.opengis.net/ont/geosparqlplus#st_IntersectionPercentage) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the intersection matrix between to geometries. | Relation  | No  | Yes  | Yes  |
-
+| [geo2:ST_Overlaps](http://www.opengis.net/ont/geosparqlplus#st_Overlaps) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries overlap. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_Touches](http://www.opengis.net/ont/geosparqlplus#st_Touches) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries touch each other. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_Within](http://www.opengis.net/ont/geosparqlplus#st_Within) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry is within the second geometry. | Relation  | No  | Yes  | Yes  |
 </details>
 
 #### Geometry Transformation Functions
@@ -245,6 +257,7 @@ Planned further implementations:
 | [geo2:ST_Simplify](http://www.opengis.net/ont/geosparqlplus#st_Simplify) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a simplified geometry according to the Douglas-Peucker algorithm. | Transformation  | No  | N/A  | Yes  |  
 | [geo2:ST_SimplifyPreserveTopology](http://www.opengis.net/ont/geosparqlplus#st_SimplifyPreserveTopology) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a simplified geometry preserving its topology. | Transformation  | No  | N/A  | Yes  |
 | [geo2:ST_SimplifyVW](http://www.opengis.net/ont/geosparqlplus#st_SimplifyVW) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a simplified geometry calculated with the Visvalingam-Whyatt algorithm. | Transformation  | No  | N/A  | Yes  |  
+| [geo2:ST_SwapOrdinates](http://www.opengis.net/ont/geosparqlplus#st_SwapOrdinates) (sf:Geometry geom, xsd:string ordinatecode)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Swaps ordinate values according to a given ordinate String code. | Transformation  | No  | N/A  | Yes  |  
 </details>
 
 
@@ -367,6 +380,8 @@ This section introduces supported raster/coverage functions.
 #### Raster Exporter Functions
 
 #### Raster Relation Functions
+
+See also Geometry/Raster relation functions
 
 #### Raster Transformation Functions
 
