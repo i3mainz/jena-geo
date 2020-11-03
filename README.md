@@ -288,19 +288,27 @@ These functions are applicable to LineString representations only and cannot be 
 
 #### Point Functions
 
-These functions are applicable to Point representations only and cannot be used with raster literals or other types of Geometries.
+These functions are connected to point or coordinate representations of geometries and cannot mostly not be used with raster literals or other types of Geometries.
 
 ##### Point Attribute Functions
 
 <details>
-  <summary>These functions return Point specific attributes.</summary>
+  <summary>These functions return Point or coordinate specific attributes of geometries.</summary>
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
 | [geo2:ST_M](http://www.opengis.net/ont/geosparqlplus#st_M) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the M coordinate of the given point. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_MMax](http://www.opengis.net/ont/geosparqlplus#st_MMax) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the minimum M coordinate of the given geometry. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_MMin](http://www.opengis.net/ont/geosparqlplus#st_MMin) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the maximum M coordinate of the given geometry. | Attribute | No  | N/A  | Yes  |
 | [geo2:ST_X](http://www.opengis.net/ont/geosparqlplus#st_X) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the X coordinate of the given point. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_XMax](http://www.opengis.net/ont/geosparqlplus#st_XMax) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the maximum X coordinate of the given geometry. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_XMin](http://www.opengis.net/ont/geosparqlplus#st_XMin) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the minimum X coordinate of the given geometry. | Attribute | No  | N/A  | Yes  |
 | [geo2:ST_Y](http://www.opengis.net/ont/geosparqlplus#st_Y) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the Y coordinate of the given point. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_YMax](http://www.opengis.net/ont/geosparqlplus#st_YMax) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the maximum Y coordinate of the given geometry. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_YMin](http://www.opengis.net/ont/geosparqlplus#st_YMin) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the minimum Y coordinate of the given geometry. | Attribute | No  | N/A  | Yes  |
 | [geo2:ST_Z](http://www.opengis.net/ont/geosparqlplus#st_Z) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the Z coordinate of the given point. | Attribute | No  | N/A  | Yes  |
+| [geo2:ST_ZMax](http://www.opengis.net/ont/geosparqlplus#st_ZMax) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the maximum Z coordinate of the given geometry. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_ZMin](http://www.opengis.net/ont/geosparqlplus#st_ZMin) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the minimum Z coordinate of the given geometry. | Attribute | No  | N/A  | Yes  |
 </details>
 
 ##### Point Constructor Functions
@@ -418,6 +426,8 @@ Planned further implementations:
 | [geo2:ST_HasNoBand](http://www.opengis.net/ont/geosparqlplus#st_HasNoBand) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) bandnum)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if a raster band of the given number exists, false otherwise. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_Height](http://www.opengis.net/ont/geosparqlplus#st_Height) (geo2:Raster rast)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the height of the given raster. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_IsEmpty](http://www.opengis.net/ont/geosparqlplus#st_IsEmpty) (geo2:Raster rast)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns if the raster contains atomic values. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_MaxValue](http://www.opengis.net/ont/geosparqlplus#st_MaxValue) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) bandnum=1)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the maximum atomic value of the given raster band. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_MinValue](http://www.opengis.net/ont/geosparqlplus#st_MinValue) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) bandnum=1)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the minimum atomic value of the given raster band. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_NumBands](http://www.opengis.net/ont/geosparqlplus#st_NumBands) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of raster bands of the given raster. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_NumXTiles](http://www.opengis.net/ont/geosparqlplus#st_NumXTiles) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of X tiles of the given raster. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_NumYTiles](http://www.opengis.net/ont/geosparqlplus#st_NumYTiles) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of Y tiles of the given raster. | Attribute  | No  | Yes  | Yes  | 
@@ -434,9 +444,31 @@ Planned further implementations:
 |---|---|---|---|---|---|---|
 | [geo2:ST_Add](http://www.opengis.net/ont/geosparqlplus#st_Add) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the sum of the two rasters. | Attribute  | No  | Yes  | Yes  |
 | [geo2:ST_AddConst](http://www.opengis.net/ont/geosparqlplus#st_AddConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster added by a constant value . | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_And](http://www.opengis.net/ont/geosparqlplus#st_And) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the anded version of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_AndConst](http://www.opengis.net/ont/geosparqlplus#st_AndConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster anded by a constant value . | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_Equal](http://www.opengis.net/ont/geosparqlplus#st_Equal) (geo2:Raster rast, geo2:Raster rast2) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Keeps raster values which equal . | Attribute  | No  | Yes  | No  |
+| [geo2:ST_Div](http://www.opengis.net/ont/geosparqlplus#st_Div) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the divided version of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_DivConst](http://www.opengis.net/ont/geosparqlplus#st_DivConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster divided by a constant value . | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_Mult](http://www.opengis.net/ont/geosparqlplus#st_Mult) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the multiplied version of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_MultConst](http://www.opengis.net/ont/geosparqlplus#st_MultConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster multiplied by a constant value . | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_Or](http://www.opengis.net/ont/geosparqlplus#st_Or) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the or'ed version of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_OrConst](http://www.opengis.net/ont/geosparqlplus#st_OrConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster or'ed by a constant value . | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_Subtract](http://www.opengis.net/ont/geosparqlplus#st_Subtract) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the or'ed version of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_SubtractConst](http://www.opengis.net/ont/geosparqlplus#st_SubtractConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster or'ed by a constant value . | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_Xor](http://www.opengis.net/ont/geosparqlplus#st_Subtract) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the xor'ed version of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_XorConst](http://www.opengis.net/ont/geosparqlplus#st_SubtractConst) (geo2:Raster rast, [xsd:integer](http://www.opengis.net/ont/geosparqlplus#integer) badnum=1, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster xor'ed by a constant value . | Attribute  | No  | Yes  | Yes  |
 </details>
 
 #### Raster Constructors
+
+<details>
+  <summary>These functions construct rasters.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_MakeEmptyRaster](http://www.opengis.net/ont/geosparqlplus#st_MakeEmptyRaster) (xsd:integer width, xsd:integer height, xsd:double upperleftx, xsd:double upperlefty, xsd:double cellsize)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns a new raster with sample values according to the given parameters. | Attribute  | No  | Yes  | No  |
+| [geo2:ST_RastFromHexWKB](http://www.opengis.net/ont/geosparqlplus#st_MakeEmptyRaster) (xsd:string hexwkb)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns a new raster parsed from a raster hexwkb string. | Attribute  | No  | Yes  | No  |
+</details>
 
 #### Raster Editor Functions
 
@@ -445,6 +477,7 @@ Planned further implementations:
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
+| [geo2:ST_AddBand](http://www.opengis.net/ont/geosparqlplus#st_AddBand) (geo2:Raster rast,xsd:double[] banddata)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster with modified nodata value. | Attribute  | No  | Yes  | No  |
 | [geo2:ST_SetBandNoDataValue](http://www.opengis.net/ont/geosparqlplus#st_SetBandNoDataValue) (geo2:Raster rast,xsd:integer bandnum, [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) value)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster with modified nodata value. | Attribute  | No  | Yes  | Yes  |
 </details>
 
@@ -460,11 +493,25 @@ Planned further implementations:
 
 #### Raster Relation Functions
 
-See also Geometry/Raster relation functions
+<details>
+  <summary>Raster relation functions relate raster representation to other raster representations or vector geometries. For Raster/Vector relations see also Geometry/Raster relation functions</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports vector? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_rasterIntersection](http://www.opengis.net/ont/geosparqlplus#st_rasterIntersection) (geo2:Raster rast, geo2:Raster rast2)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a new resized raster. | Attribute  | No  | Yes  | Yes  |
+</details>
 
 #### Raster Transformation Functions
 
-To be done
+<details>
+  <summary>These functions perform transformations on single rasters.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_Rescale](http://www.opengis.net/ont/geosparqlplus#st_Rescale) (geo2:Raster rast, xsd:integer width, xsd:integer height)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a new rescaled raster. | Attribute  | No  | Yes  | No  |
+| [geo2:ST_Resize](http://www.opengis.net/ont/geosparqlplus#st_Resize) (geo2:Raster rast, xsd:integer width, xsd:integer height)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a new resized raster. | Attribute  | No  | Yes  | No  |
+| [geo2:ST_SRID](http://www.opengis.net/ont/geosparqlplus#st_SRID) (geo2:Raster rast, xsd:integer srid)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a reprojected raster. | Attribute  | No  | Yes  | No  |
+</details>
 
 ### Topology support
 
