@@ -149,6 +149,19 @@ Planned further implementations:
 
 #### Geometry Constructors
 
+<details>
+  <summary>These functions create vector literal representations from Strings.</summary>
+  
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_GeomFromGeoJSON](http://www.opengis.net/ont/geosparqlplus#st_geomFromGeoJSON) (xsd:string input)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the parsed geometry from a GeoJSON String. | Constructor  | No  | N/A  | Yes  |
+| [geo2:ST_GeomFromGML](http://www.opengis.net/ont/geosparqlplus#st_geomFromGML) (xsd:string input)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the parsed geometry from a GML String. | Constructor  | No  | N/A  | Yes  |
+| [geo2:ST_GeomFromKML](http://www.opengis.net/ont/geosparqlplus#st_geomFromKML) (xsd:string input)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the parsed geometry from a KML String. | Constructor  | No  | N/A  | Yes  |
+| [geo2:ST_GeomFromText](http://www.opengis.net/ont/geosparqlplus#st_geomFromText) (xsd:string input)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the parsed geometry from a WKT String. | Constructor  | No  | N/A  | Yes  |
+| [geo2:ST_GeomFromWKB](http://www.opengis.net/ont/geosparqlplus#st_geomFromWKB) (xsd:string input)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the parsed geometry from a WKB String. | Constructor  | No  | N/A  | Yes  |
+
+</details>
+
 #### Geometry Editor Functions
 
 <details>
@@ -226,9 +239,47 @@ Planned further implementations:
 
 #### LineString Functions
 
+These functions are applicable to LineString representations only and cannot be used with raster literals or other types of Geometries.
+
+##### LineString Attribute Functions
+
+<details>
+  <summary>These functions return LineString specific attributes.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_EndPoint](http://www.opengis.net/ont/geosparqlplus#st_EndPoint) (sf:Geometry geom)  | [sf:Point](http://www.opengis.net/ont/sf#Point) | Returns the last point in the given LineString. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsClosed](http://www.opengis.net/ont/geosparqlplus#st_IsClosed) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the LineString is closed, i. e. its first and last point are the same. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_SelfIntersections](http://www.opengis.net/ont/geosparqlplus#st_SelfIntersections) (sf:Geometry geom)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns a MultiPoint of self intersections of the LineString. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_StartPoint](http://www.opengis.net/ont/geosparqlplus#st_StartPoint) (sf:Geometry geom)  | [sf:Point](http://www.opengis.net/ont/sf#Point) | Returns the first point in the given LineString. | Attribute | No  | N/A  | Yes  | 
+</details>
+
 #### Point Functions
 
+
+
 #### Polygon Functions
+
+These functions are applicable to Polygon representations only and cannot be used with raster literals or other types of Geometries.
+
+##### Polygon Attribute Functions
+
+<details>
+  <summary>These functions return LineString specific attributes.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_HasDuplicateRings](http://www.opengis.net/ont/geosparqlplus#st_HasDuplicateRings) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon has duplicate rings. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_InteriorRingN](http://www.opengis.net/ont/geosparqlplus#st_InteriorRingN) (sf:Geometry geom, xsd:integer ringnum)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry)| Returns the nth interior ring of the Polygon. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsEquilateralTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsEquilateralTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is an equilateral triangle. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsIsocelesTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsIsocelesTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is an isoceles triangle. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsPointedTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsPointedTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is a pointed triangle. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsRightTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsRightTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is a right triangle. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsScaleneTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsScaleneTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is a scalene triangle. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_IsTriangle](http://www.opengis.net/ont/geosparqlplus#st_IsTriangle) (sf:Geometry geom)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Indicates if the polygon is a triangle. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_NRings](http://www.opengis.net/ont/geosparqlplus#st_Nrings) (sf:Geometry geom)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of rings of the polygon. | Attribute | No  | N/A  | Yes  | 
+| [geo2:ST_NumInteriorRings](http://www.opengis.net/ont/geosparqlplus#st_NInteriorRings) (sf:Geometry geom)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of interior rings of the polygon. | Attribute | No  | N/A  | Yes  | 
+</details>
 
 #### Coordinate Reference System Functions
 
@@ -272,10 +323,15 @@ Planned further implementations:
 
 ### Utility Functions
 
+Utility functions help to convert units and accompanying information for geospatial data.
+
 #### Unit Conversion Functions
 
 ## GeoSPARQL Ontology extension
 
+The GeoSPARQL ontology has been extended to include support for Coverage representations.
+
 ### Ontology of functions
 
 ### Ontology for modelling geospatial data
+
