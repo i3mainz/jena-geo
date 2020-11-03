@@ -14,13 +14,19 @@ package de.hsmainz.cs.semgis.arqextension.geometry.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Point;
+
+import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
+import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
 
 /**
  * Computes the geometric center of a geometry, or equivalently, the center of mass of the geometry as a POINT. 
@@ -30,7 +36,8 @@ public class Centroid extends FunctionBase1 {
 
     @Override
     public NodeValue exec(NodeValue arg0) {
-
+    	Wrapper wrapper1=LiteralUtils.rasterOrVector(arg0);
+		if(wrapper1 instanceof GeometryWrapper) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             Geometry geom = geometry.getParsingGeometry();
@@ -42,5 +49,11 @@ public class Centroid extends FunctionBase1 {
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }
+		}else if(wrapper1 instanceof CoverageWrapper) {
+			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			return GeometryWrapperFactory.createPoint(LiteralUtils.toGeometry(raster.getEnvelope2D()).getCentroid().getCoordinate(),WKTDatatype.URI).asNodeValue();
+		}else {
+			return NodeValue.nvEmptyString;
+		}
     }
 }

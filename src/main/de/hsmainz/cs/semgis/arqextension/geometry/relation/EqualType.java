@@ -11,8 +11,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 public class EqualType extends FunctionBase2 {
 
 	@Override
-	public NodeValue exec(NodeValue v1, NodeValue v2) {
-		
+	public NodeValue exec(NodeValue v1, NodeValue v2) {	
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v1);
 		Wrapper wrapper2=LiteralUtils.rasterOrVector(v2);
 		if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {

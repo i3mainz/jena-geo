@@ -4,12 +4,16 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 
+import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
+import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the diagonal of the supplied geometry's bounding box.
@@ -19,6 +23,8 @@ public class BoundingDiagonal extends FunctionBase1{
 
 	@Override
 	public NodeValue exec(NodeValue arg0) {
+		Wrapper wrapper1=LiteralUtils.rasterOrVector(arg0);
+    	if(wrapper1 instanceof GeometryWrapper) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             Geometry geom = geometry.getParsingGeometry();
@@ -30,6 +36,16 @@ public class BoundingDiagonal extends FunctionBase1{
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }
+    	}else if(wrapper1 instanceof CoverageWrapper) {
+   		 CoverageWrapper covwrap = CoverageWrapper.extract(arg0);
+         GridCoverage2D cov = covwrap.getXYGeometry();
+         GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createLineString(new Coordinate[] {
+        		 new Coordinate(cov.getEnvelope().getLowerCorner().getCoordinate()[0],cov.getEnvelope().getLowerCorner().getCoordinate()[1]),
+        		 new Coordinate(cov.getEnvelope().getUpperCorner().getCoordinate()[0],cov.getEnvelope().getUpperCorner().getCoordinate()[1])}, WKTDatatype.URI);
+         return lineStringWrapper.asNodeValue();              
+	}else {
+		return NodeValue.makeDouble(0.);
+	}
 	}
 
 }

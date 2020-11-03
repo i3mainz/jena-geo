@@ -23,6 +23,7 @@ public class EqualNorm extends FunctionBase2 {
 			GeometryWrapper transGeom2;
 			try {
 				transGeom2 = ((GeometryWrapper)wrapper2).transform(((GeometryWrapper)wrapper1).getSrsInfo());
+				
 				return NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().equalsNorm(transGeom2.getXYGeometry()));
 			} catch (MismatchedDimensionException | TransformException | FactoryException e) {
 				throw new RuntimeException("CRS transformation failed");

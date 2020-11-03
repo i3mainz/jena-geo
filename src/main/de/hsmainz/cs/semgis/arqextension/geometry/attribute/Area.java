@@ -16,9 +16,13 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Geometry;
 
+import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
+import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 /**
  * Returns the area of the surface if it is a Polygon or MultiPolygon. For geometry, a 2D Cartesian area is determined with units specified by the SRID. For geography, area is determined on a curved surface with units in square meters.
@@ -28,7 +32,8 @@ public class Area extends FunctionBase1 {
 
     @Override
     public NodeValue exec(NodeValue arg0) {
-
+    	Wrapper wrapper1=LiteralUtils.rasterOrVector(arg0);
+    	if(wrapper1 instanceof GeometryWrapper) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             Geometry geom = geometry.getParsingGeometry();
@@ -37,6 +42,13 @@ public class Area extends FunctionBase1 {
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);
         }
+    	}else if(wrapper1 instanceof CoverageWrapper) {
+    		 CoverageWrapper covwrap = CoverageWrapper.extract(arg0);
+             GridCoverage2D cov = covwrap.getXYGeometry();
+             return NodeValue.makeDouble(LiteralUtils.toGeometry(cov.getEnvelope()).getArea());
+    	}else {
+    		return NodeValue.makeDouble(0.);
+    	}
     }
 
 }
