@@ -583,5 +583,10 @@ The GeoSPARQL ontology has been extended to include support for Coverage represe
 
 ### Ontology of functions
 
+An ontology of the planned functions with given URIs has been uploaded to this repository as functions.ttl.
+The ontology will be appended when the implementation matures and new requirements are considered.
+The ontology of functions may serve as a template for future standardizations or implementations.
+
 ### Ontology for modelling geospatial data
+
 
