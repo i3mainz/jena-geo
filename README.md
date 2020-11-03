@@ -231,8 +231,10 @@ Planned further implementations:
 | [geo2:ST_IntersectionMatrix](http://www.opengis.net/ont/geosparqlplus#st_IntersectionMatrix) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the intersection matrix between to geometries. | Relation  | No  | Todo  | Yes  |
 | [geo2:ST_IntersectionPercentage](http://www.opengis.net/ont/geosparqlplus#st_IntersectionPercentage) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the intersection matrix between to geometries. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_MaxDistance](http://www.opengis.net/ont/geosparqlplus#st_MaxDistance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the distance between the most distance coordinates of the two given geometries. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_MaxDistance3D](http://www.opengis.net/ont/geosparqlplus#st_MaxDistance) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the distance between the most distance coordinates of the two given 3d geometries. | Relation  | No  | Todo  | Yes  |
 | [geo2:ST_Overlaps](http://www.opengis.net/ont/geosparqlplus#st_Overlaps) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries overlap. | Relation  | No  | Yes  | Yes  |
-| [geo2:ST_ShortestLine](http://www.opengis.net/ont/geosparqlplus#st_ShortestLine) (sf:Geometry geom, sf:Geometry geom2)  | [sf:LineString](http://www.opengis.net/ont/sf#LineString) | Returns the shortest line between two geometries. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_ShortestLine](http://www.opengis.net/ont/geosparqlplus#st_ShortestLine) (sf:Geometry geom, sf:Geometry geom2)  | [sf:LineString](http://www.opengis.net/ont/sf#LineString) | Returns the shortest line between two geometries. | Relation  | No  | Todo  | Yes  |
+| [geo2:ST_ShortestLine3D](http://www.opengis.net/ont/geosparqlplus#st_ShortestLine3D) (sf:Geometry geom, sf:Geometry geom2)  | [sf:LineString](http://www.opengis.net/ont/sf#LineString) | Returns the shortest line between two 3d geometries. | Relation  | No  | Todo  | No  |
 | [geo2:ST_Touches](http://www.opengis.net/ont/geosparqlplus#st_Touches) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries touch each other. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_Within](http://www.opengis.net/ont/geosparqlplus#st_Within) (sf:Geometry geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry is within the second geometry. | Relation  | No  | Yes  | Yes  |
 </details>
@@ -360,6 +362,20 @@ These functions are applicable to Polygon representations only and cannot be use
 This section introduces supported raster/coverage functions.
 
 #### Raster literals
+<details>
+  <summary>This section includes raster literals.</summary>
+  
+- [CoverageJSON](https://covjson.org)
+- [RasterWKB](https://github.com/ihmeuw/wkb-raster)
+- [RasterHexWKB](https://github.com/ihmeuw/wkb-raster)
+
+Planned further implementations:
+
+- [XYZ Gridded ASCII](https://gdal.org/drivers/raster/xyz.html) for the integration of Digital Elevation models
+- [ASCIIGrid Format](https://gdal.org/drivers/raster/aaigrid.html)
+- [GeoTIFF](https://gdal.org/drivers/raster/gtiff.html)
+- [NetCDF](https://gdal.org/drivers/raster/netcdf.html)
+</details>
 
 #### Raster Attribute Functions
 
@@ -369,18 +385,48 @@ This section introduces supported raster/coverage functions.
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
 | [geo2:ST_Envelope](http://www.opengis.net/ont/geosparqlplus#st_Envelope) (geo2:Raster rast)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the envelope/minimum bounding box of the given raster. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_HasNoBand](http://www.opengis.net/ont/geosparqlplus#st_HasNoBand) (geo2:Raster rast, xsd:integer bandnum)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if a raster band of the given number exists, false otherwise. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_Height](http://www.opengis.net/ont/geosparqlplus#st_Height) (geo2:Raster rast)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the height of the given raster. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_IsEmpty](http://www.opengis.net/ont/geosparqlplus#st_IsEmpty) (geo2:Raster rast)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns if the raster contains atomic values. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_NumBands](http://www.opengis.net/ont/geosparqlplus#st_NumBands) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of raster bands of the given raster. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_NumXTiles](http://www.opengis.net/ont/geosparqlplus#st_NumXTiles) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of X tiles of the given raster. | Attribute  | No  | Yes  | Yes  | 
 | [geo2:ST_NumYTiles](http://www.opengis.net/ont/geosparqlplus#st_NumYTiles) (geo2:Raster rast)  | [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) | Returns the number of Y tiles of the given raster. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_Value](http://www.opengis.net/ont/geosparqlplus#st_Value) (geo2:Raster rast, xsd:integer bandnum=1, xsd:integer col, xsd:integer row)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the atomic value in the given column/row of the raster. | Attribute  | No  | Yes  | Yes  | 
+| [geo2:ST_Width](http://www.opengis.net/ont/geosparqlplus#st_Width) (geo2:Raster rast)  | [xsd:double](http://www.w3.org/2001/XMLSchema#double) | Returns the height of the given raster. | Attribute  | No  | Yes  | Yes  | 
 </details>
 
 #### Raster Algebra Functions
+
+<details>
+  <summary>These functions implemeent raster/map algebra operations.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_Add](http://www.opengis.net/ont/geosparqlplus#st_Add) (geo2:Raster rast, geo2:Raster rast, xsd:bandnum=1, xsd:bandnum=1)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the sum of the two rasters. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_AddConst](http://www.opengis.net/ont/geosparqlplus#st_AddConst) (geo2:Raster rast, xsd:integer badnum=1, xsd:double const)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster added by a constant value . | Attribute  | No  | Yes  | Yes  |
+</details>
 
 #### Raster Constructors
 
 #### Raster Editor Functions
 
+<details>
+  <summary>These functions raster export functions.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_SetBandNoDataValue](http://www.opengis.net/ont/geosparqlplus#st_SetBandNoDataValue) (geo2:Raster rast,xsd:integer bandnum, xsd:double value)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns the raster with modified nodata value. | Attribute  | No  | Yes  | Yes  |
+</details>
+
 #### Raster Exporter Functions
+
+<details>
+  <summary>These functions raster export functions.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_AsRastHexWKB](http://www.opengis.net/ont/geosparqlplus#st_Add) (geo2:Raster rast)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns the raster in rasterwkb representation. | Attribute  | No  | Yes  | Yes  |
+</details>
 
 #### Raster Relation Functions
 
@@ -388,15 +434,71 @@ See also Geometry/Raster relation functions
 
 #### Raster Transformation Functions
 
+To be done
+
 ### Topology support
 
+This section will include descriptions for topology support which is currently not finished in the given implementation.
+
 ### Spatiotemporal support
+
+This section will include spatiotemporal support for geometries and possibly rasters. The implementation will begun when the standardization process of GeoSPARQL 2.0 has been matured and decides to include support for spatiotemporal operations.
+
+<details>
+  <summary>These functions await standardization and may or may not be removed from the system. In particular they are not stable currently.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_After](http://www.opengis.net/ont/geosparqlplus#st_After) (geo2:TemporalRange range, geo2:TemporalRange range2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns if the first temporal range lies after the second temporal range. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_Before](http://www.opengis.net/ont/geosparqlplus#st_Before) (geo2:TemporalRange range, geo2:TemporalRange range2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns if the first temporal range lies before the second temporal range. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_Between](http://www.opengis.net/ont/geosparqlplus#st_Between) (geo2:TemporalRange range, geo2:TemporalRange range2, geo2:TempralRange range3)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns if the first temporal range lies in between the second and third temporal range. | Attribute  | No  | N/A  | No |
+| [geo2:ST_During](http://www.opengis.net/ont/geosparqlplus#st_During) (geo2:TemporalRange range, geo2:TemporalRange range2, geo2:TempralRange range3)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns if the first temporal range lies in between the second and third temporal range. | Attribute  | No  | N/A  | No |
+</details>
 
 ### Utility Functions
 
 Utility functions help to convert units and accompanying information for geospatial data.
 
 #### Unit Conversion Functions
+
+<details>
+  <summary>These functions convert between units beginning from an S/I Base Unit.</summary>
+
+| Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
+|---|---|---|---|---|---|---|
+| [geo2:ST_CentimeterToMeter](http://www.opengis.net/ont/geosparqlplus#st_CentimeterToMeter) (xsd:double cm)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts centimeter to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_ChainToMeter](http://www.opengis.net/ont/geosparqlplus#st_ChainToMeter) (xsd:double chain)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts chain to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_DecimeterToMeter](http://www.opengis.net/ont/geosparqlplus#st_DecimeterToMeter) (xsd:double decimeter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts decimeter to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_FathomToMeter](http://www.opengis.net/ont/geosparqlplus#st_FathomToMeter) (xsd:double fathom)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts fathom to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_FootToMeter](http://www.opengis.net/ont/geosparqlplus#st_FootToMeter) (xsd:double foot)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts foot to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_InchToMeter](http://www.opengis.net/ont/geosparqlplus#st_InchToMeter) (xsd:double inch)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts inch to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_KilometerToMeter](http://www.opengis.net/ont/geosparqlplus#st_KilometerToMeter) (xsd:double km)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts kilometer to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_LinkToMeter](http://www.opengis.net/ont/geosparqlplus#st_LinkToMeter) (xsd:double link)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts  link to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToCentimeter](http://www.opengis.net/ont/geosparqlplus#st_MeterToCentimeter) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to centimeter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToChain](http://www.opengis.net/ont/geosparqlplus#st_MeterToChain) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to chain. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToDecimeter](http://www.opengis.net/ont/geosparqlplus#st_MeterToDecimeter) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to decimeter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToFathom](http://www.opengis.net/ont/geosparqlplus#st_MeterToFathom) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to fathom. | Attribute  | No  | N/A | Yes  |
+| [geo2:ST_MeterToFoot](http://www.opengis.net/ont/geosparqlplus#st_MeterToFoot) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to foot. | Attribute  | No  | N/A | Yes  |
+| [geo2:ST_MeterToInch](http://www.opengis.net/ont/geosparqlplus#st_MeterToInch) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to inch. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToKilometer](http://www.opengis.net/ont/geosparqlplus#st_MeterToKilometer) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to  kilometer. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToLink](http://www.opengis.net/ont/geosparqlplus#st_MeterToLink) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to  link. | Attribute  | No  | N/A | Yes  |
+| [geo2:ST_MeterToMile](http://www.opengis.net/ont/geosparqlplus#st_MeterToMile) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to  mile. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToMillimeter](http://www.opengis.net/ont/geosparqlplus#st_MeterToMillimeter) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to  millimeter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToNauticalMile](http://www.opengis.net/ont/geosparqlplus#st_MeterToNauticalMile) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to  nautical mile. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToUSFoot](http://www.opengis.net/ont/geosparqlplus#st_MeterToUSFoot) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to US foot. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToUSInch](http://www.opengis.net/ont/geosparqlplus#st_MeterToUSInch) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to US inch. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToUSMile](http://www.opengis.net/ont/geosparqlplus#st_MeterToUSMile) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to US mile. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToUSYard](http://www.opengis.net/ont/geosparqlplus#st_MeterToUSYard) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to US yard. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MeterToYard](http://www.opengis.net/ont/geosparqlplus#st_MeterToYard) (xsd:double meter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts meter to yard. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MileToMeter](http://www.opengis.net/ont/geosparqlplus#st_MileToMeter) (xsd:double mile)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts mile to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_MillimeterToMeter](http://www.opengis.net/ont/geosparqlplus#st_MillimeterToMeter) (xsd:double millimeter)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts millimeter to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_NauticalMileToMeter](http://www.opengis.net/ont/geosparqlplus#st_NauticalMileToMeter) (xsd:double mile)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts nautical mile to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_USFootToMeter](http://www.opengis.net/ont/geosparqlplus#st_USFootToMeter) (xsd:double usfoot)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts US foot to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_USInchToMeter](http://www.opengis.net/ont/geosparqlplus#st_USInchToMeter) (xsd:double usinch)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts US inch to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_USMileToMeter](http://www.opengis.net/ont/geosparqlplus#st_USMileToMeter) (xsd:double usmile)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts US mile to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_USYardToMeter](http://www.opengis.net/ont/geosparqlplus#st_USYardToMeter) (xsd:double usyard)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts US yard to meter. | Attribute  | No  | N/A  | Yes  |
+| [geo2:ST_YardToMeter](http://www.opengis.net/ont/geosparqlplus#st_YardToMeter) (xsd:double yard)  | [xsd:double](http://www.opengis.net/ont/geosparqlplus#double) | Converts  yard to meter. | Attribute  | No  | N/A  | Yes  |
+</details>
 
 ## GeoSPARQL Ontology extension
 
