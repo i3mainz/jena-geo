@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: ForcePolygonCW Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,72 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05322.html','');});
+$(document).ready(function(){initNavTree('a05319.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a05316.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Equal Member List</div>  </div>
+<div class="title">ForcePolygonCW Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a05322.html">Equal</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a05322.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a>(NodeValue v1, NodeValue v2)</td><td class="entry"><a class="el" href="a05322.html">Equal</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Orients all exterior rings clockwise and all interior rings counter-clockwise.  
+ <a href="a05319.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for ForcePolygonCW:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05318.png" border="0" usemap="#ForcePolygonCW_inherit__map" alt="Inheritance graph"/></div>
+<map name="ForcePolygonCW_inherit__map" id="ForcePolygonCW_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for ForcePolygonCW:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05317.png" border="0" usemap="#ForcePolygonCW_coll__map" alt="Collaboration graph"/></div>
+<map name="ForcePolygonCW_coll__map" id="ForcePolygonCW_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05319.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
+<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Orients all exterior rings clockwise and all interior rings counter-clockwise. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a06423.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06423.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08943.html#a4a3251cf639eba4c1f3f2c4467d6434a">ForcePolygonCWTest.testForcePolygonCW()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                           {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            Geometry geom = geometry.getParsingGeometry();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (geom instanceof Polygon) {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">if</span>(!Orientation.isCCW(geom.getCoordinates())) {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        <span class="keywordflow">return</span> geometry.asNodeValue();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        GeometryWrapperFactory.createPolygon(Arrays.asList(geom.reverse().getCoordinates()), WKTDatatype.URI);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;Given geometry is not a Polygon&quot;</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03711.html">polygon</a></li><li class="navelem"><a class="el" href="a03716.html">transform</a></li><li class="navelem"><a class="el" href="a05319.html">ForcePolygonCW</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

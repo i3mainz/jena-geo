@@ -1,6 +1,7 @@
 var a03788 =
 [
-    [ "TWKBReader", "a08070.html", "a08070" ],
-    [ "TWKBUtils", "a08086.html", "a08086" ],
-    [ "TWKBWriter", "a08090.html", "a08090" ]
+    [ "FactoryMethod", "a07311.html", "a07311" ],
+    [ "MetadataFactory", "a07315.html", "a07315" ],
+    [ "MetadataUtilities", "a07319.html", "a07319" ],
+    [ "ValueRestriction", "a07323.html", "a07323" ]
 ];

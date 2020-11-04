@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: ResampleBorderComportement Enum Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,29 +56,90 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06826.html','');});
+$(document).ready(function(){initNavTree('a06823.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a06820.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Mask Member List</div>  </div>
+<div class="title">ResampleBorderComportement Enum Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06826.html">Mask</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06826.html#aaa942144d8ad54cd607ac09cc85c70f3">computeRect</a>(final PlanarImage[] sources, final WritableRaster dest, final Rectangle destRect)</td><td class="entry"><a class="el" href="a06826.html">Mask</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06826.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a>()</td><td class="entry"><a class="el" href="a06826.html">Mask</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06826.html#ae33c60a088a675d97d37fd915632b610">layout</a>(final RenderedImage source, ImageLayout layout)</td><td class="entry"><a class="el" href="a06826.html">Mask</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06826.html#ac4f83d0860ec5c77170f4b21232105d1">Mask</a>(final RenderedImage source, final RenderedImage mask, final ImageLayout layout, final Map&lt;?,?&gt; configuration, final double[] newValues)</td><td class="entry"><a class="el" href="a06826.html">Mask</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06826.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a></td><td class="entry"><a class="el" href="a06826.html">Mask</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06826.html#a4ba7d667bd2c11bb15f09506d145b31e">OPERATION_NAME</a></td><td class="entry"><a class="el" href="a06826.html">Mask</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p>An enum to stipulate to resampling procedure which comportement adopted when projected destination coordinates are out of validity pixel source area.  
+ <a href="a06823.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:abb77bc360d361aa014883fe9affa44ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06823.html#abb77bc360d361aa014883fe9affa44ca">EXTRAPOLATION</a></td></tr>
+<tr class="separator:abb77bc360d361aa014883fe9affa44ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f1943cc41c2c9259671f969ea86ac7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06823.html#a97f1943cc41c2c9259671f969ea86ac7">FILL_VALUE</a></td></tr>
+<tr class="separator:a97f1943cc41c2c9259671f969ea86ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6083e8d80e3379e636b6389915dd583c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06823.html#a6083e8d80e3379e636b6389915dd583c">CROP</a></td></tr>
+<tr class="separator:a6083e8d80e3379e636b6389915dd583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An enum to stipulate to resampling procedure which comportement adopted when projected destination coordinates are out of validity pixel source area. </p>
+<p><a class="el" href="a06823.html#abb77bc360d361aa014883fe9affa44ca">EXTRAPOLATION</a>} : allow extrapolation.  <a class="el" href="a06823.html#a97f1943cc41c2c9259671f969ea86ac7">FILL_VALUE</a>} : fill pixel which is out of expected source area, by the given array.  <a class="el" href="a06823.html#a6083e8d80e3379e636b6389915dd583c">CROP</a>} :</p>
+<dl class="section author"><dt>Author</dt><dd>Remi Marechal (Geomatys). </dd></dl>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6083e8d80e3379e636b6389915dd583c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6083e8d80e3379e636b6389915dd583c">&#9670;&nbsp;</a></span>CROP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CROP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06819.html#a156ba99c1858666613f70adbf1cebd94">Resample.Resample()</a>.</p>
+
+</div>
+</div>
+<a id="abb77bc360d361aa014883fe9affa44ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb77bc360d361aa014883fe9affa44ca">&#9670;&nbsp;</a></span>EXTRAPOLATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EXTRAPOLATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06799.html#a4b1bd9debe6572e61954ebfc1f8caa49">Interpolation.checkInterpolate()</a>, <a class="el" href="a06811.html#a86fe3b6e550aae34bae04d73ba75f152">NeighborInterpolation.NeighborInterpolation()</a>, and <a class="el" href="a06819.html#addebf91ad0efb69439d578de1e7217cc">Resample.Resample()</a>.</p>
+
+</div>
+</div>
+<a id="a97f1943cc41c2c9259671f969ea86ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f1943cc41c2c9259671f969ea86ac7">&#9670;&nbsp;</a></span>FILL_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILL_VALUE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06779.html#a29c348a5edf1dc786f5be14a6a271687">BiCubicInterpolation.BiCubicInterpolation()</a>, <a class="el" href="a06791.html#a4c14035a3a8bc45d4a7cca354f7561b7">BilinearInterpolation.BilinearInterpolation()</a>, <a class="el" href="a06799.html#a6e1d891fd5124f008d2856ee73d6ecd7">Interpolation.create()</a>, <a class="el" href="a06807.html#a3555ada0580f60c9e9bfcb1d4828bd78">LanczosInterpolation.LanczosInterpolation()</a>, and <a class="el" href="a06819.html#afa5373c274c8aa014a1d4e204b46cfe6">Resample.Resample()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03767.html">interpolation</a></li><li class="navelem"><a class="el" href="a06823.html">ResampleBorderComportement</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

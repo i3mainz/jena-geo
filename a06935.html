@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: IIOListeners.List Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,25 +56,108 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06938.html','');});
+$(document).ready(function(){initNavTree('a06935.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="a06932.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">HysteresisDescriptor Member List</div>  </div>
+<div class="title">IIOListeners.List Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06938.html">HysteresisDescriptor</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06938.html#a3abd8e310eef1e1ccc6349a95d931036">HysteresisDescriptor</a>()</td><td class="entry"><a class="el" href="a06938.html">HysteresisDescriptor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06938.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a></td><td class="entry"><a class="el" href="a06938.html">HysteresisDescriptor</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p>The list of listeners, as a subclass which can copy its value from an other list of listeners.  
+ <a href="a06935.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for IIOListeners.List:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06934.png" border="0" usemap="#IIOListeners_8List_inherit__map" alt="Inheritance graph"/></div>
+<map name="IIOListeners_8List_inherit__map" id="IIOListeners_8List_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for IIOListeners.List:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06933.png" border="0" usemap="#IIOListeners_8List_coll__map" alt="Collaboration graph"/></div>
+<map name="IIOListeners_8List_coll__map" id="IIOListeners_8List_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a22a140365c40f236bf613e3e2fa28182"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06935.html#a22a140365c40f236bf613e3e2fa28182">setTo</a> (final EventListenerList other)</td></tr>
+<tr class="separator:a22a140365c40f236bf613e3e2fa28182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06935.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 3398556089737845953L</td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The list of listeners, as a subclass which can copy its value from an other list of listeners. </p>
+<p>We can safely takes the array reference without cloning it because every methods modifying the list internally create a copy of the array and modify that copy. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a22a140365c40f236bf613e3e2fa28182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a140365c40f236bf613e3e2fa28182">&#9670;&nbsp;</a></span>setTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void setTo </td>
+          <td>(</td>
+          <td class="paramtype">final EventListenerList&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06931.html#a15a3252a319282bea2823f1610d174fd">IIOListeners.setListeners()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                        {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            listenerList = other.getListenerList();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final long serialVersionUID = 3398556089737845953L</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03771.html">palette</a></li><li class="navelem"><a class="el" href="a06931.html">IIOListeners</a></li><li class="navelem"><a class="el" href="a06935.html">List</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

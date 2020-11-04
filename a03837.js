@@ -1,5 +1,6 @@
 var a03837 =
 [
-    [ "SampleGeometries", "a09246.html", null ],
-    [ "SampleRasters", "a09250.html", "a09250" ]
+    [ "Edge", "a08207.html", "a08207" ],
+    [ "Triangle", "a08211.html", "a08211" ],
+    [ "Vertex", "a08215.html", "a08215" ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: BezierSmoothingTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,25 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08770.html','');});
+$(document).ready(function(){initNavTree('a08767.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a08764.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GeneratePointsTest Member List</div>  </div>
+<div class="title">BezierSmoothingTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for BezierSmoothingTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08765.png" border="0" usemap="#BezierSmoothingTest_coll__map" alt="Collaboration graph"/></div>
+<map name="BezierSmoothingTest_coll__map" id="BezierSmoothingTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2046c1e051bde433111c7665e11bf114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08767.html#a2046c1e051bde433111c7665e11bf114">testBezierSmoothing</a> ()</td></tr>
+<tr class="separator:a2046c1e051bde433111c7665e11bf114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a33797029fadbcba01b4a4fafec88cf41"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08767.html#a33797029fadbcba01b4a4fafec88cf41">testLineString</a> =&quot;LINESTRING(1 2,1 10)&quot;</td></tr>
+<tr class="separator:a33797029fadbcba01b4a4fafec88cf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2046c1e051bde433111c7665e11bf114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2046c1e051bde433111c7665e11bf114">&#9670;&nbsp;</a></span>testBezierSmoothing()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a08770.html">GeneratePointsTest</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a08770.html#a63588109fc080478770a7d3cc31b245d">testGeneratePoints</a>()</td><td class="entry"><a class="el" href="a08770.html">GeneratePointsTest</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a08770.html#af26f700ee129f846cac58735f6dcc380">testPoint</a></td><td class="entry"><a class="el" href="a08770.html">GeneratePointsTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testBezierSmoothing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05031.html#ad5a8389ba39a9efb6e460f29b7fb0156">BezierSmoothing.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                          {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08767.html#a33797029fadbcba01b4a4fafec88cf41">testLineString</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        BezierSmoothing instance=<span class="keyword">new</span> BezierSmoothing();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,10));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,2));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeDouble(0.5));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="ttc" id="a08767_html_a33797029fadbcba01b4a4fafec88cf41"><div class="ttname"><a href="a08767.html#a33797029fadbcba01b4a4fafec88cf41">de.hsmainz.cs.semgis.arqextension.test.linestring.transform.BezierSmoothingTest.testLineString</a></div><div class="ttdeci">static final String testLineString</div><div class="ttdef"><b>Definition:</b> BezierSmoothingTest.java:18</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a33797029fadbcba01b4a4fafec88cf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33797029fadbcba01b4a4fafec88cf41">&#9670;&nbsp;</a></span>testLineString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testLineString =&quot;LINESTRING(1 2,1 10)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03839.html">test</a></li><li class="navelem"><a class="el" href="a03849.html">linestring</a></li><li class="navelem"><a class="el" href="a03853.html">transform</a></li><li class="navelem"><a class="el" href="a08767.html">BezierSmoothingTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

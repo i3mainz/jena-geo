@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: InterpolationCase Enum Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,32 +56,174 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06806.html','');});
+$(document).ready(function(){initNavTree('a06803.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a06800.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Combine Member List</div>  </div>
+<div class="title">InterpolationCase Enum Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for InterpolationCase:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06801.png" border="0" usemap="#InterpolationCase_coll__map" alt="Collaboration graph"/></div>
+<map name="InterpolationCase_coll__map" id="InterpolationCase_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aad81949b89537d5869c85deec4d95979"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#aad81949b89537d5869c85deec4d95979">InterpolationCase</a> (final int <a class="el" href="a06803.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a>)</td></tr>
+<tr class="separator:aad81949b89537d5869c85deec4d95979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6ea6316ae077fef1db4977613c7b3374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#a6ea6316ae077fef1db4977613c7b3374">NEIGHBOR</a> =(0)</td></tr>
+<tr class="separator:a6ea6316ae077fef1db4977613c7b3374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330cceaf462bb9b2c8d748b2e6f870f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#a330cceaf462bb9b2c8d748b2e6f870f6">BILINEAR</a> =(1)</td></tr>
+<tr class="separator:a330cceaf462bb9b2c8d748b2e6f870f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae532779b4a97152af22fc25cd688ebe5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#ae532779b4a97152af22fc25cd688ebe5">BICUBIC</a> =(2)</td></tr>
+<tr class="separator:ae532779b4a97152af22fc25cd688ebe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1dc6fc0f37c3614207b5173fad9d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#a0f1dc6fc0f37c3614207b5173fad9d9b">BICUBIC2</a> =(2)</td></tr>
+<tr class="separator:a0f1dc6fc0f37c3614207b5173fad9d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7905aa04510022c3f4be8eaebbf6e0d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#a7905aa04510022c3f4be8eaebbf6e0d1">LANCZOS</a> =(-3)</td></tr>
+<tr class="separator:a7905aa04510022c3f4be8eaebbf6e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962b51c81e9bbe00d99fd54f39fd32b0"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06803.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a></td></tr>
+<tr class="separator:a962b51c81e9bbe00d99fd54f39fd32b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Choose interpolation :<br />
+</p><ul>
+<li>neighbor : find nearest pixel values.<br />
+</li>
+<li>bilinear : compute biLinear pixel value from nearest 4 pixels values.<br />
+</li>
+<li>biCubic : compute biCubic pixel value from nearest 16 pixels values.<br />
+</li>
+<li>lanczos : compute biCubic pixel value from nearest n * n pixels values.<br />
+ where n = 2 * <a class="el" href="a06807.html#a9d111acc533ad5d562844f7a4ce92a73">LanczosInterpolation#lanczosWindow</a> </li>
+</ul>
+<p>Note that a margin is defined for each value, specifying a radius in pixel unit. It's the maximal distance used by the interpolation to mix colors. This margin value can be &lt; 0 when the radius is not fixed. Therefore, it's user responsability to define the right value. However, when the margin is negative, it's absolute value should be a clue about a default acceptable margin to apply for this interpolation.</p>
+<dl class="section author"><dt>Author</dt><dd>Rémi Marechal (Geomatys). </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aad81949b89537d5869c85deec4d95979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad81949b89537d5869c85deec4d95979">&#9670;&nbsp;</a></span>InterpolationCase()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a06806.html">Combine</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06806.html#a95bd8b3a2a6f5f51cc5904ca65a4a754">bands</a></td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06806.html#abc381ff2b8f349756a41d4ab95795238">Combine</a>(final Vector&lt;? extends RenderedImage &gt; images, double[][] matrix, final Transform transform, final RenderingHints hints)</td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06806.html#aad61f28eae5af1a21a56c962e59c99ba">computeRect</a>(final PlanarImage[] images, final WritableRaster dest, final Rectangle destRect)</td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06806.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a>()</td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06806.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a></td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06806.html#ae99ae9458f515b16d68878a27d86f838">numSamples</a></td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06806.html#a4ba7d667bd2c11bb15f09506d145b31e">OPERATION_NAME</a></td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a06806.html#a1b3b3c2d297f8c41ee6a67497d4e1b73">sources</a></td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06806.html#a8059b16632ab926cbbcda163cd991f1b">transform</a></td><td class="entry"><a class="el" href="a06806.html">Combine</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06803.html">InterpolationCase</a> </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>margin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                        {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.<a class="code" href="a06803.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a> = <a class="code" href="a06803.html#a962b51c81e9bbe00d99fd54f39fd32b0">margin</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="ttc" id="a06803_html_a962b51c81e9bbe00d99fd54f39fd32b0"><div class="ttname"><a href="a06803.html#a962b51c81e9bbe00d99fd54f39fd32b0">org.geotoolkit.image.interpolation.InterpolationCase.margin</a></div><div class="ttdeci">final int margin</div><div class="ttdef"><b>Definition:</b> InterpolationCase.java:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae532779b4a97152af22fc25cd688ebe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae532779b4a97152af22fc25cd688ebe5">&#9670;&nbsp;</a></span>BICUBIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BICUBIC =(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f1dc6fc0f37c3614207b5173fad9d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1dc6fc0f37c3614207b5173fad9d9b">&#9670;&nbsp;</a></span>BICUBIC2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BICUBIC2 =(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a330cceaf462bb9b2c8d748b2e6f870f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330cceaf462bb9b2c8d748b2e6f870f6">&#9670;&nbsp;</a></span>BILINEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BILINEAR =(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7905aa04510022c3f4be8eaebbf6e0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7905aa04510022c3f4be8eaebbf6e0d1">&#9670;&nbsp;</a></span>LANCZOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LANCZOS =(-3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a962b51c81e9bbe00d99fd54f39fd32b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962b51c81e9bbe00d99fd54f39fd32b0">&#9670;&nbsp;</a></span>margin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int margin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ea6316ae077fef1db4977613c7b3374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea6316ae077fef1db4977613c7b3374">&#9670;&nbsp;</a></span>NEIGHBOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NEIGHBOR =(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a06819.html#a156ba99c1858666613f70adbf1cebd94">Resample.Resample()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03767.html">interpolation</a></li><li class="navelem"><a class="el" href="a06803.html">InterpolationCase</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

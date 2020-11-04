@@ -1,4 +1,4 @@
 var a03731 =
 [
-    [ "Classification", "a06650.html", "a06650" ]
+    [ "FrechetDistance", "a06275.html", "a06275" ]
 ];

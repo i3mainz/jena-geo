@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: BezierSmoothing Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,25 +56,77 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05034.html','');});
+$(document).ready(function(){initNavTree('a05031.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a05028.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Angle Member List</div>  </div>
+<div class="title">BezierSmoothing Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for BezierSmoothing:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05030.png" border="0" usemap="#BezierSmoothing_inherit__map" alt="Inheritance graph"/></div>
+<map name="BezierSmoothing_inherit__map" id="BezierSmoothing_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for BezierSmoothing:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05029.png" border="0" usemap="#BezierSmoothing_coll__map" alt="Collaboration graph"/></div>
+<map name="BezierSmoothing_coll__map" id="BezierSmoothing_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad5a8389ba39a9efb6e460f29b7fb0156"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05031.html#ad5a8389ba39a9efb6e460f29b7fb0156">exec</a> (NodeValue v, NodeValue v1)</td></tr>
+<tr class="separator:ad5a8389ba39a9efb6e460f29b7fb0156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad5a8389ba39a9efb6e460f29b7fb0156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a8389ba39a9efb6e460f29b7fb0156">&#9670;&nbsp;</a></span>exec()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a05034.html">Angle</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a05034.html#a2c490cbe392d82e6bccb464329ee50f4">exec</a>(NodeValue v1, NodeValue v2, NodeValue v3)</td><td class="entry"><a class="el" href="a05034.html">Angle</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a05034.html#adbb10f811635dcf386da5c50f4c57875">findAngle</a>(Coordinate a, Coordinate b, Coordinate c)</td><td class="entry"><a class="el" href="a05034.html">Angle</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06423.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06423.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, <a class="el" href="a06423.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a08135.html#a07ca66064762d9bd6d41728152a8931d">LineSmoother.smooth()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08767.html#a2046c1e051bde433111c7665e11bf114">BezierSmoothingTest.testBezierSmoothing()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                        {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                GeometryWrapper geom = GeometryWrapper.extract(v);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordtype">double</span> alpha=v1.getDouble();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="comment">// TODO Auto-generated method stub</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                LineSmoother smoother=<span class="keyword">new</span> LineSmoother();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordflow">return</span> GeometryWrapperFactory.createLineString(smoother.smooth(((LineString)geom.getXYGeometry()), alpha).getCoordinates(),geom.getSrsURI(), geom.getGeometryDatatypeURI()).asNodeValue();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03700.html">linestring</a></li><li class="navelem"><a class="el" href="a03705.html">transform</a></li><li class="navelem"><a class="el" href="a05031.html">BezierSmoothing</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: GeoMagneticElements Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,36 +56,627 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a08050.html','');});
+$(document).ready(function(){initNavTree('a08047.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="a08044.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AnchoredMarshallerPool Member List</div>  </div>
+<div class="title">GeoMagneticElements Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a08050.html">AnchoredMarshallerPool</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#a2625fbeb7768eea9711d38dfae556467">addAnchor</a>(final String label, final URI linkage)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a08050.html#a917c852afe01a145ec857df65d9f860d">AnchoredMarshallerPool</a>()</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#aba52f2f61dd4de8f34af4ad86053ae00">AnchoredMarshallerPool</a>(final JAXBContext context)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a08050.html#a36779e739613ca427666add9ac16afdb">AnchoredMarshallerPool</a>(final JAXBContext context, final Map&lt; String, Object &gt; properties)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#ae7c1050cfd8f6d130d02fbe424ad99a1">AnchoredMarshallerPool</a>(final Class&lt;?&gt;... classesToBeBound)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a08050.html#a4b4d72acfa214b88c42d69ad78df4c78">AnchoredMarshallerPool</a>(final String schemaLocation, final Class&lt;?&gt;... classesToBeBound)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#ace7b2e93ae2245c1379ca1717ad1d7cb">AnchoredMarshallerPool</a>(final String packages)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a08050.html#a7a0a850d278dce344a7c548cf5cbe6a8">AnchoredMarshallerPool</a>(final String packages, final String schemaLocation)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#a336a3afd63e142d6ee2318967a57242c">AnchoredMarshallerPool</a>(final JAXBContext context, final String schemaLocation, final Map&lt; String, URI &gt; anchors, final Map&lt; String, Object &gt; properties)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a08050.html#a3d1ec832ec769e5f1905138f8e080bf9">anchors</a></td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#a73c8df43b46f61ec853c203d57c4632a">createMarshaller</a>()</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a08050.html#a0dcd333e94d0bd38406121c9f43c3038">getProperties</a>(final Map&lt; String, URI &gt; anchors, final Map&lt; String, Object &gt; previousProperties)</td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a08050.html#a710816accdf656c5fad9f6a853720259">schemaLocation</a></td><td class="entry"><a class="el" href="a08050.html">AnchoredMarshallerPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-</table></div><!-- contents -->
+<p>Java port of the NOAA's MAGtype_GeoMagneticElements structure.  
+ <a href="a08047.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for GeoMagneticElements:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08045.png" border="0" usemap="#GeoMagneticElements_coll__map" alt="Collaboration graph"/></div>
+<map name="GeoMagneticElements_coll__map" id="GeoMagneticElements_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af29a5ea7bb7702ebfd7b18838595eff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08047.html">GeoMagneticElements</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">computeErrors</a> ()</td></tr>
+<tr class="memdesc:af29a5ea7bb7702ebfd7b18838595eff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute range error for each elements (+- fields)  <a href="#af29a5ea7bb7702ebfd7b18838595eff5">More...</a><br /></td></tr>
+<tr class="separator:af29a5ea7bb7702ebfd7b18838595eff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af01526d219df6c99896c0e98f98fc090"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#af01526d219df6c99896c0e98f98fc090">Decl</a></td></tr>
+<tr class="memdesc:af01526d219df6c99896c0e98f98fc090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angle between the magnetic field vector and true north, positive east, in degrees.  <a href="#af01526d219df6c99896c0e98f98fc090">More...</a><br /></td></tr>
+<tr class="separator:af01526d219df6c99896c0e98f98fc090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbeb549073bacd87e06c0b0b30e00b8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a2fbeb549073bacd87e06c0b0b30e00b8">Incl</a></td></tr>
+<tr class="memdesc:a2fbeb549073bacd87e06c0b0b30e00b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angle between the magnetic field vector and the horizontal plane, positive down, in degrees.  <a href="#a2fbeb549073bacd87e06c0b0b30e00b8">More...</a><br /></td></tr>
+<tr class="separator:a2fbeb549073bacd87e06c0b0b30e00b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3520ebb3ff8d6feab3e6afb47ed4040"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#ae3520ebb3ff8d6feab3e6afb47ed4040">F</a></td></tr>
+<tr class="memdesc:ae3520ebb3ff8d6feab3e6afb47ed4040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magnetic Field Strength, in nT.  <a href="#ae3520ebb3ff8d6feab3e6afb47ed4040">More...</a><br /></td></tr>
+<tr class="separator:ae3520ebb3ff8d6feab3e6afb47ed4040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982cf43f120ff8978010e078bd49d9a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a982cf43f120ff8978010e078bd49d9a3">H</a></td></tr>
+<tr class="memdesc:a982cf43f120ff8978010e078bd49d9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal Magnetic Field Strength, in nT.  <a href="#a982cf43f120ff8978010e078bd49d9a3">More...</a><br /></td></tr>
+<tr class="separator:a982cf43f120ff8978010e078bd49d9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1059b82f84827fc49ea81b12566b3cdb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a1059b82f84827fc49ea81b12566b3cdb">X</a></td></tr>
+<tr class="memdesc:a1059b82f84827fc49ea81b12566b3cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Northern component of the magnetic field vector, in nT.  <a href="#a1059b82f84827fc49ea81b12566b3cdb">More...</a><br /></td></tr>
+<tr class="separator:a1059b82f84827fc49ea81b12566b3cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d59bf77d5ef21e7c7a88b08f14c825"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#ac8d59bf77d5ef21e7c7a88b08f14c825">Y</a></td></tr>
+<tr class="memdesc:ac8d59bf77d5ef21e7c7a88b08f14c825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eastern component of the magnetic field vector, in nT.  <a href="#ac8d59bf77d5ef21e7c7a88b08f14c825">More...</a><br /></td></tr>
+<tr class="separator:ac8d59bf77d5ef21e7c7a88b08f14c825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f16a8f561453187897f0820186da39b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a0f16a8f561453187897f0820186da39b">Z</a></td></tr>
+<tr class="memdesc:a0f16a8f561453187897f0820186da39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downward component of the magnetic field vector, in nT.  <a href="#a0f16a8f561453187897f0820186da39b">More...</a><br /></td></tr>
+<tr class="separator:a0f16a8f561453187897f0820186da39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf045cf7f245074dd20d2576762e208e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#aaf045cf7f245074dd20d2576762e208e">GV</a></td></tr>
+<tr class="memdesc:aaf045cf7f245074dd20d2576762e208e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Grid Variation, in degrees.  <a href="#aaf045cf7f245074dd20d2576762e208e">More...</a><br /></td></tr>
+<tr class="separator:aaf045cf7f245074dd20d2576762e208e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8922a96ad7df80f5902ebeb555096cda"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a8922a96ad7df80f5902ebeb555096cda">Decldot</a></td></tr>
+<tr class="memdesc:a8922a96ad7df80f5902ebeb555096cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly Rate of change in declination, in °/yr.  <a href="#a8922a96ad7df80f5902ebeb555096cda">More...</a><br /></td></tr>
+<tr class="separator:a8922a96ad7df80f5902ebeb555096cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a3028524b8a44d0afcd4914eb7444e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#ac0a3028524b8a44d0afcd4914eb7444e">Incldot</a></td></tr>
+<tr class="memdesc:ac0a3028524b8a44d0afcd4914eb7444e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly Rate of change in inclination, in °/yr.  <a href="#ac0a3028524b8a44d0afcd4914eb7444e">More...</a><br /></td></tr>
+<tr class="separator:ac0a3028524b8a44d0afcd4914eb7444e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e7270ce568a4d9f700342e71d132dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a19e7270ce568a4d9f700342e71d132dc">Fdot</a></td></tr>
+<tr class="memdesc:a19e7270ce568a4d9f700342e71d132dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly rate of change in Magnetic field strength, in nT/yr.  <a href="#a19e7270ce568a4d9f700342e71d132dc">More...</a><br /></td></tr>
+<tr class="separator:a19e7270ce568a4d9f700342e71d132dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0306fee23e557909a91d033764e0769a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a0306fee23e557909a91d033764e0769a">Hdot</a></td></tr>
+<tr class="memdesc:a0306fee23e557909a91d033764e0769a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly rate of change in horizontal field strength, in nT/yr.  <a href="#a0306fee23e557909a91d033764e0769a">More...</a><br /></td></tr>
+<tr class="separator:a0306fee23e557909a91d033764e0769a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af430b6f95f83d12a85fa89fbd93f88b4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#af430b6f95f83d12a85fa89fbd93f88b4">Xdot</a></td></tr>
+<tr class="memdesc:af430b6f95f83d12a85fa89fbd93f88b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly rate of change in the northern component, in nT/yr.  <a href="#af430b6f95f83d12a85fa89fbd93f88b4">More...</a><br /></td></tr>
+<tr class="separator:af430b6f95f83d12a85fa89fbd93f88b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312b93ea264fe90a10b3bc3aaf3de7ad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a312b93ea264fe90a10b3bc3aaf3de7ad">Ydot</a></td></tr>
+<tr class="memdesc:a312b93ea264fe90a10b3bc3aaf3de7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly rate of change in the eastern component, in nT/yr.  <a href="#a312b93ea264fe90a10b3bc3aaf3de7ad">More...</a><br /></td></tr>
+<tr class="separator:a312b93ea264fe90a10b3bc3aaf3de7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049e0736afbfebc0eefa6b90b907d012"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a049e0736afbfebc0eefa6b90b907d012">Zdot</a></td></tr>
+<tr class="memdesc:a049e0736afbfebc0eefa6b90b907d012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly rate of change in the downward component, in nT/yr.  <a href="#a049e0736afbfebc0eefa6b90b907d012">More...</a><br /></td></tr>
+<tr class="separator:a049e0736afbfebc0eefa6b90b907d012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba10c7ccd00101f42df864e05cc0e2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a9ba10c7ccd00101f42df864e05cc0e2d">GVdot</a></td></tr>
+<tr class="memdesc:a9ba10c7ccd00101f42df864e05cc0e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yearly rate of change in grid variation, in °/yr.  <a href="#a9ba10c7ccd00101f42df864e05cc0e2d">More...</a><br /></td></tr>
+<tr class="separator:a9ba10c7ccd00101f42df864e05cc0e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aab42d898a7468c9a89799b40e1e9b6b6"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#aab42d898a7468c9a89799b40e1e9b6b6">WMM_UNCERTAINTY_F</a> = 152.0</td></tr>
+<tr class="separator:aab42d898a7468c9a89799b40e1e9b6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da2c2ef7d8adc6e59e3f89c9a4d27af"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a8da2c2ef7d8adc6e59e3f89c9a4d27af">WMM_UNCERTAINTY_H</a> = 133.0</td></tr>
+<tr class="separator:a8da2c2ef7d8adc6e59e3f89c9a4d27af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4997e621d653f6a7079c10f5c158aecb"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a4997e621d653f6a7079c10f5c158aecb">WMM_UNCERTAINTY_X</a> = 138.0</td></tr>
+<tr class="separator:a4997e621d653f6a7079c10f5c158aecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e353bfd73d600d82e5aaf2f1087807"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#ac9e353bfd73d600d82e5aaf2f1087807">WMM_UNCERTAINTY_Y</a> = 89.0</td></tr>
+<tr class="separator:ac9e353bfd73d600d82e5aaf2f1087807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39932978501e3539a40c658b56d2ae9"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#ab39932978501e3539a40c658b56d2ae9">WMM_UNCERTAINTY_Z</a> = 165.0</td></tr>
+<tr class="separator:ab39932978501e3539a40c658b56d2ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccc7c5b6139d059b4c1da503786771d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#afccc7c5b6139d059b4c1da503786771d">WMM_UNCERTAINTY_I</a> = 0.22</td></tr>
+<tr class="separator:afccc7c5b6139d059b4c1da503786771d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7ad77c75bccfd4f296e64084471961"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a5f7ad77c75bccfd4f296e64084471961">WMM_UNCERTAINTY_D_OFFSET</a> = 0.24</td></tr>
+<tr class="separator:a5f7ad77c75bccfd4f296e64084471961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501e2a9bf98a21e937530ebc5d3ed213"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08047.html#a501e2a9bf98a21e937530ebc5d3ed213">WMM_UNCERTAINTY_D_COEF</a> = 5432.0</td></tr>
+<tr class="separator:a501e2a9bf98a21e937530ebc5d3ed213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Java port of the NOAA's MAGtype_GeoMagneticElements structure. </p>
+<dl class="section author"><dt>Author</dt><dd>Hasdenteufel Eric (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af29a5ea7bb7702ebfd7b18838595eff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29a5ea7bb7702ebfd7b18838595eff5">&#9670;&nbsp;</a></span>computeErrors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08047.html">GeoMagneticElements</a> computeErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute range error for each elements (+- fields) </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="reference">References <a class="el" href="a08047.html#af01526d219df6c99896c0e98f98fc090">GeoMagneticElements.Decl</a>, <a class="el" href="a08047.html#ae3520ebb3ff8d6feab3e6afb47ed4040">GeoMagneticElements.F</a>, <a class="el" href="a08047.html#a982cf43f120ff8978010e078bd49d9a3">GeoMagneticElements.H</a>, <a class="el" href="a08047.html#a2fbeb549073bacd87e06c0b0b30e00b8">GeoMagneticElements.Incl</a>, <a class="el" href="a08047.html#a5f7ad77c75bccfd4f296e64084471961">GeoMagneticElements.WMM_UNCERTAINTY_D_OFFSET</a>, <a class="el" href="a08047.html#aab42d898a7468c9a89799b40e1e9b6b6">GeoMagneticElements.WMM_UNCERTAINTY_F</a>, <a class="el" href="a08047.html#a8da2c2ef7d8adc6e59e3f89c9a4d27af">GeoMagneticElements.WMM_UNCERTAINTY_H</a>, <a class="el" href="a08047.html#afccc7c5b6139d059b4c1da503786771d">GeoMagneticElements.WMM_UNCERTAINTY_I</a>, <a class="el" href="a08047.html#a4997e621d653f6a7079c10f5c158aecb">GeoMagneticElements.WMM_UNCERTAINTY_X</a>, <a class="el" href="a08047.html#ac9e353bfd73d600d82e5aaf2f1087807">GeoMagneticElements.WMM_UNCERTAINTY_Y</a>, <a class="el" href="a08047.html#ab39932978501e3539a40c658b56d2ae9">GeoMagneticElements.WMM_UNCERTAINTY_Z</a>, <a class="el" href="a08047.html#a1059b82f84827fc49ea81b12566b3cdb">GeoMagneticElements.X</a>, <a class="el" href="a08047.html#ac8d59bf77d5ef21e7c7a88b08f14c825">GeoMagneticElements.Y</a>, and <a class="el" href="a08047.html#a0f16a8f561453187897f0820186da39b">GeoMagneticElements.Z</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                               {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        GeoMagneticElements uncertainty = <span class="keyword">new</span> GeoMagneticElements();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        uncertainty.F = <a class="code" href="a08047.html#aab42d898a7468c9a89799b40e1e9b6b6">WMM_UNCERTAINTY_F</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        uncertainty.H = <a class="code" href="a08047.html#a8da2c2ef7d8adc6e59e3f89c9a4d27af">WMM_UNCERTAINTY_H</a>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        uncertainty.X = <a class="code" href="a08047.html#a4997e621d653f6a7079c10f5c158aecb">WMM_UNCERTAINTY_X</a>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        uncertainty.Z = <a class="code" href="a08047.html#ab39932978501e3539a40c658b56d2ae9">WMM_UNCERTAINTY_Z</a>;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        uncertainty.Incl = <a class="code" href="a08047.html#afccc7c5b6139d059b4c1da503786771d">WMM_UNCERTAINTY_I</a>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        uncertainty.Y = <a class="code" href="a08047.html#ac9e353bfd73d600d82e5aaf2f1087807">WMM_UNCERTAINTY_Y</a>;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> decl_variable = (<a class="code" href="a08047.html#a501e2a9bf98a21e937530ebc5d3ed213">WMM_UNCERTAINTY_D_COEF</a> / <a class="code" href="a08047.html#a982cf43f120ff8978010e078bd49d9a3">H</a>);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> decl_constant = (<a class="code" href="a08047.html#a5f7ad77c75bccfd4f296e64084471961">WMM_UNCERTAINTY_D_OFFSET</a>);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        uncertainty.Decl = Math.sqrt(decl_constant * decl_constant + decl_variable * decl_variable);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (uncertainty.Decl &gt; 180.0) {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            uncertainty.Decl = 180.0;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> uncertainty;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div><div class="ttc" id="a08047_html_aab42d898a7468c9a89799b40e1e9b6b6"><div class="ttname"><a href="a08047.html#aab42d898a7468c9a89799b40e1e9b6b6">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_F</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_F</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:107</div></div>
+<div class="ttc" id="a08047_html_afccc7c5b6139d059b4c1da503786771d"><div class="ttname"><a href="a08047.html#afccc7c5b6139d059b4c1da503786771d">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_I</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_I</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:112</div></div>
+<div class="ttc" id="a08047_html_ab39932978501e3539a40c658b56d2ae9"><div class="ttname"><a href="a08047.html#ab39932978501e3539a40c658b56d2ae9">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_Z</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_Z</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:111</div></div>
+<div class="ttc" id="a08047_html_a5f7ad77c75bccfd4f296e64084471961"><div class="ttname"><a href="a08047.html#a5f7ad77c75bccfd4f296e64084471961">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_D_OFFSET</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_D_OFFSET</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:113</div></div>
+<div class="ttc" id="a08047_html_a501e2a9bf98a21e937530ebc5d3ed213"><div class="ttname"><a href="a08047.html#a501e2a9bf98a21e937530ebc5d3ed213">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_D_COEF</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_D_COEF</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:114</div></div>
+<div class="ttc" id="a08047_html_ac9e353bfd73d600d82e5aaf2f1087807"><div class="ttname"><a href="a08047.html#ac9e353bfd73d600d82e5aaf2f1087807">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_Y</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_Y</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:110</div></div>
+<div class="ttc" id="a08047_html_a8da2c2ef7d8adc6e59e3f89c9a4d27af"><div class="ttname"><a href="a08047.html#a8da2c2ef7d8adc6e59e3f89c9a4d27af">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_H</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_H</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:108</div></div>
+<div class="ttc" id="a08047_html_a4997e621d653f6a7079c10f5c158aecb"><div class="ttname"><a href="a08047.html#a4997e621d653f6a7079c10f5c158aecb">org.geotoolkit.util.wmm.GeoMagneticElements.WMM_UNCERTAINTY_X</a></div><div class="ttdeci">static final double WMM_UNCERTAINTY_X</div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:109</div></div>
+<div class="ttc" id="a08047_html_a982cf43f120ff8978010e078bd49d9a3"><div class="ttname"><a href="a08047.html#a982cf43f120ff8978010e078bd49d9a3">org.geotoolkit.util.wmm.GeoMagneticElements.H</a></div><div class="ttdeci">double H</div><div class="ttdoc">Horizontal Magnetic Field Strength, in nT. </div><div class="ttdef"><b>Definition:</b> GeoMagneticElements.java:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af01526d219df6c99896c0e98f98fc090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af01526d219df6c99896c0e98f98fc090">&#9670;&nbsp;</a></span>Decl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Decl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Angle between the magnetic field vector and true north, positive east, in degrees. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, <a class="el" href="a08075.html#a69ccd36c685d5ae4728a385fe1ef98f0">WorldMagneticModel.calculateGridVariation()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a8922a96ad7df80f5902ebeb555096cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8922a96ad7df80f5902ebeb555096cda">&#9670;&nbsp;</a></span>Decldot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Decldot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly Rate of change in declination, in °/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="ae3520ebb3ff8d6feab3e6afb47ed4040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3520ebb3ff8d6feab3e6afb47ed4040">&#9670;&nbsp;</a></span>F</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Magnetic Field Strength, in nT. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a19e7270ce568a4d9f700342e71d132dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e7270ce568a4d9f700342e71d132dc">&#9670;&nbsp;</a></span>Fdot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Fdot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly rate of change in Magnetic field strength, in nT/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="aaf045cf7f245074dd20d2576762e208e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf045cf7f245074dd20d2576762e208e">&#9670;&nbsp;</a></span>GV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Grid Variation, in degrees. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a69ccd36c685d5ae4728a385fe1ef98f0">WorldMagneticModel.calculateGridVariation()</a>.</p>
+
+</div>
+</div>
+<a id="a9ba10c7ccd00101f42df864e05cc0e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba10c7ccd00101f42df864e05cc0e2d">&#9670;&nbsp;</a></span>GVdot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GVdot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly rate of change in grid variation, in °/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="a982cf43f120ff8978010e078bd49d9a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982cf43f120ff8978010e078bd49d9a3">&#9670;&nbsp;</a></span>H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Horizontal Magnetic Field Strength, in nT. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a0306fee23e557909a91d033764e0769a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0306fee23e557909a91d033764e0769a">&#9670;&nbsp;</a></span>Hdot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Hdot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly rate of change in horizontal field strength, in nT/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="a2fbeb549073bacd87e06c0b0b30e00b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbeb549073bacd87e06c0b0b30e00b8">&#9670;&nbsp;</a></span>Incl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Incl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Angle between the magnetic field vector and the horizontal plane, positive down, in degrees. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="ac0a3028524b8a44d0afcd4914eb7444e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a3028524b8a44d0afcd4914eb7444e">&#9670;&nbsp;</a></span>Incldot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Incldot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly Rate of change in inclination, in °/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="a501e2a9bf98a21e937530ebc5d3ed213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501e2a9bf98a21e937530ebc5d3ed213">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_D_COEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_D_COEF = 5432.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f7ad77c75bccfd4f296e64084471961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7ad77c75bccfd4f296e64084471961">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_D_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_D_OFFSET = 0.24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="aab42d898a7468c9a89799b40e1e9b6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab42d898a7468c9a89799b40e1e9b6b6">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_F = 152.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a8da2c2ef7d8adc6e59e3f89c9a4d27af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da2c2ef7d8adc6e59e3f89c9a4d27af">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_H = 133.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="afccc7c5b6139d059b4c1da503786771d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccc7c5b6139d059b4c1da503786771d">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_I</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_I = 0.22</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a4997e621d653f6a7079c10f5c158aecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4997e621d653f6a7079c10f5c158aecb">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_X = 138.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="ac9e353bfd73d600d82e5aaf2f1087807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e353bfd73d600d82e5aaf2f1087807">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_Y = 89.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="ab39932978501e3539a40c658b56d2ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39932978501e3539a40c658b56d2ae9">&#9670;&nbsp;</a></span>WMM_UNCERTAINTY_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double WMM_UNCERTAINTY_Z = 165.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a1059b82f84827fc49ea81b12566b3cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1059b82f84827fc49ea81b12566b3cdb">&#9670;&nbsp;</a></span>X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double X</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Northern component of the magnetic field vector, in nT. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="af430b6f95f83d12a85fa89fbd93f88b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af430b6f95f83d12a85fa89fbd93f88b4">&#9670;&nbsp;</a></span>Xdot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Xdot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly rate of change in the northern component, in nT/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="ac8d59bf77d5ef21e7c7a88b08f14c825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d59bf77d5ef21e7c7a88b08f14c825">&#9670;&nbsp;</a></span>Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Eastern component of the magnetic field vector, in nT. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a312b93ea264fe90a10b3bc3aaf3de7ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312b93ea264fe90a10b3bc3aaf3de7ad">&#9670;&nbsp;</a></span>Ydot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ydot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly rate of change in the eastern component, in nT/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+<a id="a0f16a8f561453187897f0820186da39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f16a8f561453187897f0820186da39b">&#9670;&nbsp;</a></span>Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Downward component of the magnetic field vector, in nT. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#ac9f56d3848bcc9f156b934637d7431e3">WorldMagneticModel.calculateGeoMagneticElements()</a>, <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>, and <a class="el" href="a08047.html#af29a5ea7bb7702ebfd7b18838595eff5">GeoMagneticElements.computeErrors()</a>.</p>
+
+</div>
+</div>
+<a id="a049e0736afbfebc0eefa6b90b907d012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049e0736afbfebc0eefa6b90b907d012">&#9670;&nbsp;</a></span>Zdot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Zdot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Yearly rate of change in the downward component, in nT/yr. </p>
+
+<p class="reference">Referenced by <a class="el" href="a08075.html#a51badbcd384dcc3173186bc07ca24fcb">WorldMagneticModel.calculateSecularVariationElements()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03811.html">wmm</a></li><li class="navelem"><a class="el" href="a08047.html">GeoMagneticElements</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

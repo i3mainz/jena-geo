@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: GridTraversal.PointList Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,29 +56,137 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07962.html','');});
+$(document).ready(function(){initNavTree('a07959.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07956.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Strings Member List</div>  </div>
+<div class="title">GridTraversal.PointList Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a07962.html">Strings</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07962.html#acc241dcef0a96e5c00a86ba2968d1a7e">isJavaIdentifier</a>(final CharSequence identifier)</td><td class="entry"><a class="el" href="a07962.html">Strings</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07962.html#aecb1c9daa33c3c4caf13aacdff40cd65">isUpperCase</a>(final CharSequence text)</td><td class="entry"><a class="el" href="a07962.html">Strings</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07962.html#a13cb47861a11d015b7d93ce45df0a278">isUpperCase</a>(final CharSequence text, int lower, final int upper)</td><td class="entry"><a class="el" href="a07962.html">Strings</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07166.html#a6713f4ef0e5017eefa1b00c080924796">Static</a>()</td><td class="entry"><a class="el" href="a07166.html">Static</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07962.html#a9b8e25499dae5334c826b13eb2166c06">Strings</a>()</td><td class="entry"><a class="el" href="a07962.html">Strings</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07962.html#a56e7afaf717b503bd96da7aebd03fc68">toString</a>(final Iterable&lt;?&gt; collection, final String separator)</td><td class="entry"><a class="el" href="a07962.html">Strings</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p>A simple abstraction allowing to access input polyline points, whatever structure it is in.  
+ <a href="a07959.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for GridTraversal.PointList:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07958.png" border="0" usemap="#GridTraversal_8PointList_inherit__map" alt="Inheritance graph"/></div>
+<map name="GridTraversal_8PointList_inherit__map" id="GridTraversal_8PointList_inherit__map">
+<area shape="rect" id="node2" href="a07963.html" title="GridTraversal.Contiguous\lArrayPoint" alt="" coords="5,80,176,121"/>
+<area shape="rect" id="node3" href="a07967.html" title="GridTraversal.Point2DList" alt="" coords="201,87,373,114"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af4b57d21919c42d55af03391f91a1c08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07959.html#af4b57d21919c42d55af03391f91a1c08">size</a> ()</td></tr>
+<tr class="separator:af4b57d21919c42d55af03391f91a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07959.html#aa71d41fd3d95c354d4d5e922c6c21210">isEmpty</a> ()</td></tr>
+<tr class="separator:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a85c8e0e311f358dc68e6e38394ef48"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07959.html#a0a85c8e0e311f358dc68e6e38394ef48">getPoint</a> (int index)</td></tr>
+<tr class="separator:a0a85c8e0e311f358dc68e6e38394ef48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07959.html#a56e1ed7f77c1dad3205d8c25e62c0432">getDimension</a> ()</td></tr>
+<tr class="separator:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple abstraction allowing to access input polyline points, whatever structure it is in. </p>
+<p>For now, we only manage 1D array of value, but in the future, we could simply add a new <a class="el" href="a07959.html" title="A simple abstraction allowing to access input polyline points, whatever structure it is in...">PointList</a> using a JTS polyline as input, or any other structure.</p>
+<p>TODO : replace with true <a class="el" href="">List</a> interface. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56e1ed7f77c1dad3205d8c25e62c0432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e1ed7f77c1dad3205d8c25e62c0432">&#9670;&nbsp;</a></span>getDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Number of coordinates in a single point (length of a point vector). </dd></dl>
+
+<p>Implemented in <a class="el" href="a07967.html#a56e1ed7f77c1dad3205d8c25e62c0432">GridTraversal.Point2DList</a>, and <a class="el" href="a07963.html#a56e1ed7f77c1dad3205d8c25e62c0432">GridTraversal.ContiguousArrayPoint</a>.</p>
+
+</div>
+</div>
+<a id="a0a85c8e0e311f358dc68e6e38394ef48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a85c8e0e311f358dc68e6e38394ef48">&#9670;&nbsp;</a></span>getPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] getPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="a07967.html#a0a85c8e0e311f358dc68e6e38394ef48">GridTraversal.Point2DList</a>, and <a class="el" href="a07963.html#a0a85c8e0e311f358dc68e6e38394ef48">GridTraversal.ContiguousArrayPoint</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07955.html#a4b1bea983b6ac9a5f8c676d2639c07bb">GridTraversal.prepareSegment()</a>, and <a class="el" href="a07971.html#a2d349f14626a156d4206ab99c6eaf685">GridTraversal.Builder.stream()</a>.</p>
+
+</div>
+</div>
+<a id="aa71d41fd3d95c354d4d5e922c6c21210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71d41fd3d95c354d4d5e922c6c21210">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="a07967.html#aa71d41fd3d95c354d4d5e922c6c21210">GridTraversal.Point2DList</a>, and <a class="el" href="a07963.html#aa71d41fd3d95c354d4d5e922c6c21210">GridTraversal.ContiguousArrayPoint</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07971.html#a2d349f14626a156d4206ab99c6eaf685">GridTraversal.Builder.stream()</a>.</p>
+
+</div>
+</div>
+<a id="af4b57d21919c42d55af03391f91a1c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b57d21919c42d55af03391f91a1c08">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="a07967.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.Point2DList</a>, and <a class="el" href="a07963.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.ContiguousArrayPoint</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07955.html#a9d386a6ce9410626f6e5dde1029a6ecb">GridTraversal.GridTraversal()</a>, <a class="el" href="a07963.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.ContiguousArrayPoint.size()</a>, and <a class="el" href="a07971.html#a2d349f14626a156d4206ab99c6eaf685">GridTraversal.Builder.stream()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03809.html">grid</a></li><li class="navelem"><a class="el" href="a07955.html">GridTraversal</a></li><li class="navelem"><a class="el" href="a07959.html">PointList</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

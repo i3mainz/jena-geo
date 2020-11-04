@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package io.github.galbiston.geosparql_jena.implementation.datatype.temporal</title>
+<title>jena-geo: Package de.hsmainz.cs.semgis.arqextension.point.constructor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,26 +63,51 @@ $(document).ready(function(){initNavTree('a03709.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package io.github.galbiston.geosparql_jena.implementation.datatype.temporal</div>  </div>
+<div class="title">Package de.hsmainz.cs.semgis.arqextension.point.constructor</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><hr/>
+<p> Copyright (c) 2017 Timo Homburg, i3Mainz.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06338.html">TemporalRange</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05151.html">GeneratePoints</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06342.html">TemporalRangeDatatype</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05155.html">MakePoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 2D, 3DZ or 4D point geometry.  <a href="a05155.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06346.html">TemporalRangeWrapper</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05159.html">MakePointM</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a point geometry with an x y and m coordinate.  <a href="a05159.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05163.html">MakePointT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05167.html">MPointFromText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a Geometry from WKT with the given SRID.  <a href="a05167.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05171.html">PointFromGeoHash</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a point from a GeoHash string.  <a href="a05171.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05175.html">PointFromText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a point Geometry from WKT with the given SRID.  <a href="a05175.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05179.html">PointFromWKB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a geometry from WKB with the given SRID.  <a href="a05179.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><hr/>
+<p> Copyright (c) 2017 Timo Homburg, i3Mainz. </p>
+<p>All rights reserved. This program and the accompanying materials are made available under the terms of the BSD License which accompanies this distribution, and is available at <a href="https://directory.fsf.org/wiki/License:BSD_4Clause">https://directory.fsf.org/wiki/License:BSD_4Clause</a></p>
+<p>This project extends work by Ian Simmons who developed the Parliament Triple Store. <a href="http://parliament.semwebcentral.org">http://parliament.semwebcentral.org</a> and published his work und BSD License as well. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03702.html">io</a></li><li class="navelem"><a class="el" href="a03703.html">github</a></li><li class="navelem"><a class="el" href="a03704.html">galbiston</a></li><li class="navelem"><a class="el" href="a03705.html">geosparql_jena</a></li><li class="navelem"><a class="el" href="a03706.html">implementation</a></li><li class="navelem"><a class="el" href="a03707.html">datatype</a></li><li class="navelem"><a class="el" href="a03709.html">temporal</a></li>
+    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03708.html">point</a></li><li class="navelem"><a class="el" href="a03709.html">constructor</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

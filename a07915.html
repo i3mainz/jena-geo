@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: UnSynchronizedCache&lt; K extends Object, V extends Object &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,25 +56,140 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07918.html','');});
+$(document).ready(function(){initNavTree('a07915.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="a07912.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LogProducer Member List</div>  </div>
+<div class="title">UnSynchronizedCache&lt; K extends Object, V extends Object &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a07918.html">LogProducer</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07918.html#a95a143ee193363940fd6c0b93ab0e780">getLogLevel</a>()</td><td class="entry"><a class="el" href="a07918.html">LogProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a07918.html#aad154ba38b195ef64825d5679a586144">setLogLevel</a>(Level level)</td><td class="entry"><a class="el" href="a07918.html">LogProducer</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>A Cache map that is limited to the given number of elements.  
+ <a href="a07915.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for UnSynchronizedCache&lt; K extends Object, V extends Object &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07914.png" border="0" usemap="#UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_inherit__map" id="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_inherit__map">
+<area shape="rect" id="node3" href="a13339.html" title="Object" alt="" coords="196,5,256,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for UnSynchronizedCache&lt; K extends Object, V extends Object &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07913.png" border="0" usemap="#UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_coll__map" id="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_coll__map">
+<area shape="rect" id="node4" href="a13339.html" title="Object" alt="" coords="301,5,361,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a11718894cb21b2531ee1d09f965b8960"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a11718894cb21b2531ee1d09f965b8960">UnSynchronizedCache</a> (final int maxElement)</td></tr>
+<tr class="separator:a11718894cb21b2531ee1d09f965b8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a01aaafbabce67e6d938b2875885f426b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a01aaafbabce67e6d938b2875885f426b">removeEldestEntry</a> (final Entry&lt; K, V &gt; entry)</td></tr>
+<tr class="separator:a01aaafbabce67e6d938b2875885f426b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a669e7cd38566cac9934e6d3b42e2621a"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">maxElements</a></td></tr>
+<tr class="separator:a669e7cd38566cac9934e6d3b42e2621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Cache map that is limited to the given number of elements. </p>
+<p>This map is not synchronized and do not preserve older elements with weak or soft reference. It can be seen a fixed max size map where only the most recents elements are preserved.</p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a11718894cb21b2531ee1d09f965b8960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11718894cb21b2531ee1d09f965b8960">&#9670;&nbsp;</a></span>UnSynchronizedCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07915.html">UnSynchronizedCache</a> </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>maxElement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                     {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        super();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.<a class="code" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">maxElements</a> = maxElement;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="ttc" id="a07915_html_a669e7cd38566cac9934e6d3b42e2621a"><div class="ttname"><a href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">org.geotoolkit.util.collection.UnSynchronizedCache.maxElements</a></div><div class="ttdeci">final int maxElements</div><div class="ttdef"><b>Definition:</b> UnSynchronizedCache.java:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a01aaafbabce67e6d938b2875885f426b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01aaafbabce67e6d938b2875885f426b">&#9670;&nbsp;</a></span>removeEldestEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean removeEldestEntry </td>
+          <td>(</td>
+          <td class="paramtype">final Entry&lt; K, V &gt;&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">UnSynchronizedCache&lt; K extends Object, V extends Object &gt;.maxElements</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                 {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> size() &gt; <a class="code" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">maxElements</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div><div class="ttc" id="a07915_html_a669e7cd38566cac9934e6d3b42e2621a"><div class="ttname"><a href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">org.geotoolkit.util.collection.UnSynchronizedCache.maxElements</a></div><div class="ttdeci">final int maxElements</div><div class="ttdef"><b>Definition:</b> UnSynchronizedCache.java:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a669e7cd38566cac9934e6d3b42e2621a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669e7cd38566cac9934e6d3b42e2621a">&#9670;&nbsp;</a></span>maxElements</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int maxElements</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07915.html#a01aaafbabce67e6d938b2875885f426b">UnSynchronizedCache&lt; K extends Object, V extends Object &gt;.removeEldestEntry()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03806.html">collection</a></li><li class="navelem"><a class="el" href="a07915.html">UnSynchronizedCache</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

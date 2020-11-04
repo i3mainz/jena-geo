@@ -1,9 +1,7 @@
 var a03713 =
 [
-    [ "apache", "a03714.html", "a03714" ],
-    [ "geotoolkit", "a03722.html", "a03722" ],
-    [ "geotools", "a03784.html", "a03784" ],
-    [ "jaitools", "a03787.html", "a03787" ],
-    [ "locationtech", "a03789.html", "a03789" ],
-    [ "opensphere", "a03801.html", "a03801" ]
+    [ "MakePolygon", "a05275.html", "a05275" ],
+    [ "MPolyFromText", "a05279.html", "a05279" ],
+    [ "PolygonFromText", "a05283.html", "a05283" ],
+    [ "PolygonFromWKB", "a05287.html", "a05287" ]
 ];

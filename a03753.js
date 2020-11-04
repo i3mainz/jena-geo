@@ -1,4 +1,4 @@
 var a03753 =
 [
-    [ "DefaultJMXClient", "a07178.html", "a07178" ]
+    [ "j2d", "a03751.html", "a03751" ]
 ];

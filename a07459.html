@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: EPSGWriter Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,34 +56,323 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07462.html','');});
+$(document).ready(function(){initNavTree('a07459.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07456.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Assertions Member List</div>  </div>
+<div class="title">EPSGWriter Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a07462.html">Assertions</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07462.html#ad87d114e0670dedd85ebd04517ea64ec">Assertions</a>()</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07462.html#a389504a0d09f6355dbd35c0ef5004414">checkDerivative</a>(final Matrix spherical, final Matrix ellipsoidal)</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">package</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07462.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">checkInverseTransform</a>(final double[] expected, final int offset, final double λ, final double φ, final double tolerance)</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">package</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07462.html#ae7344d9531343fe1df053612dcddd8f7">checkInverseTransform</a>(final double[] expected, final int offset, final double λ, final double φ)</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">package</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07462.html#a20cd87c223c269a9caa2600a21ee5906">checkTransform</a>(final double[] expected, final int offset, final double x, final double y, final double tolerance)</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">package</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07462.html#ad8ff646382b06bdac00750b8822b936a">checkTransform</a>(final double[] expected, final int offset, final double x, final double y)</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">package</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07462.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(final String variable, double expected, double actual, final double tolerance)</td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07462.html#a6d0ebada0f68a43e961fa55e24a4bef0">DERIVATIVE_TOLERANCE</a></td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07462.html#aff214aa5728181a88d9f937c5743210a">FORWARD_TOLERANCE</a></td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07462.html#a92af38a74e47209696ad1ed52c2209d9">INVERSE_TOLERANCE</a></td><td class="entry"><a class="el" href="a07462.html">Assertions</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07166.html#a6713f4ef0e5017eefa1b00c080924796">Static</a>()</td><td class="entry"><a class="el" href="a07166.html">Static</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<p>This class is the opposite of EpsgFactory, rather then create <a class="el" href="a07447.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> objects it allows to store user defined <a class="el" href="a07447.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> and allocate them an EPSG code in range [32768, 60 000 000[.  
+ <a href="a07459.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aac196e826d4a8af1dde7d5e4fa3831c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#aac196e826d4a8af1dde7d5e4fa3831c7">getOrCreateCoordinateReferenceSystem</a> (final CoordinateReferenceSystem candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:aac196e826d4a8af1dde7d5e4fa3831c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#aac196e826d4a8af1dde7d5e4fa3831c7">More...</a><br /></td></tr>
+<tr class="separator:aac196e826d4a8af1dde7d5e4fa3831c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf201b9700edf0449f699a14e2ee46e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#abf201b9700edf0449f699a14e2ee46e9">getOrCreateCoordinateSystem</a> (final CoordinateSystem candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:abf201b9700edf0449f699a14e2ee46e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#abf201b9700edf0449f699a14e2ee46e9">More...</a><br /></td></tr>
+<tr class="separator:abf201b9700edf0449f699a14e2ee46e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f7b704e6f63843ce6d02d6e113b100"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#af3f7b704e6f63843ce6d02d6e113b100">getOrCreateDatum</a> (final Datum candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:af3f7b704e6f63843ce6d02d6e113b100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#af3f7b704e6f63843ce6d02d6e113b100">More...</a><br /></td></tr>
+<tr class="separator:af3f7b704e6f63843ce6d02d6e113b100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe94ccf480f98ef437b0df13dd7b882f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#afe94ccf480f98ef437b0df13dd7b882f">getOrCreateProjection</a> (final Projection candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:afe94ccf480f98ef437b0df13dd7b882f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#afe94ccf480f98ef437b0df13dd7b882f">More...</a><br /></td></tr>
+<tr class="separator:afe94ccf480f98ef437b0df13dd7b882f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e1573e5cc7d17697db11ca92a82a35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#ae3e1573e5cc7d17697db11ca92a82a35">getOrCreateArea</a> (final Extent candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:ae3e1573e5cc7d17697db11ca92a82a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#ae3e1573e5cc7d17697db11ca92a82a35">More...</a><br /></td></tr>
+<tr class="separator:ae3e1573e5cc7d17697db11ca92a82a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfe8a11ad6840c9d82cb6ad536f8483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#abbfe8a11ad6840c9d82cb6ad536f8483">getOrCreateUOM</a> (final Unit candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:abbfe8a11ad6840c9d82cb6ad536f8483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#abbfe8a11ad6840c9d82cb6ad536f8483">More...</a><br /></td></tr>
+<tr class="separator:abbfe8a11ad6840c9d82cb6ad536f8483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfbff181730757a1e52bb642c8dc6453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#adfbff181730757a1e52bb642c8dc6453">getOrCreateEllipsoid</a> (final Ellipsoid candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:adfbff181730757a1e52bb642c8dc6453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#adfbff181730757a1e52bb642c8dc6453">More...</a><br /></td></tr>
+<tr class="separator:adfbff181730757a1e52bb642c8dc6453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0ef226d4257bb073fcb33ebf9f1d37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07459.html#aee0ef226d4257bb073fcb33ebf9f1d37">getOrCreatePrimeMeridian</a> (final PrimeMeridian candidate)  throws FactoryException</td></tr>
+<tr class="memdesc:aee0ef226d4257bb073fcb33ebf9f1d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store given object and return it's allocated epsg code.  <a href="#aee0ef226d4257bb073fcb33ebf9f1d37">More...</a><br /></td></tr>
+<tr class="separator:aee0ef226d4257bb073fcb33ebf9f1d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is the opposite of EpsgFactory, rather then create <a class="el" href="a07447.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> objects it allows to store user defined <a class="el" href="a07447.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> and allocate them an EPSG code in range [32768, 60 000 000[. </p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae3e1573e5cc7d17697db11ca92a82a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e1573e5cc7d17697db11ca92a82a35">&#9670;&nbsp;</a></span>getOrCreateArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateArea </td>
+          <td>(</td>
+          <td class="paramtype">final Extent&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>Extent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac196e826d4a8af1dde7d5e4fa3831c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac196e826d4a8af1dde7d5e4fa3831c7">&#9670;&nbsp;</a></span>getOrCreateCoordinateReferenceSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateCoordinateReferenceSystem </td>
+          <td>(</td>
+          <td class="paramtype">final CoordinateReferenceSystem&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>CoordinateReferenceSystem </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf201b9700edf0449f699a14e2ee46e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf201b9700edf0449f699a14e2ee46e9">&#9670;&nbsp;</a></span>getOrCreateCoordinateSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateCoordinateSystem </td>
+          <td>(</td>
+          <td class="paramtype">final CoordinateSystem&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>CoordinateSystem </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af3f7b704e6f63843ce6d02d6e113b100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f7b704e6f63843ce6d02d6e113b100">&#9670;&nbsp;</a></span>getOrCreateDatum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateDatum </td>
+          <td>(</td>
+          <td class="paramtype">final Datum&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>Datum </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfbff181730757a1e52bb642c8dc6453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfbff181730757a1e52bb642c8dc6453">&#9670;&nbsp;</a></span>getOrCreateEllipsoid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateEllipsoid </td>
+          <td>(</td>
+          <td class="paramtype">final Ellipsoid&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>Ellipsoid </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee0ef226d4257bb073fcb33ebf9f1d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0ef226d4257bb073fcb33ebf9f1d37">&#9670;&nbsp;</a></span>getOrCreatePrimeMeridian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreatePrimeMeridian </td>
+          <td>(</td>
+          <td class="paramtype">final PrimeMeridian&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>PrimeMeridian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afe94ccf480f98ef437b0df13dd7b882f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe94ccf480f98ef437b0df13dd7b882f">&#9670;&nbsp;</a></span>getOrCreateProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateProjection </td>
+          <td>(</td>
+          <td class="paramtype">final Projection&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>Projection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbfe8a11ad6840c9d82cb6ad536f8483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfe8a11ad6840c9d82cb6ad536f8483">&#9670;&nbsp;</a></span>getOrCreateUOM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getOrCreateUOM </td>
+          <td>(</td>
+          <td class="paramtype">final Unit&#160;</td>
+          <td class="paramname"><em>candidate</em></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store given object and return it's allocated epsg code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">candidate</td><td>Unit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer, allocated epsg code </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03793.html">referencing</a></li><li class="navelem"><a class="el" href="a07459.html">EPSGWriter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

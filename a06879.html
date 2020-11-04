@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: Combine.Transform Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,26 +56,106 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06882.html','');});
+$(document).ready(function(){initNavTree('a06879.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a06876.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PaletteDisposer Member List</div>  </div>
+<div class="title">Combine.Transform Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06882.html">PaletteDisposer</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06882.html#ab953e90edb69534eb052f9064f6b40e9">dispose</a>()</td><td class="entry"><a class="el" href="a06882.html">PaletteDisposer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06882.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a></td><td class="entry"><a class="el" href="a06882.html">PaletteDisposer</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06882.html#a47bf225ac5759d9f390795c1192acc2e">PaletteDisposer</a>(final Palette palette, final ColorModel colors)</td><td class="entry"><a class="el" href="a06882.html">PaletteDisposer</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Transforms the sample values for one pixel during a "{@link Combine Combine}" operation.  
+ <a href="a06879.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab1b203bc32272fc5b53cfa1ac73cf968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06879.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> (double[] values)</td></tr>
+<tr class="memdesc:ab1b203bc32272fc5b53cfa1ac73cf968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the sample values for one pixel before the linear combination.  <a href="#ab1b203bc32272fc5b53cfa1ac73cf968">More...</a><br /></td></tr>
+<tr class="separator:ab1b203bc32272fc5b53cfa1ac73cf968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a2c4463f22b0797ace90124bb9ecdc"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06879.html#a03a2c4463f22b0797ace90124bb9ecdc">isSeparable</a> ()</td></tr>
+<tr class="memdesc:a03a2c4463f22b0797ace90124bb9ecdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a03a2c4463f22b0797ace90124bb9ecdc">More...</a><br /></td></tr>
+<tr class="separator:a03a2c4463f22b0797ace90124bb9ecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Transforms the sample values for one pixel during a "{@link Combine Combine}" operation. </p>
+<p>The method <a class="el" href="a06879.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> is invoked by <a class="el" href="a06875.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect(...)</a> just before the sample values are combined as:</p>
+<p>{ java values[0]*row[0] + values[1]*row[1] + values[2]*row[2] + ... + row[sourceBands] }</p>
+<p>This interface provides a hook where non-linear transformations can be performed before the linear one. For example, the</p><div class="fragment"><div class="line"><a class="code" href="a06879.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> </div></div><!-- fragment --><p> method could substitutes some values by their logarithm.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.1  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a03a2c4463f22b0797ace90124bb9ecdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a2c4463f22b0797ace90124bb9ecdc">&#9670;&nbsp;</a></span>isSeparable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean isSeparable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the transformation performed by <a class="el" href="a06879.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a> does not depend on the ordering of samples in the</p><div class="fragment"><div class="line">values </div></div><!-- fragment --><p> array. This method can returns</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the</p><div class="fragment"><div class="line"><a class="code" href="a06879.html#ab1b203bc32272fc5b53cfa1ac73cf968">transformSamples</a>(<span class="keywordtype">double</span>[]) </div></div><!-- fragment --><p> implementation meet the following conditions: </p>
+<ul>
+<li>
+The transformation is separable, i.e. the output value<div class="fragment"><div class="line">values[i] </div></div><!-- fragment --> depends only on the input value<div class="fragment"><div class="line">values[i] </div></div><!-- fragment --> for all <em>i</em>. </li>
+<li>
+The transformation do not depends on the value of the index <em>i</em>. </li>
+</ul>
+<p>For example, the following implementations meets the above mentioned conditions:</p>
+<p>{ java for (int i=0; i&lt;values.length; i++) { values[i] = someFunction(values[i]); } }</p>
+<p>A</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> value will allows some optimizations inside the <a class="el" href="a06875.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect(...)</a> method. This method may conservatly returns</p><div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --><p> if this information is unknown.</p>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the transformation does not depend on the ordering of sample values. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06875.html#abc381ff2b8f349756a41d4ab95795238">Combine.Combine()</a>.</p>
+
+</div>
+</div>
+<a id="ab1b203bc32272fc5b53cfa1ac73cf968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b203bc32272fc5b53cfa1ac73cf968">&#9670;&nbsp;</a></span>transformSamples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transformSamples </td>
+          <td>(</td>
+          <td class="paramtype">double []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforms the sample values for one pixel before the linear combination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>The sample values to transformation. Transformation are performed in-place. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a06875.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03770.html">jai</a></li><li class="navelem"><a class="el" href="a06875.html">Combine</a></li><li class="navelem"><a class="el" href="a06879.html">Transform</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

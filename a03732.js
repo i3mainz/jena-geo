@@ -1,4 +1,4 @@
 var a03732 =
 [
-    [ "ColorUtilities", "a06654.html", "a06654" ]
+    [ "ors", "a03733.html", "a03733" ]
 ];

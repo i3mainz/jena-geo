@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.geotoolkit.parameter</title>
+<title>jena-geo: Package org.geotoolkit.display.shape</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,64 +63,44 @@ $(document).ready(function(){initNavTree('a03757.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.geotoolkit.parameter</div>  </div>
+<div class="title">Package org.geotoolkit.display.shape</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><a class="el" href="a07306.html" title="The definition of a parameter used by an operation method. ">org.geotoolkit.parameter.DefaultParameterDescriptor</a> <a class="el" href="a07314.html" title="A parameter value used by an operation method. ">Parameter</a> descriptor} and  <a class="el" href="a07314.html" title="A parameter value used by an operation method. ">org.geotoolkit.parameter.Parameter</a> parameter value} implementations.  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07294.html">AbstractParameter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root class of <a class="el" href="">ParameterValue</a> and <a class="el" href="">ParameterValueGroup</a> implementations.  <a href="a07294.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06587.html">DoubleDimension2D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="">Dimension2D</a> using double-precision floating point values.  <a href="a06587.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07302.html">AbstractParameterValue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class of <a class="el" href="">ParameterValue</a> implementations.  <a href="a07302.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06591.html">FloatDimension2D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="">Dimension2D</a> using single-precision floating point values.  <a href="a06591.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07306.html">DefaultParameterDescriptor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of a parameter used by an operation method.  <a href="a07306.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html">InfiniteRectangle2D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An immutable subclass of a <a class="el" href="">Rectangle2D</a> with bounds extending toward infinities.  <a href="a06595.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07310.html">FloatParameter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A parameter value as a floating point (double precision) number.  <a href="a07310.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06599.html">ProjectedPathIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A path iterator which applies a map projection on the fly.  <a href="a06599.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07314.html">Parameter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A parameter value used by an operation method.  <a href="a07314.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06603.html">ProjectedShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an arbitrary <a class="el" href="">MathTransform2D</a> (typically a projection) on a <a class="el" href="">Shape</a>.  <a href="a06603.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07318.html">ParameterGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of related parameter values.  <a href="a07318.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html">ShapeUtilities</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static methods operating on shapes from the <a class="el" href="">java.awt.geom</a> package.  <a href="a06607.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07322.html">Parameters</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper methods for working with the parameter API from <a class="el" href="">org.opengis.parameter</a> package.  <a href="a07322.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html">TransformedShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an arbitrary <a class="el" href="">AffineTransform</a> on a <a class="el" href="">Shape</a>.  <a href="a06611.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07326.html">ParameterValueList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list to be returned by <a class="el" href="">Parameter#values</a>.  <a href="a07326.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html">XRectangle2D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializable rectangle capable to handle infinite values.  <a href="a06615.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="a07306.html" title="The definition of a parameter used by an operation method. ">org.geotoolkit.parameter.DefaultParameterDescriptor</a> <a class="el" href="a07314.html" title="A parameter value used by an operation method. ">Parameter</a> descriptor} and  <a class="el" href="a07314.html" title="A parameter value used by an operation method. ">org.geotoolkit.parameter.Parameter</a> parameter value} implementations. </p>
-<p>An explanation for this package is provided in the  org.opengis.parameter OpenGIS&reg; javadoc}. The remaining discussion on this page is specific to the Geotk implementation. </p>
-<p>The starting point is often <a class="el" href="">org.geotoolkit.parameter.DefaultParameterDescriptorGroup</a>. Operation implementations need to defines one. The following example creates a group of two parameters. The first parameter accepts integers ranging from 0 to 3 inclusive, with a default value of 2. The second parameter accepts real numbers ranging from 0 to 100 kilometres inclusive, with no default value:</p>
-<p>{ java // Creates the group of parameters named "MyOperation". ParameterDescriptorGroup myOperation = new DefaultParameterDescriptorGroup("MyOperation", DefaultParameterDescriptor.create("dimension", 2, 0, 3), DefaultParameterDescriptor.create("distance", Double.NaN, 0, 100, Units.KILOMETRE)); }</p>
-<p>Operation usages typically invoke the <a class="el" href="">org.opengis.parameter.ParameterDescriptorGroup#createValue()</a> method on the above </p><div class="fragment"><div class="line">parameters </div></div><!-- fragment --><p> instance, and fill the returned object with parameter values. Example:</p>
-<p>{ java ParameterValueGroup group = myOperation.createValue(); group.parameter("dimension").setValue(3); group.parameter("distance").setValue(200.0, Units.METRE); }</p>
-<p>This Geotk package provides the following implementations:</p>
-<ul>
-<li>
-<a class="el" href="">org.geotoolkit.parameter.DefaultParameterDescriptorGroup</a> for the general case. </li>
-<li>
-<a class="el" href="">org.geotoolkit.parameter.MatrixParameterDescriptors</a> for matrix parameters, including the number of rows and columns. The total number of parameters in this group vary according the number of rows and columns. </li>
-</ul>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03713.html">org</a></li><li class="navelem"><a class="el" href="a03722.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03757.html">parameter</a></li>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03758.html">display</a></li><li class="navelem"><a class="el" href="a03757.html">shape</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

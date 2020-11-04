@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: RollbackableProcess Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,28 +56,367 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07442.html','');});
+$(document).ready(function(){initNavTree('a07439.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07436.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MathTransformProvider Member List</div>  </div>
+<div class="title">RollbackableProcess Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a07442.html">MathTransformProvider</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07442.html#af9e9b331d1a12b4a6f39a0a33428c8d0">EMPTY_ALIAS_ARRAY</a></td><td class="entry"><a class="el" href="a07442.html">MathTransformProvider</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07442.html#a1cf80bddfa868b11edcf0344a894ffbc">EMPTY_IDENTIFIER_ARRAY</a></td><td class="entry"><a class="el" href="a07442.html">MathTransformProvider</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07442.html#a91de8ce5b9cb4b569369ca165c30285f">MathTransformProvider</a>(final int sourceDimension, final int targetDimension, final ParameterDescriptorGroup parameters)</td><td class="entry"><a class="el" href="a07442.html">MathTransformProvider</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a07442.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a></td><td class="entry"><a class="el" href="a07442.html">MathTransformProvider</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07442.html#a9f94f32ec7dd9929aa21f412dbf87817">toMap</a>(final IdentifiedObject parameters)</td><td class="entry"><a class="el" href="a07442.html">MathTransformProvider</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p>Extend <a class="el" href="a07407.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions.  
+ <a href="a07439.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for RollbackableProcess:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07438.png" border="0" usemap="#RollbackableProcess_inherit__map" alt="Inheritance graph"/></div>
+<map name="RollbackableProcess_inherit__map" id="RollbackableProcess_inherit__map">
+<area shape="rect" id="node2" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. " alt="" coords="57,95,128,121"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for RollbackableProcess:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07437.png" border="0" usemap="#RollbackableProcess_coll__map" alt="Collaboration graph"/></div>
+<map name="RollbackableProcess_coll__map" id="RollbackableProcess_coll__map">
+<area shape="rect" id="node2" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. " alt="" coords="57,95,128,121"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a071de472f6ac976c658e4643f3fb3d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07439.html#a071de472f6ac976c658e4643f3fb3d0c">rollback</a> ()  throws ProcessException</td></tr>
+<tr class="memdesc:a071de472f6ac976c658e4643f3fb3d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rollback <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>.  <a href="#a071de472f6ac976c658e4643f3fb3d0c">More...</a><br /></td></tr>
+<tr class="separator:a071de472f6ac976c658e4643f3fb3d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07411.html">ProcessDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc">getDescriptor</a> ()</td></tr>
+<tr class="memdesc:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the process algorithm and its input/output parameters.  <a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">More...</a><br /></td></tr>
+<tr class="separator:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6e05bc62202398002ecb7aaed46542"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a1f6e05bc62202398002ecb7aaed46542">getInput</a> ()</td></tr>
+<tr class="memdesc:a1f6e05bc62202398002ecb7aaed46542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the input values given to the <a class="el" href="a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method.  <a href="#a1f6e05bc62202398002ecb7aaed46542">More...</a><br /></td></tr>
+<tr class="separator:a1f6e05bc62202398002ecb7aaed46542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a> ()  throws ProcessException</td></tr>
+<tr class="memdesc:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>.  <a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">More...</a><br /></td></tr>
+<tr class="separator:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8f0f9c2be92818a707e613e127a414"><td class="memItemLeft" align="right" valign="top">ProcessStep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a6e8f0f9c2be92818a707e613e127a414">getMetadata</a> ()</td></tr>
+<tr class="memdesc:a6e8f0f9c2be92818a707e613e127a414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the process, the geographic inputs and outputs and other metadata.  <a href="#a6e8f0f9c2be92818a707e613e127a414">More...</a><br /></td></tr>
+<tr class="separator:a6e8f0f9c2be92818a707e613e127a414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3105b8b72c72140d73f00070fc1609e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e">addListener</a> (<a class="el" href="a07431.html">ProcessListener</a> listener)</td></tr>
+<tr class="memdesc:ac3105b8b72c72140d73f00070fc1609e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener to the list of objects to inform about the process progress.  <a href="#ac3105b8b72c72140d73f00070fc1609e">More...</a><br /></td></tr>
+<tr class="separator:ac3105b8b72c72140d73f00070fc1609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858002849881b20fda675f8b8c57aebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a858002849881b20fda675f8b8c57aebc">removeListener</a> (<a class="el" href="a07431.html">ProcessListener</a> listener)</td></tr>
+<tr class="memdesc:a858002849881b20fda675f8b8c57aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener from the list of objects to inform about the process progress.  <a href="#a858002849881b20fda675f8b8c57aebc">More...</a><br /></td></tr>
+<tr class="separator:a858002849881b20fda675f8b8c57aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89afd5200039ec7321a82a2f1d9a036b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07431.html">ProcessListener</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a89afd5200039ec7321a82a2f1d9a036b">getListeners</a> ()</td></tr>
+<tr class="memdesc:a89afd5200039ec7321a82a2f1d9a036b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all registered listeners, or an empty array if none.  <a href="#a89afd5200039ec7321a82a2f1d9a036b">More...</a><br /></td></tr>
+<tr class="separator:a89afd5200039ec7321a82a2f1d9a036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Extend <a class="el" href="a07407.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions. </p>
+<dl class="section author"><dt>Author</dt><dd>Quentin Boileau (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.0</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">org.geotoolkit.process.Process</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac3105b8b72c72140d73f00070fc1609e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3105b8b72c72140d73f00070fc1609e">&#9670;&nbsp;</a></span>addListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a07431.html">ProcessListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a listener to the list of objects to inform about the process progress. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>The listener to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6fa09e7ca2ab88d0a3dd745ec28a5bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">&#9670;&nbsp;</a></span>call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParameterValueGroup call </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws <a class="el" href="a07419.html">ProcessException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>. </p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>Returning a parameter object may sound strange, since parameters are usually for input values rather than output values. Note however that ISO 19115 do the same, since the <code>ProcessStep</code> outputs is a collection of <code>Source</code> objects. In both cases, the outputs may be used as inputs in the next step of a process chain.}</dd></dl>
+<p>The following relations shall hold: </p>
+<ul>
+<li>
+The  ParameterValueGroup::getDescriptor() descriptor} of the returned parameters is the same instance than <code> <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07411.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> getOutputDescriptor()}</code>. </li>
+<li>
+When the process is  <a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f" title="Reports that a process has completed successfully. ">ProcessListener::completed</a> completed}, the <a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a> value shall be the same than the return value of this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method. </li>
+</ul>
+<p>{</p>
+<h1><a class="anchor" id="Event"></a>
+notifications}</h1>
+<p>For any  <a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e" title="Adds a listener to the list of objects to inform about the process progress. ">addListener</a> registered listeners}, this method shall invoke the following methods. Note that all notification events except</p><div class="fragment"><div class="line">progressing </div></div><!-- fragment --><p> are mandatory for all</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> implementations. </p>
+<ul>
+<li>
+<a class="el" href="a07431.html#a7bed9c26a745fe4a7f968be46900b6cb">started</a> (<em>mandatory</em>) at the beginning of this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method; </li>
+<li>
+<a class="el" href="a07431.html#a67c0e7b51b0df4f69b57148f46580b65">progressing</a> (<em>optional</em>) during the process execution; </li>
+<li>
+When this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method is about to exit, exactly <b>one</b> of the following:<ul>
+<li>
+<a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f">completed</a> on success, or </li>
+<li>
+<a class="el" href="a07431.html#a2df903dde386ca28d758548f8e74ed30">failed</a> if an error occurred.</li>
+</ul>
+</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>The computation results as an parameter value groups. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a07419.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if the process failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07411.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> </dd>
+<dd>
+ProcessStep::getOutputs() </dd></dl>
+
+</div>
+</div>
+<a id="ab0bf04fe2a5e9c37f86e0a00738766bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">&#9670;&nbsp;</a></span>getDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07411.html">ProcessDescriptor</a> getDescriptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Description of the process algorithm and its input/output parameters. </p>
+<p>The returned value is the descriptor that created this</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> instance.</p>
+<dl class="section return"><dt>Returns</dt><dd>The process descriptor. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a07419.html#a6956c4e3ccaf7414da811e77f1626dd6">ProcessException.ProcessException()</a>.</p>
+
+</div>
+</div>
+<a id="a1f6e05bc62202398002ecb7aaed46542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6e05bc62202398002ecb7aaed46542">&#9670;&nbsp;</a></span>getInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParameterValueGroup getInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the input values given to the <a class="el" href="a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method. </p>
+<p>The  ParameterValueGroup::getDescriptor() descriptor} of those parameters is the instance returned by <code> <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07411.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> getInputDescriptor()}</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The input parameter values (never<div class="fragment"><div class="line">null </div></div><!-- fragment --> ).</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07411.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> </dd>
+<dd>
+ProcessStep::getSources() </dd></dl>
+
+</div>
+</div>
+<a id="a89afd5200039ec7321a82a2f1d9a036b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89afd5200039ec7321a82a2f1d9a036b">&#9670;&nbsp;</a></span>getListeners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07431.html">ProcessListener</a> [] getListeners </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all registered listeners, or an empty array if none. </p>
+<dl class="section return"><dt>Returns</dt><dd>The registered listeners. </dd></dl>
+
+</div>
+</div>
+<a id="a6e8f0f9c2be92818a707e613e127a414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8f0f9c2be92818a707e613e127a414">&#9670;&nbsp;</a></span>getMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProcessStep getMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a description of the process, the geographic inputs and outputs and other metadata. </p>
+<p>Those metadata are suitable to processes on geographic data and may not be applicable to every kind of processes. If this parameter is provided, then: </p>
+<ul>
+<li>
+<a class="el" href="">ProcessStep#getDate()</a> is the execution date and time of the process. </li>
+<li>
+<a class="el" href="">ProcessStep#getSources()</a> are the geographic  <a class="el" href="a07407.html#a1f6e05bc62202398002ecb7aaed46542" title="Returns the input values given to the ProcessDescriptor#createProcess(ParameterValueGroup) method...">Process::getInput()</a> process inputs}. </li>
+<li>
+<a class="el" href="">ProcessStep#getOutputs()</a> are the geographic  <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca" title="Executes the process and returns the output in a new ParameterValueGroup. ">Process::call()</a> process outputs}. </li>
+<li>
+<a class="el" href="">ProcessStep#getProcessingInformation()</a> is the  <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">Process::getDescriptor()</a> process descriptor}. </li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>A description of the process, the geographic inputs and outputs and other metadata.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
+
+</div>
+</div>
+<a id="a858002849881b20fda675f8b8c57aebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858002849881b20fda675f8b8c57aebc">&#9670;&nbsp;</a></span>removeListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a07431.html">ProcessListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a listener from the list of objects to inform about the process progress. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>The listener to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a071de472f6ac976c658e4643f3fb3d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071de472f6ac976c658e4643f3fb3d0c">&#9670;&nbsp;</a></span>rollback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rollback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws <a class="el" href="a07419.html">ProcessException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rollback <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>. </p>
+<p>Implementers must also handle partial rollback if something when wrong in the middle of <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>.</p>
+<p>For example a process that create two files must not fail on rollback because the last file was not created because of the <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> exception.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a07419.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if something when wrong during rollback. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03791.html">process</a></li><li class="navelem"><a class="el" href="a07439.html">RollbackableProcess</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

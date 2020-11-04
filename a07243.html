@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: Workaround Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,31 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07246.html','');});
+$(document).ready(function(){initNavTree('a07243.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07240.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MetadataFactory Member List</div>  </div>
+<div class="title">Workaround Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a07246.html">MetadataFactory</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07246.html#acfd789906b38548aa61d6c518da1fab3">create</a>(final Class&lt; T &gt; type, final Map&lt; String,?&gt; properties)</td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07246.html#aba9f62fffe8a38949561b2152e381d45">factories</a></td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07246.html#ac8da47cf7fb4c32dd283c0b99eb941ab">factories</a>()</td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07246.html#acc0ade7d5ef66aec760babe95d3d69a4">factoryMethods</a></td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07246.html#abd325d8807bf5bba0577f24b914379d4">MetadataFactory</a>()</td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a07246.html#ac8060e5ed0fc01e5f6076f5d09131a5a">MetadataFactory</a>(final MetadataStandard... standards)</td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07246.html#a862f81d8267663256b6bcd0cc9df8400">MetadataFactory</a>(final Set&lt;?&gt; factories, final MetadataStandard... standards)</td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a07246.html#af8ec6e8ba077f2e9b87cbf958f60af7f">standards</a></td><td class="entry"><a class="el" href="a07246.html">MetadataFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-</table></div><!-- contents -->
+<p>Annotates classes, methods or code which exist only as a workaround for a bug or limitation in a library.  
+ <a href="a07243.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ade9847739bbcfc421adb7cfbfd9f89d6"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07243.html#ade9847739bbcfc421adb7cfbfd9f89d6">library</a> ()</td></tr>
+<tr class="memdesc:ade9847739bbcfc421adb7cfbfd9f89d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string identifying the library.  <a href="#ade9847739bbcfc421adb7cfbfd9f89d6">More...</a><br /></td></tr>
+<tr class="separator:ade9847739bbcfc421adb7cfbfd9f89d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8972d7cb64b90764c110de40e134cfbc"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07243.html#a8972d7cb64b90764c110de40e134cfbc">version</a> ()</td></tr>
+<tr class="memdesc:a8972d7cb64b90764c110de40e134cfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last library version on which the bug has been verified.  <a href="#a8972d7cb64b90764c110de40e134cfbc">More...</a><br /></td></tr>
+<tr class="separator:a8972d7cb64b90764c110de40e134cfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Annotates classes, methods or code which exist only as a workaround for a bug or limitation in a library. </p>
+<p>This annotation is used as a marker for source code only, in order to remind us which part of the code to revisit when new versions of the libraries are available.</p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>When only a portion of a method contains a workaround and the annotation can not be applied to that specific part, than it is applied to the whole method. Developers need to refer to code comments in order to locate the specific part.}</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.15</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.15  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ade9847739bbcfc421adb7cfbfd9f89d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9847739bbcfc421adb7cfbfd9f89d6">&#9670;&nbsp;</a></span>library()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String library </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string identifying the library. </p>
+<p>Typical values are</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;JDK&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;JAI&quot;</span> </div></div><!-- fragment --><p> , </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;NetCDF&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;Units&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;Swingx&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;Geotk&quot;</span> </div></div><!-- fragment --><p> .</p>
+<dl class="section return"><dt>Returns</dt><dd>An identifier of the library. </dd></dl>
+
+</div>
+</div>
+<a id="a8972d7cb64b90764c110de40e134cfbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8972d7cb64b90764c110de40e134cfbc">&#9670;&nbsp;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The last library version on which the bug has been verified. </p>
+<p>The bug may have existed before, and may still exist later.</p>
+<dl class="section return"><dt>Returns</dt><dd>The library version on which the bug has been observed. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03785.html">lang</a></li><li class="navelem"><a class="el" href="a07243.html">Workaround</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

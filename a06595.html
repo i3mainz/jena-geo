@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: InfiniteRectangle2D Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,31 +56,940 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06598.html','');});
+$(document).ready(function(){initNavTree('a06595.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="a06592.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OrderedIterator&lt; T &gt; Member List</div>  </div>
+<div class="title">InfiniteRectangle2D Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06598.html">OrderedIterator&lt; T &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06598.html#acc96ccc82c0d10e4d9f476efa8a332d2">classLoader</a></td><td class="entry"><a class="el" href="a06598.html">OrderedIterator&lt; T &gt;</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07790.html#af385b12649429b6088a30a7c61ac1018">DeferringIterator</a>(final Iterator&lt; E &gt; iterator)</td><td class="entry"><a class="el" href="a07790.html">DeferringIterator&lt; E &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07790.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a>()</td><td class="entry"><a class="el" href="a07790.html">DeferringIterator&lt; E &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06598.html#a42d459b55597d92d2cd4a56ca5f28d70">isDeferred</a>(final T element)</td><td class="entry"><a class="el" href="a06598.html">OrderedIterator&lt; T &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07790.html#a04dad234173800a5923173cc5cad9982">org::geotoolkit::util::collection::DeferringIterator.isDeferred</a>(E element)</td><td class="entry"><a class="el" href="a07790.html">DeferringIterator&lt; E &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07790.html#a0c7c989f92fa935704b4915f1f400edd">next</a>()</td><td class="entry"><a class="el" href="a07790.html">DeferringIterator&lt; E &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06598.html#aaade0e0e85af967ef5dbbcceec5f5336">OrderedIterator</a>(final ClassLoader classLoader, final Iterator&lt; T &gt; iterator)</td><td class="entry"><a class="el" href="a06598.html">OrderedIterator&lt; T &gt;</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07790.html#a1fcb45e5d2428352eb36b487d1d4eea3">remove</a>()</td><td class="entry"><a class="el" href="a07790.html">DeferringIterator&lt; E &gt;</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>An immutable subclass of a <a class="el" href="">Rectangle2D</a> with bounds extending toward infinities.  
+ <a href="a06595.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for InfiniteRectangle2D:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06594.png" border="0" usemap="#InfiniteRectangle2D_inherit__map" alt="Inheritance graph"/></div>
+<map name="InfiniteRectangle2D_inherit__map" id="InfiniteRectangle2D_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for InfiniteRectangle2D:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06593.png" border="0" usemap="#InfiniteRectangle2D_coll__map" alt="Collaboration graph"/></div>
+<map name="InfiniteRectangle2D_coll__map" id="InfiniteRectangle2D_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2b69e4312b7814c6efce42f851893409"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a2b69e4312b7814c6efce42f851893409">getX</a> ()</td></tr>
+<tr class="memdesc:a2b69e4312b7814c6efce42f851893409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum value, which is negative infinity.  <a href="#a2b69e4312b7814c6efce42f851893409">More...</a><br /></td></tr>
+<tr class="separator:a2b69e4312b7814c6efce42f851893409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f19cf52955c8c3406831b288681358"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a15f19cf52955c8c3406831b288681358">getY</a> ()</td></tr>
+<tr class="memdesc:a15f19cf52955c8c3406831b288681358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum value, which is negative infinity.  <a href="#a15f19cf52955c8c3406831b288681358">More...</a><br /></td></tr>
+<tr class="separator:a15f19cf52955c8c3406831b288681358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345090e30c8eec4fcc20ba0b32367d75"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a345090e30c8eec4fcc20ba0b32367d75">getMinX</a> ()</td></tr>
+<tr class="memdesc:a345090e30c8eec4fcc20ba0b32367d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum value, which is negative infinity.  <a href="#a345090e30c8eec4fcc20ba0b32367d75">More...</a><br /></td></tr>
+<tr class="separator:a345090e30c8eec4fcc20ba0b32367d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0844b9cf1d523e459e2a4bfff070b1a1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a0844b9cf1d523e459e2a4bfff070b1a1">getMinY</a> ()</td></tr>
+<tr class="memdesc:a0844b9cf1d523e459e2a4bfff070b1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum value, which is negative infinity.  <a href="#a0844b9cf1d523e459e2a4bfff070b1a1">More...</a><br /></td></tr>
+<tr class="separator:a0844b9cf1d523e459e2a4bfff070b1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707af7147ae7d2e6d2c23b1575ce99ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a707af7147ae7d2e6d2c23b1575ce99ea">getMaxX</a> ()</td></tr>
+<tr class="memdesc:a707af7147ae7d2e6d2c23b1575ce99ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum value, which is positive infinity.  <a href="#a707af7147ae7d2e6d2c23b1575ce99ea">More...</a><br /></td></tr>
+<tr class="separator:a707af7147ae7d2e6d2c23b1575ce99ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d99a1cf27fbf4400be3f1c25d0a64a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#ac0d99a1cf27fbf4400be3f1c25d0a64a">getMaxY</a> ()</td></tr>
+<tr class="memdesc:ac0d99a1cf27fbf4400be3f1c25d0a64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum value, which is positive infinity.  <a href="#ac0d99a1cf27fbf4400be3f1c25d0a64a">More...</a><br /></td></tr>
+<tr class="separator:ac0d99a1cf27fbf4400be3f1c25d0a64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa496ea0cb9690e3b30c8aa4626c331f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#afa496ea0cb9690e3b30c8aa4626c331f">getWidth</a> ()</td></tr>
+<tr class="memdesc:afa496ea0cb9690e3b30c8aa4626c331f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width, which is positive infinity.  <a href="#afa496ea0cb9690e3b30c8aa4626c331f">More...</a><br /></td></tr>
+<tr class="separator:afa496ea0cb9690e3b30c8aa4626c331f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d662c26106ff9692252346d578e8fa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#ae1d662c26106ff9692252346d578e8fa">getHeight</a> ()</td></tr>
+<tr class="memdesc:ae1d662c26106ff9692252346d578e8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height, which is positive infinity.  <a href="#ae1d662c26106ff9692252346d578e8fa">More...</a><br /></td></tr>
+<tr class="separator:ae1d662c26106ff9692252346d578e8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd881fe931e8eafdf96407a385e7215"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a5dd881fe931e8eafdf96407a385e7215">getCenterX</a> ()</td></tr>
+<tr class="memdesc:a5dd881fe931e8eafdf96407a385e7215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the center, which is NaN since we can't compute a center from infinite bounds.  <a href="#a5dd881fe931e8eafdf96407a385e7215">More...</a><br /></td></tr>
+<tr class="separator:a5dd881fe931e8eafdf96407a385e7215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8689b26ca256b5e2e7fb658d733d91bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a8689b26ca256b5e2e7fb658d733d91bc">getCenterY</a> ()</td></tr>
+<tr class="memdesc:a8689b26ca256b5e2e7fb658d733d91bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the center, which is NaN since we can't compute a center from infinite bounds.  <a href="#a8689b26ca256b5e2e7fb658d733d91bc">More...</a><br /></td></tr>
+<tr class="separator:a8689b26ca256b5e2e7fb658d733d91bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8549e2553d1134e8586a8dabe362f258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a8549e2553d1134e8586a8dabe362f258">add</a> (Rectangle2D rect)</td></tr>
+<tr class="memdesc:a8549e2553d1134e8586a8dabe362f258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing, since we can't extends an infinite rectangle.  <a href="#a8549e2553d1134e8586a8dabe362f258">More...</a><br /></td></tr>
+<tr class="separator:a8549e2553d1134e8586a8dabe362f258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4eaf52f59f7373f3b428761748c064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a7c4eaf52f59f7373f3b428761748c064">add</a> (Point2D point)</td></tr>
+<tr class="memdesc:a7c4eaf52f59f7373f3b428761748c064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing, since we can't extends an infinite rectangle.  <a href="#a7c4eaf52f59f7373f3b428761748c064">More...</a><br /></td></tr>
+<tr class="separator:a7c4eaf52f59f7373f3b428761748c064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b38eda096f570af42f21b96b448d93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a57b38eda096f570af42f21b96b448d93">add</a> (double x, double y)</td></tr>
+<tr class="memdesc:a57b38eda096f570af42f21b96b448d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do nothing, since we can't extends an infinite rectangle.  <a href="#a57b38eda096f570af42f21b96b448d93">More...</a><br /></td></tr>
+<tr class="separator:a57b38eda096f570af42f21b96b448d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3181b7abe4a2342d04d1001de8cd2d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#ad3181b7abe4a2342d04d1001de8cd2d8">outcode</a> (double x, double y)</td></tr>
+<tr class="memdesc:ad3181b7abe4a2342d04d1001de8cd2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0, since the specified point can't be outside this rectangle.  <a href="#ad3181b7abe4a2342d04d1001de8cd2d8">More...</a><br /></td></tr>
+<tr class="separator:ad3181b7abe4a2342d04d1001de8cd2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de3270bfd8f46d583f36fa3608ab42d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a0de3270bfd8f46d583f36fa3608ab42d">outcode</a> (Point2D point)</td></tr>
+<tr class="memdesc:a0de3270bfd8f46d583f36fa3608ab42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0, since the specified point can't be outside this rectangle.  <a href="#a0de3270bfd8f46d583f36fa3608ab42d">More...</a><br /></td></tr>
+<tr class="separator:a0de3270bfd8f46d583f36fa3608ab42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5a7ec9efa297e507a0833861e5228c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a2e5a7ec9efa297e507a0833861e5228c">contains</a> (Point2D point)</td></tr>
+<tr class="memdesc:a2e5a7ec9efa297e507a0833861e5228c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a2e5a7ec9efa297e507a0833861e5228c">More...</a><br /></td></tr>
+<tr class="separator:a2e5a7ec9efa297e507a0833861e5228c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab204ed4112f4748f05d51eb4d121cc0c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#ab204ed4112f4748f05d51eb4d121cc0c">contains</a> (Rectangle2D rect)</td></tr>
+<tr class="memdesc:ab204ed4112f4748f05d51eb4d121cc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#ab204ed4112f4748f05d51eb4d121cc0c">More...</a><br /></td></tr>
+<tr class="separator:ab204ed4112f4748f05d51eb4d121cc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734c312712a273912e2e753da469a01e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a734c312712a273912e2e753da469a01e">contains</a> (double x, double y)</td></tr>
+<tr class="memdesc:a734c312712a273912e2e753da469a01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a734c312712a273912e2e753da469a01e">More...</a><br /></td></tr>
+<tr class="separator:a734c312712a273912e2e753da469a01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3204594432183b61778a30906d2ee45c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a3204594432183b61778a30906d2ee45c">contains</a> (double x, double y, double w, double h)</td></tr>
+<tr class="memdesc:a3204594432183b61778a30906d2ee45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a3204594432183b61778a30906d2ee45c">More...</a><br /></td></tr>
+<tr class="separator:a3204594432183b61778a30906d2ee45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1087e184eda9cbdbff9e3c7820b51e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#acd1087e184eda9cbdbff9e3c7820b51e">intersects</a> (Rectangle2D rect)</td></tr>
+<tr class="memdesc:acd1087e184eda9cbdbff9e3c7820b51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#acd1087e184eda9cbdbff9e3c7820b51e">More...</a><br /></td></tr>
+<tr class="separator:acd1087e184eda9cbdbff9e3c7820b51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ababb141582477225f76935ff484553"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a4ababb141582477225f76935ff484553">intersects</a> (double x, double y, double w, double h)</td></tr>
+<tr class="memdesc:a4ababb141582477225f76935ff484553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a4ababb141582477225f76935ff484553">More...</a><br /></td></tr>
+<tr class="separator:a4ababb141582477225f76935ff484553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b058f8a2c7eabde0272a75389ded6d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#ab6b058f8a2c7eabde0272a75389ded6d">intersectsLine</a> (double x, double y, double u, double v)</td></tr>
+<tr class="memdesc:ab6b058f8a2c7eabde0272a75389ded6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#ab6b058f8a2c7eabde0272a75389ded6d">More...</a><br /></td></tr>
+<tr class="separator:ab6b058f8a2c7eabde0272a75389ded6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ef1adea06935ffb62f7a528c8fb7e2"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#af3ef1adea06935ffb62f7a528c8fb7e2">intersectsLine</a> (Line2D line)</td></tr>
+<tr class="memdesc:af3ef1adea06935ffb62f7a528c8fb7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#af3ef1adea06935ffb62f7a528c8fb7e2">More...</a><br /></td></tr>
+<tr class="separator:af3ef1adea06935ffb62f7a528c8fb7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#aa71d41fd3d95c354d4d5e922c6c21210">isEmpty</a> ()</td></tr>
+<tr class="memdesc:aa71d41fd3d95c354d4d5e922c6c21210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#aa71d41fd3d95c354d4d5e922c6c21210">More...</a><br /></td></tr>
+<tr class="separator:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7309100e1ef349990518e0a10616258f"><td class="memItemLeft" align="right" valign="top">Rectangle2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a7309100e1ef349990518e0a10616258f">getFrame</a> ()</td></tr>
+<tr class="memdesc:a7309100e1ef349990518e0a10616258f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a7309100e1ef349990518e0a10616258f">More...</a><br /></td></tr>
+<tr class="separator:a7309100e1ef349990518e0a10616258f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979e1d8ee64887b55bad5a98fe83df92"><td class="memItemLeft" align="right" valign="top">Rectangle2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a979e1d8ee64887b55bad5a98fe83df92">getBounds2D</a> ()</td></tr>
+<tr class="memdesc:a979e1d8ee64887b55bad5a98fe83df92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a979e1d8ee64887b55bad5a98fe83df92">More...</a><br /></td></tr>
+<tr class="separator:a979e1d8ee64887b55bad5a98fe83df92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a49868d82f2d17011302d06ba60a2f9"><td class="memItemLeft" align="right" valign="top">Rectangle2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a7a49868d82f2d17011302d06ba60a2f9">createUnion</a> (Rectangle2D rect)</td></tr>
+<tr class="memdesc:a7a49868d82f2d17011302d06ba60a2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a7a49868d82f2d17011302d06ba60a2f9">More...</a><br /></td></tr>
+<tr class="separator:a7a49868d82f2d17011302d06ba60a2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60947ae9bbd200a203fd23e0195dae7f"><td class="memItemLeft" align="right" valign="top">Rectangle2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a60947ae9bbd200a203fd23e0195dae7f">createIntersection</a> (Rectangle2D rect)</td></tr>
+<tr class="memdesc:a60947ae9bbd200a203fd23e0195dae7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of the specified rectangle.  <a href="#a60947ae9bbd200a203fd23e0195dae7f">More...</a><br /></td></tr>
+<tr class="separator:a60947ae9bbd200a203fd23e0195dae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7120b2f1fc50f45285380804f116a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a3f7120b2f1fc50f45285380804f116a7">setRect</a> (double x, double y, double w, double h)</td></tr>
+<tr class="memdesc:a3f7120b2f1fc50f45285380804f116a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always throws an exception, since this rectangle is immutable.  <a href="#a3f7120b2f1fc50f45285380804f116a7">More...</a><br /></td></tr>
+<tr class="separator:a3f7120b2f1fc50f45285380804f116a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:aca7bc71a45c5c9145c596e81746e36f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#aca7bc71a45c5c9145c596e81746e36f8">InfiniteRectangle2D</a> ()</td></tr>
+<tr class="memdesc:aca7bc71a45c5c9145c596e81746e36f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="a06615.html#a6ab6bb868fe991a6a3a653855372da07">XRectangle2D#INFINITY</a> singleton only.  <a href="#aca7bc71a45c5c9145c596e81746e36f8">More...</a><br /></td></tr>
+<tr class="separator:aca7bc71a45c5c9145c596e81746e36f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae1c6fa6004a8065b186fdeedfb20ec9f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#ae1c6fa6004a8065b186fdeedfb20ec9f">readResolve</a> ()  throws ObjectStreamException </td></tr>
+<tr class="memdesc:ae1c6fa6004a8065b186fdeedfb20ec9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of.  <a href="#ae1c6fa6004a8065b186fdeedfb20ec9f">More...</a><br /></td></tr>
+<tr class="separator:ae1c6fa6004a8065b186fdeedfb20ec9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06595.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 5281254268988984523L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial number for inter-operability with different versions.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An immutable subclass of a <a class="el" href="">Rectangle2D</a> with bounds extending toward infinities. </p>
+<p>The <a class="el" href="a06595.html#a345090e30c8eec4fcc20ba0b32367d75">getMinX</a> and <a class="el" href="a06595.html#a0844b9cf1d523e459e2a4bfff070b1a1">getMinY</a> methods return always negative infinity, while the <a class="el" href="a06595.html#a707af7147ae7d2e6d2c23b1575ce99ea">getMaxX</a> and <a class="el" href="a06595.html#ac0d99a1cf27fbf4400be3f1c25d0a64a">getMaxY</a> methods return always positive infinity. This rectangle can be used as argument in the <a class="el" href="a06615.html">XRectangle2D</a> constructor for initializing a new</p><div class="fragment"><div class="line">XRectangle2D </div></div><!-- fragment --><p> to infinite bounds.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.3  </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aca7bc71a45c5c9145c596e81746e36f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7bc71a45c5c9145c596e81746e36f8">&#9670;&nbsp;</a></span>InfiniteRectangle2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06595.html">InfiniteRectangle2D</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="a06615.html#a6ab6bb868fe991a6a3a653855372da07">XRectangle2D#INFINITY</a> singleton only. </p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                          {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8549e2553d1134e8586a8dabe362f258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8549e2553d1134e8586a8dabe362f258">&#9670;&nbsp;</a></span>add() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle2D&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do nothing, since we can't extends an infinite rectangle. </p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                      {</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7c4eaf52f59f7373f3b428761748c064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4eaf52f59f7373f3b428761748c064">&#9670;&nbsp;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">Point2D&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do nothing, since we can't extends an infinite rectangle. </p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                   {</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a57b38eda096f570af42f21b96b448d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b38eda096f570af42f21b96b448d93">&#9670;&nbsp;</a></span>add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do nothing, since we can't extends an infinite rectangle. </p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                        {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2e5a7ec9efa297e507a0833861e5228c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5a7ec9efa297e507a0833861e5228c">&#9670;&nbsp;</a></span>contains() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean contains </td>
+          <td>(</td>
+          <td class="paramtype">Point2D&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                           {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ab204ed4112f4748f05d51eb4d121cc0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab204ed4112f4748f05d51eb4d121cc0c">&#9670;&nbsp;</a></span>contains() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean contains </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle2D&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                              {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a734c312712a273912e2e753da469a01e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734c312712a273912e2e753da469a01e">&#9670;&nbsp;</a></span>contains() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean contains </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                                {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3204594432183b61778a30906d2ee45c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3204594432183b61778a30906d2ee45c">&#9670;&nbsp;</a></span>contains() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean contains </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                                                    {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a60947ae9bbd200a203fd23e0195dae7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60947ae9bbd200a203fd23e0195dae7f">&#9670;&nbsp;</a></span>createIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle2D createIntersection </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle2D&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a copy of the specified rectangle. </p>
+<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                                            {</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> XRectangle2D(rect);</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7a49868d82f2d17011302d06ba60a2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a49868d82f2d17011302d06ba60a2f9">&#9670;&nbsp;</a></span>createUnion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle2D createUnion </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle2D&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --><p> , since this rectangle can't be extended. No need to returns a clone, since this rectangle is immutable. </p>
+<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                                     {</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a979e1d8ee64887b55bad5a98fe83df92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979e1d8ee64887b55bad5a98fe83df92">&#9670;&nbsp;</a></span>getBounds2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle2D getBounds2D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --><p> . No need to returns a clone, since this rectangle is immutable. </p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                     {</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a5dd881fe931e8eafdf96407a385e7215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd881fe931e8eafdf96407a385e7215">&#9670;&nbsp;</a></span>getCenterX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getCenterX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the center, which is NaN since we can't compute a center from infinite bounds. </p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                               {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> NaN;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8689b26ca256b5e2e7fb658d733d91bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8689b26ca256b5e2e7fb658d733d91bc">&#9670;&nbsp;</a></span>getCenterY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getCenterY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the center, which is NaN since we can't compute a center from infinite bounds. </p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                               {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> NaN;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7309100e1ef349990518e0a10616258f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7309100e1ef349990518e0a10616258f">&#9670;&nbsp;</a></span>getFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle2D getFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --><p> . No need to returns a clone, since this rectangle is immutable. </p>
+<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                  {</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae1d662c26106ff9692252346d578e8fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d662c26106ff9692252346d578e8fa">&#9670;&nbsp;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the height, which is positive infinity. </p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                              {</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> POSITIVE_INFINITY;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a707af7147ae7d2e6d2c23b1575ce99ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a707af7147ae7d2e6d2c23b1575ce99ea">&#9670;&nbsp;</a></span>getMaxX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getMaxX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the maximum value, which is positive infinity. </p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                            {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> POSITIVE_INFINITY;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac0d99a1cf27fbf4400be3f1c25d0a64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d99a1cf27fbf4400be3f1c25d0a64a">&#9670;&nbsp;</a></span>getMaxY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getMaxY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the maximum value, which is positive infinity. </p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                            {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> POSITIVE_INFINITY;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a345090e30c8eec4fcc20ba0b32367d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345090e30c8eec4fcc20ba0b32367d75">&#9670;&nbsp;</a></span>getMinX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getMinX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum value, which is negative infinity. </p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                            {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> NEGATIVE_INFINITY;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0844b9cf1d523e459e2a4bfff070b1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0844b9cf1d523e459e2a4bfff070b1a1">&#9670;&nbsp;</a></span>getMinY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getMinY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum value, which is negative infinity. </p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                            {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> NEGATIVE_INFINITY;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="afa496ea0cb9690e3b30c8aa4626c331f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa496ea0cb9690e3b30c8aa4626c331f">&#9670;&nbsp;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the width, which is positive infinity. </p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                             {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> POSITIVE_INFINITY;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a2b69e4312b7814c6efce42f851893409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b69e4312b7814c6efce42f851893409">&#9670;&nbsp;</a></span>getX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum value, which is negative infinity. </p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                         {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> NEGATIVE_INFINITY;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a15f19cf52955c8c3406831b288681358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f19cf52955c8c3406831b288681358">&#9670;&nbsp;</a></span>getY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum value, which is negative infinity. </p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                         {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> NEGATIVE_INFINITY;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="acd1087e184eda9cbdbff9e3c7820b51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1087e184eda9cbdbff9e3c7820b51e">&#9670;&nbsp;</a></span>intersects() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean intersects </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle2D&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                                {</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a4ababb141582477225f76935ff484553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ababb141582477225f76935ff484553">&#9670;&nbsp;</a></span>intersects() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean intersects </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                                                      {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ab6b058f8a2c7eabde0272a75389ded6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b058f8a2c7eabde0272a75389ded6d">&#9670;&nbsp;</a></span>intersectsLine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean intersectsLine </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                                                          {</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="af3ef1adea06935ffb62f7a528c8fb7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ef1adea06935ffb62f7a528c8fb7e2">&#9670;&nbsp;</a></span>intersectsLine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean intersectsLine </td>
+          <td>(</td>
+          <td class="paramtype">Line2D&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> since this rectangle contains all points. </p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                               {</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aa71d41fd3d95c354d4d5e922c6c21210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71d41fd3d95c354d4d5e922c6c21210">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --><p> since an infinite rectangle is far from empty. </p>
+<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                             {</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad3181b7abe4a2342d04d1001de8cd2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3181b7abe4a2342d04d1001de8cd2d8">&#9670;&nbsp;</a></span>outcode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int outcode </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns 0, since the specified point can't be outside this rectangle. </p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                           {</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0de3270bfd8f46d583f36fa3608ab42d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de3270bfd8f46d583f36fa3608ab42d">&#9670;&nbsp;</a></span>outcode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int outcode </td>
+          <td>(</td>
+          <td class="paramtype">Point2D&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns 0, since the specified point can't be outside this rectangle. </p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                      {</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae1c6fa6004a8065b186fdeedfb20ec9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c6fa6004a8065b186fdeedfb20ec9f">&#9670;&nbsp;</a></span>readResolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object readResolve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws ObjectStreamException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the singleton instance of. </p>
+<div class="fragment"><div class="line"><a class="code" href="a06595.html#aca7bc71a45c5c9145c596e81746e36f8">InfiniteRectangle2D</a> </div></div><!-- fragment --><p> . </p>
+
+<p class="reference">References <a class="el" href="a06615.html#a6ab6bb868fe991a6a3a653855372da07">XRectangle2D.INFINITY</a>.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                                              {</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">return</span> XRectangle2D.INFINITY;</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3f7120b2f1fc50f45285380804f116a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7120b2f1fc50f45285380804f116a7">&#9670;&nbsp;</a></span>setRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setRect </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Always throws an exception, since this rectangle is immutable. </p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                                                {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnmodifiableGeometryException();</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final long serialVersionUID = 5281254268988984523L</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serial number for inter-operability with different versions. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03758.html">display</a></li><li class="navelem"><a class="el" href="a03757.html">shape</a></li><li class="navelem"><a class="el" href="a06595.html">InfiniteRectangle2D</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

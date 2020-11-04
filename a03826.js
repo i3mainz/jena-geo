@@ -1,5 +1,5 @@
 var a03826 =
 [
-    [ "PolygonFromTextTest", "a08846.html", "a08846" ],
-    [ "PolygonFromWKBTest", "a08850.html", "a08850" ]
+    [ "Coordinate", "a08171.html", "a08171" ],
+    [ "CoordinateT", "a08179.html", null ]
 ];

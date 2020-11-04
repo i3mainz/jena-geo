@@ -1,4 +1,5 @@
 var a03835 =
 [
-    [ "ResizeTest", "a09114.html", "a09114" ]
+    [ "algorithm", "a03833.html", "a03833" ],
+    [ "triangulation", "a03836.html", "a03836" ]
 ];

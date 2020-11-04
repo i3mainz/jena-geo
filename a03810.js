@@ -1,6 +1,5 @@
 var a03810 =
 [
-    [ "GeomFromGeoJSONTest", "a08306.html", "a08306" ],
-    [ "GeomFromTextTest", "a08310.html", "a08310" ],
-    [ "GeomFromWKBTest", "a08314.html", "a08314" ]
+    [ "LoggedFormat", "a07983.html", "a07983" ],
+    [ "LogProducer", "a07987.html", "a07987" ]
 ];

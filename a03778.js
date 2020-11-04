@@ -1,11 +1,7 @@
 var a03778 =
 [
-    [ "GeoMagneticElements", "a07978.html", "a07978" ],
-    [ "LegendreFunction", "a07982.html", "a07982" ],
-    [ "MagneticDate", "a07986.html", "a07986" ],
-    [ "MagneticModel", "a07990.html", "a07990" ],
-    [ "MagneticResults", "a07994.html", "a07994" ],
-    [ "SphericalHarmonicVariables", "a07998.html", "a07998" ],
-    [ "UTMParameters", "a08002.html", "a08002" ],
-    [ "WorldMagneticModel", "a08006.html", "a08006" ]
+    [ "factory", "a03779.html", "a03779" ],
+    [ "CRSUtilities", "a07067.html", "a07067" ],
+    [ "DeprecatedName", "a07071.html", "a07071" ],
+    [ "Identifier3D", "a07079.html", "a07079" ]
 ];

@@ -1,5 +1,7 @@
 var a03803 =
 [
-    [ "model", "a03804.html", "a03804" ],
-    [ "DoubleComparator", "a08134.html", "a08134" ]
+    [ "Descriptions", "a07679.html", "a07679" ],
+    [ "Errors", "a07691.html", "a07691" ],
+    [ "Loggings", "a07703.html", "a07703" ],
+    [ "Vocabulary", "a07711.html", "a07711" ]
 ];

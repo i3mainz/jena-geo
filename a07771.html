@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: ProviderOnFileSystem Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,28 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07774.html','');});
+$(document).ready(function(){initNavTree('a07771.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07768.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CheckedHashSet&lt; E &gt;.Iter Member List</div>  </div>
+<div class="title">ProviderOnFileSystem Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a07774.html">CheckedHashSet&lt; E &gt;.Iter</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07774.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a>()</td><td class="entry"><a class="el" href="a07774.html">CheckedHashSet&lt; E &gt;.Iter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a07774.html#a63176a8518cc96237a6e77c89beeb658">Iter</a>(final Iterator&lt; E &gt; iterator)</td><td class="entry"><a class="el" href="a07774.html">CheckedHashSet&lt; E &gt;.Iter</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07774.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a></td><td class="entry"><a class="el" href="a07774.html">CheckedHashSet&lt; E &gt;.Iter</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07774.html#a0c7c989f92fa935704b4915f1f400edd">next</a>()</td><td class="entry"><a class="el" href="a07774.html">CheckedHashSet&lt; E &gt;.Iter</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07774.html#a1fcb45e5d2428352eb36b487d1d4eea3">remove</a>()</td><td class="entry"><a class="el" href="a07774.html">CheckedHashSet&lt; E &gt;.Iter</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Files-related  org.apache.sis.storage.DataStoreProvider provider}.  
+ <a href="a07771.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6b0280e2a6d9abd0c0f63b417c310255"><td class="memItemLeft" align="right" valign="top">Collection&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07771.html#a6b0280e2a6d9abd0c0f63b417c310255">getSuffix</a> ()</td></tr>
+<tr class="memdesc:a6b0280e2a6d9abd0c0f63b417c310255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of this format mainly used file suffixes.  <a href="#a6b0280e2a6d9abd0c0f63b417c310255">More...</a><br /></td></tr>
+<tr class="separator:a6b0280e2a6d9abd0c0f63b417c310255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876ff87db572dbe2231e1d0ad7469d55"><td class="memItemLeft" align="right" valign="top">default Collection&lt; byte[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07771.html#a876ff87db572dbe2231e1d0ad7469d55">getSignature</a> ()</td></tr>
+<tr class="memdesc:a876ff87db572dbe2231e1d0ad7469d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary and sometimes text formats often have a special header at the beginning of the file.  <a href="#a876ff87db572dbe2231e1d0ad7469d55">More...</a><br /></td></tr>
+<tr class="separator:a876ff87db572dbe2231e1d0ad7469d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Files-related  org.apache.sis.storage.DataStoreProvider provider}. </p>
+<p>This interface provides additional descriptive informations on the supported file types.</p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys)  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a876ff87db572dbe2231e1d0ad7469d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876ff87db572dbe2231e1d0ad7469d55">&#9670;&nbsp;</a></span>getSignature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default Collection&lt;byte[]&gt; getSignature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binary and sometimes text formats often have a special header at the beginning of the file. </p>
+<p>This part of the file is call Signature or Magic number and is used by file explorers and applications to identify the file type.</p>
+<p>Some format may declare multiple different signatures. Such case can happen for various reasons like historical evolution and changes on version updates.</p>
+<p>Default implementation returns an empty collection.</p>
+<dl class="section return"><dt>Returns</dt><dd>collection of signatures, never null, can be empty. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                              {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> Collections.emptyList();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6b0280e2a6d9abd0c0f63b417c310255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0280e2a6d9abd0c0f63b417c310255">&#9670;&nbsp;</a></span>getSuffix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;String&gt; getSuffix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the list of this format mainly used file suffixes. </p>
+<p>If the provider uses multiple files, this method should return only the entry file suffixes. </p>
+<p>For example : the shapefile format uses the files shp,shx,dbf,qix,... but this collection only return the shp suffix. </p>
+<dl class="section return"><dt>Returns</dt><dd>list of suffix, case insensitive, never null, can be empty. Suffixes are in lower-case. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03804.html">storage</a></li><li class="navelem"><a class="el" href="a07771.html">ProviderOnFileSystem</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
