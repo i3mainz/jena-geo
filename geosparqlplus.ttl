@@ -177,11 +177,11 @@
                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Well-known Text Literal"@en .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#HexWKBLiteral
+###  http://www.opengis.net/ont/geosparqlplus#HexWKBLiteral
 :HexWKBLiteral rdf:type rdfs:Datatype .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#covJSONLiteral
+###  http://www.opengis.net/ont/geosparqlplus#covJSONLiteral
 :covJSONLiteral rdf:type rdfs:Datatype .
 
 
@@ -850,8 +850,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "within"@en .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#hasCoverage
-:hasCoverage rdf:type owl:ObjectProperty .
+###  http://www.opengis.net/ont/geosparqlplus#hasCoverage
+:hasCoverage rdf:type owl:ObjectProperty ;
+             rdfs:label "has Coverage" .
 
 
 #################################################################
@@ -1060,19 +1061,24 @@ xsd:date rdf:type rdfs:Datatype .
                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "spatialDimension"@en .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asCoverageJSON
+###  http://www.opengis.net/ont/geosparqlplus#asCoverageJSON
 :asCoverageJSON rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asHexWKB
+###  http://www.opengis.net/ont/geosparqlplus#asHexWKB
 :asHexWKB rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asWKB
+###  http://www.opengis.net/ont/geosparqlplus#asWKB
 :asWKB rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#hasNoData
+:hasNoData rdf:type owl:DatatypeProperty ;
+           rdfs:label "has No data" .
 
 
 #################################################################
@@ -1137,35 +1143,35 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Coverage
+###  http://www.opengis.net/ont/geosparqlplus#Coverage
 :Coverage rdf:type owl:Class ;
           rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
           rdfs:comment "Representation of an OGC Coverage" ;
           rdfs:label "Coverage"@en .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Function
+###  http://www.opengis.net/ont/geosparqlplus#Function
 :Function rdf:type owl:Class ;
           rdfs:label "Function"@en .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#GridCoverage
-:GridCoverage rdf:type owl:Class ;
-              rdfs:subClassOf :Coverage ;
-              rdfs:comment "Representation of a gridded coverage"@en ;
-              rdfs:label "GridCoverage"@en .
-
-
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Raster
+###  http://www.opengis.net/ont/geosparqlplus#Raster
 :Raster rdf:type owl:Class ;
         rdfs:subClassOf :ReferenceableGridCoverage ;
         rdfs:comment "Representation of a raster"@en ;
         rdfs:label "Raster"@en .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ReferenceableGridCoverage
+###  http://www.opengis.net/ont/geosparqlplus#ReferencableCoverage
+:ReferencableCoverage rdf:type owl:Class ;
+                      rdfs:subClassOf :Coverage ;
+                      rdfs:comment "Representation of a georeferencable coverage"@en ;
+                      rdfs:label "Referencable Coverage"@en .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ReferenceableGridCoverage
 :ReferenceableGridCoverage rdf:type owl:Class ;
-                           rdfs:subClassOf :GridCoverage ;
+                           rdfs:subClassOf :ReferencableCoverage ;
                            rdfs:comment "ReferenceableGridCoverage"@en ,
                                         "Representation of a gridded coverage with a geospatial reference"@en .
 
@@ -1183,2615 +1189,2615 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#CentimeterToMeter
+###  http://www.opengis.net/ont/geosparqlplus#CentimeterToMeter
 :CentimeterToMeter rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "centimeterToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ChainToMeter
+###  http://www.opengis.net/ont/geosparqlplus#ChainToMeter
 :ChainToMeter rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "chainToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#DecimeterToMeter
+###  http://www.opengis.net/ont/geosparqlplus#DecimeterToMeter
 :DecimeterToMeter rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "decimeterToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#FathomToMeter
+###  http://www.opengis.net/ont/geosparqlplus#FathomToMeter
 :FathomToMeter rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "fathomToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#FootToMeter
+###  http://www.opengis.net/ont/geosparqlplus#FootToMeter
 :FootToMeter rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "footToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#InchToMeter
+###  http://www.opengis.net/ont/geosparqlplus#InchToMeter
 :InchToMeter rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "inchToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#KilometerToMeter
+###  http://www.opengis.net/ont/geosparqlplus#KilometerToMeter
 :KilometerToMeter rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "kilometerToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#LinkToMeter
+###  http://www.opengis.net/ont/geosparqlplus#LinkToMeter
 :LinkToMeter rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "linkToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToCentimeter
+###  http://www.opengis.net/ont/geosparqlplus#MeterToCentimeter
 :MeterToCentimeter rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "meterToCentimeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToChain
+###  http://www.opengis.net/ont/geosparqlplus#MeterToChain
 :MeterToChain rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "meterToChain" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToDecimeter
+###  http://www.opengis.net/ont/geosparqlplus#MeterToDecimeter
 :MeterToDecimeter rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "meterToDecimeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToFathom
+###  http://www.opengis.net/ont/geosparqlplus#MeterToFathom
 :MeterToFathom rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "meterToFathom" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToFoot
+###  http://www.opengis.net/ont/geosparqlplus#MeterToFoot
 :MeterToFoot rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "meterToFoot" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToInch
+###  http://www.opengis.net/ont/geosparqlplus#MeterToInch
 :MeterToInch rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "meterToInch" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToKilometer
+###  http://www.opengis.net/ont/geosparqlplus#MeterToKilometer
 :MeterToKilometer rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "meterToKilometer" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToLink
+###  http://www.opengis.net/ont/geosparqlplus#MeterToLink
 :MeterToLink rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "meterToLink" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToMile
+###  http://www.opengis.net/ont/geosparqlplus#MeterToMile
 :MeterToMile rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "meterToMile" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToMillimeter
+###  http://www.opengis.net/ont/geosparqlplus#MeterToMillimeter
 :MeterToMillimeter rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "meterToMillimeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToNauticalMile
+###  http://www.opengis.net/ont/geosparqlplus#MeterToNauticalMile
 :MeterToNauticalMile rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "meterToNauticalMile" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSFoot
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSFoot
 :MeterToUSFoot rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "meterToUSFoot" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSInch
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSInch
 :MeterToUSInch rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "meterToUSInch" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSMile
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSMile
 :MeterToUSMile rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "meterToUSMile" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSYard
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSYard
 :MeterToUSYard rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "meterToUSYard" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MileToMeter
+###  http://www.opengis.net/ont/geosparqlplus#MileToMeter
 :MileToMeter rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "mileToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MillimeterToMeter
+###  http://www.opengis.net/ont/geosparqlplus#MillimeterToMeter
 :MillimeterToMeter rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "millimeterToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#NauticalMileToMeter
+###  http://www.opengis.net/ont/geosparqlplus#NauticalMileToMeter
 :NauticalMileToMeter rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "nauticalMileToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DClosestPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DClosestPoint
 :ST_3DClosestPoint rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_3dclosestpoint" ,
                               "st_closestPoint3d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DDWithin
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DDWithin
 :ST_3DDWithin rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_3ddwithin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DDistance
 :ST_3DDistance rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_distance3d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DMaxDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DMaxDistance
 :ST_3DMaxDistance rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_3dmaxDistance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DShortestLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DShortestLine
 :ST_3DShortestLine rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_3dshortestline" ,
                               "st_shortestLine3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3dLongestLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_3dLongestLine
 :ST_3dLongestLine rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_3dlongestLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Accum
+###  http://www.opengis.net/ont/geosparqlplus#ST_Accum
 :ST_Accum rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_accum" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Add
+###  http://www.opengis.net/ont/geosparqlplus#ST_Add
 :ST_Add rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_rast_algebra_add" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddBand
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddBand
 :ST_AddBand rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_addband" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddConst
 :ST_AddConst rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_algebra_addconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddGeometry
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddGeometry
 :ST_AddGeometry rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_addgeometry" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddPoint
 :ST_AddPoint rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_addpoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddRing
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddRing
 :ST_AddRing rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_addRing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddZ
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddZ
 :ST_AddZ rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_addz" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_And
+###  http://www.opengis.net/ont/geosparqlplus#ST_And
 :ST_And rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_rast_algebra_and" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AndConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_AndConst
 :ST_AndConst rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_algebra_andconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Angle
+###  http://www.opengis.net/ont/geosparqlplus#ST_Angle
 :ST_Angle rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_angle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Area
+###  http://www.opengis.net/ont/geosparqlplus#ST_Area
 :ST_Area rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_area" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AreaSimilarity
+###  http://www.opengis.net/ont/geosparqlplus#ST_AreaSimilarity
 :ST_AreaSimilarity rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_areasimilarity" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsBinary
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsBinary
 :ST_AsBinary rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_asbinary" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsEncodedPolyline
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsEncodedPolyline
 :ST_AsEncodedPolyline rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_asencodedpolyline" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGML
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGML
 :ST_AsGML rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_asgml" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGPX
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGPX
 :ST_AsGPX rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_asgpx" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoBuf
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoBuf
 :ST_AsGeoBuf rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_asgeobuf" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoJSON
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoJSON
 :ST_AsGeoJSON rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_asgeojson" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoJSONLD
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoJSONLD
 :ST_AsGeoJSONLD rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_asgeojsonld" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoRSS
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoRSS
 :ST_AsGeoRSS rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_asgeorss" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoURI
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoURI
 :ST_AsGeoURI rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_asgeouri" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsHexEWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsHexEWKB
 :ST_AsHexEWKB rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_ashexewkb" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsJPG
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsJPG
 :ST_AsJPG rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_asjpg" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsKML
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsKML
 :ST_AsKML rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_askml" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsLatLonText
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsLatLonText
 :ST_AsLatLonText rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_aslatlontext" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsMVT
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsMVT
 :ST_AsMVT rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_asmvt" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsMVTGeom
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsMVTGeom
 :ST_AsMVTGeom rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_asmvtgeom" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsPNG
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsPNG
 :ST_AsPNG rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_aspng" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsPolyshape
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsPolyshape
 :ST_AsPolyshape rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_aspolyshape" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsSVG
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsSVG
 :ST_AsSVG rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_assvg" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTIFF
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTIFF
 :ST_AsTIFF rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_astiff" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTWKB
 :ST_AsTWKB rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_astwkb" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsText
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsText
 :ST_AsText rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_astext" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTextRaw
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTextRaw
 :ST_AsTextRaw rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_astextraw" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTextRound
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTextRound
 :ST_AsTextRound rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_astextround" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTopoJSON
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTopoJSON
 :ST_AsTopoJSON rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_astopojson" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsWKB
 :ST_AsWKB rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_aswkb" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsWKT
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsWKT
 :ST_AsWKT rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_aswkt" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsX3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsX3D
 :ST_AsX3D rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_asx3d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Aspect
+###  http://www.opengis.net/ont/geosparqlplus#ST_Aspect
 :ST_Aspect rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_aspect" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Azimuth
+###  http://www.opengis.net/ont/geosparqlplus#ST_Azimuth
 :ST_Azimuth rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_azimuth" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXAbove
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXAbove
 :ST_BBOXAbove rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_bboxabove" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXBelow
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXBelow
 :ST_BBOXBelow rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_bboxbelow" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXContains
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXContains
 :ST_BBOXContains rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_bboxcontains" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXDistance
 :ST_BBOXDistance rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_bboxdistance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXEquals
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXEquals
 :ST_BBOXEquals rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_bboxequals" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXFPIntersects
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXFPIntersects
 :ST_BBOXFPIntersects rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_bboxfpintersects" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXIntersect
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXIntersect
 :ST_BBOXIntersect rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_bboxintersect" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXIsContainedBy
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXIsContainedBy
 :ST_BBOXIsContainedBy rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_bboxiscontainedby" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXLeftOf
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXLeftOf
 :ST_BBOXLeftOf rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_bboxleftof" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsAbove
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsAbove
 :ST_BBOXOverlapsAbove rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_bboxoverlapsabove" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsBelow
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsBelow
 :ST_BBOXOverlapsBelow rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_bboxoverlapsbelow" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsLeft
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsLeft
 :ST_BBOXOverlapsLeft rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_bboxoverlapsleft" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsRight
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsRight
 :ST_BBOXOverlapsRight rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_bboxoverlapsright" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXRightOf
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXRightOf
 :ST_BBOXRightOf rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_bboxrightof" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Band
+###  http://www.opengis.net/ont/geosparqlplus#ST_Band
 :ST_Band rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_band" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BandMetaData
+###  http://www.opengis.net/ont/geosparqlplus#ST_BandMetaData
 :ST_BandMetaData rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_bandmetadata" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BandNoDataValue
+###  http://www.opengis.net/ont/geosparqlplus#ST_BandNoDataValue
 :ST_BandNoDataValue rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_bandnodatavalue" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BandPixelType
+###  http://www.opengis.net/ont/geosparqlplus#ST_BandPixelType
 :ST_BandPixelType rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_bandpixeltype" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BezierSmoothing
+###  http://www.opengis.net/ont/geosparqlplus#ST_BezierSmoothing
 :ST_BezierSmoothing rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_bezierSmoothing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Boundary
+###  http://www.opengis.net/ont/geosparqlplus#ST_Boundary
 :ST_Boundary rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_boundary" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BoundingDiagonal
+###  http://www.opengis.net/ont/geosparqlplus#ST_BoundingDiagonal
 :ST_BoundingDiagonal rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_boundingdiagonal" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Centroid
+###  http://www.opengis.net/ont/geosparqlplus#ST_Centroid
 :ST_Centroid rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_centroid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CentroidDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_CentroidDistance
 :ST_CentroidDistance rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_centroidDistance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ChaikinSmoothing
+###  http://www.opengis.net/ont/geosparqlplus#ST_ChaikinSmoothing
 :ST_ChaikinSmoothing rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_chaikinSmooting" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Circularity
+###  http://www.opengis.net/ont/geosparqlplus#ST_Circularity
 :ST_Circularity rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_circularity" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Clip
+###  http://www.opengis.net/ont/geosparqlplus#ST_Clip
 :ST_Clip rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_clip" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClipByBox2D
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClipByBox2D
 :ST_ClipByBox2D rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_clipByBox2D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClosestCoordinate
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClosestCoordinate
 :ST_ClosestCoordinate rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_closestCooordinate" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClosestPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClosestPoint
 :ST_ClosestPoint rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_closestPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClosestPointOfApproach
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClosestPointOfApproach
 :ST_ClosestPointOfApproach rdf:type owl:NamedIndividual ,
                                     :Function ;
                            rdfs:label "st_closestPointOfApproach" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClusterIntersecting
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClusterIntersecting
 :ST_ClusterIntersecting rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_clusterIntersecting" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClusterKMeans
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClusterKMeans
 :ST_ClusterKMeans rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_clusterKMeans" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClusterWithin
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClusterWithin
 :ST_ClusterWithin rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_clusterWithin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CollFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_CollFromText
 :ST_CollFromText rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_geomCollFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CollectionExtract
+###  http://www.opengis.net/ont/geosparqlplus#ST_CollectionExtract
 :ST_CollectionExtract rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_collectionExtract" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CollectionHomogenize
+###  http://www.opengis.net/ont/geosparqlplus#ST_CollectionHomogenize
 :ST_CollectionHomogenize rdf:type owl:NamedIndividual ,
                                   :Function ;
                          rdfs:label "st_collectionHomogenize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CompactnessRatio
+###  http://www.opengis.net/ont/geosparqlplus#ST_CompactnessRatio
 :ST_CompactnessRatio rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_compactnessRatio" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ConcaveHull
+###  http://www.opengis.net/ont/geosparqlplus#ST_ConcaveHull
 :ST_ConcaveHull rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_concaveHull" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Contains
+###  http://www.opengis.net/ont/geosparqlplus#ST_Contains
 :ST_Contains rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_contains" ,
                         "st_rast_Contains" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ContainsProperly
+###  http://www.opengis.net/ont/geosparqlplus#ST_ContainsProperly
 :ST_ContainsProperly rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_containsProperly" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ConvexHull
+###  http://www.opengis.net/ont/geosparqlplus#ST_ConvexHull
 :ST_ConvexHull rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_convexHull" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Count
+###  http://www.opengis.net/ont/geosparqlplus#ST_Count
 :ST_Count rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_count" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CoveredBy
+###  http://www.opengis.net/ont/geosparqlplus#ST_CoveredBy
 :ST_CoveredBy rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_rast_CoveredBy" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Covers
+###  http://www.opengis.net/ont/geosparqlplus#ST_Covers
 :ST_Covers rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_rast_Covers" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Crosses
+###  http://www.opengis.net/ont/geosparqlplus#ST_Crosses
 :ST_Crosses rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rast_Crosses" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CurveToLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_CurveToLine
 :ST_CurveToLine rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_curveToLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DWithin
+###  http://www.opengis.net/ont/geosparqlplus#ST_DWithin
 :ST_DWithin rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_dWithin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DWithin3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_DWithin3D
 :ST_DWithin3D rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_dwithin3d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DelaunayTriangles
+###  http://www.opengis.net/ont/geosparqlplus#ST_DelaunayTriangles
 :ST_DelaunayTriangles rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_delaunayTriangles" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Densify
+###  http://www.opengis.net/ont/geosparqlplus#ST_Densify
 :ST_Densify rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_densify" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Dimension
+###  http://www.opengis.net/ont/geosparqlplus#ST_Dimension
 :ST_Dimension rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_dimension" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Disjoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_Disjoint
 :ST_Disjoint rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_Disjoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Distance
+###  http://www.opengis.net/ont/geosparqlplus#ST_Distance
 :ST_Distance rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_distance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DistanceSphere
+###  http://www.opengis.net/ont/geosparqlplus#ST_DistanceSphere
 :ST_DistanceSphere rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_distancesphere" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Div
+###  http://www.opengis.net/ont/geosparqlplus#ST_Div
 :ST_Div rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_rast_algebra_div" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DivConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_DivConst
 :ST_DivConst rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_algebra_divconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DumpRings
+###  http://www.opengis.net/ont/geosparqlplus#ST_DumpRings
 :ST_DumpRings rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_dumpRings" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EPSGToSRID
+###  http://www.opengis.net/ont/geosparqlplus#ST_EPSGToSRID
 :ST_EPSGToSRID rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_epsgToSRID" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EndPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_EndPoint
 :ST_EndPoint rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_endPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EnsureClosed
+###  http://www.opengis.net/ont/geosparqlplus#ST_EnsureClosed
 :ST_EnsureClosed rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_ensureClosed" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Envelope
+###  http://www.opengis.net/ont/geosparqlplus#ST_Envelope
 :ST_Envelope rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_envelope" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualSRS
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualSRS
 :ST_EqualSRS rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_equalSRS" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualType
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualType
 :ST_EqualType rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_equalType" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Equals
+###  http://www.opengis.net/ont/geosparqlplus#ST_Equals
 :ST_Equals rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_equals" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualsNorm
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualsNorm
 :ST_EqualsNorm rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_equalsNorm" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualsTopo
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualsTopo
 :ST_EqualsTopo rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_equalsTopo" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Explode
+###  http://www.opengis.net/ont/geosparqlplus#ST_Explode
 :ST_Explode rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_explode" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FilterByM
+###  http://www.opengis.net/ont/geosparqlplus#ST_FilterByM
 :ST_FilterByM rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_filterByM" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FilterByT
+###  http://www.opengis.net/ont/geosparqlplus#ST_FilterByT
 :ST_FilterByT rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_filterByT" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FlipCoordinates
+###  http://www.opengis.net/ont/geosparqlplus#ST_FlipCoordinates
 :ST_FlipCoordinates rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_flipCoordinates" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force2D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force2D
 :ST_Force2D rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_force2d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force3D
 :ST_Force3D rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_force3d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force3DM
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force3DM
 :ST_Force3DM rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_force3dm" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force3DZ
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force3DZ
 :ST_Force3DZ rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_force3dz" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force4D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force4D
 :ST_Force4D rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_force4d" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceCollection
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceCollection
 :ST_ForceCollection rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_forceCollection" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceCurve
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceCurve
 :ST_ForceCurve rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_forceCurve" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceLHR
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceLHR
 :ST_ForceLHR rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_forceLHR" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForcePolygonCCW
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForcePolygonCCW
 :ST_ForcePolygonCCW rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_forcePolygonCCW" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForcePolygonCW
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForcePolygonCW
 :ST_ForcePolygonCW rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_forcePolygonCW" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceSFS
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceSFS
 :ST_ForceSFS rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_forceSFS" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FrechetDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_FrechetDistance
 :ST_FrechetDistance rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_frechetDistance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FurthestCoordinate
+###  http://www.opengis.net/ont/geosparqlplus#ST_FurthestCoordinate
 :ST_FurthestCoordinate rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_furthestCoordinate" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GMLToSQL
+###  http://www.opengis.net/ont/geosparqlplus#ST_GMLToSQL
 :ST_GMLToSQL rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_gmlToSQL" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeneratePoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeneratePoints
 :ST_GeneratePoints rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_generatePoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeoHash
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeoHash
 :ST_GeoHash rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_geohash" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromGML
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromGML
 :ST_GeomFromGML rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_geomFromGML" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromGeoHash
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromGeoHash
 :ST_GeomFromGeoHash rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_geomFromGeoHash" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromGeoJSON
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromGeoJSON
 :ST_GeomFromGeoJSON rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_geomFromGeoJSON" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromKML
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromKML
 :ST_GeomFromKML rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_geomFromKML" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromText
 :ST_GeomFromText rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_geomFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromWKB
 :ST_GeomFromWKB rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_geomFromWKB" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeometricMedian
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeometricMedian
 :ST_GeometricMedian rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_geometricMedian" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeometryN
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeometryN
 :ST_GeometryN rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_geometryN" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeometryType
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeometryType
 :ST_GeometryType rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_geometryType" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Grayscale
+###  http://www.opengis.net/ont/geosparqlplus#ST_Grayscale
 :ST_Grayscale rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_grayscale" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HasHorizontalCRS
+###  http://www.opengis.net/ont/geosparqlplus#ST_HasHorizontalCRS
 :ST_HasHorizontalCRS rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_hasHorizontalCRS" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HasNoBand
+###  http://www.opengis.net/ont/geosparqlplus#ST_HasNoBand
 :ST_HasNoBand rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_hasNoBand" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HasRepeatedPoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_HasRepeatedPoints
 :ST_HasRepeatedPoints rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_hasRepeatedPoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HausdorffDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_HausdorffDistance
 :ST_HausdorffDistance rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_hausdorffDistance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Height
+###  http://www.opengis.net/ont/geosparqlplus#ST_Height
 :ST_Height rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_height" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_InteriorRingN
+###  http://www.opengis.net/ont/geosparqlplus#ST_InteriorRingN
 :ST_InteriorRingN rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_interiorRingN" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_InterpolatePoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_InterpolatePoint
 :ST_InterpolatePoint rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_interpolatePoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Intersection
+###  http://www.opengis.net/ont/geosparqlplus#ST_Intersection
 :ST_Intersection rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_rast_Intersection" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IntersectionMatrix
+###  http://www.opengis.net/ont/geosparqlplus#ST_IntersectionMatrix
 :ST_IntersectionMatrix rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_intersectionMatrix" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IntersectionPercentage
+###  http://www.opengis.net/ont/geosparqlplus#ST_IntersectionPercentage
 :ST_IntersectionPercentage rdf:type owl:NamedIndividual ,
                                     :Function ;
                            rdfs:label "st_intersectionPercentage" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Intersects
+###  http://www.opengis.net/ont/geosparqlplus#ST_Intersects
 :ST_Intersects rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_rast_Intersects" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Is3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Is3D
 :ST_Is3D rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_is3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsAcute
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsAcute
 :ST_IsAcute rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_isAcute" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsClosed
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsClosed
 :ST_IsClosed rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_isClosed" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsCollection
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsCollection
 :ST_IsCollection rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_isCollection" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsConvex
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsConvex
 :ST_IsConvex rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_isConvex" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsEmpty
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsEmpty
 :ST_IsEmpty rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_isEmpty" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsEquilateralTriangle
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsEquilateralTriangle
 :ST_IsEquilateralTriangle rdf:type owl:NamedIndividual ,
                                    :Function ;
                           rdfs:label "st_isEquilateralTriangle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsGrayscale
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsGrayscale
 :ST_IsGrayscale rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_isGrayscale" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsIndexed
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsIndexed
 :ST_IsIndexed rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_isIndexed" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsIsocelesTriangle
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsIsocelesTriangle
 :ST_IsIsocelesTriangle rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_isIsocelesTriangle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsMeasured
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsMeasured
 :ST_IsMeasured rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_isMeasured" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsMorePrecise
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsMorePrecise
 :ST_IsMorePrecise rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isMorePrecise" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsNodingValid
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsNodingValid
 :ST_IsNodingValid rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isNodingValid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPlanar
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPlanar
 :ST_IsPlanar rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_isPlanar" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPointInRing
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPointInRing
 :ST_IsPointInRing rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isPointInRing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPointOnLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPointOnLine
 :ST_IsPointOnLine rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isPointOnLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPolygonCCW
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPolygonCCW
 :ST_IsPolygonCCW rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_isPolygonCCW" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPolygonCW
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPolygonCW
 :ST_IsPolygonCW rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_isPolygonCW" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsRectangle
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsRectangle
 :ST_IsRectangle rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_isRectangle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsRightTriangle
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsRightTriangle
 :ST_IsRightTriangle rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_isRightTriangle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsRing
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsRing
 :ST_IsRing rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_isRing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsSimple
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsSimple
 :ST_IsSimple rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_isSimple" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsSolid
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsSolid
 :ST_IsSolid rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_isSolid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsSquare
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsSquare
 :ST_IsSquare rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_isSquare" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsTiled
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsTiled
 :ST_IsTiled rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_isTiled" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsTranslucent
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsTranslucent
 :ST_IsTranslucent rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isTranslucent" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsTriangle
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsTriangle
 :ST_IsTriangle rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_isTriangle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValid
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValid
 :ST_IsValid rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_isValid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValidDetail
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValidDetail
 :ST_IsValidDetail rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isValidDetail" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValidReason
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValidReason
 :ST_IsValidReason rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_isValidReason" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValidTrajectory
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValidTrajectory
 :ST_IsValidTrajectory rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_isValidTrajectory" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Length
+###  http://www.opengis.net/ont/geosparqlplus#ST_Length
 :ST_Length rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_Length" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Length2D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Length2D
 :ST_Length2D rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_Length2D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Length3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Length3D
 :ST_Length3D rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_Length3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LengthToPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_LengthToPoint
 :ST_LengthToPoint rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_LengthToPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineCrossingDirection
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineCrossingDirection
 :ST_LineCrossingDirection rdf:type owl:NamedIndividual ,
                                    :Function ;
                           rdfs:label "st_lineCrossingDirection" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromEncodedPolyline
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromEncodedPolyline
 :ST_LineFromEncodedPolyline rdf:type owl:NamedIndividual ,
                                      :Function ;
                             rdfs:label "st_lineFromEncodedPolyline" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromMultiPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromMultiPoint
 :ST_LineFromMultiPoint rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_lineFromMultiPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromText
 :ST_LineFromText rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_lineFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromWKB
 :ST_LineFromWKB rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_lineFromWKB" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromWKT
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromWKT
 :ST_LineFromWKT rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_lineFromWKT" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineInterpolatePoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineInterpolatePoint
 :ST_LineInterpolatePoint rdf:type owl:NamedIndividual ,
                                   :Function ;
                          rdfs:label "st_lineInterpolatePoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineInterpolatePoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineInterpolatePoints
 :ST_LineInterpolatePoints rdf:type owl:NamedIndividual ,
                                    :Function ;
                           rdfs:label "st_lineInterpolatePoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineLength3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineLength3D
 :ST_LineLength3D rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_lineLength3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineLocatePoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineLocatePoint
 :ST_LineLocatePoint rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_lineLocatePoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineMerge
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineMerge
 :ST_LineMerge rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_lineMerge" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineSelfIntersectionPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineSelfIntersectionPoint
 :ST_LineSelfIntersectionPoint rdf:type owl:NamedIndividual ,
                                        :Function ;
                               rdfs:label "st_lineSelfIntersectionPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineSubstring
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineSubstring
 :ST_LineSubstring rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_lineSubstring" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineToCurve
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineToCurve
 :ST_LineToCurve rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_lineToCurve" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LocateAlong
+###  http://www.opengis.net/ont/geosparqlplus#ST_LocateAlong
 :ST_LocateAlong rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_locateAlong" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LocateBetween
+###  http://www.opengis.net/ont/geosparqlplus#ST_LocateBetween
 :ST_LocateBetween rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_locateBetween" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LocateBetweenElevations
+###  http://www.opengis.net/ont/geosparqlplus#ST_LocateBetweenElevations
 :ST_LocateBetweenElevations rdf:type owl:NamedIndividual ,
                                      :Function ;
                             rdfs:label "st_locateBetweenElevations" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Log
+###  http://www.opengis.net/ont/geosparqlplus#ST_Log
 :ST_Log rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_rast_algebra_log" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LongestLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_LongestLine
 :ST_LongestLine rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_longestLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LongestLine3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_LongestLine3D
 :ST_LongestLine3D rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_longestLine3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_M
+###  http://www.opengis.net/ont/geosparqlplus#ST_M
 :ST_M rdf:type owl:NamedIndividual ,
                :Function ;
       rdfs:label "st_m" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MLineFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_MLineFromText
 :ST_MLineFromText rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_mLineFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MMax
+###  http://www.opengis.net/ont/geosparqlplus#ST_MMax
 :ST_MMax rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_mMax" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MMin
+###  http://www.opengis.net/ont/geosparqlplus#ST_MMin
 :ST_MMin rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_mMin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MPointFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_MPointFromText
 :ST_MPointFromText rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_mPointFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MPolyFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_MPolyFromText
 :ST_MPolyFromText rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_mPolyFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeCircle
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeCircle
 :ST_MakeCircle rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_makeCircle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEllipse
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEllipse
 :ST_MakeEllipse rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_makeEllipse" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEmptyCoverage
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEmptyCoverage
 :ST_MakeEmptyCoverage rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_makeEmptyCoverage" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEmptyRaster
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEmptyRaster
 :ST_MakeEmptyRaster rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_makeEmptyRaster" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEnvelope
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEnvelope
 :ST_MakeEnvelope rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_makeEnvelope" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeLine
 :ST_MakeLine rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_makeLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakePoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakePoint
 :ST_MakePoint rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_makePoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakePointM
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakePointM
 :ST_MakePointM rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_makePointM" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakePolygon
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakePolygon
 :ST_MakePolygon rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_makePolygon" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeValid
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeValid
 :ST_MakeValid rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_makeValid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MaxDistance
+###  http://www.opengis.net/ont/geosparqlplus#ST_MaxDistance
 :ST_MaxDistance rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_maxDistance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MaxDistance3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_MaxDistance3D
 :ST_MaxDistance3D rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_maxDistance3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MemSize
+###  http://www.opengis.net/ont/geosparqlplus#ST_MemSize
 :ST_MemSize rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_memsize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinConvexHull
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinConvexHull
 :ST_MinConvexHull rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_minConvexHull" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinTileX
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinTileX
 :ST_MinTileX rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_mintilex" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinTileY
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinTileY
 :ST_MinTileY rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_mintiley" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumBoundingCircle
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumBoundingCircle
 :ST_MinimumBoundingCircle rdf:type owl:NamedIndividual ,
                                    :Function ;
                           rdfs:label "st_minimumBoundingCircle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumBoundingCircleCenter
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumBoundingCircleCenter
 :ST_MinimumBoundingCircleCenter rdf:type owl:NamedIndividual ,
                                          :Function ;
                                 rdfs:label "st_minimumBoundingCircleCenter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumBoundingRadius
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumBoundingRadius
 :ST_MinimumBoundingRadius rdf:type owl:NamedIndividual ,
                                    :Function ;
                           rdfs:label "st_minimumBoundingRadius" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumClearance
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumClearance
 :ST_MinimumClearance rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_minimumClearance" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumClearanceLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumClearanceLine
 :ST_MinimumClearanceLine rdf:type owl:NamedIndividual ,
                                   :Function ;
                          rdfs:label "st_minimumClearanceLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumDiameter
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumDiameter
 :ST_MinimumDiameter rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_minimumDiameter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumDiameterLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumDiameterLine
 :ST_MinimumDiameterLine rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_minimumDiameterLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumRectangle
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumRectangle
 :ST_MinimumRectangle rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_minimumRectangle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Mult
+###  http://www.opengis.net/ont/geosparqlplus#ST_Mult
 :ST_Mult rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_rast_algebra_mult" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MultConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_MultConst
 :ST_MultConst rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_rast_algebra_multconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Multi
+###  http://www.opengis.net/ont/geosparqlplus#ST_Multi
 :ST_Multi rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_multi" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MultiplyZ
+###  http://www.opengis.net/ont/geosparqlplus#ST_MultiplyZ
 :ST_MultiplyZ rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_multiplyz" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NDims
+###  http://www.opengis.net/ont/geosparqlplus#ST_NDims
 :ST_NDims rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_nDims" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NPoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_NPoints
 :ST_NPoints rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_nPoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NRings
+###  http://www.opengis.net/ont/geosparqlplus#ST_NRings
 :ST_NRings rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_nRings" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NearestValue
+###  http://www.opengis.net/ont/geosparqlplus#ST_NearestValue
 :ST_NearestValue rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_nearestValue" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Node
+###  http://www.opengis.net/ont/geosparqlplus#ST_Node
 :ST_Node rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_node" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Normalize
+###  http://www.opengis.net/ont/geosparqlplus#ST_Normalize
 :ST_Normalize rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_normalize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Not
+###  http://www.opengis.net/ont/geosparqlplus#ST_Not
 :ST_Not rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_rast_algebra_not" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NotSameAlignmentReason
+###  http://www.opengis.net/ont/geosparqlplus#ST_NotSameAlignmentReason
 :ST_NotSameAlignmentReason rdf:type owl:NamedIndividual ,
                                     :Function ;
                            rdfs:label "st_notSameAlignmentReason" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumBands
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumBands
 :ST_NumBands rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_numBands" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumDistinctGeometries
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumDistinctGeometries
 :ST_NumDistinctGeometries rdf:type owl:NamedIndividual ,
                                    :Function ;
                           rdfs:label "st_numDistinctGeometries" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumDistinctPoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumDistinctPoints
 :ST_NumDistinctPoints rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_numDistinctPoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumGeometries
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumGeometries
 :ST_NumGeometries rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_numGeometries" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumInteriorRings
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumInteriorRings
 :ST_NumInteriorRings rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_numInteriorRings" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumPatches
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumPatches
 :ST_NumPatches rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_numPatches" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumPoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumPoints
 :ST_NumPoints rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_numPoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumXTiles
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumXTiles
 :ST_NumXTiles rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_numXTiles" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumYTiles
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumYTiles
 :ST_NumYTiles rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_numYTiles" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OSMLink
+###  http://www.opengis.net/ont/geosparqlplus#ST_OSMLink
 :ST_OSMLink rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_osmlink" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OctogonalEnvelope
+###  http://www.opengis.net/ont/geosparqlplus#ST_OctogonalEnvelope
 :ST_OctogonalEnvelope rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_octogonalEnvelope" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OffsetCurve
+###  http://www.opengis.net/ont/geosparqlplus#ST_OffsetCurve
 :ST_OffsetCurve rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_offsetCurve" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Or
+###  http://www.opengis.net/ont/geosparqlplus#ST_Or
 :ST_Or rdf:type owl:NamedIndividual ,
                 :Function ;
        rdfs:label "st_rast_algebra_or" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OrConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_OrConst
 :ST_OrConst rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rast_algebra_orconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OrderingEquals
+###  http://www.opengis.net/ont/geosparqlplus#ST_OrderingEquals
 :ST_OrderingEquals rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_orderingEquals" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Orientation
+###  http://www.opengis.net/ont/geosparqlplus#ST_Orientation
 :ST_Orientation rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_orientation" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Overlaps
+###  http://www.opengis.net/ont/geosparqlplus#ST_Overlaps
 :ST_Overlaps rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_Overlaps" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PartOfGeometryAfter
+###  http://www.opengis.net/ont/geosparqlplus#ST_PartOfGeometryAfter
 :ST_PartOfGeometryAfter rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_partOfGeometryAfter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PartOfGeometryBefore
+###  http://www.opengis.net/ont/geosparqlplus#ST_PartOfGeometryBefore
 :ST_PartOfGeometryBefore rdf:type owl:NamedIndividual ,
                                   :Function ;
                          rdfs:label "st_partOfGeometryBefore" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PatchN
+###  http://www.opengis.net/ont/geosparqlplus#ST_PatchN
 :ST_PatchN rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_patchN" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Perimeter
+###  http://www.opengis.net/ont/geosparqlplus#ST_Perimeter
 :ST_Perimeter rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_perimeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Perimeter2D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Perimeter2D
 :ST_Perimeter2D rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_perimeter2D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Perimeter3D
+###  http://www.opengis.net/ont/geosparqlplus#ST_Perimeter3D
 :ST_Perimeter3D rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_perimeter3D" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsCentroid
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsCentroid
 :ST_PixelAsCentroid rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_pixelAsCentroid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsCentroids
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsCentroids
 :ST_PixelAsCentroids rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_pixelAsCentroids" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPoint
 :ST_PixelAsPoint rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_pixelAsPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPoints
 :ST_PixelAsPoints rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_pixelAsPoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPolygon
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPolygon
 :ST_PixelAsPolygon rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_pixelAsPolygon" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPolygons
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPolygons
 :ST_PixelAsPolygons rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_pixelAsPolygons" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelHeight
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelHeight
 :ST_PixelHeight rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_pixelHeight" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelOfValue
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelOfValue
 :ST_PixelOfValue rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_pixelOfValue" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelWidth
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelWidth
 :ST_PixelWidth rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_pixelWidth" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointFromGeoHash
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointFromGeoHash
 :ST_PointFromGeoHash rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_pointFromGeoHash" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointFromText
 :ST_PointFromText rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_pointFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointFromWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointFromWKB
 :ST_PointFromWKB rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_pointFromWKB" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointInsideCircle
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointInsideCircle
 :ST_PointInsideCircle rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_pointInsideCircle" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointN
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointN
 :ST_PointN rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_pointN" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointOnSurface
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointOnSurface
 :ST_PointOnSurface rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_pointOnSurface" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Points
+###  http://www.opengis.net/ont/geosparqlplus#ST_Points
 :ST_Points rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_points" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Polygon
+###  http://www.opengis.net/ont/geosparqlplus#ST_Polygon
 :ST_Polygon rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_polygon" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PolygonFromText
+###  http://www.opengis.net/ont/geosparqlplus#ST_PolygonFromText
 :ST_PolygonFromText rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_polygonFromText" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PolygonFromWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_PolygonFromWKB
 :ST_PolygonFromWKB rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_polygonFromWKB" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Polygonize
+###  http://www.opengis.net/ont/geosparqlplus#ST_Polygonize
 :ST_Polygonize rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_polygonize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PrecisionReducer
+###  http://www.opengis.net/ont/geosparqlplus#ST_PrecisionReducer
 :ST_PrecisionReducer rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_precisionReducer" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RastFromHexWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_RastFromHexWKB
 :ST_RastFromHexWKB rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_rastFromHexWKB" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RastFromWKB
+###  http://www.opengis.net/ont/geosparqlplus#ST_RastFromWKB
 :ST_RastFromWKB rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_rastFromWKB" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RasterToWorldCoord
+###  http://www.opengis.net/ont/geosparqlplus#ST_RasterToWorldCoord
 :ST_RasterToWorldCoord rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_rasterToWorldCoord" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RasterToWorldCoordX
+###  http://www.opengis.net/ont/geosparqlplus#ST_RasterToWorldCoordX
 :ST_RasterToWorldCoordX rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_rasterToWorldCoordX" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RasterToWorldCoordY
+###  http://www.opengis.net/ont/geosparqlplus#ST_RasterToWorldCoordY
 :ST_RasterToWorldCoordY rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_rasterToWorldCoordY" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Reflect
+###  http://www.opengis.net/ont/geosparqlplus#ST_Reflect
 :ST_Reflect rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_reflect" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Relate
+###  http://www.opengis.net/ont/geosparqlplus#ST_Relate
 :ST_Relate rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_relate" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RelateMatch
+###  http://www.opengis.net/ont/geosparqlplus#ST_RelateMatch
 :ST_RelateMatch rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_relateMatch" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemoveGeometry
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemoveGeometry
 :ST_RemoveGeometry rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_removegeometry" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemovePoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemovePoint
 :ST_RemovePoint rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_removePoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemovePoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemovePoints
 :ST_RemovePoints rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_removePoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemoveRepeatedPoints
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemoveRepeatedPoints
 :ST_RemoveRepeatedPoints rdf:type owl:NamedIndividual ,
                                   :Function ;
                          rdfs:label "st_removeRepeatedPoints" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemoveRing
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemoveRing
 :ST_RemoveRing rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_removeRing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Resize
+###  http://www.opengis.net/ont/geosparqlplus#ST_Resize
 :ST_Resize rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_resize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Reskew
+###  http://www.opengis.net/ont/geosparqlplus#ST_Reskew
 :ST_Reskew rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_reskew" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Retile
+###  http://www.opengis.net/ont/geosparqlplus#ST_Retile
 :ST_Retile rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_retile" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Reverse
+###  http://www.opengis.net/ont/geosparqlplus#ST_Reverse
 :ST_Reverse rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_reverse" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ReverseRing
+###  http://www.opengis.net/ont/geosparqlplus#ST_ReverseRing
 :ST_ReverseRing rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_reverseRing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Rotate
+###  http://www.opengis.net/ont/geosparqlplus#ST_Rotate
 :ST_Rotate rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_rotate" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RotateX
+###  http://www.opengis.net/ont/geosparqlplus#ST_RotateX
 :ST_RotateX rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rotateX" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RotateY
+###  http://www.opengis.net/ont/geosparqlplus#ST_RotateY
 :ST_RotateY rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rotateY" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RotateZ
+###  http://www.opengis.net/ont/geosparqlplus#ST_RotateZ
 :ST_RotateZ rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rotateZ" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Rotation
+###  http://www.opengis.net/ont/geosparqlplus#ST_Rotation
 :ST_Rotation rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rotation" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Roughness
+###  http://www.opengis.net/ont/geosparqlplus#ST_Roughness
 :ST_Roughness rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_roughness" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRID
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRID
 :ST_SRID rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_rast_srid" ,
                     "st_srid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis1Name
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis1Name
 :ST_SRIDGetAxis1Name rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_sridGetAxis1Name" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis1Orientation
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis1Orientation
 :ST_SRIDGetAxis1Orientation rdf:type owl:NamedIndividual ,
                                      :Function ;
                             rdfs:label "st_sridGetAxis1Orientation" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis2Name
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis2Name
 :ST_SRIDGetAxis2Name rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_sridGetAxis2Name" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis2Orientation
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis2Orientation
 :ST_SRIDGetAxis2Orientation rdf:type owl:NamedIndividual ,
                                      :Function ;
                             rdfs:label "st_sridGetAxis2Orientation" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDHasFlippedAxis
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDHasFlippedAxis
 :ST_SRIDHasFlippedAxis rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_sridHasFlippedAxis" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDToEPSG
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDToEPSG
 :ST_SRIDToEPSG rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_sridToEPSG" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SameAlignment
+###  http://www.opengis.net/ont/geosparqlplus#ST_SameAlignment
 :ST_SameAlignment rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_sameAlignment" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Scale
+###  http://www.opengis.net/ont/geosparqlplus#ST_Scale
 :ST_Scale rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_scale" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ScaleX
+###  http://www.opengis.net/ont/geosparqlplus#ST_ScaleX
 :ST_ScaleX rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_scaleX" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ScaleY
+###  http://www.opengis.net/ont/geosparqlplus#ST_ScaleY
 :ST_ScaleY rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_scaleY" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Segmentize
+###  http://www.opengis.net/ont/geosparqlplus#ST_Segmentize
 :ST_Segmentize rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_segmentize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SelfIntersections
+###  http://www.opengis.net/ont/geosparqlplus#ST_SelfIntersections
 :ST_SelfIntersections rdf:type owl:NamedIndividual ,
                                :Function ;
                       rdfs:label "st_selfIntersections" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetEndPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetEndPoint
 :ST_SetEndPoint rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_setEndPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetGeometry
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetGeometry
 :ST_SetGeometry rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_setGeometry" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetPoint
 :ST_SetPoint rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_setPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetRing
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetRing
 :ST_SetRing rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_setRing" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetSRID
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetSRID
 :ST_SetSRID rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_setSRID" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetStartPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetStartPoint
 :ST_SetStartPoint rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_setStartPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SharedPaths
+###  http://www.opengis.net/ont/geosparqlplus#ST_SharedPaths
 :ST_SharedPaths rdf:type owl:NamedIndividual ,
                          :Function ;
                 rdfs:label "st_sharedPaths" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ShearTransformation
+###  http://www.opengis.net/ont/geosparqlplus#ST_ShearTransformation
 :ST_ShearTransformation rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_shearTransformation" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ShiftLongitude
+###  http://www.opengis.net/ont/geosparqlplus#ST_ShiftLongitude
 :ST_ShiftLongitude rdf:type owl:NamedIndividual ,
                             :Function ;
                    rdfs:label "st_shiftLongitude" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ShortestLine
+###  http://www.opengis.net/ont/geosparqlplus#ST_ShortestLine
 :ST_ShortestLine rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_shortestLine" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Simplify
+###  http://www.opengis.net/ont/geosparqlplus#ST_Simplify
 :ST_Simplify rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_simplify" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SimplifyPreserveTopology
+###  http://www.opengis.net/ont/geosparqlplus#ST_SimplifyPreserveTopology
 :ST_SimplifyPreserveTopology rdf:type owl:NamedIndividual ,
                                       :Function ;
                              rdfs:label "st_simplifyPreserveTopology" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SimplifyVW
+###  http://www.opengis.net/ont/geosparqlplus#ST_SimplifyVW
 :ST_SimplifyVW rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_simplifyVW" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SkewX
+###  http://www.opengis.net/ont/geosparqlplus#ST_SkewX
 :ST_SkewX rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_skewX" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SkewY
+###  http://www.opengis.net/ont/geosparqlplus#ST_SkewY
 :ST_SkewY rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_skewY" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Slope
+###  http://www.opengis.net/ont/geosparqlplus#ST_Slope
 :ST_Slope rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_slope" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Snap
+###  http://www.opengis.net/ont/geosparqlplus#ST_Snap
 :ST_Snap rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_snap" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SnapToGrid
+###  http://www.opengis.net/ont/geosparqlplus#ST_SnapToGrid
 :ST_SnapToGrid rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_snapToGrid" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Split
+###  http://www.opengis.net/ont/geosparqlplus#ST_Split
 :ST_Split rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_split" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_StartPoint
+###  http://www.opengis.net/ont/geosparqlplus#ST_StartPoint
 :ST_StartPoint rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_startPoint" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_StraightSkeleton
+###  http://www.opengis.net/ont/geosparqlplus#ST_StraightSkeleton
 :ST_StraightSkeleton rdf:type owl:NamedIndividual ,
                               :Function ;
                      rdfs:label "st_straightSkeleton" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Subtract
+###  http://www.opengis.net/ont/geosparqlplus#ST_Subtract
 :ST_Subtract rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_algebra_subtract" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SubtractConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_SubtractConst
 :ST_SubtractConst rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_rast_algebra_subtractconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Summary
+###  http://www.opengis.net/ont/geosparqlplus#ST_Summary
 :ST_Summary rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_summary" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SummaryStats
+###  http://www.opengis.net/ont/geosparqlplus#ST_SummaryStats
 :ST_SummaryStats rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_summaryStats" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SwapOrdinates
+###  http://www.opengis.net/ont/geosparqlplus#ST_SwapOrdinates
 :ST_SwapOrdinates rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_swapOrdinates" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SymDifference
+###  http://www.opengis.net/ont/geosparqlplus#ST_SymDifference
 :ST_SymDifference rdf:type owl:NamedIndividual ,
                            :Function ;
                   rdfs:label "st_symDifference" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_T
+###  http://www.opengis.net/ont/geosparqlplus#ST_T
 :ST_T rdf:type owl:NamedIndividual ,
                :Function ;
       rdfs:label "st_t" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TMax
+###  http://www.opengis.net/ont/geosparqlplus#ST_TMax
 :ST_TMax rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_tMax" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TMin
+###  http://www.opengis.net/ont/geosparqlplus#ST_TMin
 :ST_TMin rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_tMin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TPI
+###  http://www.opengis.net/ont/geosparqlplus#ST_TPI
 :ST_TPI rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_tpi" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TRI
+###  http://www.opengis.net/ont/geosparqlplus#ST_TRI
 :ST_TRI rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_tri" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Tesselate
+###  http://www.opengis.net/ont/geosparqlplus#ST_Tesselate
 :ST_Tesselate rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_tesselate" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileGridXOffset
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileGridXOffset
 :ST_TileGridXOffset rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_tilegridxoffset" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileGridYOffset
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileGridYOffset
 :ST_TileGridYOffset rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_tilegridyoffset" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileHeight
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileHeight
 :ST_TileHeight rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_tileheight" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileWidth
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileWidth
 :ST_TileWidth rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_tilewidth" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ToDegrees
+###  http://www.opengis.net/ont/geosparqlplus#ST_ToDegrees
 :ST_ToDegrees rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_toDegrees" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ToRadians
+###  http://www.opengis.net/ont/geosparqlplus#ST_ToRadians
 :ST_ToRadians rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_toRadians" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Touches
+###  http://www.opengis.net/ont/geosparqlplus#ST_Touches
 :ST_Touches rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rast_Touches" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TransScale
+###  http://www.opengis.net/ont/geosparqlplus#ST_TransScale
 :ST_TransScale rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_transscale" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Transform
+###  http://www.opengis.net/ont/geosparqlplus#ST_Transform
 :ST_Transform rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_transform" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Translate
+###  http://www.opengis.net/ont/geosparqlplus#ST_Translate
 :ST_Translate rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_translate" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_UnaryUnion
+###  http://www.opengis.net/ont/geosparqlplus#ST_UnaryUnion
 :ST_UnaryUnion rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_unaryUnion" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Union
+###  http://www.opengis.net/ont/geosparqlplus#ST_Union
 :ST_Union rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_union" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_UpperLeftX
+###  http://www.opengis.net/ont/geosparqlplus#ST_UpperLeftX
 :ST_UpperLeftX rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_upperLeftX" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_UpperLeftY
+###  http://www.opengis.net/ont/geosparqlplus#ST_UpperLeftY
 :ST_UpperLeftY rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "st_upperLeftY" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Value
+###  http://www.opengis.net/ont/geosparqlplus#ST_Value
 :ST_Value rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_value" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Vectorize
+###  http://www.opengis.net/ont/geosparqlplus#ST_Vectorize
 :ST_Vectorize rdf:type owl:NamedIndividual ,
                        :Function ;
               rdfs:label "st_vectorize" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_VoronoiLines
+###  http://www.opengis.net/ont/geosparqlplus#ST_VoronoiLines
 :ST_VoronoiLines rdf:type owl:NamedIndividual ,
                           :Function ;
                  rdfs:label "st_voronoiLines" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_VoronoiPolygons
+###  http://www.opengis.net/ont/geosparqlplus#ST_VoronoiPolygons
 :ST_VoronoiPolygons rdf:type owl:NamedIndividual ,
                              :Function ;
                     rdfs:label "st_voronoiPolygons" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WKBToSQL
+###  http://www.opengis.net/ont/geosparqlplus#ST_WKBToSQL
 :ST_WKBToSQL rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_wkbToSQL" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WKTToSQL
+###  http://www.opengis.net/ont/geosparqlplus#ST_WKTToSQL
 :ST_WKTToSQL rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_wktToSQL" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Width
+###  http://www.opengis.net/ont/geosparqlplus#ST_Width
 :ST_Width rdf:type owl:NamedIndividual ,
                    :Function ;
           rdfs:label "st_width" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Within
+###  http://www.opengis.net/ont/geosparqlplus#ST_Within
 :ST_Within rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_rast_Within" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WorldToRasterCoord
+###  http://www.opengis.net/ont/geosparqlplus#ST_WorldToRasterCoord
 :ST_WorldToRasterCoord rdf:type owl:NamedIndividual ,
                                 :Function ;
                        rdfs:label "st_worldToRasterCoord" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WorldToRasterCoordX
+###  http://www.opengis.net/ont/geosparqlplus#ST_WorldToRasterCoordX
 :ST_WorldToRasterCoordX rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_worldToRasterCoordX" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WorldToRasterCoordY
+###  http://www.opengis.net/ont/geosparqlplus#ST_WorldToRasterCoordY
 :ST_WorldToRasterCoordY rdf:type owl:NamedIndividual ,
                                  :Function ;
                         rdfs:label "st_worldToRasterCoordY" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_X
+###  http://www.opengis.net/ont/geosparqlplus#ST_X
 :ST_X rdf:type owl:NamedIndividual ,
                :Function ;
       rdfs:label "st_x" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_XMax
+###  http://www.opengis.net/ont/geosparqlplus#ST_XMax
 :ST_XMax rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_xMax" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_XMin
+###  http://www.opengis.net/ont/geosparqlplus#ST_XMin
 :ST_XMin rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_xMin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Xor
+###  http://www.opengis.net/ont/geosparqlplus#ST_Xor
 :ST_Xor rdf:type owl:NamedIndividual ,
                  :Function ;
         rdfs:label "st_rast_algebra_xor" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_XorConst
+###  http://www.opengis.net/ont/geosparqlplus#ST_XorConst
 :ST_XorConst rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "st_rast_algebra_xorconst" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Y
+###  http://www.opengis.net/ont/geosparqlplus#ST_Y
 :ST_Y rdf:type owl:NamedIndividual ,
                :Function ;
       rdfs:label "st_y" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_YMax
+###  http://www.opengis.net/ont/geosparqlplus#ST_YMax
 :ST_YMax rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_yMax" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_YMin
+###  http://www.opengis.net/ont/geosparqlplus#ST_YMin
 :ST_YMin rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_yMin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Z
+###  http://www.opengis.net/ont/geosparqlplus#ST_Z
 :ST_Z rdf:type owl:NamedIndividual ,
                :Function ;
       rdfs:label "st_z" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ZMax
+###  http://www.opengis.net/ont/geosparqlplus#ST_ZMax
 :ST_ZMax rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_zMax" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ZMin
+###  http://www.opengis.net/ont/geosparqlplus#ST_ZMin
 :ST_ZMin rdf:type owl:NamedIndividual ,
                   :Function ;
          rdfs:label "st_zMin" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ZmFlag
+###  http://www.opengis.net/ont/geosparqlplus#ST_ZmFlag
 :ST_ZmFlag rdf:type owl:NamedIndividual ,
                     :Function ;
            rdfs:label "st_zmFlag" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_isEmpty
+###  http://www.opengis.net/ont/geosparqlplus#ST_isEmpty
 :ST_isEmpty rdf:type owl:NamedIndividual ,
                      :Function ;
             rdfs:label "st_rast_isEmpty" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USFootToMeter
+###  http://www.opengis.net/ont/geosparqlplus#USFootToMeter
 :USFootToMeter rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "USFootToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USInchToMeter
+###  http://www.opengis.net/ont/geosparqlplus#USInchToMeter
 :USInchToMeter rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "USInchToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USMileToMeter
+###  http://www.opengis.net/ont/geosparqlplus#USMileToMeter
 :USMileToMeter rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "USMileToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USYardToMeter
+###  http://www.opengis.net/ont/geosparqlplus#USYardToMeter
 :USYardToMeter rdf:type owl:NamedIndividual ,
                         :Function ;
                rdfs:label "USYardToMeter" .
 
 
-###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#YardToMeter
+###  http://www.opengis.net/ont/geosparqlplus#YardToMeter
 :YardToMeter rdf:type owl:NamedIndividual ,
                       :Function ;
              rdfs:label "yardToMeter" .
