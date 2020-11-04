@@ -1,0 +1,3017 @@
+@prefix : <http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo2: <http://www.opengis.net/ont/geosparqlplus#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.opengis.net/ont/geosparqlplus#> .
+
+<http://www.opengis.net/ont/geosparqlplus#> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#HexWKBLiteral
+<http://www.opengis.net/ont/geosparql#HexWKBLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#WKBLiteral
+<http://www.opengis.net/ont/geosparql#WKBLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#covJSONLiteral
+<http://www.opengis.net/ont/geosparql#covJSONLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#xyzASCIILiteral
+geo2:xyzASCIILiteral rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> rdf:type owl:ObjectProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#hasCoverage
+:hasCoverage rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#asXYZASCII
+geo2:asXYZASCII rdf:type owl:DatatypeProperty .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#hasNoData
+geo2:hasNoData rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asCoverageJSON
+:asCoverageJSON rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asHexWKB
+:asHexWKB rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asWKB
+:asWKB rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                         rdfs:label "PrefixedUnit" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale
+<http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Scale> ;
+                                                                       rdfs:label "Ratio Scale" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Scale
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Scale> rdf:type owl:Class ;
+                                                                  rdfs:label "Scale" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> rdf:type owl:Class ;
+                                                                 rdfs:label "Unit" .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:label "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#LineString
+<http://www.opengis.net/ont/geosparql#LineString> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                  rdfs:comment "Representation of a LineString"@en ;
+                                                  rdfs:label "LineString"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Point
+<http://www.opengis.net/ont/geosparql#Point> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                             rdfs:comment "Representation of a Point"@en ;
+                                             rdfs:label "Point"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Polygon
+<http://www.opengis.net/ont/geosparql#Polygon> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                               rdfs:comment "Represenation of a Polygon"@en ;
+                                               rdfs:label "Polygon"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#DigitalElevationModel
+geo2:DigitalElevationModel rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.semgis.de/ear#SampleRaster> ;
+                           rdfs:label "Digital Elevation Model" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#FloodAltitude
+geo2:FloodAltitude rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.semgis.de/ear#SampleRaster> .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#Function
+geo2:Function rdf:type owl:Class ;
+              rdfs:label "Function"@en .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#SampleVector
+geo2:SampleVector rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Coverage
+:Coverage rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+          rdfs:comment "Representation of an OGC Coverage" ;
+          rdfs:label "Coverage"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#GridCoverage
+:GridCoverage rdf:type owl:Class ;
+              rdfs:subClassOf :Coverage ;
+              rdfs:comment "Representation of a gridded coverage"@en ;
+              rdfs:label "GridCoverage"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Raster
+:Raster rdf:type owl:Class ;
+        rdfs:subClassOf :ReferenceableGridCoverage ;
+        rdfs:comment "Representation of a raster"@en ;
+        rdfs:label "Raster"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ReferenceableGridCoverage
+:ReferenceableGridCoverage rdf:type owl:Class ;
+                           rdfs:subClassOf :GridCoverage ;
+                           rdfs:comment "ReferenceableGridCoverage"@en ,
+                                        "Representation of a gridded coverage with a geospatial reference"@en .
+
+
+###  http://www.semgis.de/ear#House
+<http://www.semgis.de/ear#House> rdf:type owl:Class ;
+                                 rdfs:subClassOf geo2:SampleVector ;
+                                 rdfs:comment "Representation of a house"@en ;
+                                 rdfs:label "House"@en .
+
+
+###  http://www.semgis.de/ear#PointOfInterest
+<http://www.semgis.de/ear#PointOfInterest> rdf:type owl:Class ;
+                                           rdfs:subClassOf geo2:SampleVector ;
+                                           rdfs:comment "Representation of a point of interest"@en ;
+                                           rdfs:label "Point of interest"@en .
+
+
+###  http://www.semgis.de/ear#Road
+<http://www.semgis.de/ear#Road> rdf:type owl:Class ;
+                                rdfs:subClassOf geo2:SampleVector ;
+                                rdfs:label "Representation of a road"@en ,
+                                           "Road"@en .
+
+
+###  http://www.semgis.de/ear#SampleRaster
+<http://www.semgis.de/ear#SampleRaster> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+                                        rdfs:comment "Representation of a semantic representation of a sample raster"@en ,
+                                                     "Sample raster"@en .
+
+
+###  http://www.unibz.it/inf/obdaplugin#RandomClass6677841155
+<http://www.unibz.it/inf/obdaplugin#RandomClass6677841155> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/centimeter
+<http://www.ontology-of-units-of-measure.org/resource/om-2/centimeter> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit> .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/meter
+<http://www.ontology-of-units-of-measure.org/resource/om-2/meter> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit> .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:NamedIndividual ,
+                                                        geo2:Function .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#CentimeterToMeter
+geo2:CentimeterToMeter rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "centimeterToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ChainToMeter
+geo2:ChainToMeter rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "chainToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#DecimeterToMeter
+geo2:DecimeterToMeter rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "decimeterToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#FathomToMeter
+geo2:FathomToMeter rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "fathomToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#FootToMeter
+geo2:FootToMeter rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "footToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#InchToMeter
+geo2:InchToMeter rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "inchToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#KilometerToMeter
+geo2:KilometerToMeter rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "kilometerToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#LinkToMeter
+geo2:LinkToMeter rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "linkToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToCentimeter
+geo2:MeterToCentimeter rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "meterToCentimeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToChain
+geo2:MeterToChain rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "meterToChain" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToDecimeter
+geo2:MeterToDecimeter rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "meterToDecimeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToFathom
+geo2:MeterToFathom rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "meterToFathom" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToFoot
+geo2:MeterToFoot rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "meterToFoot" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToInch
+geo2:MeterToInch rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "meterToInch" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToKilometer
+geo2:MeterToKilometer rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "meterToKilometer" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToLink
+geo2:MeterToLink rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "meterToLink" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToMile
+geo2:MeterToMile rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "meterToMile" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToMillimeter
+geo2:MeterToMillimeter rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "meterToMillimeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToNauticalMile
+geo2:MeterToNauticalMile rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "meterToNauticalMile" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSFoot
+geo2:MeterToUSFoot rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "meterToUSFoot" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSInch
+geo2:MeterToUSInch rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "meterToUSInch" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSMile
+geo2:MeterToUSMile rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "meterToUSMile" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MeterToUSYard
+geo2:MeterToUSYard rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "meterToUSYard" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MileToMeter
+geo2:MileToMeter rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "mileToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#MillimeterToMeter
+geo2:MillimeterToMeter rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "millimeterToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#NauticalMileToMeter
+geo2:NauticalMileToMeter rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "nauticalMileToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DClosestPoint
+geo2:ST_3DClosestPoint rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_3dclosestpoint" ,
+                                  "st_closestPoint3d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DDWithin
+geo2:ST_3DDWithin rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_3ddwithin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DDistance
+geo2:ST_3DDistance rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_distance3d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DMaxDistance
+geo2:ST_3DMaxDistance rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_3dmaxDistance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_3DShortestLine
+geo2:ST_3DShortestLine rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_3dshortestline" ,
+                                  "st_shortestLine3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_3dLongestLine
+geo2:ST_3dLongestLine rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_3dlongestLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Accum
+geo2:ST_Accum rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_accum" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Add
+geo2:ST_Add rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_rast_algebra_add" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddBand
+geo2:ST_AddBand rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_addband" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddConst
+geo2:ST_AddConst rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_algebra_addconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddGeometry
+geo2:ST_AddGeometry rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_addgeometry" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddPoint
+geo2:ST_AddPoint rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_addpoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddRing
+geo2:ST_AddRing rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_addRing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AddZ
+geo2:ST_AddZ rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_addz" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_And
+geo2:ST_And rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_rast_algebra_and" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AndConst
+geo2:ST_AndConst rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_algebra_andconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Angle
+geo2:ST_Angle rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_angle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Area
+geo2:ST_Area rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_area" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AreaSimilarity
+geo2:ST_AreaSimilarity rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_areasimilarity" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsBinary
+geo2:ST_AsBinary rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_asbinary" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsEncodedPolyline
+geo2:ST_AsEncodedPolyline rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_asencodedpolyline" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGML
+geo2:ST_AsGML rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_asgml" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGPX
+geo2:ST_AsGPX rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_asgpx" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoBuf
+geo2:ST_AsGeoBuf rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_asgeobuf" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoJSON
+geo2:ST_AsGeoJSON rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_asgeojson" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoJSONLD
+geo2:ST_AsGeoJSONLD rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_asgeojsonld" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoRSS
+geo2:ST_AsGeoRSS rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_asgeorss" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsGeoURI
+geo2:ST_AsGeoURI rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_asgeouri" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsHexEWKB
+geo2:ST_AsHexEWKB rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_ashexewkb" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsJPG
+geo2:ST_AsJPG rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_asjpg" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsKML
+geo2:ST_AsKML rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_askml" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsLatLonText
+geo2:ST_AsLatLonText rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_aslatlontext" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsMVT
+geo2:ST_AsMVT rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_asmvt" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsMVTGeom
+geo2:ST_AsMVTGeom rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_asmvtgeom" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsPNG
+geo2:ST_AsPNG rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_aspng" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsPolyshape
+geo2:ST_AsPolyshape rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_aspolyshape" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsSVG
+geo2:ST_AsSVG rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_assvg" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTIFF
+geo2:ST_AsTIFF rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_astiff" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTWKB
+geo2:ST_AsTWKB rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_astwkb" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsText
+geo2:ST_AsText rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_astext" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTextRaw
+geo2:ST_AsTextRaw rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_astextraw" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTextRound
+geo2:ST_AsTextRound rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_astextround" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsTopoJSON
+geo2:ST_AsTopoJSON rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_astopojson" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsWKB
+geo2:ST_AsWKB rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_aswkb" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsWKT
+geo2:ST_AsWKT rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_aswkt" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_AsX3D
+geo2:ST_AsX3D rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_asx3d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Aspect
+geo2:ST_Aspect rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_aspect" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Azimuth
+geo2:ST_Azimuth rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_azimuth" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXAbove
+geo2:ST_BBOXAbove rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_bboxabove" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXBelow
+geo2:ST_BBOXBelow rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_bboxbelow" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXContains
+geo2:ST_BBOXContains rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_bboxcontains" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXDistance
+geo2:ST_BBOXDistance rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_bboxdistance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXEquals
+geo2:ST_BBOXEquals rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_bboxequals" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXFPIntersects
+geo2:ST_BBOXFPIntersects rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_bboxfpintersects" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXIntersect
+geo2:ST_BBOXIntersect rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_bboxintersect" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXIsContainedBy
+geo2:ST_BBOXIsContainedBy rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_bboxiscontainedby" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXLeftOf
+geo2:ST_BBOXLeftOf rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_bboxleftof" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsAbove
+geo2:ST_BBOXOverlapsAbove rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_bboxoverlapsabove" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsBelow
+geo2:ST_BBOXOverlapsBelow rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_bboxoverlapsbelow" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsLeft
+geo2:ST_BBOXOverlapsLeft rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_bboxoverlapsleft" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXOverlapsRight
+geo2:ST_BBOXOverlapsRight rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_bboxoverlapsright" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BBOXRightOf
+geo2:ST_BBOXRightOf rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_bboxrightof" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Band
+geo2:ST_Band rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_band" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BandMetaData
+geo2:ST_BandMetaData rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_bandmetadata" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BandNoDataValue
+geo2:ST_BandNoDataValue rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_bandnodatavalue" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BandPixelType
+geo2:ST_BandPixelType rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_bandpixeltype" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BezierSmoothing
+geo2:ST_BezierSmoothing rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_bezierSmoothing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Boundary
+geo2:ST_Boundary rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_boundary" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_BoundingDiagonal
+geo2:ST_BoundingDiagonal rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_boundingdiagonal" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Centroid
+geo2:ST_Centroid rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_centroid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CentroidDistance
+geo2:ST_CentroidDistance rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_centroidDistance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ChaikinSmoothing
+geo2:ST_ChaikinSmoothing rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_chaikinSmooting" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Circularity
+geo2:ST_Circularity rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_circularity" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Clip
+geo2:ST_Clip rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_clip" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClipByBox2D
+geo2:ST_ClipByBox2D rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_clipByBox2D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClosestCoordinate
+geo2:ST_ClosestCoordinate rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_closestCooordinate" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClosestPoint
+geo2:ST_ClosestPoint rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_closestPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClosestPointOfApproach
+geo2:ST_ClosestPointOfApproach rdf:type owl:NamedIndividual ,
+                                        geo2:Function ;
+                               rdfs:label "st_closestPointOfApproach" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClusterIntersecting
+geo2:ST_ClusterIntersecting rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_clusterIntersecting" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClusterKMeans
+geo2:ST_ClusterKMeans rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_clusterKMeans" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ClusterWithin
+geo2:ST_ClusterWithin rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_clusterWithin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CollFromText
+geo2:ST_CollFromText rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_geomCollFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CollectionExtract
+geo2:ST_CollectionExtract rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_collectionExtract" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CollectionHomogenize
+geo2:ST_CollectionHomogenize rdf:type owl:NamedIndividual ,
+                                      geo2:Function ;
+                             rdfs:label "st_collectionHomogenize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CompactnessRatio
+geo2:ST_CompactnessRatio rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_compactnessRatio" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ConcaveHull
+geo2:ST_ConcaveHull rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_concaveHull" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Contains
+geo2:ST_Contains rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_contains" ,
+                            "st_rast_Contains" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ContainsProperly
+geo2:ST_ContainsProperly rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_containsProperly" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ConvexHull
+geo2:ST_ConvexHull rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_convexHull" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Count
+geo2:ST_Count rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_count" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CoveredBy
+geo2:ST_CoveredBy rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_rast_CoveredBy" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Covers
+geo2:ST_Covers rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_rast_Covers" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Crosses
+geo2:ST_Crosses rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rast_Crosses" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_CurveToLine
+geo2:ST_CurveToLine rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_curveToLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_DWithin
+geo2:ST_DWithin rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_dWithin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_DWithin3D
+geo2:ST_DWithin3D rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_dwithin3d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_DelaunayTriangles
+geo2:ST_DelaunayTriangles rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_delaunayTriangles" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Densify
+geo2:ST_Densify rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_densify" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Dimension
+geo2:ST_Dimension rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_dimension" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Disjoint
+geo2:ST_Disjoint rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_Disjoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Distance
+geo2:ST_Distance rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_distance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_DistanceSphere
+geo2:ST_DistanceSphere rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_distancesphere" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Div
+geo2:ST_Div rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_rast_algebra_div" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_DivConst
+geo2:ST_DivConst rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_algebra_divconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_DumpRings
+geo2:ST_DumpRings rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_dumpRings" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EPSGToSRID
+geo2:ST_EPSGToSRID rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_epsgToSRID" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EndPoint
+geo2:ST_EndPoint rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_endPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EnsureClosed
+geo2:ST_EnsureClosed rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_ensureClosed" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Envelope
+geo2:ST_Envelope rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_envelope" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualSRS
+geo2:ST_EqualSRS rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_equalSRS" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualType
+geo2:ST_EqualType rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_equalType" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Equals
+geo2:ST_Equals rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_equals" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualsNorm
+geo2:ST_EqualsNorm rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_equalsNorm" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_EqualsTopo
+geo2:ST_EqualsTopo rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_equalsTopo" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Explode
+geo2:ST_Explode rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_explode" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_FilterByM
+geo2:ST_FilterByM rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_filterByM" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_FilterByT
+geo2:ST_FilterByT rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_filterByT" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_FlipCoordinates
+geo2:ST_FlipCoordinates rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_flipCoordinates" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force2D
+geo2:ST_Force2D rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_force2d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force3D
+geo2:ST_Force3D rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_force3d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force3DM
+geo2:ST_Force3DM rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_force3dm" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force3DZ
+geo2:ST_Force3DZ rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_force3dz" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Force4D
+geo2:ST_Force4D rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_force4d" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceCollection
+geo2:ST_ForceCollection rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_forceCollection" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceCurve
+geo2:ST_ForceCurve rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_forceCurve" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceLHR
+geo2:ST_ForceLHR rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_forceLHR" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForcePolygonCCW
+geo2:ST_ForcePolygonCCW rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_forcePolygonCCW" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForcePolygonCW
+geo2:ST_ForcePolygonCW rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_forcePolygonCW" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ForceSFS
+geo2:ST_ForceSFS rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_forceSFS" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_FrechetDistance
+geo2:ST_FrechetDistance rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_frechetDistance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_FurthestCoordinate
+geo2:ST_FurthestCoordinate rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_furthestCoordinate" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GMLToSQL
+geo2:ST_GMLToSQL rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_gmlToSQL" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeneratePoints
+geo2:ST_GeneratePoints rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_generatePoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeoHash
+geo2:ST_GeoHash rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_geohash" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromGML
+geo2:ST_GeomFromGML rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_geomFromGML" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromGeoHash
+geo2:ST_GeomFromGeoHash rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_geomFromGeoHash" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromGeoJSON
+geo2:ST_GeomFromGeoJSON rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_geomFromGeoJSON" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromKML
+geo2:ST_GeomFromKML rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_geomFromKML" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromText
+geo2:ST_GeomFromText rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_geomFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeomFromWKB
+geo2:ST_GeomFromWKB rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_geomFromWKB" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeometricMedian
+geo2:ST_GeometricMedian rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_geometricMedian" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeometryN
+geo2:ST_GeometryN rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_geometryN" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_GeometryType
+geo2:ST_GeometryType rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_geometryType" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Grayscale
+geo2:ST_Grayscale rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_grayscale" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_HasHorizontalCRS
+geo2:ST_HasHorizontalCRS rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_hasHorizontalCRS" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_HasNoBand
+geo2:ST_HasNoBand rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_hasNoBand" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_HasRepeatedPoints
+geo2:ST_HasRepeatedPoints rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_hasRepeatedPoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_HausdorffDistance
+geo2:ST_HausdorffDistance rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_hausdorffDistance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Height
+geo2:ST_Height rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_height" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_InteriorRingN
+geo2:ST_InteriorRingN rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_interiorRingN" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_InterpolatePoint
+geo2:ST_InterpolatePoint rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_interpolatePoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Intersection
+geo2:ST_Intersection rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_rast_Intersection" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IntersectionMatrix
+geo2:ST_IntersectionMatrix rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_intersectionMatrix" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IntersectionPercentage
+geo2:ST_IntersectionPercentage rdf:type owl:NamedIndividual ,
+                                        geo2:Function ;
+                               rdfs:label "st_intersectionPercentage" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Intersects
+geo2:ST_Intersects rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_rast_Intersects" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Is3D
+geo2:ST_Is3D rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_is3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsAcute
+geo2:ST_IsAcute rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_isAcute" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsClosed
+geo2:ST_IsClosed rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_isClosed" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsCollection
+geo2:ST_IsCollection rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_isCollection" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsConvex
+geo2:ST_IsConvex rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_isConvex" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsEmpty
+geo2:ST_IsEmpty rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_isEmpty" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsEquilateralTriangle
+geo2:ST_IsEquilateralTriangle rdf:type owl:NamedIndividual ,
+                                       geo2:Function ;
+                              rdfs:label "st_isEquilateralTriangle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsGrayscale
+geo2:ST_IsGrayscale rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_isGrayscale" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsIndexed
+geo2:ST_IsIndexed rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_isIndexed" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsIsocelesTriangle
+geo2:ST_IsIsocelesTriangle rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_isIsocelesTriangle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsMeasured
+geo2:ST_IsMeasured rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_isMeasured" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsMorePrecise
+geo2:ST_IsMorePrecise rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isMorePrecise" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsNodingValid
+geo2:ST_IsNodingValid rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isNodingValid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPlanar
+geo2:ST_IsPlanar rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_isPlanar" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPointInRing
+geo2:ST_IsPointInRing rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isPointInRing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPointOnLine
+geo2:ST_IsPointOnLine rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isPointOnLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPolygonCCW
+geo2:ST_IsPolygonCCW rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_isPolygonCCW" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsPolygonCW
+geo2:ST_IsPolygonCW rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_isPolygonCW" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsRectangle
+geo2:ST_IsRectangle rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_isRectangle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsRightTriangle
+geo2:ST_IsRightTriangle rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_isRightTriangle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsRing
+geo2:ST_IsRing rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_isRing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsSimple
+geo2:ST_IsSimple rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_isSimple" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsSolid
+geo2:ST_IsSolid rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_isSolid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsSquare
+geo2:ST_IsSquare rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_isSquare" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsTiled
+geo2:ST_IsTiled rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_isTiled" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsTranslucent
+geo2:ST_IsTranslucent rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isTranslucent" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsTriangle
+geo2:ST_IsTriangle rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_isTriangle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValid
+geo2:ST_IsValid rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_isValid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValidDetail
+geo2:ST_IsValidDetail rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isValidDetail" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValidReason
+geo2:ST_IsValidReason rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_isValidReason" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_IsValidTrajectory
+geo2:ST_IsValidTrajectory rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_isValidTrajectory" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Length
+geo2:ST_Length rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_Length" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Length2D
+geo2:ST_Length2D rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_Length2D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Length3D
+geo2:ST_Length3D rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_Length3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LengthToPoint
+geo2:ST_LengthToPoint rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_LengthToPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineCrossingDirection
+geo2:ST_LineCrossingDirection rdf:type owl:NamedIndividual ,
+                                       geo2:Function ;
+                              rdfs:label "st_lineCrossingDirection" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromEncodedPolyline
+geo2:ST_LineFromEncodedPolyline rdf:type owl:NamedIndividual ,
+                                         geo2:Function ;
+                                rdfs:label "st_lineFromEncodedPolyline" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromMultiPoint
+geo2:ST_LineFromMultiPoint rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_lineFromMultiPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromText
+geo2:ST_LineFromText rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_lineFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromWKB
+geo2:ST_LineFromWKB rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_lineFromWKB" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineFromWKT
+geo2:ST_LineFromWKT rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_lineFromWKT" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineInterpolatePoint
+geo2:ST_LineInterpolatePoint rdf:type owl:NamedIndividual ,
+                                      geo2:Function ;
+                             rdfs:label "st_lineInterpolatePoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineInterpolatePoints
+geo2:ST_LineInterpolatePoints rdf:type owl:NamedIndividual ,
+                                       geo2:Function ;
+                              rdfs:label "st_lineInterpolatePoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineLength3D
+geo2:ST_LineLength3D rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_lineLength3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineLocatePoint
+geo2:ST_LineLocatePoint rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_lineLocatePoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineMerge
+geo2:ST_LineMerge rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_lineMerge" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineSelfIntersectionPoint
+geo2:ST_LineSelfIntersectionPoint rdf:type owl:NamedIndividual ,
+                                           geo2:Function ;
+                                  rdfs:label "st_lineSelfIntersectionPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineSubstring
+geo2:ST_LineSubstring rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_lineSubstring" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LineToCurve
+geo2:ST_LineToCurve rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_lineToCurve" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LocateAlong
+geo2:ST_LocateAlong rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_locateAlong" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LocateBetween
+geo2:ST_LocateBetween rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_locateBetween" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LocateBetweenElevations
+geo2:ST_LocateBetweenElevations rdf:type owl:NamedIndividual ,
+                                         geo2:Function ;
+                                rdfs:label "st_locateBetweenElevations" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Log
+geo2:ST_Log rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_rast_algebra_log" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LongestLine
+geo2:ST_LongestLine rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_longestLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_LongestLine3D
+geo2:ST_LongestLine3D rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_longestLine3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_M
+geo2:ST_M rdf:type owl:NamedIndividual ,
+                   geo2:Function ;
+          rdfs:label "st_m" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MLineFromText
+geo2:ST_MLineFromText rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_mLineFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MMax
+geo2:ST_MMax rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_mMax" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MMin
+geo2:ST_MMin rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_mMin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MPointFromText
+geo2:ST_MPointFromText rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_mPointFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MPolyFromText
+geo2:ST_MPolyFromText rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_mPolyFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeCircle
+geo2:ST_MakeCircle rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_makeCircle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEllipse
+geo2:ST_MakeEllipse rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_makeEllipse" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEmptyCoverage
+geo2:ST_MakeEmptyCoverage rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_makeEmptyCoverage" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEmptyRaster
+geo2:ST_MakeEmptyRaster rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_makeEmptyRaster" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeEnvelope
+geo2:ST_MakeEnvelope rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_makeEnvelope" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeLine
+geo2:ST_MakeLine rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_makeLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakePoint
+geo2:ST_MakePoint rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_makePoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakePointM
+geo2:ST_MakePointM rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_makePointM" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakePolygon
+geo2:ST_MakePolygon rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_makePolygon" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MakeValid
+geo2:ST_MakeValid rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_makeValid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MaxDistance
+geo2:ST_MaxDistance rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_maxDistance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MaxDistance3D
+geo2:ST_MaxDistance3D rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_maxDistance3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MemSize
+geo2:ST_MemSize rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_memsize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinConvexHull
+geo2:ST_MinConvexHull rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_minConvexHull" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinTileX
+geo2:ST_MinTileX rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_mintilex" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinTileY
+geo2:ST_MinTileY rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_mintiley" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumBoundingCircle
+geo2:ST_MinimumBoundingCircle rdf:type owl:NamedIndividual ,
+                                       geo2:Function ;
+                              rdfs:label "st_minimumBoundingCircle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumBoundingCircleCenter
+geo2:ST_MinimumBoundingCircleCenter rdf:type owl:NamedIndividual ,
+                                             geo2:Function ;
+                                    rdfs:label "st_minimumBoundingCircleCenter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumBoundingRadius
+geo2:ST_MinimumBoundingRadius rdf:type owl:NamedIndividual ,
+                                       geo2:Function ;
+                              rdfs:label "st_minimumBoundingRadius" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumClearance
+geo2:ST_MinimumClearance rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_minimumClearance" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumClearanceLine
+geo2:ST_MinimumClearanceLine rdf:type owl:NamedIndividual ,
+                                      geo2:Function ;
+                             rdfs:label "st_minimumClearanceLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumDiameter
+geo2:ST_MinimumDiameter rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_minimumDiameter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumDiameterLine
+geo2:ST_MinimumDiameterLine rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_minimumDiameterLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MinimumRectangle
+geo2:ST_MinimumRectangle rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_minimumRectangle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Mult
+geo2:ST_Mult rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_rast_algebra_mult" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MultConst
+geo2:ST_MultConst rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_rast_algebra_multconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Multi
+geo2:ST_Multi rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_multi" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_MultiplyZ
+geo2:ST_MultiplyZ rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_multiplyz" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NDims
+geo2:ST_NDims rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_nDims" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NPoints
+geo2:ST_NPoints rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_nPoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NRings
+geo2:ST_NRings rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_nRings" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NearestValue
+geo2:ST_NearestValue rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_nearestValue" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Node
+geo2:ST_Node rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_node" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Normalize
+geo2:ST_Normalize rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_normalize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Not
+geo2:ST_Not rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_rast_algebra_not" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NotSameAlignmentReason
+geo2:ST_NotSameAlignmentReason rdf:type owl:NamedIndividual ,
+                                        geo2:Function ;
+                               rdfs:label "st_notSameAlignmentReason" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumBands
+geo2:ST_NumBands rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_numBands" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumDistinctGeometries
+geo2:ST_NumDistinctGeometries rdf:type owl:NamedIndividual ,
+                                       geo2:Function ;
+                              rdfs:label "st_numDistinctGeometries" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumDistinctPoints
+geo2:ST_NumDistinctPoints rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_numDistinctPoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumGeometries
+geo2:ST_NumGeometries rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_numGeometries" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumInteriorRings
+geo2:ST_NumInteriorRings rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_numInteriorRings" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumPatches
+geo2:ST_NumPatches rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_numPatches" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumPoints
+geo2:ST_NumPoints rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_numPoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumXTiles
+geo2:ST_NumXTiles rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_numXTiles" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_NumYTiles
+geo2:ST_NumYTiles rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_numYTiles" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_OSMLink
+geo2:ST_OSMLink rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_osmlink" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_OctogonalEnvelope
+geo2:ST_OctogonalEnvelope rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_octogonalEnvelope" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_OffsetCurve
+geo2:ST_OffsetCurve rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_offsetCurve" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Or
+geo2:ST_Or rdf:type owl:NamedIndividual ,
+                    geo2:Function ;
+           rdfs:label "st_rast_algebra_or" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_OrConst
+geo2:ST_OrConst rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rast_algebra_orconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_OrderingEquals
+geo2:ST_OrderingEquals rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_orderingEquals" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Orientation
+geo2:ST_Orientation rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_orientation" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Overlaps
+geo2:ST_Overlaps rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_Overlaps" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PartOfGeometryAfter
+geo2:ST_PartOfGeometryAfter rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_partOfGeometryAfter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PartOfGeometryBefore
+geo2:ST_PartOfGeometryBefore rdf:type owl:NamedIndividual ,
+                                      geo2:Function ;
+                             rdfs:label "st_partOfGeometryBefore" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PatchN
+geo2:ST_PatchN rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_patchN" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Perimeter
+geo2:ST_Perimeter rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_perimeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Perimeter2D
+geo2:ST_Perimeter2D rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_perimeter2D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Perimeter3D
+geo2:ST_Perimeter3D rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_perimeter3D" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsCentroid
+geo2:ST_PixelAsCentroid rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_pixelAsCentroid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsCentroids
+geo2:ST_PixelAsCentroids rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_pixelAsCentroids" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPoint
+geo2:ST_PixelAsPoint rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_pixelAsPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPoints
+geo2:ST_PixelAsPoints rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_pixelAsPoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPolygon
+geo2:ST_PixelAsPolygon rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_pixelAsPolygon" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelAsPolygons
+geo2:ST_PixelAsPolygons rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_pixelAsPolygons" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelHeight
+geo2:ST_PixelHeight rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_pixelHeight" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelOfValue
+geo2:ST_PixelOfValue rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_pixelOfValue" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PixelWidth
+geo2:ST_PixelWidth rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_pixelWidth" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointFromGeoHash
+geo2:ST_PointFromGeoHash rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_pointFromGeoHash" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointFromText
+geo2:ST_PointFromText rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_pointFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointFromWKB
+geo2:ST_PointFromWKB rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_pointFromWKB" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointInsideCircle
+geo2:ST_PointInsideCircle rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_pointInsideCircle" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointN
+geo2:ST_PointN rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_pointN" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PointOnSurface
+geo2:ST_PointOnSurface rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_pointOnSurface" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Points
+geo2:ST_Points rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_points" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Polygon
+geo2:ST_Polygon rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_polygon" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PolygonFromText
+geo2:ST_PolygonFromText rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_polygonFromText" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PolygonFromWKB
+geo2:ST_PolygonFromWKB rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_polygonFromWKB" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Polygonize
+geo2:ST_Polygonize rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_polygonize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_PrecisionReducer
+geo2:ST_PrecisionReducer rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_precisionReducer" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RastFromHexWKB
+geo2:ST_RastFromHexWKB rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_rastFromHexWKB" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RastFromWKB
+geo2:ST_RastFromWKB rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_rastFromWKB" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RasterToWorldCoord
+geo2:ST_RasterToWorldCoord rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_rasterToWorldCoord" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RasterToWorldCoordX
+geo2:ST_RasterToWorldCoordX rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_rasterToWorldCoordX" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RasterToWorldCoordY
+geo2:ST_RasterToWorldCoordY rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_rasterToWorldCoordY" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Reflect
+geo2:ST_Reflect rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_reflect" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Relate
+geo2:ST_Relate rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_relate" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RelateMatch
+geo2:ST_RelateMatch rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_relateMatch" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemoveGeometry
+geo2:ST_RemoveGeometry rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_removegeometry" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemovePoint
+geo2:ST_RemovePoint rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_removePoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemovePoints
+geo2:ST_RemovePoints rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_removePoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemoveRepeatedPoints
+geo2:ST_RemoveRepeatedPoints rdf:type owl:NamedIndividual ,
+                                      geo2:Function ;
+                             rdfs:label "st_removeRepeatedPoints" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RemoveRing
+geo2:ST_RemoveRing rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_removeRing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Resize
+geo2:ST_Resize rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_resize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Reskew
+geo2:ST_Reskew rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_reskew" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Retile
+geo2:ST_Retile rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_retile" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Reverse
+geo2:ST_Reverse rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_reverse" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ReverseRing
+geo2:ST_ReverseRing rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_reverseRing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Rotate
+geo2:ST_Rotate rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_rotate" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RotateX
+geo2:ST_RotateX rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rotateX" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RotateY
+geo2:ST_RotateY rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rotateY" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_RotateZ
+geo2:ST_RotateZ rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rotateZ" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Rotation
+geo2:ST_Rotation rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rotation" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Roughness
+geo2:ST_Roughness rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_roughness" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRID
+geo2:ST_SRID rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_rast_srid" ,
+                        "st_srid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis1Name
+geo2:ST_SRIDGetAxis1Name rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_sridGetAxis1Name" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis1Orientation
+geo2:ST_SRIDGetAxis1Orientation rdf:type owl:NamedIndividual ,
+                                         geo2:Function ;
+                                rdfs:label "st_sridGetAxis1Orientation" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis2Name
+geo2:ST_SRIDGetAxis2Name rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_sridGetAxis2Name" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDGetAxis2Orientation
+geo2:ST_SRIDGetAxis2Orientation rdf:type owl:NamedIndividual ,
+                                         geo2:Function ;
+                                rdfs:label "st_sridGetAxis2Orientation" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDHasFlippedAxis
+geo2:ST_SRIDHasFlippedAxis rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_sridHasFlippedAxis" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SRIDToEPSG
+geo2:ST_SRIDToEPSG rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_sridToEPSG" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SameAlignment
+geo2:ST_SameAlignment rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_sameAlignment" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Scale
+geo2:ST_Scale rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_scale" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ScaleX
+geo2:ST_ScaleX rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_scaleX" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ScaleY
+geo2:ST_ScaleY rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_scaleY" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Segmentize
+geo2:ST_Segmentize rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_segmentize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SelfIntersections
+geo2:ST_SelfIntersections rdf:type owl:NamedIndividual ,
+                                   geo2:Function ;
+                          rdfs:label "st_selfIntersections" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetEndPoint
+geo2:ST_SetEndPoint rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_setEndPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetGeometry
+geo2:ST_SetGeometry rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_setGeometry" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetPoint
+geo2:ST_SetPoint rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_setPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetRing
+geo2:ST_SetRing rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_setRing" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetSRID
+geo2:ST_SetSRID rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_setSRID" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SetStartPoint
+geo2:ST_SetStartPoint rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_setStartPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SharedPaths
+geo2:ST_SharedPaths rdf:type owl:NamedIndividual ,
+                             geo2:Function ;
+                    rdfs:label "st_sharedPaths" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ShearTransformation
+geo2:ST_ShearTransformation rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_shearTransformation" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ShiftLongitude
+geo2:ST_ShiftLongitude rdf:type owl:NamedIndividual ,
+                                geo2:Function ;
+                       rdfs:label "st_shiftLongitude" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ShortestLine
+geo2:ST_ShortestLine rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_shortestLine" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Simplify
+geo2:ST_Simplify rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_simplify" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SimplifyPreserveTopology
+geo2:ST_SimplifyPreserveTopology rdf:type owl:NamedIndividual ,
+                                          geo2:Function ;
+                                 rdfs:label "st_simplifyPreserveTopology" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SimplifyVW
+geo2:ST_SimplifyVW rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_simplifyVW" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SkewX
+geo2:ST_SkewX rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_skewX" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SkewY
+geo2:ST_SkewY rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_skewY" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Slope
+geo2:ST_Slope rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_slope" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Snap
+geo2:ST_Snap rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_snap" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SnapToGrid
+geo2:ST_SnapToGrid rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_snapToGrid" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Split
+geo2:ST_Split rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_split" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_StartPoint
+geo2:ST_StartPoint rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_startPoint" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_StraightSkeleton
+geo2:ST_StraightSkeleton rdf:type owl:NamedIndividual ,
+                                  geo2:Function ;
+                         rdfs:label "st_straightSkeleton" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Subtract
+geo2:ST_Subtract rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_algebra_subtract" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SubtractConst
+geo2:ST_SubtractConst rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_rast_algebra_subtractconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Summary
+geo2:ST_Summary rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_summary" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SummaryStats
+geo2:ST_SummaryStats rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_summaryStats" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SwapOrdinates
+geo2:ST_SwapOrdinates rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_swapOrdinates" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_SymDifference
+geo2:ST_SymDifference rdf:type owl:NamedIndividual ,
+                               geo2:Function ;
+                      rdfs:label "st_symDifference" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_T
+geo2:ST_T rdf:type owl:NamedIndividual ,
+                   geo2:Function ;
+          rdfs:label "st_t" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TMax
+geo2:ST_TMax rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_tMax" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TMin
+geo2:ST_TMin rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_tMin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TPI
+geo2:ST_TPI rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_tpi" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TRI
+geo2:ST_TRI rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_tri" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Tesselate
+geo2:ST_Tesselate rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_tesselate" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileGridXOffset
+geo2:ST_TileGridXOffset rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_tilegridxoffset" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileGridYOffset
+geo2:ST_TileGridYOffset rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_tilegridyoffset" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileHeight
+geo2:ST_TileHeight rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_tileheight" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TileWidth
+geo2:ST_TileWidth rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_tilewidth" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ToDegrees
+geo2:ST_ToDegrees rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_toDegrees" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ToRadians
+geo2:ST_ToRadians rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_toRadians" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Touches
+geo2:ST_Touches rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rast_Touches" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_TransScale
+geo2:ST_TransScale rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_transscale" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Transform
+geo2:ST_Transform rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_transform" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Translate
+geo2:ST_Translate rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_translate" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_UnaryUnion
+geo2:ST_UnaryUnion rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_unaryUnion" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Union
+geo2:ST_Union rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_union" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_UpperLeftX
+geo2:ST_UpperLeftX rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_upperLeftX" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_UpperLeftY
+geo2:ST_UpperLeftY rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "st_upperLeftY" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Value
+geo2:ST_Value rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_value" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Vectorize
+geo2:ST_Vectorize rdf:type owl:NamedIndividual ,
+                           geo2:Function ;
+                  rdfs:label "st_vectorize" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_VoronoiLines
+geo2:ST_VoronoiLines rdf:type owl:NamedIndividual ,
+                              geo2:Function ;
+                     rdfs:label "st_voronoiLines" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_VoronoiPolygons
+geo2:ST_VoronoiPolygons rdf:type owl:NamedIndividual ,
+                                 geo2:Function ;
+                        rdfs:label "st_voronoiPolygons" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_WKBToSQL
+geo2:ST_WKBToSQL rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_wkbToSQL" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_WKTToSQL
+geo2:ST_WKTToSQL rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_wktToSQL" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Width
+geo2:ST_Width rdf:type owl:NamedIndividual ,
+                       geo2:Function ;
+              rdfs:label "st_width" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Within
+geo2:ST_Within rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_rast_Within" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_WorldToRasterCoord
+geo2:ST_WorldToRasterCoord rdf:type owl:NamedIndividual ,
+                                    geo2:Function ;
+                           rdfs:label "st_worldToRasterCoord" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_WorldToRasterCoordX
+geo2:ST_WorldToRasterCoordX rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_worldToRasterCoordX" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_WorldToRasterCoordY
+geo2:ST_WorldToRasterCoordY rdf:type owl:NamedIndividual ,
+                                     geo2:Function ;
+                            rdfs:label "st_worldToRasterCoordY" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_X
+geo2:ST_X rdf:type owl:NamedIndividual ,
+                   geo2:Function ;
+          rdfs:label "st_x" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_XMax
+geo2:ST_XMax rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_xMax" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_XMin
+geo2:ST_XMin rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_xMin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Xor
+geo2:ST_Xor rdf:type owl:NamedIndividual ,
+                     geo2:Function ;
+            rdfs:label "st_rast_algebra_xor" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_XorConst
+geo2:ST_XorConst rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "st_rast_algebra_xorconst" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Y
+geo2:ST_Y rdf:type owl:NamedIndividual ,
+                   geo2:Function ;
+          rdfs:label "st_y" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_YMax
+geo2:ST_YMax rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_yMax" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_YMin
+geo2:ST_YMin rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_yMin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_Z
+geo2:ST_Z rdf:type owl:NamedIndividual ,
+                   geo2:Function ;
+          rdfs:label "st_z" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ZMax
+geo2:ST_ZMax rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_zMax" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ZMin
+geo2:ST_ZMin rdf:type owl:NamedIndividual ,
+                      geo2:Function ;
+             rdfs:label "st_zMin" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_ZmFlag
+geo2:ST_ZmFlag rdf:type owl:NamedIndividual ,
+                        geo2:Function ;
+               rdfs:label "st_zmFlag" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#ST_isEmpty
+geo2:ST_isEmpty rdf:type owl:NamedIndividual ,
+                         geo2:Function ;
+                rdfs:label "st_rast_isEmpty" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#USFootToMeter
+geo2:USFootToMeter rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "USFootToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#USInchToMeter
+geo2:USInchToMeter rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "USInchToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#USMileToMeter
+geo2:USMileToMeter rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "USMileToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#USYardToMeter
+geo2:USYardToMeter rdf:type owl:NamedIndividual ,
+                            geo2:Function ;
+                   rdfs:label "USYardToMeter" .
+
+
+###  http://www.opengis.net/ont/geosparqlplus#YardToMeter
+geo2:YardToMeter rdf:type owl:NamedIndividual ,
+                          geo2:Function ;
+                 rdfs:label "yardToMeter" .
+
+
+###  http://www.semgis.de/eardata#cov_1
+<http://www.semgis.de/eardata#cov_1> rdf:type owl:NamedIndividual ,
+                                              <http://www.semgis.de/ear#SampleRaster> ;
+                                     :hasCoverage <http://www.semgis.de/eardata#cov_1_geom> ;
+                                     rdfs:comment "Sample raster data in WKB" .
+
+
+###  http://www.semgis.de/eardata#cov_1_geom
+<http://www.semgis.de/eardata#cov_1_geom> rdf:type owl:NamedIndividual ,
+                                                   :Raster ;
+                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale> <http://www.semgis.de/eardata#cov_1_scale> ;
+                                          :asHexWKB "010000000000000000000000400000000000000840000000000000E03F000000000000E03F000000000000000000000000000000000A0000000A001400"^^<http://www.opengis.net/ont/geosparql#HexWKBLiteral> .
+
+
+###  http://www.semgis.de/eardata#cov_1_scale
+<http://www.semgis.de/eardata#cov_1_scale> rdf:type owl:NamedIndividual ,
+                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/Scale> .
+
+
+###  http://www.semgis.de/eardata#cov_2
+<http://www.semgis.de/eardata#cov_2> rdf:type owl:NamedIndividual ,
+                                              geo2:FloodAltitude ;
+                                     :hasCoverage <http://www.semgis.de/eardata#cov_2_geom> ;
+                                     rdfs:comment "Flood altitude data in Mainz/Germany" .
+
+
+###  http://www.semgis.de/eardata#cov_2_geom
+<http://www.semgis.de/eardata#cov_2_geom> rdf:type owl:NamedIndividual ,
+                                                   :Raster ;
+                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale> <http://www.semgis.de/eardata#cov_2_scale> ;
+                                          :asCoverageJSON """{
+  \"type\" : \"Coverage\",
+  \"domain\" : {
+    \"type\" : \"Domain\",
+    \"domainType\" : \"Grid\",
+    \"axes\": {
+      \"x\" : { \"values\": [8.283,8.285,8.287] },
+      \"y\" : { \"values\": [49.9925,49.9935,49.9945] }
+    },
+    \"referencing\": [{
+      \"coordinates\": [\"y\",\"x\"],
+      \"system\": {
+        \"type\": \"GeographicCRS\",
+        \"id\": \"http://www.opengis.net/def/crs/EPSG/0/4326\"
+      }
+    }]
+  },
+  \"parameters\" : {
+    \"FloodAltitude\": {
+      \"type\" : \"Parameter\",
+      \"description\": {
+      	\"en\": \"Flood altitude level toy example (0cm-100cm)\"
+      },
+      \"unit\" : {
+        \"label\": {
+          \"en\": \"Ratio\"
+        },
+        \"symbol\": {
+          \"value\": \"1\",
+          \"type\": \"http://www.opengis.net/def/uom/UCUM/\"
+        }
+      },
+      \"observedProperty\" : {
+        \"id\" : \"http://www.opengis.net/ont/geosparqlplus#FloodAltitude\",
+        \"label\" : {
+          \"en\": \"Flood altitude level\"
+        }
+      }
+    }
+  },
+  \"ranges\" : {
+    \"FloodAltitude\" : {
+      \"type\" : \"NdArray\",
+      \"dataType\": \"float\",
+      \"axisNames\": [\"x\",\"y\"],
+      \"values\" : [ 0.2, 0.3, 0.4, 0.6,0.8,0.9,0.8,0.8, null]
+    }
+  }
+}"""^^<http://www.opengis.net/ont/geosparql#covJSONLiteral> .
+
+
+###  http://www.semgis.de/eardata#cov_2_scale
+<http://www.semgis.de/eardata#cov_2_scale> rdf:type owl:NamedIndividual ,
+                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/Scale> ;
+                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/meter> ;
+                                           geo2:hasNoData "null" .
+
+
+###  http://www.semgis.de/eardata#cov_3
+<http://www.semgis.de/eardata#cov_3> rdf:type owl:NamedIndividual ,
+                                              geo2:DigitalElevationModel ;
+                                     :hasCoverage <http://www.semgis.de/eardata#cov_3_geom> ;
+                                     rdfs:comment "Digital elevation model data (generated not representative) to show how other literal types could be integrated" .
+
+
+###  http://www.semgis.de/eardata#cov_3_geom
+<http://www.semgis.de/eardata#cov_3_geom> rdf:type owl:NamedIndividual ,
+                                                   :Raster ;
+                                          geo2:asXYZASCII """8.27667564544677, 49.99341159760874, 1
+8.280838433837884, 49.99341159760874, 2
+8.280838433837884, 49.9908457306152, 3
+8.27667564544677, 49.9908457306152, 4""" .
+
+
+###  http://www.semgis.de/eardata#cov_3_scale
+<http://www.semgis.de/eardata#cov_3_scale> rdf:type owl:NamedIndividual ,
+                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/Scale> ;
+                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/meter> ;
+                                           geo2:hasNoData "-9999.0"^^xsd:double .
+
+
+###  http://www.semgis.de/eardata#house_1
+<http://www.semgis.de/eardata#house_1> rdf:type owl:NamedIndividual ,
+                                                <http://www.semgis.de/ear#House> ;
+                                       <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.semgis.de/eardata#house_1_geom> .
+
+
+###  http://www.semgis.de/eardata#house_1_geom
+<http://www.semgis.de/eardata#house_1_geom> rdf:type owl:NamedIndividual ,
+                                                     <http://www.opengis.net/ont/geosparql#Polygon> ;
+                                            <http://www.opengis.net/ont/geosparql#asWKT> "POLYGON(8.286131571192028 49.993592741787,8.28627775158334 49.99350049055274,8.286228130716564 49.993466866227074,8.286079268116238 49.99355739320413,8.286131571192028 49.993592741787)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  http://www.semgis.de/eardata#poi_1
+<http://www.semgis.de/eardata#poi_1> rdf:type owl:NamedIndividual ,
+                                              <http://www.semgis.de/ear#PointOfInterest> ;
+                                     <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.semgis.de/eardata#poi_1_geom> .
+
+
+###  http://www.semgis.de/eardata#poi_1_geom
+<http://www.semgis.de/eardata#poi_1_geom> rdf:type owl:NamedIndividual ,
+                                                   <http://www.opengis.net/ont/geosparql#Point> ;
+                                          <http://www.opengis.net/ont/geosparql#asWKT> "POINT (8.2835 49.9928)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  http://www.semgis.de/eardata#road_1
+<http://www.semgis.de/eardata#road_1> rdf:type owl:NamedIndividual ,
+                                               <http://www.semgis.de/ear#Road> ;
+                                      <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.semgis.de/eardata#road_1_geom> .
+
+
+###  http://www.semgis.de/eardata#road_1_geom
+<http://www.semgis.de/eardata#road_1_geom> rdf:type owl:NamedIndividual ,
+                                                    <http://www.opengis.net/ont/geosparql#LineString> ;
+                                           <http://www.opengis.net/ont/geosparql#asWKT> "LINESTRING( 8.2845 49.9945,  8.2838 49.995)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.opengis.net/ont/geosparql#Feature> rdfs:label "Feature" ,
+                                                          "Feature"@en ;
+                                               rdfs:comment "Representation of a geospatial feature"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

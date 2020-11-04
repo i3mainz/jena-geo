@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-<title>GeoSPARQL-ext Testbench</title>
+<title>GeoSPARQL+ Testbench</title>
 <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -210,14 +210,14 @@ function clearMap() {
 <body>
 <header>
 <div class="page-header">
-<h1 align="center">GeoSPARQL-ext Testbench</h1>
+<h1 align="center">GeoSPARQL+ Testbench</h1>
 </div>
 </header>
 <div class="container" role="main">
   <div class="row">
   <div class="col-sm-5">
 Query Input:<br/>
-<span id="numberexamples"></span> Example Queries for New Functions:
+<span id="numberexamples"></span>Example Queries for New Functions:
 <script>
 $( document ).ready(function() {
 	$('#numberexamples').html($('#samplequeries option').length);
@@ -434,7 +434,6 @@ $( document ).ready(function() {
 <option value="SELECT ?raster_geom ?isempty WHERE { ?geom geo:asCoverageJSON ?raster_geom . BIND(geo:ST_IsEmpty(?raster_geom) AS ?isempty) } LIMIT 1">geo:ST_IsEmpty</option>
 <option value="SELECT ?raster_geom ?numxtiles WHERE { ?geom geo:asCoverageJSON ?raster_geom . BIND(geo:ST_NumXTiles(?raster_geom) AS ?numxtiles) } LIMIT 1">geo:ST_NumXTiles</option>
 <option value="SELECT ?raster_geom ?numytiles WHERE { ?geom geo:asCoverageJSON ?raster_geom . BIND(geo:ST_NumYTiles(?raster_geom) AS ?numytiles) } LIMIT 1">geo:ST_NumYTiles</option>
-
 <option value="SELECT ?raster_geom ?width WHERE { ?geom geo:asCoverageJSON ?raster_geom . BIND(geo:ST_Width(?raster_geom) AS ?width) } LIMIT 1">geo:ST_Width</option>
 <option value="SELECT ?raster_geom ?raster_geom2 WHERE { ?geom geo:asCoverageJSON ?raster_geom . BIND(geo:ST_Div?raster_geom,?raster_geom) AS ?raster_geom2) } LIMIT 2">geo:ST_Div</option>
 <option value="SELECT ?raster_geom ?raster_geom2 WHERE { ?geom geo:asCoverageJSON ?raster_geom . BIND(geo:ST_DivConst(?raster_geom,1,2) AS ?raster_geom2) } LIMIT 1">geo:ST_DivConst</option>
@@ -502,7 +501,8 @@ $( document ).ready(function() {
 <option value="SELECT ?zMax ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_ZMax(?the_geom) AS ?zMax) } LIMIT 100">geo:ST_ZMax</option>
 <option value="SELECT ?zMin ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_ZMin(?the_geom) AS ?zMin) } LIMIT 100">geo:ST_ZMin</option>
 <option value="SELECT ?zmflag ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo:ST_ZmFlag(?the_geom) AS ?zmflag) } LIMIT 100">geo:ST_Zmflag</option>
-</select>&nbsp;<a href="#" id="postgisdoc" target="_blank">POSTGIS Docs</a>
+</select>
+<!-- &nbsp;<a href="#" id="postgisdoc" target="_blank">POSTGIS Docs</a>-->
 <br/>
 <textarea id="queryinput" rows=16 cols=45>
 </textarea><br/>
@@ -520,7 +520,7 @@ $( document ).ready(function() {
 <option value="testdata4.ttl">Hospital TestSet</option>-->
 </select>
 <br/>
-<b>Note: </b> Query variables ending in "_geom" are rendered in the map view.
+<b>Note: </b> Query variables ending in "_geom" are rendered in the map view. Support for rendering coverages is still in development.
 <br/>
 <b>Note2: </b> Egenhofer relation functions beginning with ST can take both raster and vector data as input.
 <br/>
