@@ -583,10 +583,13 @@ The GeoSPARQL ontology has been extended to include support for Coverage represe
 
 ### Ontology of functions
 
-An ontology of the planned functions with given URIs has been uploaded to this repository as functions.ttl.
+An ontology of the planned functions with given URIs has been uploaded to this repository as [functions.ttl](https://github.com/i3mainz/jena-geo/blob/master/functions.ttl) .
 The ontology will be appended when the implementation matures and new requirements are considered.
 The ontology of functions may serve as a template for future standardizations or implementations.
 
 ### Ontology for modelling geospatial data
 
+The ontology model for the GeoSPARQL extension may be downloaded here:
+[geosparqlplus.ttl](https://github.com/i3mainz/jena-geo/blob/master/geosparqlplus.ttl)
+In addition to the GeoSPARQL ontology it includes a Coverage class hierarchy and new properties for dealing with raster data.
 
