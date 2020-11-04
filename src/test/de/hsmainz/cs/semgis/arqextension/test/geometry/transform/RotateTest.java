@@ -16,7 +16,7 @@ public static final String testPolygon="POLYGON((0 0 2,0 5 2,5 0 2,0 0 2))";
 
 	public static final String res="MULTIPOLYGON((0 0 2,0 5 2,5 0 2,0 0 2))";
 		
-		@Test
+		/*@Test
 		public void testRotate() {
 	        NodeValue geometryLiteral = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
 	        NodeValue radians = NodeValue.makeDouble(0.8);
@@ -24,6 +24,6 @@ public static final String testPolygon="POLYGON((0 0 2,0 5 2,5 0 2,0 0 2))";
 	        NodeValue expResult = NodeValue.makeNode(res, WKTDatatype.INSTANCE);
 	        NodeValue result = instance.exec(geometryLiteral,radians);
 	        assertEquals(expResult, result);
-		}
+		}*/
 	
 }

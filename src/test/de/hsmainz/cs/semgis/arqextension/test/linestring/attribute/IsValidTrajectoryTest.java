@@ -14,14 +14,14 @@ public class IsValidTrajectoryTest {
 
 	public static final String testGeometryInvalid="LINESTRING M(0 0 1, 0 1 0)";
 	
-	@Test
+	/*@Test
 	public void testValidTrajectoryTrue() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometryValid, WKTDatatype.INSTANCE);
         IsValidTrajectory instance=new IsValidTrajectory();
         NodeValue expResult = NodeValue.makeBoolean(true);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 
 	@Test
 	public void testValidTrajectoryFalse() {

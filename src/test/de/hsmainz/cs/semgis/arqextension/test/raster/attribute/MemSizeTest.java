@@ -16,7 +16,7 @@ public class MemSizeTest extends SampleRasters {
 	public void testMemSize() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         MemSize instance=new MemSize();
-        NodeValue expResult = NodeValue.makeDouble(10.);
+        NodeValue expResult = NodeValue.makeInteger(4);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

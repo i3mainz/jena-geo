@@ -15,7 +15,7 @@ public class RastFromHexWKBTest extends SampleRasters {
 	public void testRasterFromHexWKB() {
 		NodeValue covLiteral = NodeValue.makeString(wkbString1);
         RastFromHexWKB instance=new RastFromHexWKB();
-        NodeValue expResult = NodeValue.makeNode(rasterLiteral1,HexWKBRastDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(wkbString1,HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

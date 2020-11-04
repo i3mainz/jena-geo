@@ -14,7 +14,7 @@ public class HasConnectedInteriorTest {
 	
 	public static final String nonduplicateRings="POLYGON((1 2, 3 4, 5 6, 1 2))";
 	
-	@Test
+	/*@Test
 	public void testHasConnectedInteriorTrue() {
         NodeValue geometryLiteral = NodeValue.makeNode(duplicateRings, WKTDatatype.INSTANCE);
         HasConnectedInterior instance=new HasConnectedInterior();
@@ -30,6 +30,6 @@ public class HasConnectedInteriorTest {
         NodeValue expResult = NodeValue.FALSE;
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

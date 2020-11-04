@@ -15,7 +15,7 @@ public class MinTileYTest extends SampleRasters {
 	public void testMinTileY() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         MinTileY instance=new MinTileY();
-        NodeValue expResult = NodeValue.makeInteger(10);
+        NodeValue expResult = NodeValue.makeInteger(0);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

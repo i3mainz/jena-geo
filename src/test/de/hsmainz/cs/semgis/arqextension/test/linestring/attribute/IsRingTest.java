@@ -12,7 +12,7 @@ public class IsRingTest {
 
 	public static final String isRing="LINESTRING(0 0, 0 1, 1 1, 1 0, 0 0)";
 	
-	public static final String isNotRing="LINESTRING(0 0, 0 1, 1 0, 1 1, 0 0)";
+	public static final String isNotRing="LINESTRING(0 0, 0 1, 1 0, 1 1)";
 	
 	@Test
 	public void testLineStringIsRing() {

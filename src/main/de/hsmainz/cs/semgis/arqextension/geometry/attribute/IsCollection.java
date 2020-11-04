@@ -24,7 +24,7 @@ public class IsCollection extends FunctionBase1 {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             Geometry geom = geometry.getParsingGeometry();
             String type=geom.getGeometryType().toUpperCase();
-            if("GEOMETRYCOLLECTION".equals(type) || "COMPOUNDCURVE".equals(type) || type.startsWith("MUTLI")) {
+            if("GEOMETRYCOLLECTION".equals(type) || "COMPOUNDCURVE".equals(type) || type.startsWith("MULTI")) {
                 return NodeValue.makeNodeBoolean(true);
             }
             return NodeValue.makeNodeBoolean(false);

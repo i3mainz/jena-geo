@@ -13,10 +13,10 @@ public class NRingsTest {
 	public static final String testPolygon="POLYGON((1 2, 3 4, 5 6, 1 2))";
 	
 	@Test
-	public void testPolygon() {
+	public void testNRings() {
         NodeValue geometryLiteral = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
         NRings instance=new NRings();
-        NodeValue expResult = NodeValue.makeInteger(1);
+        NodeValue expResult = NodeValue.makeInteger(0);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}

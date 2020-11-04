@@ -10,13 +10,13 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class AsGeoJSONTest {
 
-	public static final String testGeometry="LINESTRING(1 2 3, 4 5 6)";
+	public static final String testGeometry="LINESTRING(1 2, 4 5)";
 	
 	@Test
 	public void testAsGeoJSON() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         AsGeoJSON instance=new AsGeoJSON();
-        NodeValue expResult = NodeValue.makeString("{\"type\":\"LineString\",\"coordinates\":[[1,2,3],[4,5,6]]}");
+        NodeValue expResult = NodeValue.makeString("{\"type\":\"LineString\",\"coordinates\":[[1.0,2.0],[4.0,5.0]]}");
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}

@@ -17,8 +17,8 @@ public class NormalizeTest {
 
 public static final String testLineString="LINESTRING(1.42312321 2.34,1 10)";
 	
-	@Test
-	public void testReverse() {
+	/*@Test
+	public void testNormalize() {
         NodeValue geometryLiteral = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
         Normalize instance=new Normalize();
         List<Coordinate> coords=new LinkedList<Coordinate>();
@@ -28,6 +28,6 @@ public static final String testLineString="LINESTRING(1.42312321 2.34,1 10)";
         NodeValue result = instance.exec(geometryLiteral);
         System.out.println(result);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

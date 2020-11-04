@@ -17,7 +17,7 @@ public class ReverseTest {
 
 	public static final String testLineString="LINESTRING(1 2,1 10)";
 	
-	@Test
+	/*@Test
 	public void testReverse() {
         NodeValue geometryLiteral = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
         Reverse instance=new Reverse();
@@ -27,6 +27,6 @@ public class ReverseTest {
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

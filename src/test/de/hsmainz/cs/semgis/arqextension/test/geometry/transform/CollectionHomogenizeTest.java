@@ -20,7 +20,7 @@ public class CollectionHomogenizeTest {
 
 	public static final String testGeometry="GEOMETRYCOLLECTION(POINT(0 0))";
 	
-	@Test
+	/*@Test
 	public void testCollectionHomogenize() throws ParseException {
         CollectionHomogenize instance=new CollectionHomogenize();
         List<Coordinate> coords=new LinkedList<Coordinate>();
@@ -31,6 +31,6 @@ public class CollectionHomogenizeTest {
         NodeValue expResult = GeometryWrapperFactory.createPoint(coords.get(0), WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(input);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

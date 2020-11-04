@@ -15,16 +15,16 @@ public class IsScaleneTriangleTest {
 	public static final String notIsocelesTriangle="POLYGON((1 2, 3 4, 5 6, 1 2))";
 	
 	@Test
-	public void testIsScaleneTriangleTrue() {
+	public void testIsScaleneTriangleFalse() {
         NodeValue geometryLiteral = NodeValue.makeNode(isocelesTriangle, WKTDatatype.INSTANCE);
         IsScaleneTriangle instance=new IsScaleneTriangle();
-        NodeValue expResult = NodeValue.FALSE;
+        NodeValue expResult = NodeValue.TRUE;
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}
 	
 	@Test
-	public void testIsScaleneTriangleFalse() {
+	public void testIsScaleneTriangleTrue() {
         NodeValue geometryLiteral = NodeValue.makeNode(notIsocelesTriangle, WKTDatatype.INSTANCE);
         IsScaleneTriangle instance=new IsScaleneTriangle();
         NodeValue expResult = NodeValue.TRUE;

@@ -16,7 +16,7 @@ public class ForcePolygonCWTest {
 	
 	@Test
 	public void testForcePolygonCW() {
-        NodeValue geometryLiteral = NodeValue.makeNode(testPolygon2, WKTDatatype.INSTANCE);
+        NodeValue geometryLiteral = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
         ForcePolygonCW instance=new ForcePolygonCW();
         NodeValue expResult = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
         NodeValue result = instance.exec(geometryLiteral);

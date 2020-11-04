@@ -31,7 +31,7 @@ public class YMin extends FunctionBase1 {
         Geometry geo=geometry.getXYGeometry();
         Double minY=Double.MAX_VALUE;
         for(Coordinate coord:geo.getCoordinates()) {
-        	if(minY<coord.getY()) {
+        	if(minY>coord.getY()) {
         		minY=coord.getY();
         	}
         }

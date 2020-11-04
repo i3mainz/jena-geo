@@ -61,7 +61,7 @@ public class IsClosedTest {
 	public void testmultiPointClosed() {
         NodeValue geometryLiteral = NodeValue.makeNode(multiPointClosed, WKTDatatype.INSTANCE);
         IsClosed instance=new IsClosed();
-        NodeValue expResult = NodeValue.makeNodeBoolean(true);
+        NodeValue expResult = NodeValue.makeNodeBoolean(false);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}	

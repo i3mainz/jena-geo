@@ -27,7 +27,7 @@ public class BandMetaData extends FunctionBase2 {
 		GridCoverage2D raster=wrapper.getXYGeometry();
 		BigInteger bandNum=v2.getInteger();
         if (bandNum.intValue() > raster.getNumSampleDimensions()) {
-            return NodeValue.nvNothing;
+            return NodeValue.nvEmptyString;
         }
 		throw new UnsupportedOperationException("Not yet implemented");
         /*StringBuilder builder = new StringBuilder();

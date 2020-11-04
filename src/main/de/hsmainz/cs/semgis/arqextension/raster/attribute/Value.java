@@ -39,7 +39,19 @@ public class Value extends FunctionBase4 {
 		try {
 			d = ((double[]) raster.getRenderedImage().getData().getDataElements(column, row, new double[]{0.}))[0];
 	        return NodeValue.makeDouble(d);
-		} catch (CannotEvaluateException e) {
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			int d2 = ((int[]) raster.getRenderedImage().getData().getDataElements(column, row, new double[]{0.}))[0];
+	        return NodeValue.makeInteger(d2);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			boolean d2 = ((boolean[]) raster.getRenderedImage().getData().getDataElements(column, row, new double[]{0.}))[0];
+	        return NodeValue.makeBoolean(d2);
+		} catch (Exception e) {
 			return null;
 		}
 

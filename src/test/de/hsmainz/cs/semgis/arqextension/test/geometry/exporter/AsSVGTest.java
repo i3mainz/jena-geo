@@ -16,7 +16,7 @@ public class AsSVGTest {
 	public void testAsSVG() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         AsSVG instance=new AsSVG();
-        NodeValue expResult = NodeValue.makeString("M 0 0 L 0 -1 1 -1 1 0 Z");
+        NodeValue expResult = NodeValue.makeString("<svg><polygon points=' 0,0 0,1 1,1 1,0 0,0' />\n</svg>");
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}

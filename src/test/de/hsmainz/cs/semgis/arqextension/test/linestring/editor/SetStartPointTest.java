@@ -20,7 +20,7 @@ public class SetStartPointTest {
 	public static final String point="POINT(1 1)";
 	
 	@Test
-	public void testLineString2D() {
+	public void testSetStartPoint() {
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(0,1));
         coords.add(new Coordinate(0,2));

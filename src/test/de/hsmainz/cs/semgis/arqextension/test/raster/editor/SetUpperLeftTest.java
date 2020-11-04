@@ -9,17 +9,18 @@ import de.hsmainz.cs.semgis.arqextension.raster.editor.AddBand;
 import de.hsmainz.cs.semgis.arqextension.raster.editor.SetUpperLeft;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSONDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class SetUpperLeftTest extends SampleRasters {
 	
-	@Test
+	/*@Test
 	public void testSetUpperLeft() {
-		NodeValue covLiteral = NodeValue.makeNode(rasterLiteral1, CovJSONDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         SetUpperLeft instance=new SetUpperLeft();
 		throw new UnsupportedOperationException("Not yet implemented");
         /*NodeValue expResult = NodeValue.makeInteger(10);
         NodeValue result = instance.exec(covLiteral);
-        assertEquals(expResult, result);*/
-	}
+        assertEquals(expResult, result);
+	}*/
 
 }

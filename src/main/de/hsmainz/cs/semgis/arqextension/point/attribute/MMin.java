@@ -16,10 +16,10 @@ public class MMin extends FunctionBase1 {
 
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-            Geometry geo=geometry.getXYGeometry();
+            Geometry geo=geometry.getParsingGeometry();
             Double minM=Double.MAX_VALUE;
             for(Coordinate coord:geo.getCoordinates()) {
-            	if(minM>coord.getM()) {
+            	if(!Double.isNaN(coord.getM()) && coord.getM()<minM) {
             		minM=coord.getM();
             	}
             }

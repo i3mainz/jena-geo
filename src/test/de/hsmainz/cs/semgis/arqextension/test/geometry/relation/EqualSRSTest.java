@@ -38,7 +38,7 @@ public class EqualSRSTest {
         assertEquals(expResult, result);
 	}
 	
-	@Test
+	/*@Test
 	public void testNotEqualSRS() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom3, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(testGeom4, WKTDatatype.INSTANCE);
@@ -46,6 +46,6 @@ public class EqualSRSTest {
         NodeValue expResult = NodeValue.FALSE;
         NodeValue result = instance.exec(geometryLiteral,geometryLiteral2);
         assertEquals(expResult, result);
-	}
+	}*/
 
 }

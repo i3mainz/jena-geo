@@ -31,7 +31,7 @@ public class Rotate extends FunctionBase2 {
             GeometryWrapper geometry = GeometryWrapper.extract(arg0);
             Geometry geom = geometry.getXYGeometry();
 
-            float rotRadians = arg1.getFloat();
+            double rotRadians = arg1.getDouble();
             AffineTransformation trans = new AffineTransformation();
             trans = trans.rotate(rotRadians);
             Geometry transformGeom = trans.transform(geom);

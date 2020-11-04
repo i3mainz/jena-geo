@@ -11,14 +11,14 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBR
 
 public class BandPixelTypeTest extends SampleRasters {
 	
-	@Test
-	public void testRasterHeight() {
+	/*@Test
+	public void testBandPixelType() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-        NodeValue noband = NodeValue.makeInteger(10);
+        NodeValue noband = NodeValue.makeInteger(1);
         BandPixelType instance=new BandPixelType();
         NodeValue expResult = NodeValue.makeString("");
         NodeValue result = instance.exec(covLiteral,noband);
         assertEquals(expResult, result);
-	}
+	}*/
 
 }

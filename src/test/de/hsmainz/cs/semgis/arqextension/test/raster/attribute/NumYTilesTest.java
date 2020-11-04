@@ -15,7 +15,7 @@ public class NumYTilesTest extends SampleRasters {
 	public void testNumYTiles() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NumYTiles instance=new NumYTiles();
-        NodeValue expResult = NodeValue.makeInteger(10);
+        NodeValue expResult = NodeValue.makeInteger(1);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

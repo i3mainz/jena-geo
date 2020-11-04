@@ -18,14 +18,17 @@ public class MinimumRectangleTest {
 	public static final String testPolygon="POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))";
 	
 	@Test
-	public void testMinimumClearanceLine() {
+	public void testMinimumRectangle() {
         NodeValue geometryLiteral = NodeValue.makeNode(testPolygon, WKTDatatype.INSTANCE);
         MinimumRectangle instance=new MinimumRectangle();
         //LINESTRING(0.5 0.00032,0.5 0)
         List<Coordinate> coords=new LinkedList<Coordinate>();
-        coords.add(new Coordinate(0.5,0.00032));
-        coords.add(new Coordinate(0.5,0.));
-        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
+        coords.add(new Coordinate(0.,0.));
+        coords.add(new Coordinate(0.5,-0.5));
+        coords.add(new Coordinate(1.5,0.5));
+        coords.add(new Coordinate(1.,1.));
+        coords.add(new Coordinate(0.,0.));
+        NodeValue expResult = GeometryWrapperFactory.createPolygon(coords, WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}

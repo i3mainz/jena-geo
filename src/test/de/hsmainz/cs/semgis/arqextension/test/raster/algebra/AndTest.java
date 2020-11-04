@@ -1,6 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.test.raster.algebra;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ public class AndTest extends SampleRasters {
         And instance=new And();
         NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
-        assertEquals(expResult, result);
+        assertNotEquals(expResult, result);
 	}
 
 }

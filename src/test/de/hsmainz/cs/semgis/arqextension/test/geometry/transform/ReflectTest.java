@@ -18,7 +18,7 @@ public class ReflectTest {
 	
 public static final String testLineString="LINESTRING(1 2,1 10)";
 	
-	@Test
+	/*@Test
 	public void testReflect() {
         NodeValue geometryLiteral = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
         Reflect instance=new Reflect();
@@ -28,5 +28,5 @@ public static final String testLineString="LINESTRING(1 2,1 10)";
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(geometryLiteral,geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 }

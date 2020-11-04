@@ -15,7 +15,7 @@ public class SkewYTest extends SampleRasters {
 	public void testSkewY() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         SkewY instance=new SkewY();
-        NodeValue expResult = NodeValue.makeInteger(0);
+        NodeValue expResult = NodeValue.makeDouble(0.);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

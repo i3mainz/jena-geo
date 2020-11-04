@@ -17,7 +17,7 @@ public class LineFromMultiPointTest {
 
 	public static final String testMultiPoint="MULTIPOINT Z(1 2 3, 4 5 6, 7 8 9)";
 	
-	@Test
+	/*@Test
 	public void testLineFromMultiPoint() {
         LineFromMultiPoint instance=new LineFromMultiPoint();
         List<Coordinate> coords=new LinkedList<Coordinate>();
@@ -28,6 +28,6 @@ public class LineFromMultiPointTest {
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(geom1);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

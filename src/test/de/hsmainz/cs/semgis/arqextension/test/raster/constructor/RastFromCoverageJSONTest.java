@@ -12,10 +12,10 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CovJSON
 public class RastFromCoverageJSONTest extends SampleRasters {
 	
 	@Test
-	public void testTileHeight() {
+	public void testRasterFromCoverageJSON() {
 		NodeValue covLiteral = NodeValue.makeString(covJSONString1);
         RastFromCoverageJSON instance=new RastFromCoverageJSON();
-        NodeValue expResult = NodeValue.makeNode(rasterLiteral1,CovJSONDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(covJSONString1,CovJSONDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

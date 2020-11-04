@@ -20,7 +20,7 @@ public class DelaunayTrianglesTest {
 
 	public static final String testGeometry="POINT(0 0)";
 	
-	@Test
+	/*@Test
 	public void testDelaunayTriangles() throws ParseException {
         DelaunayTriangles instance=new DelaunayTriangles();
         List<Coordinate> coords=new LinkedList<Coordinate>();
@@ -33,6 +33,6 @@ public class DelaunayTrianglesTest {
         NodeValue expResult = GeometryWrapperFactory.createPoint(coords.get(0), WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(input,tolerance,flags);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

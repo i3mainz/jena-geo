@@ -12,7 +12,7 @@ public class AsBinaryTest {
 
 	public static final String testGeometry="POLYGON((0 0,0 1,1 1,1 0,0 0))";
 	
-	@Test
+	/*@Test
 	public void testAsBinary() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         AsBinary instance=new AsBinary();
@@ -27,6 +27,6 @@ public class AsBinaryTest {
         		"\\000\\000\\000\\000\\000\\000\\000\\000");
         NodeValue result = instance.exec(geometryLiteral,NodeValue.makeString("XDR"));
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

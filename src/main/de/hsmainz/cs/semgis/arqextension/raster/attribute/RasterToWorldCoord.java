@@ -14,6 +14,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 import org.apache.jena.sparql.expr.NodeValue;
@@ -47,7 +48,7 @@ public class RasterToWorldCoord extends FunctionBase3 {
              DirectPosition gridPos = new DirectPosition2D();
              DirectPosition res=gridToCRS.transform(realPos, gridPos);
              Coordinate coord=new Coordinate(res.getCoordinate()[0],res.getCoordinate()[1]);
-             GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
+             GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, wrapper.getSrsURI(), WKTDatatype.URI);
              return pointWrapper.asNodeValue();
         } catch (TransformException e) {
             return NodeValue.nvNothing;

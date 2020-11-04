@@ -11,14 +11,14 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 public class Is3DTest {
 
 	
-	@Test
+	/*@Test
 	public void testIs3DFalse() {
         NodeValue geometryLiteral = NodeValue.makeNode("<http://www.opengis.net/def/crs/EPSG/0/27700> MULTIPOINT (10 40, 40 30, 20 20, 30 10)", WKTDatatype.INSTANCE);
         Is3D instance=new Is3D();
         NodeValue expResult = NodeValue.makeNodeBoolean(false);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 	@Test
 	public void testIs3DTrue() {

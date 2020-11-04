@@ -15,6 +15,8 @@ public class TransScaleTest {
 
 	public static final String testLineString="LINESTRING(1 2,1 10)";
 	
+	public static final String testLineStringRes="LINESTRING Z(6 8, 6 24)";
+	
 	@Test
 	public void testTransScale() {
         NodeValue geometryLiteral = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
@@ -29,7 +31,7 @@ public class TransScaleTest {
         vals.add(scale2);
         vals.add(transx);
         vals.add(transy);
-        NodeValue expResult = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(testLineStringRes, WKTDatatype.INSTANCE);
         NodeValue result = instance.exec(vals);
         assertEquals(expResult, result);
 	}

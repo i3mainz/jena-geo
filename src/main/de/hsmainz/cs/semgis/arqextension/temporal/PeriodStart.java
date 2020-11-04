@@ -10,6 +10,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.temporal.Tempo
 
 public class PeriodStart extends FunctionBase1 {
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public NodeValue exec(NodeValue v1) {
 		TemporalRange range1=TemporalRangeWrapper.extract(v1.getString(), v1.getDatatypeURI());

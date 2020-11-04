@@ -13,14 +13,10 @@ public class AsHEXEWKBTest {
 public static final String testGeometry="POLYGON((0 0,0 1,1 1,1 0,0 0))";
 	
 	@Test
-	public void testAsEncodedPolyline() {
+	public void testAsHexEWKB() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         AsHEXEWKB instance=new AsHEXEWKB();
-        NodeValue expResult = NodeValue.makeString("0103000020E6100000010000000500\n" + 
-        		"00000000000000000000000000000000\n" + 
-        		"00000000000000000000000000000000F03F\n" + 
-        		"000000000000F03F000000000000F03F000000000000F03\n" + 
-        		"F000000000000000000000000000000000000000000000000");
+        NodeValue expResult = NodeValue.makeString("000000000300000001000000050000000000000000000000000000000000000000000000003FF00000000000003FF00000000000003FF00000000000003FF0000000000000000000000000000000000000000000000000000000000000");
         NodeValue result = instance.exec(geometryLiteral,NodeValue.makeString("XDR"));
         assertEquals(expResult, result);
 	}

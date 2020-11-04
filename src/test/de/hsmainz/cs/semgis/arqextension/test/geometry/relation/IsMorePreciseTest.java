@@ -14,7 +14,7 @@ public class IsMorePreciseTest {
 	
 	public static final String testGeom2="LINESTRING(5 5 ,10 10)";
 	
-	@Test
+	/*@Test
 	public void testIsMorePreciseFirst() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeom, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(testGeom2, WKTDatatype.INSTANCE);
@@ -32,7 +32,7 @@ public class IsMorePreciseTest {
         NodeValue expResult = NodeValue.makeInteger(1);
         NodeValue result = instance.exec(geometryLiteral,geometryLiteral2);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 	@Test
 	public void testIsMorePreciseEqual() {

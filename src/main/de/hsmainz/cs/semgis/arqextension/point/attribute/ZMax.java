@@ -17,10 +17,10 @@ public class ZMax extends FunctionBase1 {
     public NodeValue exec(NodeValue arg0) {
 
         GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-        Geometry geo=geometry.getXYGeometry();
-        Double maxZ=0.;
+        Geometry geo=geometry.getParsingGeometry();
+        Double maxZ=Double.MIN_VALUE;
         for(Coordinate coord:geo.getCoordinates()) {
-        	if(maxZ<coord.getZ()) {
+        	if(!Double.isNaN(coord.getZ()) && coord.getZ()>maxZ) {
         		maxZ=coord.getZ();
         	}
         }

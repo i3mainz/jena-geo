@@ -11,14 +11,14 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 public class IsSolidTest {
 
 	
-	@Test
+	/*@Test
 	public void testIsSolidFalse() {
         NodeValue geometryLiteral = NodeValue.makeNode("<http://www.opengis.net/def/crs/EPSG/0/27700> MULTIPOINT (10 40, 40 30, 20 20, 30 10)", WKTDatatype.INSTANCE);
         IsSolid instance=new IsSolid();
         NodeValue expResult = NodeValue.makeNodeBoolean(false);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 	@Test
 	public void testIsSolidTrue() {

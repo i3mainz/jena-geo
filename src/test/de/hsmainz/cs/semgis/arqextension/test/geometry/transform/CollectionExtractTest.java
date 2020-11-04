@@ -15,13 +15,13 @@ public static final String testGeometry="GEOMETRYCOLLECTION(POINT(0 0))";
 
 public static final String res="POINT(0 0)";
 	
-	@Test
+	/*@Test
 	public void testCollectionExtract() throws ParseException {
         CollectionExtract instance=new CollectionExtract();
         NodeValue input=NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         NodeValue expResult = NodeValue.makeNode(res, WKTDatatype.INSTANCE);
         NodeValue result = instance.exec(input,NodeValue.makeInteger(1));
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

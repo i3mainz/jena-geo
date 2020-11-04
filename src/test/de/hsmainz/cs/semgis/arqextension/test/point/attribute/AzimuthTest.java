@@ -21,7 +21,7 @@ public class AzimuthTest {
         Azimuth instance=new Azimuth();
         NodeValue geom1 = GeometryWrapperFactory.createPoint(new Coordinate(25.,45.), WKTDatatype.URI).asNodeValue();
         NodeValue geom2 = GeometryWrapperFactory.createPoint(new Coordinate(75.,100.), WKTDatatype.URI).asNodeValue();
-        NodeValue expResult = NodeValue.makeDouble(42.2736890060937);
+        NodeValue expResult = NodeValue.makeDouble(6.113262637907632e0);
         NodeValue result = instance.exec(geom1,geom2);
         assertEquals(expResult, result);
 	}
@@ -31,7 +31,7 @@ public class AzimuthTest {
         Azimuth instance=new Azimuth();
         NodeValue geom1 = GeometryWrapperFactory.createPoint(new Coordinate(25.,45.), WKTDatatype.URI).asNodeValue();
         NodeValue geom2 = GeometryWrapperFactory.createPoint(new Coordinate(75.,100.), WKTDatatype.URI).asNodeValue();
-        NodeValue expResult = NodeValue.makeDouble(222.273689006094);
+        NodeValue expResult = NodeValue.makeDouble(3.9011648233916847e0);
         NodeValue result = instance.exec(geom2,geom1);
         assertEquals(expResult, result);
 	}

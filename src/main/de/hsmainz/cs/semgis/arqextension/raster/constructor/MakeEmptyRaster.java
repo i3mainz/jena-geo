@@ -15,6 +15,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.constructor;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.WKBRastDatatype;
 
 import java.awt.image.DataBuffer;
@@ -29,11 +30,13 @@ import org.apache.jena.sparql.function.FunctionBase0;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
 import org.apache.sis.geometry.Envelope2D;
+import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.CommonCRS;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 import org.opengis.coverage.grid.GridCoverage;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.util.FactoryException;
 
 public class MakeEmptyRaster extends FunctionBase0 {
 
@@ -50,13 +53,26 @@ public class MakeEmptyRaster extends FunctionBase0 {
 				raster.setSample(x, y, 0, x + y);
 			}
 		}
-		CoordinateReferenceSystem crs = CommonCRS.WGS84.normalizedGeographic();
-		Envelope2D envelope = new Envelope2D(crs, 0, 0, 30, 30);
+		//CoordinateReferenceSystem crs = CommonCRS.WGS84.defaultGeographic();
+		CoordinateReferenceSystem crss;
+		Envelope2D envelope=null;
+		try {
+			crss = CRS.forCode("EPSG:4326");
+			envelope = new Envelope2D(crss, 0, 0, 30, 30);
+		} catch (FactoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			envelope = new Envelope2D(CommonCRS.WGS84.defaultGeographic(), 0, 0, 30, 30);
+		}
+		
 
 		GridCoverageBuilder gcb = new GridCoverageBuilder();
 		gcb.setRenderedImage(raster);
+		gcb.setEnvelope(envelope);
 		GridCoverage2D gc = (GridCoverage2D)gcb.build();
-		return CoverageWrapper.createCoverage(gc, "WGS84", WKBRastDatatype.URI.toString()).asNodeValue();
+		
+		return CoverageWrapper.createCoverage(gc, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();
 	}
 
 }

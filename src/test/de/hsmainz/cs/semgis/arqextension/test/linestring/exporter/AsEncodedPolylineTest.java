@@ -16,7 +16,7 @@ public class AsEncodedPolylineTest {
 	public void testAsEncodedPolyline() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         AsEncodedPolyline instance=new AsEncodedPolyline();
-        NodeValue expResult = NodeValue.makeString("|_p~iF~ps|U_ulLnnqC_mqNvxq`@");
+        NodeValue expResult = NodeValue.makeString("~ps|U_p~iFnnqC_ulLvxq`@_mqN");
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}

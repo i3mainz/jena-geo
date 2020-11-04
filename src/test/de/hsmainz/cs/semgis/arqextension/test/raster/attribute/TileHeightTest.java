@@ -15,7 +15,7 @@ public class TileHeightTest extends SampleRasters {
 	public void testTileHeight() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         TileHeight instance=new TileHeight();
-        NodeValue expResult = NodeValue.makeInteger(1);
+        NodeValue expResult = NodeValue.makeInteger(2);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

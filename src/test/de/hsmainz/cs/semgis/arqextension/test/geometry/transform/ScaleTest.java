@@ -17,7 +17,7 @@ public class ScaleTest {
 
 	public static final String testLineString="LINESTRING(1 2,1 10)";
 	
-	@Test
+	/*@Test
 	public void testReverse() {
         NodeValue geometryLiteral = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
         Scale instance=new Scale();
@@ -33,6 +33,6 @@ public class ScaleTest {
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(vals);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

@@ -17,9 +17,9 @@ public class AreaSimilarityTest {
 	@Test
 	public void testAreaSimilarity() {
         NodeValue geometryLiteral = NodeValue.makeNode(isocelesTriangle, WKTDatatype.INSTANCE);
-        NodeValue geometryLiteral2 = NodeValue.makeNode(notIsocelesTriangle, WKTDatatype.INSTANCE);
+        NodeValue geometryLiteral2 = NodeValue.makeNode(isocelesTriangle, WKTDatatype.INSTANCE);
         AreaSimilarity instance=new AreaSimilarity();
-        NodeValue expResult = NodeValue.makeDouble(0.);
+        NodeValue expResult = NodeValue.makeDouble(1.);
         NodeValue result = instance.exec(geometryLiteral,geometryLiteral2);
         assertEquals(expResult, result);
 	}

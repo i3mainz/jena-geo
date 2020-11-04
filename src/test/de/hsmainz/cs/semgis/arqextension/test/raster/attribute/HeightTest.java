@@ -15,7 +15,7 @@ public class HeightTest extends SampleRasters {
 	public void testRasterHeight() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         Height instance=new Height();
-        NodeValue expResult = NodeValue.makeDouble(10.);
+        NodeValue expResult = NodeValue.makeInteger(2);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

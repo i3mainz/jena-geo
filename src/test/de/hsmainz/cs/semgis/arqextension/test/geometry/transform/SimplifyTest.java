@@ -23,7 +23,6 @@ public class SimplifyTest {
         Simplify instance=new Simplify();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(5.,2.));
-        coords.add(new Coordinate(7.,25.));
         coords.add(new Coordinate(10.,10.));
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();
         NodeValue result = instance.exec(geometryLiteral,NodeValue.makeInteger(30),NodeValue.TRUE);

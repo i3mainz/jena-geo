@@ -14,7 +14,7 @@ public class DifferenceTest {
 	
 	public static final String testGeom2="LINESTRING(77.42 29.26 ,10 10)";
 	
-	public static final String result="POINT(5 5)";
+	public static final String result="MULTILINESTRING((77.29 29.07, 77.42 29.26), (77.42 29.26, 77.27 29.31, 77.2775576481951 29.21930822165882), (77.2775576481951 29.21930822165882, 77.29 29.07))";
 	
 	@Test
 	public void testDifference() {

@@ -38,7 +38,11 @@ public class AsX3D extends FunctionBase3 {
             builder.append("</IndexedFaceSet>");
             builder.append("<Coordinate point=\"");
             for(Coordinate coord:geom.getCoordinates()) {
-            	builder.append(coord.getX()+" "+coord.getY()+" "+coord.getZ()+" ");
+            	if(!Double.isNaN(coord.getZ())) {
+            		builder.append(coord.getX()+" "+coord.getY()+" "+coord.getZ()+" ");
+            	}else {
+            		builder.append(coord.getX()+" "+coord.getY());
+            	}
             }
             builder.append("\"/>");
             BigInteger maximaldecimaldigits=v2.getInteger();

@@ -10,16 +10,16 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class RemoveRingTest {
 
-	public static final String duplicateRings="POLYGON((8 2, 11 13, 2 6, 8 2), (8 2, 11 13, 2 6, 8 2))";
+	public static final String duplicateRings="POLYGON ((8 2, 11 13, 2 6, 8 2), (8 2, 11 13, 2 6, 8 2))";
 	
-	public static final String nonduplicateRings="POLYGON ((8 2, 11 13, 2 6, 8 2))";
+	public static final String nonduplicateRings="POLYGON((8 2, 11 13, 2 6, 8 2))";
 	
 	public static final String ring="LINEARRING (8 2, 11 13, 2 6, 8 2)";
 	
 	@Test
 	public void testRemoveRing() {
         NodeValue geometryLiteral = NodeValue.makeNode(duplicateRings, WKTDatatype.INSTANCE);
-        NodeValue add= NodeValue.makeInteger(1);
+        NodeValue add= NodeValue.makeInteger(0);
         RemoveRing instance=new RemoveRing();
         NodeValue expResult = NodeValue.makeNode(nonduplicateRings, WKTDatatype.INSTANCE);
         NodeValue result = instance.exec(geometryLiteral,add);

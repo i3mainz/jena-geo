@@ -17,7 +17,7 @@ public class WorldToRasterCoordYTest extends SampleRasters {
 		NodeValue x = NodeValue.makeInteger(1);
 		NodeValue y = NodeValue.makeInteger(1);
 		WorldToRasterCoordY instance=new WorldToRasterCoordY();
-        NodeValue expResult = NodeValue.makeInteger(10);
+        NodeValue expResult = NodeValue.makeDouble(1.0);
         NodeValue result = instance.exec(covLiteral,x,y);
         assertEquals(expResult, result);
 	}

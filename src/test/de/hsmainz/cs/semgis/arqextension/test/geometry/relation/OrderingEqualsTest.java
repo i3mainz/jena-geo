@@ -30,16 +30,6 @@ public class OrderingEqualsTest {
 
 	@Test
 	public void testOrderingEquals2() {
-        NodeValue geometryLiteral = NodeValue.makeNode(lineStringSmall, WKTDatatype.INSTANCE);
-        NodeValue geometryLiteral2 = NodeValue.makeNode(lineStringMedium2, WKTDatatype.INSTANCE);
-        OrderingEquals instance=new OrderingEquals();
-        NodeValue expResult = NodeValue.makeBoolean(true);
-        NodeValue result = instance.exec(geometryLiteral,geometryLiteral2);
-        assertEquals(expResult, result);
-	}
-
-	@Test
-	public void testOrderingEquals3() {
         NodeValue geometryLiteral = NodeValue.makeNode(lineStringSmallReverse, WKTDatatype.INSTANCE);
         NodeValue geometryLiteral2 = NodeValue.makeNode(lineStringMedium2, WKTDatatype.INSTANCE);
         OrderingEquals instance=new OrderingEquals();

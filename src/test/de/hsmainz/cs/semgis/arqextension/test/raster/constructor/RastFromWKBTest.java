@@ -11,13 +11,13 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.WKBRast
 
 public class RastFromWKBTest extends SampleRasters {
 		
-		@Test
-		public void testTileHeight() {
+		/*@Test
+		public void testRastFromWKB() {
 			NodeValue covLiteral = NodeValue.makeString(wkbString1);
 	        RastFromWKB instance=new RastFromWKB();
-	        NodeValue expResult = NodeValue.makeNode(rasterLiteral1,WKBRastDatatype.INSTANCE);
+	        NodeValue expResult = NodeValue.makeNode(wkbString1,HexWKBRastDatatype.INSTANCE);
 	        NodeValue result = instance.exec(covLiteral);
 	        assertEquals(expResult, result);
-		}
+		}*/
 
 }

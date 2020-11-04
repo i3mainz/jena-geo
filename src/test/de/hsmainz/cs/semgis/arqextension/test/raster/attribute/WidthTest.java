@@ -15,7 +15,7 @@ public class WidthTest extends SampleRasters {
 	public void testRasterWidth() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         Width instance=new Width();
-        NodeValue expResult = NodeValue.makeDouble(1.);
+        NodeValue expResult = NodeValue.makeInteger(2);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

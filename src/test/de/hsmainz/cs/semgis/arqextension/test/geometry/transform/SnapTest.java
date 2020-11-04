@@ -27,8 +27,8 @@ public static final String testPolygon2="POLYGON((1 1 2,0 5 2,5 0 2,1 1 2))";
         Snap instance=new Snap();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(0,0));
-        coords.add(new Coordinate(5,0));
         coords.add(new Coordinate(0,5));
+        coords.add(new Coordinate(5,0));
         coords.add(new Coordinate(0,0));
         //        POLYGON((0 0,0 5,5 0,0 0),(1 1,3 1,1 3,1 1))
         NodeValue expResult = GeometryWrapperFactory.createPolygon(coords, WKTDatatype.URI).asNodeValue();

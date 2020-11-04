@@ -15,7 +15,7 @@ public class SkewXTest extends SampleRasters {
 	public void testSkewX() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         SkewX instance=new SkewX();
-        NodeValue expResult = NodeValue.makeDouble(10);
+        NodeValue expResult = NodeValue.makeDouble(0);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

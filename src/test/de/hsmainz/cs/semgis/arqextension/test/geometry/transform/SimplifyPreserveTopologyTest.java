@@ -23,6 +23,8 @@ public static final String testGeom="LINESTRING(5 2, 3 8, 6 20, 7 25, 10 10)";
         SimplifyPreserveTopology instance=new SimplifyPreserveTopology();
         List<Coordinate> coords=new LinkedList<Coordinate>();
         coords.add(new Coordinate(5.,2.));
+        coords.add(new Coordinate(3.,8.));
+        coords.add(new Coordinate(6.,20.));
         coords.add(new Coordinate(7.,25.));
         coords.add(new Coordinate(10.,10.));
         NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();

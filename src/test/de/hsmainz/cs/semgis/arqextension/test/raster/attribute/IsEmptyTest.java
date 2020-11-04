@@ -10,15 +10,6 @@ import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class IsEmptyTest extends SampleRasters {
-
-	@Test
-	public void testRasterIsEmptyTrue() {
-		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-        IsEmpty instance=new IsEmpty();
-        NodeValue expResult = NodeValue.TRUE;
-        NodeValue result = instance.exec(covLiteral);
-        assertEquals(expResult, result);
-	}
 	
 	@Test
 	public void testRasterIsEmptyFalse() {

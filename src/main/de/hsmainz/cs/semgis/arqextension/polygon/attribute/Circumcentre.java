@@ -19,9 +19,9 @@ public class Circumcentre extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
         try {
             GeometryWrapper geometry = GeometryWrapper.extract(v);
-            Geometry geom = geometry.getParsingGeometry();
+            Geometry geom = geometry.getXYGeometry();
             if (geom instanceof Polygon) {
-            	if(geom.getCoordinates().length==3) {
+            	if(geom.getCoordinates().length==4) {
             		Coordinate p0=geom.getCoordinates()[0];
             		Coordinate p1=geom.getCoordinates()[1];
             		Coordinate p2=geom.getCoordinates()[2];

@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.raster.attribute.RasterToWorldCoord;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
+import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
+import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class RasterToWorldCoordTest extends SampleRasters {
@@ -17,7 +19,7 @@ public class RasterToWorldCoordTest extends SampleRasters {
 		NodeValue x = NodeValue.makeInteger(1);
 		NodeValue y = NodeValue.makeInteger(1);
 		RasterToWorldCoord instance=new RasterToWorldCoord();
-        NodeValue expResult = NodeValue.makeInteger(10);
+		NodeValue expResult = NodeValue.makeNode("POINT(1 1)", WKTDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,x,y);
         assertEquals(expResult, result);
 	}

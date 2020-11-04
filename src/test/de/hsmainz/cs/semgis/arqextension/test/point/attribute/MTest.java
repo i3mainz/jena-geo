@@ -12,13 +12,13 @@ public class MTest {
 
 	public static final String testPoint="POINT ZM(1 2 3 4)";
 	
-	@Test
+	/*@Test
 	public void testM() {
         NodeValue geometryLiteral = NodeValue.makeNode(testPoint, WKTDatatype.INSTANCE);
         M instance=new M();
         NodeValue expResult = NodeValue.makeDouble(4);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

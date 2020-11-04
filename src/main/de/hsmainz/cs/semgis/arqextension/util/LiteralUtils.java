@@ -26,7 +26,12 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 public class LiteralUtils {
 
 	public static Wrapper rasterOrVector(NodeValue v) {
-			GeometryDatatype datatype=GeometryDatatype.get(v.getDatatypeURI());
+		GeometryDatatype datatype=null;
+		try {
+			datatype=GeometryDatatype.get(v.getDatatypeURI());
+		}catch(Exception e) {
+			datatype=null;
+		}
 			if(datatype==null) {
 				RasterDataType rdatatype=RasterDataType.get(v.getDatatypeURI());
 				if(rdatatype==null) {

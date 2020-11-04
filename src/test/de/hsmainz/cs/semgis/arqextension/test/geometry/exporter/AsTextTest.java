@@ -10,13 +10,13 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class AsTextTest {
 
-	public static final String testGeometry="LINESTRING Z(1 2 3, 4 5 6)";
+	public static final String testGeometry="LINESTRING(1 2, 4 5)";
 	
 	@Test
 	public void testAsText() {
         NodeValue geometryLiteral = NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
         AsText instance=new AsText();
-        NodeValue expResult = NodeValue.makeString("LINESTRING(1 2 3, 4 5 6)");
+        NodeValue expResult = NodeValue.makeString("LINESTRING (1 2, 4 5)");
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}

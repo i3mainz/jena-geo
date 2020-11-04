@@ -13,7 +13,7 @@ public class MinZTest {
 		public static final String testPoint="LINESTRING Z(1 2 3, 4 5 6,7 8 9)";
 		
 		@Test
-		public void testX() {
+		public void testMinZ() {
 	        NodeValue geometryLiteral = NodeValue.makeNode(testPoint, WKTDatatype.INSTANCE);
 	        ZMin instance=new ZMin();
 	        NodeValue expResult = NodeValue.makeDouble(3);

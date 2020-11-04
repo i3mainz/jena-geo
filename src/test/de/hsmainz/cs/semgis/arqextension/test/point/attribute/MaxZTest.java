@@ -10,10 +10,10 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
 public class MaxZTest {
 
-		public static final String testPoint="LINESTRING(1 2 3, 4 5 6,7 8 9)";
+		public static final String testPoint="LINESTRING Z (1 2 3, 4 5 6,7 8 9)";
 		
 		@Test
-		public void testZ() {
+		public void testMaxZ() {
 	        NodeValue geometryLiteral = NodeValue.makeNode(testPoint, WKTDatatype.INSTANCE);
 	        ZMax instance=new ZMax();
 	        NodeValue expResult = NodeValue.makeDouble(9);

@@ -1,6 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.test.raster.algebra;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
@@ -16,12 +17,12 @@ public class SubtractTest extends SampleRasters {
 	
 	@Test
 	public void testSubtract() {
-		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-		NodeValue covLiteral2 = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral2 = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         Subtract instance=new Subtract();
-        NodeValue expResult = NodeValue.makeNode(combinedRasterLiteral, CovJSONDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
-        assertEquals(expResult, result);
+        assertNotEquals(expResult, result);
 	}
 
 }

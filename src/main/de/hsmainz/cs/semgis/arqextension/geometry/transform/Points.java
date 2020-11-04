@@ -29,7 +29,7 @@ public class Points extends FunctionBase1 {
             for(Coordinate coord:geom.getCoordinates()) {
             	res.add(fac.createPoint(coord));
             }
-            GeometryWrapper mPointWrapper = GeometryWrapperFactory.createMultiPoint (Arrays.asList(geom.getCoordinates()),WKTDatatype.URI);           
+            GeometryWrapper mPointWrapper = GeometryWrapperFactory.createMultiPoint(Arrays.asList(geom.getCoordinates()),WKTDatatype.URI);           
             return mPointWrapper.asNodeValue();
         } catch (DatatypeFormatException ex) {
             throw new ExprEvalException(ex.getMessage(), ex);

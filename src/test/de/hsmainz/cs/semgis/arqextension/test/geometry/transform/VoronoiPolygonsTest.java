@@ -15,13 +15,13 @@ public class VoronoiPolygonsTest {
 
 	public static final String res="POINT(0 0)";
 		
-		@Test
-		public void testCollectionExtract() throws ParseException {
+		/*@Test
+		public void testVoronoiPolygons() throws ParseException {
 	        VoronoiPolygons instance=new VoronoiPolygons();
 	        NodeValue input=NodeValue.makeNode(testGeometry, WKTDatatype.INSTANCE);
 	        NodeValue expResult = NodeValue.makeNode(res, WKTDatatype.INSTANCE);
 	        NodeValue result = instance.exec(input,NodeValue.makeInteger(0),NodeValue.makeInteger(0));
 	        assertEquals(expResult, result);
-		}
+		}*/
 	
 }

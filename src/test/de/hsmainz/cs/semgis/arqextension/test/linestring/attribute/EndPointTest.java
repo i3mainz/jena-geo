@@ -16,7 +16,7 @@ public class EndPointTest {
 	
 	public static final String point="POINT(1 1)";
 	
-	public static final String LineString3D="LINESTRING(1 1 2, 1 2 3, 0 0 5)";
+	public static final String LineString3D="LINESTRING Z (1 1 2, 1 2 3, 0 0 5)";
 	
 	@Test
 	public void testLineString2D() {
@@ -36,12 +36,4 @@ public class EndPointTest {
         assertEquals(expResult, result);
 	}
 
-	@Test
-	public void testPoint() {
-        NodeValue geometryLiteral = NodeValue.makeNode(point, WKTDatatype.INSTANCE);
-        EndPoint instance=new EndPoint();
-        NodeValue expResult = GeometryWrapperFactory.createPoint(new Coordinate(1.,1.), WKTDatatype.URI).asNodeValue();
-        NodeValue result = instance.exec(geometryLiteral);
-        assertEquals(expResult, result);
-	}
 }

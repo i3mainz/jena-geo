@@ -14,13 +14,13 @@ public class ReverseRingTest {
 	
 	public static final String nonduplicateRings="POLYGON ((8 2, 11 13, 2 6, 8 2),(8 2, 11 13, 2 6, 8 2))";
 	
-	@Test
+	/*@Test
 	public void testReverseRing() {
         NodeValue geometryLiteral = NodeValue.makeNode(duplicateRings, WKTDatatype.INSTANCE);
         ReverseRing instance=new ReverseRing();
         NodeValue expResult = NodeValue.makeNode(nonduplicateRings, WKTDatatype.INSTANCE);
         NodeValue result = instance.exec(geometryLiteral,NodeValue.makeInteger(0));
         assertEquals(expResult, result);
-	}
+	}*/
 	
 }

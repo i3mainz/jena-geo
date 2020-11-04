@@ -16,10 +16,10 @@ public class IsPlanar extends FunctionBase1{
 	       try {
 	            GeometryWrapper geometry = GeometryWrapper.extract(v);
 	            Geometry geom = geometry.getParsingGeometry();
-	            Boolean is3D=true;
+	            Boolean is3D=false;
 	            for(Coordinate coord:geom.getCoordinates()) {
-	            	if(Double.isNaN(coord.getZ())) {
-	            		is3D=false;
+	            	if(!Double.isNaN(coord.getZ())) {
+	            		is3D=true;
 	            	}
 	            }
 	            return NodeValue.makeBoolean(!is3D);

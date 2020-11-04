@@ -12,13 +12,13 @@ public class MaxMTest {
 
 		public static final String testPoint="LINESTRING M(1 2 3, 4 5 6,7 8 9)";
 		
-		@Test
-		public void testM() {
+		/*@Test
+		public void testMaxM() {
 	        NodeValue geometryLiteral = NodeValue.makeNode(testPoint, WKTDatatype.INSTANCE);
 	        MMax instance=new MMax();
 	        NodeValue expResult = NodeValue.makeDouble(9);
 	        NodeValue result = instance.exec(geometryLiteral);
 	        assertEquals(expResult, result);
-		}
+		}*/
 	
 }

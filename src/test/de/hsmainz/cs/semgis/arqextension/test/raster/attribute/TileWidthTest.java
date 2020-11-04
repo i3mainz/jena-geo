@@ -12,10 +12,10 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBR
 public class TileWidthTest extends SampleRasters {
 	
 	@Test
-	public void testTileHeight() {
+	public void testTileWidth() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         TileWidth instance=new TileWidth();
-        NodeValue expResult = NodeValue.makeInteger(1);
+        NodeValue expResult = NodeValue.makeInteger(2);
         NodeValue result = instance.exec(covLiteral);
         assertEquals(expResult, result);
 	}

@@ -12,7 +12,7 @@ public class SelfIntersectionsTest {
 
 	public static final String isRing="LINESTRING(0 0, 0 1, 1 1, 1 0, 1 1, 0 0)";
 	
-	public static final String point="MULTIPOINT((1 1), (0,0))";
+	public static final String point="MULTIPOINT Z((1 1), (0 0))";
 	
 	@Test
 	public void testSelfIntersections() {

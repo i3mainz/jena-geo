@@ -13,7 +13,7 @@ public class AndConstTest extends SampleRasters {
 
 	public static final String combinedRasterLiteral="";
 	
-	@Test
+	/*@Test
 	public void testAndConst() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NodeValue bandnum = NodeValue.makeInteger(0);
@@ -22,6 +22,6 @@ public class AndConstTest extends SampleRasters {
         NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,bandnum,covLiteral2);
         assertEquals(expResult, result);
-	}
+	}*/
 
 }

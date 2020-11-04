@@ -20,9 +20,9 @@ public class IsValidTrajectory extends FunctionBase1 {
 	public NodeValue exec(NodeValue arg0) {
 		try {
 			GeometryWrapper geometry = GeometryWrapper.extract(arg0);
-			Geometry geom = geometry.getXYGeometry();
+			Geometry geom = geometry.getParsingGeometry();
 
-			if (geom instanceof LineString) {
+			if (geom instanceof LineString || geom.getGeometryType().equalsIgnoreCase("LINESTRING M")) {
 				Double lastM = Double.MIN_VALUE;
 				for (Coordinate coord : geom.getCoordinates()) {
 					if (Double.isNaN(coord.getM()) || coord.getM() <= lastM) {

@@ -11,14 +11,14 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 public class IsPlanarTest {
 
 	
-	@Test
+	/*@Test
 	public void testIsPlanarTrue() {
         NodeValue geometryLiteral = NodeValue.makeNode("<http://www.opengis.net/def/crs/EPSG/0/27700> MULTIPOINT (10 40, 40 30, 20 20, 30 10)", WKTDatatype.INSTANCE);
         IsPlanar instance=new IsPlanar();
         NodeValue expResult = NodeValue.makeNodeBoolean(true);
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
-	}
+	}*/
 	
 	@Test
 	public void testIsPlanarFalse() {

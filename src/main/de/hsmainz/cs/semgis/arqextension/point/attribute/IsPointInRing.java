@@ -18,8 +18,7 @@ public class IsPointInRing extends FunctionBase2 {
 	        Geometry pointgeom = pointgeometry.getXYGeometry();
 	        GeometryWrapper ringgeometry = GeometryWrapper.extract(v1);
 	        Geometry ringgeom = ringgeometry.getXYGeometry();
-	        CGAlgorithms algos=new CGAlgorithms();
-	        return NodeValue.makeBoolean(algos.isPointInRing(pointgeom.getCoordinate(), ringgeom.getCoordinates()));
+	        return NodeValue.makeBoolean(CGAlgorithms.isPointInRing(pointgeom.getCoordinate(), ringgeom.getCoordinates()));
 	    } catch (DatatypeFormatException ex) {
 	        throw new ExprEvalException(ex.getMessage(), ex);
 	    }

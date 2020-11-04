@@ -44,7 +44,7 @@ public class CentroidDistance extends FunctionBase2 {
 				GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
-			    return NodeValue.makeDouble(bbox1.getCentroid().distance(bbox1.getCentroid()));			
+			    return NodeValue.makeDouble(bbox1.getCentroid().distance(geom.getCentroid()));			
 			}
 		}
 	}
