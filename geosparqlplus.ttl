@@ -1,0 +1,3950 @@
+@prefix : <http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.opengis.net/ont/geosparqlplus#> .
+
+<http://www.opengis.net/ont/geosparqlplus#> rdf:type owl:Ontology ;
+                                             <http://purl.org/dc/elements/1.1/creator> "Open Geospatial Consortium"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/date> "2012-04-30"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> "An RDF/OWL vocabulary for representing spatial information"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/source> <http://www.opengis.net/doc/IS/geosparql/1.0> ,
+                                                                                      "OGC GeoSPARQL – A Geographic Query Language for RDF Data OGC 11-052r5"^^xsd:string ;
+                                             <http://purl.org/dc/elements/1.1/title> "GeoSPARQL Ontology" ;
+                                             rdfs:seeAlso <http://www.opengis.net/def/function/ogc-geosparql/1.0> ,
+                                                          <http://www.opengis.net/def/rule/ogc-geosparql/1.0> ,
+                                                          <http://www.opengis.net/doc/IS/geosparql/1.0> ;
+                                             owl:versionInfo "OGC GeoSPARQL 1.0"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty ;
+                                              <http://purl.org/dc/terms/description> "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."@en ;
+                                              <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#contributor-006> ;
+                                              <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                              <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                              rdfs:comment "An entity responsible for making contributions to the resource."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                              rdfs:label "Contributor"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.org/dc/terms/description> "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en ;
+                                          <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#creator-006> ;
+                                          <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                          <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                          rdfs:comment "An entity primarily responsible for making the resource."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                          rdfs:label "Creator"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty ;
+                                       <http://purl.org/dc/terms/description> "Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."@en ;
+                                       <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#date-006> ;
+                                       <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                       <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                       rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                       rdfs:label "Date"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty ;
+                                              <http://purl.org/dc/terms/description> "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
+                                              <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#description-006> ;
+                                              <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                              <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                              rdfs:comment "An account of the resource."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                              rdfs:label "Description"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty ;
+                                         <http://purl.org/dc/terms/description> "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
+                                         <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#source-006> ;
+                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                         <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                         rdfs:comment "A related resource from which the described resource is derived."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                         rdfs:label "Source"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#title-006> ;
+                                        <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                        <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                        rdfs:comment "A name given to the resource."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                        rdfs:label "Title"@en ;
+                                        <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#WKBLiteral
+<http://www.opengis.net/ont/geosparql#WKBLiteral> rdf:type rdfs:Datatype .
+
+
+###  http://www.opengis.net/ont/geosparql#gmlLiteral
+<http://www.opengis.net/ont/geosparql#gmlLiteral> rdf:type rdfs:Datatype ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      A GML serialization of a geometry object.
+    """@en ;
+                                                  rdfs:comment """
+      A GML serialization of a geometry object.
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "GML Literal"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      A GML serialization of a geometry object.
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "GML Literal"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      A Well-known Text serialization of a geometry object.
+    """@en ;
+                                                  rdfs:comment """
+      A Well-known Text serialization of a geometry object.
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "Well-known Text Literal"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      A Well-known Text serialization of a geometry object.
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Well-known Text Literal"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#HexWKBLiteral
+:HexWKBLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#covJSONLiteral
+:covJSONLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#defaultGeometry
+<http://www.opengis.net/ont/geosparql#defaultGeometry> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                       rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                       rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                       <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                       <http://purl.org/dc/elements/1.1/description> """
+      The default geometry to be used in spatial calculations.
+      It is Usually the most detailed geometry.
+    """@en ;
+                                                       rdfs:comment """
+      The default geometry to be used in spatial calculations.
+      It is Usually the most detailed geometry.
+    """@en ;
+                                                       rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                        <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                       rdfs:label "defaultGeometry"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> """
+      The default geometry to be used in spatial calculations.
+      It is Usually the most detailed geometry.
+    """@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "defaultGeometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehContains
+<http://www.opengis.net/ont/geosparql#ehContains> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: T*TFF*FF*
+    """@en ;
+                                                  rdfs:comment """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: T*TFF*FF*
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "contains"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: T*TFF*FF*
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "contains"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehCoveredBy
+<http://www.opengis.net/ont/geosparql#ehCoveredBy> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                   <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                   <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                   <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                   <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially covered
+      by the object SpatialObject. DE-9IM: TFF*TFT**
+    """@en ;
+                                                   rdfs:comment """
+      Exists if the subject SpatialObject is spatially covered
+      by the object SpatialObject. DE-9IM: TFF*TFT**
+    """@en ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                    <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                   rdfs:label "coveredBy"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially covered
+      by the object SpatialObject. DE-9IM: TFF*TFT**
+    """@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "coveredBy"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehCovers
+<http://www.opengis.net/ont/geosparql#ehCovers> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially covers the
+      object SpatialObject. DE-9IM: T*TFT*FF*
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject spatially covers the
+      object SpatialObject. DE-9IM: T*TFT*FF*
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "covers"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially covers the
+      object SpatialObject. DE-9IM: T*TFT*FF*
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "covers"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehDisjoint
+<http://www.opengis.net/ont/geosparql#ehDisjoint> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    """@en ;
+                                                  rdfs:comment """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "disjoint"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "disjoint"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehEquals
+<http://www.opengis.net/ont/geosparql#ehEquals> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "equals"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "equals"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehInside
+<http://www.opengis.net/ont/geosparql#ehInside> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially inside
+      the object SpatialObject. DE-9IM: TFF*FFT**
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject is spatially inside
+      the object SpatialObject. DE-9IM: TFF*FFT**
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "inside"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially inside
+      the object SpatialObject. DE-9IM: TFF*FFT**
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "inside"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehMeet
+<http://www.opengis.net/ont/geosparql#ehMeet> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                              <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                              <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                              <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    """@en ;
+                                              rdfs:comment """
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    """@en ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                               <http://www.opengis.net/spec/geosparql/1.0> ;
+                                              rdfs:label "meet"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    """@en ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "meet"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#ehOverlap
+<http://www.opengis.net/ont/geosparql#ehOverlap> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                 <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                 <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
+    """@en ;
+                                                 rdfs:comment """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
+    """@en ;
+                                                 rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                  <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                 rdfs:label "overlap"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
+    """@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "overlap"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                   <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                   <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                   <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                   <http://purl.org/dc/elements/1.1/description> """
+      A spatial representation for a given feature.
+    """@en ;
+                                                   rdfs:comment """
+      A spatial representation for a given feature.
+    """@en ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                    <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                   rdfs:label "hasGeometry"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> """
+      A spatial representation for a given feature.
+    """@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "hasGeometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8dc
+<http://www.opengis.net/ont/geosparql#rcc8dc> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                              <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                              <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                              <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FFTFFTTTT
+    """@en ;
+                                              rdfs:comment """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FFTFFTTTT
+    """@en ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                               <http://www.opengis.net/spec/geosparql/1.0> ;
+                                              rdfs:label "disconnected"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FFTFFTTTT
+    """@en ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "disconnected"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8ec
+<http://www.opengis.net/ont/geosparql#rcc8ec> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                              <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                              <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                              <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject. DE-9IM: FFTFTTTTT
+    """@en ;
+                                              rdfs:comment """
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject. DE-9IM: FFTFTTTTT
+    """@en ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                               <http://www.opengis.net/spec/geosparql/1.0> ;
+                                              rdfs:label "externally connected"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially meets the
+      object SpatialObject. DE-9IM: FFTFTTTTT
+    """@en ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "externally connected"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8eq
+<http://www.opengis.net/ont/geosparql#rcc8eq> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                              <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                              <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                              <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                              rdfs:comment """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                               <http://www.opengis.net/spec/geosparql/1.0> ;
+                                              rdfs:label "equals"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "equals"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8ntpp
+<http://www.opengis.net/ont/geosparql#rcc8ntpp> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially inside
+      the object SpatialObject. DE-9IM: TFFTFFTTT
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject is spatially inside
+      the object SpatialObject. DE-9IM: TFFTFFTTT
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "non-tangential proper part"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially inside
+      the object SpatialObject. DE-9IM: TFFTFFTTT
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "non-tangential proper part"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8ntppi
+<http://www.opengis.net/ont/geosparql#rcc8ntppi> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                 <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                 <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: TTTFFTFFT
+    """@en ;
+                                                 rdfs:comment """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: TTTFFTFFT
+    """@en ;
+                                                 rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                  <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                 rdfs:label "non-tangential proper part inverse"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: TTTFFTFFT
+    """@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "non-tangential proper part inverse"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8po
+<http://www.opengis.net/ont/geosparql#rcc8po> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                              <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                              <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                              <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                              <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: TTTTTTTTT
+    """@en ;
+                                              rdfs:comment """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: TTTTTTTTT
+    """@en ;
+                                              rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                               <http://www.opengis.net/spec/geosparql/1.0> ;
+                                              rdfs:label "partially overlapping"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: TTTTTTTTT
+    """@en ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "partially overlapping"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8tpp
+<http://www.opengis.net/ont/geosparql#rcc8tpp> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                               <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                               <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                               <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially covered
+      by the object SpatialObject. DE-9IM: TFFTTFTTT
+    """@en ;
+                                               rdfs:comment """
+      Exists if the subject SpatialObject is spatially covered
+      by the object SpatialObject. DE-9IM: TFFTTFTTT
+    """@en ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                <http://www.opengis.net/spec/geosparql/1.0> ;
+                                               rdfs:label "tangential proper part"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially covered
+      by the object SpatialObject. DE-9IM: TFFTTFTTT
+    """@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "tangential proper part"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8tppi
+<http://www.opengis.net/ont/geosparql#rcc8tppi> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially covers the
+      object SpatialObject. DE-9IM: TTTFTTFFT
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject spatially covers the
+      object SpatialObject. DE-9IM: TTTFTTFFT
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "tangential proper part inverse"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially covers the
+      object SpatialObject. DE-9IM: TTTFTTFFT
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "tangential proper part inverse"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: T*****FF*
+    """@en ;
+                                                  rdfs:comment """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: T*****FF*
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "contains"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially contains the
+      object SpatialObject. DE-9IM: T*****FF*
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "contains"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfCrosses
+<http://www.opengis.net/ont/geosparql#sfCrosses> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                 <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                 <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially crosses the
+      object SpatialObject. DE-9IM: T*T******
+    """@en ;
+                                                 rdfs:comment """
+      Exists if the subject SpatialObject spatially crosses the
+      object SpatialObject. DE-9IM: T*T******
+    """@en ;
+                                                 rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                  <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                 rdfs:label "crosses"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially crosses the
+      object SpatialObject. DE-9IM: T*T******
+    """@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "crosses"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfDisjoint
+<http://www.opengis.net/ont/geosparql#sfDisjoint> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    """@en ;
+                                                  rdfs:comment """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "disjoint"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "disjoint"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfEquals
+<http://www.opengis.net/ont/geosparql#sfEquals> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "equals"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially equals the
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "equals"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfIntersects
+<http://www.opengis.net/ont/geosparql#sfIntersects> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                    rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                    <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                    <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                    <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                    <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is not spatially disjoint
+      from the object SpatialObject.
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****
+    """@en ;
+                                                    rdfs:comment """
+      Exists if the subject SpatialObject is not spatially disjoint
+      from the object SpatialObject.
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****
+    """@en ;
+                                                    rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                     <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                    rdfs:label "intersects"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is not spatially disjoint
+      from the object SpatialObject.
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****
+    """@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "intersects"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfOverlaps
+<http://www.opengis.net/ont/geosparql#sfOverlaps> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                  <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                  <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                  <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
+    """@en ;
+                                                  rdfs:comment """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
+    """@en ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                   <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                  rdfs:label "overlaps"@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially overlaps the
+      object SpatialObject. DE-9IM: T*T***T**
+    """@en ;
+                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "overlaps"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfTouches
+<http://www.opengis.net/ont/geosparql#sfTouches> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                 <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                 <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                 <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject spatially touches the
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    """@en ;
+                                                 rdfs:comment """
+      Exists if the subject SpatialObject spatially touches the
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    """@en ;
+                                                 rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                  <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                 rdfs:label "touches"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject spatially touches the
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    """@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "touches"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      Exists if the subject SpatialObject is spatially within the
+      object SpatialObject. DE-9IM: T*F**F***
+    """@en ;
+                                                rdfs:comment """
+      Exists if the subject SpatialObject is spatially within the
+      object SpatialObject. DE-9IM: T*F**F***
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "within"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      Exists if the subject SpatialObject is spatially within the
+      object SpatialObject. DE-9IM: T*F**F***
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "within"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#hasCoverage
+:hasCoverage rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#asGML
+<http://www.opengis.net/ont/geosparql#asGML> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                             rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                             rdfs:range <http://www.opengis.net/ont/geosparql#gmlLiteral> ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                             <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                             <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> """
+      The GML serialization of a geometry
+    """@en ;
+                                             rdfs:comment """
+      The GML serialization of a geometry
+    """@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                              <http://www.opengis.net/spec/geosparql/1.0> ;
+                                             rdfs:label "asGML"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> """
+      The GML serialization of a geometry
+    """@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "asGML"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> ;
+                                             rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                             rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                             <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                             <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                             <http://purl.org/dc/elements/1.1/description> """
+      The WKT serialization of a geometry
+    """@en ;
+                                             rdfs:comment """
+      The WKT serialization of a geometry
+    """@en ;
+                                             rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                              <http://www.opengis.net/spec/geosparql/1.0> ;
+                                             rdfs:label "asWKT"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> """
+      The WKT serialization of a geometry
+    """@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "asWKT"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#coordinateDimension
+<http://www.opengis.net/ont/geosparql#coordinateDimension> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                           rdfs:range xsd:integer ;
+                                                           <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                           <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                           <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                           <http://purl.org/dc/elements/1.1/description> """
+      The number of measurements or axes needed to describe the position of this
+      geometry in a coordinate system.
+    """@en ;
+                                                           rdfs:comment """
+      The number of measurements or axes needed to describe the position of this
+      geometry in a coordinate system.
+    """@en ;
+                                                           rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                            <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                           rdfs:label "coordinateDimension"@en ;
+                                                           <http://www.w3.org/2004/02/skos/core#definition> """
+      The number of measurements or axes needed to describe the position of this
+      geometry in a coordinate system.
+    """@en ;
+                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "coordinateDimension"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#dimension
+<http://www.opengis.net/ont/geosparql#dimension> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                 rdfs:range xsd:integer ;
+                                                 <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                 <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                 <http://purl.org/dc/elements/1.1/description> """
+      The topological dimension of this geometric object, which
+      must be less than or equal to the coordinate dimension.
+      In non-homogeneous collections, this will return the largest
+      topological dimension of the contained objects.
+    """@en ;
+                                                 rdfs:comment """
+      The topological dimension of this geometric object, which
+      must be less than or equal to the coordinate dimension.
+      In non-homogeneous collections, this will return the largest
+      topological dimension of the contained objects.
+    """@en ;
+                                                 rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                  <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                 rdfs:label "dimension"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> """
+      The topological dimension of this geometric object, which
+      must be less than or equal to the coordinate dimension.
+      In non-homogeneous collections, this will return the largest
+      topological dimension of the contained objects.
+    """@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "dimension"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#hasSerialization
+<http://www.opengis.net/ont/geosparql#hasSerialization> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                        rdfs:range rdfs:Literal ;
+                                                        <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                        <http://purl.org/dc/elements/1.1/description> """
+      Connects a geometry object with its text-based serialization.
+    """@en ;
+                                                        rdfs:comment """
+      Connects a geometry object with its text-based serialization.
+    """@en ;
+                                                        rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                         <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                        rdfs:label "has serialization"@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> """
+      Connects a geometry object with its text-based serialization.
+    """@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "has serialization"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#isEmpty
+<http://www.opengis.net/ont/geosparql#isEmpty> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                               rdfs:range xsd:boolean ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                               <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                               <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                               <http://purl.org/dc/elements/1.1/description> """
+      (true) if this geometric object is the empty Geometry. If
+      true, then this geometric object represents the empty point
+      set for the coordinate space.
+    """@en ;
+                                               rdfs:comment """
+      (true) if this geometric object is the empty Geometry. If
+      true, then this geometric object represents the empty point
+      set for the coordinate space.
+    """@en ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                <http://www.opengis.net/spec/geosparql/1.0> ;
+                                               rdfs:label "isEmpty"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """
+      (true) if this geometric object is the empty Geometry. If
+      true, then this geometric object represents the empty point
+      set for the coordinate space.
+    """@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "isEmpty"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#isSimple
+<http://www.opengis.net/ont/geosparql#isSimple> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                rdfs:range xsd:boolean ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      (true) if this geometric object has no anomalous geometric
+      points, such as self intersection or self tangency.
+    """@en ;
+                                                rdfs:comment """
+      (true) if this geometric object has no anomalous geometric
+      points, such as self intersection or self tangency.
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "isSimple"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      (true) if this geometric object has no anomalous geometric
+      points, such as self intersection or self tangency.
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "isSimple"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#spatialDimension
+<http://www.opengis.net/ont/geosparql#spatialDimension> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                        rdfs:range xsd:integer ;
+                                                        <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                        <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                        <http://purl.org/dc/elements/1.1/description> """
+      The number of measurements or axes needed to describe the spatial position of
+      this geometry in a coordinate system.
+    """@en ;
+                                                        rdfs:comment """
+      The number of measurements or axes needed to describe the spatial position of
+      this geometry in a coordinate system.
+    """@en ;
+                                                        rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                         <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                        rdfs:label "spatialDimension"@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> """
+      The number of measurements or axes needed to describe the spatial position of
+      this geometry in a coordinate system.
+    """@en ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "spatialDimension"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asCoverageJSON
+:asCoverageJSON rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asHexWKB
+:asHexWKB rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#asWKB
+:asWKB rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasSerialization> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               owl:disjointWith <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                <http://purl.org/dc/elements/1.1/description> """
+      The class represents the top-level geometry type. This class is
+      equivalent to the UML class GM_Object defined in ISO 19107, and
+      it is superclass of all geometry types.
+    """@en ;
+                                                rdfs:comment """
+      The class represents the top-level geometry type. This class is
+      equivalent to the UML class GM_Object defined in ISO 19107, and
+      it is superclass of all geometry types.
+    """@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                 <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                rdfs:label "Geometry"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> """
+      The class represents the top-level geometry type. This class is
+      equivalent to the UML class GM_Object defined in ISO 19107, and
+      it is superclass of all geometry types.
+    """@en ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#LineString
+<http://www.opengis.net/ont/geosparql#LineString> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                  rdfs:comment "Representation of a LineString"@en ;
+                                                  rdfs:label "LineString"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Point
+<http://www.opengis.net/ont/geosparql#Point> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                             rdfs:comment "Representation of a Point"@en ;
+                                             rdfs:label "Point"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Polygon
+<http://www.opengis.net/ont/geosparql#Polygon> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                               rdfs:comment "Represenation of a Polygon"@en ;
+                                               rdfs:label "Polygon"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Coverage
+:Coverage rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+          rdfs:comment "Representation of an OGC Coverage" ;
+          rdfs:label "Coverage"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Function
+:Function rdf:type owl:Class ;
+          rdfs:label "Function"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#GridCoverage
+:GridCoverage rdf:type owl:Class ;
+              rdfs:subClassOf :Coverage ;
+              rdfs:comment "Representation of a gridded coverage"@en ;
+              rdfs:label "GridCoverage"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#Raster
+:Raster rdf:type owl:Class ;
+        rdfs:subClassOf :ReferenceableGridCoverage ;
+        rdfs:comment "Representation of a raster"@en ;
+        rdfs:label "Raster"@en .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ReferenceableGridCoverage
+:ReferenceableGridCoverage rdf:type owl:Class ;
+                           rdfs:subClassOf :GridCoverage ;
+                           rdfs:comment "ReferenceableGridCoverage"@en ,
+                                        "Representation of a gridded coverage with a geospatial reference"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:NamedIndividual ,
+                                                        :Function .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#CentimeterToMeter
+:CentimeterToMeter rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "centimeterToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ChainToMeter
+:ChainToMeter rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "chainToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#DecimeterToMeter
+:DecimeterToMeter rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "decimeterToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#FathomToMeter
+:FathomToMeter rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "fathomToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#FootToMeter
+:FootToMeter rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "footToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#InchToMeter
+:InchToMeter rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "inchToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#KilometerToMeter
+:KilometerToMeter rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "kilometerToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#LinkToMeter
+:LinkToMeter rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "linkToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToCentimeter
+:MeterToCentimeter rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "meterToCentimeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToChain
+:MeterToChain rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "meterToChain" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToDecimeter
+:MeterToDecimeter rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "meterToDecimeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToFathom
+:MeterToFathom rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "meterToFathom" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToFoot
+:MeterToFoot rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "meterToFoot" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToInch
+:MeterToInch rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "meterToInch" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToKilometer
+:MeterToKilometer rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "meterToKilometer" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToLink
+:MeterToLink rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "meterToLink" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToMile
+:MeterToMile rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "meterToMile" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToMillimeter
+:MeterToMillimeter rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "meterToMillimeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToNauticalMile
+:MeterToNauticalMile rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "meterToNauticalMile" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSFoot
+:MeterToUSFoot rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "meterToUSFoot" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSInch
+:MeterToUSInch rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "meterToUSInch" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSMile
+:MeterToUSMile rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "meterToUSMile" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MeterToUSYard
+:MeterToUSYard rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "meterToUSYard" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MileToMeter
+:MileToMeter rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "mileToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#MillimeterToMeter
+:MillimeterToMeter rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "millimeterToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#NauticalMileToMeter
+:NauticalMileToMeter rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "nauticalMileToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DClosestPoint
+:ST_3DClosestPoint rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_3dclosestpoint" ,
+                              "st_closestPoint3d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DDWithin
+:ST_3DDWithin rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_3ddwithin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DDistance
+:ST_3DDistance rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_distance3d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DMaxDistance
+:ST_3DMaxDistance rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_3dmaxDistance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3DShortestLine
+:ST_3DShortestLine rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_3dshortestline" ,
+                              "st_shortestLine3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_3dLongestLine
+:ST_3dLongestLine rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_3dlongestLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Accum
+:ST_Accum rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_accum" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Add
+:ST_Add rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_rast_algebra_add" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddBand
+:ST_AddBand rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_addband" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddConst
+:ST_AddConst rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_algebra_addconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddGeometry
+:ST_AddGeometry rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_addgeometry" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddPoint
+:ST_AddPoint rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_addpoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddRing
+:ST_AddRing rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_addRing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AddZ
+:ST_AddZ rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_addz" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_And
+:ST_And rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_rast_algebra_and" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AndConst
+:ST_AndConst rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_algebra_andconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Angle
+:ST_Angle rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_angle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Area
+:ST_Area rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_area" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AreaSimilarity
+:ST_AreaSimilarity rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_areasimilarity" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsBinary
+:ST_AsBinary rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_asbinary" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsEncodedPolyline
+:ST_AsEncodedPolyline rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_asencodedpolyline" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGML
+:ST_AsGML rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_asgml" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGPX
+:ST_AsGPX rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_asgpx" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoBuf
+:ST_AsGeoBuf rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_asgeobuf" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoJSON
+:ST_AsGeoJSON rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_asgeojson" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoJSONLD
+:ST_AsGeoJSONLD rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_asgeojsonld" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoRSS
+:ST_AsGeoRSS rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_asgeorss" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsGeoURI
+:ST_AsGeoURI rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_asgeouri" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsHexEWKB
+:ST_AsHexEWKB rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_ashexewkb" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsJPG
+:ST_AsJPG rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_asjpg" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsKML
+:ST_AsKML rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_askml" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsLatLonText
+:ST_AsLatLonText rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_aslatlontext" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsMVT
+:ST_AsMVT rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_asmvt" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsMVTGeom
+:ST_AsMVTGeom rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_asmvtgeom" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsPNG
+:ST_AsPNG rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_aspng" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsPolyshape
+:ST_AsPolyshape rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_aspolyshape" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsSVG
+:ST_AsSVG rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_assvg" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTIFF
+:ST_AsTIFF rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_astiff" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTWKB
+:ST_AsTWKB rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_astwkb" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsText
+:ST_AsText rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_astext" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTextRaw
+:ST_AsTextRaw rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_astextraw" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTextRound
+:ST_AsTextRound rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_astextround" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsTopoJSON
+:ST_AsTopoJSON rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_astopojson" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsWKB
+:ST_AsWKB rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_aswkb" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsWKT
+:ST_AsWKT rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_aswkt" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_AsX3D
+:ST_AsX3D rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_asx3d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Aspect
+:ST_Aspect rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_aspect" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Azimuth
+:ST_Azimuth rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_azimuth" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXAbove
+:ST_BBOXAbove rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_bboxabove" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXBelow
+:ST_BBOXBelow rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_bboxbelow" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXContains
+:ST_BBOXContains rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_bboxcontains" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXDistance
+:ST_BBOXDistance rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_bboxdistance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXEquals
+:ST_BBOXEquals rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_bboxequals" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXFPIntersects
+:ST_BBOXFPIntersects rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_bboxfpintersects" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXIntersect
+:ST_BBOXIntersect rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_bboxintersect" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXIsContainedBy
+:ST_BBOXIsContainedBy rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_bboxiscontainedby" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXLeftOf
+:ST_BBOXLeftOf rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_bboxleftof" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsAbove
+:ST_BBOXOverlapsAbove rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_bboxoverlapsabove" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsBelow
+:ST_BBOXOverlapsBelow rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_bboxoverlapsbelow" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsLeft
+:ST_BBOXOverlapsLeft rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_bboxoverlapsleft" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXOverlapsRight
+:ST_BBOXOverlapsRight rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_bboxoverlapsright" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BBOXRightOf
+:ST_BBOXRightOf rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_bboxrightof" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Band
+:ST_Band rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_band" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BandMetaData
+:ST_BandMetaData rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_bandmetadata" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BandNoDataValue
+:ST_BandNoDataValue rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_bandnodatavalue" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BandPixelType
+:ST_BandPixelType rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_bandpixeltype" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BezierSmoothing
+:ST_BezierSmoothing rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_bezierSmoothing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Boundary
+:ST_Boundary rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_boundary" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_BoundingDiagonal
+:ST_BoundingDiagonal rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_boundingdiagonal" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Centroid
+:ST_Centroid rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_centroid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CentroidDistance
+:ST_CentroidDistance rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_centroidDistance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ChaikinSmoothing
+:ST_ChaikinSmoothing rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_chaikinSmooting" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Circularity
+:ST_Circularity rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_circularity" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Clip
+:ST_Clip rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_clip" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClipByBox2D
+:ST_ClipByBox2D rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_clipByBox2D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClosestCoordinate
+:ST_ClosestCoordinate rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_closestCooordinate" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClosestPoint
+:ST_ClosestPoint rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_closestPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClosestPointOfApproach
+:ST_ClosestPointOfApproach rdf:type owl:NamedIndividual ,
+                                    :Function ;
+                           rdfs:label "st_closestPointOfApproach" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClusterIntersecting
+:ST_ClusterIntersecting rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_clusterIntersecting" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClusterKMeans
+:ST_ClusterKMeans rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_clusterKMeans" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ClusterWithin
+:ST_ClusterWithin rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_clusterWithin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CollFromText
+:ST_CollFromText rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_geomCollFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CollectionExtract
+:ST_CollectionExtract rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_collectionExtract" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CollectionHomogenize
+:ST_CollectionHomogenize rdf:type owl:NamedIndividual ,
+                                  :Function ;
+                         rdfs:label "st_collectionHomogenize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CompactnessRatio
+:ST_CompactnessRatio rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_compactnessRatio" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ConcaveHull
+:ST_ConcaveHull rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_concaveHull" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Contains
+:ST_Contains rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_contains" ,
+                        "st_rast_Contains" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ContainsProperly
+:ST_ContainsProperly rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_containsProperly" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ConvexHull
+:ST_ConvexHull rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_convexHull" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Count
+:ST_Count rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_count" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CoveredBy
+:ST_CoveredBy rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_rast_CoveredBy" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Covers
+:ST_Covers rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_rast_Covers" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Crosses
+:ST_Crosses rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rast_Crosses" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_CurveToLine
+:ST_CurveToLine rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_curveToLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DWithin
+:ST_DWithin rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_dWithin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DWithin3D
+:ST_DWithin3D rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_dwithin3d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DelaunayTriangles
+:ST_DelaunayTriangles rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_delaunayTriangles" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Densify
+:ST_Densify rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_densify" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Dimension
+:ST_Dimension rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_dimension" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Disjoint
+:ST_Disjoint rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_Disjoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Distance
+:ST_Distance rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_distance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DistanceSphere
+:ST_DistanceSphere rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_distancesphere" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Div
+:ST_Div rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_rast_algebra_div" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DivConst
+:ST_DivConst rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_algebra_divconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_DumpRings
+:ST_DumpRings rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_dumpRings" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EPSGToSRID
+:ST_EPSGToSRID rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_epsgToSRID" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EndPoint
+:ST_EndPoint rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_endPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EnsureClosed
+:ST_EnsureClosed rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_ensureClosed" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Envelope
+:ST_Envelope rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_envelope" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualSRS
+:ST_EqualSRS rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_equalSRS" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualType
+:ST_EqualType rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_equalType" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Equals
+:ST_Equals rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_equals" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualsNorm
+:ST_EqualsNorm rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_equalsNorm" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_EqualsTopo
+:ST_EqualsTopo rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_equalsTopo" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Explode
+:ST_Explode rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_explode" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FilterByM
+:ST_FilterByM rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_filterByM" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FilterByT
+:ST_FilterByT rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_filterByT" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FlipCoordinates
+:ST_FlipCoordinates rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_flipCoordinates" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force2D
+:ST_Force2D rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_force2d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force3D
+:ST_Force3D rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_force3d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force3DM
+:ST_Force3DM rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_force3dm" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force3DZ
+:ST_Force3DZ rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_force3dz" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Force4D
+:ST_Force4D rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_force4d" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceCollection
+:ST_ForceCollection rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_forceCollection" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceCurve
+:ST_ForceCurve rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_forceCurve" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceLHR
+:ST_ForceLHR rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_forceLHR" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForcePolygonCCW
+:ST_ForcePolygonCCW rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_forcePolygonCCW" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForcePolygonCW
+:ST_ForcePolygonCW rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_forcePolygonCW" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ForceSFS
+:ST_ForceSFS rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_forceSFS" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FrechetDistance
+:ST_FrechetDistance rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_frechetDistance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_FurthestCoordinate
+:ST_FurthestCoordinate rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_furthestCoordinate" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GMLToSQL
+:ST_GMLToSQL rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_gmlToSQL" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeneratePoints
+:ST_GeneratePoints rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_generatePoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeoHash
+:ST_GeoHash rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_geohash" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromGML
+:ST_GeomFromGML rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_geomFromGML" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromGeoHash
+:ST_GeomFromGeoHash rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_geomFromGeoHash" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromGeoJSON
+:ST_GeomFromGeoJSON rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_geomFromGeoJSON" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromKML
+:ST_GeomFromKML rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_geomFromKML" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromText
+:ST_GeomFromText rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_geomFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeomFromWKB
+:ST_GeomFromWKB rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_geomFromWKB" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeometricMedian
+:ST_GeometricMedian rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_geometricMedian" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeometryN
+:ST_GeometryN rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_geometryN" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_GeometryType
+:ST_GeometryType rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_geometryType" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Grayscale
+:ST_Grayscale rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_grayscale" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HasHorizontalCRS
+:ST_HasHorizontalCRS rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_hasHorizontalCRS" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HasNoBand
+:ST_HasNoBand rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_hasNoBand" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HasRepeatedPoints
+:ST_HasRepeatedPoints rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_hasRepeatedPoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_HausdorffDistance
+:ST_HausdorffDistance rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_hausdorffDistance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Height
+:ST_Height rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_height" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_InteriorRingN
+:ST_InteriorRingN rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_interiorRingN" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_InterpolatePoint
+:ST_InterpolatePoint rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_interpolatePoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Intersection
+:ST_Intersection rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_rast_Intersection" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IntersectionMatrix
+:ST_IntersectionMatrix rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_intersectionMatrix" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IntersectionPercentage
+:ST_IntersectionPercentage rdf:type owl:NamedIndividual ,
+                                    :Function ;
+                           rdfs:label "st_intersectionPercentage" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Intersects
+:ST_Intersects rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_rast_Intersects" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Is3D
+:ST_Is3D rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_is3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsAcute
+:ST_IsAcute rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_isAcute" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsClosed
+:ST_IsClosed rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_isClosed" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsCollection
+:ST_IsCollection rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_isCollection" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsConvex
+:ST_IsConvex rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_isConvex" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsEmpty
+:ST_IsEmpty rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_isEmpty" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsEquilateralTriangle
+:ST_IsEquilateralTriangle rdf:type owl:NamedIndividual ,
+                                   :Function ;
+                          rdfs:label "st_isEquilateralTriangle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsGrayscale
+:ST_IsGrayscale rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_isGrayscale" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsIndexed
+:ST_IsIndexed rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_isIndexed" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsIsocelesTriangle
+:ST_IsIsocelesTriangle rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_isIsocelesTriangle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsMeasured
+:ST_IsMeasured rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_isMeasured" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsMorePrecise
+:ST_IsMorePrecise rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isMorePrecise" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsNodingValid
+:ST_IsNodingValid rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isNodingValid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPlanar
+:ST_IsPlanar rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_isPlanar" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPointInRing
+:ST_IsPointInRing rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isPointInRing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPointOnLine
+:ST_IsPointOnLine rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isPointOnLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPolygonCCW
+:ST_IsPolygonCCW rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_isPolygonCCW" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsPolygonCW
+:ST_IsPolygonCW rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_isPolygonCW" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsRectangle
+:ST_IsRectangle rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_isRectangle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsRightTriangle
+:ST_IsRightTriangle rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_isRightTriangle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsRing
+:ST_IsRing rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_isRing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsSimple
+:ST_IsSimple rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_isSimple" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsSolid
+:ST_IsSolid rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_isSolid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsSquare
+:ST_IsSquare rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_isSquare" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsTiled
+:ST_IsTiled rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_isTiled" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsTranslucent
+:ST_IsTranslucent rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isTranslucent" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsTriangle
+:ST_IsTriangle rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_isTriangle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValid
+:ST_IsValid rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_isValid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValidDetail
+:ST_IsValidDetail rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isValidDetail" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValidReason
+:ST_IsValidReason rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_isValidReason" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_IsValidTrajectory
+:ST_IsValidTrajectory rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_isValidTrajectory" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Length
+:ST_Length rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_Length" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Length2D
+:ST_Length2D rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_Length2D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Length3D
+:ST_Length3D rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_Length3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LengthToPoint
+:ST_LengthToPoint rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_LengthToPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineCrossingDirection
+:ST_LineCrossingDirection rdf:type owl:NamedIndividual ,
+                                   :Function ;
+                          rdfs:label "st_lineCrossingDirection" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromEncodedPolyline
+:ST_LineFromEncodedPolyline rdf:type owl:NamedIndividual ,
+                                     :Function ;
+                            rdfs:label "st_lineFromEncodedPolyline" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromMultiPoint
+:ST_LineFromMultiPoint rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_lineFromMultiPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromText
+:ST_LineFromText rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_lineFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromWKB
+:ST_LineFromWKB rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_lineFromWKB" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineFromWKT
+:ST_LineFromWKT rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_lineFromWKT" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineInterpolatePoint
+:ST_LineInterpolatePoint rdf:type owl:NamedIndividual ,
+                                  :Function ;
+                         rdfs:label "st_lineInterpolatePoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineInterpolatePoints
+:ST_LineInterpolatePoints rdf:type owl:NamedIndividual ,
+                                   :Function ;
+                          rdfs:label "st_lineInterpolatePoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineLength3D
+:ST_LineLength3D rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_lineLength3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineLocatePoint
+:ST_LineLocatePoint rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_lineLocatePoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineMerge
+:ST_LineMerge rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_lineMerge" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineSelfIntersectionPoint
+:ST_LineSelfIntersectionPoint rdf:type owl:NamedIndividual ,
+                                       :Function ;
+                              rdfs:label "st_lineSelfIntersectionPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineSubstring
+:ST_LineSubstring rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_lineSubstring" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LineToCurve
+:ST_LineToCurve rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_lineToCurve" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LocateAlong
+:ST_LocateAlong rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_locateAlong" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LocateBetween
+:ST_LocateBetween rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_locateBetween" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LocateBetweenElevations
+:ST_LocateBetweenElevations rdf:type owl:NamedIndividual ,
+                                     :Function ;
+                            rdfs:label "st_locateBetweenElevations" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Log
+:ST_Log rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_rast_algebra_log" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LongestLine
+:ST_LongestLine rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_longestLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_LongestLine3D
+:ST_LongestLine3D rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_longestLine3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_M
+:ST_M rdf:type owl:NamedIndividual ,
+               :Function ;
+      rdfs:label "st_m" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MLineFromText
+:ST_MLineFromText rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_mLineFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MMax
+:ST_MMax rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_mMax" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MMin
+:ST_MMin rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_mMin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MPointFromText
+:ST_MPointFromText rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_mPointFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MPolyFromText
+:ST_MPolyFromText rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_mPolyFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeCircle
+:ST_MakeCircle rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_makeCircle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEllipse
+:ST_MakeEllipse rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_makeEllipse" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEmptyCoverage
+:ST_MakeEmptyCoverage rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_makeEmptyCoverage" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEmptyRaster
+:ST_MakeEmptyRaster rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_makeEmptyRaster" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeEnvelope
+:ST_MakeEnvelope rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_makeEnvelope" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeLine
+:ST_MakeLine rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_makeLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakePoint
+:ST_MakePoint rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_makePoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakePointM
+:ST_MakePointM rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_makePointM" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakePolygon
+:ST_MakePolygon rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_makePolygon" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MakeValid
+:ST_MakeValid rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_makeValid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MaxDistance
+:ST_MaxDistance rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_maxDistance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MaxDistance3D
+:ST_MaxDistance3D rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_maxDistance3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MemSize
+:ST_MemSize rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_memsize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinConvexHull
+:ST_MinConvexHull rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_minConvexHull" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinTileX
+:ST_MinTileX rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_mintilex" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinTileY
+:ST_MinTileY rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_mintiley" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumBoundingCircle
+:ST_MinimumBoundingCircle rdf:type owl:NamedIndividual ,
+                                   :Function ;
+                          rdfs:label "st_minimumBoundingCircle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumBoundingCircleCenter
+:ST_MinimumBoundingCircleCenter rdf:type owl:NamedIndividual ,
+                                         :Function ;
+                                rdfs:label "st_minimumBoundingCircleCenter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumBoundingRadius
+:ST_MinimumBoundingRadius rdf:type owl:NamedIndividual ,
+                                   :Function ;
+                          rdfs:label "st_minimumBoundingRadius" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumClearance
+:ST_MinimumClearance rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_minimumClearance" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumClearanceLine
+:ST_MinimumClearanceLine rdf:type owl:NamedIndividual ,
+                                  :Function ;
+                         rdfs:label "st_minimumClearanceLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumDiameter
+:ST_MinimumDiameter rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_minimumDiameter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumDiameterLine
+:ST_MinimumDiameterLine rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_minimumDiameterLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MinimumRectangle
+:ST_MinimumRectangle rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_minimumRectangle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Mult
+:ST_Mult rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_rast_algebra_mult" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MultConst
+:ST_MultConst rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_rast_algebra_multconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Multi
+:ST_Multi rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_multi" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_MultiplyZ
+:ST_MultiplyZ rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_multiplyz" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NDims
+:ST_NDims rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_nDims" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NPoints
+:ST_NPoints rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_nPoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NRings
+:ST_NRings rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_nRings" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NearestValue
+:ST_NearestValue rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_nearestValue" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Node
+:ST_Node rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_node" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Normalize
+:ST_Normalize rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_normalize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Not
+:ST_Not rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_rast_algebra_not" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NotSameAlignmentReason
+:ST_NotSameAlignmentReason rdf:type owl:NamedIndividual ,
+                                    :Function ;
+                           rdfs:label "st_notSameAlignmentReason" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumBands
+:ST_NumBands rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_numBands" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumDistinctGeometries
+:ST_NumDistinctGeometries rdf:type owl:NamedIndividual ,
+                                   :Function ;
+                          rdfs:label "st_numDistinctGeometries" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumDistinctPoints
+:ST_NumDistinctPoints rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_numDistinctPoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumGeometries
+:ST_NumGeometries rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_numGeometries" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumInteriorRings
+:ST_NumInteriorRings rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_numInteriorRings" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumPatches
+:ST_NumPatches rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_numPatches" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumPoints
+:ST_NumPoints rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_numPoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumXTiles
+:ST_NumXTiles rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_numXTiles" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_NumYTiles
+:ST_NumYTiles rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_numYTiles" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OSMLink
+:ST_OSMLink rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_osmlink" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OctogonalEnvelope
+:ST_OctogonalEnvelope rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_octogonalEnvelope" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OffsetCurve
+:ST_OffsetCurve rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_offsetCurve" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Or
+:ST_Or rdf:type owl:NamedIndividual ,
+                :Function ;
+       rdfs:label "st_rast_algebra_or" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OrConst
+:ST_OrConst rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rast_algebra_orconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_OrderingEquals
+:ST_OrderingEquals rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_orderingEquals" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Orientation
+:ST_Orientation rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_orientation" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Overlaps
+:ST_Overlaps rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_Overlaps" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PartOfGeometryAfter
+:ST_PartOfGeometryAfter rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_partOfGeometryAfter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PartOfGeometryBefore
+:ST_PartOfGeometryBefore rdf:type owl:NamedIndividual ,
+                                  :Function ;
+                         rdfs:label "st_partOfGeometryBefore" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PatchN
+:ST_PatchN rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_patchN" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Perimeter
+:ST_Perimeter rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_perimeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Perimeter2D
+:ST_Perimeter2D rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_perimeter2D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Perimeter3D
+:ST_Perimeter3D rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_perimeter3D" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsCentroid
+:ST_PixelAsCentroid rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_pixelAsCentroid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsCentroids
+:ST_PixelAsCentroids rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_pixelAsCentroids" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPoint
+:ST_PixelAsPoint rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_pixelAsPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPoints
+:ST_PixelAsPoints rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_pixelAsPoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPolygon
+:ST_PixelAsPolygon rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_pixelAsPolygon" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelAsPolygons
+:ST_PixelAsPolygons rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_pixelAsPolygons" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelHeight
+:ST_PixelHeight rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_pixelHeight" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelOfValue
+:ST_PixelOfValue rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_pixelOfValue" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PixelWidth
+:ST_PixelWidth rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_pixelWidth" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointFromGeoHash
+:ST_PointFromGeoHash rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_pointFromGeoHash" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointFromText
+:ST_PointFromText rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_pointFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointFromWKB
+:ST_PointFromWKB rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_pointFromWKB" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointInsideCircle
+:ST_PointInsideCircle rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_pointInsideCircle" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointN
+:ST_PointN rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_pointN" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PointOnSurface
+:ST_PointOnSurface rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_pointOnSurface" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Points
+:ST_Points rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_points" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Polygon
+:ST_Polygon rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_polygon" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PolygonFromText
+:ST_PolygonFromText rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_polygonFromText" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PolygonFromWKB
+:ST_PolygonFromWKB rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_polygonFromWKB" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Polygonize
+:ST_Polygonize rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_polygonize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_PrecisionReducer
+:ST_PrecisionReducer rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_precisionReducer" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RastFromHexWKB
+:ST_RastFromHexWKB rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_rastFromHexWKB" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RastFromWKB
+:ST_RastFromWKB rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_rastFromWKB" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RasterToWorldCoord
+:ST_RasterToWorldCoord rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_rasterToWorldCoord" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RasterToWorldCoordX
+:ST_RasterToWorldCoordX rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_rasterToWorldCoordX" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RasterToWorldCoordY
+:ST_RasterToWorldCoordY rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_rasterToWorldCoordY" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Reflect
+:ST_Reflect rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_reflect" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Relate
+:ST_Relate rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_relate" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RelateMatch
+:ST_RelateMatch rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_relateMatch" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemoveGeometry
+:ST_RemoveGeometry rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_removegeometry" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemovePoint
+:ST_RemovePoint rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_removePoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemovePoints
+:ST_RemovePoints rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_removePoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemoveRepeatedPoints
+:ST_RemoveRepeatedPoints rdf:type owl:NamedIndividual ,
+                                  :Function ;
+                         rdfs:label "st_removeRepeatedPoints" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RemoveRing
+:ST_RemoveRing rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_removeRing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Resize
+:ST_Resize rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_resize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Reskew
+:ST_Reskew rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_reskew" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Retile
+:ST_Retile rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_retile" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Reverse
+:ST_Reverse rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_reverse" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ReverseRing
+:ST_ReverseRing rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_reverseRing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Rotate
+:ST_Rotate rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_rotate" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RotateX
+:ST_RotateX rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rotateX" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RotateY
+:ST_RotateY rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rotateY" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_RotateZ
+:ST_RotateZ rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rotateZ" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Rotation
+:ST_Rotation rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rotation" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Roughness
+:ST_Roughness rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_roughness" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRID
+:ST_SRID rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_rast_srid" ,
+                    "st_srid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis1Name
+:ST_SRIDGetAxis1Name rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_sridGetAxis1Name" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis1Orientation
+:ST_SRIDGetAxis1Orientation rdf:type owl:NamedIndividual ,
+                                     :Function ;
+                            rdfs:label "st_sridGetAxis1Orientation" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis2Name
+:ST_SRIDGetAxis2Name rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_sridGetAxis2Name" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDGetAxis2Orientation
+:ST_SRIDGetAxis2Orientation rdf:type owl:NamedIndividual ,
+                                     :Function ;
+                            rdfs:label "st_sridGetAxis2Orientation" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDHasFlippedAxis
+:ST_SRIDHasFlippedAxis rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_sridHasFlippedAxis" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SRIDToEPSG
+:ST_SRIDToEPSG rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_sridToEPSG" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SameAlignment
+:ST_SameAlignment rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_sameAlignment" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Scale
+:ST_Scale rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_scale" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ScaleX
+:ST_ScaleX rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_scaleX" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ScaleY
+:ST_ScaleY rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_scaleY" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Segmentize
+:ST_Segmentize rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_segmentize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SelfIntersections
+:ST_SelfIntersections rdf:type owl:NamedIndividual ,
+                               :Function ;
+                      rdfs:label "st_selfIntersections" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetEndPoint
+:ST_SetEndPoint rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_setEndPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetGeometry
+:ST_SetGeometry rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_setGeometry" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetPoint
+:ST_SetPoint rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_setPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetRing
+:ST_SetRing rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_setRing" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetSRID
+:ST_SetSRID rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_setSRID" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SetStartPoint
+:ST_SetStartPoint rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_setStartPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SharedPaths
+:ST_SharedPaths rdf:type owl:NamedIndividual ,
+                         :Function ;
+                rdfs:label "st_sharedPaths" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ShearTransformation
+:ST_ShearTransformation rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_shearTransformation" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ShiftLongitude
+:ST_ShiftLongitude rdf:type owl:NamedIndividual ,
+                            :Function ;
+                   rdfs:label "st_shiftLongitude" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ShortestLine
+:ST_ShortestLine rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_shortestLine" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Simplify
+:ST_Simplify rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_simplify" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SimplifyPreserveTopology
+:ST_SimplifyPreserveTopology rdf:type owl:NamedIndividual ,
+                                      :Function ;
+                             rdfs:label "st_simplifyPreserveTopology" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SimplifyVW
+:ST_SimplifyVW rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_simplifyVW" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SkewX
+:ST_SkewX rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_skewX" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SkewY
+:ST_SkewY rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_skewY" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Slope
+:ST_Slope rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_slope" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Snap
+:ST_Snap rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_snap" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SnapToGrid
+:ST_SnapToGrid rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_snapToGrid" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Split
+:ST_Split rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_split" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_StartPoint
+:ST_StartPoint rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_startPoint" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_StraightSkeleton
+:ST_StraightSkeleton rdf:type owl:NamedIndividual ,
+                              :Function ;
+                     rdfs:label "st_straightSkeleton" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Subtract
+:ST_Subtract rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_algebra_subtract" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SubtractConst
+:ST_SubtractConst rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_rast_algebra_subtractconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Summary
+:ST_Summary rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_summary" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SummaryStats
+:ST_SummaryStats rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_summaryStats" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SwapOrdinates
+:ST_SwapOrdinates rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_swapOrdinates" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_SymDifference
+:ST_SymDifference rdf:type owl:NamedIndividual ,
+                           :Function ;
+                  rdfs:label "st_symDifference" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_T
+:ST_T rdf:type owl:NamedIndividual ,
+               :Function ;
+      rdfs:label "st_t" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TMax
+:ST_TMax rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_tMax" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TMin
+:ST_TMin rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_tMin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TPI
+:ST_TPI rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_tpi" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TRI
+:ST_TRI rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_tri" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Tesselate
+:ST_Tesselate rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_tesselate" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileGridXOffset
+:ST_TileGridXOffset rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_tilegridxoffset" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileGridYOffset
+:ST_TileGridYOffset rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_tilegridyoffset" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileHeight
+:ST_TileHeight rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_tileheight" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TileWidth
+:ST_TileWidth rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_tilewidth" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ToDegrees
+:ST_ToDegrees rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_toDegrees" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ToRadians
+:ST_ToRadians rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_toRadians" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Touches
+:ST_Touches rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rast_Touches" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_TransScale
+:ST_TransScale rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_transscale" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Transform
+:ST_Transform rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_transform" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Translate
+:ST_Translate rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_translate" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_UnaryUnion
+:ST_UnaryUnion rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_unaryUnion" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Union
+:ST_Union rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_union" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_UpperLeftX
+:ST_UpperLeftX rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_upperLeftX" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_UpperLeftY
+:ST_UpperLeftY rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "st_upperLeftY" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Value
+:ST_Value rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_value" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Vectorize
+:ST_Vectorize rdf:type owl:NamedIndividual ,
+                       :Function ;
+              rdfs:label "st_vectorize" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_VoronoiLines
+:ST_VoronoiLines rdf:type owl:NamedIndividual ,
+                          :Function ;
+                 rdfs:label "st_voronoiLines" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_VoronoiPolygons
+:ST_VoronoiPolygons rdf:type owl:NamedIndividual ,
+                             :Function ;
+                    rdfs:label "st_voronoiPolygons" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WKBToSQL
+:ST_WKBToSQL rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_wkbToSQL" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WKTToSQL
+:ST_WKTToSQL rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_wktToSQL" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Width
+:ST_Width rdf:type owl:NamedIndividual ,
+                   :Function ;
+          rdfs:label "st_width" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Within
+:ST_Within rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_rast_Within" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WorldToRasterCoord
+:ST_WorldToRasterCoord rdf:type owl:NamedIndividual ,
+                                :Function ;
+                       rdfs:label "st_worldToRasterCoord" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WorldToRasterCoordX
+:ST_WorldToRasterCoordX rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_worldToRasterCoordX" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_WorldToRasterCoordY
+:ST_WorldToRasterCoordY rdf:type owl:NamedIndividual ,
+                                 :Function ;
+                        rdfs:label "st_worldToRasterCoordY" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_X
+:ST_X rdf:type owl:NamedIndividual ,
+               :Function ;
+      rdfs:label "st_x" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_XMax
+:ST_XMax rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_xMax" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_XMin
+:ST_XMin rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_xMin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Xor
+:ST_Xor rdf:type owl:NamedIndividual ,
+                 :Function ;
+        rdfs:label "st_rast_algebra_xor" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_XorConst
+:ST_XorConst rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "st_rast_algebra_xorconst" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Y
+:ST_Y rdf:type owl:NamedIndividual ,
+               :Function ;
+      rdfs:label "st_y" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_YMax
+:ST_YMax rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_yMax" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_YMin
+:ST_YMin rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_yMin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_Z
+:ST_Z rdf:type owl:NamedIndividual ,
+               :Function ;
+      rdfs:label "st_z" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ZMax
+:ST_ZMax rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_zMax" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ZMin
+:ST_ZMin rdf:type owl:NamedIndividual ,
+                  :Function ;
+         rdfs:label "st_zMin" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_ZmFlag
+:ST_ZmFlag rdf:type owl:NamedIndividual ,
+                    :Function ;
+           rdfs:label "st_zmFlag" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#ST_isEmpty
+:ST_isEmpty rdf:type owl:NamedIndividual ,
+                     :Function ;
+            rdfs:label "st_rast_isEmpty" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USFootToMeter
+:USFootToMeter rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "USFootToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USInchToMeter
+:USInchToMeter rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "USInchToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USMileToMeter
+:USMileToMeter rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "USMileToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#USYardToMeter
+:USYardToMeter rdf:type owl:NamedIndividual ,
+                        :Function ;
+               rdfs:label "USYardToMeter" .
+
+
+###  http://www.semanticweb.org/timo/ontologies/2019/5/untitled-ontology-11#YardToMeter
+:YardToMeter rdf:type owl:NamedIndividual ,
+                      :Function ;
+             rdfs:label "yardToMeter" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> ;
+                                   <http://purl.org/dc/terms/title> "Dublin Core Metadata Element Set, Version 1.1"@en ;
+                                   <http://purl.org/dc/terms/modified> "2012-06-14"^^xsd:date .
+
+
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#coverage-006> ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                           <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                           <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                           rdfs:comment "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en ;
+                                           <http://purl.org/dc/terms/description> "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en ;
+                                           <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                           rdfs:label "Coverage"@en .
+
+
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                         <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                         rdfs:label "Format"@en ;
+                                         rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                         <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#format-007> ;
+                                         <http://purl.org/dc/terms/description> "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en .
+
+
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#identifier-006> ;
+                                             rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                             <http://purl.org/dc/terms/description> "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. "@en ;
+                                             rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
+                                             <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                             <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                             rdfs:label "Identifier"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+
+
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                           <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                           <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                           <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#language-007> ;
+                                           rdfs:label "Language"@en ;
+                                           <http://purl.org/dc/terms/description> "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                           rdfs:seeAlso <http://www.ietf.org/rfc/rfc4646.txt> ;
+                                           rdfs:comment "A language of the resource."@en .
+
+
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#publisher-006> ;
+                                            <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                            <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                            <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                            rdfs:label "Publisher"@en ;
+                                            <http://purl.org/dc/terms/description> "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."@en ;
+                                            rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                            rdfs:comment "An entity responsible for making the resource available."@en .
+
+
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#relation-006> ;
+                                           rdfs:label "Relation"@en ;
+                                           <http://purl.org/dc/terms/description> "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. "@en ;
+                                           <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                           <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                           <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                           rdfs:comment "A related resource."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
+
+
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#rights-006> ;
+                                         <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                         <http://purl.org/dc/terms/description> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en ;
+                                         <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                         rdfs:label "Rights"@en ;
+                                         <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date ;
+                                         rdfs:comment "Information about rights held in and over the resource."@en .
+
+
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/description> "Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary."@en ;
+                                          <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                          <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                          rdfs:label "Subject"@en ;
+                                          rdfs:comment "The topic of the resource."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                          <http://purl.org/dc/terms/modified> "2012-06-14"^^xsd:date ;
+                                          <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#subject-007> .
+
+
+<http://purl.org/dc/elements/1.1/type> rdfs:comment "The nature or genre of the resource."@en ;
+                                       <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#type-006> ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                       rdfs:label "Type"@en ;
+                                       <http://purl.org/dc/terms/description> "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en ;
+                                       <http://purl.org/dc/terms/issued> "1999-07-02"^^xsd:date ;
+                                       <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en ;
+                                       <http://purl.org/dc/terms/modified> "2008-01-14"^^xsd:date .
+
+
+<http://www.opengis.net/ont/geosparql#Feature> rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ;
+                                               rdfs:label "Feature" ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+                                               <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                               rdfs:comment """
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    """@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    """@en ;
+                                               <http://purl.org/dc/elements/1.1/description> """
+      This class represents the top-level feature type. This class is
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is
+      superclass of all feature types.
+    """@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature"@en ;
+                                               rdfs:label "Feature"@en ;
+                                               rdfs:comment "Representation of a geospatial feature"@en ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                               <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" .
+
+
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ,
+                                                                      <http://www.opengis.net/spec/geosparql/1.0> ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> """
+      The class spatial-object represents everything that can have
+      a spatial representation. It is superclass of feature and geometry.
+    """@en ;
+                                                     <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry" ;
+                                                     <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group" ;
+                                                     rdfs:label "SpatialObject" ;
+                                                     <http://purl.org/dc/elements/1.1/description> """
+      The class spatial-object represents everything that can have
+      a spatial representation. It is superclass of feature and geometry.
+    """@en ;
+                                                     <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date ;
+                                                     rdfs:comment "Representation of a SpatialObject"@en ;
+                                                     rdfs:label "Spatial Object"@en ;
+                                                     rdfs:comment """
+      The class spatial-object represents everything that can have
+      a spatial representation. It is superclass of feature and geometry.
+    """@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "SpatialObject"@en ;
+                                                     rdfs:label "SpatialObject"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
