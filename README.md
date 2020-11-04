@@ -498,7 +498,7 @@ Planned further implementations:
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports vector? | Stable?  |
 |---|---|---|---|---|---|---|
-| [geo2:ST_rasterIntersection](http://www.opengis.net/ont/geosparqlplus#st_rasterIntersection) (geo2:Raster rast, geo2:Raster rast2)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a new resized raster. | Attribute  | No  | Yes  | Yes  |
+| [geo2:ST_rasterIntersection](http://www.opengis.net/ont/geosparqlplus#st_rasterIntersection) (geo2:Raster rast, geo2:Raster rast2)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns a new resized raster. | Attribute  | No  | Yes  | Yes  |
 </details>
 
 #### Raster Transformation Functions
@@ -508,9 +508,9 @@ Planned further implementations:
 
 | Function  | Return Value  | Description |  Type | In GeoSPARQL?  | Supports raster? | Stable?  |
 |---|---|---|---|---|---|---|
-| [geo2:ST_Rescale](http://www.opengis.net/ont/geosparqlplus#st_Rescale) (geo2:Raster rast, xsd:integer width, xsd:integer height)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a new rescaled raster. | Attribute  | No  | Yes  | No  |
-| [geo2:ST_Resize](http://www.opengis.net/ont/geosparqlplus#st_Resize) (geo2:Raster rast, xsd:integer width, xsd:integer height)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a new resized raster. | Attribute  | No  | Yes  | No  |
-| [geo2:ST_SRID](http://www.opengis.net/ont/geosparqlplus#st_SRID) (geo2:Raster rast, xsd:integer srid)  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | Returns a reprojected raster. | Attribute  | No  | Yes  | No  |
+| [geo2:ST_Rescale](http://www.opengis.net/ont/geosparqlplus#st_Rescale) (geo2:Raster rast, xsd:integer width, xsd:integer height)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns a new rescaled raster. | Attribute  | No  | Yes  | No  |
+| [geo2:ST_Resize](http://www.opengis.net/ont/geosparqlplus#st_Resize) (geo2:Raster rast, xsd:integer width, xsd:integer height)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns a new resized raster. | Attribute  | No  | Yes  | No  |
+| [geo2:ST_SRID](http://www.opengis.net/ont/geosparqlplus#st_SRID) (geo2:Raster rast, xsd:integer srid)  | [geo2:Raster](http://www.opengis.net/ont/geosparqlplus#Raster) | Returns a reprojected raster. | Attribute  | No  | Yes  | No  |
 </details>
 
 ### Topology support
@@ -583,5 +583,10 @@ The GeoSPARQL ontology has been extended to include support for Coverage represe
 
 ### Ontology of functions
 
+An ontology of the planned functions with given URIs has been uploaded to this repository as functions.ttl.
+The ontology will be appended when the implementation matures and new requirements are considered.
+The ontology of functions may serve as a template for future standardizations or implementations.
+
 ### Ontology for modelling geospatial data
+
 
