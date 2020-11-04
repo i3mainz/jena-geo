@@ -17,6 +17,8 @@ Testbench at: http://www.i3mainz.de/projekte/semgis/postgis-jena
 
 The main contribution of this implementation is the provision of further geospatial processing functions which are available in comparable relational database implementations such as POSTGIS or Oracle Spatial but not yet in a Semantic Web implementation.
 Particular focus is given to highlight the compatibility of given functions with raster/coverage data representations.
+The status of the implementation is highlighted in the respective columns of the tables.
+Eventual goal is the implementation of most coverage/raster specific functions used in comparable non-semantic implementations.
 
 ### Spatial Aggregate Functions
 
@@ -239,6 +241,7 @@ Planned further implementations:
 | [geo2:ST_ShortestLine](http://www.opengis.net/ont/geosparqlplus#st_ShortestLine) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom, sf:Geometry geom2)  | [sf:LineString](http://www.opengis.net/ont/sf#LineString) | Returns the shortest line between two geometries. | Relation  | No  | Todo  | Yes  |
 | [geo2:ST_ShortestLine3D](http://www.opengis.net/ont/geosparqlplus#st_ShortestLine3D) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom, sf:Geometry geom2)  | [sf:LineString](http://www.opengis.net/ont/sf#LineString) | Returns the shortest line between two 3d geometries. | Relation  | No  | Todo  | No  |
 | [geo2:ST_Touches](http://www.opengis.net/ont/geosparqlplus#st_Touches) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the two geometries touch each other. | Relation  | No  | Yes  | Yes  |
+| [geo2:ST_Union](http://www.opengis.net/ont/geosparqlplus#st_Touches) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom, sf:Geometry geom2)  | [sf:Geometry](http://www.opengis.net/ont/sf#Geometry) | Returns the union of two geometries. | Relation  | No  | Yes  | Yes  |
 | [geo2:ST_Within](http://www.opengis.net/ont/geosparqlplus#st_Within) ([sf:Geometry](http://www.opengis.net/ont/sf#Geometry) geom, sf:Geometry geom2)  | [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) | Returns true if the first geometry is within the second geometry. | Relation  | No  | Yes  | Yes  |
 </details>
 
