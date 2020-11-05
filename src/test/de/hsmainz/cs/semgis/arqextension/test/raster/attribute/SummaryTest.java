@@ -1,6 +1,5 @@
 package de.hsmainz.cs.semgis.arqextension.test.raster.attribute;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.apache.jena.sparql.expr.NodeValue;
@@ -15,7 +14,7 @@ public class SummaryTest extends SampleRasters {
 	@Test
 	public void testSummary() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-		NodeValue covLiteral2 = NodeValue.makeNode(wkbString2, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral2 = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
 		Summary instance=new Summary();
         NodeValue expResult = NodeValue.makeString("");
         NodeValue result = instance.exec(covLiteral);

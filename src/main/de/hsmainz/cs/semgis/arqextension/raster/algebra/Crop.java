@@ -23,7 +23,6 @@ public class Crop extends FunctionBase5 {
 		Double y=v3.getDouble();
 		Double width=v4.getDouble();
 		Double height=v5.getDouble();
-	     Integer rd1 = 0, rd2 = 0;
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
 	     pbSubtracted.add(x.floatValue()); 

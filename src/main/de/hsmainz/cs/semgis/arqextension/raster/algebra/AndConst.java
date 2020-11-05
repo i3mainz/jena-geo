@@ -1,12 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBuffer;
-import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.math.BigInteger;
-import java.util.LinkedList;
-import java.util.List;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;

@@ -1,11 +1,6 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBuffer;
-import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
-import java.util.LinkedList;
-import java.util.List;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
@@ -14,7 +9,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.opengis.coverage.CannotEvaluateException;
 import org.opengis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
@@ -27,7 +21,6 @@ public class Div extends FunctionBase2  {
 		GridCoverage2D raster=wrapper.getXYGeometry();
 		CoverageWrapper wrapper2=CoverageWrapper.extract(v2);
 		GridCoverage2D raster2=wrapper2.getXYGeometry();
-	     Integer rd1 = 0, rd2 = 0;
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
 	     pbSubtracted.addSource(raster2.getRenderedImage()); 

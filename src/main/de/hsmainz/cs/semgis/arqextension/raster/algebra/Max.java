@@ -21,7 +21,6 @@ public class Max extends FunctionBase2 {
 		GridCoverage2D raster=wrapper.getXYGeometry();
 		CoverageWrapper wrapper2=CoverageWrapper.extract(v2);
 		GridCoverage2D raster2=wrapper2.getXYGeometry();
-	     Integer rd1 = 0, rd2 = 0;
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
 	     pbSubtracted.addSource(raster2.getRenderedImage()); 

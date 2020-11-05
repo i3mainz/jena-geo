@@ -10,9 +10,10 @@ import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Coordinate;
 
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.Boundary;
+import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 
-public class BoundaryTest {
+public class BoundaryTest extends SampleRasters {
 
 	public static final String testPolygon="POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))";
 	
@@ -30,5 +31,14 @@ public class BoundaryTest {
         System.out.println(result);
         assertEquals(expResult, result);
 	}
+	
+	/*@Test
+	public void testBoundaryRaster() {
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		Boundary instance=new Boundary();
+        NodeValue expResult = NodeValue.makeDouble(4);
+        NodeValue result = instance.exec(covLiteral);
+        assertEquals(expResult, result);
+	}*/
 	
 }

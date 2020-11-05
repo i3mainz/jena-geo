@@ -1,12 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBuffer;
-import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.math.BigInteger;
-import java.util.LinkedList;
-import java.util.List;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
@@ -15,7 +10,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.opengis.coverage.CannotEvaluateException;
 import org.opengis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;

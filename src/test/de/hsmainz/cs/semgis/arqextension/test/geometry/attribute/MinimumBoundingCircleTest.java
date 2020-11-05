@@ -6,9 +6,12 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.MinimumBoundingCircle;
+import de.hsmainz.cs.semgis.arqextension.geometry.relation.DistanceSphere;
+import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
-public class MinimumBoundingCircleTest {
+public class MinimumBoundingCircleTest extends SampleRasters {
 
 	public static final String testPolygon="POLYGON((26426 65078,26531 65242,26075 65136,26096 65427,26426 65078))";
 	

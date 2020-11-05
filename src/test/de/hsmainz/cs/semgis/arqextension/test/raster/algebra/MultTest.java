@@ -1,6 +1,5 @@
 package de.hsmainz.cs.semgis.arqextension.test.raster.algebra;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.apache.jena.sparql.expr.NodeValue;

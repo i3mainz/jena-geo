@@ -1,7 +1,6 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
 import java.awt.image.renderable.ParameterBlock;
-import java.math.BigInteger;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
@@ -20,7 +19,6 @@ public class IDCT extends FunctionBase2  {
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage2D raster=wrapper.getXYGeometry();
-		BigInteger bandnum=v2.getInteger();
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
 	     RenderedOp subtractedImage = JAI.create("idct",pbSubtracted);

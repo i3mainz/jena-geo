@@ -1,7 +1,6 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
 import java.awt.image.renderable.ParameterBlock;
-import java.math.BigInteger;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
@@ -20,7 +19,6 @@ public class Clamp extends FunctionBase4  {
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3,NodeValue v4) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage2D raster=wrapper.getXYGeometry();
-		BigInteger bandnum=v2.getInteger();
 		Double low=v3.getDouble();
 		Double high=v4.getDouble();
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 

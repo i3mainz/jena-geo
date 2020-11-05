@@ -18,7 +18,7 @@ public class ScaleTest {
 	public static final String testLineString="LINESTRING(1 2,1 10)";
 	
 	/*@Test
-	public void testReverse() {
+	public void testScale() {
         NodeValue geometryLiteral = NodeValue.makeNode(testLineString, WKTDatatype.INSTANCE);
         Scale instance=new Scale();
         NodeValue scale1=NodeValue.makeInteger(2);

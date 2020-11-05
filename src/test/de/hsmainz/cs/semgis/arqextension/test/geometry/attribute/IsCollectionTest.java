@@ -5,10 +5,13 @@ import static org.junit.Assert.assertEquals;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
+import de.hsmainz.cs.semgis.arqextension.geometry.attribute.Area;
 import de.hsmainz.cs.semgis.arqextension.geometry.attribute.IsCollection;
+import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
-public class IsCollectionTest {
+public class IsCollectionTest extends SampleRasters {
 	
 	@Test
 	public void testMultiPointIsCollection() {
@@ -75,5 +78,14 @@ public class IsCollectionTest {
         NodeValue result = instance.exec(geometryLiteral);
         assertEquals(expResult, result);
 	}	
+	
+	@Test
+	public void testRasterIsCollection() {
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		IsCollection instance=new IsCollection();
+        NodeValue expResult = NodeValue.FALSE;
+        NodeValue result = instance.exec(covLiteral);
+        assertEquals(expResult, result);
+	}
 
 }

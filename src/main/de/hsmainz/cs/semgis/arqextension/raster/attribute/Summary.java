@@ -15,12 +15,14 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
-
+import java.awt.geom.AffineTransform;
 import java.awt.image.RenderedImage;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.geotoolkit.coverage.grid.GridGeometry2D;
 import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.referencing.datum.PixelInCell;
 
 public class Summary extends FunctionBase1 {
 
@@ -32,8 +34,8 @@ public class Summary extends FunctionBase1 {
 		RenderedImage rendered;
 		try {
 			rendered = raster.getRenderedImage();
-        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + 
-        		"MINX/Y: ["+rendered.getMinX()+","+rendered.getMinY()+"] pixels has " 
+        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() +"\n MemSize: "+raster.getRenderedImage().getData().getDataBuffer().getSize()+ 
+        		"\nMINX/Y: ["+rendered.getMinX()+","+rendered.getMinY()+"] pixels has " 
         		+ raster.getSampleDimensions().length + " bands\n and extent of " +raster.getEnvelope().toString()
         		+"\n and grid geometry of "+ raster.getGridGeometry() + System.lineSeparator());
         builder.append("SampleModel: "+rendered.getSampleModel()+"\n");
@@ -43,16 +45,20 @@ public class Summary extends FunctionBase1 {
         builder.append("DataElements: "+rendered.getData().getNumDataElements()+"\n");
         builder.append("DataType: "+rendered.getData().getDataBuffer().getDataType()+"\n");
         builder.append("ColorModel: "+rendered.getColorModel()+"\n");
+		GridGeometry2D gridGeometry2D = raster.getGridGeometry();
+        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(PixelInCell.CELL_CENTER);
+        builder.append("Shear: ["+gridToWorld.getShearX()+"/"+gridToWorld.getShearY()+"] Scale: ["+gridToWorld.getScaleX()+"/"+gridToWorld.getScaleY()+"]\n");
+        builder.append("GridToWorld: ["+gridToWorld. getShearX()+"/"+gridToWorld.getShearY()+"] Scale: ["+gridToWorld.getScaleX()+"/"+gridToWorld.getScaleY()+"]\n");
         builder.append("PixelData: \n");
         for(int k=0;k<raster.getNumSampleDimensions();k++) {
+        	builder.append("Band "+k+"\n");
         	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
-        		System.out.print("| ");
+        		builder.append("| ");
         		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
-        			System.out.print(rendered.getData().getSample(i, j, k)+" | ");
+        			builder.append(rendered.getData().getSample(i, j, k)+" | ");
         		}
-        		System.out.println("\n");
+        		builder.append("\n");
         	}
-    		System.out.println("\n");
         }
         builder.append("CRS: "+raster.getGridGeometry().getCoordinateReferenceSystem().getName()+"\n");
         for (int i = 0; i < raster.getNumSampleDimensions(); i++) {
