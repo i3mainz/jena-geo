@@ -1,10 +1,17 @@
 var a03944 =
 [
-    [ "algebra", "a03943.html", "a03943" ],
-    [ "attribute", "a03945.html", "a03945" ],
-    [ "constructor", "a03946.html", "a03946" ],
-    [ "editor", "a03947.html", "a03947" ],
-    [ "exporter", "a03948.html", "a03948" ],
-    [ "relation", "a03949.html", "a03949" ],
-    [ "transform", "a03950.html", "a03950" ]
+    [ "CircularityIndexTest", "a08991.html", "a08991" ],
+    [ "CircumcentreTest", "a08995.html", "a08995" ],
+    [ "HasConnectedInteriorTest", "a08999.html", "a08999" ],
+    [ "HasDuplicateRingsTest", "a09003.html", "a09003" ],
+    [ "IsAcuteTest", "a09007.html", "a09007" ],
+    [ "IsConvexTest", "a09011.html", "a09011" ],
+    [ "IsIsocelesTriangleTest", "a09015.html", "a09015" ],
+    [ "IsPolygonCCWTest", "a09019.html", "a09019" ],
+    [ "IsPolygonCWTest", "a09023.html", "a09023" ],
+    [ "IsRightTriangleTest", "a09027.html", null ],
+    [ "IsScaleneTriangleTest", "a09031.html", "a09031" ],
+    [ "IsTriangleTest", "a09035.html", "a09035" ],
+    [ "NRingsTest", "a09039.html", "a09039" ],
+    [ "NumInteriorRingsTest", "a09043.html", null ]
 ];

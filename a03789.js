@@ -1,8 +1,8 @@
 var a03789 =
 [
-    [ "attribute", "a03788.html", "a03788" ],
-    [ "constructor", "a03790.html", "a03790" ],
-    [ "transform", "a03791.html", "a03791" ],
-    [ "Azimuth", "a05229.html", "a05229" ],
-    [ "GeometricMedian", "a05265.html", "a05265" ]
+    [ "AddPoint", "a05083.html", "a05083" ],
+    [ "RemovePoint", "a05087.html", "a05087" ],
+    [ "SetEndPoint", "a05091.html", "a05091" ],
+    [ "SetPoint", "a05095.html", "a05095" ],
+    [ "SetStartPoint", "a05099.html", "a05099" ]
 ];

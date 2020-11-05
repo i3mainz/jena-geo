@@ -1,5 +1,6 @@
 var a03835 =
 [
-    [ "wkb", "a03837.html", "a03837" ],
-    [ "SampleDimensionType", "a06669.html", "a06669" ]
+    [ "coverage", "a03836.html", "a03836" ],
+    [ "image", "a03837.html", "a03837" ],
+    [ "internal", "a03839.html", "a03839" ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TWKBUtils.java File Reference</title>
+<title>jena-geo: TWKBReader.java File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,19 +64,25 @@ $(document).ready(function(){initNavTree('a02834.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Packages</a>  </div>
   <div class="headertitle">
-<div class="title">TWKBUtils.java File Reference</div>  </div>
+<div class="title">TWKBReader.java File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08277.html">TWKBUtils</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08271.html">TWKBReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08275.html">TWKBReader.ByteBufferInputStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08279.html">TWKBReader.PrecisionReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08283.html">TWKBReader.ExtendedPrecisionReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Packages</h2></td></tr>
-<tr class="memitem:a03902"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03902.html">org.locationtech.geowave.core.geotime.util</a></td></tr>
-<tr class="memdesc:a03902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) 2013-2019 Contributors to the Eclipse Foundation. <br /></td></tr>
+<tr class="memitem:a03908"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03908.html">org.locationtech.geowave.core.geotime.util</a></td></tr>
+<tr class="memdesc:a03908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) 2013-2019 Contributors to the Eclipse Foundation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -85,7 +91,7 @@ Packages</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_4ffa44a23e876c21e71db98df8509873.html">org</a></li><li class="navelem"><a class="el" href="dir_bc8a96e7f48a928a34c39b2279d2d4ac.html">locationtech</a></li><li class="navelem"><a class="el" href="dir_9b38adb9c40e205ebf8d5dd488aca511.html">geowave</a></li><li class="navelem"><a class="el" href="dir_0e7bd6aaa455c06c93f375d982e94111.html">core</a></li><li class="navelem"><a class="el" href="dir_b79834db5f6a1a08adaa67efe5f25244.html">geotime</a></li><li class="navelem"><a class="el" href="dir_ae9da15040fe64385633d5901d3a40f9.html">util</a></li><li class="navelem"><a class="el" href="a02834.html">TWKBUtils.java</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_4ffa44a23e876c21e71db98df8509873.html">org</a></li><li class="navelem"><a class="el" href="dir_bc8a96e7f48a928a34c39b2279d2d4ac.html">locationtech</a></li><li class="navelem"><a class="el" href="dir_9b38adb9c40e205ebf8d5dd488aca511.html">geowave</a></li><li class="navelem"><a class="el" href="dir_0e7bd6aaa455c06c93f375d982e94111.html">core</a></li><li class="navelem"><a class="el" href="dir_b79834db5f6a1a08adaa67efe5f25244.html">geotime</a></li><li class="navelem"><a class="el" href="dir_ae9da15040fe64385633d5901d3a40f9.html">util</a></li><li class="navelem"><a class="el" href="a02834.html">TWKBReader.java</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,7 @@
 var a03875 =
 [
-    [ "Axes", "a07573.html", "a07573" ],
-    [ "PredefinedCS", "a07577.html", "a07577" ]
+    [ "FactoryMethod", "a07443.html", "a07443" ],
+    [ "MetadataFactory", "a07447.html", "a07447" ],
+    [ "MetadataUtilities", "a07451.html", "a07451" ],
+    [ "ValueRestriction", "a07455.html", "a07455" ]
 ];

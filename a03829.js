@@ -1,6 +1,6 @@
 var a03829 =
 [
-    [ "coverage", "a03830.html", "a03830" ],
-    [ "image", "a03831.html", "a03831" ],
-    [ "internal", "a03833.html", "a03833" ]
+    [ "TemporalRange", "a06539.html", "a06539" ],
+    [ "TemporalRangeDatatype", "a06543.html", "a06543" ],
+    [ "TemporalRangeWrapper", "a06547.html", "a06547" ]
 ];

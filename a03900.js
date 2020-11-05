@@ -1,4 +1,4 @@
 var a03900 =
 [
-    [ "LineSmoother", "a08257.html", "a08257" ]
+    [ "parameter", "a03899.html", "a03899" ]
 ];

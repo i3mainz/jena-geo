@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.geotoolkit.process</title>
+<title>jena-geo: Package org.geotoolkit.lang</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,79 +63,54 @@ $(document).ready(function(){initNavTree('a03872.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.geotoolkit.process</div>  </div>
+<div class="title">Package org.geotoolkit.lang</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Operation applied to some given data to achieve whatever analyze or model transformation.  
+<p>Annotations relative to Java language patterns applied in the Geotk library.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07521.html">DismissProcessException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a  <a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} is dismissed.  <a href="a07521.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07347.html">Builder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class of all classes that are builder for other objects.  <a href="a07347.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07525.html">Monitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Class passed to time consuming processes to provide cancellation support.  <a href="a07525.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07351.html">Configuration</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annotates methods having a system-wide impact on the configuration of the Geotk library.  <a href="a07351.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07529.html">Process</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An operation applied to some given data to achieve whatever analyze or model transformation.  <a href="a07529.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07355.html">Debug</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annotates classes or methods that are provided mostly for debugging purpose.  <a href="a07355.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07533.html">ProcessDescriptor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of a  <a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} algorithm and its input/output parameters.  <a href="a07533.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html">Decorator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annotates classes that are decorator around an other instance of the same type.  <a href="a07359.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07537.html">ProcessEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event sent by a running  <a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} to its  <a class="el" href="a07553.html" title="Receives general indications of  Process process} progress and events indicating start, completion or failure. ">ProcessListener</a> listeners}.  <a href="a07537.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07363.html">Setup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A central place where to perform initialization and shutdown of all Geotk services.  <a href="a07363.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07541.html">ProcessException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a  <a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} failed.  <a href="a07541.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07367.html">Static</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent of classes that contain only static utility methods.  <a href="a07367.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07545.html">ProcessFinder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to find <a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> factories and descriptors.  <a href="a07545.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07371.html">SystemOverride</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marker interface for &lt;cite&gt;Service Providers&lt;/cite&gt; that may override a JDK service, or a service provided by a standard extension.  <a href="a07371.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07549.html">ProcessingRegistry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of <a class="el" href="a07533.html">ProcessDescriptor</a>s identified by name.  <a href="a07549.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07553.html">ProcessListener</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives general indications of  <a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} progress and events indicating start, completion or failure.  <a href="a07553.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07557.html">ProgressController</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitors the progress of some lengthly operation, and allows cancellation.  <a href="a07557.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07561.html">RollbackableProcess</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend <a class="el" href="a07529.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07529.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions.  <a href="a07561.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07375.html">Workaround</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annotates classes, methods or code which exist only as a workaround for a bug or limitation in a library.  <a href="a07375.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Operation applied to some given data to achieve whatever analyze or model transformation. </p>
-<p>The interfaces are abstract enough to handle more than GIS data. Anything can be used here for whatever purpose that can be seen as a process. </p>
-<p>This package can be seen as an integration of ISO 19115 <a class="el" href="">org.opengis.metadata.lineage</a> package with the <a class="el" href="">java.util.concurrent</a> package, completed by the ISO 19111 <a class="el" href="">org.opengis.parameter</a> package. The integration is done as below: </p>
-<ul>
-<li>
-<a class="el" href="a07533.html">org.geotoolkit.process.ProcessDescriptor</a> extends the ISO 19115 <a class="el" href="">org.opengis.metadata.lineage.Processing</a> interface. </li>
-<li>
-<a class="el" href="a07529.html">org.geotoolkit.process.Process</a> extends the JDK <a class="el" href="">java.util.concurrent.Callable</a> interface, and thus can be given to an  java.util.concurrent.ExecutorService executor service} for execution in a background thread. </li>
-<li>
-<a class="el" href="a07529.html">org.geotoolkit.process.Process</a> input and output parameters are stored in ISO 19111 <a class="el" href="">org.opengis.parameter.ParameterValueGroup</a> objects. </li>
-</ul>
-<p>The following example creates a process for a task named</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;MyProcess&quot;</span> </div></div><!-- fragment --><p> (the available process names are implementation-dependent), sets a few parameters and launches the process with progress reports sent to the  java.io.Console console}:</p>
-<p>{ java ExecutorService executor = Executors.newFixedThreadPool(nThreads); <a class="el" href="a07549.html" title="A collection of ProcessDescriptors identified by name. ">ProcessingRegistry</a> registry = ...; // Implementation-dependent <a class="el" href="a07533.html" title="Description of a  Process process} algorithm and its input/output parameters. ">ProcessDescriptor</a> desc = registry.getDescriptor("MyProcess"); ParameterValueGroup param = desc.getInputDescriptor().createValue(); param.parameter("someParam1").setValue(myValue1); param.parameter("someParam2").setValue(myValue2); // etc. for all other parameter values...</p>
-<p><a class="el" href="a07529.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process = desc.create(param); process.addListener(new ProgressPrinter()); Future&lt;ParameterValueGroup&gt; task = executor.submit(process); doSomeOtherTasksWhileTheProcessRunInBackground(); ParameterValueGroup output = task.get(); }</p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd>
-<dd>
-Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>org.opengis.metadata.lineage.Processing </dd>
-<dd>
-java.util.concurrent.ExecutorService</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
+<div class="textblock"><p>Annotations relative to Java language patterns applied in the Geotk library. </p>
+<p>Those annotations are used mostly for documentation purpose. For example a click on the "Use" javadoc link of <a class="el" href="a07351.html">org.geotoolkit.lang.Configuration</a> gives the list of all static methods having a system-wide effect on the Geotk library. </p>
+<p>The javadoc of the <a class="el" href="a07367.html">org.geotoolkit.lang.Static</a> annotation provides a summary of their "&lt;cite&gt;Use&lt;/cite&gt;" page content for convenience.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.15</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.00  </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03827.html">org</a></li><li class="navelem"><a class="el" href="a03836.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03872.html">process</a></li>
+    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03872.html">lang</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

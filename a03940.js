@@ -1,5 +1,6 @@
 var a03940 =
 [
-    [ "PolygonFromTextTest", "a09037.html", "a09037" ],
-    [ "PolygonFromWKBTest", "a09041.html", "a09041" ]
+    [ "BezierSmoothingTest", "a08899.html", "a08899" ],
+    [ "OffsetCurveTest", "a08903.html", "a08903" ],
+    [ "SegmentizeTest", "a08907.html", "a08907" ]
 ];

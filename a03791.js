@@ -1,4 +1,4 @@
 var a03791 =
 [
-    [ "ShearTransformation", "a05269.html", "a05269" ]
+    [ "LineCrossingDirection", "a05115.html", "a05115" ]
 ];

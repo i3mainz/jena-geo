@@ -1,14 +1,11 @@
 var a03872 =
 [
-    [ "DismissProcessException", "a07521.html", "a07521" ],
-    [ "Monitor", "a07525.html", "a07525" ],
-    [ "Process", "a07529.html", "a07529" ],
-    [ "ProcessDescriptor", "a07533.html", "a07533" ],
-    [ "ProcessEvent", "a07537.html", "a07537" ],
-    [ "ProcessException", "a07541.html", "a07541" ],
-    [ "ProcessFinder", "a07545.html", "a07545" ],
-    [ "ProcessingRegistry", "a07549.html", "a07549" ],
-    [ "ProcessListener", "a07553.html", "a07553" ],
-    [ "ProgressController", "a07557.html", "a07557" ],
-    [ "RollbackableProcess", "a07561.html", "a07561" ]
+    [ "Builder", "a07347.html", "a07347" ],
+    [ "Configuration", "a07351.html", null ],
+    [ "Debug", "a07355.html", null ],
+    [ "Decorator", "a07359.html", "a07359" ],
+    [ "Setup", "a07363.html", "a07363" ],
+    [ "Static", "a07367.html", "a07367" ],
+    [ "SystemOverride", "a07371.html", "a07371" ],
+    [ "Workaround", "a07375.html", "a07375" ]
 ];

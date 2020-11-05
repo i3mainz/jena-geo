@@ -1,13 +1,11 @@
 var a03929 =
 [
-    [ "EndPointTest", "a08805.html", "a08805" ],
-    [ "IsClosedTest", "a08809.html", "a08809" ],
-    [ "IsRingTest", "a08813.html", "a08813" ],
-    [ "IsValidTrajectoryTest", "a08817.html", "a08817" ],
-    [ "LengthToPointTest", "a08821.html", "a08821" ],
-    [ "LineSelfIntersectionPointTest", "a08825.html", "a08825" ],
-    [ "PointNTest", "a08829.html", "a08829" ],
-    [ "SelfIntersectionsTest", "a08833.html", "a08833" ],
-    [ "SharedPathsTest", "a08837.html", "a08837" ],
-    [ "StartPointTest", "a08841.html", "a08841" ]
+    [ "attribute", "a03928.html", "a03928" ],
+    [ "constructor", "a03930.html", "a03930" ],
+    [ "editor", "a03931.html", "a03931" ],
+    [ "exporter", "a03932.html", "a03932" ],
+    [ "relation", "a03933.html", "a03933" ],
+    [ "transform", "a03934.html", "a03934" ],
+    [ "PointsTest", "a08603.html", "a08603" ],
+    [ "ShortestLineTest", "a08695.html", "a08695" ]
 ];

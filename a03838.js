@@ -1,11 +1,14 @@
 var a03838 =
 [
-    [ "DoubleDimension2D", "a06709.html", "a06709" ],
-    [ "FloatDimension2D", "a06713.html", "a06713" ],
-    [ "InfiniteRectangle2D", "a06717.html", "a06717" ],
-    [ "ProjectedPathIterator", "a06721.html", "a06721" ],
-    [ "ProjectedShape", "a06725.html", "a06725" ],
-    [ "ShapeUtilities", "a06729.html", "a06729" ],
-    [ "TransformedShape", "a06733.html", "a06733" ],
-    [ "XRectangle2D", "a06737.html", "a06737" ]
+    [ "BandedSampleConverter", "a06615.html", "a06615" ],
+    [ "BufferedGridCoverage", "a06623.html", "a06623" ],
+    [ "ColorModelFactory", "a06627.html", "a06627" ],
+    [ "ColorModelPatch", "a06631.html", "a06631" ],
+    [ "ImageUtilities", "a06635.html", "a06635" ],
+    [ "MultiBandsIndexColorModel", "a06639.html", "a06639" ],
+    [ "RasterFactory", "a06643.html", "a06643" ],
+    [ "ScaledColorModel", "a06647.html", "a06647" ],
+    [ "ScaledColorSpace", "a06651.html", "a06651" ],
+    [ "TiledImage", "a06655.html", "a06655" ],
+    [ "TileOpExecutor", "a06659.html", "a06659" ]
 ];

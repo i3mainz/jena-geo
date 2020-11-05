@@ -1,8 +1,11 @@
 var a03783 =
 [
-    [ "AddPoint", "a05077.html", "a05077" ],
-    [ "RemovePoint", "a05081.html", "a05081" ],
-    [ "SetEndPoint", "a05085.html", "a05085" ],
-    [ "SetPoint", "a05089.html", "a05089" ],
-    [ "SetStartPoint", "a05093.html", "a05093" ]
+    [ "EPSGToSRID", "a04779.html", "a04779" ],
+    [ "SetSRID", "a04783.html", "a04783" ],
+    [ "SRIDGetAxis1Name", "a04787.html", "a04787" ],
+    [ "SRIDGetAxis1Orientation", "a04791.html", "a04791" ],
+    [ "SRIDGetAxis2Name", "a04795.html", "a04795" ],
+    [ "SRIDGetAxis2Orientation", "a04799.html", "a04799" ],
+    [ "SRIDHasFlippedAxis", "a04803.html", "a04803" ],
+    [ "SRIDToEPSG", "a04807.html", "a04807" ]
 ];

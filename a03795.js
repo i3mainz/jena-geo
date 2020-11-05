@@ -1,6 +1,8 @@
 var a03795 =
 [
-    [ "AddRing", "a05373.html", "a05373" ],
-    [ "RemoveRing", "a05377.html", "a05377" ],
-    [ "SetRing", "a05381.html", "a05381" ]
+    [ "attribute", "a03794.html", "a03794" ],
+    [ "constructor", "a03796.html", "a03796" ],
+    [ "transform", "a03797.html", "a03797" ],
+    [ "Azimuth", "a05235.html", "a05235" ],
+    [ "GeometricMedian", "a05271.html", "a05271" ]
 ];

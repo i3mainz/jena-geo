@@ -1,4 +1,4 @@
 var a03761 =
 [
-    [ "cs", "a03762.html", "a03762" ]
+    [ "SpatialClusteringComponent", "a04011.html", "a04011" ]
 ];

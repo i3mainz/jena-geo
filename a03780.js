@@ -1,16 +1,13 @@
 var a03780 =
 [
-    [ "EndPoint", "a05001.html", "a05001" ],
-    [ "IsClosed", "a05005.html", "a05005" ],
-    [ "IsNodingValid", "a05009.html", "a05009" ],
-    [ "IsRing", "a05013.html", "a05013" ],
-    [ "IsValidTrajectory", "a05017.html", "a05017" ],
-    [ "LengthToPoint", "a05021.html", "a05021" ],
-    [ "LineInterpolatePoint", "a05025.html", "a05025" ],
-    [ "LineInterpolatePoints", "a05029.html", "a05029" ],
-    [ "LineLength3D", "a05033.html", "a05033" ],
-    [ "LineSelfIntersectionPoint", "a05037.html", "a05037" ],
-    [ "SelfIntersections", "a05041.html", "a05041" ],
-    [ "SharedPaths", "a05045.html", "a05045" ],
-    [ "StartPoint", "a05049.html", "a05049" ]
+    [ "AddGeometry", "a04475.html", "a04475" ],
+    [ "AddMeasure", "a04479.html", "a04479" ],
+    [ "AddT", "a04483.html", "a04483" ],
+    [ "AddZ", "a04487.html", "a04487" ],
+    [ "EnsureClosed", "a04491.html", "a04491" ],
+    [ "MultiplyZ", "a04495.html", "a04495" ],
+    [ "RemoveGeometry", "a04499.html", "a04499" ],
+    [ "RemovePoints", "a04503.html", "a04503" ],
+    [ "RemoveRepeatedPoints", "a04507.html", "a04507" ],
+    [ "SetGeometry", "a04511.html", "a04511" ]
 ];

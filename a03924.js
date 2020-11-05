@@ -1,6 +1,6 @@
 var a03924 =
 [
-    [ "GeomFromGeoJSONTest", "a08497.html", "a08497" ],
-    [ "GeomFromTextTest", "a08501.html", "a08501" ],
-    [ "GeomFromWKBTest", "a08505.html", "a08505" ]
+    [ "Edge", "a08339.html", "a08339" ],
+    [ "Triangle", "a08343.html", "a08343" ],
+    [ "Vertex", "a08347.html", "a08347" ]
 ];

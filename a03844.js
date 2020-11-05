@@ -1,18 +1,11 @@
 var a03844 =
 [
-    [ "classification", "a03845.html", "a03845" ],
-    [ "color", "a03846.html", "a03846" ],
-    [ "internal", "a03847.html", "a03847" ],
-    [ "interpolation", "a03848.html", "a03848" ],
-    [ "io", "a03850.html", "a03850" ],
-    [ "jai", "a03851.html", "a03851" ],
-    [ "palette", "a03852.html", "a03852" ],
-    [ "relief", "a03853.html", "a03853" ],
-    [ "BufferedImages", "a06837.html", "a06837" ],
-    [ "DeferredPlanarImage", "a06849.html", "a06849" ],
-    [ "ImageDimension", "a06857.html", "a06857" ],
-    [ "RecolorRenderedImage", "a07081.html", "a07081" ],
-    [ "SampleModels", "a07089.html", "a07089" ],
-    [ "TransfertRectIter", "a07093.html", "a07093" ],
-    [ "WritableMemoryRenderedImage", "a07097.html", "a07097" ]
+    [ "DoubleDimension2D", "a06719.html", "a06719" ],
+    [ "FloatDimension2D", "a06723.html", "a06723" ],
+    [ "InfiniteRectangle2D", "a06727.html", "a06727" ],
+    [ "ProjectedPathIterator", "a06731.html", "a06731" ],
+    [ "ProjectedShape", "a06735.html", "a06735" ],
+    [ "ShapeUtilities", "a06739.html", "a06739" ],
+    [ "TransformedShape", "a06743.html", "a06743" ],
+    [ "XRectangle2D", "a06747.html", "a06747" ]
 ];

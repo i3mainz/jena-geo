@@ -1,13 +1,17 @@
 var a03774 =
 [
-    [ "AddGeometry", "a04469.html", "a04469" ],
-    [ "AddMeasure", "a04473.html", "a04473" ],
-    [ "AddT", "a04477.html", "a04477" ],
-    [ "AddZ", "a04481.html", "a04481" ],
-    [ "EnsureClosed", "a04485.html", "a04485" ],
-    [ "MultiplyZ", "a04489.html", "a04489" ],
-    [ "RemoveGeometry", "a04493.html", "a04493" ],
-    [ "RemovePoints", "a04497.html", "a04497" ],
-    [ "RemoveRepeatedPoints", "a04501.html", "a04501" ],
-    [ "SetGeometry", "a04505.html", "a04505" ]
+    [ "BBOXAbove", "a04159.html", "a04159" ],
+    [ "BBOXBelow", "a04163.html", "a04163" ],
+    [ "BBOXContains", "a04167.html", "a04167" ],
+    [ "BBOXDistance", "a04171.html", "a04171" ],
+    [ "BBOXEquals", "a04175.html", "a04175" ],
+    [ "BBOXFPIntersects", "a04179.html", "a04179" ],
+    [ "BBOXIntersects", "a04183.html", "a04183" ],
+    [ "BBOXIsContainedBy", "a04187.html", "a04187" ],
+    [ "BBOXLeftOf", "a04191.html", "a04191" ],
+    [ "BBOXOverlapsAbove", "a04195.html", "a04195" ],
+    [ "BBOXOverlapsBelow", "a04199.html", "a04199" ],
+    [ "BBOXOverlapsLeft", "a04203.html", "a04203" ],
+    [ "BBOXOverlapsRight", "a04207.html", "a04207" ],
+    [ "BBOXRightOf", "a04211.html", "a04211" ]
 ];

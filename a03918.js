@@ -1,6 +1,6 @@
 var a03918 =
 [
-    [ "Edge", "a08329.html", "a08329" ],
-    [ "Triangle", "a08333.html", "a08333" ],
-    [ "Vertex", "a08337.html", "a08337" ]
+    [ "LengthSubstring", "a08319.html", "a08319" ],
+    [ "LengthToPoint", "a08323.html", "a08323" ],
+    [ "LocatePoint", "a08327.html", "a08327" ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.geotoolkit.referencing.factory.wkt</title>
+<title>jena-geo: Package org.geotoolkit.process</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,59 +63,79 @@ $(document).ready(function(){initNavTree('a03878.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.geotoolkit.referencing.factory.wkt</div>  </div>
+<div class="title">Package org.geotoolkit.process</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>org.opengis.referencing.AuthorityFactory Authority factories} for <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> parsed from &lt;cite&gt;<a href="http://www.geoapi.org/snapshot/javadoc/org/opengis/referencing/doc-files/WKT.html">Well Known Text</a>&lt;/cite&gt; (WKT).  
+<p>Operation applied to some given data to achieve whatever analyze or model transformation.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07597.html">AuthorityFactoryProvider</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience class for creating <a class="el" href="">CRSAuthorityFactory</a> instances using custom <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> definitions.  <a href="a07597.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07531.html">DismissProcessException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a  <a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} is dismissed.  <a href="a07531.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07601.html">CachingPostgisFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides caching services for a <a class="el" href="a07605.html">DirectPostgisFactory</a>.  <a href="a07601.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07535.html">Monitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Class passed to time consuming processes to provide cancellation support.  <a href="a07535.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07605.html">DirectPostgisFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An authority factory creating <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> from the { <a class="el" href="a07605.html#a4204a85ad8abe82274f80cad85d6b646" title="The standard name of the table containing CRS definitions, which is {}. ">TABLE</a>} table in a spatial SQL database.  <a href="a07605.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07539.html">Process</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An operation applied to some given data to achieve whatever analyze or model transformation.  <a href="a07539.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07609.html">PropertyAuthorityFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> Authority Factory that manages object creation using a set of static strings from a  java.util.Properties property file}.  <a href="a07609.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07543.html">ProcessDescriptor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of a  <a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} algorithm and its input/output parameters.  <a href="a07543.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07613.html">SpatialRefSysMap</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="">java.util.Map</a> view over a.  <a href="a07613.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07547.html">ProcessEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event sent by a running  <a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} to its  <a class="el" href="a07563.html" title="Receives general indications of  Process process} progress and events indicating start, completion or failure. ">ProcessListener</a> listeners}.  <a href="a07547.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07617.html">WKTParsingAuthorityFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> Authority Factory that manages object creation by parsing &lt;cite&gt;Well Known Text&lt;/cite&gt; (WKT) strings.  <a href="a07617.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html">ProcessException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a  <a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} failed.  <a href="a07551.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07555.html">ProcessFinder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to find <a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> factories and descriptors.  <a href="a07555.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07559.html">ProcessingRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of <a class="el" href="a07543.html">ProcessDescriptor</a>s identified by name.  <a href="a07559.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07563.html">ProcessListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives general indications of  <a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} progress and events indicating start, completion or failure.  <a href="a07563.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07567.html">ProgressController</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitors the progress of some lengthly operation, and allows cancellation.  <a href="a07567.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07571.html">RollbackableProcess</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend <a class="el" href="a07539.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07539.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions.  <a href="a07571.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>org.opengis.referencing.AuthorityFactory Authority factories} for <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> parsed from &lt;cite&gt;<a href="http://www.geoapi.org/snapshot/javadoc/org/opengis/referencing/doc-files/WKT.html">Well Known Text</a>&lt;/cite&gt; (WKT). </p>
-<p>This package contains two main implementations: </p>
+<div class="textblock"><p>Operation applied to some given data to achieve whatever analyze or model transformation. </p>
+<p>The interfaces are abstract enough to handle more than GIS data. Anything can be used here for whatever purpose that can be seen as a process. </p>
+<p>This package can be seen as an integration of ISO 19115 <a class="el" href="">org.opengis.metadata.lineage</a> package with the <a class="el" href="">java.util.concurrent</a> package, completed by the ISO 19111 <a class="el" href="">org.opengis.parameter</a> package. The integration is done as below: </p>
 <ul>
 <li>
-<a class="el" href="a07609.html">org.geotoolkit.referencing.factory.wkt.PropertyAuthorityFactory</a> (and its <a class="el" href="a07589.html">org.geotoolkit.referencing.factory.epsg.PropertyEpsgFactory</a> specialization) for parsing <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> from a  java.util.Properties property file}. </li>
+<a class="el" href="a07543.html">org.geotoolkit.process.ProcessDescriptor</a> extends the ISO 19115 <a class="el" href="">org.opengis.metadata.lineage.Processing</a> interface. </li>
 <li>
-<a class="el" href="a07605.html">org.geotoolkit.referencing.factory.wkt.DirectPostgisFactory</a> for parsing <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> from the { <a class="el" href="a07605.html#a4204a85ad8abe82274f80cad85d6b646" title="The standard name of the table containing CRS definitions, which is {}. ">org.geotoolkit.referencing.factory.wkt.DirectPostgisFactory::TABLE</a>} table of a PostGIS database:. </li>
+<a class="el" href="a07539.html">org.geotoolkit.process.Process</a> extends the JDK <a class="el" href="">java.util.concurrent.Callable</a> interface, and thus can be given to an  java.util.concurrent.ExecutorService executor service} for execution in a background thread. </li>
+<li>
+<a class="el" href="a07539.html">org.geotoolkit.process.Process</a> input and output parameters are stored in ISO 19111 <a class="el" href="">org.opengis.parameter.ParameterValueGroup</a> objects. </li>
 </ul>
-<p>The public implementations provided in this package does not cache the <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> - each call to a </p><div class="fragment"><div class="line">createFoo </div></div><!-- fragment --><p> method will trig a new WKT parsing. In order to get implementations that cache the <a class="el" href="a07569.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>, the <a class="el" href="a07597.html">org.geotoolkit.referencing.factory.wkt.AuthorityFactoryProvider</a> convenience class can be used. </p>
-<p>By default, the classes defined in this package are <b>not</b> registered for use though the <a class="el" href="">org.geotoolkit.factory.FactoryFinder</a>. The only subclass automatically registered is <a class="el" href="a07589.html">org.geotoolkit.referencing.factory.epsg.PropertyEpsgFactory</a>, which is defined in another package. For all other classes, users shall either instantiate and use a class directly, or create a subclass and <a href="../../../factory/package-summary.html#package_description">register</a> it themselves.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd>
+<p>The following example creates a process for a task named</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;MyProcess&quot;</span> </div></div><!-- fragment --><p> (the available process names are implementation-dependent), sets a few parameters and launches the process with progress reports sent to the  java.io.Console console}:</p>
+<p>{ java ExecutorService executor = Executors.newFixedThreadPool(nThreads); <a class="el" href="a07559.html" title="A collection of ProcessDescriptors identified by name. ">ProcessingRegistry</a> registry = ...; // Implementation-dependent <a class="el" href="a07543.html" title="Description of a  Process process} algorithm and its input/output parameters. ">ProcessDescriptor</a> desc = registry.getDescriptor("MyProcess"); ParameterValueGroup param = desc.getInputDescriptor().createValue(); param.parameter("someParam1").setValue(myValue1); param.parameter("someParam2").setValue(myValue2); // etc. for all other parameter values...</p>
+<p><a class="el" href="a07539.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process = desc.create(param); process.addListener(new ProgressPrinter()); Future&lt;ParameterValueGroup&gt; task = executor.submit(process); doSomeOtherTasksWhileTheProcessRunInBackground(); ParameterValueGroup output = task.get(); }</p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd>
 <dd>
-Jody Garnett (Refractions) </dd>
+Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>org.opengis.metadata.lineage.Processing </dd>
 <dd>
-Rueben Schulz (UBC) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.10</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.10 (derived from 2.1)  </dd></dl>
+java.util.concurrent.ExecutorService</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03827.html">org</a></li><li class="navelem"><a class="el" href="a03836.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03874.html">referencing</a></li><li class="navelem"><a class="el" href="a03876.html">factory</a></li><li class="navelem"><a class="el" href="a03878.html">wkt</a></li>
+    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03878.html">process</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

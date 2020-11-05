@@ -1,4 +1,5 @@
 var a03897 =
 [
-    [ "VectorToRaster", "a08245.html", "a08245" ]
+    [ "LoggedFormat", "a08115.html", "a08115" ],
+    [ "LogProducer", "a08119.html", "a08119" ]
 ];

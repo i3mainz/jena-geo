@@ -1,22 +1,13 @@
 var a03887 =
 [
-    [ "CheckedArrayList", "a07933.html", "a07933" ],
-    [ "CheckedHashMap", "a07945.html", "a07945" ],
-    [ "CheckedHashSet", "a07961.html", "a07961" ],
-    [ "CloseableIterator", "a07969.html", "a07969" ],
-    [ "CollectionChangeEvent", "a07973.html", "a07973" ],
-    [ "CollectionChangeListener", "a07977.html", "a07977" ],
-    [ "DeferringIterator", "a07981.html", "a07981" ],
-    [ "DerivedSet", "a07985.html", "a07985" ],
-    [ "DisjointSet", "a07993.html", "a07993" ],
-    [ "LazyList", "a08001.html", "a08001" ],
-    [ "MapUtilities", "a08009.html", "a08009" ],
-    [ "NotifiedCheckedList", "a08013.html", "a08013" ],
-    [ "NotifiedCheckedSet", "a08017.html", "a08017" ],
-    [ "NotifiedCopyOnWriteArrayList", "a08021.html", "a08021" ],
-    [ "ProxyMap", "a08025.html", "a08025" ],
-    [ "SequenceIterator", "a08029.html", "a08029" ],
-    [ "SingletonIterator", "a08033.html", "a08033" ],
-    [ "UnSynchronizedCache", "a08037.html", "a08037" ],
-    [ "XCollections", "a08041.html", "a08041" ]
+    [ "Assertions", "a07663.html", "a07663" ],
+    [ "CassiniOrMercator", "a07667.html", "a07667" ],
+    [ "CassiniSoldner", "a07671.html", "a07671" ],
+    [ "EquatorialStereographic", "a07679.html", "a07679" ],
+    [ "Krovak", "a07687.html", "a07687" ],
+    [ "LambertAzimuthalEqualArea", "a07691.html", "a07691" ],
+    [ "NewZealandMapGrid", "a07699.html", "a07699" ],
+    [ "Orthographic", "a07703.html", "a07703" ],
+    [ "Stereographic", "a07707.html", "a07707" ],
+    [ "UnitaryProjection", "a07715.html", "a07715" ]
 ];

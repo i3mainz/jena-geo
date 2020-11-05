@@ -1,4 +1,5 @@
 var a03856 =
 [
-    [ "jai", "a03855.html", "a03855" ]
+    [ "large", "a03855.html", "a03855" ],
+    [ "WritableImageByteChannel", "a07003.html", "a07003" ]
 ];

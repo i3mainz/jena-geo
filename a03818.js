@@ -1,4 +1,4 @@
 var a03818 =
 [
-    [ "geosparql_jena", "a03819.html", "a03819" ]
+    [ "FrechetDistance", "a06407.html", "a06407" ]
 ];
