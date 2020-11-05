@@ -1,12 +1,17 @@
 var a06371 =
 [
-    [ "getCustomProperties", "a06371.html#a46e1c90f389e0c9c7dedb38ed0ac738c", null ],
-    [ "getCustomPropertiesCount", "a06371.html#acecc4464e8af22988095fa215d0b7527", null ],
-    [ "getCustomPropertiesList", "a06371.html#aa921547f0b051f8a746c228b52133b64", null ],
-    [ "getFeatures", "a06371.html#a112f21d809fb0efba928ce055d36e781", null ],
-    [ "getFeaturesCount", "a06371.html#a2fb7230e507bed1aefa7b6d690fd7af3", null ],
-    [ "getFeaturesList", "a06371.html#a5f9d9c8bc3ba09ee51560b12ea95b780", null ],
-    [ "getValues", "a06371.html#a999c3397cd2e72c4d092bc5d66e69223", null ],
-    [ "getValuesCount", "a06371.html#a46148c109fe82a4073ecc6b31765d7bd", null ],
-    [ "getValuesList", "a06371.html#aeb52649b56790043dab5e1edf21eb2ef", null ]
+    [ "getDimensions", "a06371.html#a7848bba733bb3811bb51f348ddd85c8f", null ],
+    [ "getFeature", "a06371.html#a8d79636ec56ff6de2e50881b94050107", null ],
+    [ "getFeatureCollection", "a06371.html#aafe5655e6e54105b9d207a72f6c30015", null ],
+    [ "getGeometry", "a06371.html#abd9fa8e99be0df253461ce5952bdd50e", null ],
+    [ "getKeys", "a06371.html#a137f2f15f3b2be06c207ad0279550c23", null ],
+    [ "getKeysBytes", "a06371.html#abe8759e42d23409195d807cf1d262635", null ],
+    [ "getKeysCount", "a06371.html#acd0315e9d9b5ad14a51b6737da34adb8", null ],
+    [ "getKeysList", "a06371.html#a8805d4dba0cde7590567f64df1c2a1bc", null ],
+    [ "getPrecision", "a06371.html#abc0c11d1d0f1e2b806933ad5e6d4aa49", null ],
+    [ "hasDimensions", "a06371.html#a810507d78b0112ad65433564aa10af91", null ],
+    [ "hasFeature", "a06371.html#a1318b632cfa505172e6c131eb8c684a8", null ],
+    [ "hasFeatureCollection", "a06371.html#ad363cf4f28df6755854cc8f0de4dc429", null ],
+    [ "hasGeometry", "a06371.html#a8f745f6640b995c468b64df4a95a2374", null ],
+    [ "hasPrecision", "a06371.html#ac19b1b6651b912365d1f98616f8c2ebd", null ]
 ];

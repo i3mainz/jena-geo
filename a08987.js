@@ -1,5 +1,5 @@
 var a08987 =
 [
-    [ "testPointFromWKB", "a08987.html#a9aed21a4e0ecbec04e059757d6c2dd24", null ],
-    [ "testPoint1", "a08987.html#ab20d196cb6e34afc2e9cff8074e43bfd", null ]
+    [ "testMinZ", "a08987.html#ad4ab49729c245a84edb5744801e95906", null ],
+    [ "testPoint", "a08987.html#af26f700ee129f846cac58735f6dcc380", null ]
 ];

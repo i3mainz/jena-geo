@@ -1,10 +1,11 @@
 var a06883 =
 [
-    [ "ComponentScaledColorModel", "a06883.html#a3fa629103f2b75b0468ae65888fbb27a", null ],
-    [ "createCompatibleSampleModel", "a06883.html#a4b7d2a5824fd29be6a15c6a476d59dd9", null ],
-    [ "getNumComponents", "a06883.html#a484826dae88bb9347a4557cf88bc79d1", null ],
-    [ "isCompatibleRaster", "a06883.html#a63719d6adf948ad4d65623ff27b63365", null ],
-    [ "isCompatibleSampleModel", "a06883.html#af2c6350dbe1b31def5bf276c645f66b0", null ],
-    [ "bits", "a06883.html#ad4474fb09c1fd574ca3556d637a1d692", null ],
-    [ "numbands", "a06883.html#ac1d7c6f79e45128009b670a1f2688ad2", null ]
+    [ "children", "a06883.html#a4dd652bce4d0314f36b5a526d4a18cdd", null ],
+    [ "getColumnClass", "a06883.html#ad40071f2d2e758afa7d5e3d44c8aeedc", null ],
+    [ "getColumnCount", "a06883.html#a1e370ba0703e162dbac6fa5cac8a2efc", null ],
+    [ "getUserObject", "a06883.html#a18ecb8d182a13d06a11322dcaf137806", null ],
+    [ "getValueAt", "a06883.html#ac57754bca9e79118f4c0151672c2a1fd", null ],
+    [ "isEditable", "a06883.html#a9492e6c26d8244f8d50fc833b89f8866", null ],
+    [ "setValueAt", "a06883.html#a0d2c5ca610da8d850dffb3729e5e5d77", null ],
+    [ "toString", "a06883.html#ad146fa8579a5f8a876c4688cc5a68520", null ]
 ];

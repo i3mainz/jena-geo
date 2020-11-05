@@ -1,13 +1,15 @@
 var a07439 =
 [
-    [ "XMath", "a07439.html#a7a21a0339f902d4f0db90459db6e4277", null ],
-    [ "adjacentForType", "a07439.html#a38ac8822d16d7e886b2b539ab95b4c81", null ],
-    [ "clamp", "a07439.html#ad81d0d93899ba51ad81498c90986983c", null ],
-    [ "clamp", "a07439.html#a48b09591d5d670ea5e2c28a8214a219c", null ],
-    [ "clamp", "a07439.html#aa336d4ba3f295d1a5bd003a1be3f4228", null ],
-    [ "clamp", "a07439.html#afae3226c97e69f3b464ab57ae49c2565", null ],
-    [ "clamp", "a07439.html#a8027555876921a37ce9481a26fe308f1", null ],
-    [ "clamp", "a07439.html#a478dba1fe0ccd47637aa4578ace7b02f", null ],
-    [ "clamp", "a07439.html#a3d978d5091f5ae9f00c35c8773f3a3d3", null ],
-    [ "clamp", "a07439.html#a1a19550710996389897c579b7a42ded5", null ]
+    [ "Histogram", "a07439.html#a875c02fff1ced0abe8b2c4b831c059f9", null ],
+    [ "getBucketRange", "a07439.html#a9ba40ca9d057d5e1ee47715192b605dd", null ],
+    [ "getBuckets", "a07439.html#a08476eb24918ab36e3ebd6b19ba413c2", null ],
+    [ "getBucketSize", "a07439.html#a15d930e1acc423ff7e70ee401237a704", null ],
+    [ "getEnd", "a07439.html#a9601985844def39b11f5b2499802e912", null ],
+    [ "getStart", "a07439.html#abd3ff887840ee0fefc50045ba427d058", null ],
+    [ "getSum", "a07439.html#a4bdc568d3b1f0e740369c4eebed900f3", null ],
+    [ "getValueAt", "a07439.html#a9f483d855ed0c4198b6b80004a17d7ee", null ],
+    [ "buckets", "a07439.html#a2d0d357e95a5b7f8d8b8419d1057a9e7", null ],
+    [ "end", "a07439.html#aa126a3b0a481f4e795840e89017ebd9d", null ],
+    [ "start", "a07439.html#a683d986cb9a27fad072ed1b33af21491", null ],
+    [ "sum", "a07439.html#ad21ee1949296449cb2806778a7fc94de", null ]
 ];

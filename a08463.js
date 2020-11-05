@@ -1,5 +1,6 @@
 var a08463 =
 [
-    [ "testMinimumClearanceLine", "a08463.html#a61877f78d0d415e1cd48f477474017e6", null ],
-    [ "testPolygon", "a08463.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testHasRepeatedPoints2", "a08463.html#a573715384a3d69a8e8c4722bc82c5e5e", null ],
+    [ "testGeometry", "a08463.html#abc3f514f005cba49e406658e2d3086eb", null ],
+    [ "testGeometry2", "a08463.html#af1173652e671b8f9051f8630b98c73fb", null ]
 ];

@@ -1,14 +1,22 @@
 var a08111 =
 [
-    [ "MultiDimensionMove", "a08111.html#a36bd4cbe1726e044a3e651a741e909d4", null ],
-    [ "areColinear", "a08111.html#afa97ec90b4514c51c9ac27b42d68b4d7", null ],
-    [ "characteristics", "a08111.html#a673dea3c18a0e22d79f1b634c037c73f", null ],
-    [ "estimateSize", "a08111.html#adc7dfb268a5eeda4d412d655163663fd", null ],
-    [ "tryAdvance", "a08111.html#af9292f4c10f19f790a29e9cdfa0e313f", null ],
-    [ "trySplit", "a08111.html#a59d451ed808fa8e7a0c0416239ed410f", null ],
-    [ "endPoint", "a08111.html#af00da1fe605ef44791d599ecf157ae85", null ],
-    [ "moveDirs", "a08111.html#ac8fa38f76c776ad7f18b41b805559f0e", null ],
-    [ "previousPoint", "a08111.html#a7d70170348f00449fb589eccac7d846f", null ],
-    [ "segmentVector", "a08111.html#ade7e33cda8dd7cd4e63d32d2eee1593c", null ],
-    [ "startPoint", "a08111.html#aa97caef1764972e992bc82428f880936", null ]
+    [ "DomUtilities", "a08111.html#ae04eaa0f49d9d763a76e0284c44d3014", null ],
+    [ "firstElement", "a08111.html#a5cf4279a5b4ded08009fc33acffd8978", null ],
+    [ "firstElement", "a08111.html#a065bb985adb013616db918c04cb7566f", null ],
+    [ "getListElements", "a08111.html#a8def3dfe539489b6fd2c7a6e65ff87e1", null ],
+    [ "getListElementsNonRecusive", "a08111.html#a37bdd8aae654bccc06ebf179133188f0", null ],
+    [ "getNodeByLocalName", "a08111.html#a4b0819e7e7c312bed11834cedea985b2", null ],
+    [ "prettyPrint", "a08111.html#a316a1a3cb5960e78f8207b141de2fc4f", null ],
+    [ "read", "a08111.html#ab96c74e321205305c08a5da2a76aa85d", null ],
+    [ "textAttributeValue", "a08111.html#a6c66cbefe8893fdc82ef86fee8f54e13", null ],
+    [ "textAttributeValue", "a08111.html#a770889a1e09e89a11b2c188a2b0c4fbb", null ],
+    [ "textAttributeValueSafe", "a08111.html#a2d4ca7302ee5054d7733ceb7d3cb0af3", null ],
+    [ "textAttributeValueSafe", "a08111.html#a797b34364681a4e28bbcebc6f393d953", null ],
+    [ "textValue", "a08111.html#a2de5536be2256ea75b616fa7d53c0dd6", null ],
+    [ "textValue", "a08111.html#a3714a9f68507b81c7caf9f67156bc57d", null ],
+    [ "textValueSafe", "a08111.html#a07487f63198b62268661efb40d7652d7", null ],
+    [ "textValueSafe", "a08111.html#a908680b691e641eb0925a170cef58762", null ],
+    [ "toInputStream", "a08111.html#ae81951bc1724ba6bb9ac728531274939", null ],
+    [ "toOutputStream", "a08111.html#a8d086363b07c1a250ef95f4fa0a09c75", null ],
+    [ "write", "a08111.html#a3ed2faacfe786af95cab753db127dc48", null ]
 ];

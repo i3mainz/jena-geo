@@ -1,9 +1,10 @@
 var a03816 =
 [
-    [ "Geo", "a06279.html", "a06279" ],
-    [ "Geof", "a06287.html", "a06287" ],
-    [ "GML", "a06295.html", "a06295" ],
-    [ "PostGISGeo", "a06303.html", "a06303" ],
-    [ "Units", "a06311.html", "a06311" ],
-    [ "WKT", "a06319.html", "a06319" ]
+    [ "BezierSmoothing", "a05143.html", "a05143" ],
+    [ "CurveToLine", "a05147.html", "a05147" ],
+    [ "LineMerge", "a05151.html", "a05151" ],
+    [ "LineSubstring", "a05155.html", "a05155" ],
+    [ "LineToCurve", "a05159.html", "a05159" ],
+    [ "OffsetCurve", "a05163.html", "a05163" ],
+    [ "Segmentize", "a05167.html", "a05167" ]
 ];

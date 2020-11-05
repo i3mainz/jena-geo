@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MaxMTest Class Reference</title>
+<title>jena-geo: RemovePointTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,28 +61,55 @@ $(document).ready(function(){initNavTree('a08919.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08916.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MaxMTest Class Reference</div>  </div>
+<div class="title">RemovePointTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for MaxMTest:</div>
+Collaboration diagram for RemovePointTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08917.png" border="0" usemap="#MaxMTest_coll__map" alt="Collaboration graph"/></div>
-<map name="MaxMTest_coll__map" id="MaxMTest_coll__map">
+<div class="center"><img src="a08917.png" border="0" usemap="#RemovePointTest_coll__map" alt="Collaboration graph"/></div>
+<map name="RemovePointTest_coll__map" id="RemovePointTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e9b64ff404fa9347af445dc61f510b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08919.html#a5e9b64ff404fa9347af445dc61f510b7">testRemovePoint</a> ()</td></tr>
+<tr class="separator:a5e9b64ff404fa9347af445dc61f510b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af26f700ee129f846cac58735f6dcc380"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08919.html#af26f700ee129f846cac58735f6dcc380">testPoint</a> =&quot;LINESTRING <a class="el" href="a05167.html">M</a>(1 2 3, 4 5 6,7 8 9)&quot;</td></tr>
-<tr class="separator:af26f700ee129f846cac58735f6dcc380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e109dc83d6f4d16fcd2fa3e73054f6"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08919.html#a76e109dc83d6f4d16fcd2fa3e73054f6">lineString</a> =&quot;LINESTRING <a class="el" href="a05243.html">Z</a>(0 0 1, 1 1 1,2 2 1)&quot;</td></tr>
+<tr class="separator:a76e109dc83d6f4d16fcd2fa3e73054f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5e9b64ff404fa9347af445dc61f510b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9b64ff404fa9347af445dc61f510b7">&#9670;&nbsp;</a></span>testRemovePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testRemovePoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05111.html#af5337fd861ad4940c5025973eef782d5">RemovePoint.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                      {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08919.html#a76e109dc83d6f4d16fcd2fa3e73054f6">lineString</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        RemovePoint instance=<span class="keyword">new</span> RemovePoint();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(0,0,1));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,1,1));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeInteger(1));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div><div class="ttc" id="a08919_html_a76e109dc83d6f4d16fcd2fa3e73054f6"><div class="ttname"><a href="a08919.html#a76e109dc83d6f4d16fcd2fa3e73054f6">de.hsmainz.cs.semgis.arqextension.test.linestring.editor.RemovePointTest.lineString</a></div><div class="ttdeci">static final String lineString</div><div class="ttdef"><b>Definition:</b> RemovePointTest.java:18</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af26f700ee129f846cac58735f6dcc380"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af26f700ee129f846cac58735f6dcc380">&#9670;&nbsp;</a></span>testPoint</h2>
+<a id="a76e109dc83d6f4d16fcd2fa3e73054f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e109dc83d6f4d16fcd2fa3e73054f6">&#9670;&nbsp;</a></span>lineString</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -91,7 +118,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testPoint =&quot;LINESTRING <a class="el" href="a05167.html">M</a>(1 2 3, 4 5 6,7 8 9)&quot;</td>
+          <td class="memname">final String lineString =&quot;LINESTRING <a class="el" href="a05243.html">Z</a>(0 0 1, 1 1 1,2 2 1)&quot;</td>
         </tr>
       </table>
   </td>
@@ -109,7 +136,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03942.html">point</a></li><li class="navelem"><a class="el" href="a03941.html">attribute</a></li><li class="navelem"><a class="el" href="a08919.html">MaxMTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03960.html">linestring</a></li><li class="navelem"><a class="el" href="a03962.html">editor</a></li><li class="navelem"><a class="el" href="a08919.html">RemovePointTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

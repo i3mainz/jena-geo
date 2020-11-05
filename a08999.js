@@ -1,5 +1,5 @@
 var a08999 =
 [
-    [ "duplicateRings", "a08999.html#a92f3ef00fc079a76b7f943d9ed6cec77", null ],
-    [ "nonduplicateRings", "a08999.html#a675a0b1b194538fc07fa716705f883a5", null ]
+    [ "testX", "a08999.html#a1e3155737e5f85b2951ee3c741495d07", null ],
+    [ "testPoint", "a08999.html#af26f700ee129f846cac58735f6dcc380", null ]
 ];

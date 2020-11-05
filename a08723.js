@@ -1,7 +1,6 @@
 var a08723 =
 [
-    [ "testForce3DM", "a08723.html#a809df5824b4a08713e4ce726cb369a8d", null ],
-    [ "testForce3DM2", "a08723.html#a1efd448688434012347e3bc8972acb49", null ],
-    [ "testPolygon", "a08723.html#a1e3187cbc25299380589200c398b3ffd", null ],
-    [ "testPolygon2", "a08723.html#a882729aec95621b4ad261714738ae3fd", null ]
+    [ "testRelateMatchFalse", "a08723.html#a16bf67312d8af3e076076fd8097969c5", null ],
+    [ "testRelateMatchTrue", "a08723.html#a47e32d919c84c1edd508a45d6c670e90", null ],
+    [ "notIsocelesTriangle", "a08723.html#a055d99fb63bcee37763ffcf4da9e0521", null ]
 ];

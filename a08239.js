@@ -1,7 +1,7 @@
 var a08239 =
 [
-    [ "getForVersion", "a08239.html#a18955088da9b5651481ef293ea239303", null ],
-    [ "getForVersion", "a08239.html#aaa39be55b20ab1639a30d717509b8aac", null ],
-    [ "getForVersion", "a08239.html#af1c29dd84f0ab1e04609b47dbfa172e7", null ],
-    [ "getHistory", "a08239.html#a4732e121fe00d99ef006ca0b0f760f45", null ]
+    [ "SphericalHarmonicVariables", "a08239.html#a1f7316871df55ad6f717444f3464d9da", null ],
+    [ "cos_mlambda", "a08239.html#ae05461cd9ceeab294f617f30b8c9cd6f", null ],
+    [ "RelativeRadiusPower", "a08239.html#abd31a3fa8fa12451a13998c29a0341ee", null ],
+    [ "sin_mlambda", "a08239.html#ac8c85c0a51bc10df18e2cdece0087aac", null ]
 ];

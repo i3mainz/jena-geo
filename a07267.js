@@ -1,23 +1,12 @@
 var a07267 =
 [
-    [ "Threads", "a07267.html#ade8e2f923ffede874cd7727309f719b6", null ],
-    [ "[static initializer]", "a07267.html#a2e87c5ede6b7235170d287cd2e254454", null ],
-    [ "[static initializer]", "a07267.html#a2e87c5ede6b7235170d287cd2e254454", null ],
-    [ "[static initializer]", "a07267.html#a2e87c5ede6b7235170d287cd2e254454", null ],
-    [ "createThreadFactory", "a07267.html#a4d7ebbfb53fab390d9a5ca952dfdd270", null ],
-    [ "executeDisposal", "a07267.html#a71d93baed04965242a6bb1593d1ae799", null ],
-    [ "executeWork", "a07267.html#a25aef932cc73e15ab1aa6f5f2e649245", null ],
-    [ "getNonDaemonThreads", "a07267.html#a1996dcc3d125d109226950244f10fb63", null ],
-    [ "newThread", "a07267.html#a68a7804afab93ee43711a110255a335b", null ],
-    [ "rejectedExecution", "a07267.html#a782b030077b906e18a7ae85f1f2b663f", null ],
-    [ "shutdown", "a07267.html#a4cfa1af04e925fc21518fe880df9e408", null ],
-    [ "submitWork", "a07267.html#a63ac33da3ee4f78bb80d193f6ec53873", null ],
-    [ "daemon", "a07267.html#a45171be3c057ca3022caba5722eb29da", null ],
-    [ "DISPOSAL_EXECUTOR", "a07267.html#ab9dbe6df442a8851e1e16ade09ad3c9b", null ],
-    [ "disposer", "a07267.html#a06a3d0b95fc83ae4cb90e14faab19ea0", null ],
-    [ "GEOTOOLKIT", "a07267.html#a09be853e1a4b39f830c63559abf5085a", null ],
-    [ "prefix", "a07267.html#ab9aa80baa8113e20a123650a1e9d9a29", null ],
-    [ "RESOURCE_DISPOSERS", "a07267.html#ad7bb5cbf762d36dcb626f75190076564", null ],
-    [ "WORK_EXECUTOR", "a07267.html#a8a2b40e22cb8ffd331113b10b32e1329", null ],
-    [ "WORKERS", "a07267.html#aa32aa73ef9b4953977547390973a9baa", null ]
+    [ "SimpleReferenceIdentifier", "a07267.html#af1684255d89b20c7cfad87cd985b1237", null ],
+    [ "getAuthority", "a07267.html#abf066cdcc6a48d5c268ea9d53efe4c51", null ],
+    [ "getCode", "a07267.html#a0b6fcb0936e5637d741ad4fb4c80025a", null ],
+    [ "getCodeSpace", "a07267.html#a925ef2fd17d7f10cc127e4338954b63d", null ],
+    [ "getDescription", "a07267.html#af3c6401e60184e7f37db2f3960324b61", null ],
+    [ "getVersion", "a07267.html#a12b5671e8920e8ce5c4457ea8d0d9fb2", null ],
+    [ "toString", "a07267.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "code", "a07267.html#a128af4a9baef51f3a0a241cdbf3a117f", null ],
+    [ "serialVersionUID", "a07267.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

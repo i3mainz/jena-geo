@@ -1,15 +1,11 @@
 var a06823 =
 [
-    [ "NamedTreeNode", "a06823.html#a27db1ab2c859735811111aae355b163a", null ],
-    [ "NamedTreeNode", "a06823.html#a2f07fde12697f290d3ede7f3305f5750", null ],
-    [ "NamedTreeNode", "a06823.html#ac511757934949fe953af7b2456c2c2ba", null ],
-    [ "children", "a06823.html#a4dd652bce4d0314f36b5a526d4a18cdd", null ],
-    [ "freeze", "a06823.html#a58280cb8842a7fcce03d1db1313cf9c3", null ],
-    [ "getLocale", "a06823.html#a362cdcad5fb74c2d67494d65e9dfd1f4", null ],
-    [ "getName", "a06823.html#ab91e441899668fc0233dba9a83846679", null ],
-    [ "getUserObject", "a06823.html#a18ecb8d182a13d06a11322dcaf137806", null ],
-    [ "setName", "a06823.html#a9bf49c4b19297212af6ec3aaa563950d", null ],
+    [ "IntegerKey", "a06823.html#a1736603752a942ceb2f33ab56ff79a0b", null ],
+    [ "getDefault", "a06823.html#a316c860faa966edce102d794a98e34fb", null ],
+    [ "getValueClass", "a06823.html#add5d743fc6fb18232910028591c19fb9", null ],
+    [ "isCompatibleValue", "a06823.html#a08faba5eee0f9415af2a22c1009291b2", null ],
     [ "toString", "a06823.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "name", "a06823.html#a127751a26f0075335622fb4e2475e05c", null ],
-    [ "serialVersionUID", "a06823.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "toValue", "a06823.html#a10862c3748c97473033c3919610a5111", null ],
+    [ "writeReplace", "a06823.html#a7e303c648cb2ce8982a0e8c685d4e3cc", null ],
+    [ "number", "a06823.html#a40d3d5af0801393f3e58e91185ee25fb", null ]
 ];

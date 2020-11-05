@@ -1,12 +1,16 @@
 var a08103 =
 [
-    [ "setIncludeStart", "a08103.html#a2367964120cdfa2839ba919123f513b2", null ],
-    [ "setParallel", "a08103.html#ac7f70b24f39ad15887472eaa1272c9bb", null ],
-    [ "setPolyline", "a08103.html#a7a7554e739473b789e07c6635d8b2558", null ],
-    [ "setPolyline", "a08103.html#a06de18d5544d8bd9096c4b9e716c8ba9", null ],
-    [ "setPolyline", "a08103.html#a0e47bd0027c9fa65621744ae4f98eddf", null ],
-    [ "stream", "a08103.html#a2d349f14626a156d4206ab99c6eaf685", null ],
-    [ "includeStart", "a08103.html#ad68197afed9880f3a7101165cbca848f", null ],
-    [ "parallel", "a08103.html#a0315a4dc5df2ff574b286cc18419263e", null ],
-    [ "polyline", "a08103.html#a75b4bb6de717188b0d009eb1cda3ea9c", null ]
+    [ "DateRange", "a08103.html#aa4c9ee3da9dafc70fe5bfdd40504cc81", null ],
+    [ "DateRange", "a08103.html#a1975cd86f3bcda5878033bc41a6a4b38", null ],
+    [ "DateRange", "a08103.html#a8f703de7bc844a579c2febd8241f8d72", null ],
+    [ "DateRange", "a08103.html#ac4e52d1e65fa55048fc65f25aca3dd9e", null ],
+    [ "cast", "a08103.html#a6bfce4f6f5b0e1e9f713320da77eecd9", null ],
+    [ "clone", "a08103.html#ad57a70e638b1bdfb0941635b1ee1495c", null ],
+    [ "getConverter", "a08103.html#aab7dc1fe769f5c3e2dd2113cca65e5b8", null ],
+    [ "getMaxValue", "a08103.html#a6b3f8efbe6378153b07a39421693a397", null ],
+    [ "getMinValue", "a08103.html#ab64abf0c6674ecd270cb7a735771da99", null ],
+    [ "intersect", "a08103.html#a370acd306a3e1ee02c8384ee54b540fc", null ],
+    [ "subtract", "a08103.html#a6f82c2a1527ddb96c85cad5e00585b9f", null ],
+    [ "union", "a08103.html#a02bb0451371c3c41b9aa7f504a974b4e", null ],
+    [ "serialVersionUID", "a08103.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

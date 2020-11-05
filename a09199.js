@@ -4,7 +4,7 @@ var a09199 =
     [ "displayRasterSummary", "a09199.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09199.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09199.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testSubtract", "a09199.html#a6765d065ca3c27a56dc817aef23a2e41", null ],
+    [ "testMedianFilter", "a09199.html#a9f4ef02befe23a0fe873ea91357060b5", null ],
     [ "combinedRasterLiteral", "a09199.html#a6efe8702be34a67e2bcbba55588c5b5f", null ],
     [ "covJSONString1", "a09199.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09199.html#a55fb5b5d665417265da09403128e396e", null ],

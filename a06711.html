@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: WKBRasterReader Class Reference</title>
+<title>jena-geo: TileOpExecutor.ReadWork&lt; A &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,86 +62,109 @@ $(document).ready(function(){initNavTree('a06711.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="a06708.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">WKBRasterReader Class Reference</div>  </div>
+<div class="title">TileOpExecutor.ReadWork&lt; A &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>WKB Raster Reader, used in postGIS 2 but can be used elsewhere.  
+<p><a class="el" href="a06707.html" title="Base class of workers which will read or write tiles. ">Worker</a> which will read tiles.  
  <a href="a06711.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for WKBRasterReader:</div>
+Inheritance diagram for TileOpExecutor.ReadWork&lt; A &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06709.png" border="0" usemap="#WKBRasterReader_coll__map" alt="Collaboration graph"/></div>
-<map name="WKBRasterReader_coll__map" id="WKBRasterReader_coll__map">
+<div class="center"><img src="a06710.png" border="0" usemap="#TileOpExecutor_8ReadWork_3_01A_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="TileOpExecutor_8ReadWork_3_01A_01_4_inherit__map" id="TileOpExecutor_8ReadWork_3_01A_01_4_inherit__map">
+<area shape="rect" id="node2" href="a06707.html" title="TileOpExecutor.Worker\l\&lt; RenderedImage, Raster, A \&gt;" alt="" coords="63,213,265,255"/>
+<area shape="rect" id="node3" href="a06707.html" title="Base class of workers which will read or write tiles. " alt="" coords="65,95,263,151"/>
+<area shape="rect" id="node4" href="a14299.html" title="Runnable" alt="" coords="5,5,83,32"/>
+<area shape="rect" id="node5" href="a13875.html" title="RenderedImage" alt="" coords="107,5,221,32"/>
+<area shape="rect" id="node6" href="a14135.html" title="Raster" alt="" coords="245,5,307,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for TileOpExecutor.ReadWork&lt; A &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06709.png" border="0" usemap="#TileOpExecutor_8ReadWork_3_01A_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="TileOpExecutor_8ReadWork_3_01A_01_4_coll__map" id="TileOpExecutor_8ReadWork_3_01A_01_4_coll__map">
+<area shape="rect" id="node2" href="a06707.html" title="TileOpExecutor.Worker\l\&lt; RenderedImage, Raster, A \&gt;" alt="" coords="1589,253,1792,294"/>
+<area shape="rect" id="node3" href="a06707.html" title="Base class of workers which will read or write tiles. " alt="" coords="1157,245,1356,301"/>
+<area shape="rect" id="node4" href="a14299.html" title="Runnable" alt="" coords="909,5,987,32"/>
+<area shape="rect" id="node9" href="a06703.html" title="Tile indices of the next tile to process in a multi&#45;threaded computation. " alt="" coords="467,253,689,294"/>
+<area shape="rect" id="node8" href="a06703.html" title="TileOpExecutor.Cursor\l\&lt; RI, A \&gt;" alt="" coords="871,253,1025,294"/>
+<area shape="rect" id="node17" href="a13875.html" title="RenderedImage" alt="" coords="214,445,329,472"/>
+<area shape="rect" id="node18" href="a14135.html" title="Raster" alt="" coords="917,524,979,551"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae793783ce299284ee201fd7c8313c1d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#ae793783ce299284ee201fd7c8313c1d6">WKBRasterReader</a> ()</td></tr>
-<tr class="separator:ae793783ce299284ee201fd7c8313c1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
-<tr class="memdesc:ad20897c5c8bd47f5d4005989bead0e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset values before new read call.  <a href="#ad20897c5c8bd47f5d4005989bead0e55">More...</a><br /></td></tr>
-<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef748f2853b5fa1a44ed7c589b2bb197"><td class="memItemLeft" align="right" valign="top">AffineTransform2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#aef748f2853b5fa1a44ed7c589b2bb197">getGridToCRS</a> ()</td></tr>
-<tr class="memdesc:aef748f2853b5fa1a44ed7c589b2bb197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Grid to CRS transform, can be called after read only.  <a href="#aef748f2853b5fa1a44ed7c589b2bb197">More...</a><br /></td></tr>
-<tr class="separator:aef748f2853b5fa1a44ed7c589b2bb197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade744464aeafe5c61497905c4bac4d95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#ade744464aeafe5c61497905c4bac4d95">getSRID</a> ()</td></tr>
-<tr class="memdesc:ade744464aeafe5c61497905c4bac4d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the postgis srid, can be called after read only.  <a href="#ade744464aeafe5c61497905c4bac4d95">More...</a><br /></td></tr>
-<tr class="separator:ade744464aeafe5c61497905c4bac4d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fe8abf761e9a17b671b3f8ca04ef37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a06583.html">GridCoverage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#aa9fe8abf761e9a17b671b3f8ca04ef37">readCoverage</a> (byte[] data, CRSAuthorityFactory authorityFactory)  throws IOException, NoSuchAuthorityCodeException, FactoryException</td></tr>
-<tr class="memdesc:aa9fe8abf761e9a17b671b3f8ca04ef37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse given byte[] and rebuild a GridCoverage2D.  <a href="#aa9fe8abf761e9a17b671b3f8ca04ef37">More...</a><br /></td></tr>
-<tr class="separator:aa9fe8abf761e9a17b671b3f8ca04ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a167d89e301db4c86565d6cbf8998b5fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a06583.html">GridCoverage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#a167d89e301db4c86565d6cbf8998b5fa">readCoverage</a> (final InputStream stream, CRSAuthorityFactory authorityFactory)  throws IOException, NoSuchAuthorityCodeException, FactoryException</td></tr>
-<tr class="memdesc:a167d89e301db4c86565d6cbf8998b5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse given InputStream and rebuild a GridCoverage2D.  <a href="#a167d89e301db4c86565d6cbf8998b5fa">More...</a><br /></td></tr>
-<tr class="separator:a167d89e301db4c86565d6cbf8998b5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14456bc52e7f626048f58646a17a9039"><td class="memItemLeft" align="right" valign="top">BufferedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#a14456bc52e7f626048f58646a17a9039">read</a> (byte[] data)  throws IOException</td></tr>
-<tr class="memdesc:a14456bc52e7f626048f58646a17a9039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse given byte[] and rebuild RenderedImage.  <a href="#a14456bc52e7f626048f58646a17a9039">More...</a><br /></td></tr>
-<tr class="separator:a14456bc52e7f626048f58646a17a9039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8d0b6608f158d1234999e80670eba0e"><td class="memItemLeft" align="right" valign="top">BufferedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#ab8d0b6608f158d1234999e80670eba0e">read</a> (final InputStream stream)  throws IOException</td></tr>
-<tr class="memdesc:ab8d0b6608f158d1234999e80670eba0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse given InputStream and rebuild RenderedImage.  <a href="#ab8d0b6608f158d1234999e80670eba0e">More...</a><br /></td></tr>
-<tr class="separator:ab8d0b6608f158d1234999e80670eba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c71443ed78646800cfa677fad85cacf"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a2c71443ed78646800cfa677fad85cacf">run</a> ()</td></tr>
+<tr class="memdesc:a2c71443ed78646800cfa677fad85cacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles.  <a href="#a2c71443ed78646800cfa677fad85cacf">More...</a><br /></td></tr>
+<tr class="separator:a2c71443ed78646800cfa677fad85cacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:afcfcdba92bf5faa9dfc8a1c7a652c7a9"><td class="memItemLeft" align="right" valign="top">static ColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#afcfcdba92bf5faa9dfc8a1c7a652c7a9">createGrayScaleColorModel</a> (int dataType, int nbBand, int visibleBand, double min, double max)</td></tr>
-<tr class="separator:afcfcdba92bf5faa9dfc8a1c7a652c7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">executeOnCurrentTile</a> ()</td></tr>
+<tr class="memdesc:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="a06707.html#a2c71443ed78646800cfa677fad85cacf">Worker#run()</a> for processing the tile at current indices.  <a href="#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">More...</a><br /></td></tr>
+<tr class="separator:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7074295224e2ade372af7fc4571cdc28"><td class="memItemLeft" align="right" valign="top">AffineTransform2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#a7074295224e2ade372af7fc4571cdc28">gridToCRS</a> = null</td></tr>
-<tr class="separator:a7074295224e2ade372af7fc4571cdc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5be5f62324d24835447fc98661e30b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">srid</a> = 0</td></tr>
-<tr class="separator:a7e5be5f62324d24835447fc98661e30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a06703.html">Cursor</a>&lt; RI, A &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a></td></tr>
+<tr class="memdesc:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator over the indices of the next tiles to fetch.  <a href="#a21cca1f9a7342fbd8caeaf4e519c896a">More...</a><br /></td></tr>
+<tr class="separator:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40590f55f82df430f8035df8dd4f03c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a40590f55f82df430f8035df8dd4f03c2">tx</a></td></tr>
+<tr class="memdesc:a40590f55f82df430f8035df8dd4f03c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices of the tile to fetch.  <a href="#a40590f55f82df430f8035df8dd4f03c2">More...</a><br /></td></tr>
+<tr class="separator:a40590f55f82df430f8035df8dd4f03c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbeac52d84508f2507ba8348aafab09"><td class="memItemLeft" align="right" valign="top">final BiConsumer&lt; A, ? super RT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a5fbeac52d84508f2507ba8348aafab09">processor</a></td></tr>
+<tr class="memdesc:a5fbeac52d84508f2507ba8348aafab09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>.  <a href="#a5fbeac52d84508f2507ba8348aafab09">More...</a><br /></td></tr>
+<tr class="separator:a5fbeac52d84508f2507ba8348aafab09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f9097774c75a5f0677b1abad167637"><td class="memItemLeft" align="right" valign="top">final A&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a></td></tr>
+<tr class="memdesc:ae6f9097774c75a5f0677b1abad167637"><td class="mdescLeft">&#160;</td><td class="mdescRight">A thread-local variable which is given to each invocation of the <a class="el" href="a06707.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.  <a href="#ae6f9097774c75a5f0677b1abad167637">More...</a><br /></td></tr>
+<tr class="separator:ae6f9097774c75a5f0677b1abad167637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a897d4e476be84070570b5b2fffbe355c"><td class="memItemLeft" align="right" valign="top">static&lt; A, R &gt; R&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#a897d4e476be84070570b5b2fffbe355c">execute</a> (final <a class="el" href="a06699.html">TileOpExecutor</a> <a class="el" href="a06699.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>, final RenderedImage source, final Collector&lt;? super Raster, A, R &gt; collector, final Consumer&lt; LogRecord &gt; errorHandler)</td></tr>
+<tr class="memdesc:a897d4e476be84070570b5b2fffbe355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="">executeOnReadable(RenderedImage, Collector, Consumer)</a>.  <a href="#a897d4e476be84070570b5b2fffbe355c">More...</a><br /></td></tr>
+<tr class="separator:a897d4e476be84070570b5b2fffbe355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:afdff4aa4324ad7460be67cf5007b5e86"><td class="memItemLeft" align="right" valign="top">static ImagingOpException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#afdff4aa4324ad7460be67cf5007b5e86">rethrowOrWrap</a> (final Throwable ex)</td></tr>
+<tr class="memdesc:afdff4aa4324ad7460be67cf5007b5e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given exception can be propagated as an error or unchecked exception, throws it.  <a href="#afdff4aa4324ad7460be67cf5007b5e86">More...</a><br /></td></tr>
+<tr class="separator:afdff4aa4324ad7460be67cf5007b5e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:a75f29260f9728325050cd039109732b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06707.html#a75f29260f9728325050cd039109732b7">ty</a></td></tr>
+<tr class="separator:a75f29260f9728325050cd039109732b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa2e91bc35e50ba9b0d5ed2731e1edb12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06711.html#aa2e91bc35e50ba9b0d5ed2731e1edb12">ReadWork</a> (final <a class="el" href="a06703.html">Cursor</a>&lt; RenderedImage, A &gt; <a class="el" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, final Collector&lt;? super Raster, A, ?&gt; collector)</td></tr>
+<tr class="memdesc:aa2e91bc35e50ba9b0d5ed2731e1edb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new worker for traversing the tiles identified by the given cursor.  <a href="#aa2e91bc35e50ba9b0d5ed2731e1edb12">More...</a><br /></td></tr>
+<tr class="separator:aa2e91bc35e50ba9b0d5ed2731e1edb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>WKB Raster Reader, used in postGIS 2 but can be used elsewhere. </p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+<div class="textblock"><p><a class="el" href="a06707.html" title="Base class of workers which will read or write tiles. ">Worker</a> which will read tiles. </p>
+<p>Exactly one</p><div class="fragment"><div class="line"><a class="code" href="a06711.html#aa2e91bc35e50ba9b0d5ed2731e1edb12">ReadWork</a> </div></div><!-- fragment --><p> instance is created for each thread which will perform the computation on <a class="el" href="">Raster</a> tiles. The same</p><div class="fragment"><div class="line"><a class="code" href="a06711.html#aa2e91bc35e50ba9b0d5ed2731e1edb12">ReadWork</a> </div></div><!-- fragment --><p> instance can process an arbitrary amount of tiles.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;A&gt;</td><td>type of the thread-local object (the accumulator) for holding intermediate results. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae793783ce299284ee201fd7c8313c1d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae793783ce299284ee201fd7c8313c1d6">&#9670;&nbsp;</a></span>WKBRasterReader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a06711.html">WKBRasterReader</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                            {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="afcfcdba92bf5faa9dfc8a1c7a652c7a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcfcdba92bf5faa9dfc8a1c7a652c7a9">&#9670;&nbsp;</a></span>createGrayScaleColorModel()</h2>
+<a id="aa2e91bc35e50ba9b0d5ed2731e1edb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e91bc35e50ba9b0d5ed2731e1edb12">&#9670;&nbsp;</a></span>ReadWork()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,34 +173,16 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static ColorModel createGrayScaleColorModel </td>
+          <td class="memname"><a class="el" href="a06711.html">ReadWork</a> </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dataType</em>, </td>
+          <td class="paramtype">final <a class="el" href="a06703.html">Cursor</a>&lt; RenderedImage, A &gt;&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nbBand</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>visibleBand</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
+          <td class="paramtype">final Collector&lt;? super Raster, A, ?&gt;&#160;</td>
+          <td class="paramname"><em>collector</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -187,258 +192,199 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a06711.html#ab8d0b6608f158d1234999e80670eba0e">WKBRasterReader.read()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                                                                                                           {</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keyword">final</span> ColorSpace colors = ColorModelFactory.createColorSpace(nbBand, visibleBand, min, max);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14099.html">ColorModel</a> cm = <span class="keyword">new</span> ComponentColorModel(colors, <span class="keyword">false</span>, <span class="keyword">false</span>, Transparency.OPAQUE, dataType);</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">return</span> cm;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div><div class="ttc" id="a14099_html"><div class="ttname"><a href="a14099.html">ColorModel</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aef748f2853b5fa1a44ed7c589b2bb197"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef748f2853b5fa1a44ed7c589b2bb197">&#9670;&nbsp;</a></span>getGridToCRS()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AffineTransform2D getGridToCRS </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Grid to CRS transform, can be called after read only. </p>
-<dl class="section return"><dt>Returns</dt><dd>AffineTransform2D </dd></dl>
-
-<p class="reference">References <a class="el" href="a06711.html#a7074295224e2ade372af7fc4571cdc28">WKBRasterReader.gridToCRS</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06711.html#a167d89e301db4c86565d6cbf8998b5fa">WKBRasterReader.readCoverage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                            {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06711.html#a7074295224e2ade372af7fc4571cdc28">gridToCRS</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div><div class="ttc" id="a06711_html_a7074295224e2ade372af7fc4571cdc28"><div class="ttname"><a href="a06711.html#a7074295224e2ade372af7fc4571cdc28">org.geotoolkit.coverage.wkb.WKBRasterReader.gridToCRS</a></div><div class="ttdeci">AffineTransform2D gridToCRS</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:55</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ade744464aeafe5c61497905c4bac4d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade744464aeafe5c61497905c4bac4d95">&#9670;&nbsp;</a></span>getSRID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getSRID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the postgis srid, can be called after read only. </p>
-<dl class="section return"><dt>Returns</dt><dd>int, postgid srid </dd></dl>
-
-<p class="reference">References <a class="el" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">WKBRasterReader.srid</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">srid</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div><div class="ttc" id="a06711_html_a7e5be5f62324d24835447fc98661e30b"><div class="ttname"><a href="a06711.html#a7e5be5f62324d24835447fc98661e30b">org.geotoolkit.coverage.wkb.WKBRasterReader.srid</a></div><div class="ttdeci">int srid</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:56</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a14456bc52e7f626048f58646a17a9039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14456bc52e7f626048f58646a17a9039">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BufferedImage read </td>
-          <td>(</td>
-          <td class="paramtype">byte []&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse given byte[] and rebuild RenderedImage. </p>
+<p>Creates a new worker for traversing the tiles identified by the given cursor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
+    <tr><td class="paramname">cursor</td><td>iterator over the indices of the tiles to fetch. </td></tr>
+    <tr><td class="paramname">collector</td><td>provides the process to execute on each tile. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IOException</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="a06691.html#abeafb3f0edabe91a895599d6c54ba6cb">WKBRasterImageReader.read()</a>, and <a class="el" href="a06711.html#a167d89e301db4c86565d6cbf8998b5fa">WKBRasterReader.readCoverage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                             {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">final</span> InputStream stream = <span class="keyword">new</span> ByteArrayInputStream(data);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06711.html#a14456bc52e7f626048f58646a17a9039">read</a>(stream);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div><div class="ttc" id="a06711_html_a14456bc52e7f626048f58646a17a9039"><div class="ttname"><a href="a06711.html#a14456bc52e7f626048f58646a17a9039">org.geotoolkit.coverage.wkb.WKBRasterReader.read</a></div><div class="ttdeci">BufferedImage read(byte[] data)</div><div class="ttdoc">Parse given byte[] and rebuild RenderedImage. </div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:127</div></div>
+<div class="fragment"><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                                                                                                                {</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            super(<a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, collector);</div><div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        }</div><div class="ttc" id="a06707_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab8d0b6608f158d1234999e80670eba0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8d0b6608f158d1234999e80670eba0e">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a897d4e476be84070570b5b2fffbe355c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897d4e476be84070570b5b2fffbe355c">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">BufferedImage read </td>
+          <td class="memname">static&lt;A,R&gt; R execute </td>
           <td>(</td>
-          <td class="paramtype">final InputStream&#160;</td>
-          <td class="paramname"><em>stream</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse given InputStream and rebuild RenderedImage. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IOException</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06711.html#afcfcdba92bf5faa9dfc8a1c7a652c7a9">WKBRasterReader.createGrayScaleColorModel()</a>, <a class="el" href="a06683.html#aa89021ea15a3c77e31d1721de9c6c867">WKBRasterBand.getDataBufferType()</a>, <a class="el" href="a06683.html#a9739b3f0eaf0030ab832faa9de7c1721">WKBRasterBand.getDatas()</a>, <a class="el" href="a06683.html#a99bd442ec14b48f79ef0d5e6d5241a30">WKBRasterBand.getNbBytePerPixel()</a>, <a class="el" href="a06683.html#af8b0f2c180767e8c45454f9fc32c4c33">WKBRasterBand.getPixelType()</a>, <a class="el" href="a06683.html#a5ac9288bc257ae1a5927f4650e3e0569">WKBRasterBand.isOffDatabase()</a>, <a class="el" href="a06683.html#a115e94e22c6cf71f065ecaece46eef5f">WKBRasterBand.setDatas()</a>, <a class="el" href="a06683.html#a3a6841dab2f0d8b3bcbaeae79142d018">WKBRasterBand.setHasNodata()</a>, <a class="el" href="a06683.html#a749a1b6621df866dcea4cf13fbef6a1e">WKBRasterBand.setIsNodata()</a>, <a class="el" href="a06683.html#ada30aaa70b3f117c1c60b0c07256d5d8">WKBRasterBand.setNoDataValue()</a>, <a class="el" href="a06683.html#a3a1a0ede44ab707bf7f993e30edf5416">WKBRasterBand.setOffDatabase()</a>, <a class="el" href="a06683.html#acd960d5d383cebd90a6950cc3485e5cf">WKBRasterBand.setPixelType()</a>, and <a class="el" href="a06683.html#ae9116612a946cfb3e07fd00a084c0d14">WKBRasterBand.setReserved()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                                                          {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">final</span> DataInput ds;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">boolean</span> littleEndian = stream.read() == 1;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">if</span>(littleEndian){</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="comment">//big endian</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            ds = <span class="keyword">new</span> LEDataInputStream(stream);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="comment">//little endian</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            ds = <span class="keyword">new</span> DataInputStream(stream);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> version = ds.readUnsignedShort();</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> nbBand = ds.readUnsignedShort();</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="comment">//grid to crs</span></div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> scaleX = ds.readDouble();</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> scaleY = ds.readDouble();</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> ipX = ds.readDouble();</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> ipY = ds.readDouble();</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> skewX = ds.readDouble();</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> skewY = ds.readDouble();</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="a06711.html#a7074295224e2ade372af7fc4571cdc28">gridToCRS</a> = <span class="keyword">new</span> AffineTransform2D(scaleX, skewY, skewX, scaleY, ipX, ipY);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">srid</a> = ds.readInt();</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> width = ds.readUnsignedShort();</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> height = ds.readUnsignedShort();</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span>(nbBand == 0){</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="comment">//possible for empty raster</span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">final</span> WKBRasterBand[] bands = <span class="keyword">new</span> WKBRasterBand[nbBand];</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;nbBand;i++){</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">final</span> WKBRasterBand band = <span class="keyword">new</span> WKBRasterBand();</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keyword">final</span> byte b = ds.readByte();</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            band.setPixelType(b &amp; BANDTYPE_PIXTYPE_MASK);</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            band.setOffDatabase( (b &amp; BANDTYPE_FLAG_OFFDB) != 0);</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            band.setHasNodata( (b &amp; BANDTYPE_FLAG_HASNODATA) != 0);</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            band.setIsNodata( (b &amp; BANDTYPE_FLAG_ISNODATA) != 0);</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            band.setReserved( (b &amp; BANDTYPE_FLAG_RESERVED3) != 0);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="comment">/* read nodata value */</span></div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">switch</span> (band.getPixelType()) {</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="keywordflow">case</span> PT_1BB:</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="keywordflow">case</span> PT_2BUI:</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">case</span> PT_4BUI:</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">case</span> PT_8BUI:</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    band.setNoDataValue(ds.readUnsignedByte());</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordflow">case</span> PT_8BSI:</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    band.setNoDataValue(ds.readByte());</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">case</span> PT_16BSI:</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    band.setNoDataValue(ds.readShort());</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="keywordflow">case</span> PT_16BUI:</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    band.setNoDataValue(ds.readUnsignedShort());</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keywordflow">case</span> PT_32BSI:</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    band.setNoDataValue(ds.readInt());</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="keywordflow">case</span> PT_32BUI:</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    band.setNoDataValue(ds.readInt() &amp; 0x00000000ffffffffL);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">case</span> PT_32BF:</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    band.setNoDataValue(ds.readFloat());</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">case</span> PT_64BF:</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    band.setNoDataValue(ds.readDouble());</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">default</span>:</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IOException(<span class="stringliteral">&quot;unknowned pixel type : &quot;</span>+band.getPixelType());</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            }</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordflow">if</span>(band.isOffDatabase()){</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> IOException(<span class="stringliteral">&quot;can not access data which are off database&quot;</span>);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="comment">//read values</span></div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span> nbBytePerPixel = band.getNbBytePerPixel();</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keyword">final</span> byte[] datas = <span class="keyword">new</span> byte[width*height*band.getNbBytePerPixel()];</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                ds.readFully(datas);</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <span class="keywordflow">if</span>(littleEndian &amp;&amp; nbBytePerPixel &gt; 1){</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    <span class="comment">//image databank expect values in big endian so we must flip bytes</span></div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    byte temp;</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;k&lt;datas.length;k+=nbBytePerPixel){</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> p=0,n=nbBytePerPixel/2; p&lt;n ;p++){</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                            <span class="keyword">final</span> <span class="keywordtype">int</span> index1 = k+p;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                            <span class="keyword">final</span> <span class="keywordtype">int</span> index2 = k+(nbBytePerPixel-p-1);</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                            temp = datas[index1];</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                            datas[index1] = datas[index2];</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                            datas[index2] = temp;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        }</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    }</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                }</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                band.setDatas(datas);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            }</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            bands[i] = band;</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">//we expect all bands to have the same type</span></div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> dataBufferType = bands[0].getDataBufferType();</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">//rebuild raster</span></div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keyword">final</span> WritableRaster raster;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordtype">double</span> min = Double.MAX_VALUE;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordtype">double</span> max = Double.MIN_VALUE;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">if</span>(dataBufferType == DataBuffer.TYPE_BYTE){</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="comment">//more efficient but only works for byte type bands</span></div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="comment">//check all band have the same sample model and rebuild data buffer</span></div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            Integer dataType = null;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keyword">final</span> byte[][] dataArray = <span class="keyword">new</span> byte[nbBand][0];</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span>[] bankIndices = <span class="keyword">new</span> <span class="keywordtype">int</span>[nbBand];</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span>[] bankOffsets = <span class="keyword">new</span> <span class="keywordtype">int</span>[nbBand];</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;bands.length;i++){</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <span class="keyword">final</span> WKBRasterBand band = bands[i];</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="keywordflow">if</span>(dataType == null){</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                    dataType = band.getDataBufferType();</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(dataType != band.getDataBufferType()){</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IOException(<span class="stringliteral">&quot;Band type differ, can not be mapped to java image.&quot;</span>);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                }</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                dataArray[i] = band.getDatas();</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                bankIndices[i] = i;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                bankOffsets[i] = 0;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            min = -100.0;</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            max = 100.0;</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="comment">//rebuild data buffer</span></div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keyword">final</span> DataBuffer db = <span class="keyword">new</span> DataBufferByte(dataArray, dataArray[0].length);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> scanlineStride = width;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            raster = RasterFactory.createBandedRaster(</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                    db, width, height, scanlineStride, bankIndices, bankOffsets, <span class="keyword">new</span> Point(0,0));</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            raster = RasterFactory.createBandedRaster(dataBufferType,width,height,nbBand,<span class="keyword">new</span> Point(0,0));</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;bands.length;i++){</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="keyword">final</span> byte[] datas = bands[i].getDatas();</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="keyword">final</span> DataInputStream dds = <span class="keyword">new</span> DataInputStream(<span class="keyword">new</span> ByteArrayInputStream(datas));</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y=0;y&lt;height;y++){</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x=0;x&lt;width;x++){</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        <span class="keywordflow">switch</span> (dataBufferType) {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                            <span class="keywordflow">case</span> DataBuffer.TYPE_SHORT:</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                <span class="keywordtype">short</span> d1 = dds.readShort();</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                raster.setSample(x, y, i, d1);</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                min = Math.min(min, (<span class="keywordtype">double</span>)d1);</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                max = Math.max(max, (<span class="keywordtype">double</span>)d1);</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                            <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT:</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                <span class="keywordtype">int</span> d2 = dds.readUnsignedShort();</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                raster.setSample(x, y, i, d2);</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                min = Math.min(min, (<span class="keywordtype">double</span>)d2);</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                max = Math.max(max, (<span class="keywordtype">double</span>)d2);</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                            <span class="keywordflow">case</span> DataBuffer.TYPE_INT:</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                <span class="keywordtype">int</span> d3 = dds.readInt();</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                raster.setSample(x, y, i, d3);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                min = Math.min(min, (<span class="keywordtype">double</span>)d3);</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                max = Math.max(max, (<span class="keywordtype">double</span>)d3);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                            <span class="keywordflow">case</span> DataBuffer.TYPE_FLOAT:</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                <span class="keywordtype">float</span> d4 = dds.readFloat();</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                raster.setSample(x, y, i, d4);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                min = Math.min(min, (<span class="keywordtype">double</span>)d4);</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                max = Math.max(max, (<span class="keywordtype">double</span>)d4);</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                            <span class="keywordflow">case</span> DataBuffer.TYPE_DOUBLE:</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                <span class="keywordtype">double</span> d5 = dds.readDouble();</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                raster.setSample(x, y, i, d5);</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                min = Math.min(min, d5);</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                                max = Math.max(max, d5);</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                            <span class="keywordflow">default</span>:</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14239.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;unknowned data buffer type : &quot;</span> + dataBufferType);</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                        }</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                    }</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                }</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            }</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        }</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">//rebuild image</span></div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keyword">final</span> SampleModel sm = raster.getSampleModel();</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="a14099.html">ColorModel</a> cm = PlanarImage.getDefaultColorModel(sm.getDataType(), raster.getNumBands());</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span>(cm==null){</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="comment">//fallback</span></div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            cm = <a class="code" href="a06711.html#afcfcdba92bf5faa9dfc8a1c7a652c7a9">createGrayScaleColorModel</a>(sm.getDataType(), raster.getNumBands(), 0, min, max);</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> BufferedImage(cm, raster, <span class="keyword">false</span>, null);</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div><div class="ttc" id="a14099_html"><div class="ttname"><a href="a14099.html">ColorModel</a></div></div>
-<div class="ttc" id="a06711_html_a7e5be5f62324d24835447fc98661e30b"><div class="ttname"><a href="a06711.html#a7e5be5f62324d24835447fc98661e30b">org.geotoolkit.coverage.wkb.WKBRasterReader.srid</a></div><div class="ttdeci">int srid</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:56</div></div>
-<div class="ttc" id="a06711_html_a7074295224e2ade372af7fc4571cdc28"><div class="ttname"><a href="a06711.html#a7074295224e2ade372af7fc4571cdc28">org.geotoolkit.coverage.wkb.WKBRasterReader.gridToCRS</a></div><div class="ttdeci">AffineTransform2D gridToCRS</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:55</div></div>
-<div class="ttc" id="a06711_html_afcfcdba92bf5faa9dfc8a1c7a652c7a9"><div class="ttname"><a href="a06711.html#afcfcdba92bf5faa9dfc8a1c7a652c7a9">org.geotoolkit.coverage.wkb.WKBRasterReader.createGrayScaleColorModel</a></div><div class="ttdeci">static ColorModel createGrayScaleColorModel(int dataType, int nbBand, int visibleBand, double min, double max)</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:337</div></div>
-<div class="ttc" id="a14239_html"><div class="ttname"><a href="a14239.html">IllegalArgumentException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa9fe8abf761e9a17b671b3f8ca04ef37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9fe8abf761e9a17b671b3f8ca04ef37">&#9670;&nbsp;</a></span>readCoverage() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a06583.html">GridCoverage</a> readCoverage </td>
-          <td>(</td>
-          <td class="paramtype">byte []&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">final <a class="el" href="a06699.html">TileOpExecutor</a>&#160;</td>
+          <td class="paramname"><em>executor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CRSAuthorityFactory&#160;</td>
-          <td class="paramname"><em>authorityFactory</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws IOException, NoSuchAuthorityCodeException, FactoryException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parse given byte[] and rebuild a GridCoverage2D. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IOException</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="a05775.html#ae7a3cbabcf0592c2705ee280a231189a">RastFromWKB.exec()</a>, <a class="el" href="a05771.html#ae7a3cbabcf0592c2705ee280a231189a">RastFromHexWKB.exec()</a>, <a class="el" href="a06519.html#a9e03c38c43e32b22335f9f098375960a">WKBRastDatatype.read()</a>, and <a class="el" href="a06511.html#a9e03c38c43e32b22335f9f098375960a">HexWKBRastDatatype.read()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                              {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">final</span> InputStream stream = <span class="keyword">new</span> ByteArrayInputStream(data);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06711.html#aa9fe8abf761e9a17b671b3f8ca04ef37">readCoverage</a>(stream,authorityFactory);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div><div class="ttc" id="a06711_html_aa9fe8abf761e9a17b671b3f8ca04ef37"><div class="ttname"><a href="a06711.html#aa9fe8abf761e9a17b671b3f8ca04ef37">org.geotoolkit.coverage.wkb.WKBRasterReader.readCoverage</a></div><div class="ttdeci">GridCoverage readCoverage(byte[] data, CRSAuthorityFactory authorityFactory)</div><div class="ttdoc">Parse given byte[] and rebuild a GridCoverage2D. </div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:92</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a167d89e301db4c86565d6cbf8998b5fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a167d89e301db4c86565d6cbf8998b5fa">&#9670;&nbsp;</a></span>readCoverage() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a06583.html">GridCoverage</a> readCoverage </td>
-          <td>(</td>
-          <td class="paramtype">final InputStream&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CRSAuthorityFactory&#160;</td>
-          <td class="paramname"><em>authorityFactory</em>&#160;</td>
+          <td class="paramtype">final Collector&lt;? super Raster, A, R &gt;&#160;</td>
+          <td class="paramname"><em>collector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Consumer&lt; LogRecord &gt;&#160;</td>
+          <td class="paramname"><em>errorHandler</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throws IOException, NoSuchAuthorityCodeException, FactoryException</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Parse given InputStream and rebuild a GridCoverage2D. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IOException</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Implementation of <a class="el" href="">executeOnReadable(RenderedImage, Collector, Consumer)</a>. </p>
+<p>See the Javadoc of that method for details. </p>
 
-<p class="reference">References <a class="el" href="a06711.html#aef748f2853b5fa1a44ed7c589b2bb197">WKBRasterReader.getGridToCRS()</a>, <a class="el" href="a06711.html#a14456bc52e7f626048f58646a17a9039">WKBRasterReader.read()</a>, and <a class="el" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">WKBRasterReader.srid</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                                              {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">final</span> BufferedImage image = <a class="code" href="a06711.html#a14456bc52e7f626048f58646a17a9039">read</a>(stream);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">final</span> GridCoverageBuilder gcb = <span class="keyword">new</span> GridCoverageBuilder();</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">final</span> String epsgCode = <span class="stringliteral">&quot;EPSG:&quot;</span>+<a class="code" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">srid</a>;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(authorityFactory != null){</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            gcb.setCoordinateReferenceSystem(authorityFactory.createCoordinateReferenceSystem(epsgCode));</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            gcb.setCoordinateReferenceSystem(CRS.forCode(epsgCode));</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        gcb.setGridToCRS((MathTransform)<a class="code" href="a06711.html#aef748f2853b5fa1a44ed7c589b2bb197">getGridToCRS</a>());</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        gcb.setRenderedImage(image);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> gcb.getGridCoverage2D();</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="ttc" id="a06711_html_aef748f2853b5fa1a44ed7c589b2bb197"><div class="ttname"><a href="a06711.html#aef748f2853b5fa1a44ed7c589b2bb197">org.geotoolkit.coverage.wkb.WKBRasterReader.getGridToCRS</a></div><div class="ttdeci">AffineTransform2D getGridToCRS()</div><div class="ttdoc">Get the Grid to CRS transform, can be called after read only. </div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:73</div></div>
-<div class="ttc" id="a06711_html_a7e5be5f62324d24835447fc98661e30b"><div class="ttname"><a href="a06711.html#a7e5be5f62324d24835447fc98661e30b">org.geotoolkit.coverage.wkb.WKBRasterReader.srid</a></div><div class="ttdeci">int srid</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:56</div></div>
-<div class="ttc" id="a06711_html_a14456bc52e7f626048f58646a17a9039"><div class="ttname"><a href="a06711.html#a14456bc52e7f626048f58646a17a9039">org.geotoolkit.coverage.wkb.WKBRasterReader.read</a></div><div class="ttdeci">BufferedImage read(byte[] data)</div><div class="ttdoc">Parse given byte[] and rebuild RenderedImage. </div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:127</div></div>
+<p class="reference">References <a class="el" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.cursor</a>, <a class="el" href="a06703.html#a47ec4c7e5b7646e4a71b82402c2c82d1">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;.getNumWorkers()</a>, and <a class="el" href="a06707.html#a2c71443ed78646800cfa677fad85cacf">TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;.run()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06699.html#a5ad42afc2f4e97e36da69fa67f814806">TileOpExecutor.executeOnReadable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        {</div><div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <span class="keyword">final</span> Cursor&lt;RenderedImage,A&gt; <a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a> = <a class="code" href="a06699.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>.new Cursor&lt;&gt;(source, collector, errorHandler == null);</div><div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            <span class="keyword">final</span> Future&lt;?&gt;[] workers = <span class="keyword">new</span> Future&lt;?&gt;[cursor.getNumWorkers()];</div><div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;workers.length; i++) {</div><div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                workers[i] = CommonExecutor.instance().submit(<span class="keyword">new</span> ReadWork&lt;&gt;(cursor, collector));</div><div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            }</div><div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            <span class="keyword">final</span> ReadWork&lt;A&gt; worker = <span class="keyword">new</span> ReadWork&lt;&gt;(<a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, collector);</div><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            worker.run();</div><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            <span class="keywordflow">return</span> cursor.finish(workers, collector, errorHandler);</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        }</div><div class="ttc" id="a06707_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
+<div class="ttc" id="a06699_html_a1b5cfc428f0c5e326d6775db1204844f"><div class="ttname"><a href="a06699.html#a1b5cfc428f0c5e326d6775db1204844f">org.apache.sis.internal.coverage.j2d.TileOpExecutor.executor</a></div><div class="ttdeci">static&lt; RT extends Raster &gt; Collector&lt; RT, Void, Void &gt; executor(final BiConsumer&lt; Void, RT &gt; action)</div><div class="ttdoc">Returns a collector to be used only as an executor: the accumulator is null and the combiner does not...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:323</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad20897c5c8bd47f5d4005989bead0e55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="ad8a8fbbda36a5abfd1f2ebe64e31b8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">&#9670;&nbsp;</a></span>executeOnCurrentTile()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void reset </td>
+          <td class="memname">void executeOnCurrentTile </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Reset values before new read call. </p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                       {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="a06711.html#a7074295224e2ade372af7fc4571cdc28">gridToCRS</a> = null;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="a06711.html#a7e5be5f62324d24835447fc98661e30b">srid</a> = 0;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div><div class="ttc" id="a06711_html_a7e5be5f62324d24835447fc98661e30b"><div class="ttname"><a href="a06711.html#a7e5be5f62324d24835447fc98661e30b">org.geotoolkit.coverage.wkb.WKBRasterReader.srid</a></div><div class="ttdeci">int srid</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:56</div></div>
-<div class="ttc" id="a06711_html_a7074295224e2ade372af7fc4571cdc28"><div class="ttname"><a href="a06711.html#a7074295224e2ade372af7fc4571cdc28">org.geotoolkit.coverage.wkb.WKBRasterReader.gridToCRS</a></div><div class="ttdeci">AffineTransform2D gridToCRS</div><div class="ttdef"><b>Definition:</b> WKBRasterReader.java:55</div></div>
+<p>Invoked by <a class="el" href="a06707.html#a2c71443ed78646800cfa677fad85cacf">Worker#run()</a> for processing the tile at current indices. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14207.html">RuntimeException</a></td><td>if any error occurred during the process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06707.html#ae6f9097774c75a5f0677b1abad167637">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.accumulator</a>, <a class="el" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.cursor</a>, <a class="el" href="a06703.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;.image</a>, <a class="el" href="a06707.html#a5fbeac52d84508f2507ba8348aafab09">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.processor</a>, <a class="el" href="a06707.html#a40590f55f82df430f8035df8dd4f03c2">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.tx</a>, and <a class="el" href="a06707.html#a75f29260f9728325050cd039109732b7">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.ty</a>.</p>
+<div class="fragment"><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                                              {</div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            <span class="keyword">final</span> Raster tile = <a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06703.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">image</a>.getTile(<a class="code" href="a06707.html#a40590f55f82df430f8035df8dd4f03c2">tx</a>, <a class="code" href="a06707.html#a75f29260f9728325050cd039109732b7">ty</a>);</div><div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            <a class="code" href="a06707.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.accept(<a class="code" href="a06707.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>, tile);</div><div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        }</div><div class="ttc" id="a06707_html_a5fbeac52d84508f2507ba8348aafab09"><div class="ttname"><a href="a06707.html#a5fbeac52d84508f2507ba8348aafab09">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::processor</a></div><div class="ttdeci">final BiConsumer&lt; A, ? super RT &gt; processor</div><div class="ttdoc">The process to execute on each Raster or WritableRaster. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:742</div></div>
+<div class="ttc" id="a06707_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06707.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
+<div class="ttc" id="a06707_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
+<div class="ttc" id="a06707_html_a75f29260f9728325050cd039109732b7"><div class="ttname"><a href="a06707.html#a75f29260f9728325050cd039109732b7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::ty</a></div><div class="ttdeci">int ty</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:735</div></div>
+<div class="ttc" id="a06703_html_a7b7fa7d49ecd1dd3eb37fccb17f981d5"><div class="ttname"><a href="a06703.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.image</a></div><div class="ttdeci">final RI image</div><div class="ttdoc">The image from which to read tiles or where to write tiles. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:492</div></div>
+<div class="ttc" id="a06707_html_a40590f55f82df430f8035df8dd4f03c2"><div class="ttname"><a href="a06707.html#a40590f55f82df430f8035df8dd4f03c2">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::tx</a></div><div class="ttdeci">int tx</div><div class="ttdoc">Indices of the tile to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:735</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afdff4aa4324ad7460be67cf5007b5e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdff4aa4324ad7460be67cf5007b5e86">&#9670;&nbsp;</a></span>rethrowOrWrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ImagingOpException rethrowOrWrap </td>
+          <td>(</td>
+          <td class="paramtype">final Throwable&#160;</td>
+          <td class="paramname"><em>ex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the given exception can be propagated as an error or unchecked exception, throws it. </p>
+<p>Otherwise wraps it in an <a class="el" href="">ImagingOpException</a> with intentionally no error message (for allowing <a class="el" href="a06699.html#a517f50b4efda6d919cbe263504257ffb">trimImagingWrapper(Throwable)</a> to recognize and unwrap it).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ex</td><td>the exception to propagate if possible. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the exception to throw if the given exception can not be propagated. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                                                                    {</div><div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            Throwable cause = ex.getCause();</div><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keywordflow">if</span> (cause instanceof <a class="code" href="a14207.html">RuntimeException</a>) {</div><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                <span class="keywordflow">throw</span> (RuntimeException) cause;</div><div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            }</div><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">if</span> (cause instanceof Error) {</div><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                <span class="keywordflow">throw</span> (Error) cause;</div><div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            }</div><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">             * May occur after call to `TileOpExecutor.readFrom(…)` or `TileOpExecutor.writeTo(…)`,</span></div><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">             * in which case that exception will be removed by `trimImagingWrapper(…)` method and</span></div><div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">             * replaced by another exception providing a more complete error message.</span></div><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">             *</span></div><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">             * Should not happen in other contexts because the other exception handlers where this</span></div><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">             * `rethrowOrWrap(…)` method is invoked expect (indirectly) only unchecked exceptions.</span></div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">return</span> (ImagingOpException) <span class="keyword">new</span> ImagingOpException(null).initCause(cause != null ? cause : ex);</div><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div><div class="ttc" id="a14207_html"><div class="ttname"><a href="a14207.html">RuntimeException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c71443ed78646800cfa677fad85cacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c71443ed78646800cfa677fad85cacf">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles. </p>
+<p>This method delegates to <a class="el" href="a06711.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">executeOnCurrentTile()</a> as long as there is tiles to process. Exceptions are handled (wrapped in a <a class="el" href="">LogRecord</a> or propagated). </p>
+
+<p class="reference">Referenced by <a class="el" href="a06711.html#a897d4e476be84070570b5b2fffbe355c">TileOpExecutor.ReadWork&lt; A &gt;::execute()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                                {</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06703.html#a311addae5779cead65ffaaad5824007c">next</a>(<span class="keyword">this</span>)) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                <a class="code" href="a06707.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile</a>();</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            } <span class="keywordflow">catch</span> (<a class="code" href="a14231.html">Exception</a> ex) {</div><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                <a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06703.html#aabf3c338904bae76660fd721a7492e85">recordError</a>(<span class="keyword">this</span>, trimImagingWrapper(ex));</div><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            }</div><div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <a class="code" href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06703.html#a4b14b31f07a7b5de8420315b985e05a7">accumulate</a>(<a class="code" href="a06707.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>);</div><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        }</div><div class="ttc" id="a06707_html_a460b7efed78d9e1a0d37ae409e52f229"><div class="ttname"><a href="a06707.html#a460b7efed78d9e1a0d37ae409e52f229">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::executeOnCurrentTile</a></div><div class="ttdeci">abstract void executeOnCurrentTile()</div><div class="ttdoc">Gets the tiles at the (tx, ty) indices and processes it. </div></div>
+<div class="ttc" id="a06707_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06707.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
+<div class="ttc" id="a06703_html_aabf3c338904bae76660fd721a7492e85"><div class="ttname"><a href="a06703.html#aabf3c338904bae76660fd721a7492e85">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.recordError</a></div><div class="ttdeci">final void recordError(final Worker&lt; RI,?, A &gt; indices, final Throwable ex)</div><div class="ttdoc">Stores the given exception in a log record. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:674</div></div>
+<div class="ttc" id="a06703_html_a4b14b31f07a7b5de8420315b985e05a7"><div class="ttname"><a href="a06703.html#a4b14b31f07a7b5de8420315b985e05a7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.accumulate</a></div><div class="ttdeci">final void accumulate(final A result)</div><div class="ttdoc">Invoked when a thread finished to process all its tiles for combining its result with the result of p...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:585</div></div>
+<div class="ttc" id="a06703_html_a311addae5779cead65ffaaad5824007c"><div class="ttname"><a href="a06703.html#a311addae5779cead65ffaaad5824007c">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.next</a></div><div class="ttdeci">final boolean next(final Worker&lt; RI,?, A &gt; indices)</div><div class="ttdoc">Sets the given worker to the indices of the next tile. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:569</div></div>
+<div class="ttc" id="a14231_html"><div class="ttname"><a href="a14231.html">Exception</a></div></div>
+<div class="ttc" id="a06707_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06707.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7074295224e2ade372af7fc4571cdc28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7074295224e2ade372af7fc4571cdc28">&#9670;&nbsp;</a></span>gridToCRS</h2>
+<a id="ae6f9097774c75a5f0677b1abad167637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f9097774c75a5f0677b1abad167637">&#9670;&nbsp;</a></span>accumulator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,22 +393,23 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AffineTransform2D gridToCRS = null</td>
+          <td class="memname">final A accumulator</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a06711.html#aef748f2853b5fa1a44ed7c589b2bb197">WKBRasterReader.getGridToCRS()</a>.</p>
+<p>A thread-local variable which is given to each invocation of the <a class="el" href="a06707.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>. </p>
+<p>Processor implementation can use this instance for storing or updating information. No synchronization is needed since this instance is not shared by other threads. This value may be</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if no such object is needed. </p>
 
 </div>
 </div>
-<a id="a7e5be5f62324d24835447fc98661e30b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e5be5f62324d24835447fc98661e30b">&#9670;&nbsp;</a></span>srid</h2>
+<a id="a21cca1f9a7342fbd8caeaf4e519c896a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21cca1f9a7342fbd8caeaf4e519c896a">&#9670;&nbsp;</a></span>cursor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,17 +418,90 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int srid = 0</td>
+          <td class="memname">final <a class="el" href="a06703.html">Cursor</a>&lt;RI,A&gt; cursor</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a06711.html#ade744464aeafe5c61497905c4bac4d95">WKBRasterReader.getSRID()</a>, and <a class="el" href="a06711.html#a167d89e301db4c86565d6cbf8998b5fa">WKBRasterReader.readCoverage()</a>.</p>
+<p>An iterator over the indices of the next tiles to fetch. </p>
+<p>The same instance will be shared by all <a class="el" href="a06707.html">Worker</a> instances created by the same call to <a class="el" href="a06711.html#a897d4e476be84070570b5b2fffbe355c">ReadWork.execute(…)</a> or <a class="el" href="a06715.html#abbe05319666d3715eb016d69fe8426d4">WriteWork.execute(…)</a>. </p>
+
+</div>
+</div>
+<a id="a5fbeac52d84508f2507ba8348aafab09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fbeac52d84508f2507ba8348aafab09">&#9670;&nbsp;</a></span>processor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final BiConsumer&lt;A, ? super RT&gt; processor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>. </p>
+<p>Each invocation of that process will also receive the <a class="el" href="a06707.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a> value, which is an instance unique to each thread. </p>
+
+</div>
+</div>
+<a id="a40590f55f82df430f8035df8dd4f03c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40590f55f82df430f8035df8dd4f03c2">&#9670;&nbsp;</a></span>tx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indices of the tile to fetch. </p>
+<p>Those indices are updated by <a class="el" href="">Cursor#next(Worker)</a>. </p>
+
+</div>
+</div>
+<a id="a75f29260f9728325050cd039109732b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f29260f9728325050cd039109732b7">&#9670;&nbsp;</a></span>ty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -491,7 +511,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03841.html">coverage</a></li><li class="navelem"><a class="el" href="a03843.html">wkb</a></li><li class="navelem"><a class="el" href="a06711.html">WKBRasterReader</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03858.html">apache</a></li><li class="navelem"><a class="el" href="a03859.html">sis</a></li><li class="navelem"><a class="el" href="a03863.html">internal</a></li><li class="navelem"><a class="el" href="a03864.html">coverage</a></li><li class="navelem"><a class="el" href="a03862.html">j2d</a></li><li class="navelem"><a class="el" href="a06699.html">TileOpExecutor</a></li><li class="navelem"><a class="el" href="a06711.html">ReadWork</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

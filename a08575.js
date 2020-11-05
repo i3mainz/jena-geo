@@ -1,5 +1,7 @@
 var a08575 =
 [
-    [ "testAsPolyShape", "a08575.html#aa4ec805ffcfb140ead8292a441244775", null ],
-    [ "testGeometry", "a08575.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testSetGeometry", "a08575.html#af89f48a1a50817a7d76674ee1fc57cce", null ],
+    [ "result", "a08575.html#aab356d6554a7301750f11ec7a85ac47d", null ],
+    [ "testGeom", "a08575.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
+    [ "testGeom2", "a08575.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
 ];

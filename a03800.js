@@ -1,7 +1,6 @@
 var a03800 =
 [
-    [ "MakePolygon", "a05363.html", "a05363" ],
-    [ "MPolyFromText", "a05367.html", "a05367" ],
-    [ "PolygonFromText", "a05371.html", "a05371" ],
-    [ "PolygonFromWKB", "a05375.html", "a05375" ]
+    [ "ExampleWebService", "a04243.html", "a04243" ],
+    [ "JDBCConnection", "a04247.html", "a04247" ],
+    [ "TripleStoreConnection", "a04251.html", "a04251" ]
 ];

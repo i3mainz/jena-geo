@@ -1,5 +1,5 @@
 var a08759 =
 [
-    [ "testRemoveRepeatedPoints", "a08759.html#a473d131a5f96a89f9502570a50d06e65", null ],
-    [ "testGeometry", "a08759.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testForce2D", "a08759.html#ac1b65b91741abc3458f3a8303d7c0388", null ],
+    [ "testPolygon", "a08759.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

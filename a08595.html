@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AsTWKBTest Class Reference</title>
+<title>jena-geo: AsGeoURITest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,25 +61,52 @@ $(document).ready(function(){initNavTree('a08595.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08592.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsTWKBTest Class Reference</div>  </div>
+<div class="title">AsGeoURITest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for AsTWKBTest:</div>
+Collaboration diagram for AsGeoURITest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08593.png" border="0" usemap="#AsTWKBTest_coll__map" alt="Collaboration graph"/></div>
-<map name="AsTWKBTest_coll__map" id="AsTWKBTest_coll__map">
+<div class="center"><img src="a08593.png" border="0" usemap="#AsGeoURITest_coll__map" alt="Collaboration graph"/></div>
+<map name="AsGeoURITest_coll__map" id="AsGeoURITest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aae403d68ccc2ecfb409ca338b5ba0101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08595.html#aae403d68ccc2ecfb409ca338b5ba0101">testAsGeoURI</a> ()</td></tr>
+<tr class="separator:aae403d68ccc2ecfb409ca338b5ba0101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08595.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;POINT(49.9928617 8.2472526)&quot;</td></tr>
 <tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aae403d68ccc2ecfb409ca338b5ba0101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae403d68ccc2ecfb409ca338b5ba0101">&#9670;&nbsp;</a></span>testAsGeoURI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testAsGeoURI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04567.html#ae7a3cbabcf0592c2705ee280a231189a">AsGeoURI.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                   {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08595.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        AsGeoURI instance=<span class="keyword">new</span> AsGeoURI();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;geo:49.9928617,8.2472526;crs=EPSG:0&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08595_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08595.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.geometry.exporter.AsGeoURITest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> AsGeoURITest.java:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="abc3f514f005cba49e406658e2d3086eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
@@ -109,7 +136,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03929.html">geometry</a></li><li class="navelem"><a class="el" href="a03932.html">exporter</a></li><li class="navelem"><a class="el" href="a08595.html">AsTWKBTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03953.html">geometry</a></li><li class="navelem"><a class="el" href="a03956.html">exporter</a></li><li class="navelem"><a class="el" href="a08595.html">AsGeoURITest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

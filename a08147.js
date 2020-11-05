@@ -1,13 +1,13 @@
 var a08147 =
 [
-    [ "Long", "a08147.html#a742afbfcecf3d7f6fd73a2da2ce8d7e7", null ],
-    [ "compareTo", "a08147.html#af5a2c9246c709f990c640639b2e50600", null ],
-    [ "ranks", "a08147.html#abb150dc13c316a480c404b1703c03990", null ],
-    [ "ranks", "a08147.html#a7e3ac659899192333adea39b87f41331", null ],
-    [ "ranks", "a08147.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
-    [ "ranks", "a08147.html#abb82129695e9a7b212788912ccc45539", null ],
-    [ "ranks", "a08147.html#ad3b1488acd654783f7a4dc632814441f", null ],
-    [ "ranks", "a08147.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
-    [ "ranks", "a08147.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
-    [ "value", "a08147.html#a4e34443a9b417206f0269d33e16445b1", null ]
+    [ "MonoDimensionMove", "a08147.html#ac13d10fe2967d1e2d0d7652846043369", null ],
+    [ "characteristics", "a08147.html#a673dea3c18a0e22d79f1b634c037c73f", null ],
+    [ "estimateSize", "a08147.html#adc7dfb268a5eeda4d412d655163663fd", null ],
+    [ "tryAdvance", "a08147.html#a20f71c1ca7b8a63eb3b2e3cf005b8d16", null ],
+    [ "trySplit", "a08147.html#a59d451ed808fa8e7a0c0416239ed410f", null ],
+    [ "dimension", "a08147.html#a87d290a29c0fdbec3f51a40307e6a5da", null ],
+    [ "distanceLeft", "a08147.html#a47151353739f69b39427ee434e6f3acf", null ],
+    [ "hasNext", "a08147.html#a9a4a35a0a351d0f680a872cbd613ee55", null ],
+    [ "moveDir", "a08147.html#a7e07f0c0b62f278699f59352f2f0542b", null ],
+    [ "startPoint", "a08147.html#a760d190bd2ad5e531c0b3ec54ac5ce95", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TileOpExecutor.WriteWork&lt; A &gt; Class Template Reference</title>
+<title>jena-geo: ImageUtilities Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,110 +61,102 @@ $(document).ready(function(){initNavTree('a06675.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pac-static-methods">Static Package Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06672.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TileOpExecutor.WriteWork&lt; A &gt; Class Template Reference</div>  </div>
+<div class="title">ImageUtilities Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="a06667.html" title="Base class of workers which will read or write tiles. ">Worker</a> which will write tiles.  
+<p>Utility methods related to images and their color model or sample model.  
  <a href="a06675.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for TileOpExecutor.WriteWork&lt; A &gt;:</div>
+Inheritance diagram for ImageUtilities:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06674.png" border="0" usemap="#TileOpExecutor_8WriteWork_3_01A_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="TileOpExecutor_8WriteWork_3_01A_01_4_inherit__map" id="TileOpExecutor_8WriteWork_3_01A_01_4_inherit__map">
-<area shape="rect" id="node2" href="a06667.html" title="TileOpExecutor.Worker\l\&lt; WritableRenderedImage,\l WritableRaster, A \&gt;" alt="" coords="75,228,253,284"/>
-<area shape="rect" id="node3" href="a06667.html" title="Base class of workers which will read or write tiles. " alt="" coords="65,95,263,151"/>
-<area shape="rect" id="node4" href="a14243.html" title="Runnable" alt="" coords="5,5,83,32"/>
-<area shape="rect" id="node5" href="a13819.html" title="RenderedImage" alt="" coords="107,5,221,32"/>
-<area shape="rect" id="node6" href="a14079.html" title="Raster" alt="" coords="245,5,307,32"/>
+<div class="center"><img src="a06674.png" border="0" usemap="#ImageUtilities_inherit__map" alt="Inheritance graph"/></div>
+<map name="ImageUtilities_inherit__map" id="ImageUtilities_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for TileOpExecutor.WriteWork&lt; A &gt;:</div>
+Collaboration diagram for ImageUtilities:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06673.png" border="0" usemap="#TileOpExecutor_8WriteWork_3_01A_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="TileOpExecutor_8WriteWork_3_01A_01_4_coll__map" id="TileOpExecutor_8WriteWork_3_01A_01_4_coll__map">
-<area shape="rect" id="node2" href="a06667.html" title="TileOpExecutor.Worker\l\&lt; WritableRenderedImage,\l WritableRaster, A \&gt;" alt="" coords="1565,245,1744,301"/>
-<area shape="rect" id="node3" href="a06667.html" title="Base class of workers which will read or write tiles. " alt="" coords="1157,245,1356,301"/>
-<area shape="rect" id="node4" href="a14243.html" title="Runnable" alt="" coords="909,5,987,32"/>
-<area shape="rect" id="node9" href="a06663.html" title="Tile indices of the next tile to process in a multi&#45;threaded computation. " alt="" coords="467,253,689,294"/>
-<area shape="rect" id="node8" href="a06663.html" title="TileOpExecutor.Cursor\l\&lt; RI, A \&gt;" alt="" coords="871,253,1025,294"/>
-<area shape="rect" id="node17" href="a13819.html" title="RenderedImage" alt="" coords="214,445,329,472"/>
-<area shape="rect" id="node18" href="a14079.html" title="Raster" alt="" coords="917,524,979,551"/>
+<div class="center"><img src="a06673.png" border="0" usemap="#ImageUtilities_coll__map" alt="Collaboration graph"/></div>
+<map name="ImageUtilities_coll__map" id="ImageUtilities_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c71443ed78646800cfa677fad85cacf"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#a2c71443ed78646800cfa677fad85cacf">run</a> ()</td></tr>
-<tr class="memdesc:a2c71443ed78646800cfa677fad85cacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles.  <a href="#a2c71443ed78646800cfa677fad85cacf">More...</a><br /></td></tr>
-<tr class="separator:a2c71443ed78646800cfa677fad85cacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0e3506e32701066c3620b43975e9206f"><td class="memItemLeft" align="right" valign="top">static Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a0e3506e32701066c3620b43975e9206f">getBounds</a> (final RenderedImage image)</td></tr>
+<tr class="memdesc:a0e3506e32701066c3620b43975e9206f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bounds of the given image as a new rectangle.  <a href="#a0e3506e32701066c3620b43975e9206f">More...</a><br /></td></tr>
+<tr class="separator:a0e3506e32701066c3620b43975e9206f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3cbae47a5eeca3f425c04ea8d41a7b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a7f3cbae47a5eeca3f425c04ea8d41a7b">clipBounds</a> (final RenderedImage image, final Rectangle aoi)</td></tr>
+<tr class="memdesc:a7f3cbae47a5eeca3f425c04ea8d41a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clips the given rectangle to the bounds of the given image.  <a href="#a7f3cbae47a5eeca3f425c04ea8d41a7b">More...</a><br /></td></tr>
+<tr class="separator:a7f3cbae47a5eeca3f425c04ea8d41a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87ee0d7c57ab0c5c7c21850e91b3c7b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#ae87ee0d7c57ab0c5c7c21850e91b3c7b">getVisibleBand</a> (final RenderedImage image)</td></tr>
+<tr class="memdesc:ae87ee0d7c57ab0c5c7c21850e91b3c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given image is showing only one band, returns the index of that band.  <a href="#ae87ee0d7c57ab0c5c7c21850e91b3c7b">More...</a><br /></td></tr>
+<tr class="separator:ae87ee0d7c57ab0c5c7c21850e91b3c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a539736557672cbcf02b2a3e3ca7b2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a05a539736557672cbcf02b2a3e3ca7b2">getDataType</a> (final RenderedImage image)</td></tr>
+<tr class="memdesc:a05a539736557672cbcf02b2a3e3ca7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data type of the given image.  <a href="#a05a539736557672cbcf02b2a3e3ca7b2">More...</a><br /></td></tr>
+<tr class="separator:a05a539736557672cbcf02b2a3e3ca7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c8891746c1f6de9ff5b565d984ec62"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#ac0c8891746c1f6de9ff5b565d984ec62">getDataType</a> (final Raster raster)</td></tr>
+<tr class="memdesc:ac0c8891746c1f6de9ff5b565d984ec62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data type of the given raster.  <a href="#ac0c8891746c1f6de9ff5b565d984ec62">More...</a><br /></td></tr>
+<tr class="separator:ac0c8891746c1f6de9ff5b565d984ec62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ca2072a3a43a5b5762ed1c8e51e2b2"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a37ca2072a3a43a5b5762ed1c8e51e2b2">getDataTypeName</a> (final SampleModel sm)</td></tr>
+<tr class="memdesc:a37ca2072a3a43a5b5762ed1c8e51e2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the <a class="el" href="">DataBuffer</a> type used by the given sample model.  <a href="#a37ca2072a3a43a5b5762ed1c8e51e2b2">More...</a><br /></td></tr>
+<tr class="separator:a37ca2072a3a43a5b5762ed1c8e51e2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad659296fef61698fafef3a6a1660cf0c"><td class="memItemLeft" align="right" valign="top">static short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#ad659296fef61698fafef3a6a1660cf0c">getTransparencyDescription</a> (final ColorModel cm)</td></tr>
+<tr class="memdesc:ad659296fef61698fafef3a6a1660cf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the key of a localizable text that describes the transparency.  <a href="#ad659296fef61698fafef3a6a1660cf0c">More...</a><br /></td></tr>
+<tr class="separator:ad659296fef61698fafef3a6a1660cf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d603cdf6bf4528507609769745a382"><td class="memItemLeft" align="right" valign="top">static short []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a05d603cdf6bf4528507609769745a382">bandNames</a> (final RenderedImage image)</td></tr>
+<tr class="memdesc:a05d603cdf6bf4528507609769745a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns names of bands based on inspection of the color model.  <a href="#a05d603cdf6bf4528507609769745a382">More...</a><br /></td></tr>
+<tr class="separator:a05d603cdf6bf4528507609769745a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8e651973279177eb1355aac6b402bf"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#ada8e651973279177eb1355aac6b402bf">prepareTransferRegion</a> (final Rectangle bounds, final int dataType)</td></tr>
+<tr class="memdesc:ada8e651973279177eb1355aac6b402bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suggests the height of a transfer region for a tile of the given size.  <a href="#ada8e651973279177eb1355aac6b402bf">More...</a><br /></td></tr>
+<tr class="separator:ada8e651973279177eb1355aac6b402bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">executeOnCurrentTile</a> ()</td></tr>
-<tr class="memdesc:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="a06667.html#a2c71443ed78646800cfa677fad85cacf">Worker#run()</a> for processing the tile at current indices.  <a href="#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">More...</a><br /></td></tr>
-<tr class="separator:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a06663.html">Cursor</a>&lt; RI, A &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a></td></tr>
-<tr class="memdesc:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator over the indices of the next tiles to fetch.  <a href="#a21cca1f9a7342fbd8caeaf4e519c896a">More...</a><br /></td></tr>
-<tr class="separator:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40590f55f82df430f8035df8dd4f03c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#a40590f55f82df430f8035df8dd4f03c2">tx</a></td></tr>
-<tr class="memdesc:a40590f55f82df430f8035df8dd4f03c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices of the tile to fetch.  <a href="#a40590f55f82df430f8035df8dd4f03c2">More...</a><br /></td></tr>
-<tr class="separator:a40590f55f82df430f8035df8dd4f03c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbeac52d84508f2507ba8348aafab09"><td class="memItemLeft" align="right" valign="top">final BiConsumer&lt; A, ? super RT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#a5fbeac52d84508f2507ba8348aafab09">processor</a></td></tr>
-<tr class="memdesc:a5fbeac52d84508f2507ba8348aafab09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>.  <a href="#a5fbeac52d84508f2507ba8348aafab09">More...</a><br /></td></tr>
-<tr class="separator:a5fbeac52d84508f2507ba8348aafab09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f9097774c75a5f0677b1abad167637"><td class="memItemLeft" align="right" valign="top">final A&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a></td></tr>
-<tr class="memdesc:ae6f9097774c75a5f0677b1abad167637"><td class="mdescLeft">&#160;</td><td class="mdescRight">A thread-local variable which is given to each invocation of the <a class="el" href="a06667.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.  <a href="#ae6f9097774c75a5f0677b1abad167637">More...</a><br /></td></tr>
-<tr class="separator:ae6f9097774c75a5f0677b1abad167637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:abbe05319666d3715eb016d69fe8426d4"><td class="memItemLeft" align="right" valign="top">static&lt; A, R &gt; R&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#abbe05319666d3715eb016d69fe8426d4">execute</a> (final <a class="el" href="a06659.html">TileOpExecutor</a> <a class="el" href="a06659.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>, final WritableRenderedImage target, final Collector&lt;? super WritableRaster, A, R &gt; collector, final Consumer&lt; LogRecord &gt; errorHandler)</td></tr>
-<tr class="memdesc:abbe05319666d3715eb016d69fe8426d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="">executeOnWritable(WritableRenderedImage, Collector, Consumer)</a>.  <a href="#abbe05319666d3715eb016d69fe8426d4">More...</a><br /></td></tr>
-<tr class="separator:abbe05319666d3715eb016d69fe8426d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae4722e01fe5225e6cdd3e5909ae2d04a"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a> = 256</td></tr>
+<tr class="memdesc:ae4722e01fe5225e6cdd3e5909ae2d04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default width and height of tiles, in pixels.  <a href="#ae4722e01fe5225e6cdd3e5909ae2d04a">More...</a><br /></td></tr>
+<tr class="separator:ae4722e01fe5225e6cdd3e5909ae2d04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6bac6f40926b5faf547cfde0528336"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a7b6bac6f40926b5faf547cfde0528336">SUGGESTED_TILE_CACHE_SIZE</a> = 10 * (1024 * 1024) / (<a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a> * <a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a>)</td></tr>
+<tr class="memdesc:a7b6bac6f40926b5faf547cfde0528336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suggested size for a tile cache in number of tiles.  <a href="#a7b6bac6f40926b5faf547cfde0528336">More...</a><br /></td></tr>
+<tr class="separator:a7b6bac6f40926b5faf547cfde0528336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
 Static Package Functions</h2></td></tr>
-<tr class="memitem:afdff4aa4324ad7460be67cf5007b5e86"><td class="memItemLeft" align="right" valign="top">static ImagingOpException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#afdff4aa4324ad7460be67cf5007b5e86">rethrowOrWrap</a> (final Throwable ex)</td></tr>
-<tr class="memdesc:afdff4aa4324ad7460be67cf5007b5e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given exception can be propagated as an error or unchecked exception, throws it.  <a href="#afdff4aa4324ad7460be67cf5007b5e86">More...</a><br /></td></tr>
-<tr class="separator:afdff4aa4324ad7460be67cf5007b5e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:a75f29260f9728325050cd039109732b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06667.html#a75f29260f9728325050cd039109732b7">ty</a></td></tr>
-<tr class="separator:a75f29260f9728325050cd039109732b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e87c5ede6b7235170d287cd2e254454"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a2e87c5ede6b7235170d287cd2e254454">[static initializer]</a></td></tr>
+<tr class="separator:a2e87c5ede6b7235170d287cd2e254454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aa1032d214d47c1ca9143aa0aa6c04c7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#aa1032d214d47c1ca9143aa0aa6c04c7e">WriteWork</a> (final <a class="el" href="a06663.html">Cursor</a>&lt; WritableRenderedImage, A &gt; <a class="el" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, final Collector&lt;? super WritableRaster, A, ?&gt; collector)</td></tr>
-<tr class="memdesc:aa1032d214d47c1ca9143aa0aa6c04c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new worker for traversing the tiles identified by the given cursor.  <a href="#aa1032d214d47c1ca9143aa0aa6c04c7e">More...</a><br /></td></tr>
-<tr class="separator:aa1032d214d47c1ca9143aa0aa6c04c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632d6c5b0adc5906821fdaccafee68f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a632d6c5b0adc5906821fdaccafee68f3">ImageUtilities</a> ()</td></tr>
+<tr class="memdesc:a632d6c5b0adc5906821fdaccafee68f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow instantiation of this class.  <a href="#a632d6c5b0adc5906821fdaccafee68f3">More...</a><br /></td></tr>
+<tr class="separator:a632d6c5b0adc5906821fdaccafee68f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a2d3b35bbd93276f93a242b96dbd122f2"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a2d3b35bbd93276f93a242b96dbd122f2">BUFFER_SIZE</a> = 32 * <a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a> * Byte.SIZE</td></tr>
+<tr class="memdesc:a2d3b35bbd93276f93a242b96dbd122f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate size of the buffer to use for copying data from/to a raster, in bits.  <a href="#a2d3b35bbd93276f93a242b96dbd122f2">More...</a><br /></td></tr>
+<tr class="separator:a2d3b35bbd93276f93a242b96dbd122f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78456cb7134657e6431845c7acacc500"><td class="memItemLeft" align="right" valign="top">static final String []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06675.html#a78456cb7134657e6431845c7acacc500">TYPE_NAMES</a> = new String[DataBuffer.TYPE_DOUBLE + 1]</td></tr>
+<tr class="memdesc:a78456cb7134657e6431845c7acacc500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Names of <a class="el" href="">DataBuffer</a> types.  <a href="#a78456cb7134657e6431845c7acacc500">More...</a><br /></td></tr>
+<tr class="separator:a78456cb7134657e6431845c7acacc500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="a06667.html" title="Base class of workers which will read or write tiles. ">Worker</a> which will write tiles. </p>
-<p>Exactly one</p><div class="fragment"><div class="line"><a class="code" href="a06675.html#aa1032d214d47c1ca9143aa0aa6c04c7e">WriteWork</a> </div></div><!-- fragment --><p> instance is created for each thread which will perform the operation on <a class="el" href="">WritableRaster</a> tiles. The same</p><div class="fragment"><div class="line"><a class="code" href="a06675.html#aa1032d214d47c1ca9143aa0aa6c04c7e">WriteWork</a> </div></div><!-- fragment --><p> instance can process an arbitrary amount of tiles.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">&lt;A&gt;</td><td>type of the thread-local object (the accumulator) for holding intermediate results. </td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Utility methods related to images and their color model or sample model. </p>
+<p>Those methods only fetch information, they do not create new rasters or sample/color models (see</p><div class="fragment"><div class="line">*Factory </div></div><!-- fragment --><p> classes for creating those objects).</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.1  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa1032d214d47c1ca9143aa0aa6c04c7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1032d214d47c1ca9143aa0aa6c04c7e">&#9670;&nbsp;</a></span>WriteWork()</h2>
+<a id="a632d6c5b0adc5906821fdaccafee68f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632d6c5b0adc5906821fdaccafee68f3">&#9670;&nbsp;</a></span>ImageUtilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,21 +165,10 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06675.html">WriteWork</a> </td>
+          <td class="memname"><a class="el" href="a06675.html">ImageUtilities</a> </td>
           <td>(</td>
-          <td class="paramtype">final <a class="el" href="a06663.html">Cursor</a>&lt; WritableRenderedImage, A &gt;&#160;</td>
-          <td class="paramname"><em>cursor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">final Collector&lt;? super WritableRaster, A, ?&gt;&#160;</td>
-          <td class="paramname"><em>collector</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -197,21 +178,13 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new worker for traversing the tiles identified by the given cursor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cursor</td><td>iterator over the indices of the tiles to fetch. </td></tr>
-    <tr><td class="paramname">collector</td><td>provides the process to execute on each tile. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                                                                                                                                 {</div><div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;            super(<a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, collector);</div><div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        }</div><div class="ttc" id="a06667_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
-</div><!-- fragment -->
+<p>Do not allow instantiation of this class. </p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                             {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abbe05319666d3715eb016d69fe8426d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbe05319666d3715eb016d69fe8426d4">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a2e87c5ede6b7235170d287cd2e254454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e87c5ede6b7235170d287cd2e254454">&#9670;&nbsp;</a></span>[static initializer]()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,28 +193,77 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static&lt;A,R&gt; R execute </td>
+          <td class="memname">[static initializer] </td>
           <td>(</td>
-          <td class="paramtype">final <a class="el" href="a06659.html">TileOpExecutor</a>&#160;</td>
-          <td class="paramname"><em>executor</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05d603cdf6bf4528507609769745a382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d603cdf6bf4528507609769745a382">&#9670;&nbsp;</a></span>bandNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static short [] bandNames </td>
+          <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns names of bands based on inspection of the color model. </p>
+<p>The bands are identified by <a class="el" href="">Vocabulary.Keys</a> values for red, green, blue, cyan, magenta, yellow, black, gray, <em>etc</em>. If a band can not be identified, then its corresponding value is 0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>the image for which to get band names (can not be null). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">Vocabulary.Keys</a> identifying the bands. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                               {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">final</span> SampleModel sm = image.getSampleModel();</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> n;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">if</span> (sm != null) {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            n = sm.getNumBands();</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="comment">// Should not happen since SampleModel is essential, but we try to be robust.</span></div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            n = image.getTile(image.getMinTileX(), image.getMinTileY()).getNumBands();</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">short</span>[] keys = <span class="keyword">new</span> <span class="keywordtype">short</span>[n];</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keyword">final</span> ColorModel cm = image.getColorModel();</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">if</span> (cm instanceof IndexColorModel) {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">             * IndexColorModel normally uses exactly one band. But SIS has a custom subtype which</span></div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">             * allows to use an arbitrary band for displaying purpose and ignore all other bands.</span></div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keywordtype">int</span> visibleBand = 0;</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordflow">if</span> (cm instanceof MultiBandsIndexColorModel) {</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                visibleBand = ((MultiBandsIndexColorModel) cm).visibleBand;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            }</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="comment">/*if (visibleBand &lt; n) {</span></div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">                keys[visibleBand] = Vocabulary.Keys.ColorIndex;</span></div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">            }*/</span></div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cm != null) {</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keyword">final</span> ColorSpace cs = cm.getColorSpace();</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keywordflow">if</span> (cs != null) {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">                 * Get one of the following sets of color names (ignoring order for now):</span></div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">                 *   - Red, Green, Blue</span></div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">                 *   - Cyan, Magenta, Yellow, Black</span></div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">                 *   - Gray</span></div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">switch</span> (cs.getType()) {</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                    <span class="keywordflow">case</span> ColorSpace.TYPE_CMYK: {</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        <span class="keywordflow">if</span> (n &gt;= 4)  keys[3] = Vocabulary.Keys.Black;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        <span class="comment">// Fallthrough</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    }</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    <span class="keywordflow">case</span> ColorSpace.TYPE_CMY: {</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                        <span class="keywordflow">switch</span> (n) {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                            <span class="keywordflow">default</span>: keys[2] = Vocabulary.Keys.Yellow;      <span class="comment">// Fallthrough everywhere.</span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                            <span class="keywordflow">case</span> 2:  keys[1] = Vocabulary.Keys.Magenta;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                            <span class="keywordflow">case</span> 1:  keys[0] = Vocabulary.Keys.Cyan;</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                            <span class="keywordflow">case</span> 0:  <span class="keywordflow">break</span>;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        }</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                    }</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    <span class="keywordflow">case</span> ColorSpace.TYPE_RGB: {</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <span class="keywordflow">switch</span> (n) {</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                            <span class="keywordflow">default</span>: keys[2] = Vocabulary.Keys.Blue;        <span class="comment">// Fallthrough everywhere.</span></div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                            <span class="keywordflow">case</span> 2:  keys[1] = Vocabulary.Keys.Green;</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                            <span class="keywordflow">case</span> 1:  keys[0] = Vocabulary.Keys.Red;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                            <span class="keywordflow">case</span> 0:  <span class="keywordflow">break</span>;</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                        }</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    }</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    <span class="keywordflow">case</span> ColorSpace.TYPE_GRAY: {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                        <span class="keywordflow">if</span> (n != 0)  keys[0] = Vocabulary.Keys.Gray;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                    }</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                }</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">                 * If the color model has more components than the number of colors,</span></div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">                 * then the additional component is an alpha channel.</span></div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span> nc = cm.getNumColorComponents();</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">if</span> (nc &lt; n &amp;&amp; nc &lt; cm.getNumComponents()) {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    keys[nc] = Vocabulary.Keys.Transparency;</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                }</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">                 * In current version we do not try to adapt the bands order to the masks.</span></div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">                 * A few tests suggest that the following methods provide the same values:</span></div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">                 *   - PackedColorModel.getMasks()</span></div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">                 *   - SinglePixelPackedSampleModel.getBitMasks()</span></div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">                 * For a BufferedImage.TYPE_INT_ARGB, both methods give in that order:</span></div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">                 *    masks[0]:  00FF0000     (red)</span></div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">                 *    masks[1]:  0000FF00     (green)</span></div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">                 *    masks[2]:  000000FF     (blue)</span></div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">                 *    masks[3]:  FF000000     (alpha)  —  this last element is absent with TYPE_INT_RGB.</span></div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">                 * For a BufferedImage.TYPE_INT_BGR, both methods give in that order:</span></div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">                 *    masks[0]:  000000FF     (red)</span></div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">                 *    masks[1]:  0000FF00     (green)</span></div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">                 *    masks[2]:  00FF0000     (blue)</span></div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">                 * So it looks like that SampleModel already normalizes the color components</span></div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">                 * to (Red, Green, Blue) order, at least when the image has been created with</span></div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">                 * a standard constructor. However we do not know yet what would be the behavior</span></div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment">                 * if masks are not the same. For now we just log a warning.</span></div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                <span class="keywordtype">int</span>[] m1 = null;</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                <span class="keywordtype">int</span>[] m2 = null;</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <span class="keywordflow">if</span> (cm instanceof PackedColorModel) {</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                    m1 = ((PackedColorModel) cm).getMasks();</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                }</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keywordflow">if</span> (sm instanceof SinglePixelPackedSampleModel) {</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    m2 = ((SinglePixelPackedSampleModel) sm).getBitMasks();</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                }</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="keywordflow">if</span> (!Arrays.equals(m1, m2)) {</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                    <span class="comment">// If this logging happen, we should revisit this method and improve it.</span></div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                    Logging.getLogger(Modules.RASTER).warning(<span class="stringliteral">&quot;Band names may be in wrong order.&quot;</span>);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                }</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            }</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> keys;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7f3cbae47a5eeca3f425c04ea8d41a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3cbae47a5eeca3f425c04ea8d41a7b">&#9670;&nbsp;</a></span>clipBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void clipBounds </td>
+          <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final WritableRenderedImage&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Collector&lt;? super WritableRaster, A, R &gt;&#160;</td>
-          <td class="paramname"><em>collector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Consumer&lt; LogRecord &gt;&#160;</td>
-          <td class="paramname"><em>errorHandler</em>&#160;</td>
+          <td class="paramtype">final Rectangle&#160;</td>
+          <td class="paramname"><em>aoi</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -251,102 +273,26 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementation of <a class="el" href="">executeOnWritable(WritableRenderedImage, Collector, Consumer)</a>. </p>
-<p>See the Javadoc of that method for details. </p>
-
-<p class="reference">References <a class="el" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.cursor</a>, <a class="el" href="a06663.html#a47ec4c7e5b7646e4a71b82402c2c82d1">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;.getNumWorkers()</a>, and <a class="el" href="a06667.html#a2c71443ed78646800cfa677fad85cacf">TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;.run()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06659.html#a2056883a02daf732b470c75d0a1cc9c1">TileOpExecutor.executeOnWritable()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        {</div><div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;            <span class="keyword">final</span> Cursor&lt;WritableRenderedImage,A&gt; <a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a> = <a class="code" href="a06659.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>.new Cursor&lt;&gt;(target, collector, <span class="keyword">false</span>);</div><div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;            <span class="keyword">final</span> Future&lt;?&gt;[] workers = <span class="keyword">new</span> Future&lt;?&gt;[cursor.getNumWorkers()];</div><div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;workers.length; i++) {</div><div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                workers[i] = CommonExecutor.instance().submit(<span class="keyword">new</span> WriteWork&lt;&gt;(cursor, collector));</div><div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;            }</div><div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            <span class="keyword">final</span> WriteWork&lt;A&gt; worker = <span class="keyword">new</span> WriteWork&lt;&gt;(<a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, collector);</div><div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;            worker.run();</div><div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;            <span class="keywordflow">return</span> cursor.finish(workers, collector, errorHandler);</div><div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;        }</div><div class="ttc" id="a06667_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
-<div class="ttc" id="a06659_html_a1b5cfc428f0c5e326d6775db1204844f"><div class="ttname"><a href="a06659.html#a1b5cfc428f0c5e326d6775db1204844f">org.apache.sis.internal.coverage.j2d.TileOpExecutor.executor</a></div><div class="ttdeci">static&lt; RT extends Raster &gt; Collector&lt; RT, Void, Void &gt; executor(final BiConsumer&lt; Void, RT &gt; action)</div><div class="ttdoc">Returns a collector to be used only as an executor: the accumulator is null and the combiner does not...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:323</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad8a8fbbda36a5abfd1f2ebe64e31b8c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">&#9670;&nbsp;</a></span>executeOnCurrentTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void executeOnCurrentTile </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invoked by <a class="el" href="a06667.html#a2c71443ed78646800cfa677fad85cacf">Worker#run()</a> for processing the tile at current indices. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14151.html">RuntimeException</a></td><td>if any error occurred during the process. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06667.html#ae6f9097774c75a5f0677b1abad167637">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.accumulator</a>, <a class="el" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.cursor</a>, <a class="el" href="a06663.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;.image</a>, <a class="el" href="a06667.html#a5fbeac52d84508f2507ba8348aafab09">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.processor</a>, <a class="el" href="a06667.html#a40590f55f82df430f8035df8dd4f03c2">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.tx</a>, and <a class="el" href="a06667.html#a75f29260f9728325050cd039109732b7">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.ty</a>.</p>
-<div class="fragment"><div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                                              {</div><div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            <span class="keyword">final</span> WritableRenderedImage image = <a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06663.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">image</a>;</div><div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="a06667.html#a40590f55f82df430f8035df8dd4f03c2">tx</a> = super.tx;                                <span class="comment">// Protect from changes (paranoiac safety).</span></div><div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="a06667.html#a75f29260f9728325050cd039109732b7">ty</a> = super.ty;</div><div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;            <span class="keyword">final</span> WritableRaster tile = image.getWritableTile(tx, ty);</div><div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                <a class="code" href="a06667.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.accept(<a class="code" href="a06667.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>, tile);</div><div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;            } <span class="keywordflow">finally</span> {</div><div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                image.releaseWritableTile(tx, ty);</div><div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;            }</div><div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;        }</div><div class="ttc" id="a06667_html_a40590f55f82df430f8035df8dd4f03c2"><div class="ttname"><a href="a06667.html#a40590f55f82df430f8035df8dd4f03c2">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::tx</a></div><div class="ttdeci">int tx</div><div class="ttdoc">Indices of the tile to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:735</div></div>
-<div class="ttc" id="a06663_html_a7b7fa7d49ecd1dd3eb37fccb17f981d5"><div class="ttname"><a href="a06663.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.image</a></div><div class="ttdeci">final RI image</div><div class="ttdoc">The image from which to read tiles or where to write tiles. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:492</div></div>
-<div class="ttc" id="a06667_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
-<div class="ttc" id="a06667_html_a5fbeac52d84508f2507ba8348aafab09"><div class="ttname"><a href="a06667.html#a5fbeac52d84508f2507ba8348aafab09">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::processor</a></div><div class="ttdeci">final BiConsumer&lt; A, ? super RT &gt; processor</div><div class="ttdoc">The process to execute on each Raster or WritableRaster. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:742</div></div>
-<div class="ttc" id="a06667_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06667.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
-<div class="ttc" id="a06667_html_a75f29260f9728325050cd039109732b7"><div class="ttname"><a href="a06667.html#a75f29260f9728325050cd039109732b7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::ty</a></div><div class="ttdeci">int ty</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:735</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afdff4aa4324ad7460be67cf5007b5e86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdff4aa4324ad7460be67cf5007b5e86">&#9670;&nbsp;</a></span>rethrowOrWrap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ImagingOpException rethrowOrWrap </td>
-          <td>(</td>
-          <td class="paramtype">final Throwable&#160;</td>
-          <td class="paramname"><em>ex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If the given exception can be propagated as an error or unchecked exception, throws it. </p>
-<p>Otherwise wraps it in an <a class="el" href="">ImagingOpException</a> with intentionally no error message (for allowing <a class="el" href="a06659.html#a517f50b4efda6d919cbe263504257ffb">trimImagingWrapper(Throwable)</a> to recognize and unwrap it).</p>
+<p>Clips the given rectangle to the bounds of the given image. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ex</td><td>the exception to propagate if possible. </td></tr>
+    <tr><td class="paramname">image</td><td>the image. </td></tr>
+    <tr><td class="paramname">aoi</td><td>a region of interest to clip to the image bounds. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the exception to throw if the given exception can not be propagated. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                                                                    {</div><div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            Throwable cause = ex.getCause();</div><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keywordflow">if</span> (cause instanceof <a class="code" href="a14151.html">RuntimeException</a>) {</div><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                <span class="keywordflow">throw</span> (RuntimeException) cause;</div><div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            }</div><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">if</span> (cause instanceof Error) {</div><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                <span class="keywordflow">throw</span> (Error) cause;</div><div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            }</div><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">             * May occur after call to `TileOpExecutor.readFrom(…)` or `TileOpExecutor.writeTo(…)`,</span></div><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">             * in which case that exception will be removed by `trimImagingWrapper(…)` method and</span></div><div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">             * replaced by another exception providing a more complete error message.</span></div><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">             *</span></div><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">             * Should not happen in other contexts because the other exception handlers where this</span></div><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">             * `rethrowOrWrap(…)` method is invoked expect (indirectly) only unchecked exceptions.</span></div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">return</span> (ImagingOpException) <span class="keyword">new</span> ImagingOpException(null).initCause(cause != null ? cause : ex);</div><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div><div class="ttc" id="a14151_html"><div class="ttname"><a href="a14151.html">RuntimeException</a></div></div>
-</div><!-- fragment -->
+
+<p class="reference">Referenced by <a class="el" href="a06659.html#a9c98822114230de8c31d9c02952efe83">BandedSampleConverter.Writable.setData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                                  {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">int</span> low = aoi.x;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">int</span> min = image.getMinX();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (low &lt; min) aoi.x = min;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        aoi.width = Numerics.clamp(Math.min(</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                ((<span class="keywordtype">long</span>) min) + image.getWidth(),</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                ((long) low) + aoi.width) - aoi.x);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        low = aoi.y;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        min = image.getMinY();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (low &lt; min) aoi.y = min;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        aoi.height = Numerics.clamp(Math.min(</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                ((<span class="keywordtype">long</span>) min) + image.getHeight(),</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                ((long) low) + aoi.height) - aoi.y);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a2c71443ed78646800cfa677fad85cacf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c71443ed78646800cfa677fad85cacf">&#9670;&nbsp;</a></span>run()</h2>
+<a id="a0e3506e32701066c3620b43975e9206f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3506e32701066c3620b43975e9206f">&#9670;&nbsp;</a></span>getBounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,38 +301,290 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final void run </td>
+          <td class="memname">static Rectangle getBounds </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles. </p>
-<p>This method delegates to <a class="el" href="a06675.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">executeOnCurrentTile()</a> as long as there is tiles to process. Exceptions are handled (wrapped in a <a class="el" href="">LogRecord</a> or propagated). </p>
+<p>Returns the bounds of the given image as a new rectangle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>the image for which to get the bounds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the bounds of the given image.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Raster::getBounds() </dd></dl>
 
-<p class="reference">References <a class="el" href="a06663.html#a4b14b31f07a7b5de8420315b985e05a7">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;::accumulate()</a>, <a class="el" href="a06667.html#a460b7efed78d9e1a0d37ae409e52f229">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;::executeOnCurrentTile()</a>, <a class="el" href="a06663.html#a311addae5779cead65ffaaad5824007c">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;::next()</a>, <a class="el" href="a06663.html#aabf3c338904bae76660fd721a7492e85">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;::recordError()</a>, and <a class="el" href="a06659.html#a517f50b4efda6d919cbe263504257ffb">TileOpExecutor::trimImagingWrapper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06651.html#aea1c854683c572814de3ca72b6402ccd">PlanarImage.copyData()</a>, <a class="el" href="a06651.html#a187945475e730bfa340a10f63224e91f">PlanarImage.getBounds()</a>, and <a class="el" href="a06651.html#a61598bd225152d9230163c37ec1013fa">PlanarImage.getData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                 {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Rectangle(image.getMinX(), image.getMinY(), image.getWidth(), image.getHeight());</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a05a539736557672cbcf02b2a3e3ca7b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a539736557672cbcf02b2a3e3ca7b2">&#9670;&nbsp;</a></span>getDataType() <span class="overload">[1/2]</span></h2>
 
-<p class="reference">Referenced by <a class="el" href="a06675.html#abbe05319666d3715eb016d69fe8426d4">TileOpExecutor.WriteWork&lt; A &gt;::execute()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                                {</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06663.html#a311addae5779cead65ffaaad5824007c">next</a>(<span class="keyword">this</span>)) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                <a class="code" href="a06667.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile</a>();</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            } <span class="keywordflow">catch</span> (<a class="code" href="a14175.html">Exception</a> ex) {</div><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                <a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06663.html#aabf3c338904bae76660fd721a7492e85">recordError</a>(<span class="keyword">this</span>, trimImagingWrapper(ex));</div><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            }</div><div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <a class="code" href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06663.html#a4b14b31f07a7b5de8420315b985e05a7">accumulate</a>(<a class="code" href="a06667.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>);</div><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        }</div><div class="ttc" id="a14175_html"><div class="ttname"><a href="a14175.html">Exception</a></div></div>
-<div class="ttc" id="a06667_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06667.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
-<div class="ttc" id="a06663_html_a4b14b31f07a7b5de8420315b985e05a7"><div class="ttname"><a href="a06663.html#a4b14b31f07a7b5de8420315b985e05a7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.accumulate</a></div><div class="ttdeci">final void accumulate(final A result)</div><div class="ttdoc">Invoked when a thread finished to process all its tiles for combining its result with the result of p...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:585</div></div>
-<div class="ttc" id="a06667_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06667.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
-<div class="ttc" id="a06663_html_aabf3c338904bae76660fd721a7492e85"><div class="ttname"><a href="a06663.html#aabf3c338904bae76660fd721a7492e85">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.recordError</a></div><div class="ttdeci">final void recordError(final Worker&lt; RI,?, A &gt; indices, final Throwable ex)</div><div class="ttdoc">Stores the given exception in a log record. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:674</div></div>
-<div class="ttc" id="a06663_html_a311addae5779cead65ffaaad5824007c"><div class="ttname"><a href="a06663.html#a311addae5779cead65ffaaad5824007c">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.next</a></div><div class="ttdeci">final boolean next(final Worker&lt; RI,?, A &gt; indices)</div><div class="ttdoc">Sets the given worker to the indices of the next tile. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:569</div></div>
-<div class="ttc" id="a06667_html_a460b7efed78d9e1a0d37ae409e52f229"><div class="ttname"><a href="a06667.html#a460b7efed78d9e1a0d37ae409e52f229">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; WritableRenderedImage, WritableRaster, A &gt;::executeOnCurrentTile</a></div><div class="ttdeci">abstract void executeOnCurrentTile()</div><div class="ttdoc">Gets the tiles at the (tx, ty) indices and processes it. </div></div>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getDataType </td>
+          <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the data type of the given image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>the image for which to get the data type, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the data type, or <a class="el" href="">DataBuffer#TYPE_UNDEFINED</a> if unknown. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                                             {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (image != null) {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">final</span> SampleModel sm = image.getSampleModel();</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">if</span> (sm != null) <span class="keywordflow">return</span> sm.getDataType();            <span class="comment">// Should never be null, but we are paranoiac.</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> DataBuffer.TYPE_UNDEFINED;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac0c8891746c1f6de9ff5b565d984ec62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c8891746c1f6de9ff5b565d984ec62">&#9670;&nbsp;</a></span>getDataType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getDataType </td>
+          <td>(</td>
+          <td class="paramtype">final Raster&#160;</td>
+          <td class="paramname"><em>raster</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the data type of the given raster. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raster</td><td>the raster for which to get the data type, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the data type, or <a class="el" href="">DataBuffer#TYPE_UNDEFINED</a> if unknown. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                                       {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (raster != null) {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">final</span> DataBuffer buffer = raster.getDataBuffer();</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span> (buffer != null) {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">return</span> buffer.getDataType();</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            }</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">return</span> DataBuffer.TYPE_UNDEFINED;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a37ca2072a3a43a5b5762ed1c8e51e2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ca2072a3a43a5b5762ed1c8e51e2b2">&#9670;&nbsp;</a></span>getDataTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String getDataTypeName </td>
+          <td>(</td>
+          <td class="paramtype">final SampleModel&#160;</td>
+          <td class="paramname"><em>sm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the name of the <a class="el" href="">DataBuffer</a> type used by the given sample model. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sm</td><td>the sample model for which to get the data type name, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>name of the given constant, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06627.html#adabf2ad5db07b94bc5c58036d8937424">GridCoverage2D.appendDataLayout()</a>, and <a class="el" href="a06651.html#ad146fa8579a5f8a876c4688cc5a68520">PlanarImage.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                                               {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">if</span> (sm != null) {</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> type = sm.getDataType();</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">if</span> (type &gt;= 0 &amp;&amp; type &lt; <a class="code" href="a06675.html#a78456cb7134657e6431845c7acacc500">TYPE_NAMES</a>.length) {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a06675.html#a78456cb7134657e6431845c7acacc500">TYPE_NAMES</a>[type];</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            }</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div><div class="ttc" id="a06675_html_a78456cb7134657e6431845c7acacc500"><div class="ttname"><a href="a06675.html#a78456cb7134657e6431845c7acacc500">org.apache.sis.internal.coverage.j2d.ImageUtilities.TYPE_NAMES</a></div><div class="ttdeci">static final String [] TYPE_NAMES</div><div class="ttdoc">Names of DataBuffer types. </div><div class="ttdef"><b>Definition:</b> apache/sis/internal/coverage/j2d/ImageUtilities.java:171</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad659296fef61698fafef3a6a1660cf0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad659296fef61698fafef3a6a1660cf0c">&#9670;&nbsp;</a></span>getTransparencyDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static short getTransparencyDescription </td>
+          <td>(</td>
+          <td class="paramtype">final ColorModel&#160;</td>
+          <td class="paramname"><em>cm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the key of a localizable text that describes the transparency. </p>
+<p>This method returns one of the following values: </p><ul>
+<li>
+<a class="el" href="">Resources.Keys#ImageAllowsTransparency</a> </li>
+<li>
+<a class="el" href="">Resources.Keys#ImageHasAlphaChannel</a> </li>
+<li>
+<a class="el" href="">Resources.Keys#ImageIsOpaque</a> </li>
+<li>
+0 if the transparency is unknown. </li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cm</td><td>the color model from which to get the transparency, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="">Resources.Keys</a> value for the transparency, or 0 if unknown. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06627.html#adabf2ad5db07b94bc5c58036d8937424">GridCoverage2D.appendDataLayout()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                                                        {</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">if</span> (cm != null) {</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">if</span> (cm.hasAlpha()) {</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">return</span> Resources.Keys.ImageHasAlphaChannel;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            }</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordflow">switch</span> (cm.getTransparency()) {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="keywordflow">case</span> ColorModel.TRANSLUCENT:</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordflow">case</span> ColorModel.BITMASK: <span class="keywordflow">return</span> Resources.Keys.ImageAllowsTransparency;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="keywordflow">case</span> ColorModel.OPAQUE:  <span class="keywordflow">return</span> Resources.Keys.ImageIsOpaque;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            }</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae87ee0d7c57ab0c5c7c21850e91b3c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87ee0d7c57ab0c5c7c21850e91b3c7b">&#9670;&nbsp;</a></span>getVisibleBand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int getVisibleBand </td>
+          <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the given image is showing only one band, returns the index of that band. </p>
+<p>Otherwise returns 0. Image showing only one band are SIS-specific (usually an image show all its bands).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>the image for which to get the visible band, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index of the visible band, or -1 if there is none or more than one. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                                {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (image != null) {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keyword">final</span> ColorModel cm = image.getColorModel();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span> (cm != null) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keyword">final</span> ColorSpace cs = cm.getColorSpace();</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">if</span> (cs instanceof ScaledColorSpace) {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="keywordflow">return</span> ((ScaledColorSpace) cs).visibleBand;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                }</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keywordflow">if</span> (cm instanceof MultiBandsIndexColorModel) {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">return</span> ((MultiBandsIndexColorModel) cm).visibleBand;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">if</span> (cm.getNumComponents() == 1) {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ada8e651973279177eb1355aac6b402bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8e651973279177eb1355aac6b402bf">&#9670;&nbsp;</a></span>prepareTransferRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int prepareTransferRegion </td>
+          <td>(</td>
+          <td class="paramtype">final Rectangle&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>dataType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suggests the height of a transfer region for a tile of the given size. </p>
+<p>The given region should be contained inside <a class="el" href="">Raster#getBounds()</a>. This method modifies <a class="el" href="">Rectangle#height</a> in-place. The <a class="el" href="">Rectangle#width</a> value is never modified, so caller can iterate on all raster rows without the need to check if the row is incomplete.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bounds</td><td>on input, the region of interest. On output, the suggested transfer region bounds. </td></tr>
+    <tr><td class="paramname">dataType</td><td>one of <a class="el" href="">DataBuffer</a> constant. It is okay if an unknown constant is used since this information is used only as a hint for adjusting the <a class="el" href="a06675.html#a2d3b35bbd93276f93a242b96dbd122f2">BUFFER_SIZE</a> value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the maximum <em>y</em> value plus 1. This can be used as stop condition for iterating over rows. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArithmeticException</td><td>if the maximum <em>y</em> value overflows 32 bits integer capacity. </td></tr>
+    <tr><td class="paramname">RasterFormatException</td><td>if the given bounds is empty. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06675.html#a2d3b35bbd93276f93a242b96dbd122f2">ImageUtilities.BUFFER_SIZE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06651.html#a005f052ccde298530644a120ef1fc7ea">PlanarImage.copyData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                                                                        {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">if</span> (bounds.isEmpty()) {</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> RasterFormatException(Resources.format(Resources.Keys.EmptyTileOrImageRegion));</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        }</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> afterLastRow = Math.addExact(bounds.y, bounds.height);</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordtype">int</span> size;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            size = DataBuffer.getDataTypeSize(dataType);</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        } <span class="keywordflow">catch</span> (<a class="code" href="a14295.html">IllegalArgumentException</a> e) {</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            size = Short.SIZE;  <span class="comment">// Arbitrary value is okay because this is only a hint for choosing a buffer size.</span></div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        bounds.height = Math.max(1, Math.min(<a class="code" href="a06675.html#a2d3b35bbd93276f93a242b96dbd122f2">BUFFER_SIZE</a> / (size * bounds.width), bounds.height));</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">return</span> afterLastRow;</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div><div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a06675_html_a2d3b35bbd93276f93a242b96dbd122f2"><div class="ttname"><a href="a06675.html#a2d3b35bbd93276f93a242b96dbd122f2">org.apache.sis.internal.coverage.j2d.ImageUtilities.BUFFER_SIZE</a></div><div class="ttdeci">static final int BUFFER_SIZE</div><div class="ttdoc">Approximate size of the buffer to use for copying data from/to a raster, in bits. ...</div><div class="ttdef"><b>Definition:</b> apache/sis/internal/coverage/j2d/ImageUtilities.java:69</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae6f9097774c75a5f0677b1abad167637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f9097774c75a5f0677b1abad167637">&#9670;&nbsp;</a></span>accumulator</h2>
+<a id="a2d3b35bbd93276f93a242b96dbd122f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3b35bbd93276f93a242b96dbd122f2">&#9670;&nbsp;</a></span>BUFFER_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,23 +593,26 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final A accumulator</td>
+          <td class="memname">final int BUFFER_SIZE = 32 * <a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a> * Byte.SIZE</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A thread-local variable which is given to each invocation of the <a class="el" href="a06667.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>. </p>
-<p>Processor implementation can use this instance for storing or updating information. No synchronization is needed since this instance is not shared by other threads. This value may be</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if no such object is needed. </p>
+<p>Approximate size of the buffer to use for copying data from/to a raster, in bits. </p>
+<p>The actual buffer size may be smaller or larger, depending on the actual tile size. This value does not need to be very large. The current value is 8 kb.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06675.html#ada8e651973279177eb1355aac6b402bf" title="Suggests the height of a transfer region for a tile of the given size. ">prepareTransferRegion(Rectangle, int)</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06675.html#ada8e651973279177eb1355aac6b402bf">ImageUtilities.prepareTransferRegion()</a>.</p>
 
 </div>
 </div>
-<a id="a21cca1f9a7342fbd8caeaf4e519c896a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21cca1f9a7342fbd8caeaf4e519c896a">&#9670;&nbsp;</a></span>cursor</h2>
+<a id="ae4722e01fe5225e6cdd3e5909ae2d04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4722e01fe5225e6cdd3e5909ae2d04a">&#9670;&nbsp;</a></span>DEFAULT_TILE_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,23 +621,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="a06663.html">Cursor</a>&lt;RI,A&gt; cursor</td>
+          <td class="memname">final int DEFAULT_TILE_SIZE = 256</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>An iterator over the indices of the next tiles to fetch. </p>
-<p>The same instance will be shared by all <a class="el" href="a06667.html">Worker</a> instances created by the same call to <a class="el" href="a06671.html#a897d4e476be84070570b5b2fffbe355c">ReadWork.execute(…)</a> or <a class="el" href="a06675.html#abbe05319666d3715eb016d69fe8426d4">WriteWork.execute(…)</a>. </p>
+<p>Default width and height of tiles, in pixels. </p>
 
 </div>
 </div>
-<a id="a5fbeac52d84508f2507ba8348aafab09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fbeac52d84508f2507ba8348aafab09">&#9670;&nbsp;</a></span>processor</h2>
+<a id="a7b6bac6f40926b5faf547cfde0528336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6bac6f40926b5faf547cfde0528336">&#9670;&nbsp;</a></span>SUGGESTED_TILE_CACHE_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,23 +645,23 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final BiConsumer&lt;A, ? super RT&gt; processor</td>
+          <td class="memname">final int SUGGESTED_TILE_CACHE_SIZE = 10 * (1024 * 1024) / (<a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a> * <a class="el" href="a06675.html#ae4722e01fe5225e6cdd3e5909ae2d04a">DEFAULT_TILE_SIZE</a>)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>. </p>
-<p>Each invocation of that process will also receive the <a class="el" href="a06667.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a> value, which is an instance unique to each thread. </p>
+<p>Suggested size for a tile cache in number of tiles. </p>
+<p>This value can be used for very simple caching mechanism, keeping the most recently used tiles up to 10 Mb of memory. This is not for sophisticated caching mechanism; instead the "real" caching should be done by <a class="el" href="">org.apache.sis.image.ComputedImage</a>. </p>
 
 </div>
 </div>
-<a id="a40590f55f82df430f8035df8dd4f03c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40590f55f82df430f8035df8dd4f03c2">&#9670;&nbsp;</a></span>tx</h2>
+<a id="a78456cb7134657e6431845c7acacc500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78456cb7134657e6431845c7acacc500">&#9670;&nbsp;</a></span>TYPE_NAMES</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,40 +670,17 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int tx</td>
+          <td class="memname">final String [] TYPE_NAMES = new String[DataBuffer.TYPE_DOUBLE + 1]</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indices of the tile to fetch. </p>
-<p>Those indices are updated by <a class="el" href="">Cursor#next(Worker)</a>. </p>
-
-</div>
-</div>
-<a id="a75f29260f9728325050cd039109732b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f29260f9728325050cd039109732b7">&#9670;&nbsp;</a></span>ty</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ty</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Names of <a class="el" href="">DataBuffer</a> types. </p>
 
 </div>
 </div>
@@ -513,7 +690,7 @@ Private Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03834.html">apache</a></li><li class="navelem"><a class="el" href="a03835.html">sis</a></li><li class="navelem"><a class="el" href="a03839.html">internal</a></li><li class="navelem"><a class="el" href="a03840.html">coverage</a></li><li class="navelem"><a class="el" href="a03838.html">j2d</a></li><li class="navelem"><a class="el" href="a06659.html">TileOpExecutor</a></li><li class="navelem"><a class="el" href="a06675.html">WriteWork</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03858.html">apache</a></li><li class="navelem"><a class="el" href="a03859.html">sis</a></li><li class="navelem"><a class="el" href="a03863.html">internal</a></li><li class="navelem"><a class="el" href="a03864.html">coverage</a></li><li class="navelem"><a class="el" href="a03862.html">j2d</a></li><li class="navelem"><a class="el" href="a06675.html">ImageUtilities</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,4 @@
 var a08475 =
 [
-    [ "testMinimumDiameter", "a08475.html#a73584ebc5e2d20692de63f5ae4f13387", null ],
-    [ "testPolygon", "a08475.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testIsMeasuredFalse", "a08475.html#a0d34749daed816e995d607f25393f8bd", null ]
 ];

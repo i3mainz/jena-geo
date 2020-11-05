@@ -1,8 +1,8 @@
 var a08359 =
 [
-    [ "testBBOXDistance", "a08359.html#a92dec506ee3b1258b55159ac890afd0a", null ],
-    [ "testGeom1", "a08359.html#aa4a3b1a7e778ece72382f6600fa96b47", null ],
-    [ "testGeom2", "a08359.html#a6b4be369c8f60e973cd5126e69cd33a4", null ],
-    [ "testGeom3", "a08359.html#a800b6bb875a8ff4404ea787c3df125a5", null ],
-    [ "testGeom4", "a08359.html#a4c55e7efe430d6d220fb05524c4bb940", null ]
+    [ "LengthSubstring", "a08359.html#a8375df00135da48182ecb97996cfebf1", null ],
+    [ "computeSubstring", "a08359.html#ad8eec22df403077b17b2ac90b0c95230", null ],
+    [ "getSubstring", "a08359.html#a0899c2e48f2616119c3f0e3e297549e6", null ],
+    [ "getSubstring", "a08359.html#a7aa54bd5af7e7f3fd33047db15540bc4", null ],
+    [ "line", "a08359.html#a53e992765125efc5fc595f0d38e947ea", null ]
 ];

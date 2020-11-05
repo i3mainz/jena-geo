@@ -1,12 +1,19 @@
 var a07923 =
 [
-    [ "Weak", "a07923.html#a7850b347634f3c179e27480f32289634", null ],
-    [ "Weak", "a07923.html#a20ba54e65be94ea19dc994da4c6b5034", null ],
-    [ "dispose", "a07923.html#a0581cd101ce4eccbed20097d967a3c9b", null ],
-    [ "eventOccured", "a07923.html#a8b5445e3f502e7d9b491048a0a1e48f3", null ],
-    [ "registerSource", "a07923.html#a4ad7c379ea4290d724322c0938de42b9", null ],
-    [ "remove", "a07923.html#aee8ec854f535ecdf4d7ac604c8067ce3", null ],
-    [ "unregisterAll", "a07923.html#a6f5925e6168f5e1130888e49b1ba0795", null ],
-    [ "unregisterSource", "a07923.html#a261b30e187359dc607c06a9e78c20a48", null ],
-    [ "sources", "a07923.html#a631a0b816056c0a311c2c23c38fde718", null ]
+    [ "DataStores", "a07923.html#a921fd59c6fa3f7657c06dce7f8db57b9", null ],
+    [ "canProcess", "a07923.html#aa3cd0cad2bb7c53098e7e96ca41b138a", null ],
+    [ "create", "a07923.html#a16cdccc1514db3ece3c1b042d7920505", null ],
+    [ "flatten", "a07923.html#ac2e60984f931612f9bc16cc950019c45", null ],
+    [ "flatten", "a07923.html#acc11ba13ec91b7e2df02fde1b419e1e5", null ],
+    [ "forceIdentifier", "a07923.html#aaf94d629c9086791ae1c06bd83951771", null ],
+    [ "getFactoryById", "a07923.html#a795c94d7b2e837fc8bf6829d43f9ae35", null ],
+    [ "getNames", "a07923.html#a0ca7d3e5875df957d83d7e03c33bcc25", null ],
+    [ "getProviderById", "a07923.html#ae538d68bed2bfddcb92ab97f90fe90bf", null ],
+    [ "getProviders", "a07923.html#aa5097ae40591d8846d9e7e932551054a", null ],
+    [ "getResourceTypes", "a07923.html#ace666e5104c32480848a9def241bac2a", null ],
+    [ "list", "a07923.html#aaad489344732e0789be3fac3ea8e3bd0", null ],
+    [ "open", "a07923.html#adebe6181ac00f080ddfca978e995412b", null ],
+    [ "open", "a07923.html#ae19f2bab74f3668f7f355844090164af", null ],
+    [ "open", "a07923.html#a57c9e7f2c19036d0ddae6465218c735e", null ],
+    [ "open", "a07923.html#a767817848eccf7fe571ede638dee8f0e", null ]
 ];

@@ -1,6 +1,9 @@
 var a08687 =
 [
-    [ "testRelate", "a08687.html#a8592662d9e01b3d8f2f9a86b6bb48372", null ],
-    [ "isocelesTriangle", "a08687.html#aa04dfbec745e2622b9f7646f8572e501", null ],
-    [ "notIsocelesTriangle", "a08687.html#a055d99fb63bcee37763ffcf4da9e0521", null ]
+    [ "testFrechetDistance", "a08687.html#a5bff1004c37a0e341e5f332b85af5df7", null ],
+    [ "testFrechetDistance2", "a08687.html#ab636329ee1caf67c720cde627e984ebf", null ],
+    [ "testGeom1", "a08687.html#aa4a3b1a7e778ece72382f6600fa96b47", null ],
+    [ "testGeom2", "a08687.html#a6b4be369c8f60e973cd5126e69cd33a4", null ],
+    [ "testGeom3", "a08687.html#a800b6bb875a8ff4404ea787c3df125a5", null ],
+    [ "testGeom4", "a08687.html#a4c55e7efe430d6d220fb05524c4bb940", null ]
 ];

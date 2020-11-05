@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: DeferringIterator&lt; E &gt; Class Template Reference</title>
+<title>jena-geo: CheckedArrayList&lt; E &gt;.ListIter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,94 +62,88 @@ $(document).ready(function(){initNavTree('a07991.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
 <a href="a07988.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DeferringIterator&lt; E &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">CheckedArrayList&lt; E &gt;.ListIter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An iterator deferring to the iteration end any object which comply to some criterion.  
+<p>A synchronized list iterator with a check for write permission prior element removal.  
  <a href="a07991.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for DeferringIterator&lt; E &gt;:</div>
+Inheritance diagram for CheckedArrayList&lt; E &gt;.ListIter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07990.png" border="0" usemap="#DeferringIterator_3_01E_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="DeferringIterator_3_01E_01_4_inherit__map" id="DeferringIterator_3_01E_01_4_inherit__map">
-<area shape="rect" id="node3" href="a06799.html" title="An iterator which move at the end of the iteration any class not loaded by the context class loader o..." alt="" coords="5,171,147,197"/>
-<area shape="rect" id="node4" href="a07991.html" title="DeferringIterator\&lt; T \&gt;" alt="" coords="171,171,319,197"/>
+<div class="center"><img src="a07990.png" border="0" usemap="#CheckedArrayList_3_01E_01_4_8ListIter_inherit__map" alt="Inheritance graph"/></div>
+<map name="CheckedArrayList_3_01E_01_4_8ListIter_inherit__map" id="CheckedArrayList_3_01E_01_4_8ListIter_inherit__map">
+<area shape="rect" id="node2" href="a07987.html" title="CheckedArrayList\&lt; E\l \&gt;.Iter\&lt; ListIterator\l\&lt; E \&gt; \&gt;" alt="" coords="37,199,184,255"/>
+<area shape="rect" id="node3" href="a07987.html" title="A synchronized iterator with a check for write permission prior element removal. " alt="" coords="10,95,211,136"/>
+<area shape="rect" id="node5" href="a14087.html" title="Iterator\&lt; E" alt="" coords="126,5,210,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for DeferringIterator&lt; E &gt;:</div>
+Collaboration diagram for CheckedArrayList&lt; E &gt;.ListIter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07989.png" border="0" usemap="#DeferringIterator_3_01E_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="DeferringIterator_3_01E_01_4_coll__map" id="DeferringIterator_3_01E_01_4_coll__map">
+<div class="center"><img src="a07989.png" border="0" usemap="#CheckedArrayList_3_01E_01_4_8ListIter_coll__map" alt="Collaboration graph"/></div>
+<map name="CheckedArrayList_3_01E_01_4_8ListIter_coll__map" id="CheckedArrayList_3_01E_01_4_8ListIter_coll__map">
+<area shape="rect" id="node2" href="a07987.html" title="CheckedArrayList\&lt; E\l \&gt;.Iter\&lt; ListIterator\l\&lt; E \&gt; \&gt;" alt="" coords="80,199,227,255"/>
+<area shape="rect" id="node3" href="a07987.html" title="A synchronized iterator with a check for write permission prior element removal. " alt="" coords="53,95,254,136"/>
+<area shape="rect" id="node6" href="a14087.html" title="Iterator\&lt; E" alt="" coords="205,5,289,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a58d1cc3d61071d927bf040bf0b035a22"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a> ()</td></tr>
-<tr class="memdesc:a58d1cc3d61071d927bf040bf0b035a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a58d1cc3d61071d927bf040bf0b035a22">More...</a><br /></td></tr>
-<tr class="separator:a58d1cc3d61071d927bf040bf0b035a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c7c989f92fa935704b4915f1f400edd"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next</a> ()</td></tr>
-<tr class="memdesc:a0c7c989f92fa935704b4915f1f400edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next element in the iteration.  <a href="#a0c7c989f92fa935704b4915f1f400edd">More...</a><br /></td></tr>
-<tr class="separator:a0c7c989f92fa935704b4915f1f400edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fcb45e5d2428352eb36b487d1d4eea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a1fcb45e5d2428352eb36b487d1d4eea3">remove</a> ()  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:a1fcb45e5d2428352eb36b487d1d4eea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last element returned by the iterator.  <a href="#a1fcb45e5d2428352eb36b487d1d4eea3">More...</a><br /></td></tr>
-<tr class="separator:a1fcb45e5d2428352eb36b487d1d4eea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456d33686336a77b2367f5b5220fabb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a456d33686336a77b2367f5b5220fabb1">nextIndex</a> ()</td></tr>
+<tr class="memdesc:a456d33686336a77b2367f5b5220fabb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the element to be returned by <a class="el" href="a07987.html#a4db4ce90b801a1f27525eee69b2044be">next()</a>.  <a href="#a456d33686336a77b2367f5b5220fabb1">More...</a><br /></td></tr>
+<tr class="separator:a456d33686336a77b2367f5b5220fabb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b40dbb8cb0a1ebba0c70b73ea7a0792"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a1b40dbb8cb0a1ebba0c70b73ea7a0792">previousIndex</a> ()</td></tr>
+<tr class="memdesc:a1b40dbb8cb0a1ebba0c70b73ea7a0792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the element to be returned by <a class="el" href="a07991.html#a8c3782f8286beb492e7ea0983222c200">previous()</a>.  <a href="#a1b40dbb8cb0a1ebba0c70b73ea7a0792">More...</a><br /></td></tr>
+<tr class="separator:a1b40dbb8cb0a1ebba0c70b73ea7a0792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5102860cd9abee74b9509a0f224e779c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a5102860cd9abee74b9509a0f224e779c">hasPrevious</a> ()</td></tr>
+<tr class="memdesc:a5102860cd9abee74b9509a0f224e779c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a5102860cd9abee74b9509a0f224e779c">More...</a><br /></td></tr>
+<tr class="separator:a5102860cd9abee74b9509a0f224e779c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3782f8286beb492e7ea0983222c200"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a8c3782f8286beb492e7ea0983222c200">previous</a> ()  throws NoSuchElementException </td></tr>
+<tr class="memdesc:a8c3782f8286beb492e7ea0983222c200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the previous element in the iteration.  <a href="#a8c3782f8286beb492e7ea0983222c200">More...</a><br /></td></tr>
+<tr class="separator:a8c3782f8286beb492e7ea0983222c200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da297c42ddd4c9d66e617164dd8ed74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a7da297c42ddd4c9d66e617164dd8ed74">set</a> (final E element)  throws IllegalArgumentException, UnsupportedOperationException </td></tr>
+<tr class="memdesc:a7da297c42ddd4c9d66e617164dd8ed74"><td class="mdescLeft">&#160;</td><td class="mdescRight">See the <a class="el" href="">CheckedArrayList#set(int, Object)</a> method contract.  <a href="#a7da297c42ddd4c9d66e617164dd8ed74">More...</a><br /></td></tr>
+<tr class="separator:a7da297c42ddd4c9d66e617164dd8ed74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03611638d27079f92945c0d1e5f9180d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a03611638d27079f92945c0d1e5f9180d">add</a> (final E element)  throws IllegalArgumentException, UnsupportedOperationException </td></tr>
+<tr class="memdesc:a03611638d27079f92945c0d1e5f9180d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See the <a class="el" href="">CheckedArrayList#add(Object)</a> method contract.  <a href="#a03611638d27079f92945c0d1e5f9180d">More...</a><br /></td></tr>
+<tr class="separator:a03611638d27079f92945c0d1e5f9180d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd63d6cef7daf6f6a067f663920cb584"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07987.html#abd63d6cef7daf6f6a067f663920cb584">hasNext</a> ()</td></tr>
+<tr class="memdesc:abd63d6cef7daf6f6a067f663920cb584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#abd63d6cef7daf6f6a067f663920cb584">More...</a><br /></td></tr>
+<tr class="separator:abd63d6cef7daf6f6a067f663920cb584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db4ce90b801a1f27525eee69b2044be"><td class="memItemLeft" align="right" valign="top">final E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07987.html#a4db4ce90b801a1f27525eee69b2044be">next</a> ()  throws NoSuchElementException </td></tr>
+<tr class="memdesc:a4db4ce90b801a1f27525eee69b2044be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next element in the iteration.  <a href="#a4db4ce90b801a1f27525eee69b2044be">More...</a><br /></td></tr>
+<tr class="separator:a4db4ce90b801a1f27525eee69b2044be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0161d05dfcd00eb24193a955ce81c546"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07987.html#a0161d05dfcd00eb24193a955ce81c546">remove</a> ()  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:a0161d05dfcd00eb24193a955ce81c546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the previous element if the enclosing <a class="el" href="">CheckedArrayList</a> allows write operations.  <a href="#a0161d05dfcd00eb24193a955ce81c546">More...</a><br /></td></tr>
+<tr class="separator:a0161d05dfcd00eb24193a955ce81c546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af385b12649429b6088a30a7c61ac1018"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#af385b12649429b6088a30a7c61ac1018">DeferringIterator</a> (final Iterator&lt; E &gt; <a class="el" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>)</td></tr>
-<tr class="memdesc:af385b12649429b6088a30a7c61ac1018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new deferring iterator.  <a href="#af385b12649429b6088a30a7c61ac1018">More...</a><br /></td></tr>
-<tr class="separator:af385b12649429b6088a30a7c61ac1018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04dad234173800a5923173cc5cad9982"><td class="memItemLeft" align="right" valign="top">abstract boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a04dad234173800a5923173cc5cad9982">isDeferred</a> (E element)</td></tr>
-<tr class="memdesc:a04dad234173800a5923173cc5cad9982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a04dad234173800a5923173cc5cad9982">More...</a><br /></td></tr>
-<tr class="separator:a04dad234173800a5923173cc5cad9982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae6424f6b26f2e9dbd839c984be8710a4"><td class="memItemLeft" align="right" valign="top">final I&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a></td></tr>
+<tr class="memdesc:ae6424f6b26f2e9dbd839c984be8710a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="">ArrayList</a> iterator.  <a href="#ae6424f6b26f2e9dbd839c984be8710a4">More...</a><br /></td></tr>
+<tr class="separator:ae6424f6b26f2e9dbd839c984be8710a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:adb3c0ef1dd13ed0d4fc809eb13276cb4"><td class="memItemLeft" align="right" valign="top">Iterator&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a> ()</td></tr>
-<tr class="memdesc:adb3c0ef1dd13ed0d4fc809eb13276cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches to the fallback iterator.  <a href="#adb3c0ef1dd13ed0d4fc809eb13276cb4">More...</a><br /></td></tr>
-<tr class="separator:adb3c0ef1dd13ed0d4fc809eb13276cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac32073933df5a4eaab0b7c6e5f06fd65"><td class="memItemLeft" align="right" valign="top">Iterator&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a></td></tr>
-<tr class="memdesc:ac32073933df5a4eaab0b7c6e5f06fd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">The iterator given to the constructor, or the  <a class="el" href="a07991.html#a8edf525e327321e86fb91eb7320e64c4" title="The object of classes not loaded by the desired class loader. ">fallbacks</a>} iterator.  <a href="#ac32073933df5a4eaab0b7c6e5f06fd65">More...</a><br /></td></tr>
-<tr class="separator:ac32073933df5a4eaab0b7c6e5f06fd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8edf525e327321e86fb91eb7320e64c4"><td class="memItemLeft" align="right" valign="top">List&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a8edf525e327321e86fb91eb7320e64c4">fallbacks</a></td></tr>
-<tr class="memdesc:a8edf525e327321e86fb91eb7320e64c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object of classes not loaded by the desired class loader.  <a href="#a8edf525e327321e86fb91eb7320e64c4">More...</a><br /></td></tr>
-<tr class="separator:a8edf525e327321e86fb91eb7320e64c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72671c985090e890a47cab982404af0f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#a72671c985090e890a47cab982404af0f">usingFallbacks</a></td></tr>
-<tr class="separator:a72671c985090e890a47cab982404af0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:aeea6c8d0b034f20f251d336ce72988a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07991.html#aeea6c8d0b034f20f251d336ce72988a0">ListIter</a> (final ListIterator&lt; E &gt; <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>)</td></tr>
+<tr class="memdesc:aeea6c8d0b034f20f251d336ce72988a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new wrapper for the given <a class="el" href="">ArrayList</a> list iterator.  <a href="#aeea6c8d0b034f20f251d336ce72988a0">More...</a><br /></td></tr>
+<tr class="separator:aeea6c8d0b034f20f251d336ce72988a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An iterator deferring to the iteration end any object which comply to some criterion. </p>
-<p>This class needs: </p>
-<ul>
-<li>
-An iterator to wrap (given at construction time) </li>
-<li>
-An implementation of the <a class="el" href="">isDeferred(T)</a> method. </li>
-</ul>
-<p>When the <a class="el" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next()</a> method is invoked,</p><div class="fragment"><div class="line"><a class="code" href="a07991.html#af385b12649429b6088a30a7c61ac1018">DeferringIterator</a> </div></div><!-- fragment --><p> first delegates to the</p><div class="fragment"><div class="line"><a class="code" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next</a>() </div></div><!-- fragment --><p> method of the wrapped iterator, then gives the obtained element to the <a class="el" href="">isDeferred</a> method. If</p><div class="fragment"><div class="line"><a class="code" href="a07991.html#a04dad234173800a5923173cc5cad9982">isDeferred</a> </div></div><!-- fragment --><p>  returns</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> , then the element is returned immediately. Otherwise the element is enqueued and will be returned in queue insertion order only after all non-deferred elements have been returned by this iterator.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">&lt;E&gt;</td><td>The type of elements to be returned by the iterator.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.20  </dd></dl>
+<div class="textblock"><p>A synchronized list iterator with a check for write permission prior element removal. </p>
+<p>This class wraps the iterator provided by <a class="el" href="">ArrayList#listIterator()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07983.html#a77aa09fd72dbf76fe8de0d581d105219" title="Returns an iterator over the elements in this list. ">CheckedArrayList::listIterator()</a> </dd>
+<dd>
+<a class="el" href="a07983.html#a6813c05cf39dde522e3c8cbde71839f3" title="Returns an iterator over the elements in this list, starting at the given index. ">CheckedArrayList::listIterator(int)</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af385b12649429b6088a30a7c61ac1018"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af385b12649429b6088a30a7c61ac1018">&#9670;&nbsp;</a></span>DeferringIterator()</h2>
+<a id="aeea6c8d0b034f20f251d336ce72988a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea6c8d0b034f20f251d336ce72988a0">&#9670;&nbsp;</a></span>ListIter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,184 +152,265 @@ An implementation of the <a class="el" href="">isDeferred(T)</a> method. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07991.html">DeferringIterator</a> </td>
+          <td class="memname"><a class="el" href="a07991.html">ListIter</a> </td>
           <td>(</td>
-          <td class="paramtype">final Iterator&lt; E &gt;&#160;</td>
+          <td class="paramtype">final ListIterator&lt; E &gt;&#160;</td>
           <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new deferring iterator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iterator</td><td>The iterator to wrap. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                            {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;iterator&quot;</span>, <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        this.<a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a> = <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div><div class="ttc" id="a07991_html_ac32073933df5a4eaab0b7c6e5f06fd65"><div class="ttname"><a href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">org.geotoolkit.util.collection.DeferringIterator.iterator</a></div><div class="ttdeci">Iterator&lt; E &gt; iterator</div><div class="ttdoc">The iterator given to the constructor, or the  fallbacks} iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:57</div></div>
+<p>Creates a new wrapper for the given <a class="el" href="">ArrayList</a> list iterator. </p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                                                 {</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            super(<a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>);</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div><div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adb3c0ef1dd13ed0d4fc809eb13276cb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb3c0ef1dd13ed0d4fc809eb13276cb4">&#9670;&nbsp;</a></span>fallbacks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Iterator&lt;E&gt; fallbacks </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Switches to the fallback iterator. </p>
-<p>This method is invoked when the iteration using the iterator given at construction time is finished. </p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                    {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>       = <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a>.iterator();</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a>      = null;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="a07991.html#a72671c985090e890a47cab982404af0f">usingFallbacks</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div><div class="ttc" id="a07991_html_adb3c0ef1dd13ed0d4fc809eb13276cb4"><div class="ttname"><a href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">org.geotoolkit.util.collection.DeferringIterator.fallbacks</a></div><div class="ttdeci">Iterator&lt; E &gt; fallbacks()</div><div class="ttdoc">Switches to the fallback iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:127</div></div>
-<div class="ttc" id="a07991_html_a72671c985090e890a47cab982404af0f"><div class="ttname"><a href="a07991.html#a72671c985090e890a47cab982404af0f">org.geotoolkit.util.collection.DeferringIterator.usingFallbacks</a></div><div class="ttdeci">boolean usingFallbacks</div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:68</div></div>
-<div class="ttc" id="a07991_html_ac32073933df5a4eaab0b7c6e5f06fd65"><div class="ttname"><a href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">org.geotoolkit.util.collection.DeferringIterator.iterator</a></div><div class="ttdeci">Iterator&lt; E &gt; iterator</div><div class="ttdoc">The iterator given to the constructor, or the  fallbacks} iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:57</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a58d1cc3d61071d927bf040bf0b035a22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58d1cc3d61071d927bf040bf0b035a22">&#9670;&nbsp;</a></span>hasNext()</h2>
+<a id="a03611638d27079f92945c0d1e5f9180d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03611638d27079f92945c0d1e5f9180d">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean hasNext </td>
+          <td class="memname">void add </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the iteration has more elements. </p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                             {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">boolean</span> <a class="code" href="a07991.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a> = <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>.hasNext();</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (!hasNext &amp;&amp; !<a class="code" href="a07991.html#a72671c985090e890a47cab982404af0f">usingFallbacks</a> &amp;&amp; <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a> != null) {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            hasNext = <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a>().hasNext();</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07991.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div><div class="ttc" id="a07991_html_adb3c0ef1dd13ed0d4fc809eb13276cb4"><div class="ttname"><a href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">org.geotoolkit.util.collection.DeferringIterator.fallbacks</a></div><div class="ttdeci">Iterator&lt; E &gt; fallbacks()</div><div class="ttdoc">Switches to the fallback iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:127</div></div>
-<div class="ttc" id="a07991_html_a72671c985090e890a47cab982404af0f"><div class="ttname"><a href="a07991.html#a72671c985090e890a47cab982404af0f">org.geotoolkit.util.collection.DeferringIterator.usingFallbacks</a></div><div class="ttdeci">boolean usingFallbacks</div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:68</div></div>
-<div class="ttc" id="a07991_html_ac32073933df5a4eaab0b7c6e5f06fd65"><div class="ttname"><a href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">org.geotoolkit.util.collection.DeferringIterator.iterator</a></div><div class="ttdeci">Iterator&lt; E &gt; iterator</div><div class="ttdoc">The iterator given to the constructor, or the  fallbacks} iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:57</div></div>
-<div class="ttc" id="a07991_html_a58d1cc3d61071d927bf040bf0b035a22"><div class="ttname"><a href="a07991.html#a58d1cc3d61071d927bf040bf0b035a22">org.geotoolkit.util.collection.DeferringIterator.hasNext</a></div><div class="ttdeci">boolean hasNext()</div><div class="ttdoc">Returns. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:97</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a04dad234173800a5923173cc5cad9982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04dad234173800a5923173cc5cad9982">&#9670;&nbsp;</a></span>isDeferred()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">abstract boolean isDeferred </td>
-          <td>(</td>
-          <td class="paramtype">E&#160;</td>
+          <td class="paramtype">final E&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
+          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the given element should be deferred at the end of the iteration. This method is invoked by the <a class="el" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next()</a> method for all objects returned by the wrapped iterator. If this method returns</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> , then the given element will be returned immediately by the</p><div class="fragment"><div class="line"><a class="code" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next</a>() </div></div><!-- fragment --><p> method. Otherwise the element is enqueued and will be returned only after all non-deferred elements have been returned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">element</td><td>The object to test. May be<div class="fragment"><div class="line">null </div></div><!-- fragment --> if the wrapped iterator can returns null elements. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the given object should be deferred at the end of the iteration. </dd></dl>
+<p>See the <a class="el" href="">CheckedArrayList#add(Object)</a> method contract. </p>
 
+<p class="reference">References <a class="el" href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedArrayList&lt; E &gt;.checkWritePermission()</a>, <a class="el" href="a07983.html#a324d15358964a7207776d1dacd8428af">CheckedArrayList&lt; E &gt;.ensureValid()</a>, <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;.getLock()</a>, and <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">CheckedArrayList&lt; E &gt;.Iter&lt; I extends Iterator&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                                                                                        {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <a class="code" href="a07983.html#a324d15358964a7207776d1dacd8428af">ensureValid</a>(element);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07983.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <a class="code" href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.add(element);</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            }</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div><div class="ttc" id="a07983_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07983.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedArrayList.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:170</div></div>
+<div class="ttc" id="a07983_html_a324d15358964a7207776d1dacd8428af"><div class="ttname"><a href="a07983.html#a324d15358964a7207776d1dacd8428af">org.geotoolkit.util.collection.CheckedArrayList.ensureValid</a></div><div class="ttdeci">void ensureValid(final E element)</div><div class="ttdoc">Ensures that the given element can be added to this list. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:122</div></div>
+<div class="ttc" id="a07983_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedArrayList.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this list are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:157</div></div>
+<div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a0c7c989f92fa935704b4915f1f400edd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7c989f92fa935704b4915f1f400edd">&#9670;&nbsp;</a></span>next()</h2>
+<a id="abd63d6cef7daf6f6a067f663920cb584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd63d6cef7daf6f6a067f663920cb584">&#9670;&nbsp;</a></span>hasNext()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">E next </td>
+          <td class="memname">final boolean hasNext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if there is more elements in the iteration. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;::getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                       {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keyword">synchronized</span> (getLock()) {</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.hasNext();</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            }</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div><div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5102860cd9abee74b9509a0f224e779c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5102860cd9abee74b9509a0f224e779c">&#9670;&nbsp;</a></span>hasPrevious()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean hasPrevious </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if there is elements before current position. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;.getLock()</a>, and <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">CheckedArrayList&lt; E &gt;.Iter&lt; I extends Iterator&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                     {</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07983.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.hasPrevious();</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            }</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div><div class="ttc" id="a07983_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07983.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedArrayList.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:170</div></div>
+<div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4db4ce90b801a1f27525eee69b2044be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db4ce90b801a1f27525eee69b2044be">&#9670;&nbsp;</a></span>next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final E next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws NoSuchElementException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the next element in the iteration. </p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">do</span> {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">final</span> E <a class="code" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next</a> = <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>.next();</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a07991.html#a72671c985090e890a47cab982404af0f">usingFallbacks</a> || !<a class="code" href="a07991.html#a04dad234173800a5923173cc5cad9982">isDeferred</a>(next)) {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">next</a>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a> == null) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a> = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a>.add(next);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        } <span class="keywordflow">while</span> (<a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>.hasNext());</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">fallbacks</a>().next();</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div><div class="ttc" id="a07991_html_a04dad234173800a5923173cc5cad9982"><div class="ttname"><a href="a07991.html#a04dad234173800a5923173cc5cad9982">org.geotoolkit.util.collection.DeferringIterator.isDeferred</a></div><div class="ttdeci">abstract boolean isDeferred(E element)</div><div class="ttdoc">Returns. </div></div>
-<div class="ttc" id="a07991_html_adb3c0ef1dd13ed0d4fc809eb13276cb4"><div class="ttname"><a href="a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4">org.geotoolkit.util.collection.DeferringIterator.fallbacks</a></div><div class="ttdeci">Iterator&lt; E &gt; fallbacks()</div><div class="ttdoc">Switches to the fallback iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:127</div></div>
-<div class="ttc" id="a07991_html_a0c7c989f92fa935704b4915f1f400edd"><div class="ttname"><a href="a07991.html#a0c7c989f92fa935704b4915f1f400edd">org.geotoolkit.util.collection.DeferringIterator.next</a></div><div class="ttdeci">E next()</div><div class="ttdoc">Returns the next element in the iteration. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:109</div></div>
-<div class="ttc" id="a07991_html_a72671c985090e890a47cab982404af0f"><div class="ttname"><a href="a07991.html#a72671c985090e890a47cab982404af0f">org.geotoolkit.util.collection.DeferringIterator.usingFallbacks</a></div><div class="ttdeci">boolean usingFallbacks</div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:68</div></div>
-<div class="ttc" id="a07991_html_ac32073933df5a4eaab0b7c6e5f06fd65"><div class="ttname"><a href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">org.geotoolkit.util.collection.DeferringIterator.iterator</a></div><div class="ttdeci">Iterator&lt; E &gt; iterator</div><div class="ttdoc">The iterator given to the constructor, or the  fallbacks} iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:57</div></div>
+
+<p class="reference">References <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;::getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                                            {</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keyword">synchronized</span> (getLock()) {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.next();</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div><div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a1fcb45e5d2428352eb36b487d1d4eea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fcb45e5d2428352eb36b487d1d4eea3">&#9670;&nbsp;</a></span>remove()</h2>
+<a id="a456d33686336a77b2367f5b5220fabb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456d33686336a77b2367f5b5220fabb1">&#9670;&nbsp;</a></span>nextIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void remove </td>
+          <td class="memname">int nextIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the index of the element to be returned by <a class="el" href="a07987.html#a4db4ce90b801a1f27525eee69b2044be">next()</a>. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;.getLock()</a>, and <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">CheckedArrayList&lt; E &gt;.Iter&lt; I extends Iterator&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                               {</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07983.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.nextIndex();</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            }</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div><div class="ttc" id="a07983_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07983.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedArrayList.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:170</div></div>
+<div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8c3782f8286beb492e7ea0983222c200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3782f8286beb492e7ea0983222c200">&#9670;&nbsp;</a></span>previous()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">E previous </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws NoSuchElementException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the previous element in the iteration. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;.getLock()</a>, and <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">CheckedArrayList&lt; E &gt;.Iter&lt; I extends Iterator&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                                          {</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07983.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.previous();</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div><div class="ttc" id="a07983_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07983.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedArrayList.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:170</div></div>
+<div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1b40dbb8cb0a1ebba0c70b73ea7a0792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b40dbb8cb0a1ebba0c70b73ea7a0792">&#9670;&nbsp;</a></span>previousIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int previousIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the index of the element to be returned by <a class="el" href="a07991.html#a8c3782f8286beb492e7ea0983222c200">previous()</a>. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;.getLock()</a>, and <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">CheckedArrayList&lt; E &gt;.Iter&lt; I extends Iterator&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                                   {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07983.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.previousIndex();</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            }</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div><div class="ttc" id="a07983_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07983.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedArrayList.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:170</div></div>
+<div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0161d05dfcd00eb24193a955ce81c546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0161d05dfcd00eb24193a955ce81c546">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void remove </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> throws UnsupportedOperationException</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Removes the last element returned by the iterator. </p>
-<p>This method is supported only when the following conditions hold: </p>
-<ul>
-<li>
-The iterator is not iterating over the deferred elements </li>
-<li>
-The wrapped iterator given to the constructor supports element removal. </li>
-</ul>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">UnsupportedOperationException</td><td>If the iterator is iterating over deferred elements, or if the wrapped iterator does not support this operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                                              {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07991.html#a72671c985090e890a47cab982404af0f">usingFallbacks</a>) {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException();</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">iterator</a>.remove();</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div><div class="ttc" id="a07991_html_a72671c985090e890a47cab982404af0f"><div class="ttname"><a href="a07991.html#a72671c985090e890a47cab982404af0f">org.geotoolkit.util.collection.DeferringIterator.usingFallbacks</a></div><div class="ttdeci">boolean usingFallbacks</div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:68</div></div>
-<div class="ttc" id="a07991_html_ac32073933df5a4eaab0b7c6e5f06fd65"><div class="ttname"><a href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65">org.geotoolkit.util.collection.DeferringIterator.iterator</a></div><div class="ttdeci">Iterator&lt; E &gt; iterator</div><div class="ttdoc">The iterator given to the constructor, or the  fallbacks} iterator. </div><div class="ttdef"><b>Definition:</b> DeferringIterator.java:57</div></div>
+<p>Removes the previous element if the enclosing <a class="el" href="a07983.html">CheckedArrayList</a> allows write operations. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedArrayList&lt; E &gt;::checkWritePermission()</a>, and <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;::getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                                                        {</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keyword">synchronized</span> (getLock()) {</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                checkWritePermission();</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.remove();</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            }</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div><div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7da297c42ddd4c9d66e617164dd8ed74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da297c42ddd4c9d66e617164dd8ed74">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set </td>
+          <td>(</td>
+          <td class="paramtype">final E&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See the <a class="el" href="">CheckedArrayList#set(int, Object)</a> method contract. </p>
+
+<p class="reference">References <a class="el" href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedArrayList&lt; E &gt;.checkWritePermission()</a>, <a class="el" href="a07983.html#a324d15358964a7207776d1dacd8428af">CheckedArrayList&lt; E &gt;.ensureValid()</a>, <a class="el" href="a07983.html#a604630356717f716349899d57effa633">CheckedArrayList&lt; E &gt;.getLock()</a>, and <a class="el" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">CheckedArrayList&lt; E &gt;.Iter&lt; I extends Iterator&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                                                                                        {</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="a07983.html#a324d15358964a7207776d1dacd8428af">ensureValid</a>(element);</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07983.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                <a class="code" href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <a class="code" href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">iterator</a>.set(element);</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div><div class="ttc" id="a07983_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07983.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedArrayList.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:170</div></div>
+<div class="ttc" id="a07983_html_a324d15358964a7207776d1dacd8428af"><div class="ttname"><a href="a07983.html#a324d15358964a7207776d1dacd8428af">org.geotoolkit.util.collection.CheckedArrayList.ensureValid</a></div><div class="ttdeci">void ensureValid(final E element)</div><div class="ttdoc">Ensures that the given element can be added to this list. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:122</div></div>
+<div class="ttc" id="a07983_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07983.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedArrayList.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this list are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:157</div></div>
+<div class="ttc" id="a07987_html_ae6424f6b26f2e9dbd839c984be8710a4"><div class="ttname"><a href="a07987.html#ae6424f6b26f2e9dbd839c984be8710a4">org.geotoolkit.util.collection.CheckedArrayList.Iter&lt; ListIterator&lt; E &gt; &gt;::iterator</a></div><div class="ttdeci">final I iterator</div><div class="ttdoc">The ArrayList iterator. </div><div class="ttdef"><b>Definition:</b> CheckedArrayList.java:183</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8edf525e327321e86fb91eb7320e64c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8edf525e327321e86fb91eb7320e64c4">&#9670;&nbsp;</a></span>fallbacks</h2>
+<a id="ae6424f6b26f2e9dbd839c984be8710a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6424f6b26f2e9dbd839c984be8710a4">&#9670;&nbsp;</a></span>iterator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,65 +419,17 @@ The wrapped iterator given to the constructor supports element removal. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;E&gt; fallbacks</td>
+          <td class="memname">final I iterator</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The object of classes not loaded by the desired class loader. </p>
-<p>This list is initially null and is created only if needed. </p>
-
-</div>
-</div>
-<a id="ac32073933df5a4eaab0b7c6e5f06fd65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac32073933df5a4eaab0b7c6e5f06fd65">&#9670;&nbsp;</a></span>iterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Iterator&lt;E&gt; iterator</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The iterator given to the constructor, or the  <a class="el" href="a07991.html#a8edf525e327321e86fb91eb7320e64c4" title="The object of classes not loaded by the desired class loader. ">fallbacks</a>} iterator. </p>
-
-</div>
-</div>
-<a id="a72671c985090e890a47cab982404af0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72671c985090e890a47cab982404af0f">&#9670;&nbsp;</a></span>usingFallbacks</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean usingFallbacks</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the  <a class="el" href="a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65" title="The iterator given to the constructor, or the  fallbacks} iterator. ">iterator</a>} is iterating over the fallbacks. </p>
+<p>The <a class="el" href="">ArrayList</a> iterator. </p>
 
 </div>
 </div>
@@ -412,7 +439,7 @@ The wrapped iterator given to the constructor supports element removal. </li>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03892.html">util</a></li><li class="navelem"><a class="el" href="a03893.html">collection</a></li><li class="navelem"><a class="el" href="a07991.html">DeferringIterator</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03916.html">util</a></li><li class="navelem"><a class="el" href="a03917.html">collection</a></li><li class="navelem"><a class="el" href="a07983.html">CheckedArrayList</a></li><li class="navelem"><a class="el" href="a07991.html">ListIter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

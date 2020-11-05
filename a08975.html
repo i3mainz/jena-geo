@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MakePointMTest Class Reference</title>
+<title>jena-geo: MinMTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,51 +61,25 @@ $(document).ready(function(){initNavTree('a08975.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08972.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MakePointMTest Class Reference</div>  </div>
+<div class="title">MinMTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for MakePointMTest:</div>
+Collaboration diagram for MinMTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08973.png" border="0" usemap="#MakePointMTest_coll__map" alt="Collaboration graph"/></div>
-<map name="MakePointMTest_coll__map" id="MakePointMTest_coll__map">
+<div class="center"><img src="a08973.png" border="0" usemap="#MinMTest_coll__map" alt="Collaboration graph"/></div>
+<map name="MinMTest_coll__map" id="MinMTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa00422b067345c9efd512d8757b16a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08975.html#aaa00422b067345c9efd512d8757b16a7">testMakePointM1</a> ()</td></tr>
-<tr class="separator:aaa00422b067345c9efd512d8757b16a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af26f700ee129f846cac58735f6dcc380"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08975.html#af26f700ee129f846cac58735f6dcc380">testPoint</a> =&quot;POINT <a class="el" href="a05167.html">M</a>(-71.1043443253471, 42.3150676015829, 10)&quot;</td></tr>
+<tr class="memitem:af26f700ee129f846cac58735f6dcc380"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08975.html#af26f700ee129f846cac58735f6dcc380">testPoint</a> =&quot;LINESTRING <a class="el" href="a05191.html">M</a> (1 2 3, 4 5 6,7 8 9)&quot;</td></tr>
 <tr class="separator:af26f700ee129f846cac58735f6dcc380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaa00422b067345c9efd512d8757b16a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa00422b067345c9efd512d8757b16a7">&#9670;&nbsp;</a></span>testMakePointM1()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testMakePointM1 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05247.html#a084e892d3d5d0a47151e34261fac8052">MakePointM.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                      {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        MakePointM instance=<span class="keyword">new</span> MakePointM();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createPoint(<span class="keyword">new</span> CoordinateXYM(-71.1043443253471,42.3150676015829,10.), WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;NodeValue&gt; inputlist=<span class="keyword">new</span> LinkedList&lt;NodeValue&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        inputlist.add(NodeValue.makeDouble(-71.1043443253471));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        inputlist.add(NodeValue.makeDouble(42.3150676015829));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        inputlist.add(NodeValue.makeDouble(10.));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue result = instance.exec(inputlist);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="af26f700ee129f846cac58735f6dcc380"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af26f700ee129f846cac58735f6dcc380">&#9670;&nbsp;</a></span>testPoint</h2>
@@ -117,7 +91,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testPoint =&quot;POINT <a class="el" href="a05167.html">M</a>(-71.1043443253471, 42.3150676015829, 10)&quot;</td>
+          <td class="memname">final String testPoint =&quot;LINESTRING <a class="el" href="a05191.html">M</a> (1 2 3, 4 5 6,7 8 9)&quot;</td>
         </tr>
       </table>
   </td>
@@ -135,7 +109,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03942.html">point</a></li><li class="navelem"><a class="el" href="a03943.html">constructor</a></li><li class="navelem"><a class="el" href="a08975.html">MakePointMTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03966.html">point</a></li><li class="navelem"><a class="el" href="a03965.html">attribute</a></li><li class="navelem"><a class="el" href="a08975.html">MinMTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

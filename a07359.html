@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Decorator Interface Reference</title>
+<title>jena-geo: LineWriter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,36 +62,258 @@ $(document).ready(function(){initNavTree('a07359.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07356.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Decorator Interface Reference</div>  </div>
+<div class="title">LineWriter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Annotates classes that are decorator around an other instance of the same type.  
+<p>Writes characters to a stream while replacing various EOL by a unique string.  
  <a href="a07359.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for LineWriter:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07358.png" border="0" usemap="#LineWriter_inherit__map" alt="Inheritance graph"/></div>
+<map name="LineWriter_inherit__map" id="LineWriter_inherit__map">
+<area shape="rect" id="node2" href="a07323.html" title="An extension to java.io.FilterWriter with better toString() capability. " alt="" coords="5,80,92,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for LineWriter:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07357.png" border="0" usemap="#LineWriter_coll__map" alt="Collaboration graph"/></div>
+<map name="LineWriter_coll__map" id="LineWriter_coll__map">
+<area shape="rect" id="node2" href="a07323.html" title="An extension to java.io.FilterWriter with better toString() capability. " alt="" coords="5,81,92,108"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adf56566a69a2354a9c3d6c82941a0279"><td class="memItemLeft" align="right" valign="top">Class&lt;?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#adf56566a69a2354a9c3d6c82941a0279">value</a> ()</td></tr>
-<tr class="memdesc:adf56566a69a2354a9c3d6c82941a0279"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the decorated object.  <a href="#adf56566a69a2354a9c3d6c82941a0279">More...</a><br /></td></tr>
-<tr class="separator:adf56566a69a2354a9c3d6c82941a0279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fe707dc1dd22a35ce70115cb2f5e9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#ac5fe707dc1dd22a35ce70115cb2f5e9b">LineWriter</a> (final Writer out)</td></tr>
+<tr class="memdesc:ac5fe707dc1dd22a35ce70115cb2f5e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a.  <a href="#ac5fe707dc1dd22a35ce70115cb2f5e9b">More...</a><br /></td></tr>
+<tr class="separator:ac5fe707dc1dd22a35ce70115cb2f5e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9a81936b6bdec9a2c1525cfb4ee477"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#aee9a81936b6bdec9a2c1525cfb4ee477">LineWriter</a> (final Writer out, final String lineSeparator)</td></tr>
+<tr class="memdesc:aee9a81936b6bdec9a2c1525cfb4ee477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a.  <a href="#aee9a81936b6bdec9a2c1525cfb4ee477">More...</a><br /></td></tr>
+<tr class="separator:aee9a81936b6bdec9a2c1525cfb4ee477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f814567818473e73bc1036c5fa7a1f3"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#a7f814567818473e73bc1036c5fa7a1f3">getLineSeparator</a> ()</td></tr>
+<tr class="memdesc:a7f814567818473e73bc1036c5fa7a1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current line separator.  <a href="#a7f814567818473e73bc1036c5fa7a1f3">More...</a><br /></td></tr>
+<tr class="separator:a7f814567818473e73bc1036c5fa7a1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70ed7d9ff918b05d5261f8957f57fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#ac70ed7d9ff918b05d5261f8957f57fcb">setLineSeparator</a> (final String lineSeparator)</td></tr>
+<tr class="memdesc:ac70ed7d9ff918b05d5261f8957f57fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the line separator.  <a href="#ac70ed7d9ff918b05d5261f8957f57fcb">More...</a><br /></td></tr>
+<tr class="separator:ac70ed7d9ff918b05d5261f8957f57fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07323.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation if this writer.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:abd2d8e3a0209ed6d972d7d4a47cd9d73"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07323.html#abd2d8e3a0209ed6d972d7d4a47cd9d73">content</a> ()</td></tr>
+<tr class="memdesc:abd2d8e3a0209ed6d972d7d4a47cd9d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content of the wrapped writer, or.  <a href="#abd2d8e3a0209ed6d972d7d4a47cd9d73">More...</a><br /></td></tr>
+<tr class="separator:abd2d8e3a0209ed6d972d7d4a47cd9d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:a798e6549f9920f48391fb99b802d29e0"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07323.html#a798e6549f9920f48391fb99b802d29e0">content</a> (final Writer out)</td></tr>
+<tr class="memdesc:a798e6549f9920f48391fb99b802d29e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content of the given writer, or.  <a href="#a798e6549f9920f48391fb99b802d29e0">More...</a><br /></td></tr>
+<tr class="separator:a798e6549f9920f48391fb99b802d29e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a84c242551581ff5325e1ce1b3196492f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#a84c242551581ff5325e1ce1b3196492f">LineWriter</a> (final LineAppender <a class="el" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a>)</td></tr>
+<tr class="memdesc:a84c242551581ff5325e1ce1b3196492f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Workaround for RFE #4093999 ("Relax constraint on placement of this()/super()
+call in constructors")  <a href="#a84c242551581ff5325e1ce1b3196492f">More...</a><br /></td></tr>
+<tr class="separator:a84c242551581ff5325e1ce1b3196492f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aedc00a467664f4c9b599a3ebf8b9a4c5"><td class="memItemLeft" align="right" valign="top">final LineAppender&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a></td></tr>
+<tr class="memdesc:aedc00a467664f4c9b599a3ebf8b9a4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Apache SIS formatter on which to delegate the work.  <a href="#aedc00a467664f4c9b599a3ebf8b9a4c5">More...</a><br /></td></tr>
+<tr class="separator:aedc00a467664f4c9b599a3ebf8b9a4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Annotates classes that are decorator around an other instance of the same type. </p>
-<p>This annotation is for documentation purpose only. See "Use" javadoc link for a list of annotated classes.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<div class="textblock"><p>Writes characters to a stream while replacing various EOL by a unique string. </p>
+<p>This class catches all occurrences of</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\r&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\n&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\r\n&quot;</span> </div></div><!-- fragment --><p> , and replaces them by the platform depend EOL string (</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\r\n&quot;</span> </div></div><!-- fragment --><p> on Windows,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\n&quot;</span> </div></div><!-- fragment --><p> on Unix), or any other EOL explicitly set at construction time. This writer also remove trailing blanks before end of lines, but this behavior can be changed by overriding <a class="el" href="">isWhitespace</a>.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.00  </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adf56566a69a2354a9c3d6c82941a0279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf56566a69a2354a9c3d6c82941a0279">&#9670;&nbsp;</a></span>value()</h2>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="a03780.html#_deprecated000017">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">LineAppender</a>. </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a84c242551581ff5325e1ce1b3196492f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c242551581ff5325e1ce1b3196492f">&#9670;&nbsp;</a></span>LineWriter() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07359.html">LineWriter</a> </td>
+          <td>(</td>
+          <td class="paramtype">final LineAppender&#160;</td>
+          <td class="paramname"><em>formatter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Workaround for RFE #4093999 ("Relax constraint on placement of this()/super()
+call in constructors") </p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                     {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        super(IO.asWriter(<a class="code" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a>));</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        this.<a class="code" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a> = <a class="code" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="ttc" id="a07359_html_aedc00a467664f4c9b599a3ebf8b9a4c5"><div class="ttname"><a href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">org.geotoolkit.io.LineWriter.formatter</a></div><div class="ttdeci">final LineAppender formatter</div><div class="ttdoc">The Apache SIS formatter on which to delegate the work. </div><div class="ttdef"><b>Definition:</b> LineWriter.java:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac5fe707dc1dd22a35ce70115cb2f5e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fe707dc1dd22a35ce70115cb2f5e9b">&#9670;&nbsp;</a></span>LineWriter() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Class&lt;?&gt; value </td>
+          <td class="memname"><a class="el" href="a07359.html">LineWriter</a> </td>
+          <td>(</td>
+          <td class="paramtype">final Writer&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a. </p>
+<div class="fragment"><div class="line"><a class="code" href="a07359.html#a84c242551581ff5325e1ce1b3196492f">LineWriter</a> </div></div><!-- fragment --><p> object that will use the platform dependent line separator.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>A writer object to provide the underlying stream. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if<div class="fragment"><div class="line">out </div></div><!-- fragment --> is<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                        {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">this</span>(out, System.lineSeparator());</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aee9a81936b6bdec9a2c1525cfb4ee477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9a81936b6bdec9a2c1525cfb4ee477">&#9670;&nbsp;</a></span>LineWriter() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07359.html">LineWriter</a> </td>
+          <td>(</td>
+          <td class="paramtype">final Writer&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>lineSeparator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a. </p>
+<div class="fragment"><div class="line"><a class="code" href="a07359.html#a84c242551581ff5325e1ce1b3196492f">LineWriter</a> </div></div><!-- fragment --><p> object that will use the specified line separator.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>A writer object to provide the underlying stream. </td></tr>
+    <tr><td class="paramname">lineSeparator</td><td>String to use as line separator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                                    {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">this</span>(<span class="keyword">new</span> LineAppender(out));</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a>.setLineSeparator(lineSeparator);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="ttc" id="a07359_html_aedc00a467664f4c9b599a3ebf8b9a4c5"><div class="ttname"><a href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">org.geotoolkit.io.LineWriter.formatter</a></div><div class="ttdeci">final LineAppender formatter</div><div class="ttdoc">The Apache SIS formatter on which to delegate the work. </div><div class="ttdef"><b>Definition:</b> LineWriter.java:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a798e6549f9920f48391fb99b802d29e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798e6549f9920f48391fb99b802d29e0">&#9670;&nbsp;</a></span>content() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String content </td>
+          <td>(</td>
+          <td class="paramtype">final Writer&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the content of the given writer, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                            {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (out instanceof StringWriter) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> out.toString();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (out instanceof <a class="code" href="a07323.html#a6408fa8b49780c806afd6c80dfa09fc0">FilterWriter</a>) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> ((FilterWriter) out).content();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">final</span> CharSequence cs = IO.content(out);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (cs != null) {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> cs.toString();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div><div class="ttc" id="a07323_html_a6408fa8b49780c806afd6c80dfa09fc0"><div class="ttname"><a href="a07323.html#a6408fa8b49780c806afd6c80dfa09fc0">org.geotoolkit.io.FilterWriter.FilterWriter</a></div><div class="ttdeci">FilterWriter(final Writer out)</div><div class="ttdoc">Create a new filtered writer. </div><div class="ttdef"><b>Definition:</b> FilterWriter.java:45</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd2d8e3a0209ed6d972d7d4a47cd9d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2d8e3a0209ed6d972d7d4a47cd9d73">&#9670;&nbsp;</a></span>content() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String content </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the content of the wrapped writer, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07323.html#ad146fa8579a5f8a876c4688cc5a68520">FilterWriter.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07323.html#abd2d8e3a0209ed6d972d7d4a47cd9d73">content</a>(out);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="ttc" id="a07323_html_abd2d8e3a0209ed6d972d7d4a47cd9d73"><div class="ttname"><a href="a07323.html#abd2d8e3a0209ed6d972d7d4a47cd9d73">org.geotoolkit.io.FilterWriter.content</a></div><div class="ttdeci">String content()</div><div class="ttdoc">Returns the content of the wrapped writer, or. </div><div class="ttdef"><b>Definition:</b> FilterWriter.java:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7f814567818473e73bc1036c5fa7a1f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f814567818473e73bc1036c5fa7a1f3">&#9670;&nbsp;</a></span>getLineSeparator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String getLineSeparator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -99,8 +321,92 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The type of the decorated object. </p>
-<dl class="section return"><dt>Returns</dt><dd>The decorated object type. </dd></dl>
+<p>Returns the current line separator. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current line separator. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                     {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a>.getLineSeparator();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div><div class="ttc" id="a07359_html_aedc00a467664f4c9b599a3ebf8b9a4c5"><div class="ttname"><a href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">org.geotoolkit.io.LineWriter.formatter</a></div><div class="ttdeci">final LineAppender formatter</div><div class="ttdoc">The Apache SIS formatter on which to delegate the work. </div><div class="ttdef"><b>Definition:</b> LineWriter.java:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac70ed7d9ff918b05d5261f8957f57fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70ed7d9ff918b05d5261f8957f57fcb">&#9670;&nbsp;</a></span>setLineSeparator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setLineSeparator </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>lineSeparator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the line separator. </p>
+<p>This is the string to insert in place of every occurrences of </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\r&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\n&quot;</span> </div></div><!-- fragment --><p> or</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;\r\n&quot;</span> </div></div><!-- fragment --><p> .</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lineSeparator</td><td>The new line separator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                             {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">synchronized</span> (lock) {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">formatter</a>.setLineSeparator(lineSeparator);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div><div class="ttc" id="a07359_html_aedc00a467664f4c9b599a3ebf8b9a4c5"><div class="ttname"><a href="a07359.html#aedc00a467664f4c9b599a3ebf8b9a4c5">org.geotoolkit.io.LineWriter.formatter</a></div><div class="ttdeci">final LineAppender formatter</div><div class="ttdoc">The Apache SIS formatter on which to delegate the work. </div><div class="ttdef"><b>Definition:</b> LineWriter.java:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a string representation if this writer. </p>
+
+<p class="reference">References <a class="el" href="a07323.html#abd2d8e3a0209ed6d972d7d4a47cd9d73">FilterWriter.content()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                             {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        String s = <a class="code" href="a07323.html#abd2d8e3a0209ed6d972d7d4a47cd9d73">content</a>(out);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (s == null) {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            s = super.toString();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> s;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div><div class="ttc" id="a07323_html_abd2d8e3a0209ed6d972d7d4a47cd9d73"><div class="ttname"><a href="a07323.html#abd2d8e3a0209ed6d972d7d4a47cd9d73">org.geotoolkit.io.FilterWriter.content</a></div><div class="ttdeci">String content()</div><div class="ttdoc">Returns the content of the wrapped writer, or. </div><div class="ttdef"><b>Definition:</b> FilterWriter.java:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aedc00a467664f4c9b599a3ebf8b9a4c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc00a467664f4c9b599a3ebf8b9a4c5">&#9670;&nbsp;</a></span>formatter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final LineAppender formatter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The Apache SIS formatter on which to delegate the work. </p>
 
 </div>
 </div>
@@ -110,7 +416,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03872.html">lang</a></li><li class="navelem"><a class="el" href="a07359.html">Decorator</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03893.html">io</a></li><li class="navelem"><a class="el" href="a07359.html">LineWriter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

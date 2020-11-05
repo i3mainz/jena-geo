@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: PointFromTextTest Class Reference</title>
+<title>jena-geo: MinYTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,36 +65,36 @@ $(document).ready(function(){initNavTree('a08983.html','');});
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08980.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PointFromTextTest Class Reference</div>  </div>
+<div class="title">MinYTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for PointFromTextTest:</div>
+Collaboration diagram for MinYTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08981.png" border="0" usemap="#PointFromTextTest_coll__map" alt="Collaboration graph"/></div>
-<map name="PointFromTextTest_coll__map" id="PointFromTextTest_coll__map">
+<div class="center"><img src="a08981.png" border="0" usemap="#MinYTest_coll__map" alt="Collaboration graph"/></div>
+<map name="MinYTest_coll__map" id="MinYTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a34b8808318d84beec7ded7da39c5ef6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08983.html#a34b8808318d84beec7ded7da39c5ef6e">testPointFromText</a> ()</td></tr>
-<tr class="separator:a34b8808318d84beec7ded7da39c5ef6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b14a3b84a49bf47013087a83af2fb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08983.html#a20b14a3b84a49bf47013087a83af2fb1">testMinY</a> ()</td></tr>
+<tr class="separator:a20b14a3b84a49bf47013087a83af2fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab20d196cb6e34afc2e9cff8074e43bfd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08983.html#ab20d196cb6e34afc2e9cff8074e43bfd">testPoint1</a> =&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/4326&gt; POINT(-71.1043443253471 42.3150676015829)&quot;</td></tr>
-<tr class="separator:ab20d196cb6e34afc2e9cff8074e43bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26f700ee129f846cac58735f6dcc380"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08983.html#af26f700ee129f846cac58735f6dcc380">testPoint</a> =&quot;LINESTRING(1 2,3 4,5 6,7 8)&quot;</td></tr>
+<tr class="separator:af26f700ee129f846cac58735f6dcc380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a34b8808318d84beec7ded7da39c5ef6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34b8808318d84beec7ded7da39c5ef6e">&#9670;&nbsp;</a></span>testPointFromText()</h2>
+<a id="a20b14a3b84a49bf47013087a83af2fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b14a3b84a49bf47013087a83af2fb1">&#9670;&nbsp;</a></span>testMinY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testPointFromText </td>
+          <td class="memname">void testMinY </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -102,13 +102,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a05263.html#ae7a3cbabcf0592c2705ee280a231189a">PointFromText.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                        {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        PointFromText instance=<span class="keyword">new</span> PointFromText();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createPoint(<span class="keyword">new</span> Coordinate(-71.1043443253471,42.3150676015829), WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        NodeValue result = instance.exec(NodeValue.makeString(<span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/4326&gt; POINT(-71.1043443253471 42.3150676015829)&quot;</span>));</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a05239.html#ae7a3cbabcf0592c2705ee280a231189a">YMin.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                       {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08983.html#af26f700ee129f846cac58735f6dcc380">testPoint</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                YMin instance=<span class="keyword">new</span> YMin();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                NodeValue expResult = NodeValue.makeDouble(2);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                }</div><div class="ttc" id="a08983_html_af26f700ee129f846cac58735f6dcc380"><div class="ttname"><a href="a08983.html#af26f700ee129f846cac58735f6dcc380">de.hsmainz.cs.semgis.arqextension.test.point.attribute.MinYTest.testPoint</a></div><div class="ttdeci">static final String testPoint</div><div class="ttdef"><b>Definition:</b> MinYTest.java:13</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab20d196cb6e34afc2e9cff8074e43bfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab20d196cb6e34afc2e9cff8074e43bfd">&#9670;&nbsp;</a></span>testPoint1</h2>
+<a id="af26f700ee129f846cac58735f6dcc380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26f700ee129f846cac58735f6dcc380">&#9670;&nbsp;</a></span>testPoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +118,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testPoint1 =&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/4326&gt; POINT(-71.1043443253471 42.3150676015829)&quot;</td>
+          <td class="memname">final String testPoint =&quot;LINESTRING(1 2,3 4,5 6,7 8)&quot;</td>
         </tr>
       </table>
   </td>
@@ -135,7 +136,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03942.html">point</a></li><li class="navelem"><a class="el" href="a03943.html">constructor</a></li><li class="navelem"><a class="el" href="a08983.html">PointFromTextTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03966.html">point</a></li><li class="navelem"><a class="el" href="a03965.html">attribute</a></li><li class="navelem"><a class="el" href="a08983.html">MinYTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

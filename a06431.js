@@ -1,17 +1,14 @@
 var a06431 =
 [
-    [ "GeoJSONLDDatatype", "a06431.html#a3af6264a7e8774ed5877bc1cb31d7f53", null ],
-    [ "check", "a06431.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06431.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06431.html#ad1ee2f6512af0e5dba3d40a3e8b731f9", null ],
-    [ "get", "a06431.html#a0a24dee6650e86f3f00a406a199073cd", null ],
-    [ "parse", "a06431.html#a6ca6e70f10f54a3b0e7fdc14be052483", null ],
-    [ "parse", "a06431.html#adb0c0c075ba104124ca28f2d25ef76d5", null ],
-    [ "read", "a06431.html#ab987fb3c5c1835116368b15c0761d3b0", null ],
-    [ "registerDatatypes", "a06431.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "toString", "a06431.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "unparse", "a06431.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
-    [ "INSTANCE", "a06431.html#a20401ef897882cf3828de8fdad63c99d", null ],
-    [ "LOGGER", "a06431.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
-    [ "URI", "a06431.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
+    [ "ValueTypeCase", "a06431.html#a46aa47bfabaf7bbfd8ddbf7733b62f9e", null ],
+    [ "getNumber", "a06431.html#a26b2bb379b3e56aedd0bd8846ed6aa7b", null ],
+    [ "valueOf", "a06431.html#a41b95ecaf7e7b7f21a693c25c2f72d66", null ],
+    [ "BOOL_VALUE", "a06431.html#a02b73f2c25c3dda488df718f2583ba32", null ],
+    [ "DOUBLE_VALUE", "a06431.html#a49fb2bffe4fe6bd28169e1db0a8c442a", null ],
+    [ "JSON_VALUE", "a06431.html#a764d78b0f0eb7db5ed510da6769477c5", null ],
+    [ "NEG_INT_VALUE", "a06431.html#a87f25cd7203bda6a829142e6488b1b37", null ],
+    [ "POS_INT_VALUE", "a06431.html#a8ee3a3f03069842f81e634dfdf02968b", null ],
+    [ "STRING_VALUE", "a06431.html#a115d2053c6fe713e36ef84a5b0dada67", null ],
+    [ "value", "a06431.html#ac4f474c82e82cbb89ca7c36dd52be0ed", null ],
+    [ "VALUETYPE_NOT_SET", "a06431.html#a63932202e06a70f3d6903e825676eb96", null ]
 ];

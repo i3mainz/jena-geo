@@ -1,7 +1,13 @@
 var a08199 =
 [
-    [ "SphericalHarmonicVariables", "a08199.html#a1f7316871df55ad6f717444f3464d9da", null ],
-    [ "cos_mlambda", "a08199.html#ae05461cd9ceeab294f617f30b8c9cd6f", null ],
-    [ "RelativeRadiusPower", "a08199.html#abd31a3fa8fa12451a13998c29a0341ee", null ],
-    [ "sin_mlambda", "a08199.html#ac8c85c0a51bc10df18e2cdece0087aac", null ]
+    [ "Byte", "a08199.html#a469fbae940609fcaacc9639d6ceb92c5", null ],
+    [ "compareTo", "a08199.html#a7aaa0338d14abb61e6703de6cf54a43d", null ],
+    [ "ranks", "a08199.html#abb150dc13c316a480c404b1703c03990", null ],
+    [ "ranks", "a08199.html#a7e3ac659899192333adea39b87f41331", null ],
+    [ "ranks", "a08199.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
+    [ "ranks", "a08199.html#abb82129695e9a7b212788912ccc45539", null ],
+    [ "ranks", "a08199.html#ad3b1488acd654783f7a4dc632814441f", null ],
+    [ "ranks", "a08199.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
+    [ "ranks", "a08199.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
+    [ "value", "a08199.html#a02347719c8a4423dffaf888eb9981114", null ]
 ];

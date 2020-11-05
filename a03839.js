@@ -1,4 +1,5 @@
 var a03839 =
 [
-    [ "coverage", "a03840.html", "a03840" ]
+    [ "CoverageJSONReader", "a06291.html", "a06291" ],
+    [ "CoverageJsonWriter", "a06295.html", "a06295" ]
 ];

@@ -1,7 +1,5 @@
 var a08823 =
 [
-    [ "testLineStringIsNotRing", "a08823.html#a321e37eed11ab4c4fb34459ff2f0c8a4", null ],
-    [ "testLineStringIsRing", "a08823.html#af99150f0a2baa803f3a32475e363a546", null ],
-    [ "isNotRing", "a08823.html#aab14cab4c38dbe8dacf3fc3b49a4e99d", null ],
-    [ "isRing", "a08823.html#ada60d12c21aae01823c842a1347435af", null ]
+    [ "testSimplify", "a08823.html#aa558cd336665fb035373b5b11e212cb9", null ],
+    [ "testGeom", "a08823.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ]
 ];

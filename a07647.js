@@ -1,5 +1,6 @@
 var a07647 =
 [
-    [ "MathTransforms", "a07647.html#ad80efc969941e71e8b99fc5b1ddcd045", null ],
-    [ "linear", "a07647.html#aa16f7c727006adab18a65cb3d8c1de15", null ]
+    [ "AuthorityFactoryProvider", "a07647.html#a4a30497b6fa14d351733511cf762e12a", null ],
+    [ "createFromPostGIS", "a07647.html#a6ca2dd07a11f2d0516d1297a6a764d40", null ],
+    [ "createFromProperties", "a07647.html#a5ca9c29323af3ccf448ba428ca711cf1", null ]
 ];

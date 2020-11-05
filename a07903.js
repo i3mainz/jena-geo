@@ -1,5 +1,6 @@
 var a07903 =
 [
-    [ "getSignature", "a07903.html#a876ff87db572dbe2231e1d0ad7469d55", null ],
-    [ "getSuffix", "a07903.html#a6b0280e2a6d9abd0c0f63b417c310255", null ]
+    [ "getMimeType", "a07903.html#a7e5cf082737fd361c452fdb2f20a0668", null ],
+    [ "getSupportedTypes", "a07903.html#aeb8d023477647649a523ac6aa408617d", null ],
+    [ "load", "a07903.html#a5d9ecd3afd6ff113525c3d1050fe8b3d", null ]
 ];

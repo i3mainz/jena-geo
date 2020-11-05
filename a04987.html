@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Translate Class Reference</title>
+<title>jena-geo: Snap Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,21 @@ $(document).ready(function(){initNavTree('a04987.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04984.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Translate Class Reference</div>  </div>
+<div class="title">Snap Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for Translate:</div>
+Inheritance diagram for Snap:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04986.png" border="0" usemap="#Translate_inherit__map" alt="Inheritance graph"/></div>
-<map name="Translate_inherit__map" id="Translate_inherit__map">
+<div class="center"><img src="a04986.png" border="0" usemap="#Snap_inherit__map" alt="Inheritance graph"/></div>
+<map name="Snap_inherit__map" id="Snap_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Translate:</div>
+Collaboration diagram for Snap:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04985.png" border="0" usemap="#Translate_coll__map" alt="Collaboration graph"/></div>
-<map name="Translate_coll__map" id="Translate_coll__map">
+<div class="center"><img src="a04985.png" border="0" usemap="#Snap_coll__map" alt="Collaboration graph"/></div>
+<map name="Snap_coll__map" id="Snap_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,8 +120,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06555.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06555.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06555.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, and <a class="el" href="a06555.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                                          {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            Geometry geom = geometry.getXYGeometry();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">double</span> deltaX = arg1.getDouble();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">double</span> deltaY = arg2.getDouble();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="comment">//Translate and scale</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            AffineTransformation transform = <span class="keyword">new</span> AffineTransformation();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            transform.translate(deltaX, deltaY);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Geometry transGeom = transform.transform(geom);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            GeometryWrapper transWrapper = GeometryWrapperFactory.createGeometry(transGeom, geometry.getSrsURI(), geometry.getGeometryDatatypeURI());</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> transWrapper.asNodeValue();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06595.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06595.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06595.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06595.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, <a class="el" href="a06595.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, <a class="el" href="a06595.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a06595.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08831.html#aa8a249951d6b07770ca87514b527e8c8">SnapTest.testSnap()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                                          {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            GeometryWrapper geom1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            GeometryWrapper geom2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            GeometryWrapper transGeom2 = geom2.transform(geom1.getSrsInfo());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">double</span> tolerance = arg2.getDouble();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="comment">//Snap</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            GeometrySnapper snapper = <span class="keyword">new</span> GeometrySnapper(geom1.getXYGeometry());</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            Geometry snapGeom = snapper.snapTo(transGeom2.getXYGeometry(), tolerance);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            GeometryWrapper snapWrapper = GeometryWrapperFactory.createGeometry(snapGeom, geom1.getSrsURI(), geom1.getGeometryDatatypeURI());</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> snapWrapper.asNodeValue();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException | MismatchedDimensionException | TransformException ex) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -130,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03777.html">geometry</a></li><li class="navelem"><a class="el" href="a03785.html">transform</a></li><li class="navelem"><a class="el" href="a04987.html">Translate</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03801.html">geometry</a></li><li class="navelem"><a class="el" href="a03809.html">transform</a></li><li class="navelem"><a class="el" href="a04987.html">Snap</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

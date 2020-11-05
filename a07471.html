@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: PathChangedEvent Class Reference</title>
+<title>jena-geo: Table1D Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,177 +62,427 @@ $(document).ready(function(){initNavTree('a07471.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
 <a href="a07468.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PathChangedEvent Class Reference</div>  </div>
+<div class="title">Table1D Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An event raised by <a class="el" href="a07463.html">DirectoryWatcher</a> when a path has changed in a followed folder.  
+<p>Classe de base pour les interpolations à une dimension.  
  <a href="a07471.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for PathChangedEvent:</div>
+Inheritance diagram for Table1D:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07470.png" border="0" usemap="#PathChangedEvent_inherit__map" alt="Inheritance graph"/></div>
-<map name="PathChangedEvent_inherit__map" id="PathChangedEvent_inherit__map">
+<div class="center"><img src="a07470.png" border="0" usemap="#Table1D_inherit__map" alt="Inheritance graph"/></div>
+<map name="Table1D_inherit__map" id="Table1D_inherit__map">
+<area shape="rect" id="node3" href="a07463.html" title="Table sans interpolation. " alt="" coords="168,155,248,181"/>
+<area shape="rect" id="node2" href="a07427.html" title="Extrapolation" alt="" coords="159,5,257,32"/>
+<area shape="rect" id="node4" href="a07435.html" title="Hermite Spline interpolation. " alt="" coords="5,229,91,256"/>
+<area shape="rect" id="node5" href="a07447.html" title="Table avec interpolations linéaires. " alt="" coords="115,229,189,256"/>
+<area shape="rect" id="node6" href="a07459.html" title="Table avec interpolations polynomiales. " alt="" coords="214,229,317,256"/>
+<area shape="rect" id="node7" href="a07467.html" title="Table avec interpolations cubiques B&#45;Spline. " alt="" coords="341,229,416,256"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for PathChangedEvent:</div>
+Collaboration diagram for Table1D:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07469.png" border="0" usemap="#PathChangedEvent_coll__map" alt="Collaboration graph"/></div>
-<map name="PathChangedEvent_coll__map" id="PathChangedEvent_coll__map">
+<div class="center"><img src="a07469.png" border="0" usemap="#Table1D_coll__map" alt="Collaboration graph"/></div>
+<map name="Table1D_coll__map" id="Table1D_coll__map">
+<area shape="rect" id="node2" href="a07427.html" title="Extrapolation" alt="" coords="5,5,104,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a10790082c920880fff17182360f07142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a10790082c920880fff17182360f07142">PathChangedEvent</a> (Object source, Path <a class="el" href="a07471.html#aafdc9e03f673beef105a0f339dcdec0f">target</a>, WatchEvent.Kind <a class="el" href="a07471.html#a065c3fa33315959a7f26ab6030d0a4bd">kind</a>, boolean <a class="el" href="a07471.html#afbc9fbd05c5ee7891325476611b062b1">isDirectory</a>, int <a class="el" href="a07471.html#a5cee82df24fbebee5a7e83193680ea24">count</a>)</td></tr>
-<tr class="separator:a10790082c920880fff17182360f07142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4c5cdce430473a76ee647f0a041023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a7f4c5cdce430473a76ee647f0a041023">setData</a> (final double[] <a class="el" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a>, final double[] <a class="el" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">y</a>)  throws MismatchedSizeException </td></tr>
+<tr class="memdesc:a7f4c5cdce430473a76ee647f0a041023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définies les vecteurs <em>x</em> et <em>y</em> de cette table.  <a href="#a7f4c5cdce430473a76ee647f0a041023">More...</a><br /></td></tr>
+<tr class="separator:a7f4c5cdce430473a76ee647f0a041023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oublie toutes références vers les données.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">More...</a><br /></td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ba393bb8bd89882094eb499ffe6d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a43ba393bb8bd89882094eb499ffe6d7f">recompute</a> ()</td></tr>
+<tr class="memdesc:a43ba393bb8bd89882094eb499ffe6d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signale à la table que des données du vecteurs des <em>x</em> ou du vecteur des <em>y</em> ont été changées.  <a href="#a43ba393bb8bd89882094eb499ffe6d7f">More...</a><br /></td></tr>
+<tr class="separator:a43ba393bb8bd89882094eb499ffe6d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e218505813600e1844d7b4d899f57d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a22e218505813600e1844d7b4d899f57d">ignoreNaN</a> (final boolean ignore)</td></tr>
+<tr class="memdesc:a22e218505813600e1844d7b4d899f57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si les interpolations devront ignorer les NaN dans le vecteur des <em>y</em>.  <a href="#a22e218505813600e1844d7b4d899f57d">More...</a><br /></td></tr>
+<tr class="separator:a22e218505813600e1844d7b4d899f57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae939fecd3ed5b2d3fea7056d8c7d04e9"><td class="memItemLeft" align="right" valign="top">abstract double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#ae939fecd3ed5b2d3fea7056d8c7d04e9">interpolate</a> (double xi)  throws ExtrapolationException</td></tr>
+<tr class="memdesc:ae939fecd3ed5b2d3fea7056d8c7d04e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la valeur <em>yi</em> interpolé au <em>xi</em> spécifié.  <a href="#ae939fecd3ed5b2d3fea7056d8c7d04e9">More...</a><br /></td></tr>
+<tr class="separator:ae939fecd3ed5b2d3fea7056d8c7d04e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c28c1a787c8f0515aec182729e29a6c"><td class="memItemLeft" align="right" valign="top">abstract double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a3c28c1a787c8f0515aec182729e29a6c">interpolateAt</a> (int index)  throws ExtrapolationException</td></tr>
+<tr class="memdesc:a3c28c1a787c8f0515aec182729e29a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la valeur <em>y</em> interpolé à <code>x[index]</code> mais sans utiliser la valeur de <code>y[index]</code>.  <a href="#a3c28c1a787c8f0515aec182729e29a6c">More...</a><br /></td></tr>
+<tr class="separator:a3c28c1a787c8f0515aec182729e29a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aafdc9e03f673beef105a0f339dcdec0f"><td class="memItemLeft" align="right" valign="top">final Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#aafdc9e03f673beef105a0f339dcdec0f">target</a></td></tr>
-<tr class="memdesc:aafdc9e03f673beef105a0f339dcdec0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path which denotes the changed file.  <a href="#aafdc9e03f673beef105a0f339dcdec0f">More...</a><br /></td></tr>
-<tr class="separator:aafdc9e03f673beef105a0f339dcdec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065c3fa33315959a7f26ab6030d0a4bd"><td class="memItemLeft" align="right" valign="top">final WatchEvent.Kind&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a065c3fa33315959a7f26ab6030d0a4bd">kind</a></td></tr>
-<tr class="memdesc:a065c3fa33315959a7f26ab6030d0a4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind of modification which happened.  <a href="#a065c3fa33315959a7f26ab6030d0a4bd">More...</a><br /></td></tr>
-<tr class="separator:a065c3fa33315959a7f26ab6030d0a4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc9fbd05c5ee7891325476611b062b1"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#afbc9fbd05c5ee7891325476611b062b1">isDirectory</a></td></tr>
-<tr class="memdesc:afbc9fbd05c5ee7891325476611b062b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the target path was a directory at the moment of the event, false if it was a file.  <a href="#afbc9fbd05c5ee7891325476611b062b1">More...</a><br /></td></tr>
-<tr class="separator:afbc9fbd05c5ee7891325476611b062b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cee82df24fbebee5a7e83193680ea24"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a5cee82df24fbebee5a7e83193680ea24">count</a></td></tr>
-<tr class="memdesc:a5cee82df24fbebee5a7e83193680ea24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of times the same event occured.  <a href="#a5cee82df24fbebee5a7e83193680ea24">More...</a><br /></td></tr>
-<tr class="separator:a5cee82df24fbebee5a7e83193680ea24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab7a26c935a4592383c96a6b2d89130ad"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#ab7a26c935a4592383c96a6b2d89130ad">ignoreYNaN</a></td></tr>
+<tr class="memdesc:ab7a26c935a4592383c96a6b2d89130ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique aux méthodes <code>interpole</code> qu'elles devront ignorer les NaN dans le vecteur des <em>y</em>.  <a href="#ab7a26c935a4592383c96a6b2d89130ad">More...</a><br /></td></tr>
+<tr class="separator:ab7a26c935a4592383c96a6b2d89130ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ee0c516ca235fc66902cb8d612eeab"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a></td></tr>
+<tr class="memdesc:a99ee0c516ca235fc66902cb8d612eeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vecteurs des <em>x</em> de cette table.  <a href="#a99ee0c516ca235fc66902cb8d612eeab">More...</a><br /></td></tr>
+<tr class="separator:a99ee0c516ca235fc66902cb8d612eeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799e94d2434d7bf0fb8d2e845ebd55e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">y</a> []</td></tr>
+<tr class="memdesc:a799e94d2434d7bf0fb8d2e845ebd55e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vecteurs des <em>y</em> de cette table.  <a href="#a799e94d2434d7bf0fb8d2e845ebd55e7">More...</a><br /></td></tr>
+<tr class="separator:a799e94d2434d7bf0fb8d2e845ebd55e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:acbdd94cfa46f3161c548073aacc5739a"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07471.html#acbdd94cfa46f3161c548073aacc5739a">throwArrayIndexOutOfBoundsException</a> (final int n)  throws ArrayIndexOutOfBoundsException </td></tr>
+<tr class="memdesc:acbdd94cfa46f3161c548073aacc5739a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance une exception indiquant qu'on a pas trouvé suffisament de données valides dans le vecteur des <em>x</em> ou des <em>y</em>.  <a href="#acbdd94cfa46f3161c548073aacc5739a">More...</a><br /></td></tr>
+<tr class="separator:acbdd94cfa46f3161c548073aacc5739a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An event raised by <a class="el" href="a07463.html">DirectoryWatcher</a> when a path has changed in a followed folder. </p>
-<dl class="section author"><dt>Author</dt><dd>Alexis Manin (Geomatys) </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a10790082c920880fff17182360f07142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10790082c920880fff17182360f07142">&#9670;&nbsp;</a></span>PathChangedEvent()</h2>
+<div class="textblock"><p>Classe de base pour les interpolations à une dimension. </p>
+<p>Cette classe mémorisera un tableau de la forme:</p>
+<blockquote class="doxtable">
+<pre>
+     x1       y1
+     x2       y2
+     x3       y2
+     (...etc...)
+ </pre></blockquote>
+<p>Les données du vecteur des <em>x</em> doivent obligatoirement être en ordre croissant ou décroissant. Celles du vecteur <em>y</em> peuvent être quelconque. Les NaN sont acceptés à la fois dans le vecteur des <em>x</em> et dans le vecteur des <em>y</em>.</p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bb3912a3ce86b15842e79d0b421204">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07471.html">PathChangedEvent</a> </td>
+          <td class="memname">void clear </td>
           <td>(</td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">Path&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Oublie toutes références vers les données. </p>
+<p>Vous pouvez appeller cette méthode lorsque vous en avez terminé avec les interpolations et que vous voulez laisser le nettoyeur faire son travail. </p>
+
+<p>Implements <a class="el" href="a07427.html#ac8bb3912a3ce86b15842e79d0b421204">Extrapolation</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a> = null;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">y</a> = null;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="ttc" id="a07471_html_a799e94d2434d7bf0fb8d2e845ebd55e7"><div class="ttname"><a href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">org.geotoolkit.math.Table1D.y</a></div><div class="ttdeci">double y[]</div><div class="ttdoc">Vecteurs des y de cette table. </div><div class="ttdef"><b>Definition:</b> Table1D.java:55</div></div>
+<div class="ttc" id="a07471_html_a99ee0c516ca235fc66902cb8d612eeab"><div class="ttname"><a href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">org.geotoolkit.math.Table1D.x</a></div><div class="ttdeci">double [] x</div><div class="ttdoc">Vecteurs des x de cette table. </div><div class="ttdef"><b>Definition:</b> Table1D.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a22e218505813600e1844d7b4d899f57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e218505813600e1844d7b4d899f57d">&#9670;&nbsp;</a></span>ignoreNaN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">boolean ignoreNaN </td>
+          <td>(</td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>ignore</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">WatchEvent.Kind&#160;</td>
-          <td class="paramname"><em>kind</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indique si les interpolations devront ignorer les NaN dans le vecteur des <em>y</em>. </p>
+<p>Par défaut, les NaN ne seront pas ignorés de sorte qu'ils pourront être retournés par la méthode <a class="el" href="a07471.html#ae939fecd3ed5b2d3fea7056d8c7d04e9">interpolate(double)</a> s'ils apparaissent dans le vecteur des <em>y</em>. Si vous demandez à ignorer les NaN, alors la méthode <code>interpole</code> tentera de toujours utiliser des données valides pour ses calculs. Cette méthode n'a aucun effet sur les vecteur des <em>x</em>. Pour ce dernier, les NaN seront toujours ignorés.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ignore</td><td><code>true</code> si la méthode <a class="el" href="a07471.html#ae939fecd3ed5b2d3fea7056d8c7d04e9">interpolate(double)</a> doit agir comme si elle utilisait des copies des données dans lesquelles on avait retiré tout les NaN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>l'ancien état. </dd></dl>
+
+<p>Implements <a class="el" href="a07427.html#a1517e3a45a24ac5064697425f166106d">Extrapolation</a>.</p>
+
+<p class="reference">References <a class="el" href="a07471.html#ab7a26c935a4592383c96a6b2d89130ad">Table1D.ignoreYNaN</a>, <a class="el" href="a07471.html#ae939fecd3ed5b2d3fea7056d8c7d04e9">Table1D.interpolate()</a>, and <a class="el" href="a07471.html#a3c28c1a787c8f0515aec182729e29a6c">Table1D.interpolateAt()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                   {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">boolean</span> old = <a class="code" href="a07471.html#ab7a26c935a4592383c96a6b2d89130ad">ignoreYNaN</a>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="a07471.html#ab7a26c935a4592383c96a6b2d89130ad">ignoreYNaN</a> = ignore;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> old;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div><div class="ttc" id="a07471_html_ab7a26c935a4592383c96a6b2d89130ad"><div class="ttname"><a href="a07471.html#ab7a26c935a4592383c96a6b2d89130ad">org.geotoolkit.math.Table1D.ignoreYNaN</a></div><div class="ttdeci">boolean ignoreYNaN</div><div class="ttdoc">Indique aux méthodes interpole qu&amp;#39;elles devront ignorer les NaN dans le vecteur des y...</div><div class="ttdef"><b>Definition:</b> Table1D.java:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae939fecd3ed5b2d3fea7056d8c7d04e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae939fecd3ed5b2d3fea7056d8c7d04e9">&#9670;&nbsp;</a></span>interpolate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>isDirectory</em>, </td>
+          <td class="memname">abstract double interpolate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xi</em></td><td>)</td>
+          <td> throws <a class="el" href="a07431.html">ExtrapolationException</a></td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renvoie la valeur <em>yi</em> interpolé au <em>xi</em> spécifié. </p>
+<p>Le type d'interpolation effectué dépendra de la classe de cet objet. Par exemple la classe <code><a class="el" href="a07467.html" title="Table avec interpolations cubiques B-Spline. ">Spline1D</a></code> effectuera une interpolation cubique B-Spline.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xi</td><td>valeur de <em>x</em> pour laquelle on veut interpoler un <em>y</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a07431.html" title="Exception lancée lorsqu&#39;une extrapolation a été effectuée alors que ce n&#39;était pas permis...">ExtrapolationException</a></td><td>si une extrapolation non-permise a eu lieu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a07427.html#a07267a6bc652113ccbd0c9ed3d6a028f">Extrapolation</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07471.html#a22e218505813600e1844d7b4d899f57d">Table1D.ignoreNaN()</a>.</p>
+
+</div>
+</div>
+<a id="a3c28c1a787c8f0515aec182729e29a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c28c1a787c8f0515aec182729e29a6c">&#9670;&nbsp;</a></span>interpolateAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
+          <td class="memname">abstract double interpolateAt </td>
+          <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> throws <a class="el" href="a07431.html">ExtrapolationException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renvoie la valeur <em>y</em> interpolé à <code>x[index]</code> mais sans utiliser la valeur de <code>y[index]</code>. </p>
+<p>Cette méthode est utile pour boucher les trous causé par les données manquantes (NaN). Cette méthode est plus rapide que <code>interpole</code> car elle ne nécessite pas que l'on recherche la position de <em>xi</em> dans le vecteur des <em>x</em>.</p>
+<p>Vous pouvez aussi utiliser cette méthode pour interpoler des pics isolés qui vous semble suspects. Toutefois s'il y a une possibilité que deux pics soient collés, il est préférable de remplacer tous les pics par des NaN et ensuite d'utiliser cette méthode pour combler les trous.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>index du <em>x</em> pour lequel on veut interpoler un <em>y</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a07431.html" title="Exception lancée lorsqu&#39;une extrapolation a été effectuée alors que ce n&#39;était pas permis...">ExtrapolationException</a></td><td>si une extrapolation non-permise a eu lieu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a07427.html#a5ea3de656c067193af599449a739e1c6">Extrapolation</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07471.html#a22e218505813600e1844d7b4d899f57d">Table1D.ignoreNaN()</a>.</p>
+
+</div>
+</div>
+<a id="a43ba393bb8bd89882094eb499ffe6d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ba393bb8bd89882094eb499ffe6d7f">&#9670;&nbsp;</a></span>recompute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void recompute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signale à la table que des données du vecteurs des <em>x</em> ou du vecteur des <em>y</em> ont été changées. </p>
+<p>Certains types d'interpolations telle que l'interpolation cubique B-Spline ont besoin de savoir s'ils doivent recalculer leurs champs internes. L'implémentation par défaut ne fait rien. </p>
+
+<p>Implements <a class="el" href="a07427.html#a43ba393bb8bd89882094eb499ffe6d7f">Extrapolation</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07471.html#a7f4c5cdce430473a76ee647f0a041023">Table1D.setData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                            {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7f4c5cdce430473a76ee647f0a041023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4c5cdce430473a76ee647f0a041023">&#9670;&nbsp;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setData </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> throws MismatchedSizeException</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a07471.html#a5cee82df24fbebee5a7e83193680ea24">PathChangedEvent.count</a>, <a class="el" href="a07471.html#afbc9fbd05c5ee7891325476611b062b1">PathChangedEvent.isDirectory</a>, <a class="el" href="a07471.html#a065c3fa33315959a7f26ab6030d0a4bd">PathChangedEvent.kind</a>, and <a class="el" href="a07471.html#aafdc9e03f673beef105a0f339dcdec0f">PathChangedEvent.target</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                                                              {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        super(source);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this.<a class="code" href="a07471.html#aafdc9e03f673beef105a0f339dcdec0f">target</a> = <a class="code" href="a07471.html#aafdc9e03f673beef105a0f339dcdec0f">target</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.<a class="code" href="a07471.html#a065c3fa33315959a7f26ab6030d0a4bd">kind</a> = <a class="code" href="a07471.html#a065c3fa33315959a7f26ab6030d0a4bd">kind</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        this.<a class="code" href="a07471.html#afbc9fbd05c5ee7891325476611b062b1">isDirectory</a> = <a class="code" href="a07471.html#afbc9fbd05c5ee7891325476611b062b1">isDirectory</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        this.<a class="code" href="a07471.html#a5cee82df24fbebee5a7e83193680ea24">count</a> = <a class="code" href="a07471.html#a5cee82df24fbebee5a7e83193680ea24">count</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="ttc" id="a07471_html_aafdc9e03f673beef105a0f339dcdec0f"><div class="ttname"><a href="a07471.html#aafdc9e03f673beef105a0f339dcdec0f">org.geotoolkit.nio.PathChangedEvent.target</a></div><div class="ttdeci">final Path target</div><div class="ttdoc">The path which denotes the changed file. </div><div class="ttdef"><b>Definition:</b> PathChangedEvent.java:18</div></div>
-<div class="ttc" id="a07471_html_a5cee82df24fbebee5a7e83193680ea24"><div class="ttname"><a href="a07471.html#a5cee82df24fbebee5a7e83193680ea24">org.geotoolkit.nio.PathChangedEvent.count</a></div><div class="ttdeci">final int count</div><div class="ttdoc">Number of times the same event occured. </div><div class="ttdef"><b>Definition:</b> PathChangedEvent.java:33</div></div>
-<div class="ttc" id="a07471_html_a065c3fa33315959a7f26ab6030d0a4bd"><div class="ttname"><a href="a07471.html#a065c3fa33315959a7f26ab6030d0a4bd">org.geotoolkit.nio.PathChangedEvent.kind</a></div><div class="ttdeci">final WatchEvent.Kind kind</div><div class="ttdoc">The kind of modification which happened. </div><div class="ttdef"><b>Definition:</b> PathChangedEvent.java:23</div></div>
-<div class="ttc" id="a07471_html_afbc9fbd05c5ee7891325476611b062b1"><div class="ttname"><a href="a07471.html#afbc9fbd05c5ee7891325476611b062b1">org.geotoolkit.nio.PathChangedEvent.isDirectory</a></div><div class="ttdeci">final boolean isDirectory</div><div class="ttdoc">True if the target path was a directory at the moment of the event, false if it was a file...</div><div class="ttdef"><b>Definition:</b> PathChangedEvent.java:28</div></div>
+<p>Définies les vecteurs <em>x</em> et <em>y</em> de cette table. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MismatchedSizeException</td><td>si les deux vecteurs n'ont pas la même longueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a07427.html#a0d73c08fc54fdcdae1be8c9386aa09c4">Extrapolation</a>.</p>
+
+<p class="reference">References <a class="el" href="a07471.html#a43ba393bb8bd89882094eb499ffe6d7f">Table1D.recompute()</a>, <a class="el" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">Table1D.x</a>, and <a class="el" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">Table1D.y</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                                           {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        this.<a class="code" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a> = <a class="code" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        this.<a class="code" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">y</a> = <a class="code" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">y</a>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a>.length != <a class="code" href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">y</a>.length) {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> MismatchedSizeException(); <span class="comment">// TODO: Localize</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        this.<a class="code" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a> = <a class="code" href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">x</a>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="a07471.html#a43ba393bb8bd89882094eb499ffe6d7f">recompute</a>();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div><div class="ttc" id="a07471_html_a799e94d2434d7bf0fb8d2e845ebd55e7"><div class="ttname"><a href="a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7">org.geotoolkit.math.Table1D.y</a></div><div class="ttdeci">double y[]</div><div class="ttdoc">Vecteurs des y de cette table. </div><div class="ttdef"><b>Definition:</b> Table1D.java:55</div></div>
+<div class="ttc" id="a07471_html_a43ba393bb8bd89882094eb499ffe6d7f"><div class="ttname"><a href="a07471.html#a43ba393bb8bd89882094eb499ffe6d7f">org.geotoolkit.math.Table1D.recompute</a></div><div class="ttdeci">void recompute()</div><div class="ttdoc">Signale à la table que des données du vecteurs des x ou du vecteur des y ont été changées. </div><div class="ttdef"><b>Definition:</b> Table1D.java:93</div></div>
+<div class="ttc" id="a07471_html_a99ee0c516ca235fc66902cb8d612eeab"><div class="ttname"><a href="a07471.html#a99ee0c516ca235fc66902cb8d612eeab">org.geotoolkit.math.Table1D.x</a></div><div class="ttdeci">double [] x</div><div class="ttdoc">Vecteurs des x de cette table. </div><div class="ttdef"><b>Definition:</b> Table1D.java:51</div></div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="acbdd94cfa46f3161c548073aacc5739a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbdd94cfa46f3161c548073aacc5739a">&#9670;&nbsp;</a></span>throwArrayIndexOutOfBoundsException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void throwArrayIndexOutOfBoundsException </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> throws ArrayIndexOutOfBoundsException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lance une exception indiquant qu'on a pas trouvé suffisament de données valides dans le vecteur des <em>x</em> ou des <em>y</em>. </p>
+<p>Cette méthode est appellée entre autre par la méthode <code>copyIndexInto</code> en cas d'erreur.</p>
+<p>Cette méthode appelle toujours <code>clearData</code> afin de libérer la mémoire occupée par certains tableaux temporaires, comme le vecteur de dérivés secondes dans <code>Spline</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>nombre minimal de données valides qui étaient nécessaires. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArrayIndexOutOfBoundsException</td><td>toujours lancée avec un message appropriée. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a07467.html#aade905024a6012468e675d369c8ec042">Spline1D.constructY2()</a>, <a class="el" href="a07463.html#a380920f8eb91ce1df34aa0b850504d97">Search1D.copyIndexInto()</a>, and <a class="el" href="a07463.html#a54bb9f74813643b0083717b596354011">Search1D.validateIndex()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                                                                                      {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// TODO: Localize</span></div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> ArrayIndexOutOfBoundsException(<span class="stringliteral">&quot;Il fallait &quot;</span> + n + <span class="stringliteral">&quot; données valides, ce qui n&#39;a pas été trouvé.&quot;</span>);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5cee82df24fbebee5a7e83193680ea24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cee82df24fbebee5a7e83193680ea24">&#9670;&nbsp;</a></span>count</h2>
+<a id="ab7a26c935a4592383c96a6b2d89130ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a26c935a4592383c96a6b2d89130ad">&#9670;&nbsp;</a></span>ignoreYNaN</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int count</td>
+          <td class="memname">boolean ignoreYNaN</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Number of times the same event occured. </p>
+<p>Indique aux méthodes <code>interpole</code> qu'elles devront ignorer les NaN dans le vecteur des <em>y</em>. </p>
+<p>Ce champs n'affecte pas le comportement des méthodes vis-à-vis le vecteur des <em>x</em>. En effet, les NaN dans ce dernier sont toujours ignorés. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07471.html#a10790082c920880fff17182360f07142">PathChangedEvent.PathChangedEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07471.html#a22e218505813600e1844d7b4d899f57d">Table1D.ignoreNaN()</a>, <a class="el" href="a07447.html#a986d1530de980bd48c2f970eb3e19d7d">Linear1D.interpolate()</a>, <a class="el" href="a07459.html#a986d1530de980bd48c2f970eb3e19d7d">Polynomial1D.interpolate()</a>, <a class="el" href="a07467.html#a986d1530de980bd48c2f970eb3e19d7d">Spline1D.interpolate()</a>, <a class="el" href="a07435.html#a986d1530de980bd48c2f970eb3e19d7d">Hermite1D.interpolate()</a>, <a class="el" href="a07463.html#aa3293c1fbf7af2536f0a0b562c318308">Search1D.interpolate()</a>, <a class="el" href="a07463.html#a244b72983400ec5848f9fa567bcc2d27">Search1D.interpolateNaN()</a>, <a class="el" href="a07435.html#a46dc7841994d49498a8ea401d84a5931">Hermite1D.isNaN()</a>, and <a class="el" href="a07463.html#a39694e832815df3d491f60f45cd38d45">Search1D.locate()</a>.</p>
 
 </div>
 </div>
-<a id="afbc9fbd05c5ee7891325476611b062b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbc9fbd05c5ee7891325476611b062b1">&#9670;&nbsp;</a></span>isDirectory</h2>
+<a id="a99ee0c516ca235fc66902cb8d612eeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ee0c516ca235fc66902cb8d612eeab">&#9670;&nbsp;</a></span>x</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean isDirectory</td>
+          <td class="memname">double [] x</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>True if the target path was a directory at the moment of the event, false if it was a file. </p>
+<p>Vecteurs des <em>x</em> de cette table. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07471.html#a10790082c920880fff17182360f07142">PathChangedEvent.PathChangedEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07467.html#aade905024a6012468e675d369c8ec042">Spline1D.constructY2()</a>, <a class="el" href="a07463.html#a380920f8eb91ce1df34aa0b850504d97">Search1D.copyIndexInto()</a>, <a class="el" href="a07463.html#add8fb0ebb9cb6a89552071d9bf9f3a2c">Search1D.getInterval()</a>, <a class="el" href="a07447.html#a986d1530de980bd48c2f970eb3e19d7d">Linear1D.interpolate()</a>, <a class="el" href="a07459.html#a986d1530de980bd48c2f970eb3e19d7d">Polynomial1D.interpolate()</a>, <a class="el" href="a07467.html#a986d1530de980bd48c2f970eb3e19d7d">Spline1D.interpolate()</a>, <a class="el" href="a07435.html#a986d1530de980bd48c2f970eb3e19d7d">Hermite1D.interpolate()</a>, <a class="el" href="a07463.html#aa3293c1fbf7af2536f0a0b562c318308">Search1D.interpolate()</a>, <a class="el" href="a07463.html#abbc443ef87b961024d521d7790097d86">Search1D.interpolateAt()</a>, <a class="el" href="a07463.html#a244b72983400ec5848f9fa567bcc2d27">Search1D.interpolateNaN()</a>, <a class="el" href="a07435.html#a46dc7841994d49498a8ea401d84a5931">Hermite1D.isNaN()</a>, <a class="el" href="a07463.html#a97ac15402fd0c9472f17782dbf52b557">Search1D.locate()</a>, <a class="el" href="a07463.html#ad8ff2a7fd495f647c84e6332a84f34b8">Search1D.locateAt()</a>, <a class="el" href="a07471.html#a7f4c5cdce430473a76ee647f0a041023">Table1D.setData()</a>, and <a class="el" href="a07463.html#a54bb9f74813643b0083717b596354011">Search1D.validateIndex()</a>.</p>
 
 </div>
 </div>
-<a id="a065c3fa33315959a7f26ab6030d0a4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a065c3fa33315959a7f26ab6030d0a4bd">&#9670;&nbsp;</a></span>kind</h2>
+<a id="a799e94d2434d7bf0fb8d2e845ebd55e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799e94d2434d7bf0fb8d2e845ebd55e7">&#9670;&nbsp;</a></span>y</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final WatchEvent.Kind kind</td>
+          <td class="memname">double y[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>The kind of modification which happened. </p>
-<p>Most likely one of the <a class="el" href="">java.nio.file.StandardWatchEventKinds</a>. </p>
+<p>Vecteurs des <em>y</em> de cette table. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07471.html#a10790082c920880fff17182360f07142">PathChangedEvent.PathChangedEvent()</a>.</p>
-
-</div>
-</div>
-<a id="aafdc9e03f673beef105a0f339dcdec0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafdc9e03f673beef105a0f339dcdec0f">&#9670;&nbsp;</a></span>target</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Path target</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The path which denotes the changed file. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07471.html#a10790082c920880fff17182360f07142">PathChangedEvent.PathChangedEvent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07467.html#ac8bb3912a3ce86b15842e79d0b421204">Spline1D.clear()</a>, <a class="el" href="a07467.html#aade905024a6012468e675d369c8ec042">Spline1D.constructY2()</a>, <a class="el" href="a07447.html#a986d1530de980bd48c2f970eb3e19d7d">Linear1D.interpolate()</a>, <a class="el" href="a07459.html#a986d1530de980bd48c2f970eb3e19d7d">Polynomial1D.interpolate()</a>, <a class="el" href="a07467.html#a986d1530de980bd48c2f970eb3e19d7d">Spline1D.interpolate()</a>, <a class="el" href="a07435.html#a986d1530de980bd48c2f970eb3e19d7d">Hermite1D.interpolate()</a>, <a class="el" href="a07463.html#aa3293c1fbf7af2536f0a0b562c318308">Search1D.interpolate()</a>, <a class="el" href="a07463.html#a6d3d5cad6f5215f759cde16983e817c0">Search1D.interpolateInPlaceNaN()</a>, <a class="el" href="a07447.html#a9178c712485bef5b59cd1bb78e064896">Linear1D.interpolateNaN()</a>, <a class="el" href="a07463.html#a244b72983400ec5848f9fa567bcc2d27">Search1D.interpolateNaN()</a>, <a class="el" href="a07459.html#a9178c712485bef5b59cd1bb78e064896">Polynomial1D.interpolateNaN()</a>, <a class="el" href="a07467.html#a9178c712485bef5b59cd1bb78e064896">Spline1D.interpolateNaN()</a>, <a class="el" href="a07435.html#a46dc7841994d49498a8ea401d84a5931">Hermite1D.isNaN()</a>, <a class="el" href="a07463.html#a39694e832815df3d491f60f45cd38d45">Search1D.locate()</a>, <a class="el" href="a07467.html#a43ba393bb8bd89882094eb499ffe6d7f">Spline1D.recompute()</a>, <a class="el" href="a07471.html#a7f4c5cdce430473a76ee647f0a041023">Table1D.setData()</a>, and <a class="el" href="a07463.html#aae5374c96aabef74b5260040213fa3fe">Search1D.validateIndex()</a>.</p>
 
 </div>
 </div>
@@ -242,7 +492,7 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03876.html">nio</a></li><li class="navelem"><a class="el" href="a07471.html">PathChangedEvent</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03898.html">math</a></li><li class="navelem"><a class="el" href="a07471.html">Table1D</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

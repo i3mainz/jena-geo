@@ -1,9 +1,11 @@
 var a04019 =
 [
-    [ "AccAvgX", "a04019.html#a909fa20474c2f771433f5d0b60cf1210", null ],
-    [ "accumulate", "a04019.html#a28817aa8b3ff9874c7550bbac242267d", null ],
-    [ "accumulateError", "a04019.html#a00612e8af24f1d01fca23bfa838b60f4", null ],
-    [ "getAccValue", "a04019.html#a97738b9e0a0bde3579a698473dc654a8", null ],
-    [ "count", "a04019.html#ad43c3812e6d13e0518d9f8b8f463ffcf", null ],
-    [ "total", "a04019.html#adc861ea6d79d3efa71b1681858ea4aca", null ]
+    [ "GeobufDecoder", "a04019.html#a61d858768ad14d431108f3353b46b28d", null ],
+    [ "hasNext", "a04019.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "next", "a04019.html#a97c41cb83f82bc0df1e2b4dc59adebe0", null ],
+    [ "featureCollection", "a04019.html#ad44d648901fab99ed773d4a899696180", null ],
+    [ "i", "a04019.html#acb559820d9ca11295b4500f179ef6392", null ],
+    [ "keys", "a04019.html#a0b67fd2a3fd4f55257fd38f9624e7d67", null ],
+    [ "maxFeat", "a04019.html#a4a95d529e3b3e3512179e1a7dbc3bae7", null ],
+    [ "precisionDivisor", "a04019.html#a49401dd19535ec33cc4f59b017e899aa", null ]
 ];

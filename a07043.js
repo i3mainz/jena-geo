@@ -1,16 +1,15 @@
 var a07043 =
 [
-    [ "Double", "a07043.html#ad12e1bce99f24547429537ec49aa3617", null ],
-    [ "Double", "a07043.html#ae56410a38885486a0ec3df56393ecbdf", null ],
-    [ "copyAsInts", "a07043.html#a221d105ab24f5e3b59a30e73aff9f600", null ],
-    [ "equals", "a07043.html#a537c7b35c090ed43e1d3f130188e9198", null ],
-    [ "getInstance", "a07043.html#a3c3187a9ea5768277146d5961af9b768", null ],
-    [ "getInstance", "a07043.html#ac600d752075964fc3047467438a60478", null ],
-    [ "getPixel", "a07043.html#a4ace0cc7b5dbb9fa5821a8c1547553b3", null ],
-    [ "getSample", "a07043.html#afe024339c5e1fd2c67ae1bce412d5fa4", null ],
-    [ "hashCode", "a07043.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "instance", "a07043.html#a7dce96e734633d27d37f4ff71224e08c", null ],
-    [ "setPixel", "a07043.html#afc227f53eba58d0aabab35827c88508b", null ],
-    [ "toString", "a07043.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "samples", "a07043.html#a64d297fc1010ea9f80a954f68a2babb8", null ]
+    [ "WritableImageByteChannel", "a07043.html#adce74a27d762b3eb9134d111c03b0fb5", null ],
+    [ "close", "a07043.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
+    [ "flushAll", "a07043.html#aca1483a67aee5a91e442f7131d66bcbd", null ],
+    [ "isOpen", "a07043.html#a89bad715757f58aa49c8a8b8d2fa8158", null ],
+    [ "position", "a07043.html#a438f53dfd2cdf15a04969e8fecd27bd0", null ],
+    [ "position", "a07043.html#a2c333cf185db3ac5791c23d79f4381cf", null ],
+    [ "read", "a07043.html#a04c5693159f3800f218966eb4c62ecc4", null ],
+    [ "size", "a07043.html#a22727e9c338fb1aaa6722031445373c3", null ],
+    [ "truncate", "a07043.html#a8d1eb284157c2dfa18daded55f85526d", null ],
+    [ "write", "a07043.html#a16f7c1d6ecda9a5ad91d19ac8b9141b6", null ],
+    [ "open", "a07043.html#af33480a937ab302d78bd769955124e15", null ],
+    [ "stream", "a07043.html#aa4a927aee40fffc1ea3045cfb61be839", null ]
 ];

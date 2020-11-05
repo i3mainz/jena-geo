@@ -1,6 +1,6 @@
 var a04131 =
 [
-    [ "MinZDistinct", "a04131.html#ac4a4548f6dcbd19ae05cf72ef0267af9", null ],
+    [ "MinXDistinct", "a04131.html#ae25f24de4e988b2b2f15c4a43c3fe1aa", null ],
     [ "copy", "a04131.html#a0c4f538fb7b73cf0610c4fd5b212cc00", null ],
     [ "createAccumulator", "a04131.html#ac589ca3321e77a7558e0e346c8474738", null ],
     [ "equals", "a04131.html#a04adb23e628a0adcac484ce8f1dff399", null ],

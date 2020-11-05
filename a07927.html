@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: StoreMetadataExt Interface Reference</title>
+<title>jena-geo: DefaultAggregate Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,139 +62,513 @@ $(document).ready(function(){initNavTree('a07927.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
 <a href="a07924.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">StoreMetadataExt Interface Reference</div>  </div>
+<div class="title">DefaultAggregate Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Additional informations for store capabilities.  
- <a href="a07927.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for DefaultAggregate:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07926.png" border="0" usemap="#DefaultAggregate_inherit__map" alt="Inheritance graph"/></div>
+<map name="DefaultAggregate_inherit__map" id="DefaultAggregate_inherit__map">
+<area shape="rect" id="node2" href="a07895.html" title="AbstractResource" alt="" coords="5,80,132,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for DefaultAggregate:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07925.png" border="0" usemap="#DefaultAggregate_coll__map" alt="Collaboration graph"/></div>
+<map name="DefaultAggregate_coll__map" id="DefaultAggregate_coll__map">
+<area shape="rect" id="node2" href="a07895.html" title="AbstractResource" alt="" coords="244,184,371,211"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c4504877f809c6c84cf7623973732dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07911.html">ResourceType</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#a1c4504877f809c6c84cf7623973732dd">resourceTypes</a> ()</td></tr>
-<tr class="memdesc:a1c4504877f809c6c84cf7623973732dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates what type of resource this store can handle.  <a href="#a1c4504877f809c6c84cf7623973732dd">More...</a><br /></td></tr>
-<tr class="separator:a1c4504877f809c6c84cf7623973732dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6873b0d76f766b69b6c036e19161c62"><td class="memItemLeft" align="right" valign="top">Class []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#ad6873b0d76f766b69b6c036e19161c62">geometryTypes</a> () default</td></tr>
-<tr class="memdesc:ad6873b0d76f766b69b6c036e19161c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is only for stores of data type : feature.  <a href="#ad6873b0d76f766b69b6c036e19161c62">More...</a><br /></td></tr>
-<tr class="separator:ad6873b0d76f766b69b6c036e19161c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154d161b059513637f9a52bce5a47f9e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#a154d161b059513637f9a52bce5a47f9e">canCreate</a> () default false</td></tr>
-<tr class="memdesc:a154d161b059513637f9a52bce5a47f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if this factory can create new stores.  <a href="#a154d161b059513637f9a52bce5a47f9e">More...</a><br /></td></tr>
-<tr class="separator:a154d161b059513637f9a52bce5a47f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5b4ed789261bd655b47b2c26ef23a0"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#aeb5b4ed789261bd655b47b2c26ef23a0">canWrite</a> () default false</td></tr>
-<tr class="memdesc:aeb5b4ed789261bd655b47b2c26ef23a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if this factory can write datas is stores.  <a href="#aeb5b4ed789261bd655b47b2c26ef23a0">More...</a><br /></td></tr>
-<tr class="separator:aeb5b4ed789261bd655b47b2c26ef23a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d129d522133a3152bf81d36de50846"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#ae6d129d522133a3152bf81d36de50846">styledFeature</a> () default false</td></tr>
-<tr class="memdesc:ae6d129d522133a3152bf81d36de50846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feature store may produce 2 kinds of features.  <a href="#ae6d129d522133a3152bf81d36de50846">More...</a><br /></td></tr>
-<tr class="separator:ae6d129d522133a3152bf81d36de50846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c52b5a52ca7f0281311a18c1b5e355"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#a54c52b5a52ca7f0281311a18c1b5e355">DefaultAggregate</a> (GenericName name)</td></tr>
+<tr class="separator:a54c52b5a52ca7f0281311a18c1b5e355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c8c09b0b77b5dfa8549e717cb94d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#af4c8c09b0b77b5dfa8549e717cb94d28">DefaultAggregate</a> (Identifier <a class="el" href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">identifier</a>)</td></tr>
+<tr class="separator:af4c8c09b0b77b5dfa8549e717cb94d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d855e157cdbeed9ada2eb1b99752bd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#a2d855e157cdbeed9ada2eb1b99752bd9">addResource</a> (Resource res)</td></tr>
+<tr class="separator:a2d855e157cdbeed9ada2eb1b99752bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d39459615c379f9dddde35537e92ab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#a5d39459615c379f9dddde35537e92ab5">removeResource</a> (Resource res)</td></tr>
+<tr class="separator:a5d39459615c379f9dddde35537e92ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dbb2a46d16471c28ca3b5faac2ba27"><td class="memItemLeft" align="right" valign="top">Collection&lt; Resource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#a85dbb2a46d16471c28ca3b5faac2ba27">components</a> ()</td></tr>
+<tr class="separator:a85dbb2a46d16471c28ca3b5faac2ba27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337d71dd87616b08836dacd4a3b1ba58"><td class="memItemLeft" align="right" valign="top">Optional&lt; GenericName &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#a337d71dd87616b08836dacd4a3b1ba58">getIdentifier</a> ()</td></tr>
+<tr class="separator:a337d71dd87616b08836dacd4a3b1ba58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1951f1407c08c90de9973b9b5316d5bd"><td class="memItemLeft" align="right" valign="top">final synchronized Metadata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#a1951f1407c08c90de9973b9b5316d5bd">getMetadata</a> ()  throws DataStoreException </td></tr>
+<tr class="separator:a1951f1407c08c90de9973b9b5316d5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102930adafb3f0b356c51c15677b27b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#a102930adafb3f0b356c51c15677b27b0">forwardEvent</a> (<a class="el" href="a07955.html">StorageEvent</a> event)</td></tr>
+<tr class="memdesc:a102930adafb3f0b356c51c15677b27b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward given event, changing the source by this object.  <a href="#a102930adafb3f0b356c51c15677b27b0">More...</a><br /></td></tr>
+<tr class="separator:a102930adafb3f0b356c51c15677b27b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae838e446eb4ba7422dcdea347a4bd7fb"><td class="memItemLeft" align="right" valign="top">DefaultMetadata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#ae838e446eb4ba7422dcdea347a4bd7fb">createMetadata</a> ()  throws DataStoreException </td></tr>
+<tr class="separator:ae838e446eb4ba7422dcdea347a4bd7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fd4c3e4521c565651cef847c570442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#ac8fd4c3e4521c565651cef847c570442">sendEvent</a> (final StoreEvent event)</td></tr>
+<tr class="memdesc:ac8fd4c3e4521c565651cef847c570442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward a structure event to all listeners.  <a href="#ac8fd4c3e4521c565651cef847c570442">More...</a><br /></td></tr>
+<tr class="separator:ac8fd4c3e4521c565651cef847c570442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa8267e8532aa7975557505c53013cc1c"><td class="memItemLeft" align="right" valign="top">final List&lt; Resource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07927.html#aa8267e8532aa7975557505c53013cc1c">resources</a> = new CopyOnWriteArrayList&lt;Resource&gt;()</td></tr>
+<tr class="separator:aa8267e8532aa7975557505c53013cc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d3a9cfc3827e8859dcdba53a58fb88"><td class="memItemLeft" align="right" valign="top">final Set&lt; StoreListener &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a> = new HashSet&lt;&gt;()</td></tr>
+<tr class="separator:ae0d3a9cfc3827e8859dcdba53a58fb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df0ca103b56b4d861d94fa5cb75e0d7"><td class="memItemLeft" align="right" valign="top">NamedIdentifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">identifier</a></td></tr>
+<tr class="separator:a6df0ca103b56b4d861d94fa5cb75e0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:abe82452a43ca55ea0fa6bfa26d12348d"><td class="memItemLeft" align="right" valign="top">public&lt; T extends StoreEvent &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#abe82452a43ca55ea0fa6bfa26d12348d">addListener</a> (Class&lt; T &gt; eventType, StoreListener&lt;? super T &gt; listener)</td></tr>
+<tr class="separator:abe82452a43ca55ea0fa6bfa26d12348d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20aae1ede302e65839c69726c83e3e3a"><td class="memItemLeft" align="right" valign="top">public&lt; T extends StoreEvent &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07895.html#a20aae1ede302e65839c69726c83e3e3a">removeListener</a> (Class&lt; T &gt; eventType, StoreListener&lt;? super T &gt; listener)</td></tr>
+<tr class="separator:a20aae1ede302e65839c69726c83e3e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Additional informations for store capabilities. </p>
-<p>TODO : merge with StoreMetadata from SIS</p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a154d161b059513637f9a52bce5a47f9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a154d161b059513637f9a52bce5a47f9e">&#9670;&nbsp;</a></span>canCreate()</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a54c52b5a52ca7f0281311a18c1b5e355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c52b5a52ca7f0281311a18c1b5e355">&#9670;&nbsp;</a></span>DefaultAggregate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean canCreate </td>
+          <td class="memname"><a class="el" href="a07927.html">DefaultAggregate</a> </td>
+          <td>(</td>
+          <td class="paramtype">GenericName&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                              {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        super(name);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="af4c8c09b0b77b5dfa8549e717cb94d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c8c09b0b77b5dfa8549e717cb94d28">&#9670;&nbsp;</a></span>DefaultAggregate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07927.html">DefaultAggregate</a> </td>
+          <td>(</td>
+          <td class="paramtype">Identifier&#160;</td>
+          <td class="paramname"><em>identifier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                   {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        super(<a class="code" href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">identifier</a>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="ttc" id="a07895_html_a6df0ca103b56b4d861d94fa5cb75e0d7"><div class="ttname"><a href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">org.geotoolkit.storage.AbstractResource.identifier</a></div><div class="ttdeci">NamedIdentifier identifier</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe82452a43ca55ea0fa6bfa26d12348d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe82452a43ca55ea0fa6bfa26d12348d">&#9670;&nbsp;</a></span>addListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">public&lt;T extends StoreEvent&gt; void addListener </td>
+          <td>(</td>
+          <td class="paramtype">Class&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>eventType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StoreListener&lt;? super T &gt;&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">AbstractResource.listeners</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                                                          {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>) {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>.add(listener);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="ttc" id="a07895_html_ae0d3a9cfc3827e8859dcdba53a58fb88"><div class="ttname"><a href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">org.geotoolkit.storage.AbstractResource.listeners</a></div><div class="ttdeci">final Set&lt; StoreListener &gt; listeners</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d855e157cdbeed9ada2eb1b99752bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d855e157cdbeed9ada2eb1b99752bd9">&#9670;&nbsp;</a></span>addResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addResource </td>
+          <td>(</td>
+          <td class="paramtype">Resource&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                          {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="a07927.html#aa8267e8532aa7975557505c53013cc1c">resources</a>.add(res);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div><div class="ttc" id="a07927_html_aa8267e8532aa7975557505c53013cc1c"><div class="ttname"><a href="a07927.html#aa8267e8532aa7975557505c53013cc1c">org.geotoolkit.storage.DefaultAggregate.resources</a></div><div class="ttdeci">final List&lt; Resource &gt; resources</div><div class="ttdef"><b>Definition:</b> DefaultAggregate.java:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a85dbb2a46d16471c28ca3b5faac2ba27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85dbb2a46d16471c28ca3b5faac2ba27">&#9670;&nbsp;</a></span>components()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;Resource&gt; components </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Indicate if this factory can create new stores. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if writing is supported </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                             {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> Collections.unmodifiableList(<a class="code" href="a07927.html#aa8267e8532aa7975557505c53013cc1c">resources</a>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div><div class="ttc" id="a07927_html_aa8267e8532aa7975557505c53013cc1c"><div class="ttname"><a href="a07927.html#aa8267e8532aa7975557505c53013cc1c">org.geotoolkit.storage.DefaultAggregate.resources</a></div><div class="ttdeci">final List&lt; Resource &gt; resources</div><div class="ttdef"><b>Definition:</b> DefaultAggregate.java:38</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="aeb5b4ed789261bd655b47b2c26ef23a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb5b4ed789261bd655b47b2c26ef23a0">&#9670;&nbsp;</a></span>canWrite()</h2>
+<a id="ae838e446eb4ba7422dcdea347a4bd7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae838e446eb4ba7422dcdea347a4bd7fb">&#9670;&nbsp;</a></span>createMetadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean canWrite </td>
+          <td class="memname">DefaultMetadata createMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws DataStoreException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">AbstractResource.metadata</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07895.html#a1951f1407c08c90de9973b9b5316d5bd">AbstractResource.getMetadata()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                                         {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">final</span> DefaultMetadata <a class="code" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">metadata</a> = <span class="keyword">new</span> DefaultMetadata();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">final</span> DefaultDataIdentification idf = <span class="keyword">new</span> DefaultDataIdentification();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">final</span> DefaultCitation citation = <span class="keyword">new</span> DefaultCitation();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">identifier</a> != null) citation.getIdentifiers().add(<a class="code" href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">identifier</a>);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        idf.setCitation(citation);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        metadata.setIdentificationInfo(Arrays.asList(idf));</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">metadata</a>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div><div class="ttc" id="a07895_html_a6df0ca103b56b4d861d94fa5cb75e0d7"><div class="ttname"><a href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">org.geotoolkit.storage.AbstractResource.identifier</a></div><div class="ttdeci">NamedIdentifier identifier</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:46</div></div>
+<div class="ttc" id="a07895_html_a5fa91702b5f3e9aca4a5b724facf21fb"><div class="ttname"><a href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">org.geotoolkit.storage.AbstractResource.metadata</a></div><div class="ttdeci">DefaultMetadata metadata</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a102930adafb3f0b356c51c15677b27b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102930adafb3f0b356c51c15677b27b0">&#9670;&nbsp;</a></span>forwardEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void forwardEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a07955.html">StorageEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Forward given event, changing the source by this object. </p>
+<p>For implementation use only. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07955.html#a92735b4ded23b50429730629430e9491">StorageEvent.copy()</a>, and <a class="el" href="a07895.html#ac8fd4c3e4521c565651cef847c570442">AbstractResource.sendEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="a07895.html#ac8fd4c3e4521c565651cef847c570442">sendEvent</a>(event.copy(<span class="keyword">this</span>));</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div><div class="ttc" id="a07895_html_ac8fd4c3e4521c565651cef847c570442"><div class="ttname"><a href="a07895.html#ac8fd4c3e4521c565651cef847c570442">org.geotoolkit.storage.AbstractResource.sendEvent</a></div><div class="ttdeci">void sendEvent(final StoreEvent event)</div><div class="ttdoc">Forward a structure event to all listeners. </div><div class="ttdef"><b>Definition:</b> AbstractResource.java:111</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a337d71dd87616b08836dacd4a3b1ba58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337d71dd87616b08836dacd4a3b1ba58">&#9670;&nbsp;</a></span>getIdentifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional&lt;GenericName&gt; getIdentifier </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                 {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> Optional.ofNullable(<a class="code" href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">identifier</a>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="ttc" id="a07895_html_a6df0ca103b56b4d861d94fa5cb75e0d7"><div class="ttname"><a href="a07895.html#a6df0ca103b56b4d861d94fa5cb75e0d7">org.geotoolkit.storage.AbstractResource.identifier</a></div><div class="ttdeci">NamedIdentifier identifier</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1951f1407c08c90de9973b9b5316d5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1951f1407c08c90de9973b9b5316d5bd">&#9670;&nbsp;</a></span>getMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final synchronized Metadata getMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws DataStoreException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Indicate if this factory can write datas is stores. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if writing is supported </dd></dl>
+<p class="reference">References <a class="el" href="a07895.html#ae838e446eb4ba7422dcdea347a4bd7fb">AbstractResource.createMetadata()</a>, and <a class="el" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">AbstractResource.metadata</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="a07895.html#ad146fa8579a5f8a876c4688cc5a68520">AbstractResource.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                               {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">metadata</a> == null) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">metadata</a> = <a class="code" href="a07895.html#ae838e446eb4ba7422dcdea347a4bd7fb">createMetadata</a>();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">metadata</a>.transitionTo(DefaultMetadata.State.FINAL);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">metadata</a>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div><div class="ttc" id="a07895_html_ae838e446eb4ba7422dcdea347a4bd7fb"><div class="ttname"><a href="a07895.html#ae838e446eb4ba7422dcdea347a4bd7fb">org.geotoolkit.storage.AbstractResource.createMetadata</a></div><div class="ttdeci">DefaultMetadata createMetadata()</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:83</div></div>
+<div class="ttc" id="a07895_html_a5fa91702b5f3e9aca4a5b724facf21fb"><div class="ttname"><a href="a07895.html#a5fa91702b5f3e9aca4a5b724facf21fb">org.geotoolkit.storage.AbstractResource.metadata</a></div><div class="ttdeci">DefaultMetadata metadata</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:47</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ad6873b0d76f766b69b6c036e19161c62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6873b0d76f766b69b6c036e19161c62">&#9670;&nbsp;</a></span>geometryTypes()</h2>
+<a id="a20aae1ede302e65839c69726c83e3e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20aae1ede302e65839c69726c83e3e3a">&#9670;&nbsp;</a></span>removeListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">public&lt;T extends StoreEvent&gt; void removeListener </td>
+          <td>(</td>
+          <td class="paramtype">Class&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>eventType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StoreListener&lt;? super T &gt;&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">AbstractResource.listeners</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                                                                             {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>) {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>.remove(listener);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div><div class="ttc" id="a07895_html_ae0d3a9cfc3827e8859dcdba53a58fb88"><div class="ttname"><a href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">org.geotoolkit.storage.AbstractResource.listeners</a></div><div class="ttdeci">final Set&lt; StoreListener &gt; listeners</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5d39459615c379f9dddde35537e92ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d39459615c379f9dddde35537e92ab5">&#9670;&nbsp;</a></span>removeResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Class [] geometryTypes </td>
+          <td class="memname">void removeResource </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Resource&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>This method is only for stores of data type : feature. </p>
-<p>Indicate which kind of geometry a store can write. Some format are limited to points, lines, or can support support the global type 'Geometry'</p>
-<dl class="section return"><dt>Returns</dt><dd>list of supported geometry types. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{};</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                             {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="a07927.html#aa8267e8532aa7975557505c53013cc1c">resources</a>.remove(res);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="ttc" id="a07927_html_aa8267e8532aa7975557505c53013cc1c"><div class="ttname"><a href="a07927.html#aa8267e8532aa7975557505c53013cc1c">org.geotoolkit.storage.DefaultAggregate.resources</a></div><div class="ttdeci">final List&lt; Resource &gt; resources</div><div class="ttdef"><b>Definition:</b> DefaultAggregate.java:38</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a1c4504877f809c6c84cf7623973732dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c4504877f809c6c84cf7623973732dd">&#9670;&nbsp;</a></span>resourceTypes()</h2>
+<a id="ac8fd4c3e4521c565651cef847c570442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8fd4c3e4521c565651cef847c570442">&#9670;&nbsp;</a></span>sendEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07911.html">ResourceType</a> [] resourceTypes </td>
+          <td class="memname">void sendEvent </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final StoreEvent&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Indicates what type of resource this store can handle. </p>
-<dl class="section return"><dt>Returns</dt><dd>list of supported resource types. </dd></dl>
+<p>Forward a structure event to all listeners. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event,event</td><td>to send to listeners. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">Referenced by <a class="el" href="a07883.html#ace666e5104c32480848a9def241bac2a">DataStores.getResourceTypes()</a>.</p>
+<p class="reference">References <a class="el" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">AbstractResource.listeners</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="a07895.html#a102930adafb3f0b356c51c15677b27b0">AbstractResource.forwardEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                    {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">final</span> StoreListener[] lst;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>) {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            lst = <a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>.toArray(<span class="keyword">new</span> StoreListener[<a class="code" href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">listeners</a>.size()]);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">final</span> StoreListener listener : lst){</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            listener.eventOccured(event);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div><div class="ttc" id="a07895_html_ae0d3a9cfc3827e8859dcdba53a58fb88"><div class="ttname"><a href="a07895.html#ae0d3a9cfc3827e8859dcdba53a58fb88">org.geotoolkit.storage.AbstractResource.listeners</a></div><div class="ttdeci">final Set&lt; StoreListener &gt; listeners</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:44</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ae6d129d522133a3152bf81d36de50846"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d129d522133a3152bf81d36de50846">&#9670;&nbsp;</a></span>styledFeature()</h2>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean styledFeature </td>
+          <td class="memname">String toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Feature store may produce 2 kinds of features. </p>
-<p>Standard unstyled features like : shapefile, postgresql,</p>
-<dl class="section return"><dt>Returns</dt><dd>true if features are styled. </dd></dl>
+<p class="reference">References <a class="el" href="a07895.html#a1951f1407c08c90de9973b9b5316d5bd">AbstractResource.getMetadata()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                             {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        CharSequence name = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            name = <a class="code" href="a07895.html#a1951f1407c08c90de9973b9b5316d5bd">getMetadata</a>().getIdentificationInfo().iterator().next().getCitation().getIdentifiers().iterator().next().getCode();</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        } <span class="keywordflow">catch</span> (<a class="code" href="a14231.html">Exception</a> ex) {</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="comment">//do nothing : various errors can happen here : null pointer, no such element, etc.</span></div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> instanceof Aggregate) {</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">return</span> StringUtilities.toStringTree(name.toString(), ((Aggregate)<span class="keyword">this</span>).components());</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            } <span class="keywordflow">catch</span> (DataStoreException ex) {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">return</span> name.toString() +<span class="stringliteral">&quot; (Failed to list resource components)&quot;</span>;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> name.toString();</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div><div class="ttc" id="a14231_html"><div class="ttname"><a href="a14231.html">Exception</a></div></div>
+<div class="ttc" id="a07895_html_a1951f1407c08c90de9973b9b5316d5bd"><div class="ttname"><a href="a07895.html#a1951f1407c08c90de9973b9b5316d5bd">org.geotoolkit.storage.AbstractResource.getMetadata</a></div><div class="ttdeci">final synchronized Metadata getMetadata()</div><div class="ttdef"><b>Definition:</b> AbstractResource.java:75</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6df0ca103b56b4d861d94fa5cb75e0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df0ca103b56b4d861d94fa5cb75e0d7">&#9670;&nbsp;</a></span>identifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NamedIdentifier identifier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07895.html#ac3c51bec6e726f822b1379eb2cffb5b3">AbstractResource.AbstractResource()</a>.</p>
+
+</div>
+</div>
+<a id="ae0d3a9cfc3827e8859dcdba53a58fb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d3a9cfc3827e8859dcdba53a58fb88">&#9670;&nbsp;</a></span>listeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Set&lt;StoreListener&gt; listeners = new HashSet&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07895.html#abe82452a43ca55ea0fa6bfa26d12348d">AbstractResource.addListener()</a>, <a class="el" href="a07895.html#a20aae1ede302e65839c69726c83e3e3a">AbstractResource.removeListener()</a>, and <a class="el" href="a07895.html#ac8fd4c3e4521c565651cef847c570442">AbstractResource.sendEvent()</a>.</p>
+
+</div>
+</div>
+<a id="aa8267e8532aa7975557505c53013cc1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8267e8532aa7975557505c53013cc1c">&#9670;&nbsp;</a></span>resources</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final List&lt;Resource&gt; resources = new CopyOnWriteArrayList&lt;Resource&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -204,7 +578,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03891.html">storage</a></li><li class="navelem"><a class="el" href="a07927.html">StoreMetadataExt</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03915.html">storage</a></li><li class="navelem"><a class="el" href="a07927.html">DefaultAggregate</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,4 @@
 var a08019 =
 [
-    [ "MapUtilities", "a08019.html#ab4ddc197008fb52c440e6427111c982f", null ],
-    [ "buildMap", "a08019.html#ae5ec240f85a4ba20f053b01bf857ebca", null ]
+    [ "close", "a08019.html#a5ae591df94fc66ccb85cbb6565368bca", null ]
 ];

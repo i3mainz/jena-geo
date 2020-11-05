@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Axes Class Reference</title>
+<title>jena-geo: ProcessDescriptor Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,517 +61,208 @@ $(document).ready(function(){initNavTree('a07583.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pac-static-methods">Static Package Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a07580.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Axes Class Reference</div>  </div>
+<div class="title">ProcessDescriptor Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Predefined axes.  
+<p>Description of a  <a class="el" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} algorithm and its input/output parameters.  
  <a href="a07583.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for Axes:</div>
+Inheritance diagram for ProcessDescriptor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07581.png" border="0" usemap="#Axes_coll__map" alt="Collaboration graph"/></div>
-<map name="Axes_coll__map" id="Axes_coll__map">
+<div class="center"><img src="a07582.png" border="0" usemap="#ProcessDescriptor_inherit__map" alt="Inheritance graph"/></div>
+<map name="ProcessDescriptor_inherit__map" id="ProcessDescriptor_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for ProcessDescriptor:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07581.png" border="0" usemap="#ProcessDescriptor_coll__map" alt="Collaboration graph"/></div>
+<map name="ProcessDescriptor_coll__map" id="ProcessDescriptor_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a13369d19591919197f5045c5a97dc8e8"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a13369d19591919197f5045c5a97dc8e8">LONGITUDE</a></td></tr>
-<tr class="memdesc:a13369d19591919197f5045c5a97dc8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for longitudes.  <a href="#a13369d19591919197f5045c5a97dc8e8">More...</a><br /></td></tr>
-<tr class="separator:a13369d19591919197f5045c5a97dc8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68380f4720d33a7a52dddb87a05cd50"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#aa68380f4720d33a7a52dddb87a05cd50">LATITUDE</a></td></tr>
-<tr class="memdesc:aa68380f4720d33a7a52dddb87a05cd50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for latitudes.  <a href="#aa68380f4720d33a7a52dddb87a05cd50">More...</a><br /></td></tr>
-<tr class="separator:aa68380f4720d33a7a52dddb87a05cd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2871d7c7808486466500fa51b040b071"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a2871d7c7808486466500fa51b040b071">ELLIPSOIDAL_HEIGHT</a></td></tr>
-<tr class="memdesc:a2871d7c7808486466500fa51b040b071"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default axis for height values above the ellipsoid in a  org.opengis.referencing.crs.GeographicCRS geographic <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>}.  <a href="#a2871d7c7808486466500fa51b040b071">More...</a><br /></td></tr>
-<tr class="separator:a2871d7c7808486466500fa51b040b071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab128f7c118b6b902e468e2e9e0ae017b"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#ab128f7c118b6b902e468e2e9e0ae017b">X</a></td></tr>
-<tr class="memdesc:ab128f7c118b6b902e468e2e9e0ae017b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for <em>x</em> values in a  org.opengis.referencing.cs.CartesianCS Cartesian CS}.  <a href="#ab128f7c118b6b902e468e2e9e0ae017b">More...</a><br /></td></tr>
-<tr class="separator:ab128f7c118b6b902e468e2e9e0ae017b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e08dd7d602c2eb0180e571903583e8"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#af8e08dd7d602c2eb0180e571903583e8">Y</a></td></tr>
-<tr class="memdesc:af8e08dd7d602c2eb0180e571903583e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for <em>y</em> values in a  org.opengis.referencing.cs.CartesianCS Cartesian CS}.  <a href="#af8e08dd7d602c2eb0180e571903583e8">More...</a><br /></td></tr>
-<tr class="separator:af8e08dd7d602c2eb0180e571903583e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1daa3facd2f147d023a5a831bb2f394"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#ac1daa3facd2f147d023a5a831bb2f394">Z</a></td></tr>
-<tr class="memdesc:ac1daa3facd2f147d023a5a831bb2f394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for <em>z</em> values in a  org.opengis.referencing.cs.CartesianCS Cartesian CS}.  <a href="#ac1daa3facd2f147d023a5a831bb2f394">More...</a><br /></td></tr>
-<tr class="separator:ac1daa3facd2f147d023a5a831bb2f394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af85bdbc73b80a295d942a5f25b806c"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a9af85bdbc73b80a295d942a5f25b806c">EASTING</a></td></tr>
-<tr class="memdesc:a9af85bdbc73b80a295d942a5f25b806c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for Easting values in a  org.opengis.referencing.crs.ProjectedCRS projected <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>}.  <a href="#a9af85bdbc73b80a295d942a5f25b806c">More...</a><br /></td></tr>
-<tr class="separator:a9af85bdbc73b80a295d942a5f25b806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51da17f217159c18a9de624e36ff40c9"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a51da17f217159c18a9de624e36ff40c9">NORTHING</a></td></tr>
-<tr class="memdesc:a51da17f217159c18a9de624e36ff40c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default axis info for Northing values in a  org.opengis.referencing.crs.ProjectedCRS projected <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>}.  <a href="#a51da17f217159c18a9de624e36ff40c9">More...</a><br /></td></tr>
-<tr class="separator:a51da17f217159c18a9de624e36ff40c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e1010aa86faa97f1d41520497b8fa1"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a14e1010aa86faa97f1d41520497b8fa1">COLUMN</a></td></tr>
-<tr class="memdesc:a14e1010aa86faa97f1d41520497b8fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default axis for column indices in a  org.geotoolkit.coverage.grid.GridCoverage grid coverage}.  <a href="#a14e1010aa86faa97f1d41520497b8fa1">More...</a><br /></td></tr>
-<tr class="separator:a14e1010aa86faa97f1d41520497b8fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac704d5f6a0bf1955e8c18cb7c7d4eb87"><td class="memItemLeft" align="right" valign="top">static final DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#ac704d5f6a0bf1955e8c18cb7c7d4eb87">ROW</a></td></tr>
-<tr class="memdesc:ac704d5f6a0bf1955e8c18cb7c7d4eb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default axis for row indices in a  org.geotoolkit.coverage.grid.GridCoverage grid coverage}.  <a href="#ac704d5f6a0bf1955e8c18cb7c7d4eb87">More...</a><br /></td></tr>
-<tr class="separator:ac704d5f6a0bf1955e8c18cb7c7d4eb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
-Static Package Functions</h2></td></tr>
-<tr class="memitem:a5eb231391cf86b0ae343a6090dc5641c"><td class="memItemLeft" align="right" valign="top">static CoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a5eb231391cf86b0ae343a6090dc5641c">usingUnit</a> (final CoordinateSystemAxis a, final Unit&lt;?&gt; newUnit)  throws IncommensurableException     </td></tr>
-<tr class="memdesc:a5eb231391cf86b0ae343a6090dc5641c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new axis with the same properties than current axis except for the units.  <a href="#a5eb231391cf86b0ae343a6090dc5641c">More...</a><br /></td></tr>
-<tr class="separator:a5eb231391cf86b0ae343a6090dc5641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:acd97b6cc1d842687b9347bb3637baea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#acd97b6cc1d842687b9347bb3637baea7">Axes</a> ()</td></tr>
-<tr class="separator:acd97b6cc1d842687b9347bb3637baea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:afc97a29608202eb8f56c0526f108d3fd"><td class="memItemLeft" align="right" valign="top">static DefaultCoordinateSystemAxis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a> (final int name, final String abbreviation, final AxisDirection direction, final Unit&lt;?&gt; unit)</td></tr>
-<tr class="memdesc:afc97a29608202eb8f56c0526f108d3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an axis with a name and an abbreviation as a resource bundle key.  <a href="#afc97a29608202eb8f56c0526f108d3fd">More...</a><br /></td></tr>
-<tr class="separator:afc97a29608202eb8f56c0526f108d3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5c438eeb40d745bc5a7fb706eaf4cbdf"><td class="memItemLeft" align="right" valign="top">Identifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a5c438eeb40d745bc5a7fb706eaf4cbdf">getIdentifier</a> ()</td></tr>
+<tr class="memdesc:a5c438eeb40d745bc5a7fb706eaf4cbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information to identify the processing package that run the process.  <a href="#a5c438eeb40d745bc5a7fb706eaf4cbdf">More...</a><br /></td></tr>
+<tr class="separator:a5c438eeb40d745bc5a7fb706eaf4cbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3984dc7f84612f3a3a4a74b55f0b64"><td class="memItemLeft" align="right" valign="top">InternationalString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a6b3984dc7f84612f3a3a4a74b55f0b64">getDisplayName</a> ()</td></tr>
+<tr class="memdesc:a6b3984dc7f84612f3a3a4a74b55f0b64"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> name to display in user interfaces.  <a href="#a6b3984dc7f84612f3a3a4a74b55f0b64">More...</a><br /></td></tr>
+<tr class="separator:a6b3984dc7f84612f3a3a4a74b55f0b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704ac0ca9eb3c259317bb89836f4ba15"><td class="memItemLeft" align="right" valign="top">InternationalString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a704ac0ca9eb3c259317bb89836f4ba15">getProcedureDescription</a> ()</td></tr>
+<tr class="memdesc:a704ac0ca9eb3c259317bb89836f4ba15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional details about the processing procedures.  <a href="#a704ac0ca9eb3c259317bb89836f4ba15">More...</a><br /></td></tr>
+<tr class="separator:a704ac0ca9eb3c259317bb89836f4ba15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b006f171772daaa9f97364bdcae428b"><td class="memItemLeft" align="right" valign="top">ParameterDescriptorGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a1b006f171772daaa9f97364bdcae428b">getInputDescriptor</a> ()</td></tr>
+<tr class="memdesc:a1b006f171772daaa9f97364bdcae428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the input parameters.  <a href="#a1b006f171772daaa9f97364bdcae428b">More...</a><br /></td></tr>
+<tr class="separator:a1b006f171772daaa9f97364bdcae428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c093102980687865610b6b0d1580488"><td class="memItemLeft" align="right" valign="top">ParameterDescriptorGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a0c093102980687865610b6b0d1580488">getOutputDescriptor</a> ()</td></tr>
+<tr class="memdesc:a0c093102980687865610b6b0d1580488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the output parameters.  <a href="#a0c093102980687865610b6b0d1580488">More...</a><br /></td></tr>
+<tr class="separator:a0c093102980687865610b6b0d1580488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae5f25fabc52116b2d4da7e086d0fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07579.html">Process</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a6ae5f25fabc52116b2d4da7e086d0fba">createProcess</a> (ParameterValueGroup input)</td></tr>
+<tr class="memdesc:a6ae5f25fabc52116b2d4da7e086d0fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new process initialized with the given input parameter values.  <a href="#a6ae5f25fabc52116b2d4da7e086d0fba">More...</a><br /></td></tr>
+<tr class="separator:a6ae5f25fabc52116b2d4da7e086d0fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Predefined axes. </p>
-<p><b>Warning:</b> this is a temporary class which may disappear in future Geotk version, after we migrated functionality to Apache SIS.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys)  </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acd97b6cc1d842687b9347bb3637baea7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd97b6cc1d842687b9347bb3637baea7">&#9670;&nbsp;</a></span>Axes()</h2>
+<div class="textblock"><p>Description of a  <a class="el" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} algorithm and its input/output parameters. </p>
+<p>This interface extends the ISO 19115 <a class="el" href="">Processing</a> interface, which provide human-readable information about the process. In addition to the ISO/OGC interface,</p><div class="fragment"><div class="line">ProcessDescriptor </div></div><!-- fragment --><p> provides: </p>
+<ul>
+<li>
+A more machine-usable description of the input and output parameters (including source data and output data). </li>
+<li>
+A method for creating new <a class="el" href="a07579.html">Process</a> instances which can be run in an <a class="el" href="">ExecutorService</a>. </li>
+</ul>
+<div class="fragment"><div class="line">ProcessDescriptor </div></div><!-- fragment --><p>  instances are provided by <a class="el" href="a07599.html">ProcessingRegistry</a>. See the  <a class="el" href="a03902.html" title="Operation applied to some given data to achieve whatever analyze or model transformation. ">org.geotoolkit.process</a> package javadoc} for usage example.</p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd>
+<dd>
+Quentin Boileau (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.0</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6ae5f25fabc52116b2d4da7e086d0fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae5f25fabc52116b2d4da7e086d0fba">&#9670;&nbsp;</a></span>createProcess()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07583.html">Axes</a> </td>
+          <td class="memname"><a class="el" href="a07579.html">Process</a> createProcess </td>
+          <td>(</td>
+          <td class="paramtype">ParameterValueGroup&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new process initialized with the given input parameter values. </p>
+<p>The returned process is not yet started. To start the process, callers must give the process to an <a class="el" href="">ExecutorService</a> or invoke <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">Process#call()</a> explicitely. </p>
+<p>The input parameters are typically created by calls to <code> <a class="el" href="a07583.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">getInputDescriptor()</a>}. ParameterDescriptorGroup::createValue() createValue()}</code>. Then the parameter values shall be set before to be given to this </p><div class="fragment"><div class="line"><a class="code" href="a07583.html#a6ae5f25fabc52116b2d4da7e086d0fba">createProcess</a> </div></div><!-- fragment --><p> method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>The input parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new un-started process which will use the given input parameter values.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>ExecutorService::submit(Callable) </dd></dl>
+
+</div>
+</div>
+<a id="a6b3984dc7f84612f3a3a4a74b55f0b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3984dc7f84612f3a3a4a74b55f0b64">&#9670;&nbsp;</a></span>getDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InternationalString getDisplayName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                   {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div></div><!-- fragment -->
+
+<p><a class="el" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> name to display in user interfaces. </p>
+<p>This name is not intended to identify the process; identification shall use the process  <a class="el" href="a07583.html#a5c438eeb40d745bc5a7fb706eaf4cbdf" title="Information to identify the processing package that run the process. ">getIdentifier()</a> identifier} instead.</p>
+<dl class="section return"><dt>Returns</dt><dd>The processing name to display in user interfaces, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.20 </dd></dl>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="afc97a29608202eb8f56c0526f108d3fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc97a29608202eb8f56c0526f108d3fd">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a5c438eeb40d745bc5a7fb706eaf4cbdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c438eeb40d745bc5a7fb706eaf4cbdf">&#9670;&nbsp;</a></span>getIdentifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static DefaultCoordinateSystemAxis create </td>
+          <td class="memname">Identifier getIdentifier </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>abbreviation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final AxisDirection&#160;</td>
-          <td class="paramname"><em>direction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Unit&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>unit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Constructs an axis with a name and an abbreviation as a resource bundle key. </p>
-<p>To be used for construction of pre-defined constants only.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The resource bundle key for the name, or<div class="fragment"><div class="line">-1 </div></div><!-- fragment --> if none. </td></tr>
-    <tr><td class="paramname">abbreviation</td><td>The  #getAbbreviation abbreviation} used for this coordinate system axes. </td></tr>
-    <tr><td class="paramname">direction</td><td>The  #getDirection direction} of this coordinate system axis. </td></tr>
-    <tr><td class="paramname">unit</td><td>The  #getUnit unit of measure} used for this coordinate system axis. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Information to identify the processing package that run the process. </p>
+<p>The identifier  Identifier::getAuthority() authority} shall matches the  <a class="el" href="a07599.html#aad0fce6a98050a6cdd4e440842f8d7e1" title="General information about this registry. ">ProcessingRegistry::getIdentification()</a> registry identification} citation.</p>
+<dl class="section return"><dt>Returns</dt><dd>Identifier of the processing package that run the process. </dd></dl>
 
-<p class="reference">References <a class="el" href="a07843.html#a5406b660af9b85b232e0536c91ae0a63">Vocabulary.formatInternational()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">final</span> Map&lt;String,Object&gt; properties = <span class="keyword">new</span> HashMap&lt;&gt;(4);</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">if</span> (name &gt;= 0) {</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keyword">final</span> InternationalString n = Vocabulary.formatInternational(name);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            properties.put(IdentifiedObject.NAME_KEY, n.toString(null));</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            properties.put(IdentifiedObject.ALIAS_KEY, n);</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            properties.put(IdentifiedObject.NAME_KEY, abbreviation);</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keyword">final</span> DefaultCoordinateSystemAxis axis = <span class="keyword">new</span> DefaultCoordinateSystemAxis(properties, abbreviation, direction, unit);</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> axis;</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a07591.html#a6956c4e3ccaf7414da811e77f1626dd6">ProcessException.ProcessException()</a>.</p>
+
 </div>
 </div>
-<a id="a5eb231391cf86b0ae343a6090dc5641c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eb231391cf86b0ae343a6090dc5641c">&#9670;&nbsp;</a></span>usingUnit()</h2>
+<a id="a1b006f171772daaa9f97364bdcae428b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b006f171772daaa9f97364bdcae428b">&#9670;&nbsp;</a></span>getInputDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static CoordinateSystemAxis usingUnit </td>
+          <td class="memname">ParameterDescriptorGroup getInputDescriptor </td>
           <td>(</td>
-          <td class="paramtype">final CoordinateSystemAxis&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">final Unit&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>newUnit</em>&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a description of the input parameters. </p>
+<p>The  ParameterValueGroup parameter values} include both the source data (for example the source images) and the parameters that configure the operation applied on those data. </p>
+<p>This is the descriptor of the parameter values returned by <a class="el" href="a07579.html#a1f6e05bc62202398002ecb7aaed46542">Process#getInput()</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>Description of the input parameters.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07579.html#a1f6e05bc62202398002ecb7aaed46542" title="Returns the input values given to the ProcessDescriptor#createProcess(ParameterValueGroup) method...">Process::getInput()</a> </dd>
+<dd>
+ProcessStep::getSources() </dd></dl>
+
+</div>
+</div>
+<a id="a0c093102980687865610b6b0d1580488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c093102980687865610b6b0d1580488">&#9670;&nbsp;</a></span>getOutputDescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname">ParameterDescriptorGroup getOutputDescriptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td> throws IncommensurableException</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns a new axis with the same properties than current axis except for the units. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newUnit</td><td>The unit for the new axis. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An axis using the specified unit. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IncommensurableException</td><td>If the specified unit is incompatible with the expected one. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns a description of the output parameters. </p>
+<p>This is the descriptor of the parameter values returned by <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">Process#call()</a>. Those  ParameterValueGroup parameter values} include output data (for example the output images) and optionally some metadata related to those outputs (for example statistics).</p>
+<dl class="section return"><dt>Returns</dt><dd>Description of the output parameters.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca" title="Executes the process and returns the output in a new ParameterValueGroup. ">Process::call()</a> </dd>
+<dd>
+ProcessStep::getOutputs() </dd></dl>
 
-<p class="reference">References <a class="el" href="a07587.html#aae1c4f48ced13704430ca62730f8ddb9">PredefinedCS.getProperties()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07587.html#a7a6a722338d8c96ac5356e2be6e89e90">PredefinedCS.axisUsingUnit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keyword">final</span> Unit&lt;?&gt; unit = a.getUnit();</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (unit.equals(newUnit)) {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">return</span> a;</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keyword">final</span> UnitConverter converter = unit.getConverterToAny(newUnit);</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">final</span> Map&lt;String,Object&gt; properties = <span class="keyword">new</span> HashMap&lt;&gt;(PredefinedCS.getProperties(a, null));</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        properties.put(DefaultCoordinateSystemAxis.MINIMUM_VALUE_KEY, converter.convert(a.getMinimumValue()));</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        properties.put(DefaultCoordinateSystemAxis.MAXIMUM_VALUE_KEY, converter.convert(a.getMaximumValue()));</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        properties.put(DefaultCoordinateSystemAxis.RANGE_MEANING_KEY, a.getRangeMeaning()); <span class="comment">// TODO: should be provided by getProperties</span></div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> DefaultCoordinateSystemAxis(properties, a.getAbbreviation(), a.getDirection(), newUnit);</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a14e1010aa86faa97f1d41520497b8fa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e1010aa86faa97f1d41520497b8fa1">&#9670;&nbsp;</a></span>COLUMN</h2>
+<a id="a704ac0ca9eb3c259317bb89836f4ba15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704ac0ca9eb3c259317bb89836f4ba15">&#9670;&nbsp;</a></span>getProcedureDescription()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis COLUMN</td>
+          <td class="memname">InternationalString getProcedureDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.Column, <span class="stringliteral">&quot;i&quot;</span>, AxisDirection.COLUMN_POSITIVE, Units.UNITY)</div></div><!-- fragment -->
-<p>A default axis for column indices in a  org.geotoolkit.coverage.grid.GridCoverage grid coverage}. </p>
-<p>Increasing values go toward  AxisDirection::COLUMN_POSITIVE positive column number}.</p>
-<p>The abbreviation is lower case "&lt;var&gt;i&lt;/var&gt;". </p>
 
-</div>
-</div>
-<a id="a9af85bdbc73b80a295d942a5f25b806c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af85bdbc73b80a295d942a5f25b806c">&#9670;&nbsp;</a></span>EASTING</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis EASTING</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.Easting, <span class="stringliteral">&quot;E&quot;</span>, AxisDirection.EAST, Units.METRE)</div></div><!-- fragment -->
-<p>Default axis info for Easting values in a  org.opengis.referencing.crs.ProjectedCRS projected <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>}. </p>
-<p>Increasing coordinates values go  AxisDirection::EAST East} and units are  Units::METRE metres}.</p>
-<p>The ISO 19111 name is "&lt;cite&gt;easting&lt;/cite&gt;" and the abbreviation is upper case "&lt;var&gt;E&lt;/var&gt;". </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#a9af85bdbc73b80a295d942a5f25b806c">EASTING</a>, <a class="el" href="a07583.html#a51da17f217159c18a9de624e36ff40c9">NORTHING</a> set. </p>
-
-</div>
-</div>
-<a id="a2871d7c7808486466500fa51b040b071"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2871d7c7808486466500fa51b040b071">&#9670;&nbsp;</a></span>ELLIPSOIDAL_HEIGHT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis ELLIPSOIDAL_HEIGHT</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.EllipsoidalHeight, <span class="stringliteral">&quot;h&quot;</span>, AxisDirection.UP, Units.METRE)</div></div><!-- fragment -->
-<p>The default axis for height values above the ellipsoid in a  org.opengis.referencing.crs.GeographicCRS geographic <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>}. </p>
-<p>Increasing coordinates values go  AxisDirection::UP up} and units are  Units::METRE metres}.</p>
-<p>The ISO 19111 name is "&lt;cite&gt;ellipsoidal heigt&lt;/cite&gt;" and the abbreviation is lower case "&lt;var&gt;h&lt;/var&gt;". </p>
-<p>This axis is usually part of a <a class="el" href="">GEODETIC_LONGITUDE</a>, <a class="el" href="">GEODETIC_LATITUDE</a>, <a class="el" href="a07583.html#a2871d7c7808486466500fa51b040b071">ELLIPSOIDAL_HEIGHT</a> set.</p>
-<dl class="section see"><dt>See also</dt><dd>#ALTITUDE </dd>
-<dd>
-#GEOCENTRIC_RADIUS </dd>
-<dd>
-#GRAVITY_RELATED_HEIGHT </dd>
-<dd>
-#DEPTH </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a07603.html#a9facea217b9e3f9939f826b4300e6606">ReferencingFactoryContainer.toGeodetic3D()</a>.</p>
-
-</div>
-</div>
-<a id="aa68380f4720d33a7a52dddb87a05cd50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa68380f4720d33a7a52dddb87a05cd50">&#9670;&nbsp;</a></span>LATITUDE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis LATITUDE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.Latitude, <span class="stringliteral">&quot;\u03C6&quot;</span>, AxisDirection.NORTH, Units.DEGREE)</div></div><!-- fragment -->
-<p>Default axis info for latitudes. </p>
-<p>Increasing coordinates values go  AxisDirection::NORTH North} and units are  Units::DEGREE decimal degrees}.</p>
-<p>The abbreviation is "&amp;phi;" (phi). </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#a13369d19591919197f5045c5a97dc8e8">LONGITUDE</a>, <a class="el" href="a07583.html#aa68380f4720d33a7a52dddb87a05cd50">LATITUDE</a>, <a class="el" href="">ALTITUDE</a> set. </p>
-
-</div>
-</div>
-<a id="a13369d19591919197f5045c5a97dc8e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13369d19591919197f5045c5a97dc8e8">&#9670;&nbsp;</a></span>LONGITUDE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis LONGITUDE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.Longitude, <span class="stringliteral">&quot;\u03BB&quot;</span>, AxisDirection.EAST, Units.DEGREE)</div></div><!-- fragment -->
-<p>Default axis info for longitudes. </p>
-<p>Increasing coordinates values go  AxisDirection::EAST East} and units are  Units::DEGREE decimal degrees}.</p>
-<p>The abbreviation is "&amp;lambda;" (lambda). </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#a13369d19591919197f5045c5a97dc8e8">LONGITUDE</a>, <a class="el" href="a07583.html#aa68380f4720d33a7a52dddb87a05cd50">LATITUDE</a>, <a class="el" href="">ALTITUDE</a> set. </p>
-
-</div>
-</div>
-<a id="a51da17f217159c18a9de624e36ff40c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51da17f217159c18a9de624e36ff40c9">&#9670;&nbsp;</a></span>NORTHING</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis NORTHING</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.Northing, <span class="stringliteral">&quot;N&quot;</span>, AxisDirection.NORTH, Units.METRE)</div></div><!-- fragment -->
-<p>Default axis info for Northing values in a  org.opengis.referencing.crs.ProjectedCRS projected <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a>}. </p>
-<p>Increasing coordinates values go  AxisDirection::NORTH North} and units are  Units::METRE metres}.</p>
-<p>The ISO 19111 name is "&lt;cite&gt;northing&lt;/cite&gt;" and the abbreviation is upper case "&lt;var&gt;N&lt;/var&gt;". </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#a9af85bdbc73b80a295d942a5f25b806c">EASTING</a>, <a class="el" href="a07583.html#a51da17f217159c18a9de624e36ff40c9">NORTHING</a> set. </p>
-
-</div>
-</div>
-<a id="ac704d5f6a0bf1955e8c18cb7c7d4eb87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac704d5f6a0bf1955e8c18cb7c7d4eb87">&#9670;&nbsp;</a></span>ROW</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis ROW</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            Vocabulary.Keys.Row, <span class="stringliteral">&quot;j&quot;</span>, AxisDirection.ROW_POSITIVE, Units.UNITY)</div></div><!-- fragment -->
-<p>A default axis for row indices in a  org.geotoolkit.coverage.grid.GridCoverage grid coverage}. </p>
-<p>Increasing values go toward  AxisDirection::ROW_POSITIVE positive row number}.</p>
-<p>The abbreviation is lower case "&lt;var&gt;j&lt;/var&gt;". </p>
-
-</div>
-</div>
-<a id="ab128f7c118b6b902e468e2e9e0ae017b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab128f7c118b6b902e468e2e9e0ae017b">&#9670;&nbsp;</a></span>X</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis X</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            -1, <span class="stringliteral">&quot;x&quot;</span>, AxisDirection.EAST, Units.METRE)</div></div><!-- fragment -->
-<p>Default axis info for <em>x</em> values in a  org.opengis.referencing.cs.CartesianCS Cartesian CS}. </p>
-<p>Increasing coordinates values go  AxisDirection::EAST East} and units are  Units::METRE metres}.</p>
-<p>The abbreviation is lower case "&lt;var&gt;x&lt;/var&gt;". </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#ab128f7c118b6b902e468e2e9e0ae017b">X</a>, <a class="el" href="a07583.html#af8e08dd7d602c2eb0180e571903583e8">Y</a>, <a class="el" href="a07583.html#ac1daa3facd2f147d023a5a831bb2f394">Z</a> set.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07583.html#a9af85bdbc73b80a295d942a5f25b806c" title="Default axis info for Easting values in a  org.opengis.referencing.crs.ProjectedCRS projected CRS}...">EASTING</a> </dd>
-<dd>
-#WESTING </dd>
-<dd>
-#GEOCENTRIC_X </dd>
-<dd>
-#DISPLAY_X </dd>
-<dd>
-<a class="el" href="a07583.html#a14e1010aa86faa97f1d41520497b8fa1" title="A default axis for column indices in a  org.geotoolkit.coverage.grid.GridCoverage grid coverage}...">COLUMN</a> </dd></dl>
-
-</div>
-</div>
-<a id="af8e08dd7d602c2eb0180e571903583e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e08dd7d602c2eb0180e571903583e8">&#9670;&nbsp;</a></span>Y</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis Y</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            -1, <span class="stringliteral">&quot;y&quot;</span>, AxisDirection.NORTH, Units.METRE)</div></div><!-- fragment -->
-<p>Default axis info for <em>y</em> values in a  org.opengis.referencing.cs.CartesianCS Cartesian CS}. </p>
-<p>Increasing coordinates values go  AxisDirection::NORTH North} and units are  Units::METRE metres}.</p>
-<p>The abbreviation is lower case "&lt;var&gt;y&lt;/var&gt;". </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#ab128f7c118b6b902e468e2e9e0ae017b">X</a>, <a class="el" href="a07583.html#af8e08dd7d602c2eb0180e571903583e8">Y</a>, <a class="el" href="a07583.html#ac1daa3facd2f147d023a5a831bb2f394">Z</a> set.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07583.html#a51da17f217159c18a9de624e36ff40c9" title="Default axis info for Northing values in a  org.opengis.referencing.crs.ProjectedCRS projected CRS}...">NORTHING</a> </dd>
-<dd>
-#SOUTHING </dd>
-<dd>
-#GEOCENTRIC_Y </dd>
-<dd>
-#DISPLAY_Y </dd>
-<dd>
-<a class="el" href="a07583.html#ac704d5f6a0bf1955e8c18cb7c7d4eb87" title="A default axis for row indices in a  org.geotoolkit.coverage.grid.GridCoverage grid coverage}...">ROW</a> </dd></dl>
-
-</div>
-</div>
-<a id="ac1daa3facd2f147d023a5a831bb2f394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1daa3facd2f147d023a5a831bb2f394">&#9670;&nbsp;</a></span>Z</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final DefaultCoordinateSystemAxis Z</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="a07583.html#afc97a29608202eb8f56c0526f108d3fd">create</a>(</div><div class="line">            -1, <span class="stringliteral">&quot;z&quot;</span>, AxisDirection.UP, Units.METRE)</div></div><!-- fragment -->
-<p>Default axis info for <em>z</em> values in a  org.opengis.referencing.cs.CartesianCS Cartesian CS}. </p>
-<p>Increasing coordinates values go  AxisDirection::UP up} and units are  Units::METRE metres}.</p>
-<p>The abbreviation is lower case "&lt;var&gt;z&lt;/var&gt;". </p>
-<p>This axis is usually part of a <a class="el" href="a07583.html#ab128f7c118b6b902e468e2e9e0ae017b">X</a>, <a class="el" href="a07583.html#af8e08dd7d602c2eb0180e571903583e8">Y</a>, <a class="el" href="a07583.html#ac1daa3facd2f147d023a5a831bb2f394">Z</a> set. </p>
+<p>Additional details about the processing procedures. </p>
+<dl class="section return"><dt>Returns</dt><dd>The processing procedures, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
 
 </div>
 </div>
@@ -581,7 +272,7 @@ Static Private Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03880.html">referencing</a></li><li class="navelem"><a class="el" href="a03881.html">cs</a></li><li class="navelem"><a class="el" href="a07583.html">Axes</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03902.html">process</a></li><li class="navelem"><a class="el" href="a07583.html">ProcessDescriptor</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

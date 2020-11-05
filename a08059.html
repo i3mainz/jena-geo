@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: XCollections.ValueComparator&lt; K, V extends Comparable&lt; V &gt; Class Template Reference</title>
+<title>jena-geo: MapUtilities Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,64 +61,30 @@ $(document).ready(function(){initNavTree('a08059.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a08056.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">XCollections.ValueComparator&lt; K, V extends Comparable&lt; V &gt; Class Template Reference</div>  </div>
+<div class="title">MapUtilities Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>The comparator to be returned by <a class="el" href="">Collections#valueComparator()</a>.  
- <a href="a08059.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for XCollections.ValueComparator&lt; K, V extends Comparable&lt; V &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08058.png" border="0" usemap="#XCollections_8ValueComparator_3_01K_00_01V_01extends_01Comparable_3_01V_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="XCollections_8ValueComparator_3_01K_00_01V_01extends_01Comparable_3_01V_01_4_inherit__map" id="XCollections_8ValueComparator_3_01K_00_01V_01extends_01Comparable_3_01V_01_4_inherit__map">
-<area shape="rect" id="node4" href="a14127.html" title="Comparable\&lt; V" alt="" coords="306,13,419,39"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for XCollections.ValueComparator&lt; K, V extends Comparable&lt; V &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08057.png" border="0" usemap="#XCollections_8ValueComparator_3_01K_00_01V_01extends_01Comparable_3_01V_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="XCollections_8ValueComparator_3_01K_00_01V_01extends_01Comparable_3_01V_01_4_coll__map" id="XCollections_8ValueComparator_3_01K_00_01V_01extends_01Comparable_3_01V_01_4_coll__map">
-<area shape="rect" id="node5" href="a14127.html" title="Comparable\&lt; V" alt="" coords="391,13,505,39"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ae67be167ea1d15d7d4cfdd0dd61456"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a6ae67be167ea1d15d7d4cfdd0dd61456">compare</a> (final Map.Entry&lt; K, V &gt; e1, final Map.Entry&lt; K, V &gt; e2)</td></tr>
-<tr class="memdesc:a6ae67be167ea1d15d7d4cfdd0dd61456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the values of two entries.  <a href="#a6ae67be167ea1d15d7d4cfdd0dd61456">More...</a><br /></td></tr>
-<tr class="separator:a6ae67be167ea1d15d7d4cfdd0dd61456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
-Static Package Attributes</h2></td></tr>
-<tr class="memitem:ab5929b700560170cb598f2f194004dbf"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a08059.html">ValueComparator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ab5929b700560170cb598f2f194004dbf">INSTANCE</a> = new <a class="el" href="a08059.html">ValueComparator</a>()</td></tr>
-<tr class="memdesc:ab5929b700560170cb598f2f194004dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique instance.  <a href="#ab5929b700560170cb598f2f194004dbf">More...</a><br /></td></tr>
-<tr class="separator:ab5929b700560170cb598f2f194004dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae5ec240f85a4ba20f053b01bf857ebca"><td class="memItemLeft" align="right" valign="top">static&lt; T extends Object &gt; Map&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ae5ec240f85a4ba20f053b01bf857ebca">buildMap</a> (T ... couples)</td></tr>
+<tr class="memdesc:ae5ec240f85a4ba20f053b01bf857ebca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a map using values in parameters, which must be grouped by key/value couple.  <a href="#ae5ec240f85a4ba20f053b01bf857ebca">More...</a><br /></td></tr>
+<tr class="separator:ae5ec240f85a4ba20f053b01bf857ebca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a0f1e6342f79ee9d7fcbcf9c1fbf0a205"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a0f1e6342f79ee9d7fcbcf9c1fbf0a205">ValueComparator</a> ()</td></tr>
-<tr class="memdesc:a0f1e6342f79ee9d7fcbcf9c1fbf0a205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow instantiation other than the unique <a class="el" href="a08059.html#ab5929b700560170cb598f2f194004dbf">INSTANCE</a>.  <a href="#a0f1e6342f79ee9d7fcbcf9c1fbf0a205">More...</a><br /></td></tr>
-<tr class="separator:a0f1e6342f79ee9d7fcbcf9c1fbf0a205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 807166038568740444L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
-<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ddc197008fb52c440e6427111c982f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ab4ddc197008fb52c440e6427111c982f">MapUtilities</a> ()</td></tr>
+<tr class="separator:ab4ddc197008fb52c440e6427111c982f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The comparator to be returned by <a class="el" href="">Collections#valueComparator()</a>. </p>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Alexis Manin (Geomatys) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0f1e6342f79ee9d7fcbcf9c1fbf0a205"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1e6342f79ee9d7fcbcf9c1fbf0a205">&#9670;&nbsp;</a></span>ValueComparator()</h2>
+<a id="ab4ddc197008fb52c440e6427111c982f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ddc197008fb52c440e6427111c982f">&#9670;&nbsp;</a></span>MapUtilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +93,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a08059.html">ValueComparator</a> </td>
+          <td class="memname"><a class="el" href="a08059.html">MapUtilities</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -139,92 +105,44 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Do not allow instantiation other than the unique <a class="el" href="a08059.html#ab5929b700560170cb598f2f194004dbf">INSTANCE</a>. </p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                  {</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                           {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ae67be167ea1d15d7d4cfdd0dd61456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ae67be167ea1d15d7d4cfdd0dd61456">&#9670;&nbsp;</a></span>compare()</h2>
+<a id="ae5ec240f85a4ba20f053b01bf857ebca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ec240f85a4ba20f053b01bf857ebca">&#9670;&nbsp;</a></span>buildMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int compare </td>
+          <td class="memname">static &lt;T extends Object&gt; Map buildMap </td>
           <td>(</td>
-          <td class="paramtype">final Map.Entry&lt; K, V &gt;&#160;</td>
-          <td class="paramname"><em>e1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">T ...&#160;</td>
+          <td class="paramname"><em>couples</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final Map.Entry&lt; K, V &gt;&#160;</td>
-          <td class="paramname"><em>e2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Compares the values of two entries. </p>
-<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                                                             {</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">return</span> e1.getValue().compareTo(e2.getValue());</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab5929b700560170cb598f2f194004dbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5929b700560170cb598f2f194004dbf">&#9670;&nbsp;</a></span>INSTANCE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final <a class="el" href="a08059.html">ValueComparator</a> INSTANCE = new <a class="el" href="a08059.html">ValueComparator</a>()</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The unique instance. </p>
-<p>Can not be public because of parameterized types: we need a method for casting to the expected type. This is the same trick than the one used by the JDK in the <a class="el" href="">Collections#emptySet()</a> method for instance. </p>
-
-<p class="reference">Referenced by <a class="el" href="a08051.html#aa96a1bb9116d5d7166b3e06f64c06beb">XCollections.valueComparator()</a>.</p>
-
-</div>
-</div>
-<a id="a3238d314ecdee14d2966760945d00c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final long serialVersionUID = 807166038568740444L</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>For cross-version compatibility. </p>
-
+<p>Build a map using values in parameters, which must be grouped by key/value couple. </p>
+<p>Example : buildMap(key1, value1, key2, value2...) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">couples</td><td>the values to put </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                 {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;map values&quot;</span>, couples);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (couples.length % 2 != 0) {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;Invalid number of values (not divisible per 2)&quot;</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">final</span> Map result = <span class="keyword">new</span> HashMap(couples.length/2);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0 ; i &lt; couples.length ;) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            result.put(couples[i++], couples[i++]);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -233,7 +151,7 @@ Static Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03892.html">util</a></li><li class="navelem"><a class="el" href="a03893.html">collection</a></li><li class="navelem"><a class="el" href="a08051.html">XCollections</a></li><li class="navelem"><a class="el" href="a08059.html">ValueComparator</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03916.html">util</a></li><li class="navelem"><a class="el" href="a03917.html">collection</a></li><li class="navelem"><a class="el" href="a08059.html">MapUtilities</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

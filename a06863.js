@@ -1,9 +1,15 @@
 var a06863 =
 [
-    [ "Entry", "a06863.html#a414e89c8759674e8957bbb5ead481c0d", null ],
-    [ "equals", "a06863.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "hashCode", "a06863.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "box", "a06863.html#a5bd6abf33505161e9374f87c860d513b", null ],
-    [ "fill", "a06863.html#ab6e076532c3ff3ae73185f40cffad8c8", null ],
-    [ "model", "a06863.html#a96d15d6529793f97d90d9edb561f51ab", null ]
+    [ "NamedTreeNode", "a06863.html#a27db1ab2c859735811111aae355b163a", null ],
+    [ "NamedTreeNode", "a06863.html#a2f07fde12697f290d3ede7f3305f5750", null ],
+    [ "NamedTreeNode", "a06863.html#ac511757934949fe953af7b2456c2c2ba", null ],
+    [ "children", "a06863.html#a4dd652bce4d0314f36b5a526d4a18cdd", null ],
+    [ "freeze", "a06863.html#a58280cb8842a7fcce03d1db1313cf9c3", null ],
+    [ "getLocale", "a06863.html#a362cdcad5fb74c2d67494d65e9dfd1f4", null ],
+    [ "getName", "a06863.html#ab91e441899668fc0233dba9a83846679", null ],
+    [ "getUserObject", "a06863.html#a18ecb8d182a13d06a11322dcaf137806", null ],
+    [ "setName", "a06863.html#a9bf49c4b19297212af6ec3aaa563950d", null ],
+    [ "toString", "a06863.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "name", "a06863.html#a127751a26f0075335622fb4e2475e05c", null ],
+    [ "serialVersionUID", "a06863.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

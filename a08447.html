@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LengthTest Class Reference</title>
+<title>jena-geo: GeometricMedianTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,51 +65,49 @@ $(document).ready(function(){initNavTree('a08447.html','');});
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08444.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LengthTest Class Reference</div>  </div>
+<div class="title">GeometricMedianTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for LengthTest:</div>
+Collaboration diagram for GeometricMedianTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08445.png" border="0" usemap="#LengthTest_coll__map" alt="Collaboration graph"/></div>
-<map name="LengthTest_coll__map" id="LengthTest_coll__map">
+<div class="center"><img src="a08445.png" border="0" usemap="#GeometricMedianTest_coll__map" alt="Collaboration graph"/></div>
+<map name="GeometricMedianTest_coll__map" id="GeometricMedianTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0444ce8df222ae81e1a33426a32d8d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#a0444ce8df222ae81e1a33426a32d8d7a">testLineString</a> ()</td></tr>
-<tr class="separator:a0444ce8df222ae81e1a33426a32d8d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1210c64e5b3ba5df6e23a9974d9592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#a1b1210c64e5b3ba5df6e23a9974d9592">testGeometricMedian</a> ()  throws ParseException </td></tr>
+<tr class="separator:a1b1210c64e5b3ba5df6e23a9974d9592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;LINESTRING(743238 2967416,743238 2967450,743265 2967450, 743265.625 2967416,743238 2967416)&quot;</td></tr>
-<tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08447.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;MULTIPOINT (( -1 0), (-1 2), (-1 3), (-1 4), (-1 7), (0 1), (0 3), (1 1), (2 0), (6 0), (7 8), (9 8), (10 6))&quot;</td></tr>
+<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0444ce8df222ae81e1a33426a32d8d7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0444ce8df222ae81e1a33426a32d8d7a">&#9670;&nbsp;</a></span>testLineString()</h2>
+<a id="a1b1210c64e5b3ba5df6e23a9974d9592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1210c64e5b3ba5df6e23a9974d9592">&#9670;&nbsp;</a></span>testGeometricMedian()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testLineString </td>
+          <td class="memname">void testGeometricMedian </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> throws ParseException</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04335.html#ae7a3cbabcf0592c2705ee280a231189a">Length.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                     {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        Length instance=<span class="keyword">new</span> Length();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeDouble(122.63074400009504);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08447_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.LengthTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> LengthTest.java:13</div></div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                                {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        GeometricMedian instance=<span class="keyword">new</span> GeometricMedian();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue input=NodeValue.makeNode(<a class="code" href="a08447.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue expResult = NodeValue.makeNode(<span class="stringliteral">&quot;POINT(0 0)&quot;</span>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">//NodeValue result = instance.exec(input);</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue result=null;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="ttc" id="a08447_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08447.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.GeometricMedianTest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> GeometricMedianTest.java:14</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
+<a id="abc3f514f005cba49e406658e2d3086eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,7 +116,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testGeom =&quot;LINESTRING(743238 2967416,743238 2967450,743265 2967450, 743265.625 2967416,743238 2967416)&quot;</td>
+          <td class="memname">final String testGeometry =&quot;MULTIPOINT (( -1 0), (-1 2), (-1 3), (-1 4), (-1 7), (0 1), (0 3), (1 1), (2 0), (6 0), (7 8), (9 8), (10 6))&quot;</td>
         </tr>
       </table>
   </td>
@@ -136,7 +134,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03929.html">geometry</a></li><li class="navelem"><a class="el" href="a03928.html">attribute</a></li><li class="navelem"><a class="el" href="a08447.html">LengthTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03953.html">geometry</a></li><li class="navelem"><a class="el" href="a03952.html">attribute</a></li><li class="navelem"><a class="el" href="a08447.html">GeometricMedianTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

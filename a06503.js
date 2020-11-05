@@ -1,15 +1,8 @@
 var a06503 =
 [
-    [ "GeoTIFFDatatype", "a06503.html#a0f1783ee69fc13c1e8875d3027ad02ef", null ],
-    [ "check", "a06503.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06503.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06503.html#a86f7801427aabe2a52b3157bbe8f4f33", null ],
-    [ "get", "a06503.html#ad25e18c958a48eb67e78436619ed8e8a", null ],
-    [ "parse", "a06503.html#a8d7111ceffa3ab3064b2363344b96112", null ],
-    [ "parse", "a06503.html#af07c28b2fbbd1b824b228bbddd17b048", null ],
-    [ "read", "a06503.html#a9e03c38c43e32b22335f9f098375960a", null ],
-    [ "registerDatatypes", "a06503.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "unparse", "a06503.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
-    [ "INSTANCE", "a06503.html#aecdfcd6a73eb74b717778e66dcd51854", null ],
-    [ "URI", "a06503.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
+    [ "WKBTextSRS", "a06503.html#a12d2a5c4b7a29eae5d108bccb1e55b11", null ],
+    [ "getSrsURI", "a06503.html#a7d7dded4f73b0a90d90f68ccc5f16bc3", null ],
+    [ "getWkbText", "a06503.html#a4a2ce7a2dcd4fa0818378fb8b97931fb", null ],
+    [ "srsURI", "a06503.html#aaa7845d06052bead86bb2de40935e4d9", null ],
+    [ "wkbText", "a06503.html#a7b6ce5371e4ad222f4b09eaadfdcae09", null ]
 ];

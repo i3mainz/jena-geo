@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LazyList&lt; E &gt; Class Template Reference</title>
+<title>jena-geo: CheckedHashSet&lt; E &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,129 +63,313 @@ $(document).ready(function(){initNavTree('a08011.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a08008.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LazyList&lt; E &gt; Class Template Reference</div>  </div>
+<div class="title">CheckedHashSet&lt; E &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An immutable list filled when needed from the values returned by an iterator.  
+<p>A  Collections::checkedSet(Set, Class) checked} and  Collections::synchronizedSet(Set) synchronized} <a class="el" href="">LinkedHashSet</a>.  
  <a href="a08011.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for LazyList&lt; E &gt;:</div>
+Inheritance diagram for CheckedHashSet&lt; E &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08010.png" border="0" usemap="#LazyList_3_01E_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="LazyList_3_01E_01_4_inherit__map" id="LazyList_3_01E_01_4_inherit__map">
+<div class="center"><img src="a08010.png" border="0" usemap="#CheckedHashSet_3_01E_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="CheckedHashSet_3_01E_01_4_inherit__map" id="CheckedHashSet_3_01E_01_4_inherit__map">
+<area shape="rect" id="node6" href="a08067.html" title="Abstract synchronized set that define notify methods called when objects are added or removed..." alt="" coords="169,229,341,256"/>
+<area shape="rect" id="node4" href="a07979.html" title="Indicates that it is legal to make a field&#45;for&#45;field copy of instances of implementing classes..." alt="" coords="360,80,440,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for LazyList&lt; E &gt;:</div>
+Collaboration diagram for CheckedHashSet&lt; E &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08009.png" border="0" usemap="#LazyList_3_01E_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="LazyList_3_01E_01_4_coll__map" id="LazyList_3_01E_01_4_coll__map">
+<div class="center"><img src="a08009.png" border="0" usemap="#CheckedHashSet_3_01E_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="CheckedHashSet_3_01E_01_4_coll__map" id="CheckedHashSet_3_01E_01_4_coll__map">
+<area shape="rect" id="node4" href="a07979.html" title="Indicates that it is legal to make a field&#45;for&#45;field copy of instances of implementing classes..." alt="" coords="360,81,440,108"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08015.html">Iter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The iterator implementation for the  LazySet lazy set}.  <a href="a08015.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A synchronized iterator with a check for write permission prior element removal.  <a href="a08015.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a71a9fa41a68b291635cc98b2ffce9e4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a71a9fa41a68b291635cc98b2ffce9e4d">LazyList</a> (final Iterator&lt;? extends E &gt; <a class="el" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>)</td></tr>
-<tr class="memdesc:a71a9fa41a68b291635cc98b2ffce9e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a list to be filled using the specified iterator.  <a href="#a71a9fa41a68b291635cc98b2ffce9e4d">More...</a><br /></td></tr>
-<tr class="separator:a71a9fa41a68b291635cc98b2ffce9e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fd6998bf5f652d6bba105da2db27a76"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a9fd6998bf5f652d6bba105da2db27a76">isEmpty</a> ()</td></tr>
-<tr class="memdesc:a9fd6998bf5f652d6bba105da2db27a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a9fd6998bf5f652d6bba105da2db27a76">More...</a><br /></td></tr>
-<tr class="separator:a9fd6998bf5f652d6bba105da2db27a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0642a686a97f487e84ffd657524b3a"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#aeb0642a686a97f487e84ffd657524b3a">size</a> ()</td></tr>
-<tr class="memdesc:aeb0642a686a97f487e84ffd657524b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in this list.  <a href="#aeb0642a686a97f487e84ffd657524b3a">More...</a><br /></td></tr>
-<tr class="separator:aeb0642a686a97f487e84ffd657524b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb3e4a13f92da39bda85bea42225b9c"><td class="memItemLeft" align="right" valign="top">final E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a6bb3e4a13f92da39bda85bea42225b9c">get</a> (final int index)  throws IndexOutOfBoundsException </td></tr>
-<tr class="memdesc:a6bb3e4a13f92da39bda85bea42225b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element at the specified position in this list.  <a href="#a6bb3e4a13f92da39bda85bea42225b9c">More...</a><br /></td></tr>
-<tr class="separator:a6bb3e4a13f92da39bda85bea42225b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6813c05cf39dde522e3c8cbde71839f3"><td class="memItemLeft" align="right" valign="top">ListIterator&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a6813c05cf39dde522e3c8cbde71839f3">listIterator</a> (final int index)  throws IndexOutOfBoundsException </td></tr>
-<tr class="memdesc:a6813c05cf39dde522e3c8cbde71839f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator over the elements in this list.  <a href="#a6813c05cf39dde522e3c8cbde71839f3">More...</a><br /></td></tr>
-<tr class="separator:a6813c05cf39dde522e3c8cbde71839f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e34377322be3b307366cf881c84fc99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a6e34377322be3b307366cf881c84fc99">CheckedHashSet</a> (final Class&lt; E &gt; <a class="el" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>)</td></tr>
+<tr class="memdesc:a6e34377322be3b307366cf881c84fc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a set of the specified type.  <a href="#a6e34377322be3b307366cf881c84fc99">More...</a><br /></td></tr>
+<tr class="separator:a6e34377322be3b307366cf881c84fc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c62b10951c891950e89445b370679bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a8c62b10951c891950e89445b370679bf">CheckedHashSet</a> (final Class&lt; E &gt; <a class="el" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>, final int capacity)</td></tr>
+<tr class="memdesc:a8c62b10951c891950e89445b370679bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a set of the specified type and initial capacity.  <a href="#a8c62b10951c891950e89445b370679bf">More...</a><br /></td></tr>
+<tr class="separator:a8c62b10951c891950e89445b370679bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495b2b3c280d155dc55c0ee28af2d693"><td class="memItemLeft" align="right" valign="top">Class&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a495b2b3c280d155dc55c0ee28af2d693">getElementType</a> ()</td></tr>
+<tr class="memdesc:a495b2b3c280d155dc55c0ee28af2d693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element type given at construction time.  <a href="#a495b2b3c280d155dc55c0ee28af2d693">More...</a><br /></td></tr>
+<tr class="separator:a495b2b3c280d155dc55c0ee28af2d693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c5a247288d15e20eb94dc1ca643271"><td class="memItemLeft" align="right" valign="top">Iterator&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a47c5a247288d15e20eb94dc1ca643271">iterator</a> ()</td></tr>
+<tr class="memdesc:a47c5a247288d15e20eb94dc1ca643271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator over the elements in this set.  <a href="#a47c5a247288d15e20eb94dc1ca643271">More...</a><br /></td></tr>
+<tr class="separator:a47c5a247288d15e20eb94dc1ca643271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b57d21919c42d55af03391f91a1c08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#af4b57d21919c42d55af03391f91a1c08">size</a> ()</td></tr>
+<tr class="memdesc:af4b57d21919c42d55af03391f91a1c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in this set.  <a href="#af4b57d21919c42d55af03391f91a1c08">More...</a><br /></td></tr>
+<tr class="separator:af4b57d21919c42d55af03391f91a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#aa71d41fd3d95c354d4d5e922c6c21210">isEmpty</a> ()</td></tr>
+<tr class="memdesc:aa71d41fd3d95c354d4d5e922c6c21210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#aa71d41fd3d95c354d4d5e922c6c21210">More...</a><br /></td></tr>
+<tr class="separator:aa71d41fd3d95c354d4d5e922c6c21210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427300678ca03a7333d98e323cb1cfa0"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a427300678ca03a7333d98e323cb1cfa0">contains</a> (final Object o)</td></tr>
+<tr class="memdesc:a427300678ca03a7333d98e323cb1cfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a427300678ca03a7333d98e323cb1cfa0">More...</a><br /></td></tr>
+<tr class="separator:a427300678ca03a7333d98e323cb1cfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbc13a303fdeb044c5973530b3e0a81"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#aedbc13a303fdeb044c5973530b3e0a81">add</a> (final E element)  throws IllegalArgumentException, UnsupportedOperationException     </td></tr>
+<tr class="memdesc:aedbc13a303fdeb044c5973530b3e0a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified element to this set if it is not already present.  <a href="#aedbc13a303fdeb044c5973530b3e0a81">More...</a><br /></td></tr>
+<tr class="separator:aedbc13a303fdeb044c5973530b3e0a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241a58e42f845e1701f810bf4fa2a66f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a241a58e42f845e1701f810bf4fa2a66f">addAll</a> (final Collection&lt;? extends E &gt; collection)  throws IllegalArgumentException, UnsupportedOperationException     </td></tr>
+<tr class="memdesc:a241a58e42f845e1701f810bf4fa2a66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends all of the elements in the specified collection to this set.  <a href="#a241a58e42f845e1701f810bf4fa2a66f">More...</a><br /></td></tr>
+<tr class="separator:a241a58e42f845e1701f810bf4fa2a66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca842686fb8f2ed28d5b3ef7ef54fc3"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a4ca842686fb8f2ed28d5b3ef7ef54fc3">remove</a> (Object o)  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:a4ca842686fb8f2ed28d5b3ef7ef54fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the specified element from this set.  <a href="#a4ca842686fb8f2ed28d5b3ef7ef54fc3">More...</a><br /></td></tr>
+<tr class="separator:a4ca842686fb8f2ed28d5b3ef7ef54fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb48c8819537b74316ee0ed2497bf659"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#afb48c8819537b74316ee0ed2497bf659">removeAll</a> (Collection&lt;?&gt; c)  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:afb48c8819537b74316ee0ed2497bf659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all of this set's elements that are also contained in the specified collection.  <a href="#afb48c8819537b74316ee0ed2497bf659">More...</a><br /></td></tr>
+<tr class="separator:afb48c8819537b74316ee0ed2497bf659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8822e4888fd3847d84101c9e5a9792"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a0f8822e4888fd3847d84101c9e5a9792">retainAll</a> (Collection&lt;?&gt; c)  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:a0f8822e4888fd3847d84101c9e5a9792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains only the elements in this set that are contained in the specified collection.  <a href="#a0f8822e4888fd3847d84101c9e5a9792">More...</a><br /></td></tr>
+<tr class="separator:a0f8822e4888fd3847d84101c9e5a9792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all of the elements from this set.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">More...</a><br /></td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5ed6131a4063a785a46ee29ca40743"><td class="memItemLeft" align="right" valign="top">Object []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a1f5ed6131a4063a785a46ee29ca40743">toArray</a> ()</td></tr>
+<tr class="memdesc:a1f5ed6131a4063a785a46ee29ca40743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array containing all of the elements in this set.  <a href="#a1f5ed6131a4063a785a46ee29ca40743">More...</a><br /></td></tr>
+<tr class="separator:a1f5ed6131a4063a785a46ee29ca40743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this set.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e5bc339e3b5924ec96de42fbb8f33f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a39e5bc339e3b5924ec96de42fbb8f33f">equals</a> (Object o)</td></tr>
+<tr class="memdesc:a39e5bc339e3b5924ec96de42fbb8f33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the specified object with this set for equality.  <a href="#a39e5bc339e3b5924ec96de42fbb8f33f">More...</a><br /></td></tr>
+<tr class="separator:a39e5bc339e3b5924ec96de42fbb8f33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077e18fe97323c7194e2665ffc766399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a077e18fe97323c7194e2665ffc766399">hashCode</a> ()</td></tr>
+<tr class="memdesc:a077e18fe97323c7194e2665ffc766399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code value for this set.  <a href="#a077e18fe97323c7194e2665ffc766399">More...</a><br /></td></tr>
+<tr class="separator:a077e18fe97323c7194e2665ffc766399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0746c5ee2b254881d24ee41b4789653d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08011.html">CheckedHashSet</a>&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a0746c5ee2b254881d24ee41b4789653d">clone</a> ()</td></tr>
+<tr class="memdesc:a0746c5ee2b254881d24ee41b4789653d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a shallow copy of this set.  <a href="#a0746c5ee2b254881d24ee41b4789653d">More...</a><br /></td></tr>
+<tr class="separator:a0746c5ee2b254881d24ee41b4789653d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a324d15358964a7207776d1dacd8428af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a324d15358964a7207776d1dacd8428af">ensureValid</a> (final E element)  throws IllegalArgumentException </td></tr>
+<tr class="memdesc:a324d15358964a7207776d1dacd8428af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the given element can be added to this set.  <a href="#a324d15358964a7207776d1dacd8428af">More...</a><br /></td></tr>
+<tr class="separator:a324d15358964a7207776d1dacd8428af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a796b594d621b368eaeaf9e5ea21b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a> ()  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:a4a796b594d621b368eaeaf9e5ea21b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if changes in this set are allowed.  <a href="#a4a796b594d621b368eaeaf9e5ea21b87">More...</a><br /></td></tr>
+<tr class="separator:a4a796b594d621b368eaeaf9e5ea21b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604630356717f716349899d57effa633"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a604630356717f716349899d57effa633">getLock</a> ()</td></tr>
+<tr class="memdesc:a604630356717f716349899d57effa633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the synchronization lock.  <a href="#a604630356717f716349899d57effa633">More...</a><br /></td></tr>
+<tr class="separator:a604630356717f716349899d57effa633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:ab94715dc82b28f3a7cb2a22c01fcdbdb"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#ab94715dc82b28f3a7cb2a22c01fcdbdb">exists</a> (final int index)</td></tr>
-<tr class="memdesc:ab94715dc82b28f3a7cb2a22c01fcdbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#ab94715dc82b28f3a7cb2a22c01fcdbdb">More...</a><br /></td></tr>
-<tr class="separator:ab94715dc82b28f3a7cb2a22c01fcdbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048700b20526dbfa1d0b84c53ff28b71"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; T []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a048700b20526dbfa1d0b84c53ff28b71">toArray</a> (T[] a)</td></tr>
+<tr class="memdesc:a048700b20526dbfa1d0b84c53ff28b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array containing all of the elements in this set.  <a href="#a048700b20526dbfa1d0b84c53ff28b71">More...</a><br /></td></tr>
+<tr class="separator:a048700b20526dbfa1d0b84c53ff28b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a47803e7d03bf0945918d17f716d9dcf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">addNext</a> ()</td></tr>
-<tr class="memdesc:a47803e7d03bf0945918d17f716d9dcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the next element from the iterator to this list.  <a href="#a47803e7d03bf0945918d17f716d9dcf2">More...</a><br /></td></tr>
-<tr class="separator:a47803e7d03bf0945918d17f716d9dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63388d5ee382a32002098a15411c29d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a63388d5ee382a32002098a15411c29d5">trimToSize</a> ()</td></tr>
-<tr class="memdesc:a63388d5ee382a32002098a15411c29d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when we have reached the end of iteration.  <a href="#a63388d5ee382a32002098a15411c29d5">More...</a><br /></td></tr>
-<tr class="separator:a63388d5ee382a32002098a15411c29d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5e375a00adfed6847dd16bc9828eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#acb5e375a00adfed6847dd16bc9828eac">ensureValidCollection</a> (final Collection&lt;? extends E &gt; collection)  throws IllegalArgumentException </td></tr>
+<tr class="memdesc:acb5e375a00adfed6847dd16bc9828eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that all elements of the given collection can be added to this set.  <a href="#acb5e375a00adfed6847dd16bc9828eac">More...</a><br /></td></tr>
+<tr class="separator:acb5e375a00adfed6847dd16bc9828eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a23a11999fcead4bdabd32213fb76348a"><td class="memItemLeft" align="right" valign="top">Iterator&lt;? extends E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a></td></tr>
-<tr class="memdesc:a23a11999fcead4bdabd32213fb76348a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The iterator to use for filling this set.  <a href="#a23a11999fcead4bdabd32213fb76348a">More...</a><br /></td></tr>
-<tr class="separator:a23a11999fcead4bdabd32213fb76348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b560f1bac27232cdbf9f28cb077558"><td class="memItemLeft" align="right" valign="top">E []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a></td></tr>
-<tr class="memdesc:a62b560f1bac27232cdbf9f28cb077558"><td class="mdescLeft">&#160;</td><td class="mdescRight">The elements in this set.  <a href="#a62b560f1bac27232cdbf9f28cb077558">More...</a><br /></td></tr>
-<tr class="separator:a62b560f1bac27232cdbf9f28cb077558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142a1b51e133e50c0a72b175958ac412"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a></td></tr>
-<tr class="memdesc:a142a1b51e133e50c0a72b175958ac412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index past the last valid element.  <a href="#a142a1b51e133e50c0a72b175958ac412">More...</a><br /></td></tr>
-<tr class="separator:a142a1b51e133e50c0a72b175958ac412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e76195a70b43169c2b8f5f75e9a675"><td class="memItemLeft" align="right" valign="top">final Class&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a></td></tr>
+<tr class="memdesc:ac9e76195a70b43169c2b8f5f75e9a675"><td class="mdescLeft">&#160;</td><td class="mdescRight">The element type.  <a href="#ac9e76195a70b43169c2b8f5f75e9a675">More...</a><br /></td></tr>
+<tr class="separator:ac9e76195a70b43169c2b8f5f75e9a675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08011.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 1999408533884863599L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial version UID for compatibility with different versions.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An immutable list filled when needed from the values returned by an iterator. </p>
+<div class="textblock"><p>A  Collections::checkedSet(Set, Class) checked} and  Collections::synchronizedSet(Set) synchronized} <a class="el" href="">LinkedHashSet</a>. </p>
+<p>The type checks are performed at run-time in addition to the compile-time checks.</p>
+<p>Using this class is similar to wrapping a <a class="el" href="">LinkedHashSet</a> using the methods provided in the standard <a class="el" href="">Collections</a> class, except for the following advantages:</p>
+<ul>
+<li>
+Avoid the two levels of indirection (for type check and synchronization). </li>
+<li>
+Checks for write permission. </li>
+<li>
+Overrideable methods for controlling the synchronization lock, type checks and write permission checks. </li>
+</ul>
+<p>The synchronization is provided mostly in order to prevent damages to the set in case of concurrent access. It does <b>not</b> prevent <a class="el" href="">java.util.ConcurrentModificationException</a> to be thrown during iterations, unless the whole iteration is synchronized on this set  <a class="el" href="a08011.html#a604630356717f716349899d57effa633" title="Returns the synchronization lock. ">getLock()</a> lock}. For real concurrency, see the <a class="el" href="">java.util.concurrent</a> package instead.</p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>The above is the reason why the name of this class emphases the &lt;cite&gt;checked&lt;/cite&gt; aspect rather than the &lt;cite&gt;synchronized&lt;/cite&gt; aspect of the set.}</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">&lt;E&gt;</td><td>The type of elements in the list.</td></tr>
+    <tr><td class="paramname">&lt;E&gt;</td><td>The type of elements in the set.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.1 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.22 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Collections::checkedSet(Set, Class) </dd>
+<dd>
+Collections::synchronizedSet(Set) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a71a9fa41a68b291635cc98b2ffce9e4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71a9fa41a68b291635cc98b2ffce9e4d">&#9670;&nbsp;</a></span>LazyList()</h2>
+<a id="a6e34377322be3b307366cf881c84fc99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e34377322be3b307366cf881c84fc99">&#9670;&nbsp;</a></span>CheckedHashSet() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a08011.html">LazyList</a> </td>
+          <td class="memname"><a class="el" href="a08011.html">CheckedHashSet</a> </td>
           <td>(</td>
-          <td class="paramtype">final Iterator&lt;? extends E &gt;&#160;</td>
-          <td class="paramname"><em>iterator</em></td><td>)</td>
+          <td class="paramtype">final Class&lt; E &gt;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a list to be filled using the specified iterator. </p>
-<p>Iteration will occurs only when needed.</p>
+<p>Constructs a set of the specified type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iterator</td><td>The iterator to use for filling this list. </td></tr>
+    <tr><td class="paramname">type</td><td>The element type (can not be null). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">LazyList&lt; E &gt;.iterator</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                          {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        this.<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> = <a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a> = (E[]) <span class="keyword">new</span> Object[4];</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div><div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a62b560f1bac27232cdbf9f28cb077558"><div class="ttname"><a href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">org.geotoolkit.util.collection.LazyList.elements</a></div><div class="ttdeci">E [] elements</div><div class="ttdoc">The elements in this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:51</div></div>
+<p class="reference">References <a class="el" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">CheckedHashSet&lt; E &gt;.type</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                               {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        super();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        this.<a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a> = <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        ensureNonNull(<span class="stringliteral">&quot;type&quot;</span>, <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div><div class="ttc" id="a08011_html_ac9e76195a70b43169c2b8f5f75e9a675"><div class="ttname"><a href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">org.geotoolkit.util.collection.CheckedHashSet.type</a></div><div class="ttdeci">final Class&lt; E &gt; type</div><div class="ttdoc">The element type. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:74</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8c62b10951c891950e89445b370679bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c62b10951c891950e89445b370679bf">&#9670;&nbsp;</a></span>CheckedHashSet() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08011.html">CheckedHashSet</a> </td>
+          <td>(</td>
+          <td class="paramtype">final Class&lt; E &gt;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>capacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a set of the specified type and initial capacity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The element type (should not be null). </td></tr>
+    <tr><td class="paramname">capacity</td><td>The initial capacity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">CheckedHashSet&lt; E &gt;.type</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                   {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        super(capacity);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        this.<a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a> = <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        ensureNonNull(<span class="stringliteral">&quot;type&quot;</span>, <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div><div class="ttc" id="a08011_html_ac9e76195a70b43169c2b8f5f75e9a675"><div class="ttname"><a href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">org.geotoolkit.util.collection.CheckedHashSet.type</a></div><div class="ttdeci">final Class&lt; E &gt; type</div><div class="ttdoc">The element type. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:74</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a47803e7d03bf0945918d17f716d9dcf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47803e7d03bf0945918d17f716d9dcf2">&#9670;&nbsp;</a></span>addNext()</h2>
+<a id="aedbc13a303fdeb044c5973530b3e0a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbc13a303fdeb044c5973530b3e0a81">&#9670;&nbsp;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean add </td>
+          <td>(</td>
+          <td class="paramtype">final E&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the specified element to this set if it is not already present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>element to be added to this set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the set did not already contain the specified element. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if the specified element is not of the expected type. </td></tr>
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, <a class="el" href="a08011.html#a324d15358964a7207776d1dacd8428af">CheckedHashSet&lt; E &gt;.ensureValid()</a>, and <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="a08011.html#a324d15358964a7207776d1dacd8428af">ensureValid</a>(element);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <a class="code" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">return</span> super.add(element);</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a08011_html_a324d15358964a7207776d1dacd8428af"><div class="ttname"><a href="a08011.html#a324d15358964a7207776d1dacd8428af">org.geotoolkit.util.collection.CheckedHashSet.ensureValid</a></div><div class="ttdeci">void ensureValid(final E element)</div><div class="ttdoc">Ensures that the given element can be added to this set. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:121</div></div>
+<div class="ttc" id="a08011_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashSet.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this set are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a241a58e42f845e1701f810bf4fa2a66f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241a58e42f845e1701f810bf4fa2a66f">&#9670;&nbsp;</a></span>addAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean addAll </td>
+          <td>(</td>
+          <td class="paramtype">final Collection&lt;? extends E &gt;&#160;</td>
+          <td class="paramname"><em>collection</em></td><td>)</td>
+          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends all of the elements in the specified collection to this set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collection</td><td>the elements to be inserted into this set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if this set changed as a result of the call. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if at least one element is not of the expected type. </td></tr>
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, <a class="el" href="a08011.html#acb5e375a00adfed6847dd16bc9828eac">CheckedHashSet&lt; E &gt;.ensureValidCollection()</a>, and <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <a class="code" href="a08011.html#acb5e375a00adfed6847dd16bc9828eac">ensureValidCollection</a>(collection);</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <a class="code" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">return</span> super.addAll(collection);</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a08011_html_acb5e375a00adfed6847dd16bc9828eac"><div class="ttname"><a href="a08011.html#acb5e375a00adfed6847dd16bc9828eac">org.geotoolkit.util.collection.CheckedHashSet.ensureValidCollection</a></div><div class="ttdeci">void ensureValidCollection(final Collection&lt;? extends E &gt; collection)</div><div class="ttdoc">Ensures that all elements of the given collection can be added to this set. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:134</div></div>
+<div class="ttc" id="a08011_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashSet.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this set are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4a796b594d621b368eaeaf9e5ea21b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a796b594d621b368eaeaf9e5ea21b87">&#9670;&nbsp;</a></span>checkWritePermission()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,10 +378,182 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void addNext </td>
+          <td class="memname">void checkWritePermission </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws UnsupportedOperationException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if changes in this set are allowed. </p>
+<p>This method is automatically invoked after this set got the  <a class="el" href="a08011.html#a604630356717f716349899d57effa633" title="Returns the synchronization lock. ">getLock()</a> lock} and before any operation that may change the content. If the write operation is allowed, then this method shall returns normally. Otherwise an <a class="el" href="">UnsupportedOperationException</a> is thrown.</p>
+<p>The default implementation does nothing significant (see below), thus allowing this set to be modified. Subclasses can override this method if they want to control write permissions.</p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>Actually the current implementation contains an <code>assert</code> statement ensuring that the thread holds the lock. This is an implementation details that may change in any future version of the SIS library. Nevertheless methods that override this one are encouraged to invoke <code>super.checkWritePermission()</code>.}</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this set is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08011.html#aedbc13a303fdeb044c5973530b3e0a81">CheckedHashSet&lt; E &gt;.add()</a>, <a class="el" href="a08011.html#a241a58e42f845e1701f810bf4fa2a66f">CheckedHashSet&lt; E &gt;.addAll()</a>, <a class="el" href="a08011.html#ac8bb3912a3ce86b15842e79d0b421204">CheckedHashSet&lt; E &gt;.clear()</a>, <a class="el" href="a08015.html#a1fcb45e5d2428352eb36b487d1d4eea3">CheckedHashSet&lt; E &gt;.Iter.remove()</a>, <a class="el" href="a08011.html#a4ca842686fb8f2ed28d5b3ef7ef54fc3">CheckedHashSet&lt; E &gt;.remove()</a>, <a class="el" href="a08011.html#afb48c8819537b74316ee0ed2497bf659">CheckedHashSet&lt; E &gt;.removeAll()</a>, and <a class="el" href="a08011.html#a0f8822e4888fd3847d84101c9e5a9792">CheckedHashSet&lt; E &gt;.retainAll()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                               {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        assert <a class="code" href="a14283.html">Thread</a>.holdsLock(<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>());</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a14283_html"><div class="ttname"><a href="a14283.html">Thread</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bb3912a3ce86b15842e79d0b421204">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all of the elements from this set. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, and <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                                             {</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <a class="code" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            super.clear();</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a08011_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashSet.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this set are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0746c5ee2b254881d24ee41b4789653d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0746c5ee2b254881d24ee41b4789653d">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08011.html">CheckedHashSet</a>&lt;E&gt; clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a shallow copy of this set. </p>
+<dl class="section return"><dt>Returns</dt><dd>A shallow copy of this set. </dd></dl>
+
+<p>Implements <a class="el" href="a07979.html#a19eec2727094a0c06db572ee13d2d276">Cloneable</a>.</p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                     {</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">return</span> (CheckedHashSet&lt;E&gt;) super.clone();</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a427300678ca03a7333d98e323cb1cfa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427300678ca03a7333d98e323cb1cfa0">&#9670;&nbsp;</a></span>contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean contains </td>
+          <td>(</td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if this set contains the specified element. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                            {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">return</span> super.contains(o);</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a324d15358964a7207776d1dacd8428af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324d15358964a7207776d1dacd8428af">&#9670;&nbsp;</a></span>ensureValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ensureValid </td>
+          <td>(</td>
+          <td class="paramtype">final E&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ensures that the given element can be added to this set. </p>
+<p>The default implementation ensures that the object is</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> or assignable to the type specified at construction time. Subclasses can override this method if they need to perform additional checks.</p>
+<p>{</p>
+<h1><a class="anchor" id="Synchronization"></a>
+}</h1>
+<p>This method is invoked <em>before</em> to get the synchronization  <a class="el" href="a08011.html#a604630356717f716349899d57effa633" title="Returns the synchronization lock. ">getLock()</a> lock}. This is different than the <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission()</a> method, which is invoked inside the synchronized block.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>the object to check, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if the specified element can not be added to this set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07863.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07867.html#a9515e0cdc98cdf0fd7add99cfe68a414">Errors.Keys.IllegalArgumentClass_3</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08011.html#aedbc13a303fdeb044c5973530b3e0a81">CheckedHashSet&lt; E &gt;.add()</a>, and <a class="el" href="a08011.html#acb5e375a00adfed6847dd16bc9828eac">CheckedHashSet&lt; E &gt;.ensureValidCollection()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                                {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (element != null &amp;&amp; !<a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>.isInstance(element)) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    Errors.Keys.IllegalArgumentClass_3, <span class="stringliteral">&quot;element&quot;</span>, <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>, element.getClass()));</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div><div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a08011_html_ac9e76195a70b43169c2b8f5f75e9a675"><div class="ttname"><a href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">org.geotoolkit.util.collection.CheckedHashSet.type</a></div><div class="ttdeci">final Class&lt; E &gt; type</div><div class="ttdoc">The element type. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:74</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb5e375a00adfed6847dd16bc9828eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5e375a00adfed6847dd16bc9828eac">&#9670;&nbsp;</a></span>ensureValidCollection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ensureValidCollection </td>
+          <td>(</td>
+          <td class="paramtype">final Collection&lt;? extends E &gt;&#160;</td>
+          <td class="paramname"><em>collection</em></td><td>)</td>
+          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a></td>
         </tr>
       </table>
   </td>
@@ -207,18 +563,74 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds the next element from the iterator to this list. </p>
-<p>This method doesn't check if more elements are available; the check must have been done before to invoke this method. </p>
+<p>Ensures that all elements of the given collection can be added to this set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collection</td><td>the collection to check, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if at least one element can not be added to this set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">Referenced by <a class="el" href="a08011.html#a6bb3e4a13f92da39bda85bea42225b9c">LazyList&lt; E &gt;.get()</a>, <a class="el" href="a08011.html#a6813c05cf39dde522e3c8cbde71839f3">LazyList&lt; E &gt;.listIterator()</a>, and <a class="el" href="a08011.html#aeb0642a686a97f487e84ffd657524b3a">LazyList&lt; E &gt;.size()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                           {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a> &gt;= <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a>.length) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a> = Arrays.copyOf(<a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a>, <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>*2);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a>[<a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>++] = <a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>.next();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div><div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a62b560f1bac27232cdbf9f28cb077558"><div class="ttname"><a href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">org.geotoolkit.util.collection.LazyList.elements</a></div><div class="ttdeci">E [] elements</div><div class="ttdoc">The elements in this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:51</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
+<p class="reference">References <a class="el" href="a08011.html#a324d15358964a7207776d1dacd8428af">CheckedHashSet&lt; E &gt;.ensureValid()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08011.html#a241a58e42f845e1701f810bf4fa2a66f">CheckedHashSet&lt; E &gt;.addAll()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                                                                                 {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> E element : collection) {</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="a08011.html#a324d15358964a7207776d1dacd8428af">ensureValid</a>(element);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div><div class="ttc" id="a08011_html_a324d15358964a7207776d1dacd8428af"><div class="ttname"><a href="a08011.html#a324d15358964a7207776d1dacd8428af">org.geotoolkit.util.collection.CheckedHashSet.ensureValid</a></div><div class="ttdeci">void ensureValid(final E element)</div><div class="ttdoc">Ensures that the given element can be added to this set. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:121</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab94715dc82b28f3a7cb2a22c01fcdbdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab94715dc82b28f3a7cb2a22c01fcdbdb">&#9670;&nbsp;</a></span>exists()</h2>
+<a id="a39e5bc339e3b5924ec96de42fbb8f33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e5bc339e3b5924ec96de42fbb8f33f">&#9670;&nbsp;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean equals </td>
+          <td>(</td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares the specified object with this set for equality. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                    {</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">return</span> super.equals(o);</div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        }</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a495b2b3c280d155dc55c0ee28af2d693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495b2b3c280d155dc55c0ee28af2d693">&#9670;&nbsp;</a></span>getElementType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Class&lt;E&gt; getElementType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the element type given at construction time. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">CheckedHashSet&lt; E &gt;.type</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                     {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div><div class="ttc" id="a08011_html_ac9e76195a70b43169c2b8f5f75e9a675"><div class="ttname"><a href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">org.geotoolkit.util.collection.CheckedHashSet.type</a></div><div class="ttdeci">final Class&lt; E &gt; type</div><div class="ttdoc">The element type. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:74</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a604630356717f716349899d57effa633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604630356717f716349899d57effa633">&#9670;&nbsp;</a></span>getLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,10 +639,247 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean exists </td>
+          <td class="memname">Object getLock </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the synchronization lock. </p>
+<p>The default implementation returns</p><div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --><p> .</p>
+<p>{</p>
+<h1><a class="anchor" id="Note"></a>
+on floating point types}</h1>
+<p>Subclasses that override this method must be careful to update the lock reference (if needed) when this set is  <a class="el" href="a08011.html#a0746c5ee2b254881d24ee41b4789653d" title="Returns a shallow copy of this set. ">clone()</a> cloned}.</p>
+<dl class="section return"><dt>Returns</dt><dd>The synchronization lock. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a08011.html#aedbc13a303fdeb044c5973530b3e0a81">CheckedHashSet&lt; E &gt;.add()</a>, <a class="el" href="a08011.html#a241a58e42f845e1701f810bf4fa2a66f">CheckedHashSet&lt; E &gt;.addAll()</a>, <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, <a class="el" href="a08011.html#ac8bb3912a3ce86b15842e79d0b421204">CheckedHashSet&lt; E &gt;.clear()</a>, <a class="el" href="a08011.html#a0746c5ee2b254881d24ee41b4789653d">CheckedHashSet&lt; E &gt;.clone()</a>, <a class="el" href="a08011.html#a427300678ca03a7333d98e323cb1cfa0">CheckedHashSet&lt; E &gt;.contains()</a>, <a class="el" href="a08011.html#a39e5bc339e3b5924ec96de42fbb8f33f">CheckedHashSet&lt; E &gt;.equals()</a>, <a class="el" href="a08011.html#a077e18fe97323c7194e2665ffc766399">CheckedHashSet&lt; E &gt;.hashCode()</a>, <a class="el" href="a08015.html#a58d1cc3d61071d927bf040bf0b035a22">CheckedHashSet&lt; E &gt;.Iter.hasNext()</a>, <a class="el" href="a08011.html#aa71d41fd3d95c354d4d5e922c6c21210">CheckedHashSet&lt; E &gt;.isEmpty()</a>, <a class="el" href="a08011.html#a47c5a247288d15e20eb94dc1ca643271">CheckedHashSet&lt; E &gt;.iterator()</a>, <a class="el" href="a08015.html#a0c7c989f92fa935704b4915f1f400edd">CheckedHashSet&lt; E &gt;.Iter.next()</a>, <a class="el" href="a08015.html#a1fcb45e5d2428352eb36b487d1d4eea3">CheckedHashSet&lt; E &gt;.Iter.remove()</a>, <a class="el" href="a08011.html#a4ca842686fb8f2ed28d5b3ef7ef54fc3">CheckedHashSet&lt; E &gt;.remove()</a>, <a class="el" href="a08011.html#afb48c8819537b74316ee0ed2497bf659">CheckedHashSet&lt; E &gt;.removeAll()</a>, <a class="el" href="a08011.html#a0f8822e4888fd3847d84101c9e5a9792">CheckedHashSet&lt; E &gt;.retainAll()</a>, <a class="el" href="a08011.html#af4b57d21919c42d55af03391f91a1c08">CheckedHashSet&lt; E &gt;.size()</a>, <a class="el" href="a08011.html#a1f5ed6131a4063a785a46ee29ca40743">CheckedHashSet&lt; E &gt;.toArray()</a>, and <a class="el" href="a08011.html#ad146fa8579a5f8a876c4688cc5a68520">CheckedHashSet&lt; E &gt;.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                               {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a077e18fe97323c7194e2665ffc766399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077e18fe97323c7194e2665ffc766399">&#9670;&nbsp;</a></span>hashCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hashCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the hash code value for this set. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                          {</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keywordflow">return</span> super.hashCode();</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa71d41fd3d95c354d4d5e922c6c21210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71d41fd3d95c354d4d5e922c6c21210">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if this set contains no elements. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                             {</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">return</span> super.isEmpty();</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a47c5a247288d15e20eb94dc1ca643271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c5a247288d15e20eb94dc1ca643271">&#9670;&nbsp;</a></span>iterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Iterator&lt;E&gt; iterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an iterator over the elements in this set. </p>
+<p>The returned iterator will support  Iterator::remove() element removal} only if the <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission()</a> method does not throw exception. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>, and <a class="el" href="a08015.html#a63176a8518cc96237a6e77c89beeb658">CheckedHashSet&lt; E &gt;.Iter.Iter()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                  {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> Iter(super.iterator());</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ca842686fb8f2ed28d5b3ef7ef54fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca842686fb8f2ed28d5b3ef7ef54fc3">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean remove </td>
+          <td>(</td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> throws UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the specified element from this set. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, and <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                                                         {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <a class="code" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordflow">return</span> super.remove(o);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        }</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a08011_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashSet.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this set are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afb48c8819537b74316ee0ed2497bf659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb48c8819537b74316ee0ed2497bf659">&#9670;&nbsp;</a></span>removeAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean removeAll </td>
+          <td>(</td>
+          <td class="paramtype">Collection&lt;?&gt;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> throws UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all of this set's elements that are also contained in the specified collection. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, and <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                                                                   {</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <a class="code" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">return</span> super.removeAll(c);</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        }</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a08011_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashSet.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this set are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0f8822e4888fd3847d84101c9e5a9792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8822e4888fd3847d84101c9e5a9792">&#9670;&nbsp;</a></span>retainAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean retainAll </td>
+          <td>(</td>
+          <td class="paramtype">Collection&lt;?&gt;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> throws UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retains only the elements in this set that are contained in the specified collection. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashSet&lt; E &gt;.checkWritePermission()</a>, and <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                                                                   {</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <a class="code" href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="keywordflow">return</span> super.retainAll(c);</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        }</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a08011_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a08011.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashSet.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this set are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:156</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af4b57d21919c42d55af03391f91a1c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b57d21919c42d55af03391f91a1c08">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements in this set. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                      {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordflow">return</span> super.size();</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1f5ed6131a4063a785a46ee29ca40743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5ed6131a4063a785a46ee29ca40743">&#9670;&nbsp;</a></span>toArray() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object [] toArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array containing all of the elements in this set. </p>
+
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                              {</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordflow">return</span> super.toArray();</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        }</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a048700b20526dbfa1d0b84c53ff28b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048700b20526dbfa1d0b84c53ff28b71">&#9670;&nbsp;</a></span>toArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">public&lt;T&gt; T [] toArray </td>
+          <td>(</td>
+          <td class="paramtype">T []&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -241,64 +890,27 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if an element exists at the given index. The element is not loaded immediately. </p>
-<p><b>NOTE: This method is for use by iterators only.</b> It is not suited for more general usage since it doesn't check for negative index and for skipped elements. </p>
-
-<p class="reference">Referenced by <a class="el" href="a08015.html#a58d1cc3d61071d927bf040bf0b035a22">LazyList&lt; E &gt;.Iter.hasNext()</a>, and <a class="el" href="a08015.html#a0c7c989f92fa935704b4915f1f400edd">LazyList&lt; E &gt;.Iter.next()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                          {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> index &lt; <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a> || (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> != null &amp;&amp; <a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>.hasNext());</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div><div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6bb3e4a13f92da39bda85bea42225b9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb3e4a13f92da39bda85bea42225b9c">&#9670;&nbsp;</a></span>get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final E get </td>
-          <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> throws IndexOutOfBoundsException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the element at the specified position in this list. </p>
+<p>Returns an array containing all of the elements in this set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The index at which to obtain an element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The element at the given index. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IndexOutOfBoundsException</td><td>If the given index is out of bounds. </td></tr>
+    <tr><td class="paramname">&lt;T&gt;</td><td>The type of array elements. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">LazyList&lt; E &gt;.addNext()</a>, <a class="el" href="a07823.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, <a class="el" href="a07827.html#a9a919907bf51293edefc899ba5887680">Errors.Keys.IndexOutOfBounds_1</a>, and <a class="el" href="a08011.html#a63388d5ee382a32002098a15411c29d5">LazyList&lt; E &gt;.trimToSize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                                                         {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">if</span> (index &gt;= 0) {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">if</span> (index &lt; <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>) {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a>[index];</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> != null) {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">while</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>.hasNext()) {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    <a class="code" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">addNext</a>();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    <span class="keywordflow">if</span> (index &lt; <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>) {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a>[index];</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                }</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="a08011.html#a63388d5ee382a32002098a15411c29d5">trimToSize</a>();</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException(Errors.format(Errors.Keys.IndexOutOfBounds_1, index));</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div><div class="ttc" id="a08011_html_a47803e7d03bf0945918d17f716d9dcf2"><div class="ttname"><a href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">org.geotoolkit.util.collection.LazyList.addNext</a></div><div class="ttdeci">void addNext()</div><div class="ttdoc">Adds the next element from the iterator to this list. </div><div class="ttdef"><b>Definition:</b> LazyList.java:75</div></div>
-<div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a62b560f1bac27232cdbf9f28cb077558"><div class="ttname"><a href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">org.geotoolkit.util.collection.LazyList.elements</a></div><div class="ttdeci">E [] elements</div><div class="ttdoc">The elements in this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:51</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
-<div class="ttc" id="a08011_html_a63388d5ee382a32002098a15411c29d5"><div class="ttname"><a href="a08011.html#a63388d5ee382a32002098a15411c29d5">org.geotoolkit.util.collection.LazyList.trimToSize</a></div><div class="ttdeci">void trimToSize()</div><div class="ttdoc">Invoked when we have reached the end of iteration. </div><div class="ttdef"><b>Definition:</b> LazyList.java:169</div></div>
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                  {</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">return</span> super.toArray(a);</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        }</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9fd6998bf5f652d6bba105da2db27a76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fd6998bf5f652d6bba105da2db27a76">&#9670;&nbsp;</a></span>isEmpty()</h2>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean isEmpty </td>
+          <td class="memname">String toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -306,116 +918,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if this list has no elements. </p>
+<p>Returns a string representation of this set. </p>
 
-<p class="reference">References <a class="el" href="a08011.html#a63388d5ee382a32002098a15411c29d5">LazyList&lt; E &gt;.trimToSize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                   {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a> != 0) {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> != null) {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>.hasNext()) {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="a08011.html#a63388d5ee382a32002098a15411c29d5">trimToSize</a>();</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div><div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
-<div class="ttc" id="a08011_html_a63388d5ee382a32002098a15411c29d5"><div class="ttname"><a href="a08011.html#a63388d5ee382a32002098a15411c29d5">org.geotoolkit.util.collection.LazyList.trimToSize</a></div><div class="ttdeci">void trimToSize()</div><div class="ttdoc">Invoked when we have reached the end of iteration. </div><div class="ttdef"><b>Definition:</b> LazyList.java:169</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6813c05cf39dde522e3c8cbde71839f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6813c05cf39dde522e3c8cbde71839f3">&#9670;&nbsp;</a></span>listIterator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ListIterator&lt;E&gt; listIterator </td>
-          <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> throws IndexOutOfBoundsException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns an iterator over the elements in this list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>Index of first element to be returned from the iterator. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An iterator over the elements in this list. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IndexOutOfBoundsException</td><td>If the given index is out of bounds. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">LazyList&lt; E &gt;.addNext()</a>, <a class="el" href="a07823.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, <a class="el" href="a07827.html#a9a919907bf51293edefc899ba5887680">Errors.Keys.IndexOutOfBounds_1</a>, and <a class="el" href="a08011.html#a63388d5ee382a32002098a15411c29d5">LazyList&lt; E &gt;.trimToSize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                                                          {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (index &gt;= 0) {</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">if</span> (index &lt; <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>) {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> Iter(index);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> != null) {</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">while</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>.hasNext()) {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <span class="keywordflow">if</span> (index == <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>) {</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">new</span> Iter(index);</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    }</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    <a class="code" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">addNext</a>();</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                }</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <a class="code" href="a08011.html#a63388d5ee382a32002098a15411c29d5">trimToSize</a>();</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            }</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException(Errors.format(Errors.Keys.IndexOutOfBounds_1, index));</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div><div class="ttc" id="a08011_html_a47803e7d03bf0945918d17f716d9dcf2"><div class="ttname"><a href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">org.geotoolkit.util.collection.LazyList.addNext</a></div><div class="ttdeci">void addNext()</div><div class="ttdoc">Adds the next element from the iterator to this list. </div><div class="ttdef"><b>Definition:</b> LazyList.java:75</div></div>
-<div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
-<div class="ttc" id="a08011_html_a63388d5ee382a32002098a15411c29d5"><div class="ttname"><a href="a08011.html#a63388d5ee382a32002098a15411c29d5">org.geotoolkit.util.collection.LazyList.trimToSize</a></div><div class="ttdeci">void trimToSize()</div><div class="ttdoc">Invoked when we have reached the end of iteration. </div><div class="ttdef"><b>Definition:</b> LazyList.java:169</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeb0642a686a97f487e84ffd657524b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0642a686a97f487e84ffd657524b3a">&#9670;&nbsp;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of elements in this list. </p>
-<p>Invoking this method force the set to immediately iterates through all remaining elements. </p>
-
-<p class="reference">References <a class="el" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">LazyList&lt; E &gt;.addNext()</a>, <a class="el" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">LazyList&lt; E &gt;.next</a>, and <a class="el" href="a08011.html#a63388d5ee382a32002098a15411c29d5">LazyList&lt; E &gt;.trimToSize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                            {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> != null) {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a>.hasNext()) {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <a class="code" href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">addNext</a>();</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="a08011.html#a63388d5ee382a32002098a15411c29d5">trimToSize</a>();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="ttc" id="a08011_html_a47803e7d03bf0945918d17f716d9dcf2"><div class="ttname"><a href="a08011.html#a47803e7d03bf0945918d17f716d9dcf2">org.geotoolkit.util.collection.LazyList.addNext</a></div><div class="ttdeci">void addNext()</div><div class="ttdoc">Adds the next element from the iterator to this list. </div><div class="ttdef"><b>Definition:</b> LazyList.java:75</div></div>
-<div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
-<div class="ttc" id="a08011_html_a63388d5ee382a32002098a15411c29d5"><div class="ttname"><a href="a08011.html#a63388d5ee382a32002098a15411c29d5">org.geotoolkit.util.collection.LazyList.trimToSize</a></div><div class="ttdeci">void trimToSize()</div><div class="ttdoc">Invoked when we have reached the end of iteration. </div><div class="ttdef"><b>Definition:</b> LazyList.java:169</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a63388d5ee382a32002098a15411c29d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63388d5ee382a32002098a15411c29d5">&#9670;&nbsp;</a></span>trimToSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void trimToSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invoked when we have reached the end of iteration. </p>
-
-<p class="reference">Referenced by <a class="el" href="a08011.html#a6bb3e4a13f92da39bda85bea42225b9c">LazyList&lt; E &gt;.get()</a>, <a class="el" href="a08011.html#a9fd6998bf5f652d6bba105da2db27a76">LazyList&lt; E &gt;.isEmpty()</a>, <a class="el" href="a08011.html#a6813c05cf39dde522e3c8cbde71839f3">LazyList&lt; E &gt;.listIterator()</a>, and <a class="el" href="a08011.html#aeb0642a686a97f487e84ffd657524b3a">LazyList&lt; E &gt;.size()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                              {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="a08011.html#a23a11999fcead4bdabd32213fb76348a">iterator</a> = null; <span class="comment">// Lets GC do its work.</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a> = ArraysExt.resize(<a class="code" href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">elements</a>, <a class="code" href="a08011.html#a142a1b51e133e50c0a72b175958ac412">next</a>);</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div><div class="ttc" id="a08011_html_a23a11999fcead4bdabd32213fb76348a"><div class="ttname"><a href="a08011.html#a23a11999fcead4bdabd32213fb76348a">org.geotoolkit.util.collection.LazyList.iterator</a></div><div class="ttdeci">Iterator&lt;? extends E &gt; iterator</div><div class="ttdoc">The iterator to use for filling this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:46</div></div>
-<div class="ttc" id="a08011_html_a62b560f1bac27232cdbf9f28cb077558"><div class="ttname"><a href="a08011.html#a62b560f1bac27232cdbf9f28cb077558">org.geotoolkit.util.collection.LazyList.elements</a></div><div class="ttdeci">E [] elements</div><div class="ttdoc">The elements in this set. </div><div class="ttdef"><b>Definition:</b> LazyList.java:51</div></div>
-<div class="ttc" id="a08011_html_a142a1b51e133e50c0a72b175958ac412"><div class="ttname"><a href="a08011.html#a142a1b51e133e50c0a72b175958ac412">org.geotoolkit.util.collection.LazyList.next</a></div><div class="ttdeci">int next</div><div class="ttdoc">Index past the last valid element. </div><div class="ttdef"><b>Definition:</b> LazyList.java:57</div></div>
+<p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                             {</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">return</span> super.toString();</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        }</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a62b560f1bac27232cdbf9f28cb077558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62b560f1bac27232cdbf9f28cb077558">&#9670;&nbsp;</a></span>elements</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +936,31 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">E [] elements</td>
+          <td class="memname">final long serialVersionUID = 1999408533884863599L</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serial version UID for compatibility with different versions. </p>
+
+</div>
+</div>
+<a id="ac9e76195a70b43169c2b8f5f75e9a675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e76195a70b43169c2b8f5f75e9a675">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Class&lt;E&gt; type</td>
         </tr>
       </table>
   </td>
@@ -434,62 +970,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The elements in this set. </p>
-<p>This array will grown as needed. </p>
+<p>The element type. </p>
 
-</div>
-</div>
-<a id="a23a11999fcead4bdabd32213fb76348a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a11999fcead4bdabd32213fb76348a">&#9670;&nbsp;</a></span>iterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Iterator&lt;? extends E&gt; iterator</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The iterator to use for filling this set. </p>
-<p>Will be set to</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> when the iteration is over. </p>
-
-<p class="reference">Referenced by <a class="el" href="a08011.html#a71a9fa41a68b291635cc98b2ffce9e4d">LazyList&lt; E &gt;.LazyList()</a>.</p>
-
-</div>
-</div>
-<a id="a142a1b51e133e50c0a72b175958ac412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a142a1b51e133e50c0a72b175958ac412">&#9670;&nbsp;</a></span>next</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int next</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Index past the last valid element. </p>
-<p>This value will increases as long as there is some elements remaining in the iterator. </p>
-
-<p class="reference">Referenced by <a class="el" href="a08011.html#aeb0642a686a97f487e84ffd657524b3a">LazyList&lt; E &gt;.size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a08011.html#a6e34377322be3b307366cf881c84fc99">CheckedHashSet&lt; E &gt;.CheckedHashSet()</a>, and <a class="el" href="a08011.html#a495b2b3c280d155dc55c0ee28af2d693">CheckedHashSet&lt; E &gt;.getElementType()</a>.</p>
 
 </div>
 </div>
@@ -499,7 +982,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03892.html">util</a></li><li class="navelem"><a class="el" href="a03893.html">collection</a></li><li class="navelem"><a class="el" href="a08011.html">LazyList</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03916.html">util</a></li><li class="navelem"><a class="el" href="a03917.html">collection</a></li><li class="navelem"><a class="el" href="a08011.html">CheckedHashSet</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

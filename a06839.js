@@ -1,13 +1,10 @@
 var a06839 =
 [
-    [ "Trees", "a06839.html#abac874c9207df99c35cbd613fea14a84", null ],
-    [ "copy", "a06839.html#a7391dd5be04ca6d6a2da44208a0d502b", null ],
-    [ "copy", "a06839.html#a4d28a2d328695c03f60f54b13b169736", null ],
-    [ "getPathsToUserObject", "a06839.html#a0645c73f00205360084549798d3eea3b", null ],
-    [ "getPathsToUserObject", "a06839.html#a35473f91450ebc6913400f8514eb1f95", null ],
-    [ "getUserObject", "a06839.html#adb723708d7200d019595f7a9dde25832", null ],
-    [ "objectToSwing", "a06839.html#a6b25cef76c96c806e91286db2b366540", null ],
-    [ "toString", "a06839.html#a947389a450378d893b18496116745f6a", null ],
-    [ "toString", "a06839.html#a2c66d776c6a9ba7cecf72099ebd7228d", null ],
-    [ "xmlToSwing", "a06839.html#a66c9c6137b5c1e524bbca3b40065577f", null ]
+    [ "OrderedIterator", "a06839.html#aaade0e0e85af967ef5dbbcceec5f5336", null ],
+    [ "hasNext", "a06839.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "isDeferred", "a06839.html#a42d459b55597d92d2cd4a56ca5f28d70", null ],
+    [ "isDeferred", "a06839.html#a04dad234173800a5923173cc5cad9982", null ],
+    [ "next", "a06839.html#a0c7c989f92fa935704b4915f1f400edd", null ],
+    [ "remove", "a06839.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
+    [ "classLoader", "a06839.html#acc96ccc82c0d10e4d9f476efa8a332d2", null ]
 ];

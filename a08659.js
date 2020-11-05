@@ -1,8 +1,7 @@
 var a08659 =
 [
-    [ "testIntersectionMatrix", "a08659.html#a8537ca55b85b9d59789190d637670f0b", null ],
+    [ "testDifference", "a08659.html#a818987dbc65e92aa634b7764a0b93908", null ],
+    [ "result", "a08659.html#aab356d6554a7301750f11ec7a85ac47d", null ],
     [ "testGeom", "a08659.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
-    [ "testGeom2", "a08659.html#a6b4be369c8f60e973cd5126e69cd33a4", null ],
-    [ "testGeom3", "a08659.html#a800b6bb875a8ff4404ea787c3df125a5", null ],
-    [ "testGeom4", "a08659.html#a4c55e7efe430d6d220fb05524c4bb940", null ]
+    [ "testGeom2", "a08659.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
 ];

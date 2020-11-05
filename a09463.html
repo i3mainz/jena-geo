@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MeterToLinkTest Class Reference</title>
+<title>jena-geo: ChainToMeterTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,24 +64,24 @@ $(document).ready(function(){initNavTree('a09463.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a09460.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MeterToLinkTest Class Reference</div>  </div>
+<div class="title">ChainToMeterTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa39e0f1772babf964a3c40c5d6596fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09463.html#aa39e0f1772babf964a3c40c5d6596fbe">testInchToMeter</a> ()</td></tr>
-<tr class="separator:aa39e0f1772babf964a3c40c5d6596fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660b79f514fc100db715b5422eef1920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09463.html#a660b79f514fc100db715b5422eef1920">testChainToMeter</a> ()</td></tr>
+<tr class="separator:a660b79f514fc100db715b5422eef1920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa39e0f1772babf964a3c40c5d6596fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39e0f1772babf964a3c40c5d6596fbe">&#9670;&nbsp;</a></span>testInchToMeter()</h2>
+<a id="a660b79f514fc100db715b5422eef1920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660b79f514fc100db715b5422eef1920">&#9670;&nbsp;</a></span>testChainToMeter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testInchToMeter </td>
+          <td class="memname">void testChainToMeter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -89,8 +89,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06163.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">MeterToLink.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                      {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        NodeValue unitamount = NodeValue.makeDouble(1.);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        MeterToLink instance=<span class="keyword">new</span> MeterToLink();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        NodeValue expResult = NodeValue.makeDouble(4.970969537898672);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue result = instance.exec(unitamount);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06147.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">ChainToMeter.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                       {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        NodeValue unitamount = NodeValue.makeDouble(1.);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        ChainToMeter instance=<span class="keyword">new</span> ChainToMeter();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        NodeValue expResult = NodeValue.makeDouble(0.04971);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue result = instance.exec(unitamount);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03957.html">unit</a></li><li class="navelem"><a class="el" href="a09463.html">MeterToLinkTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03981.html">unit</a></li><li class="navelem"><a class="el" href="a09463.html">ChainToMeterTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

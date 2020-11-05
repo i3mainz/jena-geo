@@ -1,8 +1,7 @@
 var a04075 =
 [
-    [ "AccMaxY", "a04079.html", "a04079" ],
-    [ "MaxY", "a04075.html#a745d5b21c63aee68213c18e2840a685a", null ],
-    [ "MaxY", "a04075.html#a4359d4df05f58ac3c5e766e28f8f9095", null ],
+    [ "AccBBOX", "a04079.html", "a04079" ],
+    [ "BoundingBox", "a04075.html#acfc368dce459ad5ceaf7f3ca9a7a0c64", null ],
     [ "copy", "a04075.html#a0c4f538fb7b73cf0610c4fd5b212cc00", null ],
     [ "createAccumulator", "a04075.html#ac589ca3321e77a7558e0e346c8474738", null ],
     [ "equals", "a04075.html#a04adb23e628a0adcac484ce8f1dff399", null ],

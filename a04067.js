@@ -1,9 +1,9 @@
 var a04067 =
 [
-    [ "AccMaxX", "a04067.html#a2d8256e142986498932b9751825c4bbe", null ],
+    [ "AccAvgZ", "a04067.html#aa8f04ee8faa64ad8ad71ec1a839ac48d", null ],
     [ "accumulate", "a04067.html#a28817aa8b3ff9874c7550bbac242267d", null ],
     [ "accumulateError", "a04067.html#a00612e8af24f1d01fca23bfa838b60f4", null ],
     [ "getAccValue", "a04067.html#a97738b9e0a0bde3579a698473dc654a8", null ],
-    [ "DEBUG", "a04067.html#a8270736aa6257cdc33f11a875840a05e", null ],
-    [ "maxSoFar", "a04067.html#ab84e1ec24c4294d5d41a147f7051cb6b", null ]
+    [ "count", "a04067.html#ad43c3812e6d13e0518d9f8b8f463ffcf", null ],
+    [ "total", "a04067.html#adc861ea6d79d3efa71b1681858ea4aca", null ]
 ];

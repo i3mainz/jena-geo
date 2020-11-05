@@ -1,6 +1,6 @@
 var a04095 =
 [
-    [ "MaxZDistinct", "a04095.html#a48d1287672d6c73a7233a2c896399b2b", null ],
+    [ "MaxXDistinct", "a04095.html#a84bc5de0fea147d53f9447b4485f2572", null ],
     [ "copy", "a04095.html#a0c4f538fb7b73cf0610c4fd5b212cc00", null ],
     [ "createAccumulator", "a04095.html#ac589ca3321e77a7558e0e346c8474738", null ],
     [ "equals", "a04095.html#a04adb23e628a0adcac484ce8f1dff399", null ],

@@ -1,4 +1,4 @@
 var a03791 =
 [
-    [ "LineCrossingDirection", "a05115.html", "a05115" ]
+    [ "cs", "a03792.html", "a03792" ]
 ];

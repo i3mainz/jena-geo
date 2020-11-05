@@ -1,5 +1,4 @@
 var a08555 =
 [
-    [ "testAsGeoURI", "a08555.html#aae403d68ccc2ecfb409ca338b5ba0101", null ],
-    [ "testGeometry", "a08555.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "geoJsonTestGeom", "a08555.html#a117e8ff340791b5aa0658f5840b5dcf4", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LineCrossingDirection Class Reference</title>
+<title>jena-geo: SetEndPoint Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,38 +64,32 @@ $(document).ready(function(){initNavTree('a05115.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05112.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LineCrossingDirection Class Reference</div>  </div>
+<div class="title">SetEndPoint Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Given 2 linestrings, returns a number between -3 and 3 denoting what kind of crossing behavior.  
- <a href="a05115.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for LineCrossingDirection:</div>
+Inheritance diagram for SetEndPoint:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05114.png" border="0" usemap="#LineCrossingDirection_inherit__map" alt="Inheritance graph"/></div>
-<map name="LineCrossingDirection_inherit__map" id="LineCrossingDirection_inherit__map">
+<div class="center"><img src="a05114.png" border="0" usemap="#SetEndPoint_inherit__map" alt="Inheritance graph"/></div>
+<map name="SetEndPoint_inherit__map" id="SetEndPoint_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for LineCrossingDirection:</div>
+Collaboration diagram for SetEndPoint:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05113.png" border="0" usemap="#LineCrossingDirection_coll__map" alt="Collaboration graph"/></div>
-<map name="LineCrossingDirection_coll__map" id="LineCrossingDirection_coll__map">
+<div class="center"><img src="a05113.png" border="0" usemap="#SetEndPoint_coll__map" alt="Collaboration graph"/></div>
+<map name="SetEndPoint_coll__map" id="SetEndPoint_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5337fd861ad4940c5025973eef782d5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05115.html#af5337fd861ad4940c5025973eef782d5">exec</a> (NodeValue arg0, NodeValue arg1)</td></tr>
-<tr class="separator:af5337fd861ad4940c5025973eef782d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05115.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
+<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Given 2 linestrings, returns a number between -3 and 3 denoting what kind of crossing behavior. </p>
-<p>0 is no crossing. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5337fd861ad4940c5025973eef782d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5337fd861ad4940c5025973eef782d5">&#9670;&nbsp;</a></span>exec()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,13 +98,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">NodeValue exec </td>
           <td>(</td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg0</em>, </td>
+          <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -120,8 +114,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06555.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, and <a class="el" href="a06555.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                              {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        GeometryWrapper geom1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        GeometryWrapper geom2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        GeometryWrapper transGeom2 = geom2.transform(geom1.getSrsInfo());</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                } <span class="keywordflow">catch</span> (MismatchedDimensionException | TransformException | FactoryException e) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <span class="comment">// TODO Auto-generated catch block</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        e.printStackTrace();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06595.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06595.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06595.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>, <a class="el" href="a06595.html#a4eeeb44dd9300963ec4f50a73598a5d3">GeometryWrapper.getSRID()</a>, and <a class="el" href="a06595.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08923.html#a0b168fd88eb535bd955fa17fefeda2ea">SetEndPointTest.testSetEndPoint()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                          {     </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            GeometryWrapper geom1 = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            GeometryWrapper geom2 = GeometryWrapper.extract(v2);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            GeometryWrapper transGeom2 = geom2.transform(geom1.getSRID());</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (geom1.getParsingGeometry() instanceof LineString &amp;&amp; transGeom2.getParsingGeometry() instanceof Point) {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        Coordinate[] coords=geom1.getParsingGeometry().getCoordinates();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        Coordinate[] newcoords=coords;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        newcoords[newcoords.length-1]=geom2.getParsingGeometry().getCoordinate();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createLineString(newcoords, <span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span>+geom1.getSRID()+<span class="stringliteral">&quot;&gt;&quot;</span>, WKTDatatype.URI);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">return</span> lineStringWrapper.asNodeValue();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;First argument is not a LineString or third argument is not a point&quot;</span>, null);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException | TransformException ex) {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -130,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03787.html">linestring</a></li><li class="navelem"><a class="el" href="a03791.html">relation</a></li><li class="navelem"><a class="el" href="a05115.html">LineCrossingDirection</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03811.html">linestring</a></li><li class="navelem"><a class="el" href="a03813.html">editor</a></li><li class="navelem"><a class="el" href="a05115.html">SetEndPoint</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

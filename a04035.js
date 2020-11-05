@@ -1,9 +1,27 @@
 var a04035 =
 [
-    [ "AvgYDistinct", "a04035.html#a14c6d9439eb8354873702655e5b4ca10", null ],
-    [ "copy", "a04035.html#a0c4f538fb7b73cf0610c4fd5b212cc00", null ],
-    [ "createAccumulator", "a04035.html#ac589ca3321e77a7558e0e346c8474738", null ],
-    [ "equals", "a04035.html#a04adb23e628a0adcac484ce8f1dff399", null ],
-    [ "getValueEmpty", "a04035.html#a36b59b059238a39e015669fe72025f27", null ],
-    [ "hashCode", "a04035.html#a077e18fe97323c7194e2665ffc766399", null ]
+    [ "createClusterResult", "a04035.html#aba00c6bd9b5cb02de81843b4586a1510", null ],
+    [ "createDocumentClusters", "a04035.html#a9c6ce79919583df5ed6d5b068182b2d5", null ],
+    [ "createFieldList", "a04035.html#aaa90e00daf1d2905859914ba7a92f893", null ],
+    [ "getDescription", "a04035.html#ac7feffb7a33f63504ff1f87f19e2d2d8", null ],
+    [ "getFieldString", "a04035.html#a374aa5c4984d6e8a59a397c34c8b826c", null ],
+    [ "getSource", "a04035.html#aaeb4161c8bd3d27854e39bfdcc84144f", null ],
+    [ "getStringArgument", "a04035.html#a7b65028929464011c54f717cc0bc8a4f", null ],
+    [ "getType", "a04035.html#a6d91eb63be089c7f5b3132a0f52af07e", null ],
+    [ "getVersion", "a04035.html#a12b5671e8920e8ce5c4457ea8d0d9fb2", null ],
+    [ "init", "a04035.html#a5048fa002bf3fee23af5ea7310e9f33b", null ],
+    [ "isNumeric", "a04035.html#ad2f0069be08e539be080c7da9309f068", null ],
+    [ "prepare", "a04035.html#afd14ba85a16655383f72ab350e864e79", null ],
+    [ "process", "a04035.html#a50ed99c2996b7aae72b00268d6bcfd71", null ],
+    [ "DEFAULT_CLUSTER_SIZE", "a04035.html#a45bfc05f28ab5bbf5a9dc368047b06f2", null ],
+    [ "FIELD_NAME_ID", "a04035.html#ae6b9973c17a0ebf6ee945a0b4850940d", null ],
+    [ "FIELD_NAME_LAT", "a04035.html#af725259ae7f0fe11d6fc8f3db222f7f8", null ],
+    [ "FIELD_NAME_LON", "a04035.html#ab86514be2e433000a8b002c6d235de99", null ],
+    [ "fieldNameId", "a04035.html#a4c17ab138514503292eaf7b63af0b912", null ],
+    [ "fieldNameLat", "a04035.html#a1d1f4b9177ff8e0546500ed226c230fa", null ],
+    [ "fieldNameLon", "a04035.html#a98a08facc5154b717e118f4fa2d8ada2", null ],
+    [ "PARAM_SPATIALCLUSTERING", "a04035.html#ac101389bab4245b0dc43bfe5d5cc8a03", null ],
+    [ "PARAM_SPATIALCLUSTERING_SIZE", "a04035.html#acfe876358181205b20e74b82fe6c7d20", null ],
+    [ "PIN_TYPE_CLUSTER", "a04035.html#acd45549e2db985c4d799e7fac97c22d0", null ],
+    [ "PIN_TYPE_SINGLE", "a04035.html#ace29433aec744dbacc44b1af872c640c", null ]
 ];

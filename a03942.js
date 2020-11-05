@@ -1,5 +1,6 @@
 var a03942 =
 [
-    [ "attribute", "a03941.html", "a03941" ],
-    [ "constructor", "a03943.html", "a03943" ]
+    [ "LengthSubstring", "a08359.html", "a08359" ],
+    [ "LengthToPoint", "a08363.html", "a08363" ],
+    [ "LocatePoint", "a08367.html", "a08367" ]
 ];

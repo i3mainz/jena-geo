@@ -1,15 +1,15 @@
 var a08051 =
 [
-    [ "Compare", "a08055.html", "a08055" ],
-    [ "ValueComparator", "a08059.html", "a08059" ],
-    [ "XCollections", "a08051.html#abefa5b7d1e09598a5cad9451a7811d9a", null ],
-    [ "addIfNonNull", "a08051.html#af1d488a7c96e58bb0fd067eca6d9cf7a", null ],
-    [ "clear", "a08051.html#ada954eaea9f02c2f476e01115df42f51", null ],
-    [ "clear", "a08051.html#a32e94d83a43603de29cadde55353441f", null ],
-    [ "immutableSet", "a08051.html#a3e2b875edf609b0fb9fc3a7c3496c756", null ],
-    [ "listComparator", "a08051.html#aa21b0f84c3348bc136ad7929731293b9", null ],
-    [ "sortedSetComparator", "a08051.html#a1b1c2123ab5933a9a1b4e80598b21c2b", null ],
-    [ "unmodifiableOrCopy", "a08051.html#a07db68bf42bdf364274d5636515f8879", null ],
-    [ "unmodifiableOrCopy", "a08051.html#a9e9173b3525a76b2a8ba38263c1f1712", null ],
-    [ "valueComparator", "a08051.html#aa96a1bb9116d5d7166b3e06f64c06beb", null ]
+    [ "Iter", "a08055.html", "a08055" ],
+    [ "LazyList", "a08051.html#a71a9fa41a68b291635cc98b2ffce9e4d", null ],
+    [ "addNext", "a08051.html#a47803e7d03bf0945918d17f716d9dcf2", null ],
+    [ "exists", "a08051.html#ab94715dc82b28f3a7cb2a22c01fcdbdb", null ],
+    [ "get", "a08051.html#a6bb3e4a13f92da39bda85bea42225b9c", null ],
+    [ "isEmpty", "a08051.html#a9fd6998bf5f652d6bba105da2db27a76", null ],
+    [ "listIterator", "a08051.html#a6813c05cf39dde522e3c8cbde71839f3", null ],
+    [ "size", "a08051.html#aeb0642a686a97f487e84ffd657524b3a", null ],
+    [ "trimToSize", "a08051.html#a63388d5ee382a32002098a15411c29d5", null ],
+    [ "elements", "a08051.html#a62b560f1bac27232cdbf9f28cb077558", null ],
+    [ "iterator", "a08051.html#a23a11999fcead4bdabd32213fb76348a", null ],
+    [ "next", "a08051.html#a142a1b51e133e50c0a72b175958ac412", null ]
 ];

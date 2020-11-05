@@ -1,16 +1,14 @@
 var a07047 =
 [
-    [ "Float", "a07047.html#a99ae71f8c22964ffbb9bc27ffdadad86", null ],
-    [ "Float", "a07047.html#a77d7125e97f87df7cbe76448eb61075a", null ],
-    [ "copyAsInts", "a07047.html#a221d105ab24f5e3b59a30e73aff9f600", null ],
-    [ "equals", "a07047.html#a537c7b35c090ed43e1d3f130188e9198", null ],
-    [ "getInstance", "a07047.html#a3c3187a9ea5768277146d5961af9b768", null ],
-    [ "getInstance", "a07047.html#ac600d752075964fc3047467438a60478", null ],
-    [ "getPixel", "a07047.html#a4ace0cc7b5dbb9fa5821a8c1547553b3", null ],
-    [ "getSample", "a07047.html#afe024339c5e1fd2c67ae1bce412d5fa4", null ],
-    [ "hashCode", "a07047.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "instance", "a07047.html#a7dce96e734633d27d37f4ff71224e08c", null ],
-    [ "setPixel", "a07047.html#afc227f53eba58d0aabab35827c88508b", null ],
-    [ "toString", "a07047.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "samples", "a07047.html#ac941418590f242b55799ed473785f66d", null ]
+    [ "Dyadic", "a07055.html", "a07055" ],
+    [ "Transform", "a07051.html", "a07051" ],
+    [ "Combine", "a07047.html#abc381ff2b8f349756a41d4ab95795238", null ],
+    [ "computeRect", "a07047.html#aad61f28eae5af1a21a56c962e59c99ba", null ],
+    [ "getSources", "a07047.html#a016c1e8b58082cf2add38a25a00fd20d", null ],
+    [ "bands", "a07047.html#a95bd8b3a2a6f5f51cc5904ca65a4a754", null ],
+    [ "matrix", "a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73", null ],
+    [ "numSamples", "a07047.html#ae99ae9458f515b16d68878a27d86f838", null ],
+    [ "OPERATION_NAME", "a07047.html#a4ba7d667bd2c11bb15f09506d145b31e", null ],
+    [ "sources", "a07047.html#a1b3b3c2d297f8c41ee6a67497d4e1b73", null ],
+    [ "transform", "a07047.html#a8059b16632ab926cbbcda163cd991f1b", null ]
 ];

@@ -1,9 +1,13 @@
 var a08187 =
 [
-    [ "MagneticDate", "a08187.html#ab31f8fb056eac3c2822270f745d09765", null ],
-    [ "MagneticDate", "a08187.html#af62ae116c1aeee1d2d25bc8f0b8e6133", null ],
-    [ "Day", "a08187.html#a8f67164de537e3ec2b47e3204ddd3400", null ],
-    [ "DecimalYear", "a08187.html#afb8201d541b7b916e28bdf9884f6c794", null ],
-    [ "Month", "a08187.html#a530b376ec91a278ac98531d3ea17f148", null ],
-    [ "Year", "a08187.html#a42e645110404fbf4f10235789577fa32", null ]
+    [ "Long", "a08187.html#a742afbfcecf3d7f6fd73a2da2ce8d7e7", null ],
+    [ "compareTo", "a08187.html#af5a2c9246c709f990c640639b2e50600", null ],
+    [ "ranks", "a08187.html#abb150dc13c316a480c404b1703c03990", null ],
+    [ "ranks", "a08187.html#a7e3ac659899192333adea39b87f41331", null ],
+    [ "ranks", "a08187.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
+    [ "ranks", "a08187.html#abb82129695e9a7b212788912ccc45539", null ],
+    [ "ranks", "a08187.html#ad3b1488acd654783f7a4dc632814441f", null ],
+    [ "ranks", "a08187.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
+    [ "ranks", "a08187.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
+    [ "value", "a08187.html#a4e34443a9b417206f0269d33e16445b1", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LocatePoint Class Reference</title>
+<title>jena-geo: TWKBUtils Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,105 +61,60 @@ $(document).ready(function(){initNavTree('a08327.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08324.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LocatePoint Class Reference</div>  </div>
+<div class="title">TWKBUtils Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Provides various ways of computing the actual value of a point a given length along a line.  
- <a href="a08327.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for LocatePoint:</div>
+Collaboration diagram for TWKBUtils:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08325.png" border="0" usemap="#LocatePoint_coll__map" alt="Collaboration graph"/></div>
-<map name="LocatePoint_coll__map" id="LocatePoint_coll__map">
-<area shape="rect" id="node2" href="a08303.html" title="A lightweight class used to store coordinates on the 2&#45;dimensional Cartesian plane. " alt="" coords="393,153,479,180"/>
-<area shape="rect" id="node3" href="a14163.html" title="Comparable\&lt; Coordinate \&gt;" alt="" coords="308,5,487,32"/>
-<area shape="rect" id="node4" href="a14167.html" title="Cloneable" alt="" coords="5,5,85,32"/>
+<div class="center"><img src="a08325.png" border="0" usemap="#TWKBUtils_coll__map" alt="Collaboration graph"/></div>
+<map name="TWKBUtils_coll__map" id="TWKBUtils_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0db8c96a170aff314d55b51d1090d8c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a0db8c96a170aff314d55b51d1090d8c7">LocatePoint</a> (LineString line, double length)</td></tr>
-<tr class="separator:a0db8c96a170aff314d55b51d1090d8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add97f503ca58503d04ac9150e6c8ef7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08303.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#add97f503ca58503d04ac9150e6c8ef7f">getPoint</a> ()</td></tr>
-<tr class="separator:add97f503ca58503d04ac9150e6c8ef7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59d053c950ff1e9f8a004d493f34e754"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a59d053c950ff1e9f8a004d493f34e754">getIndex</a> ()</td></tr>
-<tr class="memdesc:a59d053c950ff1e9f8a004d493f34e754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the segment containing the computed point.  <a href="#a59d053c950ff1e9f8a004d493f34e754">More...</a><br /></td></tr>
-<tr class="separator:a59d053c950ff1e9f8a004d493f34e754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8138e49067c6447449ff0a8ce19bfed4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a08303.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a8138e49067c6447449ff0a8ce19bfed4">pointAlongSegment</a> (LineSegment seg, double length)</td></tr>
-<tr class="memdesc:a8138e49067c6447449ff0a8ce19bfed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the location of a point a given length along a <a class="el" href="">LineSegment</a>.  <a href="#a8138e49067c6447449ff0a8ce19bfed4">More...</a><br /></td></tr>
-<tr class="separator:a8138e49067c6447449ff0a8ce19bfed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b414ab63960ecfa283932288f9977f7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a08303.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a4b414ab63960ecfa283932288f9977f7">pointAlongSegment</a> (<a class="el" href="a08303.html">Coordinate</a> p0, <a class="el" href="a08303.html">Coordinate</a> p1, double length)</td></tr>
-<tr class="memdesc:a4b414ab63960ecfa283932288f9977f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the location of a point a given length along a line segment.  <a href="#a4b414ab63960ecfa283932288f9977f7">More...</a><br /></td></tr>
-<tr class="separator:a4b414ab63960ecfa283932288f9977f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ecfa15254cc343c6166b5e9b3f05c03"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a08303.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a9ecfa15254cc343c6166b5e9b3f05c03">pointAlongSegmentByFraction</a> (<a class="el" href="a08303.html">Coordinate</a> p0, <a class="el" href="a08303.html">Coordinate</a> p1, double frac)</td></tr>
-<tr class="memdesc:a9ecfa15254cc343c6166b5e9b3f05c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the location of a point a given fraction along a line segment.  <a href="#a9ecfa15254cc343c6166b5e9b3f05c03">More...</a><br /></td></tr>
-<tr class="separator:a9ecfa15254cc343c6166b5e9b3f05c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefeee61acc0d87ebcacf610af684935e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a08303.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#aefeee61acc0d87ebcacf610af684935e">pointAlongLine</a> (LineString line, double length)</td></tr>
-<tr class="memdesc:aefeee61acc0d87ebcacf610af684935e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the <a class="el" href="">Coordinate</a> of the point a given length along a <a class="el" href="">LineString</a>.  <a href="#aefeee61acc0d87ebcacf610af684935e">More...</a><br /></td></tr>
-<tr class="separator:aefeee61acc0d87ebcacf610af684935e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56ffa9468f6d51a81dfc6a16c7553e7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#ac56ffa9468f6d51a81dfc6a16c7553e7">zigZagEncode</a> (final int value)</td></tr>
+<tr class="separator:ac56ffa9468f6d51a81dfc6a16c7553e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d960ba7b421538218960be0b75dbdb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a39d960ba7b421538218960be0b75dbdb">zigZagDecode</a> (final int value)</td></tr>
+<tr class="separator:a39d960ba7b421538218960be0b75dbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a4f513b82951056a3f579d95f215e9307"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a4f513b82951056a3f579d95f215e9307">compute</a> (LineString line, double length)</td></tr>
-<tr class="separator:a4f513b82951056a3f579d95f215e9307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aae9b62bb90c0c25de44c11a2abc79afa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08303.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">pt</a></td></tr>
-<tr class="separator:aae9b62bb90c0c25de44c11a2abc79afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750b5d744c39a06bfb13e6eb010e35d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a></td></tr>
-<tr class="separator:a750b5d744c39a06bfb13e6eb010e35d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a92e0b11f85494a2b6953846ee6b4f88d"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a92e0b11f85494a2b6953846ee6b4f88d">POINT_TYPE</a> = 1</td></tr>
+<tr class="separator:a92e0b11f85494a2b6953846ee6b4f88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae612cee125e86b43a8a0895733e73471"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#ae612cee125e86b43a8a0895733e73471">LINESTRING_TYPE</a> = 2</td></tr>
+<tr class="separator:ae612cee125e86b43a8a0895733e73471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e033b07cdccae3d93c0fe865a9bc513"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a4e033b07cdccae3d93c0fe865a9bc513">POLYGON_TYPE</a> = 3</td></tr>
+<tr class="separator:a4e033b07cdccae3d93c0fe865a9bc513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21548c889cf575c0452ce54b0bb1564"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#ab21548c889cf575c0452ce54b0bb1564">MULTIPOINT_TYPE</a> = 4</td></tr>
+<tr class="separator:ab21548c889cf575c0452ce54b0bb1564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6a100cfe59d0f10d5ff0b83dd28e40"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#abc6a100cfe59d0f10d5ff0b83dd28e40">MULTILINESTRING_TYPE</a> = 5</td></tr>
+<tr class="separator:abc6a100cfe59d0f10d5ff0b83dd28e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a8622de581648619916bb8eb6cea2d"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#af8a8622de581648619916bb8eb6cea2d">MULTIPOLYGON_TYPE</a> = 6</td></tr>
+<tr class="separator:af8a8622de581648619916bb8eb6cea2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69af768670b09117152621e9765d4ca"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#ad69af768670b09117152621e9765d4ca">GEOMETRYCOLLECTION_TYPE</a> = 7</td></tr>
+<tr class="separator:ad69af768670b09117152621e9765d4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a64265ce21562ec2811dd05db08a9dd"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a0a64265ce21562ec2811dd05db08a9dd">EXTENDED_DIMENSIONS</a> = 1 &lt;&lt; 3</td></tr>
+<tr class="separator:a0a64265ce21562ec2811dd05db08a9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd4b309722d80cbae834f273b479450"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#acfd4b309722d80cbae834f273b479450">EMPTY_GEOMETRY</a> = 1 &lt;&lt; 4</td></tr>
+<tr class="separator:acfd4b309722d80cbae834f273b479450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd11c22d698708a6e11580242c97e89"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a2dd11c22d698708a6e11580242c97e89">MAX_COORD_PRECISION</a> = 7</td></tr>
+<tr class="separator:a2dd11c22d698708a6e11580242c97e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bee20a7d59eea71b635f7f136c48e91"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a5bee20a7d59eea71b635f7f136c48e91">MIN_COORD_PRECISION</a> = -8</td></tr>
+<tr class="separator:a5bee20a7d59eea71b635f7f136c48e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b750380e571ae88f99a796f9d54e49f"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#a5b750380e571ae88f99a796f9d54e49f">MAX_EXTENDED_PRECISION</a> = 3</td></tr>
+<tr class="separator:a5b750380e571ae88f99a796f9d54e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70b66875f973adc5547402ec3ab512d"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08327.html#ad70b66875f973adc5547402ec3ab512d">MIN_EXTENDED_PRECISION</a> = -4</td></tr>
+<tr class="separator:ad70b66875f973adc5547402ec3ab512d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides various ways of computing the actual value of a point a given length along a line. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0db8c96a170aff314d55b51d1090d8c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0db8c96a170aff314d55b51d1090d8c7">&#9670;&nbsp;</a></span>LocatePoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08327.html">LocatePoint</a> </td>
-          <td>(</td>
-          <td class="paramtype">LineString&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08327.html#a4f513b82951056a3f579d95f215e9307">LocatePoint.compute()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08327.html#aefeee61acc0d87ebcacf610af684935e">LocatePoint.pointAlongLine()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="a08327.html#a4f513b82951056a3f579d95f215e9307">compute</a>(line, length);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div><div class="ttc" id="a08327_html_a4f513b82951056a3f579d95f215e9307"><div class="ttname"><a href="a08327.html#a4f513b82951056a3f579d95f215e9307">org.locationtech.jump.algorithm.LocatePoint.compute</a></div><div class="ttdeci">void compute(LineString line, double length)</div><div class="ttdef"><b>Definition:</b> LocatePoint.java:100</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4f513b82951056a3f579d95f215e9307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f513b82951056a3f579d95f215e9307">&#9670;&nbsp;</a></span>compute()</h2>
+<a id="a39d960ba7b421538218960be0b75dbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d960ba7b421538218960be0b75dbdb">&#9670;&nbsp;</a></span>zigZagDecode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,108 +123,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void compute </td>
+          <td class="memname">static int zigZagDecode </td>
           <td>(</td>
-          <td class="paramtype">LineString&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08303.html#a15037c4d5389e3f03ce05dfce3649d67">Coordinate.distance()</a>, and <a class="el" href="a08327.html#a8138e49067c6447449ff0a8ce19bfed4">LocatePoint.pointAlongSegment()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08327.html#a0db8c96a170aff314d55b51d1090d8c7">LocatePoint.LocatePoint()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// &lt;TODO&gt; handle negative distances (measure from opposite end of line)</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">double</span> totalLength = 0.0;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    Coordinate[] coord = line.getCoordinates();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; coord.length - 1; i++) {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      Coordinate p0 = coord[i];</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      Coordinate p1 = coord[i+1];</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordtype">double</span> segLen = p1.distance(p0);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">if</span> (totalLength + segLen &gt; length) {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">pt</a> = <a class="code" href="a08327.html#a8138e49067c6447449ff0a8ce19bfed4">pointAlongSegment</a>(p0, p1, length - totalLength);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> = i;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      totalLength += segLen;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// distance is greater than line length</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">pt</a> = <span class="keyword">new</span> Coordinate(coord[coord.length - 1]);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a> = coord.length;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div><div class="ttc" id="a08327_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">org.locationtech.jump.algorithm.LocatePoint.index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition:</b> LocatePoint.java:93</div></div>
-<div class="ttc" id="a08327_html_a8138e49067c6447449ff0a8ce19bfed4"><div class="ttname"><a href="a08327.html#a8138e49067c6447449ff0a8ce19bfed4">org.locationtech.jump.algorithm.LocatePoint.pointAlongSegment</a></div><div class="ttdeci">static Coordinate pointAlongSegment(LineSegment seg, double length)</div><div class="ttdoc">Computes the location of a point a given length along a LineSegment. </div><div class="ttdef"><b>Definition:</b> LocatePoint.java:29</div></div>
-<div class="ttc" id="a08327_html_aae9b62bb90c0c25de44c11a2abc79afa"><div class="ttname"><a href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">org.locationtech.jump.algorithm.LocatePoint.pt</a></div><div class="ttdeci">Coordinate pt</div><div class="ttdef"><b>Definition:</b> LocatePoint.java:92</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a59d053c950ff1e9f8a004d493f34e754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59d053c950ff1e9f8a004d493f34e754">&#9670;&nbsp;</a></span>getIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getIndex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the index of the segment containing the computed point. </p>
-
-<p class="reference">References <a class="el" href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">LocatePoint.index</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{    <span class="keywordflow">return</span> <a class="code" href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>;  }</div><div class="ttc" id="a08327_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="a08327.html#a750b5d744c39a06bfb13e6eb010e35d0">org.locationtech.jump.algorithm.LocatePoint.index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition:</b> LocatePoint.java:93</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="add97f503ca58503d04ac9150e6c8ef7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add97f503ca58503d04ac9150e6c8ef7f">&#9670;&nbsp;</a></span>getPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08303.html">Coordinate</a> getPoint </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">LocatePoint.pt</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08327.html#aefeee61acc0d87ebcacf610af684935e">LocatePoint.pointAlongLine()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{    <span class="keywordflow">return</span> <a class="code" href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">pt</a>;  }</div><div class="ttc" id="a08327_html_aae9b62bb90c0c25de44c11a2abc79afa"><div class="ttname"><a href="a08327.html#aae9b62bb90c0c25de44c11a2abc79afa">org.locationtech.jump.algorithm.LocatePoint.pt</a></div><div class="ttdeci">Coordinate pt</div><div class="ttdef"><b>Definition:</b> LocatePoint.java:92</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aefeee61acc0d87ebcacf610af684935e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefeee61acc0d87ebcacf610af684935e">&#9670;&nbsp;</a></span>pointAlongLine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a08303.html">Coordinate</a> pointAlongLine </td>
-          <td>(</td>
-          <td class="paramtype">LineString&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -279,23 +137,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the <a class="el" href="">Coordinate</a> of the point a given length along a <a class="el" href="">LineString</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">line</td><td></td></tr>
-    <tr><td class="paramname">length</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="">Coordinate</a> of the desired point </dd></dl>
-
-<p class="reference">References <a class="el" href="a08327.html#add97f503ca58503d04ac9150e6c8ef7f">LocatePoint.getPoint()</a>, and <a class="el" href="a08327.html#a0db8c96a170aff314d55b51d1090d8c7">LocatePoint.LocatePoint()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="a08327.html#a0db8c96a170aff314d55b51d1090d8c7">LocatePoint</a> loc = <span class="keyword">new</span> <a class="code" href="a08327.html#a0db8c96a170aff314d55b51d1090d8c7">LocatePoint</a>(line, length);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> loc.getPoint();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div><div class="ttc" id="a08327_html_a0db8c96a170aff314d55b51d1090d8c7"><div class="ttname"><a href="a08327.html#a0db8c96a170aff314d55b51d1090d8c7">org.locationtech.jump.algorithm.LocatePoint.LocatePoint</a></div><div class="ttdeci">LocatePoint(LineString line, double length)</div><div class="ttdef"><b>Definition:</b> LocatePoint.java:95</div></div>
-</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a08323.html#a82112ea6921f2d28f7663dfa20ae32c6">TWKBReader.ExtendedPrecisionReader.ExtendedPrecisionReader()</a>, and <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                  {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">final</span> <span class="keywordtype">int</span> temp = (((value &lt;&lt; 31) &gt;&gt; 31) ^ value) &gt;&gt; 1;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> temp ^ (value &amp; (1 &lt;&lt; 31));</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a8138e49067c6447449ff0a8ce19bfed4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8138e49067c6447449ff0a8ce19bfed4">&#9670;&nbsp;</a></span>pointAlongSegment() <span class="overload">[1/2]</span></h2>
+<a id="ac56ffa9468f6d51a81dfc6a16c7553e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac56ffa9468f6d51a81dfc6a16c7553e7">&#9670;&nbsp;</a></span>zigZagEncode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,21 +151,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a08303.html">Coordinate</a> pointAlongSegment </td>
+          <td class="memname">static int zigZagEncode </td>
           <td>(</td>
-          <td class="paramtype">LineSegment&#160;</td>
-          <td class="paramname"><em>seg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -328,137 +165,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the location of a point a given length along a <a class="el" href="">LineSegment</a>. </p>
-<p>If the length exceeds the length of the line segment the last point of the segment is returned. If the length is negative the first point of the segment is returned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">seg</td><td>the line segment </td></tr>
-    <tr><td class="paramname">length</td><td>the length to the desired point </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="">Coordinate</a> of the desired point </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a08327.html#a4f513b82951056a3f579d95f215e9307">LocatePoint.compute()</a>, and <a class="el" href="a08319.html#ad8eec22df403077b17b2ac90b0c95230">LengthSubstring.computeSubstring()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a08327.html#a8138e49067c6447449ff0a8ce19bfed4">pointAlongSegment</a>(seg.p0, seg.p1, length);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div><div class="ttc" id="a08327_html_a8138e49067c6447449ff0a8ce19bfed4"><div class="ttname"><a href="a08327.html#a8138e49067c6447449ff0a8ce19bfed4">org.locationtech.jump.algorithm.LocatePoint.pointAlongSegment</a></div><div class="ttdeci">static Coordinate pointAlongSegment(LineSegment seg, double length)</div><div class="ttdoc">Computes the location of a point a given length along a LineSegment. </div><div class="ttdef"><b>Definition:</b> LocatePoint.java:29</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4b414ab63960ecfa283932288f9977f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b414ab63960ecfa283932288f9977f7">&#9670;&nbsp;</a></span>pointAlongSegment() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a08303.html">Coordinate</a> pointAlongSegment </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a08303.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>p0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a08303.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the location of a point a given length along a line segment. </p>
-<p>If the length exceeds the length of the line segment the last point of the segment is returned. If the length is negative the first point of the segment is returned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p0</td><td>the first point of the line segment </td></tr>
-    <tr><td class="paramname">p1</td><td>the last point of the line segment </td></tr>
-    <tr><td class="paramname">length</td><td>the length to the desired point </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="">Coordinate</a> of the desired point </dd></dl>
-
-<p class="reference">References <a class="el" href="a08303.html#a15037c4d5389e3f03ce05dfce3649d67">Coordinate.distance()</a>, <a class="el" href="a08303.html#af88b946fb90d5f08b5fb740c70e98c10">Coordinate.x</a>, and <a class="el" href="a08303.html#ab927965981178aa1fba979a37168db2a">Coordinate.y</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">double</span> segLen = p1.distance(p0);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">double</span> frac = length / segLen;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (frac &lt;= 0.0) <span class="keywordflow">return</span> p0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (frac &gt;= 1.0) <span class="keywordflow">return</span> p1;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">double</span> x = (p1.x - p0.x) * frac + p0.x;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> y = (p1.y - p0.y) * frac + p0.y;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Coordinate(x, y);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a9ecfa15254cc343c6166b5e9b3f05c03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ecfa15254cc343c6166b5e9b3f05c03">&#9670;&nbsp;</a></span>pointAlongSegmentByFraction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a08303.html">Coordinate</a> pointAlongSegmentByFraction </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a08303.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>p0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a08303.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>frac</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the location of a point a given fraction along a line segment. </p>
-<p>If the fraction exceeds 1 the last point of the segment is returned. If the fraction is negative the first point of the segment is returned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p0</td><td>the first point of the line segment </td></tr>
-    <tr><td class="paramname">p1</td><td>the last point of the line segment </td></tr>
-    <tr><td class="paramname">frac</td><td>the fraction of the segment to the desired point </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="">Coordinate</a> of the desired point </dd></dl>
-
-<p class="reference">References <a class="el" href="a08303.html#af88b946fb90d5f08b5fb740c70e98c10">Coordinate.x</a>, and <a class="el" href="a08303.html#ab927965981178aa1fba979a37168db2a">Coordinate.y</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (frac &lt;= 0.0) <span class="keywordflow">return</span> p0;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (frac &gt;= 1.0) <span class="keywordflow">return</span> p1;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> x = (p1.x - p0.x) * frac + p0.x;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> y = (p1.y - p0.y) * frac + p0.y;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> Coordinate(x, y);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a08331.html#a2513e591488b85a0a4ffae1f192e48d1">TWKBWriter.getTypeAndPrecisionByte()</a>, and <a class="el" href="a08339.html#a320ccd90ec0ef71a4353104b7fe98a1c">TWKBWriter.ExtendedPrecisionWriter.writeExtendedPrecision()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                  {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> (value &lt;&lt; 1) ^ (value &gt;&gt; 31);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a750b5d744c39a06bfb13e6eb010e35d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a750b5d744c39a06bfb13e6eb010e35d0">&#9670;&nbsp;</a></span>index</h2>
+<a id="acfd4b309722d80cbae834f273b479450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd4b309722d80cbae834f273b479450">&#9670;&nbsp;</a></span>EMPTY_GEOMETRY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,22 +180,22 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int index</td>
+          <td class="memname">final byte EMPTY_GEOMETRY = 1 &lt;&lt; 4</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a08327.html#a59d053c950ff1e9f8a004d493f34e754">LocatePoint.getIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a08311.html#ab4d4478c3bf2e64323326c692fc8423c">TWKBReader.readGeometryCollection()</a>, <a class="el" href="a08311.html#acede6c0ca02364e8d3082860dbc85756">TWKBReader.readLineString()</a>, <a class="el" href="a08311.html#a2eb2c0cc11788b2a6b4076b1cbc33d4d">TWKBReader.readMultiLineString()</a>, <a class="el" href="a08311.html#a2839b0647e24edb08f4d36933d5085d0">TWKBReader.readMultiPoint()</a>, <a class="el" href="a08311.html#a9cc7f376f2d046a015b6d579aa02880f">TWKBReader.readMultiPolygon()</a>, <a class="el" href="a08311.html#a5f412336d0409a4764a3f8c7f32d762d">TWKBReader.readPoint()</a>, <a class="el" href="a08311.html#aaf811e3872d22365c43a9226c5ba9a5e">TWKBReader.readPolygon()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
 
 </div>
 </div>
-<a id="aae9b62bb90c0c25de44c11a2abc79afa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae9b62bb90c0c25de44c11a2abc79afa">&#9670;&nbsp;</a></span>pt</h2>
+<a id="a0a64265ce21562ec2811dd05db08a9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a64265ce21562ec2811dd05db08a9dd">&#9670;&nbsp;</a></span>EXTENDED_DIMENSIONS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -491,17 +204,277 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a08303.html">Coordinate</a> pt</td>
+          <td class="memname">final byte EXTENDED_DIMENSIONS = 1 &lt;&lt; 3</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a08327.html#add97f503ca58503d04ac9150e6c8ef7f">LocatePoint.getPoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="ad69af768670b09117152621e9765d4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69af768670b09117152621e9765d4ca">&#9670;&nbsp;</a></span>GEOMETRYCOLLECTION_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte GEOMETRYCOLLECTION_TYPE = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="ae612cee125e86b43a8a0895733e73471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae612cee125e86b43a8a0895733e73471">&#9670;&nbsp;</a></span>LINESTRING_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte LINESTRING_TYPE = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="a2dd11c22d698708a6e11580242c97e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd11c22d698708a6e11580242c97e89">&#9670;&nbsp;</a></span>MAX_COORD_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MAX_COORD_PRECISION = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#a2990399609cc699aee5a40156feee03e">TWKBWriter.TWKBWriter()</a>.</p>
+
+</div>
+</div>
+<a id="a5b750380e571ae88f99a796f9d54e49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b750380e571ae88f99a796f9d54e49f">&#9670;&nbsp;</a></span>MAX_EXTENDED_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MAX_EXTENDED_PRECISION = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08339.html#a7626720b9bf807253dd702a0214dc9f0">TWKBWriter.ExtendedPrecisionWriter.finalize()</a>.</p>
+
+</div>
+</div>
+<a id="a5bee20a7d59eea71b635f7f136c48e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bee20a7d59eea71b635f7f136c48e91">&#9670;&nbsp;</a></span>MIN_COORD_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MIN_COORD_PRECISION = -8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad70b66875f973adc5547402ec3ab512d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70b66875f973adc5547402ec3ab512d">&#9670;&nbsp;</a></span>MIN_EXTENDED_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MIN_EXTENDED_PRECISION = -4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc6a100cfe59d0f10d5ff0b83dd28e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6a100cfe59d0f10d5ff0b83dd28e40">&#9670;&nbsp;</a></span>MULTILINESTRING_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MULTILINESTRING_TYPE = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="ab21548c889cf575c0452ce54b0bb1564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21548c889cf575c0452ce54b0bb1564">&#9670;&nbsp;</a></span>MULTIPOINT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MULTIPOINT_TYPE = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="af8a8622de581648619916bb8eb6cea2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a8622de581648619916bb8eb6cea2d">&#9670;&nbsp;</a></span>MULTIPOLYGON_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte MULTIPOLYGON_TYPE = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="a92e0b11f85494a2b6953846ee6b4f88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e0b11f85494a2b6953846ee6b4f88d">&#9670;&nbsp;</a></span>POINT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte POINT_TYPE = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="a4e033b07cdccae3d93c0fe865a9bc513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e033b07cdccae3d93c0fe865a9bc513">&#9670;&nbsp;</a></span>POLYGON_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final byte POLYGON_TYPE = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#af6ac6c1ca84de00107ff33acf010fb56">TWKBWriter.getType()</a>, <a class="el" href="a08311.html#a9652885c7bbb8ceaa0fd9449fe537fba">TWKBReader.read()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
 
 </div>
 </div>
@@ -511,7 +484,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03909.html">locationtech</a></li><li class="navelem"><a class="el" href="a03919.html">jump</a></li><li class="navelem"><a class="el" href="a03918.html">algorithm</a></li><li class="navelem"><a class="el" href="a08327.html">LocatePoint</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03933.html">locationtech</a></li><li class="navelem"><a class="el" href="a03934.html">geowave</a></li><li class="navelem"><a class="el" href="a03935.html">core</a></li><li class="navelem"><a class="el" href="a03936.html">geotime</a></li><li class="navelem"><a class="el" href="a03932.html">util</a></li><li class="navelem"><a class="el" href="a08327.html">TWKBUtils</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ShapeUtilities Class Reference</title>
+<title>jena-geo: WKBRasterImageReader.InputStreamAdapter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,72 +61,321 @@ $(document).ready(function(){initNavTree('a06739.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a06736.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ShapeUtilities Class Reference</div>  </div>
+<div class="title">WKBRasterImageReader.InputStreamAdapter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Static methods operating on shapes from the <a class="el" href="">java.awt.geom</a> package.  
- <a href="a06739.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ShapeUtilities:</div>
+Inheritance diagram for WKBRasterImageReader.InputStreamAdapter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06738.png" border="0" usemap="#ShapeUtilities_inherit__map" alt="Inheritance graph"/></div>
-<map name="ShapeUtilities_inherit__map" id="ShapeUtilities_inherit__map">
-<area shape="rect" id="node2" href="a07367.html" title="Parent of classes that contain only static utility methods. " alt="" coords="29,5,85,32"/>
+<div class="center"><img src="a06738.png" border="0" usemap="#WKBRasterImageReader_8InputStreamAdapter_inherit__map" alt="Inheritance graph"/></div>
+<map name="WKBRasterImageReader_8InputStreamAdapter_inherit__map" id="WKBRasterImageReader_8InputStreamAdapter_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for ShapeUtilities:</div>
+Collaboration diagram for WKBRasterImageReader.InputStreamAdapter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06737.png" border="0" usemap="#ShapeUtilities_coll__map" alt="Collaboration graph"/></div>
-<map name="ShapeUtilities_coll__map" id="ShapeUtilities_coll__map">
-<area shape="rect" id="node2" href="a07367.html" title="Parent of classes that contain only static utility methods. " alt="" coords="29,5,85,32"/>
+<div class="center"><img src="a06737.png" border="0" usemap="#WKBRasterImageReader_8InputStreamAdapter_coll__map" alt="Collaboration graph"/></div>
+<map name="WKBRasterImageReader_8InputStreamAdapter_coll__map" id="WKBRasterImageReader_8InputStreamAdapter_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a138b481a7adb237f52a206446550cae6"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#a138b481a7adb237f52a206446550cae6">intersectionPoint</a> (final Line2D a, final Line2D b)</td></tr>
-<tr class="memdesc:a138b481a7adb237f52a206446550cae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the intersection point between two line segments.  <a href="#a138b481a7adb237f52a206446550cae6">More...</a><br /></td></tr>
-<tr class="separator:a138b481a7adb237f52a206446550cae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd0388dc5158b49716eea7caac5a89b"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#a0dd0388dc5158b49716eea7caac5a89b">nearestColinearPoint</a> (final Line2D segment, final Point2D point)</td></tr>
-<tr class="memdesc:a0dd0388dc5158b49716eea7caac5a89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the point on the given.  <a href="#a0dd0388dc5158b49716eea7caac5a89b">More...</a><br /></td></tr>
-<tr class="separator:a0dd0388dc5158b49716eea7caac5a89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec8d7e0c83de51460efd085bb4c5101"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#acec8d7e0c83de51460efd085bb4c5101">colinearPoint</a> (Line2D line, Point2D point, double distance)</td></tr>
-<tr class="memdesc:acec8d7e0c83de51460efd085bb4c5101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a point on the given.  <a href="#acec8d7e0c83de51460efd085bb4c5101">More...</a><br /></td></tr>
-<tr class="separator:acec8d7e0c83de51460efd085bb4c5101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195b4c03a4ad4e64687595a011a116ea"><td class="memItemLeft" align="right" valign="top">static QuadCurve2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#a195b4c03a4ad4e64687595a011a116ea">fitParabol</a> (final Point2D P0, final Point2D P1, final Point2D P2, final boolean horizontal)</td></tr>
-<tr class="memdesc:a195b4c03a4ad4e64687595a011a116ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quadratic curve passing by the 3 given points.  <a href="#a195b4c03a4ad4e64687595a011a116ea">More...</a><br /></td></tr>
-<tr class="separator:a195b4c03a4ad4e64687595a011a116ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc471b70074feb3332e2b5e6b03748b2"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#afc471b70074feb3332e2b5e6b03748b2">parabolicControlPoint</a> (final Point2D P0, final Point2D P1, final Point2D P2, final boolean horizontal)</td></tr>
-<tr class="memdesc:afc471b70074feb3332e2b5e6b03748b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the control point of a quadratic curve passing by the 3 given points.  <a href="#afc471b70074feb3332e2b5e6b03748b2">More...</a><br /></td></tr>
-<tr class="separator:afc471b70074feb3332e2b5e6b03748b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada261f4ee730a3aa50d9167a449af717"><td class="memItemLeft" align="right" valign="top">static Ellipse2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#ada261f4ee730a3aa50d9167a449af717">fitCircle</a> (final Point2D P1, final Point2D P2, final Point2D P3)</td></tr>
-<tr class="memdesc:ada261f4ee730a3aa50d9167a449af717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a circle passing by the 3 given points.  <a href="#ada261f4ee730a3aa50d9167a449af717">More...</a><br /></td></tr>
-<tr class="separator:ada261f4ee730a3aa50d9167a449af717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa692d3d79782d011478935c258ec1212"><td class="memItemLeft" align="right" valign="top">static Shape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#aa692d3d79782d011478935c258ec1212">toPrimitive</a> (final Shape path)</td></tr>
-<tr class="memdesc:aa692d3d79782d011478935c258ec1212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to replace an arbitrary shape by one of the standard Java2D constructs.  <a href="#aa692d3d79782d011478935c258ec1212">More...</a><br /></td></tr>
-<tr class="separator:aa692d3d79782d011478935c258ec1212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8867b3b1851a7381d944e23ca284099"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#aa8867b3b1851a7381d944e23ca284099">getFlatness</a> (final Shape shape)</td></tr>
-<tr class="memdesc:aa8867b3b1851a7381d944e23ca284099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a suggested value for the.  <a href="#aa8867b3b1851a7381d944e23ca284099">More...</a><br /></td></tr>
-<tr class="separator:aa8867b3b1851a7381d944e23ca284099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af69e241062051882eccd0054ebf61dca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#af69e241062051882eccd0054ebf61dca">InputStreamAdapter</a> (final ImageInputStream <a class="el" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>)</td></tr>
+<tr class="memdesc:af69e241062051882eccd0054ebf61dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new input stream.  <a href="#af69e241062051882eccd0054ebf61dca">More...</a><br /></td></tr>
+<tr class="separator:af69e241062051882eccd0054ebf61dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab5dab5b969a87f538242e524431637"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#aaab5dab5b969a87f538242e524431637">read</a> ()  throws IOException </td></tr>
+<tr class="memdesc:aaab5dab5b969a87f538242e524431637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the next byte of data from the input stream.  <a href="#aaab5dab5b969a87f538242e524431637">More...</a><br /></td></tr>
+<tr class="separator:aaab5dab5b969a87f538242e524431637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37221182275cc3971d30ff2f0bf0599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#ac37221182275cc3971d30ff2f0bf0599">read</a> (final byte[] b)  throws IOException </td></tr>
+<tr class="memdesc:ac37221182275cc3971d30ff2f0bf0599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads some number of bytes from the input stream.  <a href="#ac37221182275cc3971d30ff2f0bf0599">More...</a><br /></td></tr>
+<tr class="separator:ac37221182275cc3971d30ff2f0bf0599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12fc1cdbd694717be9e6bad04648af0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#aa12fc1cdbd694717be9e6bad04648af0">read</a> (final byte[] b, final int off, final int len)  throws IOException </td></tr>
+<tr class="memdesc:aa12fc1cdbd694717be9e6bad04648af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads up to.  <a href="#aa12fc1cdbd694717be9e6bad04648af0">More...</a><br /></td></tr>
+<tr class="separator:aa12fc1cdbd694717be9e6bad04648af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3954a0efb16f8d450ec0b543e172e01"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#ae3954a0efb16f8d450ec0b543e172e01">skip</a> (final long n)  throws IOException </td></tr>
+<tr class="memdesc:ae3954a0efb16f8d450ec0b543e172e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips over and discards.  <a href="#ae3954a0efb16f8d450ec0b543e172e01">More...</a><br /></td></tr>
+<tr class="separator:ae3954a0efb16f8d450ec0b543e172e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2085a25d5723c2f2c78cdac8cdb06230"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#a2085a25d5723c2f2c78cdac8cdb06230">markSupported</a> ()</td></tr>
+<tr class="memdesc:a2085a25d5723c2f2c78cdac8cdb06230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns always.  <a href="#a2085a25d5723c2f2c78cdac8cdb06230">More...</a><br /></td></tr>
+<tr class="separator:a2085a25d5723c2f2c78cdac8cdb06230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf174d002cece2e489005bb7d1bdc439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#adf174d002cece2e489005bb7d1bdc439">mark</a> (final int readlimit)</td></tr>
+<tr class="memdesc:adf174d002cece2e489005bb7d1bdc439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the current position in this input stream.  <a href="#adf174d002cece2e489005bb7d1bdc439">More...</a><br /></td></tr>
+<tr class="separator:adf174d002cece2e489005bb7d1bdc439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()  throws IOException </td></tr>
+<tr class="memdesc:ad20897c5c8bd47f5d4005989bead0e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repositions this stream to the position at the time the.  <a href="#ad20897c5c8bd47f5d4005989bead0e55">More...</a><br /></td></tr>
+<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae591df94fc66ccb85cbb6565368bca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#a5ae591df94fc66ccb85cbb6565368bca">close</a> ()  throws IOException </td></tr>
+<tr class="memdesc:a5ae591df94fc66ccb85cbb6565368bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes this input stream.  <a href="#a5ae591df94fc66ccb85cbb6565368bca">More...</a><br /></td></tr>
+<tr class="separator:a5ae591df94fc66ccb85cbb6565368bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af78d21832069973dc6d597cd6e15d016"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#af78d21832069973dc6d597cd6e15d016">ShapeUtilities</a> ()</td></tr>
-<tr class="memdesc:af78d21832069973dc6d597cd6e15d016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow instantiation of this class.  <a href="#af78d21832069973dc6d597cd6e15d016">More...</a><br /></td></tr>
-<tr class="separator:af78d21832069973dc6d597cd6e15d016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a37ec8f3c8fa304270ef4760530a627e8"><td class="memItemLeft" align="right" valign="top">final ImageInputStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a></td></tr>
+<tr class="memdesc:a37ec8f3c8fa304270ef4760530a627e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wrapped image input stream.  <a href="#a37ec8f3c8fa304270ef4760530a627e8">More...</a><br /></td></tr>
+<tr class="separator:a37ec8f3c8fa304270ef4760530a627e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Static methods operating on shapes from the <a class="el" href="">java.awt.geom</a> package. </p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (MPO, IRD, Geomatys)  </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af78d21832069973dc6d597cd6e15d016"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af78d21832069973dc6d597cd6e15d016">&#9670;&nbsp;</a></span>ShapeUtilities()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af69e241062051882eccd0054ebf61dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af69e241062051882eccd0054ebf61dca">&#9670;&nbsp;</a></span>InputStreamAdapter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06739.html">InputStreamAdapter</a> </td>
+          <td>(</td>
+          <td class="paramtype">final ImageInputStream&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new input stream. </p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                                            {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        this.<a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a> = <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5ae591df94fc66ccb85cbb6565368bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae591df94fc66ccb85cbb6565368bca">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Closes this input stream. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                           {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.close();</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adf174d002cece2e489005bb7d1bdc439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf174d002cece2e489005bb7d1bdc439">&#9670;&nbsp;</a></span>mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mark </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>readlimit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Marks the current position in this input stream. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                          {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.mark();</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2085a25d5723c2f2c78cdac8cdb06230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2085a25d5723c2f2c78cdac8cdb06230">&#9670;&nbsp;</a></span>markSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean markSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns always. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> .</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                   {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aaab5dab5b969a87f538242e524431637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab5dab5b969a87f538242e524431637">&#9670;&nbsp;</a></span>read() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads the next byte of data from the input stream. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                         {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.read();</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac37221182275cc3971d30ff2f0bf0599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37221182275cc3971d30ff2f0bf0599">&#9670;&nbsp;</a></span>read() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read </td>
+          <td>(</td>
+          <td class="paramtype">final byte []&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads some number of bytes from the input stream. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                                       {</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.read(b);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa12fc1cdbd694717be9e6bad04648af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa12fc1cdbd694717be9e6bad04648af0">&#9670;&nbsp;</a></span>read() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int read </td>
+          <td>(</td>
+          <td class="paramtype">final byte []&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>off</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads up to. </p>
+<div class="fragment"><div class="line">len </div></div><!-- fragment --><p> bytes of data from the input stream.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                                                     {</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.read(b, off, len);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Repositions this stream to the position at the time the. </p>
+<div class="fragment"><div class="line"><a class="code" href="a06739.html#adf174d002cece2e489005bb7d1bdc439">mark</a> </div></div><!-- fragment --><p> method was last called.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                           {</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.reset();</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae3954a0efb16f8d450ec0b543e172e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3954a0efb16f8d450ec0b543e172e01">&#9670;&nbsp;</a></span>skip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long skip </td>
+          <td>(</td>
+          <td class="paramtype">final long&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skips over and discards. </p>
+<div class="fragment"><div class="line">n </div></div><!-- fragment --><p> bytes of data from this input stream.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>if an I/O error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                                      {</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">input</a>.skipBytes(n);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div><div class="ttc" id="a06739_html_a37ec8f3c8fa304270ef4760530a627e8"><div class="ttname"><a href="a06739.html#a37ec8f3c8fa304270ef4760530a627e8">org.geotoolkit.coverage.wkb.WKBRasterImageReader.InputStreamAdapter.input</a></div><div class="ttdeci">final ImageInputStream input</div><div class="ttdoc">The wrapped image input stream. </div><div class="ttdef"><b>Definition:</b> WKBRasterImageReader.java:164</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a37ec8f3c8fa304270ef4760530a627e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ec8f3c8fa304270ef4760530a627e8">&#9670;&nbsp;</a></span>input</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,10 +384,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06739.html">ShapeUtilities</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">final ImageInputStream input</td>
         </tr>
       </table>
   </td>
@@ -148,466 +394,8 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Do not allow instantiation of this class. </p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                             {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="acec8d7e0c83de51460efd085bb4c5101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec8d7e0c83de51460efd085bb4c5101">&#9670;&nbsp;</a></span>colinearPoint()</h2>
+<p>The wrapped image input stream. </p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Point2D.Double colinearPoint </td>
-          <td>(</td>
-          <td class="paramtype">Line2D&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Point2D&#160;</td>
-          <td class="paramname"><em>point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>distance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a point on the given. </p>
-<div class="fragment"><div class="line">line </div></div><!-- fragment --><p> segment located at the given</p><div class="fragment"><div class="line">distance </div></div><!-- fragment --><p> from that line. Let</p><div class="fragment"><div class="line">result </div></div><!-- fragment --><p> be the returned point. If</p><div class="fragment"><div class="line">result </div></div><!-- fragment --><p> is not null, then this method guarantees (except for rounding error) that: </p>
-<ul>
-<li>
-<div class="fragment"><div class="line">result </div></div><!-- fragment --> is a point on the<div class="fragment"><div class="line">line </div></div><!-- fragment --> segment. It is located between the  Line2D::getP1 P1} and  Line2D::getP2 P2} ending points of that line segment. </li>
-<li>
-The distance between the<div class="fragment"><div class="line">result </div></div><!-- fragment --> and the given<div class="fragment"><div class="line">point </div></div><!-- fragment --> is exactly equal to<div class="fragment"><div class="line">distance </div></div><!-- fragment --> . </li>
-</ul>
-<p>If no result point meets those conditions, then this method returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . If two result points meet those conditions, then this method returns the point which is the closest to</p><div class="fragment"><div class="line">line.getP1() </div></div><!-- fragment --><p> .</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">line</td><td>The line on which to search for a point. </td></tr>
-    <tr><td class="paramname">point</td><td>A point close to the given line. </td></tr>
-    <tr><td class="paramname">distance</td><td>The distance between the given point and the point to be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A point on the given line located at the given distance from the given point.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06739.html#a0dd0388dc5158b49716eea7caac5a89b" title="Returns the point on the given. ">nearestColinearPoint(Line2D, Point2D)</a></dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03756.html#_deprecated000004">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#colinearPoint(Line2D, Point2D, double)</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                                            {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.colinearPoint(</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                line.getX1(), line.getY1(), line.getX2(), line.getY2(),</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                point.getX(), point.getY(), distance);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ada261f4ee730a3aa50d9167a449af717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada261f4ee730a3aa50d9167a449af717">&#9670;&nbsp;</a></span>fitCircle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Ellipse2D.Double fitCircle </td>
-          <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a circle passing by the 3 given points. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">P1</td><td>The first point. </td></tr>
-    <tr><td class="paramname">P2</td><td>The second point. </td></tr>
-    <tr><td class="paramname">P3</td><td>The third point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A circle passing by the given points.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03756.html#_deprecated000005">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#circle(Point2D, Point2D, Point2D)</a></dd></dl>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                                                                                                   {</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">final</span> Point2D center = <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.circleCentre(</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                P1.getX(), P1.getY(),</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                P2.getX(), P2.getY(),</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                P3.getX(), P3.getY());</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> radius = center.distance(P2);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Ellipse2D.Double(center.getX() - radius,</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                    center.getY() - radius,</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                    2*radius, 2*radius);</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a195b4c03a4ad4e64687595a011a116ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a195b4c03a4ad4e64687595a011a116ea">&#9670;&nbsp;</a></span>fitParabol()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static QuadCurve2D.Double fitParabol </td>
-          <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>horizontal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a quadratic curve passing by the 3 given points. </p>
-<p>There is an infinity of quadratic curves passing by 3 points. We can express the curve we are looking for as a parabolic equation of the form</p><div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --><p> but where the <em>x</em> axis is not necessarily horizontal. The orientation of the <em>x</em> axis in the above equation is determined by the</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> parameter: </p>
-<ul>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be horizontal. The quadratic curve will then look like an ordinary parabolic curve as we see in mathematic school book. </li>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be parallel to the line segment joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> ending points. </li>
-</ul>
-<p>Note that if</p><div class="fragment"><div class="line">P0.y == P2.y </div></div><!-- fragment --><p> , then both</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> values produce the same result.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">P0</td><td>The starting point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">P1</td><td>A point by which the quadratic curve must pass by. </td></tr>
-    <tr><td class="paramname">P2</td><td>The ending point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">horizontal</td><td>If<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> , the <em>x</em> axis is considered horizontal while computing the<div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --> equation terms. If<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> , it is considered parallel to the line joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> points. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A quadratic curve passing by the given points. The curve starts at<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and ends at<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> . If two points are too close or if the three points are colinear, then this method returns<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </dd></dl>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.fitParabol(</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                P0.getX(), P0.getY(),</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                P1.getX(), P1.getY(),</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                P2.getX(), P2.getY(), horizontal);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa8867b3b1851a7381d944e23ca284099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8867b3b1851a7381d944e23ca284099">&#9670;&nbsp;</a></span>getFlatness()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static double getFlatness </td>
-          <td>(</td>
-          <td class="paramtype">final Shape&#160;</td>
-          <td class="paramname"><em>shape</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a suggested value for the. </p>
-<div class="fragment"><div class="line">flatness </div></div><!-- fragment --><p> argument in <a class="el" href="">Shape#getPathIterator(AffineTransform,double)</a> for the specified shape.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">shape</td><td>The shape for which to compute a flatness factor. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The suggested flatness factor. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                        {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keyword">final</span> Rectangle2D bounds = shape.getBounds2D();</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> dx = bounds.getWidth();</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> dy = bounds.getHeight();</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> max(0.025 * min(dx, dy),</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                   0.001 * max(dx, dy));</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a138b481a7adb237f52a206446550cae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a138b481a7adb237f52a206446550cae6">&#9670;&nbsp;</a></span>intersectionPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Point2D.Double intersectionPoint </td>
-          <td>(</td>
-          <td class="paramtype">final Line2D&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Line2D&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the intersection point between two line segments. </p>
-<p>The lines do not continue to infinity; if the intersection do not occurs between the ending points  Line2D::getP1 P1} and  Line2D::getP2 P2} of the two line segments, then this method returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> .</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>The first line segment. </td></tr>
-    <tr><td class="paramname">b</td><td>The second line segment. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The intersection point, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03756.html#_deprecated000002">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#intersectionPoint(Line2D, Line2D)</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                                   {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.intersectionPoint(</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                a.getX1(), a.getY1(), a.getX2(), a.getY2(),</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                b.getX1(), b.getY1(), b.getX2(), b.getY2());</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0dd0388dc5158b49716eea7caac5a89b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd0388dc5158b49716eea7caac5a89b">&#9670;&nbsp;</a></span>nearestColinearPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Point2D.Double nearestColinearPoint </td>
-          <td>(</td>
-          <td class="paramtype">final Line2D&#160;</td>
-          <td class="paramname"><em>segment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the point on the given. </p>
-<div class="fragment"><div class="line">line </div></div><!-- fragment --><p> segment which is closest to the given </p><div class="fragment"><div class="line">point </div></div><!-- fragment --><p> . Let</p><div class="fragment"><div class="line">result </div></div><!-- fragment --><p> be the returned point. This method guarantees (except for rounding errors) that: </p>
-<ul>
-<li>
-<div class="fragment"><div class="line">result </div></div><!-- fragment --> is a point on the<div class="fragment"><div class="line">line </div></div><!-- fragment --> segment. It is located between the  Line2D::getP1 P1} and  Line2D::getP2 P2} ending points of that line segment. </li>
-<li>
-The distance between the<div class="fragment"><div class="line">result </div></div><!-- fragment --> point and the given<div class="fragment"><div class="line">point </div></div><!-- fragment --> is the shortest distance among the set of points meeting the previous condition. This distance can be obtained with<div class="fragment"><div class="line">point.distance(result) </div></div><!-- fragment --> . </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">segment</td><td>The line on which to search for a point. </td></tr>
-    <tr><td class="paramname">point</td><td>A point close to the given line. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The nearest point on the given line.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06739.html#acec8d7e0c83de51460efd085bb4c5101" title="Returns a point on the given. ">colinearPoint(Line2D, Point2D, double)</a></dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03756.html#_deprecated000003">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#nearestColinearPoint(Line2D, Point2D)</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                                                 {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.nearestColinearPoint(</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                segment.getX1(), segment.getY1(),</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                segment.getX2(), segment.getY2(),</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  point.getX(),    point.getY());</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afc471b70074feb3332e2b5e6b03748b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc471b70074feb3332e2b5e6b03748b2">&#9670;&nbsp;</a></span>parabolicControlPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Point2D.Double parabolicControlPoint </td>
-          <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>horizontal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the control point of a quadratic curve passing by the 3 given points. </p>
-<p>There is an infinity of quadratic curves passing by 3 points. We can express the curve we are looking for as a parabolic equation of the form</p><div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --><p> but where the <em>x</em> axis is not necessarily horizontal. The orientation of the <em>x</em> axis in the above equation is determined by the</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> parameter: </p>
-<ul>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be horizontal. The quadratic curve will then look like an ordinary parabolic curve as we see in mathematic school book. </li>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be parallel to the line segment joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> ending points. </li>
-</ul>
-<p>Note that if</p><div class="fragment"><div class="line">P0.y == P2.y </div></div><!-- fragment --><p> , then both</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> values produce the same result.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">P0</td><td>The starting point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">P1</td><td>A point by which the quadratic curve must pass by. </td></tr>
-    <tr><td class="paramname">P2</td><td>The ending point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">horizontal</td><td>If<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> , the <em>x</em> axis is considered horizontal while computing the<div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --> equation terms. If<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> , it is considered parallel to the line joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> points. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The control point of a quadratic curve passing by the given points. The curve starts at<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and ends at<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> . If two points are too close or if the three points are colinear, then this method returns<div class="fragment"><div class="line">null </div></div><!-- fragment --> .</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.20 </dd></dl>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.parabolicControlPoint(</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                P0.getX(), P0.getY(),</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                P1.getX(), P1.getY(),</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                P2.getX(), P2.getY(), horizontal);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa692d3d79782d011478935c258ec1212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa692d3d79782d011478935c258ec1212">&#9670;&nbsp;</a></span>toPrimitive()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Shape toPrimitive </td>
-          <td>(</td>
-          <td class="paramtype">final Shape&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Attempts to replace an arbitrary shape by one of the standard Java2D constructs. </p>
-<p>For example if the given</p><div class="fragment"><div class="line">path </div></div><!-- fragment --><p> is a <a class="el" href="">Path2D</a> containing only a single line or a quadratic curve, then this method replaces it by a <a class="el" href="">Line2D</a> or <a class="el" href="">QuadCurve2D</a> object respectively.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>The shape to replace by a simpler Java2D construct. This is generally an instance of <a class="el" href="">Path2D</a>, but doesn't have to. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A simpler Java construct, or<div class="fragment"><div class="line">path </div></div><!-- fragment --> if no better construct is proposed. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                      {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03833.html">org</a>.<a class="code" href="a03834.html">apache</a>.<a class="code" href="a03835.html">sis</a>.<a class="code" href="a03839.html">internal</a>.referencing.j2d.ShapeUtilities.toPrimitive(path);</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div><div class="ttc" id="a03839_html"><div class="ttname"><a href="a03839.html">org.apache.sis.internal</a></div></div>
-<div class="ttc" id="a03835_html"><div class="ttname"><a href="a03835.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03834_html"><div class="ttname"><a href="a03834.html">org.apache</a></div></div>
-<div class="ttc" id="a03833_html"><div class="ttname"><a href="a03833.html">org</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -616,7 +404,7 @@ A value of<div class="fragment"><div class="line"><span class="keyword">false</s
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03845.html">display</a></li><li class="navelem"><a class="el" href="a03844.html">shape</a></li><li class="navelem"><a class="el" href="a06739.html">ShapeUtilities</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03865.html">coverage</a></li><li class="navelem"><a class="el" href="a03867.html">wkb</a></li><li class="navelem"><a class="el" href="a06731.html">WKBRasterImageReader</a></li><li class="navelem"><a class="el" href="a06739.html">InputStreamAdapter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

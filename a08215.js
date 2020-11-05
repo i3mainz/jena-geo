@@ -1,16 +1,8 @@
 var a08215 =
 [
-    [ "ExtendedParameterDescriptor", "a08215.html#a7c8344aefc5eea5c5d702bbb3012b436", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#a7f797294ae241c1c8a7885f4a6a1a4fa", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#ae7c0493b002cc0b4bad8ce26cd07e1cf", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#a0eacfdaec7704d5bb1627eb056309837", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#a2ef5a124d9db536daf029e156cb37f06", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#a7d141dc9dbe541c75f8470e0bb6b7edf", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#a6bb79128a433fa5f3b0046bcdd512535", null ],
-    [ "ExtendedParameterDescriptor", "a08215.html#a85af78c7100fcfa1666bb3912072c650", null ],
-    [ "getUserObject", "a08215.html#ab9e6b92c05ffe71d9df2d956a668cd7c", null ],
-    [ "properties", "a08215.html#a12a97c62177728fc26eac0fd92c67784", null ],
-    [ "properties", "a08215.html#a6d9207ded20074e946f650dc786d667e", null ],
-    [ "toRange", "a08215.html#a98242d84554637c51fdf816b2d8a167c", null ],
-    [ "userObject", "a08215.html#ade16c9140882fd884cdf1ddf4c110078", null ]
+    [ "WeakPropertyChangeListener", "a08215.html#a0eff5c9547bd2cea615205177c7ea847", null ],
+    [ "dispose", "a08215.html#ab953e90edb69534eb052f9064f6b40e9", null ],
+    [ "propertyChange", "a08215.html#a6f2a0314409a5ea8d73157f7c658c0e1", null ],
+    [ "registerSource", "a08215.html#a4ad7c379ea4290d724322c0938de42b9", null ],
+    [ "source", "a08215.html#a2b21788a6f9c34e5383f406896b03495", null ]
 ];

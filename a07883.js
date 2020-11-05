@@ -1,19 +1,15 @@
 var a07883 =
 [
-    [ "DataStores", "a07883.html#a921fd59c6fa3f7657c06dce7f8db57b9", null ],
-    [ "canProcess", "a07883.html#aa3cd0cad2bb7c53098e7e96ca41b138a", null ],
-    [ "create", "a07883.html#a16cdccc1514db3ece3c1b042d7920505", null ],
-    [ "flatten", "a07883.html#ac2e60984f931612f9bc16cc950019c45", null ],
-    [ "flatten", "a07883.html#acc11ba13ec91b7e2df02fde1b419e1e5", null ],
-    [ "forceIdentifier", "a07883.html#aaf94d629c9086791ae1c06bd83951771", null ],
-    [ "getFactoryById", "a07883.html#a795c94d7b2e837fc8bf6829d43f9ae35", null ],
-    [ "getNames", "a07883.html#a0ca7d3e5875df957d83d7e03c33bcc25", null ],
-    [ "getProviderById", "a07883.html#ae538d68bed2bfddcb92ab97f90fe90bf", null ],
-    [ "getProviders", "a07883.html#aa5097ae40591d8846d9e7e932551054a", null ],
-    [ "getResourceTypes", "a07883.html#ace666e5104c32480848a9def241bac2a", null ],
-    [ "list", "a07883.html#aaad489344732e0789be3fac3ea8e3bd0", null ],
-    [ "open", "a07883.html#adebe6181ac00f080ddfca978e995412b", null ],
-    [ "open", "a07883.html#ae19f2bab74f3668f7f355844090164af", null ],
-    [ "open", "a07883.html#a57c9e7f2c19036d0ddae6465218c735e", null ],
-    [ "open", "a07883.html#a767817848eccf7fe571ede638dee8f0e", null ]
+    [ "International", "a07891.html", "a07891" ],
+    [ "Keys", "a07887.html", "a07887" ],
+    [ "Vocabulary", "a07883.html#a8e57b5cd055fffc8543fca9edbf56fca", null ],
+    [ "format", "a07883.html#a6a28bf4ed15b946061619d84a67eefdc", null ],
+    [ "format", "a07883.html#afed51e22efeac75f6ec9a36aa6099af2", null ],
+    [ "format", "a07883.html#a8d4c35f328b9386fbe6599c4e1ef8577", null ],
+    [ "format", "a07883.html#af635db119352489fc85adb74abf42244", null ],
+    [ "formatInternational", "a07883.html#a5406b660af9b85b232e0536c91ae0a63", null ],
+    [ "formatInternational", "a07883.html#ab7d0acb13b5a650c5b5ddef8788604e0", null ],
+    [ "formatInternational", "a07883.html#a493fc4b2287b630687e933954ff16c6c", null ],
+    [ "getLabel", "a07883.html#ab83676c42b8bc370aaf7db85a6797a96", null ],
+    [ "getResources", "a07883.html#a337893308b8958a6d9cb598221a68649", null ]
 ];

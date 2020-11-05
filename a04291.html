@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: InteriorPoint Class Reference</title>
+<title>jena-geo: ConvexHull Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,21 @@ $(document).ready(function(){initNavTree('a04291.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04288.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">InteriorPoint Class Reference</div>  </div>
+<div class="title">ConvexHull Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for InteriorPoint:</div>
+Inheritance diagram for ConvexHull:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04290.png" border="0" usemap="#InteriorPoint_inherit__map" alt="Inheritance graph"/></div>
-<map name="InteriorPoint_inherit__map" id="InteriorPoint_inherit__map">
+<div class="center"><img src="a04290.png" border="0" usemap="#ConvexHull_inherit__map" alt="Inheritance graph"/></div>
+<map name="ConvexHull_inherit__map" id="ConvexHull_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for InteriorPoint:</div>
+Collaboration diagram for ConvexHull:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04289.png" border="0" usemap="#InteriorPoint_coll__map" alt="Collaboration graph"/></div>
-<map name="InteriorPoint_coll__map" id="InteriorPoint_coll__map">
+<div class="center"><img src="a04289.png" border="0" usemap="#ConvexHull_coll__map" alt="Collaboration graph"/></div>
+<map name="ConvexHull_coll__map" id="ConvexHull_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -104,8 +104,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06555.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06555.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06555.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>, and <a class="el" href="a06555.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                          {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);   </div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            Geometry result = geometry.getParsingGeometry().getInteriorPoint();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(result.getCoordinate(), geometry.getSrsURI(), geometry.getGeometryDatatypeURI());</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06595.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06595.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06595.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06595.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>, and <a class="el" href="a06595.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                          {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            GeometryWrapper geom = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="a03857.html">org</a>.<a class="code" href="a03933.html">locationtech</a>.<a class="code" href="a03938.html">jts</a>.algorithm.ConvexHull convex=<span class="keyword">new</span> <a class="code" href="a03857.html">org</a>.<a class="code" href="a03933.html">locationtech</a>.<a class="code" href="a03938.html">jts</a>.algorithm.ConvexHull(geom.getParsingGeometry());</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Geometry convexHull = convex.getConvexHull();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            GeometryWrapper concaveWrapper = GeometryWrapperFactory.createGeometry(convexHull, geom.getSrsURI(), geom.getGeometryDatatypeURI());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">return</span> concaveWrapper.asNodeValue();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="ttc" id="a03938_html"><div class="ttname"><a href="a03938.html">org.locationtech.jts</a></div></div>
+<div class="ttc" id="a03857_html"><div class="ttname"><a href="a03857.html">org</a></div></div>
+<div class="ttc" id="a03933_html"><div class="ttname"><a href="a03933.html">org.locationtech</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -114,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03777.html">geometry</a></li><li class="navelem"><a class="el" href="a03778.html">attribute</a></li><li class="navelem"><a class="el" href="a04291.html">InteriorPoint</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03801.html">geometry</a></li><li class="navelem"><a class="el" href="a03802.html">attribute</a></li><li class="navelem"><a class="el" href="a04291.html">ConvexHull</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

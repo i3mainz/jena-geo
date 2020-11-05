@@ -1,8 +1,8 @@
 var a04099 =
 [
-    [ "AccMinX", "a04103.html", "a04103" ],
-    [ "MinX", "a04099.html#ad80246fc5062c468980c0c0707265f73", null ],
-    [ "MinX", "a04099.html#a8d7f473cf796e50a4900033e0f3f7a4d", null ],
+    [ "AccMaxY", "a04103.html", "a04103" ],
+    [ "MaxY", "a04099.html#a745d5b21c63aee68213c18e2840a685a", null ],
+    [ "MaxY", "a04099.html#a4359d4df05f58ac3c5e766e28f8f9095", null ],
     [ "copy", "a04099.html#a0c4f538fb7b73cf0610c4fd5b212cc00", null ],
     [ "createAccumulator", "a04099.html#ac589ca3321e77a7558e0e346c8474738", null ],
     [ "equals", "a04099.html#a04adb23e628a0adcac484ce8f1dff399", null ],

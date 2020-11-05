@@ -61,22 +61,29 @@ $(document).ready(function(){initNavTree('a06699.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">WKBRasterImageReader.InputStreamAdapter Member List</div>  </div>
+<div class="title">TileOpExecutor Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a06699.html">TileOpExecutor</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a5ae591df94fc66ccb85cbb6565368bca">close</a>()</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06699.html#a37ec8f3c8fa304270ef4760530a627e8">input</a></td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06699.html#af69e241062051882eccd0054ebf61dca">InputStreamAdapter</a>(final ImageInputStream input)</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06699.html#adf174d002cece2e489005bb7d1bdc439">mark</a>(final int readlimit)</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a2085a25d5723c2f2c78cdac8cdb06230">markSupported</a>()</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06699.html#aaab5dab5b969a87f538242e524431637">read</a>()</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06699.html#ac37221182275cc3971d30ff2f0bf0599">read</a>(final byte[] b)</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06699.html#aa12fc1cdbd694717be9e6bad04648af0">read</a>(final byte[] b, final int off, final int len)</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06699.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>()</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06699.html#ae3954a0efb16f8d450ec0b543e172e01">skip</a>(final long n)</td><td class="entry"><a class="el" href="a06699.html">WKBRasterImageReader.InputStreamAdapter</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a5ad42afc2f4e97e36da69fa67f814806">executeOnReadable</a>(final RenderedImage source, final Collector&lt;? super Raster, A, R &gt; collector, final Consumer&lt; LogRecord &gt; errorHandler)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#a2056883a02daf732b470c75d0a1cc9c1">executeOnWritable</a>(final WritableRenderedImage target, final Collector&lt;? super WritableRaster, A, R &gt; collector, final Consumer&lt; LogRecord &gt; errorHandler)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>(final BiConsumer&lt; Void, RT &gt; action)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#a1c66d2fc0772cae5e9af87b79f2bb555">getTileIndices</a>()</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a3afe5a830ca55a76db60bb18f7137e52">isMultiTiled</a>()</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#a083bec8fd9bb96a75c6ab3bf34ea78ae">maxTileX</a></td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a4842dc618305e921525978cc35455eb8">maxTileY</a></td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a></td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a></td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#abb7222f19b7bbc00c7c083ed400a256e">parallelReadFrom</a>(final RenderedImage source)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#abcc978b0c005c9252c7b82a4d638c985">parallelWriteTo</a>(final WritableRenderedImage target)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#aa9266e206ffe55d7e2c7e0043aed9964">readFrom</a>(Raster source)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#ac102ea0bcec6fc866de9c655a6cce911">readFrom</a>(final RenderedImage source)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#a05a19abe4bf601da0ed41946e1ad4493">TileOpExecutor</a>(final RenderedImage image, final Rectangle aoi)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#a517f50b4efda6d919cbe263504257ffb">trimImagingWrapper</a>(Throwable ex)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06699.html#af6fd63f97cc2697d630356c8ad337bbe">writeTo</a>(WritableRaster target)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06699.html#af327793cf4eb10b041fbf78d220cbc8e">writeTo</a>(final WritableRenderedImage target)</td><td class="entry"><a class="el" href="a06699.html">TileOpExecutor</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->

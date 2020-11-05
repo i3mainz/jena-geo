@@ -1,11 +1,13 @@
 var a07479 =
 [
-    [ "PathFilterVisitor", "a07479.html#a0d8e60d58767f721083616dcbc232814", null ],
-    [ "PathFilterVisitor", "a07479.html#a9934e099bfe6e788f65ad4ac363e52ba", null ],
-    [ "getMatchedPaths", "a07479.html#a59d0dd62bd016e0b1394c79c87212a59", null ],
-    [ "preVisitDirectory", "a07479.html#a6a7c2cd3b3c501a50447030ad4bc56e5", null ],
-    [ "visitFile", "a07479.html#a365a2d255ab91b3b46e01a09fdf4c9e8", null ],
-    [ "fileOnly", "a07479.html#ad3a314bf51102c65237608385eea7b87", null ],
-    [ "matchedPaths", "a07479.html#ae1e5150fc4a7cf02cf2ce72db4de4512", null ],
-    [ "matcher", "a07479.html#a1a23e551277488fb1dcae3bfca6db6b1", null ]
+    [ "XMath", "a07479.html#a7a21a0339f902d4f0db90459db6e4277", null ],
+    [ "adjacentForType", "a07479.html#a38ac8822d16d7e886b2b539ab95b4c81", null ],
+    [ "clamp", "a07479.html#ad81d0d93899ba51ad81498c90986983c", null ],
+    [ "clamp", "a07479.html#a48b09591d5d670ea5e2c28a8214a219c", null ],
+    [ "clamp", "a07479.html#aa336d4ba3f295d1a5bd003a1be3f4228", null ],
+    [ "clamp", "a07479.html#afae3226c97e69f3b464ab57ae49c2565", null ],
+    [ "clamp", "a07479.html#a8027555876921a37ce9481a26fe308f1", null ],
+    [ "clamp", "a07479.html#a478dba1fe0ccd47637aa4578ace7b02f", null ],
+    [ "clamp", "a07479.html#a3d978d5091f5ae9f00c35c8773f3a3d3", null ],
+    [ "clamp", "a07479.html#a1a19550710996389897c579b7a42ded5", null ]
 ];

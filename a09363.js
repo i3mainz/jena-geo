@@ -4,7 +4,7 @@ var a09363 =
     [ "displayRasterSummary", "a09363.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09363.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09363.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testRasterFromHexWKB", "a09363.html#a40325cfe01ded012aad79d50e828698d", null ],
+    [ "testTranslateY", "a09363.html#a1649a87f733d46d723eacc30260682b6", null ],
     [ "covJSONString1", "a09363.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09363.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09363.html#aa5e2b5a6005895fc20b9f35523569430", null ],

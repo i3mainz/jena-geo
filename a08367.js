@@ -1,9 +1,13 @@
 var a08367 =
 [
-    [ "testBBOXRightOf", "a08367.html#a1d3293620606e59a1f913178b94ea7fd", null ],
-    [ "testBBOXRightOf1", "a08367.html#ae27abe3e3daa14fdd8094ad71b5cb2cc", null ],
-    [ "testGeom1", "a08367.html#aa4a3b1a7e778ece72382f6600fa96b47", null ],
-    [ "testGeom2", "a08367.html#a6b4be369c8f60e973cd5126e69cd33a4", null ],
-    [ "testGeom3", "a08367.html#a800b6bb875a8ff4404ea787c3df125a5", null ],
-    [ "testGeom4", "a08367.html#a4c55e7efe430d6d220fb05524c4bb940", null ]
+    [ "LocatePoint", "a08367.html#a0db8c96a170aff314d55b51d1090d8c7", null ],
+    [ "compute", "a08367.html#a4f513b82951056a3f579d95f215e9307", null ],
+    [ "getIndex", "a08367.html#a59d053c950ff1e9f8a004d493f34e754", null ],
+    [ "getPoint", "a08367.html#add97f503ca58503d04ac9150e6c8ef7f", null ],
+    [ "pointAlongLine", "a08367.html#aefeee61acc0d87ebcacf610af684935e", null ],
+    [ "pointAlongSegment", "a08367.html#a8138e49067c6447449ff0a8ce19bfed4", null ],
+    [ "pointAlongSegment", "a08367.html#a4b414ab63960ecfa283932288f9977f7", null ],
+    [ "pointAlongSegmentByFraction", "a08367.html#a9ecfa15254cc343c6166b5e9b3f05c03", null ],
+    [ "index", "a08367.html#a750b5d744c39a06bfb13e6eb010e35d0", null ],
+    [ "pt", "a08367.html#aae9b62bb90c0c25de44c11a2abc79afa", null ]
 ];

@@ -1,11 +1,10 @@
 var a07363 =
 [
-    [ "Setup", "a07363.html#ae0d0a5184ef101bd0fed0f1904ca7094", null ],
-    [ "get", "a07363.html#a5270a83b4b60ba9ccac3369d81d17692", null ],
-    [ "getEPSG", "a07363.html#a40798f96683725af80d75c04742b0a1f", null ],
-    [ "initialize", "a07363.html#a7eb4963cb16f3cd5d889227796e5245c", null ],
-    [ "setEPSG", "a07363.html#a8f77e69842d5f20bbfaa01f1e9e6d541", null ],
-    [ "shutdown", "a07363.html#a4cfa1af04e925fc21518fe880df9e408", null ],
-    [ "EPSG", "a07363.html#acbce7c4d6911636b5b423e88512e2e5b", null ],
-    [ "state", "a07363.html#a89f234133d3efe315836311cbf21c64b", null ]
+    [ "SimpleFileFilter", "a07363.html#a1f9ef4e72507f507dd1071cc06a2bff7", null ],
+    [ "accept", "a07363.html#aacee2180a560fac97cfaffb5c81b21ce", null ],
+    [ "allowFolderSelection", "a07363.html#ad07475d36df0a7e6f53a79a9642a3b3c", null ],
+    [ "getDescription", "a07363.html#ac7feffb7a33f63504ff1f87f19e2d2d8", null ],
+    [ "allowFolder", "a07363.html#aae44b0c8cffa123e25f31306443cf546", null ],
+    [ "desc", "a07363.html#a1ccb50d46fe38b29480eda6575a7b4fb", null ],
+    [ "ends", "a07363.html#a5b4bf819f5ac43808988db6e6cd709a4", null ]
 ];

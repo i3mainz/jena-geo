@@ -1,6 +1,5 @@
 var a08543 =
 [
-    [ "testAsGeobuf", "a08543.html#a3ff195dff03851a6d4c46d30a53b61fd", null ],
-    [ "geobufString", "a08543.html#ada02b1585d7fa34c77874ade6c762087", null ],
-    [ "testGeometry", "a08543.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testPerimeter", "a08543.html#ab5f32e4b3cc7543d929e0660b76d1973", null ],
+    [ "testPolygon", "a08543.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

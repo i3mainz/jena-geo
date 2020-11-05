@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: SampleType Enum Reference</title>
+<title>jena-geo: DeferredPlanarImage Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,137 +61,255 @@ $(document).ready(function(){initNavTree('a06899.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06896.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SampleType Enum Reference</div>  </div>
+<div class="title">DeferredPlanarImage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Define internaly <a class="el" href="">ColorModel</a> data type.  
+<p>A tiled image to be used by renderer when the actual image may take a while to compute.  
  <a href="a06899.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for DeferredPlanarImage:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06898.png" border="0" usemap="#DeferredPlanarImage_inherit__map" alt="Inheritance graph"/></div>
+<map name="DeferredPlanarImage_inherit__map" id="DeferredPlanarImage_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for DeferredPlanarImage:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06897.png" border="0" usemap="#DeferredPlanarImage_coll__map" alt="Collaboration graph"/></div>
+<map name="DeferredPlanarImage_coll__map" id="DeferredPlanarImage_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a35a9e898515030ffc57331f5cc1a1661"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06899.html">SampleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a35a9e898515030ffc57331f5cc1a1661">valueOf</a> (int dataType)</td></tr>
-<tr class="memdesc:a35a9e898515030ffc57331f5cc1a1661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between <a class="el" href="">java.awt.image.SampleModel#getDataType()</a> and <a class="el" href="">org.geotoolkit.image.internal.SampleType</a> enum.  <a href="#a35a9e898515030ffc57331f5cc1a1661">More...</a><br /></td></tr>
-<tr class="separator:a35a9e898515030ffc57331f5cc1a1661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c32253f107b829994a5bee4a1513a23"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a9c32253f107b829994a5bee4a1513a23">valueOf</a> (final <a class="el" href="a06899.html">SampleType</a> sampleType)</td></tr>
-<tr class="memdesc:a9c32253f107b829994a5bee4a1513a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between <a class="el" href="">org.geotoolkit.image.internal.SampleType</a> enum and <a class="el" href="">java.awt.image.SampleModel#getDataType()</a>.  <a href="#a9c32253f107b829994a5bee4a1513a23">More...</a><br /></td></tr>
-<tr class="separator:a9c32253f107b829994a5bee4a1513a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a95b4d4f269a882bf58cdb9a22e1976"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06899.html">SampleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a6a95b4d4f269a882bf58cdb9a22e1976">valueOf</a> (final int bitPerSample, final int sampleFormat)</td></tr>
-<tr class="memdesc:a6a95b4d4f269a882bf58cdb9a22e1976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between bits per sample and sample format with <a class="el" href="a06899.html">SampleType</a>.  <a href="#a6a95b4d4f269a882bf58cdb9a22e1976">More...</a><br /></td></tr>
-<tr class="separator:a6a95b4d4f269a882bf58cdb9a22e1976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06903.html">Entry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry in the <a class="el" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">buffers</a> map.  <a href="a06903.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a92076741b75a8c2bdc5c24049c253d9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">BYTE</a></td></tr>
-<tr class="memdesc:a92076741b75a8c2bdc5c24049c253d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type <a class="el" href="">Byte</a>.  <a href="#a92076741b75a8c2bdc5c24049c253d9a">More...</a><br /></td></tr>
-<tr class="separator:a92076741b75a8c2bdc5c24049c253d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29555e80bd1ec1b5e40b732df417090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">SHORT</a></td></tr>
-<tr class="memdesc:ac29555e80bd1ec1b5e40b732df417090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type <a class="el" href="">Short</a>.  <a href="#ac29555e80bd1ec1b5e40b732df417090">More...</a><br /></td></tr>
-<tr class="separator:ac29555e80bd1ec1b5e40b732df417090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17877e7a70f122032cacbbf98aad8b3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">USHORT</a></td></tr>
-<tr class="memdesc:a17877e7a70f122032cacbbf98aad8b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type <a class="el" href="">Short</a>.  <a href="#a17877e7a70f122032cacbbf98aad8b3d">More...</a><br /></td></tr>
-<tr class="separator:a17877e7a70f122032cacbbf98aad8b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b03df71aca47d18a0df701c77fcfc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">INTEGER</a></td></tr>
-<tr class="memdesc:a89b03df71aca47d18a0df701c77fcfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type <a class="el" href="">Integer</a>.  <a href="#a89b03df71aca47d18a0df701c77fcfc0">More...</a><br /></td></tr>
-<tr class="separator:a89b03df71aca47d18a0df701c77fcfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455b0c528d8e51182cea09a11e6f35e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">FLOAT</a></td></tr>
-<tr class="memdesc:a455b0c528d8e51182cea09a11e6f35e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type <a class="el" href="">Float</a>.  <a href="#a455b0c528d8e51182cea09a11e6f35e2">More...</a><br /></td></tr>
-<tr class="separator:a455b0c528d8e51182cea09a11e6f35e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6418bf54177bbac2a27bd1273737d5ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a> (final RenderedImage source)</td></tr>
+<tr class="memdesc:a6418bf54177bbac2a27bd1273737d5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new instance of.  <a href="#a6418bf54177bbac2a27bd1273737d5ef">More...</a><br /></td></tr>
+<tr class="separator:a6418bf54177bbac2a27bd1273737d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016c1e8b58082cf2add38a25a00fd20d"><td class="memItemLeft" align="right" valign="top">Vector&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a> ()</td></tr>
+<tr class="memdesc:a016c1e8b58082cf2add38a25a00fd20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source images.  <a href="#a016c1e8b58082cf2add38a25a00fd20d">More...</a><br /></td></tr>
+<tr class="separator:a016c1e8b58082cf2add38a25a00fd20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40b045d716a2c8cfdb88e2067fd9e12"><td class="memItemLeft" align="right" valign="top">synchronized Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">getTile</a> (final int tileX, final int tileY)</td></tr>
+<tr class="memdesc:ad40b045d716a2c8cfdb88e2067fd9e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the specified tile, or a default one if the requested tile is not yet available.  <a href="#ad40b045d716a2c8cfdb88e2067fd9e12">More...</a><br /></td></tr>
+<tr class="separator:ad40b045d716a2c8cfdb88e2067fd9e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababc5a285cc2b18491768b525ef75166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ababc5a285cc2b18491768b525ef75166">tileComputed</a> (final <a class="el" href="a13607.html">Object</a> eventSource, final TileRequest[] <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>, final PlanarImage <a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>, final int tileX, final int tileY, final Raster tile)</td></tr>
+<tr class="memdesc:ababc5a285cc2b18491768b525ef75166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when a tile has been computed.  <a href="#ababc5a285cc2b18491768b525ef75166">More...</a><br /></td></tr>
+<tr class="separator:ababc5a285cc2b18491768b525ef75166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2fe2d9900cf4780a25b1f52266a976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a0a2fe2d9900cf4780a25b1f52266a976">tileCancelled</a> (final <a class="el" href="a13607.html">Object</a> eventSource, final TileRequest[] <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>, final PlanarImage <a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>, final int tileX, final int tileY)</td></tr>
+<tr class="memdesc:a0a2fe2d9900cf4780a25b1f52266a976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when a tile computation has been canceled.  <a href="#a0a2fe2d9900cf4780a25b1f52266a976">More...</a><br /></td></tr>
+<tr class="separator:a0a2fe2d9900cf4780a25b1f52266a976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be9d6942d389e80fcc3394187b8263e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a8be9d6942d389e80fcc3394187b8263e">tileComputationFailure</a> (final <a class="el" href="a13607.html">Object</a> eventSource, final TileRequest[] <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>, final PlanarImage <a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>, final int tileX, final int tileY, final Throwable cause)</td></tr>
+<tr class="memdesc:a8be9d6942d389e80fcc3394187b8263e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when a tile computation failed.  <a href="#a8be9d6942d389e80fcc3394187b8263e">More...</a><br /></td></tr>
+<tr class="separator:a8be9d6942d389e80fcc3394187b8263e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93188d34d2e05546af79c4c923dff0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ae93188d34d2e05546af79c4c923dff0d">tileUpdate</a> (final WritableRenderedImage source, final int tileX, final int tileY, final boolean willBeWritable)</td></tr>
+<tr class="memdesc:ae93188d34d2e05546af79c4c923dff0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked if the underlying image is writable and one of its tile changed.  <a href="#ae93188d34d2e05546af79c4c923dff0d">More...</a><br /></td></tr>
+<tr class="separator:ae93188d34d2e05546af79c4c923dff0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8553be31f6138f5778604d86e17c452"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ab8553be31f6138f5778604d86e17c452">addTileObserver</a> (final TileObserver observer)</td></tr>
+<tr class="memdesc:ab8553be31f6138f5778604d86e17c452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an observer.  <a href="#ab8553be31f6138f5778604d86e17c452">More...</a><br /></td></tr>
+<tr class="separator:ab8553be31f6138f5778604d86e17c452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d32ac7cb06188d57d795223902c074"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#aa2d32ac7cb06188d57d795223902c074">removeTileObserver</a> (final TileObserver observer)</td></tr>
+<tr class="memdesc:aa2d32ac7cb06188d57d795223902c074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an observer.  <a href="#aa2d32ac7cb06188d57d795223902c074">More...</a><br /></td></tr>
+<tr class="separator:aa2d32ac7cb06188d57d795223902c074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa34205fa2e1b0542e8e5cb46168f8a"><td class="memItemLeft" align="right" valign="top">WritableRaster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a8aa34205fa2e1b0542e8e5cb46168f8a">getWritableTile</a> (final int tileX, final int tileY)</td></tr>
+<tr class="memdesc:a8aa34205fa2e1b0542e8e5cb46168f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks out a tile for writing.  <a href="#a8aa34205fa2e1b0542e8e5cb46168f8a">More...</a><br /></td></tr>
+<tr class="separator:a8aa34205fa2e1b0542e8e5cb46168f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e38c4f83ac782b44defaa0937179ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a46e38c4f83ac782b44defaa0937179ae">releaseWritableTile</a> (final int tileX, final int tileY)</td></tr>
+<tr class="memdesc:a46e38c4f83ac782b44defaa0937179ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relinquishes the right to write to a tile.  <a href="#a46e38c4f83ac782b44defaa0937179ae">More...</a><br /></td></tr>
+<tr class="separator:a46e38c4f83ac782b44defaa0937179ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f024ba34f3f7e62bcf2404664958664"><td class="memItemLeft" align="right" valign="top">synchronized boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a0f024ba34f3f7e62bcf2404664958664">hasTileWriters</a> ()</td></tr>
+<tr class="memdesc:a0f024ba34f3f7e62bcf2404664958664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether any tile is checked out for writing.  <a href="#a0f024ba34f3f7e62bcf2404664958664">More...</a><br /></td></tr>
+<tr class="separator:a0f024ba34f3f7e62bcf2404664958664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74c6c15649b1ada3aeab126cd85946e"><td class="memItemLeft" align="right" valign="top">synchronized boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ab74c6c15649b1ada3aeab126cd85946e">isTileWritable</a> (final int tileX, final int tileY)</td></tr>
+<tr class="memdesc:ab74c6c15649b1ada3aeab126cd85946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a tile is currently checked out for writing.  <a href="#ab74c6c15649b1ada3aeab126cd85946e">More...</a><br /></td></tr>
+<tr class="separator:ab74c6c15649b1ada3aeab126cd85946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be7fc30cc95025e87318c6604762bec"><td class="memItemLeft" align="right" valign="top">synchronized Point []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a4be7fc30cc95025e87318c6604762bec">getWritableTileIndices</a> ()</td></tr>
+<tr class="memdesc:a4be7fc30cc95025e87318c6604762bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of <a class="el" href="">Point</a> objects indicating which tiles are checked out for writing.  <a href="#a4be7fc30cc95025e87318c6604762bec">More...</a><br /></td></tr>
+<tr class="separator:a4be7fc30cc95025e87318c6604762bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32d5bbc75747a7750954fb15d709ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ac32d5bbc75747a7750954fb15d709ade">setData</a> (Raster r)</td></tr>
+<tr class="memdesc:ac32d5bbc75747a7750954fb15d709ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a rectangle of the image to the contents of the raster.  <a href="#ac32d5bbc75747a7750954fb15d709ade">More...</a><br /></td></tr>
+<tr class="separator:ac32d5bbc75747a7750954fb15d709ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0581cd101ce4eccbed20097d967a3c9b"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a0581cd101ce4eccbed20097d967a3c9b">dispose</a> ()</td></tr>
+<tr class="memdesc:a0581cd101ce4eccbed20097d967a3c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a hint that this image will no longer be accessed from a reference in user space.  <a href="#a0581cd101ce4eccbed20097d967a3c9b">More...</a><br /></td></tr>
+<tr class="separator:a0581cd101ce4eccbed20097d967a3c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a92de96ca1b7b2ff9e602fb5f9909a574"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">getTileIndice</a> (final int tileX, final int tileY)</td></tr>
+<tr class="memdesc:a92de96ca1b7b2ff9e602fb5f9909a574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index in <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a> and <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> array for the given tile.  <a href="#a92de96ca1b7b2ff9e602fb5f9909a574">More...</a><br /></td></tr>
+<tr class="separator:a92de96ca1b7b2ff9e602fb5f9909a574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919596a5ea1221ba85877c848cfbb413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">fireTileUpdate</a> (final int tileX, final int tileY, final boolean willBeWritable)</td></tr>
+<tr class="memdesc:a919596a5ea1221ba85877c848cfbb413"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tile is about to be updated (it is either about to be grabbed for writing, or it is being released from writing).  <a href="#a919596a5ea1221ba85877c848cfbb413">More...</a><br /></td></tr>
+<tr class="separator:a919596a5ea1221ba85877c848cfbb413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3f75b2a09b08a22c9c7d816932a97cb7"><td class="memItemLeft" align="right" valign="top">static Vector&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a3f75b2a09b08a22c9c7d816932a97cb7">toVector</a> (final RenderedImage <a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>)</td></tr>
+<tr class="memdesc:a3f75b2a09b08a22c9c7d816932a97cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps the specified image in a vector.  <a href="#a3f75b2a09b08a22c9c7d816932a97cb7">More...</a><br /></td></tr>
+<tr class="separator:a3f75b2a09b08a22c9c7d816932a97cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0b8dd0eb7893a07022c0870a71ed57"><td class="memItemLeft" align="right" valign="top">static synchronized DataBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a5b0b8dd0eb7893a07022c0870a71ed57">getDefaultDataBuffer</a> (final SampleModel sampleModel, final ColorModel colorModel)</td></tr>
+<tr class="memdesc:a5b0b8dd0eb7893a07022c0870a71ed57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a databuffer for the specified sample model.  <a href="#a5b0b8dd0eb7893a07022c0870a71ed57">More...</a><br /></td></tr>
+<tr class="separator:a5b0b8dd0eb7893a07022c0870a71ed57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04107b298feed03b4d1a7779daf1b4de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a04107b298feed03b4d1a7779daf1b4de">fill</a> (final DataBuffer buffer, final int bank, final int value)</td></tr>
+<tr class="memdesc:a04107b298feed03b4d1a7779daf1b4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all values in the specified bank to the specified value.  <a href="#a04107b298feed03b4d1a7779daf1b4de">More...</a><br /></td></tr>
+<tr class="separator:a04107b298feed03b4d1a7779daf1b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3f6cd043d2cd15df3101989bdef3ea60"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">delay</a></td></tr>
+<tr class="memdesc:a3f6cd043d2cd15df3101989bdef3ea60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The delay (in milliseconds) to wait for a tile.  <a href="#a3f6cd043d2cd15df3101989bdef3ea60">More...</a><br /></td></tr>
+<tr class="separator:a3f6cd043d2cd15df3101989bdef3ea60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924be625bde57cce7166d786020b65ad"><td class="memItemLeft" align="right" valign="top">final PlanarImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a></td></tr>
+<tr class="memdesc:a924be625bde57cce7166d786020b65ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source image.  <a href="#a924be625bde57cce7166d786020b65ad">More...</a><br /></td></tr>
+<tr class="separator:a924be625bde57cce7166d786020b65ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae369fc436a8f8b942334af63940aa713"><td class="memItemLeft" align="right" valign="top">TileObserver []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a></td></tr>
+<tr class="memdesc:ae369fc436a8f8b942334af63940aa713"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tile observers, or.  <a href="#ae369fc436a8f8b942334af63940aa713">More...</a><br /></td></tr>
+<tr class="separator:ae369fc436a8f8b942334af63940aa713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef65604cbc0d419c67b91a91f4b7f64"><td class="memItemLeft" align="right" valign="top">transient TileRequest []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a></td></tr>
+<tr class="memdesc:aeef65604cbc0d419c67b91a91f4b7f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="">TileRequest</a>s for a given tile.  <a href="#aeef65604cbc0d419c67b91a91f4b7f64">More...</a><br /></td></tr>
+<tr class="separator:aeef65604cbc0d419c67b91a91f4b7f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc60f99d4b57df3e2b4048a337913a54"><td class="memItemLeft" align="right" valign="top">transient boolean []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a></td></tr>
+<tr class="memdesc:afc60f99d4b57df3e2b4048a337913a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if a tile is request is waiting.  <a href="#afc60f99d4b57df3e2b4048a337913a54">More...</a><br /></td></tr>
+<tr class="separator:afc60f99d4b57df3e2b4048a337913a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630477f812b6ce20820b3dfe94362c04"><td class="memItemLeft" align="right" valign="top">transient Raster []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a></td></tr>
+<tr class="memdesc:a630477f812b6ce20820b3dfe94362c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if a tile is in process of being computed.  <a href="#a630477f812b6ce20820b3dfe94362c04">More...</a><br /></td></tr>
+<tr class="separator:a630477f812b6ce20820b3dfe94362c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ab1d069f56091df4f6436f8c713ab2f39"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a> = Logging.getLogger(&quot;org.geotoolkit.image&quot;)</td></tr>
+<tr class="memdesc:ab1d069f56091df4f6436f8c713ab2f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The logger for information messages.  <a href="#ab1d069f56091df4f6436f8c713ab2f39">More...</a><br /></td></tr>
+<tr class="separator:ab1d069f56091df4f6436f8c713ab2f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c913874af717bfaf6f7516f5745d21"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a04c913874af717bfaf6f7516f5745d21">BOX_THICKNESS</a> = 2</td></tr>
+<tr class="memdesc:a04c913874af717bfaf6f7516f5745d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thickness (in pixels) of the box to draw around deferred tiles, or 0 for disabling this feature.  <a href="#a04c913874af717bfaf6f7516f5745d21">More...</a><br /></td></tr>
+<tr class="separator:a04c913874af717bfaf6f7516f5745d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a463cd34c77e448bdb92b3025b4def8"><td class="memItemLeft" align="right" valign="top">static Map&lt; <a class="el" href="a06903.html">Entry</a>, DataBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">buffers</a></td></tr>
+<tr class="memdesc:a2a463cd34c77e448bdb92b3025b4def8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty <a class="el" href="">DataBuffer</a> for a set of <a class="el" href="">SampleModel</a>.  <a href="#a2a463cd34c77e448bdb92b3025b4def8">More...</a><br /></td></tr>
+<tr class="separator:a2a463cd34c77e448bdb92b3025b4def8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9602d17b825d716c4b051b4f581012"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06899.html#afd9602d17b825d716c4b051b4f581012">DELAY</a> = 500</td></tr>
+<tr class="memdesc:afd9602d17b825d716c4b051b4f581012"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum delay (in milliseconds) to wait for a tile with one million pixels (e.g.  <a href="#afd9602d17b825d716c4b051b4f581012">More...</a><br /></td></tr>
+<tr class="separator:afd9602d17b825d716c4b051b4f581012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Define internaly <a class="el" href="">ColorModel</a> data type. </p>
-<dl class="section author"><dt>Author</dt><dd>Remi Marechal (Geomatys). </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a35a9e898515030ffc57331f5cc1a1661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35a9e898515030ffc57331f5cc1a1661">&#9670;&nbsp;</a></span>valueOf() <span class="overload">[1/3]</span></h2>
+<div class="textblock"><p>A tiled image to be used by renderer when the actual image may take a while to compute. </p>
+<p>This image wraps an arbitrary  RenderedImage rendered image}, which may (or may not) be some image expensive to compute. When a tile is requested (through a call to <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">getTile</a> but the tile is not available in the wrapped image, then this class returns some default (usually black) tile and start the real tile computation in a background thread. When the actual tile is available, this class fire a <a class="el" href="">tileUpdate</a> event, thus given a chance to a renderer to repaint again this image with the new tiles. </p>
+<p>Example of use:</p>
+<p>{ java public class Renderer extends JPanel implements TileObserver { private <a class="el" href="a06899.html" title="A tiled image to be used by renderer when the actual image may take a while to compute. ">DeferredPlanarImage</a> image;</p>
+<p>public Renderer(RenderedImage toPaint) { image = new DeferredPlanarImage(toPaint); image.addTileObserver(this); }</p>
+<p>public void tileUpdate(WritableRenderedImage source, int tileX, int tileY, boolean willBeWritable) { repaint(); }</p>
+<p>public void paint(Graphics gr) { ((Graphics2D) gr).drawRenderedImage(image); } } }</p>
+<dl class="section author"><dt>Author</dt><dd>Rémi Eve (IRD) </dd>
+<dd>
+Martin Desruisseaux (IRD) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.3  </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6418bf54177bbac2a27bd1273737d5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6418bf54177bbac2a27bd1273737d5ef">&#9670;&nbsp;</a></span>DeferredPlanarImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a06899.html">SampleType</a> valueOf </td>
+          <td class="memname"><a class="el" href="a06899.html">DeferredPlanarImage</a> </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dataType</em></td><td>)</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Mapping between <a class="el" href="">java.awt.image.SampleModel#getDataType()</a> and <a class="el" href="">org.geotoolkit.image.internal.SampleType</a> enum. </p>
+<p>Constructs a new instance of. </p>
+<div class="fragment"><div class="line"><a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a> </div></div><!-- fragment --><p> .</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dataType</td><td>integer from <a class="el" href="">java.awt.image.DataBuffer</a> constants </td></tr>
+    <tr><td class="paramname">source</td><td>The source image. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">org.geotoolkit.image.internal.SampleType</a> or null if type undefined. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a06879.html#aed3e5683b27dff3cd0a50eb881a3654a">ImageUtils.buildImageTypeSpecifier()</a>, <a class="el" href="a06883.html#a4b7d2a5824fd29be6a15c6a476d59dd9">ImageUtils.ComponentScaledColorModel.createCompatibleSampleModel()</a>, <a class="el" href="a06879.html#aa91f01881b074f03de0224ab064edfd2">ImageUtils.createSampleModel()</a>, and <a class="el" href="a06987.html#a44e0cf6846152ebf0b3050b1198c2134">LargeRenderedImage.LargeRenderedImage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                   {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">switch</span> (dataType) {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_BYTE     : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">BYTE</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_SHORT    : <span class="keywordflow">return</span> <a class="code" href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">SHORT</a>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT   : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">USHORT</a>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_INT      : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">INTEGER</a>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_FLOAT    : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">FLOAT</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_DOUBLE   : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a33465d1d419b1074fb259ef444609e92">DOUBLE</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_UNDEFINED: <span class="comment">//fall through</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="ttc" id="a06899_html_a92076741b75a8c2bdc5c24049c253d9a"><div class="ttname"><a href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">org.geotoolkit.image.internal.SampleType.BYTE</a></div><div class="ttdeci">BYTE</div><div class="ttdoc">Data type Byte. </div><div class="ttdef"><b>Definition:</b> SampleType.java:32</div></div>
-<div class="ttc" id="a06899_html_a33465d1d419b1074fb259ef444609e92"><div class="ttname"><a href="a06899.html#a33465d1d419b1074fb259ef444609e92">org.geotoolkit.image.internal.SampleType.DOUBLE</a></div><div class="ttdoc">Data type Double. </div><div class="ttdef"><b>Definition:</b> SampleType.java:57</div></div>
-<div class="ttc" id="a06899_html_a89b03df71aca47d18a0df701c77fcfc0"><div class="ttname"><a href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">org.geotoolkit.image.internal.SampleType.INTEGER</a></div><div class="ttdeci">INTEGER</div><div class="ttdoc">Data type Integer. </div><div class="ttdef"><b>Definition:</b> SampleType.java:47</div></div>
-<div class="ttc" id="a06899_html_a455b0c528d8e51182cea09a11e6f35e2"><div class="ttname"><a href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">org.geotoolkit.image.internal.SampleType.FLOAT</a></div><div class="ttdeci">FLOAT</div><div class="ttdoc">Data type Float. </div><div class="ttdef"><b>Definition:</b> SampleType.java:52</div></div>
-<div class="ttc" id="a06899_html_a17877e7a70f122032cacbbf98aad8b3d"><div class="ttname"><a href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">org.geotoolkit.image.internal.SampleType.USHORT</a></div><div class="ttdeci">USHORT</div><div class="ttdoc">Data type Short. </div><div class="ttdef"><b>Definition:</b> SampleType.java:42</div></div>
-<div class="ttc" id="a06899_html_ac29555e80bd1ec1b5e40b732df417090"><div class="ttname"><a href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">org.geotoolkit.image.internal.SampleType.SHORT</a></div><div class="ttdeci">SHORT</div><div class="ttdoc">Data type Short. </div><div class="ttdef"><b>Definition:</b> SampleType.java:37</div></div>
+<p class="reference">References <a class="el" href="a06899.html#a3f75b2a09b08a22c9c7d816932a97cb7">DeferredPlanarImage.toVector()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                                           {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        super(<span class="keyword">new</span> ImageLayout(source), <a class="code" href="a06899.html#a3f75b2a09b08a22c9c7d816932a97cb7">toVector</a>(source), null);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a> = getSourceImage(0);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>.addTileComputationListener(<span class="keyword">this</span>);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a> instanceof WritableRenderedImage) {</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            ((WritableRenderedImage) <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>).addTileObserver(<span class="keyword">this</span>);</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">delay</a> = (int) Math.min(<a class="code" href="a06899.html#afd9602d17b825d716c4b051b4f581012">DELAY</a> * tileWidth * tileHeight / 1000000, <a class="code" href="a06899.html#afd9602d17b825d716c4b051b4f581012">DELAY</a>);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div><div class="ttc" id="a06899_html_afd9602d17b825d716c4b051b4f581012"><div class="ttname"><a href="a06899.html#afd9602d17b825d716c4b051b4f581012">org.geotoolkit.image.DeferredPlanarImage.DELAY</a></div><div class="ttdeci">static final long DELAY</div><div class="ttdoc">The maximum delay (in milliseconds) to wait for a tile with one million pixels (e.g. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:152</div></div>
+<div class="ttc" id="a06899_html_a924be625bde57cce7166d786020b65ad"><div class="ttname"><a href="a06899.html#a924be625bde57cce7166d786020b65ad">org.geotoolkit.image.DeferredPlanarImage.image</a></div><div class="ttdeci">final PlanarImage image</div><div class="ttdoc">The source image. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:165</div></div>
+<div class="ttc" id="a06899_html_a3f6cd043d2cd15df3101989bdef3ea60"><div class="ttname"><a href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">org.geotoolkit.image.DeferredPlanarImage.delay</a></div><div class="ttdeci">final int delay</div><div class="ttdoc">The delay (in milliseconds) to wait for a tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:160</div></div>
+<div class="ttc" id="a06899_html_a3f75b2a09b08a22c9c7d816932a97cb7"><div class="ttname"><a href="a06899.html#a3f75b2a09b08a22c9c7d816932a97cb7">org.geotoolkit.image.DeferredPlanarImage.toVector</a></div><div class="ttdeci">static Vector&lt; RenderedImage &gt; toVector(final RenderedImage image)</div><div class="ttdoc">Wraps the specified image in a vector. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:214</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9c32253f107b829994a5bee4a1513a23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c32253f107b829994a5bee4a1513a23">&#9670;&nbsp;</a></span>valueOf() <span class="overload">[2/3]</span></h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab8553be31f6138f5778604d86e17c452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8553be31f6138f5778604d86e17c452">&#9670;&nbsp;</a></span>addTileObserver()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int valueOf </td>
+          <td class="memname">synchronized void addTileObserver </td>
           <td>(</td>
-          <td class="paramtype">final <a class="el" href="a06899.html">SampleType</a>&#160;</td>
-          <td class="paramname"><em>sampleType</em></td><td>)</td>
+          <td class="paramtype">final TileObserver&#160;</td>
+          <td class="paramname"><em>observer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Mapping between <a class="el" href="">org.geotoolkit.image.internal.SampleType</a> enum and <a class="el" href="">java.awt.image.SampleModel#getDataType()</a>. </p>
+<p>Adds an observer. </p>
+<p>This observer will be notified everytime a tile initially empty become available. If the observer is already present, it will receive multiple notifications.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sampleType</td><td>enum from <a class="el" href="a06899.html">SampleType</a> constantes. </td></tr>
+    <tr><td class="paramname">observer</td><td>The observer to add. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">DataBuffer#*</a> or <a class="el" href="">DataBuffer#TYPE_UNDEFINED</a> if unknow <a class="el" href="a06899.html">SampleType</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                           {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">switch</span> (sampleType) {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">BYTE</a>    : <span class="keywordflow">return</span> DataBuffer.TYPE_BYTE;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">SHORT</a>   : <span class="keywordflow">return</span> DataBuffer.TYPE_SHORT;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">USHORT</a>  : <span class="keywordflow">return</span> DataBuffer.TYPE_USHORT;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">INTEGER</a> : <span class="keywordflow">return</span> DataBuffer.TYPE_INT;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">FLOAT</a>   : <span class="keywordflow">return</span> DataBuffer.TYPE_FLOAT;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06899.html#a33465d1d419b1074fb259ef444609e92">DOUBLE</a>  : <span class="keywordflow">return</span> DataBuffer.TYPE_DOUBLE;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            default      : <span class="keywordflow">return</span> DataBuffer.TYPE_UNDEFINED;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div><div class="ttc" id="a06899_html_a92076741b75a8c2bdc5c24049c253d9a"><div class="ttname"><a href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">org.geotoolkit.image.internal.SampleType.BYTE</a></div><div class="ttdeci">BYTE</div><div class="ttdoc">Data type Byte. </div><div class="ttdef"><b>Definition:</b> SampleType.java:32</div></div>
-<div class="ttc" id="a06899_html_a33465d1d419b1074fb259ef444609e92"><div class="ttname"><a href="a06899.html#a33465d1d419b1074fb259ef444609e92">org.geotoolkit.image.internal.SampleType.DOUBLE</a></div><div class="ttdoc">Data type Double. </div><div class="ttdef"><b>Definition:</b> SampleType.java:57</div></div>
-<div class="ttc" id="a06899_html_a89b03df71aca47d18a0df701c77fcfc0"><div class="ttname"><a href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">org.geotoolkit.image.internal.SampleType.INTEGER</a></div><div class="ttdeci">INTEGER</div><div class="ttdoc">Data type Integer. </div><div class="ttdef"><b>Definition:</b> SampleType.java:47</div></div>
-<div class="ttc" id="a06899_html_a455b0c528d8e51182cea09a11e6f35e2"><div class="ttname"><a href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">org.geotoolkit.image.internal.SampleType.FLOAT</a></div><div class="ttdeci">FLOAT</div><div class="ttdoc">Data type Float. </div><div class="ttdef"><b>Definition:</b> SampleType.java:52</div></div>
-<div class="ttc" id="a06899_html_a17877e7a70f122032cacbbf98aad8b3d"><div class="ttname"><a href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">org.geotoolkit.image.internal.SampleType.USHORT</a></div><div class="ttdeci">USHORT</div><div class="ttdoc">Data type Short. </div><div class="ttdef"><b>Definition:</b> SampleType.java:42</div></div>
-<div class="ttc" id="a06899_html_ac29555e80bd1ec1b5e40b732df417090"><div class="ttname"><a href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">org.geotoolkit.image.internal.SampleType.SHORT</a></div><div class="ttdeci">SHORT</div><div class="ttdoc">Data type Short. </div><div class="ttdef"><b>Definition:</b> SampleType.java:37</div></div>
+
+<p class="reference">References <a class="el" href="a06899.html#ae369fc436a8f8b942334af63940aa713">DeferredPlanarImage.observers</a>.</p>
+<div class="fragment"><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                                                                          {</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keywordflow">if</span> (observer != null) {</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a> == null) {</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                <a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a> = <span class="keyword">new</span> TileObserver[] {observer};</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                <a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a> = ArraysExt.append(<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a>, observer);</div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            }</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        }</div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    }</div><div class="ttc" id="a06899_html_ae369fc436a8f8b942334af63940aa713"><div class="ttname"><a href="a06899.html#ae369fc436a8f8b942334af63940aa713">org.geotoolkit.image.DeferredPlanarImage.observers</a></div><div class="ttdeci">TileObserver [] observers</div><div class="ttdoc">The tile observers, or. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:170</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a6a95b4d4f269a882bf58cdb9a22e1976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a95b4d4f269a882bf58cdb9a22e1976">&#9670;&nbsp;</a></span>valueOf() <span class="overload">[3/3]</span></h2>
+<a id="a0581cd101ce4eccbed20097d967a3c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0581cd101ce4eccbed20097d967a3c9b">&#9670;&nbsp;</a></span>dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized void dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides a hint that this image will no longer be accessed from a reference in user space. </p>
+<p><b>NOTE: this method dispose the image given to the constructor as well.</b> This is because</p><div class="fragment"><div class="line"><a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a> </div></div><!-- fragment --><p> is used as a "view" of an other image, and the user shouldn't know that he is not using directly the other image. </p>
+
+<p class="reference">References <a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">DeferredPlanarImage.image</a>, <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">DeferredPlanarImage.pendings</a>, <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">DeferredPlanarImage.requests</a>, and <a class="el" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">DeferredPlanarImage.waitings</a>.</p>
+<div class="fragment"><div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                                       {</div><div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a> instanceof WritableRenderedImage) {</div><div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;            ((WritableRenderedImage) <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>).removeTileObserver(<span class="keyword">this</span>);</div><div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        }</div><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        image.removeTileComputationListener(<span class="keyword">this</span>);</div><div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a> = null;</div><div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a> = null;</div><div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> = null;</div><div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        super.dispose();</div><div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        image.dispose();</div><div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    }</div><div class="ttc" id="a06899_html_afc60f99d4b57df3e2b4048a337913a54"><div class="ttname"><a href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">org.geotoolkit.image.DeferredPlanarImage.waitings</a></div><div class="ttdeci">transient boolean [] waitings</div><div class="ttdoc">Tells if a tile is request is waiting. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:184</div></div>
+<div class="ttc" id="a06899_html_a924be625bde57cce7166d786020b65ad"><div class="ttname"><a href="a06899.html#a924be625bde57cce7166d786020b65ad">org.geotoolkit.image.DeferredPlanarImage.image</a></div><div class="ttdeci">final PlanarImage image</div><div class="ttdoc">The source image. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:165</div></div>
+<div class="ttc" id="a06899_html_a630477f812b6ce20820b3dfe94362c04"><div class="ttname"><a href="a06899.html#a630477f812b6ce20820b3dfe94362c04">org.geotoolkit.image.DeferredPlanarImage.pendings</a></div><div class="ttdeci">transient Raster [] pendings</div><div class="ttdoc">Tells if a tile is in process of being computed. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:191</div></div>
+<div class="ttc" id="a06899_html_aeef65604cbc0d419c67b91a91f4b7f64"><div class="ttname"><a href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">org.geotoolkit.image.DeferredPlanarImage.requests</a></div><div class="ttdeci">transient TileRequest [] requests</div><div class="ttdoc">The TileRequests for a given tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:177</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a04107b298feed03b4d1a7779daf1b4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04107b298feed03b4d1a7779daf1b4de">&#9670;&nbsp;</a></span>fill()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,16 +318,22 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a06899.html">SampleType</a> valueOf </td>
+          <td class="memname">static void fill </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>bitPerSample</em>, </td>
+          <td class="paramtype">final DataBuffer&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>sampleFormat</em>&#160;</td>
+          <td class="paramname"><em>bank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -219,135 +343,972 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Mapping between bits per sample and sample format with <a class="el" href="a06899.html">SampleType</a>. </p>
-<p><br />
-<br />
- expected bitPerSamples values : <br />
-</p><ul>
-<li>8(Byte)<br />
-</li>
-<li>16(Short or UShort)<br />
-</li>
-<li>32 (Int or Float)<br />
-</li>
-<li>64 (Double)<br />
-<br />
-</li>
-</ul>
-<p>expected sampleFormat values : <br />
-</p><ul>
-<li>1 for unsigned integer datas<br />
-</li>
-<li>2 for signed integer datas<br />
-</li>
-<li>3 for IEEE floating point&lt;br&gt;<br />
-</li>
-</ul>
-<p>Example : <br />
- UShort data : bitspersample = 16, sampleFormat = 1<br />
- Float data : bitspersample = 32, sampleformat = 3<br />
-</p>
-<p>Note : for bitpersample = 8, and bitspersample = 64, sampleFormat is ignored the only available <a class="el" href="a06899.html">SampleType</a> are respectively <a class="el" href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">SampleType#BYTE</a> and <a class="el" href="a06899.html#a33465d1d419b1074fb259ef444609e92">SampleType#DOUBLE</a>. Moreover for each unknow combination bitPerSample, sampleFormat this method return</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> .</p>
+<p>Sets all values in the specified bank to the specified value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bitPerSample</td><td>bitPerSample bit number by sample. </td></tr>
-    <tr><td class="paramname">sampleFormat</td><td>integer to define floating, signed or unsigned type data. </td></tr>
+    <tr><td class="paramname">buffer</td><td>The databuffer in which to set all sample values. </td></tr>
+    <tr><td class="paramname">bank</td><td>Index of the bank to set. </td></tr>
+    <tr><td class="paramname">value</td><td>The value. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="">org.geotoolkit.image.internal.SampleType</a> or null if type undefined. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                                                                     {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">switch</span> (bitPerSample) {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">case</span> 8 : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">BYTE</a>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">case</span> 16 : {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">switch</span> (sampleFormat) {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    <span class="keywordflow">case</span> 1 : <span class="keywordflow">return</span> <a class="code" href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">USHORT</a>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    <span class="keywordflow">case</span> 2 : <span class="keywordflow">return</span> <a class="code" href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">SHORT</a>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    default : <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">case</span> 32 : {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">return</span> (sampleFormat == 3) ? <a class="code" href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">FLOAT</a> : <a class="code" href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">INTEGER</a>;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">case</span> 64: <span class="keywordflow">return</span> <a class="code" href="a06899.html#a33465d1d419b1074fb259ef444609e92">DOUBLE</a>;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div><div class="ttc" id="a06899_html_a92076741b75a8c2bdc5c24049c253d9a"><div class="ttname"><a href="a06899.html#a92076741b75a8c2bdc5c24049c253d9a">org.geotoolkit.image.internal.SampleType.BYTE</a></div><div class="ttdeci">BYTE</div><div class="ttdoc">Data type Byte. </div><div class="ttdef"><b>Definition:</b> SampleType.java:32</div></div>
-<div class="ttc" id="a06899_html_a33465d1d419b1074fb259ef444609e92"><div class="ttname"><a href="a06899.html#a33465d1d419b1074fb259ef444609e92">org.geotoolkit.image.internal.SampleType.DOUBLE</a></div><div class="ttdoc">Data type Double. </div><div class="ttdef"><b>Definition:</b> SampleType.java:57</div></div>
-<div class="ttc" id="a06899_html_a89b03df71aca47d18a0df701c77fcfc0"><div class="ttname"><a href="a06899.html#a89b03df71aca47d18a0df701c77fcfc0">org.geotoolkit.image.internal.SampleType.INTEGER</a></div><div class="ttdeci">INTEGER</div><div class="ttdoc">Data type Integer. </div><div class="ttdef"><b>Definition:</b> SampleType.java:47</div></div>
-<div class="ttc" id="a06899_html_a455b0c528d8e51182cea09a11e6f35e2"><div class="ttname"><a href="a06899.html#a455b0c528d8e51182cea09a11e6f35e2">org.geotoolkit.image.internal.SampleType.FLOAT</a></div><div class="ttdeci">FLOAT</div><div class="ttdoc">Data type Float. </div><div class="ttdef"><b>Definition:</b> SampleType.java:52</div></div>
-<div class="ttc" id="a06899_html_a17877e7a70f122032cacbbf98aad8b3d"><div class="ttname"><a href="a06899.html#a17877e7a70f122032cacbbf98aad8b3d">org.geotoolkit.image.internal.SampleType.USHORT</a></div><div class="ttdeci">USHORT</div><div class="ttdoc">Data type Short. </div><div class="ttdef"><b>Definition:</b> SampleType.java:42</div></div>
-<div class="ttc" id="a06899_html_ac29555e80bd1ec1b5e40b732df417090"><div class="ttname"><a href="a06899.html#ac29555e80bd1ec1b5e40b732df417090">org.geotoolkit.image.internal.SampleType.SHORT</a></div><div class="ttdeci">SHORT</div><div class="ttdoc">Data type Short. </div><div class="ttdef"><b>Definition:</b> SampleType.java:37</div></div>
+<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                                                                       {</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">switch</span> (buffer.getDataType()) {</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keywordflow">case</span> TYPE_BYTE :  Arrays.fill(((DataBufferByte)   buffer).getData(bank),   (byte) value); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="keywordflow">case</span> TYPE_SHORT:  Arrays.fill(((DataBufferShort)  buffer).getData(bank),  (<span class="keywordtype">short</span>) value); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <span class="keywordflow">case</span> TYPE_USHORT: Arrays.fill(((DataBufferUShort) buffer).getData(bank),  (<span class="keywordtype">short</span>) value); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">case</span> TYPE_INT:    Arrays.fill(((DataBufferInt)    buffer).getData(bank),          value); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <span class="keywordflow">case</span> TYPE_FLOAT:  Arrays.fill(((DataBufferFloat)  buffer).getData(bank),  (<span class="keywordtype">float</span>) value); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            <span class="keywordflow">case</span> TYPE_DOUBLE: Arrays.fill(((DataBufferDouble) buffer).getData(bank), (<span class="keywordtype">double</span>) value); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> RasterFormatException(String.valueOf(buffer));</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        }</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a919596a5ea1221ba85877c848cfbb413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919596a5ea1221ba85877c848cfbb413">&#9670;&nbsp;</a></span>fireTileUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fireTileUpdate </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>willBeWritable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A tile is about to be updated (it is either about to be grabbed for writing, or it is being released from writing). </p>
+
+<p class="reference">References <a class="el" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">DeferredPlanarImage.LOGGER</a>, and <a class="el" href="a06899.html#ae369fc436a8f8b942334af63940aa713">DeferredPlanarImage.observers</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>, <a class="el" href="a06899.html#ababc5a285cc2b18491768b525ef75166">DeferredPlanarImage.tileComputed()</a>, and <a class="el" href="a06899.html#ae93188d34d2e05546af79c4c923dff0d">DeferredPlanarImage.tileUpdate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                                                                                {</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keyword">final</span> TileObserver[] <a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a> = this.<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a>; <span class="comment">// Avoid the need for synchronization.</span></div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordflow">if</span> (observers != null) {</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> length = observers.length;</div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;length; i++) {</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                    observers[i].tileUpdate(<span class="keyword">this</span>, tileX, tileY, willBeWritable);</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                } <span class="keywordflow">catch</span> (<a class="code" href="a14207.html">RuntimeException</a> cause) {</div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                    <span class="comment">/*</span></div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">                     * An exception occurred in the user code. Unfortunately, we are probably not in</span></div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">                     * the mean user thread (e.g. the Swing thread).  This method is often invoked</span></div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">                     * from some JAI&#39;s worker thread, which we don&#39;t want to corrupt. Log a warning</span></div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">                     * for the user and lets the JAI&#39;s worker thread continue its work.</span></div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">                     */</span></div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                    String message = cause.getLocalizedMessage();</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                    <span class="keywordflow">if</span> (message == null) {</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                        message = Classes.getShortClassName(cause);</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                    }</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                    <span class="keyword">final</span> LogRecord record = <span class="keyword">new</span> LogRecord(Level.WARNING, message);</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                    record.setSourceClassName(observers[i].getClass().getCanonicalName());</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                    record.setSourceMethodName(<span class="stringliteral">&quot;tileUpdate&quot;</span>);</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                    record.setThrown(cause);</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                    record.setLoggerName(<a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.getName());</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                    <a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(record);</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                }</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            }</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        }</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    }</div><div class="ttc" id="a06899_html_ae369fc436a8f8b942334af63940aa713"><div class="ttname"><a href="a06899.html#ae369fc436a8f8b942334af63940aa713">org.geotoolkit.image.DeferredPlanarImage.observers</a></div><div class="ttdeci">TileObserver [] observers</div><div class="ttdoc">The tile observers, or. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:170</div></div>
+<div class="ttc" id="a14207_html"><div class="ttname"><a href="a14207.html">RuntimeException</a></div></div>
+<div class="ttc" id="a06899_html_ab1d069f56091df4f6436f8c713ab2f39"><div class="ttname"><a href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">org.geotoolkit.image.DeferredPlanarImage.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdoc">The logger for information messages. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:92</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5b0b8dd0eb7893a07022c0870a71ed57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0b8dd0eb7893a07022c0870a71ed57">&#9670;&nbsp;</a></span>getDefaultDataBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static synchronized DataBuffer getDefaultDataBuffer </td>
+          <td>(</td>
+          <td class="paramtype">final SampleModel&#160;</td>
+          <td class="paramname"><em>sampleModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final ColorModel&#160;</td>
+          <td class="paramname"><em>colorModel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a databuffer for the specified sample model. </p>
+<p>If the image uses an <a class="el" href="">IndexColorModel</a> and a  IndexColorModel::getTransparentPixel transparent pixel} is defined, then raster sample values are initialized to the transparent pixel. </p>
+
+<p class="reference">References <a class="el" href="a06903.html#a5bd6abf33505161e9374f87c860d513b">DeferredPlanarImage.Entry.box</a>, <a class="el" href="a06899.html#a04c913874af717bfaf6f7516f5745d21">DeferredPlanarImage.BOX_THICKNESS</a>, <a class="el" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">DeferredPlanarImage.buffers</a>, <a class="el" href="a06903.html#a414e89c8759674e8957bbb5ead481c0d">DeferredPlanarImage.Entry.Entry()</a>, <a class="el" href="a06903.html#ab6e076532c3ff3ae73185f40cffad8c8">DeferredPlanarImage.Entry.fill</a>, <a class="el" href="a06895.html#af843a53faa09bbe8112ca88a1975a504">ColorUtilities.getColorIndex()</a>, and <a class="el" href="a06895.html#a234a98a4c3c4c0ecfe3cc9c24edda621">ColorUtilities.getTransparentPixel()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    {</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a06899.html#a04107b298feed03b4d1a7779daf1b4de">fill</a> = 0;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordtype">int</span> box  = 0;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> (colorModel instanceof IndexColorModel) {</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keyword">final</span> IndexColorModel colors = (IndexColorModel) colorModel;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            fill = ColorUtilities.getTransparentPixel(colors);</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a04c913874af717bfaf6f7516f5745d21">BOX_THICKNESS</a> &gt; 0 &amp;&amp; Math.min(sampleModel.getWidth(), sampleModel.getHeight()) &gt;= 64) {</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                box = ColorUtilities.getColorIndex(colors, Color.DARK_GRAY, fill);</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                <span class="comment">// Avoid drawing the box if tiles are too small.</span></div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                box = <a class="code" href="a06899.html#a04107b298feed03b4d1a7779daf1b4de">fill</a>;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            }</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keyword">final</span> Entry entry = <span class="keyword">new</span> Entry(sampleModel, fill, box);</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">buffers</a> == null) {</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <a class="code" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">buffers</a> = <span class="keyword">new</span> WeakValueHashMap&lt;&gt;(Entry.class);</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        DataBuffer buffer = <a class="code" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">buffers</a>.get(entry);</div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">if</span> (buffer != null) {</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <span class="keywordflow">return</span> buffer;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        }</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">         * No suitable data buffer existed prior to this call. Create a new one and fill it</span></div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">         * with the transparent color. Note that no filling is needed if the transparent value</span></div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">         * is 0, since the data buffer is already initialized to 0.</span></div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        buffer = sampleModel.createDataBuffer();</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">if</span> (fill &gt; 0) {</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> bank=buffer.getNumBanks(); --bank&gt;=0;) {</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <a class="code" href="a06899.html#a04107b298feed03b4d1a7779daf1b4de">fill</a>(buffer, bank, fill);</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            }</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">         * Draw a box around the tile. This is just a visual clue about tile location.</span></div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">         * Current implementation draw a box only for type byte with a single band.</span></div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a04c913874af717bfaf6f7516f5745d21">BOX_THICKNESS</a> &gt; 0 &amp;&amp; box != fill) {</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordflow">if</span> (sampleModel.getNumBands() == 1) {</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span> width = sampleModel.getWidth();</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordtype">int</span> thickness = <a class="code" href="a06899.html#a04c913874af717bfaf6f7516f5745d21">BOX_THICKNESS</a>;</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                <span class="keywordtype">int</span> offset = (width + 1) * thickness;</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <span class="keywordflow">switch</span> (buffer.getDataType()) {</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                    <span class="keywordflow">case</span> TYPE_BYTE: {</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                        <span class="keyword">final</span> byte[] array = ((DataBufferByte) buffer).getData(0);</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                        Arrays.fill(array, 0, offset, (byte) box);</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                        Arrays.fill(array, array.length-offset, array.length, (byte) box);</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                        thickness *= 2;</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                        <span class="keywordflow">while</span> ((offset += width) &lt; array.length) {</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                            Arrays.fill(array, offset-thickness, offset, (byte) box);</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                        }</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                    }</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                }</div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            }</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <a class="code" href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">buffers</a>.put(entry, buffer);</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">return</span> buffer;</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div><div class="ttc" id="a06899_html_a04107b298feed03b4d1a7779daf1b4de"><div class="ttname"><a href="a06899.html#a04107b298feed03b4d1a7779daf1b4de">org.geotoolkit.image.DeferredPlanarImage.fill</a></div><div class="ttdeci">static void fill(final DataBuffer buffer, final int bank, final int value)</div><div class="ttdoc">Sets all values in the specified bank to the specified value. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:398</div></div>
+<div class="ttc" id="a06899_html_a04c913874af717bfaf6f7516f5745d21"><div class="ttname"><a href="a06899.html#a04c913874af717bfaf6f7516f5745d21">org.geotoolkit.image.DeferredPlanarImage.BOX_THICKNESS</a></div><div class="ttdeci">static final int BOX_THICKNESS</div><div class="ttdoc">The thickness (in pixels) of the box to draw around deferred tiles, or 0 for disabling this feature...</div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:99</div></div>
+<div class="ttc" id="a06899_html_a2a463cd34c77e448bdb92b3025b4def8"><div class="ttname"><a href="a06899.html#a2a463cd34c77e448bdb92b3025b4def8">org.geotoolkit.image.DeferredPlanarImage.buffers</a></div><div class="ttdeci">static Map&lt; Entry, DataBuffer &gt; buffers</div><div class="ttdoc">Empty DataBuffer for a set of SampleModel. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:139</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a016c1e8b58082cf2add38a25a00fd20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016c1e8b58082cf2add38a25a00fd20d">&#9670;&nbsp;</a></span>getSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector&lt;RenderedImage&gt; getSources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the source images. </p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                                              {</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">return</span> super.getSources();</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad40b045d716a2c8cfdb88e2067fd9e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40b045d716a2c8cfdb88e2067fd9e12">&#9670;&nbsp;</a></span>getTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized Raster getTile </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the specified tile, or a default one if the requested tile is not yet available. </p>
+<p>If the requested tile is not immediately available, then an empty tile is returned and a notification will be sent later through <a class="el" href="">TileObserver</a> when the real tile will be available.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tileX</td><td>Tile X index. </td></tr>
+    <tr><td class="paramname">tileY</td><td>Tile Y index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The requested tile. </dd></dl>
+
+<p class="reference">References <a class="el" href="a07879.html#a7973ac9aa332dfe83e823c1e789e3295">Loggings.Keys.DeferredTilePainting_2</a>, <a class="el" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">DeferredPlanarImage.delay</a>, <a class="el" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">DeferredPlanarImage.fireTileUpdate()</a>, <a class="el" href="a07875.html#a621802aa7d89b0bf76fab832b7200b9c">Loggings.format()</a>, <a class="el" href="a06899.html#a5b0b8dd0eb7893a07022c0870a71ed57">DeferredPlanarImage.getDefaultDataBuffer()</a>, <a class="el" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">DeferredPlanarImage.getTileIndice()</a>, <a class="el" href="a06899.html#a924be625bde57cce7166d786020b65ad">DeferredPlanarImage.image</a>, <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">DeferredPlanarImage.pendings</a>, <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">DeferredPlanarImage.requests</a>, and <a class="el" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">DeferredPlanarImage.waitings</a>.</p>
+<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                                                         {</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a> == null) {</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a> = <span class="keyword">new</span> TileRequest[getNumXTiles() * getNumYTiles()];</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileIndex = <a class="code" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">getTileIndice</a>(tileX, tileY);</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        TileRequest request = <a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>[tileIndex];</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span> (request == null) {</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            request = <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>.queueTiles(<span class="keyword">new</span> Point[]{<span class="keyword">new</span> Point(tileX, tileY)});</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>[tileIndex] = request;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">switch</span> (request.getTileStatus(tileX, tileY)) {</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">default</span>: {</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                <a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.warning(<span class="stringliteral">&quot;Unknow tile status&quot;</span>);</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="comment">// Fall through</span></div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            }</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">case</span> TileRequest.TILE_STATUS_CANCELLED:  <span class="comment">// Fall through</span></div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">case</span> TileRequest.TILE_STATUS_FAILED:     <span class="comment">// Fall through</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordflow">case</span> TileRequest.TILE_STATUS_COMPUTED:   <span class="keywordflow">return</span> <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>.getTile(tileX, tileY);</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">case</span> TileRequest.TILE_STATUS_PENDING:    <span class="comment">// Fall through</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">case</span> TileRequest.TILE_STATUS_PROCESSING: <span class="keywordflow">break</span>;</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">         * The tile is not yet available. A background thread should be computing it right</span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">         * now. Wait a little bit in case the tile computation is very fast. If we can get</span></div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">         * the tile in a very short time, it would be more efficient than invoking some</span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">         * &#39;repaint()&#39; method later.</span></div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> != null) {</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>[tileIndex] != null) {</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>[tileIndex];</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            }</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        }</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">delay</a> != 0) {</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a> == null) {</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a> = <span class="keyword">new</span> <span class="keywordtype">boolean</span>[<a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>.length];</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            }</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a>[tileIndex] = <span class="keyword">true</span>;</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                wait(<a class="code" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">delay</a>);</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            } <span class="keywordflow">catch</span> (InterruptedException exception) {</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <span class="comment">// Somebody doesn&#39;t want to lets us sleep. Go back to work.</span></div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            }</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a>[tileIndex] = <span class="keyword">false</span>;</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">switch</span> (request.getTileStatus(tileX, tileY)) {</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>.getTile(tileX, tileY);</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keywordflow">case</span> TileRequest.TILE_STATUS_PENDING:    <span class="comment">// Fall through</span></div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="keywordflow">case</span> TileRequest.TILE_STATUS_PROCESSING: <span class="keywordflow">break</span>;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            }</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">         * The tile is not yet available and seems to take a long time to compute.</span></div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">         * Flag that this tile will need to be repainted later and returns an empty tile.</span></div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.isLoggable(Level.FINER)) {</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keyword">final</span> LogRecord record = Loggings.format(Level.FINER,</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                    Loggings.Keys.DeferredTilePainting_2, tileX, tileY);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            record.setSourceClassName(<a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a>.class.getName());</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            record.setSourceMethodName(<span class="stringliteral">&quot;getTile&quot;</span>);</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            record.setLoggerName(<a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.getName());</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(record);</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> == null) {</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> = <span class="keyword">new</span> <a class="code" href="a14135.html">Raster</a>[<a class="code" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a>.length];</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keyword">final</span> Point      origin = <span class="keyword">new</span> Point(tileXToX(tileX), tileYToY(tileY));</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">final</span> DataBuffer buffer = <a class="code" href="a06899.html#a5b0b8dd0eb7893a07022c0870a71ed57">getDefaultDataBuffer</a>(sampleModel, colorModel);</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14135.html">Raster</a>     raster = <a class="code" href="a14135.html">Raster</a>.createRaster(sampleModel, buffer, origin);</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>[tileIndex] = raster;</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <a class="code" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">fireTileUpdate</a>(tileX, tileY, <span class="keyword">true</span>);</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> raster;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div><div class="ttc" id="a06899_html_a92de96ca1b7b2ff9e602fb5f9909a574"><div class="ttname"><a href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">org.geotoolkit.image.DeferredPlanarImage.getTileIndice</a></div><div class="ttdeci">int getTileIndice(final int tileX, final int tileY)</div><div class="ttdoc">Returns the index in requests and pendings array for the given tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:233</div></div>
+<div class="ttc" id="a06899_html_a5b0b8dd0eb7893a07022c0870a71ed57"><div class="ttname"><a href="a06899.html#a5b0b8dd0eb7893a07022c0870a71ed57">org.geotoolkit.image.DeferredPlanarImage.getDefaultDataBuffer</a></div><div class="ttdeci">static synchronized DataBuffer getDefaultDataBuffer(final SampleModel sampleModel, final ColorModel colorModel)</div><div class="ttdoc">Returns a databuffer for the specified sample model. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:330</div></div>
+<div class="ttc" id="a06899_html_afc60f99d4b57df3e2b4048a337913a54"><div class="ttname"><a href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">org.geotoolkit.image.DeferredPlanarImage.waitings</a></div><div class="ttdeci">transient boolean [] waitings</div><div class="ttdoc">Tells if a tile is request is waiting. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:184</div></div>
+<div class="ttc" id="a06899_html_a924be625bde57cce7166d786020b65ad"><div class="ttname"><a href="a06899.html#a924be625bde57cce7166d786020b65ad">org.geotoolkit.image.DeferredPlanarImage.image</a></div><div class="ttdeci">final PlanarImage image</div><div class="ttdoc">The source image. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:165</div></div>
+<div class="ttc" id="a06899_html_a919596a5ea1221ba85877c848cfbb413"><div class="ttname"><a href="a06899.html#a919596a5ea1221ba85877c848cfbb413">org.geotoolkit.image.DeferredPlanarImage.fireTileUpdate</a></div><div class="ttdeci">void fireTileUpdate(final int tileX, final int tileY, final boolean willBeWritable)</div><div class="ttdoc">A tile is about to be updated (it is either about to be grabbed for writing, or it is being released ...</div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:414</div></div>
+<div class="ttc" id="a06899_html_a3f6cd043d2cd15df3101989bdef3ea60"><div class="ttname"><a href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">org.geotoolkit.image.DeferredPlanarImage.delay</a></div><div class="ttdeci">final int delay</div><div class="ttdoc">The delay (in milliseconds) to wait for a tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:160</div></div>
+<div class="ttc" id="a06899_html_a630477f812b6ce20820b3dfe94362c04"><div class="ttname"><a href="a06899.html#a630477f812b6ce20820b3dfe94362c04">org.geotoolkit.image.DeferredPlanarImage.pendings</a></div><div class="ttdeci">transient Raster [] pendings</div><div class="ttdoc">Tells if a tile is in process of being computed. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:191</div></div>
+<div class="ttc" id="a06899_html_a6418bf54177bbac2a27bd1273737d5ef"><div class="ttname"><a href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">org.geotoolkit.image.DeferredPlanarImage.DeferredPlanarImage</a></div><div class="ttdeci">DeferredPlanarImage(final RenderedImage source)</div><div class="ttdoc">Constructs a new instance of. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:198</div></div>
+<div class="ttc" id="a06899_html_ab1d069f56091df4f6436f8c713ab2f39"><div class="ttname"><a href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">org.geotoolkit.image.DeferredPlanarImage.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdoc">The logger for information messages. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:92</div></div>
+<div class="ttc" id="a06899_html_aeef65604cbc0d419c67b91a91f4b7f64"><div class="ttname"><a href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">org.geotoolkit.image.DeferredPlanarImage.requests</a></div><div class="ttdeci">transient TileRequest [] requests</div><div class="ttdoc">The TileRequests for a given tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:177</div></div>
+<div class="ttc" id="a14135_html"><div class="ttname"><a href="a14135.html">Raster</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a92de96ca1b7b2ff9e602fb5f9909a574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92de96ca1b7b2ff9e602fb5f9909a574">&#9670;&nbsp;</a></span>getTileIndice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getTileIndice </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the index in <a class="el" href="a06899.html#aeef65604cbc0d419c67b91a91f4b7f64">requests</a> and <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> array for the given tile. </p>
+<p>The</p><div class="fragment"><div class="line">x </div></div><!-- fragment --><p> index varies fastest. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>, <a class="el" href="a06899.html#a4be7fc30cc95025e87318c6604762bec">DeferredPlanarImage.getWritableTileIndices()</a>, <a class="el" href="a06899.html#ab74c6c15649b1ada3aeab126cd85946e">DeferredPlanarImage.isTileWritable()</a>, and <a class="el" href="a06899.html#ababc5a285cc2b18491768b525ef75166">DeferredPlanarImage.tileComputed()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                                                {</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        assert tileX &gt;= getMinTileX() &amp;&amp; tileX &lt;= getMaxTileX() : tileX;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        assert tileY &gt;= getMinTileY() &amp;&amp; tileY &lt;= getMaxTileY() : tileY;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> (tileY - getMinTileY()) * getNumXTiles() +</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;               (tileX - getMinTileX());</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8aa34205fa2e1b0542e8e5cb46168f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa34205fa2e1b0542e8e5cb46168f8a">&#9670;&nbsp;</a></span>getWritableTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WritableRaster getWritableTile </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks out a tile for writing. </p>
+<p>Since</p><div class="fragment"><div class="line"><a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a> </div></div><!-- fragment --><p> are not really writable, this method throws an <a class="el" href="">UnsupportedOperationException</a>. </p>
+<div class="fragment"><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                                                                            {</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException();</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a4be7fc30cc95025e87318c6604762bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be7fc30cc95025e87318c6604762bec">&#9670;&nbsp;</a></span>getWritableTileIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized Point [] getWritableTileIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array of <a class="el" href="">Point</a> objects indicating which tiles are checked out for writing. </p>
+<p>Returns null if none are checked out. </p>
+
+<p class="reference">References <a class="el" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">DeferredPlanarImage.getTileIndice()</a>, and <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">DeferredPlanarImage.pendings</a>.</p>
+<div class="fragment"><div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                                                         {</div><div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14135.html">Raster</a>[] <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> = this.<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>;</div><div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        Point[] indices = null;</div><div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="keywordflow">if</span> (pendings != null) {</div><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            <span class="keywordtype">int</span> count = 0;</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> minX = getMinTileX();</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> minY = getMinTileY();</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> numX = getNumXTiles();</div><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> length = pendings.length;</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;length; i++) {</div><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                <span class="keywordflow">if</span> (pendings[i] != null) {</div><div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                    <span class="keywordflow">if</span> (indices == null) {</div><div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                        indices = <span class="keyword">new</span> Point[length - i];</div><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                    }</div><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">int</span> x = i % numX + minX;</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">int</span> y = i / numX + minY;</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                    assert <a class="code" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">getTileIndice</a>(x,y) == i : i;</div><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                    indices[count++] = <span class="keyword">new</span> Point(x,y);</div><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                }</div><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            }</div><div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;            <span class="keywordflow">if</span> (indices != null) {</div><div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                indices = ArraysExt.resize(indices, count);</div><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            }</div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        }</div><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <span class="keywordflow">return</span> indices;</div><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    }</div><div class="ttc" id="a06899_html_a92de96ca1b7b2ff9e602fb5f9909a574"><div class="ttname"><a href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">org.geotoolkit.image.DeferredPlanarImage.getTileIndice</a></div><div class="ttdeci">int getTileIndice(final int tileX, final int tileY)</div><div class="ttdoc">Returns the index in requests and pendings array for the given tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:233</div></div>
+<div class="ttc" id="a06899_html_a630477f812b6ce20820b3dfe94362c04"><div class="ttname"><a href="a06899.html#a630477f812b6ce20820b3dfe94362c04">org.geotoolkit.image.DeferredPlanarImage.pendings</a></div><div class="ttdeci">transient Raster [] pendings</div><div class="ttdoc">Tells if a tile is in process of being computed. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:191</div></div>
+<div class="ttc" id="a14135_html"><div class="ttname"><a href="a14135.html">Raster</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0f024ba34f3f7e62bcf2404664958664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f024ba34f3f7e62bcf2404664958664">&#9670;&nbsp;</a></span>hasTileWriters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized boolean hasTileWriters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether any tile is checked out for writing. </p>
+
+<p class="reference">References <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">DeferredPlanarImage.pendings</a>.</p>
+<div class="fragment"><div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;                                                 {</div><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14135.html">Raster</a>[] <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> = this.<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>;</div><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">if</span> (pendings != null) {</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> length = pendings.length;</div><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;length; i++) {</div><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                <span class="keywordflow">if</span> (pendings[i] != null) {</div><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                }</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            }</div><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        }</div><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    }</div><div class="ttc" id="a06899_html_a630477f812b6ce20820b3dfe94362c04"><div class="ttname"><a href="a06899.html#a630477f812b6ce20820b3dfe94362c04">org.geotoolkit.image.DeferredPlanarImage.pendings</a></div><div class="ttdeci">transient Raster [] pendings</div><div class="ttdoc">Tells if a tile is in process of being computed. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:191</div></div>
+<div class="ttc" id="a14135_html"><div class="ttname"><a href="a14135.html">Raster</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab74c6c15649b1ada3aeab126cd85946e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74c6c15649b1ada3aeab126cd85946e">&#9670;&nbsp;</a></span>isTileWritable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized boolean isTileWritable </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether a tile is currently checked out for writing. </p>
+
+<p class="reference">References <a class="el" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">DeferredPlanarImage.getTileIndice()</a>, and <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">DeferredPlanarImage.pendings</a>.</p>
+<div class="fragment"><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                                                                                 {</div><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14135.html">Raster</a>[] <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> = this.<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>;</div><div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">return</span> pendings != null &amp;&amp; pendings[<a class="code" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">getTileIndice</a>(tileX, tileY)] != null;</div><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    }</div><div class="ttc" id="a06899_html_a92de96ca1b7b2ff9e602fb5f9909a574"><div class="ttname"><a href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">org.geotoolkit.image.DeferredPlanarImage.getTileIndice</a></div><div class="ttdeci">int getTileIndice(final int tileX, final int tileY)</div><div class="ttdoc">Returns the index in requests and pendings array for the given tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:233</div></div>
+<div class="ttc" id="a06899_html_a630477f812b6ce20820b3dfe94362c04"><div class="ttname"><a href="a06899.html#a630477f812b6ce20820b3dfe94362c04">org.geotoolkit.image.DeferredPlanarImage.pendings</a></div><div class="ttdeci">transient Raster [] pendings</div><div class="ttdoc">Tells if a tile is in process of being computed. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:191</div></div>
+<div class="ttc" id="a14135_html"><div class="ttname"><a href="a14135.html">Raster</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a46e38c4f83ac782b44defaa0937179ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e38c4f83ac782b44defaa0937179ae">&#9670;&nbsp;</a></span>releaseWritableTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void releaseWritableTile </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relinquishes the right to write to a tile. </p>
+<p>Since</p><div class="fragment"><div class="line"><a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a> </div></div><!-- fragment --><p> are not really writable, this method throws an <a class="el" href="a14215.html">IllegalStateException</a> (the state is really illegal since <a class="el" href="a06899.html#a8aa34205fa2e1b0542e8e5cb46168f8a">getWritableTile</a> should never have succeeded). </p>
+<div class="fragment"><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                                                                      {</div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14215.html">IllegalStateException</a>();</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    }</div><div class="ttc" id="a14215_html"><div class="ttname"><a href="a14215.html">IllegalStateException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa2d32ac7cb06188d57d795223902c074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d32ac7cb06188d57d795223902c074">&#9670;&nbsp;</a></span>removeTileObserver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized void removeTileObserver </td>
+          <td>(</td>
+          <td class="paramtype">final TileObserver&#160;</td>
+          <td class="paramname"><em>observer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an observer. </p>
+<p>If the observer was not registered, nothing happens. If the observer was registered for multiple notifications, it will now be registered for one fewer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observer</td><td>The observer to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06899.html#ae369fc436a8f8b942334af63940aa713">DeferredPlanarImage.observers</a>.</p>
+<div class="fragment"><div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                                                                             {</div><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a> != null) {</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a>.length; --i&gt;=0;) {</div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a>[i] == observer) {</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                    <a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a> = ArraysExt.remove(<a class="code" href="a06899.html#ae369fc436a8f8b942334af63940aa713">observers</a>, i, 1);</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                }</div><div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;            }</div><div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        }</div><div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    }</div><div class="ttc" id="a06899_html_ae369fc436a8f8b942334af63940aa713"><div class="ttname"><a href="a06899.html#ae369fc436a8f8b942334af63940aa713">org.geotoolkit.image.DeferredPlanarImage.observers</a></div><div class="ttdeci">TileObserver [] observers</div><div class="ttdoc">The tile observers, or. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:170</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac32d5bbc75747a7750954fb15d709ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32d5bbc75747a7750954fb15d709ade">&#9670;&nbsp;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setData </td>
+          <td>(</td>
+          <td class="paramtype">Raster&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a rectangle of the image to the contents of the raster. </p>
+<p>Since </p><div class="fragment"><div class="line"><a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a> </div></div><!-- fragment --><p> are not really writable, this method throws an <a class="el" href="">UnsupportedOperationException</a>. </p>
+<div class="fragment"><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                                  {</div><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException();</div><div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0a2fe2d9900cf4780a25b1f52266a976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2fe2d9900cf4780a25b1f52266a976">&#9670;&nbsp;</a></span>tileCancelled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tileCancelled </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a13607.html">Object</a>&#160;</td>
+          <td class="paramname"><em>eventSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final TileRequest []&#160;</td>
+          <td class="paramname"><em>requests</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final PlanarImage&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked when a tile computation has been canceled. </p>
+<p>The default implementation does nothing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventSource</td><td>The caller of this method. </td></tr>
+    <tr><td class="paramname">requests</td><td>The relevant tile computation requests as returned by the method used to queue the tile. </td></tr>
+    <tr><td class="paramname">image</td><td>The image for which tiles are being computed as specified to the <a class="el" href="">TileScheduler</a>. </td></tr>
+    <tr><td class="paramname">tileX</td><td>The X index of the tile in the tile array. </td></tr>
+    <tr><td class="paramname">tileY</td><td>The Y index of the tile in the tile array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    {</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8be9d6942d389e80fcc3394187b8263e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be9d6942d389e80fcc3394187b8263e">&#9670;&nbsp;</a></span>tileComputationFailure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tileComputationFailure </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a13607.html">Object</a>&#160;</td>
+          <td class="paramname"><em>eventSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final TileRequest []&#160;</td>
+          <td class="paramname"><em>requests</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final PlanarImage&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Throwable&#160;</td>
+          <td class="paramname"><em>cause</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked when a tile computation failed. </p>
+<p>Default implementation log a warning and lets the program continue as usual. We are not throwing an exception since this failure will alter the visual rendering, but will not otherwise harm the system.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventSource</td><td>The caller of this method. </td></tr>
+    <tr><td class="paramname">requests</td><td>The relevant tile computation requests as returned by the method used to queue the tile. </td></tr>
+    <tr><td class="paramname">image</td><td>The image for which tiles are being computed as specified to the <a class="el" href="">TileScheduler</a>. </td></tr>
+    <tr><td class="paramname">tileX</td><td>The X index of the tile in the tile array. </td></tr>
+    <tr><td class="paramname">tileY</td><td>The Y index of the tile in the tile array. </td></tr>
+    <tr><td class="paramname">cause</td><td>The cause of the failure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">DeferredPlanarImage.LOGGER</a>.</p>
+<div class="fragment"><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    {</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keyword">final</span> LogRecord record = <span class="keyword">new</span> LogRecord(Level.WARNING, cause.getLocalizedMessage());</div><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        record.setSourceClassName(<a class="code" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage</a>.class.getName());</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        record.setSourceMethodName(<span class="stringliteral">&quot;getTile&quot;</span>);</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        record.setThrown(cause);</div><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        record.setLoggerName(<a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.getName());</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <a class="code" href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(record);</div><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    }</div><div class="ttc" id="a06899_html_a6418bf54177bbac2a27bd1273737d5ef"><div class="ttname"><a href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">org.geotoolkit.image.DeferredPlanarImage.DeferredPlanarImage</a></div><div class="ttdeci">DeferredPlanarImage(final RenderedImage source)</div><div class="ttdoc">Constructs a new instance of. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:198</div></div>
+<div class="ttc" id="a06899_html_ab1d069f56091df4f6436f8c713ab2f39"><div class="ttname"><a href="a06899.html#ab1d069f56091df4f6436f8c713ab2f39">org.geotoolkit.image.DeferredPlanarImage.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdoc">The logger for information messages. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:92</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ababc5a285cc2b18491768b525ef75166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ababc5a285cc2b18491768b525ef75166">&#9670;&nbsp;</a></span>tileComputed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tileComputed </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a13607.html">Object</a>&#160;</td>
+          <td class="paramname"><em>eventSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final TileRequest []&#160;</td>
+          <td class="paramname"><em>requests</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final PlanarImage&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Raster&#160;</td>
+          <td class="paramname"><em>tile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked when a tile has been computed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventSource</td><td>The caller of this method. </td></tr>
+    <tr><td class="paramname">requests</td><td>The relevant tile computation requests as returned by the method used to queue the tile. </td></tr>
+    <tr><td class="paramname">image</td><td>The image for which tiles are being computed as specified to the <a class="el" href="">TileScheduler</a>. </td></tr>
+    <tr><td class="paramname">tileX</td><td>The X index of the tile in the tile array. </td></tr>
+    <tr><td class="paramname">tileY</td><td>The Y index of the tile in the tile array. </td></tr>
+    <tr><td class="paramname">tile</td><td>The computed tile. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">DeferredPlanarImage.fireTileUpdate()</a>, <a class="el" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">DeferredPlanarImage.getTileIndice()</a>, <a class="el" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">DeferredPlanarImage.pendings</a>, and <a class="el" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">DeferredPlanarImage.waitings</a>.</p>
+<div class="fragment"><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    {</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keyword">synchronized</span> (<span class="keyword">this</span>) {</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> tileIndice = <a class="code" href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">getTileIndice</a>(tileX, tileY);</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a> != null &amp;&amp; <a class="code" href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">waitings</a>[tileIndice]) {</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">                 * Notify the &#39;getTile(...)&#39; method in only ONE thread that a tile is available.</span></div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment">                 * If tiles computation occurs in two or more background thread, then there is no</span></div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">                 * guarantee that the notified thread is really the one waiting for this particular</span></div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="comment">                 * tile. However, this is not a damageable problem; the delay hint may just not be</span></div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">                 * accuratly respected (the actual delay may be shorter for wrongly notified tile).</span></div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                notify();</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            }</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a> == null || <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>[tileIndice] == null) {</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                <span class="keywordflow">return</span>;</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            }</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <a class="code" href="a06899.html#a630477f812b6ce20820b3dfe94362c04">pendings</a>[tileIndice] = null;</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        }</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <a class="code" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">fireTileUpdate</a>(tileX, tileY, <span class="keyword">false</span>);</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    }</div><div class="ttc" id="a06899_html_a92de96ca1b7b2ff9e602fb5f9909a574"><div class="ttname"><a href="a06899.html#a92de96ca1b7b2ff9e602fb5f9909a574">org.geotoolkit.image.DeferredPlanarImage.getTileIndice</a></div><div class="ttdeci">int getTileIndice(final int tileX, final int tileY)</div><div class="ttdoc">Returns the index in requests and pendings array for the given tile. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:233</div></div>
+<div class="ttc" id="a06899_html_afc60f99d4b57df3e2b4048a337913a54"><div class="ttname"><a href="a06899.html#afc60f99d4b57df3e2b4048a337913a54">org.geotoolkit.image.DeferredPlanarImage.waitings</a></div><div class="ttdeci">transient boolean [] waitings</div><div class="ttdoc">Tells if a tile is request is waiting. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:184</div></div>
+<div class="ttc" id="a06899_html_a919596a5ea1221ba85877c848cfbb413"><div class="ttname"><a href="a06899.html#a919596a5ea1221ba85877c848cfbb413">org.geotoolkit.image.DeferredPlanarImage.fireTileUpdate</a></div><div class="ttdeci">void fireTileUpdate(final int tileX, final int tileY, final boolean willBeWritable)</div><div class="ttdoc">A tile is about to be updated (it is either about to be grabbed for writing, or it is being released ...</div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:414</div></div>
+<div class="ttc" id="a06899_html_a630477f812b6ce20820b3dfe94362c04"><div class="ttname"><a href="a06899.html#a630477f812b6ce20820b3dfe94362c04">org.geotoolkit.image.DeferredPlanarImage.pendings</a></div><div class="ttdeci">transient Raster [] pendings</div><div class="ttdoc">Tells if a tile is in process of being computed. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:191</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae93188d34d2e05546af79c4c923dff0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93188d34d2e05546af79c4c923dff0d">&#9670;&nbsp;</a></span>tileUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tileUpdate </td>
+          <td>(</td>
+          <td class="paramtype">final WritableRenderedImage&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>willBeWritable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invoked if the underlying image is writable and one of its tile changed. </p>
+<p>This method forward the call to every registered listener. </p>
+
+<p class="reference">References <a class="el" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">DeferredPlanarImage.fireTileUpdate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    {</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <a class="code" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">fireTileUpdate</a>(tileX, tileY, willBeWritable);</div><div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div><div class="ttc" id="a06899_html_a919596a5ea1221ba85877c848cfbb413"><div class="ttname"><a href="a06899.html#a919596a5ea1221ba85877c848cfbb413">org.geotoolkit.image.DeferredPlanarImage.fireTileUpdate</a></div><div class="ttdeci">void fireTileUpdate(final int tileX, final int tileY, final boolean willBeWritable)</div><div class="ttdoc">A tile is about to be updated (it is either about to be grabbed for writing, or it is being released ...</div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:414</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3f75b2a09b08a22c9c7d816932a97cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f75b2a09b08a22c9c7d816932a97cb7">&#9670;&nbsp;</a></span>toVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vector&lt;RenderedImage&gt; toVector </td>
+          <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wraps the specified image in a vector. </p>
+<dl class="todo"><dt><b><a class="el" href="a03779.html#_todo000005">Todo:</a></b></dt><dd>Should be inlined in the constructor if only Sun was to fix RFE #4093999 ("Relax constraint on placement of this()/super() call in constructors"). </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a6418bf54177bbac2a27bd1273737d5ef">DeferredPlanarImage.DeferredPlanarImage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                                                             {</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keyword">final</span> Vector&lt;RenderedImage&gt; vector = <span class="keyword">new</span> Vector&lt;&gt;(1);</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        vector.add(<a class="code" href="a06899.html#a924be625bde57cce7166d786020b65ad">image</a>);</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">return</span> vector;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div><div class="ttc" id="a06899_html_a924be625bde57cce7166d786020b65ad"><div class="ttname"><a href="a06899.html#a924be625bde57cce7166d786020b65ad">org.geotoolkit.image.DeferredPlanarImage.image</a></div><div class="ttdeci">final PlanarImage image</div><div class="ttdoc">The source image. </div><div class="ttdef"><b>Definition:</b> DeferredPlanarImage.java:165</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a92076741b75a8c2bdc5c24049c253d9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92076741b75a8c2bdc5c24049c253d9a">&#9670;&nbsp;</a></span>BYTE</h2>
+<a id="a04c913874af717bfaf6f7516f5745d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c913874af717bfaf6f7516f5745d21">&#9670;&nbsp;</a></span>BOX_THICKNESS</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">BYTE</td>
+          <td class="memname">final int BOX_THICKNESS = 2</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Data type <a class="el" href="">Byte</a>. </p>
+<p>The thickness (in pixels) of the box to draw around deferred tiles, or 0 for disabling this feature. </p>
+<p>Current implementation draw a box only for <a class="el" href="">DataBufferByte</a> with only one band. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a5b0b8dd0eb7893a07022c0870a71ed57">DeferredPlanarImage.getDefaultDataBuffer()</a>.</p>
 
 </div>
 </div>
-<a id="a455b0c528d8e51182cea09a11e6f35e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a455b0c528d8e51182cea09a11e6f35e2">&#9670;&nbsp;</a></span>FLOAT</h2>
+<a id="a2a463cd34c77e448bdb92b3025b4def8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a463cd34c77e448bdb92b3025b4def8">&#9670;&nbsp;</a></span>buffers</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FLOAT</td>
+          <td class="memname">Map&lt;<a class="el" href="a06903.html">Entry</a>,DataBuffer&gt; buffers</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Data type <a class="el" href="">Float</a>. </p>
+<p>Empty <a class="el" href="">DataBuffer</a> for a set of <a class="el" href="">SampleModel</a>. </p>
+<p>Will be created only when first needed. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a5b0b8dd0eb7893a07022c0870a71ed57">DeferredPlanarImage.getDefaultDataBuffer()</a>.</p>
 
 </div>
 </div>
-<a id="a89b03df71aca47d18a0df701c77fcfc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89b03df71aca47d18a0df701c77fcfc0">&#9670;&nbsp;</a></span>INTEGER</h2>
+<a id="afd9602d17b825d716c4b051b4f581012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9602d17b825d716c4b051b4f581012">&#9670;&nbsp;</a></span>DELAY</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">INTEGER</td>
+          <td class="memname">final long DELAY = 500</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Data type <a class="el" href="">Integer</a>. </p>
+<p>The maximum delay (in milliseconds) to wait for a tile with one million pixels (e.g. </p>
+<p>a 1000&times;1000 tile). The actual <a class="el" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">delay</a> will be shorter if the tiles are smaller; for example the delay is four time smaller for a 500&times;500 tile. When a requested tile is not yet available, the <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">getTile</a> method will wait for a maximum of</p><div class="fragment"><div class="line"><a class="code" href="a06899.html#afd9602d17b825d716c4b051b4f581012">DELAY</a> </div></div><!-- fragment --><p> milliseconds in case the tile computation would be very fast. Set the delay to 0 in order to disable this feature.</p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>Must be of type <code>long</code> even if <code>int</code> would be sufficient, if order to force widening conversions.} </dd></dl>
 
 </div>
 </div>
-<a id="ac29555e80bd1ec1b5e40b732df417090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac29555e80bd1ec1b5e40b732df417090">&#9670;&nbsp;</a></span>SHORT</h2>
+<a id="a3f6cd043d2cd15df3101989bdef3ea60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6cd043d2cd15df3101989bdef3ea60">&#9670;&nbsp;</a></span>delay</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SHORT</td>
+          <td class="memname">final int delay</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Data type <a class="el" href="">Short</a>. </p>
+<p>The delay (in milliseconds) to wait for a tile. </p>
+<p>When a requested tile is not yet available, the <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">getTile</a> method will wait for a maximum of</p><div class="fragment"><div class="line"><a class="code" href="a06899.html#a3f6cd043d2cd15df3101989bdef3ea60">delay</a> </div></div><!-- fragment --><p> milliseconds in case the tile computation would be very fast. Set the delay to 0 in order to disable this feature. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>.</p>
 
 </div>
 </div>
-<a id="a17877e7a70f122032cacbbf98aad8b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17877e7a70f122032cacbbf98aad8b3d">&#9670;&nbsp;</a></span>USHORT</h2>
+<a id="a924be625bde57cce7166d786020b65ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924be625bde57cce7166d786020b65ad">&#9670;&nbsp;</a></span>image</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">USHORT</td>
+          <td class="memname">final PlanarImage image</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Data type <a class="el" href="">Short</a>. </p>
+<p>The source image. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a0581cd101ce4eccbed20097d967a3c9b">DeferredPlanarImage.dispose()</a>, and <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>.</p>
+
+</div>
+</div>
+<a id="ab1d069f56091df4f6436f8c713ab2f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d069f56091df4f6436f8c713ab2f39">&#9670;&nbsp;</a></span>LOGGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Logger LOGGER = Logging.getLogger(&quot;org.geotoolkit.image&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The logger for information messages. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">DeferredPlanarImage.fireTileUpdate()</a>, and <a class="el" href="a06899.html#a8be9d6942d389e80fcc3394187b8263e">DeferredPlanarImage.tileComputationFailure()</a>.</p>
+
+</div>
+</div>
+<a id="ae369fc436a8f8b942334af63940aa713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae369fc436a8f8b942334af63940aa713">&#9670;&nbsp;</a></span>observers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TileObserver [] observers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The tile observers, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#ab8553be31f6138f5778604d86e17c452">DeferredPlanarImage.addTileObserver()</a>, <a class="el" href="a06899.html#a919596a5ea1221ba85877c848cfbb413">DeferredPlanarImage.fireTileUpdate()</a>, and <a class="el" href="a06899.html#aa2d32ac7cb06188d57d795223902c074">DeferredPlanarImage.removeTileObserver()</a>.</p>
+
+</div>
+</div>
+<a id="a630477f812b6ce20820b3dfe94362c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630477f812b6ce20820b3dfe94362c04">&#9670;&nbsp;</a></span>pendings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">transient Raster [] pendings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells if a tile is in process of being computed. </p>
+<p>Tile index are computed by <a class="el" href="">getTileIndex</a>. This array will be constructed only when first needed. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a0581cd101ce4eccbed20097d967a3c9b">DeferredPlanarImage.dispose()</a>, <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>, <a class="el" href="a06899.html#a4be7fc30cc95025e87318c6604762bec">DeferredPlanarImage.getWritableTileIndices()</a>, <a class="el" href="a06899.html#a0f024ba34f3f7e62bcf2404664958664">DeferredPlanarImage.hasTileWriters()</a>, <a class="el" href="a06899.html#ab74c6c15649b1ada3aeab126cd85946e">DeferredPlanarImage.isTileWritable()</a>, and <a class="el" href="a06899.html#ababc5a285cc2b18491768b525ef75166">DeferredPlanarImage.tileComputed()</a>.</p>
+
+</div>
+</div>
+<a id="aeef65604cbc0d419c67b91a91f4b7f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef65604cbc0d419c67b91a91f4b7f64">&#9670;&nbsp;</a></span>requests</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">transient TileRequest [] requests</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="">TileRequest</a>s for a given tile. </p>
+<p>Tile index are computed by <a class="el" href="">getTileIndex</a>. This array will be constructed only when first needed. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a0581cd101ce4eccbed20097d967a3c9b">DeferredPlanarImage.dispose()</a>, and <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>.</p>
+
+</div>
+</div>
+<a id="afc60f99d4b57df3e2b4048a337913a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc60f99d4b57df3e2b4048a337913a54">&#9670;&nbsp;</a></span>waitings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">transient boolean [] waitings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells if a tile is request is waiting. </p>
+<p>Tile index are computed by <a class="el" href="">getTileIndex</a>. This array will be constructed only when first needed. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#a0581cd101ce4eccbed20097d967a3c9b">DeferredPlanarImage.dispose()</a>, <a class="el" href="a06899.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>, and <a class="el" href="a06899.html#ababc5a285cc2b18491768b525ef75166">DeferredPlanarImage.tileComputed()</a>.</p>
 
 </div>
 </div>
@@ -357,7 +1318,7 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03850.html">image</a></li><li class="navelem"><a class="el" href="a03853.html">internal</a></li><li class="navelem"><a class="el" href="a06899.html">SampleType</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03874.html">image</a></li><li class="navelem"><a class="el" href="a06899.html">DeferredPlanarImage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

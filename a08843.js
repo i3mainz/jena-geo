@@ -1,6 +1,6 @@
 var a08843 =
 [
-    [ "testSelfIntersections", "a08843.html#a3d2c64bb3b45c45751b144babb6906da", null ],
-    [ "isRing", "a08843.html#ada60d12c21aae01823c842a1347435af", null ],
-    [ "point", "a08843.html#a081811ff1c2bedd0a20703599f90114f", null ]
+    [ "testTransScale", "a08843.html#a8169037c504558c555e457db95ca9864", null ],
+    [ "testLineString", "a08843.html#a33797029fadbcba01b4a4fafec88cf41", null ],
+    [ "testLineStringRes", "a08843.html#afa1a0008b206f5da669c64139a3dc588", null ]
 ];

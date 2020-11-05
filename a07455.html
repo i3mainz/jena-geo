@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ValueRestriction Class Reference</title>
+<title>jena-geo: Polynom Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,170 +63,126 @@ $(document).ready(function(){initNavTree('a07455.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a07452.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ValueRestriction Class Reference</div>  </div>
+<div class="title">Polynom Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Restrictions that apply on a metadata property.  
+<p>The coefficients of a polynomial equation.  
  <a href="a07455.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ValueRestriction:</div>
+Inheritance diagram for Polynom:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07454.png" border="0" usemap="#ValueRestriction_inherit__map" alt="Inheritance graph"/></div>
-<map name="ValueRestriction_inherit__map" id="ValueRestriction_inherit__map">
+<div class="center"><img src="a07454.png" border="0" usemap="#Polynom_inherit__map" alt="Inheritance graph"/></div>
+<map name="Polynom_inherit__map" id="Polynom_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for ValueRestriction:</div>
+Collaboration diagram for Polynom:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07453.png" border="0" usemap="#ValueRestriction_coll__map" alt="Collaboration graph"/></div>
-<map name="ValueRestriction_coll__map" id="ValueRestriction_coll__map">
+<div class="center"><img src="a07453.png" border="0" usemap="#Polynom_coll__map" alt="Collaboration graph"/></div>
+<map name="Polynom_coll__map" id="Polynom_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afdb5bc73020fd84fc6fcacaa9f1239c8"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a07455.html">ValueRestriction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#afdb5bc73020fd84fc6fcacaa9f1239c8">violation</a> (final Object value)</td></tr>
-<tr class="memdesc:afdb5bc73020fd84fc6fcacaa9f1239c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given value violate at least one restriction, returns the restrictions that are violated.  <a href="#afdb5bc73020fd84fc6fcacaa9f1239c8">More...</a><br /></td></tr>
-<tr class="separator:afdb5bc73020fd84fc6fcacaa9f1239c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a537c7b35c090ed43e1d3f130188e9198"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">equals</a> (final Object other)</td></tr>
-<tr class="memdesc:a537c7b35c090ed43e1d3f130188e9198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the given object with this restriction for equality.  <a href="#a537c7b35c090ed43e1d3f130188e9198">More...</a><br /></td></tr>
-<tr class="separator:a537c7b35c090ed43e1d3f130188e9198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e107823189c7aa3bc8fde3101ccc34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a47e107823189c7aa3bc8fde3101ccc34">Polynom</a> (final double[] <a class="el" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>)</td></tr>
+<tr class="memdesc:a47e107823189c7aa3bc8fde3101ccc34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a polynomial equation with the specified coefficients.  <a href="#a47e107823189c7aa3bc8fde3101ccc34">More...</a><br /></td></tr>
+<tr class="separator:a47e107823189c7aa3bc8fde3101ccc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146749e21cee84aaea426fd1ba05b418"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a146749e21cee84aaea426fd1ba05b418">y</a> (final double x)</td></tr>
+<tr class="memdesc:a146749e21cee84aaea426fd1ba05b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the polynomial equation for the specified <em>x</em> value.  <a href="#a146749e21cee84aaea426fd1ba05b418">More...</a><br /></td></tr>
+<tr class="separator:a146749e21cee84aaea426fd1ba05b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc8a62f365516fd700770077e458b00"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a> ()</td></tr>
+<tr class="memdesc:a0dc8a62f365516fd700770077e458b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the roots of the polynomial equation.  <a href="#a0dc8a62f365516fd700770077e458b00">More...</a><br /></td></tr>
+<tr class="separator:a0dc8a62f365516fd700770077e458b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077e18fe97323c7194e2665ffc766399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a077e18fe97323c7194e2665ffc766399">hashCode</a> ()</td></tr>
-<tr class="memdesc:a077e18fe97323c7194e2665ffc766399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash code value for this restriction.  <a href="#a077e18fe97323c7194e2665ffc766399">More...</a><br /></td></tr>
+<tr class="memdesc:a077e18fe97323c7194e2665ffc766399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash value for this polynom.  <a href="#a077e18fe97323c7194e2665ffc766399">More...</a><br /></td></tr>
 <tr class="separator:a077e18fe97323c7194e2665ffc766399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a70e0ce6c9806cb2e0e343f0d059b1379">equals</a> (final <a class="el" href="a13607.html">Object</a> object)</td></tr>
+<tr class="memdesc:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this polynom with the specified object for equality.  <a href="#a70e0ce6c9806cb2e0e343f0d059b1379">More...</a><br /></td></tr>
+<tr class="separator:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
-<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this restriction.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this polynom.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
 <tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae5ddd8045aaacefb6ec38274ac645cbb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a07455.html">ValueRestriction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#ae5ddd8045aaacefb6ec38274ac645cbb">create</a> (final ExtendedElementInformation info)</td></tr>
-<tr class="memdesc:ae5ddd8045aaacefb6ec38274ac645cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given.  <a href="#ae5ddd8045aaacefb6ec38274ac645cbb">More...</a><br /></td></tr>
-<tr class="separator:ae5ddd8045aaacefb6ec38274ac645cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a1109e2f1932a43958b44946d3d34449c"><td class="memItemLeft" align="right" valign="top">final Obligation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a></td></tr>
-<tr class="memdesc:a1109e2f1932a43958b44946d3d34449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}, or.  <a href="#a1109e2f1932a43958b44946d3d34449c">More...</a><br /></td></tr>
-<tr class="separator:a1109e2f1932a43958b44946d3d34449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e92e7744083aa7ae1291d9563d00e4"><td class="memItemLeft" align="right" valign="top">final NumberRange&lt;?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a></td></tr>
-<tr class="memdesc:a45e92e7744083aa7ae1291d9563d00e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The range of valid values, or.  <a href="#a45e92e7744083aa7ae1291d9563d00e4">More...</a><br /></td></tr>
-<tr class="separator:a45e92e7744083aa7ae1291d9563d00e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad481f2961fdf5500eedb3a38075b8cd"><td class="memItemLeft" align="right" valign="top">final Set&lt;?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a></td></tr>
-<tr class="memdesc:aad481f2961fdf5500eedb3a38075b8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumeration of valid values, or.  <a href="#aad481f2961fdf5500eedb3a38075b8cd">More...</a><br /></td></tr>
-<tr class="separator:aad481f2961fdf5500eedb3a38075b8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a59308bf591b6339acb7520b1d5be482c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> (final Obligation <a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>, final NumberRange&lt;?&gt; <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>, final Set&lt;?&gt; <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>)</td></tr>
-<tr class="memdesc:a59308bf591b6339acb7520b1d5be482c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new.  <a href="#a59308bf591b6339acb7520b1d5be482c">More...</a><br /></td></tr>
-<tr class="separator:a59308bf591b6339acb7520b1d5be482c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
-Static Package Attributes</h2></td></tr>
-<tr class="memitem:ae352ae925ff625251c79b7a99134e999"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a07455.html">ValueRestriction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#ae352ae925ff625251c79b7a99134e999">PENDING</a> = new <a class="el" href="a07455.html">ValueRestriction</a>(null, null, null)</td></tr>
-<tr class="memdesc:ae352ae925ff625251c79b7a99134e999"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sentinel value meaning that the restriction has not yet been calculated.  <a href="#ae352ae925ff625251c79b7a99134e999">More...</a><br /></td></tr>
-<tr class="separator:ae352ae925ff625251c79b7a99134e999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1769a6cd692d57c2acb9804dbcbb2ed5"><td class="memItemLeft" align="right" valign="top">static double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a1769a6cd692d57c2acb9804dbcbb2ed5">roots</a> (final double[] <a class="el" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>)</td></tr>
+<tr class="memdesc:a1769a6cd692d57c2acb9804dbcbb2ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the roots of a polynomial equation.  <a href="#a1769a6cd692d57c2acb9804dbcbb2ed5">More...</a><br /></td></tr>
+<tr class="separator:a1769a6cd692d57c2acb9804dbcbb2ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:adeacaf28cef8db70de96f09eb69cde3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a07455.html">ValueRestriction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">create</a> (final Obligation <a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>, final NumberRange&lt;?&gt; <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>, final Set&lt;?&gt; <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>)</td></tr>
-<tr class="memdesc:adeacaf28cef8db70de96f09eb69cde3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new.  <a href="#adeacaf28cef8db70de96f09eb69cde3c">More...</a><br /></td></tr>
-<tr class="separator:adeacaf28cef8db70de96f09eb69cde3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaedc6fd5665cd6f440c678d49c8c3a7"><td class="memItemLeft" align="right" valign="top">static double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#adaedc6fd5665cd6f440c678d49c8c3a7">quadraticRoots</a> (double c0, double c1, double c2)</td></tr>
+<tr class="memdesc:adaedc6fd5665cd6f440c678d49c8c3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the roots of a quadratic equation.  <a href="#adaedc6fd5665cd6f440c678d49c8c3a7">More...</a><br /></td></tr>
+<tr class="separator:adaedc6fd5665cd6f440c678d49c8c3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97ccca59e75c351623a7a378c4c149d"><td class="memItemLeft" align="right" valign="top">static double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#ae97ccca59e75c351623a7a378c4c149d">cubicRoots</a> (double c0, double c1, double c2, double c3)</td></tr>
+<tr class="memdesc:ae97ccca59e75c351623a7a378c4c149d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the roots of a cubic equation.  <a href="#ae97ccca59e75c351623a7a378c4c149d">More...</a><br /></td></tr>
+<tr class="separator:ae97ccca59e75c351623a7a378c4c149d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad2c3e2c6226ad50919eb2fcf869fa959"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a></td></tr>
+<tr class="memdesc:ad2c3e2c6226ad50919eb2fcf869fa959"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coefficients for the polynomial equation.  <a href="#ad2c3e2c6226ad50919eb2fcf869fa959">More...</a><br /></td></tr>
+<tr class="separator:ad2c3e2c6226ad50919eb2fcf869fa959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d82d5774f99ca2b89c054c32612ce0"><td class="memItemLeft" align="right" valign="top">transient double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#ac2d82d5774f99ca2b89c054c32612ce0">roots</a></td></tr>
+<tr class="memdesc:ac2d82d5774f99ca2b89c054c32612ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The roots of the polynomial equation.  <a href="#ac2d82d5774f99ca2b89c054c32612ce0">More...</a><br /></td></tr>
+<tr class="separator:ac2d82d5774f99ca2b89c054c32612ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 888961503200860655L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-versions compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 6825019711186108990L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial version UID for compatibility with different versions.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
 <tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3106e509ec91fac21151e865d9c2dbb"><td class="memItemLeft" align="right" valign="top">static final WeakHashSet&lt; <a class="el" href="a07455.html">ValueRestriction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07455.html#aa3106e509ec91fac21151e865d9c2dbb">POOL</a> = new WeakHashSet&lt;&gt;(ValueRestriction.class)</td></tr>
-<tr class="memdesc:aa3106e509ec91fac21151e865d9c2dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The instances created in this JVM.  <a href="#aa3106e509ec91fac21151e865d9c2dbb">More...</a><br /></td></tr>
-<tr class="separator:aa3106e509ec91fac21151e865d9c2dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Restrictions that apply on a metadata property. </p>
-<p>Instances of</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> are created only for properties having at least one non-null  <a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c" title="Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...">obligation</a>},  <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4" title="The range of valid values, or. ">range</a>} or  <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd" title="An enumeration of valid values, or. ">validValues</a> valid values enumeration} restriction. </p>
-<p>For a given metadata instances (typically an <a class="el" href="">AbstractMetadata</a> subclasses, but other types are allowed), instances of</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> are obtained indirectly by the <a class="el" href="">MetadataStandard.asRestrictionMap(...)</a> method. </p>
-<div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> objects do not contain the type of values (except indirectly through <a class="el" href="">NumberRange#getElementType()</a> or <a class="el" href="">org.geotoolkit.util.collection.CheckedCollection#getElementType()</a>) because this particular requirement is specified by other means, like <a class="el" href="">MetadataStandard.asTypeMap(...)</a>.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.05</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>MetadataStandard::asRestrictionMap(Object, NullValuePolicy, KeyNamePolicy)</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.04 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03756.html#_deprecated000020">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.metadata.MetadataStandard#asInformationMap</a>. </dd></dl>
+<div class="textblock"><p>The coefficients of a polynomial equation. </p>
+<p>The equation must be in the form</p>
+<p><code>y = c<sub>0</sub> + c<sub>1</sub>&times;<em>x</em> + c<sub>2</sub>&times;<em>x</em><sup>2</sup> + c<sub>3</sub>&times;<em>x</em><sup>3</sup> + ... + c<sub>n</sub>&times;<em>x</em><sup>n</sup></code>. </p>
+<p>The static method <a class="el" href="">roots(double[])</a> can be used for computing the root of a polynomial equation without creating a</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#a47e107823189c7aa3bc8fde3101ccc34">Polynom</a> </div></div><!-- fragment --><p> object.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd>
+<dd>
+Ken Turkiwski (for algorithmic inspiration) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a59308bf591b6339acb7520b1d5be482c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59308bf591b6339acb7520b1d5be482c">&#9670;&nbsp;</a></span>ValueRestriction()</h2>
+<a id="a47e107823189c7aa3bc8fde3101ccc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e107823189c7aa3bc8fde3101ccc34">&#9670;&nbsp;</a></span>Polynom()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07455.html">ValueRestriction</a> </td>
+          <td class="memname"><a class="el" href="a07455.html">Polynom</a> </td>
           <td>(</td>
-          <td class="paramtype">final Obligation&#160;</td>
-          <td class="paramname"><em>obligation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final NumberRange&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Set&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>validValues</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates a new. </p>
-<div class="fragment"><div class="line">Restriction </div></div><!-- fragment --><p> instance. This constructor does not clone any argument; this is caller responsibility to provide immutable instance of them, especially</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a> </div></div><!-- fragment --><p> .</p>
-<p>{</p><dl class="section note"><dt>Note</dt><dd>This constructor is not public in order to force subclassing. Subclasses shall choose a policy regarding whatever the arguments are cloned. This base class does not clone them because the same set of valid values (for example) is often shared for many metdata attributes.}</dd></dl>
+<p>Constructs a polynomial equation with the specified coefficients. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obligation</td><td>Whatever the property is mandatory or forbidden, or<div class="fragment"><div class="line">null </div></div><!-- fragment -->  if unknown. </td></tr>
-    <tr><td class="paramname">range</td><td>The range of valid values, or<div class="fragment"><div class="line">null </div></div><!-- fragment -->  if none. </td></tr>
-    <tr><td class="paramname">validValues</td><td>An enumeration of valid values, or<div class="fragment"><div class="line">null </div></div><!-- fragment -->  if none.</td></tr>
+    <tr><td class="paramname">c</td><td>The coefficients. This array is copied. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>3.05 </dd></dl>
 
-<p class="reference">References <a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">ValueRestriction.obligation</a>, <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">ValueRestriction.range</a>, and <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">ValueRestriction.validValues</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">ValueRestriction.create()</a>, and <a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">ValueRestriction.equals()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                                                                  {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        this.<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>  = <a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        this.<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>       = <a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        this.<a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a> = <a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div><div class="ttc" id="a07455_html_aad481f2961fdf5500eedb3a38075b8cd"><div class="ttname"><a href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">org.geotoolkit.metadata.ValueRestriction.validValues</a></div><div class="ttdeci">final Set&lt;?&gt; validValues</div><div class="ttdoc">An enumeration of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:107</div></div>
-<div class="ttc" id="a07455_html_a45e92e7744083aa7ae1291d9563d00e4"><div class="ttname"><a href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">org.geotoolkit.metadata.ValueRestriction.range</a></div><div class="ttdeci">final NumberRange&lt;?&gt; range</div><div class="ttdoc">The range of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:97</div></div>
-<div class="ttc" id="a07455_html_a1109e2f1932a43958b44946d3d34449c"><div class="ttname"><a href="a07455.html#a1109e2f1932a43958b44946d3d34449c">org.geotoolkit.metadata.ValueRestriction.obligation</a></div><div class="ttdeci">final Obligation obligation</div><div class="ttdoc">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...</div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:89</div></div>
+<p class="reference">Referenced by <a class="el" href="a07455.html#a70e0ce6c9806cb2e0e343f0d059b1379">Polynom.equals()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                     {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">int</span> n = <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>.length;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">while</span> (n != 0 &amp;&amp; <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[--n] == 0) {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// Empty on purpose.</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (n == 0) {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            this.<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a> = ArraysExt.EMPTY_DOUBLE;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            this.<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[n];</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            System.arraycopy(<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>, 0, this.<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>, 0, n);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adeacaf28cef8db70de96f09eb69cde3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeacaf28cef8db70de96f09eb69cde3c">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
+<a id="ae97ccca59e75c351623a7a378c4c149d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97ccca59e75c351623a7a378c4c149d">&#9670;&nbsp;</a></span>cubicRoots()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,22 +191,28 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a07455.html">ValueRestriction</a> create </td>
+          <td class="memname">static double [] cubicRoots </td>
           <td>(</td>
-          <td class="paramtype">final Obligation&#160;</td>
-          <td class="paramname"><em>obligation</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final NumberRange&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>range</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final Set&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>validValues</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c3</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -265,63 +227,22 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new. </p>
-<div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> instance. If all arguments are</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> , then this method returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> meaning "&lt;cite&gt;no restriction&lt;/cite&gt;".</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obligation</td><td>Whatever the property is mandatory or forbidden, or<div class="fragment"><div class="line">null </div></div><!-- fragment -->  if unknown. </td></tr>
-    <tr><td class="paramname">range</td><td>The range of valid values, or<div class="fragment"><div class="line">null </div></div><!-- fragment -->  if none. </td></tr>
-    <tr><td class="paramname">validValues</td><td>An enumeration of valid values, or<div class="fragment"><div class="line">null </div></div><!-- fragment -->  if none. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The restriction, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
+<p>Finds the roots of a cubic equation. </p>
+<p>More specifically, this method solves the following equation:</p>
+<blockquote class="doxtable">
+<p><code> c0 + c1*<em>x</em> + c2*<em>x</em><sup>2</sup> + c3*<em>x</em><sup>3</sup> == 0 </code></p>
+</blockquote>
+<dl class="section return"><dt>Returns</dt><dd>The roots. The length may be 1 or 3. </dd></dl>
 
-<p class="reference">References <a class="el" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction.ValueRestriction()</a>.</p>
+<p class="reference">References <a class="el" href="a07455.html#a0dc8a62f365516fd700770077e458b00">Polynom.roots()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a07455.html#ae5ddd8045aaacefb6ec38274ac645cbb">ValueRestriction.create()</a>, and <a class="el" href="a07455.html#afdb5bc73020fd84fc6fcacaa9f1239c8">ValueRestriction.violation()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                                                                                                              {</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a> == null &amp;&amp; <a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a> == null &amp;&amp; <a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a> != Obligation.MANDATORY &amp;&amp; <a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a> != Obligation.FORBIDDEN) {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07455.html#aa3106e509ec91fac21151e865d9c2dbb">POOL</a>.unique(<span class="keyword">new</span> <a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a>(<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>, <a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>, <a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>));</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div><div class="ttc" id="a07455_html_aad481f2961fdf5500eedb3a38075b8cd"><div class="ttname"><a href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">org.geotoolkit.metadata.ValueRestriction.validValues</a></div><div class="ttdeci">final Set&lt;?&gt; validValues</div><div class="ttdoc">An enumeration of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:107</div></div>
-<div class="ttc" id="a07455_html_a45e92e7744083aa7ae1291d9563d00e4"><div class="ttname"><a href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">org.geotoolkit.metadata.ValueRestriction.range</a></div><div class="ttdeci">final NumberRange&lt;?&gt; range</div><div class="ttdoc">The range of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:97</div></div>
-<div class="ttc" id="a07455_html_a59308bf591b6339acb7520b1d5be482c"><div class="ttname"><a href="a07455.html#a59308bf591b6339acb7520b1d5be482c">org.geotoolkit.metadata.ValueRestriction.ValueRestriction</a></div><div class="ttdeci">ValueRestriction(final Obligation obligation, final NumberRange&lt;?&gt; range, final Set&lt;?&gt; validValues)</div><div class="ttdoc">Creates a new. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:125</div></div>
-<div class="ttc" id="a07455_html_aa3106e509ec91fac21151e865d9c2dbb"><div class="ttname"><a href="a07455.html#aa3106e509ec91fac21151e865d9c2dbb">org.geotoolkit.metadata.ValueRestriction.POOL</a></div><div class="ttdeci">static final WeakHashSet&lt; ValueRestriction &gt; POOL</div><div class="ttdoc">The instances created in this JVM. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:74</div></div>
-<div class="ttc" id="a07455_html_a1109e2f1932a43958b44946d3d34449c"><div class="ttname"><a href="a07455.html#a1109e2f1932a43958b44946d3d34449c">org.geotoolkit.metadata.ValueRestriction.obligation</a></div><div class="ttdeci">final Obligation obligation</div><div class="ttdoc">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...</div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:89</div></div>
+<p class="reference">Referenced by <a class="el" href="a07455.html#a1769a6cd692d57c2acb9804dbcbb2ed5">Polynom.roots()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                                   {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        c2 /= c3;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        c1 /= c3;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        c0 /= c3;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> Q  = (c2*c2 - 3*c1) / 9;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> R = (2*c2*c2*c2 - 9*c2*c1 + 27*c0) / 54;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> Qcubed = Q*Q*Q;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> d = Qcubed - R*R;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        c2 /= 3;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (d &gt;= 0) {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> theta = acos(R / sqrt(Qcubed)) / 3;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> scale = -2 * sqrt(Q);</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[] {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                scale * cos(theta              ) - c2,</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                scale * cos(theta + PI*2/3) - c2,</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                scale * cos(theta + PI*4/3) - c2</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            };</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            assert abs(roots[0]*roots[1]*roots[2] + c0  ) &lt; 1E-6;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            assert abs(roots[0]+roots[1]+roots[2] + c2*3) &lt; 1E-6;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            assert abs(roots[0]*roots[1] +</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                       roots[0]*roots[2] +</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                       roots[1]*roots[2] - c1) &lt; 1E-6;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a>;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordtype">double</span> e = cbrt(sqrt(-d) + abs(R));</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">if</span> (R &gt; 0) {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                e = -e;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">double</span>[] {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                (e + Q/e) - c2</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            };</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div><div class="ttc" id="a07455_html_a0dc8a62f365516fd700770077e458b00"><div class="ttname"><a href="a07455.html#a0dc8a62f365516fd700770077e458b00">org.geotoolkit.math.Polynom.roots</a></div><div class="ttdeci">double [] roots()</div><div class="ttdoc">Finds the roots of the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:191</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae5ddd8045aaacefb6ec38274ac645cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ddd8045aaacefb6ec38274ac645cbb">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a07455.html">ValueRestriction</a> create </td>
-          <td>(</td>
-          <td class="paramtype">final ExtendedElementInformation&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts the given. </p>
-<div class="fragment"><div class="line">ExtendedElementInformation </div></div><!-- fragment --><p> to a</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> . </p>
-
-<p class="reference">References <a class="el" href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">ValueRestriction.create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                                                 {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (info != null) {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keyword">final</span> Obligation o = info.getObligation();</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keyword">final</span> InternationalString domain = info.getDomainValue();</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">create</a>((o != null) ? Obligation.valueOf(o.name()) : null,</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    (domain instanceof NumberRange&lt;?&gt;) ? (NumberRange&lt;?&gt;) domain : null,</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    (domain instanceof Set&lt;?&gt;) ? (Set&lt;?&gt;) domain : null);</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div><div class="ttc" id="a07455_html_adeacaf28cef8db70de96f09eb69cde3c"><div class="ttname"><a href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">org.geotoolkit.metadata.ValueRestriction.create</a></div><div class="ttdeci">static ValueRestriction create(final Obligation obligation, final NumberRange&lt;?&gt; range, final Set&lt;?&gt; validValues)</div><div class="ttdoc">Creates a new. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:140</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a537c7b35c090ed43e1d3f130188e9198"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a537c7b35c090ed43e1d3f130188e9198">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="a70e0ce6c9806cb2e0e343f0d059b1379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e0ce6c9806cb2e0e343f0d059b1379">&#9670;&nbsp;</a></span>equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,29 +250,27 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">boolean equals </td>
           <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype">final <a class="el" href="a13607.html">Object</a>&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compares the given object with this restriction for equality. </p>
+<p>Compares this polynom with the specified object for equality. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The object to compare with this restriction for equality. </td></tr>
+    <tr><td class="paramname">object</td><td>The object to compare with this polynom. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment -->  if both objects are equal. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if both objects are equal. </dd></dl>
 
-<p class="reference">References <a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">ValueRestriction.equals()</a>, <a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">ValueRestriction.obligation</a>, <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">ValueRestriction.range</a>, <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">ValueRestriction.validValues</a>, and <a class="el" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction.ValueRestriction()</a>.</p>
+<p class="reference">References <a class="el" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">Polynom.c</a>, <a class="el" href="a07455.html#a70e0ce6c9806cb2e0e343f0d059b1379">Polynom.equals()</a>, and <a class="el" href="a07455.html#a47e107823189c7aa3bc8fde3101ccc34">Polynom.Polynom()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">ValueRestriction.equals()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                              {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">if</span> (other != null &amp;&amp; other.getClass() == getClass()) {</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keyword">final</span> <a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> that = (<a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a>) other;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">return</span> (this.<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a> == that.obligation) &amp;&amp;</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                   Objects.equals(this.<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>,       that.range) &amp;&amp;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                   Objects.equals(this.<a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>, that.validValues);</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div><div class="ttc" id="a07455_html_aad481f2961fdf5500eedb3a38075b8cd"><div class="ttname"><a href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">org.geotoolkit.metadata.ValueRestriction.validValues</a></div><div class="ttdeci">final Set&lt;?&gt; validValues</div><div class="ttdoc">An enumeration of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:107</div></div>
-<div class="ttc" id="a07455_html_a45e92e7744083aa7ae1291d9563d00e4"><div class="ttname"><a href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">org.geotoolkit.metadata.ValueRestriction.range</a></div><div class="ttdeci">final NumberRange&lt;?&gt; range</div><div class="ttdoc">The range of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:97</div></div>
-<div class="ttc" id="a07455_html_a59308bf591b6339acb7520b1d5be482c"><div class="ttname"><a href="a07455.html#a59308bf591b6339acb7520b1d5be482c">org.geotoolkit.metadata.ValueRestriction.ValueRestriction</a></div><div class="ttdeci">ValueRestriction(final Obligation obligation, final NumberRange&lt;?&gt; range, final Set&lt;?&gt; validValues)</div><div class="ttdoc">Creates a new. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:125</div></div>
-<div class="ttc" id="a07455_html_a1109e2f1932a43958b44946d3d34449c"><div class="ttname"><a href="a07455.html#a1109e2f1932a43958b44946d3d34449c">org.geotoolkit.metadata.ValueRestriction.obligation</a></div><div class="ttdeci">final Obligation obligation</div><div class="ttdoc">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...</div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:89</div></div>
+<p class="reference">Referenced by <a class="el" href="a07455.html#a70e0ce6c9806cb2e0e343f0d059b1379">Polynom.equals()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                               {</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordtype">object</span> != null &amp;&amp; <span class="keywordtype">object</span>.getClass() == getClass()) {</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keyword">final</span> <a class="code" href="a07455.html#a47e107823189c7aa3bc8fde3101ccc34">Polynom</a> that = (<a class="code" href="a07455.html#a47e107823189c7aa3bc8fde3101ccc34">Polynom</a>) <span class="keywordtype">object</span>;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keywordflow">return</span> Arrays.equals(this.<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>, that.c);</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div><div class="ttc" id="a07455_html_a47e107823189c7aa3bc8fde3101ccc34"><div class="ttname"><a href="a07455.html#a47e107823189c7aa3bc8fde3101ccc34">org.geotoolkit.math.Polynom.Polynom</a></div><div class="ttdeci">Polynom(final double[] c)</div><div class="ttdoc">Constructs a polynomial equation with the specified coefficients. </div><div class="ttdef"><b>Definition:</b> Polynom.java:68</div></div>
+<div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -370,11 +289,135 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a hash code value for this restriction. </p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                          {</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordtype">int</span> code = (int) <a class="code" href="a07455.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a>;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a> != null) {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            code ^= <a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>.hashCode();</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a> != null) {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            code ^= <a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>.hashCode();</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a> != null) {</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            code ^= <a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>.hashCode();</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        }</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> code;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div><div class="ttc" id="a07455_html_aad481f2961fdf5500eedb3a38075b8cd"><div class="ttname"><a href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">org.geotoolkit.metadata.ValueRestriction.validValues</a></div><div class="ttdeci">final Set&lt;?&gt; validValues</div><div class="ttdoc">An enumeration of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:107</div></div>
-<div class="ttc" id="a07455_html_a45e92e7744083aa7ae1291d9563d00e4"><div class="ttname"><a href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">org.geotoolkit.metadata.ValueRestriction.range</a></div><div class="ttdeci">final NumberRange&lt;?&gt; range</div><div class="ttdoc">The range of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:97</div></div>
-<div class="ttc" id="a07455_html_a3238d314ecdee14d2966760945d00c3b"><div class="ttname"><a href="a07455.html#a3238d314ecdee14d2966760945d00c3b">org.geotoolkit.metadata.ValueRestriction.serialVersionUID</a></div><div class="ttdeci">static final long serialVersionUID</div><div class="ttdoc">For cross-versions compatibility. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:63</div></div>
-<div class="ttc" id="a07455_html_a1109e2f1932a43958b44946d3d34449c"><div class="ttname"><a href="a07455.html#a1109e2f1932a43958b44946d3d34449c">org.geotoolkit.metadata.ValueRestriction.obligation</a></div><div class="ttdeci">final Obligation obligation</div><div class="ttdoc">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...</div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:89</div></div>
+<p>Returns a hash value for this polynom. </p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                          {</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> Arrays.hashCode(<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>) ^ (int) <a class="code" href="a07455.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a>;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div><div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
+<div class="ttc" id="a07455_html_a3238d314ecdee14d2966760945d00c3b"><div class="ttname"><a href="a07455.html#a3238d314ecdee14d2966760945d00c3b">org.geotoolkit.math.Polynom.serialVersionUID</a></div><div class="ttdeci">static final long serialVersionUID</div><div class="ttdoc">Serial version UID for compatibility with different versions. </div><div class="ttdef"><b>Definition:</b> Polynom.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adaedc6fd5665cd6f440c678d49c8c3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaedc6fd5665cd6f440c678d49c8c3a7">&#9670;&nbsp;</a></span>quadraticRoots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double [] quadraticRoots </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the roots of a quadratic equation. </p>
+<p>More specifically, this method solves the following equation:</p>
+<blockquote class="doxtable">
+<p><code> c0 + c1*<em>x</em> + c2*<em>x</em><sup>2</sup> == 0 </code></p>
+</blockquote>
+<dl class="section return"><dt>Returns</dt><dd>The roots. The length may be 1 or 2. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a07455.html#a1769a6cd692d57c2acb9804dbcbb2ed5">Polynom.roots()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                                            {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">double</span> d = c1*c1 - 4*c2*c0;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (d &gt; 0) {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">// Two real, distinct roots</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            d = sqrt(d);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">if</span> (c1 &lt; 0) {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                d = -d;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> q = 0.5*(d - c1);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">double</span>[] {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                q/c2,</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                (q!=0) ? c0/q : -0.5*(d + c1)/c2</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            };</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (d == 0) {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="comment">// One real double root</span></div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">double</span>[] {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                -c1 / (2*c2)</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            };</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">// Two complex conjugate roots</span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">return</span> ArraysExt.EMPTY_DOUBLE;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0dc8a62f365516fd700770077e458b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc8a62f365516fd700770077e458b00">&#9670;&nbsp;</a></span>roots() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] roots </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds the roots of the polynomial equation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The roots. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a07455.html#ae97ccca59e75c351623a7a378c4c149d">Polynom.cubicRoots()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                            {</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a> == null) {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a> = <a class="code" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a>(<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07455.html#a0dc8a62f365516fd700770077e458b00">roots</a>.clone();</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div><div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
+<div class="ttc" id="a07455_html_a0dc8a62f365516fd700770077e458b00"><div class="ttname"><a href="a07455.html#a0dc8a62f365516fd700770077e458b00">org.geotoolkit.math.Polynom.roots</a></div><div class="ttdeci">double [] roots()</div><div class="ttdoc">Finds the roots of the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:191</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1769a6cd692d57c2acb9804dbcbb2ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1769a6cd692d57c2acb9804dbcbb2ed5">&#9670;&nbsp;</a></span>roots() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double [] roots </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the roots of a polynomial equation. </p>
+<p>More specifically, this method solve the following equation:</p>
+<blockquote class="doxtable">
+<p><code> c[0] + c[1]*<em>x</em> + c[2]*<em>x</em><sup>2</sup> + c[3]*<em>x</em><sup>3</sup> + ... + c[n]*<em>x</em><sup>n</sup> == 0 </code></p>
+</blockquote>
+<p>where <em>n</em> is the array length minus 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>The coefficients for the polynomial equation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The roots. This array may have any length up to<div class="fragment"><div class="line">n-1 </div></div><!-- fragment --> . </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UnsupportedOperationException</td><td>if there is more coefficients than this method can handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07455.html#ae97ccca59e75c351623a7a378c4c149d">Polynom.cubicRoots()</a>, and <a class="el" href="a07455.html#adaedc6fd5665cd6f440c678d49c8c3a7">Polynom.quadraticRoots()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                                   {</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordtype">int</span> n = <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>.length;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">while</span> (n != 0 &amp;&amp; <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[--n] == 0) {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="comment">// Empty on purpose.</span></div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">switch</span> (n) {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">case</span> 0:  <span class="keywordflow">return</span> ArraysExt.EMPTY_DOUBLE;</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">case</span> 1:  <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">double</span>[] {-<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[0]/<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[1]};</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">case</span> 2:  <span class="keywordflow">return</span> <a class="code" href="a07455.html#adaedc6fd5665cd6f440c678d49c8c3a7">quadraticRoots</a>(<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[0], <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[1], <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[2]);</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">case</span> 3:  <span class="keywordflow">return</span> <a class="code" href="a07455.html#ae97ccca59e75c351623a7a378c4c149d">cubicRoots</a>(<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[0], <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[1], <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[2], <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[3]);</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(String.valueOf(n));</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div><div class="ttc" id="a07455_html_ae97ccca59e75c351623a7a378c4c149d"><div class="ttname"><a href="a07455.html#ae97ccca59e75c351623a7a378c4c149d">org.geotoolkit.math.Polynom.cubicRoots</a></div><div class="ttdeci">static double [] cubicRoots(double c0, double c1, double c2, double c3)</div><div class="ttdoc">Finds the roots of a cubic equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:151</div></div>
+<div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
+<div class="ttc" id="a07455_html_adaedc6fd5665cd6f440c678d49c8c3a7"><div class="ttname"><a href="a07455.html#adaedc6fd5665cd6f440c678d49c8c3a7">org.geotoolkit.math.Polynom.quadraticRoots</a></div><div class="ttdeci">static double [] quadraticRoots(double c0, double c1, double c2)</div><div class="ttdoc">Finds the roots of a quadratic equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:114</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,70 +436,44 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a string representation of this restriction. </p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                             {</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(Classes.getShortClassName(<span class="keyword">this</span>)).append(<span class="charliteral">&#39;[&#39;</span>);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        String separator = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a> != null) {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            buffer.append(<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>.name());</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            separator = <span class="stringliteral">&quot;, &quot;</span>;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a> != null) {</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            buffer.append(separator).append(<span class="stringliteral">&quot;range=&quot;</span>).append(<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>);</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            separator = <span class="stringliteral">&quot;, &quot;</span>;</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a> != null) {</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            buffer.append(separator).append(<span class="stringliteral">&quot;validValues=&quot;</span>).append(<a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>);</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">return</span> buffer.append(<span class="charliteral">&#39;]&#39;</span>).toString();</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div><div class="ttc" id="a07455_html_aad481f2961fdf5500eedb3a38075b8cd"><div class="ttname"><a href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">org.geotoolkit.metadata.ValueRestriction.validValues</a></div><div class="ttdeci">final Set&lt;?&gt; validValues</div><div class="ttdoc">An enumeration of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:107</div></div>
-<div class="ttc" id="a07455_html_a45e92e7744083aa7ae1291d9563d00e4"><div class="ttname"><a href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">org.geotoolkit.metadata.ValueRestriction.range</a></div><div class="ttdeci">final NumberRange&lt;?&gt; range</div><div class="ttdoc">The range of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:97</div></div>
-<div class="ttc" id="a07455_html_a1109e2f1932a43958b44946d3d34449c"><div class="ttname"><a href="a07455.html#a1109e2f1932a43958b44946d3d34449c">org.geotoolkit.metadata.ValueRestriction.obligation</a></div><div class="ttdeci">final Obligation obligation</div><div class="ttdoc">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...</div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:89</div></div>
+<p>Returns a string representation of this polynom. </p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                             {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(Classes.getShortClassName(<span class="keyword">this</span>));</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        buffer.append(<span class="charliteral">&#39;[&#39;</span>);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>.length; i++) {</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">if</span> (i != 0) {</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                buffer.append(<span class="stringliteral">&quot;, &quot;</span>);</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            }</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            buffer.append(<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[i]);</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> buffer.append(<span class="charliteral">&#39;]&#39;</span>).toString();</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div><div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="afdb5bc73020fd84fc6fcacaa9f1239c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdb5bc73020fd84fc6fcacaa9f1239c8">&#9670;&nbsp;</a></span>violation()</h2>
+<a id="a146749e21cee84aaea426fd1ba05b418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146749e21cee84aaea426fd1ba05b418">&#9670;&nbsp;</a></span>y()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="a07455.html">ValueRestriction</a> violation </td>
+          <td class="memname">final double y </td>
           <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>If the given value violate at least one restriction, returns the restrictions that are violated. </p>
-<p>Otherwise returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> .</p>
+<p>Evaluates the polynomial equation for the specified <em>x</em> value. </p>
+<p>More specifically, this method computes</p>
+<p><code>c<sub>0</sub> + c<sub>1</sub>&times;<em>x</em> + c<sub>2</sub>&times;<em>x</em><sup>2</sup> + c<sub>3</sub>&times;<em>x</em><sup>3</sup> + ... + c<sub>n</sub>&times;<em>x</em><sup>n</sup></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value to test (may be<div class="fragment"><div class="line">null </div></div><!-- fragment --> ). </td></tr>
+    <tr><td class="paramname">x</td><td>The value where to evaluate the polynomial equation. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line">null </div></div><!-- fragment --> if the given value does not violate the restrictions. </dd></dl>
-
-<p class="reference">References <a class="el" href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">ValueRestriction.create()</a>, <a class="el" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">ValueRestriction.obligation</a>, <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">ValueRestriction.range</a>, and <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">ValueRestriction.validValues</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                                                {</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        Obligation <a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a> = this.<a class="code" href="a07455.html#a1109e2f1932a43958b44946d3d34449c">obligation</a>;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        NumberRange&lt;?&gt;  <a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a> = this.<a class="code" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">range</a>;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        Set&lt;?&gt;    <a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a> = this.<a class="code" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">validValues</a>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordtype">boolean</span>       changed = <span class="keyword">false</span>;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">         * If the value does not violate the obligation, set the obligation to null.</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">if</span> (obligation != ((value == null) ? Obligation.MANDATORY : Obligation.FORBIDDEN)) {</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            obligation = null;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            changed = <span class="keyword">true</span>;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">         * If the value is not outside the range, set the range to null.</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">if</span> (value == null || range == null || (value instanceof Number &amp;&amp; range.containsAny((Number) value))) {</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            range = null;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            changed = <span class="keyword">true</span>;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">         * If the value is a member of the set of valid values, set the valid values to null.</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">if</span> (value == null || validValues == null || validValues.contains(value)) {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            validValues = null;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            changed = <span class="keyword">true</span>;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> changed ? <a class="code" href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">create</a>(obligation, range, validValues) : this;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div><div class="ttc" id="a07455_html_aad481f2961fdf5500eedb3a38075b8cd"><div class="ttname"><a href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd">org.geotoolkit.metadata.ValueRestriction.validValues</a></div><div class="ttdeci">final Set&lt;?&gt; validValues</div><div class="ttdoc">An enumeration of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:107</div></div>
-<div class="ttc" id="a07455_html_a45e92e7744083aa7ae1291d9563d00e4"><div class="ttname"><a href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4">org.geotoolkit.metadata.ValueRestriction.range</a></div><div class="ttdeci">final NumberRange&lt;?&gt; range</div><div class="ttdoc">The range of valid values, or. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:97</div></div>
-<div class="ttc" id="a07455_html_adeacaf28cef8db70de96f09eb69cde3c"><div class="ttname"><a href="a07455.html#adeacaf28cef8db70de96f09eb69cde3c">org.geotoolkit.metadata.ValueRestriction.create</a></div><div class="ttdeci">static ValueRestriction create(final Obligation obligation, final NumberRange&lt;?&gt; range, final Set&lt;?&gt; validValues)</div><div class="ttdoc">Creates a new. </div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:140</div></div>
-<div class="ttc" id="a07455_html_a1109e2f1932a43958b44946d3d34449c"><div class="ttname"><a href="a07455.html#a1109e2f1932a43958b44946d3d34449c">org.geotoolkit.metadata.ValueRestriction.obligation</a></div><div class="ttdeci">final Obligation obligation</div><div class="ttdoc">Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}...</div><div class="ttdef"><b>Definition:</b> ValueRestriction.java:89</div></div>
+<dl class="section return"><dt>Returns</dt><dd>The result of the evaluation at the given value. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                          {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">double</span> sum = 0;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=<a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>.length; --i&gt;=0;) {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            sum = sum*x + <a class="code" href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">c</a>[i];</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> sum;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div><div class="ttc" id="a07455_html_ad2c3e2c6226ad50919eb2fcf869fa959"><div class="ttname"><a href="a07455.html#ad2c3e2c6226ad50919eb2fcf869fa959">org.geotoolkit.math.Polynom.c</a></div><div class="ttdeci">final double [] c</div><div class="ttdoc">The coefficients for the polynomial equation. </div><div class="ttdef"><b>Definition:</b> Polynom.java:56</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1109e2f1932a43958b44946d3d34449c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1109e2f1932a43958b44946d3d34449c">&#9670;&nbsp;</a></span>obligation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Obligation obligation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Whatever the property is  Obligation::MANDATORY mandatory} or  Obligation::FORBIDDEN forbidden}, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p>  if there is no known restriction. </p>
-<p>The  Obligation::OPTIONAL optional} obligation is considered equivalent to an absence of restriction and is replaced by</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if <a class="el" href="">MetadataStandard.asRestrictionMap(...)</a> has been invoked with a metadata instance, since the metadata is not violating this obligation. If</p><div class="fragment"><div class="line">asRestrictionMap(...) </div></div><!-- fragment --><p> has been invoked with a <a class="el" href="">Class</a> argument instead, then the obligation is provided verbatism since we are not testing violation of restrictions. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">ValueRestriction.equals()</a>, <a class="el" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction.ValueRestriction()</a>, and <a class="el" href="a07455.html#afdb5bc73020fd84fc6fcacaa9f1239c8">ValueRestriction.violation()</a>.</p>
-
-</div>
-</div>
-<a id="ae352ae925ff625251c79b7a99134e999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae352ae925ff625251c79b7a99134e999">&#9670;&nbsp;</a></span>PENDING</h2>
+<a id="ad2c3e2c6226ad50919eb2fcf869fa959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c3e2c6226ad50919eb2fcf869fa959">&#9670;&nbsp;</a></span>c</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -465,22 +482,24 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="a07455.html">ValueRestriction</a> PENDING = new <a class="el" href="a07455.html">ValueRestriction</a>(null, null, null)</td>
+          <td class="memname">final double [] c</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A sentinel value meaning that the restriction has not yet been calculated. </p>
+<p>The coefficients for the polynomial equation. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07455.html#a70e0ce6c9806cb2e0e343f0d059b1379">Polynom.equals()</a>.</p>
 
 </div>
 </div>
-<a id="aa3106e509ec91fac21151e865d9c2dbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3106e509ec91fac21151e865d9c2dbb">&#9670;&nbsp;</a></span>POOL</h2>
+<a id="ac2d82d5774f99ca2b89c054c32612ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d82d5774f99ca2b89c054c32612ce0">&#9670;&nbsp;</a></span>roots</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,37 +508,18 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final WeakHashSet&lt;<a class="el" href="a07455.html">ValueRestriction</a>&gt; POOL = new WeakHashSet&lt;&gt;(ValueRestriction.class)</td>
+          <td class="memname">transient double [] roots</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The instances created in this JVM. </p>
-<p>In many case, the same restriction will be shared by many attributes (e.g. restricting the range of values to 0 .. 100 for percentage). </p>
-
-</div>
-</div>
-<a id="a45e92e7744083aa7ae1291d9563d00e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e92e7744083aa7ae1291d9563d00e4">&#9670;&nbsp;</a></span>range</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final NumberRange&lt;?&gt; range</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The range of valid values, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p>  if the values are not restricted by a range. This restriction is typically exclusive with the  <a class="el" href="a07455.html#aad481f2961fdf5500eedb3a38075b8cd" title="An enumeration of valid values, or. ">validValues</a> enumeration of valid values} (i.e. only one of</p><div class="fragment"><div class="line">range </div></div><!-- fragment --><p> or</p><div class="fragment"><div class="line">validValues </div></div><!-- fragment --><p> is non-null), but this is not enforced by this</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> class. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">ValueRestriction.equals()</a>, <a class="el" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction.ValueRestriction()</a>, and <a class="el" href="a07455.html#afdb5bc73020fd84fc6fcacaa9f1239c8">ValueRestriction.violation()</a>.</p>
+<p>The roots of the polynomial equation. </p>
+<p>Will be computed only when first requested. </p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final long serialVersionUID = 888961503200860655L</td>
+          <td class="memname">final long serialVersionUID = 6825019711186108990L</td>
         </tr>
       </table>
   </td>
@@ -543,27 +543,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>For cross-versions compatibility. </p>
-
-</div>
-</div>
-<a id="aad481f2961fdf5500eedb3a38075b8cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad481f2961fdf5500eedb3a38075b8cd">&#9670;&nbsp;</a></span>validValues</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Set&lt;?&gt; validValues</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An enumeration of valid values, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if the values are not restricted that way. This restriction is typically exclusive with the  <a class="el" href="a07455.html#a45e92e7744083aa7ae1291d9563d00e4" title="The range of valid values, or. ">range</a> range of valid values} (i.e. only one of</p><div class="fragment"><div class="line">range </div></div><!-- fragment --><p> or</p><div class="fragment"><div class="line">validValues </div></div><!-- fragment --><p> is non-null), but this is not enforced by this</p><div class="fragment"><div class="line"><a class="code" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction</a> </div></div><!-- fragment --><p> class.</p>
-<dl class="section since"><dt>Since</dt><dd>3.05 </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a07455.html#a537c7b35c090ed43e1d3f130188e9198">ValueRestriction.equals()</a>, <a class="el" href="a07455.html#a59308bf591b6339acb7520b1d5be482c">ValueRestriction.ValueRestriction()</a>, and <a class="el" href="a07455.html#afdb5bc73020fd84fc6fcacaa9f1239c8">ValueRestriction.violation()</a>.</p>
+<p>Serial version UID for compatibility with different versions. </p>
 
 </div>
 </div>
@@ -573,7 +553,7 @@ Static Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03875.html">metadata</a></li><li class="navelem"><a class="el" href="a07455.html">ValueRestriction</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03898.html">math</a></li><li class="navelem"><a class="el" href="a07455.html">Polynom</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

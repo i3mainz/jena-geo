@@ -1,10 +1,8 @@
 var a08203 =
 [
-    [ "CentralMeridian", "a08203.html#a371384cfe8246555ebb0adb39a3e92e5", null ],
-    [ "ConvergenceOfMeridians", "a08203.html#afc4ca88205ec2f5b867e46bcb6006bce", null ],
-    [ "Easting", "a08203.html#a47f7d9a439d20649cadb9a4be86eb961", null ],
-    [ "HemiSphere", "a08203.html#a07fb0665456e84e6e6f36e2f0b83caaf", null ],
-    [ "Northing", "a08203.html#ac886a85713ea1bfe780a5f648f1d36fa", null ],
-    [ "PointScale", "a08203.html#a2e98ac58650b8d24ce25a77a64987031", null ],
-    [ "Zone", "a08203.html#ac89520e83e54e166b965f338361b2f88", null ]
+    [ "Strings", "a08203.html#a9b8e25499dae5334c826b13eb2166c06", null ],
+    [ "isJavaIdentifier", "a08203.html#acc241dcef0a96e5c00a86ba2968d1a7e", null ],
+    [ "isUpperCase", "a08203.html#aecb1c9daa33c3c4caf13aacdff40cd65", null ],
+    [ "isUpperCase", "a08203.html#a13cb47861a11d015b7d93ce45df0a278", null ],
+    [ "toString", "a08203.html#a56e7afaf717b503bd96da7aebd03fc68", null ]
 ];

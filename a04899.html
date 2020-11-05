@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Normalize Class Reference</title>
+<title>jena-geo: ForceCurve Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,24 @@ $(document).ready(function(){initNavTree('a04899.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04896.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Normalize Class Reference</div>  </div>
+<div class="title">ForceCurve Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Upcast a geometry into its curved type, if applicable.  
+ <a href="a04899.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for Normalize:</div>
+Inheritance diagram for ForceCurve:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04898.png" border="0" usemap="#Normalize_inherit__map" alt="Inheritance graph"/></div>
-<map name="Normalize_inherit__map" id="Normalize_inherit__map">
+<div class="center"><img src="a04898.png" border="0" usemap="#ForceCurve_inherit__map" alt="Inheritance graph"/></div>
+<map name="ForceCurve_inherit__map" id="ForceCurve_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Normalize:</div>
+Collaboration diagram for ForceCurve:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04897.png" border="0" usemap="#Normalize_coll__map" alt="Collaboration graph"/></div>
-<map name="Normalize_coll__map" id="Normalize_coll__map">
+<div class="center"><img src="a04897.png" border="0" usemap="#ForceCurve_coll__map" alt="Collaboration graph"/></div>
+<map name="ForceCurve_coll__map" id="ForceCurve_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -87,7 +90,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04899.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
 <tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Upcast a geometry into its curved type, if applicable. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
 
@@ -104,8 +109,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06555.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06555.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06555.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, and <a class="el" href="a06555.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                           {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            GeometryWrapper simpleWrapper = GeometryWrapperFactory.createGeometry(geometry.getXYGeometry().norm(), geometry.getSrsURI(), geometry.getGeometryDatatypeURI());</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> simpleWrapper.asNodeValue();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06595.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06595.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                           {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            GeometryWrapper geom = GeometryWrapper.extract(v);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Geometry geometry = geom.getXYGeometry();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);            </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -114,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03777.html">geometry</a></li><li class="navelem"><a class="el" href="a03785.html">transform</a></li><li class="navelem"><a class="el" href="a04899.html">Normalize</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03801.html">geometry</a></li><li class="navelem"><a class="el" href="a03809.html">transform</a></li><li class="navelem"><a class="el" href="a04899.html">ForceCurve</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

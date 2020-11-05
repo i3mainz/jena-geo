@@ -1,6 +1,5 @@
 var a08615 =
 [
-    [ "testClosestPoint", "a08615.html#af30fa8d36bc2cb8bd652397169d9708d", null ],
-    [ "testLineString", "a08615.html#a33797029fadbcba01b4a4fafec88cf41", null ],
-    [ "testPoint", "a08615.html#af26f700ee129f846cac58735f6dcc380", null ]
+    [ "testAsPolyShape", "a08615.html#aa4ec805ffcfb140ead8292a441244775", null ],
+    [ "testGeometry", "a08615.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

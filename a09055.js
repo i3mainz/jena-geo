@@ -1,7 +1,7 @@
 var a09055 =
 [
-    [ "testAddRing", "a09055.html#abfc2c7e942ef652635d2256ba4e1fa47", null ],
-    [ "duplicateRings", "a09055.html#a92f3ef00fc079a76b7f943d9ed6cec77", null ],
-    [ "nonduplicateRings", "a09055.html#a675a0b1b194538fc07fa716705f883a5", null ],
-    [ "ring", "a09055.html#a3e4a839eee2eb5791f90656e82eec721", null ]
+    [ "testIsIsocelesTriangleFalse", "a09055.html#aa81dce05daae6f34aac43c24bd033ef0", null ],
+    [ "testIsIsocelesTriangleTrue", "a09055.html#aae4d62f37acbace0beb2e9dbba631072", null ],
+    [ "isocelesTriangle", "a09055.html#aa04dfbec745e2622b9f7646f8572e501", null ],
+    [ "notIsocelesTriangle", "a09055.html#a055d99fb63bcee37763ffcf4da9e0521", null ]
 ];

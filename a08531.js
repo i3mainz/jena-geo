@@ -1,6 +1,5 @@
 var a08531 =
 [
-    [ "testRemoveRepeatedPoints", "a08531.html#a473d131a5f96a89f9502570a50d06e65", null ],
-    [ "testGeometry", "a08531.html#abc3f514f005cba49e406658e2d3086eb", null ],
-    [ "testGeometry2", "a08531.html#af1173652e671b8f9051f8630b98c73fb", null ]
+    [ "testNumDistinctPoints", "a08531.html#aac9f79f9e21b36c6addad28b9e81bec6", null ],
+    [ "testGeom", "a08531.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ]
 ];

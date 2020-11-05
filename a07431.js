@@ -1,13 +1,11 @@
 var a07431 =
 [
-    [ "clear", "a07431.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
-    [ "ignoreNaN", "a07431.html#a22e218505813600e1844d7b4d899f57d", null ],
-    [ "interpolate", "a07431.html#ae939fecd3ed5b2d3fea7056d8c7d04e9", null ],
-    [ "interpolateAt", "a07431.html#a3c28c1a787c8f0515aec182729e29a6c", null ],
-    [ "recompute", "a07431.html#a43ba393bb8bd89882094eb499ffe6d7f", null ],
-    [ "setData", "a07431.html#a7f4c5cdce430473a76ee647f0a041023", null ],
-    [ "throwArrayIndexOutOfBoundsException", "a07431.html#acbdd94cfa46f3161c548073aacc5739a", null ],
-    [ "ignoreYNaN", "a07431.html#ab7a26c935a4592383c96a6b2d89130ad", null ],
-    [ "x", "a07431.html#a99ee0c516ca235fc66902cb8d612eeab", null ],
-    [ "y", "a07431.html#a799e94d2434d7bf0fb8d2e845ebd55e7", null ]
+    [ "ExtrapolationException", "a07431.html#a4e250e20fd367ce741a9191ab1cbfc1b", null ],
+    [ "ExtrapolationException", "a07431.html#a3db18e27f200a36847c5eb3b86f2621b", null ],
+    [ "ExtrapolationException", "a07431.html#a815cb13ef7f8af25529e24f8b685f25b", null ],
+    [ "ExtrapolationException", "a07431.html#a9c98befd5a13f853060a357746c2bab4", null ],
+    [ "getMessage", "a07431.html#afafd068b736520af1e24269a284980a9", null ],
+    [ "index", "a07431.html#a750b5d744c39a06bfb13e6eb010e35d0", null ],
+    [ "raison", "a07431.html#a3b79fabe265e36937d82c407b29c6da0", null ],
+    [ "xi", "a07431.html#adf147b14a64e08756e9e30868e943da8", null ]
 ];

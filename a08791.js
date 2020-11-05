@@ -1,6 +1,6 @@
 var a08791 =
 [
-    [ "testSnap", "a08791.html#aa8a249951d6b07770ca87514b527e8c8", null ],
-    [ "testPolygon", "a08791.html#a1e3187cbc25299380589200c398b3ffd", null ],
-    [ "testPolygon2", "a08791.html#a882729aec95621b4ad261714738ae3fd", null ]
+    [ "testPrecisionReducer", "a08791.html#a486d6504bb92a61902ac29e25b3d31a8", null ],
+    [ "resultGeom", "a08791.html#a3eff685a59eb24ce11d6dbd456fae0c2", null ],
+    [ "testGeom", "a08791.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ]
 ];

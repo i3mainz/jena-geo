@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: GraphicsUtilities Class Reference</title>
+<title>jena-geo: PaletteDisposer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,59 +61,117 @@ $(document).ready(function(){initNavTree('a07123.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07120.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GraphicsUtilities Class Reference</div>  </div>
+<div class="title">PaletteDisposer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A set of utilities related to Swing.  
+<p>Allows garbage-collection of <a class="el" href="a07119.html">Palette</a> after their index color model has been garbage collected.  
  <a href="a07123.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for GraphicsUtilities:</div>
+Inheritance diagram for PaletteDisposer:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07122.png" border="0" usemap="#GraphicsUtilities_inherit__map" alt="Inheritance graph"/></div>
-<map name="GraphicsUtilities_inherit__map" id="GraphicsUtilities_inherit__map">
-<area shape="rect" id="node2" href="a07367.html" title="Parent of classes that contain only static utility methods. " alt="" coords="37,5,93,32"/>
+<div class="center"><img src="a07122.png" border="0" usemap="#PaletteDisposer_inherit__map" alt="Inheritance graph"/></div>
+<map name="PaletteDisposer_inherit__map" id="PaletteDisposer_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for GraphicsUtilities:</div>
+Collaboration diagram for PaletteDisposer:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07121.png" border="0" usemap="#GraphicsUtilities_coll__map" alt="Collaboration graph"/></div>
-<map name="GraphicsUtilities_coll__map" id="GraphicsUtilities_coll__map">
-<area shape="rect" id="node2" href="a07367.html" title="Parent of classes that contain only static utility methods. " alt="" coords="37,5,93,32"/>
+<div class="center"><img src="a07121.png" border="0" usemap="#PaletteDisposer_coll__map" alt="Collaboration graph"/></div>
+<map name="PaletteDisposer_coll__map" id="PaletteDisposer_coll__map">
+<area shape="rect" id="node4" href="a07119.html" title="A set of RGB colors created by a &#160;PaletteFactory palette factory} from a &#160;name}. " alt="" coords="1195,416,1257,443"/>
+<area shape="rect" id="node11" href="a07127.html" title="A factory for &#160;IndexColorModel index color models} created from RGB values listed in files..." alt="" coords="842,273,949,300"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6109b3667efe1c59bc9a6e43ed01deac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07123.html#a6109b3667efe1c59bc9a6e43ed01deac">setLookAndFeel</a> (final Class&lt;?&gt; caller, final String method)</td></tr>
-<tr class="memdesc:a6109b3667efe1c59bc9a6e43ed01deac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Swing Look and Feel to the default value used in Geotk.  <a href="#a6109b3667efe1c59bc9a6e43ed01deac">More...</a><br /></td></tr>
-<tr class="separator:a6109b3667efe1c59bc9a6e43ed01deac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a47bf225ac5759d9f390795c1192acc2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07123.html#a47bf225ac5759d9f390795c1192acc2e">PaletteDisposer</a> (final <a class="el" href="a07119.html">Palette</a> <a class="el" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a>, final ColorModel colors)</td></tr>
+<tr class="memdesc:a47bf225ac5759d9f390795c1192acc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the weak reference for the specified color model.  <a href="#a47bf225ac5759d9f390795c1192acc2e">More...</a><br /></td></tr>
+<tr class="separator:a47bf225ac5759d9f390795c1192acc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab953e90edb69534eb052f9064f6b40e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07123.html#ab953e90edb69534eb052f9064f6b40e9">dispose</a> ()</td></tr>
+<tr class="memdesc:ab953e90edb69534eb052f9064f6b40e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the palette from the set of protected ones.  <a href="#ab953e90edb69534eb052f9064f6b40e9">More...</a><br /></td></tr>
+<tr class="separator:ab953e90edb69534eb052f9064f6b40e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aedfbd15222f2b3e694f0710953acd098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07123.html#aedfbd15222f2b3e694f0710953acd098">GraphicsUtilities</a> ()</td></tr>
-<tr class="memdesc:aedfbd15222f2b3e694f0710953acd098"><td class="mdescLeft">&#160;</td><td class="mdescRight">The creation of.  <a href="#aedfbd15222f2b3e694f0710953acd098">More...</a><br /></td></tr>
-<tr class="separator:aedfbd15222f2b3e694f0710953acd098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a7aac74fbc163f31a11b991e8cf897e06"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07123.html#a7aac74fbc163f31a11b991e8cf897e06">getNimbusLAF</a> ()</td></tr>
-<tr class="memdesc:a7aac74fbc163f31a11b991e8cf897e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Nimbus L&amp;F, or.  <a href="#a7aac74fbc163f31a11b991e8cf897e06">More...</a><br /></td></tr>
-<tr class="separator:a7aac74fbc163f31a11b991e8cf897e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae53d1cbe9675c522cb3f3964ff906482"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a07119.html">Palette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a></td></tr>
+<tr class="memdesc:ae53d1cbe9675c522cb3f3964ff906482"><td class="mdescLeft">&#160;</td><td class="mdescRight">The palette that created the color model.  <a href="#ae53d1cbe9675c522cb3f3964ff906482">More...</a><br /></td></tr>
+<tr class="separator:ae53d1cbe9675c522cb3f3964ff906482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of utilities related to Swing. </p>
-<p>More utilities are provided in the <a class="el" href="">org.geotoolkit.internal.swing.SwingUtilities</a> static class, which is defined in the </p><div class="fragment"><div class="line">geotk-widgets-swing </div></div><!-- fragment --><p> module. Here, we have a more minimalist class defined in the </p><div class="fragment"><div class="line">geotk-utility </div></div><!-- fragment --><p> module only because it is used by other modules that do not depend on the Swing widgets module.</p>
+<div class="textblock"><p>Allows garbage-collection of <a class="el" href="a07119.html">Palette</a> after their index color model has been garbage collected. </p>
 <dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.13</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.1  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aedfbd15222f2b3e694f0710953acd098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedfbd15222f2b3e694f0710953acd098">&#9670;&nbsp;</a></span>GraphicsUtilities()</h2>
+<a id="a47bf225ac5759d9f390795c1192acc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47bf225ac5759d9f390795c1192acc2e">&#9670;&nbsp;</a></span>PaletteDisposer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07123.html">PaletteDisposer</a> </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a07119.html">Palette</a>&#160;</td>
+          <td class="paramname"><em>palette</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final ColorModel&#160;</td>
+          <td class="paramname"><em>colors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates the weak reference for the specified color model. </p>
+
+<p class="reference">References <a class="el" href="a07235.html#ac2254d73f5e83f7fd2a3780336a340d4">ReferenceQueueConsumer&lt; T &gt;.DEFAULT</a>, <a class="el" href="a07119.html#a12f8e7975fb86f64ec3c440154897b45">Palette.factory</a>, <a class="el" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">PaletteDisposer.palette</a>, <a class="el" href="a07127.html#af4355ff983fa3cccf8802a6d2583d049">PaletteFactory.protectedPalettes</a>, and <a class="el" href="a07235.html#a3bd55972045c76e3f2001ad28acd9d0b">ReferenceQueueConsumer&lt; T &gt;.queue</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                           {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        super(colors, ReferenceQueueConsumer.DEFAULT.queue);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this.<a class="code" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a> = <a class="code" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">final</span> Set&lt;Palette&gt; protectedPalettes = <a class="code" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a>.<a class="code" href="a07119.html#a12f8e7975fb86f64ec3c440154897b45">factory</a>.<a class="code" href="a07127.html#af4355ff983fa3cccf8802a6d2583d049">protectedPalettes</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">synchronized</span> (protectedPalettes) {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            protectedPalettes.add(<a class="code" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="ttc" id="a07123_html_ae53d1cbe9675c522cb3f3964ff906482"><div class="ttname"><a href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">org.geotoolkit.image.palette.PaletteDisposer.palette</a></div><div class="ttdeci">final Palette palette</div><div class="ttdoc">The palette that created the color model. </div><div class="ttdef"><b>Definition:</b> PaletteDisposer.java:42</div></div>
+<div class="ttc" id="a07119_html_a12f8e7975fb86f64ec3c440154897b45"><div class="ttname"><a href="a07119.html#a12f8e7975fb86f64ec3c440154897b45">org.geotoolkit.image.palette.Palette.factory</a></div><div class="ttdeci">final PaletteFactory factory</div><div class="ttdoc">The originating factory. </div><div class="ttdef"><b>Definition:</b> Palette.java:63</div></div>
+<div class="ttc" id="a07127_html_af4355ff983fa3cccf8802a6d2583d049"><div class="ttname"><a href="a07127.html#af4355ff983fa3cccf8802a6d2583d049">org.geotoolkit.image.palette.PaletteFactory.protectedPalettes</a></div><div class="ttdeci">final Set&lt; Palette &gt; protectedPalettes</div><div class="ttdoc">The set of palettes protected from garbage collection. </div><div class="ttdef"><b>Definition:</b> PaletteFactory.java:218</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab953e90edb69534eb052f9064f6b40e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab953e90edb69534eb052f9064f6b40e9">&#9670;&nbsp;</a></span>dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the palette from the set of protected ones. </p>
+
+<p class="reference">References <a class="el" href="a07119.html#a12f8e7975fb86f64ec3c440154897b45">Palette.factory</a>, and <a class="el" href="a07127.html#af4355ff983fa3cccf8802a6d2583d049">PaletteFactory.protectedPalettes</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                          {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">final</span> Set&lt;Palette&gt; protectedPalettes = <a class="code" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a>.<a class="code" href="a07119.html#a12f8e7975fb86f64ec3c440154897b45">factory</a>.<a class="code" href="a07127.html#af4355ff983fa3cccf8802a6d2583d049">protectedPalettes</a>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">synchronized</span> (protectedPalettes) {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            protectedPalettes.remove(<a class="code" href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">palette</a>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div><div class="ttc" id="a07123_html_ae53d1cbe9675c522cb3f3964ff906482"><div class="ttname"><a href="a07123.html#ae53d1cbe9675c522cb3f3964ff906482">org.geotoolkit.image.palette.PaletteDisposer.palette</a></div><div class="ttdeci">final Palette palette</div><div class="ttdoc">The palette that created the color model. </div><div class="ttdef"><b>Definition:</b> PaletteDisposer.java:42</div></div>
+<div class="ttc" id="a07119_html_a12f8e7975fb86f64ec3c440154897b45"><div class="ttname"><a href="a07119.html#a12f8e7975fb86f64ec3c440154897b45">org.geotoolkit.image.palette.Palette.factory</a></div><div class="ttdeci">final PaletteFactory factory</div><div class="ttdoc">The originating factory. </div><div class="ttdef"><b>Definition:</b> Palette.java:63</div></div>
+<div class="ttc" id="a07127_html_af4355ff983fa3cccf8802a6d2583d049"><div class="ttname"><a href="a07127.html#af4355ff983fa3cccf8802a6d2583d049">org.geotoolkit.image.palette.PaletteFactory.protectedPalettes</a></div><div class="ttdeci">final Set&lt; Palette &gt; protectedPalettes</div><div class="ttdoc">The set of palettes protected from garbage collection. </div><div class="ttdef"><b>Definition:</b> PaletteFactory.java:218</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae53d1cbe9675c522cb3f3964ff906482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53d1cbe9675c522cb3f3964ff906482">&#9670;&nbsp;</a></span>palette</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,10 +180,7 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07123.html">GraphicsUtilities</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">final <a class="el" href="a07119.html">Palette</a> palette</td>
         </tr>
       </table>
   </td>
@@ -135,89 +190,10 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The creation of. </p>
-<div class="fragment"><div class="line"><a class="code" href="a07123.html#aedfbd15222f2b3e694f0710953acd098">GraphicsUtilities</a> </div></div><!-- fragment --><p> class objects is forbidden. </p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7aac74fbc163f31a11b991e8cf897e06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aac74fbc163f31a11b991e8cf897e06">&#9670;&nbsp;</a></span>getNimbusLAF()</h2>
+<p>The palette that created the color model. </p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static String getNimbusLAF </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="reference">Referenced by <a class="el" href="a07123.html#a47bf225ac5759d9f390795c1192acc2e">PaletteDisposer.PaletteDisposer()</a>.</p>
 
-<p>Returns the Nimbus L&amp;F, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if not found. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07123.html#a6109b3667efe1c59bc9a6e43ed01deac">GraphicsUtilities.setLookAndFeel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                         {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (info.getName().equalsIgnoreCase(<span class="stringliteral">&quot;Nimbus&quot;</span>)) {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">return</span> info.getClassName();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a6109b3667efe1c59bc9a6e43ed01deac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6109b3667efe1c59bc9a6e43ed01deac">&#9670;&nbsp;</a></span>setLookAndFeel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void setLookAndFeel </td>
-          <td>(</td>
-          <td class="paramtype">final Class&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>caller</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>method</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the Swing Look and Feel to the default value used in Geotk. </p>
-<p>This method exists in order to have a central place where this setting can be performed, so we can change the setting in a consistent fashion for the whole library.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">caller</td><td>The class calling this method. Used only for logging purpose. </td></tr>
-    <tr><td class="paramname">method</td><td>The method invoking this one. Used only for logging purpose. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a07123.html#a7aac74fbc163f31a11b991e8cf897e06">GraphicsUtilities.getNimbusLAF()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                                  {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        String laf = System.getProperty(<span class="stringliteral">&quot;swing.defaultlaf&quot;</span>); <span class="comment">// Documented in UIManager.</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (laf != null) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> (laf.equalsIgnoreCase(<span class="stringliteral">&quot;Nimbus&quot;</span>)) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                laf = <a class="code" href="a07123.html#a7aac74fbc163f31a11b991e8cf897e06">getNimbusLAF</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="comment">// Do not change the user-supplied setting.</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">return</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (OS.current() == OS.MAC_OS) {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="comment">// MacOS come with a default L&amp;F which is different than in standard JDK.</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            laf = UIManager.getSystemLookAndFeelClassName();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (laf.equals(UIManager.getCrossPlatformLookAndFeelClassName()) || laf.contains(<span class="stringliteral">&quot;.gtk.&quot;</span>)) {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            laf = <a class="code" href="a07123.html#a7aac74fbc163f31a11b991e8cf897e06">getNimbusLAF</a>(); <span class="comment">// Replace Metal L&amp;F by Nimbus L&amp;F.</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="comment">// Replaces also the GTK L&amp;F, because it doesn&#39;t seem to produce</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="comment">// a good result (especially when combined with Swingx).</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (laf != null) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            UIManager.setLookAndFeel(laf);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        } <span class="keywordflow">catch</span> (ReflectiveOperationException | UnsupportedLookAndFeelException e) {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Logging.recoverableException(null, caller, method, e);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div><div class="ttc" id="a07123_html_a7aac74fbc163f31a11b991e8cf897e06"><div class="ttname"><a href="a07123.html#a7aac74fbc163f31a11b991e8cf897e06">org.geotoolkit.internal.GraphicsUtilities.getNimbusLAF</a></div><div class="ttdeci">static String getNimbusLAF()</div><div class="ttdoc">Returns the Nimbus L&amp;F, or. </div><div class="ttdef"><b>Definition:</b> GraphicsUtilities.java:81</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -226,7 +202,7 @@ Static Private Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03860.html">internal</a></li><li class="navelem"><a class="el" href="a07123.html">GraphicsUtilities</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03874.html">image</a></li><li class="navelem"><a class="el" href="a03882.html">palette</a></li><li class="navelem"><a class="el" href="a07123.html">PaletteDisposer</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

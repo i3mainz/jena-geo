@@ -1,5 +1,9 @@
 var a08407 =
 [
-    [ "testGeometricMedian", "a08407.html#a1b1210c64e5b3ba5df6e23a9974d9592", null ],
-    [ "testGeometry", "a08407.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testBBOXRightOf", "a08407.html#a1d3293620606e59a1f913178b94ea7fd", null ],
+    [ "testBBOXRightOf1", "a08407.html#ae27abe3e3daa14fdd8094ad71b5cb2cc", null ],
+    [ "testGeom1", "a08407.html#aa4a3b1a7e778ece72382f6600fa96b47", null ],
+    [ "testGeom2", "a08407.html#a6b4be369c8f60e973cd5126e69cd33a4", null ],
+    [ "testGeom3", "a08407.html#a800b6bb875a8ff4404ea787c3df125a5", null ],
+    [ "testGeom4", "a08407.html#a4c55e7efe430d6d220fb05524c4bb940", null ]
 ];

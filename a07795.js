@@ -1,15 +1,20 @@
 var a07795 =
 [
-    [ "LinearInterpolator1D", "a07795.html#af56b89aa1466b3e7e900545ef1a6befd", null ],
-    [ "LinearInterpolator1D", "a07795.html#ac28f1a7cbfb879fb00db28ff832a89a4", null ],
-    [ "create", "a07795.html#a846a7b1176dec66db64e1e59bb093e44", null ],
-    [ "create", "a07795.html#a358848d6997066b8c9d51fc629210c84", null ],
-    [ "derivative", "a07795.html#a5b42aca180ea810a476b4e4dac5d6be1", null ],
-    [ "inverse", "a07795.html#af84ad4857b2ade249818051e18f9ec99", null ],
-    [ "isIdentity", "a07795.html#a98d76b7a7611253fe2b5d69d97f101ad", null ],
-    [ "transform", "a07795.html#a38f3766b131136406368d8cb01e52131", null ],
-    [ "antecedent", "a07795.html#a1cde7dc71a507ec3ac8392fb423db792", null ],
-    [ "isIncreaseOrder", "a07795.html#a3e45c49fab4cfdf8168480cbdca93936", null ],
-    [ "l", "a07795.html#ab53f0bd79c79e519dbdc2a959184c3e0", null ],
-    [ "values", "a07795.html#aa5e3a9b024728abfa676829ecb612fbb", null ]
+    [ "NewZealandMapGrid", "a07795.html#a04247900eb68539ac4688d4ffc20f045", null ],
+    [ "[static initializer]", "a07795.html#a2e87c5ede6b7235170d287cd2e254454", null ],
+    [ "createMathTransform", "a07795.html#a18fd2cc70a438bd7c02797415570c219", null ],
+    [ "getOperationType", "a07795.html#aa0ab8a8dcd0f0d099aac64f0b92d2de1", null ],
+    [ "sameNameAs", "a07795.html#ae7476925ddff42a20707cd2d210f6ce6", null ],
+    [ "sameParameterAs", "a07795.html#a53972f1c2c553bb5d272a9cc823c6062", null ],
+    [ "CENTRAL_MERIDIAN", "a07795.html#a103b72da3c965123251bbfb8e7d96153", null ],
+    [ "FALSE_EASTING", "a07795.html#a4db1353f8f59dca2bd2ad7e3666360b1", null ],
+    [ "FALSE_NORTHING", "a07795.html#ac674d9945acada0189d14c10f3097347", null ],
+    [ "LATITUDE_OF_ORIGIN", "a07795.html#a94cfdda279961bf01e756aa4217c4f7e", null ],
+    [ "PARAMETERS", "a07795.html#ab5e69de77a0ae51d2777912d2d63b133", null ],
+    [ "SEMI_MAJOR", "a07795.html#a3dcfb656c5e7adbcb9d68c7ad6745e7f", null ],
+    [ "SEMI_MINOR", "a07795.html#aec42dd028b5c673b9337911de44e2000", null ],
+    [ "serialVersionUID", "a07795.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "X_SCALE", "a07795.html#af4ad2bd6ed57caebe5986c6a8262ec55", null ],
+    [ "XY_PLANE_ROTATION", "a07795.html#ae3439a93b9abb72e107e9be681edae16", null ],
+    [ "Y_SCALE", "a07795.html#a333445bbc8b62a1154991e0e52498867", null ]
 ];

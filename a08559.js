@@ -1,5 +1,7 @@
 var a08559 =
 [
-    [ "testAsHexEWKB", "a08559.html#a2586cce6c4a80928a61100906b0624da", null ],
-    [ "testGeometry", "a08559.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testAddGeometry", "a08559.html#a4ebf1443292e242753148cb8748d9169", null ],
+    [ "result", "a08559.html#aab356d6554a7301750f11ec7a85ac47d", null ],
+    [ "testGeom", "a08559.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
+    [ "testGeom2", "a08559.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
 ];

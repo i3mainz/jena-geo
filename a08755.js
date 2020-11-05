@@ -1,4 +1,5 @@
 var a08755 =
 [
-    [ "testLineString", "a08755.html#a33797029fadbcba01b4a4fafec88cf41", null ]
+    [ "testFlipCoordinates", "a08755.html#ad1e5e682acb0c53bb386a80a7186ae38", null ],
+    [ "testPolygon", "a08755.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

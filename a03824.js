@@ -1,4 +1,7 @@
 var a03824 =
 [
-    [ "geosparql_jena", "a03825.html", "a03825" ]
+    [ "MakePolygon", "a05387.html", "a05387" ],
+    [ "MPolyFromText", "a05391.html", "a05391" ],
+    [ "PolygonFromText", "a05395.html", "a05395" ],
+    [ "PolygonFromWKB", "a05399.html", "a05399" ]
 ];

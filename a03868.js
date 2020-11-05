@@ -1,10 +1,11 @@
 var a03868 =
 [
-    [ "AuthenticatedDataSource", "a07231.html", "a07231" ],
-    [ "DefaultDataSource", "a07235.html", "a07235" ],
-    [ "DerbySqlScriptRunner", "a07239.html", "a07239" ],
-    [ "Dialect", "a07243.html", "a07243" ],
-    [ "Entry", "a07247.html", "a07247" ],
-    [ "ScriptRunner", "a07251.html", "a07251" ],
-    [ "Synchronizer", "a07255.html", "a07255" ]
+    [ "DoubleDimension2D", "a06759.html", "a06759" ],
+    [ "FloatDimension2D", "a06763.html", "a06763" ],
+    [ "InfiniteRectangle2D", "a06767.html", "a06767" ],
+    [ "ProjectedPathIterator", "a06771.html", "a06771" ],
+    [ "ProjectedShape", "a06775.html", "a06775" ],
+    [ "ShapeUtilities", "a06779.html", "a06779" ],
+    [ "TransformedShape", "a06783.html", "a06783" ],
+    [ "XRectangle2D", "a06787.html", "a06787" ]
 ];

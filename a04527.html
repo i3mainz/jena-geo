@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AsGeoHash Class Reference</title>
+<title>jena-geo: RemovePoints Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,24 +64,24 @@ $(document).ready(function(){initNavTree('a04527.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04524.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsGeoHash Class Reference</div>  </div>
+<div class="title">RemovePoints Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Return a GeoHash representation of the geometry.  
+<p>Removes the points contained in the second geometry from the first geometry.  
  <a href="a04527.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for AsGeoHash:</div>
+Inheritance diagram for RemovePoints:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04526.png" border="0" usemap="#AsGeoHash_inherit__map" alt="Inheritance graph"/></div>
-<map name="AsGeoHash_inherit__map" id="AsGeoHash_inherit__map">
+<div class="center"><img src="a04526.png" border="0" usemap="#RemovePoints_inherit__map" alt="Inheritance graph"/></div>
+<map name="RemovePoints_inherit__map" id="RemovePoints_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for AsGeoHash:</div>
+Collaboration diagram for RemovePoints:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04525.png" border="0" usemap="#AsGeoHash_coll__map" alt="Collaboration graph"/></div>
-<map name="AsGeoHash_coll__map" id="AsGeoHash_coll__map">
+<div class="center"><img src="a04525.png" border="0" usemap="#RemovePoints_coll__map" alt="Collaboration graph"/></div>
+<map name="RemovePoints_coll__map" id="RemovePoints_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -91,7 +91,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Return a GeoHash representation of the geometry. </p>
+<div class="textblock"><p>Removes the points contained in the second geometry from the first geometry. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
@@ -119,11 +119,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06555.html#ad6a9f62b238eaebd7f51b21e7757f05d">GeometryWrapper.getGeometryType()</a>, and <a class="el" href="a06555.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08547.html#a3ff195dff03851a6d4c46d30a53b61fd">AsGeoHashTest.testAsGeobuf()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                          {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                GeometryWrapper geom1 = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                BigInteger maxchars=v2.getInteger();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                GeohashReferenceSystem refsys;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        refsys = <span class="keyword">new</span> GeohashReferenceSystem(GeohashReferenceSystem.Format.BASE32, CommonCRS.WGS84.normalizedGeographic());</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        GeohashReferenceSystem.Coder coder=refsys.createCoder();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        <span class="keywordflow">if</span>(geom1.getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;Point&quot;</span>)) {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                String geohash = coder.encode(Angle.toDegrees(geom1.getXYGeometry().getCoordinate().getX()), Angle.toDegrees(geom1.getXYGeometry().getCoordinate().getY()));</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeString(geohash);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                        }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14151.html">RuntimeException</a>(<span class="stringliteral">&quot;Input geometry needs to be a Point&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                } <span class="keywordflow">catch</span> (TransformException e) {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        <span class="comment">// TODO Auto-generated catch block</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14151.html">RuntimeException</a>(e.getMessage());</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="ttc" id="a14151_html"><div class="ttname"><a href="a14151.html">RuntimeException</a></div></div>
-</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06595.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06287.html#a8480d756c807d9ffc39b0d5405e7a84b">LiteralUtils.createGeometry()</a>, <a class="el" href="a06595.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06595.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06595.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, and <a class="el" href="a06595.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                          {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                 GeometryWrapper geometry = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;               Geometry geom = geometry.getXYGeometry();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;               GeometryWrapper geometry2 = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;               Geometry geom2 = geometry2.getXYGeometry();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        GeometryFactory fac=<span class="keyword">new</span> GeometryFactory();             </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">if</span> (!geom2.intersects(geom)) {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span> GeometryWrapperFactory.createGeometry(fac.createPoint(), geometry.getSrsURI(),geometry.getGeometryDatatypeURI()).asNodeValue();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }            </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        Coordinate[] arrayOfCoordinate1 = <span class="keyword">new</span> Coordinate[geom.getCoordinates().length];</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">int</span> j = 0;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">for</span> (Coordinate coordinate : geom.getCoordinates()) {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (!geom2.contains(fac.createPoint(coordinate))) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                arrayOfCoordinate1[(j++)] = coordinate;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        Coordinate[] arrayOfCoordinate2 = CoordinateArrays.removeNull(arrayOfCoordinate1);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        Coordinate[] localObject = arrayOfCoordinate2;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (((geom instanceof LinearRing)) &amp;&amp; (arrayOfCoordinate2.length &gt; 1) &amp;&amp; (!arrayOfCoordinate2[(arrayOfCoordinate2.length - 1)].equals2D(arrayOfCoordinate2[0]))) {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            Coordinate[] arrayOfCoordinate3 = <span class="keyword">new</span> Coordinate[arrayOfCoordinate2.length + 1];</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            CoordinateArrays.copyDeep(arrayOfCoordinate2, 0, arrayOfCoordinate3, 0, arrayOfCoordinate2.length);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            arrayOfCoordinate3[(arrayOfCoordinate3.length - 1)] = <span class="keyword">new</span> Coordinate(arrayOfCoordinate3[0]);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            localObject = arrayOfCoordinate3;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        GeometryWrapper resultgeom=LiteralUtils.createGeometry(localObject, geom.getGeometryType(), geometry);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> resultgeom.asNodeValue();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -132,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03777.html">geometry</a></li><li class="navelem"><a class="el" href="a03781.html">exporter</a></li><li class="navelem"><a class="el" href="a04527.html">AsGeoHash</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03801.html">geometry</a></li><li class="navelem"><a class="el" href="a03804.html">editor</a></li><li class="navelem"><a class="el" href="a04527.html">RemovePoints</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

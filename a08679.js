@@ -1,9 +1,8 @@
 var a08679 =
 [
-    [ "testOrderingEquals1", "a08679.html#a35b0ff8ac582857f1742c06e5db14fb2", null ],
-    [ "testOrderingEquals2", "a08679.html#a258a7b3f7cf473377b4aaed9d19641c4", null ],
-    [ "lineStringMedium", "a08679.html#a30a33894af6c6537b098f763a39d6054", null ],
-    [ "lineStringMedium2", "a08679.html#a6f7bc783bc9c02130f1251353e8efd7d", null ],
-    [ "lineStringSmall", "a08679.html#a12c9d589491219bf61791e12113fae06", null ],
-    [ "lineStringSmallReverse", "a08679.html#a2dd626abfe2d2e9dc2b4d1bc7f9dc810", null ]
+    [ "testEqualTopoFalse", "a08679.html#a8274875a2d4c85b886223bd494666e36", null ],
+    [ "testEqualTopoTrue", "a08679.html#a523cb10739809e6f16d7ba6f26d34cde", null ],
+    [ "result", "a08679.html#aab356d6554a7301750f11ec7a85ac47d", null ],
+    [ "testGeom", "a08679.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
+    [ "testGeom2", "a08679.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
 ];

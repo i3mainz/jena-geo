@@ -1,9 +1,8 @@
 var a07211 =
 [
-    [ "Identifier3D", "a07211.html#a8fac839881f7177ff32664202e0c31a2", null ],
-    [ "addHorizontalCRS", "a07211.html#a0fb8dff92a675c3b56bfb18fd28f68ee", null ],
-    [ "equals", "a07211.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "hashCode", "a07211.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "horizontalCRS", "a07211.html#a5c14073dfb0774d03c5cedc80303dd88", null ],
-    [ "serialVersionUID", "a07211.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "Host", "a07211.html#ac5301279411a011a2af04a9a7c49e14b", null ],
+    [ "Host", "a07211.html#a5f1f831fdb4c407efb0fe00da70939b5", null ],
+    [ "host", "a07211.html#a2502b12b30261ef4dea2ff97a6b78cab", null ],
+    [ "path", "a07211.html#adb85e16ac8c9f62df2d33b1262649843", null ],
+    [ "port", "a07211.html#a0008be20f8979e1db6fb31c28cd26025", null ]
 ];

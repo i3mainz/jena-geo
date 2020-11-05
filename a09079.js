@@ -1,5 +1,5 @@
 var a09079 =
 [
-    [ "duplicateRings", "a09079.html#a92f3ef00fc079a76b7f943d9ed6cec77", null ],
-    [ "nonduplicateRings", "a09079.html#a675a0b1b194538fc07fa716705f883a5", null ]
+    [ "testNRings", "a09079.html#a232253c11ffc2c2e17e969ee3180b704", null ],
+    [ "testPolygon", "a09079.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

@@ -1,5 +1,6 @@
 var a08583 =
 [
-    [ "testAsTextRaw", "a08583.html#abe6b8113553114d4969c61497fcbd472", null ],
+    [ "testAsGeobuf", "a08583.html#a3ff195dff03851a6d4c46d30a53b61fd", null ],
+    [ "geobufString", "a08583.html#ada02b1585d7fa34c77874ade6c762087", null ],
     [ "testGeometry", "a08583.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

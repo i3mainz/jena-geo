@@ -1,8 +1,9 @@
 var a08307 =
 [
-    [ "DimensionalComparator", "a08307.html#a5bd255213663b3596e2de221144f1ab1", null ],
-    [ "DimensionalComparator", "a08307.html#aa12c933fd5275be6824111b1f2c92cd6", null ],
-    [ "compare", "a08307.html#a55bbcaf3b85142c9878f7b8ac44290fb", null ],
-    [ "compare", "a08307.html#a22ae744431802300f10565640dec04c5", null ],
-    [ "dimensionsToTest", "a08307.html#a6bb6df1c2db1f7b9fe46d4be2d0083af", null ]
+    [ "cubicBezier", "a08307.html#a457462c308d5171e6d47a0fdba39a1c2", null ],
+    [ "getControlPoints", "a08307.html#a87ff5d86d68886c2254e55b6e4e0c7d8", null ],
+    [ "getInterpPoints", "a08307.html#adc771c10e7874082c0374abdf098da36", null ],
+    [ "smooth", "a08307.html#a07ca66064762d9bd6d41728152a8931d", null ],
+    [ "control", "a08307.html#ae631bfcf63e63d190862561e020108a5", null ],
+    [ "fac", "a08307.html#a06fda23017f0f5df370535d4e7514c03", null ]
 ];

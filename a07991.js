@@ -1,12 +1,14 @@
 var a07991 =
 [
-    [ "DeferringIterator", "a07991.html#af385b12649429b6088a30a7c61ac1018", null ],
-    [ "fallbacks", "a07991.html#adb3c0ef1dd13ed0d4fc809eb13276cb4", null ],
-    [ "hasNext", "a07991.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
-    [ "isDeferred", "a07991.html#a04dad234173800a5923173cc5cad9982", null ],
-    [ "next", "a07991.html#a0c7c989f92fa935704b4915f1f400edd", null ],
-    [ "remove", "a07991.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
-    [ "fallbacks", "a07991.html#a8edf525e327321e86fb91eb7320e64c4", null ],
-    [ "iterator", "a07991.html#ac32073933df5a4eaab0b7c6e5f06fd65", null ],
-    [ "usingFallbacks", "a07991.html#a72671c985090e890a47cab982404af0f", null ]
+    [ "ListIter", "a07991.html#aeea6c8d0b034f20f251d336ce72988a0", null ],
+    [ "add", "a07991.html#a03611638d27079f92945c0d1e5f9180d", null ],
+    [ "hasNext", "a07991.html#abd63d6cef7daf6f6a067f663920cb584", null ],
+    [ "hasPrevious", "a07991.html#a5102860cd9abee74b9509a0f224e779c", null ],
+    [ "next", "a07991.html#a4db4ce90b801a1f27525eee69b2044be", null ],
+    [ "nextIndex", "a07991.html#a456d33686336a77b2367f5b5220fabb1", null ],
+    [ "previous", "a07991.html#a8c3782f8286beb492e7ea0983222c200", null ],
+    [ "previousIndex", "a07991.html#a1b40dbb8cb0a1ebba0c70b73ea7a0792", null ],
+    [ "remove", "a07991.html#a0161d05dfcd00eb24193a955ce81c546", null ],
+    [ "set", "a07991.html#a7da297c42ddd4c9d66e617164dd8ed74", null ],
+    [ "iterator", "a07991.html#ae6424f6b26f2e9dbd839c984be8710a4", null ]
 ];

@@ -1,13 +1,18 @@
 var a08327 =
 [
-    [ "LocatePoint", "a08327.html#a0db8c96a170aff314d55b51d1090d8c7", null ],
-    [ "compute", "a08327.html#a4f513b82951056a3f579d95f215e9307", null ],
-    [ "getIndex", "a08327.html#a59d053c950ff1e9f8a004d493f34e754", null ],
-    [ "getPoint", "a08327.html#add97f503ca58503d04ac9150e6c8ef7f", null ],
-    [ "pointAlongLine", "a08327.html#aefeee61acc0d87ebcacf610af684935e", null ],
-    [ "pointAlongSegment", "a08327.html#a8138e49067c6447449ff0a8ce19bfed4", null ],
-    [ "pointAlongSegment", "a08327.html#a4b414ab63960ecfa283932288f9977f7", null ],
-    [ "pointAlongSegmentByFraction", "a08327.html#a9ecfa15254cc343c6166b5e9b3f05c03", null ],
-    [ "index", "a08327.html#a750b5d744c39a06bfb13e6eb010e35d0", null ],
-    [ "pt", "a08327.html#aae9b62bb90c0c25de44c11a2abc79afa", null ]
+    [ "zigZagDecode", "a08327.html#a39d960ba7b421538218960be0b75dbdb", null ],
+    [ "zigZagEncode", "a08327.html#ac56ffa9468f6d51a81dfc6a16c7553e7", null ],
+    [ "EMPTY_GEOMETRY", "a08327.html#acfd4b309722d80cbae834f273b479450", null ],
+    [ "EXTENDED_DIMENSIONS", "a08327.html#a0a64265ce21562ec2811dd05db08a9dd", null ],
+    [ "GEOMETRYCOLLECTION_TYPE", "a08327.html#ad69af768670b09117152621e9765d4ca", null ],
+    [ "LINESTRING_TYPE", "a08327.html#ae612cee125e86b43a8a0895733e73471", null ],
+    [ "MAX_COORD_PRECISION", "a08327.html#a2dd11c22d698708a6e11580242c97e89", null ],
+    [ "MAX_EXTENDED_PRECISION", "a08327.html#a5b750380e571ae88f99a796f9d54e49f", null ],
+    [ "MIN_COORD_PRECISION", "a08327.html#a5bee20a7d59eea71b635f7f136c48e91", null ],
+    [ "MIN_EXTENDED_PRECISION", "a08327.html#ad70b66875f973adc5547402ec3ab512d", null ],
+    [ "MULTILINESTRING_TYPE", "a08327.html#abc6a100cfe59d0f10d5ff0b83dd28e40", null ],
+    [ "MULTIPOINT_TYPE", "a08327.html#ab21548c889cf575c0452ce54b0bb1564", null ],
+    [ "MULTIPOLYGON_TYPE", "a08327.html#af8a8622de581648619916bb8eb6cea2d", null ],
+    [ "POINT_TYPE", "a08327.html#a92e0b11f85494a2b6953846ee6b4f88d", null ],
+    [ "POLYGON_TYPE", "a08327.html#a4e033b07cdccae3d93c0fe865a9bc513", null ]
 ];

@@ -1,8 +1,11 @@
 var a04135 =
 [
-    [ "benchmark", "a04135.html#ad2606733233a997d13f95083f3cb7233", null ],
-    [ "readFile", "a04135.html#ac70b9d10398ac107fa07bdbcee59fac9", null ],
-    [ "resultMapToJSON", "a04135.html#a5b8e2249c83fdc70c053a1d34f1847fa", null ],
-    [ "endTime", "a04135.html#a22ab9604e2a95f2750f1418182f6ec4a", null ],
-    [ "startTime", "a04135.html#a8ad49a66e91d8658c5f1f7dbcbcbbd2f", null ]
+    [ "AccMinY", "a04139.html", "a04139" ],
+    [ "MinY", "a04135.html#a3b80e961e0dca0ad1daa0b38e513834d", null ],
+    [ "MinY", "a04135.html#a5a4e455d68517f670f79b22a1e7670f2", null ],
+    [ "copy", "a04135.html#a0c4f538fb7b73cf0610c4fd5b212cc00", null ],
+    [ "createAccumulator", "a04135.html#ac589ca3321e77a7558e0e346c8474738", null ],
+    [ "equals", "a04135.html#a04adb23e628a0adcac484ce8f1dff399", null ],
+    [ "getValueEmpty", "a04135.html#a36b59b059238a39e015669fe72025f27", null ],
+    [ "hashCode", "a04135.html#a077e18fe97323c7194e2665ffc766399", null ]
 ];

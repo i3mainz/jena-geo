@@ -1,9 +1,7 @@
 var a07899 =
 [
-    [ "ImmutableAssetData", "a07899.html#aacf279714bdf6e13eadd3b1ef1bc1aaf", null ],
-    [ "getMimeType", "a07899.html#a7e5cf082737fd361c452fdb2f20a0668", null ],
-    [ "getSupportedTypes", "a07899.html#aeb8d023477647649a523ac6aa408617d", null ],
-    [ "load", "a07899.html#af960181221ade98aa2bb57b205677f06", null ],
-    [ "instance", "a07899.html#af015d5610f4ace4e3097ed2d46ad3f07", null ],
-    [ "mimeType", "a07899.html#a8407411e535333d8efe775c7560953b8", null ]
+    [ "Data", "a07903.html", "a07903" ],
+    [ "addData", "a07899.html#abdbaf293c51f5f6e353430ce37398001", null ],
+    [ "getDatas", "a07899.html#a02394b96c9a23c0991dd64f7a8f72ed0", null ],
+    [ "removeData", "a07899.html#ab059f288f6d7e98b5f8706b9a94be0a6", null ]
 ];

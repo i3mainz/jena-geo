@@ -1,9 +1,9 @@
 var a08523 =
 [
-    [ "testEnsureClosed", "a08523.html#ace1b0f448a93ab083e49e59b851b8094", null ],
-    [ "testEnsureClosed2", "a08523.html#a7a93140658cbcf5aea17d9f930cd5144", null ],
-    [ "closed", "a08523.html#ad8efa97b8aa775164dc4836b505fc315", null ],
-    [ "duplicateRings", "a08523.html#a92f3ef00fc079a76b7f943d9ed6cec77", null ],
-    [ "nonClosed", "a08523.html#aff993a2133bc6c6afe1012e13b5c028d", null ],
-    [ "ring", "a08523.html#a3e4a839eee2eb5791f90656e82eec721", null ]
+    [ "test2DGeom", "a08523.html#a326426f92a343411bc6035a5e9a4192f", null ],
+    [ "test3DGeom", "a08523.html#aa6b2641c27685af72bd5946823648455", null ],
+    [ "testMGeom", "a08523.html#a17b047bacf8d47cfe9eb1b95260abd70", null ],
+    [ "geom2D", "a08523.html#a717e94cd8879a90c3d3fce5d3ae64eb6", null ],
+    [ "geom3D", "a08523.html#a972164b62d3d78e8fb03a17b761742a2", null ],
+    [ "geomM", "a08523.html#aa8cacb7883ca9f8160920fa287158fef", null ]
 ];

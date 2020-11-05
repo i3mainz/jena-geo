@@ -1,9 +1,25 @@
 var a06775 =
 [
-    [ "ClassKey", "a06775.html#aaadfbac8d9bcd8df46dff3c2346e222d", null ],
-    [ "ClassKey", "a06775.html#a07358b1433784cf0b8f0af66bcd2493d", null ],
-    [ "getValueClass", "a06775.html#add5d743fc6fb18232910028591c19fb9", null ],
-    [ "isCompatibleValue", "a06775.html#a08faba5eee0f9415af2a22c1009291b2", null ],
-    [ "toString", "a06775.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "writeReplace", "a06775.html#a7e303c648cb2ce8982a0e8c685d4e3cc", null ]
+    [ "ProjectedShape", "a06775.html#a5e374562482023bcf4e47e3ea091a10a", null ],
+    [ "concatenate", "a06775.html#a6265347e98853f5d02cfa2935fc9cc2b", null ],
+    [ "contains", "a06775.html#a664d160b0f6e54b50f57db9a1aaba572", null ],
+    [ "contains", "a06775.html#a1185e80a5008a9b3687aa15d3637b0c0", null ],
+    [ "contains", "a06775.html#a97418c6057789828937c7f7653dbf745", null ],
+    [ "contains", "a06775.html#a45afd50eb67f428ea7f64e2cce522332", null ],
+    [ "equals", "a06775.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
+    [ "getBounds", "a06775.html#a187945475e730bfa340a10f63224e91f", null ],
+    [ "getBounds2D", "a06775.html#a979e1d8ee64887b55bad5a98fe83df92", null ],
+    [ "getPathIterator", "a06775.html#a6c639f3e752bd5a4415bd4b0ab40336f", null ],
+    [ "getPathIterator", "a06775.html#a7f83356618c8fa442d9dcc02abc3b9d7", null ],
+    [ "hashCode", "a06775.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "intersects", "a06775.html#a1c3953178281c4909120706faba8de13", null ],
+    [ "intersects", "a06775.html#a845365596bbba8f00a70b27923e782bf", null ],
+    [ "inverse", "a06775.html#adbfa85fbc79b2b02df0f87d23fac5a5c", null ],
+    [ "wrap", "a06775.html#aca266c320ff45e8ab5d322455bcdd57c", null ],
+    [ "inverse", "a06775.html#aceeaef0edef67cc8e18c6aabce71a0fe", null ],
+    [ "point", "a06775.html#a034855c3834d0b7f1293498b5330ad69", null ],
+    [ "projection", "a06775.html#a0f93b2fdc8862324f825cbd09ec60224", null ],
+    [ "rectangle", "a06775.html#a505227103a6ac66ad316a6ad4a40b801", null ],
+    [ "serialVersionUID", "a06775.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "shape", "a06775.html#a6317b4de59d026c03d0369c1790e29be", null ]
 ];

@@ -1,12 +1,10 @@
 var a07443 =
 [
-    [ "FactoryMethod", "a07443.html#a2a129c3cf9023ab0a6cc2a0d68b367a7", null ],
-    [ "bounds", "a07443.html#a5b9046fd259616446a40d40d917ace8a", null ],
-    [ "create", "a07443.html#a41bb0f2b00f45abf16564f9298dc64b3", null ],
-    [ "equals", "a07443.html#a537c7b35c090ed43e1d3f130188e9198", null ],
-    [ "find", "a07443.html#a6d3d1713c1be828283262577206e4e76", null ],
-    [ "hashCode", "a07443.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "factory", "a07443.html#a34f812783ccf25d7eac4173b47387ef5", null ],
-    [ "method", "a07443.html#af22c5bd317017a9eded44e8d53a5f400", null ],
-    [ "NULL", "a07443.html#a8b5e1bb8a60cd4ff03a3ebd8a358b614", null ]
+    [ "Line", "a07443.html#a8fa18e7ff41439ed6ba66aea2bc2b397", null ],
+    [ "Line", "a07443.html#a2e3c352479dd77cbefcc5f1e1171069f", null ],
+    [ "intersectionPoint", "a07443.html#aa9ac321c595110d2f3105265a50857f0", null ],
+    [ "intersectionPoint", "a07443.html#a5a3669c0459aa06c9b5ca3c5e6a6c9d4", null ],
+    [ "isoscelesTriangleBase", "a07443.html#a6def33628adcc98ec6857642720a70cd", null ],
+    [ "nearestColinearPoint", "a07443.html#a16befa2ce61b161a3e4d338ebd39654c", null ],
+    [ "EPS", "a07443.html#aa53cb17a306a6462b4a5a5083bc8ccb6", null ]
 ];

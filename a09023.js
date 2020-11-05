@@ -1,7 +1,5 @@
 var a09023 =
 [
-    [ "testIsPolygonCWFalse", "a09023.html#a017c3fe070c2ab2e34a67d428cec06d3", null ],
-    [ "testIsPolygonCWTrue", "a09023.html#a65124e83aa8d64983e3fc4a131479949", null ],
-    [ "testPolygon", "a09023.html#a1e3187cbc25299380589200c398b3ffd", null ],
-    [ "testPolygon2", "a09023.html#a882729aec95621b4ad261714738ae3fd", null ]
+    [ "testPointFromText", "a09023.html#a34b8808318d84beec7ded7da39c5ef6e", null ],
+    [ "testPoint1", "a09023.html#ab20d196cb6e34afc2e9cff8074e43bfd", null ]
 ];

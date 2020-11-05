@@ -1,13 +1,9 @@
 var a08139 =
 [
-    [ "Double", "a08139.html#aeba8547140750dce2857b821d18c9fe0", null ],
-    [ "compareTo", "a08139.html#a4f137d727658d165e8096100012adafd", null ],
-    [ "ranks", "a08139.html#abb150dc13c316a480c404b1703c03990", null ],
-    [ "ranks", "a08139.html#a7e3ac659899192333adea39b87f41331", null ],
-    [ "ranks", "a08139.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
-    [ "ranks", "a08139.html#abb82129695e9a7b212788912ccc45539", null ],
-    [ "ranks", "a08139.html#ad3b1488acd654783f7a4dc632814441f", null ],
-    [ "ranks", "a08139.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
-    [ "ranks", "a08139.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
-    [ "value", "a08139.html#af3c749787b2fa699908596bb0277cbd2", null ]
+    [ "Point2DList", "a08139.html#a13743ca16abe10fa3c27ea93b3ef66e7", null ],
+    [ "getDimension", "a08139.html#a56e1ed7f77c1dad3205d8c25e62c0432", null ],
+    [ "getPoint", "a08139.html#a0a85c8e0e311f358dc68e6e38394ef48", null ],
+    [ "isEmpty", "a08139.html#aa71d41fd3d95c354d4d5e922c6c21210", null ],
+    [ "size", "a08139.html#af4b57d21919c42d55af03391f91a1c08", null ],
+    [ "source", "a08139.html#afff0e84b83db0cbdf2918d59d99f13da", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: BandedSampleConverter Class Reference</title>
+<title>jena-geo: FractionalGridCoordinates Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,194 +63,207 @@ $(document).ready(function(){initNavTree('a06615.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06612.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BandedSampleConverter Class Reference</div>  </div>
+<div class="title">FractionalGridCoordinates Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An image where each sample value is computed independently of other sample values and independently of neighbor points.  
+<p>Grid coordinates which may have fraction digits after the integer part.  
  <a href="a06615.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for BandedSampleConverter:</div>
+Inheritance diagram for FractionalGridCoordinates:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06614.png" border="0" usemap="#BandedSampleConverter_inherit__map" alt="Inheritance graph"/></div>
-<map name="BandedSampleConverter_inherit__map" id="BandedSampleConverter_inherit__map">
-<area shape="rect" id="node3" href="a06619.html" title="A. " alt="" coords="5,155,224,181"/>
+<div class="center"><img src="a06614.png" border="0" usemap="#FractionalGridCoordinates_inherit__map" alt="Inheritance graph"/></div>
+<map name="FractionalGridCoordinates_inherit__map" id="FractionalGridCoordinates_inherit__map">
+<area shape="rect" id="node4" href="a06619.html" title="A grid coordinates viewed as a DirectPosition. " alt="" coords="37,155,215,196"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for BandedSampleConverter:</div>
+Collaboration diagram for FractionalGridCoordinates:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06613.png" border="0" usemap="#BandedSampleConverter_coll__map" alt="Collaboration graph"/></div>
-<map name="BandedSampleConverter_coll__map" id="BandedSampleConverter_coll__map">
+<div class="center"><img src="a06613.png" border="0" usemap="#FractionalGridCoordinates_coll__map" alt="Collaboration graph"/></div>
+<map name="FractionalGridCoordinates_coll__map" id="FractionalGridCoordinates_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06619.html">Writable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A.  <a href="a06619.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06619.html">Position</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A grid coordinates viewed as a <a class="el" href="">DirectPosition</a>.  <a href="a06619.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8049f6987505f6bb10a9caabd780c748"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a8049f6987505f6bb10a9caabd780c748">getProperty</a> (final String key)</td></tr>
-<tr class="memdesc:a8049f6987505f6bb10a9caabd780c748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a property from this image.  <a href="#a8049f6987505f6bb10a9caabd780c748">More...</a><br /></td></tr>
-<tr class="separator:a8049f6987505f6bb10a9caabd780c748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe92749c0f415ca061399e1a549f7c5"><td class="memItemLeft" align="right" valign="top">String []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a8fe92749c0f415ca061399e1a549f7c5">getPropertyNames</a> ()</td></tr>
-<tr class="memdesc:a8fe92749c0f415ca061399e1a549f7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all recognized properties, or.  <a href="#a8fe92749c0f415ca061399e1a549f7c5">More...</a><br /></td></tr>
-<tr class="separator:a8fe92749c0f415ca061399e1a549f7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9f91617f2855770996f11b9d2dd94d"><td class="memItemLeft" align="right" valign="top">ColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a2e9f91617f2855770996f11b9d2dd94d">getColorModel</a> ()</td></tr>
-<tr class="memdesc:a2e9f91617f2855770996f11b9d2dd94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color model associated with all rasters of this image.  <a href="#a2e9f91617f2855770996f11b9d2dd94d">More...</a><br /></td></tr>
-<tr class="separator:a2e9f91617f2855770996f11b9d2dd94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a0997183f24da19b776d96c1052998"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a67a0997183f24da19b776d96c1052998">getWidth</a> ()</td></tr>
-<tr class="memdesc:a67a0997183f24da19b776d96c1052998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width (in pixels) of this image.  <a href="#a67a0997183f24da19b776d96c1052998">More...</a><br /></td></tr>
-<tr class="separator:a67a0997183f24da19b776d96c1052998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a07efb2a4e9a982688c8bb3c3f21d1092">getHeight</a> ()</td></tr>
-<tr class="memdesc:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height (in pixels) of this image.  <a href="#a07efb2a4e9a982688c8bb3c3f21d1092">More...</a><br /></td></tr>
-<tr class="separator:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ec43fe85c74aa5a7cadc2e6e8d2410f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX</a> ()</td></tr>
-<tr class="memdesc:a1ec43fe85c74aa5a7cadc2e6e8d2410f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum <em>x</em> coordinate (inclusive) of this image.  <a href="#a1ec43fe85c74aa5a7cadc2e6e8d2410f">More...</a><br /></td></tr>
-<tr class="separator:a1ec43fe85c74aa5a7cadc2e6e8d2410f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8e603e4bb15d663afe6fc2c98bc85d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY</a> ()</td></tr>
-<tr class="memdesc:afc8e603e4bb15d663afe6fc2c98bc85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum <em>y</em> coordinate (inclusive) of this image.  <a href="#afc8e603e4bb15d663afe6fc2c98bc85d">More...</a><br /></td></tr>
-<tr class="separator:afc8e603e4bb15d663afe6fc2c98bc85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221fbe8552df714e1483b0005f1d84d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX</a> ()</td></tr>
-<tr class="memdesc:a221fbe8552df714e1483b0005f1d84d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tile index in the <em>x</em> direction.  <a href="#a221fbe8552df714e1483b0005f1d84d6">More...</a><br /></td></tr>
-<tr class="separator:a221fbe8552df714e1483b0005f1d84d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8574cc85ad8d13e052b8146b81825969"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY</a> ()</td></tr>
-<tr class="memdesc:a8574cc85ad8d13e052b8146b81825969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tile index in the <em>y</em> direction.  <a href="#a8574cc85ad8d13e052b8146b81825969">More...</a><br /></td></tr>
-<tr class="separator:a8574cc85ad8d13e052b8146b81825969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90636af76bddca374ab4ff8eed528787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a90636af76bddca374ab4ff8eed528787">FractionalGridCoordinates</a> (final int dimension)</td></tr>
+<tr class="memdesc:a90636af76bddca374ab4ff8eed528787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new grid coordinates with the given number of dimensions.  <a href="#a90636af76bddca374ab4ff8eed528787">More...</a><br /></td></tr>
+<tr class="separator:a90636af76bddca374ab4ff8eed528787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930cf577e484b1cf7f59f4271ada5fa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a930cf577e484b1cf7f59f4271ada5fa4">FractionalGridCoordinates</a> (final <a class="el" href="a06615.html">FractionalGridCoordinates</a> other)</td></tr>
+<tr class="memdesc:a930cf577e484b1cf7f59f4271ada5fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new grid coordinates initialized to a copy of the given coordinates.  <a href="#a930cf577e484b1cf7f59f4271ada5fa4">More...</a><br /></td></tr>
+<tr class="separator:a930cf577e484b1cf7f59f4271ada5fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a56e1ed7f77c1dad3205d8c25e62c0432">getDimension</a> ()</td></tr>
+<tr class="memdesc:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of dimension of this grid coordinates.  <a href="#a56e1ed7f77c1dad3205d8c25e62c0432">More...</a><br /></td></tr>
+<tr class="separator:a56e1ed7f77c1dad3205d8c25e62c0432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab046f8d925ed267544b53c0cf0b40c67"><td class="memItemLeft" align="right" valign="top">long []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#ab046f8d925ed267544b53c0cf0b40c67">getCoordinateValues</a> ()</td></tr>
+<tr class="memdesc:ab046f8d925ed267544b53c0cf0b40c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one integer value for each dimension of the grid.  <a href="#ab046f8d925ed267544b53c0cf0b40c67">More...</a><br /></td></tr>
+<tr class="separator:ab046f8d925ed267544b53c0cf0b40c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c536bfa00ee818f704345c39298b11"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#ae9c536bfa00ee818f704345c39298b11">getCoordinateValue</a> (final int dimension)</td></tr>
+<tr class="memdesc:ae9c536bfa00ee818f704345c39298b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the grid coordinate value at the specified dimension.  <a href="#ae9c536bfa00ee818f704345c39298b11">More...</a><br /></td></tr>
+<tr class="separator:ae9c536bfa00ee818f704345c39298b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1271be17968d6bc8097d33eac903c6d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a1271be17968d6bc8097d33eac903c6d0">getCoordinateFractional</a> (final int dimension)</td></tr>
+<tr class="memdesc:a1271be17968d6bc8097d33eac903c6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a grid coordinate value together with its fractional part, if any.  <a href="#a1271be17968d6bc8097d33eac903c6d0">More...</a><br /></td></tr>
+<tr class="separator:a1271be17968d6bc8097d33eac903c6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef92afd753c98b35fb034cf5f1ba35d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a7ef92afd753c98b35fb034cf5f1ba35d">setCoordinateValue</a> (final int dimension, final long value)</td></tr>
+<tr class="memdesc:a7ef92afd753c98b35fb034cf5f1ba35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the coordinate value at the specified dimension.  <a href="#a7ef92afd753c98b35fb034cf5f1ba35d">More...</a><br /></td></tr>
+<tr class="separator:a7ef92afd753c98b35fb034cf5f1ba35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69789ee6e2767e6891ebe8e7da8e908d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a06635.html">GridExtent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a69789ee6e2767e6891ebe8e7da8e908d">toExtent</a> (final <a class="el" href="a06635.html">GridExtent</a> bounds, final long... size)</td></tr>
+<tr class="memdesc:a69789ee6e2767e6891ebe8e7da8e908d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new grid extent around this grid coordinates.  <a href="#a69789ee6e2767e6891ebe8e7da8e908d">More...</a><br /></td></tr>
+<tr class="separator:a69789ee6e2767e6891ebe8e7da8e908d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70ac16ff1a0a5fa977512d70843590c"><td class="memItemLeft" align="right" valign="top">DirectPosition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#ad70ac16ff1a0a5fa977512d70843590c">toPosition</a> (final MathTransform gridToCRS)  throws TransformException </td></tr>
+<tr class="memdesc:ad70ac16ff1a0a5fa977512d70843590c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the grid coordinates converted to a geospatial position using the given transform.  <a href="#ad70ac16ff1a0a5fa977512d70843590c">More...</a><br /></td></tr>
+<tr class="separator:ad70ac16ff1a0a5fa977512d70843590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this grid coordinates for debugging purpose.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077e18fe97323c7194e2665ffc766399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a077e18fe97323c7194e2665ffc766399">hashCode</a> ()</td></tr>
+<tr class="memdesc:a077e18fe97323c7194e2665ffc766399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash code value for this grid coordinates.  <a href="#a077e18fe97323c7194e2665ffc766399">More...</a><br /></td></tr>
+<tr class="separator:a077e18fe97323c7194e2665ffc766399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a70e0ce6c9806cb2e0e343f0d059b1379">equals</a> (final Object object)</td></tr>
+<tr class="memdesc:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this grid coordinates with the specified object for equality.  <a href="#a70e0ce6c9806cb2e0e343f0d059b1379">More...</a><br /></td></tr>
+<tr class="separator:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06615.html">BandedSampleConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">create</a> (final RenderedImage source, ImageLayout layout, final int targetType, final ColorModel <a class="el" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, final NumberRange&lt;?&gt;[] ranges, final MathTransform1D... <a class="el" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>)</td></tr>
-<tr class="memdesc:a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new image of the given data type which will compute values using the given converters.  <a href="#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">More...</a><br /></td></tr>
-<tr class="separator:a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:abd74946782d37989bb539d6f690cf1a6"><td class="memItemLeft" align="right" valign="top">final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#abd74946782d37989bb539d6f690cf1a6">pointOutsideCoverage</a> (final <a class="el" href="a06635.html">GridExtent</a> bounds)</td></tr>
+<tr class="memdesc:abd74946782d37989bb539d6f690cf1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an error message for a grid coordinates out of bounds.  <a href="#abd74946782d37989bb539d6f690cf1a6">More...</a><br /></td></tr>
+<tr class="separator:abd74946782d37989bb539d6f690cf1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a137f1d5956222eed138d532f55097b37"><td class="memItemLeft" align="right" valign="top">Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a137f1d5956222eed138d532f55097b37">computeTile</a> (final int tileX, final int tileY, WritableRaster target)  throws TransformException </td></tr>
-<tr class="memdesc:a137f1d5956222eed138d532f55097b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the tile at specified indices.  <a href="#a137f1d5956222eed138d532f55097b37">More...</a><br /></td></tr>
-<tr class="separator:a137f1d5956222eed138d532f55097b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:a10c39e72f0b4afd8dca0723bb3e9130a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06615.html">FractionalGridCoordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a10c39e72f0b4afd8dca0723bb3e9130a">fromPosition</a> (final DirectPosition point, final MathTransform crsToGrid)  throws TransformException     </td></tr>
+<tr class="memdesc:a10c39e72f0b4afd8dca0723bb3e9130a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new grid coordinates computed from the given geospatial position.  <a href="#a10c39e72f0b4afd8dca0723bb3e9130a">More...</a><br /></td></tr>
+<tr class="separator:a10c39e72f0b4afd8dca0723bb3e9130a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:a3601ddc6e157b2c5ef7c8e630ca64f5e"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a></td></tr>
+<tr class="memdesc:a3601ddc6e157b2c5ef7c8e630ca64f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid coordinates as floating-point numbers.  <a href="#a3601ddc6e157b2c5ef7c8e630ca64f5e">More...</a><br /></td></tr>
+<tr class="separator:a3601ddc6e157b2c5ef7c8e630ca64f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a38d3fa2019bb1e055a432900ef938440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a> (final RenderedImage source, final BandedSampleModel sampleModel, final ColorModel <a class="el" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, final NumberRange&lt;?&gt;[] ranges, final MathTransform1D[] <a class="el" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>)</td></tr>
-<tr class="memdesc:a38d3fa2019bb1e055a432900ef938440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new image which will compute values using the given converters.  <a href="#a38d3fa2019bb1e055a432900ef938440">More...</a><br /></td></tr>
-<tr class="separator:a38d3fa2019bb1e055a432900ef938440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2e41a72bd0a29dbadc61ac0e6d963f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">writeCoordinates</a> (final StringBuilder buffer)</td></tr>
+<tr class="memdesc:a1d2e41a72bd0a29dbadc61ac0e6d963f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes coordinates in the given buffer.  <a href="#a1d2e41a72bd0a29dbadc61ac0e6d963f">More...</a><br /></td></tr>
+<tr class="separator:a1d2e41a72bd0a29dbadc61ac0e6d963f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:acc5b853af3ec99b5b068393cf3ca63c3"><td class="memItemLeft" align="right" valign="top">final MathTransform1D []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a></td></tr>
-<tr class="memdesc:acc5b853af3ec99b5b068393cf3ca63c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transfer functions to apply on each band of the source image.  <a href="#acc5b853af3ec99b5b068393cf3ca63c3">More...</a><br /></td></tr>
-<tr class="separator:acc5b853af3ec99b5b068393cf3ca63c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6300c65e347a4e78a9bc7900d80fd91"><td class="memItemLeft" align="right" valign="top">final ColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a></td></tr>
-<tr class="memdesc:ae6300c65e347a4e78a9bc7900d80fd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The color model for the expected range of values.  <a href="#ae6300c65e347a4e78a9bc7900d80fd91">More...</a><br /></td></tr>
-<tr class="separator:ae6300c65e347a4e78a9bc7900d80fd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e6cec4511dd5e677bf3f9b2793b1f2e"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a></td></tr>
-<tr class="memdesc:a8e6cec4511dd5e677bf3f9b2793b1f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sample resolutions, or.  <a href="#a8e6cec4511dd5e677bf3f9b2793b1f2e">More...</a><br /></td></tr>
-<tr class="separator:a8e6cec4511dd5e677bf3f9b2793b1f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06615.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 5652265407347129550L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An image where each sample value is computed independently of other sample values and independently of neighbor points. </p>
-<p>Values are computed by a separated <a class="el" href="">MathTransform1D</a> for each band (by contrast, an</p><div class="fragment"><div class="line">InterleavedSampleConverter </div></div><!-- fragment --><p> would handle all sample values as a coordinate tuple). Current implementation makes the following simplifications:</p>
-<ul>
-<li>
-The image has exactly one source. </li>
-<li>
-Image layout (minimum coordinates, image size, tile grid) is the same than source image layout, unless the source has too large tiles in which case <a class="el" href="">ImageLayout</a> automatically subdivides the tile grid in smaller tiles. </li>
-<li>
-Image is computed and stored on a band-by-band basis using a <a class="el" href="">BandedSampleModel</a>. </li>
-<li>
-Calculation is performed on<div class="fragment"><div class="line"><span class="keywordtype">float</span> </div></div><!-- fragment --> or<div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --> numbers. </li>
-</ul>
-<p>If the given source is writable and the transform are invertible, then the</p><div class="fragment"><div class="line"><a class="code" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a> </div></div><!-- fragment --><p> returned by the <a class="el" href="a06615.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">create(…)</a> method will implement <a class="el" href="">WritableRenderedImage</a> interface. In such case, writing converted values will cause the corresponding source values to be updated too.</p>
+<div class="textblock"><p>Grid coordinates which may have fraction digits after the integer part. </p>
+<p>Grid coordinates specify the location of a cell within a <a class="el" href="a06623.html">GridCoverage</a>. They are normally integer numbers, but fractional parts may exist for example after converting a geospatial <a class="el" href="">DirectPosition</a> to grid coordinates. Preserving that fractional part is sometime useful, e.g. for interpolations. This class can store such fractional part and can also compute a <a class="el" href="a06635.html">GridExtent</a> containing the coordinates, which can be used for requesting data for interpolations.</p>
+<p>Current implementation stores coordinate values as</p><div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --><p> precision floating-point numbers and  Math::round(double) rounds} them to 64-bits integers on the fly. If a</p><div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --><p> can not be  <a class="el" href="a06615.html#ae9c536bfa00ee818f704345c39298b11" title="Returns the grid coordinate value at the specified dimension. ">getCoordinateValue(int)</a> returned} as a</p><div class="fragment"><div class="line"><span class="keywordtype">long</span> </div></div><!-- fragment --><p> , or if a</p><div class="fragment"><div class="line"><span class="keywordtype">long</span> </div></div><!-- fragment --><p> can not be  <a class="el" href="a06615.html#a7ef92afd753c98b35fb034cf5f1ba35d" title="Sets the coordinate value at the specified dimension. ">setCoordinateValue(int, long)</a> stored} as a</p><div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --><p> , then an <a class="el" href="">ArithmeticException</a> is thrown.</p>
 <dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06623.html#abfb9efea12d4f80e81726ec9ea0c9c39" title="Converts the specified geospatial position to grid coordinates. ">GridCoverage::toGridCoordinates(DirectPosition)</a></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a38d3fa2019bb1e055a432900ef938440"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d3fa2019bb1e055a432900ef938440">&#9670;&nbsp;</a></span>BandedSampleConverter()</h2>
+<a id="a90636af76bddca374ab4ff8eed528787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90636af76bddca374ab4ff8eed528787">&#9670;&nbsp;</a></span>FractionalGridCoordinates() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06615.html">BandedSampleConverter</a> </td>
+          <td class="memname"><a class="el" href="a06615.html">FractionalGridCoordinates</a> </td>
           <td>(</td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>dimension</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final BandedSampleModel&#160;</td>
-          <td class="paramname"><em>sampleModel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final ColorModel&#160;</td>
-          <td class="paramname"><em>colorModel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final NumberRange&lt;?&gt; []&#160;</td>
-          <td class="paramname"><em>ranges</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final MathTransform1D []&#160;</td>
-          <td class="paramname"><em>converters</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates a new image which will compute values using the given converters. </p>
+<p>Creates a new grid coordinates with the given number of dimensions. </p>
+<div class="note"><b>Note:</b> <div class="fragment"><div class="line"><a class="code" href="a06615.html#a90636af76bddca374ab4ff8eed528787">FractionalGridCoordinates</a> </div></div><!-- fragment --> are usually not created directly, but are instead obtained indirectly for example from the  <a class="el" href="a06623.html#abfb9efea12d4f80e81726ec9ea0c9c39" title="Converts the specified geospatial position to grid coordinates. ">GridCoverage::toGridCoordinates(DirectPosition)</a> conversion of a geospatial position}.</div><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimension</td><td>the number of dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                          {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[dimension];</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a930cf577e484b1cf7f59f4271ada5fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930cf577e484b1cf7f59f4271ada5fa4">&#9670;&nbsp;</a></span>FractionalGridCoordinates() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06615.html">FractionalGridCoordinates</a> </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a06615.html">FractionalGridCoordinates</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new grid coordinates initialized to a copy of the given coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>the image for which to convert sample values. </td></tr>
-    <tr><td class="paramname">sampleModel</td><td>the sample model shared by all tiles in this image. </td></tr>
-    <tr><td class="paramname">colorModel</td><td>the color model for the expected range of values, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
-    <tr><td class="paramname">ranges</td><td>the expected range of values for each band, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </td></tr>
-    <tr><td class="paramname">converters</td><td>the transfer functions to apply on each band of the source image. </td></tr>
+    <tr><td class="paramname">other</td><td>the coordinates to copy. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">BandedSampleConverter.colorModel</a>, <a class="el" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">BandedSampleConverter.converters</a>, and <a class="el" href="a06635.html#a05a539736557672cbcf02b2a3e3ca7b2">ImageUtilities.getDataType()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06615.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">BandedSampleConverter.create()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        super(sampleModel, source);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        this.<a class="code" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a> = <a class="code" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        this.<a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a> = <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">         * Get an estimation of the resolution, arbitrarily looking in the middle of the range of values.</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">         * If the converters are linear (which is the most common case), the middle value does not matter</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">         * except if it falls on a &quot;no data&quot; value.</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">boolean</span> hasResolutions = <span class="keyword">false</span>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span>[] resolutions = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>.length];</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;resolutions.length; i++) {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">             * Get the sample value in the middle of the range of valid values for the current band.</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">             * If no range was explicitly given, use the approximate average of all possible values.</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">double</span> middle = Double.NaN;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (ranges != null) {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keyword">final</span> NumberRange&lt;?&gt; range = ranges[i];</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">if</span> (range != null) {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    middle = (range.getMinDouble() + range.getMaxDouble()) / 2;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (!Double.isFinite(middle)) {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">switch</span> (ImageUtilities.getDataType(source)) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">default</span>:                     middle = 0;      <span class="keywordflow">break</span>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keywordflow">case</span> DataBuffer.TYPE_BYTE:   middle = 0x80;   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT: middle = 0x8000; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">             * Get the derivative in the middle value, which is constant everywhere</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">             * in the common case of a linear transform.</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keyword">final</span> MathTransform1D c = <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>[i];</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordtype">double</span> r;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                r = c.derivative(middle);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">if</span> (!Double.isFinite(r)) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    r = c.derivative(1);                <span class="comment">// Second attempt if the middle value didn&#39;t work.</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            } <span class="keywordflow">catch</span> (TransformException e) {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                r = Double.NaN;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            resolutions[i] = r;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            hasResolutions |= Double.isFinite(r);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a> = hasResolutions ? resolutions : null;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div><div class="ttc" id="a06615_html_acc5b853af3ec99b5b068393cf3ca63c3"><div class="ttname"><a href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.converters</a></div><div class="ttdeci">final MathTransform1D [] converters</div><div class="ttdoc">The transfer functions to apply on each band of the source image. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:67</div></div>
-<div class="ttc" id="a06615_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model for the expected range of values. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:72</div></div>
-<div class="ttc" id="a06615_html_a8e6cec4511dd5e677bf3f9b2793b1f2e"><div class="ttname"><a href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.sampleResolutions</a></div><div class="ttdeci">final double [] sampleResolutions</div><div class="ttdoc">The sample resolutions, or. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:77</div></div>
+<p class="reference">References <a class="el" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">FractionalGridCoordinates.coordinates</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                            {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a> = other.coordinates.clone();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a137f1d5956222eed138d532f55097b37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a137f1d5956222eed138d532f55097b37">&#9670;&nbsp;</a></span>computeTile()</h2>
+<a id="a70e0ce6c9806cb2e0e343f0d059b1379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e0ce6c9806cb2e0e343f0d059b1379">&#9670;&nbsp;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean equals </td>
+          <td>(</td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares this grid coordinates with the specified object for equality. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>the object to compares with this grid coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the given object is equal to this grid coordinates. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                                               {</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordtype">object</span> == <span class="keyword">this</span>) {                           <span class="comment">// Slight optimization.</span></div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        }</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordtype">object</span> != null &amp;&amp; <span class="keywordtype">object</span>.getClass() == getClass()) {</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            <span class="keywordflow">return</span> Arrays.equals(((<a class="code" href="a06615.html#a90636af76bddca374ab4ff8eed528787">FractionalGridCoordinates</a>) <span class="keywordtype">object</span>).<a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>, coordinates);</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        }</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div><div class="ttc" id="a06615_html_a90636af76bddca374ab4ff8eed528787"><div class="ttname"><a href="a06615.html#a90636af76bddca374ab4ff8eed528787">org.apache.sis.coverage.grid.FractionalGridCoordinates.FractionalGridCoordinates</a></div><div class="ttdeci">FractionalGridCoordinates(final int dimension)</div><div class="ttdoc">Creates a new grid coordinates with the given number of dimensions. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:79</div></div>
+<div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a10c39e72f0b4afd8dca0723bb3e9130a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c39e72f0b4afd8dca0723bb3e9130a">&#9670;&nbsp;</a></span>fromPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,22 +272,16 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Raster computeTile </td>
+          <td class="memname">static <a class="el" href="a06615.html">FractionalGridCoordinates</a> fromPosition </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>tileX</em>, </td>
+          <td class="paramtype">final DirectPosition&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>tileY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">WritableRaster&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
+          <td class="paramtype">final MathTransform&#160;</td>
+          <td class="paramname"><em>crsToGrid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -284,33 +291,183 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the tile at specified indices. </p>
+<p>Creates a new grid coordinates computed from the given geospatial position. </p>
+<p>The given</p><div class="fragment"><div class="line">crsToGrid </div></div><!-- fragment --><p> argument should be the inverse of <a class="el" href="">GridGeometry#getGridToCRS(PixelInCell)</a>. This method does not verify if CRS of the given point and does not verify if the resulting grid coordinates are inside the grid coverage bounds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tileX</td><td>the column index of the tile to compute. </td></tr>
-    <tr><td class="paramname">tileY</td><td>the row index of the tile to compute. </td></tr>
-    <tr><td class="paramname">target</td><td>if the tile already exists but needs to be updated, the tile to update. Otherwise<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+    <tr><td class="paramname">point</td><td>the geospatial position. </td></tr>
+    <tr><td class="paramname">crsToGrid</td><td>conversion from the geospatial CRS to the grid coordinates. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>computed tile for the given indices (can not be null). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the given position converted to grid coordinates (possibly out of grid bounds). </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">TransformException</td><td>if an error occurred while converting a sample value. </td></tr>
+    <tr><td class="paramname">TransformException</td><td>if the given position can not be converted.</td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                                                                                    {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">if</span> (target == null) {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            target = createTile(tileX, tileY);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        }</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        Transferer.create(getSource(0), target).compute(<a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span> target;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div><div class="ttc" id="a06615_html_acc5b853af3ec99b5b068393cf3ca63c3"><div class="ttname"><a href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.converters</a></div><div class="ttdeci">final MathTransform1D [] converters</div><div class="ttdoc">The transfer functions to apply on each band of the source image. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:67</div></div>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06623.html#abfb9efea12d4f80e81726ec9ea0c9c39" title="Converts the specified geospatial position to grid coordinates. ">GridCoverage::toGridCoordinates(DirectPosition)</a> </dd></dl>
+
+<p class="reference">References <a class="el" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">FractionalGridCoordinates.coordinates</a>, and <a class="el" href="a06619.html#a4b8b072ddfe3afdae3207da827af6fa1">FractionalGridCoordinates.Position.getCoordinate()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06623.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keyword">final</span> Position gc = <span class="keyword">new</span> Position(crsToGrid.getTargetDimensions());</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keyword">final</span> DirectPosition result = crsToGrid.transform(point, gc);</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span> (result != gc) {</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a> = result.getCoordinate();</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            System.arraycopy(coordinates, 0, gc.coordinates, 0, gc.coordinates.length);</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">return</span> gc;</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a1271be17968d6bc8097d33eac903c6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1271be17968d6bc8097d33eac903c6d0">&#9670;&nbsp;</a></span>getCoordinateFractional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getCoordinateFractional </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>dimension</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a grid coordinate value together with its fractional part, if any. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimension</td><td>the dimension for which to obtain the coordinate value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the coordinate value at the given dimension. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IndexOutOfBoundsException</td><td>if the given index is negative or is equal or greater than the  <a class="el" href="a06615.html#a56e1ed7f77c1dad3205d8c25e62c0432" title="Returns the number of dimension of this grid coordinates. ">getDimension</a> grid dimension}. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                                               {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>[dimension];</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae9c536bfa00ee818f704345c39298b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c536bfa00ee818f704345c39298b11">&#9670;&nbsp;</a></span>getCoordinateValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long getCoordinateValue </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>dimension</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the grid coordinate value at the specified dimension. </p>
+<p>Floating-point values are rounded to the nearest 64-bits integer values. If the coordinate value is NaN or outside the range of</p><div class="fragment"><div class="line"><span class="keywordtype">long</span> </div></div><!-- fragment --><p> values, then an <a class="el" href="">ArithmeticException</a> is thrown.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimension</td><td>the dimension for which to obtain the coordinate value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the coordinate value at the given dimension,  Math::round(double) rounded} to nearest integer. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IndexOutOfBoundsException</td><td>if the given index is negative or is equal or greater than the  <a class="el" href="a06615.html#a56e1ed7f77c1dad3205d8c25e62c0432" title="Returns the number of dimension of this grid coordinates. ">getDimension</a> grid dimension}. </td></tr>
+    <tr><td class="paramname">ArithmeticException</td><td>if the coordinate value is outside the range of values representable as a 64-bits integer value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a06627.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage2D.evaluate()</a>, and <a class="el" href="a06615.html#ab046f8d925ed267544b53c0cf0b40c67">FractionalGridCoordinates.getCoordinateValues()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                                        {</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> value = <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>[dimension];</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">         * 2048 is the smallest value than can be added or removed to Long.MIN/MAX_VALUE,</span></div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">         * as given by Math.ulp(Long.MIN_VALUE). We add this tolerance since the contract</span></div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">         * is to return the `long` value closest to the `double` value and we consider a</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">         * 1 ULP error as close enough.</span></div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (value &gt;= (Long.MIN_VALUE - 2048d) &amp;&amp; value &lt;= (Long.MAX_VALUE + 2048d)) {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> Math.round(value);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> ArithmeticException(Resources.format(Resources.Keys.UnconvertibleGridCoordinate_2, <span class="stringliteral">&quot;long&quot;</span>, value));</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab046f8d925ed267544b53c0cf0b40c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab046f8d925ed267544b53c0cf0b40c67">&#9670;&nbsp;</a></span>getCoordinateValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long [] getCoordinateValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns one integer value for each dimension of the grid. </p>
+<p>The default implementation invokes <a class="el" href="a06615.html#ae9c536bfa00ee818f704345c39298b11">getCoordinateValue(int)</a> for each element in the returned array.</p>
+<dl class="section return"><dt>Returns</dt><dd>a copy of the coordinates. Changes in the returned array will not be reflected back in this<div class="fragment"><div class="line">GridCoordinates </div></div><!-- fragment --> object. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArithmeticException</td><td>if a coordinate value is outside the range of values representable as a 64-bits integer value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06615.html#ae9c536bfa00ee818f704345c39298b11">FractionalGridCoordinates.getCoordinateValue()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                        {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span>[] indices = <span class="keyword">new</span> <span class="keywordtype">long</span>[<a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>.length];</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;indices.length; i++) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            indices[i] = <a class="code" href="a06615.html#ae9c536bfa00ee818f704345c39298b11">getCoordinateValue</a>(i);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> indices;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div><div class="ttc" id="a06615_html_ae9c536bfa00ee818f704345c39298b11"><div class="ttname"><a href="a06615.html#ae9c536bfa00ee818f704345c39298b11">org.apache.sis.coverage.grid.FractionalGridCoordinates.getCoordinateValue</a></div><div class="ttdeci">long getCoordinateValue(final int dimension)</div><div class="ttdoc">Returns the grid coordinate value at the specified dimension. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:136</div></div>
+<div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a56e1ed7f77c1dad3205d8c25e62c0432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e1ed7f77c1dad3205d8c25e62c0432">&#9670;&nbsp;</a></span>getDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of dimension of this grid coordinates. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of dimensions. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                              {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>.length;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a077e18fe97323c7194e2665ffc766399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077e18fe97323c7194e2665ffc766399">&#9670;&nbsp;</a></span>hashCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hashCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a hash code value for this grid coordinates. </p>
+<div class="fragment"><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                          {</div><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keywordflow">return</span> Arrays.hashCode(<a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>) ^ (int) <a class="code" href="a06615.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a>;</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+<div class="ttc" id="a06615_html_a3238d314ecdee14d2966760945d00c3b"><div class="ttname"><a href="a06615.html#a3238d314ecdee14d2966760945d00c3b">org.apache.sis.coverage.grid.FractionalGridCoordinates.serialVersionUID</a></div><div class="ttdeci">static final long serialVersionUID</div><div class="ttdoc">For cross-version compatibility. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd74946782d37989bb539d6f690cf1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd74946782d37989bb539d6f690cf1a6">&#9670;&nbsp;</a></span>pointOutsideCoverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,40 +476,55 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a06615.html">BandedSampleConverter</a> create </td>
+          <td class="memname">final String pointOutsideCoverage </td>
           <td>(</td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final <a class="el" href="a06635.html">GridExtent</a>&#160;</td>
+          <td class="paramname"><em>bounds</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">ImageLayout&#160;</td>
-          <td class="paramname"><em>layout</em>, </td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an error message for a grid coordinates out of bounds. </p>
+<p>This method tries to detect the dimension of the out-of-bounds coordinate by searching for the dimension with largest error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bounds</td><td>the expected bounds, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>message to provide to <a class="el" href="">PointOutsideCoverageException</a>, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if the given bounds were null. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06635.html#aa0389102e15f59ae34fac6065be81e15">GridExtent.getAxisIdentification()</a>, <a class="el" href="a06635.html#a7e9fe025be58250b1c81ea91823f819e">GridExtent.getDimension()</a>, <a class="el" href="a06635.html#ae8f76ed94d6445c845be59cd03c24b64">GridExtent.getHigh()</a>, <a class="el" href="a06635.html#a3ebe3980f2b60b7357e8b4ec93c6f435">GridExtent.getLow()</a>, and <a class="el" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">FractionalGridCoordinates.writeCoordinates()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06623.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage.evaluate()</a>, and <a class="el" href="a06627.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage2D.evaluate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                                                               {</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">if</span> (bounds == null) {</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        }</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordtype">int</span>    axis     = 0;</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordtype">long</span>   validMin = 0;</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordtype">long</span>   validMax = 0;</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="keywordtype">double</span> distance = 0;</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=bounds.getDimension(); --i &gt;= 0;) {</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">long</span> low  = bounds.getLow(i);</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">long</span> high = bounds.getHigh(i);</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> c  = <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>[i];</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <span class="keywordtype">double</span> d = low - c;</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="keywordflow">if</span> (!(d &gt; distance)) {              <span class="comment">// Use &#39;!&#39; for entering in this block if `d` is NaN.</span></div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                d = c - high;</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                <span class="keywordflow">if</span> (!(d &gt; distance)) {          <span class="comment">// Use &#39;!&#39; for skipping this coordinate if `d` is NaN.</span></div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                    <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                }</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            }</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            axis     = i;</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            validMin = low;</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            validMax = high;</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            distance = d;</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        }</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keyword">final</span> StringBuilder b = <span class="keyword">new</span> StringBuilder();</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <a class="code" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">writeCoordinates</a>(b);</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">return</span> Resources.format(Resources.Keys.GridCoordinateOutsideCoverage_4,</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                bounds.getAxisIdentification(axis, axis), validMin, validMax, b.toString());</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    }</div><div class="ttc" id="a06615_html_a1d2e41a72bd0a29dbadc61ac0e6d963f"><div class="ttname"><a href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">org.apache.sis.coverage.grid.FractionalGridCoordinates.writeCoordinates</a></div><div class="ttdeci">void writeCoordinates(final StringBuilder buffer)</div><div class="ttdoc">Writes coordinates in the given buffer. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:495</div></div>
+<div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7ef92afd753c98b35fb034cf5f1ba35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef92afd753c98b35fb034cf5f1ba35d">&#9670;&nbsp;</a></span>setCoordinateValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
+          <td class="memname">void setCoordinateValue </td>
+          <td>(</td>
           <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>targetType</em>, </td>
+          <td class="paramname"><em>dimension</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final ColorModel&#160;</td>
-          <td class="paramname"><em>colorModel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final NumberRange&lt;?&gt; []&#160;</td>
-          <td class="paramname"><em>ranges</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final MathTransform1D...&#160;</td>
-          <td class="paramname"><em>converters</em>&#160;</td>
+          <td class="paramtype">final long&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -360,69 +532,153 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates a new image of the given data type which will compute values using the given converters. </p>
-<p>The number of bands is the length of the</p><div class="fragment"><div class="line"><a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a> </div></div><!-- fragment --><p> array, which must be greater than 0 and not greater than the number of bands in the source image.</p>
+<p>Sets the coordinate value at the specified dimension. </p>
+<p>The given value can not be NaN or infinite and shall be convertible to</p><div class="fragment"><div class="line"><span class="keywordtype">long</span> </div></div><!-- fragment --><p> without precision lost.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>the image for which to convert sample values. </td></tr>
-    <tr><td class="paramname">layout</td><td>object to use for computing tile size, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> for the default. </td></tr>
-    <tr><td class="paramname">targetType</td><td>the type of this image resulting from conversion of given image. </td></tr>
-    <tr><td class="paramname">colorModel</td><td>the color model for the expected range of values, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
-    <tr><td class="paramname">ranges</td><td>the expected range of values for each band, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </td></tr>
-    <tr><td class="paramname">converters</td><td>the transfer functions to apply on each band of the source image. </td></tr>
+    <tr><td class="paramname">dimension</td><td>the dimension for which to set the coordinate value. </td></tr>
+    <tr><td class="paramname">value</td><td>the new value. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the image which compute converted values from the given source. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>, and <a class="el" href="a06643.html#a7244c332272c4013889f65f00c83fb6c">RasterFactory.unique()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06567.html#a6f23293e844748d4d07f822f11e65980">ConvertedGridCoverage.render()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;source&quot;</span>, source);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;converters&quot;</span>, <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numBands = <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>.length;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        ArgumentChecks.ensureSizeBetween(<span class="stringliteral">&quot;converters&quot;</span>, 1, source.getSampleModel().getNumBands(), numBands);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (layout == null) {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            layout = ImageLayout.DEFAULT;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">final</span> Dimension tile = layout.suggestTileSize(source);</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">final</span> BandedSampleModel sampleModel = RasterFactory.unique(</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keyword">new</span> BandedSampleModel(targetType, tile.width, tile.height, numBands));</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">         * If the source image is writable, then changes in the converted image may be retro-propagated</span></div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">         * to that source image. If we fail to compute the required inverse transforms, log a notice at</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">         * a low level because this is not a serious problem; writable BandedSampleConverter is a plus</span></div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">         * but not a requirement.</span></div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (source instanceof WritableRenderedImage) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">final</span> MathTransform1D[] inverses = <span class="keyword">new</span> MathTransform1D[numBands];</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;numBands; i++) {</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                inverses[i] = <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>[i].inverse();</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            }</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> Writable((WritableRenderedImage) source, sampleModel, <a class="code" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, ranges, <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>, inverses);</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        } <span class="keywordflow">catch</span> (NoninvertibleTransformException e) {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            Logging.recoverableException(Logging.getLogger(Modules.RASTER), <a class="code" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a>.class, <span class="stringliteral">&quot;create&quot;</span>, e);</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a>(source, sampleModel, <a class="code" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, ranges, <a class="code" href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div><div class="ttc" id="a06615_html_acc5b853af3ec99b5b068393cf3ca63c3"><div class="ttname"><a href="a06615.html#acc5b853af3ec99b5b068393cf3ca63c3">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.converters</a></div><div class="ttdeci">final MathTransform1D [] converters</div><div class="ttdoc">The transfer functions to apply on each band of the source image. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:67</div></div>
-<div class="ttc" id="a06615_html_a38d3fa2019bb1e055a432900ef938440"><div class="ttname"><a href="a06615.html#a38d3fa2019bb1e055a432900ef938440">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.BandedSampleConverter</a></div><div class="ttdeci">BandedSampleConverter(final RenderedImage source, final BandedSampleModel sampleModel, final ColorModel colorModel, final NumberRange&lt;?&gt;[] ranges, final MathTransform1D[] converters)</div><div class="ttdoc">Creates a new image which will compute values using the given converters. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:88</div></div>
-<div class="ttc" id="a06615_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model for the expected range of values. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:72</div></div>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IndexOutOfBoundsException</td><td>if the given index is negative or is equal or greater than the  <a class="el" href="a06615.html#a56e1ed7f77c1dad3205d8c25e62c0432" title="Returns the number of dimension of this grid coordinates. ">getDimension</a> grid dimension}. </td></tr>
+    <tr><td class="paramname">ArithmeticException</td><td>if this method can not store the given grid coordinate without precision lost. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                                          {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>[dimension] = value) != value) {</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArithmeticException(Resources.format(Resources.Keys.UnconvertibleGridCoordinate_2, <span class="stringliteral">&quot;double&quot;</span>, value));</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        }</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2e9f91617f2855770996f11b9d2dd94d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e9f91617f2855770996f11b9d2dd94d">&#9670;&nbsp;</a></span>getColorModel()</h2>
+<a id="a69789ee6e2767e6891ebe8e7da8e908d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69789ee6e2767e6891ebe8e7da8e908d">&#9670;&nbsp;</a></span>toExtent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ColorModel getColorModel </td>
+          <td class="memname"><a class="el" href="a06635.html">GridExtent</a> toExtent </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final <a class="el" href="a06635.html">GridExtent</a>&#160;</td>
+          <td class="paramname"><em>bounds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">final long...&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the color model associated with all rasters of this image. </p>
-<p>If the sample values of this image are floating point numbers, then a gray scale color model is computed from the expected range of values.</p>
-<dl class="section return"><dt>Returns</dt><dd>the color model of this image, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
+<p>Creates a new grid extent around this grid coordinates. </p>
+<p>The returned extent will have the same number of dimensions than this grid coordinates. For each dimension <em>i</em> the following relationships will hold:</p>
+<ol>
+<li>
+If <code>extent. <a class="el" href="a06635.html#a303a45005b63f9028248adb1046eca80" title="Returns the number of integer grid coordinates along the specified dimension. ">GridExtent::getSize(int)</a> getSize}(i)</code> ≥ 2 and no shift (see below) then:<ul>
+<li>
+<code>extent. <a class="el" href="a06635.html#a78aa11b070f70f35c6eca82cc75cd56c" title="Returns the valid minimum inclusive grid coordinate along the specified dimension. ">GridExtent::getLow(int)</a> getLow}(i)</code> ≤ <code> <a class="el" href="a06615.html#a1271be17968d6bc8097d33eac903c6d0" title="Returns a grid coordinate value together with its fractional part, if any. ">getCoordinateFractional(int)</a> getCoordinateFractional}(i)</code> </li>
+<li>
+<code>extent. <a class="el" href="a06635.html#a58a9362940766e61cdec086c030b7b23" title="Returns the valid maximum inclusive grid coordinate along the specified dimension. ">GridExtent::getHigh(int)</a> getHigh}(i)</code> ≥ <code> <a class="el" href="a06615.html#a1271be17968d6bc8097d33eac903c6d0" title="Returns a grid coordinate value together with its fractional part, if any. ">getCoordinateFractional(int)</a> getCoordinateFractional}(i)</code> </li>
+</ul>
+</li>
+<li>
+If<div class="fragment"><div class="line">bounds.getSize(i) </div></div><!-- fragment --> ≥<div class="fragment"><div class="line">size[i] </div></div><!-- fragment --> and<div class="fragment"><div class="line">size[i] </div></div><!-- fragment --> ≠ 0 then:<ul>
+<li>
+<code>extent. <a class="el" href="a06635.html#a303a45005b63f9028248adb1046eca80" title="Returns the number of integer grid coordinates along the specified dimension. ">GridExtent::getSize(int)</a> getSize}(i)</code> =<div class="fragment"><div class="line">size[i] </div></div><!-- fragment -->  </li>
+</ul>
+</li>
+</ol>
+<p>The</p><div class="fragment"><div class="line">size </div></div><!-- fragment --><p> argument is optional and can be incomplete (i.e. the number of</p><div class="fragment"><div class="line">size </div></div><!-- fragment --><p> values can be less than the number of dimensions). For each dimension <em>i</em>, if a</p><div class="fragment"><div class="line">size[i] </div></div><!-- fragment --><p> value is provided and is not zero, then this method tries to expand the extent in that dimension to the specified</p><div class="fragment"><div class="line">size[i] </div></div><!-- fragment --><p> value as shown in constraint #2 above. Otherwise the default size is the smallest possible extent that met constraint #1 above, clipped to the</p><div class="fragment"><div class="line">bounds </div></div><!-- fragment --><p> . This implies a size of 1 if the grid coordinate in that dimension is an integer, or a size of 2 (before clipping to the bounds) if the grid coordinate has a fractional part.</p>
+<p>The</p><div class="fragment"><div class="line">bounds </div></div><!-- fragment --><p> argument is also optional. If non-null, then this method enforces the following additional rules:</p>
+<ul>
+<li>
+Coordinates rounded to nearest integers must be inside the given bounds, otherwise a <a class="el" href="">PointOutsideCoverageException</a> is thrown. </li>
+<li>
+If the computed extent overlaps an area outside the bounds, then the extent will be shifted (if an explicit size was given) or clipped (if automatic size is used) in order to be be fully contained inside the bounds. </li>
+<li>
+If a given size is larger than the corresponding bounds  <a class="el" href="a06635.html#a303a45005b63f9028248adb1046eca80" title="Returns the number of integer grid coordinates along the specified dimension. ">GridExtent::getSize(int)</a> size}, then the returned extent will be clipped to the bounds. </li>
+</ul>
+<p>In all cases, this method tries to keep the grid coordinates close to the center of the returned extent. A shift may exist if necessary for keeping the extent inside the</p><div class="fragment"><div class="line">bounds </div></div><!-- fragment --><p> argument, but will never move the grid coordinates outside the [<em>low</em> … <em>high</em>+1) range of returned extent.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bounds</td><td>if the coordinates shall be contained inside a grid, that grid extent. Otherwise<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+    <tr><td class="paramname">size</td><td>the desired extent sizes as strictly positive numbers, or 0 sentinel values for automatic sizes (1 or 2 depending on bounds and coordinate values). This array may have any length; if shorter than the number of dimensions, missing values default to 0. If longer than the number of dimensions, extra values are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if a<div class="fragment"><div class="line">size </div></div><!-- fragment --> value is negative. </td></tr>
+    <tr><td class="paramname">ArithmeticException</td><td>if a coordinate value is outside the range of<div class="fragment"><div class="line"><span class="keywordtype">long</span> </div></div><!-- fragment --> values. </td></tr>
+    <tr><td class="paramname">MismatchedDimensionException</td><td>if<div class="fragment"><div class="line">bounds </div></div><!-- fragment --> dimension is not equal to grid coordinates dimension. </td></tr>
+    <tr><td class="paramname">PointOutsideCoverageException</td><td>if the grid coordinates (rounded to nearest integers) are outside the given bounds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a grid extent of the given size (if possible) containing those grid coordinates. </dd></dl>
 
-<p class="reference">References <a class="el" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">BandedSampleConverter.colorModel</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                      {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div><div class="ttc" id="a06615_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06615.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model for the expected range of values. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:72</div></div>
+<p class="reference">References <a class="el" href="a06635.html#ae80b0ccc2e44e32e33227abf560ad3b6">GridExtent.allocate()</a>, <a class="el" href="a06635.html#aa0389102e15f59ae34fac6065be81e15">GridExtent.getAxisIdentification()</a>, <a class="el" href="a06635.html#a7e9fe025be58250b1c81ea91823f819e">GridExtent.getDimension()</a>, <a class="el" href="a06635.html#ae8f76ed94d6445c845be59cd03c24b64">GridExtent.getHigh()</a>, <a class="el" href="a06635.html#a3ebe3980f2b60b7357e8b4ec93c6f435">GridExtent.getLow()</a>, and <a class="el" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">FractionalGridCoordinates.writeCoordinates()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06623.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage.evaluate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                                                            {</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> dimension = <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>.length;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span> (bounds != null) {</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> bd = bounds.getDimension();</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">if</span> (bd != dimension) {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> MismatchedDimensionException(Errors.format(</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                        Errors.Keys.MismatchedDimension_3, <span class="stringliteral">&quot;bounds&quot;</span>, dimension, bd));</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            }</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span>[] extent = GridExtent.allocate(dimension);</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;dimension; i++) {</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> value = <a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>[i];</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">if</span> (!(value &gt;= Long.MIN_VALUE &amp;&amp; value &lt;= Long.MAX_VALUE)) {        <span class="comment">// Use ! for catching NaN values.</span></div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArithmeticException(Resources.format(</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                        Resources.Keys.UnconvertibleGridCoordinate_2, <span class="stringliteral">&quot;long&quot;</span>, value));</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            }</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keywordtype">long</span> margin = 0;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keywordflow">if</span> (i &lt; size.length) {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                margin = size[i];</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="keywordflow">if</span> (margin &lt; 0) {</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                            Errors.Keys.NegativeArgument_2, Strings.toIndexed(<span class="stringliteral">&quot;size&quot;</span>, i), margin));</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                }</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            }</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">             * The lower/upper values are given by Math.floor/ceil respectively (may be equal).</span></div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">             * However we do an exception to this rule if user asked explicitly for a size of 1.</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">             * In such case we can no longer enforce the `lower ≤ value ≤ upper` rule. The best</span></div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">             * we can do is to take the nearest neighbor.</span></div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">long</span> nearest = Math.round(value);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordtype">long</span> lower, upper;</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">if</span> (margin == 1) {</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                lower = upper = nearest;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                lower = (long) Math.floor(value);       <span class="comment">// Inclusive.</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                upper = (long) Math.ceil (value);       <span class="comment">// Inclusive too (lower == upper if value is an integer).</span></div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordflow">if</span> (margin != 0) {</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    margin -= (upper - lower + 1);      <span class="comment">// Total number of cells to add.</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    assert margin &gt;= 0 : margin;        <span class="comment">// Because (upper - lower + 1) ≤ 2</span></div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    <span class="keywordflow">if</span> ((margin &amp; 1) != 0) {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        <span class="keywordflow">if</span> (nearest &gt;= upper) {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                            upper = Math.incrementExact(upper);</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                            lower = Math.decrementExact(lower);</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        }</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    }</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                    margin &gt;&gt;= 1;     <span class="comment">// Number of cells to add on each side.</span></div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    lower  = Math.subtractExact(lower, margin);</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    upper  = Math.addExact(upper, margin);</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                    margin = 2;       <span class="comment">// Any value different than 0 for remembering that it was explicitly specified.</span></div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                }</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            }</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">             * At this point the grid range has been computed (lower to upper).</span></div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">             * Shift it if needed for keeping it inside the enclosing extent.</span></div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">if</span> (bounds != null) {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">long</span> validMin = bounds.getLow(i);</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">long</span> validMax = bounds.getHigh(i);</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">if</span> (nearest &gt; validMax || nearest &lt; validMin) {</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                    <span class="keyword">final</span> StringBuilder b = <span class="keyword">new</span> StringBuilder();</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                    <a class="code" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">writeCoordinates</a>(b);</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> PointOutsideCoverageException(</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            Resources.format(Resources.Keys.GridCoordinateOutsideCoverage_4,</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                            bounds.getAxisIdentification(i,i), validMin, validMax, b.toString()));</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                }</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">if</span> (upper &gt; validMax) {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    <span class="keywordflow">if</span> (margin != 0) {      <span class="comment">// In automatic mode (margin = 0) just clip, don&#39;t shift.</span></div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                        <span class="comment">/*</span></div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">                         * Because (upper - validMax) is always positive, then (t &gt; lower) would mean</span></div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">                         * that we have an overflow. In such cases we do not need the result since we</span></div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">                         * know that we are outside the enclosing extent anyway.</span></div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">                         */</span></div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                        <span class="keyword">final</span> <span class="keywordtype">long</span> t = lower - Math.subtractExact(upper, validMax);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                        lower = (t &gt;= validMin &amp;&amp; t &lt;= lower) ? t : validMin;</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    }</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    upper = validMax;</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                }</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                <span class="keywordflow">if</span> (lower &lt; validMin) {</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    <span class="keywordflow">if</span> (margin != 0) {</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                        <span class="keyword">final</span> <span class="keywordtype">long</span> t = upper + Math.subtractExact(validMin, lower);</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                        upper = (t &lt;= validMax &amp;&amp; t &gt;= upper) ? t : validMax;           <span class="comment">// Same rational than above.</span></div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                    }</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    lower = validMin;</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                }</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            }</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            extent[i] = lower;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            extent[i+dimension] = upper;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> GridExtent(bounds, extent);</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div><div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a06615_html_a1d2e41a72bd0a29dbadc61ac0e6d963f"><div class="ttname"><a href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">org.apache.sis.coverage.grid.FractionalGridCoordinates.writeCoordinates</a></div><div class="ttdeci">void writeCoordinates(final StringBuilder buffer)</div><div class="ttdoc">Writes coordinates in the given buffer. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:495</div></div>
+<div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a07efb2a4e9a982688c8bb3c3f21d1092"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07efb2a4e9a982688c8bb3c3f21d1092">&#9670;&nbsp;</a></span>getHeight()</h2>
+<a id="ad70ac16ff1a0a5fa977512d70843590c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70ac16ff1a0a5fa977512d70843590c">&#9670;&nbsp;</a></span>toPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getHeight </td>
+          <td class="memname">DirectPosition toPosition </td>
+          <td>(</td>
+          <td class="paramtype">final MathTransform&#160;</td>
+          <td class="paramname"><em>gridToCRS</em></td><td>)</td>
+          <td> throws TransformException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the grid coordinates converted to a geospatial position using the given transform. </p>
+<p>The</p><div class="fragment"><div class="line">gridToCRS </div></div><!-- fragment --><p> argument is typically <a class="el" href="">GridGeometry#getGridToCRS(PixelInCell)</a> with <a class="el" href="">PixelInCell#CELL_CENTER</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gridToCRS</td><td>the transform to apply on grid coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the grid coordinates converted using the given transform. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">TransformException</td><td>if the grid coordinates can not be converted by<div class="fragment"><div class="line">gridToCRS </div></div><!-- fragment --> .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06623.html#abfb9efea12d4f80e81726ec9ea0c9c39" title="Converts the specified geospatial position to grid coordinates. ">GridCoverage::toGridCoordinates(DirectPosition)</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                                                                              {</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">return</span> gridToCRS.transform(<span class="keyword">new</span> Position(<span class="keyword">this</span>), null);</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -430,163 +686,47 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
       </table>
 </div><div class="memdoc">
 
-<p>Returns the height (in pixels) of this image. </p>
-<p>This is the the same value than the source image (not necessarily zero).</p>
-<dl class="section return"><dt>Returns</dt><dd>the height (number of rows) of this image. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                           {</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> getSource(0).getHeight();</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a221fbe8552df714e1483b0005f1d84d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a221fbe8552df714e1483b0005f1d84d6">&#9670;&nbsp;</a></span>getMinTileX()</h2>
+<p>Returns a string representation of this grid coordinates for debugging purpose. </p>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getMinTileX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the minimum tile index in the <em>x</em> direction. </p>
-<p>This is the the same value than the source image (not necessarily zero).</p>
-<dl class="section return"><dt>Returns</dt><dd>the minimum tile index in the <em>x</em> direction. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                             {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinTileX();</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a8574cc85ad8d13e052b8146b81825969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8574cc85ad8d13e052b8146b81825969">&#9670;&nbsp;</a></span>getMinTileY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getMinTileY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the minimum tile index in the <em>y</em> direction. </p>
-<p>This is the the same value than the source image (not necessarily zero).</p>
-<dl class="section return"><dt>Returns</dt><dd>the minimum tile index in the <em>y</em> direction. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                             {</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinTileY();</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a1ec43fe85c74aa5a7cadc2e6e8d2410f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ec43fe85c74aa5a7cadc2e6e8d2410f">&#9670;&nbsp;</a></span>getMinX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getMinX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the minimum <em>x</em> coordinate (inclusive) of this image. </p>
-<p>This is the the same value than the source image (not necessarily zero).</p>
-<dl class="section return"><dt>Returns</dt><dd>the minimum <em>x</em> coordinate (column) of this image. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                         {</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinX();</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="afc8e603e4bb15d663afe6fc2c98bc85d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc8e603e4bb15d663afe6fc2c98bc85d">&#9670;&nbsp;</a></span>getMinY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getMinY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the minimum <em>y</em> coordinate (inclusive) of this image. </p>
-<p>This is the the same value than the source image (not necessarily zero).</p>
-<dl class="section return"><dt>Returns</dt><dd>the minimum <em>y</em> coordinate (row) of this image. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                         {</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinY();</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a8049f6987505f6bb10a9caabd780c748"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8049f6987505f6bb10a9caabd780c748">&#9670;&nbsp;</a></span>getProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Object getProperty </td>
-          <td>(</td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets a property from this image. </p>
-<p>Current implementation recognizes: { #SAMPLE_RESOLUTIONS_KEY}. </p>
-<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                                {</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (SAMPLE_RESOLUTIONS_KEY.equals(key) &amp;&amp; <a class="code" href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a> != null) {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a>.clone();</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">return</span> super.getProperty(key);</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div><div class="ttc" id="a06615_html_a8e6cec4511dd5e677bf3f9b2793b1f2e"><div class="ttname"><a href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.sampleResolutions</a></div><div class="ttdeci">final double [] sampleResolutions</div><div class="ttdoc">The sample resolutions, or. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:77</div></div>
+<p class="reference">References <a class="el" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">FractionalGridCoordinates.writeCoordinates()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                             {</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(<span class="stringliteral">&quot;GridCoordinates[&quot;</span>);</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <a class="code" href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">writeCoordinates</a>(buffer);</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordflow">return</span> buffer.append(<span class="charliteral">&#39;]&#39;</span>).toString();</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    }</div><div class="ttc" id="a06615_html_a1d2e41a72bd0a29dbadc61ac0e6d963f"><div class="ttname"><a href="a06615.html#a1d2e41a72bd0a29dbadc61ac0e6d963f">org.apache.sis.coverage.grid.FractionalGridCoordinates.writeCoordinates</a></div><div class="ttdeci">void writeCoordinates(final StringBuilder buffer)</div><div class="ttdoc">Writes coordinates in the given buffer. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:495</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8fe92749c0f415ca061399e1a549f7c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe92749c0f415ca061399e1a549f7c5">&#9670;&nbsp;</a></span>getPropertyNames()</h2>
+<a id="a1d2e41a72bd0a29dbadc61ac0e6d963f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2e41a72bd0a29dbadc61ac0e6d963f">&#9670;&nbsp;</a></span>writeCoordinates()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">String [] getPropertyNames </td>
+          <td class="memname">void writeCoordinates </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final StringBuilder&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the names of all recognized properties, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if this image has no properties. </p>
-<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                                       {</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a> != null) {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> String[] {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                SAMPLE_RESOLUTIONS_KEY</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            };</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> super.getPropertyNames();</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div><div class="ttc" id="a06615_html_a8e6cec4511dd5e677bf3f9b2793b1f2e"><div class="ttname"><a href="a06615.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.sampleResolutions</a></div><div class="ttdeci">final double [] sampleResolutions</div><div class="ttdoc">The sample resolutions, or. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:77</div></div>
+<p>Writes coordinates in the given buffer. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06615.html#abd74946782d37989bb539d6f690cf1a6">FractionalGridCoordinates.pointOutsideCoverage()</a>, <a class="el" href="a06615.html#a69789ee6e2767e6891ebe8e7da8e908d">FractionalGridCoordinates.toExtent()</a>, and <a class="el" href="a06615.html#ad146fa8579a5f8a876c4688cc5a68520">FractionalGridCoordinates.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                                                              {</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>.length; i++) {</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            <span class="keywordflow">if</span> (i != 0) buffer.append(<span class="charliteral">&#39; &#39;</span>);</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            StringBuilders.trimFractionalPart(buffer.append(<a class="code" href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">coordinates</a>[i]));</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        }</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    }</div><div class="ttc" id="a06615_html_a3601ddc6e157b2c5ef7c8e630ca64f5e"><div class="ttname"><a href="a06615.html#a3601ddc6e157b2c5ef7c8e630ca64f5e">org.apache.sis.coverage.grid.FractionalGridCoordinates.coordinates</a></div><div class="ttdeci">final double [] coordinates</div><div class="ttdoc">The grid coordinates as floating-point numbers. </div><div class="ttdef"><b>Definition:</b> FractionalGridCoordinates.java:67</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a67a0997183f24da19b776d96c1052998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67a0997183f24da19b776d96c1052998">&#9670;&nbsp;</a></span>getWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getWidth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the width (in pixels) of this image. </p>
-<p>This is the the same value than the source image (not necessarily zero).</p>
-<dl class="section return"><dt>Returns</dt><dd>the width (number of columns) of this image. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                          {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> getSource(0).getWidth();</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae6300c65e347a4e78a9bc7900d80fd91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6300c65e347a4e78a9bc7900d80fd91">&#9670;&nbsp;</a></span>colorModel</h2>
+<a id="a3601ddc6e157b2c5ef7c8e630ca64f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3601ddc6e157b2c5ef7c8e630ca64f5e">&#9670;&nbsp;</a></span>coordinates</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,25 +735,24 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final ColorModel colorModel</td>
+          <td class="memname">final double [] coordinates</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The color model for the expected range of values. </p>
-<p>May be</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . </p>
+<p>The grid coordinates as floating-point numbers. </p>
 
-<p class="reference">Referenced by <a class="el" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>, and <a class="el" href="a06615.html#a2e9f91617f2855770996f11b9d2dd94d">BandedSampleConverter.getColorModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06615.html#a930cf577e484b1cf7f59f4271ada5fa4">FractionalGridCoordinates.FractionalGridCoordinates()</a>, and <a class="el" href="a06615.html#a10c39e72f0b4afd8dca0723bb3e9130a">FractionalGridCoordinates.fromPosition()</a>.</p>
 
 </div>
 </div>
-<a id="acc5b853af3ec99b5b068393cf3ca63c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc5b853af3ec99b5b068393cf3ca63c3">&#9670;&nbsp;</a></span>converters</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,44 +761,17 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final MathTransform1D [] converters</td>
+          <td class="memname">final long serialVersionUID = 5652265407347129550L</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The transfer functions to apply on each band of the source image. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06615.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>.</p>
-
-</div>
-</div>
-<a id="a8e6cec4511dd5e677bf3f9b2793b1f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e6cec4511dd5e677bf3f9b2793b1f2e">&#9670;&nbsp;</a></span>sampleResolutions</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double [] sampleResolutions</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The sample resolutions, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if unknown. </p>
+<p>For cross-version compatibility. </p>
 
 </div>
 </div>
@@ -669,7 +781,7 @@ Calculation is performed on<div class="fragment"><div class="line"><span class="
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03834.html">apache</a></li><li class="navelem"><a class="el" href="a03835.html">sis</a></li><li class="navelem"><a class="el" href="a03839.html">internal</a></li><li class="navelem"><a class="el" href="a03840.html">coverage</a></li><li class="navelem"><a class="el" href="a03838.html">j2d</a></li><li class="navelem"><a class="el" href="a06615.html">BandedSampleConverter</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03858.html">apache</a></li><li class="navelem"><a class="el" href="a03859.html">sis</a></li><li class="navelem"><a class="el" href="a03860.html">coverage</a></li><li class="navelem"><a class="el" href="a03856.html">grid</a></li><li class="navelem"><a class="el" href="a06615.html">FractionalGridCoordinates</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

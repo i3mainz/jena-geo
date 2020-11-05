@@ -1,18 +1,18 @@
 var a03874 =
 [
-    [ "Complex", "a07383.html", "a07383" ],
-    [ "Extrapolation", "a07387.html", "a07387" ],
-    [ "ExtrapolationException", "a07391.html", "a07391" ],
-    [ "Hermite1D", "a07395.html", "a07395" ],
-    [ "Histogram", "a07399.html", "a07399" ],
-    [ "Line", "a07403.html", "a07403" ],
-    [ "Linear1D", "a07407.html", "a07407" ],
-    [ "NumberSet", "a07411.html", "a07411" ],
-    [ "Polynom", "a07415.html", "a07415" ],
-    [ "Polynomial1D", "a07419.html", "a07419" ],
-    [ "Search1D", "a07423.html", "a07423" ],
-    [ "Spline1D", "a07427.html", "a07427" ],
-    [ "Table1D", "a07431.html", "a07431" ],
-    [ "VectorPair", "a07435.html", "a07435" ],
-    [ "XMath", "a07439.html", "a07439" ]
+    [ "classification", "a03875.html", "a03875" ],
+    [ "color", "a03876.html", "a03876" ],
+    [ "internal", "a03877.html", "a03877" ],
+    [ "interpolation", "a03878.html", "a03878" ],
+    [ "io", "a03880.html", "a03880" ],
+    [ "jai", "a03881.html", "a03881" ],
+    [ "palette", "a03882.html", "a03882" ],
+    [ "relief", "a03883.html", "a03883" ],
+    [ "BufferedImages", "a06887.html", "a06887" ],
+    [ "DeferredPlanarImage", "a06899.html", "a06899" ],
+    [ "ImageDimension", "a06907.html", "a06907" ],
+    [ "RecolorRenderedImage", "a07131.html", "a07131" ],
+    [ "SampleModels", "a07139.html", "a07139" ],
+    [ "TransfertRectIter", "a07143.html", "a07143" ],
+    [ "WritableMemoryRenderedImage", "a07147.html", "a07147" ]
 ];

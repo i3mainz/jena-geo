@@ -1,5 +1,8 @@
 var a03955 =
 [
-    [ "EqualsTest", "a09391.html", "a09391" ],
-    [ "IntersectionTest", "a09395.html", "a09395" ]
+    [ "AddGeometryTest", "a08559.html", "a08559" ],
+    [ "EnsureClosedTest", "a08563.html", "a08563" ],
+    [ "RemoveGeometryTest", "a08567.html", "a08567" ],
+    [ "RemoveRepeatedPointsTest", "a08571.html", "a08571" ],
+    [ "SetGeometryTest", "a08575.html", "a08575" ]
 ];

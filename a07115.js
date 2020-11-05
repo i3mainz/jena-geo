@@ -1,8 +1,25 @@
 var a07115 =
 [
-    [ "DaemonThread", "a07115.html#a2eb8afeef5a95547c06b18fe7a11b696", null ],
-    [ "DaemonThread", "a07115.html#a0b827a421759548883ec09f0d8789950", null ],
-    [ "isKillRequested", "a07115.html#a85a7877dcc475afa61faf679b046c78f", null ],
-    [ "kill", "a07115.html#a627f0d98cbf66a9f5988e4ae5ffef710", null ],
-    [ "killRequested", "a07115.html#ae8ef02b471a01f2576f9390c3d8c354b", null ]
+    [ "IndexedPalette", "a07115.html#a2bd9fbc13eda8405eae87e39f710d17d", null ],
+    [ "createARGB", "a07115.html#aa8498ab514905767badc50bbb1adbf23", null ],
+    [ "createImageTypeSpecifier", "a07115.html#a3a3aed5322135eb2bb82cd90ab351f38", null ],
+    [ "ensureInsideBounds", "a07115.html#aae97ac739b599405d29f91bee27bbc19", null ],
+    [ "equals", "a07115.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
+    [ "getColorModel", "a07115.html#ac8ba6eec4aeb454352559b2305b8d362", null ],
+    [ "getImage", "a07115.html#abe1e6d7e0ca8c0ef7ed2b5c846123749", null ],
+    [ "getImageTypeSpecifier", "a07115.html#a014cd0623b0d8f09ca87a916c9152007", null ],
+    [ "getLegend", "a07115.html#a5787ba9c1dee994f963ef4f2aff092c3", null ],
+    [ "getOffset", "a07115.html#a5c7bab1204c195e6cb98d3661c798598", null ],
+    [ "getScale", "a07115.html#a756eaa4aa80890ba357fc36b1861ac90", null ],
+    [ "hashCode", "a07115.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "isGrayPalette", "a07115.html#a7bee4509041e1799e2c2847757130427", null ],
+    [ "toString", "a07115.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "factory", "a07115.html#a12f8e7975fb86f64ec3c440154897b45", null ],
+    [ "lower", "a07115.html#acf80daf0fc5f11d2794ca1dfa435f27a", null ],
+    [ "MAX_UNSIGNED", "a07115.html#a3deb997bd738e2f9be489a09b178dec2", null ],
+    [ "name", "a07115.html#aee5f0118454ca188d26b7db28c890faa", null ],
+    [ "numBands", "a07115.html#a0d8b817b89b958b862e489811688d6d7", null ],
+    [ "size", "a07115.html#afbc6b1836d470cd96cf35f427dfcbc11", null ],
+    [ "upper", "a07115.html#a2313c241950e17864a26440f0ed5c84f", null ],
+    [ "visibleBand", "a07115.html#a222631519396875a9610c4bccec56eaf", null ]
 ];

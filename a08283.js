@@ -1,11 +1,6 @@
 var a08283 =
 [
-    [ "ExtendedPrecisionReader", "a08283.html#a82112ea6921f2d28f7663dfa20ae32c6", null ],
-    [ "readPoint", "a08283.html#a04d3647950410c96c47734decf0e12b5", null ],
-    [ "readPointArray", "a08283.html#a1bbf2e471d2964af19292437ad42729b", null ],
-    [ "hasM", "a08283.html#a1eccf09f4c826ba480ec832ac4ce7718", null ],
-    [ "hasZ", "a08283.html#ab356995ed7cff0226d75484d03a994f2", null ],
-    [ "mPrecisionMultiplier", "a08283.html#a4ea667f57906c038bb9717bc848df77a", null ],
-    [ "precisionMultiplier", "a08283.html#a9aa85be4ec02c28a05cb552845fe08eb", null ],
-    [ "zPrecisionMultiplier", "a08283.html#abb32d6067d519044d8c44d52ab2cdd44", null ]
+    [ "getVersion", "a08283.html#ac0cb929ed90c5c09352f4ccb4ede3d61", null ],
+    [ "getVersion", "a08283.html#aa1a606779a2d23f45b232f1fed2774d5", null ],
+    [ "list", "a08283.html#a5283b7db5a0cae7c08c2650bbd83dd39", null ]
 ];

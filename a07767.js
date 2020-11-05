@@ -1,12 +1,11 @@
 var a07767 =
 [
-    [ "Inverse", "a07771.html", "a07771" ],
-    [ "AbstractMathTransform", "a07767.html#a8ae44eabafd231ad62a118a207a17d3b", null ],
-    [ "createTransformedShape", "a07767.html#a7c122bf019cb2cc5b390d2e3300e37d6", null ],
-    [ "derivative", "a07767.html#ab9fc607009e9ce685be1d5f49fd5eb83", null ],
-    [ "ensureNonNull", "a07767.html#a676c6e59e16b6f62dc142e287fbab5f9", null ],
-    [ "formatTo", "a07767.html#a25f94cf0f4c5e57980b944286464ec92", null ],
-    [ "getName", "a07767.html#a78ee178b6a73658d65ca60da4d1e6683", null ],
-    [ "mismatchedDimension", "a07767.html#ad2a419e3aa81af359b8f4b7515d0979b", null ],
-    [ "transform", "a07767.html#a44d37c18902f5d7e46ed007c000c6dda", null ]
+    [ "Exponential", "a07767.html#a4aba0486edade2ca8c02e12d645dbe7e", null ],
+    [ "[static initializer]", "a07767.html#a2e87c5ede6b7235170d287cd2e254454", null ],
+    [ "createMathTransform", "a07767.html#a4769ec715e240ec78a36f0b9f6b3682e", null ],
+    [ "getOperationType", "a07767.html#aec9f8d1eb55ee637f62e6f9cb71ec213", null ],
+    [ "BASE", "a07767.html#af1ab7751a47eacc7d7ff445203dd95b8", null ],
+    [ "PARAMETERS", "a07767.html#ab5e69de77a0ae51d2777912d2d63b133", null ],
+    [ "SCALE", "a07767.html#ac9fbf2adf499f03b0bf6f9bdd429618d", null ],
+    [ "serialVersionUID", "a07767.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

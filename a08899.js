@@ -1,5 +1,4 @@
 var a08899 =
 [
-    [ "testBezierSmoothing", "a08899.html#a2046c1e051bde433111c7665e11bf114", null ],
-    [ "testLineString", "a08899.html#a33797029fadbcba01b4a4fafec88cf41", null ]
+    [ "testMultiPoint", "a08899.html#a05f65a5a44e94fff4e0960a92d74135e", null ]
 ];

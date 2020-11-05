@@ -1,5 +1,5 @@
 var a08447 =
 [
-    [ "testLineString", "a08447.html#a0444ce8df222ae81e1a33426a32d8d7a", null ],
-    [ "testGeom", "a08447.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ]
+    [ "testGeometricMedian", "a08447.html#a1b1210c64e5b3ba5df6e23a9974d9592", null ],
+    [ "testGeometry", "a08447.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

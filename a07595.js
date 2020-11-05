@@ -1,15 +1,11 @@
 var a07595 =
 [
-    [ "DirectAuthorityFactory", "a07595.html#a578c49804986d50ef1e25ee5c2f96d59", null ],
-    [ "DirectAuthorityFactory", "a07595.html#afebe9bad44a3314091515fc043f46572", null ],
-    [ "dispose", "a07595.html#af061a0a9fcae1571a9480c7f59bb3136", null ],
-    [ "ensureNonNull", "a07595.html#a676c6e59e16b6f62dc142e287fbab5f9", null ],
-    [ "getAuthority", "a07595.html#a6d6cd7e952e1b53cb176433878a16e87", null ],
-    [ "getBackingStoreDescription", "a07595.html#afe1a5a304e0e01ffa19130cb3d555fbe", null ],
-    [ "getVendor", "a07595.html#aad8d36bb4131ce1be5b51c75fc5f7c17", null ],
-    [ "noSuchAuthorityCode", "a07595.html#ae518ac5e58a807eaa7645ff84ea72a46", null ],
-    [ "trimAuthority", "a07595.html#a66fde2d8b5e60c41ac52c66771527827", null ],
-    [ "factories", "a07595.html#adbaaeb9d6f038ea1c7cfc1184e32aef2", null ],
-    [ "LOGGER", "a07595.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
-    [ "nameFactory", "a07595.html#a16391f8f2c1aeadda36bfdc54fcc4892", null ]
+    [ "ProcessFinder", "a07595.html#a15b49807972ecaeceb9e35eda525e4c4", null ],
+    [ "getProcessDescriptor", "a07595.html#a1c5d0b3a35031cf95a81ebca088eec1a", null ],
+    [ "getProcessDescriptor", "a07595.html#aa7bb5cc0f8428c9a401f535c933a1c8f", null ],
+    [ "getProcessFactories", "a07595.html#afd86b7fea7a64ca754ec9d4bb8d1e6fb", null ],
+    [ "getProcessFactory", "a07595.html#a4dca017c8998fedfb7deef9e73adc7c3", null ],
+    [ "getProcessFactory", "a07595.html#ac01947f7651d47331aeeb630d13d0a49", null ],
+    [ "scanForPlugins", "a07595.html#a9a86788c9acbc56cc8d8a2e95c30d413", null ],
+    [ "REGISTRIES", "a07595.html#a92e805b4be5f892a6913506e2453f4bd", null ]
 ];

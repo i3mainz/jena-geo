@@ -4,7 +4,7 @@ var a09351 =
     [ "displayRasterSummary", "a09351.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09351.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09351.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testWorldToRasterCoordY", "a09351.html#a56f9c565f021f053e0a81581df5dc08f", null ],
+    [ "testTileHeight", "a09351.html#a9d781bf26af7708485de4c5a108a5b5e", null ],
     [ "covJSONString1", "a09351.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09351.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09351.html#aa5e2b5a6005895fc20b9f35523569430", null ],

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: DoubleComparator Class Reference</title>
+<title>jena-geo: TWKBWriter.PrecisionWriter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,95 +62,76 @@ $(document).ready(function(){initNavTree('a08335.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a08332.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DoubleComparator Class Reference</div>  </div>
+<div class="title">TWKBWriter.PrecisionWriter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Comparator of a map containing QuadEdge as key and Double as value (Double comparator).  
- <a href="a08335.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for DoubleComparator:</div>
+Inheritance diagram for TWKBWriter.PrecisionWriter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08334.png" border="0" usemap="#DoubleComparator_inherit__map" alt="Inheritance graph"/></div>
-<map name="DoubleComparator_inherit__map" id="DoubleComparator_inherit__map">
+<div class="center"><img src="a08334.png" border="0" usemap="#TWKBWriter_8PrecisionWriter_inherit__map" alt="Inheritance graph"/></div>
+<map name="TWKBWriter_8PrecisionWriter_inherit__map" id="TWKBWriter_8PrecisionWriter_inherit__map">
+<area shape="rect" id="node2" href="a08339.html" title="TWKBWriter.ExtendedPrecision\lWriter" alt="" coords="5,80,215,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for DoubleComparator:</div>
+Collaboration diagram for TWKBWriter.PrecisionWriter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08333.png" border="0" usemap="#DoubleComparator_coll__map" alt="Collaboration graph"/></div>
-<map name="DoubleComparator_coll__map" id="DoubleComparator_coll__map">
+<div class="center"><img src="a08333.png" border="0" usemap="#TWKBWriter_8PrecisionWriter_coll__map" alt="Collaboration graph"/></div>
+<map name="TWKBWriter_8PrecisionWriter_coll__map" id="TWKBWriter_8PrecisionWriter_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1668a667c039b9613a2c53fb14ac661"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#ad1668a667c039b9613a2c53fb14ac661">DoubleComparator</a> (Map&lt; QuadEdge, Double &gt; <a class="el" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">map</a>)</td></tr>
-<tr class="memdesc:ad1668a667c039b9613a2c53fb14ac661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad1668a667c039b9613a2c53fb14ac661">More...</a><br /></td></tr>
-<tr class="separator:ad1668a667c039b9613a2c53fb14ac661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c3e0620150ff3907036d82674eef8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a06c3e0620150ff3907036d82674eef8f">compare</a> (QuadEdge qeA, QuadEdge qeB)</td></tr>
-<tr class="memdesc:a06c3e0620150ff3907036d82674eef8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method of comparison.  <a href="#a06c3e0620150ff3907036d82674eef8f">More...</a><br /></td></tr>
-<tr class="separator:a06c3e0620150ff3907036d82674eef8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9dd1e59eac3a2a15cb68c19e994fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08335.html">PrecisionWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a1b9dd1e59eac3a2a15cb68c19e994fe4">calculate</a> (final <a class="el" href="a08343.html">Coordinate</a>[] coordinates, final int <a class="el" href="a08331.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>)</td></tr>
+<tr class="separator:a1b9dd1e59eac3a2a15cb68c19e994fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320ccd90ec0ef71a4353104b7fe98a1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a320ccd90ec0ef71a4353104b7fe98a1c">writeExtendedPrecision</a> (final DataOutput output)  throws IOException </td></tr>
+<tr class="separator:a320ccd90ec0ef71a4353104b7fe98a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedb1cd853d00648be239477f7fe4e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#adedb1cd853d00648be239477f7fe4e2a">writePoint</a> (final <a class="el" href="a08343.html">Coordinate</a> coordinate, final DataOutput output)  throws IOException </td></tr>
+<tr class="separator:adedb1cd853d00648be239477f7fe4e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeed21e7153170021427b1e7001d952b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#afeed21e7153170021427b1e7001d952b">writePointArray</a> (final <a class="el" href="a08343.html">Coordinate</a>[] coordinates, final DataOutput output)  throws IOException </td></tr>
+<tr class="separator:afeed21e7153170021427b1e7001d952b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:a54c09d8752ac0d50a8a6b741cca1f5ac"><td class="memItemLeft" align="right" valign="top">Map&lt; QuadEdge, Double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">map</a></td></tr>
-<tr class="separator:a54c09d8752ac0d50a8a6b741cca1f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0a01f90a7fe27e3b66f1c87f019e91bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a0a01f90a7fe27e3b66f1c87f019e91bc">checkCoordinate</a> (final <a class="el" href="a08343.html">Coordinate</a> c)</td></tr>
+<tr class="separator:a0a01f90a7fe27e3b66f1c87f019e91bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7626720b9bf807253dd702a0214dc9f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a7626720b9bf807253dd702a0214dc9f0">finalize</a> (final int <a class="el" href="a08331.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>)</td></tr>
+<tr class="separator:a7626720b9bf807253dd702a0214dc9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9aa85be4ec02c28a05cb552845fe08eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a> = 0</td></tr>
+<tr class="separator:a9aa85be4ec02c28a05cb552845fe08eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa95455ed52a8459fad69509a4a0411b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a> = <a class="el" href="a08327.html#a5bee20a7d59eea71b635f7f136c48e91">TWKBUtils.MIN_COORD_PRECISION</a></td></tr>
+<tr class="separator:aa95455ed52a8459fad69509a4a0411b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Comparator of a map containing QuadEdge as key and Double as value (Double comparator). </p>
-<dl class="section author"><dt>Author</dt><dd>Eric Grosso </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad1668a667c039b9613a2c53fb14ac661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1668a667c039b9613a2c53fb14ac661">&#9670;&nbsp;</a></span>DoubleComparator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08335.html">DoubleComparator</a> </td>
-          <td>(</td>
-          <td class="paramtype">Map&lt; QuadEdge, Double &gt;&#160;</td>
-          <td class="paramname"><em>map</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">map</td><td>map containing QuadEdge and Double </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">DoubleComparator.map</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                       {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        this.<a class="code" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">map</a> = <a class="code" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">map</a>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div><div class="ttc" id="a08335_html_a54c09d8752ac0d50a8a6b741cca1f5ac"><div class="ttname"><a href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">org.opensphere.geometry.triangulation.DoubleComparator.map</a></div><div class="ttdeci">Map&lt; QuadEdge, Double &gt; map</div><div class="ttdef"><b>Definition:</b> DoubleComparator.java:17</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a06c3e0620150ff3907036d82674eef8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c3e0620150ff3907036d82674eef8f">&#9670;&nbsp;</a></span>compare()</h2>
+<a id="a1b9dd1e59eac3a2a15cb68c19e994fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9dd1e59eac3a2a15cb68c19e994fe4">&#9670;&nbsp;</a></span>calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int compare </td>
+          <td class="memname"><a class="el" href="a08335.html">PrecisionWriter</a> calculate </td>
           <td>(</td>
-          <td class="paramtype">QuadEdge&#160;</td>
-          <td class="paramname"><em>qeA</em>, </td>
+          <td class="paramtype">final <a class="el" href="a08343.html">Coordinate</a> []&#160;</td>
+          <td class="paramname"><em>coordinates</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QuadEdge&#160;</td>
-          <td class="paramname"><em>qeB</em>&#160;</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>maxPrecision</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -160,22 +141,17 @@ Package Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Method of comparison. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">qeA</td><td>quad edge to compare </td></tr>
-    <tr><td class="paramname">qeB</td><td>quad edge to compare </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if double value associated to qeA &lt; double value associated to qeB, 0 if values are equals, -1 otherwise </dd></dl>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                   {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> distanceA = this.<a class="code" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">map</a>.get(qeA);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> distanceB = this.<a class="code" href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">map</a>.get(qeB);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span> (distanceA &lt; distanceB) {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (distanceA == distanceB) {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="ttc" id="a08335_html_a54c09d8752ac0d50a8a6b741cca1f5ac"><div class="ttname"><a href="a08335.html#a54c09d8752ac0d50a8a6b741cca1f5ac">org.opensphere.geometry.triangulation.DoubleComparator.map</a></div><div class="ttdeci">Map&lt; QuadEdge, Double &gt; map</div><div class="ttdef"><b>Definition:</b> DoubleComparator.java:17</div></div>
+<p class="reference">References <a class="el" href="a08335.html#a0a01f90a7fe27e3b66f1c87f019e91bc">TWKBWriter.PrecisionWriter.checkCoordinate()</a>, and <a class="el" href="a08335.html#a7626720b9bf807253dd702a0214dc9f0">TWKBWriter.PrecisionWriter.finalize()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08339.html#a1b9dd1e59eac3a2a15cb68c19e994fe4">TWKBWriter.ExtendedPrecisionWriter.calculate()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                                                                             {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; coordinates.length; i++) {</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="a08335.html#a0a01f90a7fe27e3b66f1c87f019e91bc">checkCoordinate</a>(coordinates[i]);</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      }</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <a class="code" href="a08335.html#a7626720b9bf807253dd702a0214dc9f0">finalize</a>(<a class="code" href="a08331.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div><div class="ttc" id="a08331_html_a3790bdd1fc8284d93d59193536955934"><div class="ttname"><a href="a08331.html#a3790bdd1fc8284d93d59193536955934">org.locationtech.geowave.core.geotime.util.TWKBWriter.maxPrecision</a></div><div class="ttdeci">final int maxPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:28</div></div>
+<div class="ttc" id="a08335_html_a7626720b9bf807253dd702a0214dc9f0"><div class="ttname"><a href="a08335.html#a7626720b9bf807253dd702a0214dc9f0">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.finalize</a></div><div class="ttdeci">void finalize(final int maxPrecision)</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:210</div></div>
+<div class="ttc" id="a08335_html_a0a01f90a7fe27e3b66f1c87f019e91bc"><div class="ttname"><a href="a08335.html#a0a01f90a7fe27e3b66f1c87f019e91bc">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.checkCoordinate</a></div><div class="ttdeci">void checkCoordinate(final Coordinate c)</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:203</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a54c09d8752ac0d50a8a6b741cca1f5ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c09d8752ac0d50a8a6b741cca1f5ac">&#9670;&nbsp;</a></span>map</h2>
+<a id="a0a01f90a7fe27e3b66f1c87f019e91bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a01f90a7fe27e3b66f1c87f019e91bc">&#9670;&nbsp;</a></span>checkCoordinate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,17 +160,186 @@ Package Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Map&lt;QuadEdge, Double&gt; map</td>
+          <td class="memname">void checkCoordinate </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a08343.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a08335.html#ad1668a667c039b9613a2c53fb14ac661">DoubleComparator.DoubleComparator()</a>.</p>
+<p class="reference">References <a class="el" href="a08343.html#a2b69e4312b7814c6efce42f851893409">Coordinate.getX()</a>, <a class="el" href="a08343.html#a15f19cf52955c8c3406831b288681358">Coordinate.getY()</a>, and <a class="el" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">TWKBWriter.PrecisionWriter.precision</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08335.html#a1b9dd1e59eac3a2a15cb68c19e994fe4">TWKBWriter.PrecisionWriter.calculate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                                       {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <span class="keyword">final</span> BigDecimal xCoord = <span class="keyword">new</span> BigDecimal(Double.toString(c.getX())).stripTrailingZeros();</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a> = Math.max(xCoord.scale(), <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a>);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="keyword">final</span> BigDecimal yCoord = <span class="keyword">new</span> BigDecimal(Double.toString(c.getY())).stripTrailingZeros();</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a> = Math.max(yCoord.scale(), <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a>);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div><div class="ttc" id="a08335_html_aa95455ed52a8459fad69509a4a0411b5"><div class="ttname"><a href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.precision</a></div><div class="ttdeci">int precision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:192</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7626720b9bf807253dd702a0214dc9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7626720b9bf807253dd702a0214dc9f0">&#9670;&nbsp;</a></span>finalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void finalize </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>maxPrecision</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08335.html#a1b9dd1e59eac3a2a15cb68c19e994fe4">TWKBWriter.PrecisionWriter.calculate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                                    {</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a> = Math.min(<a class="code" href="a08331.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>, <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a>);</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <a class="code" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a> = Math.pow(10, <a class="code" href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">precision</a>);</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div><div class="ttc" id="a08335_html_aa95455ed52a8459fad69509a4a0411b5"><div class="ttname"><a href="a08335.html#aa95455ed52a8459fad69509a4a0411b5">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.precision</a></div><div class="ttdeci">int precision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:192</div></div>
+<div class="ttc" id="a08331_html_a3790bdd1fc8284d93d59193536955934"><div class="ttname"><a href="a08331.html#a3790bdd1fc8284d93d59193536955934">org.locationtech.geowave.core.geotime.util.TWKBWriter.maxPrecision</a></div><div class="ttdeci">final int maxPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:28</div></div>
+<div class="ttc" id="a08335_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:193</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a320ccd90ec0ef71a4353104b7fe98a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320ccd90ec0ef71a4353104b7fe98a1c">&#9670;&nbsp;</a></span>writeExtendedPrecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeExtendedPrecision </td>
+          <td>(</td>
+          <td class="paramtype">final DataOutput&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                                                                   {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <span class="keywordflow">return</span>;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="adedb1cd853d00648be239477f7fe4e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedb1cd853d00648be239477f7fe4e2a">&#9670;&nbsp;</a></span>writePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writePoint </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a08343.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>coordinate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final DataOutput&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">TWKBWriter.PrecisionWriter.precisionMultiplier</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                           {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      Varint.writeSignedVarLong(Math.round(coordinate.getX() * <a class="code" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>), output);</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      Varint.writeSignedVarLong(Math.round(coordinate.getY() * <a class="code" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>), output);</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div><div class="ttc" id="a08335_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:193</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afeed21e7153170021427b1e7001d952b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeed21e7153170021427b1e7001d952b">&#9670;&nbsp;</a></span>writePointArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writePointArray </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a08343.html">Coordinate</a> []&#160;</td>
+          <td class="paramname"><em>coordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final DataOutput&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">TWKBWriter.PrecisionWriter.precisionMultiplier</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                           {</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <span class="keywordtype">long</span> lastX = 0;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <span class="keywordtype">long</span> lastY = 0;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      Varint.writeUnsignedVarInt(coordinates.length, output);</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">final</span> Coordinate c : coordinates) {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span> x = Math.round(c.getX() * <a class="code" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span> y = Math.round(c.getY() * <a class="code" href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>);</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        Varint.writeSignedVarLong(x - lastX, output);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        Varint.writeSignedVarLong(y - lastY, output);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        lastX = x;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        lastY = y;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      }</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div><div class="ttc" id="a08335_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08335.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:193</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa95455ed52a8459fad69509a4a0411b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95455ed52a8459fad69509a4a0411b5">&#9670;&nbsp;</a></span>precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int precision = <a class="el" href="a08327.html#a5bee20a7d59eea71b635f7f136c48e91">TWKBUtils.MIN_COORD_PRECISION</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08335.html#a0a01f90a7fe27e3b66f1c87f019e91bc">TWKBWriter.PrecisionWriter.checkCoordinate()</a>, and <a class="el" href="a08331.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
+
+</div>
+</div>
+<a id="a9aa85be4ec02c28a05cb552845fe08eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa85be4ec02c28a05cb552845fe08eb">&#9670;&nbsp;</a></span>precisionMultiplier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double precisionMultiplier = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08335.html#adedb1cd853d00648be239477f7fe4e2a">TWKBWriter.PrecisionWriter.writePoint()</a>, <a class="el" href="a08335.html#afeed21e7153170021427b1e7001d952b">TWKBWriter.PrecisionWriter.writePointArray()</a>, and <a class="el" href="a08339.html#afeed21e7153170021427b1e7001d952b">TWKBWriter.ExtendedPrecisionWriter.writePointArray()</a>.</p>
 
 </div>
 </div>
@@ -204,7 +349,7 @@ Package Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03921.html">opensphere</a></li><li class="navelem"><a class="el" href="a03922.html">geometry</a></li><li class="navelem"><a class="el" href="a03923.html">triangulation</a></li><li class="navelem"><a class="el" href="a08335.html">DoubleComparator</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03933.html">locationtech</a></li><li class="navelem"><a class="el" href="a03934.html">geowave</a></li><li class="navelem"><a class="el" href="a03935.html">core</a></li><li class="navelem"><a class="el" href="a03936.html">geotime</a></li><li class="navelem"><a class="el" href="a03932.html">util</a></li><li class="navelem"><a class="el" href="a08331.html">TWKBWriter</a></li><li class="navelem"><a class="el" href="a08335.html">PrecisionWriter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

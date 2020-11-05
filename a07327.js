@@ -1,17 +1,17 @@
 var a07327 =
 [
-    [ "PrjFiles", "a07327.html#a1f3c9e10a69c07bf96eb862327b93ca0", null ],
-    [ "format", "a07327.html#a6f78cf49dbe1130ff3f19c6930d25552", null ],
-    [ "read", "a07327.html#a9fc047778c66b302492d1542138d282b", null ],
-    [ "read", "a07327.html#a62d4c1d16336c605860d4fbda25cb682", null ],
-    [ "read", "a07327.html#a1e9e785ca71af5bbce8ae72153328927", null ],
-    [ "read", "a07327.html#a3cb2599aab0d76c15caeeadd1493490d", null ],
-    [ "read", "a07327.html#adf482a11b22e78f4ae340cdb01090a74", null ],
-    [ "read", "a07327.html#a53852bae15428eaf880be7bd28cd4bcb", null ],
-    [ "write", "a07327.html#abc5dc0a4f04048d1ae712ab7d4c66551", null ],
-    [ "write", "a07327.html#afd9f72344165183fff676f47d05bd8ab", null ],
-    [ "write", "a07327.html#a82ad436575cab67e2d719363dcbfaa17", null ],
-    [ "write", "a07327.html#a21718a77a191e4e5cddc0454340bb089", null ],
-    [ "write", "a07327.html#af095620b770c3426c55d37c7d697f888", null ],
-    [ "ENCODING", "a07327.html#a772ea58799c988d221448c88ca6d7a5a", null ]
+    [ "Formatter", "a07331.html", "a07331" ],
+    [ "IndentedLineWriter", "a07327.html#a28b3540f49a1994cf4fd06f19823f5e1", null ],
+    [ "IndentedLineWriter", "a07327.html#a95d4445f9e69d5fe9b0340c21a32067d", null ],
+    [ "IndentedLineWriter", "a07327.html#a2cfc775c0bd98691738aa3ee4494e94f", null ],
+    [ "beginNewLine", "a07327.html#a201821920be72364057a68bb8d6e0115", null ],
+    [ "beginNewLine", "a07327.html#ab343177e8e0c07db04d0a3df90e75a9e", null ],
+    [ "content", "a07327.html#a798e6549f9920f48391fb99b802d29e0", null ],
+    [ "content", "a07327.html#abd2d8e3a0209ed6d972d7d4a47cd9d73", null ],
+    [ "getIdentation", "a07327.html#a481a82cbd4fa7955df5d5375eab7068c", null ],
+    [ "getMargin", "a07327.html#a81780590574f588b108afda5f71a906b", null ],
+    [ "setIndentation", "a07327.html#ad8ce95e52d965c3fbc5fa23d3b9c2b24", null ],
+    [ "setMargin", "a07327.html#af49f34a9fb2c467d19b60af3e0f36a5e", null ],
+    [ "toString", "a07327.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "margin", "a07327.html#a3cdc9c0deea1c4f92026c1ccde3662e4", null ]
 ];

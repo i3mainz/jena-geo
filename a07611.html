@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: CachingPostgisFactory Class Reference</title>
+<title>jena-geo: RollbackableProcess Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,58 +61,68 @@ $(document).ready(function(){initNavTree('a07611.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a07608.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CachingPostgisFactory Class Reference</div>  </div>
+<div class="title">RollbackableProcess Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides caching services for a <a class="el" href="a07615.html">DirectPostgisFactory</a>.  
+<p>Extend <a class="el" href="a07579.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions.  
  <a href="a07611.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for CachingPostgisFactory:</div>
+Inheritance diagram for RollbackableProcess:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07610.png" border="0" usemap="#CachingPostgisFactory_inherit__map" alt="Inheritance graph"/></div>
-<map name="CachingPostgisFactory_inherit__map" id="CachingPostgisFactory_inherit__map">
+<div class="center"><img src="a07610.png" border="0" usemap="#RollbackableProcess_inherit__map" alt="Inheritance graph"/></div>
+<map name="RollbackableProcess_inherit__map" id="RollbackableProcess_inherit__map">
+<area shape="rect" id="node2" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. " alt="" coords="57,95,128,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for CachingPostgisFactory:</div>
+Collaboration diagram for RollbackableProcess:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07609.png" border="0" usemap="#CachingPostgisFactory_coll__map" alt="Collaboration graph"/></div>
-<map name="CachingPostgisFactory_coll__map" id="CachingPostgisFactory_coll__map">
+<div class="center"><img src="a07609.png" border="0" usemap="#RollbackableProcess_coll__map" alt="Collaboration graph"/></div>
+<map name="RollbackableProcess_coll__map" id="RollbackableProcess_coll__map">
+<area shape="rect" id="node2" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. " alt="" coords="57,95,128,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac714696f23095326edfaf5df29c8d9ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07615.html">DirectPostgisFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07611.html#ac714696f23095326edfaf5df29c8d9ca">newDataAccess</a> ()  throws FactoryException </td></tr>
-<tr class="memdesc:ac714696f23095326edfaf5df29c8d9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the backing store authority factory.  <a href="#ac714696f23095326edfaf5df29c8d9ca">More...</a><br /></td></tr>
-<tr class="separator:ac714696f23095326edfaf5df29c8d9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:ab8130231ee2038fb04331ecfad24b2b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07611.html#ab8130231ee2038fb04331ecfad24b2b2">CachingPostgisFactory</a> (final DataSource <a class="el" href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">datasource</a>)</td></tr>
-<tr class="memdesc:ab8130231ee2038fb04331ecfad24b2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a instance using the given datasource.  <a href="#ab8130231ee2038fb04331ecfad24b2b2">More...</a><br /></td></tr>
-<tr class="separator:ab8130231ee2038fb04331ecfad24b2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7b65b84fe7d70e008d1597af216b54bd"><td class="memItemLeft" align="right" valign="top">final DataSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">datasource</a></td></tr>
-<tr class="memdesc:a7b65b84fe7d70e008d1597af216b54bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides connection to the PostGIS database.  <a href="#a7b65b84fe7d70e008d1597af216b54bd">More...</a><br /></td></tr>
-<tr class="separator:a7b65b84fe7d70e008d1597af216b54bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a071de472f6ac976c658e4643f3fb3d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07611.html#a071de472f6ac976c658e4643f3fb3d0c">rollback</a> ()  throws ProcessException</td></tr>
+<tr class="memdesc:a071de472f6ac976c658e4643f3fb3d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rollback <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>.  <a href="#a071de472f6ac976c658e4643f3fb3d0c">More...</a><br /></td></tr>
+<tr class="separator:a071de472f6ac976c658e4643f3fb3d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07583.html">ProcessDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#ab0bf04fe2a5e9c37f86e0a00738766bc">getDescriptor</a> ()</td></tr>
+<tr class="memdesc:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the process algorithm and its input/output parameters.  <a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">More...</a><br /></td></tr>
+<tr class="separator:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6e05bc62202398002ecb7aaed46542"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#a1f6e05bc62202398002ecb7aaed46542">getInput</a> ()</td></tr>
+<tr class="memdesc:a1f6e05bc62202398002ecb7aaed46542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the input values given to the <a class="el" href="a07583.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method.  <a href="#a1f6e05bc62202398002ecb7aaed46542">More...</a><br /></td></tr>
+<tr class="separator:a1f6e05bc62202398002ecb7aaed46542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a> ()  throws ProcessException</td></tr>
+<tr class="memdesc:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>.  <a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">More...</a><br /></td></tr>
+<tr class="separator:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8f0f9c2be92818a707e613e127a414"><td class="memItemLeft" align="right" valign="top">ProcessStep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#a6e8f0f9c2be92818a707e613e127a414">getMetadata</a> ()</td></tr>
+<tr class="memdesc:a6e8f0f9c2be92818a707e613e127a414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the process, the geographic inputs and outputs and other metadata.  <a href="#a6e8f0f9c2be92818a707e613e127a414">More...</a><br /></td></tr>
+<tr class="separator:a6e8f0f9c2be92818a707e613e127a414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3105b8b72c72140d73f00070fc1609e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#ac3105b8b72c72140d73f00070fc1609e">addListener</a> (<a class="el" href="a07603.html">ProcessListener</a> listener)</td></tr>
+<tr class="memdesc:ac3105b8b72c72140d73f00070fc1609e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener to the list of objects to inform about the process progress.  <a href="#ac3105b8b72c72140d73f00070fc1609e">More...</a><br /></td></tr>
+<tr class="separator:ac3105b8b72c72140d73f00070fc1609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858002849881b20fda675f8b8c57aebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#a858002849881b20fda675f8b8c57aebc">removeListener</a> (<a class="el" href="a07603.html">ProcessListener</a> listener)</td></tr>
+<tr class="memdesc:a858002849881b20fda675f8b8c57aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener from the list of objects to inform about the process progress.  <a href="#a858002849881b20fda675f8b8c57aebc">More...</a><br /></td></tr>
+<tr class="separator:a858002849881b20fda675f8b8c57aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89afd5200039ec7321a82a2f1d9a036b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07603.html">ProcessListener</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07579.html#a89afd5200039ec7321a82a2f1d9a036b">getListeners</a> ()</td></tr>
+<tr class="memdesc:a89afd5200039ec7321a82a2f1d9a036b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all registered listeners, or an empty array if none.  <a href="#a89afd5200039ec7321a82a2f1d9a036b">More...</a><br /></td></tr>
+<tr class="separator:a89afd5200039ec7321a82a2f1d9a036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides caching services for a <a class="el" href="a07615.html">DirectPostgisFactory</a>. </p>
-<p>Also provides multi-thread concurrency, but this is not the main purpose of this class. </p>
-<p>This class implements only the <a class="el" href="">CRSAuthorityFactory</a> interface because the PostGIS </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;spatial_ref_sys&quot;</span> </div></div><!-- fragment --><p> table is usually not designed for handling anything else that <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> definitions.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys)  </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab8130231ee2038fb04331ecfad24b2b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8130231ee2038fb04331ecfad24b2b2">&#9670;&nbsp;</a></span>CachingPostgisFactory()</h2>
+<div class="textblock"><p>Extend <a class="el" href="a07579.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions. </p>
+<dl class="section author"><dt>Author</dt><dd>Quentin Boileau (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.0</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07579.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">org.geotoolkit.process.Process</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac3105b8b72c72140d73f00070fc1609e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3105b8b72c72140d73f00070fc1609e">&#9670;&nbsp;</a></span>addListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,38 +131,32 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07611.html">CachingPostgisFactory</a> </td>
+          <td class="memname">void addListener </td>
           <td>(</td>
-          <td class="paramtype">final DataSource&#160;</td>
-          <td class="paramname"><em>datasource</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a07603.html">ProcessListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a instance using the given datasource. </p>
-<p>Current implementation caches a maximum of 10 <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> by strong references (more may be cached by weak references), and allows a maximum of 2 concurrent threads searching in the database (there is no maximum number of threads when the requested <a class="el" href="a07579.html" title="Utility class for making use of the  CoordinateReferenceSystem Coordinate Reference System} and assoc...">CRS</a> is presents in the cache).</p>
+<p>Adds a listener to the list of objects to inform about the process progress. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">userHints</td><td>An optional set of hints, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> for the default ones. </td></tr>
-    <tr><td class="paramname">datasource</td><td>Provides connection to the PostGIS database. </td></tr>
+    <tr><td class="paramname">listener</td><td>The listener to add. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">CachingPostgisFactory.datasource</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                       {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        super(DirectPostgisFactory.class, 10, 2);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this.<a class="code" href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">datasource</a> = <a class="code" href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">datasource</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        setTimeout(2, TimeUnit.SECONDS);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="ttc" id="a07611_html_a7b65b84fe7d70e008d1597af216b54bd"><div class="ttname"><a href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">org.geotoolkit.referencing.factory.wkt.CachingPostgisFactory.datasource</a></div><div class="ttdeci">final DataSource datasource</div><div class="ttdoc">Provides connection to the PostGIS database. </div><div class="ttdef"><b>Definition:</b> CachingPostgisFactory.java:45</div></div>
-</div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac714696f23095326edfaf5df29c8d9ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac714696f23095326edfaf5df29c8d9ca">&#9670;&nbsp;</a></span>newDataAccess()</h2>
+<a id="a6fa09e7ca2ab88d0a3dd745ec28a5bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">&#9670;&nbsp;</a></span>call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,36 +165,61 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07615.html">DirectPostgisFactory</a> newDataAccess </td>
+          <td class="memname">ParameterValueGroup call </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> throws FactoryException</td>
+          <td> throws <a class="el" href="a07591.html">ProcessException</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates the backing store authority factory. </p>
-<p>This method is invoked the first time a </p><div class="fragment"><div class="line">createXXX(...) </div></div><!-- fragment --><p> method is invoked. It may also be invoked again if additional factories are needed in different threads, or if all factories have been disposed after the timeout.</p>
-<dl class="section return"><dt>Returns</dt><dd>The backing store to uses in<div class="fragment"><div class="line">createXXX(...) </div></div><!-- fragment --> methods. </dd></dl>
+<p>Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>. </p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>Returning a parameter object may sound strange, since parameters are usually for input values rather than output values. Note however that ISO 19115 do the same, since the <code>ProcessStep</code> outputs is a collection of <code>Source</code> objects. In both cases, the outputs may be used as inputs in the next step of a process chain.}</dd></dl>
+<p>The following relations shall hold: </p>
+<ul>
+<li>
+The  ParameterValueGroup::getDescriptor() descriptor} of the returned parameters is the same instance than <code> <a class="el" href="a07579.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07583.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> getOutputDescriptor()}</code>. </li>
+<li>
+When the process is  <a class="el" href="a07603.html#aa7f9ff22335e9ed3a07035935857b13f" title="Reports that a process has completed successfully. ">ProcessListener::completed</a> completed}, the <a class="el" href="a07587.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a> value shall be the same than the return value of this<div class="fragment"><div class="line"><a class="code" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method. </li>
+</ul>
+<p>{</p>
+<h1><a class="anchor" id="Event"></a>
+notifications}</h1>
+<p>For any  <a class="el" href="a07579.html#ac3105b8b72c72140d73f00070fc1609e" title="Adds a listener to the list of objects to inform about the process progress. ">addListener</a> registered listeners}, this method shall invoke the following methods. Note that all notification events except</p><div class="fragment"><div class="line">progressing </div></div><!-- fragment --><p> are mandatory for all</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> implementations. </p>
+<ul>
+<li>
+<a class="el" href="a07603.html#a7bed9c26a745fe4a7f968be46900b6cb">started</a> (<em>mandatory</em>) at the beginning of this<div class="fragment"><div class="line"><a class="code" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method; </li>
+<li>
+<a class="el" href="a07603.html#a67c0e7b51b0df4f69b57148f46580b65">progressing</a> (<em>optional</em>) during the process execution; </li>
+<li>
+When this<div class="fragment"><div class="line"><a class="code" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method is about to exit, exactly <b>one</b> of the following:<ul>
+<li>
+<a class="el" href="a07603.html#aa7f9ff22335e9ed3a07035935857b13f">completed</a> on success, or </li>
+<li>
+<a class="el" href="a07603.html#a2df903dde386ca28d758548f8e74ed30">failed</a> if an error occurred.</li>
+</ul>
+</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>The computation results as an parameter value groups. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">UnavailableFactoryException</td><td>if the backing store has not been found. </td></tr>
-    <tr><td class="paramname">FactoryException</td><td>if the creation of backing store failed for an other reason. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a07591.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if the process failed.</td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                           {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">final</span> Connection connection;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            connection = <a class="code" href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">datasource</a>.getConnection();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        } <span class="keywordflow">catch</span> (SQLException e) {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (<span class="stringliteral">&quot;08001&quot;</span>.equals(e.getSQLState())) {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="comment">// Connection failed (typically because the server is unknown).</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> UnavailableFactoryException(e.getMessage(), e);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> FactoryException(e);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> DirectPostgisFactory(connection);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        } <span class="keywordflow">catch</span> (SQLException e) {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                connection.close();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            } <span class="keywordflow">catch</span> (SQLException more) {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                e.setNextException(more);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> FactoryException(e);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div><div class="ttc" id="a07611_html_a7b65b84fe7d70e008d1597af216b54bd"><div class="ttname"><a href="a07611.html#a7b65b84fe7d70e008d1597af216b54bd">org.geotoolkit.referencing.factory.wkt.CachingPostgisFactory.datasource</a></div><div class="ttdeci">final DataSource datasource</div><div class="ttdoc">Provides connection to the PostGIS database. </div><div class="ttdef"><b>Definition:</b> CachingPostgisFactory.java:45</div></div>
-</div><!-- fragment -->
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07583.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> </dd>
+<dd>
+ProcessStep::getOutputs() </dd></dl>
+
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7b65b84fe7d70e008d1597af216b54bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b65b84fe7d70e008d1597af216b54bd">&#9670;&nbsp;</a></span>datasource</h2>
+<a id="ab0bf04fe2a5e9c37f86e0a00738766bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">&#9670;&nbsp;</a></span>getDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,19 +228,185 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final DataSource datasource</td>
+          <td class="memname"><a class="el" href="a07583.html">ProcessDescriptor</a> getDescriptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Provides connection to the PostGIS database. </p>
+<p>Description of the process algorithm and its input/output parameters. </p>
+<p>The returned value is the descriptor that created this</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> instance.</p>
+<dl class="section return"><dt>Returns</dt><dd>The process descriptor. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a07611.html#ab8130231ee2038fb04331ecfad24b2b2">CachingPostgisFactory.CachingPostgisFactory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07591.html#a6956c4e3ccaf7414da811e77f1626dd6">ProcessException.ProcessException()</a>.</p>
+
+</div>
+</div>
+<a id="a1f6e05bc62202398002ecb7aaed46542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6e05bc62202398002ecb7aaed46542">&#9670;&nbsp;</a></span>getInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParameterValueGroup getInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the input values given to the <a class="el" href="a07583.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method. </p>
+<p>The  ParameterValueGroup::getDescriptor() descriptor} of those parameters is the instance returned by <code> <a class="el" href="a07579.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07583.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> getInputDescriptor()}</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The input parameter values (never<div class="fragment"><div class="line">null </div></div><!-- fragment --> ).</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07583.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> </dd>
+<dd>
+ProcessStep::getSources() </dd></dl>
+
+</div>
+</div>
+<a id="a89afd5200039ec7321a82a2f1d9a036b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89afd5200039ec7321a82a2f1d9a036b">&#9670;&nbsp;</a></span>getListeners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07603.html">ProcessListener</a> [] getListeners </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all registered listeners, or an empty array if none. </p>
+<dl class="section return"><dt>Returns</dt><dd>The registered listeners. </dd></dl>
+
+</div>
+</div>
+<a id="a6e8f0f9c2be92818a707e613e127a414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8f0f9c2be92818a707e613e127a414">&#9670;&nbsp;</a></span>getMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProcessStep getMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a description of the process, the geographic inputs and outputs and other metadata. </p>
+<p>Those metadata are suitable to processes on geographic data and may not be applicable to every kind of processes. If this parameter is provided, then: </p>
+<ul>
+<li>
+<a class="el" href="">ProcessStep#getDate()</a> is the execution date and time of the process. </li>
+<li>
+<a class="el" href="">ProcessStep#getSources()</a> are the geographic  <a class="el" href="a07579.html#a1f6e05bc62202398002ecb7aaed46542" title="Returns the input values given to the ProcessDescriptor#createProcess(ParameterValueGroup) method...">Process::getInput()</a> process inputs}. </li>
+<li>
+<a class="el" href="">ProcessStep#getOutputs()</a> are the geographic  <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca" title="Executes the process and returns the output in a new ParameterValueGroup. ">Process::call()</a> process outputs}. </li>
+<li>
+<a class="el" href="">ProcessStep#getProcessingInformation()</a> is the  <a class="el" href="a07579.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">Process::getDescriptor()</a> process descriptor}. </li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>A description of the process, the geographic inputs and outputs and other metadata.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
+
+</div>
+</div>
+<a id="a858002849881b20fda675f8b8c57aebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858002849881b20fda675f8b8c57aebc">&#9670;&nbsp;</a></span>removeListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a07603.html">ProcessListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a listener from the list of objects to inform about the process progress. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>The listener to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a071de472f6ac976c658e4643f3fb3d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071de472f6ac976c658e4643f3fb3d0c">&#9670;&nbsp;</a></span>rollback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rollback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws <a class="el" href="a07591.html">ProcessException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rollback <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>. </p>
+<p>Implementers must also handle partial rollback if something when wrong in the middle of <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>.</p>
+<p>For example a process that create two files must not fail on rollback because the last file was not created because of the <a class="el" href="a07579.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> exception.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a07591.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if something when wrong during rollback. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -221,7 +416,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03880.html">referencing</a></li><li class="navelem"><a class="el" href="a03882.html">factory</a></li><li class="navelem"><a class="el" href="a03884.html">wkt</a></li><li class="navelem"><a class="el" href="a07611.html">CachingPostgisFactory</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03902.html">process</a></li><li class="navelem"><a class="el" href="a07611.html">RollbackableProcess</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

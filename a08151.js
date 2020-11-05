@@ -1,13 +1,14 @@
 var a08151 =
 [
-    [ "Integer", "a08151.html#a67ff506bdddeda5e0f9cc1b941237ea7", null ],
-    [ "compareTo", "a08151.html#a98a51d8ad1e5503c87f17878896c7d88", null ],
-    [ "ranks", "a08151.html#abb150dc13c316a480c404b1703c03990", null ],
-    [ "ranks", "a08151.html#a7e3ac659899192333adea39b87f41331", null ],
-    [ "ranks", "a08151.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
-    [ "ranks", "a08151.html#abb82129695e9a7b212788912ccc45539", null ],
-    [ "ranks", "a08151.html#ad3b1488acd654783f7a4dc632814441f", null ],
-    [ "ranks", "a08151.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
-    [ "ranks", "a08151.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
-    [ "value", "a08151.html#a899c1b74df7f8fda2fcd2c85d9185da8", null ]
+    [ "MultiDimensionMove", "a08151.html#a36bd4cbe1726e044a3e651a741e909d4", null ],
+    [ "areColinear", "a08151.html#afa97ec90b4514c51c9ac27b42d68b4d7", null ],
+    [ "characteristics", "a08151.html#a673dea3c18a0e22d79f1b634c037c73f", null ],
+    [ "estimateSize", "a08151.html#adc7dfb268a5eeda4d412d655163663fd", null ],
+    [ "tryAdvance", "a08151.html#af9292f4c10f19f790a29e9cdfa0e313f", null ],
+    [ "trySplit", "a08151.html#a59d451ed808fa8e7a0c0416239ed410f", null ],
+    [ "endPoint", "a08151.html#af00da1fe605ef44791d599ecf157ae85", null ],
+    [ "moveDirs", "a08151.html#ac8fa38f76c776ad7f18b41b805559f0e", null ],
+    [ "previousPoint", "a08151.html#a7d70170348f00449fb589eccac7d846f", null ],
+    [ "segmentVector", "a08151.html#ade7e33cda8dd7cd4e63d32d2eee1593c", null ],
+    [ "startPoint", "a08151.html#aa97caef1764972e992bc82428f880936", null ]
 ];

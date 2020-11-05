@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TiledImage Class Reference</title>
+<title>jena-geo: BandedSampleConverter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,192 +61,158 @@ $(document).ready(function(){initNavTree('a06655.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a06652.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TiledImage Class Reference</div>  </div>
+<div class="title">BandedSampleConverter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A rendered image which can contain an arbitrary number of tiles.  
+<p>An image where each sample value is computed independently of other sample values and independently of neighbor points.  
  <a href="a06655.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for TiledImage:</div>
+Inheritance diagram for BandedSampleConverter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06654.png" border="0" usemap="#TiledImage_inherit__map" alt="Inheritance graph"/></div>
-<map name="TiledImage_inherit__map" id="TiledImage_inherit__map">
-<area shape="rect" id="node2" href="a06611.html" title="Base class of RenderedImage implementations in Apache SIS. " alt="" coords="15,80,110,107"/>
+<div class="center"><img src="a06654.png" border="0" usemap="#BandedSampleConverter_inherit__map" alt="Inheritance graph"/></div>
+<map name="BandedSampleConverter_inherit__map" id="BandedSampleConverter_inherit__map">
+<area shape="rect" id="node3" href="a06659.html" title="A. " alt="" coords="5,155,224,181"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for TiledImage:</div>
+Collaboration diagram for BandedSampleConverter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06653.png" border="0" usemap="#TiledImage_coll__map" alt="Collaboration graph"/></div>
-<map name="TiledImage_coll__map" id="TiledImage_coll__map">
-<area shape="rect" id="node2" href="a06611.html" title="Base class of RenderedImage implementations in Apache SIS. " alt="" coords="70,95,165,121"/>
+<div class="center"><img src="a06653.png" border="0" usemap="#BandedSampleConverter_coll__map" alt="Collaboration graph"/></div>
+<map name="BandedSampleConverter_coll__map" id="BandedSampleConverter_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06659.html">Writable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A.  <a href="a06659.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b434f2546fbb7822d394df9e3472dbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage</a> (final ColorModel <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, final int <a class="el" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a>, final int <a class="el" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">height</a>, final int <a class="el" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a>, final int <a class="el" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a>, final Raster... <a class="el" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>)</td></tr>
-<tr class="memdesc:a5b434f2546fbb7822d394df9e3472dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new tiled image.  <a href="#a5b434f2546fbb7822d394df9e3472dbe">More...</a><br /></td></tr>
-<tr class="separator:a5b434f2546fbb7822d394df9e3472dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8049f6987505f6bb10a9caabd780c748"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a8049f6987505f6bb10a9caabd780c748">getProperty</a> (final String key)</td></tr>
+<tr class="memdesc:a8049f6987505f6bb10a9caabd780c748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a property from this image.  <a href="#a8049f6987505f6bb10a9caabd780c748">More...</a><br /></td></tr>
+<tr class="separator:a8049f6987505f6bb10a9caabd780c748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe92749c0f415ca061399e1a549f7c5"><td class="memItemLeft" align="right" valign="top">String []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a8fe92749c0f415ca061399e1a549f7c5">getPropertyNames</a> ()</td></tr>
+<tr class="memdesc:a8fe92749c0f415ca061399e1a549f7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all recognized properties, or.  <a href="#a8fe92749c0f415ca061399e1a549f7c5">More...</a><br /></td></tr>
+<tr class="separator:a8fe92749c0f415ca061399e1a549f7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9f91617f2855770996f11b9d2dd94d"><td class="memItemLeft" align="right" valign="top">ColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a2e9f91617f2855770996f11b9d2dd94d">getColorModel</a> ()</td></tr>
-<tr class="memdesc:a2e9f91617f2855770996f11b9d2dd94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color model, or.  <a href="#a2e9f91617f2855770996f11b9d2dd94d">More...</a><br /></td></tr>
+<tr class="memdesc:a2e9f91617f2855770996f11b9d2dd94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color model associated with all rasters of this image.  <a href="#a2e9f91617f2855770996f11b9d2dd94d">More...</a><br /></td></tr>
 <tr class="separator:a2e9f91617f2855770996f11b9d2dd94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd28f1cc9555c50bbb29f4181d18ca5"><td class="memItemLeft" align="right" valign="top">SampleModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a6fd28f1cc9555c50bbb29f4181d18ca5">getSampleModel</a> ()</td></tr>
-<tr class="memdesc:a6fd28f1cc9555c50bbb29f4181d18ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sample model.  <a href="#a6fd28f1cc9555c50bbb29f4181d18ca5">More...</a><br /></td></tr>
-<tr class="separator:a6fd28f1cc9555c50bbb29f4181d18ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a0997183f24da19b776d96c1052998"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a67a0997183f24da19b776d96c1052998">getWidth</a> ()</td></tr>
+<tr class="memdesc:a67a0997183f24da19b776d96c1052998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width (in pixels) of this image.  <a href="#a67a0997183f24da19b776d96c1052998">More...</a><br /></td></tr>
+<tr class="separator:a67a0997183f24da19b776d96c1052998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a07efb2a4e9a982688c8bb3c3f21d1092">getHeight</a> ()</td></tr>
+<tr class="memdesc:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height (in pixels) of this image.  <a href="#a07efb2a4e9a982688c8bb3c3f21d1092">More...</a><br /></td></tr>
+<tr class="separator:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec43fe85c74aa5a7cadc2e6e8d2410f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX</a> ()</td></tr>
 <tr class="memdesc:a1ec43fe85c74aa5a7cadc2e6e8d2410f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum <em>x</em> coordinate (inclusive) of this image.  <a href="#a1ec43fe85c74aa5a7cadc2e6e8d2410f">More...</a><br /></td></tr>
 <tr class="separator:a1ec43fe85c74aa5a7cadc2e6e8d2410f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8e603e4bb15d663afe6fc2c98bc85d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY</a> ()</td></tr>
 <tr class="memdesc:afc8e603e4bb15d663afe6fc2c98bc85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum <em>y</em> coordinate (inclusive) of this image.  <a href="#afc8e603e4bb15d663afe6fc2c98bc85d">More...</a><br /></td></tr>
 <tr class="separator:afc8e603e4bb15d663afe6fc2c98bc85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a0997183f24da19b776d96c1052998"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a67a0997183f24da19b776d96c1052998">getWidth</a> ()</td></tr>
-<tr class="memdesc:a67a0997183f24da19b776d96c1052998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of pixels along X axis in the whole rendered image.  <a href="#a67a0997183f24da19b776d96c1052998">More...</a><br /></td></tr>
-<tr class="separator:a67a0997183f24da19b776d96c1052998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a07efb2a4e9a982688c8bb3c3f21d1092">getHeight</a> ()</td></tr>
-<tr class="memdesc:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of pixels along Y axis in the whole rendered image.  <a href="#a07efb2a4e9a982688c8bb3c3f21d1092">More...</a><br /></td></tr>
-<tr class="separator:a07efb2a4e9a982688c8bb3c3f21d1092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55691c79b5e75d785828fa7b6f279c06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a55691c79b5e75d785828fa7b6f279c06">getTileWidth</a> ()</td></tr>
-<tr class="memdesc:a55691c79b5e75d785828fa7b6f279c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the tile width in pixels.  <a href="#a55691c79b5e75d785828fa7b6f279c06">More...</a><br /></td></tr>
-<tr class="separator:a55691c79b5e75d785828fa7b6f279c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25fe2752749e8df21fc2a8656d76add2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a25fe2752749e8df21fc2a8656d76add2">getTileHeight</a> ()</td></tr>
-<tr class="memdesc:a25fe2752749e8df21fc2a8656d76add2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the tile height in pixels.  <a href="#a25fe2752749e8df21fc2a8656d76add2">More...</a><br /></td></tr>
-<tr class="separator:a25fe2752749e8df21fc2a8656d76add2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221fbe8552df714e1483b0005f1d84d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX</a> ()</td></tr>
-<tr class="memdesc:a221fbe8552df714e1483b0005f1d84d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tile index in the X direction.  <a href="#a221fbe8552df714e1483b0005f1d84d6">More...</a><br /></td></tr>
+<tr class="memdesc:a221fbe8552df714e1483b0005f1d84d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tile index in the <em>x</em> direction.  <a href="#a221fbe8552df714e1483b0005f1d84d6">More...</a><br /></td></tr>
 <tr class="separator:a221fbe8552df714e1483b0005f1d84d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8574cc85ad8d13e052b8146b81825969"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY</a> ()</td></tr>
-<tr class="memdesc:a8574cc85ad8d13e052b8146b81825969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tile index in the Y direction.  <a href="#a8574cc85ad8d13e052b8146b81825969">More...</a><br /></td></tr>
+<tr class="memdesc:a8574cc85ad8d13e052b8146b81825969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum tile index in the <em>y</em> direction.  <a href="#a8574cc85ad8d13e052b8146b81825969">More...</a><br /></td></tr>
 <tr class="separator:a8574cc85ad8d13e052b8146b81825969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a565050e7adf86a89e49c949b14af58bc"><td class="memItemLeft" align="right" valign="top">Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a565050e7adf86a89e49c949b14af58bc">getTile</a> (int tileX, int tileY)</td></tr>
-<tr class="memdesc:a565050e7adf86a89e49c949b14af58bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the tile at the given location in tile coordinates.  <a href="#a565050e7adf86a89e49c949b14af58bc">More...</a><br /></td></tr>
-<tr class="separator:a565050e7adf86a89e49c949b14af58bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016c1e8b58082cf2add38a25a00fd20d"><td class="memItemLeft" align="right" valign="top">Vector&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a> ()</td></tr>
-<tr class="memdesc:a016c1e8b58082cf2add38a25a00fd20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the immediate sources of image data for this image.  <a href="#a016c1e8b58082cf2add38a25a00fd20d">More...</a><br /></td></tr>
-<tr class="separator:a016c1e8b58082cf2add38a25a00fd20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7194611748f79e9ba7aed9afe17a52f2"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a7194611748f79e9ba7aed9afe17a52f2">getProperty</a> (String key)</td></tr>
-<tr class="memdesc:a7194611748f79e9ba7aed9afe17a52f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a property from this image.  <a href="#a7194611748f79e9ba7aed9afe17a52f2">More...</a><br /></td></tr>
-<tr class="separator:a7194611748f79e9ba7aed9afe17a52f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe92749c0f415ca061399e1a549f7c5"><td class="memItemLeft" align="right" valign="top">String []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a8fe92749c0f415ca061399e1a549f7c5">getPropertyNames</a> ()</td></tr>
-<tr class="memdesc:a8fe92749c0f415ca061399e1a549f7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all recognized properties, or.  <a href="#a8fe92749c0f415ca061399e1a549f7c5">More...</a><br /></td></tr>
-<tr class="separator:a8fe92749c0f415ca061399e1a549f7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a187945475e730bfa340a10f63224e91f"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a187945475e730bfa340a10f63224e91f">getBounds</a> ()</td></tr>
-<tr class="memdesc:a187945475e730bfa340a10f63224e91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image location (<em>x</em>, <em>y</em>) and image size (<em>width</em>, <em>height</em>).  <a href="#a187945475e730bfa340a10f63224e91f">More...</a><br /></td></tr>
-<tr class="separator:a187945475e730bfa340a10f63224e91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5583e1bac8e604e2bb45632ce9610066"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">getNumXTiles</a> ()</td></tr>
-<tr class="memdesc:a5583e1bac8e604e2bb45632ce9610066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of tiles in the <em>x</em> direction.  <a href="#a5583e1bac8e604e2bb45632ce9610066">More...</a><br /></td></tr>
-<tr class="separator:a5583e1bac8e604e2bb45632ce9610066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbefd1ebc9e316c7274ee7475b1c1cfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">getNumYTiles</a> ()</td></tr>
-<tr class="memdesc:afbefd1ebc9e316c7274ee7475b1c1cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of tiles in the <em>y</em> direction.  <a href="#afbefd1ebc9e316c7274ee7475b1c1cfb">More...</a><br /></td></tr>
-<tr class="separator:afbefd1ebc9e316c7274ee7475b1c1cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa0e2adab20b73ac15d33a6b7319460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a9aa0e2adab20b73ac15d33a6b7319460">getTileGridXOffset</a> ()</td></tr>
-<tr class="memdesc:a9aa0e2adab20b73ac15d33a6b7319460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>x</em> coordinate of the upper-left pixel of tile (0, 0).  <a href="#a9aa0e2adab20b73ac15d33a6b7319460">More...</a><br /></td></tr>
-<tr class="separator:a9aa0e2adab20b73ac15d33a6b7319460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc0e92478ecf1053f868322615cb524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#adcc0e92478ecf1053f868322615cb524">getTileGridYOffset</a> ()</td></tr>
-<tr class="memdesc:adcc0e92478ecf1053f868322615cb524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <em>y</em> coordinate of the upper-left pixel of tile (0, 0).  <a href="#adcc0e92478ecf1053f868322615cb524">More...</a><br /></td></tr>
-<tr class="separator:adcc0e92478ecf1053f868322615cb524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61598bd225152d9230163c37ec1013fa"><td class="memItemLeft" align="right" valign="top">Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a61598bd225152d9230163c37ec1013fa">getData</a> ()</td></tr>
-<tr class="memdesc:a61598bd225152d9230163c37ec1013fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of this image as one large tile.  <a href="#a61598bd225152d9230163c37ec1013fa">More...</a><br /></td></tr>
-<tr class="separator:a61598bd225152d9230163c37ec1013fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb37c06c9b1e12fb56e519a393724ba2"><td class="memItemLeft" align="right" valign="top">Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#abb37c06c9b1e12fb56e519a393724ba2">getData</a> (final Rectangle aoi)</td></tr>
-<tr class="memdesc:abb37c06c9b1e12fb56e519a393724ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of an arbitrary region of this image.  <a href="#abb37c06c9b1e12fb56e519a393724ba2">More...</a><br /></td></tr>
-<tr class="separator:abb37c06c9b1e12fb56e519a393724ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea1c854683c572814de3ca72b6402ccd"><td class="memItemLeft" align="right" valign="top">WritableRaster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#aea1c854683c572814de3ca72b6402ccd">copyData</a> (WritableRaster raster)</td></tr>
-<tr class="memdesc:aea1c854683c572814de3ca72b6402ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies an arbitrary rectangular region of this image to the supplied writable raster.  <a href="#aea1c854683c572814de3ca72b6402ccd">More...</a><br /></td></tr>
-<tr class="separator:aea1c854683c572814de3ca72b6402ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59366468aea6849551000277c6058ff1"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">verify</a> ()</td></tr>
-<tr class="memdesc:a59366468aea6849551000277c6058ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies whether image layout information are consistent.  <a href="#a59366468aea6849551000277c6058ff1">More...</a><br /></td></tr>
-<tr class="separator:a59366468aea6849551000277c6058ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
-<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this image for debugging purpose.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
-<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0970bf85218f8e14c9a7d6f6b15eaacd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06611.html#a0970bf85218f8e14c9a7d6f6b15eaacd">SAMPLE_RESOLUTIONS_KEY</a> = &quot;SampleResolution&quot;</td></tr>
-<tr class="memdesc:a0970bf85218f8e14c9a7d6f6b15eaacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key of a property defining the resolutions of sample values in each band.  <a href="#a0970bf85218f8e14c9a7d6f6b15eaacd">More...</a><br /></td></tr>
-<tr class="separator:a0970bf85218f8e14c9a7d6f6b15eaacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06655.html">BandedSampleConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">create</a> (final RenderedImage source, ImageLayout layout, final int targetType, final ColorModel <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, final NumberRange&lt;?&gt;[] ranges, final MathTransform1D... <a class="el" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>)</td></tr>
+<tr class="memdesc:a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new image of the given data type which will compute values using the given converters.  <a href="#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">More...</a><br /></td></tr>
+<tr class="separator:a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:a575c5eb1900b2af25b9b9452f074bce3"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">height</a></td></tr>
-<tr class="separator:a575c5eb1900b2af25b9b9452f074bce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c25a6adae78d5d98f5feb1c9123d20"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a></td></tr>
-<tr class="separator:a73c25a6adae78d5d98f5feb1c9123d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a137f1d5956222eed138d532f55097b37"><td class="memItemLeft" align="right" valign="top">Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a137f1d5956222eed138d532f55097b37">computeTile</a> (final int tileX, final int tileY, WritableRaster target)  throws TransformException </td></tr>
+<tr class="memdesc:a137f1d5956222eed138d532f55097b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the tile at specified indices.  <a href="#a137f1d5956222eed138d532f55097b37">More...</a><br /></td></tr>
+<tr class="separator:a137f1d5956222eed138d532f55097b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a38d3fa2019bb1e055a432900ef938440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a> (final RenderedImage source, final BandedSampleModel sampleModel, final ColorModel <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, final NumberRange&lt;?&gt;[] ranges, final MathTransform1D[] <a class="el" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>)</td></tr>
+<tr class="memdesc:a38d3fa2019bb1e055a432900ef938440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new image which will compute values using the given converters.  <a href="#a38d3fa2019bb1e055a432900ef938440">More...</a><br /></td></tr>
+<tr class="separator:a38d3fa2019bb1e055a432900ef938440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:acc5b853af3ec99b5b068393cf3ca63c3"><td class="memItemLeft" align="right" valign="top">final MathTransform1D []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a></td></tr>
+<tr class="memdesc:acc5b853af3ec99b5b068393cf3ca63c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transfer functions to apply on each band of the source image.  <a href="#acc5b853af3ec99b5b068393cf3ca63c3">More...</a><br /></td></tr>
+<tr class="separator:acc5b853af3ec99b5b068393cf3ca63c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6300c65e347a4e78a9bc7900d80fd91"><td class="memItemLeft" align="right" valign="top">final ColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a></td></tr>
-<tr class="memdesc:ae6300c65e347a4e78a9bc7900d80fd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The color model, or.  <a href="#ae6300c65e347a4e78a9bc7900d80fd91">More...</a><br /></td></tr>
+<tr class="memdesc:ae6300c65e347a4e78a9bc7900d80fd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The color model for the expected range of values.  <a href="#ae6300c65e347a4e78a9bc7900d80fd91">More...</a><br /></td></tr>
 <tr class="separator:ae6300c65e347a4e78a9bc7900d80fd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b6177f2f08d75a1ab13fc5b969355d"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a></td></tr>
-<tr class="memdesc:af4b6177f2f08d75a1ab13fc5b969355d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of pixels along X or Y axis in the whole rendered image.  <a href="#af4b6177f2f08d75a1ab13fc5b969355d">More...</a><br /></td></tr>
-<tr class="separator:af4b6177f2f08d75a1ab13fc5b969355d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad89c58bf763b7a7e6458b36d0435cb91"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a></td></tr>
-<tr class="memdesc:ad89c58bf763b7a7e6458b36d0435cb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the first tile in the image.  <a href="#ad89c58bf763b7a7e6458b36d0435cb91">More...</a><br /></td></tr>
-<tr class="separator:ad89c58bf763b7a7e6458b36d0435cb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e851948554dfd009a0c55d593f6a74b"><td class="memItemLeft" align="right" valign="top">final Raster []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a></td></tr>
-<tr class="memdesc:a4e851948554dfd009a0c55d593f6a74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tiles.  <a href="#a4e851948554dfd009a0c55d593f6a74b">More...</a><br /></td></tr>
-<tr class="separator:a4e851948554dfd009a0c55d593f6a74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6cec4511dd5e677bf3f9b2793b1f2e"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a></td></tr>
+<tr class="memdesc:a8e6cec4511dd5e677bf3f9b2793b1f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sample resolutions, or.  <a href="#a8e6cec4511dd5e677bf3f9b2793b1f2e">More...</a><br /></td></tr>
+<tr class="separator:a8e6cec4511dd5e677bf3f9b2793b1f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A rendered image which can contain an arbitrary number of tiles. </p>
-<p>Tiles are stored in memory. This class may become public in a future version, but not yet because managing large tiled images would require a more sophisticated class than current implementation.</p>
-<p>This class should not perform any computation; all tiles are given at construction time. This requirement makes this class thread-safe and concurrent without the need for synchronization.</p>
-<dl class="section author"><dt>Author</dt><dd>Rémi Maréchal (Geomatys) </dd>
-<dd>
-Martin Desruisseaux (Geomatys) </dd></dl>
+<div class="textblock"><p>An image where each sample value is computed independently of other sample values and independently of neighbor points. </p>
+<p>Values are computed by a separated <a class="el" href="">MathTransform1D</a> for each band (by contrast, an</p><div class="fragment"><div class="line">InterleavedSampleConverter </div></div><!-- fragment --><p> would handle all sample values as a coordinate tuple). Current implementation makes the following simplifications:</p>
+<ul>
+<li>
+The image has exactly one source. </li>
+<li>
+Image layout (minimum coordinates, image size, tile grid) is the same than source image layout, unless the source has too large tiles in which case <a class="el" href="">ImageLayout</a> automatically subdivides the tile grid in smaller tiles. </li>
+<li>
+Image is computed and stored on a band-by-band basis using a <a class="el" href="">BandedSampleModel</a>. </li>
+<li>
+Calculation is performed on<div class="fragment"><div class="line"><span class="keywordtype">float</span> </div></div><!-- fragment --> or<div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --> numbers. </li>
+</ul>
+<p>If the given source is writable and the transform are invertible, then the</p><div class="fragment"><div class="line"><a class="code" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a> </div></div><!-- fragment --><p> returned by the <a class="el" href="a06655.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">create(…)</a> method will implement <a class="el" href="">WritableRenderedImage</a> interface. In such case, writing converted values will cause the corresponding source values to be updated too.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5b434f2546fbb7822d394df9e3472dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b434f2546fbb7822d394df9e3472dbe">&#9670;&nbsp;</a></span>TiledImage()</h2>
+<a id="a38d3fa2019bb1e055a432900ef938440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d3fa2019bb1e055a432900ef938440">&#9670;&nbsp;</a></span>BandedSampleConverter()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06655.html">TiledImage</a> </td>
+          <td class="memname"><a class="el" href="a06655.html">BandedSampleConverter</a> </td>
           <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final BandedSampleModel&#160;</td>
+          <td class="paramname"><em>sampleModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">final ColorModel&#160;</td>
           <td class="paramname"><em>colorModel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
+          <td class="paramtype">final NumberRange&lt;?&gt; []&#160;</td>
+          <td class="paramname"><em>ranges</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>minTileX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>minTileY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Raster...&#160;</td>
-          <td class="paramname"><em>tiles</em>&#160;</td>
+          <td class="paramtype">final MathTransform1D []&#160;</td>
+          <td class="paramname"><em>converters</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -254,35 +220,37 @@ Martin Desruisseaux (Geomatys) </dd></dl>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Creates a new tiled image. </p>
-<p>The first tile in the given array must be the one located at the minimal tile indices. All tiles must have the same size and the same sample model and must be sorted in row-major fashion (this is not verified in current version, but may be in the future).</p>
+<p>Creates a new image which will compute values using the given converters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">colorModel</td><td>the color model, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </td></tr>
-    <tr><td class="paramname">width</td><td>number of pixels along X axis in the whole rendered image. </td></tr>
-    <tr><td class="paramname">height</td><td>number of pixels along Y axis in the whole rendered image. </td></tr>
-    <tr><td class="paramname">minTileX</td><td>minimum tile index in the X direction. </td></tr>
-    <tr><td class="paramname">minTileY</td><td>minimum tile index in the Y direction. </td></tr>
-    <tr><td class="paramname">tiles</td><td>the tiles. Must contains at least one element. </td></tr>
+    <tr><td class="paramname">source</td><td>the image for which to convert sample values. </td></tr>
+    <tr><td class="paramname">sampleModel</td><td>the sample model shared by all tiles in this image. </td></tr>
+    <tr><td class="paramname">colorModel</td><td>the color model for the expected range of values, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+    <tr><td class="paramname">ranges</td><td>the expected range of values for each band, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </td></tr>
+    <tr><td class="paramname">converters</td><td>the transfer functions to apply on each band of the source image. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">TiledImage.colorModel</a>, <a class="el" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">TiledImage.height</a>, <a class="el" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">TiledImage.minTileX</a>, <a class="el" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">TiledImage.minTileY</a>, <a class="el" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">TiledImage.tiles</a>, and <a class="el" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">TiledImage.width</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        ArgumentChecks.ensureStrictlyPositive(<span class="stringliteral">&quot;width&quot;</span>,  <a class="code" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a>);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        ArgumentChecks.ensureStrictlyPositive(<span class="stringliteral">&quot;height&quot;</span>, <a class="code" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">height</a>);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        ArgumentChecks.ensureNonEmpty        (<span class="stringliteral">&quot;tiles&quot;</span>,  <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        this.<a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a> = <a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        this.<a class="code" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a>      = <a class="code" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        this.<a class="code" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">height</a>     = <a class="code" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">height</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        this.<a class="code" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a>   = <a class="code" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        this.<a class="code" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a>   = <a class="code" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        this.<a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>      = <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="ttc" id="a06655_html_af4b6177f2f08d75a1ab13fc5b969355d"><div class="ttname"><a href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">org.apache.sis.internal.coverage.j2d.TiledImage.width</a></div><div class="ttdeci">final int width</div><div class="ttdoc">Number of pixels along X or Y axis in the whole rendered image. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:49</div></div>
-<div class="ttc" id="a06655_html_ad89c58bf763b7a7e6458b36d0435cb91"><div class="ttname"><a href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">org.apache.sis.internal.coverage.j2d.TiledImage.minTileX</a></div><div class="ttdeci">final int minTileX</div><div class="ttdoc">Index of the first tile in the image. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:55</div></div>
-<div class="ttc" id="a06655_html_a575c5eb1900b2af25b9b9452f074bce3"><div class="ttname"><a href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">org.apache.sis.internal.coverage.j2d.TiledImage.height</a></div><div class="ttdeci">final int height</div><div class="ttdef"><b>Definition:</b> TiledImage.java:49</div></div>
-<div class="ttc" id="a06655_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.TiledImage.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model, or. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:44</div></div>
-<div class="ttc" id="a06655_html_a73c25a6adae78d5d98f5feb1c9123d20"><div class="ttname"><a href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">org.apache.sis.internal.coverage.j2d.TiledImage.minTileY</a></div><div class="ttdeci">final int minTileY</div><div class="ttdef"><b>Definition:</b> TiledImage.java:55</div></div>
-<div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
+<p class="reference">References <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">BandedSampleConverter.colorModel</a>, <a class="el" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">BandedSampleConverter.converters</a>, and <a class="el" href="a06675.html#a05a539736557672cbcf02b2a3e3ca7b2">ImageUtilities.getDataType()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06655.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">BandedSampleConverter.create()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        super(sampleModel, source);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        this.<a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a> = <a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        this.<a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a> = <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">         * Get an estimation of the resolution, arbitrarily looking in the middle of the range of values.</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">         * If the converters are linear (which is the most common case), the middle value does not matter</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">         * except if it falls on a &quot;no data&quot; value.</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">boolean</span> hasResolutions = <span class="keyword">false</span>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span>[] resolutions = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>.length];</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;resolutions.length; i++) {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">             * Get the sample value in the middle of the range of valid values for the current band.</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">             * If no range was explicitly given, use the approximate average of all possible values.</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">double</span> middle = Double.NaN;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (ranges != null) {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keyword">final</span> NumberRange&lt;?&gt; range = ranges[i];</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">if</span> (range != null) {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    middle = (range.getMinDouble() + range.getMaxDouble()) / 2;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (!Double.isFinite(middle)) {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">switch</span> (ImageUtilities.getDataType(source)) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">default</span>:                     middle = 0;      <span class="keywordflow">break</span>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keywordflow">case</span> DataBuffer.TYPE_BYTE:   middle = 0x80;   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT: middle = 0x8000; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">             * Get the derivative in the middle value, which is constant everywhere</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">             * in the common case of a linear transform.</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keyword">final</span> MathTransform1D c = <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>[i];</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordtype">double</span> r;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                r = c.derivative(middle);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">if</span> (!Double.isFinite(r)) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    r = c.derivative(1);                <span class="comment">// Second attempt if the middle value didn&#39;t work.</span></div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            } <span class="keywordflow">catch</span> (TransformException e) {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                r = Double.NaN;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            resolutions[i] = r;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            hasResolutions |= Double.isFinite(r);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a> = hasResolutions ? resolutions : null;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div><div class="ttc" id="a06655_html_acc5b853af3ec99b5b068393cf3ca63c3"><div class="ttname"><a href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.converters</a></div><div class="ttdeci">final MathTransform1D [] converters</div><div class="ttdoc">The transfer functions to apply on each band of the source image. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:67</div></div>
+<div class="ttc" id="a06655_html_a8e6cec4511dd5e677bf3f9b2793b1f2e"><div class="ttname"><a href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.sampleResolutions</a></div><div class="ttdeci">final double [] sampleResolutions</div><div class="ttdoc">The sample resolutions, or. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:77</div></div>
+<div class="ttc" id="a06655_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model for the expected range of values. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:72</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aea1c854683c572814de3ca72b6402ccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea1c854683c572814de3ca72b6402ccd">&#9670;&nbsp;</a></span>copyData()</h2>
+<a id="a137f1d5956222eed138d532f55097b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137f1d5956222eed138d532f55097b37">&#9670;&nbsp;</a></span>computeTile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,40 +259,58 @@ Martin Desruisseaux (Geomatys) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">WritableRaster copyData </td>
+          <td class="memname">Raster computeTile </td>
           <td>(</td>
-          <td class="paramtype">WritableRaster&#160;</td>
-          <td class="paramname"><em>raster</em></td><td>)</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>tileY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WritableRaster&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws TransformException</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copies an arbitrary rectangular region of this image to the supplied writable raster. </p>
-<p>The region to be copied is determined from the bounds of the supplied raster. The supplied raster must have a <a class="el" href="">SampleModel</a> that is compatible with this image. If the raster is</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> , an raster is created by this method.</p>
+<p>Computes the tile at specified indices. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">raster</td><td>the raster to hold a copy of this image, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+    <tr><td class="paramname">tileX</td><td>the column index of the tile to compute. </td></tr>
+    <tr><td class="paramname">tileY</td><td>the row index of the tile to compute. </td></tr>
+    <tr><td class="paramname">target</td><td>if the tile already exists but needs to be updated, the tile to update. Otherwise<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the given raster if it was not-null, or a new raster otherwise. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">PlanarImage.createWritableRaster()</a>, and <a class="el" href="a06635.html#a0e3506e32701066c3620b43975e9206f">ImageUtilities.getBounds()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06611.html#a61598bd225152d9230163c37ec1013fa">PlanarImage.getData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                                          {</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keyword">final</span> Rectangle aoi;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">if</span> (raster != null) {</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            aoi = raster.getBounds();</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            aoi = ImageUtilities.getBounds(<span class="keyword">this</span>);</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            raster = <a class="code" href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">createWritableRaster</a>(aoi);</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        }</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <a class="code" href="a06611.html#aea1c854683c572814de3ca72b6402ccd">copyData</a>(aoi, raster);</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">return</span> raster;</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div><div class="ttc" id="a06611_html_ad79ed29106d920aac8ccdb6fcd8b42f4"><div class="ttname"><a href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">org.apache.sis.image.PlanarImage.createWritableRaster</a></div><div class="ttdeci">WritableRaster createWritableRaster(final Rectangle aoi)</div><div class="ttdoc">Creates a raster with the same sample model than this image and with the given size and location...</div><div class="ttdef"><b>Definition:</b> PlanarImage.java:308</div></div>
-<div class="ttc" id="a06611_html_aea1c854683c572814de3ca72b6402ccd"><div class="ttname"><a href="a06611.html#aea1c854683c572814de3ca72b6402ccd">org.apache.sis.image.PlanarImage.copyData</a></div><div class="ttdeci">WritableRaster copyData(WritableRaster raster)</div><div class="ttdoc">Copies an arbitrary rectangular region of this image to the supplied writable raster. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:359</div></div>
+<dl class="section return"><dt>Returns</dt><dd>computed tile for the given indices (can not be null). </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">TransformException</td><td>if an error occurred while converting a sample value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                                                                                    {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">if</span> (target == null) {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            target = createTile(tileX, tileY);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        }</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        Transferer.create(getSource(0), target).compute(<a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span> target;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div><div class="ttc" id="a06655_html_acc5b853af3ec99b5b068393cf3ca63c3"><div class="ttname"><a href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.converters</a></div><div class="ttdeci">final MathTransform1D [] converters</div><div class="ttdoc">The transfer functions to apply on each band of the source image. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:67</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a187945475e730bfa340a10f63224e91f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a187945475e730bfa340a10f63224e91f">&#9670;&nbsp;</a></span>getBounds()</h2>
+<a id="a89d4f7b0b4bb8a4f3a6efd49a02f2a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,32 +319,76 @@ Martin Desruisseaux (Geomatys) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Rectangle getBounds </td>
+          <td class="memname">static <a class="el" href="a06655.html">BandedSampleConverter</a> create </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">ImageLayout&#160;</td>
+          <td class="paramname"><em>layout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>targetType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final ColorModel&#160;</td>
+          <td class="paramname"><em>colorModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final NumberRange&lt;?&gt; []&#160;</td>
+          <td class="paramname"><em>ranges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final MathTransform1D...&#160;</td>
+          <td class="paramname"><em>converters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the image location (<em>x</em>, <em>y</em>) and image size (<em>width</em>, <em>height</em>). </p>
-<p>This is a convenience method encapsulating the results of 4 method calls in a single object.</p>
-<dl class="section return"><dt>Returns</dt><dd>the image location and image size as a new rectangle.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06655.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f" title="Returns the minimum x coordinate (inclusive) of this image. ">getMinX()</a> </dd>
-<dd>
-<a class="el" href="a06655.html#afc8e603e4bb15d663afe6fc2c98bc85d" title="Returns the minimum y coordinate (inclusive) of this image. ">getMinY()</a> </dd>
-<dd>
-<a class="el" href="a06655.html#a67a0997183f24da19b776d96c1052998" title="Returns the number of pixels along X axis in the whole rendered image. ">getWidth()</a> </dd>
-<dd>
-<a class="el" href="a06655.html#a07efb2a4e9a982688c8bb3c3f21d1092" title="Returns the number of pixels along Y axis in the whole rendered image. ">getHeight()</a> </dd></dl>
+<p>Creates a new image of the given data type which will compute values using the given converters. </p>
+<p>The number of bands is the length of the</p><div class="fragment"><div class="line"><a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a> </div></div><!-- fragment --><p> array, which must be greater than 0 and not greater than the number of bands in the source image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the image for which to convert sample values. </td></tr>
+    <tr><td class="paramname">layout</td><td>object to use for computing tile size, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> for the default. </td></tr>
+    <tr><td class="paramname">targetType</td><td>the type of this image resulting from conversion of given image. </td></tr>
+    <tr><td class="paramname">colorModel</td><td>the color model for the expected range of values, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+    <tr><td class="paramname">ranges</td><td>the expected range of values for each band, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </td></tr>
+    <tr><td class="paramname">converters</td><td>the transfer functions to apply on each band of the source image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the image which compute converted values from the given source. </dd></dl>
 
-<p class="reference">References <a class="el" href="a06635.html#a0e3506e32701066c3620b43975e9206f">ImageUtilities.getBounds()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                 {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> ImageUtilities.getBounds(<span class="keyword">this</span>);</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>, and <a class="el" href="a06683.html#a7244c332272c4013889f65f00c83fb6c">RasterFactory.unique()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a6f23293e844748d4d07f822f11e65980">ConvertedGridCoverage.render()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;source&quot;</span>, source);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;converters&quot;</span>, <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numBands = <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>.length;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        ArgumentChecks.ensureSizeBetween(<span class="stringliteral">&quot;converters&quot;</span>, 1, source.getSampleModel().getNumBands(), numBands);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (layout == null) {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            layout = ImageLayout.DEFAULT;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">final</span> Dimension tile = layout.suggestTileSize(source);</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">final</span> BandedSampleModel sampleModel = RasterFactory.unique(</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keyword">new</span> BandedSampleModel(targetType, tile.width, tile.height, numBands));</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">         * If the source image is writable, then changes in the converted image may be retro-propagated</span></div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">         * to that source image. If we fail to compute the required inverse transforms, log a notice at</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">         * a low level because this is not a serious problem; writable BandedSampleConverter is a plus</span></div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">         * but not a requirement.</span></div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (source instanceof WritableRenderedImage) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">final</span> MathTransform1D[] inverses = <span class="keyword">new</span> MathTransform1D[numBands];</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;numBands; i++) {</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                inverses[i] = <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>[i].inverse();</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            }</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> Writable((WritableRenderedImage) source, sampleModel, <a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, ranges, <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>, inverses);</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        } <span class="keywordflow">catch</span> (NoninvertibleTransformException e) {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            Logging.recoverableException(Logging.getLogger(Modules.RASTER), <a class="code" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a>.class, <span class="stringliteral">&quot;create&quot;</span>, e);</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter</a>(source, sampleModel, <a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>, ranges, <a class="code" href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">converters</a>);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div><div class="ttc" id="a06655_html_acc5b853af3ec99b5b068393cf3ca63c3"><div class="ttname"><a href="a06655.html#acc5b853af3ec99b5b068393cf3ca63c3">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.converters</a></div><div class="ttdeci">final MathTransform1D [] converters</div><div class="ttdoc">The transfer functions to apply on each band of the source image. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:67</div></div>
+<div class="ttc" id="a06655_html_a38d3fa2019bb1e055a432900ef938440"><div class="ttname"><a href="a06655.html#a38d3fa2019bb1e055a432900ef938440">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.BandedSampleConverter</a></div><div class="ttdeci">BandedSampleConverter(final RenderedImage source, final BandedSampleModel sampleModel, final ColorModel colorModel, final NumberRange&lt;?&gt;[] ranges, final MathTransform1D[] converters)</div><div class="ttdoc">Creates a new image which will compute values using the given converters. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:88</div></div>
+<div class="ttc" id="a06655_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model for the expected range of values. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:72</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2e9f91617f2855770996f11b9d2dd94d"></a>
@@ -376,91 +406,12 @@ Martin Desruisseaux (Geomatys) </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the color model, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+<p>Returns the color model associated with all rasters of this image. </p>
+<p>If the sample values of this image are floating point numbers, then a gray scale color model is computed from the expected range of values.</p>
+<dl class="section return"><dt>Returns</dt><dd>the color model of this image, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
 
-<p class="reference">References <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">TiledImage.colorModel</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                      {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div><div class="ttc" id="a06655_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.TiledImage.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model, or. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:44</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a61598bd225152d9230163c37ec1013fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61598bd225152d9230163c37ec1013fa">&#9670;&nbsp;</a></span>getData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Raster getData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a copy of this image as one large tile. </p>
-<p>The returned raster will not be updated if this image is changed.</p>
-<dl class="section return"><dt>Returns</dt><dd>a copy of this image as one large tile. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06611.html#aea1c854683c572814de3ca72b6402ccd">PlanarImage.copyData()</a>, <a class="el" href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">PlanarImage.createWritableRaster()</a>, and <a class="el" href="a06635.html#a0e3506e32701066c3620b43975e9206f">ImageUtilities.getBounds()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                            {</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keyword">final</span> Rectangle aoi = ImageUtilities.getBounds(<span class="keyword">this</span>);</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keyword">final</span> WritableRaster raster = <a class="code" href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">createWritableRaster</a>(aoi);</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="a06611.html#aea1c854683c572814de3ca72b6402ccd">copyData</a>(aoi, raster);</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">return</span> raster;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div><div class="ttc" id="a06611_html_ad79ed29106d920aac8ccdb6fcd8b42f4"><div class="ttname"><a href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">org.apache.sis.image.PlanarImage.createWritableRaster</a></div><div class="ttdeci">WritableRaster createWritableRaster(final Rectangle aoi)</div><div class="ttdoc">Creates a raster with the same sample model than this image and with the given size and location...</div><div class="ttdef"><b>Definition:</b> PlanarImage.java:308</div></div>
-<div class="ttc" id="a06611_html_aea1c854683c572814de3ca72b6402ccd"><div class="ttname"><a href="a06611.html#aea1c854683c572814de3ca72b6402ccd">org.apache.sis.image.PlanarImage.copyData</a></div><div class="ttdeci">WritableRaster copyData(WritableRaster raster)</div><div class="ttdoc">Copies an arbitrary rectangular region of this image to the supplied writable raster. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:359</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="abb37c06c9b1e12fb56e519a393724ba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb37c06c9b1e12fb56e519a393724ba2">&#9670;&nbsp;</a></span>getData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Raster getData </td>
-          <td>(</td>
-          <td class="paramtype">final Rectangle&#160;</td>
-          <td class="paramname"><em>aoi</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a copy of an arbitrary region of this image. </p>
-<p>The returned raster will not be updated if this image is changed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">aoi</td><td>the region of this image to copy. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a copy of this image in the given area of interest. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14239.html">IllegalArgumentException</a></td><td>if the given rectangle is not contained in this image bounds. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06611.html#aea1c854683c572814de3ca72b6402ccd">PlanarImage.copyData()</a>, <a class="el" href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">PlanarImage.createWritableRaster()</a>, and <a class="el" href="a06635.html#a0e3506e32701066c3620b43975e9206f">ImageUtilities.getBounds()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                               {</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;aoi&quot;</span>, aoi);</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">if</span> (!ImageUtilities.getBounds(<span class="keyword">this</span>).contains(aoi)) {</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14239.html">IllegalArgumentException</a>(Errors.format(Errors.Keys.OutsideDomainOfValidity));</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keyword">final</span> WritableRaster raster = <a class="code" href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">createWritableRaster</a>(aoi);</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <a class="code" href="a06611.html#aea1c854683c572814de3ca72b6402ccd">copyData</a>(aoi, raster);</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">return</span> raster;</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    }</div><div class="ttc" id="a06611_html_ad79ed29106d920aac8ccdb6fcd8b42f4"><div class="ttname"><a href="a06611.html#ad79ed29106d920aac8ccdb6fcd8b42f4">org.apache.sis.image.PlanarImage.createWritableRaster</a></div><div class="ttdeci">WritableRaster createWritableRaster(final Rectangle aoi)</div><div class="ttdoc">Creates a raster with the same sample model than this image and with the given size and location...</div><div class="ttdef"><b>Definition:</b> PlanarImage.java:308</div></div>
-<div class="ttc" id="a06611_html_aea1c854683c572814de3ca72b6402ccd"><div class="ttname"><a href="a06611.html#aea1c854683c572814de3ca72b6402ccd">org.apache.sis.image.PlanarImage.copyData</a></div><div class="ttdeci">WritableRaster copyData(WritableRaster raster)</div><div class="ttdoc">Copies an arbitrary rectangular region of this image to the supplied writable raster. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:359</div></div>
-<div class="ttc" id="a14239_html"><div class="ttname"><a href="a14239.html">IllegalArgumentException</a></div></div>
+<p class="reference">References <a class="el" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">BandedSampleConverter.colorModel</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                      {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">colorModel</a>;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div><div class="ttc" id="a06655_html_ae6300c65e347a4e78a9bc7900d80fd91"><div class="ttname"><a href="a06655.html#ae6300c65e347a4e78a9bc7900d80fd91">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.colorModel</a></div><div class="ttdeci">final ColorModel colorModel</div><div class="ttdoc">The color model for the expected range of values. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:72</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -479,11 +430,10 @@ Martin Desruisseaux (Geomatys) </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the number of pixels along Y axis in the whole rendered image. </p>
-
-<p class="reference">References <a class="el" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">TiledImage.height</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                           {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">height</a>;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div><div class="ttc" id="a06655_html_a575c5eb1900b2af25b9b9452f074bce3"><div class="ttname"><a href="a06655.html#a575c5eb1900b2af25b9b9452f074bce3">org.apache.sis.internal.coverage.j2d.TiledImage.height</a></div><div class="ttdeci">final int height</div><div class="ttdef"><b>Definition:</b> TiledImage.java:49</div></div>
-</div><!-- fragment -->
+<p>Returns the height (in pixels) of this image. </p>
+<p>This is the the same value than the source image (not necessarily zero).</p>
+<dl class="section return"><dt>Returns</dt><dd>the height (number of rows) of this image. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                           {</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> getSource(0).getHeight();</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a221fbe8552df714e1483b0005f1d84d6"></a>
@@ -501,11 +451,10 @@ Martin Desruisseaux (Geomatys) </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the minimum tile index in the X direction. </p>
-
-<p class="reference">References <a class="el" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">TiledImage.minTileX</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                             {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a>;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div><div class="ttc" id="a06655_html_ad89c58bf763b7a7e6458b36d0435cb91"><div class="ttname"><a href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">org.apache.sis.internal.coverage.j2d.TiledImage.minTileX</a></div><div class="ttdeci">final int minTileX</div><div class="ttdoc">Index of the first tile in the image. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:55</div></div>
-</div><!-- fragment -->
+<p>Returns the minimum tile index in the <em>x</em> direction. </p>
+<p>This is the the same value than the source image (not necessarily zero).</p>
+<dl class="section return"><dt>Returns</dt><dd>the minimum tile index in the <em>x</em> direction. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                             {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinTileX();</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8574cc85ad8d13e052b8146b81825969"></a>
@@ -523,11 +472,10 @@ Martin Desruisseaux (Geomatys) </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the minimum tile index in the Y direction. </p>
-
-<p class="reference">References <a class="el" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">TiledImage.minTileY</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                             {</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a>;</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div><div class="ttc" id="a06655_html_a73c25a6adae78d5d98f5feb1c9123d20"><div class="ttname"><a href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">org.apache.sis.internal.coverage.j2d.TiledImage.minTileY</a></div><div class="ttdeci">final int minTileY</div><div class="ttdef"><b>Definition:</b> TiledImage.java:55</div></div>
-</div><!-- fragment -->
+<p>Returns the minimum tile index in the <em>y</em> direction. </p>
+<p>This is the the same value than the source image (not necessarily zero).</p>
+<dl class="section return"><dt>Returns</dt><dd>the minimum tile index in the <em>y</em> direction. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                             {</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinTileY();</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1ec43fe85c74aa5a7cadc2e6e8d2410f"></a>
@@ -546,8 +494,9 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 </div><div class="memdoc">
 
 <p>Returns the minimum <em>x</em> coordinate (inclusive) of this image. </p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                         {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>[0].getMinX();</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
-</div><!-- fragment -->
+<p>This is the the same value than the source image (not necessarily zero).</p>
+<dl class="section return"><dt>Returns</dt><dd>the minimum <em>x</em> coordinate (column) of this image. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                         {</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinX();</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="afc8e603e4bb15d663afe6fc2c98bc85d"></a>
@@ -566,115 +515,31 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 </div><div class="memdoc">
 
 <p>Returns the minimum <em>y</em> coordinate (inclusive) of this image. </p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                         {</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>[0].getMinY();</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div><div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
-</div><!-- fragment -->
+<p>This is the the same value than the source image (not necessarily zero).</p>
+<dl class="section return"><dt>Returns</dt><dd>the minimum <em>y</em> coordinate (row) of this image. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                         {</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">return</span> getSource(0).getMinY();</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a5583e1bac8e604e2bb45632ce9610066"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5583e1bac8e604e2bb45632ce9610066">&#9670;&nbsp;</a></span>getNumXTiles()</h2>
+<a id="a8049f6987505f6bb10a9caabd780c748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8049f6987505f6bb10a9caabd780c748">&#9670;&nbsp;</a></span>getProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getNumXTiles </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of tiles in the <em>x</em> direction. </p>
-<p>The default implementation computes this value from <a class="el" href="a06655.html#a67a0997183f24da19b776d96c1052998">getWidth()</a> and <a class="el" href="a06655.html#a55691c79b5e75d785828fa7b6f279c06">getTileWidth()</a> on the assumption that <a class="el" href="a06655.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX()</a> is the coordinate of the leftmost pixels of tiles located at <a class="el" href="a06655.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX()</a> index. This assumption can be verified by <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">verify()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>returns the number of tiles in the <em>x</em> direction. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06655.html#a565050e7adf86a89e49c949b14af58bc">TiledImage.getTile()</a>, <a class="el" href="a06611.html#ad146fa8579a5f8a876c4688cc5a68520">PlanarImage.toString()</a>, and <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">PlanarImage.verify()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                              {</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">         * If assumption documented in javadoc does not hold, the calculation performed here would need to be</span></div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">         * more complicated: compute tile index of minX, compute tile index of maxX, return difference plus 1.</span></div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> Numerics.ceilDiv(getWidth(), getTileWidth());</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="afbefd1ebc9e316c7274ee7475b1c1cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbefd1ebc9e316c7274ee7475b1c1cfb">&#9670;&nbsp;</a></span>getNumYTiles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getNumYTiles </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of tiles in the <em>y</em> direction. </p>
-<p>The default implementation computes this value from <a class="el" href="a06655.html#a07efb2a4e9a982688c8bb3c3f21d1092">getHeight()</a> and <a class="el" href="a06655.html#a25fe2752749e8df21fc2a8656d76add2">getTileHeight()</a> on the assumption that <a class="el" href="a06655.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY()</a> is the coordinate of the uppermost pixels of tiles located at <a class="el" href="a06655.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY()</a> index. This assumption can be verified by <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">verify()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>returns the number of tiles in the <em>y</em> direction. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06655.html#a565050e7adf86a89e49c949b14af58bc">TiledImage.getTile()</a>, <a class="el" href="a06611.html#ad146fa8579a5f8a876c4688cc5a68520">PlanarImage.toString()</a>, and <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">PlanarImage.verify()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                              {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> Numerics.ceilDiv(getHeight(), getTileHeight());</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a7194611748f79e9ba7aed9afe17a52f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7194611748f79e9ba7aed9afe17a52f2">&#9670;&nbsp;</a></span>getProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Object getProperty </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
+          <td class="paramtype">final String&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gets a property from this image. </p>
-<p>The property to get is identified by the specified key. Some keys supported by Apache SIS are:</p>
-<a class="anchor" id=""></a>
-<table class="sis">
-<caption>Recognized property keys</caption>
-<tr>
-<th>Keys </th><th>Values </th></tr>
-<tr>
-<td>{ <a class="el" href="a06611.html#a0970bf85218f8e14c9a7d6f6b15eaacd" title="Key of a property defining the resolutions of sample values in each band. ">SAMPLE_RESOLUTIONS_KEY</a>} </td><td>Resolutions of sample values in each band. </td></tr>
-</table>
-<p>This method returns <a class="el" href="">Image#UndefinedProperty</a> if the specified property is not defined. The default implementation returns <a class="el" href="">Image#UndefinedProperty</a> in all cases.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>the name of the property to get. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the property value, or <a class="el" href="">Image#UndefinedProperty</a> if none. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                                          {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> Image.UndefinedProperty;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div></div><!-- fragment -->
+<p>Current implementation recognizes: { #SAMPLE_RESOLUTIONS_KEY}. </p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                                {</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (SAMPLE_RESOLUTIONS_KEY.equals(key) &amp;&amp; <a class="code" href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a> != null) {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a>.clone();</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">return</span> super.getProperty(key);</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div><div class="ttc" id="a06655_html_a8e6cec4511dd5e677bf3f9b2793b1f2e"><div class="ttname"><a href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.sampleResolutions</a></div><div class="ttdeci">final double [] sampleResolutions</div><div class="ttdoc">The sample resolutions, or. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:77</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8fe92749c0f415ca061399e1a549f7c5"></a>
@@ -682,9 +547,6 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">String [] getPropertyNames </td>
@@ -693,218 +555,11 @@ Martin Desruisseaux (Geomatys) </dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns the names of all recognized properties, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if this image has no properties.</p>
-<p>The default implementation returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> .</p>
-<dl class="section return"><dt>Returns</dt><dd>names of all recognized properties, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                       {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a6fd28f1cc9555c50bbb29f4181d18ca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd28f1cc9555c50bbb29f4181d18ca5">&#9670;&nbsp;</a></span>getSampleModel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SampleModel getSampleModel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the sample model. </p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                        {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>[0].getSampleModel();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div><div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a016c1e8b58082cf2add38a25a00fd20d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a016c1e8b58082cf2add38a25a00fd20d">&#9670;&nbsp;</a></span>getSources()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector&lt;RenderedImage&gt; getSources </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the immediate sources of image data for this image. </p>
-<p>This method returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if the image has no information about its immediate sources. It returns an empty vector if the image object has no immediate sources.</p>
-<p>The default implementation returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . Note that this is not equivalent to an empty vector.</p>
-<dl class="section return"><dt>Returns</dt><dd>the immediate sources, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if unknown. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                              {</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a565050e7adf86a89e49c949b14af58bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a565050e7adf86a89e49c949b14af58bc">&#9670;&nbsp;</a></span>getTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Raster getTile </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileY</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the tile at the given location in tile coordinates. </p>
-
-<p class="reference">References <a class="el" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">PlanarImage.getNumXTiles()</a>, and <a class="el" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">PlanarImage.getNumYTiles()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numXTiles = <a class="code" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">getNumXTiles</a>();</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numYTiles = <a class="code" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">getNumYTiles</a>();</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">if</span> ((tileX -= <a class="code" href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">minTileX</a>) &lt; 0 || tileX &gt;= numXTiles ||</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            (tileY -= <a class="code" href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">minTileY</a>) &lt; 0 || tileY &gt;= numYTiles)</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException();</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>[tileX + tileY * numXTiles];</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div><div class="ttc" id="a06655_html_ad89c58bf763b7a7e6458b36d0435cb91"><div class="ttname"><a href="a06655.html#ad89c58bf763b7a7e6458b36d0435cb91">org.apache.sis.internal.coverage.j2d.TiledImage.minTileX</a></div><div class="ttdeci">final int minTileX</div><div class="ttdoc">Index of the first tile in the image. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:55</div></div>
-<div class="ttc" id="a06611_html_a5583e1bac8e604e2bb45632ce9610066"><div class="ttname"><a href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">org.apache.sis.image.PlanarImage.getNumXTiles</a></div><div class="ttdeci">int getNumXTiles()</div><div class="ttdoc">Returns the number of tiles in the x direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:253</div></div>
-<div class="ttc" id="a06611_html_afbefd1ebc9e316c7274ee7475b1c1cfb"><div class="ttname"><a href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">org.apache.sis.image.PlanarImage.getNumYTiles</a></div><div class="ttdeci">int getNumYTiles()</div><div class="ttdoc">Returns the number of tiles in the y direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:271</div></div>
-<div class="ttc" id="a06655_html_a73c25a6adae78d5d98f5feb1c9123d20"><div class="ttname"><a href="a06655.html#a73c25a6adae78d5d98f5feb1c9123d20">org.apache.sis.internal.coverage.j2d.TiledImage.minTileY</a></div><div class="ttdeci">final int minTileY</div><div class="ttdef"><b>Definition:</b> TiledImage.java:55</div></div>
-<div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9aa0e2adab20b73ac15d33a6b7319460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa0e2adab20b73ac15d33a6b7319460">&#9670;&nbsp;</a></span>getTileGridXOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getTileGridXOffset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the <em>x</em> coordinate of the upper-left pixel of tile (0, 0). </p>
-<p>That tile (0, 0) may not actually exist.</p>
-<p>The default implementation computes this value from <a class="el" href="a06655.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX()</a>, <a class="el" href="a06655.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX()</a> and <a class="el" href="a06655.html#a55691c79b5e75d785828fa7b6f279c06">getTileWidth()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>the <em>x</em> offset of the tile grid relative to the origin. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06611.html#a221fbe8552df714e1483b0005f1d84d6">PlanarImage.getMinTileX()</a>, and <a class="el" href="a06611.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">PlanarImage.getMinX()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">PlanarImage.verify()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                    {</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">// We may have temporary `int` overflow after multiplication but exact result after addition.</span></div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> Math.toIntExact(<a class="code" href="a06611.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX</a>() - JDK9.multiplyFull(<a class="code" href="a06611.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX</a>(), getTileWidth()));</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div><div class="ttc" id="a06611_html_a1ec43fe85c74aa5a7cadc2e6e8d2410f"><div class="ttname"><a href="a06611.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">org.apache.sis.image.PlanarImage.getMinX</a></div><div class="ttdeci">int getMinX()</div><div class="ttdoc">Returns the minimum x coordinate (inclusive) of this image. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:200</div></div>
-<div class="ttc" id="a06611_html_a221fbe8552df714e1483b0005f1d84d6"><div class="ttname"><a href="a06611.html#a221fbe8552df714e1483b0005f1d84d6">org.apache.sis.image.PlanarImage.getMinTileX</a></div><div class="ttdeci">int getMinTileX()</div><div class="ttdoc">Returns the minimum tile index in the x direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:226</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adcc0e92478ecf1053f868322615cb524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc0e92478ecf1053f868322615cb524">&#9670;&nbsp;</a></span>getTileGridYOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getTileGridYOffset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the <em>y</em> coordinate of the upper-left pixel of tile (0, 0). </p>
-<p>That tile (0, 0) may not actually exist.</p>
-<p>The default implementation computes this value from <a class="el" href="a06655.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY()</a>, <a class="el" href="a06655.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY()</a> and <a class="el" href="a06655.html#a25fe2752749e8df21fc2a8656d76add2">getTileHeight()</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>the <em>y</em> offset of the tile grid relative to the origin. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06611.html#a8574cc85ad8d13e052b8146b81825969">PlanarImage.getMinTileY()</a>, and <a class="el" href="a06611.html#afc8e603e4bb15d663afe6fc2c98bc85d">PlanarImage.getMinY()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">PlanarImage.verify()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                    {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">return</span> Math.toIntExact(<a class="code" href="a06611.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY</a>() - JDK9.multiplyFull(<a class="code" href="a06611.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY</a>(), getTileHeight()));</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div><div class="ttc" id="a06611_html_a8574cc85ad8d13e052b8146b81825969"><div class="ttname"><a href="a06611.html#a8574cc85ad8d13e052b8146b81825969">org.apache.sis.image.PlanarImage.getMinTileY</a></div><div class="ttdeci">int getMinTileY()</div><div class="ttdoc">Returns the minimum tile index in the y direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:239</div></div>
-<div class="ttc" id="a06611_html_afc8e603e4bb15d663afe6fc2c98bc85d"><div class="ttname"><a href="a06611.html#afc8e603e4bb15d663afe6fc2c98bc85d">org.apache.sis.image.PlanarImage.getMinY</a></div><div class="ttdeci">int getMinY()</div><div class="ttdoc">Returns the minimum y coordinate (inclusive) of this image. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:213</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a25fe2752749e8df21fc2a8656d76add2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25fe2752749e8df21fc2a8656d76add2">&#9670;&nbsp;</a></span>getTileHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getTileHeight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the tile height in pixels. </p>
-<p>All tiles must have the same height. </p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                               {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>[0].getHeight();</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div><div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a55691c79b5e75d785828fa7b6f279c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55691c79b5e75d785828fa7b6f279c06">&#9670;&nbsp;</a></span>getTileWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getTileWidth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the tile width in pixels. </p>
-<p>All tiles must have the same width. </p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                              {</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">tiles</a>[0].getWidth();</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div><div class="ttc" id="a06655_html_a4e851948554dfd009a0c55d593f6a74b"><div class="ttname"><a href="a06655.html#a4e851948554dfd009a0c55d593f6a74b">org.apache.sis.internal.coverage.j2d.TiledImage.tiles</a></div><div class="ttdeci">final Raster [] tiles</div><div class="ttdoc">The tiles. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:60</div></div>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if this image has no properties. </p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                                       {</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">sampleResolutions</a> != null) {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> String[] {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                SAMPLE_RESOLUTIONS_KEY</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            };</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> super.getPropertyNames();</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div><div class="ttc" id="a06655_html_a8e6cec4511dd5e677bf3f9b2793b1f2e"><div class="ttname"><a href="a06655.html#a8e6cec4511dd5e677bf3f9b2793b1f2e">org.apache.sis.internal.coverage.j2d.BandedSampleConverter.sampleResolutions</a></div><div class="ttdeci">final double [] sampleResolutions</div><div class="ttdoc">The sample resolutions, or. </div><div class="ttdef"><b>Definition:</b> BandedSampleConverter.java:77</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -923,104 +578,10 @@ Martin Desruisseaux (Geomatys) </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the number of pixels along X axis in the whole rendered image. </p>
-
-<p class="reference">References <a class="el" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">TiledImage.width</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                          {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">width</a>;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div><div class="ttc" id="a06655_html_af4b6177f2f08d75a1ab13fc5b969355d"><div class="ttname"><a href="a06655.html#af4b6177f2f08d75a1ab13fc5b969355d">org.apache.sis.internal.coverage.j2d.TiledImage.width</a></div><div class="ttdeci">final int width</div><div class="ttdoc">Number of pixels along X or Y axis in the whole rendered image. </div><div class="ttdef"><b>Definition:</b> TiledImage.java:49</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a string representation of this image for debugging purpose. </p>
-<p>This string representation may change in any future SIS version.</p>
-<dl class="section return"><dt>Returns</dt><dd>a string representation of this image for debugging purpose only. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06627.html#adfce602373a870b7634aafd9777d369b">ColorModelFactory.formatDescription()</a>, <a class="el" href="a06635.html#a37ca2072a3a43a5b5762ed1c8e51e2b2">ImageUtilities.getDataTypeName()</a>, <a class="el" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">PlanarImage.getNumXTiles()</a>, <a class="el" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">PlanarImage.getNumYTiles()</a>, and <a class="el" href="a06611.html#a59366468aea6849551000277c6058ff1">PlanarImage.verify()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                             {</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(100).append(Classes.getShortClassName(<span class="keyword">this</span>))</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                .append(<span class="charliteral">&#39;[&#39;</span>).append(getWidth()).append(<span class="stringliteral">&quot; × &quot;</span>).append(getHeight()).append(<span class="stringliteral">&quot; pixels&quot;</span>);</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="keyword">final</span> SampleModel sm = getSampleModel();</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordflow">if</span> (sm != null) {</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            buffer.append(<span class="stringliteral">&quot; × &quot;</span>).append(sm.getNumBands()).append(<span class="stringliteral">&quot; bands&quot;</span>);</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keyword">final</span> String type = ImageUtilities.getDataTypeName(sm);</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <span class="keywordflow">if</span> (type != null) {</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                buffer.append(<span class="stringliteral">&quot; of type &quot;</span>).append(type);</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            }</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        }</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="comment">         * Write details about color model only if there is &quot;useful&quot; information for a geospatial raster.</span></div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="comment">         * The main category of interest are &quot;color palette&quot; versus &quot;gray scale&quot; versus everything else,</span></div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="comment">         * and whether the image may have transparent pixels.</span></div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="keyword">final</span> ColorModel cm = getColorModel();</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;colors: <span class="keywordflow">if</span> (cm != null) {</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            buffer.append(<span class="stringliteral">&quot;; &quot;</span>);</div><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            <span class="keywordflow">if</span> (cm instanceof IndexColorModel) {</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                buffer.append(((IndexColorModel) cm).getMapSize()).append(<span class="stringliteral">&quot; indexed colors&quot;</span>);</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                ColorModelFactory.formatDescription(cm.getColorSpace(), buffer);</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            }</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keyword">final</span> String transparency;</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <span class="keywordflow">switch</span> (cm.getTransparency()) {</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                <span class="keywordflow">case</span> ColorModel.OPAQUE:      transparency = <span class="stringliteral">&quot;opaque&quot;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                <span class="keywordflow">case</span> ColorModel.TRANSLUCENT: transparency = <span class="stringliteral">&quot;translucent&quot;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                <span class="keywordflow">case</span> ColorModel.BITMASK:     transparency = <span class="stringliteral">&quot;bitmask transparency&quot;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                <span class="keywordflow">default</span>: <span class="keywordflow">break</span> colors;</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            }</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            buffer.append(<span class="stringliteral">&quot;; &quot;</span>).append(transparency);</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        }</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="comment">         * Tiling information last because it is usually a secondary aspect compared to above information.</span></div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="comment">         * If a warning is emitted, it will usually be a tiling problem so it is useful to keep it close.</span></div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tx = <a class="code" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">getNumXTiles</a>();</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ty = <a class="code" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">getNumYTiles</a>();</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        <span class="keywordflow">if</span> (tx != 1 || ty != 1) {</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;            buffer.append(<span class="stringliteral">&quot;; &quot;</span>).append(tx).append(<span class="stringliteral">&quot; × &quot;</span>).append(ty).append(<span class="stringliteral">&quot; tiles&quot;</span>);</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        }</div><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keyword">final</span> String error = <a class="code" href="a06611.html#a59366468aea6849551000277c6058ff1">verify</a>();</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keywordflow">if</span> (error != null) {</div><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            buffer.append(<span class="stringliteral">&quot;; ⚠ mismatched &quot;</span>).append(error);</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        }</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keywordflow">return</span> buffer.append(<span class="charliteral">&#39;]&#39;</span>).toString();</div><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    }</div><div class="ttc" id="a06611_html_a59366468aea6849551000277c6058ff1"><div class="ttname"><a href="a06611.html#a59366468aea6849551000277c6058ff1">org.apache.sis.image.PlanarImage.verify</a></div><div class="ttdeci">String verify()</div><div class="ttdoc">Verifies whether image layout information are consistent. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:435</div></div>
-<div class="ttc" id="a06611_html_a5583e1bac8e604e2bb45632ce9610066"><div class="ttname"><a href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">org.apache.sis.image.PlanarImage.getNumXTiles</a></div><div class="ttdeci">int getNumXTiles()</div><div class="ttdoc">Returns the number of tiles in the x direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:253</div></div>
-<div class="ttc" id="a06611_html_afbefd1ebc9e316c7274ee7475b1c1cfb"><div class="ttname"><a href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">org.apache.sis.image.PlanarImage.getNumYTiles</a></div><div class="ttdeci">int getNumYTiles()</div><div class="ttdoc">Returns the number of tiles in the y direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:271</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a59366468aea6849551000277c6058ff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59366468aea6849551000277c6058ff1">&#9670;&nbsp;</a></span>verify()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String verify </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Verifies whether image layout information are consistent. </p>
-<p>This method verifies that the coordinates of image upper-left corner are equal to the coordinates of the upper-left corner of the tile in the upper-left corner, and that image size is equal to the sum of the sizes of all tiles. Compatibility of sample model and color model is also verified.</p>
-<p>The default implementation may return the following identifiers, in that order (i.e. this method returns the identifier of the first test that fail):</p>
-<ul>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;SampleModel&quot;</span> </div></div><!-- fragment --> — Sample model is incompatible with color model. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;tileWidth&quot;</span> </div></div><!-- fragment --> — tile width is greater than sample model width. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;tileHeight&quot;</span> </div></div><!-- fragment --> — tile height is greater than sample model height. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;numXTiles&quot;</span> </div></div><!-- fragment --> — number of tiles on the X axis is inconsistent with image width. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;numYTiles&quot;</span> </div></div><!-- fragment --> — number of tiles on the Y axis is inconsistent with image height. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;tileX&quot;</span> </div></div><!-- fragment --> — { minTileX} and/or<div class="fragment"><div class="line">tileGridXOffset </div></div><!-- fragment --> is inconsistent. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;tileY&quot;</span> </div></div><!-- fragment --> — { minTileY} and/or<div class="fragment"><div class="line">tileGridYOffset </div></div><!-- fragment --> is inconsistent. </li>
-</ul>
-<p>Subclasses may perform additional checks. For example some subclasses also check specifically for</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;minX&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;minY&quot;</span> </div></div><!-- fragment --><p> ,</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;tileGridXOffset&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;tileGridYOffset&quot;</span> </div></div><!-- fragment --><p> .</p>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line">null </div></div><!-- fragment --> if image layout information are consistent, or the name of inconsistent attribute if a problem is found. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06611.html#a221fbe8552df714e1483b0005f1d84d6">PlanarImage.getMinTileX()</a>, <a class="el" href="a06611.html#a8574cc85ad8d13e052b8146b81825969">PlanarImage.getMinTileY()</a>, <a class="el" href="a06611.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">PlanarImage.getMinX()</a>, <a class="el" href="a06611.html#afc8e603e4bb15d663afe6fc2c98bc85d">PlanarImage.getMinY()</a>, <a class="el" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">PlanarImage.getNumXTiles()</a>, <a class="el" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">PlanarImage.getNumYTiles()</a>, <a class="el" href="a06611.html#a9aa0e2adab20b73ac15d33a6b7319460">PlanarImage.getTileGridXOffset()</a>, and <a class="el" href="a06611.html#adcc0e92478ecf1053f868322615cb524">PlanarImage.getTileGridYOffset()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06611.html#ad146fa8579a5f8a876c4688cc5a68520">PlanarImage.toString()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                           {</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileWidth  = getTileWidth();</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileHeight = getTileHeight();</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keyword">final</span> SampleModel sm = getSampleModel();</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">if</span> (sm != null) {</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="keyword">final</span> ColorModel cm = getColorModel();</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keywordflow">if</span> (cm != null) {</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                <span class="keywordflow">if</span> (!cm.isCompatibleSampleModel(sm)) <span class="keywordflow">return</span> <span class="stringliteral">&quot;SampleModel&quot;</span>;</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            }</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">             * The SampleModel size represents the physical layout of pixels in the data buffer,</span></div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">             * while the Raster may be a virtual view over a sub-region of a parent raster.</span></div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordflow">if</span> (sm.getWidth()  &lt; tileWidth)  <span class="keywordflow">return</span> <span class="stringliteral">&quot;tileWidth&quot;</span>;</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            <span class="keywordflow">if</span> (sm.getHeight() &lt; tileHeight) <span class="keywordflow">return</span> <span class="stringliteral">&quot;tileHeight&quot;</span>;</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        }</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">if</span> (JDK9.multiplyFull(<a class="code" href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">getNumXTiles</a>(), tileWidth)  != getWidth())  <span class="keywordflow">return</span> <span class="stringliteral">&quot;numXTiles&quot;</span>;</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">if</span> (JDK9.multiplyFull(<a class="code" href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">getNumYTiles</a>(), tileHeight) != getHeight()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;numYTiles&quot;</span>;</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">if</span> (JDK9.multiplyFull(<a class="code" href="a06611.html#a221fbe8552df714e1483b0005f1d84d6">getMinTileX</a>(),  tileWidth)  + <a class="code" href="a06611.html#a9aa0e2adab20b73ac15d33a6b7319460">getTileGridXOffset</a>() != <a class="code" href="a06611.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">getMinX</a>()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;tileX&quot;</span>;</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keywordflow">if</span> (JDK9.multiplyFull(<a class="code" href="a06611.html#a8574cc85ad8d13e052b8146b81825969">getMinTileY</a>(),  tileHeight) + <a class="code" href="a06611.html#adcc0e92478ecf1053f868322615cb524">getTileGridYOffset</a>() != <a class="code" href="a06611.html#afc8e603e4bb15d663afe6fc2c98bc85d">getMinY</a>()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;tileY&quot;</span>;</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    }</div><div class="ttc" id="a06611_html_a8574cc85ad8d13e052b8146b81825969"><div class="ttname"><a href="a06611.html#a8574cc85ad8d13e052b8146b81825969">org.apache.sis.image.PlanarImage.getMinTileY</a></div><div class="ttdeci">int getMinTileY()</div><div class="ttdoc">Returns the minimum tile index in the y direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:239</div></div>
-<div class="ttc" id="a06611_html_a1ec43fe85c74aa5a7cadc2e6e8d2410f"><div class="ttname"><a href="a06611.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f">org.apache.sis.image.PlanarImage.getMinX</a></div><div class="ttdeci">int getMinX()</div><div class="ttdoc">Returns the minimum x coordinate (inclusive) of this image. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:200</div></div>
-<div class="ttc" id="a06611_html_a221fbe8552df714e1483b0005f1d84d6"><div class="ttname"><a href="a06611.html#a221fbe8552df714e1483b0005f1d84d6">org.apache.sis.image.PlanarImage.getMinTileX</a></div><div class="ttdeci">int getMinTileX()</div><div class="ttdoc">Returns the minimum tile index in the x direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:226</div></div>
-<div class="ttc" id="a06611_html_afc8e603e4bb15d663afe6fc2c98bc85d"><div class="ttname"><a href="a06611.html#afc8e603e4bb15d663afe6fc2c98bc85d">org.apache.sis.image.PlanarImage.getMinY</a></div><div class="ttdeci">int getMinY()</div><div class="ttdoc">Returns the minimum y coordinate (inclusive) of this image. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:213</div></div>
-<div class="ttc" id="a06611_html_adcc0e92478ecf1053f868322615cb524"><div class="ttname"><a href="a06611.html#adcc0e92478ecf1053f868322615cb524">org.apache.sis.image.PlanarImage.getTileGridYOffset</a></div><div class="ttdeci">int getTileGridYOffset()</div><div class="ttdoc">Returns the y coordinate of the upper-left pixel of tile (0, 0). </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:300</div></div>
-<div class="ttc" id="a06611_html_a9aa0e2adab20b73ac15d33a6b7319460"><div class="ttname"><a href="a06611.html#a9aa0e2adab20b73ac15d33a6b7319460">org.apache.sis.image.PlanarImage.getTileGridXOffset</a></div><div class="ttdeci">int getTileGridXOffset()</div><div class="ttdoc">Returns the x coordinate of the upper-left pixel of tile (0, 0). </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:285</div></div>
-<div class="ttc" id="a06611_html_a5583e1bac8e604e2bb45632ce9610066"><div class="ttname"><a href="a06611.html#a5583e1bac8e604e2bb45632ce9610066">org.apache.sis.image.PlanarImage.getNumXTiles</a></div><div class="ttdeci">int getNumXTiles()</div><div class="ttdoc">Returns the number of tiles in the x direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:253</div></div>
-<div class="ttc" id="a06611_html_afbefd1ebc9e316c7274ee7475b1c1cfb"><div class="ttname"><a href="a06611.html#afbefd1ebc9e316c7274ee7475b1c1cfb">org.apache.sis.image.PlanarImage.getNumYTiles</a></div><div class="ttdeci">int getNumYTiles()</div><div class="ttdoc">Returns the number of tiles in the y direction. </div><div class="ttdef"><b>Definition:</b> PlanarImage.java:271</div></div>
-</div><!-- fragment -->
+<p>Returns the width (in pixels) of this image. </p>
+<p>This is the the same value than the source image (not necessarily zero).</p>
+<dl class="section return"><dt>Returns</dt><dd>the width (number of columns) of this image. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                          {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> getSource(0).getWidth();</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1044,15 +605,15 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>The color model, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+<p>The color model for the expected range of values. </p>
+<p>May be</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . </p>
 
-<p class="reference">Referenced by <a class="el" href="a06655.html#a2e9f91617f2855770996f11b9d2dd94d">TiledImage.getColorModel()</a>, and <a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage.TiledImage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>, and <a class="el" href="a06655.html#a2e9f91617f2855770996f11b9d2dd94d">BandedSampleConverter.getColorModel()</a>.</p>
 
 </div>
 </div>
-<a id="a575c5eb1900b2af25b9b9452f074bce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a575c5eb1900b2af25b9b9452f074bce3">&#9670;&nbsp;</a></span>height</h2>
+<a id="acc5b853af3ec99b5b068393cf3ca63c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5b853af3ec99b5b068393cf3ca63c3">&#9670;&nbsp;</a></span>converters</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1061,31 +622,7 @@ Martin Desruisseaux (Geomatys) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int height</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a06655.html#a07efb2a4e9a982688c8bb3c3f21d1092">TiledImage.getHeight()</a>, and <a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage.TiledImage()</a>.</p>
-
-</div>
-</div>
-<a id="ad89c58bf763b7a7e6458b36d0435cb91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad89c58bf763b7a7e6458b36d0435cb91">&#9670;&nbsp;</a></span>minTileX</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int minTileX</td>
+          <td class="memname">final MathTransform1D [] converters</td>
         </tr>
       </table>
   </td>
@@ -1095,15 +632,14 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Index of the first tile in the image. </p>
-<p>Should be a non-trivial value for increasing the chances to detect error in index calculation. </p>
+<p>The transfer functions to apply on each band of the source image. </p>
 
-<p class="reference">Referenced by <a class="el" href="a06655.html#a221fbe8552df714e1483b0005f1d84d6">TiledImage.getMinTileX()</a>, and <a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage.TiledImage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06655.html#a38d3fa2019bb1e055a432900ef938440">BandedSampleConverter.BandedSampleConverter()</a>.</p>
 
 </div>
 </div>
-<a id="a73c25a6adae78d5d98f5feb1c9123d20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c25a6adae78d5d98f5feb1c9123d20">&#9670;&nbsp;</a></span>minTileY</h2>
+<a id="a8e6cec4511dd5e677bf3f9b2793b1f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e6cec4511dd5e677bf3f9b2793b1f2e">&#9670;&nbsp;</a></span>sampleResolutions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1112,57 +648,7 @@ Martin Desruisseaux (Geomatys) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int minTileY</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a06655.html#a8574cc85ad8d13e052b8146b81825969">TiledImage.getMinTileY()</a>, and <a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage.TiledImage()</a>.</p>
-
-</div>
-</div>
-<a id="a0970bf85218f8e14c9a7d6f6b15eaacd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0970bf85218f8e14c9a7d6f6b15eaacd">&#9670;&nbsp;</a></span>SAMPLE_RESOLUTIONS_KEY</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String SAMPLE_RESOLUTIONS_KEY = &quot;SampleResolution&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Key of a property defining the resolutions of sample values in each band. </p>
-<p>This property is recommended for images having sample values as floating point numbers. For example if sample values were computed by <em>value</em> = <em>integer</em> × <em>scale factor</em>, then the resolution is the scale factor. This information is used for choosing the number of fraction digits to show when writing sample values in text format.</p>
-<p>Values should be instances of</p><div class="fragment"><div class="line"><span class="keywordtype">float</span>[] </div></div><!-- fragment --><p> or</p><div class="fragment"><div class="line"><span class="keywordtype">double</span>[] </div></div><!-- fragment --><p> . The array length should be the number of bands.</p>
-
-</div>
-</div>
-<a id="a4e851948554dfd009a0c55d593f6a74b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e851948554dfd009a0c55d593f6a74b">&#9670;&nbsp;</a></span>tiles</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Raster [] tiles</td>
+          <td class="memname">final double [] sampleResolutions</td>
         </tr>
       </table>
   </td>
@@ -1172,36 +658,8 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>The tiles. </p>
-<p>They must all use the same sample model. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage.TiledImage()</a>.</p>
-
-</div>
-</div>
-<a id="af4b6177f2f08d75a1ab13fc5b969355d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4b6177f2f08d75a1ab13fc5b969355d">&#9670;&nbsp;</a></span>width</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int width</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Number of pixels along X or Y axis in the whole rendered image. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06655.html#a67a0997183f24da19b776d96c1052998">TiledImage.getWidth()</a>, and <a class="el" href="a06655.html#a5b434f2546fbb7822d394df9e3472dbe">TiledImage.TiledImage()</a>.</p>
+<p>The sample resolutions, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if unknown. </p>
 
 </div>
 </div>
@@ -1211,7 +669,7 @@ Martin Desruisseaux (Geomatys) </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03834.html">apache</a></li><li class="navelem"><a class="el" href="a03835.html">sis</a></li><li class="navelem"><a class="el" href="a03839.html">internal</a></li><li class="navelem"><a class="el" href="a03840.html">coverage</a></li><li class="navelem"><a class="el" href="a03838.html">j2d</a></li><li class="navelem"><a class="el" href="a06655.html">TiledImage</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03858.html">apache</a></li><li class="navelem"><a class="el" href="a03859.html">sis</a></li><li class="navelem"><a class="el" href="a03863.html">internal</a></li><li class="navelem"><a class="el" href="a03864.html">coverage</a></li><li class="navelem"><a class="el" href="a03862.html">j2d</a></li><li class="navelem"><a class="el" href="a06655.html">BandedSampleConverter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

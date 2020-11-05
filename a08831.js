@@ -1,6 +1,6 @@
 var a08831 =
 [
-    [ "testLengthToPoint", "a08831.html#a7f7a47ff1561899ff3811348ec283964", null ],
-    [ "isRing", "a08831.html#ada60d12c21aae01823c842a1347435af", null ],
-    [ "point", "a08831.html#a081811ff1c2bedd0a20703599f90114f", null ]
+    [ "testSnap", "a08831.html#aa8a249951d6b07770ca87514b527e8c8", null ],
+    [ "testPolygon", "a08831.html#a1e3187cbc25299380589200c398b3ffd", null ],
+    [ "testPolygon2", "a08831.html#a882729aec95621b4ad261714738ae3fd", null ]
 ];

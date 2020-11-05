@@ -1,16 +1,17 @@
 var a06423 =
 [
-    [ "GeoHashDatatype", "a06423.html#a348224dea0ea02c6fa50762c6204bea4", null ],
-    [ "check", "a06423.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06423.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06423.html#ad1ee2f6512af0e5dba3d40a3e8b731f9", null ],
-    [ "get", "a06423.html#a0a24dee6650e86f3f00a406a199073cd", null ],
-    [ "parse", "a06423.html#a6ca6e70f10f54a3b0e7fdc14be052483", null ],
-    [ "parse", "a06423.html#adb0c0c075ba104124ca28f2d25ef76d5", null ],
-    [ "read", "a06423.html#ab987fb3c5c1835116368b15c0761d3b0", null ],
-    [ "registerDatatypes", "a06423.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "toString", "a06423.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "unparse", "a06423.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
-    [ "INSTANCE", "a06423.html#a078d138fc52e2240bb98b269d4bf6b64", null ],
-    [ "URI", "a06423.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
+    [ "getBoolValue", "a06423.html#a3a1e6541d7b80565154dd843cf98d49a", null ],
+    [ "getDoubleValue", "a06423.html#a6e66d340e2155013320774fef82228f3", null ],
+    [ "getJsonValue", "a06423.html#aa9dfd829312f0f786100f120901c91fa", null ],
+    [ "getJsonValueBytes", "a06423.html#a0af90c93aa7f99a693f2585454d7c2ba", null ],
+    [ "getNegIntValue", "a06423.html#a1089e8516bddd3c16166d28dca4aedaa", null ],
+    [ "getPosIntValue", "a06423.html#a2d07c2e90877df40791127e9dc17de13", null ],
+    [ "getStringValue", "a06423.html#a8b952a6b55319d717f28b0e87fb51f7a", null ],
+    [ "getStringValueBytes", "a06423.html#a04fb0deda14020f49fbc8b0659933157", null ],
+    [ "hasBoolValue", "a06423.html#a187dde27e443e300d29c359344cee3fa", null ],
+    [ "hasDoubleValue", "a06423.html#aa79d17eecdbed979cc955d60118e14be", null ],
+    [ "hasJsonValue", "a06423.html#ab0c3a9cb2bc4b087822ad30b1f976053", null ],
+    [ "hasNegIntValue", "a06423.html#ac43157042abcb26c7aef11d0fe9882e4", null ],
+    [ "hasPosIntValue", "a06423.html#a95ee3fe7962e54a78041b98d24c2506b", null ],
+    [ "hasStringValue", "a06423.html#a11ec19b265bcd854bdadafeffc881b49", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: NumBands Class Reference</title>
+<title>jena-geo: MemSize Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,24 @@ $(document).ready(function(){initNavTree('a05639.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05636.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">NumBands Class Reference</div>  </div>
+<div class="title">MemSize Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Returns the amount of space (in bytes) the raster takes.  
+ <a href="a05639.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for NumBands:</div>
+Inheritance diagram for MemSize:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05638.png" border="0" usemap="#NumBands_inherit__map" alt="Inheritance graph"/></div>
-<map name="NumBands_inherit__map" id="NumBands_inherit__map">
+<div class="center"><img src="a05638.png" border="0" usemap="#MemSize_inherit__map" alt="Inheritance graph"/></div>
+<map name="MemSize_inherit__map" id="MemSize_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for NumBands:</div>
+Collaboration diagram for MemSize:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05637.png" border="0" usemap="#NumBands_coll__map" alt="Collaboration graph"/></div>
-<map name="NumBands_coll__map" id="NumBands_coll__map">
+<div class="center"><img src="a05637.png" border="0" usemap="#MemSize_coll__map" alt="Collaboration graph"/></div>
+<map name="MemSize_coll__map" id="MemSize_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -87,7 +90,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05639.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
 <tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Returns the amount of space (in bytes) the raster takes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
 
@@ -104,10 +109,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06495.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, and <a class="el" href="a06495.html#ac3a5cdaadec8ceec258e2e950e0e2586">CoverageWrapper.getXYGeometry()</a>.</p>
+<p class="reference">References <a class="el" href="a06535.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, and <a class="el" href="a06535.html#ac3a5cdaadec8ceec258e2e950e0e2586">CoverageWrapper.getXYGeometry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a09259.html#acbd68d09b85f29cb457f75f009ff1366">NumBandsTest.testNumBands()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                           {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                GridCoverage2D raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeInteger(raster.getNumSampleDimensions());</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a09283.html#a00b14da4db6ac20d4db0410fd0157cf4">MemSizeTest.testMemSize()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                           {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                GridCoverage2D raster=wrapper.getXYGeometry();  </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeInteger(raster.getRenderedImage().getData().getDataBuffer().getSize());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                } <span class="keywordflow">catch</span> (CannotEvaluateException e) {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -116,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03805.html">raster</a></li><li class="navelem"><a class="el" href="a03806.html">attribute</a></li><li class="navelem"><a class="el" href="a05639.html">NumBands</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03829.html">raster</a></li><li class="navelem"><a class="el" href="a03830.html">attribute</a></li><li class="navelem"><a class="el" href="a05639.html">MemSize</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

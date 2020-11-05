@@ -1,5 +1,5 @@
 var a08939 =
 [
-    [ "testMinX", "a08939.html#a7961f48c8239bf7673764b63773f5794", null ],
-    [ "testPoint", "a08939.html#af26f700ee129f846cac58735f6dcc380", null ]
+    [ "testBezierSmoothing", "a08939.html#a2046c1e051bde433111c7665e11bf114", null ],
+    [ "testLineString", "a08939.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

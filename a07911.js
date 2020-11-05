@@ -1,13 +1,18 @@
 var a07911 =
 [
-    [ "ResourceType", "a07911.html#a3cf97f5d3f35f90b6ece7f86d56d958f", null ],
-    [ "isCoverageType", "a07911.html#a3eb16503b58a55be1467cb86143649c6", null ],
-    [ "COVERAGE", "a07911.html#aa31aa37ec06e0510c9707a71880c03ea", null ],
-    [ "coverageType", "a07911.html#af15b0de6159e974f25e7c15959b2471d", null ],
-    [ "GRID", "a07911.html#a9d4e8f9c023e97442cf06689286ab611", null ],
-    [ "METADATA", "a07911.html#aa04a4c30c6e3bb9be8b5ecfb9c524d9b", null ],
-    [ "OTHER", "a07911.html#ac4d216d824b98f736f89c043a164d4c7", null ],
-    [ "PYRAMID", "a07911.html#a5f016aa09b2d1d2622cf38aa08c10e01", null ],
-    [ "SENSOR", "a07911.html#a9a0d6b21e6d6ee63c8f6f1c8ad48c269", null ],
-    [ "VECTOR", "a07911.html#ae260a90a347e61a38938bf024adc0e0e", null ]
+    [ "Keys", "a07911.html#a5937394a66332528b31759007b816015", null ],
+    [ "emptyDirectory", "a07911.html#afe40be32182c6cd61921d1152a14efac", null ],
+    [ "emptyDirectory_remarks", "a07911.html#a6a8b31d2435dc4a9ca3b9f73715b703a", null ],
+    [ "folderLocationAlias", "a07911.html#a489989a7dec898e834e47c37b95cd6d2", null ],
+    [ "folderLocationRemarks", "a07911.html#afa43cdd99ae7db45129b202d9ffc12b3", null ],
+    [ "folderStoreDescription", "a07911.html#aed9ca8c3c91803bf3ff99601875f2e28", null ],
+    [ "folderStoreName", "a07911.html#af9621beee8c2ab8a313deed0638c0916", null ],
+    [ "paramIdentifierAlias", "a07911.html#aa3b58a1180eb50f0159e33b6d860cfe2", null ],
+    [ "paramIdentifierRemarks", "a07911.html#ad624eeb8b2fd2f27de59114ad8d0913c", null ],
+    [ "paramNamespaceAlias", "a07911.html#ab264da801f70e2f4ecd40bbb2572b0c0", null ],
+    [ "paramNamespaceRemarks", "a07911.html#a0cbbcaa516f48ca2c7f677bd555b9805", null ],
+    [ "paramPathAlias", "a07911.html#a35087a769e12c82d8357c51441599438", null ],
+    [ "paramPathRemarks", "a07911.html#a6906f5d3f9ea6d74decb51c7f1915c46", null ],
+    [ "recursive", "a07911.html#a5a3480f3cc8ccb239169cc56a211908a", null ],
+    [ "recursive_remarks", "a07911.html#a5fc8933616a7399c81c85e6b71f632d1", null ]
 ];

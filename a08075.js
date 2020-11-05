@@ -1,9 +1,17 @@
 var a08075 =
 [
-    [ "IllegalCrsException", "a08075.html#a04e954eea87936471b332acb5de9055a", null ],
-    [ "IllegalCrsException", "a08075.html#a8f633be1a7536c6601db485fc17f5df4", null ],
-    [ "IllegalCrsException", "a08075.html#ad9d8ca9b412076fe8fcbc3190deea7c4", null ],
-    [ "IllegalCrsException", "a08075.html#a51ebb78b4563373d5b833e9be6c306e9", null ],
-    [ "get", "a08075.html#aae489f02ae4ee8de4b96130ec5bbbe1b", null ],
-    [ "crs", "a08075.html#af414935218a6f95d3e46234ab2ff5a59", null ]
+    [ "ProxyMap", "a08075.html#ae501300dde6209fbe621d723d1636c74", null ],
+    [ "clear", "a08075.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
+    [ "containsKey", "a08075.html#a3101f8dc7d22575eed198995783d0547", null ],
+    [ "containsValue", "a08075.html#aa0c97bc767dec8ae0a78a4e699e79a85", null ],
+    [ "entrySet", "a08075.html#ac3d7998b354ef821673f836071270da7", null ],
+    [ "get", "a08075.html#ae9ea7fe128b8ab553aa89ae46bec234f", null ],
+    [ "isEmpty", "a08075.html#aa71d41fd3d95c354d4d5e922c6c21210", null ],
+    [ "keySet", "a08075.html#aaf221fd7e416516b6e1228c0a25cb839", null ],
+    [ "put", "a08075.html#a78cb64e8d41be403c2b89bc935757692", null ],
+    [ "putAll", "a08075.html#a94caf8e5910622dd6936b67330788f68", null ],
+    [ "remove", "a08075.html#af13ea149b55260d00e99a2030cea8034", null ],
+    [ "size", "a08075.html#af4b57d21919c42d55af03391f91a1c08", null ],
+    [ "values", "a08075.html#af0c79ec0eb4e8cde1ee8e0390add2f9e", null ],
+    [ "subs", "a08075.html#a6d98b237d2c5ff06ad59e8bee04bfab4", null ]
 ];

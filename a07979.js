@@ -1,4 +1,4 @@
 var a07979 =
 [
-    [ "close", "a07979.html#a5ae591df94fc66ccb85cbb6565368bca", null ]
+    [ "clone", "a07979.html#a19eec2727094a0c06db572ee13d2d276", null ]
 ];

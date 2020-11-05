@@ -1,14 +1,8 @@
 var a06527 =
 [
-    [ "RasterDataType", "a06527.html#aa93f89032755d7080772b2cad8055647", null ],
-    [ "check", "a06527.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06527.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06527.html#a86f7801427aabe2a52b3157bbe8f4f33", null ],
-    [ "get", "a06527.html#ad25e18c958a48eb67e78436619ed8e8a", null ],
-    [ "parse", "a06527.html#a8d7111ceffa3ab3064b2363344b96112", null ],
-    [ "parse", "a06527.html#af07c28b2fbbd1b824b228bbddd17b048", null ],
-    [ "read", "a06527.html#a38cb94c976c5b05753374fea512b6456", null ],
-    [ "registerDatatypes", "a06527.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "isDatatypesRegistered", "a06527.html#a3c1944c708771867fd3be8937d59bc8d", null ],
-    [ "TYPE_MAPPER", "a06527.html#ad4920a4c1891d72231838321e34cf5c1", null ]
+    [ "WKBTextSRS", "a06527.html#a12d2a5c4b7a29eae5d108bccb1e55b11", null ],
+    [ "getSrsURI", "a06527.html#a7d7dded4f73b0a90d90f68ccc5f16bc3", null ],
+    [ "getWkbText", "a06527.html#a4a2ce7a2dcd4fa0818378fb8b97931fb", null ],
+    [ "srsURI", "a06527.html#aaa7845d06052bead86bb2de40935e4d9", null ],
+    [ "wkbText", "a06527.html#a7b6ce5371e4ad222f4b09eaadfdcae09", null ]
 ];

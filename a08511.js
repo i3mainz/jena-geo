@@ -1,6 +1,5 @@
 var a08511 =
 [
-    [ "testGeomFromText", "a08511.html#a2678d2fcc796b673cc52b0e000a954b0", null ],
-    [ "geoJsonTestGeom", "a08511.html#a117e8ff340791b5aa0658f5840b5dcf4", null ],
-    [ "inputText", "a08511.html#a9a5086d43cfaac403f2a79addec33322", null ]
+    [ "testMinimumDiameterLine", "a08511.html#ac6734228b3f88748ca1545e62811f616", null ],
+    [ "testPolygon", "a08511.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

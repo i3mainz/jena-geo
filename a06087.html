@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: PeriodStart Class Reference</title>
+<title>jena-geo: Minus Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,32 +64,32 @@ $(document).ready(function(){initNavTree('a06087.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a06084.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PeriodStart Class Reference</div>  </div>
+<div class="title">Minus Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for PeriodStart:</div>
+Inheritance diagram for Minus:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06086.png" border="0" usemap="#PeriodStart_inherit__map" alt="Inheritance graph"/></div>
-<map name="PeriodStart_inherit__map" id="PeriodStart_inherit__map">
+<div class="center"><img src="a06086.png" border="0" usemap="#Minus_inherit__map" alt="Inheritance graph"/></div>
+<map name="Minus_inherit__map" id="Minus_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for PeriodStart:</div>
+Collaboration diagram for Minus:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06085.png" border="0" usemap="#PeriodStart_coll__map" alt="Collaboration graph"/></div>
-<map name="PeriodStart_coll__map" id="PeriodStart_coll__map">
+<div class="center"><img src="a06085.png" border="0" usemap="#Minus_coll__map" alt="Collaboration graph"/></div>
+<map name="Minus_coll__map" id="Minus_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0727a911a23e75c8e79b5401336e9b31"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06087.html#a0727a911a23e75c8e79b5401336e9b31">exec</a> (NodeValue v1)</td></tr>
-<tr class="separator:a0727a911a23e75c8e79b5401336e9b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06087.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
+<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0727a911a23e75c8e79b5401336e9b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0727a911a23e75c8e79b5401336e9b31">&#9670;&nbsp;</a></span>exec()</h2>
+<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,14 +98,24 @@ Public Member Functions</h2></td></tr>
           <td class="memname">NodeValue exec </td>
           <td>(</td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v1</em></td><td>)</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06547.html#ae09164e634e58926681b4407f00c6139">TemporalRangeWrapper.extract()</a>, and <a class="el" href="a06539.html#ad951563fb8d5f38fd9cdb8ef9eea8ac4">TemporalRange.from</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                            {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                TemporalRange range1=TemporalRangeWrapper.extract(v1.getString(), v1.getDatatypeURI());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                Calendar cal=Calendar.getInstance();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeDateTime(range1.from.toGMTString());</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06587.html#ae09164e634e58926681b4407f00c6139">TemporalRangeWrapper.extract()</a>, <a class="el" href="a06579.html#ad951563fb8d5f38fd9cdb8ef9eea8ac4">TemporalRange.from</a>, and <a class="el" href="a06579.html#a220e90554a7d4ef913d6bf891e740a4b">TemporalRange.to</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                          {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                TemporalRange range1=TemporalRangeWrapper.extract(v1.getString(), v1.getDatatypeURI());</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                TemporalRange range2=TemporalRangeWrapper.extract(v2.getString(), v2.getDatatypeURI());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                Calendar start = Calendar.getInstance();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                Calendar end = Calendar.getInstance();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                start.setTime(range1.to);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                end.setTime(range1.from);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                start.set(2010, 7, 23);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                end.set(2010, 8, 26);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="comment">//range2.to. range2.from</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">if</span>(range1.from.equals(range2.from) &amp;&amp; range1.to.equals(range2.to)) {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">true</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">false</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -114,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03812.html">temporal</a></li><li class="navelem"><a class="el" href="a06087.html">PeriodStart</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03836.html">temporal</a></li><li class="navelem"><a class="el" href="a06087.html">Minus</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

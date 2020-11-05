@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: SilhouetteMask Class Reference</title>
+<title>jena-geo: Combine.Dyadic Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,161 +63,168 @@ $(document).ready(function(){initNavTree('a07055.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07052.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SilhouetteMask Class Reference</div>  </div>
+<div class="title">Combine.Dyadic Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates the silhouette of an image that isolates its content from its background.  
+<p>Optimized <a class="el" href="a07047.html">Combine</a> operation for dyadic (two sources) image.  
  <a href="a07055.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for SilhouetteMask:</div>
+Inheritance diagram for Combine.Dyadic:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07054.png" border="0" usemap="#SilhouetteMask_inherit__map" alt="Inheritance graph"/></div>
-<map name="SilhouetteMask_inherit__map" id="SilhouetteMask_inherit__map">
+<div class="center"><img src="a07054.png" border="0" usemap="#Combine_8Dyadic_inherit__map" alt="Inheritance graph"/></div>
+<map name="Combine_8Dyadic_inherit__map" id="Combine_8Dyadic_inherit__map">
+<area shape="rect" id="node2" href="a07047.html" title="Computes a set of arbitrary linear combinations of the bands of many rendered source images..." alt="" coords="27,80,102,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for SilhouetteMask:</div>
+Collaboration diagram for Combine.Dyadic:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07053.png" border="0" usemap="#SilhouetteMask_coll__map" alt="Collaboration graph"/></div>
-<map name="SilhouetteMask_coll__map" id="SilhouetteMask_coll__map">
+<div class="center"><img src="a07053.png" border="0" usemap="#Combine_8Dyadic_coll__map" alt="Collaboration graph"/></div>
+<map name="Combine_8Dyadic_coll__map" id="Combine_8Dyadic_coll__map">
+<area shape="rect" id="node2" href="a07047.html" title="Computes a set of arbitrary linear combinations of the bands of many rendered source images..." alt="" coords="275,133,349,159"/>
+<area shape="rect" id="node7" href="a07051.html" title="Transforms the sample values for one pixel during a &quot;{@link Combine Combine}&quot; operation. " alt="" coords="299,5,437,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0731c89b91402c597f9e6b5ad566956a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a0731c89b91402c597f9e6b5ad566956a">SilhouetteMask</a> (final RenderedImage source, final ImageLayout <a class="el" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>, final Map&lt;?,?&gt; configuration, double[]... <a class="el" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a>)</td></tr>
-<tr class="memdesc:a0731c89b91402c597f9e6b5ad566956a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new silhouette mask for the given image.  <a href="#a0731c89b91402c597f9e6b5ad566956a">More...</a><br /></td></tr>
-<tr class="separator:a0731c89b91402c597f9e6b5ad566956a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016c1e8b58082cf2add38a25a00fd20d"><td class="memItemLeft" align="right" valign="top">Vector&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a> ()</td></tr>
+<tr class="memitem:a96b13a4e02602327f181afc141b2120b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a96b13a4e02602327f181afc141b2120b">Dyadic</a> (final Vector&lt;? extends RenderedImage &gt; images, final double[][] <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a>, final RenderingHints hints)  throws MismatchedSizeException         </td></tr>
+<tr class="memdesc:a96b13a4e02602327f181afc141b2120b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new instance of.  <a href="#a96b13a4e02602327f181afc141b2120b">More...</a><br /></td></tr>
+<tr class="separator:a96b13a4e02602327f181afc141b2120b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad61f28eae5af1a21a56c962e59c99ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#aad61f28eae5af1a21a56c962e59c99ba">computeRect</a> (final PlanarImage[] images, final WritableRaster dest, final Rectangle destRect)</td></tr>
+<tr class="memdesc:aad61f28eae5af1a21a56c962e59c99ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes one tile.  <a href="#aad61f28eae5af1a21a56c962e59c99ba">More...</a><br /></td></tr>
+<tr class="separator:aad61f28eae5af1a21a56c962e59c99ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016c1e8b58082cf2add38a25a00fd20d"><td class="memItemLeft" align="right" valign="top">Vector&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a> ()</td></tr>
 <tr class="memdesc:a016c1e8b58082cf2add38a25a00fd20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source images.  <a href="#a016c1e8b58082cf2add38a25a00fd20d">More...</a><br /></td></tr>
 <tr class="separator:a016c1e8b58082cf2add38a25a00fd20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4ba7d667bd2c11bb15f09506d145b31e"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a4ba7d667bd2c11bb15f09506d145b31e">OPERATION_NAME</a> = &quot;org.geotoolkit.SilhouetteMask&quot;</td></tr>
+<tr class="memitem:a4ba7d667bd2c11bb15f09506d145b31e"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#a4ba7d667bd2c11bb15f09506d145b31e">OPERATION_NAME</a> = &quot;org.geotoolkit.Combine&quot;</td></tr>
 <tr class="memdesc:a4ba7d667bd2c11bb15f09506d145b31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this operation in the JAI registry.  <a href="#a4ba7d667bd2c11bb15f09506d145b31e">More...</a><br /></td></tr>
 <tr class="separator:a4ba7d667bd2c11bb15f09506d145b31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5522f2e40982772e9fd940df4a96af81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a5522f2e40982772e9fd940df4a96af81">computeImage</a> (final Raster[] sources, final WritableRaster dest, final Rectangle destRect)</td></tr>
-<tr class="memdesc:a5522f2e40982772e9fd940df4a96af81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a rectangle of outputs.  <a href="#a5522f2e40982772e9fd940df4a96af81">More...</a><br /></td></tr>
-<tr class="separator:a5522f2e40982772e9fd940df4a96af81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8059b16632ab926cbbcda163cd991f1b"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a07051.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#a8059b16632ab926cbbcda163cd991f1b">transform</a></td></tr>
+<tr class="memdesc:a8059b16632ab926cbbcda163cd991f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transform to apply on sample values before the linear combination, or.  <a href="#a8059b16632ab926cbbcda163cd991f1b">More...</a><br /></td></tr>
+<tr class="separator:a8059b16632ab926cbbcda163cd991f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ae33c60a088a675d97d37fd915632b610"><td class="memItemLeft" align="right" valign="top">static ImageLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a> (final RenderedImage source, ImageLayout layout)</td></tr>
-<tr class="memdesc:ae33c60a088a675d97d37fd915632b610"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the user didn't specified explicitly a sample or a color model, creates default ones.  <a href="#ae33c60a088a675d97d37fd915632b610">More...</a><br /></td></tr>
-<tr class="separator:ae33c60a088a675d97d37fd915632b610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:a5ee81eb9fcda92c8096c27a55f8f1c73"><td class="memItemLeft" align="right" valign="top">final double [][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a></td></tr>
+<tr class="memdesc:a5ee81eb9fcda92c8096c27a55f8f1c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The linear combination coefficients as a matrix.  <a href="#a5ee81eb9fcda92c8096c27a55f8f1c73">More...</a><br /></td></tr>
+<tr class="separator:a5ee81eb9fcda92c8096c27a55f8f1c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3b3c2d297f8c41ee6a67497d4e1b73"><td class="memItemLeft" align="right" valign="top">final int [][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#a1b3b3c2d297f8c41ee6a67497d4e1b73">sources</a></td></tr>
+<tr class="memdesc:a1b3b3c2d297f8c41ee6a67497d4e1b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source to use for each elements in <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a>.  <a href="#a1b3b3c2d297f8c41ee6a67497d4e1b73">More...</a><br /></td></tr>
+<tr class="separator:a1b3b3c2d297f8c41ee6a67497d4e1b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95bd8b3a2a6f5f51cc5904ca65a4a754"><td class="memItemLeft" align="right" valign="top">final int [][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#a95bd8b3a2a6f5f51cc5904ca65a4a754">bands</a></td></tr>
+<tr class="memdesc:a95bd8b3a2a6f5f51cc5904ca65a4a754"><td class="mdescLeft">&#160;</td><td class="mdescRight">The band to use for each elements in <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a>.  <a href="#a95bd8b3a2a6f5f51cc5904ca65a4a754">More...</a><br /></td></tr>
+<tr class="separator:a95bd8b3a2a6f5f51cc5904ca65a4a754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99ae9458f515b16d68878a27d86f838"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07047.html#ae99ae9458f515b16d68878a27d86f838">numSamples</a></td></tr>
+<tr class="memdesc:ae99ae9458f515b16d68878a27d86f838"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of source samples.  <a href="#ae99ae9458f515b16d68878a27d86f838">More...</a><br /></td></tr>
+<tr class="separator:ae99ae9458f515b16d68878a27d86f838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a62a36bc4171cc588059b0315d64c2b89"><td class="memItemLeft" align="right" valign="top">final double [][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a></td></tr>
-<tr class="memdesc:a62a36bc4171cc588059b0315d64c2b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background values in the source image.  <a href="#a62a36bc4171cc588059b0315d64c2b89">More...</a><br /></td></tr>
-<tr class="separator:a62a36bc4171cc588059b0315d64c2b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445901846c2021ae107de286d8807e22"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a445901846c2021ae107de286d8807e22">scales0</a></td></tr>
+<tr class="memdesc:a445901846c2021ae107de286d8807e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale of image.  <a href="#a445901846c2021ae107de286d8807e22">More...</a><br /></td></tr>
+<tr class="separator:a445901846c2021ae107de286d8807e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b92a42cbdc45c9db4fc2beed44f8590"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">scales1</a></td></tr>
+<tr class="memdesc:a1b92a42cbdc45c9db4fc2beed44f8590"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scale of image.  <a href="#a1b92a42cbdc45c9db4fc2beed44f8590">More...</a><br /></td></tr>
+<tr class="separator:a1b92a42cbdc45c9db4fc2beed44f8590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842fb770db1cfb28fc4da07962e51ee1"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">offsets</a></td></tr>
+<tr class="memdesc:a842fb770db1cfb28fc4da07962e51ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset for each bands.  <a href="#a842fb770db1cfb28fc4da07962e51ee1">More...</a><br /></td></tr>
+<tr class="separator:a842fb770db1cfb28fc4da07962e51ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates the silhouette of an image that isolates its content from its background. </p>
-<p>The background color is assumed to be uniform, with a know value which must be specified as a parameter to this operation. </p>
-<p>This operation can be used in order to build a mask for an image that has been rotated, where pixels in the middle of the image should not have their value masked even if they happen to have the same color than the background color. </p>
-<p>Current implementation is rather simple and works for images in which the content is inside a rotated rectangle. More complex outline are not guaranteed to work. Example: </p>
-<table align="center" cellpadding="15" border="1">
-<tr>
-<th>Input</th><th>output</th></tr>
-<tr>
-<td><div class="image">
-<img src="doc-files/sample-rgb.png" border="1"/>
-</div>
- </td><td><div class="image">
-<img src="doc-files/silhouette.png" border="1"/>
-</div>
- </td></tr>
-</table>
-<p>{</p>
-<h1><a class="anchor" id="Current"></a>
-algorithm}</h1>
-<p>This operator starts from a corner of the source image. If the pixel value in that corner is equals to the specified background color, then the corresponding sample value in the target image is set to -1 (for integer data type, this is equivalent to setting all bits to 1). Otherwise the target sample value is set to 0. If and only if the pixel in the corner has been set to -1, then its neighbors pixels are examined iteratively in the same way. This operation is repeated for the 4 image corners.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.01</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.00  </dd></dl>
+<div class="textblock"><p>Optimized <a class="el" href="a07047.html">Combine</a> operation for dyadic (two sources) image. </p>
+<p>This operation performs a linear combination of two images (</p><div class="fragment"><div class="line">src0 </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line">src1 </div></div><!-- fragment --><p> ). The parameters</p><div class="fragment"><div class="line">scale0 </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line">scale1 </div></div><!-- fragment --><p> indicate the scale of source images</p><div class="fragment"><div class="line">src0 </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line">src1 </div></div><!-- fragment --><p> . If we consider pixel at coordinate (<em>x</em>,<em>y</em>), its value is determinate by the pseudo-code:</p>
+<p>{ java value = src0[x][y]*scale0 + src1[x][y]*scale1 + offset }</p>
+<dl class="section author"><dt>Author</dt><dd>Rémi Eve (IRD) </dd>
+<dd>
+Martin Desruisseaux (IRD) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.1  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0731c89b91402c597f9e6b5ad566956a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0731c89b91402c597f9e6b5ad566956a">&#9670;&nbsp;</a></span>SilhouetteMask()</h2>
+<a id="a96b13a4e02602327f181afc141b2120b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b13a4e02602327f181afc141b2120b">&#9670;&nbsp;</a></span>Dyadic()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07055.html">SilhouetteMask</a> </td>
+          <td class="memname"><a class="el" href="a07055.html">Dyadic</a> </td>
           <td>(</td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">final Vector&lt;? extends RenderedImage &gt;&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final ImageLayout&#160;</td>
-          <td class="paramname"><em>layout</em>, </td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>matrix</em>[][], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final Map&lt;?,?&gt;&#160;</td>
-          <td class="paramname"><em>configuration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double... []&#160;</td>
-          <td class="paramname"><em>background</em>&#160;</td>
+          <td class="paramtype">final RenderingHints&#160;</td>
+          <td class="paramname"><em>hints</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> throws MismatchedSizeException</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a new silhouette mask for the given image. </p>
-<p>While this constructor is public, it should usually not be invoked directly. You should use  javax.media.jai.JAI} factory methods instead.</p>
+<p>Constructs a new instance of. </p>
+<div class="fragment"><div class="line"><a class="code" href="a07047.html#abc381ff2b8f349756a41d4ab95795238">Combine</a>.Dyadic </div></div><!-- fragment --><p> .</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>The source image. </td></tr>
-    <tr><td class="paramname">layout</td><td>The image layout. </td></tr>
-    <tr><td class="paramname">configuration</td><td>The image properties and rendering hints. </td></tr>
-    <tr><td class="paramname">background</td><td>The background values in the source image. </td></tr>
+    <tr><td class="paramname">images</td><td>The rendered sources. This vector must contains exactly 2 sources. </td></tr>
+    <tr><td class="paramname">matrix</td><td>The linear combination coefficients as a matrix. </td></tr>
+    <tr><td class="paramname">hints</td><td>The rendering hints.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MismatchedSizeException</td><td>if some rows in the<div class="fragment"><div class="line"><a class="code" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a> </div></div><!-- fragment --> argument doesn't have the expected length. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a07055.html#ae33c60a088a675d97d37fd915632b610">SilhouetteMask.layout()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        super(source, configuration, <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>(source, <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>));</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numBands = source.getSampleModel().getNumBands();</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        this.<a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a> = <a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a> = <a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a>.clone();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a>.length; i++) {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a>[i] = Arrays.copyOf(<a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a>[i], numBands);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div><div class="ttc" id="a07055_html_ae33c60a088a675d97d37fd915632b610"><div class="ttname"><a href="a07055.html#ae33c60a088a675d97d37fd915632b610">org.geotoolkit.image.jai.SilhouetteMask.layout</a></div><div class="ttdeci">static ImageLayout layout(final RenderedImage source, ImageLayout layout)</div><div class="ttdoc">If the user didn&amp;#39;t specified explicitly a sample or a color model, creates default ones...</div><div class="ttdef"><b>Definition:</b> SilhouetteMask.java:116</div></div>
-<div class="ttc" id="a07055_html_a62a36bc4171cc588059b0315d64c2b89"><div class="ttname"><a href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">org.geotoolkit.image.jai.SilhouetteMask.background</a></div><div class="ttdeci">final double [][] background</div><div class="ttdoc">The background values in the source image. </div><div class="ttdef"><b>Definition:</b> SilhouetteMask.java:85</div></div>
+<p class="reference">References <a class="el" href="a07047.html#a95bd8b3a2a6f5f51cc5904ca65a4a754">Combine.bands</a>, <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">Combine.matrix</a>, and <a class="el" href="a07047.html#a1b3b3c2d297f8c41ee6a67497d4e1b73">Combine.sources</a>.</p>
+<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        {</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            super(images, <a class="code" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a>, null, hints);</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            <span class="keywordflow">if</span> (getNumSources() != 2) {</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>();</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            }</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> numBands = getNumBands();</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <a class="code" href="a07055.html#a445901846c2021ae107de286d8807e22">scales0</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[numBands];</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <a class="code" href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">scales1</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[numBands];</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            <a class="code" href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">offsets</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[numBands];</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;numBands; j++) {</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span>[]  row = this.<a class="code" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a> [j];</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span>[] <a class="code" href="a07047.html#a1b3b3c2d297f8c41ee6a67497d4e1b73">sources</a> = this.sources[j];</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span>[]   <a class="code" href="a07047.html#a95bd8b3a2a6f5f51cc5904ca65a4a754">bands</a> = this.bands  [j];</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;sources.length; i++) {</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">double</span> coeff =    row[i];</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">int</span>    band =   bands[i];</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">int</span>  source = sources[i];</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                    <span class="keywordflow">if</span> (band != j) {</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> AssertionError(band); <span class="comment">// Should not happen.</span></div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                    }</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                    <span class="keywordflow">switch</span> (source) {</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                        <span class="keywordflow">case</span> 0:  <a class="code" href="a07055.html#a445901846c2021ae107de286d8807e22">scales0</a>[band] = coeff; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                        <span class="keywordflow">case</span> 1:  <a class="code" href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">scales1</a>[band] = coeff; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                        <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> AssertionError(source); <span class="comment">// Should not happen.</span></div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    }</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                }</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                <a class="code" href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">offsets</a>[j] = row[sources.length];</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            }</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        }</div><div class="ttc" id="a07047_html_a1b3b3c2d297f8c41ee6a67497d4e1b73"><div class="ttname"><a href="a07047.html#a1b3b3c2d297f8c41ee6a67497d4e1b73">org.geotoolkit.image.jai.Combine.sources</a></div><div class="ttdeci">final int [][] sources</div><div class="ttdoc">The source to use for each elements in matrix. </div><div class="ttdef"><b>Definition:</b> Combine.java:164</div></div>
+<div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a07047_html_a5ee81eb9fcda92c8096c27a55f8f1c73"><div class="ttname"><a href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">org.geotoolkit.image.jai.Combine.matrix</a></div><div class="ttdeci">final double [][] matrix</div><div class="ttdoc">The linear combination coefficients as a matrix. </div><div class="ttdef"><b>Definition:</b> Combine.java:158</div></div>
+<div class="ttc" id="a07055_html_a445901846c2021ae107de286d8807e22"><div class="ttname"><a href="a07055.html#a445901846c2021ae107de286d8807e22">org.geotoolkit.image.jai.Combine.Dyadic.scales0</a></div><div class="ttdeci">final double [] scales0</div><div class="ttdoc">The scale of image. </div><div class="ttdef"><b>Definition:</b> Combine.java:404</div></div>
+<div class="ttc" id="a07055_html_a842fb770db1cfb28fc4da07962e51ee1"><div class="ttname"><a href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">org.geotoolkit.image.jai.Combine.Dyadic.offsets</a></div><div class="ttdeci">final double [] offsets</div><div class="ttdoc">The offset for each bands. </div><div class="ttdef"><b>Definition:</b> Combine.java:414</div></div>
+<div class="ttc" id="a07055_html_a1b92a42cbdc45c9db4fc2beed44f8590"><div class="ttname"><a href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">org.geotoolkit.image.jai.Combine.Dyadic.scales1</a></div><div class="ttdeci">final double [] scales1</div><div class="ttdoc">The scale of image. </div><div class="ttdef"><b>Definition:</b> Combine.java:409</div></div>
+<div class="ttc" id="a07047_html_a95bd8b3a2a6f5f51cc5904ca65a4a754"><div class="ttname"><a href="a07047.html#a95bd8b3a2a6f5f51cc5904ca65a4a754">org.geotoolkit.image.jai.Combine.bands</a></div><div class="ttdeci">final int [][] bands</div><div class="ttdoc">The band to use for each elements in matrix. </div><div class="ttdef"><b>Definition:</b> Combine.java:170</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5522f2e40982772e9fd940df4a96af81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5522f2e40982772e9fd940df4a96af81">&#9670;&nbsp;</a></span>computeImage()</h2>
+<a id="aad61f28eae5af1a21a56c962e59c99ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad61f28eae5af1a21a56c962e59c99ba">&#9670;&nbsp;</a></span>computeRect()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void computeImage </td>
+          <td class="memname">void computeRect </td>
           <td>(</td>
-          <td class="paramtype">final Raster []&#160;</td>
-          <td class="paramname"><em>sources</em>, </td>
+          <td class="paramtype">final PlanarImage []&#160;</td>
+          <td class="paramname"><em>images</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -237,25 +244,20 @@ algorithm}</h1>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Computes a rectangle of outputs. </p>
+<p>Computes one tile. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sources</td><td>The source images. Should be an array of length 1. </td></tr>
+    <tr><td class="paramname">images</td><td>The source images. </td></tr>
     <tr><td class="paramname">dest</td><td>The raster to be filled in. </td></tr>
     <tr><td class="paramname">destRect</td><td>The region within the raster to be filled. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">SilhouetteMask.background</a>, <a class="el" href="a06875.html#a7ec08b09324f69c4d632e53b8044ecc1">ImageUtilities.fill()</a>, <a class="el" href="a07039.html#a3c3187a9ea5768277146d5961af9b768">SampleValues.getInstance()</a>, <a class="el" href="a07039.html#ad21dc1a2584d1f2bec2f4e3309312889">SampleValues.getPixel()</a>, and <a class="el" href="a07039.html#af3f59e98fcf5be419babb0e263912b85">SampleValues.setPixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        assert sources.length == 1;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (destRect.isEmpty()) <span class="keywordflow">return</span>;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">final</span> Raster source = sources[0];</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">false</span>) {</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">             * According javax.media.jai.TileFactory javadoc (see method createTile), new tiles</span></div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">             * should be initialized to 0 even if they were recycled from an older image. So we</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">             * should not need to invoke this fill method.</span></div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            ImageUtilities.fill(dest, destRect, 0);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> xmin = destRect.x;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ymin = destRect.y;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> xmax = destRect.width  + xmin;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ymax = destRect.height + ymin;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span>[] ones = <span class="keyword">new</span> <span class="keywordtype">int</span>[dest.getNumBands()];</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        Arrays.fill(ones, -1);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> transferType = source.getTransferType();</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keyword">final</span> Set&lt;SampleValues&gt; <a class="code" href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">background</a> = <span class="keyword">new</span> HashSet&lt;&gt;();</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> <span class="keywordtype">double</span>[] samples : this.background) {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            background.add(SampleValues.getInstance(transferType, samples));</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">final</span> SampleValues buffer = SampleValues.getInstance(transferType, source.getSampleModel().getNumBands());</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        assert source.getBounds().contains(destRect) : destRect;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">         * For each background value found in the source image, sets the destination pixel to -1.</span></div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">         * The same algorithm is repeated for the 4 corners, using only different iteration direction.</span></div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> corner=0; corner&lt;4; corner++) {</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordtype">int</span> x = source.getMinX();</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordtype">int</span> y = source.getMinY();</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordtype">int</span> w = source.getWidth();</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordtype">int</span> h = source.getHeight();</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordtype">int</span> dx = 1, dy = 1;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span> ((corner &amp; 1) != 0) {x += w - 1; dx = -1;}</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span> ((corner &amp; 2) != 0) {y += h - 1; dy = -1;}</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> x0 = x;</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">             * Next line will be scanned only if the first pixel of the previous line had</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">             * the background value. Next pixel on a row will be scanned only as long as</span></div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">             * background values are found.</span></div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">while</span> (--h &gt;= 0 &amp;&amp; background.contains(buffer.getPixel(source, x, y))) {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keywordflow">if</span> (y &gt;= ymin &amp;&amp; y &lt; ymax) {</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    w = destRect.width;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                    <span class="keywordflow">do</span> <span class="keywordflow">if</span> (x &gt;= xmin &amp;&amp; x &lt; xmax) {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                        dest.setPixel(x, y, ones);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                        <span class="keywordflow">if</span> (--w == 0) <span class="keywordflow">break</span>;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                    } <span class="keywordflow">while</span> (background.contains(buffer.getPixel(source, x += dx, y)));</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                }</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                y += dy;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                x = x0;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div><div class="ttc" id="a07055_html_a62a36bc4171cc588059b0315d64c2b89"><div class="ttname"><a href="a07055.html#a62a36bc4171cc588059b0315d64c2b89">org.geotoolkit.image.jai.SilhouetteMask.background</a></div><div class="ttdeci">final double [][] background</div><div class="ttdoc">The background values in the source image. </div><div class="ttdef"><b>Definition:</b> SilhouetteMask.java:85</div></div>
+<div class="fragment"><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        {</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <span class="keyword">final</span> RectIter iSrc0 = RectIterFactory.create(images[0], mapDestRect(destRect, 0));</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keyword">final</span> RectIter iSrc1 = RectIterFactory.create(images[1], mapDestRect(destRect, 1));</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <span class="keyword">final</span> WritableRectIter iTarget = RectIterFactory.createWritable(dest, destRect);</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="keywordtype">int</span> band = 0;</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            iSrc0  .startBands();</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            iSrc1  .startBands();</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            iTarget.startBands();</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            <span class="keywordflow">if</span> (!iTarget.finishedBands() &amp;&amp;</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                !iSrc0  .finishedBands() &amp;&amp;</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                !iSrc1  .finishedBands())</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            {</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> scale0 = <a class="code" href="a07055.html#a445901846c2021ae107de286d8807e22">scales0</a>[Math.min(band, <a class="code" href="a07055.html#a445901846c2021ae107de286d8807e22">scales0</a>.length-1)];</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> scale1 = <a class="code" href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">scales1</a>[Math.min(band, <a class="code" href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">scales1</a>.length-1)];</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> offset = <a class="code" href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">offsets</a>[Math.min(band, <a class="code" href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">offsets</a>.length-1)];</div><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                <span class="keywordflow">do</span> {</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                    iSrc0  .startLines();</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                    iSrc1  .startLines();</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                    iTarget.startLines();</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                    <span class="keywordflow">if</span> (!iTarget.finishedLines() &amp;&amp;</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                        !iSrc0  .finishedLines() &amp;&amp;</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                        !iSrc1  .finishedLines())</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                    {</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                        <span class="keywordflow">do</span> {</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                            iSrc0  .startPixels();</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                            iSrc1  .startPixels();</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                            iTarget.startPixels();</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                            <span class="keywordflow">if</span> (!iTarget.finishedPixels() &amp;&amp;</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                                !iSrc0  .finishedPixels() &amp;&amp;</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                                !iSrc1  .finishedPixels())</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                            {</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                                <span class="keywordflow">do</span> {</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                                    iTarget.setSample(iSrc0.getSampleDouble() * scale0 +</div><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                                                      iSrc1.getSampleDouble() * scale1 + offset);</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                                } <span class="keywordflow">while</span> (!iSrc0.nextPixelDone() &amp;&amp;</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                                         !iSrc1.nextPixelDone() &amp;&amp;</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                                       !iTarget.nextPixelDone());</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                            }</div><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                        } <span class="keywordflow">while</span> (!iSrc0.nextLineDone() &amp;&amp;</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                                 !iSrc1.nextLineDone() &amp;&amp;</div><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                               !iTarget.nextLineDone());</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                    }</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                    band++;</div><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                } <span class="keywordflow">while</span> (!iSrc0.nextBandDone() &amp;&amp;</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                         !iSrc1.nextBandDone() &amp;&amp;</div><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                       !iTarget.nextBandDone());</div><div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            }</div><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        }</div><div class="ttc" id="a07055_html_a445901846c2021ae107de286d8807e22"><div class="ttname"><a href="a07055.html#a445901846c2021ae107de286d8807e22">org.geotoolkit.image.jai.Combine.Dyadic.scales0</a></div><div class="ttdeci">final double [] scales0</div><div class="ttdoc">The scale of image. </div><div class="ttdef"><b>Definition:</b> Combine.java:404</div></div>
+<div class="ttc" id="a07055_html_a842fb770db1cfb28fc4da07962e51ee1"><div class="ttname"><a href="a07055.html#a842fb770db1cfb28fc4da07962e51ee1">org.geotoolkit.image.jai.Combine.Dyadic.offsets</a></div><div class="ttdeci">final double [] offsets</div><div class="ttdoc">The offset for each bands. </div><div class="ttdef"><b>Definition:</b> Combine.java:414</div></div>
+<div class="ttc" id="a07055_html_a1b92a42cbdc45c9db4fc2beed44f8590"><div class="ttname"><a href="a07055.html#a1b92a42cbdc45c9db4fc2beed44f8590">org.geotoolkit.image.jai.Combine.Dyadic.scales1</a></div><div class="ttdeci">final double [] scales1</div><div class="ttdoc">The scale of image. </div><div class="ttdef"><b>Definition:</b> Combine.java:409</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,6 +266,9 @@ algorithm}</h1>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Vector&lt;RenderedImage&gt; getSources </td>
@@ -272,66 +277,20 @@ algorithm}</h1>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>Returns the source images. </p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                              {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> super.getSources();</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="ae33c60a088a675d97d37fd915632b610"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae33c60a088a675d97d37fd915632b610">&#9670;&nbsp;</a></span>layout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ImageLayout layout </td>
-          <td>(</td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ImageLayout&#160;</td>
-          <td class="paramname"><em>layout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>If the user didn't specified explicitly a sample or a color model, creates default ones. </p>
-<p>This method is actually a workaround for RFE #4093999 in Sun's bug database ("Relax constraint on placement of this()/super() call in constructors").</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">layout</td><td>The user-supplied layout. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A layout with at least a color model. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06855.html#afba35bdad0d4917767fd4641d9e4345b">ColorUtilities.BINARY_COLOR_MODEL</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07055.html#a0731c89b91402c597f9e6b5ad566956a">SilhouetteMask.SilhouetteMask()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                                                      {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a> == null) {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a> = <span class="keyword">new</span> ImageLayout();</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>.getValidMask() &amp; (SAMPLE_MODEL_MASK | COLOR_MODEL_MASK)) == 0) {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a> = (ImageLayout) <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>.clone();</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">final</span> ColorModel cm = ColorUtilities.BINARY_COLOR_MODEL;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>.setColorModel(cm).setSampleModel(cm.createCompatibleSampleModel(</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>.getWidth(source), <a class="code" href="a07055.html#ae33c60a088a675d97d37fd915632b610">layout</a>.getHeight(source)));</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div><div class="ttc" id="a07055_html_ae33c60a088a675d97d37fd915632b610"><div class="ttname"><a href="a07055.html#ae33c60a088a675d97d37fd915632b610">org.geotoolkit.image.jai.SilhouetteMask.layout</a></div><div class="ttdeci">static ImageLayout layout(final RenderedImage source, ImageLayout layout)</div><div class="ttdoc">If the user didn&amp;#39;t specified explicitly a sample or a color model, creates default ones...</div><div class="ttdef"><b>Definition:</b> SilhouetteMask.java:116</div></div>
-</div><!-- fragment -->
+<p>Returns the source images. </p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                              {</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">return</span> super.getSources();</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a62a36bc4171cc588059b0315d64c2b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a36bc4171cc588059b0315d64c2b89">&#9670;&nbsp;</a></span>background</h2>
+<a id="a95bd8b3a2a6f5f51cc5904ca65a4a754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95bd8b3a2a6f5f51cc5904ca65a4a754">&#9670;&nbsp;</a></span>bands</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +299,88 @@ algorithm}</h1>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double [][] background</td>
+          <td class="memname">final int [][] bands</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The band to use for each elements in <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a>. </p>
+<p>This matrix size must be the same than</p><div class="fragment"><div class="line"><a class="code" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a> </div></div><!-- fragment --><p> . </p>
+
+<p class="reference">Referenced by <a class="el" href="a07047.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>, and <a class="el" href="a07055.html#a96b13a4e02602327f181afc141b2120b">Combine.Dyadic.Dyadic()</a>.</p>
+
+</div>
+</div>
+<a id="a5ee81eb9fcda92c8096c27a55f8f1c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee81eb9fcda92c8096c27a55f8f1c73">&#9670;&nbsp;</a></span>matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [][] matrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The linear combination coefficients as a matrix. </p>
+<p>This matrix may not be the same than the one specified to the constructor, in that the zero coefficients may have been purged (and <a class="el" href="a07047.html#a1b3b3c2d297f8c41ee6a67497d4e1b73">sources</a> and <a class="el" href="a07047.html#a95bd8b3a2a6f5f51cc5904ca65a4a754">bands</a> arrays adjusted accordingly) for performance reason. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07047.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>, and <a class="el" href="a07055.html#a96b13a4e02602327f181afc141b2120b">Combine.Dyadic.Dyadic()</a>.</p>
+
+</div>
+</div>
+<a id="ae99ae9458f515b16d68878a27d86f838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99ae9458f515b16d68878a27d86f838">&#9670;&nbsp;</a></span>numSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int numSamples</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of source samples. </p>
+<p>This is the sum of the number of bands in all source images. Each <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a> row must have this length plus 1. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07047.html#abc381ff2b8f349756a41d4ab95795238">Combine.Combine()</a>, and <a class="el" href="a07047.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>.</p>
+
+</div>
+</div>
+<a id="a842fb770db1cfb28fc4da07962e51ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842fb770db1cfb28fc4da07962e51ee1">&#9670;&nbsp;</a></span>offsets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [] offsets</td>
         </tr>
       </table>
   </td>
@@ -350,10 +390,7 @@ algorithm}</h1>
 </table>
 </div><div class="memdoc">
 
-<p>The background values in the source image. </p>
-<p>The array length must matches the number of bands, otherwise this operation can not work. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07055.html#a5522f2e40982772e9fd940df4a96af81">SilhouetteMask.computeImage()</a>.</p>
+<p>The offset for each bands. </p>
 
 </div>
 </div>
@@ -367,12 +404,12 @@ algorithm}</h1>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String OPERATION_NAME = &quot;org.geotoolkit.SilhouetteMask&quot;</td>
+          <td class="memname">final String OPERATION_NAME = &quot;org.geotoolkit.Combine&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -380,7 +417,111 @@ algorithm}</h1>
 <p>The name of this operation in the JAI registry. </p>
 <p>This is {}. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07035.html#ad8e84bc73acb3ddf81036b833a2946ed">Registry.registerGeotoolkitServices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07075.html#ad8e84bc73acb3ddf81036b833a2946ed">Registry.registerGeotoolkitServices()</a>.</p>
+
+</div>
+</div>
+<a id="a445901846c2021ae107de286d8807e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445901846c2021ae107de286d8807e22">&#9670;&nbsp;</a></span>scales0</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [] scales0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The scale of image. </p>
+<div class="fragment"><div class="line">src0 </div></div><!-- fragment --><p> for each bands. </p>
+
+</div>
+</div>
+<a id="a1b92a42cbdc45c9db4fc2beed44f8590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b92a42cbdc45c9db4fc2beed44f8590">&#9670;&nbsp;</a></span>scales1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [] scales1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The scale of image. </p>
+<div class="fragment"><div class="line">src1 </div></div><!-- fragment --><p> for each bands. </p>
+
+</div>
+</div>
+<a id="a1b3b3c2d297f8c41ee6a67497d4e1b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3b3c2d297f8c41ee6a67497d4e1b73">&#9670;&nbsp;</a></span>sources</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int [][] sources</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The source to use for each elements in <a class="el" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a>. </p>
+<p>This matrix size must be the same than</p><div class="fragment"><div class="line"><a class="code" href="a07047.html#a5ee81eb9fcda92c8096c27a55f8f1c73">matrix</a> </div></div><!-- fragment --><p> . </p>
+
+<p class="reference">Referenced by <a class="el" href="a07047.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>, and <a class="el" href="a07055.html#a96b13a4e02602327f181afc141b2120b">Combine.Dyadic.Dyadic()</a>.</p>
+
+</div>
+</div>
+<a id="a8059b16632ab926cbbcda163cd991f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8059b16632ab926cbbcda163cd991f1b">&#9670;&nbsp;</a></span>transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a07051.html">Transform</a> transform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The transform to apply on sample values before the linear combination, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07047.html#abc381ff2b8f349756a41d4ab95795238">Combine.Combine()</a>, and <a class="el" href="a07047.html#aad61f28eae5af1a21a56c962e59c99ba">Combine.computeRect()</a>.</p>
 
 </div>
 </div>
@@ -390,7 +531,7 @@ algorithm}</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03850.html">image</a></li><li class="navelem"><a class="el" href="a03857.html">jai</a></li><li class="navelem"><a class="el" href="a07055.html">SilhouetteMask</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03874.html">image</a></li><li class="navelem"><a class="el" href="a03881.html">jai</a></li><li class="navelem"><a class="el" href="a07047.html">Combine</a></li><li class="navelem"><a class="el" href="a07055.html">Dyadic</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

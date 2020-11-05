@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AbstractParameterValue&lt; T &gt; Class Template Reference</title>
+<title>jena-geo: DirectoryWatcher Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,224 +62,246 @@ $(document).ready(function(){initNavTree('a07503.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
-<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a07500.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AbstractParameterValue&lt; T &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">DirectoryWatcher Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The base class of <a class="el" href="">ParameterValue</a> implementations.  
+<p>Watch for file-system modification for a given folder.  
  <a href="a07503.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for AbstractParameterValue&lt; T &gt;:</div>
+Inheritance diagram for DirectoryWatcher:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07502.png" border="0" usemap="#AbstractParameterValue_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="AbstractParameterValue_3_01T_01_4_inherit__map" id="AbstractParameterValue_3_01T_01_4_inherit__map">
-<area shape="rect" id="node9" href="a07515.html" title="A parameter value used by an operation method. " alt="" coords="317,330,431,357"/>
-<area shape="rect" id="node10" href="a07503.html" title="AbstractParameterValue\l\&lt; Double \&gt;" alt="" coords="456,323,620,364"/>
-<area shape="rect" id="node2" href="a07495.html" title="The root class of ParameterValue and ParameterValueGroup implementations. " alt="" coords="249,157,379,184"/>
-<area shape="rect" id="node6" href="a07939.html" title="Indicates that it is legal to make a field&#45;for&#45;field copy of instances of implementing classes..." alt="" coords="458,81,538,108"/>
-<area shape="rect" id="node11" href="a07511.html" title="A parameter value as a floating point (double precision) number. " alt="" coords="483,413,593,440"/>
+<div class="center"><img src="a07502.png" border="0" usemap="#DirectoryWatcher_inherit__map" alt="Inheritance graph"/></div>
+<map name="DirectoryWatcher_inherit__map" id="DirectoryWatcher_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for AbstractParameterValue&lt; T &gt;:</div>
+Collaboration diagram for DirectoryWatcher:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07501.png" border="0" usemap="#AbstractParameterValue_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="AbstractParameterValue_3_01T_01_4_coll__map" id="AbstractParameterValue_3_01T_01_4_coll__map">
-<area shape="rect" id="node2" href="a07495.html" title="The root class of ParameterValue and ParameterValueGroup implementations. " alt="" coords="481,148,612,175"/>
-<area shape="rect" id="node6" href="a07939.html" title="Indicates that it is legal to make a field&#45;for&#45;field copy of instances of implementing classes..." alt="" coords="188,157,268,184"/>
+<div class="center"><img src="a07501.png" border="0" usemap="#DirectoryWatcher_coll__map" alt="Collaboration graph"/></div>
+<map name="DirectoryWatcher_coll__map" id="DirectoryWatcher_coll__map">
+<area shape="rect" id="node10" href="a13607.html" title="Object" alt="" coords="219,360,279,387"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8ea282272bb5b8f259bbfb2356e3996f"><td class="memItemLeft" align="right" valign="top">ParameterDescriptor&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a8ea282272bb5b8f259bbfb2356e3996f">getDescriptor</a> ()</td></tr>
-<tr class="memdesc:a8ea282272bb5b8f259bbfb2356e3996f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the abstract definition of this parameter.  <a href="#a8ea282272bb5b8f259bbfb2356e3996f">More...</a><br /></td></tr>
-<tr class="separator:a8ea282272bb5b8f259bbfb2356e3996f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae126d4d0df45ad96720f9a43dc19abf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#ae126d4d0df45ad96720f9a43dc19abf7">addChangeListener</a> (final ChangeListener listener)</td></tr>
-<tr class="memdesc:ae126d4d0df45ad96720f9a43dc19abf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified listener to the list of objects to inform when the value changed.  <a href="#ae126d4d0df45ad96720f9a43dc19abf7">More...</a><br /></td></tr>
-<tr class="separator:ae126d4d0df45ad96720f9a43dc19abf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c45da35d2406ea05eb2772d2ce762d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a83c45da35d2406ea05eb2772d2ce762d">removeChangeListener</a> (final ChangeListener listener)</td></tr>
-<tr class="memdesc:a83c45da35d2406ea05eb2772d2ce762d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the specified listener from the list of objects to inform when the value changed.  <a href="#a83c45da35d2406ea05eb2772d2ce762d">More...</a><br /></td></tr>
-<tr class="separator:a83c45da35d2406ea05eb2772d2ce762d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fedcfc7912c5a68afcdcc008c3887cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07503.html">AbstractParameterValue</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb">clone</a> ()</td></tr>
-<tr class="memdesc:a2fedcfc7912c5a68afcdcc008c3887cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone of this parameter.  <a href="#a2fedcfc7912c5a68afcdcc008c3887cb">More...</a><br /></td></tr>
-<tr class="separator:a2fedcfc7912c5a68afcdcc008c3887cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a70e0ce6c9806cb2e0e343f0d059b1379">equals</a> (final Object object)</td></tr>
-<tr class="memdesc:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the specified object with this parameter for equality.  <a href="#a70e0ce6c9806cb2e0e343f0d059b1379">More...</a><br /></td></tr>
-<tr class="separator:a70e0ce6c9806cb2e0e343f0d059b1379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a077e18fe97323c7194e2665ffc766399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a077e18fe97323c7194e2665ffc766399">hashCode</a> ()</td></tr>
-<tr class="memdesc:a077e18fe97323c7194e2665ffc766399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash value for this parameter.  <a href="#a077e18fe97323c7194e2665ffc766399">More...</a><br /></td></tr>
-<tr class="separator:a077e18fe97323c7194e2665ffc766399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775f7b46beb7ce8509381e232c5f191f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a775f7b46beb7ce8509381e232c5f191f">formatTo</a> (final Formatter formatter)</td></tr>
-<tr class="memdesc:a775f7b46beb7ce8509381e232c5f191f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the inner part of this parameter as <a href="http://www.geoapi.org/snapshot/javadoc/org/opengis/referencing/doc-files/WKT.html#PARAMETER">Well Known Text (WKT)</a>.  <a href="#a775f7b46beb7ce8509381e232c5f191f">More...</a><br /></td></tr>
-<tr class="separator:a775f7b46beb7ce8509381e232c5f191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cd7c81de024bccfb583ecd2014e11b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#af8cd7c81de024bccfb583ecd2014e11b">DirectoryWatcher</a> ()  throws IOException </td></tr>
+<tr class="memdesc:af8cd7c81de024bccfb583ecd2014e11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare watcher for NON-recursive survey.  <a href="#af8cd7c81de024bccfb583ecd2014e11b">More...</a><br /></td></tr>
+<tr class="separator:af8cd7c81de024bccfb583ecd2014e11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed815da80a7da2cd64c7e3c3833e91c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#aed815da80a7da2cd64c7e3c3833e91c3">DirectoryWatcher</a> (final boolean <a class="el" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">recursive</a>)  throws IOException </td></tr>
+<tr class="memdesc:aed815da80a7da2cd64c7e3c3833e91c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize watching service.  <a href="#aed815da80a7da2cd64c7e3c3833e91c3">More...</a><br /></td></tr>
+<tr class="separator:aed815da80a7da2cd64c7e3c3833e91c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747b4222cfe8d96c6538143c523b97b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a747b4222cfe8d96c6538143c523b97b9">setFileFilter</a> (final DirectoryStream.Filter&lt; Path &gt; filter)</td></tr>
+<tr class="memdesc:a747b4222cfe8d96c6538143c523b97b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a filter to specify if a file must processed or ignored at change.  <a href="#a747b4222cfe8d96c6538143c523b97b9">More...</a><br /></td></tr>
+<tr class="separator:a747b4222cfe8d96c6538143c523b97b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4119396d16f9aa10837643366e987e45"><td class="memItemLeft" align="right" valign="top">DirectoryStream.Filter&lt; Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a4119396d16f9aa10837643366e987e45">getFileFilter</a> ()</td></tr>
+<tr class="separator:a4119396d16f9aa10837643366e987e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5947889998f859f415a572a25f2daa9"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#aa5947889998f859f415a572a25f2daa9">register</a> (Path... paths)  throws IOException, SecurityException </td></tr>
+<tr class="memdesc:aa5947889998f859f415a572a25f2daa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a directory to the WatchService.  <a href="#aa5947889998f859f415a572a25f2daa9">More...</a><br /></td></tr>
+<tr class="separator:aa5947889998f859f415a572a25f2daa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416438afe47663edccc38747b292fd85"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a416438afe47663edccc38747b292fd85">unregister</a> (Path... paths)</td></tr>
+<tr class="separator:a416438afe47663edccc38747b292fd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de64d75454385b23995437f1d72669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a60de64d75454385b23995437f1d72669">start</a> ()</td></tr>
+<tr class="separator:a60de64d75454385b23995437f1d72669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c528baf37154d347366083f0f816846"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a8c528baf37154d347366083f0f816846">stop</a> ()</td></tr>
+<tr class="separator:a8c528baf37154d347366083f0f816846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106e308073bc398126183cf164305cf1"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a106e308073bc398126183cf164305cf1">close</a> ()  throws IOException </td></tr>
+<tr class="separator:a106e308073bc398126183cf164305cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0bc2d1d43b7ab9177a3d63da7bfa7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#aaa0bc2d1d43b7ab9177a3d63da7bfa7b">addPathChangeListener</a> (final <a class="el" href="a07515.html">PathChangeListener</a> listener)</td></tr>
+<tr class="separator:aaa0bc2d1d43b7ab9177a3d63da7bfa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334b57a0ffd12e0e0eb4affd167495f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a334b57a0ffd12e0e0eb4affd167495f4">removePathChangeListener</a> (final <a class="el" href="a07515.html">PathChangeListener</a> toForget)</td></tr>
+<tr class="separator:a334b57a0ffd12e0e0eb4affd167495f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1c2651f7a5dc63ed6ed4222057a1bb4f"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">recursive</a></td></tr>
+<tr class="memdesc:a1c2651f7a5dc63ed6ed4222057a1bb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we listen changes of all the file tree, or only for the direct children of the registered folders.  <a href="#a1c2651f7a5dc63ed6ed4222057a1bb4f">More...</a><br /></td></tr>
+<tr class="separator:a1c2651f7a5dc63ed6ed4222057a1bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a945aad466775464fdde7c3668380e003"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a945aad466775464fdde7c3668380e003">AbstractParameterValue</a> (final ParameterDescriptor&lt; T &gt; <a class="el" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>)</td></tr>
-<tr class="memdesc:a945aad466775464fdde7c3668380e003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a parameter value from the specified descriptor.  <a href="#a945aad466775464fdde7c3668380e003">More...</a><br /></td></tr>
-<tr class="separator:a945aad466775464fdde7c3668380e003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f991317d164365201278016ea6ee009"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a3f991317d164365201278016ea6ee009">fireValueChanged</a> ()</td></tr>
-<tr class="memdesc:a3f991317d164365201278016ea6ee009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs every listeners that the value changed.  <a href="#a3f991317d164365201278016ea6ee009">More...</a><br /></td></tr>
-<tr class="separator:a3f991317d164365201278016ea6ee009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a259a87c5737c4d5093add36705bd3c71"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a14159.html">IllegalStateException</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a259a87c5737c4d5093add36705bd3c71">unitlessParameter</a> (final GeneralParameterDescriptor <a class="el" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>)</td></tr>
-<tr class="memdesc:a259a87c5737c4d5093add36705bd3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an exception initialized with a "Unitless parameter" error message for the specified descriptor.  <a href="#a259a87c5737c4d5093add36705bd3c71">More...</a><br /></td></tr>
-<tr class="separator:a259a87c5737c4d5093add36705bd3c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3356a580bf7f1cc5c4893bf39d527ab4"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">getName</a> (final GeneralParameterDescriptor <a class="el" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>)</td></tr>
-<tr class="memdesc:a3356a580bf7f1cc5c4893bf39d527ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method returning the name of the specified descriptor.  <a href="#a3356a580bf7f1cc5c4893bf39d527ab4">More...</a><br /></td></tr>
-<tr class="separator:a3356a580bf7f1cc5c4893bf39d527ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8510846701433895dbdaee1c974d98"><td class="memItemLeft" align="right" valign="top">Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a1a8510846701433895dbdaee1c974d98">getUnregisteredParent</a> (final Path target)</td></tr>
+<tr class="separator:a1a8510846701433895dbdaee1c974d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af64ffc06ef5a351d0a37192257dff4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a7af64ffc06ef5a351d0a37192257dff4">firePathChanged</a> (Path target, WatchEvent.Kind kind, boolean isDirectory, int count)  throws Exception </td></tr>
+<tr class="memdesc:a7af64ffc06ef5a351d0a37192257dff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each time the watch service will catch an event on a file/folder, it will use this method.  <a href="#a7af64ffc06ef5a351d0a37192257dff4">More...</a><br /></td></tr>
+<tr class="separator:a7af64ffc06ef5a351d0a37192257dff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3378a7c35945963bce2eff3d676fafc7"><td class="memItemLeft" align="right" valign="top">final GeneralParameterDescriptor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a></td></tr>
-<tr class="memdesc:a3378a7c35945963bce2eff3d676fafc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract definition of this parameter or group of parameters.  <a href="#a3378a7c35945963bce2eff3d676fafc7">More...</a><br /></td></tr>
-<tr class="separator:a3378a7c35945963bce2eff3d676fafc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4105e0bf378afa97818ef1589789188a"><td class="memItemLeft" align="right" valign="top">final HashSet&lt; Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a> = new HashSet&lt;&gt;()</td></tr>
+<tr class="separator:a4105e0bf378afa97818ef1589789188a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ea70232526412ee08ed5bf083d9ee7"><td class="memItemLeft" align="right" valign="top">final HashSet&lt; Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a> = new HashSet&lt;&gt;()</td></tr>
+<tr class="separator:ab6ea70232526412ee08ed5bf083d9ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5279e32324dae29e9e4a1453de67418d"><td class="memItemLeft" align="right" valign="top">DirectoryStream.Filter&lt; Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a5279e32324dae29e9e4a1453de67418d">fileFilter</a> = null</td></tr>
+<tr class="memdesc:a5279e32324dae29e9e4a1453de67418d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter used to determine which files must be ignored and which must be used.  <a href="#a5279e32324dae29e9e4a1453de67418d">More...</a><br /></td></tr>
+<tr class="separator:a5279e32324dae29e9e4a1453de67418d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d6beea9e36dc3fca36998f8f1693a8"><td class="memItemLeft" align="right" valign="top">final EventListenerList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">listeners</a> = new EventListenerList()</td></tr>
+<tr class="separator:af6d6beea9e36dc3fca36998f8f1693a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a666f0e01eba310e917d6bc5da89f59db"><td class="memItemLeft" align="right" valign="top">static&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a666f0e01eba310e917d6bc5da89f59db">ensureValidValue</a> (final ParameterDescriptor&lt; T &gt; <a class="el" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>, final Object value)  throws InvalidParameterValueException     </td></tr>
-<tr class="memdesc:a666f0e01eba310e917d6bc5da89f59db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the given value is valid according the specified parameter descriptor.  <a href="#a666f0e01eba310e917d6bc5da89f59db">More...</a><br /></td></tr>
-<tr class="separator:a666f0e01eba310e917d6bc5da89f59db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
-Static Package Functions</h2></td></tr>
-<tr class="memitem:a165b11c698574db7bcbbc3498ef0018a"><td class="memItemLeft" align="right" valign="top">static short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html#a165b11c698574db7bcbbc3498ef0018a">getUnitMessageID</a> (final Unit&lt;?&gt; unit)</td></tr>
-<tr class="memdesc:a165b11c698574db7bcbbc3498ef0018a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unit type as one of error message code.  <a href="#a165b11c698574db7bcbbc3498ef0018a">More...</a><br /></td></tr>
-<tr class="separator:a165b11c698574db7bcbbc3498ef0018a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0a145b1ef77764179c9079c6d3ff2b6b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">registerDir</a> (final Path dir)  throws IOException, SecurityException </td></tr>
+<tr class="memdesc:a0a145b1ef77764179c9079c6d3ff2b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a directory along with all its sub-directories to the WatchService.  <a href="#a0a145b1ef77764179c9079c6d3ff2b6b">More...</a><br /></td></tr>
+<tr class="separator:a0a145b1ef77764179c9079c6d3ff2b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493304ac403cbfbf2370e381e7a4b7da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">watch</a> ()</td></tr>
+<tr class="memdesc:a493304ac403cbfbf2370e381e7a4b7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to survey the registered folders (see  <a class="el" href="a07503.html#aa5947889998f859f415a572a25f2daa9" title="Register a directory to the WatchService. ">register</a>(java.nio.file.Path...)}.  <a href="#a493304ac403cbfbf2370e381e7a4b7da">More...</a><br /></td></tr>
+<tr class="separator:a493304ac403cbfbf2370e381e7a4b7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1eff22e242a0d0480721effa36d80b72"><td class="memItemLeft" align="right" valign="top">transient ChangeListener []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a></td></tr>
-<tr class="memdesc:a1eff22e242a0d0480721effa36d80b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The listeners, or.  <a href="#a1eff22e242a0d0480721effa36d80b72">More...</a><br /></td></tr>
-<tr class="separator:a1eff22e242a0d0480721effa36d80b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f63a005fa5d5ca2711ec6e31f606658"><td class="memItemLeft" align="right" valign="top">final WatchService&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">service</a></td></tr>
+<tr class="separator:a5f63a005fa5d5ca2711ec6e31f606658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9248796fcaa149fa25870370fb31c569"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a14283.html">Thread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a9248796fcaa149fa25870370fb31c569">watchThread</a></td></tr>
+<tr class="separator:a9248796fcaa149fa25870370fb31c569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188e1694fa42ec5697e2d4b57de0c8d9"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a13607.html">Object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">fileFilterLock</a> = new <a class="el" href="a13607.html">Object</a>()</td></tr>
+<tr class="separator:a188e1694fa42ec5697e2d4b57de0c8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 4166422894375776520L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial number for inter-operability with different versions.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
-<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d069f56091df4f6436f8c713ab2f39"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a> = Logging.getLogger(&quot;org.geotoolkit.io&quot;)</td></tr>
+<tr class="separator:ab1d069f56091df4f6436f8c713ab2f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The base class of <a class="el" href="">ParameterValue</a> implementations. </p>
-<p>This base class provides support for <a class="el" href="">ChangeListener</a> notifications. Those change listeners are not included in the serialization neither in  <a class="el" href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb" title="Returns a clone of this parameter. ">clone()</a> cloned} objects.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>The value type.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03756.html#_deprecated000022">Deprecated:</a></b></dt><dd>Replaced by Apache SIS parameters. </dd></dl>
+<div class="textblock"><p>Watch for file-system modification for a given folder. </p>
+<p>There's a recursive mode to allow watch of all sub-directories as well. If the recursive mode is activated, when a new directory is created in the watched one, it will be registered for watching, as all its sub-directories. </p>
+<p>Watched folders are registered for the standard event types defined by <a class="el" href="">java.nio.file.StandardWatchEventKinds</a>. </p>
+<p>Use of the class :</p>
+<ul>
+<li>Build a new watcher, with a boolean argument to specify if we want recursive survey (true) or not (false) : final <a class="el" href="a07503.html" title="Watch for file-system modification for a given folder. ">DirectoryWatcher</a> watcher = new DirectoryWatcher(true) {..your implementation...}; </li>
+</ul>
+<ul>
+<li>Give it the separate folders to work on : final Path toWatch1, toWatch2; watcher.register(toWatch1, toWatch2); </li>
+</ul>
+<ul>
+<li>Your watcher is ready to go, call the  <a class="el" href="a07503.html#a60de64d75454385b23995437f1d72669">start()</a>} method to launch the survey. /!\ It launches an asynchronous survey in a separate thread. </li>
+</ul>
+<ul>
+<li>To stop|pause the watching, you just have to call  <a class="el" href="a07503.html#a8c528baf37154d347366083f0f816846">stop()</a>} method. </li>
+</ul>
+<ul>
+<li>Finally, when you're done with survey, please close your watcher using  <a class="el" href="a07503.html#a106e308073bc398126183cf164305cf1">close()</a>}. </li>
+</ul>
+<p>N.B : Thread-safe implementation.</p>
+<dl class="section author"><dt>Author</dt><dd>Alexis Manin (Geomatys) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a945aad466775464fdde7c3668380e003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945aad466775464fdde7c3668380e003">&#9670;&nbsp;</a></span>AbstractParameterValue()</h2>
+<a id="af8cd7c81de024bccfb583ecd2014e11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8cd7c81de024bccfb583ecd2014e11b">&#9670;&nbsp;</a></span>DirectoryWatcher() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07503.html">AbstractParameterValue</a> </td>
+          <td class="memname"><a class="el" href="a07503.html">DirectoryWatcher</a> </td>
           <td>(</td>
-          <td class="paramtype">final ParameterDescriptor&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>descriptor</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws IOException</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Constructs a parameter value from the specified descriptor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor</td><td>The abstract definition of this parameter. </td></tr>
+<p>Prepare watcher for NON-recursive survey. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                                              {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        super(<a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="ttc" id="a07495_html_a3378a7c35945963bce2eff3d676fafc7"><div class="ttname"><a href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">org.geotoolkit.parameter.AbstractParameter.descriptor</a></div><div class="ttdeci">final GeneralParameterDescriptor descriptor</div><div class="ttdoc">The abstract definition of this parameter or group of parameters. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:66</div></div>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                 {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">this</span>(<span class="keyword">false</span>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aed815da80a7da2cd64c7e3c3833e91c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed815da80a7da2cd64c7e3c3833e91c3">&#9670;&nbsp;</a></span>DirectoryWatcher() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07503.html">DirectoryWatcher</a> </td>
+          <td>(</td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>recursive</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize watching service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">recursive</td><td>True if we want to watch over the entire file tree, false if we want to be notified only for direct childrens of root folder(s). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td>If an error occurred while building underlying <a class="el" href="">java.nio.file.WatchService</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">DirectoryWatcher.recursive</a>, and <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                        {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">service</a> = FileSystems.getDefault().newWatchService();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        this.<a class="code" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">recursive</a> = <a class="code" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">recursive</a>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="a07503.html#a9248796fcaa149fa25870370fb31c569">watchThread</a> = <span class="keyword">new</span> <a class="code" href="a14283.html">Thread</a>(<span class="keyword">new</span> <a class="code" href="a14299.html">Runnable</a>() {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            @Override</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> run() {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <a class="code" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">watch</a>();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        });</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="a07503.html#a9248796fcaa149fa25870370fb31c569">watchThread</a>.setDaemon(<span class="keyword">true</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div><div class="ttc" id="a14299_html"><div class="ttname"><a href="a14299.html">Runnable</a></div></div>
+<div class="ttc" id="a07503_html_a493304ac403cbfbf2370e381e7a4b7da"><div class="ttname"><a href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">org.geotoolkit.nio.DirectoryWatcher.watch</a></div><div class="ttdeci">void watch()</div><div class="ttdoc">Start to survey the registered folders (see  register(java.nio.file.Path...)}. </div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:172</div></div>
+<div class="ttc" id="a07503_html_a9248796fcaa149fa25870370fb31c569"><div class="ttname"><a href="a07503.html#a9248796fcaa149fa25870370fb31c569">org.geotoolkit.nio.DirectoryWatcher.watchThread</a></div><div class="ttdeci">final Thread watchThread</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:52</div></div>
+<div class="ttc" id="a07503_html_a5f63a005fa5d5ca2711ec6e31f606658"><div class="ttname"><a href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">org.geotoolkit.nio.DirectoryWatcher.service</a></div><div class="ttdeci">final WatchService service</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:51</div></div>
+<div class="ttc" id="a14283_html"><div class="ttname"><a href="a14283.html">Thread</a></div></div>
+<div class="ttc" id="a07503_html_a1c2651f7a5dc63ed6ed4222057a1bb4f"><div class="ttname"><a href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">org.geotoolkit.nio.DirectoryWatcher.recursive</a></div><div class="ttdeci">final boolean recursive</div><div class="ttdoc">True if we listen changes of all the file tree, or only for the direct children of the registered fol...</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:57</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae126d4d0df45ad96720f9a43dc19abf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae126d4d0df45ad96720f9a43dc19abf7">&#9670;&nbsp;</a></span>addChangeListener()</h2>
+<a id="aaa0bc2d1d43b7ab9177a3d63da7bfa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0bc2d1d43b7ab9177a3d63da7bfa7b">&#9670;&nbsp;</a></span>addPathChangeListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void addChangeListener </td>
+          <td class="memname">void addPathChangeListener </td>
           <td>(</td>
-          <td class="paramtype">final ChangeListener&#160;</td>
+          <td class="paramtype">final <a class="el" href="a07515.html">PathChangeListener</a>&#160;</td>
           <td class="paramname"><em>listener</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Adds the specified listener to the list of objects to inform when the value changed. </p>
-<p>Notes: </p><ul>
-<li>
-Change listeners are not serialized </li>
-<li>
-Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb" title="Returns a clone of this parameter. ">clone()</a> cloned} object. </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listener</td><td>The listener to add. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                                 {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a> = Listeners.addListener(listener, <a class="code" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a>);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div><div class="ttc" id="a07503_html_a1eff22e242a0d0480721effa36d80b72"><div class="ttname"><a href="a07503.html#a1eff22e242a0d0480721effa36d80b72">org.geotoolkit.parameter.AbstractParameterValue.listeners</a></div><div class="ttdeci">transient ChangeListener [] listeners</div><div class="ttdoc">The listeners, or. </div><div class="ttdef"><b>Definition:</b> AbstractParameterValue.java:48</div></div>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                                                         {</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;Event listener&quot;</span>, listener);</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">listeners</a>.add(PathChangeListener.class, listener);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div><div class="ttc" id="a07503_html_af6d6beea9e36dc3fca36998f8f1693a8"><div class="ttname"><a href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">org.geotoolkit.nio.DirectoryWatcher.listeners</a></div><div class="ttdeci">final EventListenerList listeners</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:68</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2fedcfc7912c5a68afcdcc008c3887cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fedcfc7912c5a68afcdcc008c3887cb">&#9670;&nbsp;</a></span>clone()</h2>
+<a id="a106e308073bc398126183cf164305cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106e308073bc398126183cf164305cf1">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07503.html">AbstractParameterValue</a>&lt;T&gt; clone </td>
+          <td class="memname">synchronized void close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> throws IOException</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a clone of this parameter. </p>
-<p>The clone does not include any change listener. </p>
-
-<p>Implements <a class="el" href="a07939.html#a19eec2727094a0c06db572ee13d2d276">Cloneable</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb">AbstractParameterValue&lt; Double &gt;.clone()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                             {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        @SuppressWarnings(<span class="stringliteral">&quot;unchecked&quot;</span>)</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        final <a class="code" href="a07503.html#a945aad466775464fdde7c3668380e003">AbstractParameterValue</a>&lt;T&gt; copy = (<a class="code" href="a07503.html#a945aad466775464fdde7c3668380e003">AbstractParameterValue</a>&lt;T&gt;) super.<a class="code" href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb">clone</a>();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        copy.<a class="code" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a> = null;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        return copy;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div><div class="ttc" id="a07503_html_a2fedcfc7912c5a68afcdcc008c3887cb"><div class="ttname"><a href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb">org.geotoolkit.parameter.AbstractParameterValue.clone</a></div><div class="ttdeci">AbstractParameterValue&lt; T &gt; clone()</div><div class="ttdoc">Returns a clone of this parameter. </div><div class="ttdef"><b>Definition:</b> AbstractParameterValue.java:102</div></div>
-<div class="ttc" id="a07503_html_a945aad466775464fdde7c3668380e003"><div class="ttname"><a href="a07503.html#a945aad466775464fdde7c3668380e003">org.geotoolkit.parameter.AbstractParameterValue.AbstractParameterValue</a></div><div class="ttdeci">AbstractParameterValue(final ParameterDescriptor&lt; T &gt; descriptor)</div><div class="ttdoc">Constructs a parameter value from the specified descriptor. </div><div class="ttdef"><b>Definition:</b> AbstractParameterValue.java:55</div></div>
-<div class="ttc" id="a07503_html_a1eff22e242a0d0480721effa36d80b72"><div class="ttname"><a href="a07503.html#a1eff22e242a0d0480721effa36d80b72">org.geotoolkit.parameter.AbstractParameterValue.listeners</a></div><div class="ttdeci">transient ChangeListener [] listeners</div><div class="ttdoc">The listeners, or. </div><div class="ttdef"><b>Definition:</b> AbstractParameterValue.java:48</div></div>
+<p class="reference">References <a class="el" href="a07503.html#a4105e0bf378afa97818ef1589789188a">DirectoryWatcher.roots</a>, and <a class="el" href="a07503.html#a8c528baf37154d347366083f0f816846">DirectoryWatcher.stop()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                                        {</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="a07503.html#a8c528baf37154d347366083f0f816846">stop</a>();</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>) {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>.clear();</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">service</a>.close();</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div><div class="ttc" id="a07503_html_a5f63a005fa5d5ca2711ec6e31f606658"><div class="ttname"><a href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">org.geotoolkit.nio.DirectoryWatcher.service</a></div><div class="ttdeci">final WatchService service</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:51</div></div>
+<div class="ttc" id="a07503_html_a8c528baf37154d347366083f0f816846"><div class="ttname"><a href="a07503.html#a8c528baf37154d347366083f0f816846">org.geotoolkit.nio.DirectoryWatcher.stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:292</div></div>
+<div class="ttc" id="a07503_html_a4105e0bf378afa97818ef1589789188a"><div class="ttname"><a href="a07503.html#a4105e0bf378afa97818ef1589789188a">org.geotoolkit.nio.DirectoryWatcher.roots</a></div><div class="ttdeci">final HashSet&lt; Path &gt; roots</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:59</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a666f0e01eba310e917d6bc5da89f59db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a666f0e01eba310e917d6bc5da89f59db">&#9670;&nbsp;</a></span>ensureValidValue()</h2>
+<a id="a7af64ffc06ef5a351d0a37192257dff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af64ffc06ef5a351d0a37192257dff4">&#9670;&nbsp;</a></span>firePathChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,101 +310,91 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static&lt;T&gt; T ensureValidValue </td>
+          <td class="memname">void firePathChanged </td>
           <td>(</td>
-          <td class="paramtype">final ParameterDescriptor&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>descriptor</em>, </td>
+          <td class="paramtype">Path&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">WatchEvent.Kind&#160;</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throws InvalidParameterValueException</td>
+          <td></td><td> throws <a class="el" href="a14231.html">Exception</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ensures that the given value is valid according the specified parameter descriptor. </p>
-<p>This convenience method ensures that</p><div class="fragment"><div class="line">value </div></div><!-- fragment --><p> is assignable to the  ParameterDescriptor::getValueClass() expected class}, is between the  ParameterDescriptor::getMinimumValue() minimum} and  ParameterDescriptor::getMaximumValue() maximum} values and is one of the  ParameterDescriptor::getValidValues() set of valid values}. If the value fails any of those tests, then an exception is thrown. </p>
-<p>This method is similar to <a class="el" href="">Parameters#isValid(ParameterValue)</a> except that the exception contains an error message formatted with a description of the failure raison.</p>
+<p>Each time the watch service will catch an event on a file/folder, it will use this method. </p>
+<p>It allows user defining its own processes over file changes.</p>
+<p>N.B : If an exception is thrown by a listener, it is stored and thrown back after all listeners have been executed. If another listener throw an exception, it is stored via <a class="el" href="">java.lang.Exception#addSuppressed(Throwable)</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>The type of parameter value. The given<div class="fragment"><div class="line">value </div></div><!-- fragment --> should typically be an instance of this class. This is not required by this method signature but is checked by this method implementation. </td></tr>
-    <tr><td class="paramname">descriptor</td><td>The parameter descriptor to check against. </td></tr>
-    <tr><td class="paramname">value</td><td>The value to check, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+    <tr><td class="paramname">target</td><td>The file which have been triggered for changes. </td></tr>
+    <tr><td class="paramname">kind</td><td>The kind of change which applied on the file. Most likely one of the <a class="el" href="">java.nio.file.StandardWatchEventKinds</a>. </td></tr>
+    <tr><td class="paramname">isDirectory</td><td>A boolean which is set to true if the input path is a directory, false otherwise. </td></tr>
+    <tr><td class="paramname">count</td><td>Number of times the same event occurred. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value casted to the descriptor parameterized type, or the  ParameterDescriptor::getDefaultValue() default value} if the given value was null while the parameter is mandatory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">InvalidParameterValueException</td><td>if the parameter value is invalid. </td></tr>
+    <tr><td class="paramname">java.lang.Exception</td><td>if a listener throw an exception. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a07823.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, <a class="el" href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">AbstractParameter.getName()</a>, <a class="el" href="a07827.html#abd03bdc39d82179982528af1ec25c0a3">Errors.Keys.IllegalArgument_2</a>, <a class="el" href="a07827.html#a6b15b12b4c122266e4170ef5790944e6">Errors.Keys.IllegalOperationForValueClass_1</a>, and <a class="el" href="a07827.html#a3d8559ed831a9de089bbb21c99802b09">Errors.Keys.ValueOutOfBounds_3</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07515.html#a5cb5a992f0c10990988c22023a4c5820">Parameter&lt; T &gt;.setValue()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (value == null) {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getMinimumOccurs() != 0) {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getDefaultValue();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">final</span> String error;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">         * Note: the implementation below is similar (except for different error message) to the</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">         * one in Parameters.isValidValue(ParameterDescriptor, Object). If one implementation is</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">         * modified, the other should be updated accordingly. The main difference is that null</span></div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">         * values are replaced by the default value instead than being a conformance error.</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">final</span> Class&lt;T&gt; type = <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getValueClass();</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span> (!type.isInstance(value)) {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            error = Errors.format(Errors.Keys.IllegalOperationForValueClass_1, value.getClass());</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keyword">final</span> T typedValue = type.cast(value);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keyword">final</span> <a class="code" href="a14163.html">Comparable&lt;T&gt;</a> minimum = <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getMinimumValue();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">final</span> <a class="code" href="a14163.html">Comparable&lt;T&gt;</a> maximum = <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getMaximumValue();</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">if</span> ((minimum != null &amp;&amp; minimum.compareTo(typedValue) &gt; 0) ||</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                (maximum != null &amp;&amp; maximum.compareTo(typedValue) &lt; 0))</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                error = Errors.format(Errors.Keys.ValueOutOfBounds_3, value, minimum, maximum);</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keyword">final</span> Set&lt;T&gt; validValues = <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getValidValues();</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">if</span> (validValues!=null &amp;&amp; !validValues.contains(value)) {</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    error = Errors.format(Errors.Keys.IllegalArgument_2, <a class="code" href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">getName</a>(<a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>), value);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    <span class="comment">/*</span></div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">                     * Passed every tests - the value is valid.</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">                     */</span></div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    <span class="keywordflow">return</span> typedValue;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                }</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidParameterValueException(error, <a class="code" href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">getName</a>(<a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>), value);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div><div class="ttc" id="a14163_html"><div class="ttname"><a href="a14163.html">Comparable</a></div></div>
-<div class="ttc" id="a07495_html_a3378a7c35945963bce2eff3d676fafc7"><div class="ttname"><a href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">org.geotoolkit.parameter.AbstractParameter.descriptor</a></div><div class="ttdeci">final GeneralParameterDescriptor descriptor</div><div class="ttdoc">The abstract definition of this parameter or group of parameters. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:66</div></div>
-<div class="ttc" id="a07495_html_a3356a580bf7f1cc5c4893bf39d527ab4"><div class="ttname"><a href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">org.geotoolkit.parameter.AbstractParameter.getName</a></div><div class="ttdeci">static String getName(final GeneralParameterDescriptor descriptor)</div><div class="ttdoc">Convenience method returning the name of the specified descriptor. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:164</div></div>
+<p class="reference">Referenced by <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                                                                                                       {</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keyword">final</span> PathChangedEvent evt = <span class="keyword">new</span> PathChangedEvent(<span class="keyword">this</span>, target, kind, isDirectory, count);</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="a14231.html">Exception</a> traced = null;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">for</span> (PathChangeListener l : <a class="code" href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">listeners</a>.getListeners(PathChangeListener.class)) {</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                l.pathChanged(evt);</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            } <span class="keywordflow">catch</span> (<a class="code" href="a14231.html">Exception</a> e) {</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="keywordflow">if</span> (traced == null) {</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                    traced = e;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                    traced.addSuppressed(e);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                }</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            }</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (traced != null) {</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordflow">throw</span> traced;</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div><div class="ttc" id="a07503_html_af6d6beea9e36dc3fca36998f8f1693a8"><div class="ttname"><a href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">org.geotoolkit.nio.DirectoryWatcher.listeners</a></div><div class="ttdeci">final EventListenerList listeners</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:68</div></div>
+<div class="ttc" id="a14231_html"><div class="ttname"><a href="a14231.html">Exception</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a70e0ce6c9806cb2e0e343f0d059b1379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70e0ce6c9806cb2e0e343f0d059b1379">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="a4119396d16f9aa10837643366e987e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4119396d16f9aa10837643366e987e45">&#9670;&nbsp;</a></span>getFileFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean equals </td>
+          <td class="memname">DirectoryStream.Filter&lt;Path&gt; getFileFilter </td>
           <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the filter used to know if we must process or not a file. Null if no filtering applied. </dd></dl>
 
-<p>Compares the specified object with this parameter for equality. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">object</td><td>The object to compare to<div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --> . </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if both objects are equal. </dd></dl>
-
-<p class="reference">References <a class="el" href="a07495.html#ad71ac02932052e27cb61fbbd57225dac">AbstractParameter.AbstractParameter()</a>, <a class="el" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">AbstractParameter.descriptor</a>, and <a class="el" href="a07495.html#a70e0ce6c9806cb2e0e343f0d059b1379">AbstractParameter.equals()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07495.html#a70e0ce6c9806cb2e0e343f0d059b1379">AbstractParameter.equals()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                               {</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordtype">object</span> != null &amp;&amp; <span class="keywordtype">object</span>.getClass() == getClass()) {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keyword">final</span> <a class="code" href="a07495.html#ad71ac02932052e27cb61fbbd57225dac">AbstractParameter</a> that = (<a class="code" href="a07495.html#ad71ac02932052e27cb61fbbd57225dac">AbstractParameter</a>) <span class="keywordtype">object</span>;</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">return</span> Objects.equals(this.<a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>, that.descriptor);</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div><div class="ttc" id="a07495_html_a3378a7c35945963bce2eff3d676fafc7"><div class="ttname"><a href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">org.geotoolkit.parameter.AbstractParameter.descriptor</a></div><div class="ttdeci">final GeneralParameterDescriptor descriptor</div><div class="ttdoc">The abstract definition of this parameter or group of parameters. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:66</div></div>
-<div class="ttc" id="a07495_html_ad71ac02932052e27cb61fbbd57225dac"><div class="ttname"><a href="a07495.html#ad71ac02932052e27cb61fbbd57225dac">org.geotoolkit.parameter.AbstractParameter.AbstractParameter</a></div><div class="ttdeci">AbstractParameter(final GeneralParameterDescriptor descriptor)</div><div class="ttdoc">Constructs a parameter value from the specified descriptor. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:73</div></div>
+<p class="reference">References <a class="el" href="a07503.html#a5279e32324dae29e9e4a1453de67418d">DirectoryWatcher.fileFilter</a>, and <a class="el" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">DirectoryWatcher.fileFilterLock</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                        {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">fileFilterLock</a>) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a07503.html#a5279e32324dae29e9e4a1453de67418d">fileFilter</a>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="ttc" id="a07503_html_a188e1694fa42ec5697e2d4b57de0c8d9"><div class="ttname"><a href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">org.geotoolkit.nio.DirectoryWatcher.fileFilterLock</a></div><div class="ttdeci">final Object fileFilterLock</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:66</div></div>
+<div class="ttc" id="a07503_html_a5279e32324dae29e9e4a1453de67418d"><div class="ttname"><a href="a07503.html#a5279e32324dae29e9e4a1453de67418d">org.geotoolkit.nio.DirectoryWatcher.fileFilter</a></div><div class="ttdeci">DirectoryStream.Filter&lt; Path &gt; fileFilter</div><div class="ttdoc">Filter used to determine which files must be ignored and which must be used. </div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:65</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3f991317d164365201278016ea6ee009"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f991317d164365201278016ea6ee009">&#9670;&nbsp;</a></span>fireValueChanged()</h2>
+<a id="a1a8510846701433895dbdaee1c974d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a8510846701433895dbdaee1c974d98">&#9670;&nbsp;</a></span>getUnregisteredParent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,9 +403,10 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final void fireValueChanged </td>
+          <td class="memname">Path getUnregisteredParent </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final Path&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -404,186 +417,55 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
 </table>
 </div><div class="memdoc">
 
-<p>Informs every listeners that the value changed. </p>
+<p class="reference">References <a class="el" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">DirectoryWatcher.unregistered</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a07515.html#aa9c18aa437d58e4b0d2269b13933c5ab">Parameter&lt; T &gt;.setSafeValue()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                            {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        Listeners.fireChanged(<span class="keyword">this</span>, <a class="code" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div><div class="ttc" id="a07503_html_a1eff22e242a0d0480721effa36d80b72"><div class="ttname"><a href="a07503.html#a1eff22e242a0d0480721effa36d80b72">org.geotoolkit.parameter.AbstractParameterValue.listeners</a></div><div class="ttdeci">transient ChangeListener [] listeners</div><div class="ttdoc">The listeners, or. </div><div class="ttdef"><b>Definition:</b> AbstractParameterValue.java:48</div></div>
+<p class="reference">Referenced by <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                                            {</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a>) {</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">for</span> (Path path : <a class="code" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a>) {</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">if</span> (target.startsWith(path) || path.equals(target)) {</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    <span class="keywordflow">return</span> path;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                }</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            }</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div><div class="ttc" id="a07503_html_ab6ea70232526412ee08ed5bf083d9ee7"><div class="ttname"><a href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">org.geotoolkit.nio.DirectoryWatcher.unregistered</a></div><div class="ttdeci">final HashSet&lt; Path &gt; unregistered</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:60</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a775f7b46beb7ce8509381e232c5f191f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775f7b46beb7ce8509381e232c5f191f">&#9670;&nbsp;</a></span>formatTo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String formatTo </td>
-          <td>(</td>
-          <td class="paramtype">final Formatter&#160;</td>
-          <td class="paramname"><em>formatter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Formats the inner part of this parameter as <a href="http://www.geoapi.org/snapshot/javadoc/org/opengis/referencing/doc-files/WKT.html#PARAMETER">Well Known Text (WKT)</a>. </p>
-
-<p class="reference">References <a class="el" href="a07499.html#a775f7b46beb7ce8509381e232c5f191f">AbstractParameter.Bridge&lt; T &gt;.formatTo()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                      {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> instanceof ParameterValue&lt;?&gt;) {</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> Bridge((ParameterValue&lt;?&gt;) <span class="keyword">this</span>).formatTo(formatter);</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;PARAMETER&quot;</span>;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a8ea282272bb5b8f259bbfb2356e3996f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ea282272bb5b8f259bbfb2356e3996f">&#9670;&nbsp;</a></span>getDescriptor()</h2>
+<a id="aa5947889998f859f415a572a25f2daa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5947889998f859f415a572a25f2daa9">&#9670;&nbsp;</a></span>register()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ParameterDescriptor&lt;T&gt; getDescriptor </td>
+          <td class="memname">synchronized void register </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">Path...&#160;</td>
+          <td class="paramname"><em>paths</em></td><td>)</td>
+          <td> throws IOException, SecurityException</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the abstract definition of this parameter. </p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                  {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> (ParameterDescriptor&lt;T&gt;) super.getDescriptor();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a3356a580bf7f1cc5c4893bf39d527ab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3356a580bf7f1cc5c4893bf39d527ab4">&#9670;&nbsp;</a></span>getName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static String getName </td>
-          <td>(</td>
-          <td class="paramtype">final GeneralParameterDescriptor&#160;</td>
-          <td class="paramname"><em>descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Convenience method returning the name of the specified descriptor. </p>
-<p>This method is used mostly for output to be read by human, not for processing. Consequently, we may consider to returns a localized name in a future version. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07515.html#a204afc806b1bb2d8fea6ddbc810627a6">Parameter&lt; T &gt;.booleanValue()</a>, <a class="el" href="a07515.html#aad7c86e3a7c4753efa88b5c659496c05">Parameter&lt; T &gt;.doubleValue()</a>, <a class="el" href="a07515.html#a891ab4e9e06648c60037e69cd845b5e5">Parameter&lt; T &gt;.doubleValueList()</a>, <a class="el" href="a07519.html#a331a36213d7bb0a42d2d92e03010ee31">ParameterGroup.ensureValidOccurs()</a>, <a class="el" href="a07495.html#a666f0e01eba310e917d6bc5da89f59db">AbstractParameter.ensureValidValue()</a>, <a class="el" href="a07515.html#ab1285c4f05252364e32fd03079fa2f35">Parameter&lt; T &gt;.intValue()</a>, <a class="el" href="a07515.html#adbbb6b1f68d1894fe0a1752b720d01b0">Parameter&lt; T &gt;.intValueList()</a>, <a class="el" href="a07523.html#a88e13051d9eb0b58e34b4283f8ee6b47">Parameters.isValidValue()</a>, <a class="el" href="a07515.html#a820e615ad69040137fce2599ea70c791">Parameter&lt; T &gt;.stringValue()</a>, <a class="el" href="a07495.html#a259a87c5737c4d5093add36705bd3c71">AbstractParameter.unitlessParameter()</a>, and <a class="el" href="a07515.html#ae55b4342ce304c6d5818170e61f927f5">Parameter&lt; T &gt;.valueFile()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                                                 {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.getName().getCode();</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div><div class="ttc" id="a07495_html_a3378a7c35945963bce2eff3d676fafc7"><div class="ttname"><a href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">org.geotoolkit.parameter.AbstractParameter.descriptor</a></div><div class="ttdeci">final GeneralParameterDescriptor descriptor</div><div class="ttdoc">The abstract definition of this parameter or group of parameters. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:66</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a165b11c698574db7bcbbc3498ef0018a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a165b11c698574db7bcbbc3498ef0018a">&#9670;&nbsp;</a></span>getUnitMessageID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static short getUnitMessageID </td>
-          <td>(</td>
-          <td class="paramtype">final Unit&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>unit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the unit type as one of error message code. </p>
-<p>Used for checking unit with a better error message formatting if needed. </p>
-
-<p class="reference">References <a class="el" href="a07827.html#aad130611b55dc0626061984fffe79861">Errors.Keys.IncompatibleUnit_1</a>, <a class="el" href="a07827.html#a07d1a0e8add568be7ad67a7c25f2877b">Errors.Keys.NonAngularUnit_1</a>, <a class="el" href="a07827.html#ac99aafc4629ef07e944ef2d6778309f6">Errors.Keys.NonLinearUnit_1</a>, <a class="el" href="a07827.html#a7633e689b48ad396bb03ceb68de29c64">Errors.Keys.NonScaleUnit_1</a>, and <a class="el" href="a07827.html#a9402c5ee4a7bfc291f8dfbcb68da3f99">Errors.Keys.NonTemporalUnit_1</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07515.html#a8567b7f171d23154337ce887425d8c60">Parameter&lt; T &gt;.doubleValue()</a>, <a class="el" href="a07515.html#afb116d80b9453058faf85021b0bf48c0">Parameter&lt; T &gt;.doubleValueList()</a>, and <a class="el" href="a07515.html#a5cb5a992f0c10990988c22023a4c5820">Parameter&lt; T &gt;.setValue()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                                      {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span> (Units.isLinear  (unit)) <span class="keywordflow">return</span> Errors.Keys.NonLinearUnit_1;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        if (Units.isAngular (unit)) <span class="keywordflow">return</span> Errors.Keys.NonAngularUnit_1;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        if (Units.isTemporal(unit)) <span class="keywordflow">return</span> Errors.Keys.NonTemporalUnit_1;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        if (Units.isScale   (unit)) <span class="keywordflow">return</span> Errors.Keys.NonScaleUnit_1;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> Errors.Keys.IncompatibleUnit_1;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a077e18fe97323c7194e2665ffc766399"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a077e18fe97323c7194e2665ffc766399">&#9670;&nbsp;</a></span>hashCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hashCode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a hash value for this parameter. </p>
-<p>This value doesn't need to be the same in past or future versions of this class. </p>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                          {</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>.hashCode() ^ (int) <a class="code" href="a07495.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a>;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div><div class="ttc" id="a07495_html_a3378a7c35945963bce2eff3d676fafc7"><div class="ttname"><a href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">org.geotoolkit.parameter.AbstractParameter.descriptor</a></div><div class="ttdeci">final GeneralParameterDescriptor descriptor</div><div class="ttdoc">The abstract definition of this parameter or group of parameters. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:66</div></div>
-<div class="ttc" id="a07495_html_a3238d314ecdee14d2966760945d00c3b"><div class="ttname"><a href="a07495.html#a3238d314ecdee14d2966760945d00c3b">org.geotoolkit.parameter.AbstractParameter.serialVersionUID</a></div><div class="ttdeci">static final long serialVersionUID</div><div class="ttdoc">Serial number for inter-operability with different versions. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:61</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a83c45da35d2406ea05eb2772d2ce762d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83c45da35d2406ea05eb2772d2ce762d">&#9670;&nbsp;</a></span>removeChangeListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void removeChangeListener </td>
-          <td>(</td>
-          <td class="paramtype">final ChangeListener&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes the specified listener from the list of objects to inform when the value changed. </p>
+<p>Register a directory to the WatchService. </p>
+<p>If it does not exists, we'll try to create it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">listener</td><td>The listener to remove. </td></tr>
+    <tr><td class="paramname">paths</td><td>A list of folders to watch. If one does not exists, we will try to create it. </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                    {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a> = Listeners.removeListener(listener, <a class="code" href="a07503.html#a1eff22e242a0d0480721effa36d80b72">listeners</a>);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div><div class="ttc" id="a07503_html_a1eff22e242a0d0480721effa36d80b72"><div class="ttname"><a href="a07503.html#a1eff22e242a0d0480721effa36d80b72">org.geotoolkit.parameter.AbstractParameterValue.listeners</a></div><div class="ttdeci">transient ChangeListener [] listeners</div><div class="ttdoc">The listeners, or. </div><div class="ttdef"><b>Definition:</b> AbstractParameterValue.java:48</div></div>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">java.io.IOException</td><td>If an input folder does not exists and cannot be created, or if an error occurred trying to register it or one of its children. </td></tr>
+    <tr><td class="paramname">java.nio.file.FileAlreadyExistsException</td><td>If an input path denotes a file and not a folder. </td></tr>
+    <tr><td class="paramname">SecurityException</td><td>If an input directory cannot be watched due to a lack of permission. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">DirectoryWatcher.registerDir()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                                           {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> (Path toWatch : paths) {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>.contains(toWatch)) {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">if</span> (!Files.isDirectory(toWatch)) {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    Files.createDirectories(toWatch);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <a class="code" href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">registerDir</a>(toWatch);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>.add(toWatch);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="comment">// In case someone asked for its removal before.</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a>.remove(toWatch);</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div><div class="ttc" id="a07503_html_ab6ea70232526412ee08ed5bf083d9ee7"><div class="ttname"><a href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">org.geotoolkit.nio.DirectoryWatcher.unregistered</a></div><div class="ttdeci">final HashSet&lt; Path &gt; unregistered</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:60</div></div>
+<div class="ttc" id="a07503_html_a0a145b1ef77764179c9079c6d3ff2b6b"><div class="ttname"><a href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">org.geotoolkit.nio.DirectoryWatcher.registerDir</a></div><div class="ttdeci">final void registerDir(final Path dir)</div><div class="ttdoc">Register a directory along with all its sub-directories to the WatchService. </div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:154</div></div>
+<div class="ttc" id="a07503_html_a4105e0bf378afa97818ef1589789188a"><div class="ttname"><a href="a07503.html#a4105e0bf378afa97818ef1589789188a">org.geotoolkit.nio.DirectoryWatcher.roots</a></div><div class="ttdeci">final HashSet&lt; Path &gt; roots</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:59</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a259a87c5737c4d5093add36705bd3c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a259a87c5737c4d5093add36705bd3c71">&#9670;&nbsp;</a></span>unitlessParameter()</h2>
+<a id="a0a145b1ef77764179c9079c6d3ff2b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a145b1ef77764179c9079c6d3ff2b6b">&#9670;&nbsp;</a></span>registerDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,69 +474,11 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a14159.html">IllegalStateException</a> unitlessParameter </td>
+          <td class="memname">final void registerDir </td>
           <td>(</td>
-          <td class="paramtype">final GeneralParameterDescriptor&#160;</td>
-          <td class="paramname"><em>descriptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an exception initialized with a "Unitless parameter" error message for the specified descriptor. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, <a class="el" href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">AbstractParameter.getName()</a>, and <a class="el" href="a07827.html#a9297fb656e5847d2e087127d6fe6d87d">Errors.Keys.UnitlessParameter_1</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07515.html#a8567b7f171d23154337ce887425d8c60">Parameter&lt; T &gt;.doubleValue()</a>, <a class="el" href="a07515.html#afb116d80b9453058faf85021b0bf48c0">Parameter&lt; T &gt;.doubleValueList()</a>, and <a class="el" href="a07515.html#a5cb5a992f0c10990988c22023a4c5820">Parameter&lt; T &gt;.setValue()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                                                                          {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a14159.html">IllegalStateException</a>(Errors.format(</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                Errors.Keys.UnitlessParameter_1, <a class="code" href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">getName</a>(<a class="code" href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">descriptor</a>)));</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div><div class="ttc" id="a07495_html_a3378a7c35945963bce2eff3d676fafc7"><div class="ttname"><a href="a07495.html#a3378a7c35945963bce2eff3d676fafc7">org.geotoolkit.parameter.AbstractParameter.descriptor</a></div><div class="ttdeci">final GeneralParameterDescriptor descriptor</div><div class="ttdoc">The abstract definition of this parameter or group of parameters. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:66</div></div>
-<div class="ttc" id="a07495_html_a3356a580bf7f1cc5c4893bf39d527ab4"><div class="ttname"><a href="a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4">org.geotoolkit.parameter.AbstractParameter.getName</a></div><div class="ttdeci">static String getName(final GeneralParameterDescriptor descriptor)</div><div class="ttdoc">Convenience method returning the name of the specified descriptor. </div><div class="ttdef"><b>Definition:</b> AbstractParameter.java:164</div></div>
-<div class="ttc" id="a14159_html"><div class="ttname"><a href="a14159.html">IllegalStateException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3378a7c35945963bce2eff3d676fafc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3378a7c35945963bce2eff3d676fafc7">&#9670;&nbsp;</a></span>descriptor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final GeneralParameterDescriptor descriptor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The abstract definition of this parameter or group of parameters. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07495.html#ad71ac02932052e27cb61fbbd57225dac">AbstractParameter.AbstractParameter()</a>, <a class="el" href="a07519.html#a8b91bf14d6d9c5647b51ab6874e05c2f">ParameterGroup.addGroup()</a>, <a class="el" href="a07515.html#a204afc806b1bb2d8fea6ddbc810627a6">Parameter&lt; T &gt;.booleanValue()</a>, <a class="el" href="a07515.html#a8567b7f171d23154337ce887425d8c60">Parameter&lt; T &gt;.doubleValue()</a>, <a class="el" href="a07515.html#afb116d80b9453058faf85021b0bf48c0">Parameter&lt; T &gt;.doubleValueList()</a>, <a class="el" href="a07519.html#a331a36213d7bb0a42d2d92e03010ee31">ParameterGroup.ensureValidOccurs()</a>, <a class="el" href="a07495.html#a70e0ce6c9806cb2e0e343f0d059b1379">AbstractParameter.equals()</a>, <a class="el" href="a07515.html#a54c50d495c255d49354f9aff0e8f49c2">Parameter&lt; T &gt;.getClassTypeError()</a>, <a class="el" href="a07495.html#aa157235bc5080bfa6615f96fe8a3a7c5">AbstractParameter.getDescriptor()</a>, <a class="el" href="a07519.html#aa05c5d3398f536a756b48dbadf09699f">ParameterGroup.groups()</a>, <a class="el" href="a07515.html#ab1285c4f05252364e32fd03079fa2f35">Parameter&lt; T &gt;.intValue()</a>, <a class="el" href="a07515.html#adbbb6b1f68d1894fe0a1752b720d01b0">Parameter&lt; T &gt;.intValueList()</a>, <a class="el" href="a07515.html#a98bcdc96f77966586efe3a16119e9f7c">Parameter&lt; T &gt;.Parameter()</a>, <a class="el" href="a07519.html#ad639dffcbcee91f43ec0b7649df99d32">ParameterGroup.parameter()</a>, <a class="el" href="a07515.html#a5cb5a992f0c10990988c22023a4c5820">Parameter&lt; T &gt;.setValue()</a>, <a class="el" href="a07515.html#a820e615ad69040137fce2599ea70c791">Parameter&lt; T &gt;.stringValue()</a>, <a class="el" href="a07515.html#ae55b4342ce304c6d5818170e61f927f5">Parameter&lt; T &gt;.valueFile()</a>, and <a class="el" href="a07519.html#a09c81cf521ef81bf17e9121e8437edc6">ParameterGroup.values()</a>.</p>
-
-</div>
-</div>
-<a id="a1eff22e242a0d0480721effa36d80b72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eff22e242a0d0480721effa36d80b72">&#9670;&nbsp;</a></span>listeners</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">transient ChangeListener [] listeners</td>
+          <td class="paramtype">final Path&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td> throws IOException, SecurityException</td>
         </tr>
       </table>
   </td>
@@ -664,15 +488,123 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
 </table>
 </div><div class="memdoc">
 
-<p>The listeners, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
+<p>Register a directory along with all its sub-directories to the WatchService. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07503.html#ae126d4d0df45ad96720f9a43dc19abf7">AbstractParameterValue&lt; Double &gt;.addChangeListener()</a>, <a class="el" href="a07503.html#a2fedcfc7912c5a68afcdcc008c3887cb">AbstractParameterValue&lt; Double &gt;.clone()</a>, <a class="el" href="a07503.html#a3f991317d164365201278016ea6ee009">AbstractParameterValue&lt; Double &gt;.fireValueChanged()</a>, and <a class="el" href="a07503.html#a83c45da35d2406ea05eb2772d2ce762d">AbstractParameterValue&lt; Double &gt;.removeChangeListener()</a>.</p>
-
+<p class="reference">Referenced by <a class="el" href="a07503.html#aa5947889998f859f415a572a25f2daa9">DirectoryWatcher.register()</a>, and <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                                                         {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        dir.register(<a class="code" href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">service</a>, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">recursive</a>) {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            Files.walkFileTree(dir, <span class="keyword">new</span> SimpleFileVisitor&lt;Path&gt;() {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                @Override</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keyword">public</span> FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                        <span class="keywordflow">throws</span> IOException {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    dir.register(<a class="code" href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">service</a>, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    <span class="keywordflow">return</span> FileVisitResult.CONTINUE;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            });</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div><div class="ttc" id="a07503_html_a5f63a005fa5d5ca2711ec6e31f606658"><div class="ttname"><a href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">org.geotoolkit.nio.DirectoryWatcher.service</a></div><div class="ttdeci">final WatchService service</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:51</div></div>
+<div class="ttc" id="a07503_html_a1c2651f7a5dc63ed6ed4222057a1bb4f"><div class="ttname"><a href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">org.geotoolkit.nio.DirectoryWatcher.recursive</a></div><div class="ttdeci">final boolean recursive</div><div class="ttdoc">True if we listen changes of all the file tree, or only for the direct children of the registered fol...</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:57</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a3238d314ecdee14d2966760945d00c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
+<a id="a334b57a0ffd12e0e0eb4affd167495f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334b57a0ffd12e0e0eb4affd167495f4">&#9670;&nbsp;</a></span>removePathChangeListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removePathChangeListener </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a07515.html">PathChangeListener</a>&#160;</td>
+          <td class="paramname"><em>toForget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                                                            {</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;Event listener&quot;</span>, toForget);</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <a class="code" href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">listeners</a>.remove(PathChangeListener.class, toForget);</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div><div class="ttc" id="a07503_html_af6d6beea9e36dc3fca36998f8f1693a8"><div class="ttname"><a href="a07503.html#af6d6beea9e36dc3fca36998f8f1693a8">org.geotoolkit.nio.DirectoryWatcher.listeners</a></div><div class="ttdeci">final EventListenerList listeners</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:68</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a747b4222cfe8d96c6538143c523b97b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747b4222cfe8d96c6538143c523b97b9">&#9670;&nbsp;</a></span>setFileFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setFileFilter </td>
+          <td>(</td>
+          <td class="paramtype">final DirectoryStream.Filter&lt; Path &gt;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provide a filter to specify if a file must processed or ignored at change. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>A PathMatcher whose <a class="el" href="">java.nio.file.PathMatcher#matches(java.nio.file.Path)</a> method return true if we must process the path in parameter. If null, all changed files are processed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">DirectoryWatcher.fileFilterLock</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                                         {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">fileFilterLock</a>) {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="a07503.html#a5279e32324dae29e9e4a1453de67418d">fileFilter</a> = filter;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div><div class="ttc" id="a07503_html_a188e1694fa42ec5697e2d4b57de0c8d9"><div class="ttname"><a href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">org.geotoolkit.nio.DirectoryWatcher.fileFilterLock</a></div><div class="ttdeci">final Object fileFilterLock</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:66</div></div>
+<div class="ttc" id="a07503_html_a5279e32324dae29e9e4a1453de67418d"><div class="ttname"><a href="a07503.html#a5279e32324dae29e9e4a1453de67418d">org.geotoolkit.nio.DirectoryWatcher.fileFilter</a></div><div class="ttdeci">DirectoryStream.Filter&lt; Path &gt; fileFilter</div><div class="ttdoc">Filter used to determine which files must be ignored and which must be used. </div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60de64d75454385b23995437f1d72669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60de64d75454385b23995437f1d72669">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        {</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="a07503.html#a9248796fcaa149fa25870370fb31c569">watchThread</a>.start();</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div><div class="ttc" id="a07503_html_a9248796fcaa149fa25870370fb31c569"><div class="ttname"><a href="a07503.html#a9248796fcaa149fa25870370fb31c569">org.geotoolkit.nio.DirectoryWatcher.watchThread</a></div><div class="ttdeci">final Thread watchThread</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:52</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8c528baf37154d347366083f0f816846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c528baf37154d347366083f0f816846">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#a106e308073bc398126183cf164305cf1">DirectoryWatcher.close()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                       {</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="a07503.html#a9248796fcaa149fa25870370fb31c569">watchThread</a>.interrupt();</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div><div class="ttc" id="a07503_html_a9248796fcaa149fa25870370fb31c569"><div class="ttname"><a href="a07503.html#a9248796fcaa149fa25870370fb31c569">org.geotoolkit.nio.DirectoryWatcher.watchThread</a></div><div class="ttdeci">final Thread watchThread</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:52</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a416438afe47663edccc38747b292fd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416438afe47663edccc38747b292fd85">&#9670;&nbsp;</a></span>unregister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized void unregister </td>
+          <td>(</td>
+          <td class="paramtype">Path...&#160;</td>
+          <td class="paramname"><em>paths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                                       {</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">for</span> (Path dir : paths) {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a>.add(dir);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="comment">// in case it&#39;s a previously registered folder which is queried for removal, and not one of its children.</span></div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>.remove(dir);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div><div class="ttc" id="a07503_html_ab6ea70232526412ee08ed5bf083d9ee7"><div class="ttname"><a href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">org.geotoolkit.nio.DirectoryWatcher.unregistered</a></div><div class="ttdeci">final HashSet&lt; Path &gt; unregistered</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:60</div></div>
+<div class="ttc" id="a07503_html_a4105e0bf378afa97818ef1589789188a"><div class="ttname"><a href="a07503.html#a4105e0bf378afa97818ef1589789188a">org.geotoolkit.nio.DirectoryWatcher.roots</a></div><div class="ttdeci">final HashSet&lt; Path &gt; roots</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a493304ac403cbfbf2370e381e7a4b7da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493304ac403cbfbf2370e381e7a4b7da">&#9670;&nbsp;</a></span>watch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +613,125 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final long serialVersionUID = 4166422894375776520L</td>
+          <td class="memname">void watch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start to survey the registered folders (see  <a class="el" href="a07503.html#aa5947889998f859f415a572a25f2daa9" title="Register a directory to the WatchService. ">register</a>(java.nio.file.Path...)}. </p>
+
+<p class="reference">References <a class="el" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">DirectoryWatcher.fileFilterLock</a>, <a class="el" href="a07503.html#a7af64ffc06ef5a351d0a37192257dff4">DirectoryWatcher.firePathChanged()</a>, <a class="el" href="a07503.html#a1a8510846701433895dbdaee1c974d98">DirectoryWatcher.getUnregisteredParent()</a>, <a class="el" href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">DirectoryWatcher.registerDir()</a>, <a class="el" href="a07503.html#a4105e0bf378afa97818ef1589789188a">DirectoryWatcher.roots</a>, and <a class="el" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">DirectoryWatcher.unregistered</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#aed815da80a7da2cd64c7e3c3833e91c3">DirectoryWatcher.DirectoryWatcher()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                         {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14283.html">Thread</a> currentThread = <a class="code" href="a14283.html">Thread</a>.currentThread();</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">while</span> (!currentThread.isInterrupted()) {</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">final</span> WatchKey key;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                key = <a class="code" href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">service</a>.take();</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            } <span class="keywordflow">catch</span> (ClosedWatchServiceException e) {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <a class="code" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.INFO, <span class="stringliteral">&quot;Folder watcher has been closed !&quot;</span>);</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            } <span class="keywordflow">catch</span> (InterruptedException e) {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <a class="code" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.INFO, <span class="stringliteral">&quot;Folder watcher has been interrupted !&quot;</span>);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                currentThread.interrupt();</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            }</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="comment">// Do the check here, because we don&#39;t know how many time we have waited for an event, nor what happened.</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">if</span> (currentThread.isInterrupted()) {</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="comment">// If could happen if we&#39;ve cancelled if and it was already waiting for new events. We just have to ignore it.</span></div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">if</span> (!key.isValid()) {</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            }</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="comment">// TODO : Change if an implementation of watchable other than path appears in the jvm.</span></div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keyword">final</span> Path watchedPath = (Path) key.watchable();</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="comment">// Check if we must stop following the current folder.</span></div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keyword">final</span> Path dereferenced = <a class="code" href="a07503.html#a1a8510846701433895dbdaee1c974d98">getUnregisteredParent</a>(watchedPath);</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="keywordflow">if</span> (dereferenced != null) {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    key.cancel();</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                    <span class="comment">// If current event path represents the exact path to remove, not just a children, we can forget about it.</span></div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    <span class="keywordflow">if</span> (dereferenced.equals(watchedPath)) {</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a>) {</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                            <a class="code" href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">unregistered</a>.remove(dereferenced);</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        }</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    }</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                }</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordflow">for</span> (WatchEvent event : key.pollEvents()) {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                    WatchEvent.Kind kind = <span class="keyword">event</span>.kind();</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    <span class="comment">// Watch service received too many events from the system and cannot handle them.</span></div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                    <span class="keywordflow">if</span> (kind == OVERFLOW) {</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                        <a class="code" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.INFO, <span class="stringliteral">&quot;Too many changes happened to the watched directory. Unable to catch them all.&quot;</span>);</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    }</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        Path target;</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        <span class="keyword">final</span> <a class="code" href="a13607.html">Object</a> context = <span class="keyword">event</span>.context();</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        <span class="keywordflow">if</span> (context instanceof Path) {</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                            target = (Path) context;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (context instanceof File) {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                            target = ((File) context).toPath();</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                            <span class="comment">// Create an exception to be able to retrieve code fragment from message, which will allow to quickly add new cases if needed.</span></div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                            <span class="keyword">final</span> <a class="code" href="a14295.html">IllegalArgumentException</a> e = <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;Watch event is of unknown type (need Path or File).&quot;</span>);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                            <a class="code" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.INFO, <span class="stringliteral">&quot;Watch event skipped.&quot;</span>, e);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        }</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                        target = watchedPath.resolve(target);</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        <span class="keyword">final</span> <span class="keywordtype">boolean</span> isDirectory = Files.isDirectory(target);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                        <span class="comment">// Add the new directory to the watched ones if we&#39;re on recursive mode.</span></div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        <span class="keywordflow">if</span> (isDirectory &amp;&amp; <a class="code" href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">recursive</a> &amp;&amp; kind == ENTRY_CREATE) {</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                <a class="code" href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">registerDir</a>(target);</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                            } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                <a class="code" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.WARNING, <span class="stringliteral">&quot;Newly created folder cannot be watched : &quot;</span> + target, e);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                            }</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        }</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                        <span class="keyword">final</span> <span class="keywordtype">boolean</span> matchFileFilter;</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                        <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">fileFilterLock</a>) {</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                            matchFileFilter = (<a class="code" href="a07503.html#a5279e32324dae29e9e4a1453de67418d">fileFilter</a> == null || <a class="code" href="a07503.html#a5279e32324dae29e9e4a1453de67418d">fileFilter</a>.accept(target));</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                        }</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                        <span class="keywordflow">if</span> (matchFileFilter) {</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                            <a class="code" href="a07503.html#a7af64ffc06ef5a351d0a37192257dff4">firePathChanged</a>(target, kind, isDirectory, event.count());</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                        }</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    } <span class="keywordflow">catch</span> (<a class="code" href="a14231.html">Exception</a> e) {</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="comment">// We don&#39;t want the entire mechanism to be destroyed for a simple error on a file.</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        <a class="code" href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.WARNING, <span class="stringliteral">&quot;An error occurred while processing &quot;</span> + event.context() + <span class="stringliteral">&quot; for the event &quot;</span> + kind, e);</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                    }</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                }</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            } <span class="keywordflow">finally</span> {</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="comment">/* Finished work with key, reset it. If we cannot, it means the bound directory is not watched anymore, we can</span></div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">               remove it from our list of surveyed folders.</span></div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="keywordflow">if</span> (!key.reset()) {</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                    <span class="keyword">synchronized</span> (<a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>) {</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        <a class="code" href="a07503.html#a4105e0bf378afa97818ef1589789188a">roots</a>.remove(watchedPath);</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    }</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                }</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            }</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div><div class="ttc" id="a07503_html_a5f63a005fa5d5ca2711ec6e31f606658"><div class="ttname"><a href="a07503.html#a5f63a005fa5d5ca2711ec6e31f606658">org.geotoolkit.nio.DirectoryWatcher.service</a></div><div class="ttdeci">final WatchService service</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:51</div></div>
+<div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a07503_html_ab6ea70232526412ee08ed5bf083d9ee7"><div class="ttname"><a href="a07503.html#ab6ea70232526412ee08ed5bf083d9ee7">org.geotoolkit.nio.DirectoryWatcher.unregistered</a></div><div class="ttdeci">final HashSet&lt; Path &gt; unregistered</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:60</div></div>
+<div class="ttc" id="a14283_html"><div class="ttname"><a href="a14283.html">Thread</a></div></div>
+<div class="ttc" id="a07503_html_a0a145b1ef77764179c9079c6d3ff2b6b"><div class="ttname"><a href="a07503.html#a0a145b1ef77764179c9079c6d3ff2b6b">org.geotoolkit.nio.DirectoryWatcher.registerDir</a></div><div class="ttdeci">final void registerDir(final Path dir)</div><div class="ttdoc">Register a directory along with all its sub-directories to the WatchService. </div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:154</div></div>
+<div class="ttc" id="a07503_html_a1a8510846701433895dbdaee1c974d98"><div class="ttname"><a href="a07503.html#a1a8510846701433895dbdaee1c974d98">org.geotoolkit.nio.DirectoryWatcher.getUnregisteredParent</a></div><div class="ttdeci">Path getUnregisteredParent(final Path target)</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:277</div></div>
+<div class="ttc" id="a14231_html"><div class="ttname"><a href="a14231.html">Exception</a></div></div>
+<div class="ttc" id="a07503_html_a1c2651f7a5dc63ed6ed4222057a1bb4f"><div class="ttname"><a href="a07503.html#a1c2651f7a5dc63ed6ed4222057a1bb4f">org.geotoolkit.nio.DirectoryWatcher.recursive</a></div><div class="ttdeci">final boolean recursive</div><div class="ttdoc">True if we listen changes of all the file tree, or only for the direct children of the registered fol...</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:57</div></div>
+<div class="ttc" id="a07503_html_a188e1694fa42ec5697e2d4b57de0c8d9"><div class="ttname"><a href="a07503.html#a188e1694fa42ec5697e2d4b57de0c8d9">org.geotoolkit.nio.DirectoryWatcher.fileFilterLock</a></div><div class="ttdeci">final Object fileFilterLock</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:66</div></div>
+<div class="ttc" id="a13607_html"><div class="ttname"><a href="a13607.html">Object</a></div></div>
+<div class="ttc" id="a07503_html_a7af64ffc06ef5a351d0a37192257dff4"><div class="ttname"><a href="a07503.html#a7af64ffc06ef5a351d0a37192257dff4">org.geotoolkit.nio.DirectoryWatcher.firePathChanged</a></div><div class="ttdeci">void firePathChanged(Path target, WatchEvent.Kind kind, boolean isDirectory, int count)</div><div class="ttdoc">Each time the watch service will catch an event on a file/folder, it will use this method...</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:328</div></div>
+<div class="ttc" id="a07503_html_a5279e32324dae29e9e4a1453de67418d"><div class="ttname"><a href="a07503.html#a5279e32324dae29e9e4a1453de67418d">org.geotoolkit.nio.DirectoryWatcher.fileFilter</a></div><div class="ttdeci">DirectoryStream.Filter&lt; Path &gt; fileFilter</div><div class="ttdoc">Filter used to determine which files must be ignored and which must be used. </div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:65</div></div>
+<div class="ttc" id="a07503_html_ab1d069f56091df4f6436f8c713ab2f39"><div class="ttname"><a href="a07503.html#ab1d069f56091df4f6436f8c713ab2f39">org.geotoolkit.nio.DirectoryWatcher.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:49</div></div>
+<div class="ttc" id="a07503_html_a4105e0bf378afa97818ef1589789188a"><div class="ttname"><a href="a07503.html#a4105e0bf378afa97818ef1589789188a">org.geotoolkit.nio.DirectoryWatcher.roots</a></div><div class="ttdeci">final HashSet&lt; Path &gt; roots</div><div class="ttdef"><b>Definition:</b> DirectoryWatcher.java:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5279e32324dae29e9e4a1453de67418d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5279e32324dae29e9e4a1453de67418d">&#9670;&nbsp;</a></span>fileFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DirectoryStream.Filter&lt;Path&gt; fileFilter = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Filter used to determine which files must be ignored and which must be used. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#a4119396d16f9aa10837643366e987e45">DirectoryWatcher.getFileFilter()</a>.</p>
+
+</div>
+</div>
+<a id="a188e1694fa42ec5697e2d4b57de0c8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188e1694fa42ec5697e2d4b57de0c8d9">&#9670;&nbsp;</a></span>fileFilterLock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a13607.html">Object</a> fileFilterLock = new <a class="el" href="a13607.html">Object</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#a4119396d16f9aa10837643366e987e45">DirectoryWatcher.getFileFilter()</a>, <a class="el" href="a07503.html#a747b4222cfe8d96c6538143c523b97b9">DirectoryWatcher.setFileFilter()</a>, and <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+
+</div>
+</div>
+<a id="af6d6beea9e36dc3fca36998f8f1693a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d6beea9e36dc3fca36998f8f1693a8">&#9670;&nbsp;</a></span>listeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final EventListenerList listeners = new EventListenerList()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1d069f56091df4f6436f8c713ab2f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d069f56091df4f6436f8c713ab2f39">&#9670;&nbsp;</a></span>LOGGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Logger LOGGER = Logging.getLogger(&quot;org.geotoolkit.io&quot;)</td>
         </tr>
       </table>
   </td>
@@ -691,7 +741,115 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
 </table>
 </div><div class="memdoc">
 
-<p>Serial number for inter-operability with different versions. </p>
+</div>
+</div>
+<a id="a1c2651f7a5dc63ed6ed4222057a1bb4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2651f7a5dc63ed6ed4222057a1bb4f">&#9670;&nbsp;</a></span>recursive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final boolean recursive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if we listen changes of all the file tree, or only for the direct children of the registered folders. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#aed815da80a7da2cd64c7e3c3833e91c3">DirectoryWatcher.DirectoryWatcher()</a>.</p>
+
+</div>
+</div>
+<a id="a4105e0bf378afa97818ef1589789188a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4105e0bf378afa97818ef1589789188a">&#9670;&nbsp;</a></span>roots</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final HashSet&lt;Path&gt; roots = new HashSet&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#a106e308073bc398126183cf164305cf1">DirectoryWatcher.close()</a>, and <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+
+</div>
+</div>
+<a id="a5f63a005fa5d5ca2711ec6e31f606658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f63a005fa5d5ca2711ec6e31f606658">&#9670;&nbsp;</a></span>service</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final WatchService service</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6ea70232526412ee08ed5bf083d9ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ea70232526412ee08ed5bf083d9ee7">&#9670;&nbsp;</a></span>unregistered</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final HashSet&lt;Path&gt; unregistered = new HashSet&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07503.html#a1a8510846701433895dbdaee1c974d98">DirectoryWatcher.getUnregisteredParent()</a>, and <a class="el" href="a07503.html#a493304ac403cbfbf2370e381e7a4b7da">DirectoryWatcher.watch()</a>.</p>
+
+</div>
+</div>
+<a id="a9248796fcaa149fa25870370fb31c569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9248796fcaa149fa25870370fb31c569">&#9670;&nbsp;</a></span>watchThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a14283.html">Thread</a> watchThread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -701,7 +859,7 @@ Change listeners are not included in  <a class="el" href="a07503.html#a2fedcfc79
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03877.html">parameter</a></li><li class="navelem"><a class="el" href="a07503.html">AbstractParameterValue</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03900.html">nio</a></li><li class="navelem"><a class="el" href="a07503.html">DirectoryWatcher</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

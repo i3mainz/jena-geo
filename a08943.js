@@ -1,5 +1,6 @@
 var a08943 =
 [
-    [ "testMinY", "a08943.html#a20b14a3b84a49bf47013087a83af2fb1", null ],
-    [ "testPoint", "a08943.html#af26f700ee129f846cac58735f6dcc380", null ]
+    [ "testOffsetCurve", "a08943.html#a838580dd525848eff0989cbeb9ce59a8", null ],
+    [ "result", "a08943.html#aab356d6554a7301750f11ec7a85ac47d", null ],
+    [ "testLineString", "a08943.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

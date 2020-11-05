@@ -1,17 +1,17 @@
 var a08035 =
 [
-    [ "ProxyMap", "a08035.html#ae501300dde6209fbe621d723d1636c74", null ],
-    [ "clear", "a08035.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
-    [ "containsKey", "a08035.html#a3101f8dc7d22575eed198995783d0547", null ],
-    [ "containsValue", "a08035.html#aa0c97bc767dec8ae0a78a4e699e79a85", null ],
-    [ "entrySet", "a08035.html#ac3d7998b354ef821673f836071270da7", null ],
-    [ "get", "a08035.html#ae9ea7fe128b8ab553aa89ae46bec234f", null ],
+    [ "Iter", "a08039.html", "a08039" ],
+    [ "DerivedSet", "a08035.html#a365d968abb9ed8e96039fe686365cd7e", null ],
+    [ "add", "a08035.html#aedbc13a303fdeb044c5973530b3e0a81", null ],
+    [ "baseToDerived", "a08035.html#a83b4036c084427308c417c8d06348380", null ],
+    [ "contains", "a08035.html#ae1be99f861382755fb4ab18f78003154", null ],
+    [ "derivedToBase", "a08035.html#a3f73a4292875049ff99875e2453bc23d", null ],
+    [ "getElementType", "a08035.html#a495b2b3c280d155dc55c0ee28af2d693", null ],
     [ "isEmpty", "a08035.html#aa71d41fd3d95c354d4d5e922c6c21210", null ],
-    [ "keySet", "a08035.html#aaf221fd7e416516b6e1228c0a25cb839", null ],
-    [ "put", "a08035.html#a78cb64e8d41be403c2b89bc935757692", null ],
-    [ "putAll", "a08035.html#a94caf8e5910622dd6936b67330788f68", null ],
-    [ "remove", "a08035.html#af13ea149b55260d00e99a2030cea8034", null ],
+    [ "iterator", "a08035.html#a47c5a247288d15e20eb94dc1ca643271", null ],
+    [ "remove", "a08035.html#a59bedf41619590473b10a8a1d94502ce", null ],
     [ "size", "a08035.html#af4b57d21919c42d55af03391f91a1c08", null ],
-    [ "values", "a08035.html#af0c79ec0eb4e8cde1ee8e0390add2f9e", null ],
-    [ "subs", "a08035.html#a6d98b237d2c5ff06ad59e8bee04bfab4", null ]
+    [ "base", "a08035.html#a669ce1b4d455af85058b47509be85830", null ],
+    [ "derivedType", "a08035.html#a1097212b9f07192faedb1ac7a22d0ddb", null ],
+    [ "serialVersionUID", "a08035.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: BandPixelType Class Reference</title>
+<title>jena-geo: Threshold Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,32 +64,32 @@ $(document).ready(function(){initNavTree('a05563.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05560.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BandPixelType Class Reference</div>  </div>
+<div class="title">Threshold Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for BandPixelType:</div>
+Inheritance diagram for Threshold:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05562.png" border="0" usemap="#BandPixelType_inherit__map" alt="Inheritance graph"/></div>
-<map name="BandPixelType_inherit__map" id="BandPixelType_inherit__map">
+<div class="center"><img src="a05562.png" border="0" usemap="#Threshold_inherit__map" alt="Inheritance graph"/></div>
+<map name="Threshold_inherit__map" id="Threshold_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for BandPixelType:</div>
+Collaboration diagram for Threshold:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05561.png" border="0" usemap="#BandPixelType_coll__map" alt="Collaboration graph"/></div>
-<map name="BandPixelType_coll__map" id="BandPixelType_coll__map">
+<div class="center"><img src="a05561.png" border="0" usemap="#Threshold_coll__map" alt="Collaboration graph"/></div>
+<map name="Threshold_coll__map" id="Threshold_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05563.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
-<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b9e2dbdbf18141bdc3827af86fb9fe"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05563.html#a93b9e2dbdbf18141bdc3827af86fb9fe">exec</a> (NodeValue v1, NodeValue v2, NodeValue v3, NodeValue v4, NodeValue v5)</td></tr>
+<tr class="separator:a93b9e2dbdbf18141bdc3827af86fb9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
+<a id="a93b9e2dbdbf18141bdc3827af86fb9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b9e2dbdbf18141bdc3827af86fb9fe">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,7 +104,25 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v5</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -114,8 +132,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06495.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, and <a class="el" href="a06495.html#ac3a5cdaadec8ceec258e2e950e0e2586">CoverageWrapper.getXYGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v1);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                GridCoverage2D raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                BigInteger bandNum=v2.getInteger();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> NodeValue.makeString(raster.getSampleDimension(bandNum.intValue()).getRange() + <span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06535.html#ad7332e71be73d650b2fa825102bbb386">CoverageWrapper.createCoverage()</a>, <a class="el" href="a06535.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, <a class="el" href="a06535.html#a0904a51fde88c2b11db431c51711f7da">CoverageWrapper.getRasterDatatypeURI()</a>, <a class="el" href="a06535.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">CoverageWrapper.getSrsURI()</a>, and <a class="el" href="a06535.html#ac3a5cdaadec8ceec258e2e950e0e2586">CoverageWrapper.getXYGeometry()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a09243.html#a2db430966ba47f9f9c3cb746f7d07a16">ThresholdTest.testThreshold()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                                                                 {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v1);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                GridCoverage2D raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                Double high=v3.getDouble();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                Double low=v4.getDouble();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                Double map=v5.getDouble();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="comment">/*double[] consts=new double[raster.getNumSampleDimensions()];</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">                if(bandnum.intValue()&lt;0) {</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">                        for(int i=0;i&lt;consts.length;i++) {</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">                                consts[i]=constval;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">                        }</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">                }else {</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">                        for(int i=0;i&lt;consts.length;i++) {</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">                                if(i==bandnum.intValue()) {</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">                                        consts[i]=constval;</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">                                }else {</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">                                        consts[i]=1;</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">                                }</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">                        }</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">                }*/</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                 ParameterBlock pbSubtracted = <span class="keyword">new</span> ParameterBlock(); </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             pbSubtracted.addSource(raster.getRenderedImage()); </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;             pbSubtracted.add(<span class="keyword">new</span> <span class="keywordtype">double</span>[] {high});</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;             pbSubtracted.add(<span class="keyword">new</span> <span class="keywordtype">double</span>[] {low});</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;             pbSubtracted.add(<span class="keyword">new</span> <span class="keywordtype">double</span>[] {map});</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;             RenderedOp subtractedImage = JAI.create(<span class="stringliteral">&quot;threshold&quot;</span>,pbSubtracted);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        GridCoverageBuilder builder=<span class="keyword">new</span> GridCoverageBuilder();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        builder.setGridGeometry(raster.getGridGeometry());</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        builder.setNumBands(raster.getNumSampleDimensions());</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        builder.setExtent(raster.getGridGeometry().getExtent());</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        builder.setRenderedImage(subtractedImage);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="comment">/*final SampleDimension sd = new SampleDimension.Builder().setName(&quot;t&quot;)</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">                                        .addQuantitative(</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">                                                        (raster.getSampleDimensions().get(rd1).getName() + &quot;+&quot;</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">                                                                        + raster2.getSampleDimensions().get(rd2).getName()).toString(),</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">                                                        raster.getSampleDimensions().get(0).getMeasurementRange().get(),</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">                                                        raster.getSampleDimensions().get(0).getTransferFunction().get(),</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">                                                        raster.getSampleDimensions().get(0).getUnits().get())</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">                                        .build();</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">                        </span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">                        List&lt;SampleDimension&gt;sds=new LinkedList&lt;SampleDimension&gt;();</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">                        sds.add(sd);</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">                        /*</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">                         * Create the grid coverage, gets its image and set values directly as short</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">                         * integers.</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">                         </span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">                        BufferedGridCoverage coverage = new BufferedGridCoverage(raster2.getGridGeometry(),</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">                                        sds, DataBuffer.TYPE_SHORT);</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">                        WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">                        rasterr.setRect(subtractedImage.getSourceImage(0).getData());</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">                        return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">                                        .asNodeValue(); </span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">                        } catch (CannotEvaluateException e) {</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">                                // TODO Auto-generated catch block</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">                                e.printStackTrace();</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">                                return null;</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">                        }*/</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        GridCoverage cov=builder.build();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <span class="keywordflow">return</span> CoverageWrapper.createCoverage((GridCoverage2D)cov, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                        .asNodeValue();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;             </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        } </div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -124,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03805.html">raster</a></li><li class="navelem"><a class="el" href="a03806.html">attribute</a></li><li class="navelem"><a class="el" href="a05563.html">BandPixelType</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03829.html">raster</a></li><li class="navelem"><a class="el" href="a03828.html">algebra</a></li><li class="navelem"><a class="el" href="a05563.html">Threshold</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

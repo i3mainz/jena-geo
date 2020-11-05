@@ -1,8 +1,13 @@
 var a07471 =
 [
-    [ "PathChangedEvent", "a07471.html#a10790082c920880fff17182360f07142", null ],
-    [ "count", "a07471.html#a5cee82df24fbebee5a7e83193680ea24", null ],
-    [ "isDirectory", "a07471.html#afbc9fbd05c5ee7891325476611b062b1", null ],
-    [ "kind", "a07471.html#a065c3fa33315959a7f26ab6030d0a4bd", null ],
-    [ "target", "a07471.html#aafdc9e03f673beef105a0f339dcdec0f", null ]
+    [ "clear", "a07471.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
+    [ "ignoreNaN", "a07471.html#a22e218505813600e1844d7b4d899f57d", null ],
+    [ "interpolate", "a07471.html#ae939fecd3ed5b2d3fea7056d8c7d04e9", null ],
+    [ "interpolateAt", "a07471.html#a3c28c1a787c8f0515aec182729e29a6c", null ],
+    [ "recompute", "a07471.html#a43ba393bb8bd89882094eb499ffe6d7f", null ],
+    [ "setData", "a07471.html#a7f4c5cdce430473a76ee647f0a041023", null ],
+    [ "throwArrayIndexOutOfBoundsException", "a07471.html#acbdd94cfa46f3161c548073aacc5739a", null ],
+    [ "ignoreYNaN", "a07471.html#ab7a26c935a4592383c96a6b2d89130ad", null ],
+    [ "x", "a07471.html#a99ee0c516ca235fc66902cb8d612eeab", null ],
+    [ "y", "a07471.html#a799e94d2434d7bf0fb8d2e845ebd55e7", null ]
 ];

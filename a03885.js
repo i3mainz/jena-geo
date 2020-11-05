@@ -1,10 +1,13 @@
 var a03885 =
 [
-    [ "matrix", "a03886.html", "a03886" ],
-    [ "projection", "a03887.html", "a03887" ],
-    [ "provider", "a03888.html", "a03888" ],
-    [ "transform", "a03889.html", "a03889" ],
-    [ "DefiningConversion", "a07639.html", "a07639" ],
-    [ "MathTransformProvider", "a07643.html", "a07643" ],
-    [ "MathTransforms", "a07647.html", "a07647" ]
+    [ "CombineCRIF", "a07167.html", "a07167" ],
+    [ "CombineDescriptor", "a07171.html", "a07171" ],
+    [ "HysteresisCRIF", "a07175.html", "a07175" ],
+    [ "HysteresisDescriptor", "a07179.html", "a07179" ],
+    [ "MaskCRIF", "a07183.html", "a07183" ],
+    [ "MaskDescriptor", "a07187.html", "a07187" ],
+    [ "NodataFilterCRIF", "a07191.html", "a07191" ],
+    [ "NodataFilterDescriptor", "a07195.html", "a07195" ],
+    [ "SilhouetteMaskCRIF", "a07199.html", "a07199" ],
+    [ "SilhouetteMaskDescriptor", "a07203.html", "a07203" ]
 ];

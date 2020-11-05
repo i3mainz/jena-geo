@@ -1,13 +1,18 @@
 var a06691 =
 [
-    [ "InputStreamAdapter", "a06699.html", "a06699" ],
-    [ "Spi", "a06695.html", "a06695" ],
-    [ "WKBRasterImageReader", "a06691.html#a34badb2baa40331fceb6454a23e348b6", null ],
-    [ "getHeight", "a06691.html#aa6a67f2864766f83a712d6b2af292e7d", null ],
-    [ "getImageMetadata", "a06691.html#a20196cc76d82d0f6ba9e13e70d5141f1", null ],
-    [ "getImageTypes", "a06691.html#a3f778bb9f9d7fb146e110964293b3ab7", null ],
-    [ "getNumImages", "a06691.html#a9b92db5808f8a718d29f13c40e9702f4", null ],
-    [ "getStreamMetadata", "a06691.html#ad187387db939538f0b4ae68ed7fae7c1", null ],
-    [ "getWidth", "a06691.html#a2129107c2233c5e6135e17fe44d8c7fe", null ],
-    [ "read", "a06691.html#abeafb3f0edabe91a895599d6c54ba6cb", null ]
+    [ "ScaledColorSpace", "a06691.html#adf7cc0b0c75de55625d8fabb7866fc84", null ],
+    [ "equals", "a06691.html#a38744f448cabd3e9b605b2c349e007b4", null ],
+    [ "formatRange", "a06691.html#a0cc5af9dcb1bc4d95a801c2113de8b86", null ],
+    [ "fromCIEXYZ", "a06691.html#a64b323df205eb1af579c90342709bc09", null ],
+    [ "fromRGB", "a06691.html#abc30c4c62669486c29e1456c59726c82", null ],
+    [ "getMaxValue", "a06691.html#afe34c62179414de4432a103ddddd35a3", null ],
+    [ "getMinValue", "a06691.html#a609abc2a11ff03be69ccf8e23ae030e2", null ],
+    [ "hashCode", "a06691.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "toCIEXYZ", "a06691.html#ae8771e0b8839ae5cc8ddaa4974afde01", null ],
+    [ "toRGB", "a06691.html#a9b8163a0fe35073b1a502c24b22fa997", null ],
+    [ "toString", "a06691.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "offset", "a06691.html#aadb91501360c2d55360454da8d721b84", null ],
+    [ "scale", "a06691.html#ae0f108ae280f5aa6c240b7ff20de9676", null ],
+    [ "serialVersionUID", "a06691.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "visibleBand", "a06691.html#a222631519396875a9610c4bccec56eaf", null ]
 ];

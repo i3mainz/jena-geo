@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AbstractParameter.Bridge&lt; T &gt; Class Template Reference</title>
+<title>jena-geo: CopyFileVisitor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,42 +62,150 @@ $(document).ready(function(){initNavTree('a07499.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07496.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AbstractParameter.Bridge&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">CopyFileVisitor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Java NIO FileVisitor that copy visited files and directory recursively into target <a class="el" href="">Path</a>.  
+ <a href="a07499.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for AbstractParameter.Bridge&lt; T &gt;:</div>
+Inheritance diagram for CopyFileVisitor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07498.png" border="0" usemap="#AbstractParameter_8Bridge_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="AbstractParameter_8Bridge_3_01T_01_4_inherit__map" id="AbstractParameter_8Bridge_3_01T_01_4_inherit__map">
-<area shape="rect" id="node2" href="a14191.html" title="DefaultParameterValue\&lt; T \&gt;" alt="" coords="13,5,202,32"/>
+<div class="center"><img src="a07498.png" border="0" usemap="#CopyFileVisitor_inherit__map" alt="Inheritance graph"/></div>
+<map name="CopyFileVisitor_inherit__map" id="CopyFileVisitor_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for AbstractParameter.Bridge&lt; T &gt;:</div>
+Collaboration diagram for CopyFileVisitor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07497.png" border="0" usemap="#AbstractParameter_8Bridge_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="AbstractParameter_8Bridge_3_01T_01_4_coll__map" id="AbstractParameter_8Bridge_3_01T_01_4_coll__map">
-<area shape="rect" id="node2" href="a14191.html" title="DefaultParameterValue\&lt; T \&gt;" alt="" coords="13,5,202,32"/>
+<div class="center"><img src="a07497.png" border="0" usemap="#CopyFileVisitor_coll__map" alt="Collaboration graph"/></div>
+<map name="CopyFileVisitor_coll__map" id="CopyFileVisitor_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a775f7b46beb7ce8509381e232c5f191f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a775f7b46beb7ce8509381e232c5f191f">formatTo</a> (final Formatter formatter)</td></tr>
-<tr class="separator:a775f7b46beb7ce8509381e232c5f191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506296cf4fbe7ff5fee1328122f5c5ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a506296cf4fbe7ff5fee1328122f5c5ff">CopyFileVisitor</a> (Path <a class="el" href="a07499.html#a70691204d0c20891b5d0769f07114761">targetPath</a>, CopyOption... <a class="el" href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">copyOption</a>)</td></tr>
+<tr class="separator:a506296cf4fbe7ff5fee1328122f5c5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59451ecc2d10d6b3129961f09586918"><td class="memItemLeft" align="right" valign="top">FileVisitResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#ad59451ecc2d10d6b3129961f09586918">preVisitDirectory</a> (final Path dir, final BasicFileAttributes attrs)  throws IOException </td></tr>
+<tr class="separator:ad59451ecc2d10d6b3129961f09586918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410300546ca54107427f10ad1fa4b26f"><td class="memItemLeft" align="right" valign="top">FileVisitResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a410300546ca54107427f10ad1fa4b26f">visitFile</a> (final Path file, final BasicFileAttributes attrs)  throws IOException </td></tr>
+<tr class="separator:a410300546ca54107427f10ad1fa4b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a7fb68e14279ceef0194b81d44f8b3a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a7fb68e14279ceef0194b81d44f8b3a25">Bridge</a> (final ParameterValue&lt; T &gt; param)</td></tr>
-<tr class="separator:a7fb68e14279ceef0194b81d44f8b3a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a70691204d0c20891b5d0769f07114761"><td class="memItemLeft" align="right" valign="top">final Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a70691204d0c20891b5d0769f07114761">targetPath</a></td></tr>
+<tr class="separator:a70691204d0c20891b5d0769f07114761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa482bb4d19c72e9b4b8f82e69c5f10"><td class="memItemLeft" align="right" valign="top">final CopyOption []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">copyOption</a></td></tr>
+<tr class="separator:a1fa482bb4d19c72e9b4b8f82e69c5f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24acd5d37ecb2a1a013189571b2986b2"><td class="memItemLeft" align="right" valign="top">Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a> = null</td></tr>
+<tr class="separator:a24acd5d37ecb2a1a013189571b2986b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7fb68e14279ceef0194b81d44f8b3a25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fb68e14279ceef0194b81d44f8b3a25">&#9670;&nbsp;</a></span>Bridge()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Java NIO FileVisitor that copy visited files and directory recursively into target <a class="el" href="">Path</a>. </p>
+<p>Usage example : <code> Path sourcePath = Paths.get("/some/path") Path targetPath = Paths.get("/output/path") Files.walkFileTree(sourcePath, new CopyFileVisitor(targetPath)); </code></p>
+<dl class="section author"><dt>Author</dt><dd>Quentin Boileau (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a506296cf4fbe7ff5fee1328122f5c5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506296cf4fbe7ff5fee1328122f5c5ff">&#9670;&nbsp;</a></span>CopyFileVisitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07499.html">CopyFileVisitor</a> </td>
+          <td>(</td>
+          <td class="paramtype">Path&#160;</td>
+          <td class="paramname"><em>targetPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CopyOption...&#160;</td>
+          <td class="paramname"><em>copyOption</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">CopyFileVisitor.copyOption</a>, and <a class="el" href="a07499.html#a70691204d0c20891b5d0769f07114761">CopyFileVisitor.targetPath</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                      {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        this.<a class="code" href="a07499.html#a70691204d0c20891b5d0769f07114761">targetPath</a> = <a class="code" href="a07499.html#a70691204d0c20891b5d0769f07114761">targetPath</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.<a class="code" href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">copyOption</a> = <a class="code" href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">copyOption</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="ttc" id="a07499_html_a1fa482bb4d19c72e9b4b8f82e69c5f10"><div class="ttname"><a href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">org.geotoolkit.nio.CopyFileVisitor.copyOption</a></div><div class="ttdeci">final CopyOption [] copyOption</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:39</div></div>
+<div class="ttc" id="a07499_html_a70691204d0c20891b5d0769f07114761"><div class="ttname"><a href="a07499.html#a70691204d0c20891b5d0769f07114761">org.geotoolkit.nio.CopyFileVisitor.targetPath</a></div><div class="ttdeci">final Path targetPath</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad59451ecc2d10d6b3129961f09586918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59451ecc2d10d6b3129961f09586918">&#9670;&nbsp;</a></span>preVisitDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileVisitResult preVisitDirectory </td>
+          <td>(</td>
+          <td class="paramtype">final Path&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final BasicFileAttributes&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                                                 {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a> == null) {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a> = dir;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keyword">final</span> Path relativize = <a class="code" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a>.relativize(dir);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            Files.createDirectories(<a class="code" href="a07499.html#a70691204d0c20891b5d0769f07114761">targetPath</a>.resolve(relativize.toString()));</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> FileVisitResult.CONTINUE;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="ttc" id="a07499_html_a24acd5d37ecb2a1a013189571b2986b2"><div class="ttname"><a href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">org.geotoolkit.nio.CopyFileVisitor.sourcePath</a></div><div class="ttdeci">Path sourcePath</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:40</div></div>
+<div class="ttc" id="a07499_html_a70691204d0c20891b5d0769f07114761"><div class="ttname"><a href="a07499.html#a70691204d0c20891b5d0769f07114761">org.geotoolkit.nio.CopyFileVisitor.targetPath</a></div><div class="ttdeci">final Path targetPath</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a410300546ca54107427f10ad1fa4b26f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410300546ca54107427f10ad1fa4b26f">&#9670;&nbsp;</a></span>visitFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileVisitResult visitFile </td>
+          <td>(</td>
+          <td class="paramtype">final Path&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final BasicFileAttributes&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                                         {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a> == null) {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a> = file.getParent();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">final</span> Path relativize = <a class="code" href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">sourcePath</a>.relativize(file);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        Files.copy(file, <a class="code" href="a07499.html#a70691204d0c20891b5d0769f07114761">targetPath</a>.resolve(relativize.toString()), <a class="code" href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">copyOption</a>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> FileVisitResult.CONTINUE;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div><div class="ttc" id="a07499_html_a1fa482bb4d19c72e9b4b8f82e69c5f10"><div class="ttname"><a href="a07499.html#a1fa482bb4d19c72e9b4b8f82e69c5f10">org.geotoolkit.nio.CopyFileVisitor.copyOption</a></div><div class="ttdeci">final CopyOption [] copyOption</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:39</div></div>
+<div class="ttc" id="a07499_html_a24acd5d37ecb2a1a013189571b2986b2"><div class="ttname"><a href="a07499.html#a24acd5d37ecb2a1a013189571b2986b2">org.geotoolkit.nio.CopyFileVisitor.sourcePath</a></div><div class="ttdeci">Path sourcePath</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:40</div></div>
+<div class="ttc" id="a07499_html_a70691204d0c20891b5d0769f07114761"><div class="ttname"><a href="a07499.html#a70691204d0c20891b5d0769f07114761">org.geotoolkit.nio.CopyFileVisitor.targetPath</a></div><div class="ttdeci">final Path targetPath</div><div class="ttdef"><b>Definition:</b> CopyFileVisitor.java:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1fa482bb4d19c72e9b4b8f82e69c5f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa482bb4d19c72e9b4b8f82e69c5f10">&#9670;&nbsp;</a></span>copyOption</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,41 +214,64 @@ Package Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07499.html">Bridge</a> </td>
-          <td>(</td>
-          <td class="paramtype">final ParameterValue&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
+          <td class="memname">final CopyOption [] copyOption</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                              {</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            super(param);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div></div><!-- fragment -->
+
+<p class="reference">Referenced by <a class="el" href="a07499.html#a506296cf4fbe7ff5fee1328122f5c5ff">CopyFileVisitor.CopyFileVisitor()</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a775f7b46beb7ce8509381e232c5f191f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775f7b46beb7ce8509381e232c5f191f">&#9670;&nbsp;</a></span>formatTo()</h2>
+<a id="a24acd5d37ecb2a1a013189571b2986b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24acd5d37ecb2a1a013189571b2986b2">&#9670;&nbsp;</a></span>sourcePath</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">String formatTo </td>
-          <td>(</td>
-          <td class="paramtype">final Formatter&#160;</td>
-          <td class="paramname"><em>formatter</em></td><td>)</td>
-          <td></td>
+          <td class="memname">Path sourcePath = null</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a07495.html#a775f7b46beb7ce8509381e232c5f191f">AbstractParameter.formatTo()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                                          {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">return</span> super.formatTo(formatter);</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a70691204d0c20891b5d0769f07114761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70691204d0c20891b5d0769f07114761">&#9670;&nbsp;</a></span>targetPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Path targetPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07499.html#a506296cf4fbe7ff5fee1328122f5c5ff">CopyFileVisitor.CopyFileVisitor()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -149,7 +280,7 @@ Package Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03877.html">parameter</a></li><li class="navelem"><a class="el" href="a07495.html">AbstractParameter</a></li><li class="navelem"><a class="el" href="a07499.html">Bridge</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03900.html">nio</a></li><li class="navelem"><a class="el" href="a07499.html">CopyFileVisitor</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

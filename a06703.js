@@ -1,12 +1,16 @@
 var a06703 =
 [
-    [ "Spi", "a06707.html", "a06707" ],
-    [ "WKBRasterImageWriter", "a06703.html#a29f5e23f8d6a6bdde008b65e20e102b4", null ],
-    [ "canWriteRasters", "a06703.html#a24512d6b5c9adfb1dc1a28cecb2ecb35", null ],
-    [ "convertImageMetadata", "a06703.html#a2a8a5399de55ba4caaaf996902246d6d", null ],
-    [ "convertStreamMetadata", "a06703.html#ad362268b3fa2182971ad1a28e3df2119", null ],
-    [ "getDefaultImageMetadata", "a06703.html#a62c4d9d178374c5e65ab1d773d4558b1", null ],
-    [ "getDefaultStreamMetadata", "a06703.html#a09dcc889369a083b49726ba64c58d4f3", null ],
-    [ "write", "a06703.html#a59569930ae670262072972146da60c66", null ],
-    [ "write", "a06703.html#acbe4885b02e9237ff56dea55d56e2e11", null ]
+    [ "Cursor", "a06703.html#aa3ebb314b97961afe543506212a2dd9b", null ],
+    [ "accumulate", "a06703.html#a4b14b31f07a7b5de8420315b985e05a7", null ],
+    [ "finish", "a06703.html#a05d387c70340867dffaf02228c4520cd", null ],
+    [ "getNumWorkers", "a06703.html#a47ec4c7e5b7646e4a71b82402c2c82d1", null ],
+    [ "next", "a06703.html#a311addae5779cead65ffaaad5824007c", null ],
+    [ "recordError", "a06703.html#aabf3c338904bae76660fd721a7492e85", null ],
+    [ "toString", "a06703.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "accumulator", "a06703.html#a0bc86cff4ebf06ebd17463ac086789b5", null ],
+    [ "combiner", "a06703.html#ac02c2b0accee7e808749434165817dce", null ],
+    [ "errors", "a06703.html#a8e3078b3a26b7c78bd1988c86e73e31a", null ],
+    [ "image", "a06703.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5", null ],
+    [ "numXTiles", "a06703.html#afb2cfdd3a884aaeb4a42b2920e5d2863", null ],
+    [ "stopOnError", "a06703.html#a94f5222bed1c9e6790bed19a343f7341", null ]
 ];

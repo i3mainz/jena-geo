@@ -1,14 +1,13 @@
 var a06711 =
 [
-    [ "WKBRasterReader", "a06711.html#ae793783ce299284ee201fd7c8313c1d6", null ],
-    [ "createGrayScaleColorModel", "a06711.html#afcfcdba92bf5faa9dfc8a1c7a652c7a9", null ],
-    [ "getGridToCRS", "a06711.html#aef748f2853b5fa1a44ed7c589b2bb197", null ],
-    [ "getSRID", "a06711.html#ade744464aeafe5c61497905c4bac4d95", null ],
-    [ "read", "a06711.html#a14456bc52e7f626048f58646a17a9039", null ],
-    [ "read", "a06711.html#ab8d0b6608f158d1234999e80670eba0e", null ],
-    [ "readCoverage", "a06711.html#aa9fe8abf761e9a17b671b3f8ca04ef37", null ],
-    [ "readCoverage", "a06711.html#a167d89e301db4c86565d6cbf8998b5fa", null ],
-    [ "reset", "a06711.html#ad20897c5c8bd47f5d4005989bead0e55", null ],
-    [ "gridToCRS", "a06711.html#a7074295224e2ade372af7fc4571cdc28", null ],
-    [ "srid", "a06711.html#a7e5be5f62324d24835447fc98661e30b", null ]
+    [ "ReadWork", "a06711.html#aa2e91bc35e50ba9b0d5ed2731e1edb12", null ],
+    [ "execute", "a06711.html#a897d4e476be84070570b5b2fffbe355c", null ],
+    [ "executeOnCurrentTile", "a06711.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1", null ],
+    [ "rethrowOrWrap", "a06711.html#afdff4aa4324ad7460be67cf5007b5e86", null ],
+    [ "run", "a06711.html#a2c71443ed78646800cfa677fad85cacf", null ],
+    [ "accumulator", "a06711.html#ae6f9097774c75a5f0677b1abad167637", null ],
+    [ "cursor", "a06711.html#a21cca1f9a7342fbd8caeaf4e519c896a", null ],
+    [ "processor", "a06711.html#a5fbeac52d84508f2507ba8348aafab09", null ],
+    [ "tx", "a06711.html#a40590f55f82df430f8035df8dd4f03c2", null ],
+    [ "ty", "a06711.html#a75f29260f9728325050cd039109732b7", null ]
 ];

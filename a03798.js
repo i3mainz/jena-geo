@@ -1,11 +1,17 @@
 var a03798 =
 [
-    [ "attribute", "a03799.html", "a03799" ],
-    [ "constructor", "a03800.html", "a03800" ],
-    [ "editor", "a03801.html", "a03801" ],
-    [ "exporter", "a03802.html", "a03802" ],
-    [ "transform", "a03803.html", "a03803" ],
-    [ "ApproximateMedialAxis", "a05279.html", "a05279" ],
-    [ "Polygon", "a05395.html", "a05395" ],
-    [ "Tesselate", "a05399.html", "a05399" ]
+    [ "BBOXAbove", "a04183.html", "a04183" ],
+    [ "BBOXBelow", "a04187.html", "a04187" ],
+    [ "BBOXContains", "a04191.html", "a04191" ],
+    [ "BBOXDistance", "a04195.html", "a04195" ],
+    [ "BBOXEquals", "a04199.html", "a04199" ],
+    [ "BBOXFPIntersects", "a04203.html", "a04203" ],
+    [ "BBOXIntersects", "a04207.html", "a04207" ],
+    [ "BBOXIsContainedBy", "a04211.html", "a04211" ],
+    [ "BBOXLeftOf", "a04215.html", "a04215" ],
+    [ "BBOXOverlapsAbove", "a04219.html", "a04219" ],
+    [ "BBOXOverlapsBelow", "a04223.html", "a04223" ],
+    [ "BBOXOverlapsLeft", "a04227.html", "a04227" ],
+    [ "BBOXOverlapsRight", "a04231.html", "a04231" ],
+    [ "BBOXRightOf", "a04235.html", "a04235" ]
 ];

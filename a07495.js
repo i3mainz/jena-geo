@@ -1,16 +1,16 @@
 var a07495 =
 [
-    [ "Bridge", "a07499.html", "a07499" ],
-    [ "AbstractParameter", "a07495.html#ad71ac02932052e27cb61fbbd57225dac", null ],
-    [ "clone", "a07495.html#a2726416ce9a9ba8fefe59437ad71c442", null ],
-    [ "ensureValidValue", "a07495.html#a666f0e01eba310e917d6bc5da89f59db", null ],
-    [ "equals", "a07495.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "formatTo", "a07495.html#a775f7b46beb7ce8509381e232c5f191f", null ],
-    [ "getDescriptor", "a07495.html#aa157235bc5080bfa6615f96fe8a3a7c5", null ],
-    [ "getName", "a07495.html#a3356a580bf7f1cc5c4893bf39d527ab4", null ],
-    [ "getUnitMessageID", "a07495.html#a165b11c698574db7bcbbc3498ef0018a", null ],
+    [ "ValueRestriction", "a07495.html#a59308bf591b6339acb7520b1d5be482c", null ],
+    [ "create", "a07495.html#adeacaf28cef8db70de96f09eb69cde3c", null ],
+    [ "create", "a07495.html#ae5ddd8045aaacefb6ec38274ac645cbb", null ],
+    [ "equals", "a07495.html#a537c7b35c090ed43e1d3f130188e9198", null ],
     [ "hashCode", "a07495.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "unitlessParameter", "a07495.html#a259a87c5737c4d5093add36705bd3c71", null ],
-    [ "descriptor", "a07495.html#a3378a7c35945963bce2eff3d676fafc7", null ],
-    [ "serialVersionUID", "a07495.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "toString", "a07495.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "violation", "a07495.html#afdb5bc73020fd84fc6fcacaa9f1239c8", null ],
+    [ "obligation", "a07495.html#a1109e2f1932a43958b44946d3d34449c", null ],
+    [ "PENDING", "a07495.html#ae352ae925ff625251c79b7a99134e999", null ],
+    [ "POOL", "a07495.html#aa3106e509ec91fac21151e865d9c2dbb", null ],
+    [ "range", "a07495.html#a45e92e7744083aa7ae1291d9563d00e4", null ],
+    [ "serialVersionUID", "a07495.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "validValues", "a07495.html#aad481f2961fdf5500eedb3a38075b8cd", null ]
 ];

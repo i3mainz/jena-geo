@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Reader Class Reference</title>
+<title>jena-geo: LEDataOutputStream Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,386 +61,692 @@ $(document).ready(function(){initNavTree('a07339.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pac-methods">Package Functions</a> &#124;
-<a href="#pac-static-methods">Static Package Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07336.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Reader Class Reference</div>  </div>
+<div class="title">LEDataOutputStream Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Reads objects from the <a class="el" href="a07331.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> format.  
+<p>Little endian Data output stream.  
  <a href="a07339.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for Reader:</div>
+Inheritance diagram for LEDataOutputStream:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07337.png" border="0" usemap="#Reader_coll__map" alt="Collaboration graph"/></div>
-<map name="Reader_coll__map" id="Reader_coll__map">
-<area shape="rect" id="node4" href="a07335.html" title="Creates metadata objects of the given Class using the properties given in a Map. " alt="" coords="229,95,349,121"/>
+<div class="center"><img src="a07338.png" border="0" usemap="#LEDataOutputStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="LEDataOutputStream_inherit__map" id="LEDataOutputStream_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for LEDataOutputStream:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07337.png" border="0" usemap="#LEDataOutputStream_coll__map" alt="Collaboration graph"/></div>
+<map name="LEDataOutputStream_coll__map" id="LEDataOutputStream_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a52f86ed964f46a02a466c1b0d65a408e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a52f86ed964f46a02a466c1b0d65a408e">Reader</a> (final CharSequence <a class="el" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>)</td></tr>
-<tr class="memdesc:a52f86ed964f46a02a466c1b0d65a408e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new reader.  <a href="#a52f86ed964f46a02a466c1b0d65a408e">More...</a><br /></td></tr>
-<tr class="separator:a52f86ed964f46a02a466c1b0d65a408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f5dc964d127cfb84629b6740d41e67d"><td class="memItemLeft" align="right" valign="top">final Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">parse</a> (final Class&lt;?&gt; type)  throws ParseException </td></tr>
-<tr class="memdesc:a1f5dc964d127cfb84629b6740d41e67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the value.  <a href="#a1f5dc964d127cfb84629b6740d41e67d">More...</a><br /></td></tr>
-<tr class="separator:a1f5dc964d127cfb84629b6740d41e67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
-Static Package Functions</h2></td></tr>
-<tr class="memitem:a04091ea0570674662dfdb0503b5154b6"><td class="memItemLeft" align="right" valign="top">static CharSequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a04091ea0570674662dfdb0503b5154b6">unescape</a> (final CharSequence <a class="el" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, int start, final int stop)  throws ParseException </td></tr>
-<tr class="memdesc:a04091ea0570674662dfdb0503b5154b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the escape sequences in a subregion of the given character string.  <a href="#a04091ea0570674662dfdb0503b5154b6">More...</a><br /></td></tr>
-<tr class="separator:a04091ea0570674662dfdb0503b5154b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1c03641d807ae30c14e694ef2c3549b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">skipIgnorables</a> ()</td></tr>
-<tr class="memdesc:a1c03641d807ae30c14e694ef2c3549b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the  <a class="el" href="a07339.html#a401e942526aac47cef94f478182486e7" title="The current parse position. ">position</a>} to the next non-ignorable character.  <a href="#a1c03641d807ae30c14e694ef2c3549b9">More...</a><br /></td></tr>
-<tr class="separator:a1c03641d807ae30c14e694ef2c3549b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4130d957f557ba1d96562b0d7a59ea"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#adc4130d957f557ba1d96562b0d7a59ea">skipListSeparator</a> (final char endOfSequence)  throws ParseException </td></tr>
-<tr class="memdesc:adc4130d957f557ba1d96562b0d7a59ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips the list separator (a coma) if present.  <a href="#adc4130d957f557ba1d96562b0d7a59ea">More...</a><br /></td></tr>
-<tr class="separator:adc4130d957f557ba1d96562b0d7a59ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8705a6d9b2db73069be959bf84d07d2f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">nextTokenStart</a> ()  throws ParseException </td></tr>
-<tr class="memdesc:a8705a6d9b2db73069be959bf84d07d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first non-whitespace character, or thrown an exception if none.  <a href="#a8705a6d9b2db73069be959bf84d07d2f">More...</a><br /></td></tr>
-<tr class="separator:a8705a6d9b2db73069be959bf84d07d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd8003e322324da0de886fb172c21ff"><td class="memItemLeft" align="right" valign="top">CharSequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#aefd8003e322324da0de886fb172c21ff">nextToken</a> (final boolean isQuoted)  throws ParseException </td></tr>
-<tr class="memdesc:aefd8003e322324da0de886fb172c21ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next token with un-escaped characters.  <a href="#aefd8003e322324da0de886fb172c21ff">More...</a><br /></td></tr>
-<tr class="separator:aefd8003e322324da0de886fb172c21ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a08e5e85cf21039633a426452c6b944ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a08e5e85cf21039633a426452c6b944ee">LEDataOutputStream</a> (OutputStream out)</td></tr>
+<tr class="separator:a08e5e85cf21039633a426452c6b944ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a2786c4ee713c917b468c59ec610df"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ad8a2786c4ee713c917b468c59ec610df">getPosition</a> ()</td></tr>
+<tr class="memdesc:ad8a2786c4ee713c917b468c59ec610df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current stream position from the first written byte.  <a href="#ad8a2786c4ee713c917b468c59ec610df">More...</a><br /></td></tr>
+<tr class="separator:ad8a2786c4ee713c917b468c59ec610df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85df3c4fd2fb205ca532d8861d28cc27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">write</a> (int b)  throws IOException </td></tr>
+<tr class="separator:a85df3c4fd2fb205ca532d8861d28cc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f17b65f2ac2fb7f0a119cd2c6451f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a61f17b65f2ac2fb7f0a119cd2c6451f2">write</a> (byte[] data, int offset, int length)  throws IOException </td></tr>
+<tr class="separator:a61f17b65f2ac2fb7f0a119cd2c6451f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15b120ff09c3716841515f75d241e66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#af15b120ff09c3716841515f75d241e66">writeBoolean</a> (boolean b)  throws IOException </td></tr>
+<tr class="separator:af15b120ff09c3716841515f75d241e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b0850b32344f39d708666514fdfddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a42b0850b32344f39d708666514fdfddd">writeByte</a> (int b)  throws IOException </td></tr>
+<tr class="separator:a42b0850b32344f39d708666514fdfddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4318f5da1fdb856ff726801097cdb429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a4318f5da1fdb856ff726801097cdb429">writeShort</a> (int s)  throws IOException </td></tr>
+<tr class="separator:a4318f5da1fdb856ff726801097cdb429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e3fe2ab1ba3bb9fc12e4eb24be1a82"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ac0e3fe2ab1ba3bb9fc12e4eb24be1a82">writeShorts</a> (short[] values)  throws IOException </td></tr>
+<tr class="memdesc:ac0e3fe2ab1ba3bb9fc12e4eb24be1a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple values in one call.  <a href="#ac0e3fe2ab1ba3bb9fc12e4eb24be1a82">More...</a><br /></td></tr>
+<tr class="separator:ac0e3fe2ab1ba3bb9fc12e4eb24be1a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae923194a84fea5c316c69a9a71e1b09d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ae923194a84fea5c316c69a9a71e1b09d">writeUnsignedShort</a> (int s)  throws IOException </td></tr>
+<tr class="separator:ae923194a84fea5c316c69a9a71e1b09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9793caecddc216cb3d39ff222e86c2"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a9c9793caecddc216cb3d39ff222e86c2">writeUnsignedShorts</a> (int[] values)  throws IOException </td></tr>
+<tr class="memdesc:a9c9793caecddc216cb3d39ff222e86c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple values in one call.  <a href="#a9c9793caecddc216cb3d39ff222e86c2">More...</a><br /></td></tr>
+<tr class="separator:a9c9793caecddc216cb3d39ff222e86c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad0223a70a62e0b2cb46259e5ba550d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a1ad0223a70a62e0b2cb46259e5ba550d">writeChar</a> (int c)  throws IOException </td></tr>
+<tr class="separator:a1ad0223a70a62e0b2cb46259e5ba550d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc32fabddebac9fa7ea07fe07fe219e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">writeInt</a> (int i)  throws IOException </td></tr>
+<tr class="separator:accc32fabddebac9fa7ea07fe07fe219e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f28d1bfd9781e586c236eaf6e225fcd"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a6f28d1bfd9781e586c236eaf6e225fcd">writeInts</a> (int[] values)  throws IOException </td></tr>
+<tr class="memdesc:a6f28d1bfd9781e586c236eaf6e225fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple values in one call.  <a href="#a6f28d1bfd9781e586c236eaf6e225fcd">More...</a><br /></td></tr>
+<tr class="separator:a6f28d1bfd9781e586c236eaf6e225fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e87852cae58170b9cd59e1fbe1e625d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">writeLong</a> (long l)  throws IOException </td></tr>
+<tr class="separator:a2e87852cae58170b9cd59e1fbe1e625d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6593b15c3366b5d2c7978e6647ab4c"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#afd6593b15c3366b5d2c7978e6647ab4c">writeLongs</a> (long[] values)  throws IOException </td></tr>
+<tr class="memdesc:afd6593b15c3366b5d2c7978e6647ab4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple values in one call.  <a href="#afd6593b15c3366b5d2c7978e6647ab4c">More...</a><br /></td></tr>
+<tr class="separator:afd6593b15c3366b5d2c7978e6647ab4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b08552792e2a9e330675b76cd4c9170"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a4b08552792e2a9e330675b76cd4c9170">writeFloat</a> (float f)  throws IOException </td></tr>
+<tr class="separator:a4b08552792e2a9e330675b76cd4c9170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade431b8bb2a31304bfd780314827055f"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ade431b8bb2a31304bfd780314827055f">writeFloats</a> (float[] values)  throws IOException </td></tr>
+<tr class="memdesc:ade431b8bb2a31304bfd780314827055f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple values in one call.  <a href="#ade431b8bb2a31304bfd780314827055f">More...</a><br /></td></tr>
+<tr class="separator:ade431b8bb2a31304bfd780314827055f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1b19adf99483ab5421f5abd9be1ee0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a9a1b19adf99483ab5421f5abd9be1ee0">writeDouble</a> (double d)  throws IOException </td></tr>
+<tr class="separator:a9a1b19adf99483ab5421f5abd9be1ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719c7e6e9f7c2ba46f78b335603c6b13"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a719c7e6e9f7c2ba46f78b335603c6b13">writeDoubles</a> (double[] values)  throws IOException </td></tr>
+<tr class="memdesc:a719c7e6e9f7c2ba46f78b335603c6b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write multiple values in one call.  <a href="#a719c7e6e9f7c2ba46f78b335603c6b13">More...</a><br /></td></tr>
+<tr class="separator:a719c7e6e9f7c2ba46f78b335603c6b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e567d4365e19b559e3aaeea0a09de3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a3e567d4365e19b559e3aaeea0a09de3a">writeBytes</a> (String s)  throws IOException </td></tr>
+<tr class="separator:a3e567d4365e19b559e3aaeea0a09de3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e35e2da722a437646d8396e7e32ce48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a9e35e2da722a437646d8396e7e32ce48">writeChars</a> (String s)  throws IOException </td></tr>
+<tr class="separator:a9e35e2da722a437646d8396e7e32ce48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af884010e15f7514f7e08d9618c4c692c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#af884010e15f7514f7e08d9618c4c692c">writeUTF</a> (String s)  throws IOException </td></tr>
+<tr class="separator:af884010e15f7514f7e08d9618c4c692c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e5489e60cebc32e12d78fe6abb2092"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ad0e5489e60cebc32e12d78fe6abb2092">realign</a> (int padding)  throws IOException</td></tr>
+<tr class="memdesc:ad0e5489e60cebc32e12d78fe6abb2092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align byte stream to a padding value, 0 bytes will be added until padding value is reached.  <a href="#ad0e5489e60cebc32e12d78fe6abb2092">More...</a><br /></td></tr>
+<tr class="separator:ad0e5489e60cebc32e12d78fe6abb2092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a51201ff567af9342a3eb7adcbbd3d959"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a07335.html">MetadataFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a51201ff567af9342a3eb7adcbbd3d959">factory</a></td></tr>
-<tr class="memdesc:a51201ff567af9342a3eb7adcbbd3d959"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factory to use for creating objects.  <a href="#a51201ff567af9342a3eb7adcbbd3d959">More...</a><br /></td></tr>
-<tr class="separator:a51201ff567af9342a3eb7adcbbd3d959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ddcedd362c68d9500fc5f651dfe536"><td class="memItemLeft" align="right" valign="top">final CharSequence&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a></td></tr>
-<tr class="memdesc:ad5ddcedd362c68d9500fc5f651dfe536"><td class="mdescLeft">&#160;</td><td class="mdescRight">The text to parse.  <a href="#ad5ddcedd362c68d9500fc5f651dfe536">More...</a><br /></td></tr>
-<tr class="separator:ad5ddcedd362c68d9500fc5f651dfe536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401e942526aac47cef94f478182486e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a></td></tr>
-<tr class="memdesc:a401e942526aac47cef94f478182486e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current parse position.  <a href="#a401e942526aac47cef94f478182486e7">More...</a><br /></td></tr>
-<tr class="separator:a401e942526aac47cef94f478182486e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa10d4f6f2983212df130e161e2e1ae5a"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a></td></tr>
-<tr class="memdesc:aa10d4f6f2983212df130e161e2e1ae5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index after the last character to parse.  <a href="#aa10d4f6f2983212df130e161e2e1ae5a">More...</a><br /></td></tr>
-<tr class="separator:aa10d4f6f2983212df130e161e2e1ae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac037f68bf86d3712a034faa2d3ac428a"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a> = 0</td></tr>
+<tr class="separator:ac037f68bf86d3712a034faa2d3ac428a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Reads objects from the <a class="el" href="a07331.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> format. </p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys)  </dd></dl>
+<div class="textblock"><p>Little endian Data output stream. </p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a52f86ed964f46a02a466c1b0d65a408e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52f86ed964f46a02a466c1b0d65a408e">&#9670;&nbsp;</a></span>Reader()</h2>
+<a id="a08e5e85cf21039633a426452c6b944ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e5e85cf21039633a426452c6b944ee">&#9670;&nbsp;</a></span>LEDataOutputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07339.html">Reader</a> </td>
+          <td class="memname"><a class="el" href="a07339.html">LEDataOutputStream</a> </td>
           <td>(</td>
-          <td class="paramtype">final CharSequence&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
+          <td class="paramtype">OutputStream&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Creates a new reader. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">text</td><td>The text to parse. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a07335.html#ab8fecb79beccd16dd0b1963e0200d047">MetadataFactory.DEFAULT</a>, and <a class="el" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">Reader.text</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                    {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.<a class="code" href="a07339.html#a51201ff567af9342a3eb7adcbbd3d959">factory</a> = MetadataFactory.<a class="code" href="a07335.html#ab8fecb79beccd16dd0b1963e0200d047">DEFAULT</a>; <span class="comment">// Fixed for now, may be configurable in a future version.</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        this.<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>    = <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        this.<a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>  = <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.length();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div><div class="ttc" id="a07339_html_ad5ddcedd362c68d9500fc5f651dfe536"><div class="ttname"><a href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">org.geotoolkit.io.yaml.Reader.text</a></div><div class="ttdeci">final CharSequence text</div><div class="ttdoc">The text to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:44</div></div>
-<div class="ttc" id="a07339_html_aa10d4f6f2983212df130e161e2e1ae5a"><div class="ttname"><a href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">org.geotoolkit.io.yaml.Reader.length</a></div><div class="ttdeci">final int length</div><div class="ttdoc">Index after the last character to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:54</div></div>
-<div class="ttc" id="a07339_html_a51201ff567af9342a3eb7adcbbd3d959"><div class="ttname"><a href="a07339.html#a51201ff567af9342a3eb7adcbbd3d959">org.geotoolkit.io.yaml.Reader.factory</a></div><div class="ttdeci">final MetadataFactory factory</div><div class="ttdoc">The factory to use for creating objects. </div><div class="ttdef"><b>Definition:</b> Reader.java:39</div></div>
-<div class="ttc" id="a07335_html_ab8fecb79beccd16dd0b1963e0200d047"><div class="ttname"><a href="a07335.html#ab8fecb79beccd16dd0b1963e0200d047">org.geotoolkit.io.yaml.MetadataFactory.DEFAULT</a></div><div class="ttdeci">static final MetadataFactory DEFAULT</div><div class="ttdoc">The default instance. </div><div class="ttdef"><b>Definition:</b> io/yaml/MetadataFactory.java:47</div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        super(out);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aefd8003e322324da0de886fb172c21ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefd8003e322324da0de886fb172c21ff">&#9670;&nbsp;</a></span>nextToken()</h2>
+<a id="ad8a2786c4ee713c917b468c59ec610df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a2786c4ee713c917b468c59ec610df">&#9670;&nbsp;</a></span>getPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CharSequence nextToken </td>
-          <td>(</td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>isQuoted</em></td><td>)</td>
-          <td> throws ParseException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the next token with un-escaped characters. </p>
-<p>After this method call, the  <a class="el" href="a07339.html#a401e942526aac47cef94f478182486e7" title="The current parse position. ">position</a>} has been set to the first character after the returned token.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">isQuoted</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a07339.html#a401e942526aac47cef94f478182486e7">Reader.position</a>, and <a class="el" href="a07339.html#a04091ea0570674662dfdb0503b5154b6">Reader.unescape()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">Reader.parse()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                                                 {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">int</span> i = <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (isQuoted) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;&quot;&#39; character.</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">do</span> <span class="keywordflow">if</span> ((i = CharSequences.indexOf(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, <span class="charliteral">&#39;&quot;&#39;</span>, i+1, <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>)) &lt; 0) {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Unexpected end of text.&quot;</span>, <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            } <span class="keywordflow">while</span> (<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.charAt(i-1) == <span class="charliteral">&#39;\\&#39;</span>);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">while</span> (++i &lt; <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>) {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">char</span> c = <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.charAt(i);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;,&#39;</span> || c == <span class="charliteral">&#39;:&#39;</span> || c == <span class="charliteral">&#39;\r&#39;</span> || c == <span class="charliteral">&#39;\n&#39;</span>) {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        CharSequence token = <a class="code" href="a07339.html#a04091ea0570674662dfdb0503b5154b6">unescape</a>(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>, i);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">if</span> (isQuoted) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            i++;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="stringliteral">&quot;null&quot;</span>.contentEquals(token)) {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            token = null;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a> = i;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> token;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div><div class="ttc" id="a07339_html_ad5ddcedd362c68d9500fc5f651dfe536"><div class="ttname"><a href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">org.geotoolkit.io.yaml.Reader.text</a></div><div class="ttdeci">final CharSequence text</div><div class="ttdoc">The text to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:44</div></div>
-<div class="ttc" id="a07339_html_aa10d4f6f2983212df130e161e2e1ae5a"><div class="ttname"><a href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">org.geotoolkit.io.yaml.Reader.length</a></div><div class="ttdeci">final int length</div><div class="ttdoc">Index after the last character to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:54</div></div>
-<div class="ttc" id="a07339_html_a04091ea0570674662dfdb0503b5154b6"><div class="ttname"><a href="a07339.html#a04091ea0570674662dfdb0503b5154b6">org.geotoolkit.io.yaml.Reader.unescape</a></div><div class="ttdeci">static CharSequence unescape(final CharSequence text, int start, final int stop)</div><div class="ttdoc">Replaces the escape sequences in a subregion of the given character string. </div><div class="ttdef"><b>Definition:</b> Reader.java:212</div></div>
-<div class="ttc" id="a07339_html_a401e942526aac47cef94f478182486e7"><div class="ttname"><a href="a07339.html#a401e942526aac47cef94f478182486e7">org.geotoolkit.io.yaml.Reader.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">The current parse position. </div><div class="ttdef"><b>Definition:</b> Reader.java:49</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8705a6d9b2db73069be959bf84d07d2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8705a6d9b2db73069be959bf84d07d2f">&#9670;&nbsp;</a></span>nextTokenStart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char nextTokenStart </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws ParseException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the first non-whitespace character, or thrown an exception if none. </p>
-
-<p class="reference">References <a class="el" href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">Reader.skipIgnorables()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">Reader.parse()</a>, and <a class="el" href="a07339.html#adc4130d957f557ba1d96562b0d7a59ea">Reader.skipListSeparator()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                        {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">skipIgnorables</a>();</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a> &lt; <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>) {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.charAt(<a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Unexpected end of text.&quot;</span>, <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div><div class="ttc" id="a07339_html_ad5ddcedd362c68d9500fc5f651dfe536"><div class="ttname"><a href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">org.geotoolkit.io.yaml.Reader.text</a></div><div class="ttdeci">final CharSequence text</div><div class="ttdoc">The text to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:44</div></div>
-<div class="ttc" id="a07339_html_aa10d4f6f2983212df130e161e2e1ae5a"><div class="ttname"><a href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">org.geotoolkit.io.yaml.Reader.length</a></div><div class="ttdeci">final int length</div><div class="ttdoc">Index after the last character to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:54</div></div>
-<div class="ttc" id="a07339_html_a1c03641d807ae30c14e694ef2c3549b9"><div class="ttname"><a href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">org.geotoolkit.io.yaml.Reader.skipIgnorables</a></div><div class="ttdeci">void skipIgnorables()</div><div class="ttdoc">Advances the  position} to the next non-ignorable character. </div><div class="ttdef"><b>Definition:</b> Reader.java:71</div></div>
-<div class="ttc" id="a07339_html_a401e942526aac47cef94f478182486e7"><div class="ttname"><a href="a07339.html#a401e942526aac47cef94f478182486e7">org.geotoolkit.io.yaml.Reader.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">The current parse position. </div><div class="ttdef"><b>Definition:</b> Reader.java:49</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1f5dc964d127cfb84629b6740d41e67d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f5dc964d127cfb84629b6740d41e67d">&#9670;&nbsp;</a></span>parse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Object parse </td>
-          <td>(</td>
-          <td class="paramtype">final Class&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td> throws ParseException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Parses the value. </p>
-<p>This method tries to return the value as an object of the given type, but the type may sometime be different (for example a <a class="el" href="">String</a> or a <a class="el" href="">List</a>).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>The value type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The parsed value, often (but not always) as an instance of<div class="fragment"><div class="line">type </div></div><!-- fragment --> . </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">ParseException</td><td>If an error occurred while parsing. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a07335.html#a52d9c841d236040f0883a225349e374f">MetadataFactory.create()</a>, <a class="el" href="a07335.html#a344c2fac75029c65658d5da17ba5d70e">MetadataFactory.getDefinition()</a>, <a class="el" href="a07339.html#aefd8003e322324da0de886fb172c21ff">Reader.nextToken()</a>, <a class="el" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">Reader.nextTokenStart()</a>, <a class="el" href="a07339.html#a401e942526aac47cef94f478182486e7">Reader.position</a>, <a class="el" href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">Reader.skipIgnorables()</a>, and <a class="el" href="a07339.html#adc4130d957f557ba1d96562b0d7a59ea">Reader.skipListSeparator()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07331.html#abe6002bd7956504039a87587277f0183">JSON.parse()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                                                  {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">skipIgnorables</a>();</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a> &gt;= <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>) {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">char</span> c = <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.charAt(<a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;[&#39;</span>) {</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">             * We have an array of values. Parse all values and return them in a list.</span></div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;[&#39; character.</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keyword">final</span> List&lt;Object&gt; values = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordtype">boolean</span> hasNext = (<a class="code" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">nextTokenStart</a>() != <span class="charliteral">&#39;]&#39;</span>);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">while</span> (hasNext) {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                values.add(<a class="code" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">parse</a>(type));</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                hasNext = <a class="code" href="a07339.html#adc4130d957f557ba1d96562b0d7a59ea">skipListSeparator</a>(<span class="charliteral">&#39;]&#39;</span>);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;]&#39; character.</span></div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">return</span> values;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span> (c != <span class="charliteral">&#39;{&#39;</span>) {</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">             * We have a string, number or boolean. Find the end of value, either by looking</span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">             * for the closing &quot; or by looking for the separator (comma or line separator).</span></div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            Object token = <a class="code" href="a07339.html#aefd8003e322324da0de886fb172c21ff">nextToken</a>(c == <span class="charliteral">&#39;&quot;&#39;</span>);</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">if</span> (token != null) {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keywordflow">if</span> (Number.class.isAssignableFrom(type) || type == Boolean.class) {</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    token = Numbers.valueOf(token.toString(), type);</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                }</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            }</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">return</span> token;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">         * We have an object. Parse everything until the closing bracket.</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> objectStart = <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;{&#39; character.</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keyword">final</span> Map&lt;String,Class&lt;?&gt;&gt; definition = <a class="code" href="a07339.html#a51201ff567af9342a3eb7adcbbd3d959">factory</a>.<a class="code" href="a07335.html#a344c2fac75029c65658d5da17ba5d70e">getDefinition</a>(type);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keyword">final</span> Map&lt;String,Object&gt; properties = <span class="keyword">new</span> HashMap&lt;&gt;();</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">boolean</span> hasNext = (<a class="code" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">nextTokenStart</a>() != <span class="charliteral">&#39;}&#39;</span>);</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">while</span> (hasNext) {</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> entryStart = <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keyword">final</span> CharSequence token = <a class="code" href="a07339.html#aefd8003e322324da0de886fb172c21ff">nextToken</a>(<a class="code" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">nextTokenStart</a>() == <span class="charliteral">&#39;&quot;&#39;</span>);</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">nextTokenStart</a>() != <span class="charliteral">&#39;:&#39;</span>) {</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Expected \&quot;key: value\&quot; pair.&quot;</span>, <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;:&#39; character.</span></div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keyword">final</span> String key = String.valueOf(token);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            Class&lt;?&gt; childType = definition.get(key);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">if</span> (childType == null) {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                childType = String.class; <span class="comment">// TODO</span></div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">if</span> (properties.put(key, <a class="code" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">parse</a>(childType)) != null) {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Duplicated key: \&quot;&quot;</span> + key + <span class="stringliteral">&quot;\&quot;.&quot;</span>, entryStart);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            }</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            hasNext = <a class="code" href="a07339.html#adc4130d957f557ba1d96562b0d7a59ea">skipListSeparator</a>(<span class="charliteral">&#39;}&#39;</span>);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;}&#39; character.</span></div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07339.html#a51201ff567af9342a3eb7adcbbd3d959">factory</a>.<a class="code" href="a07335.html#a52d9c841d236040f0883a225349e374f">create</a>(type, definition, properties, objectStart);</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div><div class="ttc" id="a07339_html_ad5ddcedd362c68d9500fc5f651dfe536"><div class="ttname"><a href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">org.geotoolkit.io.yaml.Reader.text</a></div><div class="ttdeci">final CharSequence text</div><div class="ttdoc">The text to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:44</div></div>
-<div class="ttc" id="a07335_html_a344c2fac75029c65658d5da17ba5d70e"><div class="ttname"><a href="a07335.html#a344c2fac75029c65658d5da17ba5d70e">org.geotoolkit.io.yaml.MetadataFactory.getDefinition</a></div><div class="ttdeci">final Map&lt; String, Class&lt;?&gt; &gt; getDefinition(final Class&lt;?&gt; type)</div><div class="ttdoc">Returns the property names and expected types for the given class. </div><div class="ttdef"><b>Definition:</b> io/yaml/MetadataFactory.java:66</div></div>
-<div class="ttc" id="a07339_html_aa10d4f6f2983212df130e161e2e1ae5a"><div class="ttname"><a href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">org.geotoolkit.io.yaml.Reader.length</a></div><div class="ttdeci">final int length</div><div class="ttdoc">Index after the last character to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:54</div></div>
-<div class="ttc" id="a07339_html_a51201ff567af9342a3eb7adcbbd3d959"><div class="ttname"><a href="a07339.html#a51201ff567af9342a3eb7adcbbd3d959">org.geotoolkit.io.yaml.Reader.factory</a></div><div class="ttdeci">final MetadataFactory factory</div><div class="ttdoc">The factory to use for creating objects. </div><div class="ttdef"><b>Definition:</b> Reader.java:39</div></div>
-<div class="ttc" id="a07339_html_a1f5dc964d127cfb84629b6740d41e67d"><div class="ttname"><a href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">org.geotoolkit.io.yaml.Reader.parse</a></div><div class="ttdeci">final Object parse(final Class&lt;?&gt; type)</div><div class="ttdoc">Parses the value. </div><div class="ttdef"><b>Definition:</b> Reader.java:146</div></div>
-<div class="ttc" id="a07339_html_aefd8003e322324da0de886fb172c21ff"><div class="ttname"><a href="a07339.html#aefd8003e322324da0de886fb172c21ff">org.geotoolkit.io.yaml.Reader.nextToken</a></div><div class="ttdeci">CharSequence nextToken(final boolean isQuoted)</div><div class="ttdoc">Returns the next token with un-escaped characters. </div><div class="ttdef"><b>Definition:</b> Reader.java:113</div></div>
-<div class="ttc" id="a07335_html_a52d9c841d236040f0883a225349e374f"><div class="ttname"><a href="a07335.html#a52d9c841d236040f0883a225349e374f">org.geotoolkit.io.yaml.MetadataFactory.create</a></div><div class="ttdeci">final&lt; T &gt; T create(final Class&lt; T &gt; type, final Map&lt; String, Class&lt;?&gt;&gt; definition, final Map&lt; String,?&gt; properties, final int position)</div><div class="ttdoc">Creates a new metadata of the given type, initialized with the property values given in the propertie...</div><div class="ttdef"><b>Definition:</b> io/yaml/MetadataFactory.java:137</div></div>
-<div class="ttc" id="a07339_html_a1c03641d807ae30c14e694ef2c3549b9"><div class="ttname"><a href="a07339.html#a1c03641d807ae30c14e694ef2c3549b9">org.geotoolkit.io.yaml.Reader.skipIgnorables</a></div><div class="ttdeci">void skipIgnorables()</div><div class="ttdoc">Advances the  position} to the next non-ignorable character. </div><div class="ttdef"><b>Definition:</b> Reader.java:71</div></div>
-<div class="ttc" id="a07339_html_adc4130d957f557ba1d96562b0d7a59ea"><div class="ttname"><a href="a07339.html#adc4130d957f557ba1d96562b0d7a59ea">org.geotoolkit.io.yaml.Reader.skipListSeparator</a></div><div class="ttdeci">boolean skipListSeparator(final char endOfSequence)</div><div class="ttdoc">Skips the list separator (a coma) if present. </div><div class="ttdef"><b>Definition:</b> Reader.java:83</div></div>
-<div class="ttc" id="a07339_html_a8705a6d9b2db73069be959bf84d07d2f"><div class="ttname"><a href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">org.geotoolkit.io.yaml.Reader.nextTokenStart</a></div><div class="ttdeci">char nextTokenStart()</div><div class="ttdoc">Returns the first non-whitespace character, or thrown an exception if none. </div><div class="ttdef"><b>Definition:</b> Reader.java:98</div></div>
-<div class="ttc" id="a07339_html_a401e942526aac47cef94f478182486e7"><div class="ttname"><a href="a07339.html#a401e942526aac47cef94f478182486e7">org.geotoolkit.io.yaml.Reader.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">The current parse position. </div><div class="ttdef"><b>Definition:</b> Reader.java:49</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1c03641d807ae30c14e694ef2c3549b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c03641d807ae30c14e694ef2c3549b9">&#9670;&nbsp;</a></span>skipIgnorables()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void skipIgnorables </td>
+          <td class="memname">long getPosition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Advances the  <a class="el" href="a07339.html#a401e942526aac47cef94f478182486e7" title="The current parse position. ">position</a>} to the next non-ignorable character. </p>
-<p>This method skips all white-spaces. </p>
+<p>Get current stream position from the first written byte. </p>
+<dl class="section return"><dt>Returns</dt><dd>stream position </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">Reader.nextTokenStart()</a>, and <a class="el" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">Reader.parse()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                  {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a> = CharSequences.skipLeadingWhitespaces(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>, <a class="code" href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">length</a>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div><div class="ttc" id="a07339_html_ad5ddcedd362c68d9500fc5f651dfe536"><div class="ttname"><a href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">org.geotoolkit.io.yaml.Reader.text</a></div><div class="ttdeci">final CharSequence text</div><div class="ttdoc">The text to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:44</div></div>
-<div class="ttc" id="a07339_html_aa10d4f6f2983212df130e161e2e1ae5a"><div class="ttname"><a href="a07339.html#aa10d4f6f2983212df130e161e2e1ae5a">org.geotoolkit.io.yaml.Reader.length</a></div><div class="ttdeci">final int length</div><div class="ttdoc">Index after the last character to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:54</div></div>
-<div class="ttc" id="a07339_html_a401e942526aac47cef94f478182486e7"><div class="ttname"><a href="a07339.html#a401e942526aac47cef94f478182486e7">org.geotoolkit.io.yaml.Reader.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">The current parse position. </div><div class="ttdef"><b>Definition:</b> Reader.java:49</div></div>
+<p class="reference">References <a class="el" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">LEDataOutputStream.position</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                              {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="adc4130d957f557ba1d96562b0d7a59ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc4130d957f557ba1d96562b0d7a59ea">&#9670;&nbsp;</a></span>skipListSeparator()</h2>
+<a id="ad0e5489e60cebc32e12d78fe6abb2092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e5489e60cebc32e12d78fe6abb2092">&#9670;&nbsp;</a></span>realign()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean skipListSeparator </td>
+          <td class="memname">void realign </td>
           <td>(</td>
-          <td class="paramtype">final char&#160;</td>
-          <td class="paramname"><em>endOfSequence</em></td><td>)</td>
-          <td> throws ParseException</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>padding</em></td><td>)</td>
+          <td> throws IOException</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Skips the list separator (a coma) if present. </p>
-<p>Other characters (in particular the</p><div class="fragment"><div class="line">endOfSequence </div></div><!-- fragment --><p> character) are not skipped.</p>
+<p>Align byte stream to a padding value, 0 bytes will be added until padding value is reached. </p>
+<p>Padding values are usually very small, 2, 4 or 8 bytes to ensure primitive types such as Short, Integer, Float are aligned in memory.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">endOfSequence</td><td>The character ending the sequence. </td></tr>
+    <tr><td class="paramname">padding</td><td>value to realign. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if there is more elements in the list. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">ParseException</td><td>If an illegal character is found. </td></tr>
+    <tr><td class="paramname">IOException</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">Reader.nextTokenStart()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">Reader.parse()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                                                      {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">char</span> c = <a class="code" href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">nextTokenStart</a>();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;,&#39;</span>) {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>++; <span class="comment">// Skip the &#39;,&#39; character.</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c == endOfSequence) {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Illegal character: &quot;</span> + c, <a class="code" href="a07339.html#a401e942526aac47cef94f478182486e7">position</a>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div><div class="ttc" id="a07339_html_a8705a6d9b2db73069be959bf84d07d2f"><div class="ttname"><a href="a07339.html#a8705a6d9b2db73069be959bf84d07d2f">org.geotoolkit.io.yaml.Reader.nextTokenStart</a></div><div class="ttdeci">char nextTokenStart()</div><div class="ttdoc">Returns the first non-whitespace character, or thrown an exception if none. </div><div class="ttdef"><b>Definition:</b> Reader.java:98</div></div>
-<div class="ttc" id="a07339_html_a401e942526aac47cef94f478182486e7"><div class="ttname"><a href="a07339.html#a401e942526aac47cef94f478182486e7">org.geotoolkit.io.yaml.Reader.position</a></div><div class="ttdeci">int position</div><div class="ttdoc">The current parse position. </div><div class="ttdef"><b>Definition:</b> Reader.java:49</div></div>
+<p class="reference">References <a class="el" href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">LEDataOutputStream.write()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                                       {</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">while</span> ((<a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>%padding) != 0) {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <a class="code" href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">write</a>(0);</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+<div class="ttc" id="a07339_html_a85df3c4fd2fb205ca532d8861d28cc27"><div class="ttname"><a href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">org.geotoolkit.io.LEDataOutputStream.write</a></div><div class="ttdeci">void write(int b)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:46</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a04091ea0570674662dfdb0503b5154b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04091ea0570674662dfdb0503b5154b6">&#9670;&nbsp;</a></span>unescape()</h2>
+<a id="a85df3c4fd2fb205ca532d8861d28cc27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85df3c4fd2fb205ca532d8861d28cc27">&#9670;&nbsp;</a></span>write() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static CharSequence unescape </td>
+          <td class="memname">void write </td>
           <td>(</td>
-          <td class="paramtype">final CharSequence&#160;</td>
-          <td class="paramname"><em>text</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#ad0e5489e60cebc32e12d78fe6abb2092">LEDataOutputStream.realign()</a>, and <a class="el" href="a07339.html#af15b120ff09c3716841515f75d241e66">LEDataOutputStream.writeBoolean()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        out.write(b);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>++;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a61f17b65f2ac2fb7f0a119cd2c6451f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f17b65f2ac2fb7f0a119cd2c6451f2">&#9670;&nbsp;</a></span>write() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write </td>
+          <td>(</td>
+          <td class="paramtype">byte []&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
+          <td class="paramname"><em>offset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>stop</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throws ParseException</td>
+          <td></td><td> throws IOException</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Replaces the escape sequences in a subregion of the given character string. </p>
-<p>This method replaces the escape sequences defined by the Java language and <a class="el" href="a07331.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a>. For any unknown escape sequence, this method just removes the backslash. </p>
-
-<p class="reference">References <a class="el" href="a07343.html#a27ca63b44a10c2c6557771f615a014e9">Writer.UNICODE_LENGTH</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07339.html#aefd8003e322324da0de886fb172c21ff">Reader.nextToken()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                                                                                           {</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordtype">int</span> i = CharSequences.indexOf(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, <span class="charliteral">&#39;\\&#39;</span>, start, stop);</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">if</span> (i &lt; 0) {</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.subSequence(start, stop);</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(stop - start - 1);</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">do</span> {</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            buffer.append(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, start, i);</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">if</span> (++i &gt;= stop) {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Unexpected end of text.&quot;</span>, stop);</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            }</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">char</span> c = <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.charAt(i);</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">char</span> r;</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            start = ++i;</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">switch</span> (c) {</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">default</span>:  r =  c;   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>: r = <span class="charliteral">&#39;\b&#39;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="keywordflow">case</span> <span class="charliteral">&#39;f&#39;</span>: r = <span class="charliteral">&#39;\f&#39;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <span class="keywordflow">case</span> <span class="charliteral">&#39;n&#39;</span>: r = <span class="charliteral">&#39;\n&#39;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>: r = <span class="charliteral">&#39;\r&#39;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>: r = <span class="charliteral">&#39;\t&#39;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>: {</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">int</span> s = Math.min(start + Writer.UNICODE_LENGTH, stop);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    <span class="keywordflow">while</span> (i &lt; s &amp;&amp; Characters.isHexadecimal(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.charAt(i))) i++;</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    <span class="keyword">final</span> String u = <a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>.subSequence(start, i).toString();</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                        r = (char) Integer.parseInt(u, 16);</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    } <span class="keywordflow">catch</span> (NumberFormatException e) {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> ParseException(<span class="stringliteral">&quot;Invalid character code: &quot;</span> + u, start);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    }</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    start = i;</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                }</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            }</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            buffer.append(r);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        } <span class="keywordflow">while</span> ((i = CharSequences.indexOf(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, <span class="charliteral">&#39;\\&#39;</span>, start, stop)) &gt;= 0);</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> buffer.append(<a class="code" href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">text</a>, start, stop).toString();</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div><div class="ttc" id="a07339_html_ad5ddcedd362c68d9500fc5f651dfe536"><div class="ttname"><a href="a07339.html#ad5ddcedd362c68d9500fc5f651dfe536">org.geotoolkit.io.yaml.Reader.text</a></div><div class="ttdeci">final CharSequence text</div><div class="ttdoc">The text to parse. </div><div class="ttdef"><b>Definition:</b> Reader.java:44</div></div>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                                              {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        out.write(data, offset, length);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=length;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="af15b120ff09c3716841515f75d241e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15b120ff09c3716841515f75d241e66">&#9670;&nbsp;</a></span>writeBoolean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeBoolean </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">LEDataOutputStream.write()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                           {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        this.<a class="code" href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">write</a>( b ? 1 : 0 );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="ttc" id="a07339_html_a85df3c4fd2fb205ca532d8861d28cc27"><div class="ttname"><a href="a07339.html#a85df3c4fd2fb205ca532d8861d28cc27">org.geotoolkit.io.LEDataOutputStream.write</a></div><div class="ttdeci">void write(int b)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a42b0850b32344f39d708666514fdfddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b0850b32344f39d708666514fdfddd">&#9670;&nbsp;</a></span>writeByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeByte </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                    {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        out.write(b);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>++;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e567d4365e19b559e3aaeea0a09de3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e567d4365e19b559e3aaeea0a09de3a">&#9670;&nbsp;</a></span>writeBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeBytes </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                                        {</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0,n=s.length(); i&lt;n; i++) {</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            out.write((byte) s.charAt(i));</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=s.length();</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ad0223a70a62e0b2cb46259e5ba550d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad0223a70a62e0b2cb46259e5ba550d">&#9670;&nbsp;</a></span>writeChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeChar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                    {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        out.write((c      ) &amp; 0xFF);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        out.write((c &gt;&gt;&gt; 8) &amp; 0xFF);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=2;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9e35e2da722a437646d8396e7e32ce48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e35e2da722a437646d8396e7e32ce48">&#9670;&nbsp;</a></span>writeChars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeChars </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                        {</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0,n=s.length(); i&lt;n; i++) {</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">char</span> c = s.charAt(i);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            out.write((c      ) &amp; 0xFF);</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            out.write((c &gt;&gt;&gt; 8) &amp; 0xFF);</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=s.length()*2;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a1b19adf99483ab5421f5abd9be1ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1b19adf99483ab5421f5abd9be1ee0">&#9670;&nbsp;</a></span>writeDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeDouble </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">LEDataOutputStream.writeLong()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#a719c7e6e9f7c2ba46f78b335603c6b13">LEDataOutputStream.writeDoubles()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                               {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        this.<a class="code" href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">writeLong</a>(Double.doubleToLongBits(d));</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div><div class="ttc" id="a07339_html_a2e87852cae58170b9cd59e1fbe1e625d"><div class="ttname"><a href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">org.geotoolkit.io.LEDataOutputStream.writeLong</a></div><div class="ttdeci">void writeLong(long l)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:132</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a719c7e6e9f7c2ba46f78b335603c6b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719c7e6e9f7c2ba46f78b335603c6b13">&#9670;&nbsp;</a></span>writeDoubles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeDoubles </td>
+          <td>(</td>
+          <td class="paramtype">double []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write multiple values in one call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>values to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07339.html#a9a1b19adf99483ab5421f5abd9be1ee0">LEDataOutputStream.writeDouble()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                                                       {</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> value : values) {</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="a07339.html#a9a1b19adf99483ab5421f5abd9be1ee0">writeDouble</a>(value);</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div><div class="ttc" id="a07339_html_a9a1b19adf99483ab5421f5abd9be1ee0"><div class="ttname"><a href="a07339.html#a9a1b19adf99483ab5421f5abd9be1ee0">org.geotoolkit.io.LEDataOutputStream.writeDouble</a></div><div class="ttdeci">final void writeDouble(double d)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:174</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4b08552792e2a9e330675b76cd4c9170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b08552792e2a9e330675b76cd4c9170">&#9670;&nbsp;</a></span>writeFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeFloat </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">LEDataOutputStream.writeInt()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#ade431b8bb2a31304bfd780314827055f">LEDataOutputStream.writeFloats()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                                             {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        this.<a class="code" href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">writeInt</a>(Float.floatToIntBits(f));</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div><div class="ttc" id="a07339_html_accc32fabddebac9fa7ea07fe07fe219e"><div class="ttname"><a href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">org.geotoolkit.io.LEDataOutputStream.writeInt</a></div><div class="ttdeci">void writeInt(int i)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:111</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade431b8bb2a31304bfd780314827055f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade431b8bb2a31304bfd780314827055f">&#9670;&nbsp;</a></span>writeFloats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeFloats </td>
+          <td>(</td>
+          <td class="paramtype">float []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write multiple values in one call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>values to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07339.html#a4b08552792e2a9e330675b76cd4c9170">LEDataOutputStream.writeFloat()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                                                     {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">float</span> value : values) {</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="a07339.html#a4b08552792e2a9e330675b76cd4c9170">writeFloat</a>(value);</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div><div class="ttc" id="a07339_html_a4b08552792e2a9e330675b76cd4c9170"><div class="ttname"><a href="a07339.html#a4b08552792e2a9e330675b76cd4c9170">org.geotoolkit.io.LEDataOutputStream.writeFloat</a></div><div class="ttdeci">final void writeFloat(float f)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:157</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="accc32fabddebac9fa7ea07fe07fe219e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc32fabddebac9fa7ea07fe07fe219e">&#9670;&nbsp;</a></span>writeInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeInt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#a4b08552792e2a9e330675b76cd4c9170">LEDataOutputStream.writeFloat()</a>, and <a class="el" href="a07339.html#a6f28d1bfd9781e586c236eaf6e225fcd">LEDataOutputStream.writeInts()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                   {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        out.write((i       ) &amp; 0xFF);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        out.write((i &gt;&gt;&gt;  8) &amp; 0xFF);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        out.write((i &gt;&gt;&gt; 16) &amp; 0xFF);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        out.write((i &gt;&gt;&gt; 24) &amp; 0xFF);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=4;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6f28d1bfd9781e586c236eaf6e225fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f28d1bfd9781e586c236eaf6e225fcd">&#9670;&nbsp;</a></span>writeInts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeInts </td>
+          <td>(</td>
+          <td class="paramtype">int []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write multiple values in one call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>values to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">LEDataOutputStream.writeInt()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                 {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value : values) {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">writeInt</a>(value);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div><div class="ttc" id="a07339_html_accc32fabddebac9fa7ea07fe07fe219e"><div class="ttname"><a href="a07339.html#accc32fabddebac9fa7ea07fe07fe219e">org.geotoolkit.io.LEDataOutputStream.writeInt</a></div><div class="ttdeci">void writeInt(int i)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:111</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2e87852cae58170b9cd59e1fbe1e625d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e87852cae58170b9cd59e1fbe1e625d">&#9670;&nbsp;</a></span>writeLong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeLong </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#a9a1b19adf99483ab5421f5abd9be1ee0">LEDataOutputStream.writeDouble()</a>, and <a class="el" href="a07339.html#afd6593b15c3366b5d2c7978e6647ab4c">LEDataOutputStream.writeLongs()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                                     {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        out.write((<span class="keywordtype">int</span>) (l       ) &amp; 0xFF);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 8 ) &amp; 0xFF);</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 16) &amp; 0xFF);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 24) &amp; 0xFF);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 32) &amp; 0xFF);</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 40) &amp; 0xFF);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 48) &amp; 0xFF);</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        out.write((<span class="keywordtype">int</span>) (l &gt;&gt;&gt; 56) &amp; 0xFF);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=8;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afd6593b15c3366b5d2c7978e6647ab4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6593b15c3366b5d2c7978e6647ab4c">&#9670;&nbsp;</a></span>writeLongs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeLongs </td>
+          <td>(</td>
+          <td class="paramtype">long []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write multiple values in one call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>values to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">LEDataOutputStream.writeLong()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                                   {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">long</span> value : values) {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <a class="code" href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">writeLong</a>(value);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div><div class="ttc" id="a07339_html_a2e87852cae58170b9cd59e1fbe1e625d"><div class="ttname"><a href="a07339.html#a2e87852cae58170b9cd59e1fbe1e625d">org.geotoolkit.io.LEDataOutputStream.writeLong</a></div><div class="ttdeci">void writeLong(long l)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:132</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4318f5da1fdb856ff726801097cdb429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4318f5da1fdb856ff726801097cdb429">&#9670;&nbsp;</a></span>writeShort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeShort </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#ac0e3fe2ab1ba3bb9fc12e4eb24be1a82">LEDataOutputStream.writeShorts()</a>, and <a class="el" href="a07339.html#ae923194a84fea5c316c69a9a71e1b09d">LEDataOutputStream.writeUnsignedShort()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                     {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        out.write((s      ) &amp; 0xFF);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        out.write((s &gt;&gt;&gt; 8) &amp; 0xFF);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">position</a>+=2;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div><div class="ttc" id="a07339_html_ac037f68bf86d3712a034faa2d3ac428a"><div class="ttname"><a href="a07339.html#ac037f68bf86d3712a034faa2d3ac428a">org.geotoolkit.io.LEDataOutputStream.position</a></div><div class="ttdeci">long position</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac0e3fe2ab1ba3bb9fc12e4eb24be1a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e3fe2ab1ba3bb9fc12e4eb24be1a82">&#9670;&nbsp;</a></span>writeShorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeShorts </td>
+          <td>(</td>
+          <td class="paramtype">short []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write multiple values in one call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>values to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07339.html#a4318f5da1fdb856ff726801097cdb429">LEDataOutputStream.writeShort()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                     {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">short</span> value : values) {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="a07339.html#a4318f5da1fdb856ff726801097cdb429">writeShort</a>(value);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div><div class="ttc" id="a07339_html_a4318f5da1fdb856ff726801097cdb429"><div class="ttname"><a href="a07339.html#a4318f5da1fdb856ff726801097cdb429">org.geotoolkit.io.LEDataOutputStream.writeShort</a></div><div class="ttdeci">void writeShort(int s)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae923194a84fea5c316c69a9a71e1b09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae923194a84fea5c316c69a9a71e1b09d">&#9670;&nbsp;</a></span>writeUnsignedShort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeUnsignedShort </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07339.html#a4318f5da1fdb856ff726801097cdb429">LEDataOutputStream.writeShort()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07339.html#a9c9793caecddc216cb3d39ff222e86c2">LEDataOutputStream.writeUnsignedShorts()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                             {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="a07339.html#a4318f5da1fdb856ff726801097cdb429">writeShort</a>(s);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div><div class="ttc" id="a07339_html_a4318f5da1fdb856ff726801097cdb429"><div class="ttname"><a href="a07339.html#a4318f5da1fdb856ff726801097cdb429">org.geotoolkit.io.LEDataOutputStream.writeShort</a></div><div class="ttdeci">void writeShort(int s)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c9793caecddc216cb3d39ff222e86c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9793caecddc216cb3d39ff222e86c2">&#9670;&nbsp;</a></span>writeUnsignedShorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void writeUnsignedShorts </td>
+          <td>(</td>
+          <td class="paramtype">int []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write multiple values in one call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>values to write </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07339.html#ae923194a84fea5c316c69a9a71e1b09d">LEDataOutputStream.writeUnsignedShort()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                                           {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value : values) {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="a07339.html#ae923194a84fea5c316c69a9a71e1b09d">writeUnsignedShort</a>(value);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div><div class="ttc" id="a07339_html_ae923194a84fea5c316c69a9a71e1b09d"><div class="ttname"><a href="a07339.html#ae923194a84fea5c316c69a9a71e1b09d">org.geotoolkit.io.LEDataOutputStream.writeUnsignedShort</a></div><div class="ttdeci">void writeUnsignedShort(int s)</div><div class="ttdef"><b>Definition:</b> LEDataOutputStream.java:87</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af884010e15f7514f7e08d9618c4c692c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af884010e15f7514f7e08d9618c4c692c">&#9670;&nbsp;</a></span>writeUTF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeUTF </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                                      {</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> IOException(<span class="stringliteral">&quot;Not supported&quot;</span>);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a51201ff567af9342a3eb7adcbbd3d959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51201ff567af9342a3eb7adcbbd3d959">&#9670;&nbsp;</a></span>factory</h2>
+<a id="ac037f68bf86d3712a034faa2d3ac428a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac037f68bf86d3712a034faa2d3ac428a">&#9670;&nbsp;</a></span>position</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,7 +755,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="a07335.html">MetadataFactory</a> factory</td>
+          <td class="memname">long position = 0</td>
         </tr>
       </table>
   </td>
@@ -459,83 +765,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The factory to use for creating objects. </p>
-
-</div>
-</div>
-<a id="aa10d4f6f2983212df130e161e2e1ae5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa10d4f6f2983212df130e161e2e1ae5a">&#9670;&nbsp;</a></span>length</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int length</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Index after the last character to parse. </p>
-
-</div>
-</div>
-<a id="a401e942526aac47cef94f478182486e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a401e942526aac47cef94f478182486e7">&#9670;&nbsp;</a></span>position</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int position</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The current parse position. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07339.html#aefd8003e322324da0de886fb172c21ff">Reader.nextToken()</a>, and <a class="el" href="a07339.html#a1f5dc964d127cfb84629b6740d41e67d">Reader.parse()</a>.</p>
-
-</div>
-</div>
-<a id="ad5ddcedd362c68d9500fc5f651dfe536"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5ddcedd362c68d9500fc5f651dfe536">&#9670;&nbsp;</a></span>text</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final CharSequence text</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The text to parse. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07339.html#a52f86ed964f46a02a466c1b0d65a408e">Reader.Reader()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07339.html#ad8a2786c4ee713c917b468c59ec610df">LEDataOutputStream.getPosition()</a>.</p>
 
 </div>
 </div>
@@ -545,7 +775,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03842.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03869.html">io</a></li><li class="navelem"><a class="el" href="a03871.html">yaml</a></li><li class="navelem"><a class="el" href="a07339.html">Reader</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03866.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03893.html">io</a></li><li class="navelem"><a class="el" href="a07339.html">LEDataOutputStream</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

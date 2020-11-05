@@ -1,27 +1,9 @@
 var a03812 =
 [
-    [ "After", "a06007.html", "a06007" ],
-    [ "Before", "a06011.html", "a06011" ],
-    [ "Between", "a06015.html", "a06015" ],
-    [ "During", "a06019.html", "a06019" ],
-    [ "EqualsPeriod", "a06023.html", "a06023" ],
-    [ "Finishes", "a06027.html", "a06027" ],
-    [ "IsMetBy", "a06031.html", "a06031" ],
-    [ "Meets", "a06035.html", "a06035" ],
-    [ "MeetsAfter", "a06039.html", "a06039" ],
-    [ "MeetsBefore", "a06043.html", "a06043" ],
-    [ "Minus", "a06047.html", "a06047" ],
-    [ "NotEqualsPeriod", "a06051.html", "a06051" ],
-    [ "Overleft", "a06055.html", "a06055" ],
-    [ "Overright", "a06059.html", "a06059" ],
-    [ "Period", "a06063.html", "a06063" ],
-    [ "PeriodContains", "a06067.html", "a06067" ],
-    [ "PeriodEnd", "a06071.html", "a06071" ],
-    [ "PeriodIntersect", "a06075.html", "a06075" ],
-    [ "PeriodOverlaps", "a06079.html", "a06079" ],
-    [ "PeriodPreceding", "a06083.html", "a06083" ],
-    [ "PeriodStart", "a06087.html", "a06087" ],
-    [ "PeriodSucceding", "a06091.html", "a06091" ],
-    [ "PeriodUnion", "a06095.html", "a06095" ],
-    [ "Starts", "a06099.html", "a06099" ]
+    [ "LineFromEncodedPolyline", "a05083.html", "a05083" ],
+    [ "LineFromMultiPoint", "a05087.html", "a05087" ],
+    [ "LineFromText", "a05091.html", "a05091" ],
+    [ "LineFromWKB", "a05095.html", "a05095" ],
+    [ "MakeLine", "a05099.html", "a05099" ],
+    [ "MLineFromText", "a05103.html", "a05103" ]
 ];

@@ -1,13 +1,9 @@
 var a04027 =
 [
-    [ "AccAvgY", "a04031.html", "a04031" ],
-    [ "AvgY", "a04027.html#a7c72b74848d3593f6459755ea62f0b42", null ],
-    [ "AvgY", "a04027.html#ae9dd49437c23032fb9126ff92e94ac2f", null ],
-    [ "copy", "a04027.html#a1f0ab51842afd05073ea3878c692ad87", null ],
-    [ "createAccumulator", "a04027.html#ac589ca3321e77a7558e0e346c8474738", null ],
-    [ "equals", "a04027.html#a04adb23e628a0adcac484ce8f1dff399", null ],
-    [ "getValueEmpty", "a04027.html#a36b59b059238a39e015669fe72025f27", null ],
-    [ "hashCode", "a04027.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "log", "a04027.html#ae86b42cd2994f92f2118185cf5904660", null ],
-    [ "noValuesToAvg", "a04027.html#afbe1a0f6f780ff84b032e66c277338cf", null ]
+    [ "GeobufFeatureSerializer", "a04027.html#a17d4fd5dd2750f117ae2a182b8aec1a9", null ],
+    [ "deserialize", "a04027.html#aa1a2a23737a90fc5a7d856f733375877", null ],
+    [ "getEncoder", "a04027.html#accae394add5361c161fefa5fd34783ec", null ],
+    [ "serialize", "a04027.html#ae03ea28c975e2171e94dae8f7f86c3fc", null ],
+    [ "encoder", "a04027.html#a98b2345bf9a712d08fc5ab625c89b089", null ],
+    [ "precision", "a04027.html#a67687c3d0aa95fc6ad0694047af4eb11", null ]
 ];

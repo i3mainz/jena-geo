@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MillimeterToMeterTest Class Reference</title>
+<title>jena-geo: MeterToFathomTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,24 +64,24 @@ $(document).ready(function(){initNavTree('a09503.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a09500.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MillimeterToMeterTest Class Reference</div>  </div>
+<div class="title">MeterToFathomTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f451aa0e465476d4a726f3236005703"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09503.html#a5f451aa0e465476d4a726f3236005703">testMillimeterToMeter</a> ()</td></tr>
-<tr class="separator:a5f451aa0e465476d4a726f3236005703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552bf8a09ce03815f5e94975e454df5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09503.html#a552bf8a09ce03815f5e94975e454df5c">testMeterToFathom</a> ()</td></tr>
+<tr class="separator:a552bf8a09ce03815f5e94975e454df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5f451aa0e465476d4a726f3236005703"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f451aa0e465476d4a726f3236005703">&#9670;&nbsp;</a></span>testMillimeterToMeter()</h2>
+<a id="a552bf8a09ce03815f5e94975e454df5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552bf8a09ce03815f5e94975e454df5c">&#9670;&nbsp;</a></span>testMeterToFathom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testMillimeterToMeter </td>
+          <td class="memname">void testMeterToFathom </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -89,8 +89,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06203.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">MillimeterToMeter.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                            {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        NodeValue unitamount = NodeValue.makeDouble(1000.);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        MillimeterToMeter instance=<span class="keyword">new</span> MillimeterToMeter();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        NodeValue expResult = NodeValue.makeDouble(1.);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue result = instance.exec(unitamount);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06187.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">MeterToFathom.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                        {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        NodeValue unitamount = NodeValue.makeDouble(1.);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        MeterToFathom instance=<span class="keyword">new</span> MeterToFathom();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        NodeValue expResult = NodeValue.makeDouble(0.5468066492);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue result = instance.exec(unitamount);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03957.html">unit</a></li><li class="navelem"><a class="el" href="a09503.html">MillimeterToMeterTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03981.html">unit</a></li><li class="navelem"><a class="el" href="a09503.html">MeterToFathomTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

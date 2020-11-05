@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Circumcentre Class Reference</title>
+<title>jena-geo: PointFromText Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,32 +64,38 @@ $(document).ready(function(){initNavTree('a05287.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05284.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Circumcentre Class Reference</div>  </div>
+<div class="title">PointFromText Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Makes a point Geometry from WKT with the given SRID.  
+ <a href="a05287.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for Circumcentre:</div>
+Inheritance diagram for PointFromText:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05286.png" border="0" usemap="#Circumcentre_inherit__map" alt="Inheritance graph"/></div>
-<map name="Circumcentre_inherit__map" id="Circumcentre_inherit__map">
+<div class="center"><img src="a05286.png" border="0" usemap="#PointFromText_inherit__map" alt="Inheritance graph"/></div>
+<map name="PointFromText_inherit__map" id="PointFromText_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Circumcentre:</div>
+Collaboration diagram for PointFromText:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05285.png" border="0" usemap="#Circumcentre_coll__map" alt="Collaboration graph"/></div>
-<map name="Circumcentre_coll__map" id="Circumcentre_coll__map">
+<div class="center"><img src="a05285.png" border="0" usemap="#PointFromText_coll__map" alt="Collaboration graph"/></div>
+<map name="PointFromText_coll__map" id="PointFromText_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05287.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
-<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a3cbabcf0592c2705ee280a231189a"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05287.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a> (NodeValue arg0)</td></tr>
+<tr class="separator:ae7a3cbabcf0592c2705ee280a231189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Makes a point Geometry from WKT with the given SRID. </p>
+<p>If SRID is not given, it defaults to unknown. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae7a3cbabcf0592c2705ee280a231189a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a3cbabcf0592c2705ee280a231189a">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,16 +104,16 @@ Public Member Functions</h2></td></tr>
           <td class="memname">NodeValue exec </td>
           <td>(</td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
+          <td class="paramname"><em>arg0</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06555.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06555.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, and <a class="el" href="a06555.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
+<p class="reference">References <a class="el" href="a06595.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a08995.html#af8da9616fd1ee304df92759a8b87da02">CircumcentreTest.testCircumcentre1()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                           {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            Geometry geom = geometry.getXYGeometry();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span> (geom instanceof Polygon) {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="keywordflow">if</span>(geom.getCoordinates().length==4) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        Coordinate p0=geom.getCoordinates()[0];</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        Coordinate p1=geom.getCoordinates()[1];</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        Coordinate p2=geom.getCoordinates()[2];</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        Coordinate coord=Triangle.circumcentre(p0, p1, p2);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, geometry.getSrsURI(), WKTDatatype.URI);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">return</span> NodeValue.FALSE;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a09023.html#a34b8808318d84beec7ded7da39c5ef6e">PointFromTextTest.testPointFromText()</a>, and <a class="el" href="a09027.html#a9aed21a4e0ecbec04e059757d6c2dd24">PointFromWKBTest.testPointFromWKB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                              {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            String wktstring=arg0.getString();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            WKTReader wktreader=WKTReader.extract(wktstring);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            Geometry geom=wktreader.getGeometry();     </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">if</span>(<span class="stringliteral">&quot;POINT&quot;</span>.equalsIgnoreCase(geom.getGeometryType().toUpperCase())){</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(geom.getCoordinate(), <span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span>+geom.getSRID()+<span class="stringliteral">&quot;&gt;&quot;</span>, WKTDatatype.URI); </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;WKT does not represent a point&quot;</span>, null);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -116,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03798.html">polygon</a></li><li class="navelem"><a class="el" href="a03799.html">attribute</a></li><li class="navelem"><a class="el" href="a05287.html">Circumcentre</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03819.html">point</a></li><li class="navelem"><a class="el" href="a03820.html">constructor</a></li><li class="navelem"><a class="el" href="a05287.html">PointFromText</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

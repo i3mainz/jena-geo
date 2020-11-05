@@ -1,7 +1,5 @@
 var a08619 =
 [
-    [ "testDifference", "a08619.html#a818987dbc65e92aa634b7764a0b93908", null ],
-    [ "result", "a08619.html#aab356d6554a7301750f11ec7a85ac47d", null ],
-    [ "testGeom", "a08619.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
-    [ "testGeom2", "a08619.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
+    [ "testAsSVG", "a08619.html#a7051938045f1413d97e8c5925b1c7677", null ],
+    [ "testGeometry", "a08619.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

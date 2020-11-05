@@ -1,14 +1,11 @@
 var a07235 =
 [
-    [ "DefaultDataSource", "a07235.html#a53ca6b349c39188a249aca69f9ce13a6", null ],
-    [ "getConnection", "a07235.html#abe00cdf87aed55bbe5ef191c248b62b1", null ],
-    [ "getConnection", "a07235.html#ad7683b9818e6f62943b0d22af081a7b5", null ],
-    [ "getLoginTimeout", "a07235.html#af730e8a131992ffd5288bf9a957e0862", null ],
-    [ "getLogWriter", "a07235.html#ae9a7f4055bac50cb7f42f2b3aaefdfbd", null ],
-    [ "log", "a07235.html#a7a29b14ac68ca1b018ee4f921b4f51bc", null ],
-    [ "setLoginTimeout", "a07235.html#ab4092338e3e8fb46cbb2078f121155a7", null ],
-    [ "setLogWriter", "a07235.html#ae9c73aab36983cba796b91749fb1d672", null ],
-    [ "DRIVERS", "a07235.html#a4ded035daae4c92ac9568df553a985c2", null ],
-    [ "LOGGER", "a07235.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
-    [ "url", "a07235.html#a2422d293e4ee9d02ee4d0e1885feb45f", null ]
+    [ "ReferenceQueueConsumer", "a07235.html#ac9a1a06ca37c9dcefafcb8117dfcb1a6", null ],
+    [ "[static initializer]", "a07235.html#a2e87c5ede6b7235170d287cd2e254454", null ],
+    [ "isKillRequested", "a07235.html#a85a7877dcc475afa61faf679b046c78f", null ],
+    [ "kill", "a07235.html#a627f0d98cbf66a9f5988e4ae5ffef710", null ],
+    [ "process", "a07235.html#af515c1cad393622a61aa466ce7c00c16", null ],
+    [ "run", "a07235.html#a2c71443ed78646800cfa677fad85cacf", null ],
+    [ "DEFAULT", "a07235.html#ac2254d73f5e83f7fd2a3780336a340d4", null ],
+    [ "queue", "a07235.html#a3bd55972045c76e3f2001ad28acd9d0b", null ]
 ];

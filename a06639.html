@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MultiBandsIndexColorModel Class Reference</title>
+<title>jena-geo: IllegalGridGeometryException Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,208 +62,157 @@ $(document).ready(function(){initNavTree('a06639.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06636.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MultiBandsIndexColorModel Class Reference</div>  </div>
+<div class="title">IllegalGridGeometryException Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An <a class="el" href="">IndexColorModel</a> tolerant with image having more than one band.  
+<p>Thrown when the argument specified to a method or constructor would result in an invalid <a class="el" href="">GridGeometry</a>.  
  <a href="a06639.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for MultiBandsIndexColorModel:</div>
+Inheritance diagram for IllegalGridGeometryException:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06638.png" border="0" usemap="#MultiBandsIndexColorModel_inherit__map" alt="Inheritance graph"/></div>
-<map name="MultiBandsIndexColorModel_inherit__map" id="MultiBandsIndexColorModel_inherit__map">
+<div class="center"><img src="a06638.png" border="0" usemap="#IllegalGridGeometryException_inherit__map" alt="Inheritance graph"/></div>
+<map name="IllegalGridGeometryException_inherit__map" id="IllegalGridGeometryException_inherit__map">
+<area shape="rect" id="node3" href="a06611.html" title="Thrown when operations on a GridGeometry result in an area which does not intersect anymore the GridE..." alt="" coords="21,155,184,181"/>
+<area shape="rect" id="node2" href="a14295.html" title="IllegalArgumentException" alt="" coords="17,5,188,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for MultiBandsIndexColorModel:</div>
+Collaboration diagram for IllegalGridGeometryException:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06637.png" border="0" usemap="#MultiBandsIndexColorModel_coll__map" alt="Collaboration graph"/></div>
-<map name="MultiBandsIndexColorModel_coll__map" id="MultiBandsIndexColorModel_coll__map">
+<div class="center"><img src="a06637.png" border="0" usemap="#IllegalGridGeometryException_coll__map" alt="Collaboration graph"/></div>
+<map name="IllegalGridGeometryException_coll__map" id="IllegalGridGeometryException_coll__map">
+<area shape="rect" id="node2" href="a14295.html" title="IllegalArgumentException" alt="" coords="5,5,176,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acb2312570f05693dc92205a1603682c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#acb2312570f05693dc92205a1603682c1">MultiBandsIndexColorModel</a> (final int bits, final int size, final int[] cmap, final int start, final boolean hasAlpha, final int transparent, final int transferType, final int <a class="el" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>, final int <a class="el" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>)</td></tr>
-<tr class="memdesc:acb2312570f05693dc92205a1603682c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an index color model with the specified properties.  <a href="#acb2312570f05693dc92205a1603682c1">More...</a><br /></td></tr>
-<tr class="separator:acb2312570f05693dc92205a1603682c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69a6c16a52d9c5066668b62f58d0ee9"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#ae69a6c16a52d9c5066668b62f58d0ee9">getDataElements</a> (final int RGB, Object <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>)</td></tr>
-<tr class="memdesc:ae69a6c16a52d9c5066668b62f58d0ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a RGB color to a representation of a pixel in this color model.  <a href="#ae69a6c16a52d9c5066668b62f58d0ee9">More...</a><br /></td></tr>
-<tr class="separator:ae69a6c16a52d9c5066668b62f58d0ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc94819532a74c2b4cef3dee3eee839f"><td class="memItemLeft" align="right" valign="top">int []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#adc94819532a74c2b4cef3dee3eee839f">getComponents</a> (final Object <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>, final int[] components, final int offset)</td></tr>
-<tr class="memdesc:adc94819532a74c2b4cef3dee3eee839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of unnormalized color/alpha components for a specified pixel in this color model.  <a href="#adc94819532a74c2b4cef3dee3eee839f">More...</a><br /></td></tr>
-<tr class="separator:adc94819532a74c2b4cef3dee3eee839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6c9b6402be2a937e64d0e936f2f3fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a7a6c9b6402be2a937e64d0e936f2f3fe">getRed</a> (final Object inData)</td></tr>
-<tr class="memdesc:a7a6c9b6402be2a937e64d0e936f2f3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the red color component for the specified pixel, scaled from 0 to 255 in the default RGB.  <a href="#a7a6c9b6402be2a937e64d0e936f2f3fe">More...</a><br /></td></tr>
-<tr class="separator:a7a6c9b6402be2a937e64d0e936f2f3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092f4c943545df4fda57b9bcdc796640"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a092f4c943545df4fda57b9bcdc796640">getGreen</a> (final Object inData)</td></tr>
-<tr class="memdesc:a092f4c943545df4fda57b9bcdc796640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the green color component for the specified pixel, scaled from 0 to 255 in the default RGB.  <a href="#a092f4c943545df4fda57b9bcdc796640">More...</a><br /></td></tr>
-<tr class="separator:a092f4c943545df4fda57b9bcdc796640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e42514e318311290bd2513fc16f100b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a3e42514e318311290bd2513fc16f100b">getBlue</a> (final Object inData)</td></tr>
-<tr class="memdesc:a3e42514e318311290bd2513fc16f100b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the blue color component for the specified pixel, scaled from 0 to 255 in the default RGB.  <a href="#a3e42514e318311290bd2513fc16f100b">More...</a><br /></td></tr>
-<tr class="separator:a3e42514e318311290bd2513fc16f100b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e71e1a8555008f5b88e33217d9a132a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a4e71e1a8555008f5b88e33217d9a132a">getAlpha</a> (final Object inData)</td></tr>
-<tr class="memdesc:a4e71e1a8555008f5b88e33217d9a132a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the alpha component for the specified pixel, scaled from 0 to 255.  <a href="#a4e71e1a8555008f5b88e33217d9a132a">More...</a><br /></td></tr>
-<tr class="separator:a4e71e1a8555008f5b88e33217d9a132a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c329e26599c6571f48c9e5faf58ae42"><td class="memItemLeft" align="right" valign="top">WritableRaster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a4c329e26599c6571f48c9e5faf58ae42">createCompatibleWritableRaster</a> (final int width, final int height)</td></tr>
-<tr class="memdesc:a4c329e26599c6571f48c9e5faf58ae42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a.  <a href="#a4c329e26599c6571f48c9e5faf58ae42">More...</a><br /></td></tr>
-<tr class="separator:a4c329e26599c6571f48c9e5faf58ae42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314b5eabe552596feb8cf933cc482f29"><td class="memItemLeft" align="right" valign="top">SampleModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a314b5eabe552596feb8cf933cc482f29">createCompatibleSampleModel</a> (final int width, final int height)</td></tr>
-<tr class="memdesc:a314b5eabe552596feb8cf933cc482f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a.  <a href="#a314b5eabe552596feb8cf933cc482f29">More...</a><br /></td></tr>
-<tr class="separator:a314b5eabe552596feb8cf933cc482f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478fdb9d65c6c13dcf8d4db0c4025e8b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a478fdb9d65c6c13dcf8d4db0c4025e8b">isCompatibleRaster</a> (final Raster raster)</td></tr>
-<tr class="memdesc:a478fdb9d65c6c13dcf8d4db0c4025e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a478fdb9d65c6c13dcf8d4db0c4025e8b">More...</a><br /></td></tr>
-<tr class="separator:a478fdb9d65c6c13dcf8d4db0c4025e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6edfd5afccbb8ae0b55a7bf9b7c31624"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a6edfd5afccbb8ae0b55a7bf9b7c31624">isCompatibleSampleModel</a> (final SampleModel sm)</td></tr>
-<tr class="memdesc:a6edfd5afccbb8ae0b55a7bf9b7c31624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the specified.  <a href="#a6edfd5afccbb8ae0b55a7bf9b7c31624">More...</a><br /></td></tr>
-<tr class="separator:a6edfd5afccbb8ae0b55a7bf9b7c31624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae359cb6465f94974932ab1716cd7c8ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#ae359cb6465f94974932ab1716cd7c8ad">IllegalGridGeometryException</a> ()</td></tr>
+<tr class="memdesc:ae359cb6465f94974932ab1716cd7c8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an exception with no detail message.  <a href="#ae359cb6465f94974932ab1716cd7c8ad">More...</a><br /></td></tr>
+<tr class="separator:ae359cb6465f94974932ab1716cd7c8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab60f32c89764274f1b2a2ff083215f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#afab60f32c89764274f1b2a2ff083215f">IllegalGridGeometryException</a> (final String message)</td></tr>
+<tr class="memdesc:afab60f32c89764274f1b2a2ff083215f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an exception with the specified detail message.  <a href="#afab60f32c89764274f1b2a2ff083215f">More...</a><br /></td></tr>
+<tr class="separator:afab60f32c89764274f1b2a2ff083215f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f215c5aaa411f4ce39d61fe10a03be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a79f215c5aaa411f4ce39d61fe10a03be">IllegalGridGeometryException</a> (final Throwable cause)</td></tr>
+<tr class="memdesc:a79f215c5aaa411f4ce39d61fe10a03be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an exception with the specified cause.  <a href="#a79f215c5aaa411f4ce39d61fe10a03be">More...</a><br /></td></tr>
+<tr class="separator:a79f215c5aaa411f4ce39d61fe10a03be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49579b0dfa71f36b5b938a7ab6fcfac0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a49579b0dfa71f36b5b938a7ab6fcfac0">IllegalGridGeometryException</a> (final String message, final Throwable cause)</td></tr>
+<tr class="memdesc:a49579b0dfa71f36b5b938a7ab6fcfac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an exception with the specified detail message and cause.  <a href="#a49579b0dfa71f36b5b938a7ab6fcfac0">More...</a><br /></td></tr>
+<tr class="separator:a49579b0dfa71f36b5b938a7ab6fcfac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:a0d8b817b89b958b862e489811688d6d7"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a></td></tr>
-<tr class="memdesc:a0d8b817b89b958b862e489811688d6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bands.  <a href="#a0d8b817b89b958b862e489811688d6d7">More...</a><br /></td></tr>
-<tr class="separator:a0d8b817b89b958b862e489811688d6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a222631519396875a9610c4bccec56eaf"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a></td></tr>
-<tr class="memdesc:a222631519396875a9610c4bccec56eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The visible band.  <a href="#a222631519396875a9610c4bccec56eaf">More...</a><br /></td></tr>
-<tr class="separator:a222631519396875a9610c4bccec56eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:aea14d06a6dd48d88d58735bcd50a96fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#aea14d06a6dd48d88d58735bcd50a96fe">IllegalGridGeometryException</a> (final Throwable cause, final String component)</td></tr>
+<tr class="memdesc:aea14d06a6dd48d88d58735bcd50a96fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an exception with a detail message incriminating the given parameter.  <a href="#aea14d06a6dd48d88d58735bcd50a96fe">More...</a><br /></td></tr>
+<tr class="separator:aea14d06a6dd48d88d58735bcd50a96fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a40bdb34c92589093b9108a97bfd2858a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a> (final Object inData)</td></tr>
-<tr class="memdesc:a40bdb34c92589093b9108a97bfd2858a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pixel value as an integer.  <a href="#a40bdb34c92589093b9108a97bfd2858a">More...</a><br /></td></tr>
-<tr class="separator:a40bdb34c92589093b9108a97bfd2858a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06639.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = -7849140502096470380L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial number for inter-operability with different versions.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An <a class="el" href="">IndexColorModel</a> tolerant with image having more than one band. </p>
-<p>This class can support only the types supported by</p><div class="fragment"><div class="line">IndexColorModel </div></div><!-- fragment --><p> parent class. As of Java 10 they are restricted to <a class="el" href="">DataBuffer#TYPE_BYTE</a> and</p><div class="fragment"><div class="line">DataBuffer#TYPE_USHORT </div></div><!-- fragment --><p> .</p>
-<p><b>Reminder:</b> <a class="el" href="">getNumComponents()</a> will returns 3 or 4 no matter how many bands were specified to the constructor. This is not specific to this class; </p><div class="fragment"><div class="line">IndexColorModel </div></div><!-- fragment --><p> behave that way. So we can't rely on this method for checking the number of bands.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd>
-<dd>
-Andrea Aime (TOPP) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<div class="textblock"><p>Thrown when the argument specified to a method or constructor would result in an invalid <a class="el" href="">GridGeometry</a>. </p>
+<p>This exception may have a <a class="el" href="">org.opengis.referencing.operation.TransformException</a> as its cause, in which case the grid geometry failed to use a given "grid to CRS" transform over the given grid extent. Such failure may happen with non-linear transforms, but are less likely in the common case where the grid geometry uses a linear (or affine) "grid to CRS" transform.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acb2312570f05693dc92205a1603682c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb2312570f05693dc92205a1603682c1">&#9670;&nbsp;</a></span>MultiBandsIndexColorModel()</h2>
+<a id="ae359cb6465f94974932ab1716cd7c8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae359cb6465f94974932ab1716cd7c8ad">&#9670;&nbsp;</a></span>IllegalGridGeometryException() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06639.html">MultiBandsIndexColorModel</a> </td>
+          <td class="memname"><a class="el" href="a06639.html">IllegalGridGeometryException</a> </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>bits</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int []&#160;</td>
-          <td class="paramname"><em>cmap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>hasAlpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>transparent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>transferType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>numBands</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>visibleBand</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs an index color model with the specified properties. </p>
+<p>Constructs an exception with no detail message. </p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                          {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="afab60f32c89764274f1b2a2ff083215f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab60f32c89764274f1b2a2ff083215f">&#9670;&nbsp;</a></span>IllegalGridGeometryException() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06639.html">IllegalGridGeometryException</a> </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an exception with the specified detail message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bits</td><td>the number of bits each pixel occupies. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the color component arrays. </td></tr>
-    <tr><td class="paramname">cmap</td><td>the array of color components. </td></tr>
-    <tr><td class="paramname">start</td><td>the starting offset of the first color component. </td></tr>
-    <tr><td class="paramname">hasAlpha</td><td>indicates whether alpha values are contained in the<div class="fragment"><div class="line">cmap </div></div><!-- fragment --> array. </td></tr>
-    <tr><td class="paramname">transparent</td><td>The index of the fully transparent pixel. </td></tr>
-    <tr><td class="paramname">transferType</td><td>The data type of the array used to represent pixel values. </td></tr>
-    <tr><td class="paramname">numBands</td><td>the number of bands. </td></tr>
-    <tr><td class="paramname">visibleBand</td><td>the band to display.</td></tr>
+    <tr><td class="paramname">message</td><td>the detail message. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14239.html">IllegalArgumentException</a></td><td>if<div class="fragment"><div class="line">bits </div></div><!-- fragment --> is less than 1 or greater than 16. </td></tr>
-    <tr><td class="paramname"><a class="el" href="a14239.html">IllegalArgumentException</a></td><td>if<div class="fragment"><div class="line">size </div></div><!-- fragment --> is less than 1. </td></tr>
-    <tr><td class="paramname"><a class="el" href="a14239.html">IllegalArgumentException</a></td><td>if<div class="fragment"><div class="line">transferType </div></div><!-- fragment --> is not one of <div class="fragment"><div class="line">DataBuffer.TYPE_BYTE </div></div><!-- fragment --> or<div class="fragment"><div class="line">DataBuffer.TYPE_USHORT </div></div><!-- fragment --> . </td></tr>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                              {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        super(message);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a79f215c5aaa411f4ce39d61fe10a03be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79f215c5aaa411f4ce39d61fe10a03be">&#9670;&nbsp;</a></span>IllegalGridGeometryException() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06639.html">IllegalGridGeometryException</a> </td>
+          <td>(</td>
+          <td class="paramtype">final Throwable&#160;</td>
+          <td class="paramname"><em>cause</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an exception with the specified cause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cause</td><td>the cause for this exception.</td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">MultiBandsIndexColorModel.numBands</a>, and <a class="el" href="a06639.html#a222631519396875a9610c4bccec56eaf">MultiBandsIndexColorModel.visibleBand</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        super(bits, size, cmap, start, hasAlpha, transparent, transferType);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        this.<a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>    = <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        this.<a class="code" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a> = <a class="code" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div><div class="ttc" id="a06639_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06639.html#a0d8b817b89b958b862e489811688d6d7">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">The number of bands. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:50</div></div>
-<div class="ttc" id="a06639_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06639.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">The visible band. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:55</div></div>
-</div><!-- fragment -->
+<dl class="section since"><dt>Since</dt><dd>1.1 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                               {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        super(cause);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a314b5eabe552596feb8cf933cc482f29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a314b5eabe552596feb8cf933cc482f29">&#9670;&nbsp;</a></span>createCompatibleSampleModel()</h2>
+<a id="a49579b0dfa71f36b5b938a7ab6fcfac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49579b0dfa71f36b5b938a7ab6fcfac0">&#9670;&nbsp;</a></span>IllegalGridGeometryException() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SampleModel createCompatibleSampleModel </td>
+          <td class="memname"><a class="el" href="a06639.html">IllegalGridGeometryException</a> </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
+          <td class="paramtype">final Throwable&#160;</td>
+          <td class="paramname"><em>cause</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -273,274 +222,19 @@ Andrea Aime (TOPP) </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a. </p>
-<div class="fragment"><div class="line">SampleModel </div></div><!-- fragment --><p> with the specified width and height that has a data layout compatible with this</p><div class="fragment"><div class="line">ColorModel </div></div><!-- fragment --><p> . </p>
-
-<p class="reference">References <a class="el" href="a06643.html#a7244c332272c4013889f65f00c83fb6c">RasterFactory.unique()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                                                                      {</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> RasterFactory.unique(<span class="keyword">new</span> BandedSampleModel(transferType, width, height, <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>));</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div><div class="ttc" id="a06639_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06639.html#a0d8b817b89b958b862e489811688d6d7">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">The number of bands. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:50</div></div>
-</div><!-- fragment -->
+<p>Constructs an exception with the specified detail message and cause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>the detail message. </td></tr>
+    <tr><td class="paramname">cause</td><td>the cause for this exception. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                     {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        super(message, cause);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a4c329e26599c6571f48c9e5faf58ae42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c329e26599c6571f48c9e5faf58ae42">&#9670;&nbsp;</a></span>createCompatibleWritableRaster()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WritableRaster createCompatibleWritableRaster </td>
-          <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a. </p>
-<div class="fragment"><div class="line">WritableRaster </div></div><!-- fragment --><p> with the specified width and height that has a data layout (</p><div class="fragment"><div class="line">SampleModel </div></div><!-- fragment --><p> ) compatible with this</p><div class="fragment"><div class="line">ColorModel </div></div><!-- fragment --><p> .</p>
-<p>The difference with standard implementation is that this method creates a banded raster on the assumption that the number of bands is greater than 1. By contrast, the standard implementation provides various optimizations for one-banded raster. </p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                                                                            {</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> Raster.createBandedRaster(transferType, width, height, <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>, null);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div><div class="ttc" id="a06639_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06639.html#a0d8b817b89b958b862e489811688d6d7">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">The number of bands. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:50</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4e71e1a8555008f5b88e33217d9a132a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e71e1a8555008f5b88e33217d9a132a">&#9670;&nbsp;</a></span>getAlpha()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getAlpha </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>inData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the alpha component for the specified pixel, scaled from 0 to 255. </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                             {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#a4e71e1a8555008f5b88e33217d9a132a">getAlpha</a>(<a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>(inData));</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div><div class="ttc" id="a06639_html_a4e71e1a8555008f5b88e33217d9a132a"><div class="ttname"><a href="a06639.html#a4e71e1a8555008f5b88e33217d9a132a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.getAlpha</a></div><div class="ttdeci">int getAlpha(final Object inData)</div><div class="ttdoc">Returns the alpha component for the specified pixel, scaled from 0 to 255. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:187</div></div>
-<div class="ttc" id="a06639_html_a40bdb34c92589093b9108a97bfd2858a"><div class="ttname"><a href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.pixel</a></div><div class="ttdeci">int pixel(final Object inData)</div><div class="ttdoc">Returns the pixel value as an integer. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:137</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3e42514e318311290bd2513fc16f100b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e42514e318311290bd2513fc16f100b">&#9670;&nbsp;</a></span>getBlue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getBlue </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>inData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the blue color component for the specified pixel, scaled from 0 to 255 in the default RGB. </p>
-<div class="fragment"><div class="line">ColorSpace </div></div><!-- fragment --><p> . </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                            {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#a3e42514e318311290bd2513fc16f100b">getBlue</a>(<a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>(inData));</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div><div class="ttc" id="a06639_html_a3e42514e318311290bd2513fc16f100b"><div class="ttname"><a href="a06639.html#a3e42514e318311290bd2513fc16f100b">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.getBlue</a></div><div class="ttdeci">int getBlue(final Object inData)</div><div class="ttdoc">Returns the blue color component for the specified pixel, scaled from 0 to 255 in the default RGB...</div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:179</div></div>
-<div class="ttc" id="a06639_html_a40bdb34c92589093b9108a97bfd2858a"><div class="ttname"><a href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.pixel</a></div><div class="ttdeci">int pixel(final Object inData)</div><div class="ttdoc">Returns the pixel value as an integer. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:137</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adc94819532a74c2b4cef3dee3eee839f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc94819532a74c2b4cef3dee3eee839f">&#9670;&nbsp;</a></span>getComponents()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int [] getComponents </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>pixel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int []&#160;</td>
-          <td class="paramname"><em>components</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns an array of unnormalized color/alpha components for a specified pixel in this color model. </p>
-<p>This method is the converse of <a class="el" href="a06639.html#ae69a6c16a52d9c5066668b62f58d0ee9">getDataElements(int, Object)</a>. </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                                                                             {</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#adc94819532a74c2b4cef3dee3eee839f">getComponents</a>(<a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>(components), components, offset);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div><div class="ttc" id="a06639_html_adc94819532a74c2b4cef3dee3eee839f"><div class="ttname"><a href="a06639.html#adc94819532a74c2b4cef3dee3eee839f">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.getComponents</a></div><div class="ttdeci">int [] getComponents(final Object pixel, final int[] components, final int offset)</div><div class="ttdoc">Returns an array of unnormalized color/alpha components for a specified pixel in this color model...</div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:152</div></div>
-<div class="ttc" id="a06639_html_a40bdb34c92589093b9108a97bfd2858a"><div class="ttname"><a href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.pixel</a></div><div class="ttdeci">int pixel(final Object inData)</div><div class="ttdoc">Returns the pixel value as an integer. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:137</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae69a6c16a52d9c5066668b62f58d0ee9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69a6c16a52d9c5066668b62f58d0ee9">&#9670;&nbsp;</a></span>getDataElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Object getDataElements </td>
-          <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>RGB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>pixel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Converts a RGB color to a representation of a pixel in this color model. </p>
-<p>This method returns an array with a length equal to the number of bands specified to the constructor (</p><div class="fragment"><div class="line">IndexColorModel </div></div><!-- fragment --><p> would returns an array of length 1). All array elements are set to the same value. Replicating the pixel value is a somewhat arbitrary choice, but this choice makes this image appears as a gray scale image if the underlying <a class="el" href="">DataBuffer</a> were displayed again with a RGB color model instead of this one. Such a gray scale image seems more neutral than an image where only the Red component would vary.</p>
-<p>All other</p><div class="fragment"><div class="line">getDataElement(…) </div></div><!-- fragment --><p> methods in this color model are ultimately defined in terms of this method, so overriding this method if needed should be enough.</p>
-
-<p class="reference">References <a class="el" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">MultiBandsIndexColorModel.numBands</a>, and <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                               {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a> == null) {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">switch</span> (transferType) {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">case</span> DataBuffer.TYPE_SHORT:  <span class="comment">// Handled as a matter of principle.</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT: <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a> = <span class="keyword">new</span> <span class="keywordtype">short</span>[<a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>]; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">case</span> DataBuffer.TYPE_BYTE:   <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a> = <span class="keyword">new</span> byte [<a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>]; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">case</span> DataBuffer.TYPE_INT:    <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>  [<a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>]; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a> = super.getDataElements(RGB, <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">switch</span> (transferType) {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_BYTE: {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keyword">final</span> byte[] array = (byte[]) <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                Arrays.fill(array, 1, <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>, array[0]);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_SHORT:      <span class="comment">// Handled as a matter of principle.</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT: {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">short</span>[] array = (<span class="keywordtype">short</span>[]) <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                Arrays.fill(array, 1, <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>, array[0]);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_INT: {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span>[] array = (<span class="keywordtype">int</span>[]) <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                Arrays.fill(array, 1, <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>, array[0]);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div><div class="ttc" id="a06639_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06639.html#a0d8b817b89b958b862e489811688d6d7">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">The number of bands. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:50</div></div>
-<div class="ttc" id="a06639_html_a40bdb34c92589093b9108a97bfd2858a"><div class="ttname"><a href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.pixel</a></div><div class="ttdeci">int pixel(final Object inData)</div><div class="ttdoc">Returns the pixel value as an integer. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:137</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a092f4c943545df4fda57b9bcdc796640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a092f4c943545df4fda57b9bcdc796640">&#9670;&nbsp;</a></span>getGreen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getGreen </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>inData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the green color component for the specified pixel, scaled from 0 to 255 in the default RGB. </p>
-<div class="fragment"><div class="line">ColorSpace </div></div><!-- fragment --><p> . </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                             {</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#a092f4c943545df4fda57b9bcdc796640">getGreen</a>(<a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>(inData));</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div><div class="ttc" id="a06639_html_a40bdb34c92589093b9108a97bfd2858a"><div class="ttname"><a href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.pixel</a></div><div class="ttdeci">int pixel(final Object inData)</div><div class="ttdoc">Returns the pixel value as an integer. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:137</div></div>
-<div class="ttc" id="a06639_html_a092f4c943545df4fda57b9bcdc796640"><div class="ttname"><a href="a06639.html#a092f4c943545df4fda57b9bcdc796640">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.getGreen</a></div><div class="ttdeci">int getGreen(final Object inData)</div><div class="ttdoc">Returns the green color component for the specified pixel, scaled from 0 to 255 in the default RGB...</div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:170</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a7a6c9b6402be2a937e64d0e936f2f3fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a6c9b6402be2a937e64d0e936f2f3fe">&#9670;&nbsp;</a></span>getRed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getRed </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>inData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the red color component for the specified pixel, scaled from 0 to 255 in the default RGB. </p>
-<div class="fragment"><div class="line">ColorSpace </div></div><!-- fragment --><p> . </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                           {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#a7a6c9b6402be2a937e64d0e936f2f3fe">getRed</a>(<a class="code" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">pixel</a>(inData));</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div><div class="ttc" id="a06639_html_a7a6c9b6402be2a937e64d0e936f2f3fe"><div class="ttname"><a href="a06639.html#a7a6c9b6402be2a937e64d0e936f2f3fe">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.getRed</a></div><div class="ttdeci">int getRed(final Object inData)</div><div class="ttdoc">Returns the red color component for the specified pixel, scaled from 0 to 255 in the default RGB...</div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:161</div></div>
-<div class="ttc" id="a06639_html_a40bdb34c92589093b9108a97bfd2858a"><div class="ttname"><a href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.pixel</a></div><div class="ttdeci">int pixel(final Object inData)</div><div class="ttdoc">Returns the pixel value as an integer. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:137</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a478fdb9d65c6c13dcf8d4db0c4025e8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a478fdb9d65c6c13dcf8d4db0c4025e8b">&#9670;&nbsp;</a></span>isCompatibleRaster()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean isCompatibleRaster </td>
-          <td>(</td>
-          <td class="paramtype">final Raster&#160;</td>
-          <td class="paramname"><em>raster</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if</p><div class="fragment"><div class="line">raster </div></div><!-- fragment --><p> is compatible with this</p><div class="fragment"><div class="line">ColorModel </div></div><!-- fragment --><p> . This method performs the same checks than the standard implementation except for the number of bands, which is required to be equal to <a class="el" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a> instead than 1. The actual checks are delegated to <a class="el" href="a06639.html#a6edfd5afccbb8ae0b55a7bf9b7c31624">isCompatibleSampleModel(SampleModel)</a> instead than duplicated in this method. </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a6edfd5afccbb8ae0b55a7bf9b7c31624">MultiBandsIndexColorModel.isCompatibleSampleModel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                                           {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06639.html#a6edfd5afccbb8ae0b55a7bf9b7c31624">isCompatibleSampleModel</a>(raster.getSampleModel());</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div><div class="ttc" id="a06639_html_a6edfd5afccbb8ae0b55a7bf9b7c31624"><div class="ttname"><a href="a06639.html#a6edfd5afccbb8ae0b55a7bf9b7c31624">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.isCompatibleSampleModel</a></div><div class="ttdeci">boolean isCompatibleSampleModel(final SampleModel sm)</div><div class="ttdoc">Checks if the specified. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:230</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6edfd5afccbb8ae0b55a7bf9b7c31624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6edfd5afccbb8ae0b55a7bf9b7c31624">&#9670;&nbsp;</a></span>isCompatibleSampleModel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean isCompatibleSampleModel </td>
-          <td>(</td>
-          <td class="paramtype">final SampleModel&#160;</td>
-          <td class="paramname"><em>sm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if the specified. </p>
-<div class="fragment"><div class="line">SampleModel </div></div><!-- fragment --><p> is compatible with this</p><div class="fragment"><div class="line">ColorModel </div></div><!-- fragment --><p> . This method performs the same checks than the standard implementation except for the number of bands and for not accepting</p><div class="fragment"><div class="line">MultiPixelPackedSampleModel </div></div><!-- fragment --><p> . </p>
-
-<p class="reference">Referenced by <a class="el" href="a06639.html#a478fdb9d65c6c13dcf8d4db0c4025e8b">MultiBandsIndexColorModel.isCompatibleRaster()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                                                 {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> (sm instanceof ComponentSampleModel)                  &amp;&amp;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                sm.getTransferType()                 == transferType &amp;&amp;</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                sm.getNumBands()                     == <a class="code" href="a06639.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>     &amp;&amp;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                (1 &lt;&lt; sm.getSampleSize(<a class="code" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>)) &gt;= getMapSize();</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div><div class="ttc" id="a06639_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06639.html#a0d8b817b89b958b862e489811688d6d7">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">The number of bands. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:50</div></div>
-<div class="ttc" id="a06639_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06639.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">The visible band. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:55</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a40bdb34c92589093b9108a97bfd2858a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40bdb34c92589093b9108a97bfd2858a">&#9670;&nbsp;</a></span>pixel()</h2>
+<a id="aea14d06a6dd48d88d58735bcd50a96fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea14d06a6dd48d88d58735bcd50a96fe">&#9670;&nbsp;</a></span>IllegalGridGeometryException() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,32 +243,44 @@ Andrea Aime (TOPP) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int pixel </td>
+          <td class="memname"><a class="el" href="a06639.html">IllegalGridGeometryException</a> </td>
           <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>inData</em></td><td>)</td>
+          <td class="paramtype">final Throwable&#160;</td>
+          <td class="paramname"><em>cause</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the pixel value as an integer. </p>
-
-<p class="reference">References <a class="el" href="a06639.html#a222631519396875a9610c4bccec56eaf">MultiBandsIndexColorModel.visibleBand</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06639.html#a4e71e1a8555008f5b88e33217d9a132a">MultiBandsIndexColorModel.getAlpha()</a>, <a class="el" href="a06639.html#a3e42514e318311290bd2513fc16f100b">MultiBandsIndexColorModel.getBlue()</a>, <a class="el" href="a06639.html#adc94819532a74c2b4cef3dee3eee839f">MultiBandsIndexColorModel.getComponents()</a>, <a class="el" href="a06639.html#ae69a6c16a52d9c5066668b62f58d0ee9">MultiBandsIndexColorModel.getDataElements()</a>, <a class="el" href="a06639.html#a092f4c943545df4fda57b9bcdc796640">MultiBandsIndexColorModel.getGreen()</a>, and <a class="el" href="a06639.html#a7a6c9b6402be2a937e64d0e936f2f3fe">MultiBandsIndexColorModel.getRed()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                           {</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">switch</span> (transferType) {</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_BYTE:   <span class="keywordflow">return</span>  Byte.toUnsignedInt( ((byte[]) inData)[<a class="code" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>]);</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_USHORT: <span class="keywordflow">return</span> Short.toUnsignedInt(((<span class="keywordtype">short</span>[]) inData)[visibleBand]);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_SHORT:  <span class="keywordflow">return</span>                     ((<span class="keywordtype">short</span>[]) inData)[<a class="code" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>];</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">case</span> DataBuffer.TYPE_INT:    <span class="keywordflow">return</span>                       ((<span class="keywordtype">int</span>[]) inData)[<a class="code" href="a06639.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>];</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException();</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div><div class="ttc" id="a06639_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06639.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.MultiBandsIndexColorModel.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">The visible band. </div><div class="ttdef"><b>Definition:</b> MultiBandsIndexColorModel.java:55</div></div>
-</div><!-- fragment -->
+<p>Constructs an exception with a detail message incriminating the given parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cause</td><td>the cause of the failure to create the grid geometry. </td></tr>
+    <tr><td class="paramname">component</td><td>name of the parameter that caused the failure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        super(Resources.format(Resources.Keys.IllegalGridGeometryComponent_1, component), cause);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0d8b817b89b958b862e489811688d6d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d8b817b89b958b862e489811688d6d7">&#9670;&nbsp;</a></span>numBands</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,45 +289,17 @@ Andrea Aime (TOPP) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int numBands</td>
+          <td class="memname">final long serialVersionUID = -7849140502096470380L</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The number of bands. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06631.html#aabb3b54b0de461752f780789a76f8278">ColorModelPatch&lt; T extends ColorModel &gt;.equals()</a>, <a class="el" href="a06639.html#ae69a6c16a52d9c5066668b62f58d0ee9">MultiBandsIndexColorModel.getDataElements()</a>, and <a class="el" href="a06639.html#acb2312570f05693dc92205a1603682c1">MultiBandsIndexColorModel.MultiBandsIndexColorModel()</a>.</p>
-
-</div>
-</div>
-<a id="a222631519396875a9610c4bccec56eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a222631519396875a9610c4bccec56eaf">&#9670;&nbsp;</a></span>visibleBand</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int visibleBand</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The visible band. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06631.html#aabb3b54b0de461752f780789a76f8278">ColorModelPatch&lt; T extends ColorModel &gt;.equals()</a>, <a class="el" href="a06639.html#acb2312570f05693dc92205a1603682c1">MultiBandsIndexColorModel.MultiBandsIndexColorModel()</a>, and <a class="el" href="a06639.html#a40bdb34c92589093b9108a97bfd2858a">MultiBandsIndexColorModel.pixel()</a>.</p>
+<p>Serial number for inter-operability with different versions. </p>
 
 </div>
 </div>
@@ -631,7 +309,7 @@ Andrea Aime (TOPP) </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03833.html">org</a></li><li class="navelem"><a class="el" href="a03834.html">apache</a></li><li class="navelem"><a class="el" href="a03835.html">sis</a></li><li class="navelem"><a class="el" href="a03839.html">internal</a></li><li class="navelem"><a class="el" href="a03840.html">coverage</a></li><li class="navelem"><a class="el" href="a03838.html">j2d</a></li><li class="navelem"><a class="el" href="a06639.html">MultiBandsIndexColorModel</a></li>
+    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03858.html">apache</a></li><li class="navelem"><a class="el" href="a03859.html">sis</a></li><li class="navelem"><a class="el" href="a03860.html">coverage</a></li><li class="navelem"><a class="el" href="a03856.html">grid</a></li><li class="navelem"><a class="el" href="a06639.html">IllegalGridGeometryException</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

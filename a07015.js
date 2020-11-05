@@ -1,15 +1,13 @@
 var a07015 =
 [
-    [ "Dyadic", "a07015.html#a96b13a4e02602327f181afc141b2120b", null ],
-    [ "computeRect", "a07015.html#aad61f28eae5af1a21a56c962e59c99ba", null ],
-    [ "getSources", "a07015.html#a016c1e8b58082cf2add38a25a00fd20d", null ],
-    [ "bands", "a07015.html#a95bd8b3a2a6f5f51cc5904ca65a4a754", null ],
-    [ "matrix", "a07015.html#a5ee81eb9fcda92c8096c27a55f8f1c73", null ],
-    [ "numSamples", "a07015.html#ae99ae9458f515b16d68878a27d86f838", null ],
-    [ "offsets", "a07015.html#a842fb770db1cfb28fc4da07962e51ee1", null ],
-    [ "OPERATION_NAME", "a07015.html#a4ba7d667bd2c11bb15f09506d145b31e", null ],
-    [ "scales0", "a07015.html#a445901846c2021ae107de286d8807e22", null ],
-    [ "scales1", "a07015.html#a1b92a42cbdc45c9db4fc2beed44f8590", null ],
-    [ "sources", "a07015.html#a1b3b3c2d297f8c41ee6a67497d4e1b73", null ],
-    [ "transform", "a07015.html#a8059b16632ab926cbbcda163cd991f1b", null ]
+    [ "getCacheMemorySize", "a07015.html#aa47c5f2b0f521ba24c3900b10eb7c90c", null ],
+    [ "isCacheSwapEnable", "a07015.html#a04d5869c9a096fb4ca8148caae3f1fa9", null ],
+    [ "parseToByte", "a07015.html#a6573eb957118b8cd1d0c8f109b8db874", null ],
+    [ "setCacheMemorySize", "a07015.html#abc9fe2c691695f4ef909ace65b361086", null ],
+    [ "setCacheSwapEnable", "a07015.html#a4e0abce8a1f5aff1e21d843ab431949c", null ],
+    [ "DEFAULT_MEMORY_SIZE", "a07015.html#a4e0951900892fc27b1aa4d522ff583ec", null ],
+    [ "KEY_CACHE_MEMORY_SIZE", "a07015.html#a766c524b6ed23b54b55b165a2dcc8bc7", null ],
+    [ "KEY_CACHE_SWAP", "a07015.html#af7b31009917105655e56afa241ea2a7e", null ],
+    [ "LOGGER", "a07015.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
+    [ "VALID_UNIT", "a07015.html#a59d958c841c4feb305efd2842c59d23b", null ]
 ];

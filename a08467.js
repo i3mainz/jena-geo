@@ -1,5 +1,4 @@
 var a08467 =
 [
-    [ "testMinimumClearance", "a08467.html#a66deeca736cad11f886ba1567bcb6fe1", null ],
-    [ "testPolygon", "a08467.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testIs3DTrue", "a08467.html#abe301b8e862e3cfd24d59624f368c863", null ]
 ];

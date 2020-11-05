@@ -1,6 +1,6 @@
 var a04043 =
 [
-    [ "AccAvgZ", "a04043.html#aa8f04ee8faa64ad8ad71ec1a839ac48d", null ],
+    [ "AccAvgX", "a04043.html#a909fa20474c2f771433f5d0b60cf1210", null ],
     [ "accumulate", "a04043.html#a28817aa8b3ff9874c7550bbac242267d", null ],
     [ "accumulateError", "a04043.html#a00612e8af24f1d01fca23bfa838b60f4", null ],
     [ "getAccValue", "a04043.html#a97738b9e0a0bde3579a698473dc654a8", null ],

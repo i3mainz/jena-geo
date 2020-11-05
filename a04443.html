@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: GeomFromGeoJSON Class Reference</title>
+<title>jena-geo: ClusterIntersecting Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,24 +64,21 @@ $(document).ready(function(){initNavTree('a04443.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04440.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GeomFromGeoJSON Class Reference</div>  </div>
+<div class="title">ClusterIntersecting Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Takes as input a geojson representation of a geometry and outputs a PostGIS geometry object.  
- <a href="a04443.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for GeomFromGeoJSON:</div>
+Inheritance diagram for ClusterIntersecting:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04442.png" border="0" usemap="#GeomFromGeoJSON_inherit__map" alt="Inheritance graph"/></div>
-<map name="GeomFromGeoJSON_inherit__map" id="GeomFromGeoJSON_inherit__map">
+<div class="center"><img src="a04442.png" border="0" usemap="#ClusterIntersecting_inherit__map" alt="Inheritance graph"/></div>
+<map name="ClusterIntersecting_inherit__map" id="ClusterIntersecting_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for GeomFromGeoJSON:</div>
+Collaboration diagram for ClusterIntersecting:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04441.png" border="0" usemap="#GeomFromGeoJSON_coll__map" alt="Collaboration graph"/></div>
-<map name="GeomFromGeoJSON_coll__map" id="GeomFromGeoJSON_coll__map">
+<div class="center"><img src="a04441.png" border="0" usemap="#ClusterIntersecting_coll__map" alt="Collaboration graph"/></div>
+<map name="ClusterIntersecting_coll__map" id="ClusterIntersecting_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -90,9 +87,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04443.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
 <tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Takes as input a geojson representation of a geometry and outputs a PostGIS geometry object. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
 
@@ -109,10 +104,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06555.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, and <a class="el" href="a06427.html#addbf30e6c0ad68fa34277d59a2c6eb5e">GeoJSONDatatype.URI</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08507.html#a64b3f7b5bcdec5b93820a9958c0622a3">GeomFromGeoJSONTest.testGeomFromGeoJSON()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                           {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                String geojson=v.getString();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                GeoJSONReader reader = <span class="keyword">new</span> GeoJSONReader();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                Geometry geom = reader.read(geojson);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        GeometryWrapper pointWrapper = GeometryWrapperFactory.createGeometry(geom, <span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span>+geom.getSRID()+<span class="stringliteral">&quot;&gt;&quot;</span>, GeoJSONDatatype.URI);  </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> pointWrapper.asNodeValue();  </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06595.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                           {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                GeometryWrapper geom1 = GeometryWrapper.extract(v);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="comment">//This function expects a set of geometries. Needs to be implemented!</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -121,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03777.html">geometry</a></li><li class="navelem"><a class="el" href="a03779.html">constructor</a></li><li class="navelem"><a class="el" href="a04443.html">GeomFromGeoJSON</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03801.html">geometry</a></li><li class="navelem"><a class="el" href="a04443.html">ClusterIntersecting</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

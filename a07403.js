@@ -1,10 +1,11 @@
 var a07403 =
 [
-    [ "Line", "a07403.html#a8fa18e7ff41439ed6ba66aea2bc2b397", null ],
-    [ "Line", "a07403.html#a2e3c352479dd77cbefcc5f1e1171069f", null ],
-    [ "intersectionPoint", "a07403.html#aa9ac321c595110d2f3105265a50857f0", null ],
-    [ "intersectionPoint", "a07403.html#a5a3669c0459aa06c9b5ca3c5e6a6c9d4", null ],
-    [ "isoscelesTriangleBase", "a07403.html#a6def33628adcc98ec6857642720a70cd", null ],
-    [ "nearestColinearPoint", "a07403.html#a16befa2ce61b161a3e4d338ebd39654c", null ],
-    [ "EPS", "a07403.html#aa53cb17a306a6462b4a5a5083bc8ccb6", null ]
+    [ "Setup", "a07403.html#ae0d0a5184ef101bd0fed0f1904ca7094", null ],
+    [ "get", "a07403.html#a5270a83b4b60ba9ccac3369d81d17692", null ],
+    [ "getEPSG", "a07403.html#a40798f96683725af80d75c04742b0a1f", null ],
+    [ "initialize", "a07403.html#a7eb4963cb16f3cd5d889227796e5245c", null ],
+    [ "setEPSG", "a07403.html#a8f77e69842d5f20bbfaa01f1e9e6d541", null ],
+    [ "shutdown", "a07403.html#a4cfa1af04e925fc21518fe880df9e408", null ],
+    [ "EPSG", "a07403.html#acbce7c4d6911636b5b423e88512e2e5b", null ],
+    [ "state", "a07403.html#a89f234133d3efe315836311cbf21c64b", null ]
 ];

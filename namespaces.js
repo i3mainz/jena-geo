@@ -1,9 +1,9 @@
 var namespaces =
 [
-    [ "com", "a03758.html", "a03758" ],
-    [ "de", "a03766.html", "a03766" ],
-    [ "geobuf", "a03817.html", null ],
-    [ "heigit", "a03819.html", "a03819" ],
-    [ "io", "a03822.html", "a03822" ],
-    [ "org", "a03833.html", "a03833" ]
+    [ "com", "a03782.html", "a03782" ],
+    [ "de", "a03790.html", "a03790" ],
+    [ "geobuf", "a03841.html", null ],
+    [ "heigit", "a03843.html", "a03843" ],
+    [ "io", "a03846.html", "a03846" ],
+    [ "org", "a03857.html", "a03857" ]
 ];

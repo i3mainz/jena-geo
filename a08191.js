@@ -1,16 +1,13 @@
 var a08191 =
 [
-    [ "MagneticModel", "a08191.html#a51396bbf497f4f198596df71b83e880c", null ],
-    [ "timelyModify", "a08191.html#a9f9bc36531648cfcd2b9a1a4f8173826", null ],
-    [ "CoefficientFileEndDate", "a08191.html#a17c7cf444ff24e0267a07abc44ff7144", null ],
-    [ "EditionDate", "a08191.html#ae65e62b66039116c9dc01b61e86e3d96", null ],
-    [ "epoch", "a08191.html#acd64b107b2f543872731cce5bdd2f167", null ],
-    [ "Main_Field_Coeff_G", "a08191.html#a3a59610e1ba11eea1a10aa2c26c9dce7", null ],
-    [ "Main_Field_Coeff_H", "a08191.html#aac48c68a4fd92206d6ee678f73a75a50", null ],
-    [ "ModelName", "a08191.html#a9040a807ab36de6d9fd568b14c1657d9", null ],
-    [ "nMax", "a08191.html#a23d9f7b5895f47c027059c43a4589e4f", null ],
-    [ "nMaxSecVar", "a08191.html#ac213db1f840d962e2a0b671676e8bff8", null ],
-    [ "Secular_Var_Coeff_G", "a08191.html#a5d5237677ba492a9d005d238fd6e7ad4", null ],
-    [ "Secular_Var_Coeff_H", "a08191.html#ac757d81d52186da26e6c8a655abd0f2a", null ],
-    [ "SecularVariationUsed", "a08191.html#add173407e0ae9c470d5ee0ecffc42756", null ]
+    [ "Integer", "a08191.html#a67ff506bdddeda5e0f9cc1b941237ea7", null ],
+    [ "compareTo", "a08191.html#a98a51d8ad1e5503c87f17878896c7d88", null ],
+    [ "ranks", "a08191.html#abb150dc13c316a480c404b1703c03990", null ],
+    [ "ranks", "a08191.html#a7e3ac659899192333adea39b87f41331", null ],
+    [ "ranks", "a08191.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
+    [ "ranks", "a08191.html#abb82129695e9a7b212788912ccc45539", null ],
+    [ "ranks", "a08191.html#ad3b1488acd654783f7a4dc632814441f", null ],
+    [ "ranks", "a08191.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
+    [ "ranks", "a08191.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
+    [ "value", "a08191.html#a899c1b74df7f8fda2fcd2c85d9185da8", null ]
 ];

@@ -1,5 +1,5 @@
 var a08947 =
 [
-    [ "testMinZ", "a08947.html#ad4ab49729c245a84edb5744801e95906", null ],
-    [ "testPoint", "a08947.html#af26f700ee129f846cac58735f6dcc380", null ]
+    [ "isocelesTriangle", "a08947.html#aa04dfbec745e2622b9f7646f8572e501", null ],
+    [ "notIsocelesTriangle", "a08947.html#a055d99fb63bcee37763ffcf4da9e0521", null ]
 ];

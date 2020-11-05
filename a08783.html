@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: SimplifyTest Class Reference</title>
+<title>jena-geo: NodeTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,52 +61,25 @@ $(document).ready(function(){initNavTree('a08783.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08780.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SimplifyTest Class Reference</div>  </div>
+<div class="title">NodeTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for SimplifyTest:</div>
+Collaboration diagram for NodeTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08781.png" border="0" usemap="#SimplifyTest_coll__map" alt="Collaboration graph"/></div>
-<map name="SimplifyTest_coll__map" id="SimplifyTest_coll__map">
+<div class="center"><img src="a08781.png" border="0" usemap="#NodeTest_coll__map" alt="Collaboration graph"/></div>
+<map name="NodeTest_coll__map" id="NodeTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aa558cd336665fb035373b5b11e212cb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08783.html#aa558cd336665fb035373b5b11e212cb9">testSimplify</a> ()</td></tr>
-<tr class="separator:aa558cd336665fb035373b5b11e212cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08783.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;LINESTRING(5 2, 3 8, 6 20, 7 25, 10 10)&quot;</td></tr>
+<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08783.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;POLYGON((0 0 1,0 5 1,5 0 1,0 0 1),(1 1 1,3 1 1,1 3 1,1 1 1))&quot;</td></tr>
 <tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa558cd336665fb035373b5b11e212cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa558cd336665fb035373b5b11e212cb9">&#9670;&nbsp;</a></span>testSimplify()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testSimplify </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a04951.html#a084e892d3d5d0a47151e34261fac8052">Simplify.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                   {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08783.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Simplify instance=<span class="keyword">new</span> Simplify();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(5.,2.));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(10.,10.));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue result = instance.exec(geometryLiteral,NodeValue.makeInteger(30),NodeValue.TRUE);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div><div class="ttc" id="a08783_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a08783.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.transform.SimplifyTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> SimplifyTest.java:18</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
@@ -118,7 +91,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testGeom =&quot;LINESTRING(5 2, 3 8, 6 20, 7 25, 10 10)&quot;</td>
+          <td class="memname">final String testGeom =&quot;POLYGON((0 0 1,0 5 1,5 0 1,0 0 1),(1 1 1,3 1 1,1 3 1,1 1 1))&quot;</td>
         </tr>
       </table>
   </td>
@@ -136,7 +109,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03766.html">de</a></li><li class="navelem"><a class="el" href="a03767.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03768.html">cs</a></li><li class="navelem"><a class="el" href="a03769.html">semgis</a></li><li class="navelem"><a class="el" href="a03770.html">arqextension</a></li><li class="navelem"><a class="el" href="a03926.html">test</a></li><li class="navelem"><a class="el" href="a03929.html">geometry</a></li><li class="navelem"><a class="el" href="a03934.html">transform</a></li><li class="navelem"><a class="el" href="a08783.html">SimplifyTest</a></li>
+    <li class="navelem"><a class="el" href="a03790.html">de</a></li><li class="navelem"><a class="el" href="a03791.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03792.html">cs</a></li><li class="navelem"><a class="el" href="a03793.html">semgis</a></li><li class="navelem"><a class="el" href="a03794.html">arqextension</a></li><li class="navelem"><a class="el" href="a03950.html">test</a></li><li class="navelem"><a class="el" href="a03953.html">geometry</a></li><li class="navelem"><a class="el" href="a03958.html">transform</a></li><li class="navelem"><a class="el" href="a08783.html">NodeTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
