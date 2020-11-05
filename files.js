@@ -129,10 +129,10 @@ var files =
     [ "AsBIL.java", "a01334.html", [
       [ "AsBIL", "a05839.html", null ]
     ] ],
-    [ "geometry/exporter/AsBinary.java", "a14304.html", [
+    [ "geometry/exporter/AsBinary.java", "a14300.html", [
       [ "AsBinary", "a04539.html", "a04539" ]
     ] ],
-    [ "raster/exporter/AsBinary.java", "a14307.html", [
+    [ "raster/exporter/AsBinary.java", "a14303.html", [
       [ "AsBinary", "a05843.html", "a05843" ]
     ] ],
     [ "AsBinaryTest.java", "a03023.html", [
@@ -488,11 +488,11 @@ var files =
     [ "CassiniOrMercator.java", "a02531.html", [
       [ "CassiniOrMercator", "a07707.html", "a07707" ]
     ] ],
-    [ "projection/CassiniSoldner.java", "a14310.html", [
+    [ "projection/CassiniSoldner.java", "a14306.html", [
       [ "CassiniSoldner", "a07711.html", "a07711" ],
       [ "Spherical", "a07715.html", "a07715" ]
     ] ],
-    [ "provider/CassiniSoldner.java", "a14313.html", [
+    [ "provider/CassiniSoldner.java", "a14309.html", [
       [ "CassiniSoldner", "a07759.html", "a07759" ]
     ] ],
     [ "CentimeterToMeter.java", "a01553.html", [
@@ -641,10 +641,10 @@ var files =
     [ "Complex.java", "a02330.html", [
       [ "Complex", "a07423.html", "a07423" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/geometry/attribute/ConcaveHull.java", "a14316.html", [
+    [ "de/hsmainz/cs/semgis/arqextension/geometry/attribute/ConcaveHull.java", "a14312.html", [
       [ "ConcaveHull", "a04287.html", "a04287" ]
     ] ],
-    [ "org/opensphere/geometry/algorithm/ConcaveHull.java", "a14319.html", [
+    [ "org/opensphere/geometry/algorithm/ConcaveHull.java", "a14315.html", [
       [ "ConcaveHull", "a08371.html", "a08371" ]
     ] ],
     [ "Configuration.java", "a02309.html", [
@@ -711,10 +711,10 @@ var files =
     [ "CovJSONDatatype.java", "a01757.html", [
       [ "CovJSONDatatype", "a06539.html", "a06539" ]
     ] ],
-    [ "algebra/Crop.java", "a14322.html", [
+    [ "algebra/Crop.java", "a14318.html", [
       [ "Crop", "a05475.html", "a05475" ]
     ] ],
-    [ "editor/Crop.java", "a14325.html", [
+    [ "editor/Crop.java", "a14321.html", [
       [ "Crop", "a05807.html", "a05807" ]
     ] ],
     [ "CropTest.java", "a03449.html", [
@@ -1161,10 +1161,10 @@ var files =
       [ "FractionalGridCoordinates", "a06615.html", "a06615" ],
       [ "Position", "a06619.html", "a06619" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/geometry/relation/FrechetDistance.java", "a14328.html", [
+    [ "de/hsmainz/cs/semgis/arqextension/geometry/relation/FrechetDistance.java", "a14324.html", [
       [ "FrechetDistance", "a04727.html", "a04727" ]
     ] ],
-    [ "heigit/ors/util/FrechetDistance.java", "a14331.html", [
+    [ "heigit/ors/util/FrechetDistance.java", "a14327.html", [
       [ "FrechetDistance", "a06447.html", "a06447" ]
     ] ],
     [ "FrechetDistanceTest.java", "a03104.html", [
@@ -1492,10 +1492,10 @@ var files =
     [ "ImageTilesCache.java", "a02060.html", [
       [ "ImageTilesCache", "a07019.html", "a07019" ]
     ] ],
-    [ "apache/sis/internal/coverage/j2d/ImageUtilities.java", "a14334.html", [
+    [ "apache/sis/internal/coverage/j2d/ImageUtilities.java", "a14330.html", [
       [ "ImageUtilities", "a06675.html", "a06675" ]
     ] ],
-    [ "geotoolkit/image/internal/ImageUtilities.java", "a14337.html", [
+    [ "geotoolkit/image/internal/ImageUtilities.java", "a14333.html", [
       [ "ImageUtilities", "a06915.html", "a06915" ]
     ] ],
     [ "ImageUtils.java", "a01988.html", [
@@ -1746,17 +1746,17 @@ var files =
     [ "KMLDatatype.java", "a01733.html", [
       [ "KMLDatatype", "a06495.html", "a06495" ]
     ] ],
-    [ "projection/Krovak.java", "a14340.html", [
+    [ "projection/Krovak.java", "a14336.html", [
       [ "Krovak", "a07727.html", "a07727" ]
     ] ],
-    [ "provider/Krovak.java", "a14343.html", [
+    [ "provider/Krovak.java", "a14339.html", [
       [ "Krovak", "a07775.html", "a07775" ]
     ] ],
-    [ "projection/LambertAzimuthalEqualArea.java", "a14346.html", [
+    [ "projection/LambertAzimuthalEqualArea.java", "a14342.html", [
       [ "LambertAzimuthalEqualArea", "a07731.html", "a07731" ],
       [ "Spherical", "a07735.html", "a07735" ]
     ] ],
-    [ "provider/LambertAzimuthalEqualArea.java", "a14349.html", [
+    [ "provider/LambertAzimuthalEqualArea.java", "a14345.html", [
       [ "LambertAzimuthalEqualArea", "a07779.html", "a07779" ]
     ] ],
     [ "LanczosInterpolation.java", "a02030.html", [
@@ -1796,10 +1796,10 @@ var files =
     [ "LengthTest.java", "a02954.html", [
       [ "LengthTest", "a08487.html", "a08487" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/linestring/attribute/LengthToPoint.java", "a14352.html", [
+    [ "de/hsmainz/cs/semgis/arqextension/linestring/attribute/LengthToPoint.java", "a14348.html", [
       [ "LengthToPoint", "a05051.html", "a05051" ]
     ] ],
-    [ "org/locationtech/jump/algorithm/LengthToPoint.java", "a14355.html", [
+    [ "org/locationtech/jump/algorithm/LengthToPoint.java", "a14351.html", [
       [ "LengthToPoint", "a08363.html", "a08363" ]
     ] ],
     [ "LengthToPointTest.java", "a03236.html", [
@@ -1859,10 +1859,10 @@ var files =
     [ "LineMerge.java", "a00821.html", [
       [ "LineMerge", "a05151.html", "a05151" ]
     ] ],
-    [ "internal/io/LineReader.java", "a14358.html", [
+    [ "internal/io/LineReader.java", "a14354.html", [
       [ "LineReader", "a07219.html", "a07219" ]
     ] ],
-    [ "io/LineReader.java", "a14361.html", [
+    [ "io/LineReader.java", "a14357.html", [
       [ "LineReader", "a07347.html", "a07347" ]
     ] ],
     [ "LineReaders.java", "a02282.html", [
@@ -2126,10 +2126,10 @@ var files =
     [ "MemSizeTest.java", "a03545.html", [
       [ "MemSizeTest", "a09283.html", "a09283" ]
     ] ],
-    [ "io/yaml/MetadataFactory.java", "a14364.html", [
+    [ "io/yaml/MetadataFactory.java", "a14360.html", [
       [ "MetadataFactory", "a07375.html", "a07375" ]
     ] ],
-    [ "metadata/MetadataFactory.java", "a14367.html", [
+    [ "metadata/MetadataFactory.java", "a14363.html", [
       [ "MetadataFactory", "a07487.html", "a07487" ]
     ] ],
     [ "MetadataUtilities.java", "a02378.html", [
@@ -2444,10 +2444,10 @@ var files =
     [ "NetCDFDatatype.java", "a01769.html", [
       [ "NetCDFDatatype", "a06555.html", "a06555" ]
     ] ],
-    [ "projection/NewZealandMapGrid.java", "a14370.html", [
+    [ "projection/NewZealandMapGrid.java", "a14366.html", [
       [ "NewZealandMapGrid", "a07739.html", "a07739" ]
     ] ],
-    [ "provider/NewZealandMapGrid.java", "a14373.html", [
+    [ "provider/NewZealandMapGrid.java", "a14369.html", [
       [ "NewZealandMapGrid", "a07795.html", "a07795" ]
     ] ],
     [ "NodataFilter.java", "a02093.html", [
@@ -2486,10 +2486,10 @@ var files =
     [ "NotifiedCopyOnWriteArrayList.java", "a02714.html", [
       [ "NotifiedCopyOnWriteArrayList", "a08071.html", "a08071" ]
     ] ],
-    [ "attribute/NotSameAlignmentReason.java", "a14376.html", [
+    [ "attribute/NotSameAlignmentReason.java", "a14372.html", [
       [ "NotSameAlignmentReason", "a05659.html", null ]
     ] ],
-    [ "relation/NotSameAlignmentReason.java", "a14379.html", [
+    [ "relation/NotSameAlignmentReason.java", "a14375.html", [
       [ "NotSameAlignmentReason", "a05963.html", "a05963" ]
     ] ],
     [ "NotTest.java", "a03497.html", [
@@ -2591,10 +2591,10 @@ var files =
     [ "OrTest.java", "a03503.html", [
       [ "OrTest", "a09227.html", "a09227" ]
     ] ],
-    [ "projection/Orthographic.java", "a14382.html", [
+    [ "projection/Orthographic.java", "a14378.html", [
       [ "Orthographic", "a07743.html", "a07743" ]
     ] ],
-    [ "provider/Orthographic.java", "a14385.html", [
+    [ "provider/Orthographic.java", "a14381.html", [
       [ "Orthographic", "a07799.html", "a07799" ]
     ] ],
     [ "OSMDatatype.java", "a01736.html", [
@@ -2613,49 +2613,49 @@ var files =
     [ "Overright.java", "a01520.html", [
       [ "Overright", "a06099.html", "a06099" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/envelope/package-info.java", "a14388.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/geometry/package-info.java", "a14391.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/linestring/package-info.java", "a14394.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/package-info.java", "a14397.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/point/package-info.java", "a14400.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/polygon/package-info.java", "a14403.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/raster/package-info.java", "a14406.html", null ],
-    [ "de/hsmainz/cs/semgis/arqextension/vocabulary/package-info.java", "a14409.html", null ],
-    [ "org/geotoolkit/factory/package-info.java", "a14412.html", null ],
-    [ "org/geotoolkit/gui/swing/tree/package-info.java", "a14415.html", null ],
-    [ "org/geotoolkit/image/internal/package-info.java", "a14418.html", null ],
-    [ "org/geotoolkit/image/jai/package-info.java", "a14421.html", null ],
-    [ "org/geotoolkit/image/package-info.java", "a14424.html", null ],
-    [ "org/geotoolkit/internal/image/jai/package-info.java", "a14427.html", null ],
-    [ "org/geotoolkit/internal/io/package-info.java", "a14430.html", null ],
-    [ "org/geotoolkit/internal/package-info.java", "a14433.html", null ],
-    [ "org/geotoolkit/internal/referencing/factory/package-info.java", "a14436.html", null ],
-    [ "org/geotoolkit/internal/referencing/package-info.java", "a14439.html", null ],
-    [ "org/geotoolkit/internal/simple/package-info.java", "a14442.html", null ],
-    [ "org/geotoolkit/internal/sql/package-info.java", "a14445.html", null ],
-    [ "org/geotoolkit/io/package-info.java", "a14448.html", null ],
-    [ "org/geotoolkit/io/wkt/package-info.java", "a14451.html", null ],
-    [ "org/geotoolkit/io/yaml/package-info.java", "a14454.html", null ],
-    [ "org/geotoolkit/lang/package-info.java", "a14457.html", null ],
-    [ "org/geotoolkit/math/package-info.java", "a14460.html", null ],
-    [ "org/geotoolkit/metadata/package-info.java", "a14463.html", null ],
-    [ "org/geotoolkit/parameter/package-info.java", "a14466.html", null ],
-    [ "org/geotoolkit/process/package-info.java", "a14469.html", null ],
-    [ "org/geotoolkit/referencing/crs/package-info.java", "a14472.html", null ],
-    [ "org/geotoolkit/referencing/cs/package-info.java", "a14475.html", null ],
-    [ "org/geotoolkit/referencing/factory/epsg/package-info.java", "a14478.html", null ],
-    [ "org/geotoolkit/referencing/factory/package-info.java", "a14481.html", null ],
-    [ "org/geotoolkit/referencing/factory/wkt/package-info.java", "a14484.html", null ],
-    [ "org/geotoolkit/referencing/operation/matrix/package-info.java", "a14487.html", null ],
-    [ "org/geotoolkit/referencing/operation/package-info.java", "a14490.html", null ],
-    [ "org/geotoolkit/referencing/operation/projection/package-info.java", "a14493.html", null ],
-    [ "org/geotoolkit/referencing/operation/provider/package-info.java", "a14496.html", null ],
-    [ "org/geotoolkit/referencing/operation/transform/package-info.java", "a14499.html", null ],
-    [ "org/geotoolkit/referencing/package-info.java", "a14502.html", null ],
-    [ "org/geotoolkit/resources/package-info.java", "a14505.html", null ],
-    [ "org/geotoolkit/util/collection/package-info.java", "a14508.html", null ],
-    [ "org/geotoolkit/util/logging/package-info.java", "a14511.html", null ],
-    [ "org/geotoolkit/util/package-info.java", "a14514.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/envelope/package-info.java", "a14384.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/geometry/package-info.java", "a14387.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/linestring/package-info.java", "a14390.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/package-info.java", "a14393.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/point/package-info.java", "a14396.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/polygon/package-info.java", "a14399.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/raster/package-info.java", "a14402.html", null ],
+    [ "de/hsmainz/cs/semgis/arqextension/vocabulary/package-info.java", "a14405.html", null ],
+    [ "org/geotoolkit/factory/package-info.java", "a14408.html", null ],
+    [ "org/geotoolkit/gui/swing/tree/package-info.java", "a14411.html", null ],
+    [ "org/geotoolkit/image/internal/package-info.java", "a14414.html", null ],
+    [ "org/geotoolkit/image/jai/package-info.java", "a14417.html", null ],
+    [ "org/geotoolkit/image/package-info.java", "a14420.html", null ],
+    [ "org/geotoolkit/internal/image/jai/package-info.java", "a14423.html", null ],
+    [ "org/geotoolkit/internal/io/package-info.java", "a14426.html", null ],
+    [ "org/geotoolkit/internal/package-info.java", "a14429.html", null ],
+    [ "org/geotoolkit/internal/referencing/factory/package-info.java", "a14432.html", null ],
+    [ "org/geotoolkit/internal/referencing/package-info.java", "a14435.html", null ],
+    [ "org/geotoolkit/internal/simple/package-info.java", "a14438.html", null ],
+    [ "org/geotoolkit/internal/sql/package-info.java", "a14441.html", null ],
+    [ "org/geotoolkit/io/package-info.java", "a14444.html", null ],
+    [ "org/geotoolkit/io/wkt/package-info.java", "a14447.html", null ],
+    [ "org/geotoolkit/io/yaml/package-info.java", "a14450.html", null ],
+    [ "org/geotoolkit/lang/package-info.java", "a14453.html", null ],
+    [ "org/geotoolkit/math/package-info.java", "a14456.html", null ],
+    [ "org/geotoolkit/metadata/package-info.java", "a14459.html", null ],
+    [ "org/geotoolkit/parameter/package-info.java", "a14462.html", null ],
+    [ "org/geotoolkit/process/package-info.java", "a14465.html", null ],
+    [ "org/geotoolkit/referencing/crs/package-info.java", "a14468.html", null ],
+    [ "org/geotoolkit/referencing/cs/package-info.java", "a14471.html", null ],
+    [ "org/geotoolkit/referencing/factory/epsg/package-info.java", "a14474.html", null ],
+    [ "org/geotoolkit/referencing/factory/package-info.java", "a14477.html", null ],
+    [ "org/geotoolkit/referencing/factory/wkt/package-info.java", "a14480.html", null ],
+    [ "org/geotoolkit/referencing/operation/matrix/package-info.java", "a14483.html", null ],
+    [ "org/geotoolkit/referencing/operation/package-info.java", "a14486.html", null ],
+    [ "org/geotoolkit/referencing/operation/projection/package-info.java", "a14489.html", null ],
+    [ "org/geotoolkit/referencing/operation/provider/package-info.java", "a14492.html", null ],
+    [ "org/geotoolkit/referencing/operation/transform/package-info.java", "a14495.html", null ],
+    [ "org/geotoolkit/referencing/package-info.java", "a14498.html", null ],
+    [ "org/geotoolkit/resources/package-info.java", "a14501.html", null ],
+    [ "org/geotoolkit/util/collection/package-info.java", "a14504.html", null ],
+    [ "org/geotoolkit/util/logging/package-info.java", "a14507.html", null ],
+    [ "org/geotoolkit/util/package-info.java", "a14510.html", null ],
     [ "Palette.java", "a02117.html", [
       [ "Palette", "a07119.html", "a07119" ]
     ] ],
@@ -2809,10 +2809,10 @@ var files =
     [ "PointToGridCoordinates.java", "a01829.html", [
       [ "PointToGridCoordinates", "a06643.html", "a06643" ]
     ] ],
-    [ "polygon/Polygon.java", "a14517.html", [
+    [ "polygon/Polygon.java", "a14513.html", [
       [ "Polygon", "a05419.html", "a05419" ]
     ] ],
-    [ "raster/Polygon.java", "a14520.html", [
+    [ "raster/Polygon.java", "a14516.html", [
       [ "Polygon", "a05907.html", "a05907" ]
     ] ],
     [ "PolygonFromText.java", "a01004.html", [
@@ -3052,10 +3052,10 @@ var files =
     [ "RemoveRepeatedPoints.java", "a00356.html", [
       [ "RemoveRepeatedPoints", "a04531.html", "a04531" ]
     ] ],
-    [ "editor/RemoveRepeatedPointsTest.java", "a14523.html", [
+    [ "editor/RemoveRepeatedPointsTest.java", "a14519.html", [
       [ "RemoveRepeatedPointsTest", "a08571.html", "a08571" ]
     ] ],
-    [ "transform/RemoveRepeatedPointsTest.java", "a14526.html", [
+    [ "transform/RemoveRepeatedPointsTest.java", "a14522.html", [
       [ "RemoveRepeatedPointsTest", "a08799.html", "a08799" ]
     ] ],
     [ "RemoveRing.java", "a01013.html", [
@@ -3262,10 +3262,10 @@ var files =
     [ "SetStartPointTest.java", "a03281.html", [
       [ "SetStartPointTest", "a08931.html", "a08931" ]
     ] ],
-    [ "image/internal/Setup.java", "a14529.html", [
+    [ "image/internal/Setup.java", "a14525.html", [
       [ "Setup", "a06943.html", "a06943" ]
     ] ],
-    [ "lang/Setup.java", "a14532.html", [
+    [ "lang/Setup.java", "a14528.html", [
       [ "Setup", "a07403.html", "a07403" ]
     ] ],
     [ "SetUpperLeft.java", "a01331.html", [
@@ -3301,7 +3301,7 @@ var files =
     [ "ShortestLine3D.java", "a00548.html", [
       [ "ShortestLine3D", "a04787.html", "a04787" ]
     ] ],
-    [ "relation/ShortestLineTest.java", "a14535.html", [
+    [ "relation/ShortestLineTest.java", "a14531.html", [
       [ "ShortestLineTest", "a08731.html", "a08731" ]
     ] ],
     [ "ShortestLineTest.java", "a03137.html", [
@@ -3439,11 +3439,11 @@ var files =
     [ "Static.java", "a02318.html", [
       [ "Static", "a07407.html", "a07407" ]
     ] ],
-    [ "projection/Stereographic.java", "a14538.html", [
+    [ "projection/Stereographic.java", "a14534.html", [
       [ "Stereographic", "a07747.html", "a07747" ],
       [ "Spherical", "a07751.html", "a07751" ]
     ] ],
-    [ "provider/Stereographic.java", "a14541.html", [
+    [ "provider/Stereographic.java", "a14537.html", [
       [ "Stereographic", "a07803.html", "a07803" ]
     ] ],
     [ "StorageEvent.java", "a02657.html", [
@@ -3772,10 +3772,10 @@ var files =
     [ "VersionControl.java", "a02828.html", [
       [ "VersionControl", "a08275.html", "a08275" ]
     ] ],
-    [ "util/Versioned.java", "a14544.html", [
+    [ "util/Versioned.java", "a14540.html", [
       [ "Versioned", "a08211.html", "a08211" ]
     ] ],
-    [ "version/Versioned.java", "a14547.html", [
+    [ "version/Versioned.java", "a14543.html", [
       [ "Versioned", "a08279.html", "a08279" ]
     ] ],
     [ "VersionHistory.java", "a02831.html", [

@@ -101,7 +101,7 @@ Collaboration diagram for Ranks:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08175.html">Any</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A rank element for the <a class="el" href="a14219.html">Comparable</a> type.  <a href="a08175.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A rank element for the <a class="el" href="a14215.html">Comparable</a> type.  <a href="a08175.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08199.html">Byte</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A rank element for the.  <a href="a08199.html#details">More...</a><br /></td></tr>
@@ -124,7 +124,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abb150dc13c316a480c404b1703c03990"><td class="memItemLeft" align="right" valign="top">static&lt; T extends <a class="el" href="a14219.html">Comparable</a>&lt; T &gt; int []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08171.html#abb150dc13c316a480c404b1703c03990">ranks</a> (final T[] source, final T[] target)</td></tr>
+<tr class="memitem:abb150dc13c316a480c404b1703c03990"><td class="memItemLeft" align="right" valign="top">static&lt; T extends <a class="el" href="a14215.html">Comparable</a>&lt; T &gt; int []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08171.html#abb150dc13c316a480c404b1703c03990">ranks</a> (final T[] source, final T[] target)</td></tr>
 <tr class="memdesc:abb150dc13c316a480c404b1703c03990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the given array and return their ranks.  <a href="#abb150dc13c316a480c404b1703c03990">More...</a><br /></td></tr>
 <tr class="separator:abb150dc13c316a480c404b1703c03990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3ac659899192333adea39b87f41331"><td class="memItemLeft" align="right" valign="top">static int []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08171.html#a7e3ac659899192333adea39b87f41331">ranks</a> (final double[] source, final double[] target)</td></tr>
@@ -169,7 +169,7 @@ Private Attributes</h2></td></tr>
 <p>Each method in this class sort the given array in the same way than <a class="el" href="">Arrays#sort(Object[])</a> does, and in addition return the index that each element had in the original array prior the sorting. </p>
 <p>Every methods are used in the same way:</p>
 <p>{ java int[] index = ranks(source, target); }</p>
-<p>where</p><div class="fragment"><div class="line">source </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line">target </div></div><!-- fragment --><p> are arrays of <a class="el" href="a14219.html">Comparable</a> elements or of a primitive type. The</p><div class="fragment"><div class="line">source </div></div><!-- fragment --><p> argument is the array to sort and is left untouched (unless</p><div class="fragment"><div class="line">target </div></div><!-- fragment --><p> is a reference to the same array). The</p><div class="fragment"><div class="line">target </div></div><!-- fragment --><p> argument, if non-null, is the array where to store the sorted values. </p>
+<p>where</p><div class="fragment"><div class="line">source </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line">target </div></div><!-- fragment --><p> are arrays of <a class="el" href="a14215.html">Comparable</a> elements or of a primitive type. The</p><div class="fragment"><div class="line">source </div></div><!-- fragment --><p> argument is the array to sort and is left untouched (unless</p><div class="fragment"><div class="line">target </div></div><!-- fragment --><p> is a reference to the same array). The</p><div class="fragment"><div class="line">target </div></div><!-- fragment --><p> argument, if non-null, is the array where to store the sorted values. </p>
 <p>The returned</p><div class="fragment"><div class="line"><a class="code" href="a08171.html#a850ad783b6f798003d1807d806cf2159">index</a> </div></div><!-- fragment --><p> array will have the same length than the</p><div class="fragment"><div class="line">source </div></div><!-- fragment --><p> array. Each element in the returned array is an index ranging from 0 inclusive to</p><div class="fragment"><div class="line">source.length </div></div><!-- fragment --><p> exclusive, such that</p><div class="fragment"><div class="line">target[i] </div></div><!-- fragment --><p> =</p><div class="fragment"><div class="line">source[<a class="code" href="a08171.html#a850ad783b6f798003d1807d806cf2159">index</a>[i]] </div></div><!-- fragment --><p> for all <em>i</em>. </p>
 <p>Invoking <code> #ranks(double[],double[]) ranks}(source, source)</code> is equivalent to invoking <code> Arrays::sort(double[]) Arrays.sort}(source)</code> in a less efficient way. The later should always be used (cloning the source array if needed) if the returned ranks are not used.</p>
 <dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
@@ -218,7 +218,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static &lt;T extends <a class="el" href="a14219.html">Comparable</a>&lt;T&gt; int [] ranks </td>
+          <td class="memname">static &lt;T extends <a class="el" href="a14215.html">Comparable</a>&lt;T&gt; int [] ranks </td>
           <td>(</td>
           <td class="paramtype">final T []&#160;</td>
           <td class="paramname"><em>source</em>, </td>

@@ -301,7 +301,7 @@ Collections::synchronizedSet(Set) </dd></dl>
           <td>(</td>
           <td class="paramtype">final E&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
-          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
+          <td> throws <a class="el" href="a14291.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -316,7 +316,7 @@ Collections::synchronizedSet(Set) </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the set did not already contain the specified element. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if the specified element is not of the expected type. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14291.html">IllegalArgumentException</a></td><td>if the specified element is not of the expected type. </td></tr>
     <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
   </table>
   </dd>
@@ -340,7 +340,7 @@ Collections::synchronizedSet(Set) </dd></dl>
           <td>(</td>
           <td class="paramtype">final Collection&lt;? extends E &gt;&#160;</td>
           <td class="paramname"><em>collection</em></td><td>)</td>
-          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
+          <td> throws <a class="el" href="a14291.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -355,7 +355,7 @@ Collections::synchronizedSet(Set) </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if this set changed as a result of the call. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if at least one element is not of the expected type. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14291.html">IllegalArgumentException</a></td><td>if at least one element is not of the expected type. </td></tr>
     <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
   </table>
   </dd>
@@ -405,8 +405,8 @@ Collections::synchronizedSet(Set) </dd></dl>
 <p class="reference">References <a class="el" href="a08011.html#a604630356717f716349899d57effa633">CheckedHashSet&lt; E &gt;.getLock()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a08011.html#aedbc13a303fdeb044c5973530b3e0a81">CheckedHashSet&lt; E &gt;.add()</a>, <a class="el" href="a08011.html#a241a58e42f845e1701f810bf4fa2a66f">CheckedHashSet&lt; E &gt;.addAll()</a>, <a class="el" href="a08011.html#ac8bb3912a3ce86b15842e79d0b421204">CheckedHashSet&lt; E &gt;.clear()</a>, <a class="el" href="a08015.html#a1fcb45e5d2428352eb36b487d1d4eea3">CheckedHashSet&lt; E &gt;.Iter.remove()</a>, <a class="el" href="a08011.html#a4ca842686fb8f2ed28d5b3ef7ef54fc3">CheckedHashSet&lt; E &gt;.remove()</a>, <a class="el" href="a08011.html#afb48c8819537b74316ee0ed2497bf659">CheckedHashSet&lt; E &gt;.removeAll()</a>, and <a class="el" href="a08011.html#a0f8822e4888fd3847d84101c9e5a9792">CheckedHashSet&lt; E &gt;.retainAll()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                               {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        assert <a class="code" href="a14283.html">Thread</a>.holdsLock(<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>());</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
-<div class="ttc" id="a14283_html"><div class="ttname"><a href="a14283.html">Thread</a></div></div>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                               {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        assert <a class="code" href="a14279.html">Thread</a>.holdsLock(<a class="code" href="a08011.html#a604630356717f716349899d57effa633">getLock</a>());</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div><div class="ttc" id="a08011_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a08011.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashSet.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:169</div></div>
+<div class="ttc" id="a14279_html"><div class="ttname"><a href="a14279.html">Thread</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -502,7 +502,7 @@ Collections::synchronizedSet(Set) </dd></dl>
           <td>(</td>
           <td class="paramtype">final E&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
-          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a></td>
+          <td> throws <a class="el" href="a14291.html">IllegalArgumentException</a></td>
         </tr>
       </table>
   </td>
@@ -526,7 +526,7 @@ Collections::synchronizedSet(Set) </dd></dl>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if the specified element can not be added to this set. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14291.html">IllegalArgumentException</a></td><td>if the specified element can not be added to this set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -534,7 +534,7 @@ Collections::synchronizedSet(Set) </dd></dl>
 <p class="reference">References <a class="el" href="a07863.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07867.html#a9515e0cdc98cdf0fd7add99cfe68a414">Errors.Keys.IllegalArgumentClass_3</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a08011.html#aedbc13a303fdeb044c5973530b3e0a81">CheckedHashSet&lt; E &gt;.add()</a>, and <a class="el" href="a08011.html#acb5e375a00adfed6847dd16bc9828eac">CheckedHashSet&lt; E &gt;.ensureValidCollection()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                                {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (element != null &amp;&amp; !<a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>.isInstance(element)) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    Errors.Keys.IllegalArgumentClass_3, <span class="stringliteral">&quot;element&quot;</span>, <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>, element.getClass()));</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div><div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                                {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (element != null &amp;&amp; !<a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>.isInstance(element)) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14291.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    Errors.Keys.IllegalArgumentClass_3, <span class="stringliteral">&quot;element&quot;</span>, <a class="code" href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">type</a>, element.getClass()));</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div><div class="ttc" id="a14291_html"><div class="ttname"><a href="a14291.html">IllegalArgumentException</a></div></div>
 <div class="ttc" id="a08011_html_ac9e76195a70b43169c2b8f5f75e9a675"><div class="ttname"><a href="a08011.html#ac9e76195a70b43169c2b8f5f75e9a675">org.geotoolkit.util.collection.CheckedHashSet.type</a></div><div class="ttdeci">final Class&lt; E &gt; type</div><div class="ttdoc">The element type. </div><div class="ttdef"><b>Definition:</b> CheckedHashSet.java:74</div></div>
 </div><!-- fragment -->
 </div>
@@ -553,7 +553,7 @@ Collections::synchronizedSet(Set) </dd></dl>
           <td>(</td>
           <td class="paramtype">final Collection&lt;? extends E &gt;&#160;</td>
           <td class="paramname"><em>collection</em></td><td>)</td>
-          <td> throws <a class="el" href="a14295.html">IllegalArgumentException</a></td>
+          <td> throws <a class="el" href="a14291.html">IllegalArgumentException</a></td>
         </tr>
       </table>
   </td>
@@ -572,7 +572,7 @@ Collections::synchronizedSet(Set) </dd></dl>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if at least one element can not be added to this set. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14291.html">IllegalArgumentException</a></td><td>if at least one element can not be added to this set. </td></tr>
   </table>
   </dd>
 </dl>

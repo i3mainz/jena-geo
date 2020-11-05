@@ -63,7 +63,7 @@ var hierarchy =
     [ "CircularityIndexTest", "a09031.html", null ],
     [ "CircumcentreTest", "a09035.html", null ],
     [ "Classification", "a06891.html", null ],
-    [ "Cloneable", "a14223.html", [
+    [ "Cloneable", "a14219.html", [
       [ "GeobufFeature", "a04031.html", null ],
       [ "Coordinate", "a08343.html", null ]
     ] ],
@@ -95,7 +95,7 @@ var hierarchy =
     [ "ColorModelFactory", "a06667.html", null ],
     [ "ColorModelPatch< T extends ColorModel >", "a06671.html", null ],
     [ "CompactnessRatioTest", "a08443.html", null ],
-    [ "Comparable", "a14219.html", [
+    [ "Comparable", "a14215.html", [
       [ "Ranks.Any< T extends Comparable< T >", "a08175.html", null ],
       [ "Ranks.Byte", "a08199.html", null ],
       [ "Ranks.Double", "a08179.html", null ],
@@ -125,11 +125,11 @@ var hierarchy =
         [ "NamedTreeNode", "a06863.html", null ]
       ] ]
     ] ],
-    [ "DefaultParameterDescriptor", "a14211.html", [
+    [ "DefaultParameterDescriptor", "a14207.html", [
       [ "DefaultParameterDescriptor< T >", "a07547.html", null ],
       [ "ExtendedParameterDescriptor< T >", "a08255.html", null ]
     ] ],
-    [ "DefaultParameterValue", "a14247.html", [
+    [ "DefaultParameterValue", "a14243.html", [
       [ "AbstractParameter.Bridge< T >", "a07539.html", null ]
     ] ],
     [ "DefaultTreeModel", null, [
@@ -160,7 +160,7 @@ var hierarchy =
     [ "EqualSRSTest", "a08675.html", null ],
     [ "EqualTopoTest", "a08679.html", null ],
     [ "ExampleWebService", "a04243.html", null ],
-    [ "Exception", "a14231.html", [
+    [ "Exception", "a14227.html", [
       [ "CannotEvaluateException", "a06271.html", null ],
       [ "ExtrapolationException", "a07431.html", null ],
       [ "ProcessException", "a07591.html", [
@@ -243,12 +243,12 @@ var hierarchy =
     [ "HexWKBDatatype.HexWKBTextSRS", "a06491.html", null ],
     [ "Histogram", "a07439.html", null ],
     [ "Host", "a07211.html", null ],
-    [ "IllegalArgumentException", "a14295.html", [
+    [ "IllegalArgumentException", "a14291.html", [
       [ "IllegalGridGeometryException", "a06639.html", [
         [ "DisjointExtentException", "a06611.html", null ]
       ] ]
     ] ],
-    [ "IllegalStateException", "a14215.html", [
+    [ "IllegalStateException", "a14211.html", [
       [ "IllegalCrsException", "a08115.html", null ]
     ] ],
     [ "InchToMeterTest", "a09479.html", null ],
@@ -311,7 +311,7 @@ var hierarchy =
     [ "LengthTest", "a08487.html", null ],
     [ "LengthToPoint", "a08363.html", null ],
     [ "LengthToPointTest", "a08871.html", null ],
-    [ "Line", "a14303.html", [
+    [ "Line", "a14299.html", [
       [ "Line", "a07443.html", null ]
     ] ],
     [ "LineFromEncodedPolylineTest", "a08895.html", null ],
@@ -494,10 +494,10 @@ var hierarchy =
     [ "ReverseTest", "a08803.html", null ],
     [ "RotateTest", "a08807.html", null ],
     [ "RotateY", "a04959.html", null ],
-    [ "Runnable", "a14299.html", [
+    [ "Runnable", "a14295.html", [
       [ "TileOpExecutor.Worker< RI extends RenderedImage, RT extends Raster, A >", "a06707.html", null ]
     ] ],
-    [ "RuntimeException", "a14207.html", [
+    [ "RuntimeException", "a14203.html", [
       [ "FactoryRegistryException", "a06803.html", [
         [ "FactoryNotFoundException", "a06799.html", null ],
         [ "RecursiveSearchException", "a06843.html", null ]
@@ -692,7 +692,7 @@ var hierarchy =
     [ "SystemOverride", "a07411.html", null ],
     [ "TemporalRange", "a06579.html", null ],
     [ "TemporalRangeWrapper", "a06587.html", null ],
-    [ "Thread", "a14283.html", [
+    [ "Thread", "a14279.html", [
       [ "DaemonThread", "a07155.html", [
         [ "ReferenceQueueConsumer< T >", "a07235.html", null ]
       ] ]
@@ -725,7 +725,7 @@ var hierarchy =
     [ "USYardToMeterTest", "a09579.html", null ],
     [ "UTMParameters", "a08243.html", null ],
     [ "VectorToRaster.ValueSource", "a08303.html", null ],
-    [ "VectorProcess", "a14243.html", [
+    [ "VectorProcess", "a14239.html", [
       [ "VectorToRaster", "a08295.html", null ]
     ] ],
     [ "Version", "a08271.html", null ],
@@ -916,12 +916,12 @@ var hierarchy =
         [ "CheckedHashMap< K, V >.SyncSet< E >", "a08007.html", null ]
       ] ]
     ] ],
-    [ "ColorModel", "a14155.html", null ],
+    [ "ColorModel", "a14151.html", null ],
     [ "ColorSpace", null, [
       [ "ScaledColorSpace", "a06691.html", null ]
     ] ],
-    [ "Comparable< T", "a13687.html", null ],
-    [ "Comparable< V", "a14183.html", null ],
+    [ "Comparable< T", "a13683.html", null ],
+    [ "Comparable< V", "a14179.html", null ],
     [ "Comparator", null, [
       [ "XCollections.Compare< T extends Comparable< T >", "a08095.html", null ],
       [ "XCollections.ValueComparator< K, V extends Comparable< V >", "a08099.html", null ],
@@ -1670,7 +1670,7 @@ var hierarchy =
       [ "DisjointSet< E >.Iter", "a08047.html", null ],
       [ "SingletonIterator< E >", "a08083.html", null ]
     ] ],
-    [ "Iterator< E", "a14087.html", null ],
+    [ "Iterator< E", "a14083.html", null ],
     [ "LenientComparable", null, [
       [ "GridExtent", "a06635.html", null ]
     ] ],
@@ -1732,9 +1732,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "Object", "a13607.html", null ],
-    [ "Object", "a13607.html", null ],
-    [ "Object", "a13607.html", null ],
+    [ "Object", "a13603.html", null ],
+    [ "Object", "a13603.html", null ],
+    [ "Object", "a13603.html", null ],
     [ "OperationDescriptorImpl", null, [
       [ "CombineDescriptor", "a07171.html", null ],
       [ "HysteresisDescriptor", "a07179.html", null ],
@@ -1789,14 +1789,13 @@ var hierarchy =
     [ "Range", null, [
       [ "DateRange", "a08103.html", null ]
     ] ],
-    [ "Raster", "a14135.html", null ],
+    [ "Raster", "a14131.html", null ],
     [ "Rectangle2D", null, [
       [ "InfiniteRectangle2D", "a06767.html", null ]
     ] ],
     [ "RejectedExecutionHandler", null, [
       [ "Threads", "a07307.html", null ]
     ] ],
-    [ "RenderedImage", "a13875.html", null ],
     [ "RenderedImage", null, [
       [ "PlanarImage", "a06651.html", [
         [ "ReshapedImage", "a06647.html", null ],
@@ -1806,7 +1805,8 @@ var hierarchy =
       [ "LargeRenderedImage", "a07027.html", null ],
       [ "RecolorRenderedImage", "a07131.html", null ]
     ] ],
-    [ "RenderedImage", "a13875.html", null ],
+    [ "RenderedImage", "a13871.html", null ],
+    [ "RenderedImage", "a13871.html", null ],
     [ "RenderingHints", null, [
       [ "Hints", "a06807.html", [
         [ "EmptyHints", "a06791.html", null ],

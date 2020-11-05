@@ -295,8 +295,8 @@ Collections::synchronizedMap(Map) </dd></dl>
 <p class="reference">References <a class="el" href="a07995.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a07995.html#ac8bb3912a3ce86b15842e79d0b421204">CheckedHashMap&lt; K, V &gt;.clear()</a>, <a class="el" href="a08003.html#a9fa83920ab9b6842df40ab62cc63e85b">CheckedHashMap&lt; K, V &gt;.Sync&lt; E &gt;.clear()</a>, <a class="el" href="a07995.html#ac9114ee6c67a2d99ddb5d7d6e8d84998">CheckedHashMap&lt; K, V &gt;.put()</a>, <a class="el" href="a07995.html#a40cf5a4b58aaecf63753b46f4c2c3045">CheckedHashMap&lt; K, V &gt;.putAll()</a>, <a class="el" href="a07995.html#af13ea149b55260d00e99a2030cea8034">CheckedHashMap&lt; K, V &gt;.remove()</a>, <a class="el" href="a07999.html#a1fcb45e5d2428352eb36b487d1d4eea3">CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt;.remove()</a>, <a class="el" href="a08003.html#a88af59c1b3d7d192f5fc6411409499e2">CheckedHashMap&lt; K, V &gt;.Sync&lt; E &gt;.remove()</a>, <a class="el" href="a08003.html#a3b9d65fa8894c7bbe278584733b77636">CheckedHashMap&lt; K, V &gt;.Sync&lt; E &gt;.removeAll()</a>, and <a class="el" href="a08003.html#aaf38effb65dd66e45fc70993322a1dba">CheckedHashMap&lt; K, V &gt;.Sync&lt; E &gt;.retainAll()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                               {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        assert <a class="code" href="a14283.html">Thread</a>.holdsLock(<a class="code" href="a07995.html#a604630356717f716349899d57effa633">getLock</a>());</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div><div class="ttc" id="a14283_html"><div class="ttname"><a href="a14283.html">Thread</a></div></div>
-<div class="ttc" id="a07995_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07995.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                               {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        assert <a class="code" href="a14279.html">Thread</a>.holdsLock(<a class="code" href="a07995.html#a604630356717f716349899d57effa633">getLock</a>());</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div><div class="ttc" id="a07995_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07995.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+<div class="ttc" id="a14279_html"><div class="ttname"><a href="a14279.html">Thread</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -426,7 +426,7 @@ Collections::synchronizedMap(Map) </dd></dl>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throws <a class="el" href="a14295.html">IllegalArgumentException</a></td>
+          <td></td><td> throws <a class="el" href="a14291.html">IllegalArgumentException</a></td>
         </tr>
       </table>
   </td>
@@ -445,7 +445,7 @@ Collections::synchronizedMap(Map) </dd></dl>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if the specified element is not of the expected type. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14291.html">IllegalArgumentException</a></td><td>if the specified element is not of the expected type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -453,7 +453,7 @@ Collections::synchronizedMap(Map) </dd></dl>
 <p class="reference">References <a class="el" href="a07863.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07867.html#a9515e0cdc98cdf0fd7add99cfe68a414">Errors.Keys.IllegalArgumentClass_3</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="a07995.html#ac9114ee6c67a2d99ddb5d7d6e8d84998">CheckedHashMap&lt; K, V &gt;.put()</a>, and <a class="el" href="a07995.html#a40cf5a4b58aaecf63753b46f4c2c3045">CheckedHashMap&lt; K, V &gt;.putAll()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (element!=null &amp;&amp; !type.isInstance(element)) {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14295.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    Errors.Keys.IllegalArgumentClass_3, <span class="stringliteral">&quot;element&quot;</span>, type, element.getClass()));</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div><div class="ttc" id="a14295_html"><div class="ttname"><a href="a14295.html">IllegalArgumentException</a></div></div>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (element!=null &amp;&amp; !type.isInstance(element)) {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14291.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    Errors.Keys.IllegalArgumentClass_3, <span class="stringliteral">&quot;element&quot;</span>, type, element.getClass()));</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div><div class="ttc" id="a14291_html"><div class="ttname"><a href="a14291.html">IllegalArgumentException</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -653,7 +653,7 @@ on floating point types}</h1>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throws <a class="el" href="a14295.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
+          <td></td><td> throws <a class="el" href="a14291.html">IllegalArgumentException</a>, UnsupportedOperationException</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -670,7 +670,7 @@ on floating point types}</h1>
 <dl class="section return"><dt>Returns</dt><dd>previous value associated with specified key, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a14295.html">IllegalArgumentException</a></td><td>if the key or the value is not of the expected type. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14291.html">IllegalArgumentException</a></td><td>if the key or the value is not of the expected type. </td></tr>
     <tr><td class="paramname">UnsupportedOperationException</td><td>if this collection is unmodifiable. </td></tr>
   </table>
   </dd>
