@@ -25,7 +25,7 @@ public class Abs extends FunctionBase2 {
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
 	     pbSubtracted.addSource(raster2.getRenderedImage()); 
-	     RenderedOp subtractedImage = JAI.create("abs",pbSubtracted);
+	     RenderedOp subtractedImage = JAI.create("absolute",pbSubtracted);
 			GridCoverageBuilder builder=new GridCoverageBuilder();
 			builder.setGridGeometry(raster.getGridGeometry());
 			builder.setNumBands(raster.getNumSampleDimensions());

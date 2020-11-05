@@ -5,18 +5,17 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
-import de.hsmainz.cs.semgis.arqextension.raster.algebra.And;
-import de.hsmainz.cs.semgis.arqextension.raster.algebra.Exp;
+import de.hsmainz.cs.semgis.arqextension.raster.algebra.DCT;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
-public class ExpTest extends SampleRasters {
+public class DCTTest extends SampleRasters {
 	
 	@Test
-	public void testExp() {
+	public void testIDCT() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
-		NodeValue covLiteral2 = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
-        Exp instance=new Exp();
+		NodeValue covLiteral2 = NodeValue.makeInteger(1);
+        DCT instance=new DCT();
         NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
         System.out.println(displayRasterSummary(wkbString4));

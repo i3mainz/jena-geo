@@ -6,31 +6,26 @@ import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
-import org.apache.jena.sparql.function.FunctionBase5;
+import org.apache.jena.sparql.function.FunctionBase2;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 import org.opengis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
-public class Crop extends FunctionBase5 {
+public class Constant extends FunctionBase2 {
 
 	@Override
-	public NodeValue exec(NodeValue v1, NodeValue v2,NodeValue v3,NodeValue v4, NodeValue v5) {
+	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage2D raster=wrapper.getXYGeometry();
-		Double x=v2.getDouble();
-		Double y=v3.getDouble();
-		Double width=v4.getDouble();
-		Double height=v5.getDouble();
-	     Integer rd1 = 0, rd2 = 0;
+		Double numberVal=v2.getDouble();
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
-	     pbSubtracted.add(x.floatValue()); 
-	     pbSubtracted.add(y.floatValue()); 
-	     pbSubtracted.add(width.floatValue());
-	     pbSubtracted.add(height.floatValue());
-	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
+	     pbSubtracted.add((float)raster.getRenderedImage().getWidth());
+	     pbSubtracted.add((float)raster.getRenderedImage().getHeight());
+	     pbSubtracted.add((Number[]) new Double[] {numberVal}); 
+	     RenderedOp subtractedImage = JAI.create("constant",pbSubtracted);
 			GridCoverageBuilder builder=new GridCoverageBuilder();
 			builder.setGridGeometry(raster.getGridGeometry());
 			builder.setNumBands(raster.getNumSampleDimensions());
@@ -67,5 +62,4 @@ public class Crop extends FunctionBase5 {
 					.asNodeValue();
 	     
 	} 
-
 }

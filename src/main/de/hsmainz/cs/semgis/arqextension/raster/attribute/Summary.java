@@ -32,9 +32,31 @@ public class Summary extends FunctionBase1 {
 		RenderedImage rendered;
 		try {
 			rendered = raster.getRenderedImage();
-        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + " pixels has " + raster.getSampleDimensions() + " bands and extent of " + raster.getGridGeometry().toString() + System.lineSeparator());
+        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() + 
+        		"MINX/Y: ["+rendered.getMinX()+","+rendered.getMinY()+"] pixels has " 
+        		+ raster.getSampleDimensions().length + " bands\n and extent of " +raster.getEnvelope().toString()
+        		+"\n and grid geometry of "+ raster.getGridGeometry() + System.lineSeparator());
+        builder.append("SampleModel: "+rendered.getSampleModel()+"\n");
+        builder.append("PropertyNames: "+rendered.getPropertyNames()+"\n");
+        builder.append("Tiles: "+rendered.getNumXTiles()+"/"+rendered.getNumYTiles()+"["+rendered.getTileWidth()+"/"+rendered.getTileHeight()+"] Offset: ["+rendered.getTileGridXOffset()+"/"+rendered.getTileGridYOffset()+"]\n");
+        builder.append("Dimensions: "+raster.getDimension()+"\n");
+        builder.append("DataElements: "+rendered.getData().getNumDataElements()+"\n");
+        builder.append("DataType: "+rendered.getData().getDataBuffer().getDataType()+"\n");
+        builder.append("ColorModel: "+rendered.getColorModel()+"\n");
+        builder.append("PixelData: \n");
+        for(int k=0;k<raster.getNumSampleDimensions();k++) {
+        	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
+        		System.out.print("| ");
+        		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
+        			System.out.print(rendered.getData().getSample(i, j, k)+" | ");
+        		}
+        		System.out.println("\n");
+        	}
+    		System.out.println("\n");
+        }
+        builder.append("CRS: "+raster.getGridGeometry().getCoordinateReferenceSystem().getName()+"\n");
         for (int i = 0; i < raster.getNumSampleDimensions(); i++) {
-            builder.append("band " + i + " of pixtype " + raster.getSampleDimension(i).getCategories() + " is in-db with NODATA value of " + raster.getSampleDimension(i).getNoDataValues() + System.lineSeparator());
+            builder.append("band " + i + " of pixtype " + raster.getSampleDimension(i).getScale() + " is in-db with NODATA value of " + raster.getSampleDimension(i).getNoDataValues() + System.lineSeparator());
         }
         return NodeValue.makeString(builder.toString());
 		} catch (CannotEvaluateException e) {

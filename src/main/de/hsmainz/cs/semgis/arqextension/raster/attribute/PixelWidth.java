@@ -12,8 +12,7 @@ public class PixelWidth extends FunctionBase1 {
 	public NodeValue exec(NodeValue v) {
         CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage2D raster=wrapper.getXYGeometry();
-		
-		throw new UnsupportedOperationException("Not supported yet.");
+		return NodeValue.makeInteger(raster.getRenderedImage().getTileWidth());
 	}
 
 }

@@ -15,9 +15,13 @@ public class SummaryTest extends SampleRasters {
 	@Test
 	public void testSummary() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-        Summary instance=new Summary();
+		NodeValue covLiteral2 = NodeValue.makeNode(wkbString2, HexWKBRastDatatype.INSTANCE);
+		Summary instance=new Summary();
         NodeValue expResult = NodeValue.makeString("");
         NodeValue result = instance.exec(covLiteral);
+        NodeValue result2 = instance.exec(covLiteral2);
+        System.out.println(result);
+        System.out.println(result2);
         assertNotEquals(expResult, result);
 	}
 

@@ -1,11 +1,14 @@
 package de.hsmainz.cs.semgis.arqextension.test.util;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.geometry.Envelope2D;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
@@ -13,6 +16,9 @@ import org.geotoolkit.coverage.grid.ViewType;
 import org.geotoolkit.referencing.crs.PredefinedCRS;
 
 import com.sun.jersey.core.util.Base64;
+
+import de.hsmainz.cs.semgis.arqextension.raster.attribute.Summary;
+import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
 public class SampleRasters {
 
@@ -126,6 +132,19 @@ public class SampleRasters {
 			rasters=new SampleRasters();
 		}
 		return rasters;
+	}
+	
+	public static String displayRasterSummary(String rast) {
+		NodeValue covLiteral = NodeValue.makeNode(rast, HexWKBRastDatatype.INSTANCE);
+		Summary instance=new Summary();
+        NodeValue result = instance.exec(covLiteral);
+        return result.asString();
+	}
+	
+	public static String displayRasterSummary(NodeValue covLiteral) {
+		Summary instance=new Summary();
+        NodeValue result = instance.exec(covLiteral);
+        return result.asString();
 	}
 	
 }

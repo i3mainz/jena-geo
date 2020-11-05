@@ -15,11 +15,13 @@ public class MaxTest extends SampleRasters {
 	
 	@Test
 	public void testMax() {
-		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-		NodeValue covLiteral2 = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral2 = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         Max instance=new Max();
-        NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
+        System.out.println(displayRasterSummary(wkbString4));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 

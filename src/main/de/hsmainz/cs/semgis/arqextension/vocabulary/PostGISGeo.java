@@ -12,20 +12,24 @@
  *******************************************************************************/
 package de.hsmainz.cs.semgis.arqextension.vocabulary;
 
+import java.lang.reflect.Field;
+
 import org.apache.jena.graph.Node;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.ResourceFactory;
 
 public class PostGISGeo {
-   public static final String uri = "http://www.opengis.net/ont/geosparql#";
+   public static String uri = "http://www.opengis.net/ont/geosparql#";
+   
+   public static String uri2 = "http://www.opengis.net/ont/geosparqlplus#";
 
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
 
    protected static final Property property(String local) {
-      return ResourceFactory.createProperty(uri, local);
+      return ResourceFactory.createProperty(uri2, local);
    }
 
    public static final Resource SpatialObject = resource("SpatialObject");
@@ -316,6 +320,8 @@ public class PostGISGeo {
    public static final Property st_rast_algebra_addconst = property("ST_AddConst");
    public static final Property st_rast_algebra_and = property("ST_And");
    public static final Property st_rast_algebra_andconst = property("ST_AndConst");
+   public static final Property st_rast_algebra_constant = property("ST_Constant");
+   public static final Property st_rast_algebra_dct = property("ST_DCT");
    public static final Property st_rast_algebra_div = property("ST_Div");
    public static final Property st_rast_algebra_divconst = property("ST_DivConst");
    public static final Property st_rast_algebra_log = property("ST_Log");
@@ -502,7 +508,14 @@ public static final String XYZASCII = "XYZASCII";
 
 
 
-
+public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException {
+	PostGISGeo go=new PostGISGeo();
+	go.uri="http://www.opengis.net/ont/geosparqlplus#";
+    for (Field field : go.getClass().getDeclaredFields()) {
+        //field.setAccessible(true); // if you want to modify private fields
+        System.out.println("<"+field.get(go)+"> rdf:type geo2:Function ; rdfs:label \""+field.getName()+"\" . ");
+    }
+}
 
 
 

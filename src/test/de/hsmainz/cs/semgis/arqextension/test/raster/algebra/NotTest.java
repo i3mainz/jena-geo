@@ -16,10 +16,12 @@ public class NotTest extends SampleRasters {
 	
 	@Test
 	public void testNot() {
-		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         Not instance=new Not();
-        NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral);
+        System.out.println(displayRasterSummary(wkbString4));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 

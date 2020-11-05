@@ -1,36 +1,45 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
 import java.awt.image.renderable.ParameterBlock;
+import java.math.BigInteger;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
-import org.apache.jena.sparql.function.FunctionBase5;
+import org.apache.jena.sparql.function.FunctionBase3;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
 import org.opengis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
-public class Crop extends FunctionBase5 {
+public class Binarize extends FunctionBase3  {
 
 	@Override
-	public NodeValue exec(NodeValue v1, NodeValue v2,NodeValue v3,NodeValue v4, NodeValue v5) {
+	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
 		GridCoverage2D raster=wrapper.getXYGeometry();
-		Double x=v2.getDouble();
-		Double y=v3.getDouble();
-		Double width=v4.getDouble();
-		Double height=v5.getDouble();
-	     Integer rd1 = 0, rd2 = 0;
+		BigInteger bandnum=v2.getInteger();
+		Double constval=v3.getDouble();
+		double[] consts=new double[raster.getNumSampleDimensions()];
+		if(bandnum.intValue()<0) {
+			for(int i=0;i<consts.length;i++) {
+				consts[i]=constval;
+			}
+		}else {
+			for(int i=0;i<consts.length;i++) {
+				if(i==bandnum.intValue()) {
+					consts[i]=constval;
+				}else {
+					consts[i]=1;
+				}
+			}
+		}
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
 	     pbSubtracted.addSource(raster.getRenderedImage()); 
-	     pbSubtracted.add(x.floatValue()); 
-	     pbSubtracted.add(y.floatValue()); 
-	     pbSubtracted.add(width.floatValue());
-	     pbSubtracted.add(height.floatValue());
-	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
+	     pbSubtracted.add(constval);
+	     RenderedOp subtractedImage = JAI.create("binarize",pbSubtracted);
 			GridCoverageBuilder builder=new GridCoverageBuilder();
 			builder.setGridGeometry(raster.getGridGeometry());
 			builder.setNumBands(raster.getNumSampleDimensions());

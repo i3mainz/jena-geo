@@ -16,11 +16,13 @@ public class XorTest extends SampleRasters {
 	
 	@Test
 	public void testXor() {
-		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
-		NodeValue covLiteral2 = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral2 = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         Xor instance=new Xor();
-        NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+        NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
+        System.out.println(displayRasterSummary(wkbString4));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 

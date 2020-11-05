@@ -50,6 +50,8 @@ public class AddConst extends FunctionBase3  {
 			builder.setGridGeometry(raster.getGridGeometry());
 			builder.setNumBands(raster.getNumSampleDimensions());
 			builder.setExtent(raster.getGridGeometry().getExtent());
+			builder.setGridToCRS(raster.getGridGeometry().getGridToCRS());
+			builder.setSampleDimensions(raster.getSampleDimensions());
 			builder.setRenderedImage(subtractedImage);
 			/*final SampleDimension sd = new SampleDimension.Builder().setName("t")
 					.addQuantitative(

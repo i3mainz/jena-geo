@@ -5,18 +5,18 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
 
-import de.hsmainz.cs.semgis.arqextension.raster.algebra.And;
-import de.hsmainz.cs.semgis.arqextension.raster.algebra.Exp;
+import de.hsmainz.cs.semgis.arqextension.raster.algebra.Min;
+import de.hsmainz.cs.semgis.arqextension.raster.algebra.MinFilter;
 import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.HexWKBRastDatatype;
 
-public class ExpTest extends SampleRasters {
-	
+public class MinFilterTest extends SampleRasters {
+
 	@Test
-	public void testExp() {
+	public void testMinFilter() {
 		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
 		NodeValue covLiteral2 = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
-        Exp instance=new Exp();
+        MinFilter instance=new MinFilter();
         NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
         System.out.println(displayRasterSummary(wkbString4));
@@ -24,4 +24,5 @@ public class ExpTest extends SampleRasters {
         assertNotEquals(expResult, result);
 	}
 
+	
 }

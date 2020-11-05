@@ -16,12 +16,14 @@ public class MultConstTest extends SampleRasters {
 	
 	@Test
 	public void testMultConst() {
-		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue covLiteral2 = NodeValue.makeInteger(10);
         NodeValue bandnum = NodeValue.makeInteger(0);
         MultConst instance=new MultConst();
-		NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,bandnum,covLiteral2);
+        System.out.println(displayRasterSummary(wkbString4));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 	

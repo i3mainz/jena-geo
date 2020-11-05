@@ -22,6 +22,8 @@ public class AddConstTest extends SampleRasters {
         AddConst instance=new AddConst();
         NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,bandnum,covLiteral2);
+        System.out.println(displayRasterSummary(wkbString1));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 

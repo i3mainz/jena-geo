@@ -22,6 +22,8 @@ public class SubtractTest extends SampleRasters {
         Subtract instance=new Subtract();
         NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
+        System.out.println(displayRasterSummary(wkbString4));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 

@@ -21,6 +21,10 @@ public class AddTest extends SampleRasters {
         Add instance=new Add();
 		NodeValue expResult = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,covLiteral2);
+        System.out.println(wkbString1);
+        System.out.println(result);
+        System.out.println(displayRasterSummary(wkbString1));
+        System.out.println(displayRasterSummary(result));
         assertNotEquals(expResult, result);
 	}
 	
