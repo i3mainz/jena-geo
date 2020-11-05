@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Segmentize Class Reference</title>
+<title>jena-geo: AddPoint Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,24 @@ $(document).ready(function(){initNavTree('a05055.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05052.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Segmentize Class Reference</div>  </div>
+<div class="title">AddPoint Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Add a point to a LineString.  
+ <a href="a05055.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for Segmentize:</div>
+Inheritance diagram for AddPoint:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05054.png" border="0" usemap="#Segmentize_inherit__map" alt="Inheritance graph"/></div>
-<map name="Segmentize_inherit__map" id="Segmentize_inherit__map">
+<div class="center"><img src="a05054.png" border="0" usemap="#AddPoint_inherit__map" alt="Inheritance graph"/></div>
+<map name="AddPoint_inherit__map" id="AddPoint_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Segmentize:</div>
+Collaboration diagram for AddPoint:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05053.png" border="0" usemap="#Segmentize_coll__map" alt="Collaboration graph"/></div>
-<map name="Segmentize_coll__map" id="Segmentize_coll__map">
+<div class="center"><img src="a05053.png" border="0" usemap="#AddPoint_coll__map" alt="Collaboration graph"/></div>
+<map name="AddPoint_coll__map" id="AddPoint_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -86,42 +89,10 @@ Collaboration diagram for Segmentize:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af5337fd861ad4940c5025973eef782d5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05055.html#af5337fd861ad4940c5025973eef782d5">exec</a> (NodeValue arg0, NodeValue arg1)</td></tr>
 <tr class="separator:af5337fd861ad4940c5025973eef782d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7c7f3b0cbd4537cc2b08f691ec4da99"><td class="memItemLeft" align="right" valign="top">List&lt; LineString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05055.html#af7c7f3b0cbd4537cc2b08f691ec4da99">createSegments</a> (<a class="el" href="a06423.html">GeometryWrapper</a> geometry, double segmentLength)  throws NoSuchAuthorityCodeException, FactoryException </td></tr>
-<tr class="separator:af7c7f3b0cbd4537cc2b08f691ec4da99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af7c7f3b0cbd4537cc2b08f691ec4da99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7c7f3b0cbd4537cc2b08f691ec4da99">&#9670;&nbsp;</a></span>createSegments()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;LineString&gt; createSegments </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a06423.html">GeometryWrapper</a>&#160;</td>
-          <td class="paramname"><em>geometry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>segmentLength</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws NoSuchAuthorityCodeException, FactoryException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08171.html#a15037c4d5389e3f03ce05dfce3649d67">Coordinate.distance()</a>, <a class="el" href="a08171.html#af88b946fb90d5f08b5fb740c70e98c10">Coordinate.x</a>, and <a class="el" href="a08171.html#ab927965981178aa1fba979a37168db2a">Coordinate.y</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a05055.html#af5337fd861ad4940c5025973eef782d5">Segmentize.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                                                                                                                 {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        GeometryFactory geometryFactory = <span class="keyword">new</span> GeometryFactory(<span class="keyword">new</span> PrecisionModel(PrecisionModel.FLOATING));</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        Geometry track = geometry.getXYGeometry();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        SRSInfo srsInfo = geometry.getSrsInfo();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        List&lt;Coordinate&gt; coordinates = <span class="keyword">new</span> ArrayList&lt;&gt;(track.getCoordinates().length);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Collections.addAll(coordinates, track.getCoordinates());</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">double</span> accumulatedLength = 0;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        List&lt;Coordinate&gt; lastSegment = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        List&lt;LineString&gt; segments = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        Iterator&lt;Coordinate&gt; itCoordinates = coordinates.iterator();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; itCoordinates.hasNext() &amp;&amp; i &lt; coordinates.size() - 1; i++) {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            Coordinate c1 = coordinates.get(i);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            Coordinate c2 = coordinates.get(i + 1);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            lastSegment.add(c1);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">double</span> length;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">//Check for geographic or planar distance.</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">//Does the rest of the calculation take into consideration geographic is non-linear in X/Y relationship?</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (srsInfo.isGeographic()) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                length = GreatCircleDistance.haversineFormula(c1, c2);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                length = c1.distance(c2);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span> (length + accumulatedLength &gt;= segmentLength) {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordtype">double</span> offsetLength = segmentLength - accumulatedLength;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordtype">double</span> ratio = offsetLength / length;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordtype">double</span> dx = c2.x - c1.x;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordtype">double</span> dy = c2.y - c1.y;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                Coordinate segmentationPoint = <span class="keyword">new</span> Coordinate(c1.x + (dx * ratio), c1.y + (dy * ratio));</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                lastSegment.add(segmentationPoint); <span class="comment">// Last point of the segment is the segmentation point</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                segments.add(geometryFactory.createLineString(lastSegment.toArray(<span class="keyword">new</span> Coordinate[lastSegment.size()])));</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                lastSegment = <span class="keyword">new</span> ArrayList&lt;&gt;(); <span class="comment">// Resets the variable since a new segment will be built</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                accumulatedLength = 0D;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                coordinates.add(i + 1, segmentationPoint);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                accumulatedLength += length;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        lastSegment.add(coordinates.get(coordinates.size() - 1)); <span class="comment">// Because the last one is never added in the loop above</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        segments.add(geometryFactory.createLineString(lastSegment.toArray(<span class="keyword">new</span> Coordinate[lastSegment.size()])));</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> segments;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Add a point to a LineString. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af5337fd861ad4940c5025973eef782d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5337fd861ad4940c5025973eef782d5">&#9670;&nbsp;</a></span>exec()</h2>
 
@@ -148,9 +119,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a05055.html#af7c7f3b0cbd4537cc2b08f691ec4da99">Segmentize.createSegments()</a>, <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06423.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, and <a class="el" href="a06423.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                          {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">double</span> segmentLength = arg1.getDouble();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            List&lt;LineString&gt; linestrings = <a class="code" href="a05055.html#af7c7f3b0cbd4537cc2b08f691ec4da99">createSegments</a>(geometry, segmentLength);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> GeometryWrapperFactory.createMultiLineString(linestrings, geometry.getSrsURI(),geometry.getGeometryDatatypeURI()).asNodeValue();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException ex) {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div><div class="ttc" id="a05055_html_af7c7f3b0cbd4537cc2b08f691ec4da99"><div class="ttname"><a href="a05055.html#af7c7f3b0cbd4537cc2b08f691ec4da99">de.hsmainz.cs.semgis.arqextension.linestring.transform.Segmentize.createSegments</a></div><div class="ttdeci">List&lt; LineString &gt; createSegments(GeometryWrapper geometry, double segmentLength)</div><div class="ttdef"><b>Definition:</b> Segmentize.java:52</div></div>
-</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06511.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06511.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>, <a class="el" href="a06511.html#a4eeeb44dd9300963ec4f50a73598a5d3">GeometryWrapper.getSRID()</a>, and <a class="el" href="a06511.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                              {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            GeometryWrapper geom1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            GeometryWrapper geom2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            GeometryWrapper transGeom2 = geom2.transform(geom1.getSRID());</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">if</span> (geom1.getParsingGeometry() instanceof LineString &amp;&amp; geom2.getParsingGeometry() instanceof Point) {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                Coordinate[] coords=geom1.getParsingGeometry().getCoordinates();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                Point point = ((Point) transGeom2.getParsingGeometry());</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                List&lt;Coordinate&gt; newcoords=Arrays.asList(coords);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                newcoords.add(point.getCoordinate());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createLineString(newcoords, <span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span>+geom1.getSRID()+<span class="stringliteral">&quot;&gt;&quot;</span>, WKTDatatype.URI);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> lineStringWrapper.asNodeValue();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;First argument is not a LineString or second argument is not a point&quot;</span>, null);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException | TransformException ex) {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -159,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03700.html">linestring</a></li><li class="navelem"><a class="el" href="a03705.html">transform</a></li><li class="navelem"><a class="el" href="a05055.html">Segmentize</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03760.html">linestring</a></li><li class="navelem"><a class="el" href="a03762.html">editor</a></li><li class="navelem"><a class="el" href="a05055.html">AddPoint</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

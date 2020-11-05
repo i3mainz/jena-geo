@@ -1,5 +1,6 @@
 var a08667 =
 [
-    [ "testSwapOrdinates", "a08667.html#afb4577949dbe6ea13a5d8c00afd1c339", null ],
-    [ "testPolygon", "a08667.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testDensify", "a08667.html#a94a17603d200a0a1f4817b4687ee592d", null ],
+    [ "densified", "a08667.html#a2286b0f7822c7fda647fa426d8177283", null ],
+    [ "isocelesTriangle", "a08667.html#aa04dfbec745e2622b9f7646f8572e501", null ]
 ];

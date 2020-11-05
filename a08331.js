@@ -1,5 +1,5 @@
 var a08331 =
 [
-    [ "testMinimumClearanceLine", "a08331.html#a61877f78d0d415e1cd48f477474017e6", null ],
-    [ "testPolygon", "a08331.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testXMin", "a08331.html#aaa132c80f0f011e968829153a96b9402", null ],
+    [ "testLineString", "a08331.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

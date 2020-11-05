@@ -1,6 +1,5 @@
 var a08415 =
 [
-    [ "testAsGeobuf", "a08415.html#a3ff195dff03851a6d4c46d30a53b61fd", null ],
-    [ "geoHashString", "a08415.html#a17fb1516a3866b5917d2495998305fb3", null ],
-    [ "testGeometry", "a08415.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testMinimumBoundingRadius", "a08415.html#a5667209a5677a7711029bc6a83d59d32", null ],
+    [ "testPolygon", "a08415.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

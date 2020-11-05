@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MapProjectionDescriptor Class Reference</title>
+<title>jena-geo: Assertions Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,95 +61,87 @@ $(document).ready(function(){initNavTree('a07619.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
-<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a07616.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MapProjectionDescriptor Class Reference</div>  </div>
+<div class="title">Assertions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Map projection parameters, with special processing for alternative ways to express the ellipsoid axis length and the standard parallels.  
+<p>Static methods for assertions.  
  <a href="a07619.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for MapProjectionDescriptor:</div>
+Inheritance diagram for Assertions:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07618.png" border="0" usemap="#MapProjectionDescriptor_inherit__map" alt="Inheritance graph"/></div>
-<map name="MapProjectionDescriptor_inherit__map" id="MapProjectionDescriptor_inherit__map">
+<div class="center"><img src="a07618.png" border="0" usemap="#Assertions_inherit__map" alt="Inheritance graph"/></div>
+<map name="Assertions_inherit__map" id="Assertions_inherit__map">
+<area shape="rect" id="node2" href="a07323.html" title="Parent of classes that contain only static utility methods. " alt="" coords="19,5,75,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for MapProjectionDescriptor:</div>
+Collaboration diagram for Assertions:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07617.png" border="0" usemap="#MapProjectionDescriptor_coll__map" alt="Collaboration graph"/></div>
-<map name="MapProjectionDescriptor_coll__map" id="MapProjectionDescriptor_coll__map">
+<div class="center"><img src="a07617.png" border="0" usemap="#Assertions_coll__map" alt="Collaboration graph"/></div>
+<map name="Assertions_coll__map" id="Assertions_coll__map">
+<area shape="rect" id="node2" href="a07323.html" title="Parent of classes that contain only static utility methods. " alt="" coords="5,5,61,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ac43eb499c7c1c4a6eac8be435c995ac1"><td class="memItemLeft" align="right" valign="top">GeneralParameterDescriptor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#ac43eb499c7c1c4a6eac8be435c995ac1">descriptor</a> (String name)  throws ParameterNotFoundException </td></tr>
-<tr class="memdesc:ac43eb499c7c1c4a6eac8be435c995ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameter descriptor for the given name.  <a href="#ac43eb499c7c1c4a6eac8be435c995ac1">More...</a><br /></td></tr>
-<tr class="separator:ac43eb499c7c1c4a6eac8be435c995ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f22f2aebb4b358b169f84e224598222"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a7f22f2aebb4b358b169f84e224598222">createValue</a> ()</td></tr>
-<tr class="memdesc:a7f22f2aebb4b358b169f84e224598222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameter group implementation which can handle the "invisible" parameters.  <a href="#a7f22f2aebb4b358b169f84e224598222">More...</a><br /></td></tr>
-<tr class="separator:a7f22f2aebb4b358b169f84e224598222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:a20cd87c223c269a9caa2600a21ee5906"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a20cd87c223c269a9caa2600a21ee5906">checkTransform</a> (final double[] expected, final int offset, final double x, final double y, final double tolerance)  throws ProjectionException     </td></tr>
+<tr class="memdesc:a20cd87c223c269a9caa2600a21ee5906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if transform using spherical formulas produces the same result than ellipsoidal formulas.  <a href="#a20cd87c223c269a9caa2600a21ee5906">More...</a><br /></td></tr>
+<tr class="separator:a20cd87c223c269a9caa2600a21ee5906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ff646382b06bdac00750b8822b936a"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#ad8ff646382b06bdac00750b8822b936a">checkTransform</a> (final double[] expected, final int offset, final double x, final double y)  throws ProjectionException     </td></tr>
+<tr class="memdesc:ad8ff646382b06bdac00750b8822b936a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default version of <a class="el" href="">checkTransform(double,double,double[],int)</a>.  <a href="#ad8ff646382b06bdac00750b8822b936a">More...</a><br /></td></tr>
+<tr class="separator:ad8ff646382b06bdac00750b8822b936a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f01a7acdf7c6ea20a9003b2e01f75c6"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">checkInverseTransform</a> (final double[] expected, final int offset, final double λ, final double φ, final double tolerance)  throws ProjectionException     </td></tr>
+<tr class="memdesc:a8f01a7acdf7c6ea20a9003b2e01f75c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if inverse transform using spherical formulas produces the same result than ellipsoidal formulas.  <a href="#a8f01a7acdf7c6ea20a9003b2e01f75c6">More...</a><br /></td></tr>
+<tr class="separator:a8f01a7acdf7c6ea20a9003b2e01f75c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7344d9531343fe1df053612dcddd8f7"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#ae7344d9531343fe1df053612dcddd8f7">checkInverseTransform</a> (final double[] expected, final int offset, final double λ, final double φ)  throws ProjectionException     </td></tr>
+<tr class="memdesc:ae7344d9531343fe1df053612dcddd8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default version of <a class="el" href="">checkInverseTransform(double,double,double[],int,double)</a>.  <a href="#ae7344d9531343fe1df053612dcddd8f7">More...</a><br /></td></tr>
+<tr class="separator:ae7344d9531343fe1df053612dcddd8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389504a0d09f6355dbd35c0ef5004414"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a389504a0d09f6355dbd35c0ef5004414">checkDerivative</a> (final Matrix spherical, final Matrix ellipsoidal)  throws ProjectionException     </td></tr>
+<tr class="memdesc:a389504a0d09f6355dbd35c0ef5004414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if derivatives using spherical formulas produces the same result than ellipsoidal formulas.  <a href="#a389504a0d09f6355dbd35c0ef5004414">More...</a><br /></td></tr>
+<tr class="separator:a389504a0d09f6355dbd35c0ef5004414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a73d93c16976e64eee0a62ad03b3796b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a73d93c16976e64eee0a62ad03b3796b8">MapProjectionDescriptor</a> (final Map&lt; String,?&gt; properties, final ParameterDescriptor&lt;?&gt;[] parameters, final int <a class="el" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a>)</td></tr>
-<tr class="memdesc:a73d93c16976e64eee0a62ad03b3796b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new parameter descriptor from the given properties and parameters.  <a href="#a73d93c16976e64eee0a62ad03b3796b8">More...</a><br /></td></tr>
-<tr class="separator:a73d93c16976e64eee0a62ad03b3796b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad87d114e0670dedd85ebd04517ea64ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#ad87d114e0670dedd85ebd04517ea64ec">Assertions</a> ()</td></tr>
+<tr class="memdesc:ad87d114e0670dedd85ebd04517ea64ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allows instantiation of this class.  <a href="#ad87d114e0670dedd85ebd04517ea64ec">More...</a><br /></td></tr>
+<tr class="separator:ad87d114e0670dedd85ebd04517ea64ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:a65bc8427ed3cfa4563a16696a3c265e7"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a></td></tr>
-<tr class="memdesc:a65bc8427ed3cfa4563a16696a3c265e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise combination of.  <a href="#a65bc8427ed3cfa4563a16696a3c265e7">More...</a><br /></td></tr>
-<tr class="separator:a65bc8427ed3cfa4563a16696a3c265e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
-Static Package Attributes</h2></td></tr>
-<tr class="memitem:a353e51f3770e37635d1a6c5cba2423aa"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a> = &quot;earth_radius&quot;</td></tr>
-<tr class="memdesc:a353e51f3770e37635d1a6c5cba2423aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter name for the Earth radius.  <a href="#a353e51f3770e37635d1a6c5cba2423aa">More...</a><br /></td></tr>
-<tr class="separator:a353e51f3770e37635d1a6c5cba2423aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e426a819786ffc5a6cd91eddaedecc"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#ad7e426a819786ffc5a6cd91eddaedecc">INVERSE_FLATTENING</a> = &quot;inverse_flattening&quot;</td></tr>
-<tr class="memdesc:ad7e426a819786ffc5a6cd91eddaedecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter name for inverse flattening.  <a href="#ad7e426a819786ffc5a6cd91eddaedecc">More...</a><br /></td></tr>
-<tr class="separator:ad7e426a819786ffc5a6cd91eddaedecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada1f9eb74466df687ad81621f878b862"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a> = &quot;standard_parallel&quot;</td></tr>
-<tr class="memdesc:ada1f9eb74466df687ad81621f878b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter name for the standard parallels.  <a href="#ada1f9eb74466df687ad81621f878b862">More...</a><br /></td></tr>
-<tr class="separator:ada1f9eb74466df687ad81621f878b862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde721c7a5fc7d40a451fae2a03c3216"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#abde721c7a5fc7d40a451fae2a03c3216">ADD_EARTH_RADIUS</a> = 1</td></tr>
-<tr class="memdesc:abde721c7a5fc7d40a451fae2a03c3216"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07619.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a> parameter needs to be added.  <a href="#abde721c7a5fc7d40a451fae2a03c3216">More...</a><br /></td></tr>
-<tr class="separator:abde721c7a5fc7d40a451fae2a03c3216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4da9416df24c53200a5c4fbe5c8c2d"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a7e4da9416df24c53200a5c4fbe5c8c2d">ADD_STANDARD_PARALLEL</a> = 2</td></tr>
-<tr class="memdesc:a7e4da9416df24c53200a5c4fbe5c8c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07619.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a> parameter needs to be added.  <a href="#a7e4da9416df24c53200a5c4fbe5c8c2d">More...</a><br /></td></tr>
-<tr class="separator:a7e4da9416df24c53200a5c4fbe5c8c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a22712de1fd9020c2b9d901e5791433f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a> (final String variable, double expected, double actual, final double tolerance)  throws ProjectionException     </td></tr>
+<tr class="memdesc:a22712de1fd9020c2b9d901e5791433f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two value for equality up to some tolerance threshold.  <a href="#a22712de1fd9020c2b9d901e5791433f2">More...</a><br /></td></tr>
+<tr class="separator:a22712de1fd9020c2b9d901e5791433f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = -9142116135803309453L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
-<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92af38a74e47209696ad1ed52c2209d9"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a92af38a74e47209696ad1ed52c2209d9">INVERSE_TOLERANCE</a> = 1E-7</td></tr>
+<tr class="memdesc:a92af38a74e47209696ad1ed52c2209d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum difference allowed when comparing the result of an inverse projections, in radians.  <a href="#a92af38a74e47209696ad1ed52c2209d9">More...</a><br /></td></tr>
+<tr class="separator:a92af38a74e47209696ad1ed52c2209d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff214aa5728181a88d9f937c5743210a"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#aff214aa5728181a88d9f937c5743210a">FORWARD_TOLERANCE</a> = 1E-7</td></tr>
+<tr class="memdesc:aff214aa5728181a88d9f937c5743210a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum difference allowed when comparing the result of forward projections, in distance on the unit ellipse.  <a href="#aff214aa5728181a88d9f937c5743210a">More...</a><br /></td></tr>
+<tr class="separator:aff214aa5728181a88d9f937c5743210a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0ebada0f68a43e961fa55e24a4bef0"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">DERIVATIVE_TOLERANCE</a> = 1E-1</td></tr>
+<tr class="memdesc:a6d0ebada0f68a43e961fa55e24a4bef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum difference allowed between spherical and ellipsoidal formulas when comparing derivatives.  <a href="#a6d0ebada0f68a43e961fa55e24a4bef0">More...</a><br /></td></tr>
+<tr class="separator:a6d0ebada0f68a43e961fa55e24a4bef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Map projection parameters, with special processing for alternative ways to express the ellipsoid axis length and the standard parallels. </p>
-<p>Those alternative ways are non-standard; when a value is set to such alternative parameter, the value is translated to standard parameter values as soon as possible. </p>
-<p>The non-standard parameters are: </p>
-<ul>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;earth_radius&quot;</span> </div></div><!-- fragment --> and<div class="fragment"><div class="line"><span class="stringliteral">&quot;inverse_flattening&quot;</span> </div></div><!-- fragment --> , which are mapped to the <a class="el" href="">UniversalParameters#SEMI_MAJOR</a> and <a class="el" href="">UniversalParameters#SEMI_MINOR</a> parameters. </li>
-<li>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;standard_parallel&quot;</span> </div></div><!-- fragment --> with an array value of 1 or 2 elements, which is mapped to <a class="el" href="">UniversalParameters#STANDARD_PARALLEL_1</a> and <a class="el" href="">UniversalParameters#STANDARD_PARALLEL_2</a> </li>
-</ul>
-<p>The main purpose of this class is to supported transparently the NetCDF ways to express some parameter values.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys)</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03669.html#_deprecated000058">Deprecated:</a></b></dt><dd>Moved to Apache SIS. </dd></dl>
+<div class="textblock"><p>Static methods for assertions. </p>
+<p>This is used only when Java 1.4 assertions are enabled. When a point has been projected using spherical formulas, compare with the same point transformed using spherical formulas and throw an exception if the result differ.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd>
+<dd>
+Rémi Maréchal (Geomatys)</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a73d93c16976e64eee0a62ad03b3796b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73d93c16976e64eee0a62ad03b3796b8">&#9670;&nbsp;</a></span>MapProjectionDescriptor()</h2>
+<a id="ad87d114e0670dedd85ebd04517ea64ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87d114e0670dedd85ebd04517ea64ec">&#9670;&nbsp;</a></span>Assertions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,106 +150,72 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07619.html">MapProjectionDescriptor</a> </td>
-          <td>(</td>
-          <td class="paramtype">final Map&lt; String,?&gt;&#160;</td>
-          <td class="paramname"><em>properties</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final ParameterDescriptor&lt;?&gt; []&#160;</td>
-          <td class="paramname"><em>parameters</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>supplement</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new parameter descriptor from the given properties and parameters. </p>
-
-<p class="reference">References <a class="el" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">MapProjectionDescriptor.supplement</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                                                                             {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        super(properties, 1, 1, parameters);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        this.<a class="code" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a> = <a class="code" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div><div class="ttc" id="a07619_html_a65bc8427ed3cfa4563a16696a3c265e7"><div class="ttname"><a href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.supplement</a></div><div class="ttdeci">final int supplement</div><div class="ttdoc">Bitwise combination of. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:89</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7f22f2aebb4b358b169f84e224598222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f22f2aebb4b358b169f84e224598222">&#9670;&nbsp;</a></span>createValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ParameterValueGroup createValue </td>
+          <td class="memname"><a class="el" href="a07619.html">Assertions</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the parameter group implementation which can handle the "invisible" parameters. </p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                             {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> MapProjectionParameters(<span class="keyword">this</span>);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div></div><!-- fragment -->
+<p>Do not allows instantiation of this class. </p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                         {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="ac43eb499c7c1c4a6eac8be435c995ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac43eb499c7c1c4a6eac8be435c995ac1">&#9670;&nbsp;</a></span>descriptor()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a389504a0d09f6355dbd35c0ef5004414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389504a0d09f6355dbd35c0ef5004414">&#9670;&nbsp;</a></span>checkDerivative()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GeneralParameterDescriptor descriptor </td>
+          <td class="memname">static boolean checkDerivative </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> throws ParameterNotFoundException</td>
+          <td class="paramtype">final Matrix&#160;</td>
+          <td class="paramname"><em>spherical</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Matrix&#160;</td>
+          <td class="paramname"><em>ellipsoidal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the parameter descriptor for the given name. </p>
-<p>If the given name is one of the "invisible" parameters, returns a descriptor for that parameter without adding it to the list of parameter values.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The case insensitive name of the parameter to search for. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The parameter for the given name. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">ParameterNotFoundException</td><td>if there is no parameter for the given name. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                                                                {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        name = name.trim();</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a> &amp; <a class="code" href="a07619.html#abde721c7a5fc7d40a451fae2a03c3216">ADD_EARTH_RADIUS</a>) != 0) {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span> (name.equalsIgnoreCase(<a class="code" href="a07619.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a>)) {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> UniversalParameters.EARTH_RADIUS;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (name.equalsIgnoreCase(<a class="code" href="a07619.html#ad7e426a819786ffc5a6cd91eddaedecc">INVERSE_FLATTENING</a>)) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> UniversalParameters.INVERSE_FLATTENING;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a> &amp; <a class="code" href="a07619.html#a7e4da9416df24c53200a5c4fbe5c8c2d">ADD_STANDARD_PARALLEL</a>) != 0) {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">if</span> (name.equalsIgnoreCase(<a class="code" href="a07619.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a>)) {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">return</span> UniversalParameters.STANDARD_PARALLEL;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> super.descriptor(name);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="a07619_html_ada1f9eb74466df687ad81621f878b862"><div class="ttname"><a href="a07619.html#ada1f9eb74466df687ad81621f878b862">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.STANDARD_PARALLEL</a></div><div class="ttdeci">static final String STANDARD_PARALLEL</div><div class="ttdoc">The parameter name for the standard parallels. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:72</div></div>
-<div class="ttc" id="a07619_html_abde721c7a5fc7d40a451fae2a03c3216"><div class="ttname"><a href="a07619.html#abde721c7a5fc7d40a451fae2a03c3216">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.ADD_EARTH_RADIUS</a></div><div class="ttdeci">static final int ADD_EARTH_RADIUS</div><div class="ttdoc">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate ...</div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:78</div></div>
-<div class="ttc" id="a07619_html_a65bc8427ed3cfa4563a16696a3c265e7"><div class="ttname"><a href="a07619.html#a65bc8427ed3cfa4563a16696a3c265e7">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.supplement</a></div><div class="ttdeci">final int supplement</div><div class="ttdoc">Bitwise combination of. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:89</div></div>
-<div class="ttc" id="a07619_html_ad7e426a819786ffc5a6cd91eddaedecc"><div class="ttname"><a href="a07619.html#ad7e426a819786ffc5a6cd91eddaedecc">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.INVERSE_FLATTENING</a></div><div class="ttdeci">static final String INVERSE_FLATTENING</div><div class="ttdoc">The parameter name for inverse flattening. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:67</div></div>
-<div class="ttc" id="a07619_html_a353e51f3770e37635d1a6c5cba2423aa"><div class="ttname"><a href="a07619.html#a353e51f3770e37635d1a6c5cba2423aa">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.EARTH_RADIUS</a></div><div class="ttdeci">static final String EARTH_RADIUS</div><div class="ttdoc">The parameter name for the Earth radius. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:62</div></div>
-<div class="ttc" id="a07619_html_a7e4da9416df24c53200a5c4fbe5c8c2d"><div class="ttname"><a href="a07619.html#a7e4da9416df24c53200a5c4fbe5c8c2d">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.ADD_STANDARD_PARALLEL</a></div><div class="ttdeci">static final int ADD_STANDARD_PARALLEL</div><div class="ttdoc">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate ...</div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:84</div></div>
+<p>Checks if derivatives using spherical formulas produces the same result than ellipsoidal formulas. </p>
+<p>This method is invoked during assertions only. The spherical formulas are used for the "expected" results since they are simpler than the ellipsoidal formulas.</p>
+<dl class="section since"><dt>Since</dt><dd>3.18 </dd></dl>
+
+<p class="reference">References <a class="el" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">Assertions.compare()</a>, and <a class="el" href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">Assertions.DERIVATIVE_TOLERANCE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07639.html#a288eee0c4e06db0f1e725c81c297669b">EquatorialStereographic.Spherical.transform()</a>, <a class="el" href="a07631.html#a288eee0c4e06db0f1e725c81c297669b">CassiniSoldner.Spherical.transform()</a>, <a class="el" href="a07667.html#a288eee0c4e06db0f1e725c81c297669b">Stereographic.Spherical.transform()</a>, and <a class="el" href="a07651.html#a288eee0c4e06db0f1e725c81c297669b">LambertAzimuthalEqualArea.Spherical.transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (spherical != null || ellipsoidal != null) { <span class="comment">// NullPointerException is ok if only one is null.</span></div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;m00&quot;</span>, spherical.getElement(0,0), ellipsoidal.getElement(0,0), <a class="code" href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">DERIVATIVE_TOLERANCE</a>);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;m01&quot;</span>, spherical.getElement(0,1), ellipsoidal.getElement(0,1), <a class="code" href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">DERIVATIVE_TOLERANCE</a>);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;m10&quot;</span>, spherical.getElement(1,0), ellipsoidal.getElement(1,0), <a class="code" href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">DERIVATIVE_TOLERANCE</a>);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;m11&quot;</span>, spherical.getElement(1,1), ellipsoidal.getElement(1,1), <a class="code" href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">DERIVATIVE_TOLERANCE</a>);</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div><div class="ttc" id="a07619_html_a22712de1fd9020c2b9d901e5791433f2"><div class="ttname"><a href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">org.geotoolkit.referencing.operation.projection.Assertions.compare</a></div><div class="ttdeci">static void compare(final String variable, double expected, double actual, final double tolerance)</div><div class="ttdoc">Compares two value for equality up to some tolerance threshold. </div><div class="ttdef"><b>Definition:</b> Assertions.java:166</div></div>
+<div class="ttc" id="a07619_html_a6d0ebada0f68a43e961fa55e24a4bef0"><div class="ttname"><a href="a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0">org.geotoolkit.referencing.operation.projection.Assertions.DERIVATIVE_TOLERANCE</a></div><div class="ttdeci">static final double DERIVATIVE_TOLERANCE</div><div class="ttdoc">Maximum difference allowed between spherical and ellipsoidal formulas when comparing derivatives...</div><div class="ttdef"><b>Definition:</b> Assertions.java:61</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="abde721c7a5fc7d40a451fae2a03c3216"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abde721c7a5fc7d40a451fae2a03c3216">&#9670;&nbsp;</a></span>ADD_EARTH_RADIUS</h2>
+<a id="a8f01a7acdf7c6ea20a9003b2e01f75c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f01a7acdf7c6ea20a9003b2e01f75c6">&#9670;&nbsp;</a></span>checkInverseTransform() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +224,39 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int ADD_EARTH_RADIUS = 1</td>
+          <td class="memname">static boolean checkInverseTransform </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>λ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>φ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
   </td>
@@ -276,12 +266,36 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07619.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a> parameter needs to be added. </p>
+<p>Checks if inverse transform using spherical formulas produces the same result than ellipsoidal formulas. </p>
+<p>This method is invoked during assertions only.</p>
+<p>{</p><dl class="section note"><dt>Note</dt><dd>This method ignores the longitude if the latitude is at a pole, because in such case the longitude is meanless.}</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expected</td><td>The (longitude,latitude) computed by ellipsoidal formulas. </td></tr>
+    <tr><td class="paramname">offset</td><td>Index of the coordinate in the<div class="fragment"><div class="line">expected </div></div><!-- fragment --> array. </td></tr>
+    <tr><td class="paramname">λ</td><td>The longitude computed by spherical formulas, in radians. </td></tr>
+    <tr><td class="paramname">φ</td><td>The latitude computed by spherical formulas, in radians. </td></tr>
+    <tr><td class="paramname">tolerance</td><td>The tolerance (optional). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the<div class="fragment"><div class="line">tolerance </div></div><!-- fragment --> value is valid. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ProjectionException</td><td>if the comparison failed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p class="reference">References <a class="el" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">Assertions.compare()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07619.html#ae7344d9531343fe1df053612dcddd8f7">Assertions.checkInverseTransform()</a>, <a class="el" href="a07639.html#a5d82ede8edbfac72d8c1b10ce798b00a">EquatorialStereographic.Spherical.checkInverseTransform()</a>, <a class="el" href="a07631.html#a5d82ede8edbfac72d8c1b10ce798b00a">CassiniSoldner.Spherical.checkInverseTransform()</a>, <a class="el" href="a07667.html#a5d82ede8edbfac72d8c1b10ce798b00a">Stereographic.Spherical.checkInverseTransform()</a>, and <a class="el" href="a07651.html#a5d82ede8edbfac72d8c1b10ce798b00a">LambertAzimuthalEqualArea.Spherical.checkInverseTransform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;latitude&quot;</span>, expected[offset+1], φ, tolerance);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span> (abs(PI/2 - abs(φ)) &gt; ANGLE_TOLERANCE) {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;longitude&quot;</span>, expected[offset], λ, tolerance);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> tolerance &lt; POSITIVE_INFINITY;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="a07619_html_a22712de1fd9020c2b9d901e5791433f2"><div class="ttname"><a href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">org.geotoolkit.referencing.operation.projection.Assertions.compare</a></div><div class="ttdeci">static void compare(final String variable, double expected, double actual, final double tolerance)</div><div class="ttdoc">Compares two value for equality up to some tolerance threshold. </div><div class="ttdef"><b>Definition:</b> Assertions.java:166</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a7e4da9416df24c53200a5c4fbe5c8c2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4da9416df24c53200a5c4fbe5c8c2d">&#9670;&nbsp;</a></span>ADD_STANDARD_PARALLEL</h2>
+<a id="ae7344d9531343fe1df053612dcddd8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7344d9531343fe1df053612dcddd8f7">&#9670;&nbsp;</a></span>checkInverseTransform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +304,33 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int ADD_STANDARD_PARALLEL = 2</td>
+          <td class="memname">static boolean checkInverseTransform </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>λ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>φ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
   </td>
@@ -300,12 +340,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07619.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a> parameter needs to be added. </p>
+<p>Default version of <a class="el" href="">checkInverseTransform(double,double,double[],int,double)</a>. </p>
 
+<p class="reference">References <a class="el" href="a07619.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">Assertions.checkInverseTransform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07619.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">checkInverseTransform</a>(expected, offset, λ, φ, <a class="code" href="a07619.html#a92af38a74e47209696ad1ed52c2209d9">INVERSE_TOLERANCE</a>);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div><div class="ttc" id="a07619_html_a92af38a74e47209696ad1ed52c2209d9"><div class="ttname"><a href="a07619.html#a92af38a74e47209696ad1ed52c2209d9">org.geotoolkit.referencing.operation.projection.Assertions.INVERSE_TOLERANCE</a></div><div class="ttdeci">static final double INVERSE_TOLERANCE</div><div class="ttdoc">Maximum difference allowed when comparing the result of an inverse projections, in radians...</div><div class="ttdef"><b>Definition:</b> Assertions.java:49</div></div>
+<div class="ttc" id="a07619_html_a8f01a7acdf7c6ea20a9003b2e01f75c6"><div class="ttname"><a href="a07619.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">org.geotoolkit.referencing.operation.projection.Assertions.checkInverseTransform</a></div><div class="ttdeci">static boolean checkInverseTransform(final double[] expected, final int offset, final double λ, final double φ, final double tolerance)</div><div class="ttdoc">Checks if inverse transform using spherical formulas produces the same result than ellipsoidal formul...</div><div class="ttdef"><b>Definition:</b> Assertions.java:116</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a353e51f3770e37635d1a6c5cba2423aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a353e51f3770e37635d1a6c5cba2423aa">&#9670;&nbsp;</a></span>EARTH_RADIUS</h2>
+<a id="a20cd87c223c269a9caa2600a21ee5906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20cd87c223c269a9caa2600a21ee5906">&#9670;&nbsp;</a></span>checkTransform() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +358,39 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String EARTH_RADIUS = &quot;earth_radius&quot;</td>
+          <td class="memname">static boolean checkTransform </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
   </td>
@@ -324,12 +400,35 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The parameter name for the Earth radius. </p>
+<p>Checks if transform using spherical formulas produces the same result than ellipsoidal formulas. </p>
+<p>This method is invoked during assertions only.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expected</td><td>The (easting,northing) computed by ellipsoidal formulas. </td></tr>
+    <tr><td class="paramname">offset</td><td>Index of the coordinate in the<div class="fragment"><div class="line">expected </div></div><!-- fragment --> array. </td></tr>
+    <tr><td class="paramname">x</td><td>The easting computed by spherical formulas on the unit sphere. </td></tr>
+    <tr><td class="paramname">y</td><td>The northing computed by spherical formulas on the unit sphere. </td></tr>
+    <tr><td class="paramname">tolerance</td><td>The tolerance (optional). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if the<div class="fragment"><div class="line">tolerance </div></div><!-- fragment --> value is valid. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ProjectionException</td><td>if the comparison failed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p class="reference">References <a class="el" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">Assertions.compare()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07619.html#ad8ff646382b06bdac00750b8822b936a">Assertions.checkTransform()</a>, <a class="el" href="a07635.html#a288eee0c4e06db0f1e725c81c297669b">EquatorialStereographic.transform()</a>, <a class="el" href="a07639.html#a288eee0c4e06db0f1e725c81c297669b">EquatorialStereographic.Spherical.transform()</a>, <a class="el" href="a07631.html#a288eee0c4e06db0f1e725c81c297669b">CassiniSoldner.Spherical.transform()</a>, <a class="el" href="a07667.html#a288eee0c4e06db0f1e725c81c297669b">Stereographic.Spherical.transform()</a>, and <a class="el" href="a07651.html#a288eee0c4e06db0f1e725c81c297669b">LambertAzimuthalEqualArea.Spherical.transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (expected != null) {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;x&quot;</span>, expected[offset  ], x, tolerance);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">compare</a>(<span class="stringliteral">&quot;y&quot;</span>, expected[offset+1], y, tolerance);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> tolerance &lt; POSITIVE_INFINITY;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div><div class="ttc" id="a07619_html_a22712de1fd9020c2b9d901e5791433f2"><div class="ttname"><a href="a07619.html#a22712de1fd9020c2b9d901e5791433f2">org.geotoolkit.referencing.operation.projection.Assertions.compare</a></div><div class="ttdeci">static void compare(final String variable, double expected, double actual, final double tolerance)</div><div class="ttdoc">Compares two value for equality up to some tolerance threshold. </div><div class="ttdef"><b>Definition:</b> Assertions.java:166</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ad7e426a819786ffc5a6cd91eddaedecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7e426a819786ffc5a6cd91eddaedecc">&#9670;&nbsp;</a></span>INVERSE_FLATTENING</h2>
+<a id="ad8ff646382b06bdac00750b8822b936a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ff646382b06bdac00750b8822b936a">&#9670;&nbsp;</a></span>checkTransform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +437,33 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String INVERSE_FLATTENING = &quot;inverse_flattening&quot;</td>
+          <td class="memname">static boolean checkTransform </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
   </td>
@@ -348,12 +473,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The parameter name for inverse flattening. </p>
+<p>Default version of <a class="el" href="">checkTransform(double,double,double[],int)</a>. </p>
 
+<p class="reference">References <a class="el" href="a07619.html#a20cd87c223c269a9caa2600a21ee5906">Assertions.checkTransform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a07619.html#a20cd87c223c269a9caa2600a21ee5906">checkTransform</a>(expected, offset, x, y, <a class="code" href="a07619.html#aff214aa5728181a88d9f937c5743210a">FORWARD_TOLERANCE</a>);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div><div class="ttc" id="a07619_html_a20cd87c223c269a9caa2600a21ee5906"><div class="ttname"><a href="a07619.html#a20cd87c223c269a9caa2600a21ee5906">org.geotoolkit.referencing.operation.projection.Assertions.checkTransform</a></div><div class="ttdeci">static boolean checkTransform(final double[] expected, final int offset, final double x, final double y, final double tolerance)</div><div class="ttdoc">Checks if transform using spherical formulas produces the same result than ellipsoidal formulas...</div><div class="ttdef"><b>Definition:</b> Assertions.java:81</div></div>
+<div class="ttc" id="a07619_html_aff214aa5728181a88d9f937c5743210a"><div class="ttname"><a href="a07619.html#aff214aa5728181a88d9f937c5743210a">org.geotoolkit.referencing.operation.projection.Assertions.FORWARD_TOLERANCE</a></div><div class="ttdeci">static final double FORWARD_TOLERANCE</div><div class="ttdoc">Maximum difference allowed when comparing the result of forward projections, in distance on the unit ...</div><div class="ttdef"><b>Definition:</b> Assertions.java:55</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a3238d314ecdee14d2966760945d00c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
+<a id="a22712de1fd9020c2b9d901e5791433f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22712de1fd9020c2b9d901e5791433f2">&#9670;&nbsp;</a></span>compare()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,7 +491,33 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final long serialVersionUID = -9142116135803309453L</td>
+          <td class="memname">static void compare </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>expected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>actual</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
   </td>
@@ -372,12 +527,25 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>For cross-version compatibility. </p>
+<p>Compares two value for equality up to some tolerance threshold. </p>
+<p>This is used during assertions only. The comparison does not fail if at least one value to compare is <a class="el" href="">Double#NaN</a> or infinity. </p>
+<p><b>Hack:</b> if the</p><div class="fragment"><div class="line">variable </div></div><!-- fragment --><p> name starts by lower-case</p><div class="fragment"><div class="line">L </div></div><!-- fragment --><p> (as in "longitude" and "latitude"), then the value is assumed to be an angle in radians. This is used for formatting an error message, if needed.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ProjectionException</td><td>if the comparison failed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p class="reference">References <a class="el" href="a07779.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07783.html#a5bfe948ae5c2a822f7a519a61b153569">Errors.Keys.TestFailure_3</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07619.html#a389504a0d09f6355dbd35c0ef5004414">Assertions.checkDerivative()</a>, <a class="el" href="a07619.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">Assertions.checkInverseTransform()</a>, and <a class="el" href="a07619.html#a20cd87c223c269a9caa2600a21ee5906">Assertions.checkTransform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    {</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> delta = abs(expected - actual);</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (delta &gt; tolerance) {</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">if</span> (variable.charAt(0) == <span class="charliteral">&#39;l&#39;</span>) {</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                actual   = toDegrees(actual);</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                expected = toDegrees(expected);</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (abs(actual) &gt; 30 &amp;&amp; abs(expected) &gt; 30) {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">                 * If the projected point tend toward infinity, treats the value as if is was</span></div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">                 * really infinity. Note that 30 is considered as &quot;close to infinity&quot; because</span></div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">                 * of the result we get when projecting 90°N using Mercator spherical formula:</span></div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">                 *     y = log(tan(π/4 + φ/2))</span></div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">                 * Because there is no exact representation of π/2 in base 2, the tangent</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">                 * function gives 1.6E+16 instead of infinity, which leads the logarithmic</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">                 * function to give us 37.3.</span></div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">                 * This behavior is tested in MercatorTest.testSphericalFormulas().</span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">if</span> (signum(actual) == signum(expected)) {</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                }</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ProjectionException(Errors.format(Errors.Keys.TestFailure_3, variable,</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    String.valueOf(expected), String.valueOf(actual)) + <span class="comment">// Force full precision.</span></div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    <span class="stringliteral">&quot;(Δ&quot;</span> + variable + <span class="charliteral">&#39;=&#39;</span> + delta + <span class="stringliteral">&quot; ε=&quot;</span> + tolerance + <span class="charliteral">&#39;)&#39;</span>);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="ada1f9eb74466df687ad81621f878b862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada1f9eb74466df687ad81621f878b862">&#9670;&nbsp;</a></span>STANDARD_PARALLEL</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6d0ebada0f68a43e961fa55e24a4bef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0ebada0f68a43e961fa55e24a4bef0">&#9670;&nbsp;</a></span>DERIVATIVE_TOLERANCE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,22 +554,25 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String STANDARD_PARALLEL = &quot;standard_parallel&quot;</td>
+          <td class="memname">final double DERIVATIVE_TOLERANCE = 1E-1</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The parameter name for the standard parallels. </p>
+<p>Maximum difference allowed between spherical and ellipsoidal formulas when comparing derivatives. </p>
+<p>Units are metres. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07619.html#a389504a0d09f6355dbd35c0ef5004414">Assertions.checkDerivative()</a>.</p>
 
 </div>
 </div>
-<a id="a65bc8427ed3cfa4563a16696a3c265e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65bc8427ed3cfa4563a16696a3c265e7">&#9670;&nbsp;</a></span>supplement</h2>
+<a id="aff214aa5728181a88d9f937c5743210a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff214aa5728181a88d9f937c5743210a">&#9670;&nbsp;</a></span>FORWARD_TOLERANCE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,20 +581,43 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int supplement</td>
+          <td class="memname">final double FORWARD_TOLERANCE = 1E-7</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Bitwise combination of. </p>
-<div class="fragment"><div class="line">ADD_* </div></div><!-- fragment --><p> constants indicating which dynamic parameters to add. </p>
+<p>Maximum difference allowed when comparing the result of forward projections, in distance on the unit ellipse. </p>
+<p>A value of 1E-7 is approximatively 0.1 metres. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07619.html#a73d93c16976e64eee0a62ad03b3796b8">MapProjectionDescriptor.MapProjectionDescriptor()</a>.</p>
+</div>
+</div>
+<a id="a92af38a74e47209696ad1ed52c2209d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92af38a74e47209696ad1ed52c2209d9">&#9670;&nbsp;</a></span>INVERSE_TOLERANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double INVERSE_TOLERANCE = 1E-7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum difference allowed when comparing the result of an inverse projections, in radians. </p>
+<p>A value of 1E-7 radians is approximatively 0.5 kilometres. Note that inverse projections are typically less accurate than forward projections. This tolerance is set to such high value for avoiding too intrusive assertion errors. This is okay only for catching gross programming errors. </p>
 
 </div>
 </div>
@@ -433,7 +627,7 @@ Static Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03793.html">referencing</a></li><li class="navelem"><a class="el" href="a03798.html">operation</a></li><li class="navelem"><a class="el" href="a03801.html">provider</a></li><li class="navelem"><a class="el" href="a07619.html">MapProjectionDescriptor</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03853.html">referencing</a></li><li class="navelem"><a class="el" href="a03858.html">operation</a></li><li class="navelem"><a class="el" href="a03860.html">projection</a></li><li class="navelem"><a class="el" href="a07619.html">Assertions</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

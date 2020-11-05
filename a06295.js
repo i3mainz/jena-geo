@@ -1,17 +1,19 @@
 var a06295 =
 [
-    [ "GeoJSONDatatype", "a06295.html#a5a97b6924c173c82a1f86eff37290696", null ],
-    [ "check", "a06295.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06295.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06295.html#ad1ee2f6512af0e5dba3d40a3e8b731f9", null ],
-    [ "get", "a06295.html#a0a24dee6650e86f3f00a406a199073cd", null ],
-    [ "parse", "a06295.html#a6ca6e70f10f54a3b0e7fdc14be052483", null ],
-    [ "parse", "a06295.html#adb0c0c075ba104124ca28f2d25ef76d5", null ],
-    [ "read", "a06295.html#ab987fb3c5c1835116368b15c0761d3b0", null ],
-    [ "registerDatatypes", "a06295.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "toString", "a06295.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "unparse", "a06295.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
-    [ "INSTANCE", "a06295.html#ac55256a5d2432ae12b6846d3416c13e0", null ],
-    [ "LOGGER", "a06295.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
-    [ "URI", "a06295.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
+    [ "getCustomProperties", "a06295.html#a46e1c90f389e0c9c7dedb38ed0ac738c", null ],
+    [ "getCustomPropertiesCount", "a06295.html#acecc4464e8af22988095fa215d0b7527", null ],
+    [ "getCustomPropertiesList", "a06295.html#aa921547f0b051f8a746c228b52133b64", null ],
+    [ "getGeometry", "a06295.html#abd9fa8e99be0df253461ce5952bdd50e", null ],
+    [ "getId", "a06295.html#a1121cc3b05c2b597f0164b6861847819", null ],
+    [ "getIdBytes", "a06295.html#ae31b7263e4c7eaf8a99c0a03625569b4", null ],
+    [ "getIntId", "a06295.html#a85d5aff15bd08eadbe861690ca457b2d", null ],
+    [ "getProperties", "a06295.html#af3170d58658e1a344c550080354db92c", null ],
+    [ "getPropertiesCount", "a06295.html#a91313a098da9710b96ff730126818fdf", null ],
+    [ "getPropertiesList", "a06295.html#a73ff02338d994685045161e287ad673d", null ],
+    [ "getValues", "a06295.html#a999c3397cd2e72c4d092bc5d66e69223", null ],
+    [ "getValuesCount", "a06295.html#a46148c109fe82a4073ecc6b31765d7bd", null ],
+    [ "getValuesList", "a06295.html#aeb52649b56790043dab5e1edf21eb2ef", null ],
+    [ "hasGeometry", "a06295.html#a8f745f6640b995c468b64df4a95a2374", null ],
+    [ "hasId", "a06295.html#ac04ded4eadc76e02be58b09b93ef8e6c", null ],
+    [ "hasIntId", "a06295.html#a1b8386dcd861259a964c4d74776a0b4c", null ]
 ];

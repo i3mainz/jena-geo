@@ -1,8 +1,10 @@
 var a03858 =
 [
-    [ "attribute", "a03857.html", "a03857" ],
-    [ "constructor", "a03859.html", "a03859" ],
-    [ "editor", "a03860.html", "a03860" ],
-    [ "transform", "a03861.html", "a03861" ],
-    [ "PolygonTest", "a08935.html", "a08935" ]
+    [ "matrix", "a03859.html", "a03859" ],
+    [ "projection", "a03860.html", "a03860" ],
+    [ "provider", "a03861.html", "a03861" ],
+    [ "transform", "a03862.html", "a03862" ],
+    [ "DefiningConversion", "a07595.html", "a07595" ],
+    [ "MathTransformProvider", "a07599.html", "a07599" ],
+    [ "MathTransforms", "a07603.html", "a07603" ]
 ];

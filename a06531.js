@@ -1,16 +1,21 @@
 var a06531 =
 [
-    [ "Cursor", "a06531.html#aa3ebb314b97961afe543506212a2dd9b", null ],
-    [ "accumulate", "a06531.html#a4b14b31f07a7b5de8420315b985e05a7", null ],
-    [ "finish", "a06531.html#a05d387c70340867dffaf02228c4520cd", null ],
-    [ "getNumWorkers", "a06531.html#a47ec4c7e5b7646e4a71b82402c2c82d1", null ],
-    [ "next", "a06531.html#a311addae5779cead65ffaaad5824007c", null ],
-    [ "recordError", "a06531.html#aabf3c338904bae76660fd721a7492e85", null ],
+    [ "Position", "a06535.html", "a06535" ],
+    [ "FractionalGridCoordinates", "a06531.html#a90636af76bddca374ab4ff8eed528787", null ],
+    [ "FractionalGridCoordinates", "a06531.html#a930cf577e484b1cf7f59f4271ada5fa4", null ],
+    [ "equals", "a06531.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
+    [ "fromPosition", "a06531.html#a10c39e72f0b4afd8dca0723bb3e9130a", null ],
+    [ "getCoordinateFractional", "a06531.html#a1271be17968d6bc8097d33eac903c6d0", null ],
+    [ "getCoordinateValue", "a06531.html#ae9c536bfa00ee818f704345c39298b11", null ],
+    [ "getCoordinateValues", "a06531.html#ab046f8d925ed267544b53c0cf0b40c67", null ],
+    [ "getDimension", "a06531.html#a56e1ed7f77c1dad3205d8c25e62c0432", null ],
+    [ "hashCode", "a06531.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "pointOutsideCoverage", "a06531.html#abd74946782d37989bb539d6f690cf1a6", null ],
+    [ "setCoordinateValue", "a06531.html#a7ef92afd753c98b35fb034cf5f1ba35d", null ],
+    [ "toExtent", "a06531.html#a69789ee6e2767e6891ebe8e7da8e908d", null ],
+    [ "toPosition", "a06531.html#ad70ac16ff1a0a5fa977512d70843590c", null ],
     [ "toString", "a06531.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "accumulator", "a06531.html#a0bc86cff4ebf06ebd17463ac086789b5", null ],
-    [ "combiner", "a06531.html#ac02c2b0accee7e808749434165817dce", null ],
-    [ "errors", "a06531.html#a8e3078b3a26b7c78bd1988c86e73e31a", null ],
-    [ "image", "a06531.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5", null ],
-    [ "numXTiles", "a06531.html#afb2cfdd3a884aaeb4a42b2920e5d2863", null ],
-    [ "stopOnError", "a06531.html#a94f5222bed1c9e6790bed19a343f7341", null ]
+    [ "writeCoordinates", "a06531.html#a1d2e41a72bd0a29dbadc61ac0e6d963f", null ],
+    [ "coordinates", "a06531.html#a3601ddc6e157b2c5ef7c8e630ca64f5e", null ],
+    [ "serialVersionUID", "a06531.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

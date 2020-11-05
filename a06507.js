@@ -1,17 +1,17 @@
 var a06507 =
 [
-    [ "MultiBandsIndexColorModel", "a06507.html#acb2312570f05693dc92205a1603682c1", null ],
-    [ "createCompatibleSampleModel", "a06507.html#a314b5eabe552596feb8cf933cc482f29", null ],
-    [ "createCompatibleWritableRaster", "a06507.html#a4c329e26599c6571f48c9e5faf58ae42", null ],
-    [ "getAlpha", "a06507.html#a4e71e1a8555008f5b88e33217d9a132a", null ],
-    [ "getBlue", "a06507.html#a3e42514e318311290bd2513fc16f100b", null ],
-    [ "getComponents", "a06507.html#adc94819532a74c2b4cef3dee3eee839f", null ],
-    [ "getDataElements", "a06507.html#ae69a6c16a52d9c5066668b62f58d0ee9", null ],
-    [ "getGreen", "a06507.html#a092f4c943545df4fda57b9bcdc796640", null ],
-    [ "getRed", "a06507.html#a7a6c9b6402be2a937e64d0e936f2f3fe", null ],
-    [ "isCompatibleRaster", "a06507.html#a478fdb9d65c6c13dcf8d4db0c4025e8b", null ],
-    [ "isCompatibleSampleModel", "a06507.html#a6edfd5afccbb8ae0b55a7bf9b7c31624", null ],
-    [ "pixel", "a06507.html#a40bdb34c92589093b9108a97bfd2858a", null ],
-    [ "numBands", "a06507.html#a0d8b817b89b958b862e489811688d6d7", null ],
-    [ "visibleBand", "a06507.html#a222631519396875a9610c4bccec56eaf", null ]
+    [ "TopoJSONDatatype", "a06507.html#abaacfd05c72cdb240519762e41889c01", null ],
+    [ "check", "a06507.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
+    [ "checkURI", "a06507.html#a5df594a39203302c2daed2aed74735c7", null ],
+    [ "get", "a06507.html#ad1ee2f6512af0e5dba3d40a3e8b731f9", null ],
+    [ "get", "a06507.html#a0a24dee6650e86f3f00a406a199073cd", null ],
+    [ "parse", "a06507.html#a6ca6e70f10f54a3b0e7fdc14be052483", null ],
+    [ "parse", "a06507.html#adb0c0c075ba104124ca28f2d25ef76d5", null ],
+    [ "read", "a06507.html#ab987fb3c5c1835116368b15c0761d3b0", null ],
+    [ "registerDatatypes", "a06507.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
+    [ "toString", "a06507.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "unparse", "a06507.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
+    [ "INSTANCE", "a06507.html#af65faaf63a905c915d906e2058488627", null ],
+    [ "LOGGER", "a06507.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
+    [ "URI", "a06507.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
 ];

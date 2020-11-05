@@ -1,9 +1,16 @@
 var a06467 =
 [
-    [ "IllegalGridGeometryException", "a06467.html#ae359cb6465f94974932ab1716cd7c8ad", null ],
-    [ "IllegalGridGeometryException", "a06467.html#afab60f32c89764274f1b2a2ff083215f", null ],
-    [ "IllegalGridGeometryException", "a06467.html#a79f215c5aaa411f4ce39d61fe10a03be", null ],
-    [ "IllegalGridGeometryException", "a06467.html#a49579b0dfa71f36b5b938a7ab6fcfac0", null ],
-    [ "IllegalGridGeometryException", "a06467.html#aea14d06a6dd48d88d58735bcd50a96fe", null ],
-    [ "serialVersionUID", "a06467.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "HexWKBRastDatatype", "a06467.html#ad142f3c397d2e241c308a40164a2901c", null ],
+    [ "check", "a06467.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
+    [ "checkURI", "a06467.html#a5df594a39203302c2daed2aed74735c7", null ],
+    [ "get", "a06467.html#a86f7801427aabe2a52b3157bbe8f4f33", null ],
+    [ "get", "a06467.html#ad25e18c958a48eb67e78436619ed8e8a", null ],
+    [ "parse", "a06467.html#a8d7111ceffa3ab3064b2363344b96112", null ],
+    [ "parse", "a06467.html#af07c28b2fbbd1b824b228bbddd17b048", null ],
+    [ "read", "a06467.html#a9e03c38c43e32b22335f9f098375960a", null ],
+    [ "registerDatatypes", "a06467.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
+    [ "toString", "a06467.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "unparse", "a06467.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
+    [ "INSTANCE", "a06467.html#ab03153d74b7a1bceae83aefb59024e56", null ],
+    [ "URI", "a06467.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
 ];

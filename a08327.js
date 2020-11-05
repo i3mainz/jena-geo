@@ -1,5 +1,5 @@
 var a08327 =
 [
-    [ "testMinimumBoundingRadius", "a08327.html#a5667209a5677a7711029bc6a83d59d32", null ],
-    [ "testPolygon", "a08327.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testXMax", "a08327.html#af45d6c06ced12c7882c5eab73bcc9ec8", null ],
+    [ "testLineString", "a08327.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

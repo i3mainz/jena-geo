@@ -1,8 +1,11 @@
 var a08187 =
 [
-    [ "LengthSubstring", "a08187.html#a8375df00135da48182ecb97996cfebf1", null ],
-    [ "computeSubstring", "a08187.html#ad8eec22df403077b17b2ac90b0c95230", null ],
-    [ "getSubstring", "a08187.html#a0899c2e48f2616119c3f0e3e297549e6", null ],
-    [ "getSubstring", "a08187.html#a7aa54bd5af7e7f3fd33047db15540bc4", null ],
-    [ "line", "a08187.html#a53e992765125efc5fc595f0d38e947ea", null ]
+    [ "Version", "a08187.html#a45372cf61bad3b3b6b44d8c1c4a013a4", null ],
+    [ "getDate", "a08187.html#a4a54f52996492cdc8a704b68ff5d43dd", null ],
+    [ "getHistory", "a08187.html#a4732e121fe00d99ef006ca0b0f760f45", null ],
+    [ "getLabel", "a08187.html#a86ad2cb533724ac728e0f96b2323cceb", null ],
+    [ "toString", "a08187.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "date", "a08187.html#a9e245c30a3ef36b1454531d572c4b0f5", null ],
+    [ "history", "a08187.html#ae2bbc5ff367930f62ff5109528dd4e6c", null ],
+    [ "label", "a08187.html#ac3f915eab3b535426bb9794989e9ea2e", null ]
 ];

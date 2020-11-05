@@ -1,5 +1,5 @@
 var a08459 =
 [
-    [ "testAsText", "a08459.html#a2bc485e1c6e58872aaf6237c16706862", null ],
-    [ "testGeometry", "a08459.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testPerimeter", "a08459.html#ab5f32e4b3cc7543d929e0660b76d1973", null ],
+    [ "testPolygon", "a08459.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

@@ -1,15 +1,21 @@
 var a07919 =
 [
-    [ "Compare", "a07923.html", "a07923" ],
-    [ "ValueComparator", "a07927.html", "a07927" ],
-    [ "XCollections", "a07919.html#abefa5b7d1e09598a5cad9451a7811d9a", null ],
-    [ "addIfNonNull", "a07919.html#af1d488a7c96e58bb0fd067eca6d9cf7a", null ],
-    [ "clear", "a07919.html#ada954eaea9f02c2f476e01115df42f51", null ],
-    [ "clear", "a07919.html#a32e94d83a43603de29cadde55353441f", null ],
-    [ "immutableSet", "a07919.html#a3e2b875edf609b0fb9fc3a7c3496c756", null ],
-    [ "listComparator", "a07919.html#aa21b0f84c3348bc136ad7929731293b9", null ],
-    [ "sortedSetComparator", "a07919.html#a1b1c2123ab5933a9a1b4e80598b21c2b", null ],
-    [ "unmodifiableOrCopy", "a07919.html#a07db68bf42bdf364274d5636515f8879", null ],
-    [ "unmodifiableOrCopy", "a07919.html#a9e9173b3525a76b2a8ba38263c1f1712", null ],
-    [ "valueComparator", "a07919.html#aa96a1bb9116d5d7166b3e06f64c06beb", null ]
+    [ "Sync", "a07919.html#af120ca922d569e6ed0c2fd7e51ff1863", null ],
+    [ "add", "a07919.html#a450104e9ec7f25b5f53990a9ff52ec65", null ],
+    [ "addAll", "a07919.html#a316b09bf71b1b206ac6ba30d41069ecd", null ],
+    [ "clear", "a07919.html#a9fa83920ab9b6842df40ab62cc63e85b", null ],
+    [ "contains", "a07919.html#a455e4d27d2322e58b65dab4570ac367d", null ],
+    [ "containsAll", "a07919.html#a9381147848489d8056676f27ee01dab4", null ],
+    [ "equals", "a07919.html#a13515b578dc4a6747f7f52124e21f8d0", null ],
+    [ "hashCode", "a07919.html#a2da9869b87f84ccacad3149093edaa16", null ],
+    [ "isEmpty", "a07919.html#a9fd6998bf5f652d6bba105da2db27a76", null ],
+    [ "iterator", "a07919.html#ae8c82e3a2ffe893abf07ad6aacb7ec35", null ],
+    [ "remove", "a07919.html#a88af59c1b3d7d192f5fc6411409499e2", null ],
+    [ "removeAll", "a07919.html#a3b9d65fa8894c7bbe278584733b77636", null ],
+    [ "retainAll", "a07919.html#aaf38effb65dd66e45fc70993322a1dba", null ],
+    [ "size", "a07919.html#aeb0642a686a97f487e84ffd657524b3a", null ],
+    [ "toArray", "a07919.html#a84e52fbd08d4d8e5d1d2813bb353077a", null ],
+    [ "toArray", "a07919.html#a4d13b0649bfe694c500fb385c8d62aa3", null ],
+    [ "toString", "a07919.html#a8f1ba7769953b72e2925b4b6628f03b7", null ],
+    [ "view", "a07919.html#aa87e37d92de00b936837f3002909eea0", null ]
 ];

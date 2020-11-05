@@ -1,18 +1,8 @@
 var a03911 =
 [
-    [ "GeobufFeatureSerializer", "a03915.html", "a03915" ],
-    [ "GeobufEncoder", "a03911.html#a059335bc6c4ed36510b51415f05b344a", null ],
-    [ "addRing", "a03911.html#ae2a8d0e774f2f3e8884b41e515dd31ca", null ],
-    [ "close", "a03911.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
-    [ "geomToGeobuf", "a03911.html#aa782d2899ea37dccf97a0976d1250751", null ],
-    [ "makeFeature", "a03911.html#aeae4ca31768435dcc855a2cb0563277b", null ],
-    [ "makeFeatureCollection", "a03911.html#a79fbda324ece9a04133a7f10bc44d369", null ],
-    [ "multiPolyToGeobuf", "a03911.html#a01fa598a980468da328e90e5c5a92171", null ],
-    [ "pointToGeobuf", "a03911.html#ad09e3f3a6c7efdd7b0bb1eb1eab8701f", null ],
-    [ "polyToGeobuf", "a03911.html#a33d9a20e96b7ec89debb94f50afce243", null ],
-    [ "writeFeatureCollection", "a03911.html#a2837338cbac5370c2116989bc34b520d", null ],
-    [ "LOG", "a03911.html#a0159d765986a400c80ba2313847b6877", null ],
-    [ "outputStream", "a03911.html#a05097be2ad56955bf9a4ebb1f74d0187", null ],
-    [ "precision", "a03911.html#a67687c3d0aa95fc6ad0694047af4eb11", null ],
-    [ "precisionMultiplier", "a03911.html#a5597b8b9cb4a8de92c12b43a98778ac3", null ]
+    [ "AddPointTest", "a08831.html", "a08831" ],
+    [ "RemovePointTest", "a08835.html", "a08835" ],
+    [ "SetEndPointTest", "a08839.html", "a08839" ],
+    [ "SetPointTest", "a08843.html", "a08843" ],
+    [ "SetStartPointTest", "a08847.html", "a08847" ]
 ];

@@ -1,5 +1,5 @@
 var a08423 =
 [
-    [ "testAsGeoURI", "a08423.html#aae403d68ccc2ecfb409ca338b5ba0101", null ],
-    [ "testGeometry", "a08423.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testMinimumClearance", "a08423.html#a66deeca736cad11f886ba1567bcb6fe1", null ],
+    [ "testPolygon", "a08423.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

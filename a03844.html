@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package de.hsmainz.cs.semgis.arqextension.test.geometry.editor</title>
+<title>jena-geo: Package org.geotoolkit.io.yaml</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,30 +63,49 @@ $(document).ready(function(){initNavTree('a03844.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package de.hsmainz.cs.semgis.arqextension.test.geometry.editor</div>  </div>
+<div class="title">Package org.geotoolkit.io.yaml</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Read and write objects using the YAML or <a class="el" href="a07287.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> syntax.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08387.html">AddGeometryTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07287.html">JSON</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (<a class="el" href="a07287.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a>).  <a href="a07287.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08391.html">EnsureClosedTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07291.html">MetadataFactory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates metadata objects of the given <a class="el" href="">Class</a> using the properties given in a <a class="el" href="">Map</a>.  <a href="a07291.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08395.html">RemoveGeometryTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07295.html">Reader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads objects from the <a class="el" href="a07287.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> format.  <a href="a07295.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08399.html">RemoveRepeatedPointsTest</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08403.html">SetGeometryTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07299.html">Writer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats objects in the <a class="el" href="a07287.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> format.  <a href="a07299.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Read and write objects using the YAML or <a class="el" href="a07287.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> syntax. </p>
+<p>In this library, <a class="el" href="a07287.html" title="Reads and writes objects using the &lt;cite&gt;JavaScript Object Notation&lt;/cite&gt; (JSON). ">JSON</a> (&lt;cite&gt;JavaScript Object Notation&lt;/cite&gt;) is considered as a subset of YAML.</p>
+<p>{</p>
+<h1><a class="anchor" id="Valid"></a>
+objects}</h1>
+<p>This package provides static methods accepting an <code>Object</code> argument. The given object shall be an instance of one of the followings:</p>
+<ul>
+<li>
+A subclass of <a class="el" href="">org.apache.sis.metadata.AbstractMetadata</a>. </li>
+<li>
+An implementation of a GeoAPI interface from the <a class="el" href="">org.opengis.metadata</a> package or sub-packages. </li>
+</ul>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys)  </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03839.html">test</a></li><li class="navelem"><a class="el" href="a03842.html">geometry</a></li><li class="navelem"><a class="el" href="a03844.html">editor</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03842.html">io</a></li><li class="navelem"><a class="el" href="a03844.html">yaml</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

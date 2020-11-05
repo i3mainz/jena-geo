@@ -1,12 +1,24 @@
 var a06535 =
 [
-    [ "Worker", "a06535.html#ae7dfd2c9f310cb8e7ad1c90c8e5481d6", null ],
-    [ "executeOnCurrentTile", "a06535.html#a460b7efed78d9e1a0d37ae409e52f229", null ],
-    [ "rethrowOrWrap", "a06535.html#afdff4aa4324ad7460be67cf5007b5e86", null ],
-    [ "run", "a06535.html#a2c71443ed78646800cfa677fad85cacf", null ],
-    [ "accumulator", "a06535.html#ae6f9097774c75a5f0677b1abad167637", null ],
-    [ "cursor", "a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a", null ],
-    [ "processor", "a06535.html#a5fbeac52d84508f2507ba8348aafab09", null ],
-    [ "tx", "a06535.html#a40590f55f82df430f8035df8dd4f03c2", null ],
-    [ "ty", "a06535.html#a75f29260f9728325050cd039109732b7", null ]
+    [ "Position", "a06535.html#aea9833bb161088ed2fa5676b90c744db", null ],
+    [ "Position", "a06535.html#ace44259edbab084202766ab8a8509e77", null ],
+    [ "equals", "a06535.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
+    [ "fromPosition", "a06535.html#a10c39e72f0b4afd8dca0723bb3e9130a", null ],
+    [ "getCoordinate", "a06535.html#a4b8b072ddfe3afdae3207da827af6fa1", null ],
+    [ "getCoordinateFractional", "a06535.html#a1271be17968d6bc8097d33eac903c6d0", null ],
+    [ "getCoordinateReferenceSystem", "a06535.html#ac3ea7ca030ecd46451eb9394fd466e2d", null ],
+    [ "getCoordinateValue", "a06535.html#ae9c536bfa00ee818f704345c39298b11", null ],
+    [ "getCoordinateValues", "a06535.html#ab046f8d925ed267544b53c0cf0b40c67", null ],
+    [ "getDimension", "a06535.html#a56e1ed7f77c1dad3205d8c25e62c0432", null ],
+    [ "getDirectPosition", "a06535.html#a692b16f95982fd2e952cb2ae79caeb69", null ],
+    [ "getOrdinate", "a06535.html#a301fa3d4cf92dfbeee8c73a3178f6b3b", null ],
+    [ "hashCode", "a06535.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "pointOutsideCoverage", "a06535.html#abd74946782d37989bb539d6f690cf1a6", null ],
+    [ "setCoordinateValue", "a06535.html#a7ef92afd753c98b35fb034cf5f1ba35d", null ],
+    [ "setOrdinate", "a06535.html#a45700753823db31027d6eae57bbe8b3b", null ],
+    [ "toExtent", "a06535.html#a69789ee6e2767e6891ebe8e7da8e908d", null ],
+    [ "toPosition", "a06535.html#ad70ac16ff1a0a5fa977512d70843590c", null ],
+    [ "toString", "a06535.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "coordinates", "a06535.html#a3601ddc6e157b2c5ef7c8e630ca64f5e", null ],
+    [ "serialVersionUID", "a06535.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: SimpleBufferedImageOp Class Reference</title>
+<title>jena-geo: MutableTreeNode Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,77 +62,55 @@ $(document).ready(function(){initNavTree('a06775.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06772.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SimpleBufferedImageOp Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">MutableTreeNode Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An implementation of <a class="el" href="">BufferedImageOp</a> where the result is expected to be an image of the same size than the input.  
+<p>Defines the requirements for a tree node object that can change.  
  <a href="a06775.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for SimpleBufferedImageOp:</div>
+Inheritance diagram for MutableTreeNode:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06774.png" border="0" usemap="#SimpleBufferedImageOp_inherit__map" alt="Inheritance graph"/></div>
-<map name="SimpleBufferedImageOp_inherit__map" id="SimpleBufferedImageOp_inherit__map">
+<div class="center"><img src="a06774.png" border="0" usemap="#MutableTreeNode_inherit__map" alt="Inheritance graph"/></div>
+<map name="MutableTreeNode_inherit__map" id="MutableTreeNode_inherit__map">
+<area shape="rect" id="node5" href="a06767.html" title="General&#45;purpose node in a tree data structure. " alt="" coords="47,229,214,256"/>
+<area shape="rect" id="node3" href="a06787.html" title="Defines the requirements for an object that can be used as a tree node in a javax.swing.JTree. " alt="" coords="155,80,234,107"/>
+<area shape="rect" id="node6" href="a06779.html" title="A tree node with a name which may be different than the &#160;#userObject user object}. " alt="" coords="70,304,191,331"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for SimpleBufferedImageOp:</div>
+Collaboration diagram for MutableTreeNode:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06773.png" border="0" usemap="#SimpleBufferedImageOp_coll__map" alt="Collaboration graph"/></div>
-<map name="SimpleBufferedImageOp_coll__map" id="SimpleBufferedImageOp_coll__map">
+<div class="center"><img src="a06773.png" border="0" usemap="#MutableTreeNode_coll__map" alt="Collaboration graph"/></div>
+<map name="MutableTreeNode_coll__map" id="MutableTreeNode_coll__map">
+<area shape="rect" id="node3" href="a06787.html" title="Defines the requirements for an object that can be used as a tree node in a javax.swing.JTree. " alt="" coords="155,80,234,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8d52af9dbfb5e386a1c9ba7cf59e821"><td class="memItemLeft" align="right" valign="top">abstract RenderedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#ae8d52af9dbfb5e386a1c9ba7cf59e821">filter</a> (final BufferedImage src)</td></tr>
-<tr class="memdesc:ae8d52af9dbfb5e386a1c9ba7cf59e821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the operation on the given image.  <a href="#ae8d52af9dbfb5e386a1c9ba7cf59e821">More...</a><br /></td></tr>
-<tr class="separator:ae8d52af9dbfb5e386a1c9ba7cf59e821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae090065b8e72215a0f4751189dc250b"><td class="memItemLeft" align="right" valign="top">BufferedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#aae090065b8e72215a0f4751189dc250b">filter</a> (final BufferedImage src, BufferedImage dest)</td></tr>
-<tr class="memdesc:aae090065b8e72215a0f4751189dc250b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the operation on the given image.  <a href="#aae090065b8e72215a0f4751189dc250b">More...</a><br /></td></tr>
-<tr class="separator:aae090065b8e72215a0f4751189dc250b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8608c993b96d2da4e3d7ba60d329f30"><td class="memItemLeft" align="right" valign="top">BufferedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#ad8608c993b96d2da4e3d7ba60d329f30">createCompatibleDestImage</a> (final BufferedImage src, ColorModel destCM)</td></tr>
-<tr class="memdesc:ad8608c993b96d2da4e3d7ba60d329f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates destination image with the correct size and number of bands.  <a href="#ad8608c993b96d2da4e3d7ba60d329f30">More...</a><br /></td></tr>
-<tr class="separator:ad8608c993b96d2da4e3d7ba60d329f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8600844dafb3b5beba41c3d3161d2e"><td class="memItemLeft" align="right" valign="top">Rectangle2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#afb8600844dafb3b5beba41c3d3161d2e">getBounds2D</a> (final BufferedImage src)</td></tr>
-<tr class="memdesc:afb8600844dafb3b5beba41c3d3161d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bounding box of the filtered destination image.  <a href="#afb8600844dafb3b5beba41c3d3161d2e">More...</a><br /></td></tr>
-<tr class="separator:afb8600844dafb3b5beba41c3d3161d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec2ec51f9ae8beeaed4d5aee6ce6268d"><td class="memItemLeft" align="right" valign="top">Point2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#aec2ec51f9ae8beeaed4d5aee6ce6268d">getPoint2D</a> (final Point2D srcPt, final Point2D dstPt)</td></tr>
-<tr class="memdesc:aec2ec51f9ae8beeaed4d5aee6ce6268d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the corresponding destination point given a point in the source image.  <a href="#aec2ec51f9ae8beeaed4d5aee6ce6268d">More...</a><br /></td></tr>
-<tr class="separator:aec2ec51f9ae8beeaed4d5aee6ce6268d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a026e955f65639874b784587793b6f"><td class="memItemLeft" align="right" valign="top">RenderingHints&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#ad4a026e955f65639874b784587793b6f">getRenderingHints</a> ()</td></tr>
-<tr class="memdesc:ad4a026e955f65639874b784587793b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rendering hints for this operation.  <a href="#ad4a026e955f65639874b784587793b6f">More...</a><br /></td></tr>
-<tr class="separator:ad4a026e955f65639874b784587793b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a26090d97818c9f39ae41cb487b750689"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#a26090d97818c9f39ae41cb487b750689">SimpleBufferedImageOp</a> ()</td></tr>
-<tr class="memdesc:a26090d97818c9f39ae41cb487b750689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new operation.  <a href="#a26090d97818c9f39ae41cb487b750689">More...</a><br /></td></tr>
-<tr class="separator:a26090d97818c9f39ae41cb487b750689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06775.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 6973234963094057672L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
-<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ecb8d182a13d06a11322dcaf137806"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06787.html#a18ecb8d182a13d06a11322dcaf137806">getUserObject</a> ()</td></tr>
+<tr class="memdesc:a18ecb8d182a13d06a11322dcaf137806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this node's user object.  <a href="#a18ecb8d182a13d06a11322dcaf137806">More...</a><br /></td></tr>
+<tr class="separator:a18ecb8d182a13d06a11322dcaf137806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd652bce4d0314f36b5a526d4a18cdd"><td class="memItemLeft" align="right" valign="top">Enumeration&lt;? extends javax.swing.tree.TreeNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06787.html#a4dd652bce4d0314f36b5a526d4a18cdd">children</a> ()</td></tr>
+<tr class="memdesc:a4dd652bce4d0314f36b5a526d4a18cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the children of this node as an.  <a href="#a4dd652bce4d0314f36b5a526d4a18cdd">More...</a><br /></td></tr>
+<tr class="separator:a4dd652bce4d0314f36b5a526d4a18cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06787.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this node suitable for a user interface.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An implementation of <a class="el" href="">BufferedImageOp</a> where the result is expected to be an image of the same size than the input. </p>
-<p>This class is not public because we rely on JAI when we can. It is used only when an operation can not be easily described in a single JAI parameter block.</p>
-<p>{</p>
-<h1><a class="anchor" id="Serialization"></a>
-}</h1>
-<p>This class must be serializable because the operation may be sent over the network for execution on a remote server.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.01</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.00  </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a26090d97818c9f39ae41cb487b750689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26090d97818c9f39ae41cb487b750689">&#9670;&nbsp;</a></span>SimpleBufferedImageOp()</h2>
+<div class="textblock"><p>Defines the requirements for a tree node object that can change. </p>
+<p>It may changes by adding or removing child nodes, or by changing the contents of a user object stored in the node. </p>
+<p>This interface inherits the <a class="el" href="a06787.html#a18ecb8d182a13d06a11322dcaf137806">getUserObject()</a> method from Geotk <a class="el" href="a06787.html">TreeNode</a>. This is needed because the Swing <a class="el" href="">javax.swing.tree.MutableTreeNode</a> interface defines a <a class="el" href="">setUserObject(Object)</a> method but doesn't define or inherit any</p><div class="fragment"><div class="line"><a class="code" href="a06787.html#a18ecb8d182a13d06a11322dcaf137806">getUserObject</a>() </div></div><!-- fragment --><p> .</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4dd652bce4d0314f36b5a526d4a18cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd652bce4d0314f36b5a526d4a18cdd">&#9670;&nbsp;</a></span>children()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +119,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06775.html">SimpleBufferedImageOp</a> </td>
+          <td class="memname">Enumeration&lt;? extends javax.swing.tree.TreeNode&gt; children </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -149,52 +127,21 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new operation. </p>
+<p>Returns the children of this node as an. </p>
+<div class="fragment"><div class="line">Enumeration </div></div><!-- fragment --><p> .</p>
+<dl class="section return"><dt>Returns</dt><dd>The children. </dd></dl>
 
-<p class="reference">References <a class="el" href="a06775.html#ae8d52af9dbfb5e386a1c9ba7cf59e821">SimpleBufferedImageOp.filter()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                      {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a06795.html#a4d28a2d328695c03f60f54b13b169736">Trees.copy()</a>, and <a class="el" href="a06783.html#a3b7b6bf79e53907cd1a3f388bcb7ae54">TreeFormat.hasTreeTableNode()</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad8608c993b96d2da4e3d7ba60d329f30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8608c993b96d2da4e3d7ba60d329f30">&#9670;&nbsp;</a></span>createCompatibleDestImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BufferedImage createCompatibleDestImage </td>
-          <td>(</td>
-          <td class="paramtype">final BufferedImage&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ColorModel&#160;</td>
-          <td class="paramname"><em>destCM</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates destination image with the correct size and number of bands. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06775.html#aae090065b8e72215a0f4751189dc250b">SimpleBufferedImageOp.filter()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                                                               {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (destCM == null) {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            destCM = src.getColorModel();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">final</span> WritableRaster raster = destCM.createCompatibleWritableRaster(src.getWidth(), src.getHeight());</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> BufferedImage(destCM, raster, <span class="keyword">false</span>, null);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="ae8d52af9dbfb5e386a1c9ba7cf59e821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8d52af9dbfb5e386a1c9ba7cf59e821">&#9670;&nbsp;</a></span>filter() <span class="overload">[1/2]</span></h2>
+<a id="a18ecb8d182a13d06a11322dcaf137806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ecb8d182a13d06a11322dcaf137806">&#9670;&nbsp;</a></span>getUserObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,157 +150,26 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract RenderedImage filter </td>
-          <td>(</td>
-          <td class="paramtype">final BufferedImage&#160;</td>
-          <td class="paramname"><em>src</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies the operation on the given image. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">src</td><td>The image to be filtered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of the filtering operation. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06775.html#aae090065b8e72215a0f4751189dc250b">SimpleBufferedImageOp.filter()</a>, and <a class="el" href="a06775.html#a26090d97818c9f39ae41cb487b750689">SimpleBufferedImageOp.SimpleBufferedImageOp()</a>.</p>
-
-</div>
-</div>
-<a id="aae090065b8e72215a0f4751189dc250b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae090065b8e72215a0f4751189dc250b">&#9670;&nbsp;</a></span>filter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BufferedImage filter </td>
-          <td>(</td>
-          <td class="paramtype">final BufferedImage&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BufferedImage&#160;</td>
-          <td class="paramname"><em>dest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Applies the operation on the given image. </p>
-<p>The default implementation invokes <a class="el" href="a06775.html#ae8d52af9dbfb5e386a1c9ba7cf59e821">filter(BufferedImage)</a> and convert the result to a <a class="el" href="">BufferedImage</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">src</td><td>The image to be filtered. </td></tr>
-    <tr><td class="paramname">dest</td><td>Where to store the result, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of the filtering operation. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06775.html#ad8608c993b96d2da4e3d7ba60d329f30">SimpleBufferedImageOp.createCompatibleDestImage()</a>, <a class="el" href="a06743.html#a7ec08b09324f69c4d632e53b8044ecc1">ImageUtilities.fill()</a>, <a class="el" href="a06775.html#ae8d52af9dbfb5e386a1c9ba7cf59e821">SimpleBufferedImageOp.filter()</a>, and <a class="el" href="a06775.html#afb8600844dafb3b5beba41c3d3161d2e">SimpleBufferedImageOp.getBounds2D()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                                             {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">final</span> RenderedImage result = <a class="code" href="a06775.html#ae8d52af9dbfb5e386a1c9ba7cf59e821">filter</a>(src);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (dest != result) {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (dest == null) {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span> (result instanceof BufferedImage) {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    <span class="keywordflow">return</span> (BufferedImage) result;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">if</span> (result instanceof PlanarImage) {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    <span class="keywordflow">return</span> ((PlanarImage) result).getAsBufferedImage();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                dest = <a class="code" href="a06775.html#ad8608c993b96d2da4e3d7ba60d329f30">createCompatibleDestImage</a>(src, null);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keyword">final</span> Rectangle2D bounds = <a class="code" href="a06775.html#afb8600844dafb3b5beba41c3d3161d2e">getBounds2D</a>(src);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">if</span> (dest.getWidth() != bounds.getWidth() || dest.getHeight() != bounds.getHeight()) {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>();</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            ImageUtilities.fill(dest, 0);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keyword">final</span> Graphics2D gr = dest.createGraphics();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            gr.drawRenderedImage(result, <span class="keyword">new</span> AffineTransform());</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            gr.dispose();</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> dest;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div><div class="ttc" id="a06775_html_afb8600844dafb3b5beba41c3d3161d2e"><div class="ttname"><a href="a06775.html#afb8600844dafb3b5beba41c3d3161d2e">org.geotoolkit.image.internal.SimpleBufferedImageOp.getBounds2D</a></div><div class="ttdeci">Rectangle2D getBounds2D(final BufferedImage src)</div><div class="ttdoc">Returns the bounding box of the filtered destination image. </div><div class="ttdef"><b>Definition:</b> SimpleBufferedImageOp.java:120</div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-<div class="ttc" id="a06775_html_ae8d52af9dbfb5e386a1c9ba7cf59e821"><div class="ttname"><a href="a06775.html#ae8d52af9dbfb5e386a1c9ba7cf59e821">org.geotoolkit.image.internal.SimpleBufferedImageOp.filter</a></div><div class="ttdeci">abstract RenderedImage filter(final BufferedImage src)</div><div class="ttdoc">Applies the operation on the given image. </div></div>
-<div class="ttc" id="a06775_html_ad8608c993b96d2da4e3d7ba60d329f30"><div class="ttname"><a href="a06775.html#ad8608c993b96d2da4e3d7ba60d329f30">org.geotoolkit.image.internal.SimpleBufferedImageOp.createCompatibleDestImage</a></div><div class="ttdeci">BufferedImage createCompatibleDestImage(final BufferedImage src, ColorModel destCM)</div><div class="ttdoc">Creates destination image with the correct size and number of bands. </div><div class="ttdef"><b>Definition:</b> SimpleBufferedImageOp.java:107</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afb8600844dafb3b5beba41c3d3161d2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb8600844dafb3b5beba41c3d3161d2e">&#9670;&nbsp;</a></span>getBounds2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Rectangle2D getBounds2D </td>
-          <td>(</td>
-          <td class="paramtype">final BufferedImage&#160;</td>
-          <td class="paramname"><em>src</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the bounding box of the filtered destination image. </p>
-<p>The default implementation returns the same bounds than the source image. </p>
-
-<p class="reference">References <a class="el" href="a06743.html#a0e3506e32701066c3620b43975e9206f">ImageUtilities.getBounds()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06775.html#aae090065b8e72215a0f4751189dc250b">SimpleBufferedImageOp.filter()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                                            {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> ImageUtilities.getBounds(src);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="aec2ec51f9ae8beeaed4d5aee6ce6268d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec2ec51f9ae8beeaed4d5aee6ce6268d">&#9670;&nbsp;</a></span>getPoint2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Point2D getPoint2D </td>
-          <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>srcPt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>dstPt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the location of the corresponding destination point given a point in the source image. </p>
-<p>The default implementation returns the same coordinates than the source point. </p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                        {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (dstPt == null) {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> (Point2D) srcPt.clone();</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        dstPt.setLocation(srcPt);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> dstPt;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="ad4a026e955f65639874b784587793b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4a026e955f65639874b784587793b6f">&#9670;&nbsp;</a></span>getRenderingHints()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RenderingHints getRenderingHints </td>
+          <td class="memname">Object getUserObject </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the rendering hints for this operation. </p>
-<p>The default implementation returns an empty map. </p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                              {</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> RenderingHints(null);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div></div><!-- fragment -->
+<p>Returns this node's user object. </p>
+<dl class="section return"><dt>Returns</dt><dd>the Object stored at this node by the user </dd></dl>
+
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3238d314ecdee14d2966760945d00c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,17 +178,26 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final long serialVersionUID = 6973234963094057672L</td>
+          <td class="memname">String toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>For cross-version compatibility. </p>
+<p>Returns a string representation of this node suitable for a user interface. </p>
+<p><a class="el" href="">javax.swing.JTree</a> uses this method for formatting the text to display in the widget.</p>
+<dl class="section return"><dt>Returns</dt><dd>The text to display in the<div class="fragment"><div class="line">JTree </div></div><!-- fragment -->  for this node. </dd></dl>
+
+<p>Implemented in <a class="el" href="a06779.html#ad146fa8579a5f8a876c4688cc5a68520">NamedTreeNode</a>, and <a class="el" href="a06767.html#ad146fa8579a5f8a876c4688cc5a68520">DefaultMutableTreeNode</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06795.html#a4d28a2d328695c03f60f54b13b169736">Trees.copy()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +207,7 @@ Static Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03766.html">internal</a></li><li class="navelem"><a class="el" href="a06775.html">SimpleBufferedImageOp</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03821.html">gui</a></li><li class="navelem"><a class="el" href="a03822.html">swing</a></li><li class="navelem"><a class="el" href="a03820.html">tree</a></li><li class="navelem"><a class="el" href="a06775.html">MutableTreeNode</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

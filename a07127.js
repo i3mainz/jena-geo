@@ -1,6 +1,8 @@
 var a07127 =
 [
-    [ "DELETE_BEFORE_INSERT", "a07127.html#af41faf30faeb98fd4b784aed0f8949aa", null ],
-    [ "INSERT_ONLY", "a07127.html#a947bf2b34e9a272b00db238bc49d4ae3", null ],
-    [ "INSERT_OR_UPDATE", "a07127.html#af9eb36b517bcfa37f6183fba9a2c9faa", null ]
+    [ "Host", "a07127.html#ac5301279411a011a2af04a9a7c49e14b", null ],
+    [ "Host", "a07127.html#a5f1f831fdb4c407efb0fe00da70939b5", null ],
+    [ "host", "a07127.html#a2502b12b30261ef4dea2ff97a6b78cab", null ],
+    [ "path", "a07127.html#adb85e16ac8c9f62df2d33b1262649843", null ],
+    [ "port", "a07127.html#a0008be20f8979e1db6fb31c28cd26025", null ]
 ];

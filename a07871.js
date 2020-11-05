@@ -1,27 +1,5 @@
 var a07871 =
 [
-    [ "Iter", "a07875.html", "a07875" ],
-    [ "DisjointSet", "a07871.html#a0bd8b6ad8c0f7639b0cfe53378f225e0", null ],
-    [ "DisjointSet", "a07871.html#a0f2ebcaa376b0c1dbaecee20cda3f20f", null ],
-    [ "DisjointSet", "a07871.html#a59b8bb12b4fded9fed62c464d6957d5d", null ],
-    [ "DisjointSet", "a07871.html#a7c241dececa12e1f26d070754f831e9b", null ],
-    [ "add", "a07871.html#aedbc13a303fdeb044c5973530b3e0a81", null ],
-    [ "addAll", "a07871.html#a05204546a062611cad958f1e45d5856e", null ],
-    [ "clear", "a07871.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
-    [ "contains", "a07871.html#ae1be99f861382755fb4ab18f78003154", null ],
-    [ "containsAll", "a07871.html#a27227dc46c4d217674c1faa3d5a17469", null ],
-    [ "equals", "a07871.html#a2eec3973ba6935944cd82e521fa5f6e4", null ],
-    [ "getTrash", "a07871.html#a26503f37453949f9eed394791afbcf27", null ],
-    [ "hashCode", "a07871.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "iterator", "a07871.html#a47c5a247288d15e20eb94dc1ca643271", null ],
-    [ "remove", "a07871.html#a59bedf41619590473b10a8a1d94502ce", null ],
-    [ "removeAll", "a07871.html#a857ee04025b8600dd08dcb16fdd227a1", null ],
-    [ "retainAll", "a07871.html#ad527f16e122649be3fd551a831e47439", null ],
-    [ "size", "a07871.html#af4b57d21919c42d55af03391f91a1c08", null ],
-    [ "toArray", "a07871.html#a1f5ed6131a4063a785a46ee29ca40743", null ],
-    [ "toArray", "a07871.html#a797a48c49a6f0901260b0a1509996271", null ],
-    [ "toString", "a07871.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "map", "a07871.html#a7b1f93aaf28af8cc57c3e79b111dcc02", null ],
-    [ "serialVersionUID", "a07871.html#a3238d314ecdee14d2966760945d00c3b", null ],
-    [ "trash", "a07871.html#a4c0fa39c3558f4f69df169fd34c69810", null ]
+    [ "StorageEvent", "a07871.html#a2326d06b541de496f289691e61496fae", null ],
+    [ "copy", "a07871.html#a92735b4ded23b50429730629430e9491", null ]
 ];

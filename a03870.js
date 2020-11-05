@@ -1,5 +1,5 @@
 var a03870 =
 [
-    [ "SampleGeometries", "a09327.html", null ],
-    [ "SampleRasters", "a09331.html", "a09331" ]
+    [ "LoggedFormat", "a08071.html", "a08071" ],
+    [ "LogProducer", "a08075.html", "a08075" ]
 ];

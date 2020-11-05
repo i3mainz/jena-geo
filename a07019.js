@@ -1,5 +1,29 @@
 var a07019 =
 [
-    [ "NodataFilterCRIF", "a07019.html#a724ea5253561af2e9c369e65d5737141", null ],
-    [ "create", "a07019.html#af70d58d889728a9e6f2bb2738e16a887", null ]
+    [ "List", "a07023.html", "a07023" ],
+    [ "IIOListeners", "a07019.html#a78c05302dbe023c2aef762e3d43c4285", null ],
+    [ "addIIOReadProgressListener", "a07019.html#abb0052bcb8c08921038bd31f7541a7f7", null ],
+    [ "addIIOReadUpdateListener", "a07019.html#a70e4dd3b654966a8082e242674a43f4b", null ],
+    [ "addIIOReadWarningListener", "a07019.html#a831b4e1457f7f46b2d1118acd8970f9f", null ],
+    [ "addIIOWriteProgressListener", "a07019.html#ad51681571911bfebaf3230b90e5acbfa", null ],
+    [ "addIIOWriteWarningListener", "a07019.html#aaf9c673b11c8e71834d3cc05326d8b40", null ],
+    [ "addListenersTo", "a07019.html#a14d8fb379985fff3c0c77c1ab2feb56b", null ],
+    [ "addListenersTo", "a07019.html#a3c95facaae0c48a97a857b6540d63d32", null ],
+    [ "getListeners", "a07019.html#af82a609921e890b598f27b505cb7c089", null ],
+    [ "getReadListeners", "a07019.html#ac87e023a1b98c6a236e68086eeae585f", null ],
+    [ "getWriteListeners", "a07019.html#a1359366763f3783e1d6bf5044484ca7c", null ],
+    [ "manageListeners", "a07019.html#a880c928945bf3a413358b84f14753338", null ],
+    [ "manageListeners", "a07019.html#a143d7f6683ee72f4c4953196d4fc5148", null ],
+    [ "removeIIOReadProgressListener", "a07019.html#a986ca1f4dea3142dd52b7d8b1ad9fda8", null ],
+    [ "removeIIOReadUpdateListener", "a07019.html#a1ba09e435487a2f3e9dcc6e014a70746", null ],
+    [ "removeIIOReadWarningListener", "a07019.html#a1bcd84cdbb3a986cfade7d98d3e21ed6", null ],
+    [ "removeIIOWriteProgressListener", "a07019.html#a484e1c28419b1a7fe764ceb533d3298a", null ],
+    [ "removeIIOWriteWarningListener", "a07019.html#ab7d63858d576d0ba6186ebe643dd61ae", null ],
+    [ "removeListenersFrom", "a07019.html#a911308e043e6e21064207a5262a34c64", null ],
+    [ "removeListenersFrom", "a07019.html#ae2323796225d94289fca402a942730f9", null ],
+    [ "setListeners", "a07019.html#a15a3252a319282bea2823f1610d174fd", null ],
+    [ "listeners", "a07019.html#a6470862d2408cce7ea878e3ca35a01fc", null ],
+    [ "READ", "a07019.html#aea7ea134df40260bff955b488b9f17e6", null ],
+    [ "serialVersionUID", "a07019.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "WRITE", "a07019.html#aa0bdebd606d38b4893fe8a3c13f4b76c", null ]
 ];

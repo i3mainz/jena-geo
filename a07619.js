@@ -1,13 +1,13 @@
 var a07619 =
 [
-    [ "MapProjectionDescriptor", "a07619.html#a73d93c16976e64eee0a62ad03b3796b8", null ],
-    [ "createValue", "a07619.html#a7f22f2aebb4b358b169f84e224598222", null ],
-    [ "descriptor", "a07619.html#ac43eb499c7c1c4a6eac8be435c995ac1", null ],
-    [ "ADD_EARTH_RADIUS", "a07619.html#abde721c7a5fc7d40a451fae2a03c3216", null ],
-    [ "ADD_STANDARD_PARALLEL", "a07619.html#a7e4da9416df24c53200a5c4fbe5c8c2d", null ],
-    [ "EARTH_RADIUS", "a07619.html#a353e51f3770e37635d1a6c5cba2423aa", null ],
-    [ "INVERSE_FLATTENING", "a07619.html#ad7e426a819786ffc5a6cd91eddaedecc", null ],
-    [ "serialVersionUID", "a07619.html#a3238d314ecdee14d2966760945d00c3b", null ],
-    [ "STANDARD_PARALLEL", "a07619.html#ada1f9eb74466df687ad81621f878b862", null ],
-    [ "supplement", "a07619.html#a65bc8427ed3cfa4563a16696a3c265e7", null ]
+    [ "Assertions", "a07619.html#ad87d114e0670dedd85ebd04517ea64ec", null ],
+    [ "checkDerivative", "a07619.html#a389504a0d09f6355dbd35c0ef5004414", null ],
+    [ "checkInverseTransform", "a07619.html#a8f01a7acdf7c6ea20a9003b2e01f75c6", null ],
+    [ "checkInverseTransform", "a07619.html#ae7344d9531343fe1df053612dcddd8f7", null ],
+    [ "checkTransform", "a07619.html#a20cd87c223c269a9caa2600a21ee5906", null ],
+    [ "checkTransform", "a07619.html#ad8ff646382b06bdac00750b8822b936a", null ],
+    [ "compare", "a07619.html#a22712de1fd9020c2b9d901e5791433f2", null ],
+    [ "DERIVATIVE_TOLERANCE", "a07619.html#a6d0ebada0f68a43e961fa55e24a4bef0", null ],
+    [ "FORWARD_TOLERANCE", "a07619.html#aff214aa5728181a88d9f937c5743210a", null ],
+    [ "INVERSE_TOLERANCE", "a07619.html#a92af38a74e47209696ad1ed52c2209d9", null ]
 ];

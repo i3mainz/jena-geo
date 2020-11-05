@@ -1,6 +1,5 @@
 var a08543 =
 [
-    [ "testMaxDistance", "a08543.html#acd5d6c70876299a0278552ba577a7efc", null ],
-    [ "testGeom", "a08543.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
-    [ "testGeom2", "a08543.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
+    [ "testAsTextRound", "a08543.html#a48e3642d229bd7292cf49871d69ed015", null ],
+    [ "testGeometry", "a08543.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

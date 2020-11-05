@@ -1,11 +1,12 @@
 var a07947 =
 [
-    [ "Exceptions", "a07947.html#af2fe5a47901ce6689f5b43b3958cc0e8", null ],
-    [ "formatStackTrace", "a07947.html#a1c1ac4999c79a8fba8098dea4639ef86", null ],
-    [ "isValidMessage", "a07947.html#a04e90ef74f8f7e9c23c55c18bcc185ec", null ],
-    [ "paintStackTrace", "a07947.html#a289ce66901d22b83dbcd27ebbd550c32", null ],
-    [ "show", "a07947.html#a29703c49a400889a3d239257d48adcb4", null ],
-    [ "show", "a07947.html#a667185faedd9b5bdcdcfd0ff486557b6", null ],
-    [ "show", "a07947.html#a3fc3bd23f04a020e934b628e6aad09b4", null ],
-    [ "TAB_WIDTH", "a07947.html#aed69df0679fffc44264ce73f00593a51", null ]
+    [ "DeferringIterator", "a07947.html#af385b12649429b6088a30a7c61ac1018", null ],
+    [ "fallbacks", "a07947.html#adb3c0ef1dd13ed0d4fc809eb13276cb4", null ],
+    [ "hasNext", "a07947.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "isDeferred", "a07947.html#a04dad234173800a5923173cc5cad9982", null ],
+    [ "next", "a07947.html#a0c7c989f92fa935704b4915f1f400edd", null ],
+    [ "remove", "a07947.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
+    [ "fallbacks", "a07947.html#a8edf525e327321e86fb91eb7320e64c4", null ],
+    [ "iterator", "a07947.html#ac32073933df5a4eaab0b7c6e5f06fd65", null ],
+    [ "usingFallbacks", "a07947.html#a72671c985090e890a47cab982404af0f", null ]
 ];

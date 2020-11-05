@@ -1,9 +1,16 @@
 var a07411 =
 [
-    [ "createProcess", "a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba", null ],
-    [ "getDisplayName", "a07411.html#a6b3984dc7f84612f3a3a4a74b55f0b64", null ],
-    [ "getIdentifier", "a07411.html#a5c438eeb40d745bc5a7fb706eaf4cbdf", null ],
-    [ "getInputDescriptor", "a07411.html#a1b006f171772daaa9f97364bdcae428b", null ],
-    [ "getOutputDescriptor", "a07411.html#a0c093102980687865610b6b0d1580488", null ],
-    [ "getProcedureDescription", "a07411.html#a704ac0ca9eb3c259317bb89836f4ba15", null ]
+    [ "ValueRestriction", "a07411.html#a59308bf591b6339acb7520b1d5be482c", null ],
+    [ "create", "a07411.html#adeacaf28cef8db70de96f09eb69cde3c", null ],
+    [ "create", "a07411.html#ae5ddd8045aaacefb6ec38274ac645cbb", null ],
+    [ "equals", "a07411.html#a537c7b35c090ed43e1d3f130188e9198", null ],
+    [ "hashCode", "a07411.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "toString", "a07411.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "violation", "a07411.html#afdb5bc73020fd84fc6fcacaa9f1239c8", null ],
+    [ "obligation", "a07411.html#a1109e2f1932a43958b44946d3d34449c", null ],
+    [ "PENDING", "a07411.html#ae352ae925ff625251c79b7a99134e999", null ],
+    [ "POOL", "a07411.html#aa3106e509ec91fac21151e865d9c2dbb", null ],
+    [ "range", "a07411.html#a45e92e7744083aa7ae1291d9563d00e4", null ],
+    [ "serialVersionUID", "a07411.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "validValues", "a07411.html#aad481f2961fdf5500eedb3a38075b8cd", null ]
 ];

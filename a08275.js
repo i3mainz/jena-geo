@@ -1,5 +1,8 @@
 var a08275 =
 [
-    [ "testGeometricMedian", "a08275.html#a1b1210c64e5b3ba5df6e23a9974d9592", null ],
-    [ "testGeometry", "a08275.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "LengthSubstring", "a08275.html#a8375df00135da48182ecb97996cfebf1", null ],
+    [ "computeSubstring", "a08275.html#ad8eec22df403077b17b2ac90b0c95230", null ],
+    [ "getSubstring", "a08275.html#a0899c2e48f2616119c3f0e3e297549e6", null ],
+    [ "getSubstring", "a08275.html#a7aa54bd5af7e7f3fd33047db15540bc4", null ],
+    [ "line", "a08275.html#a53e992765125efc5fc595f0d38e947ea", null ]
 ];

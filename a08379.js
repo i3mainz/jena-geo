@@ -1,6 +1,6 @@
 var a08379 =
 [
-    [ "testGeomFromText", "a08379.html#a2678d2fcc796b673cc52b0e000a954b0", null ],
-    [ "geoJsonTestGeom", "a08379.html#a117e8ff340791b5aa0658f5840b5dcf4", null ],
-    [ "inputText", "a08379.html#a9a5086d43cfaac403f2a79addec33322", null ]
+    [ "testHasRepeatedPoints2", "a08379.html#a573715384a3d69a8e8c4722bc82c5e5e", null ],
+    [ "testGeometry", "a08379.html#abc3f514f005cba49e406658e2d3086eb", null ],
+    [ "testGeometry2", "a08379.html#af1173652e671b8f9051f8630b98c73fb", null ]
 ];

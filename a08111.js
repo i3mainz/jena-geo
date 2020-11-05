@@ -1,6 +1,13 @@
 var a08111 =
 [
-    [ "getVersion", "a08111.html#ac0cb929ed90c5c09352f4ccb4ede3d61", null ],
-    [ "getVersion", "a08111.html#aa1a606779a2d23f45b232f1fed2774d5", null ],
-    [ "list", "a08111.html#a5283b7db5a0cae7c08c2650bbd83dd39", null ]
+    [ "Short", "a08111.html#a19af7565e9342a8798d11438aee6212a", null ],
+    [ "compareTo", "a08111.html#ad3f6173a463422da81e4b90a8b288358", null ],
+    [ "ranks", "a08111.html#abb150dc13c316a480c404b1703c03990", null ],
+    [ "ranks", "a08111.html#a7e3ac659899192333adea39b87f41331", null ],
+    [ "ranks", "a08111.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
+    [ "ranks", "a08111.html#abb82129695e9a7b212788912ccc45539", null ],
+    [ "ranks", "a08111.html#ad3b1488acd654783f7a4dc632814441f", null ],
+    [ "ranks", "a08111.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
+    [ "ranks", "a08111.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
+    [ "value", "a08111.html#a0ebd6167c5fadea68999c401c320b0ff", null ]
 ];

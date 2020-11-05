@@ -1,13 +1,7 @@
 var a08011 =
 [
-    [ "Float", "a08011.html#a97ba0b08151c0bf623660e829067ebd2", null ],
-    [ "compareTo", "a08011.html#a7893c80d4bedc3bc20cf1176e18d7f5b", null ],
-    [ "ranks", "a08011.html#abb150dc13c316a480c404b1703c03990", null ],
-    [ "ranks", "a08011.html#a7e3ac659899192333adea39b87f41331", null ],
-    [ "ranks", "a08011.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
-    [ "ranks", "a08011.html#abb82129695e9a7b212788912ccc45539", null ],
-    [ "ranks", "a08011.html#ad3b1488acd654783f7a4dc632814441f", null ],
-    [ "ranks", "a08011.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
-    [ "ranks", "a08011.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
-    [ "value", "a08011.html#a43c784cad5127c16dccd2f94e824d83d", null ]
+    [ "Compare", "a08011.html#a80430ba034e2787817ba5feb551de439", null ],
+    [ "compare", "a08011.html#a53650583143bb2daed1e0dfbe3eb3571", null ],
+    [ "INSTANCE", "a08011.html#a7d54c88b47adf0a1d31f44db8efb3687", null ],
+    [ "serialVersionUID", "a08011.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

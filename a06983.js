@@ -1,8 +1,9 @@
 var a06983 =
 [
-    [ "DaemonThread", "a06983.html#a2eb8afeef5a95547c06b18fe7a11b696", null ],
-    [ "DaemonThread", "a06983.html#a0b827a421759548883ec09f0d8789950", null ],
-    [ "isKillRequested", "a06983.html#a85a7877dcc475afa61faf679b046c78f", null ],
-    [ "kill", "a06983.html#a627f0d98cbf66a9f5988e4ae5ffef710", null ],
-    [ "killRequested", "a06983.html#ae8ef02b471a01f2576f9390c3d8c354b", null ]
+    [ "Mask", "a06983.html#ac4f83d0860ec5c77170f4b21232105d1", null ],
+    [ "computeRect", "a06983.html#aaa942144d8ad54cd607ac09cc85c70f3", null ],
+    [ "getSources", "a06983.html#a016c1e8b58082cf2add38a25a00fd20d", null ],
+    [ "layout", "a06983.html#ae33c60a088a675d97d37fd915632b610", null ],
+    [ "newValues", "a06983.html#a2dc20d928d61a2cbdd547761cb1acbe8", null ],
+    [ "OPERATION_NAME", "a06983.html#a4ba7d667bd2c11bb15f09506d145b31e", null ]
 ];

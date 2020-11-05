@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.geotoolkit.util.logging</title>
+<title>jena-geo: Package org.apache.sis.image</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,51 +63,23 @@ $(document).ready(function(){initNavTree('a03810.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.geotoolkit.util.logging</div>  </div>
+<div class="title">Package org.apache.sis.image</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Extensions to the  java.util.logging Java logging} framework.  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07983.html">LoggedFormat</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a <a class="el" href="">Format</a> object in order to either parse fully a string, or log a warning.  <a href="a07983.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07987.html">LogProducer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for objects that produce logs of special interest.  <a href="a07987.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06567.html">PlanarImage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class of <a class="el" href="">RenderedImage</a> implementations in Apache SIS.  <a href="a06567.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Extensions to the  java.util.logging Java logging} framework. </p>
-<p>See <a class="el" href="">org.apache.sis.util.logging</a> for more information.</p>
-<p>{</p>
-<h1><a class="anchor" id="Choosing"></a>
-a logging framework}</h1>
-<p>The SIS project uses the standard <a class="el" href="">java.util.logging.Logger</a> API for its logging, but this package allows redirection of logging messages to some other frameworks like <a href="http://logging.apache.org/log4j/">Log4J</a>.</p>
-<p>We recommend to stick to standard Java logging when possible. However if inter-operability with an other logging framework is required, then the only action needed is to include <b>one</b> of the following JAR on the classpath: </p>
-<ul>
-<li>
-<div class="fragment"><div class="line">geotk-logging-commons.jar </div></div><!-- fragment --> for Apache logging </li>
-<li>
-<div class="fragment"><div class="line">geotk-logging-log4j.jar </div></div><!-- fragment --> for Log4J logging </li>
-</ul>
-<p>{</p>
-<h1><a class="anchor" id="Note"></a>
-on floating point types}</h1>
-<p>All Geotk code should fetch their logger through a call to the SIS <a class="el" href="">org.apache.sis.util.logging.Logging#getLogger(String)</a> method, <b>not</b> the standard <a class="el" href="">java.util.logging.Logger#getLogger(String)</a> method. This is necessary in order to give Geotk/SIS a chance to redirect log events to an other logging framework.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.16</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://download.oracle.com/javase/6/docs/technotes/guides/logging/overview.html">Java Logging Overview</a></dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.4  </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03810.html">logging</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03807.html">apache</a></li><li class="navelem"><a class="el" href="a03808.html">sis</a></li><li class="navelem"><a class="el" href="a03810.html">image</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

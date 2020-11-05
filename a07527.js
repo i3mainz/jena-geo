@@ -1,7 +1,11 @@
 var a07527 =
 [
-    [ "XAffineTransform", "a07527.html#a5220c8bb6f133614619c9cbedb0b1ca4", null ],
-    [ "getScale", "a07527.html#acba8d2b73cf8dd267b9cbd9b7995e981", null ],
-    [ "isIdentity", "a07527.html#a36bddb00a4be752319c09f8e0f610d1e", null ],
-    [ "roundIfAlmostInteger", "a07527.html#ad4156f5f7098b2dc55d3434324e8e1fa", null ]
+    [ "addListener", "a07527.html#ac3105b8b72c72140d73f00070fc1609e", null ],
+    [ "call", "a07527.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca", null ],
+    [ "getDescriptor", "a07527.html#ab0bf04fe2a5e9c37f86e0a00738766bc", null ],
+    [ "getInput", "a07527.html#a1f6e05bc62202398002ecb7aaed46542", null ],
+    [ "getListeners", "a07527.html#a89afd5200039ec7321a82a2f1d9a036b", null ],
+    [ "getMetadata", "a07527.html#a6e8f0f9c2be92818a707e613e127a414", null ],
+    [ "removeListener", "a07527.html#a858002849881b20fda675f8b8c57aebc", null ],
+    [ "rollback", "a07527.html#a071de472f6ac976c658e4643f3fb3d0c", null ]
 ];

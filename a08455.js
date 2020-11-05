@@ -1,5 +1,5 @@
 var a08455 =
 [
-    [ "testAsTextRound", "a08455.html#a48e3642d229bd7292cf49871d69ed015", null ],
-    [ "testGeometry", "a08455.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testNumPoints", "a08455.html#ab30b87a5d89bd6e36dae388ce20e61a7", null ],
+    [ "testGeom", "a08455.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ]
 ];

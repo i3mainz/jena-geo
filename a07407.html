@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Process Interface Reference</title>
+<title>jena-geo: MetadataUtilities Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,271 +61,175 @@ $(document).ready(function(){initNavTree('a07407.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="a07404.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Process Interface Reference</div>  </div>
+<div class="title">MetadataUtilities Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>An operation applied to some given data to achieve whatever analyze or model transformation.  
- <a href="a07407.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for Process:</div>
+Inheritance diagram for MetadataUtilities:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07406.png" border="0" usemap="#Process_inherit__map" alt="Inheritance graph"/></div>
-<map name="Process_inherit__map" id="Process_inherit__map">
-<area shape="rect" id="node3" href="a07439.html" title="Extend org.geotoolkit.process.Process interface to add a rollback method used to revert process org..." alt="" coords="20,169,165,196"/>
+<div class="center"><img src="a07406.png" border="0" usemap="#MetadataUtilities_inherit__map" alt="Inheritance graph"/></div>
+<map name="MetadataUtilities_inherit__map" id="MetadataUtilities_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Process:</div>
+Collaboration diagram for MetadataUtilities:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07405.png" border="0" usemap="#Process_coll__map" alt="Collaboration graph"/></div>
-<map name="Process_coll__map" id="Process_coll__map">
+<div class="center"><img src="a07405.png" border="0" usemap="#MetadataUtilities_coll__map" alt="Collaboration graph"/></div>
+<map name="MetadataUtilities_coll__map" id="MetadataUtilities_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07411.html">ProcessDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc">getDescriptor</a> ()</td></tr>
-<tr class="memdesc:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the process algorithm and its input/output parameters.  <a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">More...</a><br /></td></tr>
-<tr class="separator:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f6e05bc62202398002ecb7aaed46542"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a1f6e05bc62202398002ecb7aaed46542">getInput</a> ()</td></tr>
-<tr class="memdesc:a1f6e05bc62202398002ecb7aaed46542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the input values given to the <a class="el" href="a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method.  <a href="#a1f6e05bc62202398002ecb7aaed46542">More...</a><br /></td></tr>
-<tr class="separator:a1f6e05bc62202398002ecb7aaed46542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a> ()  throws ProcessException</td></tr>
-<tr class="memdesc:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>.  <a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">More...</a><br /></td></tr>
-<tr class="separator:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e8f0f9c2be92818a707e613e127a414"><td class="memItemLeft" align="right" valign="top">ProcessStep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a6e8f0f9c2be92818a707e613e127a414">getMetadata</a> ()</td></tr>
-<tr class="memdesc:a6e8f0f9c2be92818a707e613e127a414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the process, the geographic inputs and outputs and other metadata.  <a href="#a6e8f0f9c2be92818a707e613e127a414">More...</a><br /></td></tr>
-<tr class="separator:a6e8f0f9c2be92818a707e613e127a414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3105b8b72c72140d73f00070fc1609e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e">addListener</a> (<a class="el" href="a07431.html">ProcessListener</a> listener)</td></tr>
-<tr class="memdesc:ac3105b8b72c72140d73f00070fc1609e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener to the list of objects to inform about the process progress.  <a href="#ac3105b8b72c72140d73f00070fc1609e">More...</a><br /></td></tr>
-<tr class="separator:ac3105b8b72c72140d73f00070fc1609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858002849881b20fda675f8b8c57aebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a858002849881b20fda675f8b8c57aebc">removeListener</a> (<a class="el" href="a07431.html">ProcessListener</a> listener)</td></tr>
-<tr class="memdesc:a858002849881b20fda675f8b8c57aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener from the list of objects to inform about the process progress.  <a href="#a858002849881b20fda675f8b8c57aebc">More...</a><br /></td></tr>
-<tr class="separator:a858002849881b20fda675f8b8c57aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89afd5200039ec7321a82a2f1d9a036b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07431.html">ProcessListener</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a89afd5200039ec7321a82a2f1d9a036b">getListeners</a> ()</td></tr>
-<tr class="memdesc:a89afd5200039ec7321a82a2f1d9a036b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all registered listeners, or an empty array if none.  <a href="#a89afd5200039ec7321a82a2f1d9a036b">More...</a><br /></td></tr>
-<tr class="separator:a89afd5200039ec7321a82a2f1d9a036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cb7c96ef5b111648035a0b5013c5a01"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a4cb7c96ef5b111648035a0b5013c5a01">getIdentifier</a> (Metadata metadata)</td></tr>
+<tr class="separator:a4cb7c96ef5b111648035a0b5013c5a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ae1865b0c0ca05002084a2ca28b458"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ae8ae1865b0c0ca05002084a2ca28b458">addOnlineResource</a> (final Metadata target, URI resource)</td></tr>
+<tr class="memdesc:ae8ae1865b0c0ca05002084a2ca28b458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update input metadata by adding given URI to its online resources.  <a href="#ae8ae1865b0c0ca05002084a2ca28b458">More...</a><br /></td></tr>
+<tr class="separator:ae8ae1865b0c0ca05002084a2ca28b458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d7ce11d5d4699269c9c4d8534d1bd4"><td class="memItemLeft" align="right" valign="top">static Stream&lt; CoverageDescription &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a64d7ce11d5d4699269c9c4d8534d1bd4">extractCoverageDescription</a> (final Metadata source)</td></tr>
+<tr class="separator:a64d7ce11d5d4699269c9c4d8534d1bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2f99150ade978d241183bcbb8821a9f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a2f99150ade978d241183bcbb8821a9f4">MetadataUtilities</a> ()</td></tr>
+<tr class="separator:a2f99150ade978d241183bcbb8821a9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An operation applied to some given data to achieve whatever analyze or model transformation. </p>
-<div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> instances are created by <a class="el" href="a07411.html">ProcessDescriptor</a> and can be executed in an <a class="el" href="">ExecutorService</a>.</p>
-<p>{</p>
-<h1><a class="anchor" id="Event"></a>
-notifications}</h1>
-<p>All</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> implementations <b>must</b> notify all their <a class="el" href="a07431.html">ProcessListener</a>s when the <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call()</a> method is starting and when it is terminating, either successfully or on failure.</p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>4.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>ExecutorService</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac3105b8b72c72140d73f00070fc1609e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3105b8b72c72140d73f00070fc1609e">&#9670;&nbsp;</a></span>addListener()</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Alexis Manin (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2f99150ade978d241183bcbb8821a9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f99150ade978d241183bcbb8821a9f4">&#9670;&nbsp;</a></span>MetadataUtilities()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void addListener </td>
+          <td class="memname"><a class="el" href="a07407.html">MetadataUtilities</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a07431.html">ProcessListener</a>&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Adds a listener to the list of objects to inform about the process progress. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listener</td><td>The listener to add. </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a6fa09e7ca2ab88d0a3dd745ec28a5bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">&#9670;&nbsp;</a></span>call()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae8ae1865b0c0ca05002084a2ca28b458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ae1865b0c0ca05002084a2ca28b458">&#9670;&nbsp;</a></span>addOnlineResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ParameterValueGroup call </td>
+          <td class="memname">static boolean addOnlineResource </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws <a class="el" href="a07419.html">ProcessException</a></td>
+          <td class="paramtype">final Metadata&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">URI&#160;</td>
+          <td class="paramname"><em>resource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>. </p>
-<p>{</p><dl class="section note"><dt>Note</dt><dd>Returning a parameter object may sound strange, since parameters are usually for input values rather than output values. Note however that ISO 19115 do the same, since the <code>ProcessStep</code> outputs is a collection of <code>Source</code> objects. In both cases, the outputs may be used as inputs in the next step of a process chain.}</dd></dl>
-<p>The following relations shall hold: </p>
-<ul>
-<li>
-The  ParameterValueGroup::getDescriptor() descriptor} of the returned parameters is the same instance than <code> <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07411.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> getOutputDescriptor()}</code>. </li>
-<li>
-When the process is  <a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f" title="Reports that a process has completed successfully. ">ProcessListener::completed</a> completed}, the <a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a> value shall be the same than the return value of this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method. </li>
-</ul>
-<p>{</p>
-<h1><a class="anchor" id="Event"></a>
-notifications}</h1>
-<p>For any  <a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e" title="Adds a listener to the list of objects to inform about the process progress. ">addListener</a> registered listeners}, this method shall invoke the following methods. Note that all notification events except</p><div class="fragment"><div class="line">progressing </div></div><!-- fragment --><p> are mandatory for all</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> implementations. </p>
-<ul>
-<li>
-<a class="el" href="a07431.html#a7bed9c26a745fe4a7f968be46900b6cb">started</a> (<em>mandatory</em>) at the beginning of this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method; </li>
-<li>
-<a class="el" href="a07431.html#a67c0e7b51b0df4f69b57148f46580b65">progressing</a> (<em>optional</em>) during the process execution; </li>
-<li>
-When this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method is about to exit, exactly <b>one</b> of the following:<ul>
-<li>
-<a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f">completed</a> on success, or </li>
-<li>
-<a class="el" href="a07431.html#a2df903dde386ca28d758548f8e74ed30">failed</a> if an error occurred.</li>
-</ul>
-</li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>The computation results as an parameter value groups. </dd></dl>
+<p>Update input metadata by adding given URI to its online resources. </p>
+<p>If the URI is already present in the metadata, calling this method will have no effect (except consuming CPU time).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Metadata to update. </td></tr>
+    <tr><td class="paramname">resource</td><td>The resource to add as linkage into the metadata. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if we successfully added given URI as <a class="el" href="">OnlineResource#getLinkage()</a>. False if we have not because it is already present. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a07419.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if the process failed.</td></tr>
+    <tr><td class="paramname">UnsupportedOperationException</td><td>If given metadata is read-only. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07411.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> </dd>
-<dd>
-ProcessStep::getOutputs() </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                                 {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        DefaultDataIdentification info = null;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">boolean</span> alreadySet = <span class="keyword">false</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">final</span> Iterator&lt;? extends Identification&gt; it = target.getIdentificationInfo().iterator();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">while</span> (it.hasNext()) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            Identification tmp = it.next();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (tmp.getCitation() != null) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                alreadySet = tmp.getCitation().getOnlineResources().stream()</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        .map(OnlineResource::getLinkage)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        .anyMatch(resource::equals);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">if</span> (alreadySet) <span class="comment">// Wanted resource is already set.</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (tmp instanceof DefaultDataIdentification) {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                info = (DefaultDataIdentification) tmp;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (!alreadySet) {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (info == null) {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                info = <span class="keyword">new</span> DefaultDataIdentification();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                ((Collection) target.getIdentificationInfo()).add(info);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">final</span> DefaultCitation cit = <span class="keyword">new</span> DefaultCitation();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            cit.getOnlineResources().add(<span class="keyword">new</span> DefaultOnlineResource(resource));</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            info.setCitation(cit);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> alreadySet;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="ab0bf04fe2a5e9c37f86e0a00738766bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">&#9670;&nbsp;</a></span>getDescriptor()</h2>
+<a id="a64d7ce11d5d4699269c9c4d8534d1bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d7ce11d5d4699269c9c4d8534d1bd4">&#9670;&nbsp;</a></span>extractCoverageDescription()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07411.html">ProcessDescriptor</a> getDescriptor </td>
+          <td class="memname">static Stream&lt;CoverageDescription&gt; extractCoverageDescription </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">final Metadata&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Description of the process algorithm and its input/output parameters. </p>
-<p>The returned value is the descriptor that created this</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> instance.</p>
-<dl class="section return"><dt>Returns</dt><dd>The process descriptor. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a07419.html#a6956c4e3ccaf7414da811e77f1626dd6">ProcessException.ProcessException()</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                                {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        Stream&lt;CoverageDescription&gt; cds = (Stream) source.getContentInfo().stream()</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                .filter(info -&gt; info instanceof CoverageDescription);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> cds;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a1f6e05bc62202398002ecb7aaed46542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f6e05bc62202398002ecb7aaed46542">&#9670;&nbsp;</a></span>getInput()</h2>
+<a id="a4cb7c96ef5b111648035a0b5013c5a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb7c96ef5b111648035a0b5013c5a01">&#9670;&nbsp;</a></span>getIdentifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ParameterValueGroup getInput </td>
+          <td class="memname">static String getIdentifier </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Metadata&#160;</td>
+          <td class="paramname"><em>metadata</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Returns the input values given to the <a class="el" href="a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method. </p>
-<p>The  ParameterValueGroup::getDescriptor() descriptor} of those parameters is the instance returned by <code> <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07411.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> getInputDescriptor()}</code>.</p>
-<dl class="section return"><dt>Returns</dt><dd>The input parameter values (never<div class="fragment"><div class="line">null </div></div><!-- fragment --> ).</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07411.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> </dd>
-<dd>
-ProcessStep::getSources() </dd></dl>
-
-</div>
-</div>
-<a id="a89afd5200039ec7321a82a2f1d9a036b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89afd5200039ec7321a82a2f1d9a036b">&#9670;&nbsp;</a></span>getListeners()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a07431.html">ProcessListener</a> [] getListeners </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns all registered listeners, or an empty array if none. </p>
-<dl class="section return"><dt>Returns</dt><dd>The registered listeners. </dd></dl>
-
-</div>
-</div>
-<a id="a6e8f0f9c2be92818a707e613e127a414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e8f0f9c2be92818a707e613e127a414">&#9670;&nbsp;</a></span>getMetadata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ProcessStep getMetadata </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a description of the process, the geographic inputs and outputs and other metadata. </p>
-<p>Those metadata are suitable to processes on geographic data and may not be applicable to every kind of processes. If this parameter is provided, then: </p>
-<ul>
-<li>
-<a class="el" href="">ProcessStep#getDate()</a> is the execution date and time of the process. </li>
-<li>
-<a class="el" href="">ProcessStep#getSources()</a> are the geographic  <a class="el" href="a07407.html#a1f6e05bc62202398002ecb7aaed46542" title="Returns the input values given to the ProcessDescriptor#createProcess(ParameterValueGroup) method...">Process::getInput()</a> process inputs}. </li>
-<li>
-<a class="el" href="">ProcessStep#getOutputs()</a> are the geographic  <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca" title="Executes the process and returns the output in a new ParameterValueGroup. ">Process::call()</a> process outputs}. </li>
-<li>
-<a class="el" href="">ProcessStep#getProcessingInformation()</a> is the  <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">Process::getDescriptor()</a> process descriptor}. </li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>A description of the process, the geographic inputs and outputs and other metadata.</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
-
-</div>
-</div>
-<a id="a858002849881b20fda675f8b8c57aebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858002849881b20fda675f8b8c57aebc">&#9670;&nbsp;</a></span>removeListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void removeListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07431.html">ProcessListener</a>&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a listener from the list of objects to inform about the process progress. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listener</td><td>The listener to remove. </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                          {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">final</span> Collection&lt;? extends Identification&gt; identifications = metadata.getIdentificationInfo();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">for</span> (Identification identification : identifications) {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">final</span> Citation citation = identification.getCitation();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> (citation != null) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">for</span> (Identifier identifier : citation.getIdentifiers()) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    <span class="keywordflow">return</span> identifier.getCode();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -334,7 +238,7 @@ ProcessStep::getSources() </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03791.html">process</a></li><li class="navelem"><a class="el" href="a07407.html">Process</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03848.html">metadata</a></li><li class="navelem"><a class="el" href="a07407.html">MetadataUtilities</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

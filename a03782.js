@@ -1,17 +1,12 @@
 var a03782 =
 [
-    [ "wkt", "a03783.html", "a03783" ],
-    [ "yaml", "a03784.html", "a03784" ],
-    [ "ContentFormatException", "a07139.html", "a07139" ],
-    [ "DefaultFileFilter", "a07143.html", "a07143" ],
-    [ "ExpandedTabWriter", "a07147.html", "a07147" ],
-    [ "FilterWriter", "a07151.html", "a07151" ],
-    [ "IndentedLineWriter", "a07155.html", "a07155" ],
-    [ "LEDataInputStream", "a07163.html", "a07163" ],
-    [ "LEDataOutputStream", "a07167.html", "a07167" ],
-    [ "LineFormat", "a07171.html", "a07171" ],
-    [ "LineReader", "a07175.html", "a07175" ],
-    [ "LineReaders", "a07179.html", "a07179" ],
-    [ "LineWriter", "a07187.html", "a07187" ],
-    [ "SimpleFileFilter", "a07191.html", "a07191" ]
+    [ "AsBIL", "a05779.html", null ],
+    [ "AsBinary", "a05783.html", "a05783" ],
+    [ "AsCoverageJSON", "a05787.html", "a05787" ],
+    [ "AsHexRastWKB", "a05791.html", "a05791" ],
+    [ "AsJPG", "a05795.html", "a05795" ],
+    [ "AsPNG", "a05799.html", "a05799" ],
+    [ "AsRaster", "a05803.html", "a05803" ],
+    [ "AsTIFF", "a05807.html", "a05807" ],
+    [ "DumpAsPolygons", "a05811.html", "a05811" ]
 ];

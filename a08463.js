@@ -1,4 +1,5 @@
 var a08463 =
 [
-    [ "testGeometry", "a08463.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testGeomFromGeoJSON", "a08463.html#a64b3f7b5bcdec5b93820a9958c0622a3", null ],
+    [ "geoJsonTestGeom", "a08463.html#a117e8ff340791b5aa0658f5840b5dcf4", null ]
 ];

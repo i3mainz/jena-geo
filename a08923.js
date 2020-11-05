@@ -1,7 +1,5 @@
 var a08923 =
 [
-    [ "testAddRing", "a08923.html#abfc2c7e942ef652635d2256ba4e1fa47", null ],
-    [ "duplicateRings", "a08923.html#a92f3ef00fc079a76b7f943d9ed6cec77", null ],
-    [ "nonduplicateRings", "a08923.html#a675a0b1b194538fc07fa716705f883a5", null ],
-    [ "ring", "a08923.html#a3e4a839eee2eb5791f90656e82eec721", null ]
+    [ "testZ", "a08923.html#ac463fcc72b3892f24bbd0dc3b8902044", null ],
+    [ "testPoint", "a08923.html#af26f700ee129f846cac58735f6dcc380", null ]
 ];

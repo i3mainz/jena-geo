@@ -1,8 +1,11 @@
 var a06355 =
 [
-    [ "WKBTextSRS", "a06355.html#a12d2a5c4b7a29eae5d108bccb1e55b11", null ],
-    [ "getSrsURI", "a06355.html#a7d7dded4f73b0a90d90f68ccc5f16bc3", null ],
-    [ "getWkbText", "a06355.html#a4a2ce7a2dcd4fa0818378fb8b97931fb", null ],
-    [ "srsURI", "a06355.html#aaa7845d06052bead86bb2de40935e4d9", null ],
-    [ "wkbText", "a06355.html#a7b6ce5371e4ad222f4b09eaadfdcae09", null ]
+    [ "DataTypeCase", "a06355.html#ae1ed0e403e903bfe970b8b753ff83887", null ],
+    [ "getNumber", "a06355.html#a26b2bb379b3e56aedd0bd8846ed6aa7b", null ],
+    [ "valueOf", "a06355.html#a622395379b1a4a34b574dc7b2a791333", null ],
+    [ "DATATYPE_NOT_SET", "a06355.html#ab38fc07dbbe7b107c1a66958b5ee7a0d", null ],
+    [ "FEATURE", "a06355.html#a84a8847c4124b284d1d5ae20bc9be583", null ],
+    [ "FEATURE_COLLECTION", "a06355.html#a495c815c8d7e4f9fb304e0ba33439697", null ],
+    [ "GEOMETRY", "a06355.html#a80274176007424103d239bf9a975ef46", null ],
+    [ "value", "a06355.html#ac4f474c82e82cbb89ca7c36dd52be0ed", null ]
 ];

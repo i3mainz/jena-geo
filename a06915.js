@@ -1,16 +1,20 @@
 var a06915 =
 [
-    [ "Float", "a06915.html#a99ae71f8c22964ffbb9bc27ffdadad86", null ],
-    [ "Float", "a06915.html#a77d7125e97f87df7cbe76448eb61075a", null ],
-    [ "copyAsInts", "a06915.html#a221d105ab24f5e3b59a30e73aff9f600", null ],
-    [ "equals", "a06915.html#a537c7b35c090ed43e1d3f130188e9198", null ],
-    [ "getInstance", "a06915.html#a3c3187a9ea5768277146d5961af9b768", null ],
-    [ "getInstance", "a06915.html#ac600d752075964fc3047467438a60478", null ],
-    [ "getPixel", "a06915.html#a4ace0cc7b5dbb9fa5821a8c1547553b3", null ],
-    [ "getSample", "a06915.html#afe024339c5e1fd2c67ae1bce412d5fa4", null ],
-    [ "hashCode", "a06915.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "instance", "a06915.html#a7dce96e734633d27d37f4ff71224e08c", null ],
-    [ "setPixel", "a06915.html#afc227f53eba58d0aabab35827c88508b", null ],
-    [ "toString", "a06915.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "samples", "a06915.html#ac941418590f242b55799ed473785f66d", null ]
+    [ "ResampleGrid", "a06915.html#aeacf879700e013095ee930bbc72251e0", null ],
+    [ "getGrid", "a06915.html#a42a3f4c3fa205d1edcc80d446b3406f1", null ],
+    [ "getGridHeight", "a06915.html#a2a2aa7f8965efaed12eb7bb5accc6a66", null ],
+    [ "getGridWidth", "a06915.html#ad2d761a6fe76489e47456e1782f71d4d", null ],
+    [ "getMinGridX", "a06915.html#a57baa743b75afe089414dbe75d06a8b0", null ],
+    [ "getMinGridXIndex", "a06915.html#a6942e6e1bd0a6337e03b209a6e1e3ba2", null ],
+    [ "getMinGridY", "a06915.html#a9d321d6ef6023bb654b42855a81e387c", null ],
+    [ "getMinGridYIndex", "a06915.html#a7f544bbedeea8daa63be9599059f9e62", null ],
+    [ "getStepX", "a06915.html#ab54bfe54363ce02b86aaffffbddc7f09", null ],
+    [ "getStepY", "a06915.html#a3d0c2444aff1b465f467a5d6ff7d6b08", null ],
+    [ "grid", "a06915.html#aa52b2fbb75c7b81e14cf205ec42475ad", null ],
+    [ "gridHeight", "a06915.html#a08be338a86f87eeaf50d421fc7cd7df0", null ],
+    [ "gridWidth", "a06915.html#a8f8148506c83aeff29565d4aa4a875eb", null ],
+    [ "minGridX", "a06915.html#a44cec8919c8b6cb9d498425ecba2865a", null ],
+    [ "minGridY", "a06915.html#aa2f9ba18ac3aa325d2c8fde8d91e2c52", null ],
+    [ "stepX", "a06915.html#ab238a97f1c96fa3228dacb2384a64a85", null ],
+    [ "stepY", "a06915.html#af6d01fa6cb30d2a754839279fb9346e6", null ]
 ];

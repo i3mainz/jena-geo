@@ -1,6 +1,5 @@
 var a04535 =
 [
-    [ "computePoints", "a04535.html#a8d6f063bdd42f48126dcafe21d394012", null ],
-    [ "exec", "a04535.html#a084e892d3d5d0a47151e34261fac8052", null ],
-    [ "locateAlong", "a04535.html#a41cbf2b5aeff66536b1eed65885a8a04", null ]
+    [ "convertDecimalToLatLonText", "a04535.html#a4de262c8cc5abdbadbdd425520b98ef1", null ],
+    [ "exec", "a04535.html#a892f62c3bf1ab2917fc8745f0b6da2a3", null ]
 ];

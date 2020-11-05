@@ -1,7 +1,8 @@
 var a07055 =
 [
-    [ "JDK8", "a07055.html#a3922503c01e7ac94b9846685881f5f83", null ],
-    [ "parseDateTime", "a07055.html#a23b90ba8c3c44821b32b4bfe309a0d54", null ],
-    [ "printDateTime", "a07055.html#aea44721b1d0f370ee85106e833c4b9c0", null ],
-    [ "CALENDAR", "a07055.html#a497f8048ec7880642e5326b6558f21b9", null ]
+    [ "SampleModels", "a07055.html#abc277c637f75cd185bb7ec23d9b1c755", null ],
+    [ "getDataTypeSize", "a07055.html#a098b32fd36a76729d869b3eae44470fe", null ],
+    [ "getPixelBitStride", "a07055.html#af9ea6ea72e63b11362bc5eb3e9032e53", null ],
+    [ "getPixelStride", "a07055.html#a3365db531ec8650a061c7d240a00018a", null ],
+    [ "getScanlineStride", "a07055.html#afad97fa5d4e7ad2a2e23319590fe50f3", null ]
 ];

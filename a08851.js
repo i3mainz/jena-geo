@@ -1,5 +1,5 @@
 var a08851 =
 [
-    [ "testPointFromText", "a08851.html#a34b8808318d84beec7ded7da39c5ef6e", null ],
-    [ "testPoint1", "a08851.html#ab20d196cb6e34afc2e9cff8074e43bfd", null ]
+    [ "testAsEncodedPolyline", "a08851.html#a77e364f1e18fbe312ed563af435ddc8f", null ],
+    [ "testGeometry", "a08851.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

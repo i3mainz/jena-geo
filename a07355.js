@@ -1,7 +1,15 @@
 var a07355 =
 [
-    [ "PosixPathMatcher", "a07355.html#a4f7a9fecc1f8931ad89b481377cf1674", null ],
-    [ "PosixPathMatcher", "a07355.html#af126d3ae58e3c7c0deb97845f867b21a", null ],
-    [ "matches", "a07355.html#a05cabf0d4de5a15775d991d8882328b0", null ],
-    [ "pattern", "a07355.html#abb33befe85e6d355a89451ecc05cf784", null ]
+    [ "Histogram", "a07355.html#a875c02fff1ced0abe8b2c4b831c059f9", null ],
+    [ "getBucketRange", "a07355.html#a9ba40ca9d057d5e1ee47715192b605dd", null ],
+    [ "getBuckets", "a07355.html#a08476eb24918ab36e3ebd6b19ba413c2", null ],
+    [ "getBucketSize", "a07355.html#a15d930e1acc423ff7e70ee401237a704", null ],
+    [ "getEnd", "a07355.html#a9601985844def39b11f5b2499802e912", null ],
+    [ "getStart", "a07355.html#abd3ff887840ee0fefc50045ba427d058", null ],
+    [ "getSum", "a07355.html#a4bdc568d3b1f0e740369c4eebed900f3", null ],
+    [ "getValueAt", "a07355.html#a9f483d855ed0c4198b6b80004a17d7ee", null ],
+    [ "buckets", "a07355.html#a2d0d357e95a5b7f8d8b8419d1057a9e7", null ],
+    [ "end", "a07355.html#aa126a3b0a481f4e795840e89017ebd9d", null ],
+    [ "start", "a07355.html#a683d986cb9a27fad072ed1b33af21491", null ],
+    [ "sum", "a07355.html#ad21ee1949296449cb2806778a7fc94de", null ]
 ];

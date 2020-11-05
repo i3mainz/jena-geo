@@ -1,13 +1,9 @@
 var a06735 =
 [
-    [ "ImageDimension", "a06735.html#ab39b07a732298425937a5582cca37fa3", null ],
-    [ "ImageDimension", "a06735.html#a9a36349a01af8b21bb0ee67ac354a6ea", null ],
-    [ "equals", "a06735.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "getMemoryUsage", "a06735.html#a990ff28e42cd551e595c5efc8c54a224", null ],
-    [ "getNumSampleValues", "a06735.html#acf42145960fbf1dd6362d4ec8fa75e04", null ],
-    [ "hashCode", "a06735.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "FileKey", "a06735.html#a500be0da564d914fd26e204eb2b1c5c4", null ],
+    [ "getValueClass", "a06735.html#add5d743fc6fb18232910028591c19fb9", null ],
+    [ "isCompatibleValue", "a06735.html#a08faba5eee0f9415af2a22c1009291b2", null ],
     [ "toString", "a06735.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "dataType", "a06735.html#a7a4fe4dc6ee6adaea60c468adc5eca03", null ],
-    [ "numBands", "a06735.html#a2e25891634241ab38554b7565b2dce0e", null ],
-    [ "serialVersionUID", "a06735.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "writeReplace", "a06735.html#a7e303c648cb2ce8982a0e8c685d4e3cc", null ],
+    [ "writable", "a06735.html#adf77a9e1afe760570a4bc6e40b27dd34", null ]
 ];

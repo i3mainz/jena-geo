@@ -1,5 +1,5 @@
 var a08335 =
 [
-    [ "testMinimumClearance", "a08335.html#a66deeca736cad11f886ba1567bcb6fe1", null ],
-    [ "testPolygon", "a08335.html#a1e3187cbc25299380589200c398b3ffd", null ]
+    [ "testYMax", "a08335.html#a98991d9326941ea2d984df31280c0db4", null ],
+    [ "testLineString", "a08335.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

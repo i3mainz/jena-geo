@@ -1,6 +1,8 @@
 var a06407 =
 [
-    [ "TemporalRange", "a06407.html#a68ff4736e85a45d68ab7739852885b66", null ],
-    [ "from", "a06407.html#ad951563fb8d5f38fd9cdb8ef9eea8ac4", null ],
-    [ "to", "a06407.html#a220e90554a7d4ef913d6bf891e740a4b", null ]
+    [ "HexWKBTextSRS", "a06407.html#a9551cc49d0697080a64a79a497cf35e9", null ],
+    [ "getSrsURI", "a06407.html#a7d7dded4f73b0a90d90f68ccc5f16bc3", null ],
+    [ "getWkbText", "a06407.html#a4a2ce7a2dcd4fa0818378fb8b97931fb", null ],
+    [ "srsURI", "a06407.html#aaa7845d06052bead86bb2de40935e4d9", null ],
+    [ "wkbText", "a06407.html#a7b6ce5371e4ad222f4b09eaadfdcae09", null ]
 ];

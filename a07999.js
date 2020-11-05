@@ -1,20 +1,10 @@
 var a07999 =
 [
-    [ "Any", "a08003.html", "a08003" ],
-    [ "Byte", "a08027.html", "a08027" ],
-    [ "Double", "a08007.html", "a08007" ],
-    [ "Float", "a08011.html", "a08011" ],
-    [ "Integer", "a08019.html", "a08019" ],
-    [ "Long", "a08015.html", "a08015" ],
-    [ "Short", "a08023.html", "a08023" ],
-    [ "Ranks", "a07999.html#a000beb44cc32964086a410c8ad6b2ec5", null ],
-    [ "ranks", "a07999.html#abb150dc13c316a480c404b1703c03990", null ],
-    [ "ranks", "a07999.html#a7e3ac659899192333adea39b87f41331", null ],
-    [ "ranks", "a07999.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
-    [ "ranks", "a07999.html#abb82129695e9a7b212788912ccc45539", null ],
-    [ "ranks", "a07999.html#ad3b1488acd654783f7a4dc632814441f", null ],
-    [ "ranks", "a07999.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
-    [ "ranks", "a07999.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
-    [ "ranks", "a07999.html#ad60cd787ce3b3964b9e112eafba8bf8f", null ],
-    [ "index", "a07999.html#a850ad783b6f798003d1807d806cf2159", null ]
+    [ "SingletonIterator", "a07999.html#add5b45f7d4db4f28db7b3b113f8e0797", null ],
+    [ "hasNext", "a07999.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "next", "a07999.html#a0c7c989f92fa935704b4915f1f400edd", null ],
+    [ "remove", "a07999.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
+    [ "wrap", "a07999.html#abc3deb01bdc9a5f5c133d6d9cfbc531b", null ],
+    [ "hasNext", "a07999.html#a9a4a35a0a351d0f680a872cbd613ee55", null ],
+    [ "singleton", "a07999.html#ad8b59bd00078438ffeed89cc5158952b", null ]
 ];

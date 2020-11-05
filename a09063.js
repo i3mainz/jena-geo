@@ -1,8 +1,11 @@
 var a09063 =
 [
+    [ "displayRasterSummary", "a09063.html#a58e2b02539026083b8e4a001ac84f63c", null ],
+    [ "displayRasterSummary", "a09063.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09063.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09063.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testNumBands", "a09063.html#acbd68d09b85f29cb457f75f009ff1366", null ],
+    [ "testClamp", "a09063.html#ad49fe052dcd0b1473319ee9e7d5ba9ee", null ],
+    [ "combinedRasterLiteral", "a09063.html#a6efe8702be34a67e2bcbba55588c5b5f", null ],
     [ "covJSONString1", "a09063.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09063.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09063.html#aa5e2b5a6005895fc20b9f35523569430", null ],

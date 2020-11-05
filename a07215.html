@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Builder&lt; T &gt; Class Template Reference</title>
+<title>jena-geo: Synchronizer.Policy Enum Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,100 +61,71 @@ $(document).ready(function(){initNavTree('a07215.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a07212.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Builder&lt; T &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Synchronizer.Policy Enum Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Base class of all classes that are builder for other objects.  
+<p>The kind of synchronization.  
  <a href="a07215.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d60cf4674c12938520ffa2c8cb8fcf1"><td class="memItemLeft" align="right" valign="top">abstract T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07215.html#a5d60cf4674c12938520ffa2c8cb8fcf1">build</a> ()</td></tr>
-<tr class="memdesc:a5d60cf4674c12938520ffa2c8cb8fcf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the objects from the value previously set.  <a href="#a5d60cf4674c12938520ffa2c8cb8fcf1">More...</a><br /></td></tr>
-<tr class="separator:a5d60cf4674c12938520ffa2c8cb8fcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4c5b1b5b658880619647b859000724fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07215.html#a4c5b1b5b658880619647b859000724fc">Builder</a> ()</td></tr>
-<tr class="memdesc:a4c5b1b5b658880619647b859000724fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty builder.  <a href="#a4c5b1b5b658880619647b859000724fc">More...</a><br /></td></tr>
-<tr class="separator:a4c5b1b5b658880619647b859000724fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a947bf2b34e9a272b00db238bc49d4ae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07215.html#a947bf2b34e9a272b00db238bc49d4ae3">INSERT_ONLY</a></td></tr>
+<tr class="separator:a947bf2b34e9a272b00db238bc49d4ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9eb36b517bcfa37f6183fba9a2c9faa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07215.html#af9eb36b517bcfa37f6183fba9a2c9faa">INSERT_OR_UPDATE</a></td></tr>
+<tr class="separator:af9eb36b517bcfa37f6183fba9a2c9faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41faf30faeb98fd4b784aed0f8949aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07215.html#af41faf30faeb98fd4b784aed0f8949aa">DELETE_BEFORE_INSERT</a></td></tr>
+<tr class="separator:af41faf30faeb98fd4b784aed0f8949aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class of all classes that are builder for other objects. </p>
-<p>Subclasses provides an arbitrary amount of setter, together with a single <a class="el" href="a07215.html#a5d60cf4674c12938520ffa2c8cb8fcf1">build()</a> method implementation which create the object using the values previously set.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>The type of objects to build.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.20  </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4c5b1b5b658880619647b859000724fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5b1b5b658880619647b859000724fc">&#9670;&nbsp;</a></span>Builder()</h2>
+<div class="textblock"><p>The kind of synchronization. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="af41faf30faeb98fd4b784aed0f8949aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41faf30faeb98fd4b784aed0f8949aa">&#9670;&nbsp;</a></span>DELETE_BEFORE_INSERT</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07215.html">Builder</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">DELETE_BEFORE_INSERT</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates an empty builder. </p>
-<p>The default values of all fields are implementation dependent. </p>
+<p class="reference">Referenced by <a class="el" href="a07211.html#a3689f73e9e830d56da262a4ada599c78">Synchronizer.copy()</a>, and <a class="el" href="a07211.html#a2fb4d740476d4c1ccfd50a811ca2defb">Synchronizer.insert()</a>.</p>
 
-<p class="reference">References <a class="el" href="a07215.html#a5d60cf4674c12938520ffa2c8cb8fcf1">Builder&lt; T &gt;.build()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5d60cf4674c12938520ffa2c8cb8fcf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d60cf4674c12938520ffa2c8cb8fcf1">&#9670;&nbsp;</a></span>build()</h2>
+<a id="a947bf2b34e9a272b00db238bc49d4ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947bf2b34e9a272b00db238bc49d4ae3">&#9670;&nbsp;</a></span>INSERT_ONLY</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract T build </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">INSERT_ONLY</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates the objects from the value previously set. </p>
-<dl class="section return"><dt>Returns</dt><dd>The new object created from the user values. </dd></dl>
+</div>
+</div>
+<a id="af9eb36b517bcfa37f6183fba9a2c9faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9eb36b517bcfa37f6183fba9a2c9faa">&#9670;&nbsp;</a></span>INSERT_OR_UPDATE</h2>
 
-<p class="reference">Referenced by <a class="el" href="a07215.html#a4c5b1b5b658880619647b859000724fc">Builder&lt; T &gt;.Builder()</a>.</p>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INSERT_OR_UPDATE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07211.html#a2fb4d740476d4c1ccfd50a811ca2defb">Synchronizer.insert()</a>.</p>
 
 </div>
 </div>
@@ -164,7 +135,7 @@ Protected Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03785.html">lang</a></li><li class="navelem"><a class="el" href="a07215.html">Builder</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03833.html">internal</a></li><li class="navelem"><a class="el" href="a03841.html">sql</a></li><li class="navelem"><a class="el" href="a07211.html">Synchronizer</a></li><li class="navelem"><a class="el" href="a07215.html">Policy</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,9 +1,7 @@
 var a08235 =
 [
-    [ "testBBOXRightOf", "a08235.html#a1d3293620606e59a1f913178b94ea7fd", null ],
-    [ "testBBOXRightOf1", "a08235.html#ae27abe3e3daa14fdd8094ad71b5cb2cc", null ],
-    [ "testGeom1", "a08235.html#aa4a3b1a7e778ece72382f6600fa96b47", null ],
-    [ "testGeom2", "a08235.html#a6b4be369c8f60e973cd5126e69cd33a4", null ],
-    [ "testGeom3", "a08235.html#a800b6bb875a8ff4404ea787c3df125a5", null ],
-    [ "testGeom4", "a08235.html#a4c55e7efe430d6d220fb05524c4bb940", null ]
+    [ "PrecisionReader", "a08235.html#af4edc5e5b8d78201415bc23188bf2978", null ],
+    [ "readPoint", "a08235.html#a04d3647950410c96c47734decf0e12b5", null ],
+    [ "readPointArray", "a08235.html#a1bbf2e471d2964af19292437ad42729b", null ],
+    [ "precisionMultiplier", "a08235.html#a9aa85be4ec02c28a05cb552845fe08eb", null ]
 ];

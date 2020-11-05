@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: UnSynchronizedCache&lt; K extends Object, V extends Object &gt; Class Template Reference</title>
+<title>jena-geo: CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,75 +62,61 @@ $(document).ready(function(){initNavTree('a07915.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07912.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UnSynchronizedCache&lt; K extends Object, V extends Object &gt; Class Template Reference</div>  </div>
+<div class="title">CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A Cache map that is limited to the given number of elements.  
+<p>A synchronized iterator with a check for write permission prior element removal.  
  <a href="a07915.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for UnSynchronizedCache&lt; K extends Object, V extends Object &gt;:</div>
+Inheritance diagram for CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07914.png" border="0" usemap="#UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_inherit__map" id="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_inherit__map">
-<area shape="rect" id="node3" href="a13339.html" title="Object" alt="" coords="196,5,256,32"/>
+<div class="center"><img src="a07914.png" border="0" usemap="#CheckedHashMap_3_01K_00_01V_01_4_8Iter_3_01E_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="CheckedHashMap_3_01K_00_01V_01_4_8Iter_3_01E_01_4_inherit__map" id="CheckedHashMap_3_01K_00_01V_01_4_8Iter_3_01E_01_4_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for UnSynchronizedCache&lt; K extends Object, V extends Object &gt;:</div>
+Collaboration diagram for CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07913.png" border="0" usemap="#UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_coll__map" id="UnSynchronizedCache_3_01K_01extends_01Object_00_01V_01extends_01Object_01_4_coll__map">
-<area shape="rect" id="node4" href="a13339.html" title="Object" alt="" coords="301,5,361,32"/>
+<div class="center"><img src="a07913.png" border="0" usemap="#CheckedHashMap_3_01K_00_01V_01_4_8Iter_3_01E_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="CheckedHashMap_3_01K_00_01V_01_4_8Iter_3_01E_01_4_coll__map" id="CheckedHashMap_3_01K_00_01V_01_4_8Iter_3_01E_01_4_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11718894cb21b2531ee1d09f965b8960"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a11718894cb21b2531ee1d09f965b8960">UnSynchronizedCache</a> (final int maxElement)</td></tr>
-<tr class="separator:a11718894cb21b2531ee1d09f965b8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d1cc3d61071d927bf040bf0b035a22"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a> ()</td></tr>
+<tr class="memdesc:a58d1cc3d61071d927bf040bf0b035a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a58d1cc3d61071d927bf040bf0b035a22">More...</a><br /></td></tr>
+<tr class="separator:a58d1cc3d61071d927bf040bf0b035a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7c989f92fa935704b4915f1f400edd"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a0c7c989f92fa935704b4915f1f400edd">next</a> ()  throws NoSuchElementException </td></tr>
+<tr class="memdesc:a0c7c989f92fa935704b4915f1f400edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next element in the iteration.  <a href="#a0c7c989f92fa935704b4915f1f400edd">More...</a><br /></td></tr>
+<tr class="separator:a0c7c989f92fa935704b4915f1f400edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcb45e5d2428352eb36b487d1d4eea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a1fcb45e5d2428352eb36b487d1d4eea3">remove</a> ()  throws UnsupportedOperationException </td></tr>
+<tr class="memdesc:a1fcb45e5d2428352eb36b487d1d4eea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the previous element if the enclosing <a class="el" href="a07911.html">CheckedHashMap</a> allows write operations.  <a href="#a1fcb45e5d2428352eb36b487d1d4eea3">More...</a><br /></td></tr>
+<tr class="separator:a1fcb45e5d2428352eb36b487d1d4eea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a01aaafbabce67e6d938b2875885f426b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a01aaafbabce67e6d938b2875885f426b">removeEldestEntry</a> (final Entry&lt; K, V &gt; entry)</td></tr>
-<tr class="separator:a01aaafbabce67e6d938b2875885f426b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a63176a8518cc96237a6e77c89beeb658"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a63176a8518cc96237a6e77c89beeb658">Iter</a> (final Iterator&lt; E &gt; <a class="el" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a>)</td></tr>
+<tr class="memdesc:a63176a8518cc96237a6e77c89beeb658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new wrapper for the given <a class="el" href="">LinkedHashMap</a> iterator.  <a href="#a63176a8518cc96237a6e77c89beeb658">More...</a><br /></td></tr>
+<tr class="separator:a63176a8518cc96237a6e77c89beeb658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a669e7cd38566cac9934e6d3b42e2621a"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">maxElements</a></td></tr>
-<tr class="separator:a669e7cd38566cac9934e6d3b42e2621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62777fc3f0461fd678c752c6ec9d6cbf"><td class="memItemLeft" align="right" valign="top">final Iterator&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a></td></tr>
+<tr class="memdesc:a62777fc3f0461fd678c752c6ec9d6cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="">LinkedHashMap</a> iterator.  <a href="#a62777fc3f0461fd678c752c6ec9d6cbf">More...</a><br /></td></tr>
+<tr class="separator:a62777fc3f0461fd678c752c6ec9d6cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A Cache map that is limited to the given number of elements. </p>
-<p>This map is not synchronized and do not preserve older elements with weak or soft reference. It can be seen a fixed max size map where only the most recents elements are preserved.</p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+<div class="textblock"><p>A synchronized iterator with a check for write permission prior element removal. </p>
+<p>This class wraps the iterator provided by the <a class="el" href="">LinkedHashMap</a> views. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a11718894cb21b2531ee1d09f965b8960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11718894cb21b2531ee1d09f965b8960">&#9670;&nbsp;</a></span>UnSynchronizedCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a07915.html">UnSynchronizedCache</a> </td>
-          <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>maxElement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                     {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        super();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.<a class="code" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">maxElements</a> = maxElement;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="ttc" id="a07915_html_a669e7cd38566cac9934e6d3b42e2621a"><div class="ttname"><a href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">org.geotoolkit.util.collection.UnSynchronizedCache.maxElements</a></div><div class="ttdeci">final int maxElements</div><div class="ttdef"><b>Definition:</b> UnSynchronizedCache.java:34</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a01aaafbabce67e6d938b2875885f426b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01aaafbabce67e6d938b2875885f426b">&#9670;&nbsp;</a></span>removeEldestEntry()</h2>
+<a id="a63176a8518cc96237a6e77c89beeb658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63176a8518cc96237a6e77c89beeb658">&#9670;&nbsp;</a></span>Iter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,28 +125,102 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean removeEldestEntry </td>
+          <td class="memname"><a class="el" href="a07915.html">Iter</a> </td>
           <td>(</td>
-          <td class="paramtype">final Entry&lt; K, V &gt;&#160;</td>
-          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td class="paramtype">final Iterator&lt; E &gt;&#160;</td>
+          <td class="paramname"><em>iterator</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">UnSynchronizedCache&lt; K extends Object, V extends Object &gt;.maxElements</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                 {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> size() &gt; <a class="code" href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">maxElements</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div><div class="ttc" id="a07915_html_a669e7cd38566cac9934e6d3b42e2621a"><div class="ttname"><a href="a07915.html#a669e7cd38566cac9934e6d3b42e2621a">org.geotoolkit.util.collection.UnSynchronizedCache.maxElements</a></div><div class="ttdeci">final int maxElements</div><div class="ttdef"><b>Definition:</b> UnSynchronizedCache.java:34</div></div>
+<p>Creates a new wrapper for the given <a class="el" href="">LinkedHashMap</a> iterator. </p>
+
+<p class="reference">References <a class="el" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt;.iterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                         {</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            this.<a class="code" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a> = <a class="code" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a>;</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div><div class="ttc" id="a07915_html_a62777fc3f0461fd678c752c6ec9d6cbf"><div class="ttname"><a href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">org.geotoolkit.util.collection.CheckedHashMap.Iter.iterator</a></div><div class="ttdeci">final Iterator&lt; E &gt; iterator</div><div class="ttdoc">The LinkedHashMap iterator. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:349</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a58d1cc3d61071d927bf040bf0b035a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d1cc3d61071d927bf040bf0b035a22">&#9670;&nbsp;</a></span>hasNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean hasNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if there is more elements in the iteration. </p>
+
+<p class="reference">References <a class="el" href="a07911.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                 {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07911.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a>.hasNext();</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            }</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div><div class="ttc" id="a07915_html_a62777fc3f0461fd678c752c6ec9d6cbf"><div class="ttname"><a href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">org.geotoolkit.util.collection.CheckedHashMap.Iter.iterator</a></div><div class="ttdeci">final Iterator&lt; E &gt; iterator</div><div class="ttdoc">The LinkedHashMap iterator. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:349</div></div>
+<div class="ttc" id="a07911_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07911.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0c7c989f92fa935704b4915f1f400edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7c989f92fa935704b4915f1f400edd">&#9670;&nbsp;</a></span>next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">E next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws NoSuchElementException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the next element in the iteration. </p>
+
+<p class="reference">References <a class="el" href="a07911.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                                      {</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07911.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a>.next();</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            }</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        }</div><div class="ttc" id="a07915_html_a62777fc3f0461fd678c752c6ec9d6cbf"><div class="ttname"><a href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">org.geotoolkit.util.collection.CheckedHashMap.Iter.iterator</a></div><div class="ttdeci">final Iterator&lt; E &gt; iterator</div><div class="ttdoc">The LinkedHashMap iterator. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:349</div></div>
+<div class="ttc" id="a07911_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07911.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1fcb45e5d2428352eb36b487d1d4eea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcb45e5d2428352eb36b487d1d4eea3">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws UnsupportedOperationException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the previous element if the enclosing <a class="el" href="a07911.html">CheckedHashMap</a> allows write operations. </p>
+
+<p class="reference">References <a class="el" href="a07911.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashMap&lt; K, V &gt;.checkWritePermission()</a>, and <a class="el" href="a07911.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                                                                  {</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07911.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <a class="code" href="a07911.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <a class="code" href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">iterator</a>.remove();</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            }</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div><div class="ttc" id="a07915_html_a62777fc3f0461fd678c752c6ec9d6cbf"><div class="ttname"><a href="a07915.html#a62777fc3f0461fd678c752c6ec9d6cbf">org.geotoolkit.util.collection.CheckedHashMap.Iter.iterator</a></div><div class="ttdeci">final Iterator&lt; E &gt; iterator</div><div class="ttdoc">The LinkedHashMap iterator. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:349</div></div>
+<div class="ttc" id="a07911_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07911.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+<div class="ttc" id="a07911_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07911.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashMap.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this map are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:125</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a669e7cd38566cac9934e6d3b42e2621a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669e7cd38566cac9934e6d3b42e2621a">&#9670;&nbsp;</a></span>maxElements</h2>
+<a id="a62777fc3f0461fd678c752c6ec9d6cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62777fc3f0461fd678c752c6ec9d6cbf">&#9670;&nbsp;</a></span>iterator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +229,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int maxElements</td>
+          <td class="memname">final Iterator&lt;E&gt; iterator</td>
         </tr>
       </table>
   </td>
@@ -179,7 +239,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a07915.html#a01aaafbabce67e6d938b2875885f426b">UnSynchronizedCache&lt; K extends Object, V extends Object &gt;.removeEldestEntry()</a>.</p>
+<p>The <a class="el" href="">LinkedHashMap</a> iterator. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07915.html#a63176a8518cc96237a6e77c89beeb658">CheckedHashMap&lt; K, V &gt;.Iter&lt; E &gt;.Iter()</a>.</p>
 
 </div>
 </div>
@@ -189,7 +251,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03806.html">collection</a></li><li class="navelem"><a class="el" href="a07915.html">UnSynchronizedCache</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03865.html">util</a></li><li class="navelem"><a class="el" href="a03866.html">collection</a></li><li class="navelem"><a class="el" href="a07911.html">CheckedHashMap</a></li><li class="navelem"><a class="el" href="a07915.html">Iter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

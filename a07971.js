@@ -1,12 +1,14 @@
 var a07971 =
 [
-    [ "setIncludeStart", "a07971.html#a2367964120cdfa2839ba919123f513b2", null ],
-    [ "setParallel", "a07971.html#ac7f70b24f39ad15887472eaa1272c9bb", null ],
-    [ "setPolyline", "a07971.html#a7a7554e739473b789e07c6635d8b2558", null ],
-    [ "setPolyline", "a07971.html#a06de18d5544d8bd9096c4b9e716c8ba9", null ],
-    [ "setPolyline", "a07971.html#a0e47bd0027c9fa65621744ae4f98eddf", null ],
-    [ "stream", "a07971.html#a2d349f14626a156d4206ab99c6eaf685", null ],
-    [ "includeStart", "a07971.html#ad68197afed9880f3a7101165cbca848f", null ],
-    [ "parallel", "a07971.html#a0315a4dc5df2ff574b286cc18419263e", null ],
-    [ "polyline", "a07971.html#a75b4bb6de717188b0d009eb1cda3ea9c", null ]
+    [ "Iter", "a07971.html#a96e578a082720906548a7ae6163ac721", null ],
+    [ "add", "a07971.html#ae5e6513e189b7b28961e1b790d6a4418", null ],
+    [ "hasNext", "a07971.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "hasPrevious", "a07971.html#a5102860cd9abee74b9509a0f224e779c", null ],
+    [ "next", "a07971.html#a0c7c989f92fa935704b4915f1f400edd", null ],
+    [ "nextIndex", "a07971.html#a456d33686336a77b2367f5b5220fabb1", null ],
+    [ "previous", "a07971.html#a8c3782f8286beb492e7ea0983222c200", null ],
+    [ "previousIndex", "a07971.html#a1b40dbb8cb0a1ebba0c70b73ea7a0792", null ],
+    [ "remove", "a07971.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
+    [ "set", "a07971.html#a7f6481d113b81691f36bee69c458e7d2", null ],
+    [ "cursor", "a07971.html#af3b2b8ffe2b1effcf3983354beb28099", null ]
 ];

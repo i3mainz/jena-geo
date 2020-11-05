@@ -1,15 +1,13 @@
 var a06883 =
 [
-    [ "Dyadic", "a06883.html#a96b13a4e02602327f181afc141b2120b", null ],
-    [ "computeRect", "a06883.html#aad61f28eae5af1a21a56c962e59c99ba", null ],
-    [ "getSources", "a06883.html#a016c1e8b58082cf2add38a25a00fd20d", null ],
-    [ "bands", "a06883.html#a95bd8b3a2a6f5f51cc5904ca65a4a754", null ],
-    [ "matrix", "a06883.html#a5ee81eb9fcda92c8096c27a55f8f1c73", null ],
-    [ "numSamples", "a06883.html#ae99ae9458f515b16d68878a27d86f838", null ],
-    [ "offsets", "a06883.html#a842fb770db1cfb28fc4da07962e51ee1", null ],
-    [ "OPERATION_NAME", "a06883.html#a4ba7d667bd2c11bb15f09506d145b31e", null ],
-    [ "scales0", "a06883.html#a445901846c2021ae107de286d8807e22", null ],
-    [ "scales1", "a06883.html#a1b92a42cbdc45c9db4fc2beed44f8590", null ],
-    [ "sources", "a06883.html#a1b3b3c2d297f8c41ee6a67497d4e1b73", null ],
-    [ "transform", "a06883.html#a8059b16632ab926cbbcda163cd991f1b", null ]
+    [ "GridFactory", "a06883.html#ae93c9f19be222c671a22fd518fdb8104", null ],
+    [ "create", "a06883.html#a77b14660e96073cea4cde53069901462", null ],
+    [ "depth", "a06883.html#a8e3dd81b255e008ab58971f96c5a559e", null ],
+    [ "derivative", "a06883.html#acae78c23d8fdcf14f67e4436e1bcdac4", null ],
+    [ "equals", "a06883.html#a718cb25aee9fc34746c96ac8b1c3ad93", null ],
+    [ "incrementNonAffineDimension", "a06883.html#a4bf30057b76b18150cd1f32fa5622c1e", null ],
+    [ "roundIfAlmostInteger", "a06883.html#aa930ee057c3093ab10d90d7b3b46b238", null ],
+    [ "EPS", "a06883.html#aa53cb17a306a6462b4a5a5083bc8ccb6", null ],
+    [ "MIN_SIZE", "a06883.html#af018e9005666344d223d59ad50ac8498", null ],
+    [ "tolerance", "a06883.html#abebf5e3f243bfaba46aca7475b7d23fe", null ]
 ];

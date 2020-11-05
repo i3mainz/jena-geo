@@ -1,11 +1,14 @@
 var a03811 =
 [
-    [ "GeoMagneticElements", "a08047.html", "a08047" ],
-    [ "LegendreFunction", "a08051.html", "a08051" ],
-    [ "MagneticDate", "a08055.html", "a08055" ],
-    [ "MagneticModel", "a08059.html", "a08059" ],
-    [ "MagneticResults", "a08063.html", "a08063" ],
-    [ "SphericalHarmonicVariables", "a08067.html", "a08067" ],
-    [ "UTMParameters", "a08071.html", "a08071" ],
-    [ "WorldMagneticModel", "a08075.html", "a08075" ]
+    [ "BandedSampleConverter", "a06571.html", "a06571" ],
+    [ "BufferedGridCoverage", "a06579.html", "a06579" ],
+    [ "ColorModelFactory", "a06583.html", "a06583" ],
+    [ "ColorModelPatch", "a06587.html", "a06587" ],
+    [ "ImageUtilities", "a06591.html", "a06591" ],
+    [ "MultiBandsIndexColorModel", "a06595.html", "a06595" ],
+    [ "RasterFactory", "a06599.html", "a06599" ],
+    [ "ScaledColorModel", "a06603.html", "a06603" ],
+    [ "ScaledColorSpace", "a06607.html", "a06607" ],
+    [ "TiledImage", "a06611.html", "a06611" ],
+    [ "TileOpExecutor", "a06615.html", "a06615" ]
 ];

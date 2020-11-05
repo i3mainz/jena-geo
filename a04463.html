@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AsGPX Class Reference</title>
+<title>jena-geo: EnsureClosed Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,24 +62,23 @@ $(document).ready(function(){initNavTree('a04463.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="a04460.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsGPX Class Reference</div>  </div>
+<div class="title">EnsureClosed Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for AsGPX:</div>
+Inheritance diagram for EnsureClosed:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04462.png" border="0" usemap="#AsGPX_inherit__map" alt="Inheritance graph"/></div>
-<map name="AsGPX_inherit__map" id="AsGPX_inherit__map">
+<div class="center"><img src="a04462.png" border="0" usemap="#EnsureClosed_inherit__map" alt="Inheritance graph"/></div>
+<map name="EnsureClosed_inherit__map" id="EnsureClosed_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for AsGPX:</div>
+Collaboration diagram for EnsureClosed:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04461.png" border="0" usemap="#AsGPX_coll__map" alt="Collaboration graph"/></div>
-<map name="AsGPX_coll__map" id="AsGPX_coll__map">
+<div class="center"><img src="a04461.png" border="0" usemap="#EnsureClosed_coll__map" alt="Collaboration graph"/></div>
+<map name="EnsureClosed_coll__map" id="EnsureClosed_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -87,15 +86,6 @@ Collaboration diagram for AsGPX:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04463.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
 <tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:ab64766cccc4f8fdf5c87b8bcc9493c4a"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04463.html#ab64766cccc4f8fdf5c87b8bcc9493c4a">out</a></td></tr>
-<tr class="separator:ab64766cccc4f8fdf5c87b8bcc9493c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b1d378681cc025612af2d5d3f4e749"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04463.html#a48b1d378681cc025612af2d5d3f4e749">out2</a></td></tr>
-<tr class="separator:a48b1d378681cc025612af2d5d3f4e749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6d0ac1bcefab2bfcec1f103c1aec4d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04463.html#aaa6d0ac1bcefab2bfcec1f103c1aec4d">out3</a> =&quot; &lt;/trkseg&gt;&lt;/trk&gt;&lt;/gpx&gt;&quot;</td></tr>
-<tr class="separator:aaa6d0ac1bcefab2bfcec1f103c1aec4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
@@ -114,78 +104,10 @@ Package Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06423.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                           {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                 <span class="keywordflow">try</span> {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    Geometry geom=geometry.getXYGeometry();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    StringBuilder trackpoints=<span class="keyword">new</span> StringBuilder();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    <span class="keywordflow">for</span>(Coordinate coord:geom.getCoordinates()) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                        trackpoints.append(<span class="stringliteral">&quot;&lt;trkpt lat=&#39;&quot;</span>+coord.x+<span class="stringliteral">&quot;&#39; lon=&#39;&quot;</span>+coord.y+<span class="stringliteral">&quot;&#39;&gt;&quot;</span>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <span class="keywordflow">if</span>(!Double.isNaN(coord.getZ()))</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                trackpoints.append(<span class="stringliteral">&quot;&lt;ele&gt;&quot;</span>+coord.getZ()+<span class="stringliteral">&quot;&lt;/ele&gt;&quot;</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        trackpoints.append(<span class="stringliteral">&quot;&lt;/trkpt&gt;&quot;</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="keywordflow">return</span> NodeValue.makeString(<a class="code" href="a04463.html#ab64766cccc4f8fdf5c87b8bcc9493c4a">out</a>+<a class="code" href="a04463.html#a48b1d378681cc025612af2d5d3f4e749">out2</a>+trackpoints+<a class="code" href="a04463.html#aaa6d0ac1bcefab2bfcec1f103c1aec4d">out3</a>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="ttc" id="a04463_html_ab64766cccc4f8fdf5c87b8bcc9493c4a"><div class="ttname"><a href="a04463.html#ab64766cccc4f8fdf5c87b8bcc9493c4a">de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGPX.out</a></div><div class="ttdeci">String out</div><div class="ttdef"><b>Definition:</b> AsGPX.java:14</div></div>
-<div class="ttc" id="a04463_html_a48b1d378681cc025612af2d5d3f4e749"><div class="ttname"><a href="a04463.html#a48b1d378681cc025612af2d5d3f4e749">de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGPX.out2</a></div><div class="ttdeci">String out2</div><div class="ttdef"><b>Definition:</b> AsGPX.java:17</div></div>
-<div class="ttc" id="a04463_html_aaa6d0ac1bcefab2bfcec1f103c1aec4d"><div class="ttname"><a href="a04463.html#aaa6d0ac1bcefab2bfcec1f103c1aec4d">de.hsmainz.cs.semgis.arqextension.geometry.exporter.AsGPX.out3</a></div><div class="ttdeci">String out3</div><div class="ttdef"><b>Definition:</b> AsGPX.java:21</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab64766cccc4f8fdf5c87b8bcc9493c4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab64766cccc4f8fdf5c87b8bcc9493c4a">&#9670;&nbsp;</a></span>out</h2>
+<p class="reference">References <a class="el" href="a06511.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06203.html#a8480d756c807d9ffc39b0d5405e7a84b">LiteralUtils.createGeometry()</a>, <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06511.html#ad6a9f62b238eaebd7f51b21e7757f05d">GeometryWrapper.getGeometryType()</a>, and <a class="el" href="a06511.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String out</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=               <span class="stringliteral">&quot;&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39; standalone=&#39;no&#39; ?&gt;&quot;</span> + </div><div class="line">                        <span class="stringliteral">&quot;&lt;gpx version=&#39;1.0&#39;&gt;&quot;</span>+</div><div class="line">                        <span class="stringliteral">&quot;&lt;name&gt;Example gpx&lt;/name&gt;&quot;</span></div></div><!-- fragment -->
-</div>
-</div>
-<a id="a48b1d378681cc025612af2d5d3f4e749"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48b1d378681cc025612af2d5d3f4e749">&#9670;&nbsp;</a></span>out2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String out2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= </div><div class="line">                        <span class="stringliteral">&quot;  &lt;trk&gt;&quot;</span> + </div><div class="line">                        <span class="stringliteral">&quot;    &lt;name&gt;Example gpx&lt;/name&gt;&quot;</span> + </div><div class="line">                        <span class="stringliteral">&quot;    &lt;trkseg&gt;&quot;</span></div></div><!-- fragment -->
-</div>
-</div>
-<a id="aaa6d0ac1bcefab2bfcec1f103c1aec4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa6d0ac1bcefab2bfcec1f103c1aec4d">&#9670;&nbsp;</a></span>out3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String out3 =&quot; &lt;/trkseg&gt;&lt;/trk&gt;&lt;/gpx&gt;&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
+<p class="reference">Referenced by <a class="el" href="a08479.html#ace1b0f448a93ab083e49e59b851b8094">EnsureClosedTest.testEnsureClosed()</a>, and <a class="el" href="a08479.html#a7a93140658cbcf5aea17d9f930cd5144">EnsureClosedTest.testEnsureClosed2()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                           {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                Geometry geom=geometry.getXYGeometry();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                Coordinate[] array=geom.getCoordinates();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">if</span>(!array[0].equals(array[array.length-1])) {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="keywordflow">for</span>(Coordinate coord:Arrays.asList(array)) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                coords.add(coord);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        coords.add(array[0]);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        GeometryWrapper res=LiteralUtils.createGeometry(coords, geometry.getGeometryType(), geometry);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span> res.asNodeValue();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                }</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">return</span> geometry.asNodeValue();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -194,7 +116,7 @@ Package Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03690.html">geometry</a></li><li class="navelem"><a class="el" href="a03694.html">exporter</a></li><li class="navelem"><a class="el" href="a04463.html">AsGPX</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03750.html">geometry</a></li><li class="navelem"><a class="el" href="a03753.html">editor</a></li><li class="navelem"><a class="el" href="a04463.html">EnsureClosed</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

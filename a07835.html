@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: CheckedHashMap&lt; K, V &gt;.SyncSet&lt; E &gt; Class Template Reference</title>
+<title>jena-geo: DataStoreFactory Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,95 +62,104 @@ $(document).ready(function(){initNavTree('a07835.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="a07832.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CheckedHashMap&lt; K, V &gt;.SyncSet&lt; E &gt; Class Template Reference</div>  </div>
+<div class="title">DataStoreFactory Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A set synchronized on the enclosing map  <a class="el" href="a07823.html#a604630356717f716349899d57effa633" title="Returns the synchronization lock. ">getLock()</a> lock}.  
+<p>Base interface for <a class="el" href="">org.apache.sis.storage.DataStore</a> factories.  
  <a href="a07835.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for CheckedHashMap&lt; K, V &gt;.SyncSet&lt; E &gt;:</div>
+Inheritance diagram for DataStoreFactory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07834.png" border="0" usemap="#CheckedHashMap_3_01K_00_01V_01_4_8SyncSet_3_01E_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="CheckedHashMap_3_01K_00_01V_01_4_8SyncSet_3_01E_01_4_inherit__map" id="CheckedHashMap_3_01K_00_01V_01_4_8SyncSet_3_01E_01_4_inherit__map">
-<area shape="rect" id="node2" href="a07831.html" title="A collection or a set synchronized on the enclosing map &#160;getLock() lock}. " alt="" coords="36,80,88,107"/>
+<div class="center"><img src="a07834.png" border="0" usemap="#DataStoreFactory_inherit__map" alt="Inheritance graph"/></div>
+<map name="DataStoreFactory_inherit__map" id="DataStoreFactory_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for CheckedHashMap&lt; K, V &gt;.SyncSet&lt; E &gt;:</div>
+Collaboration diagram for DataStoreFactory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07833.png" border="0" usemap="#CheckedHashMap_3_01K_00_01V_01_4_8SyncSet_3_01E_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="CheckedHashMap_3_01K_00_01V_01_4_8SyncSet_3_01E_01_4_coll__map" id="CheckedHashMap_3_01K_00_01V_01_4_8SyncSet_3_01E_01_4_coll__map">
-<area shape="rect" id="node2" href="a07831.html" title="A collection or a set synchronized on the enclosing map &#160;getLock() lock}. " alt="" coords="57,184,109,211"/>
+<div class="center"><img src="a07833.png" border="0" usemap="#DataStoreFactory_coll__map" alt="Collaboration graph"/></div>
+<map name="DataStoreFactory_coll__map" id="DataStoreFactory_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8c82e3a2ffe893abf07ad6aacb7ec35"><td class="memItemLeft" align="right" valign="top">final Iterator&lt; E &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#ae8c82e3a2ffe893abf07ad6aacb7ec35">iterator</a> ()</td></tr>
-<tr class="memdesc:ae8c82e3a2ffe893abf07ad6aacb7ec35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a synchronized and checked iterator over the elements in this collection.  <a href="#ae8c82e3a2ffe893abf07ad6aacb7ec35">More...</a><br /></td></tr>
-<tr class="separator:ae8c82e3a2ffe893abf07ad6aacb7ec35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0642a686a97f487e84ffd657524b3a"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#aeb0642a686a97f487e84ffd657524b3a">size</a> ()</td></tr>
-<tr class="memdesc:aeb0642a686a97f487e84ffd657524b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements in the collection.  <a href="#aeb0642a686a97f487e84ffd657524b3a">More...</a><br /></td></tr>
-<tr class="separator:aeb0642a686a97f487e84ffd657524b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fd6998bf5f652d6bba105da2db27a76"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a9fd6998bf5f652d6bba105da2db27a76">isEmpty</a> ()</td></tr>
-<tr class="memdesc:a9fd6998bf5f652d6bba105da2db27a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a9fd6998bf5f652d6bba105da2db27a76">More...</a><br /></td></tr>
-<tr class="separator:a9fd6998bf5f652d6bba105da2db27a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455e4d27d2322e58b65dab4570ac367d"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a455e4d27d2322e58b65dab4570ac367d">contains</a> (final Object element)</td></tr>
-<tr class="memdesc:a455e4d27d2322e58b65dab4570ac367d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a455e4d27d2322e58b65dab4570ac367d">More...</a><br /></td></tr>
-<tr class="separator:a455e4d27d2322e58b65dab4570ac367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9381147848489d8056676f27ee01dab4"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a9381147848489d8056676f27ee01dab4">containsAll</a> (final Collection&lt;?&gt; collection)</td></tr>
-<tr class="memdesc:a9381147848489d8056676f27ee01dab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a9381147848489d8056676f27ee01dab4">More...</a><br /></td></tr>
-<tr class="separator:a9381147848489d8056676f27ee01dab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450104e9ec7f25b5f53990a9ff52ec65"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a450104e9ec7f25b5f53990a9ff52ec65">add</a> (final E element)  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:a450104e9ec7f25b5f53990a9ff52ec65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always unsupported operation in hash map views.  <a href="#a450104e9ec7f25b5f53990a9ff52ec65">More...</a><br /></td></tr>
-<tr class="separator:a450104e9ec7f25b5f53990a9ff52ec65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316b09bf71b1b206ac6ba30d41069ecd"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a316b09bf71b1b206ac6ba30d41069ecd">addAll</a> (final Collection&lt;? extends E &gt; collection)  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:a316b09bf71b1b206ac6ba30d41069ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always unsupported operation in hash map views.  <a href="#a316b09bf71b1b206ac6ba30d41069ecd">More...</a><br /></td></tr>
-<tr class="separator:a316b09bf71b1b206ac6ba30d41069ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88af59c1b3d7d192f5fc6411409499e2"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a88af59c1b3d7d192f5fc6411409499e2">remove</a> (final Object element)  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:a88af59c1b3d7d192f5fc6411409499e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given element if the enclosing <a class="el" href="a07823.html">CheckedHashMap</a> supports write operations.  <a href="#a88af59c1b3d7d192f5fc6411409499e2">More...</a><br /></td></tr>
-<tr class="separator:a88af59c1b3d7d192f5fc6411409499e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9d65fa8894c7bbe278584733b77636"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a3b9d65fa8894c7bbe278584733b77636">removeAll</a> (final Collection&lt;?&gt; collection)  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:a3b9d65fa8894c7bbe278584733b77636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given elements if the enclosing <a class="el" href="a07823.html">CheckedHashMap</a> supports write operations.  <a href="#a3b9d65fa8894c7bbe278584733b77636">More...</a><br /></td></tr>
-<tr class="separator:a3b9d65fa8894c7bbe278584733b77636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf38effb65dd66e45fc70993322a1dba"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#aaf38effb65dd66e45fc70993322a1dba">retainAll</a> (final Collection&lt;?&gt; collection)  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:aaf38effb65dd66e45fc70993322a1dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains only the given elements if the enclosing <a class="el" href="a07823.html">CheckedHashMap</a> supports write operations.  <a href="#aaf38effb65dd66e45fc70993322a1dba">More...</a><br /></td></tr>
-<tr class="separator:aaf38effb65dd66e45fc70993322a1dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa83920ab9b6842df40ab62cc63e85b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a9fa83920ab9b6842df40ab62cc63e85b">clear</a> ()  throws UnsupportedOperationException </td></tr>
-<tr class="memdesc:a9fa83920ab9b6842df40ab62cc63e85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all elements from the collection.  <a href="#a9fa83920ab9b6842df40ab62cc63e85b">More...</a><br /></td></tr>
-<tr class="separator:a9fa83920ab9b6842df40ab62cc63e85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84e52fbd08d4d8e5d1d2813bb353077a"><td class="memItemLeft" align="right" valign="top">final Object []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a84e52fbd08d4d8e5d1d2813bb353077a">toArray</a> ()</td></tr>
-<tr class="memdesc:a84e52fbd08d4d8e5d1d2813bb353077a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the elements in an array.  <a href="#a84e52fbd08d4d8e5d1d2813bb353077a">More...</a><br /></td></tr>
-<tr class="separator:a84e52fbd08d4d8e5d1d2813bb353077a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d13b0649bfe694c500fb385c8d62aa3"><td class="memItemLeft" align="right" valign="top">final&lt; T &gt; T []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a4d13b0649bfe694c500fb385c8d62aa3">toArray</a> (final T[] array)</td></tr>
-<tr class="memdesc:a4d13b0649bfe694c500fb385c8d62aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the elements in an array.  <a href="#a4d13b0649bfe694c500fb385c8d62aa3">More...</a><br /></td></tr>
-<tr class="separator:a4d13b0649bfe694c500fb385c8d62aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1ba7769953b72e2925b4b6628f03b7"><td class="memItemLeft" align="right" valign="top">final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a8f1ba7769953b72e2925b4b6628f03b7">toString</a> ()</td></tr>
-<tr class="memdesc:a8f1ba7769953b72e2925b4b6628f03b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the elements.  <a href="#a8f1ba7769953b72e2925b4b6628f03b7">More...</a><br /></td></tr>
-<tr class="separator:a8f1ba7769953b72e2925b4b6628f03b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13515b578dc4a6747f7f52124e21f8d0"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a13515b578dc4a6747f7f52124e21f8d0">equals</a> (final Object other)</td></tr>
-<tr class="memdesc:a13515b578dc4a6747f7f52124e21f8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare this collection with the given object for equality.  <a href="#a13515b578dc4a6747f7f52124e21f8d0">More...</a><br /></td></tr>
-<tr class="separator:a13515b578dc4a6747f7f52124e21f8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da9869b87f84ccacad3149093edaa16"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07831.html#a2da9869b87f84ccacad3149093edaa16">hashCode</a> ()</td></tr>
-<tr class="memdesc:a2da9869b87f84ccacad3149093edaa16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash code value for this collection.  <a href="#a2da9869b87f84ccacad3149093edaa16">More...</a><br /></td></tr>
-<tr class="separator:a2da9869b87f84ccacad3149093edaa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aff32977a23d7b0a5bbe1e16a60a83c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">canProcess</a> (final ParameterValueGroup params)</td></tr>
+<tr class="separator:a4aff32977a23d7b0a5bbe1e16a60a83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af427a4892378ec2d900b224a80d53070"><td class="memItemLeft" align="right" valign="top">ProbeResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#af427a4892378ec2d900b224a80d53070">probeContent</a> (StorageConnector connector)  throws DataStoreException </td></tr>
+<tr class="separator:af427a4892378ec2d900b224a80d53070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b47f5a78dfd5a0272c6969769392d7"><td class="memItemLeft" align="right" valign="top">org.apache.sis.storage.DataStore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#ab0b47f5a78dfd5a0272c6969769392d7">open</a> (StorageConnector connector)  throws DataStoreException </td></tr>
+<tr class="separator:ab0b47f5a78dfd5a0272c6969769392d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba292f0334916356e3b1132fa4908bc"><td class="memItemLeft" align="right" valign="top">org.apache.sis.storage.DataStore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#a9ba292f0334916356e3b1132fa4908bc">create</a> (ParameterValueGroup params)  throws DataStoreException </td></tr>
+<tr class="memdesc:a9ba292f0334916356e3b1132fa4908bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new storage location.  <a href="#a9ba292f0334916356e3b1132fa4908bc">More...</a><br /></td></tr>
+<tr class="separator:a9ba292f0334916356e3b1132fa4908bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a0b8ebf74bd545b889f311e9045784b96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#a0b8ebf74bd545b889f311e9045784b96">SyncSet</a> (final Set&lt; E &gt; set)</td></tr>
-<tr class="memdesc:a0b8ebf74bd545b889f311e9045784b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new synchronized wrapper for the given view.  <a href="#a0b8ebf74bd545b889f311e9045784b96">More...</a><br /></td></tr>
-<tr class="separator:a0b8ebf74bd545b889f311e9045784b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ada3161ed65ea792018ba3357be30b9e3"><td class="memItemLeft" align="right" valign="top">static ParameterDescriptor&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#ada3161ed65ea792018ba3357be30b9e3">createFixedIdentifier</a> (String idValue)</td></tr>
+<tr class="memdesc:ada3161ed65ea792018ba3357be30b9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the identifier descriptor, and set only one valid value, the one in parameter.  <a href="#ada3161ed65ea792018ba3357be30b9e3">More...</a><br /></td></tr>
+<tr class="separator:ada3161ed65ea792018ba3357be30b9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a61b40ca566d6155bf02709c2f967ff54"><td class="memItemLeft" align="right" valign="top">static final ParameterDescriptor&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">IDENTIFIER</a></td></tr>
+<tr class="memdesc:a61b40ca566d6155bf02709c2f967ff54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier, Mandatory.  <a href="#a61b40ca566d6155bf02709c2f967ff54">More...</a><br /></td></tr>
+<tr class="separator:a61b40ca566d6155bf02709c2f967ff54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abc9fb4eb0367d5a5e46305017b492629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#abc9fb4eb0367d5a5e46305017b492629">ensureCanProcess</a> (final ParameterValueGroup params)  throws DataStoreException</td></tr>
+<tr class="separator:abc9fb4eb0367d5a5e46305017b492629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078e22c4628781778a3e8ca311b73702"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07835.html#a078e22c4628781778a3e8ca311b73702">checkIdentifier</a> (final ParameterValueGroup params)</td></tr>
+<tr class="memdesc:a078e22c4628781778a3e8ca311b73702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the Identifier parameter exist.  <a href="#a078e22c4628781778a3e8ca311b73702">More...</a><br /></td></tr>
+<tr class="separator:a078e22c4628781778a3e8ca311b73702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set synchronized on the enclosing map  <a class="el" href="a07823.html#a604630356717f716349899d57effa633" title="Returns the synchronization lock. ">getLock()</a> lock}. </p>
-<p>This is used for wrapping <a class="el" href="">Map#keySet()</a> or <a class="el" href="">Map#entrySet()</a> views. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0b8ebf74bd545b889f311e9045784b96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b8ebf74bd545b889f311e9045784b96">&#9670;&nbsp;</a></span>SyncSet()</h2>
+<div class="textblock"><p>Base interface for <a class="el" href="">org.apache.sis.storage.DataStore</a> factories. </p>
+<p>The aim is to get a factory with metadata which would allow user to identify the data type managed by the factory.</p>
+<dl class="section author"><dt>Author</dt><dd>Alexis Manin (Geomatys) </dd>
+<dd>
+Johann Sorel (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4aff32977a23d7b0a5bbe1e16a60a83c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aff32977a23d7b0a5bbe1e16a60a83c">&#9670;&nbsp;</a></span>canProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean canProcess </td>
+          <td>(</td>
+          <td class="paramtype">final ParameterValueGroup&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">org.geotoolkit.storage.DataStoreFactory::canProcess</a>(java.util.Map) </dd></dl>
+
+<p class="reference">References <a class="el" href="a07835.html#a078e22c4628781778a3e8ca311b73702">DataStoreFactory.checkIdentifier()</a>, and <a class="el" href="a07479.html#ad6890fc9e9c0939ad6b598ebafdcab08">Parameters.isValid()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07839.html#aa3cd0cad2bb7c53098e7e96ca41b138a">DataStores.canProcess()</a>, <a class="el" href="a07835.html#abc9fb4eb0367d5a5e46305017b492629">DataStoreFactory.ensureCanProcess()</a>, and <a class="el" href="a07835.html#ab0b47f5a78dfd5a0272c6969769392d7">DataStoreFactory.open()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span>(params == null){</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">//check identifier value is exist</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">boolean</span> validId = <a class="code" href="a07835.html#a078e22c4628781778a3e8ca311b73702">checkIdentifier</a>(params);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(!validId){</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">final</span> ParameterDescriptorGroup desc = getOpenParameters();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(!desc.getName().getCode().equalsIgnoreCase(params.getDescriptor().getName().getCode())){</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">final</span> ConformanceResult result = Parameters.isValid(params, desc);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> (result != null) &amp;&amp; Boolean.TRUE.equals(result.pass());</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="ttc" id="a07835_html_a078e22c4628781778a3e8ca311b73702"><div class="ttname"><a href="a07835.html#a078e22c4628781778a3e8ca311b73702">org.geotoolkit.storage.DataStoreFactory.checkIdentifier</a></div><div class="ttdeci">boolean checkIdentifier(final ParameterValueGroup params)</div><div class="ttdoc">Check if the Identifier parameter exist. </div><div class="ttdef"><b>Definition:</b> DataStoreFactory.java:148</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a078e22c4628781778a3e8ca311b73702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078e22c4628781778a3e8ca311b73702">&#9670;&nbsp;</a></span>checkIdentifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,119 +168,71 @@ Package Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07835.html">SyncSet</a> </td>
+          <td class="memname">boolean checkIdentifier </td>
           <td>(</td>
-          <td class="paramtype">final Set&lt; E &gt;&#160;</td>
-          <td class="paramname"><em>set</em></td><td>)</td>
+          <td class="paramtype">final ParameterValueGroup&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create a new synchronized wrapper for the given view. </p>
-<div class="fragment"><div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                                  {</div><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            super(<span class="keyword">set</span>);</div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a450104e9ec7f25b5f53990a9ff52ec65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a450104e9ec7f25b5f53990a9ff52ec65">&#9670;&nbsp;</a></span>add()</h2>
+<p>Check if the Identifier parameter exist. </p>
+<p>if it exist, it must be set to 'value' otherwise return false. if not present, return true; </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean add </td>
-          <td>(</td>
-          <td class="paramtype">final E&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td> throws UnsupportedOperationException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Always unsupported operation in hash map views. </p>
-
-<p class="reference">References <a class="el" href="a07691.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07695.html#a5094b1035ec9ac9f6ae6eb42af2ac021">Errors.Keys.UnsupportedOperation_1</a>.</p>
-<div class="fragment"><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                                                                                       {</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(Errors.format(Errors.Keys.UnsupportedOperation_1, <span class="stringliteral">&quot;add&quot;</span>));</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a316b09bf71b1b206ac6ba30d41069ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a316b09bf71b1b206ac6ba30d41069ecd">&#9670;&nbsp;</a></span>addAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean addAll </td>
-          <td>(</td>
-          <td class="paramtype">final Collection&lt;? extends E &gt;&#160;</td>
-          <td class="paramname"><em>collection</em></td><td>)</td>
-          <td> throws UnsupportedOperationException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Always unsupported operation in hash map views. </p>
-
-<p class="reference">References <a class="el" href="a07691.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07695.html#a5094b1035ec9ac9f6ae6eb42af2ac021">Errors.Keys.UnsupportedOperation_1</a>.</p>
-<div class="fragment"><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                                                                                                                   {</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(Errors.format(Errors.Keys.UnsupportedOperation_1, <span class="stringliteral">&quot;addAll&quot;</span>));</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a9fa83920ab9b6842df40ab62cc63e85b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fa83920ab9b6842df40ab62cc63e85b">&#9670;&nbsp;</a></span>clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws UnsupportedOperationException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes all elements from the collection. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashMap&lt; K, V &gt;.checkWritePermission()</a>, and <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                                                                       {</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                <a class="code" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.clear();</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            }</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-<div class="ttc" id="a07823_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashMap.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this map are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:125</div></div>
+<p class="reference">Referenced by <a class="el" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">DataStoreFactory.canProcess()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                                       {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">final</span> String expectedId;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">try</span>{</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            expectedId = ((ParameterDescriptor&lt;String&gt;)getOpenParameters()</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                .descriptor(<a class="code" href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">IDENTIFIER</a>.getName().getCode())).getDefaultValue();</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }<span class="keywordflow">catch</span>(ParameterNotFoundException ex){</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">//this feature store factory does not declare a identifier id</span></div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span>(GeneralParameterValue val : params.values()){</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span>(val.getDescriptor().getName().getCode().equals(<a class="code" href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">IDENTIFIER</a>.getName().getCode())){</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keyword">final</span> Object candidate = ((ParameterValue)val).getValue();</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">return</span> expectedId.equals(candidate);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div><div class="ttc" id="a07835_html_a61b40ca566d6155bf02709c2f967ff54"><div class="ttname"><a href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">org.geotoolkit.storage.DataStoreFactory.IDENTIFIER</a></div><div class="ttdeci">static final ParameterDescriptor&lt; String &gt; IDENTIFIER</div><div class="ttdoc">Identifier, Mandatory. </div><div class="ttdef"><b>Definition:</b> DataStoreFactory.java:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a455e4d27d2322e58b65dab4570ac367d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a455e4d27d2322e58b65dab4570ac367d">&#9670;&nbsp;</a></span>contains()</h2>
+<a id="a9ba292f0334916356e3b1132fa4908bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba292f0334916356e3b1132fa4908bc">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.apache.sis.storage.DataStore create </td>
+          <td>(</td>
+          <td class="paramtype">ParameterValueGroup&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td> throws DataStoreException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new storage location. </p>
+<p>This method is intended to create from scratch a new storage location. <br />
+ If the purpose is to open an already existing storage use the open method : </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="a07835.html#ab0b47f5a78dfd5a0272c6969769392d7">DataStoreFactory::open</a>(org.opengis.parameter.ParameterValueGroup)</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>FeatureStore created store </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">DataStoreException</td><td>if parameters are incorrect or creation failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                                                                                         {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> DataStoreException(<span class="stringliteral">&quot;Store creation not supported&quot;</span>);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ada3161ed65ea792018ba3357be30b9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3161ed65ea792018ba3357be30b9e3">&#9670;&nbsp;</a></span>createFixedIdentifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,31 +241,34 @@ Package Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean contains </td>
+          <td class="memname">static ParameterDescriptor&lt;String&gt; createFixedIdentifier </td>
           <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>idValue</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the collection contains the given element. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                                            {</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.contains(element);</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            }</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+<p>Create the identifier descriptor, and set only one valid value, the one in parameter. </p>
+<p>TODO : Maybe change the string in parameter to string array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idValue</td><td>the value to use for identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an identifier descriptor. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                                                    {</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> ParameterBuilder()</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    .addName(<a class="code" href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">IDENTIFIER</a>.getName().getCode())</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    .addName(<a class="code" href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">IDENTIFIER</a>.getAlias().iterator().next())</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    .setRemarks(<a class="code" href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">IDENTIFIER</a>.getRemarks())</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    .setRequired(<span class="keyword">true</span>)</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    .createEnumerated(String.class, <span class="keyword">new</span> String[]{idValue}, idValue);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div><div class="ttc" id="a07835_html_a61b40ca566d6155bf02709c2f967ff54"><div class="ttname"><a href="a07835.html#a61b40ca566d6155bf02709c2f967ff54">org.geotoolkit.storage.DataStoreFactory.IDENTIFIER</a></div><div class="ttdeci">static final ParameterDescriptor&lt; String &gt; IDENTIFIER</div><div class="ttdoc">Identifier, Mandatory. </div><div class="ttdef"><b>Definition:</b> DataStoreFactory.java:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9381147848489d8056676f27ee01dab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9381147848489d8056676f27ee01dab4">&#9670;&nbsp;</a></span>containsAll()</h2>
+<a id="abc9fb4eb0367d5a5e46305017b492629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9fb4eb0367d5a5e46305017b492629">&#9670;&nbsp;</a></span>ensureCanProcess()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,31 +277,82 @@ Package Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean containsAll </td>
+          <td class="memname">void ensureCanProcess </td>
           <td>(</td>
-          <td class="paramtype">final Collection&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>collection</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">final ParameterValueGroup&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td> throws DataStoreException</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07835.html#a078e22c4628781778a3e8ca311b73702" title="Check if the Identifier parameter exist. ">checkIdentifier</a>(org.opengis.parameter.ParameterValueGroup) </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">DataStoreException</td><td>if identifier is not valid </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the collection contains all elements of the given collection. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                                                                         {</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.containsAll(collection);</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            }</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
+<p class="reference">References <a class="el" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">DataStoreFactory.canProcess()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                                                               {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">boolean</span> valid = <a class="code" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">canProcess</a>(params);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span>(!valid){</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> DataStoreException(<span class="stringliteral">&quot;Parameter values not supported by this factory.&quot;</span>);</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div><div class="ttc" id="a07835_html_a4aff32977a23d7b0a5bbe1e16a60a83c"><div class="ttname"><a href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">org.geotoolkit.storage.DataStoreFactory.canProcess</a></div><div class="ttdeci">boolean canProcess(final ParameterValueGroup params)</div><div class="ttdef"><b>Definition:</b> DataStoreFactory.java:61</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a13515b578dc4a6747f7f52124e21f8d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13515b578dc4a6747f7f52124e21f8d0">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="ab0b47f5a78dfd5a0272c6969769392d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b47f5a78dfd5a0272c6969769392d7">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.apache.sis.storage.DataStore open </td>
+          <td>(</td>
+          <td class="paramtype">StorageConnector&#160;</td>
+          <td class="paramname"><em>connector</em></td><td>)</td>
+          <td> throws DataStoreException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">DataStoreFactory.canProcess()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                                                       {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        GeneralParameterDescriptor desc;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            desc = getOpenParameters().descriptor(LOCATION);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        } <span class="keywordflow">catch</span> (ParameterNotFoundException e) {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> DataStoreException(<span class="stringliteral">&quot;Unsupported input&quot;</span>);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (!(desc instanceof ParameterDescriptor)) {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> DataStoreException(<span class="stringliteral">&quot;Unsupported input&quot;</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">final</span> Object locationValue = connector.getStorageAs(((ParameterDescriptor)desc).getValueClass());</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">final</span> ParameterValueGroup params = getOpenParameters().createValue();</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            params.parameter(LOCATION).setValue(locationValue);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">canProcess</a>(params)) {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07835.html#ab0b47f5a78dfd5a0272c6969769392d7">open</a>(params);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        } <span class="keywordflow">catch</span>(<a class="code" href="a14171.html">IllegalArgumentException</a> ex) {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> DataStoreException(<span class="stringliteral">&quot;Unsupported input:&quot;</span> + ex.getMessage());</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> DataStoreException(<span class="stringliteral">&quot;Unsupported input&quot;</span>);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="ttc" id="a07835_html_ab0b47f5a78dfd5a0272c6969769392d7"><div class="ttname"><a href="a07835.html#ab0b47f5a78dfd5a0272c6969769392d7">org.geotoolkit.storage.DataStoreFactory.open</a></div><div class="ttdeci">org.apache.sis.storage.DataStore open(StorageConnector connector)</div><div class="ttdef"><b>Definition:</b> DataStoreFactory.java:87</div></div>
+<div class="ttc" id="a07835_html_a4aff32977a23d7b0a5bbe1e16a60a83c"><div class="ttname"><a href="a07835.html#a4aff32977a23d7b0a5bbe1e16a60a83c">org.geotoolkit.storage.DataStoreFactory.canProcess</a></div><div class="ttdeci">boolean canProcess(final ParameterValueGroup params)</div><div class="ttdef"><b>Definition:</b> DataStoreFactory.java:61</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af427a4892378ec2d900b224a80d53070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af427a4892378ec2d900b224a80d53070">&#9670;&nbsp;</a></span>probeContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProbeResult probeContent </td>
+          <td>(</td>
+          <td class="paramtype">StorageConnector&#160;</td>
+          <td class="paramname"><em>connector</em></td><td>)</td>
+          <td> throws DataStoreException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                          {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> ProbeResult(<span class="keyword">false</span>, null, null);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a61b40ca566d6155bf02709c2f967ff54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b40ca566d6155bf02709c2f967ff54">&#9670;&nbsp;</a></span>IDENTIFIER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,344 +361,21 @@ Package Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean equals </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td class="memname">final ParameterDescriptor&lt;String&gt; IDENTIFIER</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ParameterBuilder()</div><div class="line">            .addName(<span class="stringliteral">&quot;identifier&quot;</span>)</div><div class="line">            .addName(Bundle.formatInternational(Bundle.Keys.paramIdentifierAlias))</div><div class="line">            .setRemarks(Bundle.formatInternational(Bundle.Keys.paramIdentifierRemarks))</div><div class="line">            .setRequired(<span class="keyword">true</span>)</div><div class="line">            .create(String.class, null)</div></div><!-- fragment -->
+<p>Identifier, Mandatory. </p>
+<p>Subclasses should redeclared this parameter with a different default value. </p>
 
-<p>Compare this collection with the given object for equality. </p>
+<p class="reference">Referenced by <a class="el" href="a07839.html#aa3cd0cad2bb7c53098e7e96ca41b138a">DataStores.canProcess()</a>, and <a class="el" href="a07839.html#aaf94d629c9086791ae1c06bd83951771">DataStores.forceIdentifier()</a>.</p>
 
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                                                        {</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.equals(other);</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            }</div><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2da9869b87f84ccacad3149093edaa16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2da9869b87f84ccacad3149093edaa16">&#9670;&nbsp;</a></span>hashCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int hashCode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a hash code value for this collection. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                                    {</div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.hashCode();</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            }</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9fd6998bf5f652d6bba105da2db27a76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fd6998bf5f652d6bba105da2db27a76">&#9670;&nbsp;</a></span>isEmpty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean isEmpty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns. </p>
-<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the collection is empty. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                       {</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.isEmpty();</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            }</div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae8c82e3a2ffe893abf07ad6aacb7ec35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8c82e3a2ffe893abf07ad6aacb7ec35">&#9670;&nbsp;</a></span>iterator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Iterator&lt;E&gt; iterator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a synchronized and checked iterator over the elements in this collection. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                            {</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> Iter&lt;&gt;(<a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.iterator());</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            }</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a88af59c1b3d7d192f5fc6411409499e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88af59c1b3d7d192f5fc6411409499e2">&#9670;&nbsp;</a></span>remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean remove </td>
-          <td>(</td>
-          <td class="paramtype">final Object&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td> throws UnsupportedOperationException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove the given element if the enclosing <a class="el" href="a07823.html">CheckedHashMap</a> supports write operations. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashMap&lt; K, V &gt;.checkWritePermission()</a>, and <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                                                                                               {</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <a class="code" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.remove(element);</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            }</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-<div class="ttc" id="a07823_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashMap.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this map are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:125</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3b9d65fa8894c7bbe278584733b77636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b9d65fa8894c7bbe278584733b77636">&#9670;&nbsp;</a></span>removeAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean removeAll </td>
-          <td>(</td>
-          <td class="paramtype">final Collection&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>collection</em></td><td>)</td>
-          <td> throws UnsupportedOperationException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove the given elements if the enclosing <a class="el" href="a07823.html">CheckedHashMap</a> supports write operations. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashMap&lt; K, V &gt;.checkWritePermission()</a>, and <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                                                                                                            {</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                <a class="code" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.removeAll(collection);</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            }</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-<div class="ttc" id="a07823_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashMap.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this map are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:125</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aaf38effb65dd66e45fc70993322a1dba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf38effb65dd66e45fc70993322a1dba">&#9670;&nbsp;</a></span>retainAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean retainAll </td>
-          <td>(</td>
-          <td class="paramtype">final Collection&lt;?&gt;&#160;</td>
-          <td class="paramname"><em>collection</em></td><td>)</td>
-          <td> throws UnsupportedOperationException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retains only the given elements if the enclosing <a class="el" href="a07823.html">CheckedHashMap</a> supports write operations. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">CheckedHashMap&lt; K, V &gt;.checkWritePermission()</a>, and <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                                                                                                            {</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                <a class="code" href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">checkWritePermission</a>();</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.retainAll(collection);</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            }</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-<div class="ttc" id="a07823_html_a4a796b594d621b368eaeaf9e5ea21b87"><div class="ttname"><a href="a07823.html#a4a796b594d621b368eaeaf9e5ea21b87">org.geotoolkit.util.collection.CheckedHashMap.checkWritePermission</a></div><div class="ttdeci">void checkWritePermission()</div><div class="ttdoc">Checks if changes in this map are allowed. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:125</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeb0642a686a97f487e84ffd657524b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0642a686a97f487e84ffd657524b3a">&#9670;&nbsp;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of elements in the collection. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                {</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.size();</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            }</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a84e52fbd08d4d8e5d1d2813bb353077a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84e52fbd08d4d8e5d1d2813bb353077a">&#9670;&nbsp;</a></span>toArray() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Object [] toArray </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the elements in an array. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                                        {</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.toArray();</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            }</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4d13b0649bfe694c500fb385c8d62aa3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d13b0649bfe694c500fb385c8d62aa3">&#9670;&nbsp;</a></span>toArray() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final&lt;T&gt; T [] toArray </td>
-          <td>(</td>
-          <td class="paramtype">final T []&#160;</td>
-          <td class="paramname"><em>array</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the elements in an array. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                                                      {</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.toArray(array);</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            }</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8f1ba7769953b72e2925b4b6628f03b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f1ba7769953b72e2925b4b6628f03b7">&#9670;&nbsp;</a></span>toString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a string representation of the elements. </p>
-
-<p class="reference">References <a class="el" href="a07823.html#a604630356717f716349899d57effa633">CheckedHashMap&lt; K, V &gt;.getLock()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                                       {</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;            <span class="keyword">synchronized</span> (<a class="code" href="a07823.html#a604630356717f716349899d57effa633">getLock</a>()) {</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a07831.html#aa87e37d92de00b936837f3002909eea0">view</a>.toString();</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;            }</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        }</div><div class="ttc" id="a07831_html_aa87e37d92de00b936837f3002909eea0"><div class="ttname"><a href="a07831.html#aa87e37d92de00b936837f3002909eea0">org.geotoolkit.util.collection.CheckedHashMap.Sync.view</a></div><div class="ttdeci">final Collection&lt; E &gt; view</div><div class="ttdoc">The Map#keySet(), Map#values() or Map#entrySet() view. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:389</div></div>
-<div class="ttc" id="a07823_html_a604630356717f716349899d57effa633"><div class="ttname"><a href="a07823.html#a604630356717f716349899d57effa633">org.geotoolkit.util.collection.CheckedHashMap.getLock</a></div><div class="ttdeci">Object getLock()</div><div class="ttdoc">Returns the synchronization lock. </div><div class="ttdef"><b>Definition:</b> CheckedHashMap.java:138</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -692,7 +384,7 @@ Package Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03806.html">collection</a></li><li class="navelem"><a class="el" href="a07823.html">CheckedHashMap</a></li><li class="navelem"><a class="el" href="a07835.html">SyncSet</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03864.html">storage</a></li><li class="navelem"><a class="el" href="a07835.html">DataStoreFactory</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

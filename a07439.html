@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: RollbackableProcess Interface Reference</title>
+<title>jena-geo: PosixDirectoryFilter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,101 +62,141 @@ $(document).ready(function(){initNavTree('a07439.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a07436.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RollbackableProcess Interface Reference</div>  </div>
+<div class="title">PosixDirectoryFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Extend <a class="el" href="a07407.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions.  
+<p>A <a class="el" href="">java.nio.file.DirectoryStream.Filter</a> implementation using Unix-style wildcards.  
  <a href="a07439.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for RollbackableProcess:</div>
+Inheritance diagram for PosixDirectoryFilter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07438.png" border="0" usemap="#RollbackableProcess_inherit__map" alt="Inheritance graph"/></div>
-<map name="RollbackableProcess_inherit__map" id="RollbackableProcess_inherit__map">
-<area shape="rect" id="node2" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. " alt="" coords="57,95,128,121"/>
+<div class="center"><img src="a07438.png" border="0" usemap="#PosixDirectoryFilter_inherit__map" alt="Inheritance graph"/></div>
+<map name="PosixDirectoryFilter_inherit__map" id="PosixDirectoryFilter_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for RollbackableProcess:</div>
+Collaboration diagram for PosixDirectoryFilter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07437.png" border="0" usemap="#RollbackableProcess_coll__map" alt="Collaboration graph"/></div>
-<map name="RollbackableProcess_coll__map" id="RollbackableProcess_coll__map">
-<area shape="rect" id="node2" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. " alt="" coords="57,95,128,121"/>
+<div class="center"><img src="a07437.png" border="0" usemap="#PosixDirectoryFilter_coll__map" alt="Collaboration graph"/></div>
+<map name="PosixDirectoryFilter_coll__map" id="PosixDirectoryFilter_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a071de472f6ac976c658e4643f3fb3d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07439.html#a071de472f6ac976c658e4643f3fb3d0c">rollback</a> ()  throws ProcessException</td></tr>
-<tr class="memdesc:a071de472f6ac976c658e4643f3fb3d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rollback <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>.  <a href="#a071de472f6ac976c658e4643f3fb3d0c">More...</a><br /></td></tr>
-<tr class="separator:a071de472f6ac976c658e4643f3fb3d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07411.html">ProcessDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc">getDescriptor</a> ()</td></tr>
-<tr class="memdesc:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the process algorithm and its input/output parameters.  <a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">More...</a><br /></td></tr>
-<tr class="separator:ab0bf04fe2a5e9c37f86e0a00738766bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f6e05bc62202398002ecb7aaed46542"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a1f6e05bc62202398002ecb7aaed46542">getInput</a> ()</td></tr>
-<tr class="memdesc:a1f6e05bc62202398002ecb7aaed46542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the input values given to the <a class="el" href="a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method.  <a href="#a1f6e05bc62202398002ecb7aaed46542">More...</a><br /></td></tr>
-<tr class="separator:a1f6e05bc62202398002ecb7aaed46542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a> ()  throws ProcessException</td></tr>
-<tr class="memdesc:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>.  <a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">More...</a><br /></td></tr>
-<tr class="separator:a6fa09e7ca2ab88d0a3dd745ec28a5bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e8f0f9c2be92818a707e613e127a414"><td class="memItemLeft" align="right" valign="top">ProcessStep&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a6e8f0f9c2be92818a707e613e127a414">getMetadata</a> ()</td></tr>
-<tr class="memdesc:a6e8f0f9c2be92818a707e613e127a414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the process, the geographic inputs and outputs and other metadata.  <a href="#a6e8f0f9c2be92818a707e613e127a414">More...</a><br /></td></tr>
-<tr class="separator:a6e8f0f9c2be92818a707e613e127a414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3105b8b72c72140d73f00070fc1609e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e">addListener</a> (<a class="el" href="a07431.html">ProcessListener</a> listener)</td></tr>
-<tr class="memdesc:ac3105b8b72c72140d73f00070fc1609e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a listener to the list of objects to inform about the process progress.  <a href="#ac3105b8b72c72140d73f00070fc1609e">More...</a><br /></td></tr>
-<tr class="separator:ac3105b8b72c72140d73f00070fc1609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858002849881b20fda675f8b8c57aebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a858002849881b20fda675f8b8c57aebc">removeListener</a> (<a class="el" href="a07431.html">ProcessListener</a> listener)</td></tr>
-<tr class="memdesc:a858002849881b20fda675f8b8c57aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a listener from the list of objects to inform about the process progress.  <a href="#a858002849881b20fda675f8b8c57aebc">More...</a><br /></td></tr>
-<tr class="separator:a858002849881b20fda675f8b8c57aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89afd5200039ec7321a82a2f1d9a036b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07431.html">ProcessListener</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07407.html#a89afd5200039ec7321a82a2f1d9a036b">getListeners</a> ()</td></tr>
-<tr class="memdesc:a89afd5200039ec7321a82a2f1d9a036b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all registered listeners, or an empty array if none.  <a href="#a89afd5200039ec7321a82a2f1d9a036b">More...</a><br /></td></tr>
-<tr class="separator:a89afd5200039ec7321a82a2f1d9a036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae326683ddf04bdeaa400ac056dd8f89e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07439.html#ae326683ddf04bdeaa400ac056dd8f89e">PosixDirectoryFilter</a> (final String <a class="el" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>)</td></tr>
+<tr class="separator:ae326683ddf04bdeaa400ac056dd8f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0efc054bf1a5b2919cc422fb4c78da4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07439.html#af0efc054bf1a5b2919cc422fb4c78da4">PosixDirectoryFilter</a> (final String <a class="el" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>, boolean caseInsensitive)</td></tr>
+<tr class="memdesc:af0efc054bf1a5b2919cc422fb4c78da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a file filter for the specified pattern.  <a href="#af0efc054bf1a5b2919cc422fb4c78da4">More...</a><br /></td></tr>
+<tr class="separator:af0efc054bf1a5b2919cc422fb4c78da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197cb9c028bda2d86abe272422e59bb1"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07439.html#a197cb9c028bda2d86abe272422e59bb1">accept</a> (Path entry)  throws IOException </td></tr>
+<tr class="separator:a197cb9c028bda2d86abe272422e59bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abb33befe85e6d355a89451ecc05cf784"><td class="memItemLeft" align="right" valign="top">final Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a></td></tr>
+<tr class="memdesc:abb33befe85e6d355a89451ecc05cf784"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pattern to matchs to filenames.  <a href="#abb33befe85e6d355a89451ecc05cf784">More...</a><br /></td></tr>
+<tr class="separator:abb33befe85e6d355a89451ecc05cf784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Extend <a class="el" href="a07407.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions. </p>
-<dl class="section author"><dt>Author</dt><dd>Quentin Boileau (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>4.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">org.geotoolkit.process.Process</a> </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac3105b8b72c72140d73f00070fc1609e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3105b8b72c72140d73f00070fc1609e">&#9670;&nbsp;</a></span>addListener()</h2>
+<div class="textblock"><p>A <a class="el" href="">java.nio.file.DirectoryStream.Filter</a> implementation using Unix-style wildcards. </p>
+<p>A pattern is given to the constructor, which can contains the </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;*&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;?&quot;</span> </div></div><!-- fragment --><p> wildcards.</p>
+<p>Example : </p><pre>
+<code></code></pre><pre><code>DirectoryStream.Filter&lt;Path&gt; filter = new <a class="el" href="a07439.html" title="A java.nio.file.DirectoryStream.Filter implementation using Unix-style wildcards. ...">PosixDirectoryFilter</a>("*.png");</code></pre><pre><code>try (DirectoryStream&lt;Path&gt; stream = Files.newDirectoryStream(root, filter)) {
+     for (Path matching : stream) {
+         //file matching filter in root directory
+     }
+}
+</code>
+</pre><dl class="section author"><dt>Author</dt><dd>Quentin Boileau (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae326683ddf04bdeaa400ac056dd8f89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae326683ddf04bdeaa400ac056dd8f89e">&#9670;&nbsp;</a></span>PosixDirectoryFilter() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void addListener </td>
+          <td class="memname"><a class="el" href="a07439.html">PosixDirectoryFilter</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a07431.html">ProcessListener</a>&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>pattern</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Adds a listener to the list of objects to inform about the process progress. </p>
+<p class="reference">References <a class="el" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">PosixDirectoryFilter.pattern</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                      {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">this</span>(<a class="code" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>, Boolean.FALSE);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="ttc" id="a07439_html_abb33befe85e6d355a89451ecc05cf784"><div class="ttname"><a href="a07439.html#abb33befe85e6d355a89451ecc05cf784">org.geotoolkit.nio.PosixDirectoryFilter.pattern</a></div><div class="ttdeci">final Pattern pattern</div><div class="ttdoc">The pattern to matchs to filenames. </div><div class="ttdef"><b>Definition:</b> PosixDirectoryFilter.java:50</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af0efc054bf1a5b2919cc422fb4c78da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0efc054bf1a5b2919cc422fb4c78da4">&#9670;&nbsp;</a></span>PosixDirectoryFilter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a07439.html">PosixDirectoryFilter</a> </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>caseInsensitive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a file filter for the specified pattern. </p>
+<p>The pattern can contains the</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;*&quot;</span> </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;?&quot;</span> </div></div><!-- fragment --><p> wildcards.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">listener</td><td>The listener to add. </td></tr>
+    <tr><td class="paramname">pattern</td><td>The pattern. Example:<div class="fragment"><div class="line"><span class="stringliteral">&quot;*.png&quot;</span> </div></div><!-- fragment --> </td></tr>
+    <tr><td class="paramname">caseInsensitive</td><td>use <a class="el" href="">Pattern#CASE_INSENSITIVE</a> flag </td></tr>
   </table>
   </dd>
 </dl>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                               {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> length = <a class="code" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>.length();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(length + 8);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;length; i++) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">char</span> c = <a class="code" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>.charAt(i);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (!Character.isLetterOrDigit(c)) {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">switch</span> (c) {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>: buffer.append(<span class="charliteral">&#39;.&#39;</span> ); <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">case</span> <span class="charliteral">&#39;*&#39;</span>: buffer.append(<span class="stringliteral">&quot;.*&quot;</span>); <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    default : buffer.append(<span class="charliteral">&#39;\\&#39;</span>); <span class="keywordflow">break</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            buffer.append(c);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (caseInsensitive) {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            this.<a class="code" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a> = Pattern.compile(buffer.toString(), Pattern.CASE_INSENSITIVE);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            this.<a class="code" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a> = Pattern.compile(buffer.toString());</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="ttc" id="a07439_html_abb33befe85e6d355a89451ecc05cf784"><div class="ttname"><a href="a07439.html#abb33befe85e6d355a89451ecc05cf784">org.geotoolkit.nio.PosixDirectoryFilter.pattern</a></div><div class="ttdeci">final Pattern pattern</div><div class="ttdoc">The pattern to matchs to filenames. </div><div class="ttdef"><b>Definition:</b> PosixDirectoryFilter.java:50</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a197cb9c028bda2d86abe272422e59bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197cb9c028bda2d86abe272422e59bb1">&#9670;&nbsp;</a></span>accept()</h2>
 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean accept </td>
+          <td>(</td>
+          <td class="paramtype">Path&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                         {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> (entry != null) &amp;&amp; <a class="code" href="a07439.html#abb33befe85e6d355a89451ecc05cf784">pattern</a>.matcher(entry.getFileName().toString()).matches();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="ttc" id="a07439_html_abb33befe85e6d355a89451ecc05cf784"><div class="ttname"><a href="a07439.html#abb33befe85e6d355a89451ecc05cf784">org.geotoolkit.nio.PosixDirectoryFilter.pattern</a></div><div class="ttdeci">final Pattern pattern</div><div class="ttdoc">The pattern to matchs to filenames. </div><div class="ttdef"><b>Definition:</b> PosixDirectoryFilter.java:50</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a6fa09e7ca2ab88d0a3dd745ec28a5bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fa09e7ca2ab88d0a3dd745ec28a5bca">&#9670;&nbsp;</a></span>call()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abb33befe85e6d355a89451ecc05cf784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb33befe85e6d355a89451ecc05cf784">&#9670;&nbsp;</a></span>pattern</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,248 +205,19 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ParameterValueGroup call </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws <a class="el" href="a07419.html">ProcessException</a></td>
+          <td class="memname">final Pattern pattern</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Executes the process and returns the output in a new <a class="el" href="">ParameterValueGroup</a>. </p>
-<p>{</p><dl class="section note"><dt>Note</dt><dd>Returning a parameter object may sound strange, since parameters are usually for input values rather than output values. Note however that ISO 19115 do the same, since the <code>ProcessStep</code> outputs is a collection of <code>Source</code> objects. In both cases, the outputs may be used as inputs in the next step of a process chain.}</dd></dl>
-<p>The following relations shall hold: </p>
-<ul>
-<li>
-The  ParameterValueGroup::getDescriptor() descriptor} of the returned parameters is the same instance than <code> <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07411.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> getOutputDescriptor()}</code>. </li>
-<li>
-When the process is  <a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f" title="Reports that a process has completed successfully. ">ProcessListener::completed</a> completed}, the <a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a> value shall be the same than the return value of this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method. </li>
-</ul>
-<p>{</p>
-<h1><a class="anchor" id="Event"></a>
-notifications}</h1>
-<p>For any  <a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e" title="Adds a listener to the list of objects to inform about the process progress. ">addListener</a> registered listeners}, this method shall invoke the following methods. Note that all notification events except</p><div class="fragment"><div class="line">progressing </div></div><!-- fragment --><p> are mandatory for all</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> implementations. </p>
-<ul>
-<li>
-<a class="el" href="a07431.html#a7bed9c26a745fe4a7f968be46900b6cb">started</a> (<em>mandatory</em>) at the beginning of this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method; </li>
-<li>
-<a class="el" href="a07431.html#a67c0e7b51b0df4f69b57148f46580b65">progressing</a> (<em>optional</em>) during the process execution; </li>
-<li>
-When this<div class="fragment"><div class="line"><a class="code" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">call</a>() </div></div><!-- fragment --> method is about to exit, exactly <b>one</b> of the following:<ul>
-<li>
-<a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f">completed</a> on success, or </li>
-<li>
-<a class="el" href="a07431.html#a2df903dde386ca28d758548f8e74ed30">failed</a> if an error occurred.</li>
-</ul>
-</li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>The computation results as an parameter value groups. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a07419.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if the process failed.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07411.html#a0c093102980687865610b6b0d1580488" title="Returns a description of the output parameters. ">ProcessDescriptor::getOutputDescriptor()</a> </dd>
-<dd>
-ProcessStep::getOutputs() </dd></dl>
+<p>The pattern to matchs to filenames. </p>
 
-</div>
-</div>
-<a id="ab0bf04fe2a5e9c37f86e0a00738766bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0bf04fe2a5e9c37f86e0a00738766bc">&#9670;&nbsp;</a></span>getDescriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a07411.html">ProcessDescriptor</a> getDescriptor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Description of the process algorithm and its input/output parameters. </p>
-<p>The returned value is the descriptor that created this</p><div class="fragment"><div class="line">Process </div></div><!-- fragment --><p> instance.</p>
-<dl class="section return"><dt>Returns</dt><dd>The process descriptor. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a07419.html#a6956c4e3ccaf7414da811e77f1626dd6">ProcessException.ProcessException()</a>.</p>
-
-</div>
-</div>
-<a id="a1f6e05bc62202398002ecb7aaed46542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f6e05bc62202398002ecb7aaed46542">&#9670;&nbsp;</a></span>getInput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ParameterValueGroup getInput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the input values given to the <a class="el" href="a07411.html#a6ae5f25fabc52116b2d4da7e086d0fba">ProcessDescriptor#createProcess(ParameterValueGroup)</a> method. </p>
-<p>The  ParameterValueGroup::getDescriptor() descriptor} of those parameters is the instance returned by <code> <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">getDescriptor()</a>}. <a class="el" href="a07411.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> getInputDescriptor()}</code>.</p>
-<dl class="section return"><dt>Returns</dt><dd>The input parameter values (never<div class="fragment"><div class="line">null </div></div><!-- fragment --> ).</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a07411.html#a1b006f171772daaa9f97364bdcae428b" title="Returns a description of the input parameters. ">ProcessDescriptor::getInputDescriptor()</a> </dd>
-<dd>
-ProcessStep::getSources() </dd></dl>
-
-</div>
-</div>
-<a id="a89afd5200039ec7321a82a2f1d9a036b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89afd5200039ec7321a82a2f1d9a036b">&#9670;&nbsp;</a></span>getListeners()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a07431.html">ProcessListener</a> [] getListeners </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns all registered listeners, or an empty array if none. </p>
-<dl class="section return"><dt>Returns</dt><dd>The registered listeners. </dd></dl>
-
-</div>
-</div>
-<a id="a6e8f0f9c2be92818a707e613e127a414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e8f0f9c2be92818a707e613e127a414">&#9670;&nbsp;</a></span>getMetadata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ProcessStep getMetadata </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a description of the process, the geographic inputs and outputs and other metadata. </p>
-<p>Those metadata are suitable to processes on geographic data and may not be applicable to every kind of processes. If this parameter is provided, then: </p>
-<ul>
-<li>
-<a class="el" href="">ProcessStep#getDate()</a> is the execution date and time of the process. </li>
-<li>
-<a class="el" href="">ProcessStep#getSources()</a> are the geographic  <a class="el" href="a07407.html#a1f6e05bc62202398002ecb7aaed46542" title="Returns the input values given to the ProcessDescriptor#createProcess(ParameterValueGroup) method...">Process::getInput()</a> process inputs}. </li>
-<li>
-<a class="el" href="">ProcessStep#getOutputs()</a> are the geographic  <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca" title="Executes the process and returns the output in a new ParameterValueGroup. ">Process::call()</a> process outputs}. </li>
-<li>
-<a class="el" href="">ProcessStep#getProcessingInformation()</a> is the  <a class="el" href="a07407.html#ab0bf04fe2a5e9c37f86e0a00738766bc" title="Description of the process algorithm and its input/output parameters. ">Process::getDescriptor()</a> process descriptor}. </li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>A description of the process, the geographic inputs and outputs and other metadata.</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>4.0 </dd></dl>
-
-</div>
-</div>
-<a id="a858002849881b20fda675f8b8c57aebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858002849881b20fda675f8b8c57aebc">&#9670;&nbsp;</a></span>removeListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void removeListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07431.html">ProcessListener</a>&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes a listener from the list of objects to inform about the process progress. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listener</td><td>The listener to remove. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a071de472f6ac976c658e4643f3fb3d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a071de472f6ac976c658e4643f3fb3d0c">&#9670;&nbsp;</a></span>rollback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void rollback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws <a class="el" href="a07419.html">ProcessException</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Rollback <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>. </p>
-<p>Implementers must also handle partial rollback if something when wrong in the middle of <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a>.</p>
-<p>For example a process that create two files must not fail on rollback because the last file was not created because of the <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> exception.</p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a07419.html" title="Thrown when a  Process process} failed. ">ProcessException</a></td><td>if something when wrong during rollback. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="reference">Referenced by <a class="el" href="a07439.html#ae326683ddf04bdeaa400ac056dd8f89e">PosixDirectoryFilter.PosixDirectoryFilter()</a>.</p>
 
 </div>
 </div>
@@ -416,7 +227,7 @@ ProcessStep::getSources() </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03791.html">process</a></li><li class="navelem"><a class="el" href="a07439.html">RollbackableProcess</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03849.html">nio</a></li><li class="navelem"><a class="el" href="a07439.html">PosixDirectoryFilter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

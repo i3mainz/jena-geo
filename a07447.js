@@ -1,12 +1,15 @@
 var a07447 =
 [
-    [ "CRS", "a07447.html#afb16660b402320bd7a2db37d0bc91710", null ],
-    [ "decomposeCRS", "a07447.html#afba6a74892805ed43c6f243daa1863a4", null ],
-    [ "deltaTransform", "a07447.html#ab7ace07f748941b43ef1cc2815d01b77", null ],
-    [ "getCompoundCRS", "a07447.html#ad101ec8b550a2f61c67caba0e16b272b", null ],
-    [ "getCoordinateOperationFactory", "a07447.html#ad9fdd8143c86bf7fefb7cb23a184554b", null ],
-    [ "getDatum", "a07447.html#a3362765cc4e1d76ba22aef71a6cb5e2c", null ],
-    [ "getOrCreateSubCRS", "a07447.html#ad4020b495833c962d3b96304796d9e23", null ],
-    [ "getVersion", "a07447.html#a601d95ee6294b8bff9482ad4d8fce789", null ],
-    [ "isGeodetic3D", "a07447.html#ae69db5bc4d35307f8784f6967254ecbd", null ]
+    [ "ZipUtilities", "a07447.html#a78f7dd7638a2a24439ea6e80061b71b0", null ],
+    [ "createZipFileSystem", "a07447.html#a730265031038a051c8efa702cd1fbecd", null ],
+    [ "unzip", "a07447.html#a832560f7e7197ee048f43bdf0ac8ab7c", null ],
+    [ "unzip", "a07447.html#a710251683dc89e964b6554b873d06793", null ],
+    [ "unzipCore", "a07447.html#a51ed2d2bd06e980afdca72fb2c064bd6", null ],
+    [ "unzipNIO", "a07447.html#a216f4738f3a2b915622f5f712241f215", null ],
+    [ "zip", "a07447.html#ac44e0b0baab3dcc89155834c7690add3", null ],
+    [ "zip", "a07447.html#a682dd87ce2a47863b7df168829cf6317", null ],
+    [ "zipCore", "a07447.html#ad74c9b4c9530cb78874b9a1fd62d8e40", null ],
+    [ "zipCore", "a07447.html#a13deced1a6b0fd42e2a4300231697fe6", null ],
+    [ "zipNIO", "a07447.html#a5b91b5cb28d14251053fb613ef01f463", null ],
+    [ "BUFFER_SIZE", "a07447.html#a2d3b35bbd93276f93a242b96dbd122f2", null ]
 ];

@@ -1,4 +1,8 @@
 var a03762 =
 [
-    [ "tree", "a03760.html", "a03760" ]
+    [ "AddPoint", "a05055.html", "a05055" ],
+    [ "RemovePoint", "a05059.html", "a05059" ],
+    [ "SetEndPoint", "a05063.html", "a05063" ],
+    [ "SetPoint", "a05067.html", "a05067" ],
+    [ "SetStartPoint", "a05071.html", "a05071" ]
 ];

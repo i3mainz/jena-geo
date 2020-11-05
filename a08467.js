@@ -1,5 +1,6 @@
 var a08467 =
 [
-    [ "testAsX3D", "a08467.html#afe336ec5da17f9f811efeebb516b14bf", null ],
-    [ "testGeometry", "a08467.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testGeomFromText", "a08467.html#a2678d2fcc796b673cc52b0e000a954b0", null ],
+    [ "geoJsonTestGeom", "a08467.html#a117e8ff340791b5aa0658f5840b5dcf4", null ],
+    [ "inputText", "a08467.html#a9a5086d43cfaac403f2a79addec33322", null ]
 ];

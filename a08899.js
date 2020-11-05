@@ -1,7 +1,5 @@
 var a08899 =
 [
-    [ "testIsScaleneTriangleFalse", "a08899.html#ac6f7d4cf9bd1990319a4e7a5bb51d4b1", null ],
-    [ "testIsScaleneTriangleTrue", "a08899.html#a86b14a35c3e202b5a14bdaea4c16a441", null ],
-    [ "isocelesTriangle", "a08899.html#aa04dfbec745e2622b9f7646f8572e501", null ],
-    [ "notIsocelesTriangle", "a08899.html#a055d99fb63bcee37763ffcf4da9e0521", null ]
+    [ "testMinY", "a08899.html#a20b14a3b84a49bf47013087a83af2fb1", null ],
+    [ "testPoint", "a08899.html#af26f700ee129f846cac58735f6dcc380", null ]
 ];

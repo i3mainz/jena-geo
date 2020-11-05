@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: GeomFromWKBTest Class Reference</title>
+<title>jena-geo: Is3DTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,46 +61,36 @@ $(document).ready(function(){initNavTree('a08383.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08380.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GeomFromWKBTest Class Reference</div>  </div>
+<div class="title">Is3DTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for GeomFromWKBTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08381.png" border="0" usemap="#GeomFromWKBTest_coll__map" alt="Collaboration graph"/></div>
-<map name="GeomFromWKBTest_coll__map" id="GeomFromWKBTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a117e8ff340791b5aa0658f5840b5dcf4"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08383.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a> =&quot;\\001\\002\\000\\000\\000\\002\\000\\000\\000\\037\\205\\353Q\\270~\\\\\\300\\323Mb\\020X\\231C@\\020X9\\264\\310~\\\\\\300)\\\\\\217\\302\\365\\230C@&quot;</td></tr>
-<tr class="separator:a117e8ff340791b5aa0658f5840b5dcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abe301b8e862e3cfd24d59624f368c863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08383.html#abe301b8e862e3cfd24d59624f368c863">testIs3DTrue</a> ()</td></tr>
+<tr class="separator:abe301b8e862e3cfd24d59624f368c863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a117e8ff340791b5aa0658f5840b5dcf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a117e8ff340791b5aa0658f5840b5dcf4">&#9670;&nbsp;</a></span>geoJsonTestGeom</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe301b8e862e3cfd24d59624f368c863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe301b8e862e3cfd24d59624f368c863">&#9670;&nbsp;</a></span>testIs3DTrue()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String geoJsonTestGeom =&quot;\\001\\002\\000\\000\\000\\002\\000\\000\\000\\037\\205\\353Q\\270~\\\\\\300\\323Mb\\020X\\231C@\\020X9\\264\\310~\\\\\\300)\\\\\\217\\302\\365\\230C@&quot;</td>
+          <td class="memname">void testIs3DTrue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="a04267.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">Is3D.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                   {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/27700&gt; MULTIPOINT Z (10 40 1, 40 30 2, 20 20 3, 30 10 4)&quot;</span>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        Is3D instance=<span class="keyword">new</span> Is3D();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue expResult = NodeValue.makeNodeBoolean(<span class="keyword">true</span>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }       </div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -109,7 +99,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03839.html">test</a></li><li class="navelem"><a class="el" href="a03842.html">geometry</a></li><li class="navelem"><a class="el" href="a03843.html">constructor</a></li><li class="navelem"><a class="el" href="a08383.html">GeomFromWKBTest</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03899.html">test</a></li><li class="navelem"><a class="el" href="a03902.html">geometry</a></li><li class="navelem"><a class="el" href="a03901.html">attribute</a></li><li class="navelem"><a class="el" href="a08383.html">Is3DTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

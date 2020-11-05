@@ -1,26 +1,5 @@
 var a07107 =
 [
-    [ "DerbySqlScriptRunner", "a07107.html#aca2d6500401883c1cd33c9eea8532f85", null ],
-    [ "accept", "a07107.html#a838ed6f0e3e1ad09e78e1e37229d744e", null ],
-    [ "close", "a07107.html#a8a2a810d6b1e96f8037d6ce5a637ac99", null ],
-    [ "execute", "a07107.html#a2e1ffb65aa740ea03dd611cd2898c728", null ],
-    [ "getConnection", "a07107.html#abe00cdf87aed55bbe5ef191c248b62b1", null ],
-    [ "getCurrentPosition", "a07107.html#a08e1a85198eaf6487c6f5f8919d2102f", null ],
-    [ "getEncoding", "a07107.html#ad3f7068c7ccd4c7bb1873b752cf24486", null ],
-    [ "run", "a07107.html#a92338667c69a471901b2617e638b7655", null ],
-    [ "run", "a07107.html#a77d33783552b0eace1bff508290d2b2e", null ],
-    [ "run", "a07107.html#a13a94624b21179dd03fde73b6f3be2bf", null ],
-    [ "run", "a07107.html#a4f24d985af73b36eb53b6018059bf122", null ],
-    [ "run", "a07107.html#a64101d48a20710b0780be23ea3f36492", null ],
-    [ "runFile", "a07107.html#acb4f09c4ed9eede81436829d3852c307", null ],
-    [ "selectVersion", "a07107.html#a5cc0e8ba536dbb6ca74b7dfae2ec8863", null ],
-    [ "setEncoding", "a07107.html#a09247462099dcfca65bce64059374ad3", null ],
-    [ "toString", "a07107.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "dialect", "a07107.html#a21a78630e73fdc5217cc5f91ad526605", null ],
-    [ "END_OF_STATEMENT", "a07107.html#a969fa1b1e9090bc9ef66fa246f5b7ac5", null ],
-    [ "IDENTIFIER_QUOTE", "a07107.html#a96a992a14ce189a9b7de2e55b4db3ef2", null ],
-    [ "identifierQuote", "a07107.html#a3dce6165371128e8b36d23d1065cc63e", null ],
-    [ "QUOTE", "a07107.html#abda6dfa583d13a2de4723e1a42222318", null ],
-    [ "replacements", "a07107.html#a2dbc68fcb6d181e6821ddfdc5faa1e1c", null ],
-    [ "suffixes", "a07107.html#a34f194361f67b4fb08bca6fea2776312", null ]
+    [ "NodataFilterCRIF", "a07107.html#a724ea5253561af2e9c369e65d5737141", null ],
+    [ "create", "a07107.html#af70d58d889728a9e6f2bb2738e16a887", null ]
 ];

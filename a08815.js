@@ -1,5 +1,4 @@
 var a08815 =
 [
-    [ "testMinZ", "a08815.html#ad4ab49729c245a84edb5744801e95906", null ],
-    [ "testPoint", "a08815.html#af26f700ee129f846cac58735f6dcc380", null ]
+    [ "testMultiPoint", "a08815.html#a05f65a5a44e94fff4e0960a92d74135e", null ]
 ];

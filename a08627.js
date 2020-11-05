@@ -1,5 +1,7 @@
 var a08627 =
 [
-    [ "testRemoveRepeatedPoints", "a08627.html#a473d131a5f96a89f9502570a50d06e65", null ],
-    [ "testGeometry", "a08627.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testLongestLine", "a08627.html#a67123b25e212bf04a36a62bbd917df3d", null ],
+    [ "result", "a08627.html#aab356d6554a7301750f11ec7a85ac47d", null ],
+    [ "testGeom", "a08627.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
+    [ "testGeom2", "a08627.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
 ];

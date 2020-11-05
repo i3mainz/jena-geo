@@ -1,8 +1,6 @@
 var a07039 =
 [
-    [ "Host", "a07039.html#ac5301279411a011a2af04a9a7c49e14b", null ],
-    [ "Host", "a07039.html#a5f1f831fdb4c407efb0fe00da70939b5", null ],
-    [ "host", "a07039.html#a2502b12b30261ef4dea2ff97a6b78cab", null ],
-    [ "path", "a07039.html#adb85e16ac8c9f62df2d33b1262649843", null ],
-    [ "port", "a07039.html#a0008be20f8979e1db6fb31c28cd26025", null ]
+    [ "PaletteDisposer", "a07039.html#a47bf225ac5759d9f390795c1192acc2e", null ],
+    [ "dispose", "a07039.html#ab953e90edb69534eb052f9064f6b40e9", null ],
+    [ "palette", "a07039.html#ae53d1cbe9675c522cb3f3964ff906482", null ]
 ];

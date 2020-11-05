@@ -1,5 +1,25 @@
 var a07031 =
 [
-    [ "SilhouetteMaskDescriptor", "a07031.html#a2b439e05eda465a3652850be6aa48720", null ],
-    [ "serialVersionUID", "a07031.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "IndexedPalette", "a07031.html#a2bd9fbc13eda8405eae87e39f710d17d", null ],
+    [ "createARGB", "a07031.html#aa8498ab514905767badc50bbb1adbf23", null ],
+    [ "createImageTypeSpecifier", "a07031.html#a3a3aed5322135eb2bb82cd90ab351f38", null ],
+    [ "ensureInsideBounds", "a07031.html#aae97ac739b599405d29f91bee27bbc19", null ],
+    [ "equals", "a07031.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
+    [ "getColorModel", "a07031.html#ac8ba6eec4aeb454352559b2305b8d362", null ],
+    [ "getImage", "a07031.html#abe1e6d7e0ca8c0ef7ed2b5c846123749", null ],
+    [ "getImageTypeSpecifier", "a07031.html#a014cd0623b0d8f09ca87a916c9152007", null ],
+    [ "getLegend", "a07031.html#a5787ba9c1dee994f963ef4f2aff092c3", null ],
+    [ "getOffset", "a07031.html#a5c7bab1204c195e6cb98d3661c798598", null ],
+    [ "getScale", "a07031.html#a756eaa4aa80890ba357fc36b1861ac90", null ],
+    [ "hashCode", "a07031.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "isGrayPalette", "a07031.html#a7bee4509041e1799e2c2847757130427", null ],
+    [ "toString", "a07031.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "factory", "a07031.html#a12f8e7975fb86f64ec3c440154897b45", null ],
+    [ "lower", "a07031.html#acf80daf0fc5f11d2794ca1dfa435f27a", null ],
+    [ "MAX_UNSIGNED", "a07031.html#a3deb997bd738e2f9be489a09b178dec2", null ],
+    [ "name", "a07031.html#aee5f0118454ca188d26b7db28c890faa", null ],
+    [ "numBands", "a07031.html#a0d8b817b89b958b862e489811688d6d7", null ],
+    [ "size", "a07031.html#afbc6b1836d470cd96cf35f427dfcbc11", null ],
+    [ "upper", "a07031.html#a2313c241950e17864a26440f0ed5c84f", null ],
+    [ "visibleBand", "a07031.html#a222631519396875a9610c4bccec56eaf", null ]
 ];

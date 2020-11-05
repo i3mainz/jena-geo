@@ -1,5 +1,5 @@
 var a08939 =
 [
-    [ "testPolygon", "a08939.html#a1e3187cbc25299380589200c398b3ffd", null ],
-    [ "testPolygon2", "a08939.html#a882729aec95621b4ad261714738ae3fd", null ]
+    [ "testPointFromText", "a08939.html#a34b8808318d84beec7ded7da39c5ef6e", null ],
+    [ "testPoint1", "a08939.html#ab20d196cb6e34afc2e9cff8074e43bfd", null ]
 ];

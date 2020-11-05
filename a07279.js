@@ -1,9 +1,10 @@
 var a07279 =
 [
-    [ "NumberSet", "a07279.html#adb2697e1f8e0a6faa2ff312ae9c33678", null ],
-    [ "INTEGER", "a07279.html#a89b03df71aca47d18a0df701c77fcfc0", null ],
-    [ "NATURAL", "a07279.html#a543b6b5654dbe672afd9a7cd52e5d365", null ],
-    [ "RATIONAL", "a07279.html#af1a798d3dabb56debb14281c92d7480a", null ],
-    [ "REAL", "a07279.html#afa22c387c368a7b0b560f4860c0c99d1", null ],
-    [ "symbol", "a07279.html#a46e91dd1e876cfb6f9216ea72a55c677", null ]
+    [ "SimpleFileFilter", "a07279.html#a1f9ef4e72507f507dd1071cc06a2bff7", null ],
+    [ "accept", "a07279.html#aacee2180a560fac97cfaffb5c81b21ce", null ],
+    [ "allowFolderSelection", "a07279.html#ad07475d36df0a7e6f53a79a9642a3b3c", null ],
+    [ "getDescription", "a07279.html#ac7feffb7a33f63504ff1f87f19e2d2d8", null ],
+    [ "allowFolder", "a07279.html#aae44b0c8cffa123e25f31306443cf546", null ],
+    [ "desc", "a07279.html#a1ccb50d46fe38b29480eda6575a7b4fb", null ],
+    [ "ends", "a07279.html#a5b4bf819f5ac43808988db6e6cd709a4", null ]
 ];

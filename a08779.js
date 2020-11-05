@@ -1,6 +1,7 @@
 var a08779 =
 [
-    [ "testAngle", "a08779.html#a0cf5bb8fb4d0971e797f7a4e75601b26", null ],
-    [ "testPoint1", "a08779.html#ab20d196cb6e34afc2e9cff8074e43bfd", null ],
-    [ "testPoint2", "a08779.html#aa0c0c6f5dda7a397fc50f4c22a2b180f", null ]
+    [ "testLineStringIsNotRing", "a08779.html#a321e37eed11ab4c4fb34459ff2f0c8a4", null ],
+    [ "testLineStringIsRing", "a08779.html#af99150f0a2baa803f3a32475e363a546", null ],
+    [ "isNotRing", "a08779.html#aab14cab4c38dbe8dacf3fc3b49a4e99d", null ],
+    [ "isRing", "a08779.html#ada60d12c21aae01823c842a1347435af", null ]
 ];

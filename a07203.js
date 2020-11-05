@@ -1,10 +1,7 @@
 var a07203 =
 [
-    [ "MetadataFactory", "a07203.html#ae6ca54af7f19050e49abe6e344b5727e", null ],
-    [ "containsAll", "a07203.html#af9ae5ac39cb7371b6c820e89346d3855", null ],
-    [ "create", "a07203.html#a52d9c841d236040f0883a225349e374f", null ],
-    [ "getDefinition", "a07203.html#a344c2fac75029c65658d5da17ba5d70e", null ],
-    [ "guessType", "a07203.html#a0c2273194cd96e2869b57ca3d5350400", null ],
-    [ "DEFAULT", "a07203.html#ab8fecb79beccd16dd0b1963e0200d047", null ],
-    [ "standard", "a07203.html#adaf55dc08e847c57f8d0d758d550a0fb", null ]
+    [ "equals", "a07203.html#ad2b66b6f7806bbaf88ed96699c8ed604", null ],
+    [ "getIdentifier", "a07203.html#acaa9071b2dd672a390bec5e19f7a5c31", null ],
+    [ "hashCode", "a07203.html#a077e18fe97323c7194e2665ffc766399", null ],
+    [ "toString", "a07203.html#ad146fa8579a5f8a876c4688cc5a68520", null ]
 ];

@@ -1,13 +1,17 @@
 var a07991 =
 [
-    [ "create", "a07991.html#aeb18f842096db3a0bcc084c570ee13ae", null ],
-    [ "create", "a07991.html#a161ace52b7f81b6e29f47e284d75a262", null ],
-    [ "create", "a07991.html#af1334cc1481735774c69413a6c20a708", null ],
-    [ "getNamespace", "a07991.html#a244fda4bbd55c2a410f69fa5c118673a", null ],
-    [ "match", "a07991.html#afd11bc7afdce45fc0860c69d59f4d95c", null ],
-    [ "match", "a07991.html#a6a5eff665e7080bac0947dd014a71c01", null ],
-    [ "toExpandedString", "a07991.html#ae5a4e5f4649079aa5861c4a3d32a5a85", null ],
-    [ "toExtendedForm", "a07991.html#af943b1fb25b0cba8adc1b078ac9da0b5", null ],
-    [ "toSessionNamespaceFromExtended", "a07991.html#abda4e6de975da6e257c16fd282850794", null ],
-    [ "valueOf", "a07991.html#a40cc4f345185d98688ced43f848a0ff0", null ]
+    [ "ProxyMap", "a07991.html#ae501300dde6209fbe621d723d1636c74", null ],
+    [ "clear", "a07991.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
+    [ "containsKey", "a07991.html#a3101f8dc7d22575eed198995783d0547", null ],
+    [ "containsValue", "a07991.html#aa0c97bc767dec8ae0a78a4e699e79a85", null ],
+    [ "entrySet", "a07991.html#ac3d7998b354ef821673f836071270da7", null ],
+    [ "get", "a07991.html#ae9ea7fe128b8ab553aa89ae46bec234f", null ],
+    [ "isEmpty", "a07991.html#aa71d41fd3d95c354d4d5e922c6c21210", null ],
+    [ "keySet", "a07991.html#aaf221fd7e416516b6e1228c0a25cb839", null ],
+    [ "put", "a07991.html#a78cb64e8d41be403c2b89bc935757692", null ],
+    [ "putAll", "a07991.html#a94caf8e5910622dd6936b67330788f68", null ],
+    [ "remove", "a07991.html#af13ea149b55260d00e99a2030cea8034", null ],
+    [ "size", "a07991.html#af4b57d21919c42d55af03391f91a1c08", null ],
+    [ "values", "a07991.html#af0c79ec0eb4e8cde1ee8e0390add2f9e", null ],
+    [ "subs", "a07991.html#a6d98b237d2c5ff06ad59e8bee04bfab4", null ]
 ];

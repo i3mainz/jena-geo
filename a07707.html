@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Loggings.Keys Class Reference</title>
+<title>jena-geo: MapProjectionDescriptor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,170 +61,95 @@ $(document).ready(function(){initNavTree('a07707.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a07704.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Loggings.Keys Class Reference</div>  </div>
+<div class="title">MapProjectionDescriptor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Resource keys.  
+<p>Map projection parameters, with special processing for alternative ways to express the ellipsoid axis length and the standard parallels.  
  <a href="a07707.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for Loggings.Keys:</div>
+Inheritance diagram for MapProjectionDescriptor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07705.png" border="0" usemap="#Loggings_8Keys_coll__map" alt="Collaboration graph"/></div>
-<map name="Loggings_8Keys_coll__map" id="Loggings_8Keys_coll__map">
+<div class="center"><img src="a07706.png" border="0" usemap="#MapProjectionDescriptor_inherit__map" alt="Inheritance graph"/></div>
+<map name="MapProjectionDescriptor_inherit__map" id="MapProjectionDescriptor_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for MapProjectionDescriptor:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07705.png" border="0" usemap="#MapProjectionDescriptor_coll__map" alt="Collaboration graph"/></div>
+<map name="MapProjectionDescriptor_coll__map" id="MapProjectionDescriptor_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a27dc3a857ee22eb6b605af2d55c631c5"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a27dc3a857ee22eb6b605af2d55c631c5">AdjustedGridGeometry_1</a> = 1</td></tr>
-<tr class="memdesc:a27dc3a857ee22eb6b605af2d55c631c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid geometry has been adjusted for coverage “{0}”.  <a href="#a27dc3a857ee22eb6b605af2d55c631c5">More...</a><br /></td></tr>
-<tr class="separator:a27dc3a857ee22eb6b605af2d55c631c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee1e32a9b7c636b77c14612d549cbb1"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a2ee1e32a9b7c636b77c14612d549cbb1">AmbiguousEllipsoid</a> = 2</td></tr>
-<tr class="memdesc:a2ee1e32a9b7c636b77c14612d549cbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ambiguity between inverse flattening and semi minor axis length.  <a href="#a2ee1e32a9b7c636b77c14612d549cbb1">More...</a><br /></td></tr>
-<tr class="separator:a2ee1e32a9b7c636b77c14612d549cbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a361474552bd03ad5c5afb78b3c742"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a59a361474552bd03ad5c5afb78b3c742">AppliedOperation_4</a> = 3</td></tr>
-<tr class="memdesc:a59a361474552bd03ad5c5afb78b3c742"><td class="mdescLeft">&#160;</td><td class="mdescRight">{3,choice,0#Apply|1#Reuse} operation “{1}” on coverage “{0}” with interpolation “{2}”.  <a href="#a59a361474552bd03ad5c5afb78b3c742">More...</a><br /></td></tr>
-<tr class="separator:a59a361474552bd03ad5c5afb78b3c742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39ed88cda48280f0a3ff0138c570b724"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a39ed88cda48280f0a3ff0138c570b724">AppliedResample_11</a> = 4</td></tr>
-<tr class="memdesc:a39ed88cda48280f0a3ff0138c570b724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resampled coverage “{0}” from coordinate system “{1}” (for an image of size {2}×{3}) to coordinate system “{4}” (image size {5}×{6}).  <a href="#a39ed88cda48280f0a3ff0138c570b724">More...</a><br /></td></tr>
-<tr class="separator:a39ed88cda48280f0a3ff0138c570b724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ac58fc390c9ab88332adf8a73d0201"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a37ac58fc390c9ab88332adf8a73d0201">CantCreateCoordinateOperation_1</a> = 5</td></tr>
-<tr class="memdesc:a37ac58fc390c9ab88332adf8a73d0201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Failed to create a coordinate operation from “{0}” authority factory.  <a href="#a37ac58fc390c9ab88332adf8a73d0201">More...</a><br /></td></tr>
-<tr class="separator:a37ac58fc390c9ab88332adf8a73d0201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add877be586706fc2e25efbbf711a4003"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#add877be586706fc2e25efbbf711a4003">CantCreateObjectFromCode_1</a> = 6</td></tr>
-<tr class="memdesc:add877be586706fc2e25efbbf711a4003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Failed to create an object for code “{0}”.  <a href="#add877be586706fc2e25efbbf711a4003">More...</a><br /></td></tr>
-<tr class="separator:add877be586706fc2e25efbbf711a4003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15188ea991fbae6bb963eddc33b68cc4"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a15188ea991fbae6bb963eddc33b68cc4">CantLoadService_2</a> = 7</td></tr>
-<tr class="memdesc:a15188ea991fbae6bb963eddc33b68cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can’t load a service for category “{0}”.  <a href="#a15188ea991fbae6bb963eddc33b68cc4">More...</a><br /></td></tr>
-<tr class="separator:a15188ea991fbae6bb963eddc33b68cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259184503017d6f92569e889d62aae2c"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a259184503017d6f92569e889d62aae2c">CantReadFile_1</a> = 8</td></tr>
-<tr class="memdesc:a259184503017d6f92569e889d62aae2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can’t read “{0}”.  <a href="#a259184503017d6f92569e889d62aae2c">More...</a><br /></td></tr>
-<tr class="separator:a259184503017d6f92569e889d62aae2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d5b9020885c57a05fd860bd8c771e05"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a9d5b9020885c57a05fd860bd8c771e05">CantRegisterJaiOperation_1</a> = 9</td></tr>
-<tr class="memdesc:a9d5b9020885c57a05fd860bd8c771e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can’t register JAI operation “{0}”.  <a href="#a9d5b9020885c57a05fd860bd8c771e05">More...</a><br /></td></tr>
-<tr class="separator:a9d5b9020885c57a05fd860bd8c771e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a680fcf0e01ae21df5b36845b5cc1f"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a79a680fcf0e01ae21df5b36845b5cc1f">ClosedDatabaseForThread_2</a> = 10</td></tr>
-<tr class="memdesc:a79a680fcf0e01ae21df5b36845b5cc1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closed the database connection for thread “{0}” after {1} queries.  <a href="#a79a680fcf0e01ae21df5b36845b5cc1f">More...</a><br /></td></tr>
-<tr class="separator:a79a680fcf0e01ae21df5b36845b5cc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10dffe65866e3ea3d226674098d70107"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a10dffe65866e3ea3d226674098d70107">ClosedEpsgDatabase</a> = 11</td></tr>
-<tr class="memdesc:a10dffe65866e3ea3d226674098d70107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closed the EPSG database connection.  <a href="#a10dffe65866e3ea3d226674098d70107">More...</a><br /></td></tr>
-<tr class="separator:a10dffe65866e3ea3d226674098d70107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9c908b242a08d5797b8209fa30335a"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a4c9c908b242a08d5797b8209fa30335a">ConnectedDatabaseForThread_2</a> = 12</td></tr>
-<tr class="memdesc:a4c9c908b242a08d5797b8209fa30335a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected thread “{0}” to database “{1}”.  <a href="#a4c9c908b242a08d5797b8209fa30335a">More...</a><br /></td></tr>
-<tr class="separator:a4c9c908b242a08d5797b8209fa30335a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9096454d9ca44c25e5742cc8bda1897"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ae9096454d9ca44c25e5742cc8bda1897">ConnectedEpsgDatabase_2</a> = 13</td></tr>
-<tr class="memdesc:ae9096454d9ca44c25e5742cc8bda1897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected to EPSG database “{0}” on “{1}”.  <a href="#ae9096454d9ca44c25e5742cc8bda1897">More...</a><br /></td></tr>
-<tr class="separator:ae9096454d9ca44c25e5742cc8bda1897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad412799de3868734739c544e67326970"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ad412799de3868734739c544e67326970">CoverageStore_8</a> = 14</td></tr>
-<tr class="memdesc:ad412799de3868734739c544e67326970"><td class="mdescLeft">&#160;</td><td class="mdescRight">{0,choice,0#Loading|1#Writing} of {1}: • Coverage name: {2} • Coverage type(s): {3} • Coverage size: {4} pixels • Coverage CRS: {5} • {0,choice,0#Required transform:|1#Applied transform: } {6} • Elapsed time: {7} milliseconds.  <a href="#ad412799de3868734739c544e67326970">More...</a><br /></td></tr>
-<tr class="separator:ad412799de3868734739c544e67326970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d4f604ee057f3dfebc0945b94a95563"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a3d4f604ee057f3dfebc0945b94a95563">CreatedCodecOfClass_2</a> = 15</td></tr>
-<tr class="memdesc:a3d4f604ee057f3dfebc0945b94a95563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created {0,choice,0#decoder|1#encoder} of class {1}.  <a href="#a3d4f604ee057f3dfebc0945b94a95563">More...</a><br /></td></tr>
-<tr class="separator:a3d4f604ee057f3dfebc0945b94a95563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace21c7e9c5101efdf37dfa1468a08437"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ace21c7e9c5101efdf37dfa1468a08437">CreatedCoordinateOperation_3</a> = 16</td></tr>
-<tr class="memdesc:ace21c7e9c5101efdf37dfa1468a08437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created coordinate operation “{0}” for source CRS “{1}” and target CRS “{2}”.  <a href="#ace21c7e9c5101efdf37dfa1468a08437">More...</a><br /></td></tr>
-<tr class="separator:ace21c7e9c5101efdf37dfa1468a08437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49510b32d7bce4c7973f8fdacdfa69d"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#af49510b32d7bce4c7973f8fdacdfa69d">CreatedObject_1</a> = 17</td></tr>
-<tr class="memdesc:af49510b32d7bce4c7973f8fdacdfa69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created a new ‘{0}’ object.  <a href="#af49510b32d7bce4c7973f8fdacdfa69d">More...</a><br /></td></tr>
-<tr class="separator:af49510b32d7bce4c7973f8fdacdfa69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3abe54061ea3bbdd21325f2596577c85"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a3abe54061ea3bbdd21325f2596577c85">CreatedSerializableImage_2</a> = 18</td></tr>
-<tr class="memdesc:a3abe54061ea3bbdd21325f2596577c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created serializable image for coverage “{0}” using the “{1}” codec.  <a href="#a3abe54061ea3bbdd21325f2596577c85">More...</a><br /></td></tr>
-<tr class="separator:a3abe54061ea3bbdd21325f2596577c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3673f4e33b57f5eb8674d186d24912c"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#aa3673f4e33b57f5eb8674d186d24912c">CreatingCachedEpsgDatabase_1</a> = 19</td></tr>
-<tr class="memdesc:aa3673f4e33b57f5eb8674d186d24912c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating cached EPSG database version {0}.  <a href="#aa3673f4e33b57f5eb8674d186d24912c">More...</a><br /></td></tr>
-<tr class="separator:aa3673f4e33b57f5eb8674d186d24912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7973ac9aa332dfe83e823c1e789e3295"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a7973ac9aa332dfe83e823c1e789e3295">DeferredTilePainting_2</a> = 20</td></tr>
-<tr class="memdesc:a7973ac9aa332dfe83e823c1e789e3295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deferred painting for tile ({0},{1}).  <a href="#a7973ac9aa332dfe83e823c1e789e3295">More...</a><br /></td></tr>
-<tr class="separator:a7973ac9aa332dfe83e823c1e789e3295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f7a14544d72df95a0df7fef8ed78afa"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a3f7a14544d72df95a0df7fef8ed78afa">DuplicatedContentInFile_1</a> = 21</td></tr>
-<tr class="memdesc:a3f7a14544d72df95a0df7fef8ed78afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">File “{0}” contains values that duplicate previously stored values.  <a href="#a3f7a14544d72df95a0df7fef8ed78afa">More...</a><br /></td></tr>
-<tr class="separator:a3f7a14544d72df95a0df7fef8ed78afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97c3fb84fb04cc3a3197cd7c483826c5"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a97c3fb84fb04cc3a3197cd7c483826c5">ExcessiveTileCache_1</a> = 22</td></tr>
-<tr class="memdesc:a97c3fb84fb04cc3a3197cd7c483826c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile cache capacity exceed maximum heap size ({0} Mb).  <a href="#a97c3fb84fb04cc3a3197cd7c483826c5">More...</a><br /></td></tr>
-<tr class="separator:a97c3fb84fb04cc3a3197cd7c483826c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3090bb6aabc4b6730125ce01d44e40"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a7c3090bb6aabc4b6730125ce01d44e40">FactoryImplementations_1</a> = 23</td></tr>
-<tr class="memdesc:a7c3090bb6aabc4b6730125ce01d44e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory implementations for category {0}:  <a href="#a7c3090bb6aabc4b6730125ce01d44e40">More...</a><br /></td></tr>
-<tr class="separator:a7c3090bb6aabc4b6730125ce01d44e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cde68eef13875d2da303f1cadf155a"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a73cde68eef13875d2da303f1cadf155a">FactoryReplacedForAxisOrder_4</a> = 24</td></tr>
-<tr class="memdesc:a73cde68eef13875d2da303f1cadf155a"><td class="mdescLeft">&#160;</td><td class="mdescRight">{1} ({0} authority) replaces {2} for {3,choice,0#standard|1#XY} axis order.  <a href="#a73cde68eef13875d2da303f1cadf155a">More...</a><br /></td></tr>
-<tr class="separator:a73cde68eef13875d2da303f1cadf155a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a890bf231ac36cada60b2fdbcab7e7686"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a890bf231ac36cada60b2fdbcab7e7686">FallbackFactory_1</a> = 25</td></tr>
-<tr class="memdesc:a890bf231ac36cada60b2fdbcab7e7686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Failure in the primary factory: {0} Now trying the fallback factory...  <a href="#a890bf231ac36cada60b2fdbcab7e7686">More...</a><br /></td></tr>
-<tr class="separator:a890bf231ac36cada60b2fdbcab7e7686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1127587db89248123a95d6d05035854b"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a1127587db89248123a95d6d05035854b">FlushCache_1</a> = 26</td></tr>
-<tr class="memdesc:a1127587db89248123a95d6d05035854b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush the “{0}” cache.  <a href="#a1127587db89248123a95d6d05035854b">More...</a><br /></td></tr>
-<tr class="separator:a1127587db89248123a95d6d05035854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa61e20dcb613ea221fcd77d9674ca714"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#aa61e20dcb613ea221fcd77d9674ca714">FoundMismatchedCRS_4</a> = 27</td></tr>
-<tr class="memdesc:aa61e20dcb613ea221fcd77d9674ca714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Found {0} reference systems in {1} elements.  <a href="#aa61e20dcb613ea221fcd77d9674ca714">More...</a><br /></td></tr>
-<tr class="separator:aa61e20dcb613ea221fcd77d9674ca714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fbc23359eb48d07aaf07d891ed54149"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a4fbc23359eb48d07aaf07d891ed54149">InitializingTransformation_2</a> = 28</td></tr>
-<tr class="memdesc:a4fbc23359eb48d07aaf07d891ed54149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializing transformation from {0} to {1}.  <a href="#a4fbc23359eb48d07aaf07d891ed54149">More...</a><br /></td></tr>
-<tr class="separator:a4fbc23359eb48d07aaf07d891ed54149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58c267c554dec52913d4e6a3fc880ff"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ab58c267c554dec52913d4e6a3fc880ff">JdbcDriverVersion_3</a> = 29</td></tr>
-<tr class="memdesc:ab58c267c554dec52913d4e6a3fc880ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">{0} JDBC driver version {1}.  <a href="#ab58c267c554dec52913d4e6a3fc880ff">More...</a><br /></td></tr>
-<tr class="separator:ab58c267c554dec52913d4e6a3fc880ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad32710594b6132af3217d130c94be94f"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ad32710594b6132af3217d130c94be94f">LoadingRegion_6</a> = 30</td></tr>
-<tr class="memdesc:ad32710594b6132af3217d130c94be94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loading region x=[{0} … {1}], y=[{2} … {3}] in {4} milliseconds: {5,choice,0#success|1#canceled|2#FAILURE}.  <a href="#ad32710594b6132af3217d130c94be94f">More...</a><br /></td></tr>
-<tr class="separator:ad32710594b6132af3217d130c94be94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a38cd7910b437d0579c6b4acdd011a"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a25a38cd7910b437d0579c6b4acdd011a">MismatchedCoordinateOperationFactories_2</a> = 31</td></tr>
-<tr class="memdesc:a25a38cd7910b437d0579c6b4acdd011a"><td class="mdescLeft">&#160;</td><td class="mdescRight">No coordinate operation from “{0}” to “{1}” because of mismatched factories.  <a href="#a25a38cd7910b437d0579c6b4acdd011a">More...</a><br /></td></tr>
-<tr class="separator:a25a38cd7910b437d0579c6b4acdd011a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabcbf300e3d87d3f2ba63150ebe5b84"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#aaabcbf300e3d87d3f2ba63150ebe5b84">MismatchedUrnType_1</a> = 32</td></tr>
-<tr class="memdesc:aaabcbf300e3d87d3f2ba63150ebe5b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the requested object does not match the “{0}” URN type.  <a href="#aaabcbf300e3d87d3f2ba63150ebe5b84">More...</a><br /></td></tr>
-<tr class="separator:aaabcbf300e3d87d3f2ba63150ebe5b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a535a3f65ec2834b06fb2f8aa94ccb445"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a535a3f65ec2834b06fb2f8aa94ccb445">NativeAccelerationState_2</a> = 33</td></tr>
-<tr class="memdesc:a535a3f65ec2834b06fb2f8aa94ccb445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native acceleration {1,choice,0#disabled|1#enabled} for “{0}” operation.  <a href="#a535a3f65ec2834b06fb2f8aa94ccb445">More...</a><br /></td></tr>
-<tr class="separator:a535a3f65ec2834b06fb2f8aa94ccb445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19bab5587e83de38cfd1938a1c20a993"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a19bab5587e83de38cfd1938a1c20a993">NativeCodecState_3</a> = 34</td></tr>
-<tr class="memdesc:a19bab5587e83de38cfd1938a1c20a993"><td class="mdescLeft">&#160;</td><td class="mdescRight">JAI codec {1,choice,0#disabled|1#enabled} for {2,choice,0#reading|1#writing} “{0}” format.  <a href="#a19bab5587e83de38cfd1938a1c20a993">More...</a><br /></td></tr>
-<tr class="separator:a19bab5587e83de38cfd1938a1c20a993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7349b214bee6a4c2f107947f8367d7a"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#aa7349b214bee6a4c2f107947f8367d7a">RecoverableOutOfMemory_1</a> = 35</td></tr>
-<tr class="memdesc:aa7349b214bee6a4c2f107947f8367d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Failed to allocate {0} Mb of memory.  <a href="#aa7349b214bee6a4c2f107947f8367d7a">More...</a><br /></td></tr>
-<tr class="separator:aa7349b214bee6a4c2f107947f8367d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f879809d1dc99a91ec573549f8b7cc"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#af8f879809d1dc99a91ec573549f8b7cc">RegisteredJaiOperations</a> = 36</td></tr>
-<tr class="memdesc:af8f879809d1dc99a91ec573549f8b7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registered Geotoolkit.org extensions to JAI operations.  <a href="#af8f879809d1dc99a91ec573549f8b7cc">More...</a><br /></td></tr>
-<tr class="separator:af8f879809d1dc99a91ec573549f8b7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84217874b4928e1079edb154a8aee96b"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a84217874b4928e1079edb154a8aee96b">SampleTranscode_3</a> = 37</td></tr>
-<tr class="memdesc:a84217874b4928e1079edb154a8aee96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a {1,choice,0#packed|1#geophysics|2#photographic} view of grid coverage “{0}” using operation “{2}”.  <a href="#a84217874b4928e1079edb154a8aee96b">More...</a><br /></td></tr>
-<tr class="separator:a84217874b4928e1079edb154a8aee96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdcd65c5e53af55c95a6f36348e9b34e"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#acdcd65c5e53af55c95a6f36348e9b34e">TableColumnNotFound_3</a> = 38</td></tr>
-<tr class="memdesc:acdcd65c5e53af55c95a6f36348e9b34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">No column “{0}” has been found in table “{1}”.  <a href="#acdcd65c5e53af55c95a6f36348e9b34e">More...</a><br /></td></tr>
-<tr class="separator:acdcd65c5e53af55c95a6f36348e9b34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbd040a154b2a2dc4179dd0816be947f"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#adbd040a154b2a2dc4179dd0816be947f">TemporaryFileGc_1</a> = 39</td></tr>
-<tr class="memdesc:adbd040a154b2a2dc4179dd0816be947f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary file “{0}” has been garbage-collected.  <a href="#adbd040a154b2a2dc4179dd0816be947f">More...</a><br /></td></tr>
-<tr class="separator:adbd040a154b2a2dc4179dd0816be947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93cc14a7593585b3be86f1d80746ba6d"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a93cc14a7593585b3be86f1d80746ba6d">UnavailableAuthorityFactory_1</a> = 40</td></tr>
-<tr class="memdesc:a93cc14a7593585b3be86f1d80746ba6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unavailable authority factory: {0}.  <a href="#a93cc14a7593585b3be86f1d80746ba6d">More...</a><br /></td></tr>
-<tr class="separator:a93cc14a7593585b3be86f1d80746ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5a11a9d3bdec4fa77d396f2d486f20"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#aaa5a11a9d3bdec4fa77d396f2d486f20">UnrecognizedScaleType_1</a> = 41</td></tr>
-<tr class="memdesc:aaa5a11a9d3bdec4fa77d396f2d486f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unrecognized scale type: “{0}”.  <a href="#aaa5a11a9d3bdec4fa77d396f2d486f20">More...</a><br /></td></tr>
-<tr class="separator:aaa5a11a9d3bdec4fa77d396f2d486f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a41a3bfa4733e3ff093447e18438370"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a4a41a3bfa4733e3ff093447e18438370">UsingFallback_1</a> = 42</td></tr>
-<tr class="memdesc:a4a41a3bfa4733e3ff093447e18438370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using “{0}” as a fallback.  <a href="#a4a41a3bfa4733e3ff093447e18438370">More...</a><br /></td></tr>
-<tr class="separator:a4a41a3bfa4733e3ff093447e18438370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc40d7a841cd763d5e5ef8a0ed0f1469"><td class="memItemLeft" align="right" valign="top">static final short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#adc40d7a841cd763d5e5ef8a0ed0f1469">UsingFileAsFactory_2</a> = 43</td></tr>
-<tr class="memdesc:adc40d7a841cd763d5e5ef8a0ed0f1469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using “{0}” as {1} factory.  <a href="#adc40d7a841cd763d5e5ef8a0ed0f1469">More...</a><br /></td></tr>
-<tr class="separator:adc40d7a841cd763d5e5ef8a0ed0f1469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac43eb499c7c1c4a6eac8be435c995ac1"><td class="memItemLeft" align="right" valign="top">GeneralParameterDescriptor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ac43eb499c7c1c4a6eac8be435c995ac1">descriptor</a> (String name)  throws ParameterNotFoundException </td></tr>
+<tr class="memdesc:ac43eb499c7c1c4a6eac8be435c995ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameter descriptor for the given name.  <a href="#ac43eb499c7c1c4a6eac8be435c995ac1">More...</a><br /></td></tr>
+<tr class="separator:ac43eb499c7c1c4a6eac8be435c995ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f22f2aebb4b358b169f84e224598222"><td class="memItemLeft" align="right" valign="top">ParameterValueGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a7f22f2aebb4b358b169f84e224598222">createValue</a> ()</td></tr>
+<tr class="memdesc:a7f22f2aebb4b358b169f84e224598222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameter group implementation which can handle the "invisible" parameters.  <a href="#a7f22f2aebb4b358b169f84e224598222">More...</a><br /></td></tr>
+<tr class="separator:a7f22f2aebb4b358b169f84e224598222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5937394a66332528b31759007b816015"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a5937394a66332528b31759007b816015">Keys</a> ()</td></tr>
-<tr class="separator:a5937394a66332528b31759007b816015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a73d93c16976e64eee0a62ad03b3796b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a73d93c16976e64eee0a62ad03b3796b8">MapProjectionDescriptor</a> (final Map&lt; String,?&gt; properties, final ParameterDescriptor&lt;?&gt;[] parameters, final int <a class="el" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a>)</td></tr>
+<tr class="memdesc:a73d93c16976e64eee0a62ad03b3796b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new parameter descriptor from the given properties and parameters.  <a href="#a73d93c16976e64eee0a62ad03b3796b8">More...</a><br /></td></tr>
+<tr class="separator:a73d93c16976e64eee0a62ad03b3796b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:a65bc8427ed3cfa4563a16696a3c265e7"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a></td></tr>
+<tr class="memdesc:a65bc8427ed3cfa4563a16696a3c265e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise combination of.  <a href="#a65bc8427ed3cfa4563a16696a3c265e7">More...</a><br /></td></tr>
+<tr class="separator:a65bc8427ed3cfa4563a16696a3c265e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
+Static Package Attributes</h2></td></tr>
+<tr class="memitem:a353e51f3770e37635d1a6c5cba2423aa"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a> = &quot;earth_radius&quot;</td></tr>
+<tr class="memdesc:a353e51f3770e37635d1a6c5cba2423aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter name for the Earth radius.  <a href="#a353e51f3770e37635d1a6c5cba2423aa">More...</a><br /></td></tr>
+<tr class="separator:a353e51f3770e37635d1a6c5cba2423aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e426a819786ffc5a6cd91eddaedecc"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ad7e426a819786ffc5a6cd91eddaedecc">INVERSE_FLATTENING</a> = &quot;inverse_flattening&quot;</td></tr>
+<tr class="memdesc:ad7e426a819786ffc5a6cd91eddaedecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter name for inverse flattening.  <a href="#ad7e426a819786ffc5a6cd91eddaedecc">More...</a><br /></td></tr>
+<tr class="separator:ad7e426a819786ffc5a6cd91eddaedecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1f9eb74466df687ad81621f878b862"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a> = &quot;standard_parallel&quot;</td></tr>
+<tr class="memdesc:ada1f9eb74466df687ad81621f878b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter name for the standard parallels.  <a href="#ada1f9eb74466df687ad81621f878b862">More...</a><br /></td></tr>
+<tr class="separator:ada1f9eb74466df687ad81621f878b862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde721c7a5fc7d40a451fae2a03c3216"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#abde721c7a5fc7d40a451fae2a03c3216">ADD_EARTH_RADIUS</a> = 1</td></tr>
+<tr class="memdesc:abde721c7a5fc7d40a451fae2a03c3216"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07707.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a> parameter needs to be added.  <a href="#abde721c7a5fc7d40a451fae2a03c3216">More...</a><br /></td></tr>
+<tr class="separator:abde721c7a5fc7d40a451fae2a03c3216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4da9416df24c53200a5c4fbe5c8c2d"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a7e4da9416df24c53200a5c4fbe5c8c2d">ADD_STANDARD_PARALLEL</a> = 2</td></tr>
+<tr class="memdesc:a7e4da9416df24c53200a5c4fbe5c8c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07707.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a> parameter needs to be added.  <a href="#a7e4da9416df24c53200a5c4fbe5c8c2d">More...</a><br /></td></tr>
+<tr class="separator:a7e4da9416df24c53200a5c4fbe5c8c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07707.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = -9142116135803309453L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Resource keys. </p>
-<p>This class is used when compiling sources, but no dependencies to </p><div class="fragment"><div class="line"><a class="code" href="a07707.html#a5937394a66332528b31759007b816015">Keys</a> </div></div><!-- fragment --><p> should appear in any resulting class files. Since the Java compiler inlines final integer values, using long identifiers will not bloat the constant pools of compiled classes.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.2 </dd></dl>
+<div class="textblock"><p>Map projection parameters, with special processing for alternative ways to express the ellipsoid axis length and the standard parallels. </p>
+<p>Those alternative ways are non-standard; when a value is set to such alternative parameter, the value is translated to standard parameter values as soon as possible. </p>
+<p>The non-standard parameters are: </p>
+<ul>
+<li>
+<div class="fragment"><div class="line"><span class="stringliteral">&quot;earth_radius&quot;</span> </div></div><!-- fragment --> and<div class="fragment"><div class="line"><span class="stringliteral">&quot;inverse_flattening&quot;</span> </div></div><!-- fragment --> , which are mapped to the <a class="el" href="">UniversalParameters#SEMI_MAJOR</a> and <a class="el" href="">UniversalParameters#SEMI_MINOR</a> parameters. </li>
+<li>
+<div class="fragment"><div class="line"><span class="stringliteral">&quot;standard_parallel&quot;</span> </div></div><!-- fragment --> with an array value of 1 or 2 elements, which is mapped to <a class="el" href="">UniversalParameters#STANDARD_PARALLEL_1</a> and <a class="el" href="">UniversalParameters#STANDARD_PARALLEL_2</a> </li>
+</ul>
+<p>The main purpose of this class is to supported transparently the NetCDF ways to express some parameter values.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys)</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="a03729.html#_deprecated000058">Deprecated:</a></b></dt><dd>Moved to Apache SIS. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5937394a66332528b31759007b816015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5937394a66332528b31759007b816015">&#9670;&nbsp;</a></span>Keys()</h2>
+<a id="a73d93c16976e64eee0a62ad03b3796b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d93c16976e64eee0a62ad03b3796b8">&#9670;&nbsp;</a></span>MapProjectionDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,24 +158,106 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07707.html">Keys</a> </td>
+          <td class="memname"><a class="el" href="a07707.html">MapProjectionDescriptor</a> </td>
+          <td>(</td>
+          <td class="paramtype">final Map&lt; String,?&gt;&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final ParameterDescriptor&lt;?&gt; []&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>supplement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new parameter descriptor from the given properties and parameters. </p>
+
+<p class="reference">References <a class="el" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">MapProjectionDescriptor.supplement</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                                                                             {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        super(properties, 1, 1, parameters);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        this.<a class="code" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a> = <a class="code" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div><div class="ttc" id="a07707_html_a65bc8427ed3cfa4563a16696a3c265e7"><div class="ttname"><a href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.supplement</a></div><div class="ttdeci">final int supplement</div><div class="ttdoc">Bitwise combination of. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:89</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7f22f2aebb4b358b169f84e224598222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f22f2aebb4b358b169f84e224598222">&#9670;&nbsp;</a></span>createValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParameterValueGroup createValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                       {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div></div><!-- fragment -->
+
+<p>Returns the parameter group implementation which can handle the "invisible" parameters. </p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                             {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> MapProjectionParameters(<span class="keyword">this</span>);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac43eb499c7c1c4a6eac8be435c995ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43eb499c7c1c4a6eac8be435c995ac1">&#9670;&nbsp;</a></span>descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeneralParameterDescriptor descriptor </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> throws ParameterNotFoundException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the parameter descriptor for the given name. </p>
+<p>If the given name is one of the "invisible" parameters, returns a descriptor for that parameter without adding it to the list of parameter values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The case insensitive name of the parameter to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parameter for the given name. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ParameterNotFoundException</td><td>if there is no parameter for the given name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                                                                {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        name = name.trim();</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a> &amp; <a class="code" href="a07707.html#abde721c7a5fc7d40a451fae2a03c3216">ADD_EARTH_RADIUS</a>) != 0) {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span> (name.equalsIgnoreCase(<a class="code" href="a07707.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a>)) {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> UniversalParameters.EARTH_RADIUS;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (name.equalsIgnoreCase(<a class="code" href="a07707.html#ad7e426a819786ffc5a6cd91eddaedecc">INVERSE_FLATTENING</a>)) {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> UniversalParameters.INVERSE_FLATTENING;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">supplement</a> &amp; <a class="code" href="a07707.html#a7e4da9416df24c53200a5c4fbe5c8c2d">ADD_STANDARD_PARALLEL</a>) != 0) {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">if</span> (name.equalsIgnoreCase(<a class="code" href="a07707.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a>)) {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">return</span> UniversalParameters.STANDARD_PARALLEL;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> super.descriptor(name);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="a07707_html_ad7e426a819786ffc5a6cd91eddaedecc"><div class="ttname"><a href="a07707.html#ad7e426a819786ffc5a6cd91eddaedecc">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.INVERSE_FLATTENING</a></div><div class="ttdeci">static final String INVERSE_FLATTENING</div><div class="ttdoc">The parameter name for inverse flattening. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:67</div></div>
+<div class="ttc" id="a07707_html_abde721c7a5fc7d40a451fae2a03c3216"><div class="ttname"><a href="a07707.html#abde721c7a5fc7d40a451fae2a03c3216">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.ADD_EARTH_RADIUS</a></div><div class="ttdeci">static final int ADD_EARTH_RADIUS</div><div class="ttdoc">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate ...</div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:78</div></div>
+<div class="ttc" id="a07707_html_ada1f9eb74466df687ad81621f878b862"><div class="ttname"><a href="a07707.html#ada1f9eb74466df687ad81621f878b862">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.STANDARD_PARALLEL</a></div><div class="ttdeci">static final String STANDARD_PARALLEL</div><div class="ttdoc">The parameter name for the standard parallels. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:72</div></div>
+<div class="ttc" id="a07707_html_a353e51f3770e37635d1a6c5cba2423aa"><div class="ttname"><a href="a07707.html#a353e51f3770e37635d1a6c5cba2423aa">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.EARTH_RADIUS</a></div><div class="ttdeci">static final String EARTH_RADIUS</div><div class="ttdoc">The parameter name for the Earth radius. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:62</div></div>
+<div class="ttc" id="a07707_html_a7e4da9416df24c53200a5c4fbe5c8c2d"><div class="ttname"><a href="a07707.html#a7e4da9416df24c53200a5c4fbe5c8c2d">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.ADD_STANDARD_PARALLEL</a></div><div class="ttdeci">static final int ADD_STANDARD_PARALLEL</div><div class="ttdoc">A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate ...</div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:84</div></div>
+<div class="ttc" id="a07707_html_a65bc8427ed3cfa4563a16696a3c265e7"><div class="ttname"><a href="a07707.html#a65bc8427ed3cfa4563a16696a3c265e7">org.geotoolkit.referencing.operation.provider.MapProjectionDescriptor.supplement</a></div><div class="ttdeci">final int supplement</div><div class="ttdoc">Bitwise combination of. </div><div class="ttdef"><b>Definition:</b> MapProjectionDescriptor.java:89</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a27dc3a857ee22eb6b605af2d55c631c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27dc3a857ee22eb6b605af2d55c631c5">&#9670;&nbsp;</a></span>AdjustedGridGeometry_1</h2>
+<a id="abde721c7a5fc7d40a451fae2a03c3216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde721c7a5fc7d40a451fae2a03c3216">&#9670;&nbsp;</a></span>ADD_EARTH_RADIUS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,22 +266,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short AdjustedGridGeometry_1 = 1</td>
+          <td class="memname">final int ADD_EARTH_RADIUS = 1</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Grid geometry has been adjusted for coverage “{0}”. </p>
+<p>A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07707.html#a353e51f3770e37635d1a6c5cba2423aa">EARTH_RADIUS</a> parameter needs to be added. </p>
 
 </div>
 </div>
-<a id="a2ee1e32a9b7c636b77c14612d549cbb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ee1e32a9b7c636b77c14612d549cbb1">&#9670;&nbsp;</a></span>AmbiguousEllipsoid</h2>
+<a id="a7e4da9416df24c53200a5c4fbe5c8c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4da9416df24c53200a5c4fbe5c8c2d">&#9670;&nbsp;</a></span>ADD_STANDARD_PARALLEL</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,23 +290,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short AmbiguousEllipsoid = 2</td>
+          <td class="memname">final int ADD_STANDARD_PARALLEL = 2</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ambiguity between inverse flattening and semi minor axis length. </p>
-<p>Using inverse flattening. </p>
+<p>A constant for the  UniversalParameters::createDescriptorGroup factory method} method which indicate that the <a class="el" href="a07707.html#ada1f9eb74466df687ad81621f878b862">STANDARD_PARALLEL</a> parameter needs to be added. </p>
 
 </div>
 </div>
-<a id="a59a361474552bd03ad5c5afb78b3c742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59a361474552bd03ad5c5afb78b3c742">&#9670;&nbsp;</a></span>AppliedOperation_4</h2>
+<a id="a353e51f3770e37635d1a6c5cba2423aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353e51f3770e37635d1a6c5cba2423aa">&#9670;&nbsp;</a></span>EARTH_RADIUS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,22 +314,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short AppliedOperation_4 = 3</td>
+          <td class="memname">final String EARTH_RADIUS = &quot;earth_radius&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>{3,choice,0#Apply|1#Reuse} operation “{1}” on coverage “{0}” with interpolation “{2}”. </p>
+<p>The parameter name for the Earth radius. </p>
 
 </div>
 </div>
-<a id="a39ed88cda48280f0a3ff0138c570b724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39ed88cda48280f0a3ff0138c570b724">&#9670;&nbsp;</a></span>AppliedResample_11</h2>
+<a id="ad7e426a819786ffc5a6cd91eddaedecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e426a819786ffc5a6cd91eddaedecc">&#9670;&nbsp;</a></span>INVERSE_FLATTENING</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,23 +338,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short AppliedResample_11 = 4</td>
+          <td class="memname">final String INVERSE_FLATTENING = &quot;inverse_flattening&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Resampled coverage “{0}” from coordinate system “{1}” (for an image of size {2}×{3}) to coordinate system “{4}” (image size {5}×{6}). </p>
-<p>JAI operation is “{7}” with “{9}” interpolation on {8,choice,0#packed|1#geophysics} pixels values. Background value is ({10}). </p>
+<p>The parameter name for inverse flattening. </p>
 
 </div>
 </div>
-<a id="a37ac58fc390c9ab88332adf8a73d0201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37ac58fc390c9ab88332adf8a73d0201">&#9670;&nbsp;</a></span>CantCreateCoordinateOperation_1</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,22 +362,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short CantCreateCoordinateOperation_1 = 5</td>
+          <td class="memname">final long serialVersionUID = -9142116135803309453L</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Failed to create a coordinate operation from “{0}” authority factory. </p>
+<p>For cross-version compatibility. </p>
 
 </div>
 </div>
-<a id="add877be586706fc2e25efbbf711a4003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add877be586706fc2e25efbbf711a4003">&#9670;&nbsp;</a></span>CantCreateObjectFromCode_1</h2>
+<a id="ada1f9eb74466df687ad81621f878b862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1f9eb74466df687ad81621f878b862">&#9670;&nbsp;</a></span>STANDARD_PARALLEL</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,23 +386,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short CantCreateObjectFromCode_1 = 6</td>
+          <td class="memname">final String STANDARD_PARALLEL = &quot;standard_parallel&quot;</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Failed to create an object for code “{0}”. </p>
-<p>This entry will be ignored. </p>
+<p>The parameter name for the standard parallels. </p>
 
 </div>
 </div>
-<a id="a15188ea991fbae6bb963eddc33b68cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15188ea991fbae6bb963eddc33b68cc4">&#9670;&nbsp;</a></span>CantLoadService_2</h2>
+<a id="a65bc8427ed3cfa4563a16696a3c265e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65bc8427ed3cfa4563a16696a3c265e7">&#9670;&nbsp;</a></span>supplement</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,909 +410,20 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final short CantLoadService_2 = 7</td>
+          <td class="memname">final int supplement</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Can’t load a service for category “{0}”. </p>
-<p>Cause is “{1}”. </p>
+<p>Bitwise combination of. </p>
+<div class="fragment"><div class="line">ADD_* </div></div><!-- fragment --><p> constants indicating which dynamic parameters to add. </p>
 
-</div>
-</div>
-<a id="a259184503017d6f92569e889d62aae2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a259184503017d6f92569e889d62aae2c">&#9670;&nbsp;</a></span>CantReadFile_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CantReadFile_1 = 8</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Can’t read “{0}”. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07487.html#a75bced5094acbaf18642db185fdb5a09">PropertyAuthorityFactory.PropertyAuthorityFactory()</a>.</p>
-
-</div>
-</div>
-<a id="a9d5b9020885c57a05fd860bd8c771e05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d5b9020885c57a05fd860bd8c771e05">&#9670;&nbsp;</a></span>CantRegisterJaiOperation_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CantRegisterJaiOperation_1 = 9</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Can’t register JAI operation “{0}”. </p>
-<p>Some grid coverage operations may not work. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06903.html#ad8e84bc73acb3ddf81036b833a2946ed">Registry.registerGeotoolkitServices()</a>.</p>
-
-</div>
-</div>
-<a id="a79a680fcf0e01ae21df5b36845b5cc1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79a680fcf0e01ae21df5b36845b5cc1f">&#9670;&nbsp;</a></span>ClosedDatabaseForThread_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short ClosedDatabaseForThread_2 = 10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Closed the database connection for thread “{0}” after {1} queries. </p>
-
-</div>
-</div>
-<a id="a10dffe65866e3ea3d226674098d70107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10dffe65866e3ea3d226674098d70107">&#9670;&nbsp;</a></span>ClosedEpsgDatabase</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short ClosedEpsgDatabase = 11</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Closed the EPSG database connection. </p>
-
-</div>
-</div>
-<a id="a4c9c908b242a08d5797b8209fa30335a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c9c908b242a08d5797b8209fa30335a">&#9670;&nbsp;</a></span>ConnectedDatabaseForThread_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short ConnectedDatabaseForThread_2 = 12</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Connected thread “{0}” to database “{1}”. </p>
-
-</div>
-</div>
-<a id="ae9096454d9ca44c25e5742cc8bda1897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9096454d9ca44c25e5742cc8bda1897">&#9670;&nbsp;</a></span>ConnectedEpsgDatabase_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short ConnectedEpsgDatabase_2 = 13</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Connected to EPSG database “{0}” on “{1}”. </p>
-
-</div>
-</div>
-<a id="ad412799de3868734739c544e67326970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad412799de3868734739c544e67326970">&#9670;&nbsp;</a></span>CoverageStore_8</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CoverageStore_8 = 14</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>{0,choice,0#Loading|1#Writing} of {1}: • Coverage name: {2} • Coverage type(s): {3} • Coverage size: {4} pixels • Coverage CRS: {5} • {0,choice,0#Required transform:|1#Applied transform: } {6} • Elapsed time: {7} milliseconds. </p>
-
-</div>
-</div>
-<a id="a3d4f604ee057f3dfebc0945b94a95563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d4f604ee057f3dfebc0945b94a95563">&#9670;&nbsp;</a></span>CreatedCodecOfClass_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CreatedCodecOfClass_2 = 15</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Created {0,choice,0#decoder|1#encoder} of class {1}. </p>
-
-</div>
-</div>
-<a id="ace21c7e9c5101efdf37dfa1468a08437"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace21c7e9c5101efdf37dfa1468a08437">&#9670;&nbsp;</a></span>CreatedCoordinateOperation_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CreatedCoordinateOperation_3 = 16</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Created coordinate operation “{0}” for source CRS “{1}” and target CRS “{2}”. </p>
-
-</div>
-</div>
-<a id="af49510b32d7bce4c7973f8fdacdfa69d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af49510b32d7bce4c7973f8fdacdfa69d">&#9670;&nbsp;</a></span>CreatedObject_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CreatedObject_1 = 17</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Created a new ‘{0}’ object. </p>
-
-</div>
-</div>
-<a id="a3abe54061ea3bbdd21325f2596577c85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3abe54061ea3bbdd21325f2596577c85">&#9670;&nbsp;</a></span>CreatedSerializableImage_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CreatedSerializableImage_2 = 18</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Created serializable image for coverage “{0}” using the “{1}” codec. </p>
-
-</div>
-</div>
-<a id="aa3673f4e33b57f5eb8674d186d24912c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3673f4e33b57f5eb8674d186d24912c">&#9670;&nbsp;</a></span>CreatingCachedEpsgDatabase_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short CreatingCachedEpsgDatabase_1 = 19</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creating cached EPSG database version {0}. </p>
-<p>This operation may take a few minutes... </p>
-
-</div>
-</div>
-<a id="a7973ac9aa332dfe83e823c1e789e3295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7973ac9aa332dfe83e823c1e789e3295">&#9670;&nbsp;</a></span>DeferredTilePainting_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short DeferredTilePainting_2 = 20</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deferred painting for tile ({0},{1}). </p>
-
-<p class="reference">Referenced by <a class="el" href="a06727.html#ad40b045d716a2c8cfdb88e2067fd9e12">DeferredPlanarImage.getTile()</a>.</p>
-
-</div>
-</div>
-<a id="a3f7a14544d72df95a0df7fef8ed78afa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f7a14544d72df95a0df7fef8ed78afa">&#9670;&nbsp;</a></span>DuplicatedContentInFile_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short DuplicatedContentInFile_1 = 21</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>File “{0}” contains values that duplicate previously stored values. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07487.html#ad593eb1e7ef127bc784f62b40ca6fa30">PropertyAuthorityFactory.load()</a>.</p>
-
-</div>
-</div>
-<a id="a97c3fb84fb04cc3a3197cd7c483826c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97c3fb84fb04cc3a3197cd7c483826c5">&#9670;&nbsp;</a></span>ExcessiveTileCache_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short ExcessiveTileCache_1 = 22</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Tile cache capacity exceed maximum heap size ({0} Mb). </p>
-
-</div>
-</div>
-<a id="a7c3090bb6aabc4b6730125ce01d44e40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c3090bb6aabc4b6730125ce01d44e40">&#9670;&nbsp;</a></span>FactoryImplementations_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short FactoryImplementations_1 = 23</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Factory implementations for category {0}: </p>
-
-</div>
-</div>
-<a id="a73cde68eef13875d2da303f1cadf155a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73cde68eef13875d2da303f1cadf155a">&#9670;&nbsp;</a></span>FactoryReplacedForAxisOrder_4</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short FactoryReplacedForAxisOrder_4 = 24</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>{1} ({0} authority) replaces {2} for {3,choice,0#standard|1#XY} axis order. </p>
-
-</div>
-</div>
-<a id="a890bf231ac36cada60b2fdbcab7e7686"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a890bf231ac36cada60b2fdbcab7e7686">&#9670;&nbsp;</a></span>FallbackFactory_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short FallbackFactory_1 = 25</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Failure in the primary factory: {0} Now trying the fallback factory... </p>
-
-</div>
-</div>
-<a id="a1127587db89248123a95d6d05035854b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1127587db89248123a95d6d05035854b">&#9670;&nbsp;</a></span>FlushCache_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short FlushCache_1 = 26</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flush the “{0}” cache. </p>
-
-</div>
-</div>
-<a id="aa61e20dcb613ea221fcd77d9674ca714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa61e20dcb613ea221fcd77d9674ca714">&#9670;&nbsp;</a></span>FoundMismatchedCRS_4</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short FoundMismatchedCRS_4 = 27</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Found {0} reference systems in {1} elements. </p>
-<p>The most frequent appears {2} time and the less frequent appears {3} times. </p>
-
-</div>
-</div>
-<a id="a4fbc23359eb48d07aaf07d891ed54149"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fbc23359eb48d07aaf07d891ed54149">&#9670;&nbsp;</a></span>InitializingTransformation_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short InitializingTransformation_2 = 28</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializing transformation from {0} to {1}. </p>
-
-</div>
-</div>
-<a id="ab58c267c554dec52913d4e6a3fc880ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab58c267c554dec52913d4e6a3fc880ff">&#9670;&nbsp;</a></span>JdbcDriverVersion_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short JdbcDriverVersion_3 = 29</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>{0} JDBC driver version {1}. </p>
-<p>{2}. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07103.html#a7a29b14ac68ca1b018ee4f921b4f51bc">DefaultDataSource.log()</a>.</p>
-
-</div>
-</div>
-<a id="ad32710594b6132af3217d130c94be94f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad32710594b6132af3217d130c94be94f">&#9670;&nbsp;</a></span>LoadingRegion_6</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short LoadingRegion_6 = 30</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loading region x=[{0} … {1}], y=[{2} … {3}] in {4} milliseconds: {5,choice,0#success|1#canceled|2#FAILURE}. </p>
-
-</div>
-</div>
-<a id="a25a38cd7910b437d0579c6b4acdd011a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25a38cd7910b437d0579c6b4acdd011a">&#9670;&nbsp;</a></span>MismatchedCoordinateOperationFactories_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short MismatchedCoordinateOperationFactories_2 = 31</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>No coordinate operation from “{0}” to “{1}” because of mismatched factories. </p>
-
-</div>
-</div>
-<a id="aaabcbf300e3d87d3f2ba63150ebe5b84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaabcbf300e3d87d3f2ba63150ebe5b84">&#9670;&nbsp;</a></span>MismatchedUrnType_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short MismatchedUrnType_1 = 32</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The type of the requested object does not match the “{0}” URN type. </p>
-
-</div>
-</div>
-<a id="a535a3f65ec2834b06fb2f8aa94ccb445"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a535a3f65ec2834b06fb2f8aa94ccb445">&#9670;&nbsp;</a></span>NativeAccelerationState_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short NativeAccelerationState_2 = 33</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Native acceleration {1,choice,0#disabled|1#enabled} for “{0}” operation. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06903.html#a010221b7211b0e51e2af0b1514bda1a6">Registry.setNativeAccelerationAllowed()</a>.</p>
-
-</div>
-</div>
-<a id="a19bab5587e83de38cfd1938a1c20a993"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19bab5587e83de38cfd1938a1c20a993">&#9670;&nbsp;</a></span>NativeCodecState_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short NativeCodecState_3 = 34</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>JAI codec {1,choice,0#disabled|1#enabled} for {2,choice,0#reading|1#writing} “{0}” format. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06903.html#af2346016f945ebdce01089452088457a">Registry.setNativeCodecAllowed()</a>.</p>
-
-</div>
-</div>
-<a id="aa7349b214bee6a4c2f107947f8367d7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7349b214bee6a4c2f107947f8367d7a">&#9670;&nbsp;</a></span>RecoverableOutOfMemory_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short RecoverableOutOfMemory_1 = 35</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Failed to allocate {0} Mb of memory. </p>
-<p>Trying a smaller memory allocation. </p>
-
-</div>
-</div>
-<a id="af8f879809d1dc99a91ec573549f8b7cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8f879809d1dc99a91ec573549f8b7cc">&#9670;&nbsp;</a></span>RegisteredJaiOperations</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short RegisteredJaiOperations = 36</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Registered Geotoolkit.org extensions to JAI operations. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06903.html#ad8e84bc73acb3ddf81036b833a2946ed">Registry.registerGeotoolkitServices()</a>.</p>
-
-</div>
-</div>
-<a id="a84217874b4928e1079edb154a8aee96b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84217874b4928e1079edb154a8aee96b">&#9670;&nbsp;</a></span>SampleTranscode_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short SampleTranscode_3 = 37</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a {1,choice,0#packed|1#geophysics|2#photographic} view of grid coverage “{0}” using operation “{2}”. </p>
-
-</div>
-</div>
-<a id="acdcd65c5e53af55c95a6f36348e9b34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdcd65c5e53af55c95a6f36348e9b34e">&#9670;&nbsp;</a></span>TableColumnNotFound_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short TableColumnNotFound_3 = 38</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>No column “{0}” has been found in table “{1}”. </p>
-<p>Value “{2}” will be used instead. </p>
-
-</div>
-</div>
-<a id="adbd040a154b2a2dc4179dd0816be947f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbd040a154b2a2dc4179dd0816be947f">&#9670;&nbsp;</a></span>TemporaryFileGc_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short TemporaryFileGc_1 = 39</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Temporary file “{0}” has been garbage-collected. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07051.html#ab953e90edb69534eb052f9064f6b40e9">TemporaryFile.dispose()</a>.</p>
-
-</div>
-</div>
-<a id="a93cc14a7593585b3be86f1d80746ba6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93cc14a7593585b3be86f1d80746ba6d">&#9670;&nbsp;</a></span>UnavailableAuthorityFactory_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short UnavailableAuthorityFactory_1 = 40</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unavailable authority factory: {0}. </p>
-
-</div>
-</div>
-<a id="aaa5a11a9d3bdec4fa77d396f2d486f20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa5a11a9d3bdec4fa77d396f2d486f20">&#9670;&nbsp;</a></span>UnrecognizedScaleType_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short UnrecognizedScaleType_1 = 41</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unrecognized scale type: “{0}”. </p>
-<p>Default to linear. </p>
-
-</div>
-</div>
-<a id="a4a41a3bfa4733e3ff093447e18438370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a41a3bfa4733e3ff093447e18438370">&#9670;&nbsp;</a></span>UsingFallback_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short UsingFallback_1 = 42</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Using “{0}” as a fallback. </p>
-
-</div>
-</div>
-<a id="adc40d7a841cd763d5e5ef8a0ed0f1469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc40d7a841cd763d5e5ef8a0ed0f1469">&#9670;&nbsp;</a></span>UsingFileAsFactory_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final short UsingFileAsFactory_2 = 43</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Using “{0}” as {1} factory. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07487.html#ad593eb1e7ef127bc784f62b40ca6fa30">PropertyAuthorityFactory.load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07707.html#a73d93c16976e64eee0a62ad03b3796b8">MapProjectionDescriptor.MapProjectionDescriptor()</a>.</p>
 
 </div>
 </div>
@@ -1318,7 +433,7 @@ Private Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03803.html">resources</a></li><li class="navelem"><a class="el" href="a07703.html">Loggings</a></li><li class="navelem"><a class="el" href="a07707.html">Keys</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03853.html">referencing</a></li><li class="navelem"><a class="el" href="a03858.html">operation</a></li><li class="navelem"><a class="el" href="a03861.html">provider</a></li><li class="navelem"><a class="el" href="a07707.html">MapProjectionDescriptor</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

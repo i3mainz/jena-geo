@@ -1,7 +1,10 @@
 var a06987 =
 [
-    [ "FactoryUtilities", "a06987.html#ab352441486206c2d58d0b5ebc3138976", null ],
-    [ "addImplementationHints", "a06987.html#a85b3ced56a27700e47e6dea720ab2878", null ],
-    [ "addValidEntries", "a06987.html#add3b7d205778cecab17de392dbe84a7f", null ],
-    [ "ATTEMPTS_DELAY", "a06987.html#a1787c1a3f04698179a190857593d6bfd", null ]
+    [ "NodataFilter", "a06987.html#a8497a59d1122b5725914b92a1ba06ab7", null ],
+    [ "computeRect", "a06987.html#aaa942144d8ad54cd607ac09cc85c70f3", null ],
+    [ "getSources", "a06987.html#a016c1e8b58082cf2add38a25a00fd20d", null ],
+    [ "distances", "a06987.html#a2a0f2b75f9e83887599c26a25944e0f2", null ],
+    [ "OPERATION_NAME", "a06987.html#a4ba7d667bd2c11bb15f09506d145b31e", null ],
+    [ "sharedDistances", "a06987.html#af1d3cd78d88ef258726508966ec99ec0", null ],
+    [ "validityThreshold", "a06987.html#a0f06d5f7e202a94d2f30c457d4b3f28b", null ]
 ];

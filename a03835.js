@@ -1,5 +1,4 @@
 var a03835 =
 [
-    [ "algorithm", "a03833.html", "a03833" ],
-    [ "triangulation", "a03836.html", "a03836" ]
+    [ "jai", "a03834.html", "a03834" ]
 ];

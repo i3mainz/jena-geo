@@ -1,6 +1,6 @@
 var a08203 =
 [
-    [ "DoubleComparator", "a08203.html#ad1668a667c039b9613a2c53fb14ac661", null ],
-    [ "compare", "a08203.html#a06c3e0620150ff3907036d82674eef8f", null ],
-    [ "map", "a08203.html#a54c09d8752ac0d50a8a6b741cca1f5ac", null ]
+    [ "VersioningException", "a08203.html#a175331863a5e358a895f452f17dabbeb", null ],
+    [ "VersioningException", "a08203.html#a651896bb3a1bb2df7c9970b16394d74f", null ],
+    [ "VersioningException", "a08203.html#a39f339f381d122bbc7bf6bb9f09632a1", null ]
 ];

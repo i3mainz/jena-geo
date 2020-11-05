@@ -1,8 +1,8 @@
 var a06499 =
 [
-    [ "ColorModelPatch", "a06499.html#a13c89ad0c309bab2eac5d2b557441168", null ],
-    [ "equals", "a06499.html#aabb3b54b0de461752f780789a76f8278", null ],
-    [ "equals", "a06499.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "hashCode", "a06499.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "cm", "a06499.html#a1f7c0f3a9c9a1bf401af25867e6c0818", null ]
+    [ "TemporalRangeDatatype", "a06499.html#a67478c92c132b9067a4b40623bca63ca", null ],
+    [ "parse", "a06499.html#a76ece32e67e8ef534a73e7905f576fdd", null ],
+    [ "unparse", "a06499.html#af867733184176209edddb9986fd1f27d", null ],
+    [ "INSTANCE", "a06499.html#a97a4da06613050fc759b30ecce463e4d", null ],
+    [ "URI", "a06499.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
 ];

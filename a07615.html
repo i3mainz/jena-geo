@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MapProjection Class Reference</title>
+<title>jena-geo: XAffineTransform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,108 +61,40 @@ $(document).ready(function(){initNavTree('a07615.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pac-static-methods">Static Package Functions</a> &#124;
-<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="a07612.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MapProjection Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">XAffineTransform Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The base provider for  <a class="el" href="a03800.html" title="Extension to the map projection implementations provided in Apache SIS. ">org.geotoolkit.referencing.operation.projection</a> map projections}.  
+<p>Utility methods for affine transforms.  
  <a href="a07615.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for MapProjection:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07614.png" border="0" usemap="#MapProjection_inherit__map" alt="Inheritance graph"/></div>
-<map name="MapProjection_inherit__map" id="MapProjection_inherit__map">
-<area shape="rect" id="node5" href="a07587.html" title="The provider for &quot;&lt;cite&gt;Cassini&#45;Soldner&lt;/cite&gt;&quot; projection (EPSG:9806). " alt="" coords="614,5,725,32"/>
-<area shape="rect" id="node6" href="a07603.html" title="The provider for &quot;&lt;cite&gt;Krovak Oblique Conic Conformal&lt;/cite&gt;&quot; projection (EPSG:9819). " alt="" coords="638,56,701,83"/>
-<area shape="rect" id="node7" href="a07607.html" title="The provider for &quot;&lt;cite&gt;Lambert Azimuthal Equal Area&lt;/cite&gt;&quot; projection (EPSG:9820, EPSG:1027, &lt;del&gt;EPSG:9821&lt;/del&gt;). " alt="" coords="576,107,763,133"/>
-<area shape="rect" id="node8" href="a07623.html" title="The provider for &quot;&lt;cite&gt;New Zealand Map Grid&lt;/cite&gt;&quot; (EPSG:9811). " alt="" coords="597,157,741,184"/>
-<area shape="rect" id="node9" href="a07627.html" title="The provider for &quot;&lt;cite&gt;Orthographic&lt;/cite&gt;&quot; projection. " alt="" coords="621,208,717,235"/>
-<area shape="rect" id="node10" href="a07631.html" title="The provider for &quot;&lt;cite&gt;Stereographic&lt;/cite&gt;&quot; projections using USGS equations. " alt="" coords="618,259,721,285"/>
-<area shape="rect" id="node2" href="a07511.html" title="An &#160;DefaultOperationMethod operation method} capable to create a &#160;MathTransform math transform} from ..." alt="" coords="216,132,375,159"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for MapProjection:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07613.png" border="0" usemap="#MapProjection_coll__map" alt="Collaboration graph"/></div>
-<map name="MapProjection_coll__map" id="MapProjection_coll__map">
-<area shape="rect" id="node2" href="a07511.html" title="An &#160;DefaultOperationMethod operation method} capable to create a &#160;MathTransform math transform} from ..." alt="" coords="404,129,563,156"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0ab8a8dcd0f0d099aac64f0b92d2de1"><td class="memItemLeft" align="right" valign="top">Class&lt;? extends Projection &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#aa0ab8a8dcd0f0d099aac64f0b92d2de1">getOperationType</a> ()</td></tr>
-<tr class="memdesc:aa0ab8a8dcd0f0d099aac64f0b92d2de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the operation type for this map projection.  <a href="#aa0ab8a8dcd0f0d099aac64f0b92d2de1">More...</a><br /></td></tr>
-<tr class="separator:aa0ab8a8dcd0f0d099aac64f0b92d2de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a815b3862bb185e4bb21deb4c1b7f84"><td class="memItemLeft" align="right" valign="top">abstract MathTransform2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a0a815b3862bb185e4bb21deb4c1b7f84">createMathTransform</a> (MathTransformFactory factory, ParameterValueGroup values)  throws ParameterNotFoundException</td></tr>
-<tr class="memdesc:a0a815b3862bb185e4bb21deb4c1b7f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a map projection from the specified group of parameter values.  <a href="#a0a815b3862bb185e4bb21deb4c1b7f84">More...</a><br /></td></tr>
-<tr class="separator:a0a815b3862bb185e4bb21deb4c1b7f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a36bddb00a4be752319c09f8e0f610d1e"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a36bddb00a4be752319c09f8e0f610d1e">isIdentity</a> (final AffineTransform tr, double tolerance)</td></tr>
+<tr class="memdesc:a36bddb00a4be752319c09f8e0f610d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a36bddb00a4be752319c09f8e0f610d1e">More...</a><br /></td></tr>
+<tr class="separator:a36bddb00a4be752319c09f8e0f610d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba8d2b73cf8dd267b9cbd9b7995e981"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#acba8d2b73cf8dd267b9cbd9b7995e981">getScale</a> (final AffineTransform tr)</td></tr>
+<tr class="memdesc:acba8d2b73cf8dd267b9cbd9b7995e981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a global scale factor for the specified affine transform.  <a href="#acba8d2b73cf8dd267b9cbd9b7995e981">More...</a><br /></td></tr>
+<tr class="separator:acba8d2b73cf8dd267b9cbd9b7995e981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4156f5f7098b2dc55d3434324e8e1fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#ad4156f5f7098b2dc55d3434324e8e1fa">roundIfAlmostInteger</a> (final AffineTransform tr, final double tolerance)</td></tr>
+<tr class="memdesc:ad4156f5f7098b2dc55d3434324e8e1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">If scale and shear coefficients are close to integers, replaces their current values by their rounded values.  <a href="#ad4156f5f7098b2dc55d3434324e8e1fa">More...</a><br /></td></tr>
+<tr class="separator:ad4156f5f7098b2dc55d3434324e8e1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae3439a93b9abb72e107e9be681edae16"><td class="memItemLeft" align="right" valign="top">static final ParameterDescriptor&lt; Double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#ae3439a93b9abb72e107e9be681edae16">XY_PLANE_ROTATION</a></td></tr>
-<tr class="memdesc:ae3439a93b9abb72e107e9be681edae16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation parameter descriptor for the ESRI.  <a href="#ae3439a93b9abb72e107e9be681edae16">More...</a><br /></td></tr>
-<tr class="separator:ae3439a93b9abb72e107e9be681edae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a57336986337b1ac70ed9aabdda722092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a57336986337b1ac70ed9aabdda722092">MapProjection</a> (final ParameterDescriptorGroup parameters)</td></tr>
-<tr class="memdesc:a57336986337b1ac70ed9aabdda722092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a math transform provider from a set of parameters.  <a href="#a57336986337b1ac70ed9aabdda722092">More...</a><br /></td></tr>
-<tr class="separator:a57336986337b1ac70ed9aabdda722092"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
-Static Package Functions</h2></td></tr>
-<tr class="memitem:ae7476925ddff42a20707cd2d210f6ce6"><td class="memItemLeft" align="right" valign="top">static NamedIdentifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#ae7476925ddff42a20707cd2d210f6ce6">sameNameAs</a> (final Citation authority, final GeneralParameterDescriptor parameters)</td></tr>
-<tr class="memdesc:ae7476925ddff42a20707cd2d210f6ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the given authority declared in the given parameter descriptor.  <a href="#ae7476925ddff42a20707cd2d210f6ce6">More...</a><br /></td></tr>
-<tr class="separator:ae7476925ddff42a20707cd2d210f6ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53972f1c2c553bb5d272a9cc823c6062"><td class="memItemLeft" align="right" valign="top">static ParameterDescriptor&lt;?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a53972f1c2c553bb5d272a9cc823c6062">sameParameterAs</a> (final ParameterDescriptorGroup parameters, final String name)</td></tr>
-<tr class="memdesc:a53972f1c2c553bb5d272a9cc823c6062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parameters of the given name declared in the given group.  <a href="#a53972f1c2c553bb5d272a9cc823c6062">More...</a><br /></td></tr>
-<tr class="separator:a53972f1c2c553bb5d272a9cc823c6062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
-Static Package Attributes</h2></td></tr>
-<tr class="memitem:a3dcfb656c5e7adbcb9d68c7ad6745e7f"><td class="memItemLeft" align="right" valign="top">static final ParameterDescriptor&lt; Double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a3dcfb656c5e7adbcb9d68c7ad6745e7f">SEMI_MAJOR</a> = UniversalParameters.SEMI_MAJOR</td></tr>
-<tr class="memdesc:a3dcfb656c5e7adbcb9d68c7ad6745e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation parameter descriptor for the  org.geotoolkit.referencing.operation.projection.UnitaryProjection.Parameters::semiMajor semi major} parameter value.  <a href="#a3dcfb656c5e7adbcb9d68c7ad6745e7f">More...</a><br /></td></tr>
-<tr class="separator:a3dcfb656c5e7adbcb9d68c7ad6745e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec42dd028b5c673b9337911de44e2000"><td class="memItemLeft" align="right" valign="top">static final ParameterDescriptor&lt; Double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#aec42dd028b5c673b9337911de44e2000">SEMI_MINOR</a> = UniversalParameters.SEMI_MINOR</td></tr>
-<tr class="memdesc:aec42dd028b5c673b9337911de44e2000"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation parameter descriptor for the  org.geotoolkit.referencing.operation.projection.UnitaryProjection.Parameters::semiMinor semi minor} parameter value.  <a href="#aec42dd028b5c673b9337911de44e2000">More...</a><br /></td></tr>
-<tr class="separator:aec42dd028b5c673b9337911de44e2000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ad2bd6ed57caebe5986c6a8262ec55"><td class="memItemLeft" align="right" valign="top">static final ParameterDescriptor&lt; Double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#af4ad2bd6ed57caebe5986c6a8262ec55">X_SCALE</a> = UniversalParameters.X_SCALE</td></tr>
-<tr class="memdesc:af4ad2bd6ed57caebe5986c6a8262ec55"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation parameter descriptor for the ESRI.  <a href="#af4ad2bd6ed57caebe5986c6a8262ec55">More...</a><br /></td></tr>
-<tr class="separator:af4ad2bd6ed57caebe5986c6a8262ec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a333445bbc8b62a1154991e0e52498867"><td class="memItemLeft" align="right" valign="top">static final ParameterDescriptor&lt; Double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a333445bbc8b62a1154991e0e52498867">Y_SCALE</a> = UniversalParameters.Y_SCALE</td></tr>
-<tr class="memdesc:a333445bbc8b62a1154991e0e52498867"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation parameter descriptor for the ESRI.  <a href="#a333445bbc8b62a1154991e0e52498867">More...</a><br /></td></tr>
-<tr class="separator:a333445bbc8b62a1154991e0e52498867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = 6280666068007678702L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial number for inter-operability with different versions.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
-<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5220c8bb6f133614619c9cbedb0b1ca4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07615.html#a5220c8bb6f133614619c9cbedb0b1ca4">XAffineTransform</a> ()</td></tr>
+<tr class="memdesc:a5220c8bb6f133614619c9cbedb0b1ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow instantiation of this class.  <a href="#a5220c8bb6f133614619c9cbedb0b1ca4">More...</a><br /></td></tr>
+<tr class="separator:a5220c8bb6f133614619c9cbedb0b1ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The base provider for  <a class="el" href="a03800.html" title="Extension to the map projection implementations provided in Apache SIS. ">org.geotoolkit.referencing.operation.projection</a> map projections}. </p>
-<p>This base class defines the descriptors for the most commonly used parameters. Subclasses will declare the parameters they use in a  ParameterDescriptorGroup descriptor group} named</p><div class="fragment"><div class="line">PARAMETERS </div></div><!-- fragment --><p> .</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://mathworld.wolfram.com/MapProjection.html">Map projections on MathWorld</a> </dd>
-<dd>
-<a href="http://atlas.gc.ca/site/english/learningresources/carto_corner/map_projections.html">Map projections on the atlas of Canada</a> </dd>
-<dd>
-<a href="{@docRoot}/../modules/referencing/operation-parameters.html">Geotk coordinate operations matrix</a></dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
+<div class="textblock"><p>Utility methods for affine transforms. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a57336986337b1ac70ed9aabdda722092"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57336986337b1ac70ed9aabdda722092">&#9670;&nbsp;</a></span>MapProjection()</h2>
+<a id="a5220c8bb6f133614619c9cbedb0b1ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5220c8bb6f133614619c9cbedb0b1ca4">&#9670;&nbsp;</a></span>XAffineTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,108 +103,26 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07615.html">MapProjection</a> </td>
-          <td>(</td>
-          <td class="paramtype">final ParameterDescriptorGroup&#160;</td>
-          <td class="paramname"><em>parameters</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs a math transform provider from a set of parameters. </p>
-<p>The provider  #getIdentifiers identifiers} will be the same than the parameter ones.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parameters</td><td>The set of parameters (never<div class="fragment"><div class="line">null </div></div><!-- fragment --> ). </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                       {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        super(2, 2, parameters);</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a815b3862bb185e4bb21deb4c1b7f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a815b3862bb185e4bb21deb4c1b7f84">&#9670;&nbsp;</a></span>createMathTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">abstract MathTransform2D createMathTransform </td>
-          <td>(</td>
-          <td class="paramtype">MathTransformFactory&#160;</td>
-          <td class="paramname"><em>factory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ParameterValueGroup&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws ParameterNotFoundException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a map projection from the specified group of parameter values. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">values</td><td>The group of parameter values. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The created map projection. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">ParameterNotFoundException</td><td>if a required parameter was not found. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="a07615.html#aa0ab8a8dcd0f0d099aac64f0b92d2de1">MapProjection.getOperationType()</a>.</p>
-
-</div>
-</div>
-<a id="aa0ab8a8dcd0f0d099aac64f0b92d2de1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0ab8a8dcd0f0d099aac64f0b92d2de1">&#9670;&nbsp;</a></span>getOperationType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Class&lt;? extends Projection&gt; getOperationType </td>
+          <td class="memname"><a class="el" href="a07615.html">XAffineTransform</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the operation type for this map projection. </p>
-
-<p class="reference">References <a class="el" href="a07615.html#a0a815b3862bb185e4bb21deb4c1b7f84">MapProjection.createMathTransform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                          {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">return</span> Projection.class;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div></div><!-- fragment -->
+<p>Do not allow instantiation of this class. </p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                               {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="ae7476925ddff42a20707cd2d210f6ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7476925ddff42a20707cd2d210f6ce6">&#9670;&nbsp;</a></span>sameNameAs()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acba8d2b73cf8dd267b9cbd9b7995e981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba8d2b73cf8dd267b9cbd9b7995e981">&#9670;&nbsp;</a></span>getScale()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,187 +131,11 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static NamedIdentifier sameNameAs </td>
+          <td class="memname">static double getScale </td>
           <td>(</td>
-          <td class="paramtype">final Citation&#160;</td>
-          <td class="paramname"><em>authority</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final AffineTransform&#160;</td>
+          <td class="paramname"><em>tr</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final GeneralParameterDescriptor&#160;</td>
-          <td class="paramname"><em>parameters</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the name of the given authority declared in the given parameter descriptor. </p>
-<p>This method is used only as a way to avoid creating many instances of the same name. </p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                                                             {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> GenericName candidate : parameters.getAlias()) {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">if</span> (candidate instanceof NamedIdentifier) {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keyword">final</span> NamedIdentifier name = (NamedIdentifier) candidate;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">if</span> (name.getAuthority() == authority) {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    <span class="keywordflow">return</span> name;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                }</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> NoSuchElementException();</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a53972f1c2c553bb5d272a9cc823c6062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53972f1c2c553bb5d272a9cc823c6062">&#9670;&nbsp;</a></span>sameParameterAs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ParameterDescriptor&lt;?&gt; sameParameterAs </td>
-          <td>(</td>
-          <td class="paramtype">final ParameterDescriptorGroup&#160;</td>
-          <td class="paramname"><em>parameters</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the parameters of the given name declared in the given group. </p>
-<p>This method is used for sharing the same parameter instance across different map projections. </p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                                                                                                                {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> (ParameterDescriptor&lt;?&gt;) parameters.descriptor(name);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3dcfb656c5e7adbcb9d68c7ad6745e7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dcfb656c5e7adbcb9d68c7ad6745e7f">&#9670;&nbsp;</a></span>SEMI_MAJOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final ParameterDescriptor&lt;Double&gt; SEMI_MAJOR = UniversalParameters.SEMI_MAJOR</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The operation parameter descriptor for the  org.geotoolkit.referencing.operation.projection.UnitaryProjection.Parameters::semiMajor semi major} parameter value. </p>
-<p>Valid values range is (0 &hellip; &infin;). This parameter is mandatory and has no default value. </p>
-
-</div>
-</div>
-<a id="aec42dd028b5c673b9337911de44e2000"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec42dd028b5c673b9337911de44e2000">&#9670;&nbsp;</a></span>SEMI_MINOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final ParameterDescriptor&lt;Double&gt; SEMI_MINOR = UniversalParameters.SEMI_MINOR</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The operation parameter descriptor for the  org.geotoolkit.referencing.operation.projection.UnitaryProjection.Parameters::semiMinor semi minor} parameter value. </p>
-<p>Valid values range is (0 &hellip; &infin;). This parameter is mandatory and has no default value. </p>
-
-</div>
-</div>
-<a id="a3238d314ecdee14d2966760945d00c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final long serialVersionUID = 6280666068007678702L</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serial number for inter-operability with different versions. </p>
-
-</div>
-</div>
-<a id="af4ad2bd6ed57caebe5986c6a8262ec55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ad2bd6ed57caebe5986c6a8262ec55">&#9670;&nbsp;</a></span>X_SCALE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final ParameterDescriptor&lt;Double&gt; X_SCALE = UniversalParameters.X_SCALE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The operation parameter descriptor for the ESRI. </p>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;X_Scale&quot;</span> </div></div><!-- fragment --><p> parameter value. Valid values range is unrestricted. This parameter is optional and its default value is 1. </p>
-<p>This is an ESRI-specific parameter, but its usage could be extended to any projection. The choice to allow this parameter or not is taken on a projection-by-projection basis.</p>
-<dl class="section since"><dt>Since</dt><dd>3.00 </dd></dl>
-
-</div>
-</div>
-<a id="ae3439a93b9abb72e107e9be681edae16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3439a93b9abb72e107e9be681edae16">&#9670;&nbsp;</a></span>XY_PLANE_ROTATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final ParameterDescriptor&lt;Double&gt; XY_PLANE_ROTATION</td>
         </tr>
       </table>
   </td>
@@ -470,17 +144,21 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">            UniversalParameters.RECTIFIED_GRID_ANGLE.select(<span class="keyword">false</span>, 0.0, <span class="keyword">new</span> Citation[] {</div><div class="line">                Citations.EPSG, Citations.OGC, Citations.NETCDF, Citations.GEOTIFF, Citations.PROJ4</div><div class="line">            }, null)</div></div><!-- fragment -->
-<p>The operation parameter descriptor for the ESRI. </p>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;XY_Plane_Rotation&quot;</span> </div></div><!-- fragment --><p> parameter value. The rotation is applied before the &lt;cite&gt;false easting&lt;/cite&gt; and &lt;cite&gt;false northing&lt;/cite&gt; translation, if any. Valid values range is [-360 &hellip; 360]&deg;. This parameter is optional and its default value is 0&deg;. </p>
-<p>This is an ESRI-specific parameter, but its usage could be extended to any projections. The choice to allow this parameter or not is taken on a projection-by-projection basis.</p>
-<dl class="section since"><dt>Since</dt><dd>3.00</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03669.html#_deprecated000057">Deprecated:</a></b></dt><dd>Invoke <code>PARAMETERS. ParameterDescriptorGroup::descriptor(String) descriptor(String)}</code> instead. </dd></dl>
 
+<p>Returns a global scale factor for the specified affine transform. </p>
+<p>This scale factor combines <a class="el" href="">getScaleX0(tr)</a> and <a class="el" href="">getScaleY0(tr)</a>. The way to compute such a "global" scale is somewhat arbitrary and may change in a future version.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tr</td><td>The affine transform to inspect. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The magnitude of scale factory. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                            {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> 0.5 * (AffineTransforms2D.getScaleX0(tr) + AffineTransforms2D.getScaleY0(tr));</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a333445bbc8b62a1154991e0e52498867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a333445bbc8b62a1154991e0e52498867">&#9670;&nbsp;</a></span>Y_SCALE</h2>
+<a id="a36bddb00a4be752319c09f8e0f610d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bddb00a4be752319c09f8e0f610d1e">&#9670;&nbsp;</a></span>isIdentity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,21 +167,95 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final ParameterDescriptor&lt;Double&gt; Y_SCALE = UniversalParameters.Y_SCALE</td>
+          <td class="memname">static boolean isIdentity </td>
+          <td>(</td>
+          <td class="paramtype">final AffineTransform&#160;</td>
+          <td class="paramname"><em>tr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The operation parameter descriptor for the ESRI. </p>
-<div class="fragment"><div class="line"><span class="stringliteral">&quot;Y_Scale&quot;</span> </div></div><!-- fragment --><p> parameter value. Valid values range is unrestricted. This parameter is optional and its default value is 1. </p>
-<p>This is an ESRI-specific parameter, but its usage could be extended to any projection. The choice to allow this parameter or not is taken on a projection-by-projection basis.</p>
-<dl class="section since"><dt>Since</dt><dd>3.00 </dd></dl>
+<p>Returns. </p>
+<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if the specified affine transform is an identity transform up to the specified tolerance. This method is equivalent to computing the difference between this matrix and an identity matrix (as created by <a class="el" href="">new AffineTransform()</a>) and returning</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> if and only if all differences are smaller than or equal to</p><div class="fragment"><div class="line">tolerance </div></div><!-- fragment --><p> . </p>
+<p>This method is used for working around rounding error in affine transforms resulting from a computation, as in the example below:</p>
+<p>{ text ┌ ┐ │ 1.0000000000000000001 0.0 0.0 │ │ 0.0 0.999999999999999999999 0.0 │ │ 0.0 0.0 1.0 │ └ ┘ }</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tr</td><td>The affine transform to be checked for identity. </td></tr>
+    <tr><td class="paramname">tolerance</td><td>The tolerance value to use when checking for identity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if this transformation is close enough to the identity,<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> otherwise.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.3.1 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                                 {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (tr.isIdentity()) {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        tolerance = abs(tolerance);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> abs(tr.getScaleX() - 1) &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;               abs(tr.getScaleY() - 1) &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;               abs(tr.getShearX())     &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;               abs(tr.getShearY())     &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;               abs(tr.getTranslateX()) &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;               abs(tr.getTranslateY()) &lt;= tolerance;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad4156f5f7098b2dc55d3434324e8e1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4156f5f7098b2dc55d3434324e8e1fa">&#9670;&nbsp;</a></span>roundIfAlmostInteger()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void roundIfAlmostInteger </td>
+          <td>(</td>
+          <td class="paramtype">final AffineTransform&#160;</td>
+          <td class="paramname"><em>tr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If scale and shear coefficients are close to integers, replaces their current values by their rounded values. </p>
+<p>The scale and shear coefficients are handled in a "all or nothing" way; either all of them are rounded, or either none of them. The translation terms are handled separately, provided that the scale and shear coefficients has been rounded. </p>
+<p>This rounding up is useful for example in order to speedup image displays.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tr</td><td>The matrix to round. Rounding will be applied in place. </td></tr>
+    <tr><td class="paramname">tolerance</td><td>The maximal departure from integers in order to allow rounding. It is typically a small number like<div class="fragment"><div class="line">1E-6 </div></div><!-- fragment --> .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>org.geotoolkit.image.io.metadata.MetadataHelper::adjustForRoundingError(double)</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.14 (derived from 2.3.1) </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06883.html#a77b14660e96073cea4cde53069901462">GridFactory.create()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                                                              {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">double</span> r;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> m00, m01, m10, m11;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (abs((m00 = rint(r=tr.getScaleX())) - r) &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            abs((m01 = rint(r=tr.getShearX())) - r) &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            abs((m11 = rint(r=tr.getScaleY())) - r) &lt;= tolerance &amp;&amp;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            abs((m10 = rint(r=tr.getShearY())) - r) &lt;= tolerance)</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">             * At this point the scale and shear coefficients can been rounded to integers.</span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">             * Continue only if this rounding doesn&#39;t lead to a non-invertible transform.</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> ((m00!=0 || m01!=0) &amp;&amp; (m10!=0 || m11!=0)) {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordtype">double</span> m02, m12;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">if</span> (abs((r = rint(m02=tr.getTranslateX())) - m02) &lt;= tolerance) m02=r;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">if</span> (abs((r = rint(m12=tr.getTranslateY())) - m12) &lt;= tolerance) m12=r;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                tr.setTransform(m00, m10, m01, m11, m02, m12);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -512,7 +264,7 @@ Static Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03793.html">referencing</a></li><li class="navelem"><a class="el" href="a03798.html">operation</a></li><li class="navelem"><a class="el" href="a03801.html">provider</a></li><li class="navelem"><a class="el" href="a07615.html">MapProjection</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03853.html">referencing</a></li><li class="navelem"><a class="el" href="a03858.html">operation</a></li><li class="navelem"><a class="el" href="a03859.html">matrix</a></li><li class="navelem"><a class="el" href="a07615.html">XAffineTransform</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

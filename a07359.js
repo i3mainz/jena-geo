@@ -1,15 +1,10 @@
 var a07359 =
 [
-    [ "ZipUtilities", "a07359.html#a78f7dd7638a2a24439ea6e80061b71b0", null ],
-    [ "createZipFileSystem", "a07359.html#a730265031038a051c8efa702cd1fbecd", null ],
-    [ "unzip", "a07359.html#a832560f7e7197ee048f43bdf0ac8ab7c", null ],
-    [ "unzip", "a07359.html#a710251683dc89e964b6554b873d06793", null ],
-    [ "unzipCore", "a07359.html#a51ed2d2bd06e980afdca72fb2c064bd6", null ],
-    [ "unzipNIO", "a07359.html#a216f4738f3a2b915622f5f712241f215", null ],
-    [ "zip", "a07359.html#ac44e0b0baab3dcc89155834c7690add3", null ],
-    [ "zip", "a07359.html#a682dd87ce2a47863b7df168829cf6317", null ],
-    [ "zipCore", "a07359.html#ad74c9b4c9530cb78874b9a1fd62d8e40", null ],
-    [ "zipCore", "a07359.html#a13deced1a6b0fd42e2a4300231697fe6", null ],
-    [ "zipNIO", "a07359.html#a5b91b5cb28d14251053fb613ef01f463", null ],
-    [ "BUFFER_SIZE", "a07359.html#a2d3b35bbd93276f93a242b96dbd122f2", null ]
+    [ "Line", "a07359.html#a8fa18e7ff41439ed6ba66aea2bc2b397", null ],
+    [ "Line", "a07359.html#a2e3c352479dd77cbefcc5f1e1171069f", null ],
+    [ "intersectionPoint", "a07359.html#aa9ac321c595110d2f3105265a50857f0", null ],
+    [ "intersectionPoint", "a07359.html#a5a3669c0459aa06c9b5ca3c5e6a6c9d4", null ],
+    [ "isoscelesTriangleBase", "a07359.html#a6def33628adcc98ec6857642720a70cd", null ],
+    [ "nearestColinearPoint", "a07359.html#a16befa2ce61b161a3e4d338ebd39654c", null ],
+    [ "EPS", "a07359.html#aa53cb17a306a6462b4a5a5083bc8ccb6", null ]
 ];

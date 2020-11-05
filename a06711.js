@@ -1,11 +1,12 @@
 var a06711 =
 [
-    [ "children", "a06711.html#a4dd652bce4d0314f36b5a526d4a18cdd", null ],
-    [ "getColumnClass", "a06711.html#ad40071f2d2e758afa7d5e3d44c8aeedc", null ],
-    [ "getColumnCount", "a06711.html#a1e370ba0703e162dbac6fa5cac8a2efc", null ],
-    [ "getUserObject", "a06711.html#a18ecb8d182a13d06a11322dcaf137806", null ],
-    [ "getValueAt", "a06711.html#ac57754bca9e79118f4c0151672c2a1fd", null ],
-    [ "isEditable", "a06711.html#a9492e6c26d8244f8d50fc833b89f8866", null ],
-    [ "setValueAt", "a06711.html#a0d2c5ca610da8d850dffb3729e5e5d77", null ],
-    [ "toString", "a06711.html#ad146fa8579a5f8a876c4688cc5a68520", null ]
+    [ "Factories", "a06711.html#af804a633cac736c7840e6e98879bf329", null ],
+    [ "addChangeListener", "a06711.html#a83342b8bcb8cc005ece38a47f026074e", null ],
+    [ "fireConfigurationChanged", "a06711.html#a83c7bc172180ceb0308998ae35ab1509", null ],
+    [ "getAuthorityFactory", "a06711.html#abb06a8a8ee1a391847dd0c5a790718ab", null ],
+    [ "getCoordinateOperationAuthorityFactory", "a06711.html#af54c2a8e27296ed57f70effc2a2bc4e4", null ],
+    [ "getCRSAuthorityFactory", "a06711.html#a10a55d396ee66b460f8589fc83f0d1ca", null ],
+    [ "orderForClassLoader", "a06711.html#a5796713073d72b7e6dc1884bf44c1e5f", null ],
+    [ "removeChangeListener", "a06711.html#abfeca49de44d9d8d284482a51b5ba39e", null ],
+    [ "listeners", "a06711.html#a4371dc639d94ea045435d5ceffd235ae", null ]
 ];

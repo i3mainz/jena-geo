@@ -1,18 +1,12 @@
 var a06327 =
 [
-    [ "WKBTextSRS", "a06331.html", "a06331" ],
-    [ "OSMDatatype", "a06327.html#a8263c720ec80f50059f21e9e79366a55", null ],
-    [ "check", "a06327.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06327.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06327.html#ad1ee2f6512af0e5dba3d40a3e8b731f9", null ],
-    [ "get", "a06327.html#a0a24dee6650e86f3f00a406a199073cd", null ],
-    [ "parse", "a06327.html#a6ca6e70f10f54a3b0e7fdc14be052483", null ],
-    [ "parse", "a06327.html#adb0c0c075ba104124ca28f2d25ef76d5", null ],
-    [ "read", "a06327.html#ab987fb3c5c1835116368b15c0761d3b0", null ],
-    [ "registerDatatypes", "a06327.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "toString", "a06327.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "unparse", "a06327.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
-    [ "INSTANCE", "a06327.html#a0d65311cf26b97b15fcfcfdb674d2e59", null ],
-    [ "LOGGER", "a06327.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
-    [ "URI", "a06327.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
+    [ "getCustomProperties", "a06327.html#a46e1c90f389e0c9c7dedb38ed0ac738c", null ],
+    [ "getCustomPropertiesCount", "a06327.html#acecc4464e8af22988095fa215d0b7527", null ],
+    [ "getCustomPropertiesList", "a06327.html#aa921547f0b051f8a746c228b52133b64", null ],
+    [ "getFeatures", "a06327.html#a112f21d809fb0efba928ce055d36e781", null ],
+    [ "getFeaturesCount", "a06327.html#a2fb7230e507bed1aefa7b6d690fd7af3", null ],
+    [ "getFeaturesList", "a06327.html#a5f9d9c8bc3ba09ee51560b12ea95b780", null ],
+    [ "getValues", "a06327.html#a999c3397cd2e72c4d092bc5d66e69223", null ],
+    [ "getValuesCount", "a06327.html#a46148c109fe82a4073ecc6b31765d7bd", null ],
+    [ "getValuesList", "a06327.html#aeb52649b56790043dab5e1edf21eb2ef", null ]
 ];

@@ -1,7 +1,13 @@
 var a08107 =
 [
-    [ "getForVersion", "a08107.html#a18955088da9b5651481ef293ea239303", null ],
-    [ "getForVersion", "a08107.html#aaa39be55b20ab1639a30d717509b8aac", null ],
-    [ "getForVersion", "a08107.html#af1c29dd84f0ab1e04609b47dbfa172e7", null ],
-    [ "getHistory", "a08107.html#a4732e121fe00d99ef006ca0b0f760f45", null ]
+    [ "Integer", "a08107.html#a67ff506bdddeda5e0f9cc1b941237ea7", null ],
+    [ "compareTo", "a08107.html#a98a51d8ad1e5503c87f17878896c7d88", null ],
+    [ "ranks", "a08107.html#abb150dc13c316a480c404b1703c03990", null ],
+    [ "ranks", "a08107.html#a7e3ac659899192333adea39b87f41331", null ],
+    [ "ranks", "a08107.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
+    [ "ranks", "a08107.html#abb82129695e9a7b212788912ccc45539", null ],
+    [ "ranks", "a08107.html#ad3b1488acd654783f7a4dc632814441f", null ],
+    [ "ranks", "a08107.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
+    [ "ranks", "a08107.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
+    [ "value", "a08107.html#a899c1b74df7f8fda2fcd2c85d9185da8", null ]
 ];

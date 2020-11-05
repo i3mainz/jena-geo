@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: SRID Class Reference</title>
+<title>jena-geo: Crosses Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,32 +64,32 @@ $(document).ready(function(){initNavTree('a05867.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05864.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SRID Class Reference</div>  </div>
+<div class="title">Crosses Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for SRID:</div>
+Inheritance diagram for Crosses:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05866.png" border="0" usemap="#SRID_inherit__map" alt="Inheritance graph"/></div>
-<map name="SRID_inherit__map" id="SRID_inherit__map">
+<div class="center"><img src="a05866.png" border="0" usemap="#Crosses_inherit__map" alt="Inheritance graph"/></div>
+<map name="Crosses_inherit__map" id="Crosses_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for SRID:</div>
+Collaboration diagram for Crosses:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05865.png" border="0" usemap="#SRID_coll__map" alt="Collaboration graph"/></div>
-<map name="SRID_coll__map" id="SRID_coll__map">
+<div class="center"><img src="a05865.png" border="0" usemap="#Crosses_coll__map" alt="Collaboration graph"/></div>
+<map name="Crosses_coll__map" id="Crosses_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05867.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
-<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05867.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
+<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
+<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,14 +98,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">NodeValue exec </td>
           <td>(</td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06115.html#a12e2b8ceb06209d8b13dc78d58cdad22">LiteralUtils.rasterOrVector()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                           {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                Wrapper wrapper1=LiteralUtils.rasterOrVector(v);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">if</span>(wrapper1 instanceof GeometryWrapper) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeString(((GeometryWrapper)wrapper1).getXYGeometry().getSRID()+<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(raster.getCoordinateReferenceSystem().getCoordinateSystem().getName().toString());                  </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06511.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, <a class="el" href="a06203.html#a12e2b8ceb06209d8b13dc78d58cdad22">LiteralUtils.rasterOrVector()</a>, <a class="el" href="a06203.html#a70d2c83f032867b59a3af555f1ff6d98">LiteralUtils.toGeometry()</a>, and <a class="el" href="a06511.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                          {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                Wrapper wrapper1=LiteralUtils.rasterOrVector(v1);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                Wrapper wrapper2=LiteralUtils.rasterOrVector(v2);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">if</span>(wrapper1 instanceof GeometryWrapper &amp;&amp; wrapper2 instanceof GeometryWrapper) {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        GeometryWrapper transGeom2;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                transGeom2 = ((GeometryWrapper)wrapper2).transform(((GeometryWrapper)wrapper1).getSrsInfo());</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeBoolean(((GeometryWrapper)wrapper1).getXYGeometry().crosses(transGeom2.getXYGeometry()));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        } <span class="keywordflow">catch</span> (MismatchedDimensionException | TransformException | FactoryException e) {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14083.html">RuntimeException</a>(<span class="stringliteral">&quot;CRS transformation failed&quot;</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(wrapper1 instanceof CoverageWrapper &amp;&amp; wrapper2 instanceof CoverageWrapper) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                        GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();           </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <span class="keywordflow">return</span> NodeValue.makeBoolean(bbox1.crosses(bbox2)); </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        <span class="keywordflow">if</span>(wrapper1 instanceof CoverageWrapper) {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeBoolean(bbox1.crosses(geom));</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                <span class="keywordflow">return</span> NodeValue.makeBoolean(geom.crosses(bbox1));                              </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div><div class="ttc" id="a14083_html"><div class="ttname"><a href="a14083.html">RuntimeException</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -114,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03718.html">raster</a></li><li class="navelem"><a class="el" href="a03724.html">transform</a></li><li class="navelem"><a class="el" href="a05867.html">SRID</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03778.html">raster</a></li><li class="navelem"><a class="el" href="a03783.html">relation</a></li><li class="navelem"><a class="el" href="a05867.html">Crosses</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

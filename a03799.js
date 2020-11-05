@@ -1,6 +1,6 @@
 var a03799 =
 [
-    [ "GeneralMatrix", "a07519.html", "a07519" ],
-    [ "Matrices", "a07523.html", "a07523" ],
-    [ "XAffineTransform", "a07527.html", "a07527" ]
+    [ "datatype", "a03800.html", "a03800" ],
+    [ "index", "a03804.html", "a03804" ],
+    [ "GeometryWrapper", "a06511.html", "a06511" ]
 ];

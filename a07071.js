@@ -1,8 +1,8 @@
 var a07071 =
 [
-    [ "DeprecatedName", "a07071.html#a30137b8bfcfcfcaf6904b00d2fc50927", null ],
-    [ "DeprecatedName", "a07071.html#acce94c499797c41e9d30bb61aca8187c", null ],
-    [ "getRemarks", "a07071.html#a41d1ff7ec9a4fdd39624c17658860bc4", null ],
-    [ "isDeprecated", "a07071.html#a35e471e9519c510a88390674ec25ee59", null ],
-    [ "serialVersionUID", "a07071.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "DaemonThread", "a07071.html#a2eb8afeef5a95547c06b18fe7a11b696", null ],
+    [ "DaemonThread", "a07071.html#a0b827a421759548883ec09f0d8789950", null ],
+    [ "isKillRequested", "a07071.html#a85a7877dcc475afa61faf679b046c78f", null ],
+    [ "kill", "a07071.html#a627f0d98cbf66a9f5988e4ae5ffef710", null ],
+    [ "killRequested", "a07071.html#ae8ef02b471a01f2576f9390c3d8c354b", null ]
 ];

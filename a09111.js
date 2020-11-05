@@ -1,8 +1,11 @@
 var a09111 =
 [
+    [ "displayRasterSummary", "a09111.html#a58e2b02539026083b8e4a001ac84f63c", null ],
+    [ "displayRasterSummary", "a09111.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09111.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09111.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testTileGridYOffset", "a09111.html#a8c050b8bfc80a070faa4272b5d0e424f", null ],
+    [ "testMean", "a09111.html#afbd683212107d4b2f4273af98234c061", null ],
+    [ "combinedRasterLiteral", "a09111.html#a6efe8702be34a67e2bcbba55588c5b5f", null ],
     [ "covJSONString1", "a09111.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09111.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09111.html#aa5e2b5a6005895fc20b9f35523569430", null ],

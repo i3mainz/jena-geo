@@ -1,8 +1,9 @@
 var a08143 =
 [
-    [ "ByteBufferInputStream", "a08143.html#a45e3ebcf56fe2e78f77d9ddda8485fa0", null ],
-    [ "available", "a08143.html#a4549a76725f2e4c013e4d57018366109", null ],
-    [ "read", "a08143.html#aaab5dab5b969a87f538242e524431637", null ],
-    [ "read", "a08143.html#a248e13ef5029818776308e269fa7900e", null ],
-    [ "byteBuffer", "a08143.html#acb7716c09c3c94749ca0b1613ecfae6a", null ]
+    [ "MagneticDate", "a08143.html#ab31f8fb056eac3c2822270f745d09765", null ],
+    [ "MagneticDate", "a08143.html#af62ae116c1aeee1d2d25bc8f0b8e6133", null ],
+    [ "Day", "a08143.html#a8f67164de537e3ec2b47e3204ddd3400", null ],
+    [ "DecimalYear", "a08143.html#afb8201d541b7b916e28bdf9884f6c794", null ],
+    [ "Month", "a08143.html#a530b376ec91a278ac98531d3ea17f148", null ],
+    [ "Year", "a08143.html#a42e645110404fbf4f10235789577fa32", null ]
 ];

@@ -1,7 +1,6 @@
 var a08859 =
 [
-    [ "testIsScaleneTriangleFalse", "a08859.html#ac6f7d4cf9bd1990319a4e7a5bb51d4b1", null ],
-    [ "testIsScaleneTriangleTrue", "a08859.html#a86b14a35c3e202b5a14bdaea4c16a441", null ],
-    [ "isocelesTriangle", "a08859.html#aa04dfbec745e2622b9f7646f8572e501", null ],
-    [ "notIsocelesTriangle", "a08859.html#a055d99fb63bcee37763ffcf4da9e0521", null ]
+    [ "testOffsetCurve", "a08859.html#a838580dd525848eff0989cbeb9ce59a8", null ],
+    [ "result", "a08859.html#aab356d6554a7301750f11ec7a85ac47d", null ],
+    [ "testLineString", "a08859.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

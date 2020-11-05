@@ -1,7 +1,5 @@
 var a08931 =
 [
-    [ "testSetRing", "a08931.html#ad03fb669accdb6228a8cd3c914d39cf4", null ],
-    [ "duplicateRings", "a08931.html#a92f3ef00fc079a76b7f943d9ed6cec77", null ],
-    [ "nonduplicateRings", "a08931.html#a675a0b1b194538fc07fa716705f883a5", null ],
-    [ "ring", "a08931.html#a3e4a839eee2eb5791f90656e82eec721", null ]
+    [ "testMakePointM1", "a08931.html#aaa00422b067345c9efd512d8757b16a7", null ],
+    [ "testPoint", "a08931.html#af26f700ee129f846cac58735f6dcc380", null ]
 ];

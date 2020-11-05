@@ -1,17 +1,17 @@
 var a06287 =
 [
-    [ "GeobufDatatype", "a06287.html#a93fde034621b8bde7eb876da128fce9c", null ],
-    [ "check", "a06287.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
-    [ "checkURI", "a06287.html#a5df594a39203302c2daed2aed74735c7", null ],
-    [ "get", "a06287.html#ad1ee2f6512af0e5dba3d40a3e8b731f9", null ],
-    [ "get", "a06287.html#a0a24dee6650e86f3f00a406a199073cd", null ],
-    [ "parse", "a06287.html#a6ca6e70f10f54a3b0e7fdc14be052483", null ],
-    [ "parse", "a06287.html#adb0c0c075ba104124ca28f2d25ef76d5", null ],
-    [ "read", "a06287.html#ab987fb3c5c1835116368b15c0761d3b0", null ],
-    [ "registerDatatypes", "a06287.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
-    [ "toString", "a06287.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "unparse", "a06287.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
-    [ "INSTANCE", "a06287.html#a9171749e0b68e42ba8a9b227963f0b41", null ],
-    [ "LOGGER", "a06287.html#ab1d069f56091df4f6436f8c713ab2f39", null ],
-    [ "URI", "a06287.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
+    [ "getDimensions", "a06287.html#a7848bba733bb3811bb51f348ddd85c8f", null ],
+    [ "getFeature", "a06287.html#a8d79636ec56ff6de2e50881b94050107", null ],
+    [ "getFeatureCollection", "a06287.html#aafe5655e6e54105b9d207a72f6c30015", null ],
+    [ "getGeometry", "a06287.html#abd9fa8e99be0df253461ce5952bdd50e", null ],
+    [ "getKeys", "a06287.html#a137f2f15f3b2be06c207ad0279550c23", null ],
+    [ "getKeysBytes", "a06287.html#abe8759e42d23409195d807cf1d262635", null ],
+    [ "getKeysCount", "a06287.html#acd0315e9d9b5ad14a51b6737da34adb8", null ],
+    [ "getKeysList", "a06287.html#a8805d4dba0cde7590567f64df1c2a1bc", null ],
+    [ "getPrecision", "a06287.html#abc0c11d1d0f1e2b806933ad5e6d4aa49", null ],
+    [ "hasDimensions", "a06287.html#a810507d78b0112ad65433564aa10af91", null ],
+    [ "hasFeature", "a06287.html#a1318b632cfa505172e6c131eb8c684a8", null ],
+    [ "hasFeatureCollection", "a06287.html#ad363cf4f28df6755854cc8f0de4dc429", null ],
+    [ "hasGeometry", "a06287.html#a8f745f6640b995c468b64df4a95a2374", null ],
+    [ "hasPrecision", "a06287.html#ac19b1b6651b912365d1f98616f8c2ebd", null ]
 ];

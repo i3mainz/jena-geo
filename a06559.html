@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: WKBRasterImageReader Class Reference</title>
+<title>jena-geo: PointToGridCoordinates Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,217 +61,159 @@ $(document).ready(function(){initNavTree('a06559.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="a06556.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">WKBRasterImageReader Class Reference</div>  </div>
+<div class="title">PointToGridCoordinates Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Draft java api image reader for WKB, used in postGIS 2 but can be used elsewhere.  
+<p>Holds the object necessary for converting a geospatial coordinates to grid coordinates.  
  <a href="a06559.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for WKBRasterImageReader:</div>
+Collaboration diagram for PointToGridCoordinates:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06558.png" border="0" usemap="#WKBRasterImageReader_inherit__map" alt="Inheritance graph"/></div>
-<map name="WKBRasterImageReader_inherit__map" id="WKBRasterImageReader_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for WKBRasterImageReader:</div>
-<div class="dyncontent">
-<div class="center"><img src="a06557.png" border="0" usemap="#WKBRasterImageReader_coll__map" alt="Collaboration graph"/></div>
-<map name="WKBRasterImageReader_coll__map" id="WKBRasterImageReader_coll__map">
+<div class="center"><img src="a06557.png" border="0" usemap="#PointToGridCoordinates_coll__map" alt="Collaboration graph"/></div>
+<map name="PointToGridCoordinates_coll__map" id="PointToGridCoordinates_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06567.html">InputStreamAdapter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06563.html">Spi</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:ae910ae1145a923eccc9e6bf8c299a869"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#ae910ae1145a923eccc9e6bf8c299a869">PointToGridCoordinates</a> (final CoordinateReferenceSystem <a class="el" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a>, final <a class="el" href="a06539.html">GridCoverage</a> coverage, final GridGeometry gridGeometry)  throws TransformException     </td></tr>
+<tr class="memdesc:ae910ae1145a923eccc9e6bf8c299a869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new objects holding the objects for converting from the given source CRS.  <a href="#ae910ae1145a923eccc9e6bf8c299a869">More...</a><br /></td></tr>
+<tr class="separator:ae910ae1145a923eccc9e6bf8c299a869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a34badb2baa40331fceb6454a23e348b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#a34badb2baa40331fceb6454a23e348b6">WKBRasterImageReader</a> (ImageReaderSpi spi)</td></tr>
-<tr class="separator:a34badb2baa40331fceb6454a23e348b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b92db5808f8a718d29f13c40e9702f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#a9b92db5808f8a718d29f13c40e9702f4">getNumImages</a> (boolean allowSearch)  throws IOException </td></tr>
-<tr class="separator:a9b92db5808f8a718d29f13c40e9702f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2129107c2233c5e6135e17fe44d8c7fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#a2129107c2233c5e6135e17fe44d8c7fe">getWidth</a> (int imageIndex)  throws IOException </td></tr>
-<tr class="separator:a2129107c2233c5e6135e17fe44d8c7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6a67f2864766f83a712d6b2af292e7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#aa6a67f2864766f83a712d6b2af292e7d">getHeight</a> (int imageIndex)  throws IOException </td></tr>
-<tr class="separator:aa6a67f2864766f83a712d6b2af292e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f778bb9f9d7fb146e110964293b3ab7"><td class="memItemLeft" align="right" valign="top">Iterator&lt; ImageTypeSpecifier &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#a3f778bb9f9d7fb146e110964293b3ab7">getImageTypes</a> (int imageIndex)  throws IOException </td></tr>
-<tr class="separator:a3f778bb9f9d7fb146e110964293b3ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad187387db939538f0b4ae68ed7fae7c1"><td class="memItemLeft" align="right" valign="top">IIOMetadata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#ad187387db939538f0b4ae68ed7fae7c1">getStreamMetadata</a> ()  throws IOException </td></tr>
-<tr class="separator:ad187387db939538f0b4ae68ed7fae7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20196cc76d82d0f6ba9e13e70d5141f1"><td class="memItemLeft" align="right" valign="top">IIOMetadata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#a20196cc76d82d0f6ba9e13e70d5141f1">getImageMetadata</a> (int imageIndex)  throws IOException </td></tr>
-<tr class="separator:a20196cc76d82d0f6ba9e13e70d5141f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeafb3f0edabe91a895599d6c54ba6cb"><td class="memItemLeft" align="right" valign="top">BufferedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#abeafb3f0edabe91a895599d6c54ba6cb">read</a> (int imageIndex, ImageReadParam param)  throws IOException </td></tr>
-<tr class="separator:abeafb3f0edabe91a895599d6c54ba6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:ac9e444db6156d4c172922a1aae6ec448"><td class="memItemLeft" align="right" valign="top">final CoordinateReferenceSystem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a></td></tr>
+<tr class="memdesc:ac9e444db6156d4c172922a1aae6ec448"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source coordinate reference system of the converter, or.  <a href="#ac9e444db6156d4c172922a1aae6ec448">More...</a><br /></td></tr>
+<tr class="separator:ac9e444db6156d4c172922a1aae6ec448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d1d96327fe14b4cbc3c2372ac20857"><td class="memItemLeft" align="right" valign="top">final MathTransform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06559.html#a00d1d96327fe14b4cbc3c2372ac20857">crsToGrid</a></td></tr>
+<tr class="memdesc:a00d1d96327fe14b4cbc3c2372ac20857"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transform from <a class="el" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a> to grid coordinates.  <a href="#a00d1d96327fe14b4cbc3c2372ac20857">More...</a><br /></td></tr>
+<tr class="separator:a00d1d96327fe14b4cbc3c2372ac20857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Draft java api image reader for WKB, used in postGIS 2 but can be used elsewhere. </p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+<div class="textblock"><p>Holds the object necessary for converting a geospatial coordinates to grid coordinates. </p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.1  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a34badb2baa40331fceb6454a23e348b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34badb2baa40331fceb6454a23e348b6">&#9670;&nbsp;</a></span>WKBRasterImageReader()</h2>
+<a id="ae910ae1145a923eccc9e6bf8c299a869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae910ae1145a923eccc9e6bf8c299a869">&#9670;&nbsp;</a></span>PointToGridCoordinates()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06559.html">WKBRasterImageReader</a> </td>
+          <td class="memname"><a class="el" href="a06559.html">PointToGridCoordinates</a> </td>
           <td>(</td>
-          <td class="paramtype">ImageReaderSpi&#160;</td>
-          <td class="paramname"><em>spi</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a06563.html#afdae2b08cd565365eaaa5d33704ecc3f">WKBRasterImageReader.Spi.createReaderInstance()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                   {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        super(spi);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa6a67f2864766f83a712d6b2af292e7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6a67f2864766f83a712d6b2af292e7d">&#9670;&nbsp;</a></span>getHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getHeight </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>imageIndex</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                            {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a20196cc76d82d0f6ba9e13e70d5141f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20196cc76d82d0f6ba9e13e70d5141f1">&#9670;&nbsp;</a></span>getImageMetadata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">IIOMetadata getImageMetadata </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>imageIndex</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                                           {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a3f778bb9f9d7fb146e110964293b3ab7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f778bb9f9d7fb146e110964293b3ab7">&#9670;&nbsp;</a></span>getImageTypes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Iterator&lt;ImageTypeSpecifier&gt; getImageTypes </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>imageIndex</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                                         {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a9b92db5808f8a718d29f13c40e9702f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b92db5808f8a718d29f13c40e9702f4">&#9670;&nbsp;</a></span>getNumImages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getNumImages </td>
-          <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>allowSearch</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                    {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="ad187387db939538f0b4ae68ed7fae7c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad187387db939538f0b4ae68ed7fae7c1">&#9670;&nbsp;</a></span>getStreamMetadata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">IIOMetadata getStreamMetadata </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                              {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a2129107c2233c5e6135e17fe44d8c7fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2129107c2233c5e6135e17fe44d8c7fe">&#9670;&nbsp;</a></span>getWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getWidth </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>imageIndex</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                           {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="abeafb3f0edabe91a895599d6c54ba6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeafb3f0edabe91a895599d6c54ba6cb">&#9670;&nbsp;</a></span>read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BufferedImage read </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>imageIndex</em>, </td>
+          <td class="paramtype">final CoordinateReferenceSystem&#160;</td>
+          <td class="paramname"><em>sourceCRS</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ImageReadParam&#160;</td>
-          <td class="paramname"><em>param</em>&#160;</td>
+          <td class="paramtype">final <a class="el" href="a06539.html">GridCoverage</a>&#160;</td>
+          <td class="paramname"><em>coverage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final GridGeometry&#160;</td>
+          <td class="paramname"><em>gridGeometry</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throws IOException</td>
+          <td></td><td> throws TransformException</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a07335.html#a33d20a1caf24780768debee66c132025">IOUtilities.open()</a>, and <a class="el" href="a06579.html#a14456bc52e7f626048f58646a17a9039">WKBRasterReader.read()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                                       {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">final</span> WKBRasterReader reader = <span class="keyword">new</span> WKBRasterReader();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(input instanceof byte[]){</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> reader.read((byte[])input);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(input instanceof ImageInputStream){</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> reader.read(<span class="keyword">new</span> InputStreamAdapter((ImageInputStream)input));</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            InputStream stream;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span>(input instanceof InputStream){</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                stream = (InputStream) input;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                stream = IOUtilities.open(input);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                stream = <span class="keyword">new</span> BufferedInputStream(stream);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">final</span> BufferedImage image = reader.read(stream);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            stream.close();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> image;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div></div><!-- fragment -->
+<p>Creates a new objects holding the objects for converting from the given source CRS. </p>
+<div class="note"><b>Note about coverage argument:</b> the<div class="fragment"><div class="line">coverage </div></div><!-- fragment --> argument is for fetching the coverage CRS when needed. We could get that CRS from <a class="el" href="a06539.html#ac3ea7ca030ecd46451eb9394fd466e2d">GridCoverage#getCoordinateReferenceSystem()</a>, but we use <a class="el" href="a06539.html#ac3ea7ca030ecd46451eb9394fd466e2d">GridCoverage#getCoordinateReferenceSystem()</a> instead for giving users a chance to override. We do not give the coverage CRS in argument because we want to invoke <a class="el" href="a06539.html#ac3ea7ca030ecd46451eb9394fd466e2d">GridCoverage#getCoordinateReferenceSystem()</a> only if<div class="fragment"><div class="line"><a class="code" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a> </div></div><!-- fragment --> is non-null, because<div class="fragment"><div class="line">getCoordinateReferenceSystem() </div></div><!-- fragment --> may throw <a class="el" href="">IncompleteGridGeometryException</a>. </div><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceCRS</td><td>the source CRS, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if assumed the same than the coverage CRS. </td></tr>
+    <tr><td class="paramname">coverage</td><td>the coverage for which we are building those information. </td></tr>
+    <tr><td class="paramname">gridGeometry</td><td>the coverage grid geometry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">TransformException</td><td>if the <a class="el" href="a06559.html#a00d1d96327fe14b4cbc3c2372ac20857">crsToGrid</a> transform can not be built. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">PointToGridCoordinates.sourceCRS</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        this.<a class="code" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a> = <a class="code" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        MathTransform tr = gridGeometry.getGridToCRS(PixelInCell.CELL_CENTER).inverse();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a> != null) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            CoordinateOperation op = CRS.findOperation(<a class="code" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a>,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    coverage.getCoordinateReferenceSystem(),        <span class="comment">// See comment in above javadoc.</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    gridGeometry.geographicBBox());</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            tr = MathTransforms.concatenate(op.getMathTransform(), tr);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        } <span class="keywordflow">catch</span> (FactoryException e) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> TransformException(e.getMessage(), e);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="a06559.html#a00d1d96327fe14b4cbc3c2372ac20857">crsToGrid</a> = tr;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div><div class="ttc" id="a06559_html_ac9e444db6156d4c172922a1aae6ec448"><div class="ttname"><a href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">org.apache.sis.coverage.grid.PointToGridCoordinates.sourceCRS</a></div><div class="ttdeci">final CoordinateReferenceSystem sourceCRS</div><div class="ttdoc">The source coordinate reference system of the converter, or. </div><div class="ttdef"><b>Definition:</b> PointToGridCoordinates.java:42</div></div>
+<div class="ttc" id="a06559_html_a00d1d96327fe14b4cbc3c2372ac20857"><div class="ttname"><a href="a06559.html#a00d1d96327fe14b4cbc3c2372ac20857">org.apache.sis.coverage.grid.PointToGridCoordinates.crsToGrid</a></div><div class="ttdeci">final MathTransform crsToGrid</div><div class="ttdoc">The transform from sourceCRS to grid coordinates. </div><div class="ttdef"><b>Definition:</b> PointToGridCoordinates.java:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a00d1d96327fe14b4cbc3c2372ac20857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d1d96327fe14b4cbc3c2372ac20857">&#9670;&nbsp;</a></span>crsToGrid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final MathTransform crsToGrid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The transform from <a class="el" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">sourceCRS</a> to grid coordinates. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
+
+</div>
+</div>
+<a id="ac9e444db6156d4c172922a1aae6ec448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e444db6156d4c172922a1aae6ec448">&#9670;&nbsp;</a></span>sourceCRS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final CoordinateReferenceSystem sourceCRS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The source coordinate reference system of the converter, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if assumed the same than the coverage CRS. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06559.html#ae910ae1145a923eccc9e6bf8c299a869">PointToGridCoordinates.PointToGridCoordinates()</a>, and <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -280,7 +222,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03754.html">coverage</a></li><li class="navelem"><a class="el" href="a03756.html">wkb</a></li><li class="navelem"><a class="el" href="a06559.html">WKBRasterImageReader</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03807.html">apache</a></li><li class="navelem"><a class="el" href="a03808.html">sis</a></li><li class="navelem"><a class="el" href="a03809.html">coverage</a></li><li class="navelem"><a class="el" href="a03805.html">grid</a></li><li class="navelem"><a class="el" href="a06559.html">PointToGridCoordinates</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

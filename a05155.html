@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MakePoint Class Reference</title>
+<title>jena-geo: T Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,67 +64,32 @@ $(document).ready(function(){initNavTree('a05155.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05152.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MakePoint Class Reference</div>  </div>
+<div class="title">T Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Creates a 2D, 3DZ or 4D point geometry.  
- <a href="a05155.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for MakePoint:</div>
+Inheritance diagram for T:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05154.png" border="0" usemap="#MakePoint_inherit__map" alt="Inheritance graph"/></div>
-<map name="MakePoint_inherit__map" id="MakePoint_inherit__map">
+<div class="center"><img src="a05154.png" border="0" usemap="#T_inherit__map" alt="Inheritance graph"/></div>
+<map name="T_inherit__map" id="T_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for MakePoint:</div>
+Collaboration diagram for T:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05153.png" border="0" usemap="#MakePoint_coll__map" alt="Collaboration graph"/></div>
-<map name="MakePoint_coll__map" id="MakePoint_coll__map">
+<div class="center"><img src="a05153.png" border="0" usemap="#T_coll__map" alt="Collaboration graph"/></div>
+<map name="T_coll__map" id="T_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aef8acfa09c0ce086ff6d82b4d078a8fb"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05155.html#aef8acfa09c0ce086ff6d82b4d078a8fb">exec</a> (List&lt; NodeValue &gt; args)</td></tr>
-<tr class="separator:aef8acfa09c0ce086ff6d82b4d078a8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908bef876c8fe4b8007fa987e58efa1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05155.html#a908bef876c8fe4b8007fa987e58efa1c">checkBuild</a> (String uri, ExprList args)</td></tr>
-<tr class="separator:a908bef876c8fe4b8007fa987e58efa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a3cbabcf0592c2705ee280a231189a"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05155.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a> (NodeValue arg0)</td></tr>
+<tr class="separator:ae7a3cbabcf0592c2705ee280a231189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates a 2D, 3DZ or 4D point geometry. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a908bef876c8fe4b8007fa987e58efa1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a908bef876c8fe4b8007fa987e58efa1c">&#9670;&nbsp;</a></span>checkBuild()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void checkBuild </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>uri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ExprList&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                      {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (args.size() &lt; 2 || args.size() &gt; 4) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> QueryBuildException(<span class="stringliteral">&quot;Function &#39;&quot;</span> + Lib.className(<span class="keyword">this</span>) + <span class="stringliteral">&quot;&#39; takes two, three or four arguments&quot;</span>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="aef8acfa09c0ce086ff6d82b4d078a8fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef8acfa09c0ce086ff6d82b4d078a8fb">&#9670;&nbsp;</a></span>exec()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae7a3cbabcf0592c2705ee280a231189a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a3cbabcf0592c2705ee280a231189a">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,17 +97,15 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">NodeValue exec </td>
           <td>(</td>
-          <td class="paramtype">List&lt; NodeValue &gt;&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>arg0</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08847.html#a2f24e9ad47589d2191a0512d20a8a9ba">MakePointTest.testMakePoint1()</a>, and <a class="el" href="a08847.html#a3ba406df071dd5b2e9404776e414c4cd">MakePointTest.testMakePointXYZ()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Coordinate coord;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">switch</span> (args.size()) {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> 3:</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                coord = <span class="keyword">new</span> Coordinate(args.get(0).getDouble(), args.get(1).getDouble(), args.get(2).getDouble());</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">case</span> 4:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                coord = <span class="keyword">new</span> CoordinateXYZM(args.get(0).getDouble(), args.get(1).getDouble(), args.get(2).getDouble(), args.get(3).getDouble());</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">default</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                coord = <span class="keyword">new</span> CoordinateXY(args.get(0).getDouble(), args.get(1).getDouble());</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, SRS_URI.DEFAULT_WKT_CRS84, WKTDatatype.URI);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06511.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                          {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Geometry geom = geometry.getXYGeometry();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span> (geom instanceof Point) {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                Calendar cal = Calendar.getInstance();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                cal.setTime(((Point) geom).getCoordinate().getT());</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeDate(cal);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;               </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;Given geometry is not a point&quot;</span>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -151,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03708.html">point</a></li><li class="navelem"><a class="el" href="a03709.html">constructor</a></li><li class="navelem"><a class="el" href="a05155.html">MakePoint</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03768.html">point</a></li><li class="navelem"><a class="el" href="a03767.html">attribute</a></li><li class="navelem"><a class="el" href="a05155.html">T</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

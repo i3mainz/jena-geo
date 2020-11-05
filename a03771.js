@@ -1,10 +1,11 @@
 var a03771 =
 [
-    [ "ContinuousPalette", "a06927.html", "a06927" ],
-    [ "IIOListeners", "a06931.html", "a06931" ],
-    [ "IIOReadProgressAdapter", "a06939.html", "a06939" ],
-    [ "IndexedPalette", "a06943.html", "a06943" ],
-    [ "Palette", "a06947.html", "a06947" ],
-    [ "PaletteDisposer", "a06951.html", "a06951" ],
-    [ "PaletteFactory", "a06955.html", "a06955" ]
+    [ "attribute", "a03772.html", "a03772" ],
+    [ "constructor", "a03773.html", "a03773" ],
+    [ "editor", "a03774.html", "a03774" ],
+    [ "exporter", "a03775.html", "a03775" ],
+    [ "transform", "a03776.html", "a03776" ],
+    [ "ApproximateMedialAxis", "a05251.html", "a05251" ],
+    [ "Polygon", "a05367.html", "a05367" ],
+    [ "Tesselate", "a05371.html", "a05371" ]
 ];

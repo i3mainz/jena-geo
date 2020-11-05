@@ -1,9 +1,9 @@
 var a06731 =
 [
-    [ "Entry", "a06731.html#a414e89c8759674e8957bbb5ead481c0d", null ],
-    [ "equals", "a06731.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "hashCode", "a06731.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "box", "a06731.html#a5bd6abf33505161e9374f87c860d513b", null ],
-    [ "fill", "a06731.html#ab6e076532c3ff3ae73185f40cffad8c8", null ],
-    [ "model", "a06731.html#a96d15d6529793f97d90d9edb561f51ab", null ]
+    [ "ClassKey", "a06731.html#aaadfbac8d9bcd8df46dff3c2346e222d", null ],
+    [ "ClassKey", "a06731.html#a07358b1433784cf0b8f0af66bcd2493d", null ],
+    [ "getValueClass", "a06731.html#add5d743fc6fb18232910028591c19fb9", null ],
+    [ "isCompatibleValue", "a06731.html#a08faba5eee0f9415af2a22c1009291b2", null ],
+    [ "toString", "a06731.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "writeReplace", "a06731.html#a7e303c648cb2ce8982a0e8c685d4e3cc", null ]
 ];

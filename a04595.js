@@ -1,4 +1,6 @@
 var a04595 =
 [
-    [ "exec", "a04595.html#a2c490cbe392d82e6bccb464329ee50f4", null ]
+    [ "computePoints", "a04595.html#a8d6f063bdd42f48126dcafe21d394012", null ],
+    [ "exec", "a04595.html#a084e892d3d5d0a47151e34261fac8052", null ],
+    [ "locateAlong", "a04595.html#a41cbf2b5aeff66536b1eed65885a8a04", null ]
 ];

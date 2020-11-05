@@ -1,8 +1,10 @@
 var a09091 =
 [
+    [ "displayRasterSummary", "a09091.html#a58e2b02539026083b8e4a001ac84f63c", null ],
+    [ "displayRasterSummary", "a09091.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09091.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09091.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testScaleY", "a09091.html#ad2f14abbc917ffcd166d1d5040681683", null ],
+    [ "testExp", "a09091.html#a903454c88a0d80bfdb55c6cd9679d9cc", null ],
     [ "covJSONString1", "a09091.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09091.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09091.html#aa5e2b5a6005895fc20b9f35523569430", null ],

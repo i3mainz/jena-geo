@@ -1,7 +1,7 @@
 var a07759 =
 [
-    [ "FeatureMapUpdate", "a07759.html#a03111f5b0e65031a18d4c2bcac57579c", null ],
-    [ "apply", "a07759.html#a2d05fba8d4f967c0d781bc72f45934a1", null ],
-    [ "getValues", "a07759.html#a7e6342b102be3f4930d93808e0085f61", null ],
-    [ "values", "a07759.html#a03f63731756a3a725062b12b9535f231", null ]
+    [ "OutOfDomainOfValidityException", "a07759.html#acbf14150088026b239217b38c5499073", null ],
+    [ "OutOfDomainOfValidityException", "a07759.html#a816044b2464288725328b31f118aa94e", null ],
+    [ "OutOfDomainOfValidityException", "a07759.html#abf019784fc72d07bf35db99e5c1ab596", null ],
+    [ "OutOfDomainOfValidityException", "a07759.html#a455365083cdc563241ae0505a3567bdf", null ]
 ];

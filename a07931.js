@@ -1,16 +1,8 @@
 var a07931 =
 [
-    [ "DateRange", "a07931.html#aa4c9ee3da9dafc70fe5bfdd40504cc81", null ],
-    [ "DateRange", "a07931.html#a1975cd86f3bcda5878033bc41a6a4b38", null ],
-    [ "DateRange", "a07931.html#a8f703de7bc844a579c2febd8241f8d72", null ],
-    [ "DateRange", "a07931.html#ac4e52d1e65fa55048fc65f25aca3dd9e", null ],
-    [ "cast", "a07931.html#a6bfce4f6f5b0e1e9f713320da77eecd9", null ],
-    [ "clone", "a07931.html#ad57a70e638b1bdfb0941635b1ee1495c", null ],
-    [ "getConverter", "a07931.html#aab7dc1fe769f5c3e2dd2113cca65e5b8", null ],
-    [ "getMaxValue", "a07931.html#a6b3f8efbe6378153b07a39421693a397", null ],
-    [ "getMinValue", "a07931.html#ab64abf0c6674ecd270cb7a735771da99", null ],
-    [ "intersect", "a07931.html#a370acd306a3e1ee02c8384ee54b540fc", null ],
-    [ "subtract", "a07931.html#a6f82c2a1527ddb96c85cad5e00585b9f", null ],
-    [ "union", "a07931.html#a02bb0451371c3c41b9aa7f504a974b4e", null ],
-    [ "serialVersionUID", "a07931.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "Iter", "a07931.html#a63176a8518cc96237a6e77c89beeb658", null ],
+    [ "hasNext", "a07931.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "next", "a07931.html#a0c7c989f92fa935704b4915f1f400edd", null ],
+    [ "remove", "a07931.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
+    [ "iterator", "a07931.html#a62777fc3f0461fd678c752c6ec9d6cbf", null ]
 ];

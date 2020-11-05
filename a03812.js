@@ -1,4 +1,4 @@
 var a03812 =
 [
-    [ "ExtendedParameterDescriptor", "a08083.html", "a08083" ]
+    [ "coverage", "a03813.html", "a03813" ]
 ];

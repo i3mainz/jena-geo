@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ColorUtilities Class Reference</title>
+<title>jena-geo: Hints Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,96 +61,236 @@ $(document).ready(function(){initNavTree('a06723.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06720.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ColorUtilities Class Reference</div>  </div>
+<div class="title">Hints Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A set of static methods for handling of colors informations.  
+<p>A set of hints providing control on factories to be used.  
  <a href="a06723.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ColorUtilities:</div>
+Inheritance diagram for Hints:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06722.png" border="0" usemap="#ColorUtilities_inherit__map" alt="Inheritance graph"/></div>
-<map name="ColorUtilities_inherit__map" id="ColorUtilities_inherit__map">
-<area shape="rect" id="node2" href="a07235.html" title="Parent of classes that contain only static utility methods. " alt="" coords="26,5,82,32"/>
+<div class="center"><img src="a06722.png" border="0" usemap="#Hints_inherit__map" alt="Inheritance graph"/></div>
+<map name="Hints_inherit__map" id="Hints_inherit__map">
+<area shape="rect" id="node3" href="a06707.html" title="An immutable empty set of hints. " alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node4" href="a06751.html" title="Additional hints that are using in geotoolkit&#45;pending. " alt="" coords="121,155,221,181"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for ColorUtilities:</div>
+Collaboration diagram for Hints:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06721.png" border="0" usemap="#ColorUtilities_coll__map" alt="Collaboration graph"/></div>
-<map name="ColorUtilities_coll__map" id="ColorUtilities_coll__map">
-<area shape="rect" id="node2" href="a07235.html" title="Parent of classes that contain only static utility methods. " alt="" coords="5,5,61,32"/>
+<div class="center"><img src="a06721.png" border="0" usemap="#Hints_coll__map" alt="Collaboration graph"/></div>
+<map name="Hints_coll__map" id="Hints_coll__map">
+<area shape="rect" id="node3" href="a06735.html" title="Key for hints to be specified as a Path. " alt="" coords="623,528,725,555"/>
+<area shape="rect" id="node4" href="a06727.html" title="The type for keys used to control various aspects of the factory creation. " alt="" coords="267,447,347,473"/>
+<area shape="rect" id="node13" href="a06731.html" title="A key for value that may be specified either as instance of. " alt="" coords="617,452,731,479"/>
+<area shape="rect" id="node14" href="a06743.html" title="Key that allows the choice of several options. " alt="" coords="615,579,733,605"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06731.html">ClassKey</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A key for value that may be specified either as instance of.  <a href="a06731.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06747.html">DataSourceKey</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a06727.html" title="The type for keys used to control various aspects of the factory creation. ">Key</a> for hints to be specified as a <a class="el" href="">javax.sql.DataSource</a>.  <a href="a06747.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06735.html">FileKey</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a06727.html" title="The type for keys used to control various aspects of the factory creation. ">Key</a> for hints to be specified as a <a class="el" href="">Path</a>.  <a href="a06735.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06739.html">IntegerKey</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A hint used to capture a configuration setting as an integer.  <a href="a06739.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06727.html">Key</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for keys used to control various aspects of the factory creation.  <a href="a06727.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06743.html">OptionKey</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a06727.html" title="The type for keys used to control various aspects of the factory creation. ">Key</a> that allows the choice of several options.  <a href="a06743.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3df9bf00c1185101eeec258b75c3515d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a> ()</td></tr>
+<tr class="memdesc:a3df9bf00c1185101eeec258b75c3515d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a map of hints initialized with the system-wide default values.  <a href="#a3df9bf00c1185101eeec258b75c3515d">More...</a><br /></td></tr>
+<tr class="separator:a3df9bf00c1185101eeec258b75c3515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd81c12b938c016b91893d22636f843e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#afd81c12b938c016b91893d22636f843e">Hints</a> (final RenderingHints.Key key, final Object value)</td></tr>
+<tr class="memdesc:afd81c12b938c016b91893d22636f843e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new map of hints with the specified key/value pair.  <a href="#afd81c12b938c016b91893d22636f843e">More...</a><br /></td></tr>
+<tr class="separator:afd81c12b938c016b91893d22636f843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a6f5c8fab0317ee290d1ca2594c9fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a09a6f5c8fab0317ee290d1ca2594c9fe">Hints</a> (final RenderingHints.Key key1, final Object value1, final RenderingHints.Key key2, final Object value2)</td></tr>
+<tr class="memdesc:a09a6f5c8fab0317ee290d1ca2594c9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new map of hints with two key/value pairs.  <a href="#a09a6f5c8fab0317ee290d1ca2594c9fe">More...</a><br /></td></tr>
+<tr class="separator:a09a6f5c8fab0317ee290d1ca2594c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae704c41e3d4f0aabe80783c43b8f5b0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ae704c41e3d4f0aabe80783c43b8f5b0e">Hints</a> (final RenderingHints.Key key1, final Object value1, final RenderingHints.Key key2, final Object value2, final Object... pairs)</td></tr>
+<tr class="memdesc:ae704c41e3d4f0aabe80783c43b8f5b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new map of hints from key/value pairs.  <a href="#ae704c41e3d4f0aabe80783c43b8f5b0e">More...</a><br /></td></tr>
+<tr class="separator:ae704c41e3d4f0aabe80783c43b8f5b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb5760d7505d96a116faaa19dee0403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#adeb5760d7505d96a116faaa19dee0403">Hints</a> (final Map&lt;? extends RenderingHints.Key, ?&gt; hints)</td></tr>
+<tr class="memdesc:adeb5760d7505d96a116faaa19dee0403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new object with keys and values from the given map (which may be null).  <a href="#adeb5760d7505d96a116faaa19dee0403">More...</a><br /></td></tr>
+<tr class="separator:adeb5760d7505d96a116faaa19dee0403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c7cf4eeb6e84ccc38d30dadfba92a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ac5c7cf4eeb6e84ccc38d30dadfba92a6">Hints</a> (final RenderingHints hints)</td></tr>
+<tr class="memdesc:ac5c7cf4eeb6e84ccc38d30dadfba92a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new object with keys and values from the given map (which may be null).  <a href="#ac5c7cf4eeb6e84ccc38d30dadfba92a6">More...</a><br /></td></tr>
+<tr class="separator:ac5c7cf4eeb6e84ccc38d30dadfba92a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483fc9c0fc36be530b86d25346b9732a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a06723.html">Hints</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a483fc9c0fc36be530b86d25346b9732a">clone</a> ()</td></tr>
+<tr class="memdesc:a483fc9c0fc36be530b86d25346b9732a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new map of hints with the same content than this map.  <a href="#a483fc9c0fc36be530b86d25346b9732a">More...</a><br /></td></tr>
+<tr class="separator:a483fc9c0fc36be530b86d25346b9732a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the hints.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a443f6a165c782fa9006cab94348173cf"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a443f6a165c782fa9006cab94348173cf">getIntFromColor</a> (int r, int g, int b, int a)</td></tr>
-<tr class="memdesc:a443f6a165c782fa9006cab94348173cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an sRGB color with the specified red, green, blue, and alpha values in the range (0 - 255).  <a href="#a443f6a165c782fa9006cab94348173cf">More...</a><br /></td></tr>
-<tr class="separator:a443f6a165c782fa9006cab94348173cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1b8fc8a83c519214b447c6eaac4ae25"><td class="memItemLeft" align="right" valign="top">static double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ab1b8fc8a83c519214b447c6eaac4ae25">toDoubleValues</a> (final Color color, final int numBands)</td></tr>
-<tr class="memdesc:ab1b8fc8a83c519214b447c6eaac4ae25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color components in an array of.  <a href="#ab1b8fc8a83c519214b447c6eaac4ae25">More...</a><br /></td></tr>
-<tr class="separator:ab1b8fc8a83c519214b447c6eaac4ae25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed0f7564635753edb32e171e5c1a83f"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aaed0f7564635753edb32e171e5c1a83f">toString</a> (final Color color)</td></tr>
-<tr class="memdesc:aaed0f7564635753edb32e171e5c1a83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the given color.  <a href="#aaed0f7564635753edb32e171e5c1a83f">More...</a><br /></td></tr>
-<tr class="separator:aaed0f7564635753edb32e171e5c1a83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a06e13f1cf2dbab0df28fc136b7d125"><td class="memItemLeft" align="right" valign="top">static Color []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a1a06e13f1cf2dbab0df28fc136b7d125">subarray</a> (final Color[] palette, int lower, int upper)</td></tr>
-<tr class="memdesc:a1a06e13f1cf2dbab0df28fc136b7d125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a subarray of the specified color array.  <a href="#a1a06e13f1cf2dbab0df28fc136b7d125">More...</a><br /></td></tr>
-<tr class="separator:a1a06e13f1cf2dbab0df28fc136b7d125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9e46de22f27977792797cff1630a31"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aac9e46de22f27977792797cff1630a31">expand</a> (final Color[] colors, final int[] ARGB, final int lower, final int upper)</td></tr>
-<tr class="memdesc:aac9e46de22f27977792797cff1630a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies.  <a href="#aac9e46de22f27977792797cff1630a31">More...</a><br /></td></tr>
-<tr class="separator:aac9e46de22f27977792797cff1630a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e133c9af7712212427e87490c30cf5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a83e133c9af7712212427e87490c30cf5">roundByte</a> (final double value)</td></tr>
-<tr class="memdesc:a83e133c9af7712212427e87490c30cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds a float value and clamp the result between 0 and 255 inclusive.  <a href="#a83e133c9af7712212427e87490c30cf5">More...</a><br /></td></tr>
-<tr class="separator:a83e133c9af7712212427e87490c30cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec515b69d6b1532bedb39af03e20bbf"><td class="memItemLeft" align="right" valign="top">static IndexColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aeec515b69d6b1532bedb39af03e20bbf">getIndexColorModel</a> (final int[] ARGB)</td></tr>
-<tr class="memdesc:aeec515b69d6b1532bedb39af03e20bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an index color model for specified ARGB codes.  <a href="#aeec515b69d6b1532bedb39af03e20bbf">More...</a><br /></td></tr>
-<tr class="separator:aeec515b69d6b1532bedb39af03e20bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d0c88891a3fbba30f9758346312afb"><td class="memItemLeft" align="right" valign="top">static float []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">XYZtoLAB</a> (final float[] color)</td></tr>
-<tr class="memdesc:a54d0c88891a3fbba30f9758346312afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a color from XYZ color space to LAB.  <a href="#a54d0c88891a3fbba30f9758346312afb">More...</a><br /></td></tr>
-<tr class="separator:a54d0c88891a3fbba30f9758346312afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4e16532ab6c489a944fe093d32a640"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aff4e16532ab6c489a944fe093d32a640">colorDistance</a> (final float[] lab1, final float[] lab2)</td></tr>
-<tr class="memdesc:aff4e16532ab6c489a944fe093d32a640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the distance E (CIE 1994) between two colors in LAB color space.  <a href="#aff4e16532ab6c489a944fe093d32a640">More...</a><br /></td></tr>
-<tr class="separator:aff4e16532ab6c489a944fe093d32a640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234a98a4c3c4c0ecfe3cc9c24edda621"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a234a98a4c3c4c0ecfe3cc9c24edda621">getTransparentPixel</a> (final IndexColorModel colors)</td></tr>
-<tr class="memdesc:a234a98a4c3c4c0ecfe3cc9c24edda621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most transparent pixel in the specified color model.  <a href="#a234a98a4c3c4c0ecfe3cc9c24edda621">More...</a><br /></td></tr>
-<tr class="separator:a234a98a4c3c4c0ecfe3cc9c24edda621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af843a53faa09bbe8112ca88a1975a504"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#af843a53faa09bbe8112ca88a1975a504">getColorIndex</a> (final IndexColorModel colors, final Color color, final int exclude)</td></tr>
-<tr class="memdesc:af843a53faa09bbe8112ca88a1975a504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the specified color, excluding the specified one.  <a href="#af843a53faa09bbe8112ca88a1975a504">More...</a><br /></td></tr>
-<tr class="separator:af843a53faa09bbe8112ca88a1975a504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74e87adcdda73f8f117345e39fef986"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ad74e87adcdda73f8f117345e39fef986">isGrayPalette</a> (final IndexColorModel model, boolean ignoreTransparents)</td></tr>
-<tr class="memdesc:ad74e87adcdda73f8f117345e39fef986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if a specific <a class="el" href="">IndexColorModel</a> contains only gray color, ignoring alpha information.  <a href="#ad74e87adcdda73f8f117345e39fef986">More...</a><br /></td></tr>
-<tr class="separator:ad74e87adcdda73f8f117345e39fef986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04606063d16a44e2233fa90436a7a0e3"><td class="memItemLeft" align="right" valign="top">static Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a04606063d16a44e2233fa90436a7a0e3">getSystemDefault</a> (final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:a04606063d16a44e2233fa90436a7a0e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the system-wide default value for the given key.  <a href="#a04606063d16a44e2233fa90436a7a0e3">More...</a><br /></td></tr>
+<tr class="separator:a04606063d16a44e2233fa90436a7a0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37d0ceef8e21fa3645dd7ffc40d0a68"><td class="memItemLeft" align="right" valign="top">static Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ad37d0ceef8e21fa3645dd7ffc40d0a68">putSystemDefault</a> (final RenderingHints.Key key, final Object value)</td></tr>
+<tr class="memdesc:ad37d0ceef8e21fa3645dd7ffc40d0a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds or modifies a system-wide default value.  <a href="#ad37d0ceef8e21fa3645dd7ffc40d0a68">More...</a><br /></td></tr>
+<tr class="separator:ad37d0ceef8e21fa3645dd7ffc40d0a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbaf7bf7567ea01bdf6df3bdd831c8b"><td class="memItemLeft" align="right" valign="top">static Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a9cbaf7bf7567ea01bdf6df3bdd831c8b">removeSystemDefault</a> (final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:a9cbaf7bf7567ea01bdf6df3bdd831c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the specified hints from the set of system default values.  <a href="#a9cbaf7bf7567ea01bdf6df3bdd831c8b">More...</a><br /></td></tr>
+<tr class="separator:a9cbaf7bf7567ea01bdf6df3bdd831c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:afba35bdad0d4917767fd4641d9e4345b"><td class="memItemLeft" align="right" valign="top">static final IndexColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#afba35bdad0d4917767fd4641d9e4345b">BINARY_COLOR_MODEL</a></td></tr>
-<tr class="memdesc:afba35bdad0d4917767fd4641d9e4345b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An index color model having only two colors, black and white.  <a href="#afba35bdad0d4917767fd4641d9e4345b">More...</a><br /></td></tr>
-<tr class="separator:afba35bdad0d4917767fd4641d9e4345b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832590bc44c0f090972110b6ef5eeb84"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a832590bc44c0f090972110b6ef5eeb84">NAME_FACTORY</a></td></tr>
+<tr class="separator:a832590bc44c0f090972110b6ef5eeb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8a1df36acb45d58456e54cffea2242"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a2d8a1df36acb45d58456e54cffea2242">CITATION_FACTORY</a></td></tr>
+<tr class="separator:a2d8a1df36acb45d58456e54cffea2242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba2ba6033438bc5e34f168c886d6416"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a8ba2ba6033438bc5e34f168c886d6416">CRS_AUTHORITY_FACTORY</a></td></tr>
+<tr class="separator:a8ba2ba6033438bc5e34f168c886d6416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19aa5745b1d5f0ca7630af9d09c2b7a5"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a19aa5745b1d5f0ca7630af9d09c2b7a5">CS_AUTHORITY_FACTORY</a></td></tr>
+<tr class="separator:a19aa5745b1d5f0ca7630af9d09c2b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6115970dbf0c26bea941cb0294a58ba7"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a6115970dbf0c26bea941cb0294a58ba7">DATUM_AUTHORITY_FACTORY</a></td></tr>
+<tr class="separator:a6115970dbf0c26bea941cb0294a58ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ee19f7731b5bd8e5a25e401944a1d4"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ab8ee19f7731b5bd8e5a25e401944a1d4">CRS_FACTORY</a></td></tr>
+<tr class="separator:ab8ee19f7731b5bd8e5a25e401944a1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefadd2b3a5548abdaa06b24eab0f2acf"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aefadd2b3a5548abdaa06b24eab0f2acf">CS_FACTORY</a></td></tr>
+<tr class="separator:aefadd2b3a5548abdaa06b24eab0f2acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b50188057470098a8ff0279a385f84"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a38b50188057470098a8ff0279a385f84">DATUM_FACTORY</a></td></tr>
+<tr class="separator:a38b50188057470098a8ff0279a385f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca934a66f3ac275de1ef9f608e51fa8"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#afca934a66f3ac275de1ef9f608e51fa8">COORDINATE_OPERATION_FACTORY</a></td></tr>
+<tr class="separator:afca934a66f3ac275de1ef9f608e51fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044c42e37da95557a66769f9cc5df247"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a044c42e37da95557a66769f9cc5df247">COORDINATE_OPERATION_AUTHORITY_FACTORY</a></td></tr>
+<tr class="separator:a044c42e37da95557a66769f9cc5df247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb1e84a86d8042a403e95c58de4cb6c"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aacb1e84a86d8042a403e95c58de4cb6c">MATH_TRANSFORM_FACTORY</a></td></tr>
+<tr class="separator:aacb1e84a86d8042a403e95c58de4cb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5236b8f2d04fa351b550de3000f18581"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a5236b8f2d04fa351b550de3000f18581">DEFAULT_COORDINATE_REFERENCE_SYSTEM</a></td></tr>
+<tr class="separator:a5236b8f2d04fa351b550de3000f18581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531348291897ed8a26ed107903ba3894"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06735.html">FileKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a531348291897ed8a26ed107903ba3894">CRS_AUTHORITY_EXTRA_DIRECTORY</a> = new <a class="el" href="a06735.html">FileKey</a>(false)</td></tr>
+<tr class="separator:a531348291897ed8a26ed107903ba3894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a7848f80fb79b44a84a13a78fffbe7"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a11a7848f80fb79b44a84a13a78fffbe7">EPSG_DATA_SOURCE</a> = new <a class="el" href="a06747.html">DataSourceKey</a>()</td></tr>
+<tr class="separator:a11a7848f80fb79b44a84a13a78fffbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3547961be5a7516ec104a4606482104"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06743.html">OptionKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ae3547961be5a7516ec104a4606482104">DATUM_SHIFT_METHOD</a></td></tr>
+<tr class="separator:ae3547961be5a7516ec104a4606482104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d1c1cee861c645df4de48775f552a5"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a37d1c1cee861c645df4de48775f552a5">LENIENT_DATUM_SHIFT</a> = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td></tr>
+<tr class="separator:a37d1c1cee861c645df4de48775f552a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448ad9c1b2e0733a698502db6fd2ff45"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a448ad9c1b2e0733a698502db6fd2ff45">FORCE_LONGITUDE_FIRST_AXIS_ORDER</a> = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td></tr>
+<tr class="separator:a448ad9c1b2e0733a698502db6fd2ff45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed66516ccb9d711217f7cc59e7e26a5"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a8ed66516ccb9d711217f7cc59e7e26a5">FORCE_AXIS_ORDER_HONORING</a> = new <a class="el" href="a06727.html">Key</a>(String.class)</td></tr>
+<tr class="separator:a8ed66516ccb9d711217f7cc59e7e26a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5a05d6aa565328eeaa9fc455b1565d"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a2d5a05d6aa565328eeaa9fc455b1565d">FORCE_STANDARD_AXIS_DIRECTIONS</a> = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td></tr>
+<tr class="separator:a2d5a05d6aa565328eeaa9fc455b1565d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5445011cd476a3813d8b6422b304b4d4"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a5445011cd476a3813d8b6422b304b4d4">FORCE_STANDARD_AXIS_UNITS</a> = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td></tr>
+<tr class="separator:a5445011cd476a3813d8b6422b304b4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abd0d5bf0aa51c73067d388bf70b609"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a4abd0d5bf0aa51c73067d388bf70b609">VERSION</a> = new <a class="el" href="a06727.html">Key</a>(&quot;org.apache.sis.util.Version&quot;)</td></tr>
+<tr class="separator:a4abd0d5bf0aa51c73067d388bf70b609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64843883aee934cf6e3d288b1cf22e2c"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a64843883aee934cf6e3d288b1cf22e2c">JAI_INSTANCE</a> = new <a class="el" href="a06727.html">Key</a>(&quot;javax.media.jai.JAI&quot;)</td></tr>
+<tr class="memdesc:a64843883aee934cf6e3d288b1cf22e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="">javax.media.jai.JAI</a> instance to use.  <a href="#a64843883aee934cf6e3d288b1cf22e2c">More...</a><br /></td></tr>
+<tr class="separator:a64843883aee934cf6e3d288b1cf22e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314e161a938120d245fbf44f70a1b8e2"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a314e161a938120d245fbf44f70a1b8e2">TILE_ENCODING</a> = new <a class="el" href="a06727.html">Key</a>(String.class)</td></tr>
+<tr class="separator:a314e161a938120d245fbf44f70a1b8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9991a1425664d6801949955444c14c"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#acd9991a1425664d6801949955444c14c">COVERAGE_PROCESSING_VIEW</a> = new <a class="el" href="a06727.html">Key</a>(&quot;org.geotoolkit.coverage.grid.ViewType&quot;)</td></tr>
+<tr class="separator:acd9991a1425664d6801949955444c14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9609be55856bea6fbbc25683f5648f"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06727.html">Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a7d9609be55856bea6fbbc25683f5648f">SAMPLE_DIMENSION_TYPE</a> = new <a class="el" href="a06727.html">Key</a>(&quot;org.geotoolkit.coverage.SampleDimensionType&quot;)</td></tr>
+<tr class="separator:a7d9609be55856bea6fbbc25683f5648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f319844144d03166ad3538bf4dd5c8"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#af3f319844144d03166ad3538bf4dd5c8">TEMPORAL_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.temporal.TemporalFactory&quot;)</td></tr>
+<tr class="separator:af3f319844144d03166ad3538bf4dd5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace65298acab4c302e6761ba5d86b022b"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ace65298acab4c302e6761ba5d86b022b">POSITION_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.PositionFactory&quot;)</td></tr>
+<tr class="separator:ace65298acab4c302e6761ba5d86b022b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43076591a9cd63d445ef3f135a0d5d66"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a43076591a9cd63d445ef3f135a0d5d66">PRIMITIVE_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.primitive.PrimitiveFactory&quot;)</td></tr>
+<tr class="separator:a43076591a9cd63d445ef3f135a0d5d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56072e98d6e58b971b179d4c5e33febf"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a56072e98d6e58b971b179d4c5e33febf">GEOMETRY_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.coordinate.GeometryFactory&quot;)</td></tr>
+<tr class="separator:a56072e98d6e58b971b179d4c5e33febf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6494aa4dc57a1efece04d395635c0c5c"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a6494aa4dc57a1efece04d395635c0c5c">COMPLEX_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.complex.ComplexFactory&quot;)</td></tr>
+<tr class="separator:a6494aa4dc57a1efece04d395635c0c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd5c1245fa1ac53a0fc19969c9618ca"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a8dd5c1245fa1ac53a0fc19969c9618ca">AGGREGATE_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.aggregate.AggregateFactory&quot;)</td></tr>
+<tr class="separator:a8dd5c1245fa1ac53a0fc19969c9618ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8e95445ad3e15d6e5900dbf86ea51a"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a2d8e95445ad3e15d6e5900dbf86ea51a">FEATURE_TYPE_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.geotoolkit.feature.type.FeatureTypeFactory&quot;)</td></tr>
+<tr class="separator:a2d8e95445ad3e15d6e5900dbf86ea51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460d1249e2e0e8134f26d0d914fb89dc"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a460d1249e2e0e8134f26d0d914fb89dc">FEATURE_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.geotoolkit.feature.FeatureFactory&quot;)</td></tr>
+<tr class="separator:a460d1249e2e0e8134f26d0d914fb89dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c99f3470f2bb1fa064bdcdee9709233"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a3c99f3470f2bb1fa064bdcdee9709233">FILTER_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.filter.FilterFactory&quot;)</td></tr>
+<tr class="separator:a3c99f3470f2bb1fa064bdcdee9709233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f5b1846cdd119a9ecca417bc7de18a"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="a06731.html">ClassKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a82f5b1846cdd119a9ecca417bc7de18a">STYLE_FACTORY</a> = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.style.StyleFactory&quot;)</td></tr>
+<tr class="separator:a82f5b1846cdd119a9ecca417bc7de18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aab83f4420fa3351e8e72aef5dcd831a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aab83f4420fa3351e8e72aef5dcd831a1">ColorUtilities</a> ()</td></tr>
-<tr class="memdesc:aab83f4420fa3351e8e72aef5dcd831a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow creation of instances of this class.  <a href="#aab83f4420fa3351e8e72aef5dcd831a1">More...</a><br /></td></tr>
-<tr class="separator:aab83f4420fa3351e8e72aef5dcd831a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a6db6768b9e543f822c3f09510d910d6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a6db6768b9e543f822c3f09510d910d6a">Hints</a> (final boolean dummy)</td></tr>
+<tr class="memdesc:a6db6768b9e543f822c3f09510d910d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty set of hints.  <a href="#a6db6768b9e543f822c3f09510d910d6a">More...</a><br /></td></tr>
+<tr class="separator:a6db6768b9e543f822c3f09510d910d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:aa012f2e25a618f201ab6db67ca003136"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aa012f2e25a618f201ab6db67ca003136">nameOf</a> (final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:aa012f2e25a618f201ab6db67ca003136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to find the name of the given key, using reflection.  <a href="#aa012f2e25a618f201ab6db67ca003136">More...</a><br /></td></tr>
+<tr class="separator:aa012f2e25a618f201ab6db67ca003136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61f438663575624534e39e95e9e70c0"><td class="memItemLeft" align="right" valign="top">static Field&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ae61f438663575624534e39e95e9e70c0">fieldOf</a> (final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:ae61f438663575624534e39e95e9e70c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to find the field of the given key, using reflection.  <a href="#ae61f438663575624534e39e95e9e70c0">More...</a><br /></td></tr>
+<tr class="separator:ae61f438663575624534e39e95e9e70c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3c2b792e8eb278eecd5e1e8e3353a56e"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a3c2b792e8eb278eecd5e1e8e3353a56e">toString</a> (final Map&lt;?,?&gt; hints)</td></tr>
+<tr class="memdesc:a3c2b792e8eb278eecd5e1e8e3353a56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the specified hints.  <a href="#a3c2b792e8eb278eecd5e1e8e3353a56e">More...</a><br /></td></tr>
+<tr class="separator:a3c2b792e8eb278eecd5e1e8e3353a56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cae7a5441f7f9f364592cadb94e81e5"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a0cae7a5441f7f9f364592cadb94e81e5">format</a> (final Map&lt;?,?&gt; hints)</td></tr>
+<tr class="memdesc:a0cae7a5441f7f9f364592cadb94e81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the specified hints.  <a href="#a0cae7a5441f7f9f364592cadb94e81e5">More...</a><br /></td></tr>
+<tr class="separator:a0cae7a5441f7f9f364592cadb94e81e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d8c345546b158b87936b9d8a81d48c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aa0d8c345546b158b87936b9d8a81d48c">format</a> (final TableAppender table, final Map&lt;?,?&gt; hints, final String indent)  throws IOException </td></tr>
+<tr class="memdesc:aa0d8c345546b158b87936b9d8a81d48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats recursively the tree.  <a href="#aa0d8c345546b158b87936b9d8a81d48c">More...</a><br /></td></tr>
+<tr class="separator:aa0d8c345546b158b87936b9d8a81d48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae89f8987334a3e14c4eb4fa51b0f62c"><td class="memItemLeft" align="right" valign="top">static Class&lt;?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#aae89f8987334a3e14c4eb4fa51b0f62c">getEnclosingClass</a> (final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:aae89f8987334a3e14c4eb4fa51b0f62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the enclosing class of the given key, or.  <a href="#aae89f8987334a3e14c4eb4fa51b0f62c">More...</a><br /></td></tr>
+<tr class="separator:aae89f8987334a3e14c4eb4fa51b0f62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcac9bcb6e19ca58bff5eab419d35695"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#abcac9bcb6e19ca58bff5eab419d35695">nameOf</a> (final Class&lt;?&gt; type, final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:abcac9bcb6e19ca58bff5eab419d35695"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given key is declared in the given class, returns its name.  <a href="#abcac9bcb6e19ca58bff5eab419d35695">More...</a><br /></td></tr>
+<tr class="separator:abcac9bcb6e19ca58bff5eab419d35695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c35b0149c5f1f169532380102a4b37"><td class="memItemLeft" align="right" valign="top">static Field&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#a26c35b0149c5f1f169532380102a4b37">fieldOf</a> (final Class&lt;?&gt; type, final RenderingHints.Key key)</td></tr>
+<tr class="memdesc:a26c35b0149c5f1f169532380102a4b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given key is declared in the given class, returns its field.  <a href="#a26c35b0149c5f1f169532380102a4b37">More...</a><br /></td></tr>
+<tr class="separator:a26c35b0149c5f1f169532380102a4b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ae93d0e013e76904bb599a7b75cd2145d"><td class="memItemLeft" align="right" valign="top">static final Map&lt; RenderingHints.Key, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">GLOBAL</a> = new ConcurrentHashMap&lt;&gt;(8, 0.75f, 1)</td></tr>
+<tr class="memdesc:ae93d0e013e76904bb599a7b75cd2145d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of system-wide hints to use by default.  <a href="#ae93d0e013e76904bb599a7b75cd2145d">More...</a><br /></td></tr>
+<tr class="separator:ae93d0e013e76904bb599a7b75cd2145d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of static methods for handling of colors informations. </p>
-<p>Some of those methods are useful, but not really rigorous. This is why they do not appear in any "official" package, but instead in this private one. </p><pre class="fragment">                 &lt;strong&gt;Do not rely on this API!&lt;/strong&gt;
-</pre><p>It may change in incompatible way in any future version.</p>
+<div class="textblock"><p>A set of hints providing control on factories to be used. </p>
+<p>They provides a way to control low-level details. When hints are used in conjunction with  FactoryRegistry factory registry} (the Geotk service discovery mechanism), we have the complete Geotk plugin system. By using hints to allow application code to effect service discovery, we allow client code to retarget the Geotk library for their needs. </p>
+<p>The following example fetch a  CoordinateOperationFactory coordinate operation factory} which is tolerant to the lack of Bursa-Wolf parameters:</p>
+<p>{ java <a class="el" href="a06723.html" title="A set of hints providing control on factories to be used. ">Hints</a> hints = new <a class="el" href="a06723.html" title="A set of hints providing control on factories to be used. ">Hints</a>(<a class="el" href="a06723.html#a37d1c1cee861c645df4de48775f552a5">Hints.LENIENT_DATUM_SHIFT</a>, Boolean.TRUE); CoordinateOperationFactory factory = FactoryFinder.getCoordinateOperationFactory(hints); }</p>
+<p><a class="el" href="a06723.html" title="A set of hints providing control on factories to be used. ">Hints</a> may be ignored if they do not apply to the object to be instantiated.</p>
 <dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd>
 <dd>
-Simone Giannecchini (Geosolutions)</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.2  </dd></dl>
+Jody Garnett (Refractions) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.18</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Factory </dd>
+<dd>
+FactoryRegistry</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aab83f4420fa3351e8e72aef5dcd831a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab83f4420fa3351e8e72aef5dcd831a1">&#9670;&nbsp;</a></span>ColorUtilities()</h2>
+<a id="a6db6768b9e543f822c3f09510d910d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db6768b9e543f822c3f09510d910d6a">&#9670;&nbsp;</a></span>Hints() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,197 +299,292 @@ Simone Giannecchini (Geosolutions)</dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06723.html">ColorUtilities</a> </td>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
+          <td>(</td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>dummy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an empty set of hints. </p>
+<p>This constructor is for <a class="el" href="a06707.html">EmptyHints</a> usage only. All public constructors are expected to create hints initialized to the system-wide default. If an empty set of hints is really needed, use <a class="el" href="a06707.html#a483fc9c0fc36be530b86d25346b9732a">EmptyHints#clone()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dummy</td><td>Ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                               {</div><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        super(null);</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3df9bf00c1185101eeec258b75c3515d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df9bf00c1185101eeec258b75c3515d">&#9670;&nbsp;</a></span>Hints() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Do not allow creation of instances of this class. </p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                             {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div></div><!-- fragment -->
+<p>Constructs a map of hints initialized with the system-wide default values. </p>
+<p>The default values are those that were given to <a class="el" href="a06723.html#ad37d0ceef8e21fa3645dd7ffc40d0a68">putSystemDefault</a> and not yet removed with <a class="el" href="a06723.html#a9cbaf7bf7567ea01bdf6df3bdd831c8b">removeSystemDefault</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06707.html#a483fc9c0fc36be530b86d25346b9732a">EmptyHints.clone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                   {</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        super(<a class="code" href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">GLOBAL</a>);</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    }</div><div class="ttc" id="a06723_html_ae93d0e013e76904bb599a7b75cd2145d"><div class="ttname"><a href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">org.geotoolkit.factory.Hints.GLOBAL</a></div><div class="ttdeci">static final Map&lt; RenderingHints.Key, Object &gt; GLOBAL</div><div class="ttdoc">A set of system-wide hints to use by default. </div><div class="ttdef"><b>Definition:</b> Hints.java:91</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afd81c12b938c016b91893d22636f843e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd81c12b938c016b91893d22636f843e">&#9670;&nbsp;</a></span>Hints() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new map of hints with the specified key/value pair. </p>
+<p>First, an initial map is created as with the  <a class="el" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d" title="Constructs a map of hints initialized with the system-wide default values. ">Hints()</a> no-argument constructor}. This map may not be empty. Then, the given key-value pair is added. If a default value was present for the given key, then the given value replaces the default one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the particular hint property. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the hint property specified with<div class="fragment"><div class="line">key </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                                                                   {</div><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        <span class="comment">// Don&#39;t use &#39;super(key,value)&#39; because it doesn&#39;t check validity.</span></div><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <span class="keyword">this</span>();</div><div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        put(key, value);</div><div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a09a6f5c8fab0317ee290d1ca2594c9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a6f5c8fab0317ee290d1ca2594c9fe">&#9670;&nbsp;</a></span>Hints() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>value1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>value2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new map of hints with two key/value pairs. </p>
+<p>First, an initial map is created as with the  <a class="el" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d" title="Constructs a map of hints initialized with the system-wide default values. ">Hints()</a> no-argument constructor}. This map may not be empty. Then, the given key-value pairs are added. If a default value was present for a given key, then the given value replaces the default one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key1</td><td>The key for the first pair. </td></tr>
+    <tr><td class="paramname">value1</td><td>The value for the first pair. </td></tr>
+    <tr><td class="paramname">key2</td><td>The key2 for the second pair. </td></tr>
+    <tr><td class="paramname">value2</td><td>The value2 for the second pair.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.4 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    {</div><div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <span class="keyword">this</span>(key1, value1);</div><div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        put (key2, value2);</div><div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae704c41e3d4f0aabe80783c43b8f5b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae704c41e3d4f0aabe80783c43b8f5b0e">&#9670;&nbsp;</a></span>Hints() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>value1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>value2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object...&#160;</td>
+          <td class="paramname"><em>pairs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new map of hints from key/value pairs. </p>
+<p>First, an initial map is created as with the  <a class="el" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d" title="Constructs a map of hints initialized with the system-wide default values. ">Hints()</a> no-argument constructor}. This map may not be empty. Then, the given key-value pairs are added. If a default value was present for a given key, then the given value replaces the default one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key1</td><td>The key for the first pair. </td></tr>
+    <tr><td class="paramname">value1</td><td>The value for the first pair. </td></tr>
+    <tr><td class="paramname">key2</td><td>The key2 for the second pair. </td></tr>
+    <tr><td class="paramname">value2</td><td>The value2 for the second pair. </td></tr>
+    <tr><td class="paramname">pairs</td><td>Additional pairs of keys and values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.4 </dd></dl>
+
+<p class="reference">References <a class="el" href="a07779.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07783.html#a4ce20634643647b99d78ac6c586b815e">Errors.Keys.OddArrayLength_1</a>.</p>
+<div class="fragment"><div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    {</div><div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keyword">this</span>(key1, value1, key2, value2);</div><div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        <span class="keywordflow">if</span> ((pairs.length &amp; 1) != 0) {</div><div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                    Errors.Keys.OddArrayLength_1, pairs.length));</div><div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        }</div><div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;pairs.length;) {</div><div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            put(pairs[i++], pairs[i++]);</div><div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        }</div><div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    }</div><div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adeb5760d7505d96a116faaa19dee0403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb5760d7505d96a116faaa19dee0403">&#9670;&nbsp;</a></span>Hints() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
+          <td>(</td>
+          <td class="paramtype">final Map&lt;? extends RenderingHints.Key, ?&gt;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new object with keys and values from the given map (which may be null). </p>
+<p>First, an initial map is created as with the  <a class="el" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d" title="Constructs a map of hints initialized with the system-wide default values. ">Hints()</a> no-argument constructor}. This map may not be empty. Then, the given key-value pairs are added. If a default value was presents for a given key, then the given value replace the default one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hints</td><td>A map of key/value pairs to initialize the hints, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                                                                   {</div><div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        <span class="keyword">this</span>();</div><div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="keywordflow">if</span> (hints != null) {</div><div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            putAll(hints);</div><div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        }</div><div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac5c7cf4eeb6e84ccc38d30dadfba92a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c7cf4eeb6e84ccc38d30dadfba92a6">&#9670;&nbsp;</a></span>Hints() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new object with keys and values from the given map (which may be null). </p>
+<p>First, an initial map is created as with the  <a class="el" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d" title="Constructs a map of hints initialized with the system-wide default values. ">Hints()</a> no-argument constructor}. This map may not be empty. Then, the given key-value pairs are added. If a default value was presents for a given key, then the given value replace the default one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hints</td><td>A map of key/value pairs to initialize the hints, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                                             {</div><div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keyword">this</span>();</div><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        <span class="keywordflow">if</span> (hints != null) {</div><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            putAll(hints);</div><div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        }</div><div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aff4e16532ab6c489a944fe093d32a640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff4e16532ab6c489a944fe093d32a640">&#9670;&nbsp;</a></span>colorDistance()</h2>
+<a id="a483fc9c0fc36be530b86d25346b9732a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483fc9c0fc36be530b86d25346b9732a">&#9670;&nbsp;</a></span>clone()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float colorDistance </td>
+          <td class="memname"><a class="el" href="a06723.html">Hints</a> clone </td>
           <td>(</td>
-          <td class="paramtype">final float []&#160;</td>
-          <td class="paramname"><em>lab1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">final float []&#160;</td>
-          <td class="paramname"><em>lab2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Computes the distance E (CIE 1994) between two colors in LAB color space. </p>
-<p>Reference: <a href="http://www.brucelindbloom.com/index.html?ColorDifferenceCalc.html">http://www.brucelindbloom.com/index.html?ColorDifferenceCalc.html</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lab1</td><td>The first LAB color. </td></tr>
-    <tr><td class="paramname">lab2</td><td>The second LAB color. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The CIE94 distance between the two supplied colors. </dd></dl>
+<p>Returns a new map of hints with the same content than this map. </p>
+<dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a06723.html#af843a53faa09bbe8112ca88a1975a504">ColorUtilities.getColorIndex()</a>, and <a class="el" href="a06723.html#a234a98a4c3c4c0ecfe3cc9c24edda621">ColorUtilities.getTransparentPixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                                                              {</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordtype">double</span> sum;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">false</span>) {</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="comment">// Computes distance using CIE94 formula.</span></div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="comment">// NOTE: this formula sometime fails because of negative</span></div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="comment">//       value in the first Math.sqrt(...) expression.</span></div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> dL = (double) lab1[0] - lab2[0];</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> da = (double) lab1[1] - lab2[1];</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> db = (double) lab1[2] - lab2[2];</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> C1 = Math.hypot(lab1[1], lab1[2]);</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> C2 = Math.hypot(lab2[1], lab2[2]);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> dC = C1 - C2;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> dH = Math.sqrt(da*da + db*db - dC*dC);</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> sL = dL / 2;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> sC = dC / (1 + 0.048*C1);</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> sH = dH / (1 + 0.014*C1);</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            sum = sL*sL + sC*sC + sH*sH;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="comment">// Computes distance using delta E formula.</span></div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            sum = 0;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=Math.min(lab1.length, lab2.length); --i&gt;=0;) {</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> delta = lab1[i] - lab2[i];</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                sum += delta*delta;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            }</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">float</span>) Math.sqrt(sum);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="aac9e46de22f27977792797cff1630a31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac9e46de22f27977792797cff1630a31">&#9670;&nbsp;</a></span>expand()</h2>
+<p class="reference">References <a class="el" href="a06723.html#a483fc9c0fc36be530b86d25346b9732a">Hints.clone()</a>.</p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void expand </td>
-          <td>(</td>
-          <td class="paramtype">final Color []&#160;</td>
-          <td class="paramname"><em>colors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int []&#160;</td>
-          <td class="paramname"><em>ARGB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>lower</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>upper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copies. </p>
-<div class="fragment"><div class="line">colors </div></div><!-- fragment --><p> into array</p><div class="fragment"><div class="line">ARGB </div></div><!-- fragment --><p> from index</p><div class="fragment"><div class="line">lower </div></div><!-- fragment --><p> inclusive to index</p><div class="fragment"><div class="line">upper </div></div><!-- fragment --><p> exclusive. If</p><div class="fragment"><div class="line">upper-lower </div></div><!-- fragment --><p> is not equal to the length of</p><div class="fragment"><div class="line">colors </div></div><!-- fragment --><p> array, then colors will be interpolated.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">colors</td><td>Colors to copy into the<div class="fragment"><div class="line">ARGB </div></div><!-- fragment --> array. </td></tr>
-    <tr><td class="paramname">ARGB</td><td>Array of integer to write ARGB values to. </td></tr>
-    <tr><td class="paramname">lower</td><td>Index (inclusive) of the first element of<div class="fragment"><div class="line">ARGB </div></div><!-- fragment --> to change. </td></tr>
-    <tr><td class="paramname">upper</td><td>Index (exclusive) of the last element of<div class="fragment"><div class="line">ARGB </div></div><!-- fragment --> to change. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="a06943.html#aa8498ab514905767badc50bbb1adbf23">IndexedPalette.createARGB()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                                                                                        {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span>[] codes = <span class="keyword">new</span> <span class="keywordtype">int</span>[colors.length];</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;codes.length; i++) {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            codes[i] = colors[i].getRGB();      <span class="comment">// Note: getRGB() is really getARGB().</span></div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        ColorModelFactory.expand(codes, ARGB, lower, upper);</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="af843a53faa09bbe8112ca88a1975a504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af843a53faa09bbe8112ca88a1975a504">&#9670;&nbsp;</a></span>getColorIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int getColorIndex </td>
-          <td>(</td>
-          <td class="paramtype">final IndexColorModel&#160;</td>
-          <td class="paramname"><em>colors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Color&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>exclude</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the index of the specified color, excluding the specified one. </p>
-<p>If the color is not explicitly found, a close color is returned. This method never returns a negative value (0 is returned if the color model has no colors).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">colors</td><td>The color model in which to look for a color index. </td></tr>
-    <tr><td class="paramname">color</td><td>The color to search for. </td></tr>
-    <tr><td class="paramname">exclude</td><td>An index to exclude from the search (usually the background or the  <a class="el" href="a06723.html#a234a98a4c3c4c0ecfe3cc9c24edda621" title="Returns the most transparent pixel in the specified color model. ">getTransparentPixel</a> transparent} pixel), or -1 if none. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The index of the color, or 0. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06723.html#aff4e16532ab6c489a944fe093d32a640">ColorUtilities.colorDistance()</a>, and <a class="el" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">ColorUtilities.XYZtoLAB()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06727.html#a5b0b8dd0eb7893a07022c0870a71ed57">DeferredPlanarImage.getDefaultDataBuffer()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    {</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keyword">final</span> ColorSpace space = colors.getColorSpace();</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span>[] RGB = {</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            color.getRed()   / 255f,</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            color.getGreen() / 255f,</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            color.getBlue()  / 255f</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        };</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span>[] REF = <a class="code" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">XYZtoLAB</a>(space.toCIEXYZ(RGB));</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordtype">float</span> delta = Float.POSITIVE_INFINITY;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordtype">int</span> index = 0;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        assert REF != RGB;</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=colors.getMapSize(); --i&gt;=0;) {</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">if</span> (i != exclude) {</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                RGB[0] = colors.getRed  (i) / 255f;</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                RGB[1] = colors.getGreen(i) / 255f;</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                RGB[2] = colors.getBlue (i) / 255f;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">float</span> d = <a class="code" href="a06723.html#aff4e16532ab6c489a944fe093d32a640">colorDistance</a>(<a class="code" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">XYZtoLAB</a>(space.toCIEXYZ(RGB)), REF);</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                assert d &gt;= 0 : i; <span class="comment">// Check mostly for NaN value</span></div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keywordflow">if</span> (d &lt;= delta) {</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    delta = d;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                    index = i;</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                }</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            }</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">return</span> index;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div><div class="ttc" id="a06723_html_a54d0c88891a3fbba30f9758346312afb"><div class="ttname"><a href="a06723.html#a54d0c88891a3fbba30f9758346312afb">org.geotoolkit.image.color.ColorUtilities.XYZtoLAB</a></div><div class="ttdeci">static float [] XYZtoLAB(final float[] color)</div><div class="ttdoc">Transforms a color from XYZ color space to LAB. </div><div class="ttdef"><b>Definition:</b> ColorUtilities.java:209</div></div>
-<div class="ttc" id="a06723_html_aff4e16532ab6c489a944fe093d32a640"><div class="ttname"><a href="a06723.html#aff4e16532ab6c489a944fe093d32a640">org.geotoolkit.image.color.ColorUtilities.colorDistance</a></div><div class="ttdeci">static float colorDistance(final float[] lab1, final float[] lab2)</div><div class="ttdoc">Computes the distance E (CIE 1994) between two colors in LAB color space. </div><div class="ttdef"><b>Definition:</b> ColorUtilities.java:236</div></div>
+<p class="reference">Referenced by <a class="el" href="a06723.html#a483fc9c0fc36be530b86d25346b9732a">Hints.clone()</a>, <a class="el" href="a07559.html#ad335941d1ea62ae72330182243c96810">ReferencingFactoryContainer.getCurrentHints()</a>, and <a class="el" href="a07559.html#aece45c41f59e9c9bdb73ded3ce916346">ReferencingFactoryContainer.ReferencingFactoryContainer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                         {</div><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a>) super.clone();</div><div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    }</div><div class="ttc" id="a06723_html_a3df9bf00c1185101eeec258b75c3515d"><div class="ttname"><a href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">org.geotoolkit.factory.Hints.Hints</a></div><div class="ttdeci">Hints()</div><div class="ttdoc">Constructs a map of hints initialized with the system-wide default values. </div><div class="ttdef"><b>Definition:</b> Hints.java:627</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aeec515b69d6b1532bedb39af03e20bbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeec515b69d6b1532bedb39af03e20bbf">&#9670;&nbsp;</a></span>getIndexColorModel()</h2>
+<a id="ae61f438663575624534e39e95e9e70c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61f438663575624534e39e95e9e70c0">&#9670;&nbsp;</a></span>fieldOf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,136 +593,48 @@ Simone Giannecchini (Geosolutions)</dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static IndexColorModel getIndexColorModel </td>
+          <td class="memname">static Field fieldOf </td>
           <td>(</td>
-          <td class="paramtype">final int []&#160;</td>
-          <td class="paramname"><em>ARGB</em></td><td>)</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an index color model for specified ARGB codes. </p>
-<p>If the specified array has not transparent color (i.e. all alpha values are 255), then the returned color model will be opaque. Otherwise, if the specified array has one and only one color with alpha value of 0, the returned color model will have only this transparent color. Otherwise, the returned color model will be translucent.</p>
+<p>Tries to find the field of the given key, using reflection. </p>
+<p>This method searches for a constant declared in the enclosing class, which is typically one of: </p>
+<ul>
+<li>
+<div class="fragment"><div class="line"><a class="code" href="a03806.html">org</a>.<a class="code" href="a03815.html">geotoolkit</a>.<a class="code" href="a03819.html">factory</a>.<a class="code" href="a06723.html">Hints</a> </div></div><!-- fragment --> (this class) </li>
+<li>
+<div class="fragment"><div class="line">javax.media.jai.JAI </div></div><!-- fragment --> (assuming JAI is on the classpath) </li>
+<li>
+<div class="fragment"><div class="line">java.awt.RenderingHints </div></div><!-- fragment --> (actually sun.awt.SunHints at least on Sun JDK) </li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ARGB</td><td>An array of ARGB values. </td></tr>
+    <tr><td class="paramname">key</td><td>The key for which a field is wanted, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An index color model for the specified array. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                                                       {</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">return</span> ColorModelFactory.createIndexColorModel(ARGB, 1, 0, -1);</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a443f6a165c782fa9006cab94348173cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a443f6a165c782fa9006cab94348173cf">&#9670;&nbsp;</a></span>getIntFromColor()</h2>
+<dl class="section return"><dt>Returns</dt><dd>The key field as declared in the static constants. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int getIntFromColor </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="reference">References <a class="el" href="a06723.html#aae89f8987334a3e14c4eb4fa51b0f62c">Hints.getEnclosingClass()</a>.</p>
 
-<p>Creates an sRGB color with the specified red, green, blue, and alpha values in the range (0 - 255). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>the red component. </td></tr>
-    <tr><td class="paramname">g</td><td>the green component. </td></tr>
-    <tr><td class="paramname">b</td><td>the blue component. </td></tr>
-    <tr><td class="paramname">a</td><td>the alpha component. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The RGB color from the given components. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                  {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> ((a &amp; 0xFF) &lt;&lt; 24) |</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;               ((r &amp; 0xFF) &lt;&lt; 16) |</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;               ((g &amp; 0xFF) &lt;&lt;  8) |</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                (b &amp; 0xFF);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a234a98a4c3c4c0ecfe3cc9c24edda621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234a98a4c3c4c0ecfe3cc9c24edda621">&#9670;&nbsp;</a></span>getTransparentPixel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int getTransparentPixel </td>
-          <td>(</td>
-          <td class="paramtype">final IndexColorModel&#160;</td>
-          <td class="paramname"><em>colors</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the most transparent pixel in the specified color model. </p>
-<p>If many colors has the same alpha value, than the darkest one is returned. This method never returns a negative value (0 is returned if the color model has no colors).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">colors</td><td>The color model in which to look for a transparent color. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The index of a transparent color, or 0. </dd></dl>
-
-<p class="reference">References <a class="el" href="a06723.html#aff4e16532ab6c489a944fe093d32a640">ColorUtilities.colorDistance()</a>, and <a class="el" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">ColorUtilities.XYZtoLAB()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06727.html#a5b0b8dd0eb7893a07022c0870a71ed57">DeferredPlanarImage.getDefaultDataBuffer()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                                                        {</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">int</span> index = colors.getTransparentPixel();</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span> (index &lt; 0) {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            index = 0;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordtype">int</span>   alpha = Integer.MAX_VALUE;</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordtype">float</span> delta = Float.POSITIVE_INFINITY;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keyword">final</span> ColorSpace space = colors.getColorSpace();</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">float</span>[] RGB   = <span class="keyword">new</span> <span class="keywordtype">float</span>[3];</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">float</span>[] BLACK = <a class="code" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">XYZtoLAB</a>(space.toCIEXYZ(RGB)); <span class="comment">// Black in Lab color space.</span></div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            assert BLACK != RGB;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=colors.getMapSize(); --i&gt;=0;) {</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span> a = colors.getAlpha(i);</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">if</span> (a &lt;= alpha) {</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    RGB[0] = colors.getRed  (i)/255f;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    RGB[1] = colors.getGreen(i)/255f;</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    RGB[2] = colors.getBlue (i)/255f;</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">float</span> d = <a class="code" href="a06723.html#aff4e16532ab6c489a944fe093d32a640">colorDistance</a>(<a class="code" href="a06723.html#a54d0c88891a3fbba30f9758346312afb">XYZtoLAB</a>(space.toCIEXYZ(RGB)), BLACK);</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    assert d &gt;= 0 : i; <span class="comment">// Check mostly for NaN value</span></div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    <span class="keywordflow">if</span> (a&lt;alpha || d&lt;delta) {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                        alpha = a;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        delta = d;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                        index = i;</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                    }</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                }</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            }</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">return</span> index;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div><div class="ttc" id="a06723_html_a54d0c88891a3fbba30f9758346312afb"><div class="ttname"><a href="a06723.html#a54d0c88891a3fbba30f9758346312afb">org.geotoolkit.image.color.ColorUtilities.XYZtoLAB</a></div><div class="ttdeci">static float [] XYZtoLAB(final float[] color)</div><div class="ttdoc">Transforms a color from XYZ color space to LAB. </div><div class="ttdef"><b>Definition:</b> ColorUtilities.java:209</div></div>
-<div class="ttc" id="a06723_html_aff4e16532ab6c489a944fe093d32a640"><div class="ttname"><a href="a06723.html#aff4e16532ab6c489a944fe093d32a640">org.geotoolkit.image.color.ColorUtilities.colorDistance</a></div><div class="ttdeci">static float colorDistance(final float[] lab1, final float[] lab2)</div><div class="ttdoc">Computes the distance E (CIE 1994) between two colors in LAB color space. </div><div class="ttdef"><b>Definition:</b> ColorUtilities.java:236</div></div>
+<p class="reference">Referenced by <a class="el" href="a06723.html#aa012f2e25a618f201ab6db67ca003136">Hints.nameOf()</a>, and <a class="el" href="a06763.html#ab350a219614b4f7d13e7d59030fb6eac">SerializedKey.SerializedKey()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                                                       {</div><div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        Field field = null;</div><div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        <span class="keywordflow">if</span> (key != null) {</div><div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;            Class&lt;?&gt; c = <a class="code" href="a06723.html#aae89f8987334a3e14c4eb4fa51b0f62c">getEnclosingClass</a>(key);</div><div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            <span class="keywordflow">if</span> (c == null || (field = <a class="code" href="a06723.html#ae61f438663575624534e39e95e9e70c0">fieldOf</a>(c, key)) == null) {</div><div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                <span class="keywordflow">if</span> (key instanceof Key &amp;&amp; c != (c = ((Key) key).getValueClass())) {</div><div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                    field = <a class="code" href="a06723.html#ae61f438663575624534e39e95e9e70c0">fieldOf</a>(c, key);</div><div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                }</div><div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            }</div><div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        }</div><div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        <span class="keywordflow">return</span> field;</div><div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    }</div><div class="ttc" id="a06723_html_aae89f8987334a3e14c4eb4fa51b0f62c"><div class="ttname"><a href="a06723.html#aae89f8987334a3e14c4eb4fa51b0f62c">org.geotoolkit.factory.Hints.getEnclosingClass</a></div><div class="ttdeci">static Class&lt;?&gt; getEnclosingClass(final RenderingHints.Key key)</div><div class="ttdoc">Returns the enclosing class of the given key, or. </div><div class="ttdef"><b>Definition:</b> Hints.java:863</div></div>
+<div class="ttc" id="a06723_html_ae61f438663575624534e39e95e9e70c0"><div class="ttname"><a href="a06723.html#ae61f438663575624534e39e95e9e70c0">org.geotoolkit.factory.Hints.fieldOf</a></div><div class="ttdeci">static Field fieldOf(final RenderingHints.Key key)</div><div class="ttdoc">Tries to find the field of the given key, using reflection. </div><div class="ttdef"><b>Definition:</b> Hints.java:903</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad74e87adcdda73f8f117345e39fef986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad74e87adcdda73f8f117345e39fef986">&#9670;&nbsp;</a></span>isGrayPalette()</h2>
+<a id="a26c35b0149c5f1f169532380102a4b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c35b0149c5f1f169532380102a4b37">&#9670;&nbsp;</a></span>fieldOf() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,16 +643,287 @@ Simone Giannecchini (Geosolutions)</dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boolean isGrayPalette </td>
+          <td class="memname">static Field fieldOf </td>
           <td>(</td>
-          <td class="paramtype">final IndexColorModel&#160;</td>
-          <td class="paramname"><em>model</em>, </td>
+          <td class="paramtype">final Class&lt;?&gt;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>ignoreTransparents</em>&#160;</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the given key is declared in the given class, returns its field. </p>
+<p>Otherwise returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . </p>
+<div class="fragment"><div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                                                                                    {</div><div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;        <span class="keyword">final</span> Field[] fields = type.getFields();</div><div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;fields.length; i++) {</div><div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;            <span class="keyword">final</span> Field f = fields[i];</div><div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="comment">             * Note: to be strict, the line below should ensure that the field is final in</span></div><div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;<span class="comment">             * addition of static. Unfortunately the JAI static fields are not final in JAI 1.1.</span></div><div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;            <span class="keywordflow">if</span> (Modifier.isStatic(f.getModifiers())) {</div><div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                <span class="keyword">final</span> Object v;</div><div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                    v = f.get(null);</div><div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                } <span class="keywordflow">catch</span> (IllegalAccessException e) {</div><div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                    <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                }</div><div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                <span class="keywordflow">if</span> (v == key) {</div><div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                    <span class="keywordflow">return</span> f;</div><div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                }</div><div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;            }</div><div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        }</div><div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a0cae7a5441f7f9f364592cadb94e81e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cae7a5441f7f9f364592cadb94e81e5">&#9670;&nbsp;</a></span>format() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String format </td>
+          <td>(</td>
+          <td class="paramtype">final Map&lt;?,?&gt;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formats the specified hints. </p>
+<p>This method is just the starting point for <a class="el" href="">format(Writer, Map, String, Map)</a> below. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06723.html#a3c2b792e8eb278eecd5e1e8e3353a56e">Hints.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                                                       {</div><div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keyword">final</span> TableAppender table;</div><div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;            table = <span class="keyword">new</span> TableAppender(<span class="stringliteral">&quot; &quot;</span>);</div><div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            <a class="code" href="a06723.html#a0cae7a5441f7f9f364592cadb94e81e5">format</a>(table, hints, <span class="stringliteral">&quot;  &quot;</span>);</div><div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            <span class="comment">// Should never happen, since we are writing in a buffer.</span></div><div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> AssertionError(e);</div><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        }</div><div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="keywordflow">return</span> table.toString();</div><div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    }</div><div class="ttc" id="a06723_html_a0cae7a5441f7f9f364592cadb94e81e5"><div class="ttname"><a href="a06723.html#a0cae7a5441f7f9f364592cadb94e81e5">org.geotoolkit.factory.Hints.format</a></div><div class="ttdeci">static String format(final Map&lt;?,?&gt; hints)</div><div class="ttdoc">Formats the specified hints. </div><div class="ttdef"><b>Definition:</b> Hints.java:827</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa0d8c345546b158b87936b9d8a81d48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d8c345546b158b87936b9d8a81d48c">&#9670;&nbsp;</a></span>format() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void format </td>
+          <td>(</td>
+          <td class="paramtype">final TableAppender&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Map&lt;?,?&gt;&#160;</td>
+          <td class="paramname"><em>hints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>indent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formats recursively the tree. </p>
+<p>This method invoke itself. </p>
+
+<p class="reference">References <a class="el" href="a06723.html#aa012f2e25a618f201ab6db67ca003136">Hints.nameOf()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                                                                                                                        {</div><div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> Map.Entry&lt;?,?&gt; entry : hints.entrySet()) {</div><div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;            <span class="keyword">final</span> Object k = entry.getKey();</div><div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            String key = (k instanceof RenderingHints.Key) ?</div><div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                    <a class="code" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a>.nameOf((RenderingHints.Key) k) : String.valueOf(k);</div><div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            Object value = entry.getValue();</div><div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;            table.append(indent);</div><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            table.append(key);</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <span class="keywordtype">char</span> separator = <span class="charliteral">&#39;:&#39;</span>;</div><div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;            table.nextColumn();</div><div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;            table.append(separator);</div><div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            table.append(<span class="charliteral">&#39; &#39;</span>);</div><div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            table.append(String.valueOf(value));</div><div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;            table.nextLine();</div><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        }</div><div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    }</div><div class="ttc" id="a06723_html_a3df9bf00c1185101eeec258b75c3515d"><div class="ttname"><a href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">org.geotoolkit.factory.Hints.Hints</a></div><div class="ttdeci">Hints()</div><div class="ttdoc">Constructs a map of hints initialized with the system-wide default values. </div><div class="ttdef"><b>Definition:</b> Hints.java:627</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aae89f8987334a3e14c4eb4fa51b0f62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae89f8987334a3e14c4eb4fa51b0f62c">&#9670;&nbsp;</a></span>getEnclosingClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Class&lt;?&gt; getEnclosingClass </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the enclosing class of the given key, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. A special case is applied for</p><div class="fragment"><div class="line">sun.awt.SunHints </div></div><!-- fragment --><p> , which maps to <a class="el" href="">RenderingHints</a>. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06723.html#ae61f438663575624534e39e95e9e70c0">Hints.fieldOf()</a>, and <a class="el" href="a06727.html#ad146fa8579a5f8a876c4688cc5a68520">Hints.Key.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                                                                            {</div><div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        Class&lt;?&gt; c = key.getClass().getEnclosingClass();</div><div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">if</span> (c != null &amp;&amp; c.getName().startsWith(<span class="stringliteral">&quot;sun.&quot;</span>)) {</div><div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            c = RenderingHints.class;</div><div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        }</div><div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        <span class="keywordflow">return</span> c;</div><div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a04606063d16a44e2233fa90436a7a0e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04606063d16a44e2233fa90436a7a0e3">&#9670;&nbsp;</a></span>getSystemDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Object getSystemDefault </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the system-wide default value for the given key. </p>
+<p>The Geotk library initially contains no system default, so</p><div class="fragment"><div class="line"><a class="code" href="a06723.html#a04606063d16a44e2233fa90436a7a0e3">getSystemDefault</a>(key) </div></div><!-- fragment --><p> returns null for all keys. Users can add default values using <a class="el" href="a06723.html#ad37d0ceef8e21fa3645dd7ffc40d0a68">putSystemDefault</a>. </p>
+<p>To get a map of all system defaults, use</p><div class="fragment"><div class="line"><span class="keyword">new</span> <a class="code" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a>() </div></div><!-- fragment --><p> .</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The hints key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The system-wide default value for the given key, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if the key did not have a mapping.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.4 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                                                                        {</div><div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">GLOBAL</a>.get(key);</div><div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    }</div><div class="ttc" id="a06723_html_ae93d0e013e76904bb599a7b75cd2145d"><div class="ttname"><a href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">org.geotoolkit.factory.Hints.GLOBAL</a></div><div class="ttdeci">static final Map&lt; RenderingHints.Key, Object &gt; GLOBAL</div><div class="ttdoc">A set of system-wide hints to use by default. </div><div class="ttdef"><b>Definition:</b> Hints.java:91</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa012f2e25a618f201ab6db67ca003136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa012f2e25a618f201ab6db67ca003136">&#9670;&nbsp;</a></span>nameOf() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String nameOf </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tries to find the name of the given key, using reflection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key for which a name is wanted, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The key name as declared in the static constants. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06723.html#ae61f438663575624534e39e95e9e70c0">Hints.fieldOf()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06723.html#aa0d8c345546b158b87936b9d8a81d48c">Hints.format()</a>, <a class="el" href="a06723.html#ad37d0ceef8e21fa3645dd7ffc40d0a68">Hints.putSystemDefault()</a>, and <a class="el" href="a06727.html#ad146fa8579a5f8a876c4688cc5a68520">Hints.Key.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                                                       {</div><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <span class="keywordflow">if</span> (key == null) {</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        }</div><div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <span class="keywordflow">if</span> (!(key instanceof Key)) {</div><div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keyword">final</span> Field field = <a class="code" href="a06723.html#ae61f438663575624534e39e95e9e70c0">fieldOf</a>(key);</div><div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            <span class="keywordflow">if</span> (field != null) {</div><div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                <span class="keywordflow">return</span> field.getName();</div><div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            }</div><div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        }</div><div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        <span class="keywordflow">return</span> key.toString();</div><div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    }</div><div class="ttc" id="a06723_html_ae61f438663575624534e39e95e9e70c0"><div class="ttname"><a href="a06723.html#ae61f438663575624534e39e95e9e70c0">org.geotoolkit.factory.Hints.fieldOf</a></div><div class="ttdeci">static Field fieldOf(final RenderingHints.Key key)</div><div class="ttdoc">Tries to find the field of the given key, using reflection. </div><div class="ttdef"><b>Definition:</b> Hints.java:903</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abcac9bcb6e19ca58bff5eab419d35695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcac9bcb6e19ca58bff5eab419d35695">&#9670;&nbsp;</a></span>nameOf() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String nameOf </td>
+          <td>(</td>
+          <td class="paramtype">final Class&lt;?&gt;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the given key is declared in the given class, returns its name. </p>
+<p>Otherwise returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . </p>
+
+<p class="reference">References <a class="el" href="a06723.html#ae61f438663575624534e39e95e9e70c0">Hints.fieldOf()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                                                                                    {</div><div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        <span class="keyword">final</span> Field f = <a class="code" href="a06723.html#ae61f438663575624534e39e95e9e70c0">fieldOf</a>(type, key);</div><div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        <span class="keywordflow">return</span> (f != null) ? f.getName() : null;</div><div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    }</div><div class="ttc" id="a06723_html_ae61f438663575624534e39e95e9e70c0"><div class="ttname"><a href="a06723.html#ae61f438663575624534e39e95e9e70c0">org.geotoolkit.factory.Hints.fieldOf</a></div><div class="ttdeci">static Field fieldOf(final RenderingHints.Key key)</div><div class="ttdoc">Tries to find the field of the given key, using reflection. </div><div class="ttdef"><b>Definition:</b> Hints.java:903</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad37d0ceef8e21fa3645dd7ffc40d0a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37d0ceef8e21fa3645dd7ffc40d0a68">&#9670;&nbsp;</a></span>putSystemDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Object putSystemDefault </td>
+          <td>(</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -520,19 +938,35 @@ Simone Giannecchini (Geosolutions)</dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Tells if a specific <a class="el" href="">IndexColorModel</a> contains only gray color, ignoring alpha information. </p>
+<p>Adds or modifies a system-wide default value. </p>
+<div class="fragment"><div class="line"><a class="code" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a> </div></div><!-- fragment --><p> instances created after this method call will be initialized to the union of all values specified with </p><div class="fragment"><div class="line"><a class="code" href="a06723.html#ad37d0ceef8e21fa3645dd7ffc40d0a68">putSystemDefault</a> </div></div><!-- fragment --><p> and not yet  <a class="el" href="a06723.html#a9cbaf7bf7567ea01bdf6df3bdd831c8b" title="Removes the specified hints from the set of system default values. ">removeSystemDefault</a> removed}. </p>
+<p>If the given value is different than the previous one, then this method notifies every listeners registered with <a class="el" href="a06711.html#a83342b8bcb8cc005ece38a47f026074e">Factories#addChangeListener(ChangeListener)</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>index color model to be inspected. </td></tr>
-    <tr><td class="paramname">ignoreTransparents</td><td></td></tr>
+    <tr><td class="paramname">key</td><td>The hint key. </td></tr>
+    <tr><td class="paramname">value</td><td>The hint value to be used as the system-wide default for the given key. </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                                                                                                 {</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">if</span> (!model.hasAlpha()) {</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="comment">// We will not check transparent pixels if there is none in the color model.</span></div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            ignoreTransparents = <span class="keyword">false</span>;</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> mapSize = model.getMapSize();</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mapSize; i++) {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">if</span> (ignoreTransparents) {</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="comment">// If this entry is transparent and we were asked</span></div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="comment">// to ignore fully transparents pixels, let&#39;s leave.</span></div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="keywordflow">if</span> (model.getAlpha(i) == 0) {</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                    <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                }</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            }</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="comment">// Get the color for this pixel only if it is requested.</span></div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="comment">// If gray, all components are the same.</span></div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> green = model.getGreen(i);</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordflow">if</span> (green != model.getRed(i) || green != model.getBlue(i)) {</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            }</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div></div><!-- fragment -->
+<dl class="section return"><dt>Returns</dt><dd>The previous value for the given key, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14171.html">IllegalArgumentException</a></td><td>if <a class="el" href="a06727.html#a08faba5eee0f9415af2a22c1009291b2">Hints.Key#isCompatibleValue(Object)</a> returns<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> for the given value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.4 </dd></dl>
+
+<p class="reference">References <a class="el" href="a06711.html#a83c7bc172180ceb0308998ae35ab1509">Factories.fireConfigurationChanged()</a>, <a class="el" href="a07779.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, <a class="el" href="a07783.html#abd03bdc39d82179982528af1ec25c0a3">Errors.Keys.IllegalArgument_2</a>, and <a class="el" href="a06723.html#aa012f2e25a618f201ab6db67ca003136">Hints.nameOf()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                                                                                            {</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        <span class="keywordflow">if</span> (!key.isCompatibleValue(value)) {</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(Errors.format(</div><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                    Errors.Keys.IllegalArgument_2, <a class="code" href="a06723.html#aa012f2e25a618f201ab6db67ca003136">nameOf</a>(key), value));</div><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        }</div><div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="keyword">final</span> Object old = <a class="code" href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">GLOBAL</a>.put(key, value);</div><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">if</span> (!Objects.equals(value, old)) {</div><div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            Factories.fireConfigurationChanged(<a class="code" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a>.class);</div><div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        }</div><div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <span class="keywordflow">return</span> old;</div><div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    }</div><div class="ttc" id="a06723_html_a3df9bf00c1185101eeec258b75c3515d"><div class="ttname"><a href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">org.geotoolkit.factory.Hints.Hints</a></div><div class="ttdeci">Hints()</div><div class="ttdoc">Constructs a map of hints initialized with the system-wide default values. </div><div class="ttdef"><b>Definition:</b> Hints.java:627</div></div>
+<div class="ttc" id="a06723_html_aa012f2e25a618f201ab6db67ca003136"><div class="ttname"><a href="a06723.html#aa012f2e25a618f201ab6db67ca003136">org.geotoolkit.factory.Hints.nameOf</a></div><div class="ttdeci">static String nameOf(final RenderingHints.Key key)</div><div class="ttdoc">Tries to find the name of the given key, using reflection. </div><div class="ttdef"><b>Definition:</b> Hints.java:877</div></div>
+<div class="ttc" id="a06723_html_ae93d0e013e76904bb599a7b75cd2145d"><div class="ttname"><a href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">org.geotoolkit.factory.Hints.GLOBAL</a></div><div class="ttdeci">static final Map&lt; RenderingHints.Key, Object &gt; GLOBAL</div><div class="ttdoc">A set of system-wide hints to use by default. </div><div class="ttdef"><b>Definition:</b> Hints.java:91</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a83e133c9af7712212427e87490c30cf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83e133c9af7712212427e87490c30cf5">&#9670;&nbsp;</a></span>roundByte()</h2>
+<a id="a9cbaf7bf7567ea01bdf6df3bdd831c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cbaf7bf7567ea01bdf6df3bdd831c8b">&#9670;&nbsp;</a></span>removeSystemDefault()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,10 +975,10 @@ Simone Giannecchini (Geosolutions)</dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int roundByte </td>
+          <td class="memname">static Object removeSystemDefault </td>
           <td>(</td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramtype">final RenderingHints.Key&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -555,123 +989,47 @@ Simone Giannecchini (Geosolutions)</dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Rounds a float value and clamp the result between 0 and 255 inclusive. </p>
+<p>Removes the specified hints from the set of system default values. </p>
+<p>If the a value was present for the given key, then this method notifies every listeners registered with <a class="el" href="a06711.html#a83342b8bcb8cc005ece38a47f026074e">Factories#addChangeListener(ChangeListener)</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value to round. </td></tr>
+    <tr><td class="paramname">key</td><td>The hints key that needs to be removed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The rounded and clamped value. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                                    {</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) Math.min(Math.max(Math.round(value), 0), 255);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div></div><!-- fragment -->
+<dl class="section return"><dt>Returns</dt><dd>The value to which the key had previously been mapped, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if the key did not have a mapping.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.4 </dd></dl>
+
+<p class="reference">References <a class="el" href="a06711.html#a83c7bc172180ceb0308998ae35ab1509">Factories.fireConfigurationChanged()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                                                                           {</div><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keyword">final</span> Object old = <a class="code" href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">GLOBAL</a>.remove(key);</div><div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordflow">if</span> (old != null) {</div><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            Factories.fireConfigurationChanged(<a class="code" href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">Hints</a>.class);</div><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        }</div><div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">return</span> old;</div><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    }</div><div class="ttc" id="a06723_html_a3df9bf00c1185101eeec258b75c3515d"><div class="ttname"><a href="a06723.html#a3df9bf00c1185101eeec258b75c3515d">org.geotoolkit.factory.Hints.Hints</a></div><div class="ttdeci">Hints()</div><div class="ttdoc">Constructs a map of hints initialized with the system-wide default values. </div><div class="ttdef"><b>Definition:</b> Hints.java:627</div></div>
+<div class="ttc" id="a06723_html_ae93d0e013e76904bb599a7b75cd2145d"><div class="ttname"><a href="a06723.html#ae93d0e013e76904bb599a7b75cd2145d">org.geotoolkit.factory.Hints.GLOBAL</a></div><div class="ttdeci">static final Map&lt; RenderingHints.Key, Object &gt; GLOBAL</div><div class="ttdoc">A set of system-wide hints to use by default. </div><div class="ttdef"><b>Definition:</b> Hints.java:91</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a1a06e13f1cf2dbab0df28fc136b7d125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a06e13f1cf2dbab0df28fc136b7d125">&#9670;&nbsp;</a></span>subarray()</h2>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Color [] subarray </td>
+          <td class="memname">String toString </td>
           <td>(</td>
-          <td class="paramtype">final Color []&#160;</td>
-          <td class="paramname"><em>palette</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lower</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>upper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns a subarray of the specified color array. </p>
-<p>The</p><div class="fragment"><div class="line">lower </div></div><!-- fragment --><p> and</p><div class="fragment"><div class="line">upper </div></div><!-- fragment --><p> index will be clamb into the</p><div class="fragment"><div class="line">palette </div></div><!-- fragment --><p> range. If they are completely out of range, or if they would result in an empty array, then</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> is returned. </p>
-<p>This method is used by <a class="el" href="">org.geotoolkit.coverage.SampleDimension</a> as an heuristic approach for distributing palette colors into a list of categories.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">palette</td><td>The color array (may be<div class="fragment"><div class="line">null </div></div><!-- fragment --> ). </td></tr>
-    <tr><td class="paramname">lower</td><td>The lower index, inclusive. </td></tr>
-    <tr><td class="paramname">upper</td><td>The upper index, inclusive. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The subarray (may be<div class="fragment"><div class="line">palette </div></div><!-- fragment --> if the original array already fit), or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if the<div class="fragment"><div class="line">lower </div></div><!-- fragment --> and<div class="fragment"><div class="line">upper </div></div><!-- fragment --> index are out of<div class="fragment"><div class="line">palette </div></div><!-- fragment --> bounds. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                                                                {</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (palette != null) {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            lower = Math.max(lower, 0);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            upper = Math.min(upper, palette.length);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">if</span> (lower &gt;= upper) {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            }</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">if</span> (lower != 0 || upper != palette.length) {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">return</span> Arrays.copyOfRange(palette, lower, upper);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> palette;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div></div><!-- fragment -->
+<p>Returns a string representation of the hints. </p>
+<p>The default implementation formats the set of hints as a tree.</p>
+<dl class="section since"><dt>Since</dt><dd>2.4 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                             {</div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06723.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a>(<span class="keyword">this</span>);</div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    }</div><div class="ttc" id="a06723_html_ad146fa8579a5f8a876c4688cc5a68520"><div class="ttname"><a href="a06723.html#ad146fa8579a5f8a876c4688cc5a68520">org.geotoolkit.factory.Hints.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">Returns a string representation of the hints. </div><div class="ttdef"><b>Definition:</b> Hints.java:810</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ab1b8fc8a83c519214b447c6eaac4ae25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1b8fc8a83c519214b447c6eaac4ae25">&#9670;&nbsp;</a></span>toDoubleValues()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static double [] toDoubleValues </td>
-          <td>(</td>
-          <td class="paramtype">final Color&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>numBands</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the color components in an array of. </p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --><p> values. This is mostly for usage with JAI operators which require sample values as</p><div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --><p> no matter the actual image data type.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>The color for which to extract the component values. </td></tr>
-    <tr><td class="paramname">numBands</td><td>The length of the array to be returned. If greater than 4, then the extra values will be initialized to 0. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The color components in an array of the given length. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">FloodFill.fill()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                                 {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span>[] values = <span class="keyword">new</span> <span class="keywordtype">double</span>[numBands];</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">switch</span> (numBands) {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">default</span>: values[3] = color.getAlpha();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">case</span> 3:  values[2] = color.getBlue();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">case</span> 2:  values[1] = color.getGreen();</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">case</span> 1:  values[0] = color.getRed();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">case</span> 0:  <span class="keywordflow">break</span>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> values;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="aaed0f7564635753edb32e171e5c1a83f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaed0f7564635753edb32e171e5c1a83f">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a3c2b792e8eb278eecd5e1e8e3353a56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c2b792e8eb278eecd5e1e8e3353a56e">&#9670;&nbsp;</a></span>toString() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,73 +1040,29 @@ Simone Giannecchini (Geosolutions)</dd></dl>
         <tr>
           <td class="memname">static String toString </td>
           <td>(</td>
-          <td class="paramtype">final Color&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramtype">final Map&lt;?,?&gt;&#160;</td>
+          <td class="paramname"><em>hints</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a string representation of the given color. </p>
-<p>This method omits the alpha component if the color is opaque.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>The color. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A string representation of the given color.</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.14 </dd></dl>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                     {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">int</span> ARGB = color.getRGB();</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">boolean</span> isOpaque = (ARGB &amp; 0xFF000000) == 0xFF000000;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">int</span> size;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span> (isOpaque) {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            ARGB &amp;= 0xFFFFFF;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            size = 6;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            size = 8;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">final</span> String code = Integer.toHexString(ARGB).toUpperCase(Locale.US);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        size -= code.length();</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder();</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        buffer.append(<span class="charliteral">&#39;#&#39;</span>);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">while</span> (--size &gt;= 0) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            buffer.append(<span class="charliteral">&#39;0&#39;</span>);</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> buffer.append(code).toString();</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a54d0c88891a3fbba30f9758346312afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d0c88891a3fbba30f9758346312afb">&#9670;&nbsp;</a></span>XYZtoLAB()</h2>
+<p>Returns a string representation of the specified hints. </p>
+<p>This is used by <a class="el" href="a06723.html#ad146fa8579a5f8a876c4688cc5a68520">Hints#toString</a> in order to share the code provided in this class. </p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static float [] XYZtoLAB </td>
-          <td>(</td>
-          <td class="paramtype">final float []&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Transforms a color from XYZ color space to LAB. </p>
-<p>The color are transformed in place. This method returns</p><div class="fragment"><div class="line">color </div></div><!-- fragment --><p> for convenience. </p>
-<p>Reference: <a href="http://www.brucelindbloom.com/index.html?ColorDifferenceCalc.html">http://www.brucelindbloom.com/index.html?ColorDifferenceCalc.html</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>The XYZ color to convert. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The LAB color. </dd></dl>
-
-<p class="reference">Referenced by <a class="el" href="a06723.html#af843a53faa09bbe8112ca88a1975a504">ColorUtilities.getColorIndex()</a>, and <a class="el" href="a06723.html#a234a98a4c3c4c0ecfe3cc9c24edda621">ColorUtilities.getTransparentPixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                                        {</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        color[0] /= 0.9642;   <span class="comment">// Other refeference: 0.95047;</span></div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        color[1] /= 1.0000;   <span class="comment">//                    1.00000;</span></div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        color[2] /= 0.8249;   <span class="comment">//                    1.08883;</span></div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;3; i++) {</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">float</span> c = color[i];</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            color[i] = (float)((c &gt; 216/24389f) ? Math.pow(c, 1.0/3) : ((24389/27.0)*c + 16)/116);</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span> L = 116 *  color[1] - 16;</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span> a = 500 * (color[0] - color[1]);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span> b = 200 * (color[1] - color[2]);</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        assert !Float.isNaN(L) &amp;&amp; !Float.isNaN(a) &amp;&amp; !Float.isNaN(b);</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        color[0] = L;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        color[1] = a;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        color[2] = b;</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">return</span> color;</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06723.html#a0cae7a5441f7f9f364592cadb94e81e5">Hints.format()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                                                         {</div><div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06723.html#a0cae7a5441f7f9f364592cadb94e81e5">format</a>(hints);</div><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    }</div><div class="ttc" id="a06723_html_a0cae7a5441f7f9f364592cadb94e81e5"><div class="ttname"><a href="a06723.html#a0cae7a5441f7f9f364592cadb94e81e5">org.geotoolkit.factory.Hints.format</a></div><div class="ttdeci">static String format(final Map&lt;?,?&gt; hints)</div><div class="ttdoc">Formats the specified hints. </div><div class="ttdef"><b>Definition:</b> Hints.java:827</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afba35bdad0d4917767fd4641d9e4345b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afba35bdad0d4917767fd4641d9e4345b">&#9670;&nbsp;</a></span>BINARY_COLOR_MODEL</h2>
+<a id="a8dd5c1245fa1ac53a0fc19969c9618ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd5c1245fa1ac53a0fc19969c9618ca">&#9670;&nbsp;</a></span>AGGREGATE_FACTORY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -757,7 +1071,7 @@ Simone Giannecchini (Geosolutions)</dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final IndexColorModel BINARY_COLOR_MODEL</td>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> AGGREGATE_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.aggregate.AggregateFactory&quot;)</td>
         </tr>
       </table>
   </td>
@@ -766,10 +1080,795 @@ Simone Giannecchini (Geosolutions)</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> IndexColorModel(</div><div class="line">            1, 2, <span class="keyword">new</span> <span class="keywordtype">int</span>[] {0, -1}, 0, <span class="keyword">false</span>, -1, DataBuffer.TYPE_BYTE)</div></div><!-- fragment -->
-<p>An index color model having only two colors, black and white. </p>
 
-<p class="reference">Referenced by <a class="el" href="a06923.html#ae33c60a088a675d97d37fd915632b610">SilhouetteMask.layout()</a>.</p>
+</div>
+</div>
+<a id="a2d8a1df36acb45d58456e54cffea2242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8a1df36acb45d58456e54cffea2242">&#9670;&nbsp;</a></span>CITATION_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> CITATION_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.metadata.citation.CitationFactory&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6494aa4dc57a1efece04d395635c0c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6494aa4dc57a1efece04d395635c0c5c">&#9670;&nbsp;</a></span>COMPLEX_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> COMPLEX_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.complex.ComplexFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a044c42e37da95557a66769f9cc5df247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044c42e37da95557a66769f9cc5df247">&#9670;&nbsp;</a></span>COORDINATE_OPERATION_AUTHORITY_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> COORDINATE_OPERATION_AUTHORITY_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.operation.CoordinateOperationAuthorityFactory&quot;</span>)</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a06711.html#af54c2a8e27296ed57f70effc2a2bc4e4">Factories.getCoordinateOperationAuthorityFactory()</a>.</p>
+
+</div>
+</div>
+<a id="afca934a66f3ac275de1ef9f608e51fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca934a66f3ac275de1ef9f608e51fa8">&#9670;&nbsp;</a></span>COORDINATE_OPERATION_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> COORDINATE_OPERATION_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.operation.CoordinateOperationFactory&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="acd9991a1425664d6801949955444c14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd9991a1425664d6801949955444c14c">&#9670;&nbsp;</a></span>COVERAGE_PROCESSING_VIEW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> COVERAGE_PROCESSING_VIEW = new <a class="el" href="a06727.html">Key</a>(&quot;org.geotoolkit.coverage.grid.ViewType&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a531348291897ed8a26ed107903ba3894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531348291897ed8a26ed107903ba3894">&#9670;&nbsp;</a></span>CRS_AUTHORITY_EXTRA_DIRECTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06735.html">FileKey</a> CRS_AUTHORITY_EXTRA_DIRECTORY = new <a class="el" href="a06735.html">FileKey</a>(false)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a07555.html#a38c0d1565ecbd0a71047f202612c2879">PropertyEpsgFactory.PropertyEpsgFactory()</a>.</p>
+
+</div>
+</div>
+<a id="a8ba2ba6033438bc5e34f168c886d6416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba2ba6033438bc5e34f168c886d6416">&#9670;&nbsp;</a></span>CRS_AUTHORITY_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> CRS_AUTHORITY_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.crs.CRSAuthorityFactory&quot;</span>)</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a06711.html#a10a55d396ee66b460f8589fc83f0d1ca">Factories.getCRSAuthorityFactory()</a>.</p>
+
+</div>
+</div>
+<a id="ab8ee19f7731b5bd8e5a25e401944a1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ee19f7731b5bd8e5a25e401944a1d4">&#9670;&nbsp;</a></span>CRS_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> CRS_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.crs.CRSFactory&quot;</span>)</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a07559.html#aece45c41f59e9c9bdb73ded3ce916346">ReferencingFactoryContainer.ReferencingFactoryContainer()</a>.</p>
+
+</div>
+</div>
+<a id="a19aa5745b1d5f0ca7630af9d09c2b7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19aa5745b1d5f0ca7630af9d09c2b7a5">&#9670;&nbsp;</a></span>CS_AUTHORITY_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> CS_AUTHORITY_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.cs.CSAuthorityFactory&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aefadd2b3a5548abdaa06b24eab0f2acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefadd2b3a5548abdaa06b24eab0f2acf">&#9670;&nbsp;</a></span>CS_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> CS_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.cs.CSFactory&quot;</span>)</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a07559.html#aece45c41f59e9c9bdb73ded3ce916346">ReferencingFactoryContainer.ReferencingFactoryContainer()</a>.</p>
+
+</div>
+</div>
+<a id="a6115970dbf0c26bea941cb0294a58ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6115970dbf0c26bea941cb0294a58ba7">&#9670;&nbsp;</a></span>DATUM_AUTHORITY_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> DATUM_AUTHORITY_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.datum.DatumAuthorityFactory&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a38b50188057470098a8ff0279a385f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b50188057470098a8ff0279a385f84">&#9670;&nbsp;</a></span>DATUM_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> DATUM_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.datum.DatumFactory&quot;</span>)</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a07559.html#aece45c41f59e9c9bdb73ded3ce916346">ReferencingFactoryContainer.ReferencingFactoryContainer()</a>.</p>
+
+</div>
+</div>
+<a id="ae3547961be5a7516ec104a4606482104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3547961be5a7516ec104a4606482104">&#9670;&nbsp;</a></span>DATUM_SHIFT_METHOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06743.html">OptionKey</a> DATUM_SHIFT_METHOD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> OptionKey(</div><div class="line">            <span class="stringliteral">&quot;Molodensky&quot;</span>, <span class="stringliteral">&quot;Abridged Molodensky&quot;</span>, </div><div class="line">            <span class="stringliteral">&quot;Molodenski&quot;</span>, <span class="stringliteral">&quot;Abridged_Molodenski&quot;</span>, </div><div class="line">            <span class="stringliteral">&quot;Geocentric&quot;</span>, <span class="stringliteral">&quot;*&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a5236b8f2d04fa351b550de3000f18581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5236b8f2d04fa351b550de3000f18581">&#9670;&nbsp;</a></span>DEFAULT_COORDINATE_REFERENCE_SYSTEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> DEFAULT_COORDINATE_REFERENCE_SYSTEM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> Key(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.crs.CoordinateReferenceSystem&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a11a7848f80fb79b44a84a13a78fffbe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a7848f80fb79b44a84a13a78fffbe7">&#9670;&nbsp;</a></span>EPSG_DATA_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> EPSG_DATA_SOURCE = new <a class="el" href="a06747.html">DataSourceKey</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a460d1249e2e0e8134f26d0d914fb89dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460d1249e2e0e8134f26d0d914fb89dc">&#9670;&nbsp;</a></span>FEATURE_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> FEATURE_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.geotoolkit.feature.FeatureFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d8e95445ad3e15d6e5900dbf86ea51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8e95445ad3e15d6e5900dbf86ea51a">&#9670;&nbsp;</a></span>FEATURE_TYPE_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> FEATURE_TYPE_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.geotoolkit.feature.type.FeatureTypeFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c99f3470f2bb1fa064bdcdee9709233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c99f3470f2bb1fa064bdcdee9709233">&#9670;&nbsp;</a></span>FILTER_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> FILTER_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.filter.FilterFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ed66516ccb9d711217f7cc59e7e26a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed66516ccb9d711217f7cc59e7e26a5">&#9670;&nbsp;</a></span>FORCE_AXIS_ORDER_HONORING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> FORCE_AXIS_ORDER_HONORING = new <a class="el" href="a06727.html">Key</a>(String.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a448ad9c1b2e0733a698502db6fd2ff45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448ad9c1b2e0733a698502db6fd2ff45">&#9670;&nbsp;</a></span>FORCE_LONGITUDE_FIRST_AXIS_ORDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> FORCE_LONGITUDE_FIRST_AXIS_ORDER = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d5a05d6aa565328eeaa9fc455b1565d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5a05d6aa565328eeaa9fc455b1565d">&#9670;&nbsp;</a></span>FORCE_STANDARD_AXIS_DIRECTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> FORCE_STANDARD_AXIS_DIRECTIONS = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5445011cd476a3813d8b6422b304b4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5445011cd476a3813d8b6422b304b4d4">&#9670;&nbsp;</a></span>FORCE_STANDARD_AXIS_UNITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> FORCE_STANDARD_AXIS_UNITS = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56072e98d6e58b971b179d4c5e33febf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56072e98d6e58b971b179d4c5e33febf">&#9670;&nbsp;</a></span>GEOMETRY_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> GEOMETRY_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.coordinate.GeometryFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93d0e013e76904bb599a7b75cd2145d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93d0e013e76904bb599a7b75cd2145d">&#9670;&nbsp;</a></span>GLOBAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Map&lt;RenderingHints.Key,Object&gt; GLOBAL = new ConcurrentHashMap&lt;&gt;(8, 0.75f, 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A set of system-wide hints to use by default. </p>
+<p>Only one thread is expected to write (while more are allowed). </p>
+
+</div>
+</div>
+<a id="a64843883aee934cf6e3d288b1cf22e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64843883aee934cf6e3d288b1cf22e2c">&#9670;&nbsp;</a></span>JAI_INSTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> JAI_INSTANCE = new <a class="el" href="a06727.html">Key</a>(&quot;javax.media.jai.JAI&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="">javax.media.jai.JAI</a> instance to use. </p>
+
+</div>
+</div>
+<a id="a37d1c1cee861c645df4de48775f552a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d1c1cee861c645df4de48775f552a5">&#9670;&nbsp;</a></span>LENIENT_DATUM_SHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> LENIENT_DATUM_SHIFT = new <a class="el" href="a06727.html">Key</a>(Boolean.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacb1e84a86d8042a403e95c58de4cb6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb1e84a86d8042a403e95c58de4cb6c">&#9670;&nbsp;</a></span>MATH_TRANSFORM_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> MATH_TRANSFORM_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.referencing.operation.MathTransformFactory&quot;</span>)</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a07559.html#a11be79fc822177a820869e975a623c69">ReferencingFactoryContainer.declaredFactoryHints()</a>, and <a class="el" href="a07559.html#aece45c41f59e9c9bdb73ded3ce916346">ReferencingFactoryContainer.ReferencingFactoryContainer()</a>.</p>
+
+</div>
+</div>
+<a id="a832590bc44c0f090972110b6ef5eeb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832590bc44c0f090972110b6ef5eeb84">&#9670;&nbsp;</a></span>NAME_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> NAME_FACTORY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ClassKey(</div><div class="line">            <span class="stringliteral">&quot;org.opengis.util.NameFactory&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ace65298acab4c302e6761ba5d86b022b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace65298acab4c302e6761ba5d86b022b">&#9670;&nbsp;</a></span>POSITION_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> POSITION_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.PositionFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43076591a9cd63d445ef3f135a0d5d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43076591a9cd63d445ef3f135a0d5d66">&#9670;&nbsp;</a></span>PRIMITIVE_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> PRIMITIVE_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.geometry.primitive.PrimitiveFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d9609be55856bea6fbbc25683f5648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9609be55856bea6fbbc25683f5648f">&#9670;&nbsp;</a></span>SAMPLE_DIMENSION_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> SAMPLE_DIMENSION_TYPE = new <a class="el" href="a06727.html">Key</a>(&quot;org.geotoolkit.coverage.SampleDimensionType&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82f5b1846cdd119a9ecca417bc7de18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82f5b1846cdd119a9ecca417bc7de18a">&#9670;&nbsp;</a></span>STYLE_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> STYLE_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.style.StyleFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3f319844144d03166ad3538bf4dd5c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f319844144d03166ad3538bf4dd5c8">&#9670;&nbsp;</a></span>TEMPORAL_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06731.html">ClassKey</a> TEMPORAL_FACTORY = new <a class="el" href="a06731.html">ClassKey</a>(&quot;org.opengis.temporal.TemporalFactory&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a314e161a938120d245fbf44f70a1b8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314e161a938120d245fbf44f70a1b8e2">&#9670;&nbsp;</a></span>TILE_ENCODING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> TILE_ENCODING = new <a class="el" href="a06727.html">Key</a>(String.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4abd0d5bf0aa51c73067d388bf70b609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abd0d5bf0aa51c73067d388bf70b609">&#9670;&nbsp;</a></span>VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06727.html">Key</a> VERSION = new <a class="el" href="a06727.html">Key</a>(&quot;org.apache.sis.util.Version&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -779,7 +1878,7 @@ Simone Giannecchini (Geosolutions)</dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03765.html">color</a></li><li class="navelem"><a class="el" href="a06723.html">ColorUtilities</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03819.html">factory</a></li><li class="navelem"><a class="el" href="a06723.html">Hints</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,8 +1,7 @@
 var a03844 =
 [
-    [ "AddGeometryTest", "a08387.html", "a08387" ],
-    [ "EnsureClosedTest", "a08391.html", "a08391" ],
-    [ "RemoveGeometryTest", "a08395.html", "a08395" ],
-    [ "RemoveRepeatedPointsTest", "a08399.html", "a08399" ],
-    [ "SetGeometryTest", "a08403.html", "a08403" ]
+    [ "JSON", "a07287.html", "a07287" ],
+    [ "MetadataFactory", "a07291.html", "a07291" ],
+    [ "Reader", "a07295.html", "a07295" ],
+    [ "Writer", "a07299.html", "a07299" ]
 ];

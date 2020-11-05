@@ -1,8 +1,14 @@
 var a06347 =
 [
-    [ "WKBTextSRS", "a06347.html#a12d2a5c4b7a29eae5d108bccb1e55b11", null ],
-    [ "getSrsURI", "a06347.html#a7d7dded4f73b0a90d90f68ccc5f16bc3", null ],
-    [ "getWkbText", "a06347.html#a4a2ce7a2dcd4fa0818378fb8b97931fb", null ],
-    [ "srsURI", "a06347.html#aaa7845d06052bead86bb2de40935e4d9", null ],
-    [ "wkbText", "a06347.html#a7b6ce5371e4ad222f4b09eaadfdcae09", null ]
+    [ "ValueTypeCase", "a06347.html#a46aa47bfabaf7bbfd8ddbf7733b62f9e", null ],
+    [ "getNumber", "a06347.html#a26b2bb379b3e56aedd0bd8846ed6aa7b", null ],
+    [ "valueOf", "a06347.html#a41b95ecaf7e7b7f21a693c25c2f72d66", null ],
+    [ "BOOL_VALUE", "a06347.html#a02b73f2c25c3dda488df718f2583ba32", null ],
+    [ "DOUBLE_VALUE", "a06347.html#a49fb2bffe4fe6bd28169e1db0a8c442a", null ],
+    [ "JSON_VALUE", "a06347.html#a764d78b0f0eb7db5ed510da6769477c5", null ],
+    [ "NEG_INT_VALUE", "a06347.html#a87f25cd7203bda6a829142e6488b1b37", null ],
+    [ "POS_INT_VALUE", "a06347.html#a8ee3a3f03069842f81e634dfdf02968b", null ],
+    [ "STRING_VALUE", "a06347.html#a115d2053c6fe713e36ef84a5b0dada67", null ],
+    [ "value", "a06347.html#ac4f474c82e82cbb89ca7c36dd52be0ed", null ],
+    [ "VALUETYPE_NOT_SET", "a06347.html#a63932202e06a70f3d6903e825676eb96", null ]
 ];

@@ -1,6 +1,6 @@
 var a08759 =
 [
-    [ "testSetStartPoint", "a08759.html#ac3e198aee4c9abe9dfbad67f80bebf75", null ],
-    [ "LineString2D", "a08759.html#a4a6127d0b7f1eecce2d32442325f7735", null ],
-    [ "point", "a08759.html#a081811ff1c2bedd0a20703599f90114f", null ]
+    [ "testTransScale", "a08759.html#a8169037c504558c555e457db95ca9864", null ],
+    [ "testLineString", "a08759.html#a33797029fadbcba01b4a4fafec88cf41", null ],
+    [ "testLineStringRes", "a08759.html#afa1a0008b206f5da669c64139a3dc588", null ]
 ];

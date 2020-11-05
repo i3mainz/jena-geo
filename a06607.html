@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ShapeUtilities Class Reference</title>
+<title>jena-geo: ScaledColorSpace Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,72 +61,103 @@ $(document).ready(function(){initNavTree('a06607.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a06604.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ShapeUtilities Class Reference</div>  </div>
+<div class="title">ScaledColorSpace Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Static methods operating on shapes from the <a class="el" href="">java.awt.geom</a> package.  
+<p>Color space for images storing pixels as real numbers.  
  <a href="a06607.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ShapeUtilities:</div>
+Inheritance diagram for ScaledColorSpace:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06606.png" border="0" usemap="#ShapeUtilities_inherit__map" alt="Inheritance graph"/></div>
-<map name="ShapeUtilities_inherit__map" id="ShapeUtilities_inherit__map">
-<area shape="rect" id="node2" href="a07235.html" title="Parent of classes that contain only static utility methods. " alt="" coords="29,5,85,32"/>
+<div class="center"><img src="a06606.png" border="0" usemap="#ScaledColorSpace_inherit__map" alt="Inheritance graph"/></div>
+<map name="ScaledColorSpace_inherit__map" id="ScaledColorSpace_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for ShapeUtilities:</div>
+Collaboration diagram for ScaledColorSpace:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06605.png" border="0" usemap="#ShapeUtilities_coll__map" alt="Collaboration graph"/></div>
-<map name="ShapeUtilities_coll__map" id="ShapeUtilities_coll__map">
-<area shape="rect" id="node2" href="a07235.html" title="Parent of classes that contain only static utility methods. " alt="" coords="29,5,85,32"/>
+<div class="center"><img src="a06605.png" border="0" usemap="#ScaledColorSpace_coll__map" alt="Collaboration graph"/></div>
+<map name="ScaledColorSpace_coll__map" id="ScaledColorSpace_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a138b481a7adb237f52a206446550cae6"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a138b481a7adb237f52a206446550cae6">intersectionPoint</a> (final Line2D a, final Line2D b)</td></tr>
-<tr class="memdesc:a138b481a7adb237f52a206446550cae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the intersection point between two line segments.  <a href="#a138b481a7adb237f52a206446550cae6">More...</a><br /></td></tr>
-<tr class="separator:a138b481a7adb237f52a206446550cae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd0388dc5158b49716eea7caac5a89b"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a0dd0388dc5158b49716eea7caac5a89b">nearestColinearPoint</a> (final Line2D segment, final Point2D point)</td></tr>
-<tr class="memdesc:a0dd0388dc5158b49716eea7caac5a89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the point on the given.  <a href="#a0dd0388dc5158b49716eea7caac5a89b">More...</a><br /></td></tr>
-<tr class="separator:a0dd0388dc5158b49716eea7caac5a89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec8d7e0c83de51460efd085bb4c5101"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#acec8d7e0c83de51460efd085bb4c5101">colinearPoint</a> (Line2D line, Point2D point, double distance)</td></tr>
-<tr class="memdesc:acec8d7e0c83de51460efd085bb4c5101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a point on the given.  <a href="#acec8d7e0c83de51460efd085bb4c5101">More...</a><br /></td></tr>
-<tr class="separator:acec8d7e0c83de51460efd085bb4c5101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a195b4c03a4ad4e64687595a011a116ea"><td class="memItemLeft" align="right" valign="top">static QuadCurve2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a195b4c03a4ad4e64687595a011a116ea">fitParabol</a> (final Point2D P0, final Point2D P1, final Point2D P2, final boolean horizontal)</td></tr>
-<tr class="memdesc:a195b4c03a4ad4e64687595a011a116ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quadratic curve passing by the 3 given points.  <a href="#a195b4c03a4ad4e64687595a011a116ea">More...</a><br /></td></tr>
-<tr class="separator:a195b4c03a4ad4e64687595a011a116ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc471b70074feb3332e2b5e6b03748b2"><td class="memItemLeft" align="right" valign="top">static Point2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#afc471b70074feb3332e2b5e6b03748b2">parabolicControlPoint</a> (final Point2D P0, final Point2D P1, final Point2D P2, final boolean horizontal)</td></tr>
-<tr class="memdesc:afc471b70074feb3332e2b5e6b03748b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the control point of a quadratic curve passing by the 3 given points.  <a href="#afc471b70074feb3332e2b5e6b03748b2">More...</a><br /></td></tr>
-<tr class="separator:afc471b70074feb3332e2b5e6b03748b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada261f4ee730a3aa50d9167a449af717"><td class="memItemLeft" align="right" valign="top">static Ellipse2D.Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#ada261f4ee730a3aa50d9167a449af717">fitCircle</a> (final Point2D P1, final Point2D P2, final Point2D P3)</td></tr>
-<tr class="memdesc:ada261f4ee730a3aa50d9167a449af717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a circle passing by the 3 given points.  <a href="#ada261f4ee730a3aa50d9167a449af717">More...</a><br /></td></tr>
-<tr class="separator:ada261f4ee730a3aa50d9167a449af717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa692d3d79782d011478935c258ec1212"><td class="memItemLeft" align="right" valign="top">static Shape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#aa692d3d79782d011478935c258ec1212">toPrimitive</a> (final Shape path)</td></tr>
-<tr class="memdesc:aa692d3d79782d011478935c258ec1212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to replace an arbitrary shape by one of the standard Java2D constructs.  <a href="#aa692d3d79782d011478935c258ec1212">More...</a><br /></td></tr>
-<tr class="separator:aa692d3d79782d011478935c258ec1212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8867b3b1851a7381d944e23ca284099"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#aa8867b3b1851a7381d944e23ca284099">getFlatness</a> (final Shape shape)</td></tr>
-<tr class="memdesc:aa8867b3b1851a7381d944e23ca284099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a suggested value for the.  <a href="#aa8867b3b1851a7381d944e23ca284099">More...</a><br /></td></tr>
-<tr class="separator:aa8867b3b1851a7381d944e23ca284099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9b8163a0fe35073b1a502c24b22fa997"><td class="memItemLeft" align="right" valign="top">float []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a9b8163a0fe35073b1a502c24b22fa997">toRGB</a> (final float[] samples)</td></tr>
+<tr class="memdesc:a9b8163a0fe35073b1a502c24b22fa997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a RGB color for a sample value.  <a href="#a9b8163a0fe35073b1a502c24b22fa997">More...</a><br /></td></tr>
+<tr class="separator:a9b8163a0fe35073b1a502c24b22fa997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc30c4c62669486c29e1456c59726c82"><td class="memItemLeft" align="right" valign="top">float []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#abc30c4c62669486c29e1456c59726c82">fromRGB</a> (final float[] color)</td></tr>
+<tr class="memdesc:abc30c4c62669486c29e1456c59726c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sample value for the specified RGB color.  <a href="#abc30c4c62669486c29e1456c59726c82">More...</a><br /></td></tr>
+<tr class="separator:abc30c4c62669486c29e1456c59726c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8771e0b8839ae5cc8ddaa4974afde01"><td class="memItemLeft" align="right" valign="top">float []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#ae8771e0b8839ae5cc8ddaa4974afde01">toCIEXYZ</a> (final float[] values)</td></tr>
+<tr class="memdesc:ae8771e0b8839ae5cc8ddaa4974afde01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a CIEXYZ color for a sample value.  <a href="#ae8771e0b8839ae5cc8ddaa4974afde01">More...</a><br /></td></tr>
+<tr class="separator:ae8771e0b8839ae5cc8ddaa4974afde01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b323df205eb1af579c90342709bc09"><td class="memItemLeft" align="right" valign="top">float []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a64b323df205eb1af579c90342709bc09">fromCIEXYZ</a> (final float[] color)</td></tr>
+<tr class="memdesc:a64b323df205eb1af579c90342709bc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sample value for the specified CIEXYZ color.  <a href="#a64b323df205eb1af579c90342709bc09">More...</a><br /></td></tr>
+<tr class="separator:a64b323df205eb1af579c90342709bc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609abc2a11ff03be69ccf8e23ae030e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a609abc2a11ff03be69ccf8e23ae030e2">getMinValue</a> (final int component)</td></tr>
+<tr class="memdesc:a609abc2a11ff03be69ccf8e23ae030e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum value for the specified RGB component.  <a href="#a609abc2a11ff03be69ccf8e23ae030e2">More...</a><br /></td></tr>
+<tr class="separator:a609abc2a11ff03be69ccf8e23ae030e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe34c62179414de4432a103ddddd35a3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#afe34c62179414de4432a103ddddd35a3">getMaxValue</a> (final int component)</td></tr>
+<tr class="memdesc:afe34c62179414de4432a103ddddd35a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum value for the specified RGB component.  <a href="#afe34c62179414de4432a103ddddd35a3">More...</a><br /></td></tr>
+<tr class="separator:afe34c62179414de4432a103ddddd35a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this color space.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077e18fe97323c7194e2665ffc766399"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a077e18fe97323c7194e2665ffc766399">hashCode</a> ()</td></tr>
+<tr class="memdesc:a077e18fe97323c7194e2665ffc766399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash code value for this color space.  <a href="#a077e18fe97323c7194e2665ffc766399">More...</a><br /></td></tr>
+<tr class="separator:a077e18fe97323c7194e2665ffc766399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38744f448cabd3e9b605b2c349e007b4"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a38744f448cabd3e9b605b2c349e007b4">equals</a> (final Object obj)</td></tr>
+<tr class="memdesc:a38744f448cabd3e9b605b2c349e007b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares this color space with the given object for equality.  <a href="#a38744f448cabd3e9b605b2c349e007b4">More...</a><br /></td></tr>
+<tr class="separator:a38744f448cabd3e9b605b2c349e007b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af78d21832069973dc6d597cd6e15d016"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#af78d21832069973dc6d597cd6e15d016">ShapeUtilities</a> ()</td></tr>
-<tr class="memdesc:af78d21832069973dc6d597cd6e15d016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow instantiation of this class.  <a href="#af78d21832069973dc6d597cd6e15d016">More...</a><br /></td></tr>
-<tr class="separator:af78d21832069973dc6d597cd6e15d016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:adf7cc0b0c75de55625d8fabb7866fc84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#adf7cc0b0c75de55625d8fabb7866fc84">ScaledColorSpace</a> (final int numComponents, final int <a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>, final double minimum, final double maximum)</td></tr>
+<tr class="memdesc:adf7cc0b0c75de55625d8fabb7866fc84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a color model for the given range of values.  <a href="#adf7cc0b0c75de55625d8fabb7866fc84">More...</a><br /></td></tr>
+<tr class="separator:adf7cc0b0c75de55625d8fabb7866fc84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc5af9dcb1bc4d95a801c2113de8b86"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a0cc5af9dcb1bc4d95a801c2113de8b86">formatRange</a> (final StringBuilder buffer)</td></tr>
+<tr class="memdesc:a0cc5af9dcb1bc4d95a801c2113de8b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the range of values in the given buffer.  <a href="#a0cc5af9dcb1bc4d95a801c2113de8b86">More...</a><br /></td></tr>
+<tr class="separator:a0cc5af9dcb1bc4d95a801c2113de8b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:ae0f108ae280f5aa6c240b7ff20de9676"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a></td></tr>
+<tr class="memdesc:ae0f108ae280f5aa6c240b7ff20de9676"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scaling factor from sample values to RGB values.  <a href="#ae0f108ae280f5aa6c240b7ff20de9676">More...</a><br /></td></tr>
+<tr class="separator:ae0f108ae280f5aa6c240b7ff20de9676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb91501360c2d55360454da8d721b84"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a></td></tr>
+<tr class="memdesc:aadb91501360c2d55360454da8d721b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset to subtract from sample values before to apply the  <a class="el" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676" title="The scaling factor from sample values to RGB values. ">scale</a>} factor.  <a href="#aadb91501360c2d55360454da8d721b84">More...</a><br /></td></tr>
+<tr class="separator:aadb91501360c2d55360454da8d721b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222631519396875a9610c4bccec56eaf"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a></td></tr>
+<tr class="memdesc:a222631519396875a9610c4bccec56eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the band to display, from 0 inclusive to <a class="el" href="">getNumComponents()</a> exclusive.  <a href="#a222631519396875a9610c4bccec56eaf">More...</a><br /></td></tr>
+<tr class="separator:a222631519396875a9610c4bccec56eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06607.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = -6635165959083590494L</td></tr>
+<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
+<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Static methods operating on shapes from the <a class="el" href="">java.awt.geom</a> package. </p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (MPO, IRD, Geomatys)  </dd></dl>
+<div class="textblock"><p>Color space for images storing pixels as real numbers. </p>
+<p>This color space can have an arbitrary number of bands, but only one band is shown. Current implementation produces grayscale image only, but it may change in future.</p>
+<p>The use of this color space is very slow. It should be used only when no standard color space can be used.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06603.html" title="A color model for use with ScaledColorSpace (gray scale image with missing values). ">ScaledColorModel</a> </dd>
+<dd>
+<a class="el" href="a06583.html#ac13739a7a18d0a2c51b3cf3e8881005a" title="Creates a color model for opaque images storing pixels as real numbers. ">ColorModelFactory::createGrayScale(int, int, int, double, double)</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.0  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af78d21832069973dc6d597cd6e15d016"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af78d21832069973dc6d597cd6e15d016">&#9670;&nbsp;</a></span>ShapeUtilities()</h2>
+<a id="adf7cc0b0c75de55625d8fabb7866fc84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7cc0b0c75de55625d8fabb7866fc84">&#9670;&nbsp;</a></span>ScaledColorSpace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,311 +166,375 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06607.html">ShapeUtilities</a> </td>
+          <td class="memname"><a class="el" href="a06607.html">ScaledColorSpace</a> </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>numComponents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>visibleBand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>minimum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double&#160;</td>
+          <td class="paramname"><em>maximum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a color model for the given range of values. </p>
+<p>The given range does not need to be exact; values outside that range will be clamped.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numComponents</td><td>the number of components. </td></tr>
+    <tr><td class="paramname">visibleBand</td><td>the band to use for computing colors. </td></tr>
+    <tr><td class="paramname">minimum</td><td>the minimal sample value expected, inclusive. </td></tr>
+    <tr><td class="paramname">maximum</td><td>the maximal sample value expected, exclusive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06603.html#adf9971d80a18c81fd5c08c4d77954102">ScaledColorModel.RANGE</a>, and <a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">ScaledColorSpace.visibleBand</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a38744f448cabd3e9b605b2c349e007b4">ScaledColorSpace.equals()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                                                 {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        super(TYPE_GRAY, numComponents);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        this.<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a> = <a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a>  = ScaledColorModel.RANGE / (maximum - minimum);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a> = minimum;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a38744f448cabd3e9b605b2c349e007b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38744f448cabd3e9b605b2c349e007b4">&#9670;&nbsp;</a></span>equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean equals </td>
+          <td>(</td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares this color space with the given object for equality. </p>
+
+<p class="reference">References <a class="el" href="a06607.html#aadb91501360c2d55360454da8d721b84">ScaledColorSpace.offset</a>, <a class="el" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">ScaledColorSpace.scale</a>, <a class="el" href="a06607.html#adf7cc0b0c75de55625d8fabb7866fc84">ScaledColorSpace.ScaledColorSpace()</a>, and <a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">ScaledColorSpace.visibleBand</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                            {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span> (obj instanceof <a class="code" href="a06607.html#adf7cc0b0c75de55625d8fabb7866fc84">ScaledColorSpace</a>) {</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keyword">final</span> ScaledColorSpace that = (<a class="code" href="a06607.html#adf7cc0b0c75de55625d8fabb7866fc84">ScaledColorSpace</a>) obj;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span> Numerics.equals(<a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a>,  that.scale)             &amp;&amp;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                   Numerics.equals(<a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>, that.offset)            &amp;&amp;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                   <a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>         ==  that.visibleBand        &amp;&amp;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                   getNumComponents()  ==  that.getNumComponents() &amp;&amp;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                   getType()           ==  that.getType();</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_adf7cc0b0c75de55625d8fabb7866fc84"><div class="ttname"><a href="a06607.html#adf7cc0b0c75de55625d8fabb7866fc84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.ScaledColorSpace</a></div><div class="ttdeci">ScaledColorSpace(final int numComponents, final int visibleBand, final double minimum, final double maximum)</div><div class="ttdoc">Creates a color model for the given range of values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:72</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0cc5af9dcb1bc4d95a801c2113de8b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc5af9dcb1bc4d95a801c2113de8b86">&#9670;&nbsp;</a></span>formatRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void formatRange </td>
+          <td>(</td>
+          <td class="paramtype">final StringBuilder&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Formats the range of values in the given buffer. </p>
+<p>This method is used for <a class="el" href="a06607.html#ad146fa8579a5f8a876c4688cc5a68520">toString()</a> implementation and may change in any future version.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>where to append the range of values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06607.html#afe34c62179414de4432a103ddddd35a3">ScaledColorSpace.getMaxValue()</a>, and <a class="el" href="a06607.html#a609abc2a11ff03be69ccf8e23ae030e2">ScaledColorSpace.getMinValue()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#ad146fa8579a5f8a876c4688cc5a68520">ScaledColorSpace.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                                       {</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        buffer.append(<span class="charliteral">&#39;[&#39;</span>).append(<a class="code" href="a06607.html#a609abc2a11ff03be69ccf8e23ae030e2">getMinValue</a>(<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>))</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            .append(<span class="stringliteral">&quot; … &quot;</span>).append(<a class="code" href="a06607.html#afe34c62179414de4432a103ddddd35a3">getMaxValue</a>(<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>))</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            .append(<span class="stringliteral">&quot; in band &quot;</span>).append(<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>).append(<span class="charliteral">&#39;]&#39;</span>);</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div><div class="ttc" id="a06607_html_a609abc2a11ff03be69ccf8e23ae030e2"><div class="ttname"><a href="a06607.html#a609abc2a11ff03be69ccf8e23ae030e2">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.getMinValue</a></div><div class="ttdeci">float getMinValue(final int component)</div><div class="ttdoc">Returns the minimum value for the specified RGB component. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:141</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_afe34c62179414de4432a103ddddd35a3"><div class="ttname"><a href="a06607.html#afe34c62179414de4432a103ddddd35a3">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.getMaxValue</a></div><div class="ttdeci">float getMaxValue(final int component)</div><div class="ttdoc">Returns the maximum value for the specified RGB component. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:152</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a64b323df205eb1af579c90342709bc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b323df205eb1af579c90342709bc09">&#9670;&nbsp;</a></span>fromCIEXYZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [] fromCIEXYZ </td>
+          <td>(</td>
+          <td class="paramtype">final float []&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a sample value for the specified CIEXYZ color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>normalized CIEXYZ values between 0 and 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sample values in the raster. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06603.html#adf9971d80a18c81fd5c08c4d77954102">ScaledColorModel.RANGE</a>, <a class="el" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">ScaledColorSpace.scale</a>, and <a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">ScaledColorSpace.visibleBand</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                   {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span>[] values = <span class="keyword">new</span> <span class="keywordtype">float</span>[getNumComponents()];</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        values[<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>] = (float) ((color[0] / 0.9642f + color[1] + color[2] / 0.8249f)</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                            / (3d/ScaledColorModel.RANGE * <a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a>) + <a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> values;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abc30c4c62669486c29e1456c59726c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc30c4c62669486c29e1456c59726c82">&#9670;&nbsp;</a></span>fromRGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [] fromRGB </td>
+          <td>(</td>
+          <td class="paramtype">final float []&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a sample value for the specified RGB color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>normalized RGB values between 0 and 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>sample values in the raster. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06603.html#adf9971d80a18c81fd5c08c4d77954102">ScaledColorModel.RANGE</a>, <a class="el" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">ScaledColorSpace.scale</a>, and <a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">ScaledColorSpace.visibleBand</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span>[] values = <span class="keyword">new</span> <span class="keywordtype">float</span>[getNumComponents()];</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        values[<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>] = (float) ((color[0] + color[1] + color[2])</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                            / (3d/ScaledColorModel.RANGE * <a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a>) + <a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> values;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afe34c62179414de4432a103ddddd35a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe34c62179414de4432a103ddddd35a3">&#9670;&nbsp;</a></span>getMaxValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMaxValue </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the maximum value for the specified RGB component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component</td><td>the component index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>maximum normalized component value. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06607.html#aadb91501360c2d55360454da8d721b84">ScaledColorSpace.offset</a>, and <a class="el" href="a06603.html#adf9971d80a18c81fd5c08c4d77954102">ScaledColorModel.RANGE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a0cc5af9dcb1bc4d95a801c2113de8b86">ScaledColorSpace.formatRange()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                                  {</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">float</span>) (ScaledColorModel.RANGE / <a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a> + <a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a609abc2a11ff03be69ccf8e23ae030e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609abc2a11ff03be69ccf8e23ae030e2">&#9670;&nbsp;</a></span>getMinValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getMinValue </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum value for the specified RGB component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component</td><td>the component index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>minimum normalized component value. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06607.html#aadb91501360c2d55360454da8d721b84">ScaledColorSpace.offset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a0cc5af9dcb1bc4d95a801c2113de8b86">ScaledColorSpace.formatRange()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                                  {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">float</span>) <a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a077e18fe97323c7194e2665ffc766399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077e18fe97323c7194e2665ffc766399">&#9670;&nbsp;</a></span>hashCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hashCode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Do not allow instantiation of this class. </p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                             {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="acec8d7e0c83de51460efd085bb4c5101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec8d7e0c83de51460efd085bb4c5101">&#9670;&nbsp;</a></span>colinearPoint()</h2>
+<p>Returns a hash code value for this color space. </p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Point2D.Double colinearPoint </td>
-          <td>(</td>
-          <td class="paramtype">Line2D&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Point2D&#160;</td>
-          <td class="paramname"><em>point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>distance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a point on the given. </p>
-<div class="fragment"><div class="line">line </div></div><!-- fragment --><p> segment located at the given</p><div class="fragment"><div class="line">distance </div></div><!-- fragment --><p> from that line. Let</p><div class="fragment"><div class="line">result </div></div><!-- fragment --><p> be the returned point. If</p><div class="fragment"><div class="line">result </div></div><!-- fragment --><p> is not null, then this method guarantees (except for rounding error) that: </p>
-<ul>
-<li>
-<div class="fragment"><div class="line">result </div></div><!-- fragment --> is a point on the<div class="fragment"><div class="line">line </div></div><!-- fragment --> segment. It is located between the  Line2D::getP1 P1} and  Line2D::getP2 P2} ending points of that line segment. </li>
-<li>
-The distance between the<div class="fragment"><div class="line">result </div></div><!-- fragment --> and the given<div class="fragment"><div class="line">point </div></div><!-- fragment --> is exactly equal to<div class="fragment"><div class="line">distance </div></div><!-- fragment --> . </li>
-</ul>
-<p>If no result point meets those conditions, then this method returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . If two result points meet those conditions, then this method returns the point which is the closest to</p><div class="fragment"><div class="line">line.getP1() </div></div><!-- fragment --><p> .</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">line</td><td>The line on which to search for a point. </td></tr>
-    <tr><td class="paramname">point</td><td>A point close to the given line. </td></tr>
-    <tr><td class="paramname">distance</td><td>The distance between the given point and the point to be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A point on the given line located at the given distance from the given point.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06607.html#a0dd0388dc5158b49716eea7caac5a89b" title="Returns the point on the given. ">nearestColinearPoint(Line2D, Point2D)</a></dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03669.html#_deprecated000004">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#colinearPoint(Line2D, Point2D, double)</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                                            {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.colinearPoint(</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                line.getX1(), line.getY1(), line.getX2(), line.getY2(),</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                point.getX(), point.getY(), distance);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
+<p class="reference">References <a class="el" href="a06607.html#a222631519396875a9610c4bccec56eaf">ScaledColorSpace.visibleBand</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                          {</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">return</span> Long.hashCode(Double.doubleToLongBits(<a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a>)</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                      + 31 * Double.doubleToLongBits(<a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>))</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                      +  7 * getNumComponents() + <a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ada261f4ee730a3aa50d9167a449af717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada261f4ee730a3aa50d9167a449af717">&#9670;&nbsp;</a></span>fitCircle()</h2>
+<a id="ae8771e0b8839ae5cc8ddaa4974afde01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8771e0b8839ae5cc8ddaa4974afde01">&#9670;&nbsp;</a></span>toCIEXYZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Ellipse2D.Double fitCircle </td>
+          <td class="memname">float [] toCIEXYZ </td>
           <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final float []&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns a circle passing by the 3 given points. </p>
+<p>Returns a CIEXYZ color for a sample value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">P1</td><td>The first point. </td></tr>
-    <tr><td class="paramname">P2</td><td>The second point. </td></tr>
-    <tr><td class="paramname">P3</td><td>The third point. </td></tr>
+    <tr><td class="paramname">values</td><td>sample values in the raster. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A circle passing by the given points.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03669.html#_deprecated000005">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#circle(Point2D, Point2D, Point2D)</a></dd></dl>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                                                                                                   {</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">final</span> Point2D center = <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.circleCentre(</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                P1.getX(), P1.getY(),</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                P2.getX(), P2.getY(),</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                P3.getX(), P3.getY());</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> radius = center.distance(P2);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Ellipse2D.Double(center.getX() - radius,</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                    center.getY() - radius,</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                    2*radius, 2*radius);</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
+<dl class="section return"><dt>Returns</dt><dd>color as normalized CIEXYZ values between 0 and 1. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06607.html#a9b8163a0fe35073b1a502c24b22fa997">ScaledColorSpace.toRGB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                  {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">float</span>[] codes = <a class="code" href="a06607.html#a9b8163a0fe35073b1a502c24b22fa997">toRGB</a>(values);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        codes[0] *= 0.9642f;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        codes[2] *= 0.8249f;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> codes;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="ttc" id="a06607_html_a9b8163a0fe35073b1a502c24b22fa997"><div class="ttname"><a href="a06607.html#a9b8163a0fe35073b1a502c24b22fa997">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.toRGB</a></div><div class="ttdeci">float [] toRGB(final float[] samples)</div><div class="ttdoc">Returns a RGB color for a sample value. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:86</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a195b4c03a4ad4e64687595a011a116ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a195b4c03a4ad4e64687595a011a116ea">&#9670;&nbsp;</a></span>fitParabol()</h2>
+<a id="a9b8163a0fe35073b1a502c24b22fa997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8163a0fe35073b1a502c24b22fa997">&#9670;&nbsp;</a></span>toRGB()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static QuadCurve2D.Double fitParabol </td>
+          <td class="memname">float [] toRGB </td>
           <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final float []&#160;</td>
+          <td class="paramname"><em>samples</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>horizontal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns a quadratic curve passing by the 3 given points. </p>
-<p>There is an infinity of quadratic curves passing by 3 points. We can express the curve we are looking for as a parabolic equation of the form</p><div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --><p> but where the <em>x</em> axis is not necessarily horizontal. The orientation of the <em>x</em> axis in the above equation is determined by the</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> parameter: </p>
-<ul>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be horizontal. The quadratic curve will then look like an ordinary parabolic curve as we see in mathematic school book. </li>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be parallel to the line segment joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> ending points. </li>
-</ul>
-<p>Note that if</p><div class="fragment"><div class="line">P0.y == P2.y </div></div><!-- fragment --><p> , then both</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> values produce the same result.</p>
+<p>Returns a RGB color for a sample value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">P0</td><td>The starting point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">P1</td><td>A point by which the quadratic curve must pass by. </td></tr>
-    <tr><td class="paramname">P2</td><td>The ending point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">horizontal</td><td>If<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> , the <em>x</em> axis is considered horizontal while computing the<div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --> equation terms. If<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> , it is considered parallel to the line joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> points. </td></tr>
+    <tr><td class="paramname">samples</td><td>sample values in the raster. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A quadratic curve passing by the given points. The curve starts at<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and ends at<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> . If two points are too close or if the three points are colinear, then this method returns<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </dd></dl>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.fitParabol(</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                P0.getX(), P0.getY(),</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                P1.getX(), P1.getY(),</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                P2.getX(), P2.getY(), horizontal);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
+<dl class="section return"><dt>Returns</dt><dd>color as normalized RGB values between 0 and 1. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06603.html#adf9971d80a18c81fd5c08c4d77954102">ScaledColorModel.RANGE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#ae8771e0b8839ae5cc8ddaa4974afde01">ScaledColorSpace.toCIEXYZ()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">float</span> value = Math.min(1, (<span class="keywordtype">float</span>) ((samples[<a class="code" href="a06607.html#a222631519396875a9610c4bccec56eaf">visibleBand</a>] - <a class="code" href="a06607.html#aadb91501360c2d55360454da8d721b84">offset</a>) * (1d/ScaledColorModel.RANGE * <a class="code" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">scale</a>)));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (!(value &gt;= 0)) value = 0;                   <span class="comment">// Use &#39;!&#39; for replacing NaN.</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">float</span>[] {value, value, value};</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div><div class="ttc" id="a06607_html_aadb91501360c2d55360454da8d721b84"><div class="ttname"><a href="a06607.html#aadb91501360c2d55360454da8d721b84">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.offset</a></div><div class="ttdeci">final double offset</div><div class="ttdoc">The offset to subtract from sample values before to apply the  scale} factor. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:56</div></div>
+<div class="ttc" id="a06607_html_a222631519396875a9610c4bccec56eaf"><div class="ttname"><a href="a06607.html#a222631519396875a9610c4bccec56eaf">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.visibleBand</a></div><div class="ttdeci">final int visibleBand</div><div class="ttdoc">Index of the band to display, from 0 inclusive to getNumComponents() exclusive. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:61</div></div>
+<div class="ttc" id="a06607_html_ae0f108ae280f5aa6c240b7ff20de9676"><div class="ttname"><a href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.scale</a></div><div class="ttdeci">final double scale</div><div class="ttdoc">The scaling factor from sample values to RGB values. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:51</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa8867b3b1851a7381d944e23ca284099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8867b3b1851a7381d944e23ca284099">&#9670;&nbsp;</a></span>getFlatness()</h2>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static double getFlatness </td>
+          <td class="memname">String toString </td>
           <td>(</td>
-          <td class="paramtype">final Shape&#160;</td>
-          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns a suggested value for the. </p>
-<div class="fragment"><div class="line">flatness </div></div><!-- fragment --><p> argument in <a class="el" href="">Shape#getPathIterator(AffineTransform,double)</a> for the specified shape.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">shape</td><td>The shape for which to compute a flatness factor. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The suggested flatness factor. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                        {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keyword">final</span> Rectangle2D bounds = shape.getBounds2D();</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> dx = bounds.getWidth();</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> dy = bounds.getHeight();</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> max(0.025 * min(dx, dy),</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                   0.001 * max(dx, dy));</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a138b481a7adb237f52a206446550cae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a138b481a7adb237f52a206446550cae6">&#9670;&nbsp;</a></span>intersectionPoint()</h2>
+<p>Returns a string representation of this color space. </p>
+<dl class="section return"><dt>Returns</dt><dd>a string representation for debugging purpose. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Point2D.Double intersectionPoint </td>
-          <td>(</td>
-          <td class="paramtype">final Line2D&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Line2D&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the intersection point between two line segments. </p>
-<p>The lines do not continue to infinity; if the intersection do not occurs between the ending points  Line2D::getP1 P1} and  Line2D::getP2 P2} of the two line segments, then this method returns</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> .</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>The first line segment. </td></tr>
-    <tr><td class="paramname">b</td><td>The second line segment. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The intersection point, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03669.html#_deprecated000002">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#intersectionPoint(Line2D, Line2D)</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                                   {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.intersectionPoint(</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                a.getX1(), a.getY1(), a.getX2(), a.getY2(),</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                b.getX1(), b.getY1(), b.getX2(), b.getY2());</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
+<p class="reference">References <a class="el" href="a06607.html#a0cc5af9dcb1bc4d95a801c2113de8b86">ScaledColorSpace.formatRange()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                             {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">final</span> StringBuilder buffer = <span class="keyword">new</span> StringBuilder(20).append(getClass().getSimpleName());</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="a06607.html#a0cc5af9dcb1bc4d95a801c2113de8b86">formatRange</a>(buffer);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">return</span> buffer.toString();</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div><div class="ttc" id="a06607_html_a0cc5af9dcb1bc4d95a801c2113de8b86"><div class="ttname"><a href="a06607.html#a0cc5af9dcb1bc4d95a801c2113de8b86">org.apache.sis.internal.coverage.j2d.ScaledColorSpace.formatRange</a></div><div class="ttdeci">final void formatRange(final StringBuilder buffer)</div><div class="ttdoc">Formats the range of values in the given buffer. </div><div class="ttdef"><b>Definition:</b> ScaledColorSpace.java:175</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0dd0388dc5158b49716eea7caac5a89b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd0388dc5158b49716eea7caac5a89b">&#9670;&nbsp;</a></span>nearestColinearPoint()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aadb91501360c2d55360454da8d721b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb91501360c2d55360454da8d721b84">&#9670;&nbsp;</a></span>offset</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,57 +543,24 @@ A value of<div class="fragment"><div class="line"><span class="keyword">false</s
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Point2D.Double nearestColinearPoint </td>
-          <td>(</td>
-          <td class="paramtype">final Line2D&#160;</td>
-          <td class="paramname"><em>segment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">final double offset</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the point on the given. </p>
-<div class="fragment"><div class="line">line </div></div><!-- fragment --><p> segment which is closest to the given </p><div class="fragment"><div class="line">point </div></div><!-- fragment --><p> . Let</p><div class="fragment"><div class="line">result </div></div><!-- fragment --><p> be the returned point. This method guarantees (except for rounding errors) that: </p>
-<ul>
-<li>
-<div class="fragment"><div class="line">result </div></div><!-- fragment --> is a point on the<div class="fragment"><div class="line">line </div></div><!-- fragment --> segment. It is located between the  Line2D::getP1 P1} and  Line2D::getP2 P2} ending points of that line segment. </li>
-<li>
-The distance between the<div class="fragment"><div class="line">result </div></div><!-- fragment --> point and the given<div class="fragment"><div class="line">point </div></div><!-- fragment --> is the shortest distance among the set of points meeting the previous condition. This distance can be obtained with<div class="fragment"><div class="line">point.distance(result) </div></div><!-- fragment --> . </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">segment</td><td>The line on which to search for a point. </td></tr>
-    <tr><td class="paramname">point</td><td>A point close to the given line. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The nearest point on the given line.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06607.html#acec8d7e0c83de51460efd085bb4c5101" title="Returns a point on the given. ">colinearPoint(Line2D, Point2D, double)</a></dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a03669.html#_deprecated000003">Deprecated:</a></b></dt><dd>Moved to Apache SIS as <a class="el" href="">org.apache.sis.geometry.Shapes2D#nearestColinearPoint(Line2D, Point2D)</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                                                 {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.nearestColinearPoint(</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                segment.getX1(), segment.getY1(),</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                segment.getX2(), segment.getY2(),</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  point.getX(),    point.getY());</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
-</div><!-- fragment -->
+<p>The offset to subtract from sample values before to apply the  <a class="el" href="a06607.html#ae0f108ae280f5aa6c240b7ff20de9676" title="The scaling factor from sample values to RGB values. ">scale</a>} factor. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a38744f448cabd3e9b605b2c349e007b4">ScaledColorSpace.equals()</a>, <a class="el" href="a06607.html#afe34c62179414de4432a103ddddd35a3">ScaledColorSpace.getMaxValue()</a>, <a class="el" href="a06607.html#a609abc2a11ff03be69ccf8e23ae030e2">ScaledColorSpace.getMinValue()</a>, and <a class="el" href="a06603.html#a53399a7854daf35eab28eaa7225c3a4d">ScaledColorModel.getRGB()</a>.</p>
+
 </div>
 </div>
-<a id="afc471b70074feb3332e2b5e6b03748b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc471b70074feb3332e2b5e6b03748b2">&#9670;&nbsp;</a></span>parabolicControlPoint()</h2>
+<a id="ae0f108ae280f5aa6c240b7ff20de9676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f108ae280f5aa6c240b7ff20de9676">&#9670;&nbsp;</a></span>scale</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,71 +569,25 @@ The distance between the<div class="fragment"><div class="line">result </div></d
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Point2D.Double parabolicControlPoint </td>
-          <td>(</td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point2D&#160;</td>
-          <td class="paramname"><em>P2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>horizontal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">final double scale</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the control point of a quadratic curve passing by the 3 given points. </p>
-<p>There is an infinity of quadratic curves passing by 3 points. We can express the curve we are looking for as a parabolic equation of the form</p><div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --><p> but where the <em>x</em> axis is not necessarily horizontal. The orientation of the <em>x</em> axis in the above equation is determined by the</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> parameter: </p>
-<ul>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be horizontal. The quadratic curve will then look like an ordinary parabolic curve as we see in mathematic school book. </li>
-<li>
-A value of<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> means that the <em>x</em> axis must be parallel to the line segment joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> ending points. </li>
-</ul>
-<p>Note that if</p><div class="fragment"><div class="line">P0.y == P2.y </div></div><!-- fragment --><p> , then both</p><div class="fragment"><div class="line">horizontal </div></div><!-- fragment --><p> values produce the same result.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">P0</td><td>The starting point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">P1</td><td>A point by which the quadratic curve must pass by. </td></tr>
-    <tr><td class="paramname">P2</td><td>The ending point of the quadratic curve. </td></tr>
-    <tr><td class="paramname">horizontal</td><td>If<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> , the <em>x</em> axis is considered horizontal while computing the<div class="fragment"><div class="line">y=ax²+bx+c </div></div><!-- fragment --> equation terms. If<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> , it is considered parallel to the line joining the<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> points. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The control point of a quadratic curve passing by the given points. The curve starts at<div class="fragment"><div class="line">P0 </div></div><!-- fragment --> and ends at<div class="fragment"><div class="line">P2 </div></div><!-- fragment --> . If two points are too close or if the three points are colinear, then this method returns<div class="fragment"><div class="line">null </div></div><!-- fragment --> .</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.20 </dd></dl>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.parabolicControlPoint(</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                P0.getX(), P0.getY(),</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                P1.getX(), P1.getY(),</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                P2.getX(), P2.getY(), horizontal);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
-</div><!-- fragment -->
+<p>The scaling factor from sample values to RGB values. </p>
+<p>The target RGB values will be in range 0 to 255 inclusive. Note that the target range is different than the range of <a class="el" href="">ColorSpace</a> normalized values; methods in this class has to divide values by { <a class="el" href="a06603.html#adf9971d80a18c81fd5c08c4d77954102" title="Size of the range of color values. ">ScaledColorModel::RANGE</a>}. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a38744f448cabd3e9b605b2c349e007b4">ScaledColorSpace.equals()</a>, <a class="el" href="a06607.html#a64b323df205eb1af579c90342709bc09">ScaledColorSpace.fromCIEXYZ()</a>, <a class="el" href="a06607.html#abc30c4c62669486c29e1456c59726c82">ScaledColorSpace.fromRGB()</a>, and <a class="el" href="a06603.html#a53399a7854daf35eab28eaa7225c3a4d">ScaledColorModel.getRGB()</a>.</p>
+
 </div>
 </div>
-<a id="aa692d3d79782d011478935c258ec1212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa692d3d79782d011478935c258ec1212">&#9670;&nbsp;</a></span>toPrimitive()</h2>
+<a id="a3238d314ecdee14d2966760945d00c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -580,34 +596,44 @@ A value of<div class="fragment"><div class="line"><span class="keyword">false</s
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Shape toPrimitive </td>
-          <td>(</td>
-          <td class="paramtype">final Shape&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
+          <td class="memname">final long serialVersionUID = -6635165959083590494L</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Attempts to replace an arbitrary shape by one of the standard Java2D constructs. </p>
-<p>For example if the given</p><div class="fragment"><div class="line">path </div></div><!-- fragment --><p> is a <a class="el" href="">Path2D</a> containing only a single line or a quadratic curve, then this method replaces it by a <a class="el" href="">Line2D</a> or <a class="el" href="">QuadCurve2D</a> object respectively.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>The shape to replace by a simpler Java2D construct. This is generally an instance of <a class="el" href="">Path2D</a>, but doesn't have to. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A simpler Java construct, or<div class="fragment"><div class="line">path </div></div><!-- fragment --> if no better construct is proposed. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                      {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.j2d.ShapeUtilities.toPrimitive(path);</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
-</div><!-- fragment -->
+<p>For cross-version compatibility. </p>
+
+</div>
+</div>
+<a id="a222631519396875a9610c4bccec56eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222631519396875a9610c4bccec56eaf">&#9670;&nbsp;</a></span>visibleBand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int visibleBand</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Index of the band to display, from 0 inclusive to <a class="el" href="">getNumComponents()</a> exclusive. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06607.html#a38744f448cabd3e9b605b2c349e007b4">ScaledColorSpace.equals()</a>, <a class="el" href="a06607.html#a64b323df205eb1af579c90342709bc09">ScaledColorSpace.fromCIEXYZ()</a>, <a class="el" href="a06607.html#abc30c4c62669486c29e1456c59726c82">ScaledColorSpace.fromRGB()</a>, <a class="el" href="a06603.html#a4e71e1a8555008f5b88e33217d9a132a">ScaledColorModel.getAlpha()</a>, <a class="el" href="a06603.html#a53399a7854daf35eab28eaa7225c3a4d">ScaledColorModel.getRGB()</a>, <a class="el" href="a06607.html#a077e18fe97323c7194e2665ffc766399">ScaledColorSpace.hashCode()</a>, and <a class="el" href="a06607.html#adf7cc0b0c75de55625d8fabb7866fc84">ScaledColorSpace.ScaledColorSpace()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -616,7 +642,7 @@ A value of<div class="fragment"><div class="line"><span class="keyword">false</s
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03758.html">display</a></li><li class="navelem"><a class="el" href="a03757.html">shape</a></li><li class="navelem"><a class="el" href="a06607.html">ShapeUtilities</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03807.html">apache</a></li><li class="navelem"><a class="el" href="a03808.html">sis</a></li><li class="navelem"><a class="el" href="a03812.html">internal</a></li><li class="navelem"><a class="el" href="a03813.html">coverage</a></li><li class="navelem"><a class="el" href="a03811.html">j2d</a></li><li class="navelem"><a class="el" href="a06607.html">ScaledColorSpace</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

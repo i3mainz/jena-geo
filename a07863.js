@@ -1,17 +1,5 @@
 var a07863 =
 [
-    [ "Iter", "a07867.html", "a07867" ],
-    [ "DerivedSet", "a07863.html#a365d968abb9ed8e96039fe686365cd7e", null ],
-    [ "add", "a07863.html#aedbc13a303fdeb044c5973530b3e0a81", null ],
-    [ "baseToDerived", "a07863.html#a83b4036c084427308c417c8d06348380", null ],
-    [ "contains", "a07863.html#ae1be99f861382755fb4ab18f78003154", null ],
-    [ "derivedToBase", "a07863.html#a3f73a4292875049ff99875e2453bc23d", null ],
-    [ "getElementType", "a07863.html#a495b2b3c280d155dc55c0ee28af2d693", null ],
-    [ "isEmpty", "a07863.html#aa71d41fd3d95c354d4d5e922c6c21210", null ],
-    [ "iterator", "a07863.html#a47c5a247288d15e20eb94dc1ca643271", null ],
-    [ "remove", "a07863.html#a59bedf41619590473b10a8a1d94502ce", null ],
-    [ "size", "a07863.html#af4b57d21919c42d55af03391f91a1c08", null ],
-    [ "base", "a07863.html#a669ce1b4d455af85058b47509be85830", null ],
-    [ "derivedType", "a07863.html#a1097212b9f07192faedb1ac7a22d0ddb", null ],
-    [ "serialVersionUID", "a07863.html#a3238d314ecdee14d2966760945d00c3b", null ]
+    [ "commit", "a07863.html#ad55316f5135cdae6aa6c5a763f6c3473", null ],
+    [ "rollback", "a07863.html#a071de472f6ac976c658e4643f3fb3d0c", null ]
 ];

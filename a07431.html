@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ProcessListener Interface Reference</title>
+<title>jena-geo: PathChangeListener Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,280 +64,51 @@ $(document).ready(function(){initNavTree('a07431.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a07428.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ProcessListener Interface Reference</div>  </div>
+<div class="title">PathChangeListener Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Receives general indications of  <a class="el" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} progress and events indicating start, completion or failure.  
+<p>A listener notified when a <a class="el" href="a07419.html">DirectoryWatcher</a> detects a change into one watched folder.  
  <a href="a07431.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ProcessListener:</div>
+Inheritance diagram for PathChangeListener:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07430.png" border="0" usemap="#ProcessListener_inherit__map" alt="Inheritance graph"/></div>
-<map name="ProcessListener_inherit__map" id="ProcessListener_inherit__map">
-<area shape="rect" id="node3" href="a07435.html" title="Monitors the progress of some lengthly operation, and allows cancellation. " alt="" coords="11,155,142,181"/>
-<area shape="rect" id="node4" href="a07995.html" title="A default progress listener implementation suitable for subclassing. " alt="" coords="5,229,148,256"/>
+<div class="center"><img src="a07430.png" border="0" usemap="#PathChangeListener_inherit__map" alt="Inheritance graph"/></div>
+<map name="PathChangeListener_inherit__map" id="PathChangeListener_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for ProcessListener:</div>
+Collaboration diagram for PathChangeListener:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07429.png" border="0" usemap="#ProcessListener_coll__map" alt="Collaboration graph"/></div>
-<map name="ProcessListener_coll__map" id="ProcessListener_coll__map">
+<div class="center"><img src="a07429.png" border="0" usemap="#PathChangeListener_coll__map" alt="Collaboration graph"/></div>
+<map name="PathChangeListener_coll__map" id="PathChangeListener_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7bed9c26a745fe4a7f968be46900b6cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a7bed9c26a745fe4a7f968be46900b6cb">started</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:a7bed9c26a745fe4a7f968be46900b6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that a process is beginning.  <a href="#a7bed9c26a745fe4a7f968be46900b6cb">More...</a><br /></td></tr>
-<tr class="separator:a7bed9c26a745fe4a7f968be46900b6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c0e7b51b0df4f69b57148f46580b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a67c0e7b51b0df4f69b57148f46580b65">progressing</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:a67c0e7b51b0df4f69b57148f46580b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked at any time during process progression.  <a href="#a67c0e7b51b0df4f69b57148f46580b65">More...</a><br /></td></tr>
-<tr class="separator:a67c0e7b51b0df4f69b57148f46580b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53ab1cf8170671245d115349b5e0d5b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a53ab1cf8170671245d115349b5e0d5b0">dismissed</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:a53ab1cf8170671245d115349b5e0d5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that a process has been dismissed.  <a href="#a53ab1cf8170671245d115349b5e0d5b0">More...</a><br /></td></tr>
-<tr class="separator:a53ab1cf8170671245d115349b5e0d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3caea020422a818cc434ac6fcc340042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a3caea020422a818cc434ac6fcc340042">paused</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:a3caea020422a818cc434ac6fcc340042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that a process has been paused.  <a href="#a3caea020422a818cc434ac6fcc340042">More...</a><br /></td></tr>
-<tr class="separator:a3caea020422a818cc434ac6fcc340042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5c9c527214ca893c5d0b6ccbdb5757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a1e5c9c527214ca893c5d0b6ccbdb5757">resumed</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:a1e5c9c527214ca893c5d0b6ccbdb5757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that a process has been resumed after a pause.  <a href="#a1e5c9c527214ca893c5d0b6ccbdb5757">More...</a><br /></td></tr>
-<tr class="separator:a1e5c9c527214ca893c5d0b6ccbdb5757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f9ff22335e9ed3a07035935857b13f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f">completed</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:aa7f9ff22335e9ed3a07035935857b13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that a process has completed successfully.  <a href="#aa7f9ff22335e9ed3a07035935857b13f">More...</a><br /></td></tr>
-<tr class="separator:aa7f9ff22335e9ed3a07035935857b13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df903dde386ca28d758548f8e74ed30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a2df903dde386ca28d758548f8e74ed30">failed</a> (<a class="el" href="a07415.html">ProcessEvent</a> event)</td></tr>
-<tr class="memdesc:a2df903dde386ca28d758548f8e74ed30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports that a process has failed.  <a href="#a2df903dde386ca28d758548f8e74ed30">More...</a><br /></td></tr>
-<tr class="separator:a2df903dde386ca28d758548f8e74ed30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5ee3959dc0b88183db8a67a3c25754"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07431.html#a7e5ee3959dc0b88183db8a67a3c25754">pathChanged</a> (<a class="el" href="a07427.html">PathChangedEvent</a> event)</td></tr>
+<tr class="separator:a7e5ee3959dc0b88183db8a67a3c25754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Receives general indications of  <a class="el" href="a07407.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} progress and events indicating start, completion or failure. </p>
-<p>For any  <a class="el" href="a07407.html#ac3105b8b72c72140d73f00070fc1609e" title="Adds a listener to the list of objects to inform about the process progress. ">Process::addListener</a> registered listeners}, the <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">Process#call()</a> method shall invoke at least the <a class="el" href="a07431.html#a7bed9c26a745fe4a7f968be46900b6cb">started</a> and <a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f">completed</a> or <a class="el" href="a07431.html#a2df903dde386ca28d758548f8e74ed30">failed</a> methods (mandatory). Calls to the <a class="el" href="a07431.html#a67c0e7b51b0df4f69b57148f46580b65">progressing</a> method are optional but recommended.</p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd>
-<dd>
-Guilhem Legal (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
+<div class="textblock"><p>A listener notified when a <a class="el" href="a07419.html">DirectoryWatcher</a> detects a change into one watched folder. </p>
+<dl class="section author"><dt>Author</dt><dd>Alexis Manin (Geomatys) </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7f9ff22335e9ed3a07035935857b13f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f9ff22335e9ed3a07035935857b13f">&#9670;&nbsp;</a></span>completed()</h2>
+<a id="a7e5ee3959dc0b88183db8a67a3c25754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5ee3959dc0b88183db8a67a3c25754">&#9670;&nbsp;</a></span>pathChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void completed </td>
+          <td class="memname">void pathChanged </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a07427.html">PathChangedEvent</a>&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reports that a process has completed successfully. </p>
-<p><a class="el" href="a07407.html">Process</a> implementations are required to call either this method or <a class="el" href="a07431.html#a2df903dde386ca28d758548f8e74ed30">failed(ProcessEvent)</a> exactly once. In addition to the source and task name, the event argument shall contain the following information: </p>
-<ul>
-<li>
-<a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a> is the final result returned by <a class="el" href="a07407.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">Process#call()</a>. </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#a0ec19bdaeb5d5cef48563752e80a6da1">ProgressController</a>.</p>
-
-</div>
-</div>
-<a id="a53ab1cf8170671245d115349b5e0d5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53ab1cf8170671245d115349b5e0d5b0">&#9670;&nbsp;</a></span>dismissed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dismissed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reports that a process has been dismissed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#add5ff5158bef30465eaf5e5ba52afc7b">ProgressController</a>.</p>
-
-</div>
-</div>
-<a id="a2df903dde386ca28d758548f8e74ed30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2df903dde386ca28d758548f8e74ed30">&#9670;&nbsp;</a></span>failed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void failed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reports that a process has failed. </p>
-<p><a class="el" href="a07407.html">Process</a> implementations are required to call either this method or <a class="el" href="a07431.html#aa7f9ff22335e9ed3a07035935857b13f">completed(ProcessEvent)</a> exactly once. In addition to the source and task name, the event argument may contain the following optional information: </p>
-<ul>
-<li>
-<a class="el" href="a07415.html#a4e035c25549a8f6cb7d45e238c989e8e">ProcessEvent#getException()</a>, if non-null, indicates the failure cause. </li>
-<li>
-<a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a>, if non-null, indicates the calculation state before the failure. </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#a61db47cc52b55964f1a7219f58a75831">ProgressController</a>.</p>
-
-</div>
-</div>
-<a id="a3caea020422a818cc434ac6fcc340042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3caea020422a818cc434ac6fcc340042">&#9670;&nbsp;</a></span>paused()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void paused </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reports that a process has been paused. </p>
-<p>In addition to the source and task name, the event argument may contain the following optional information: </p>
-<ul>
-<li>
-<a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a>, if non-null, indicates the calculation state before the pause. </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#ac8e0cd0580d54fa3020167eb33ef5b3c">ProgressController</a>.</p>
-
-</div>
-</div>
-<a id="a67c0e7b51b0df4f69b57148f46580b65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67c0e7b51b0df4f69b57148f46580b65">&#9670;&nbsp;</a></span>progressing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void progressing </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Invoked at any time during process progression. </p>
-<p><a class="el" href="a07407.html">Process</a> implementations may invoke this method an arbitrary number of time. In addition to the source, task name and progress indicator, the event argument may contain the following optional information: </p>
-<ul>
-<li>
-<a class="el" href="a07415.html#a30ffa65667914ba5a157cbcd704937f4">ProcessEvent#getOutput()</a>, if non-null, indicates an intermediate calculation value. </li>
-<li>
-<a class="el" href="a07415.html#a4e035c25549a8f6cb7d45e238c989e8e">ProcessEvent#getException()</a>, if non-null, indicates a non-fatal warning. </li>
-</ul>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#a8fed868c01b58fc8fe9050fbaaaa6960">ProgressController</a>.</p>
-
-</div>
-</div>
-<a id="a1e5c9c527214ca893c5d0b6ccbdb5757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e5c9c527214ca893c5d0b6ccbdb5757">&#9670;&nbsp;</a></span>resumed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void resumed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reports that a process has been resumed after a pause. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#acb7fbd2d229b790b93f111f3a4dc98c4">ProgressController</a>.</p>
-
-</div>
-</div>
-<a id="a7bed9c26a745fe4a7f968be46900b6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bed9c26a745fe4a7f968be46900b6cb">&#9670;&nbsp;</a></span>started()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void started </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a07415.html">ProcessEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reports that a process is beginning. </p>
-<p><a class="el" href="a07407.html">Process</a> implementations are required to call this method exactly once.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td>The progress event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a07435.html#a1aab917e5fa5f16d56c7f7b7b2ba2db9">ProgressController</a>.</p>
 
 </div>
 </div>
@@ -347,7 +118,7 @@ Guilhem Legal (Geomatys) </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03791.html">process</a></li><li class="navelem"><a class="el" href="a07431.html">ProcessListener</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03849.html">nio</a></li><li class="navelem"><a class="el" href="a07431.html">PathChangeListener</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

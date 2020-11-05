@@ -1,7 +1,10 @@
 var a08387 =
 [
-    [ "testAddGeometry", "a08387.html#a4ebf1443292e242753148cb8748d9169", null ],
-    [ "result", "a08387.html#aab356d6554a7301750f11ec7a85ac47d", null ],
-    [ "testGeom", "a08387.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
-    [ "testGeom2", "a08387.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
+    [ "testGeometryCollectionIsCollection", "a08387.html#ab8f9e80081b7ac2106ef406ffbb215e2", null ],
+    [ "testLineStringIsCollection", "a08387.html#a513937962f26a1affcc4d0c369733a79", null ],
+    [ "testMultiLineStringIsCollection", "a08387.html#af185514d9e978598dc7aa4ba06572494", null ],
+    [ "testMultiPointIsCollection", "a08387.html#abe0dc5056717b405438313e86f9017f2", null ],
+    [ "testMultiPolygonIsCollection", "a08387.html#a3cb8a0ddd3838eedbcbb6c1651e3a9c0", null ],
+    [ "testPointIsCollection", "a08387.html#ae050c74afe9d24c25aa8cfddca93609d", null ],
+    [ "testPolygonIsCollection", "a08387.html#aa73539bce49dc7ae2102874315d15e51", null ]
 ];

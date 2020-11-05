@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: EquatorialStereographic.Spherical Class Reference</title>
+<title>jena-geo: DirectAuthorityFactory Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,144 +62,97 @@ $(document).ready(function(){initNavTree('a07551.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
-<a href="#pac-static-methods">Static Package Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
-<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a07548.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">EquatorialStereographic.Spherical Class Reference</div>  </div>
+<div class="title">DirectAuthorityFactory Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides the transform equations for the spherical case of the Equatorial <a class="el" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. ">Stereographic</a> projection.  
+<p>The base class for authority factories that create referencing object directly.  
  <a href="a07551.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for EquatorialStereographic.Spherical:</div>
+Inheritance diagram for DirectAuthorityFactory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07550.png" border="0" usemap="#EquatorialStereographic_8Spherical_inherit__map" alt="Inheritance graph"/></div>
-<map name="EquatorialStereographic_8Spherical_inherit__map" id="EquatorialStereographic_8Spherical_inherit__map">
-<area shape="rect" id="node2" href="a07547.html" title="The USGS equatorial case of the &#160;Stereographic} projection. " alt="" coords="7,229,167,256"/>
-<area shape="rect" id="node3" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. " alt="" coords="36,155,139,181"/>
-<area shape="rect" id="node4" href="a07583.html" title="UnitaryProjection" alt="" coords="26,80,149,107"/>
+<div class="center"><img src="a07550.png" border="0" usemap="#DirectAuthorityFactory_inherit__map" alt="Inheritance graph"/></div>
+<map name="DirectAuthorityFactory_inherit__map" id="DirectAuthorityFactory_inherit__map">
+<area shape="rect" id="node3" href="a07163.html" title="The IGNF authority factory. " alt="" coords="5,155,60,181"/>
+<area shape="rect" id="node4" href="a07583.html" title="A CRS Authority Factory that manages object creation by parsing &lt;cite&gt;Well Known Text&lt;/cite&gt; (WKT) st..." alt="" coords="85,155,277,181"/>
+<area shape="rect" id="node5" href="a07571.html" title="An authority factory creating CRS from the { TABLE} table in a spatial SQL database. " alt="" coords="17,229,163,256"/>
+<area shape="rect" id="node6" href="a07575.html" title="A CRS Authority Factory that manages object creation using a set of static strings from a &#160;java..." alt="" coords="187,229,353,256"/>
+<area shape="rect" id="node7" href="a07555.html" title="Authority factory for &#160;CoordinateReferenceSystem Coordinate Reference Systems} beyong the one defined..." alt="" coords="197,304,343,331"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for EquatorialStereographic.Spherical:</div>
+Collaboration diagram for DirectAuthorityFactory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a07549.png" border="0" usemap="#EquatorialStereographic_8Spherical_coll__map" alt="Collaboration graph"/></div>
-<map name="EquatorialStereographic_8Spherical_coll__map" id="EquatorialStereographic_8Spherical_coll__map">
-<area shape="rect" id="node2" href="a07547.html" title="The USGS equatorial case of the &#160;Stereographic} projection. " alt="" coords="263,393,423,420"/>
-<area shape="rect" id="node3" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. " alt="" coords="147,304,249,331"/>
-<area shape="rect" id="node4" href="a07583.html" title="UnitaryProjection" alt="" coords="143,177,266,203"/>
+<div class="center"><img src="a07549.png" border="0" usemap="#DirectAuthorityFactory_coll__map" alt="Collaboration graph"/></div>
+<map name="DirectAuthorityFactory_coll__map" id="DirectAuthorityFactory_coll__map">
+<area shape="rect" id="node3" href="a07559.html" title="A container of factories frequently used together, with utility methods. " alt="" coords="575,132,767,159"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a288eee0c4e06db0f1e725c81c297669b"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a288eee0c4e06db0f1e725c81c297669b">transform</a> (final double[] srcPts, final int srcOff, final double[] dstPts, final int dstOff, final boolean derivate)  throws ProjectionException         </td></tr>
-<tr class="separator:a288eee0c4e06db0f1e725c81c297669b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0092a3ac544b9de0540a1e4c4ae32d96"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#a0092a3ac544b9de0540a1e4c4ae32d96">equals</a> (final <a class="el" href="a13339.html">Object</a> object, final ComparisonMode mode)</td></tr>
-<tr class="memdesc:a0092a3ac544b9de0540a1e4c4ae32d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the given object with this transform for equivalence.  <a href="#a0092a3ac544b9de0540a1e4c4ae32d96">More...</a><br /></td></tr>
-<tr class="separator:a0092a3ac544b9de0540a1e4c4ae32d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad8d36bb4131ce1be5b51c75fc5f7c17"><td class="memItemLeft" align="right" valign="top">Citation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#aad8d36bb4131ce1be5b51c75fc5f7c17">getVendor</a> ()</td></tr>
+<tr class="memdesc:aad8d36bb4131ce1be5b51c75fc5f7c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vendor responsible for creating this factory implementation.  <a href="#aad8d36bb4131ce1be5b51c75fc5f7c17">More...</a><br /></td></tr>
+<tr class="separator:aad8d36bb4131ce1be5b51c75fc5f7c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6cd7e952e1b53cb176433878a16e87"><td class="memItemLeft" align="right" valign="top">abstract Citation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">getAuthority</a> ()</td></tr>
+<tr class="memdesc:a6d6cd7e952e1b53cb176433878a16e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the organization or party responsible for definition and maintenance of the database.  <a href="#a6d6cd7e952e1b53cb176433878a16e87">More...</a><br /></td></tr>
+<tr class="separator:a6d6cd7e952e1b53cb176433878a16e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1a5a304e0e01ffa19130cb3d555fbe"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#afe1a5a304e0e01ffa19130cb3d555fbe">getBackingStoreDescription</a> ()  throws FactoryException </td></tr>
+<tr class="memdesc:afe1a5a304e0e01ffa19130cb3d555fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a description of the underlying backing store, or.  <a href="#afe1a5a304e0e01ffa19130cb3d555fbe">More...</a><br /></td></tr>
+<tr class="separator:afe1a5a304e0e01ffa19130cb3d555fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac046bc9548876e0c290ef90f56f24b4d"><td class="memItemLeft" align="right" valign="top">static MathTransform2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#ac046bc9548876e0c290ef90f56f24b4d">create</a> (final OperationMethod descriptor, final ParameterValueGroup values)</td></tr>
-<tr class="memdesc:ac046bc9548876e0c290ef90f56f24b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. ">Stereographic</a> projection from the given parameters.  <a href="#ac046bc9548876e0c290ef90f56f24b4d">More...</a><br /></td></tr>
-<tr class="separator:ac046bc9548876e0c290ef90f56f24b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab1d069f56091df4f6436f8c713ab2f39"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a> = Logging.getLogger(&quot;org.geotoolkit.referencing.factory&quot;)</td></tr>
+<tr class="memdesc:ab1d069f56091df4f6436f8c713ab2f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The logger for event related to Geotk factories.  <a href="#ab1d069f56091df4f6436f8c713ab2f39">More...</a><br /></td></tr>
+<tr class="separator:ab1d069f56091df4f6436f8c713ab2f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a13c89e7d025afb94b30e28468cb4bf41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a13c89e7d025afb94b30e28468cb4bf41">Spherical</a> (final OperationMethod method, final Parameters parameters)</td></tr>
-<tr class="memdesc:a13c89e7d025afb94b30e28468cb4bf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new map projection from the supplied parameters.  <a href="#a13c89e7d025afb94b30e28468cb4bf41">More...</a><br /></td></tr>
-<tr class="separator:a13c89e7d025afb94b30e28468cb4bf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e97fee4bc82504e5827dd19844559a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a1e97fee4bc82504e5827dd19844559a7">inverseTransform</a> (final double[] srcPts, final int srcOff, final double[] dstPts, final int dstOff)  throws ProjectionException         </td></tr>
-<tr class="separator:a1e97fee4bc82504e5827dd19844559a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578c49804986d50ef1e25ee5c2f96d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a578c49804986d50ef1e25ee5c2f96d59">DirectAuthorityFactory</a> ()</td></tr>
+<tr class="separator:a578c49804986d50ef1e25ee5c2f96d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebe9bad44a3314091515fc043f46572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#afebe9bad44a3314091515fc043f46572">DirectAuthorityFactory</a> (final <a class="el" href="a07559.html">ReferencingFactoryContainer</a> <a class="el" href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">factories</a>)</td></tr>
+<tr class="memdesc:afebe9bad44a3314091515fc043f46572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance using the specified set of factories.  <a href="#afebe9bad44a3314091515fc043f46572">More...</a><br /></td></tr>
+<tr class="separator:afebe9bad44a3314091515fc043f46572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af061a0a9fcae1571a9480c7f59bb3136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#af061a0a9fcae1571a9480c7f59bb3136">dispose</a> (final boolean shutdown)</td></tr>
+<tr class="memdesc:af061a0a9fcae1571a9480c7f59bb3136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases resources immediately instead of waiting for the garbage collector.  <a href="#af061a0a9fcae1571a9480c7f59bb3136">More...</a><br /></td></tr>
+<tr class="separator:af061a0a9fcae1571a9480c7f59bb3136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fde2d8b5e60c41ac52c66771527827"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a66fde2d8b5e60c41ac52c66771527827">trimAuthority</a> (String code)</td></tr>
+<tr class="memdesc:a66fde2d8b5e60c41ac52c66771527827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims the authority scope, if presents.  <a href="#a66fde2d8b5e60c41ac52c66771527827">More...</a><br /></td></tr>
+<tr class="separator:a66fde2d8b5e60c41ac52c66771527827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae518ac5e58a807eaa7645ff84ea72a46"><td class="memItemLeft" align="right" valign="top">final NoSuchAuthorityCodeException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#ae518ac5e58a807eaa7645ff84ea72a46">noSuchAuthorityCode</a> (final Class&lt;?&gt; type, final String code)</td></tr>
+<tr class="memdesc:ae518ac5e58a807eaa7645ff84ea72a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an exception for an unknown authority code.  <a href="#ae518ac5e58a807eaa7645ff84ea72a46">More...</a><br /></td></tr>
+<tr class="separator:ae518ac5e58a807eaa7645ff84ea72a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a24bf8dc43ab1bab1c9112a94797ae504"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a24bf8dc43ab1bab1c9112a94797ae504">getAndStore</a> (final Parameters parameters, final ParameterDescriptor&lt; Double &gt; descriptor)</td></tr>
-<tr class="separator:a24bf8dc43ab1bab1c9112a94797ae504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0132249242eea8e8e8e1bf37b1c2f26"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#ad0132249242eea8e8e8e1bf37b1c2f26">msfn</a> (final double sinφ, final double cosφ)</td></tr>
-<tr class="memdesc:ad0132249242eea8e8e8e1bf37b1c2f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes function <code>f(s,c,e²) = c/sqrt(1 - s²&times;e²)</code> needed for the true scale latitude (Snyder 14-15), where <em>s</em> and <em>c</em> are the sine and cosine of the true scale latitude, and <em>e²</em> is the  #eccentricitySquared eccentricity squared}.  <a href="#ad0132249242eea8e8e8e1bf37b1c2f26">More...</a><br /></td></tr>
-<tr class="separator:ad0132249242eea8e8e8e1bf37b1c2f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313c896cda05264dd17655569781da0b"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a313c896cda05264dd17655569781da0b">ssfn</a> (double φ, double sinφ)</td></tr>
-<tr class="memdesc:a313c896cda05264dd17655569781da0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes part of function (3-1) from Snyder.  <a href="#a313c896cda05264dd17655569781da0b">More...</a><br /></td></tr>
-<tr class="separator:a313c896cda05264dd17655569781da0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8775177e71f194a34a0ceedd54731242"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a8775177e71f194a34a0ceedd54731242">dssfn_dφ</a> (final double φ, final double sinφ, final double cosφ)</td></tr>
-<tr class="memdesc:a8775177e71f194a34a0ceedd54731242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the derivative of the <a class="el" href="a07583.html#a313c896cda05264dd17655569781da0b">ssfn(double, double)</a> method divided by.  <a href="#a8775177e71f194a34a0ceedd54731242">More...</a><br /></td></tr>
-<tr class="separator:a8775177e71f194a34a0ceedd54731242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df228f7e99fb92bd85136fe7a007563"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a8df228f7e99fb92bd85136fe7a007563">qsfn</a> (final double sinφ)</td></tr>
-<tr class="memdesc:a8df228f7e99fb92bd85136fe7a007563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates <em>q</em>, Snyder equation (3-12).  <a href="#a8df228f7e99fb92bd85136fe7a007563">More...</a><br /></td></tr>
-<tr class="separator:a8df228f7e99fb92bd85136fe7a007563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa88cb968fea1be82b311caba0041902b"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#aa88cb968fea1be82b311caba0041902b">dqsfn_dφ</a> (final double sinφ, final double cosφ)</td></tr>
-<tr class="memdesc:aa88cb968fea1be82b311caba0041902b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the derivative of the <a class="el" href="a07583.html#a8df228f7e99fb92bd85136fe7a007563">qsfn(double)</a> method.  <a href="#aa88cb968fea1be82b311caba0041902b">More...</a><br /></td></tr>
-<tr class="separator:aa88cb968fea1be82b311caba0041902b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a676c6e59e16b6f62dc142e287fbab5f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a676c6e59e16b6f62dc142e287fbab5f9">ensureNonNull</a> (final String name, final Object object)  throws InvalidParameterValueException     </td></tr>
+<tr class="memdesc:a676c6e59e16b6f62dc142e287fbab5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that an argument is non-null.  <a href="#a676c6e59e16b6f62dc142e287fbab5f9">More...</a><br /></td></tr>
+<tr class="separator:a676c6e59e16b6f62dc142e287fbab5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
-Static Package Functions</h2></td></tr>
-<tr class="memitem:a0b4a253948f710327e6caa3665cf64a4"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a0b4a253948f710327e6caa3665cf64a4">isSpherical</a> (final Parameters parameters)</td></tr>
-<tr class="separator:a0b4a253948f710327e6caa3665cf64a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
-<tr class="memitem:a69dfd5af0601ebd8a7cb94b93ad992c5"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#a69dfd5af0601ebd8a7cb94b93ad992c5">φ0</a></td></tr>
-<tr class="memdesc:a69dfd5af0601ebd8a7cb94b93ad992c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latitude of origin, in radians.  <a href="#a69dfd5af0601ebd8a7cb94b93ad992c5">More...</a><br /></td></tr>
-<tr class="separator:a69dfd5af0601ebd8a7cb94b93ad992c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab10944da075b2237099e4d4e274103d8"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#ab10944da075b2237099e4d4e274103d8">sinφ0</a></td></tr>
-<tr class="memdesc:ab10944da075b2237099e4d4e274103d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants used for the oblique projections.  <a href="#ab10944da075b2237099e4d4e274103d8">More...</a><br /></td></tr>
-<tr class="separator:ab10944da075b2237099e4d4e274103d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568ce0a57eba7f9938c0c5565083a4a1"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#a568ce0a57eba7f9938c0c5565083a4a1">cosφ0</a></td></tr>
-<tr class="separator:a568ce0a57eba7f9938c0c5565083a4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4ef9c8b2b67448f8dace85d0069b5d"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#a4c4ef9c8b2b67448f8dace85d0069b5d">cosχ1</a></td></tr>
-<tr class="separator:a4c4ef9c8b2b67448f8dace85d0069b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
-Static Package Attributes</h2></td></tr>
-<tr class="memitem:a44ae62b0034749ec109720daee36233f"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07575.html#a44ae62b0034749ec109720daee36233f">EPSILON</a> = 1E-6</td></tr>
-<tr class="memdesc:a44ae62b0034749ec109720daee36233f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum difference allowed when comparing real numbers.  <a href="#a44ae62b0034749ec109720daee36233f">More...</a><br /></td></tr>
-<tr class="separator:a44ae62b0034749ec109720daee36233f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace47a8e4c0535939fae80f2d0fe9b9dc"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#ace47a8e4c0535939fae80f2d0fe9b9dc">ANGLE_TOLERANCE</a> = 1E-6</td></tr>
-<tr class="memdesc:ace47a8e4c0535939fae80f2d0fe9b9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum difference allowed when comparing longitudes or latitudes in radians.  <a href="#ace47a8e4c0535939fae80f2d0fe9b9dc">More...</a><br /></td></tr>
-<tr class="separator:ace47a8e4c0535939fae80f2d0fe9b9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2bd5f5995eec3ad9aa93bb402a2cdb"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a1a2bd5f5995eec3ad9aa93bb402a2cdb">ITERATION_TOLERANCE</a> = 1E-10</td></tr>
-<tr class="memdesc:a1a2bd5f5995eec3ad9aa93bb402a2cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difference allowed in iterative computations.  <a href="#a1a2bd5f5995eec3ad9aa93bb402a2cdb">More...</a><br /></td></tr>
-<tr class="separator:a1a2bd5f5995eec3ad9aa93bb402a2cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98eb7706c8690581d8494c88cb9874b7"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07583.html#a98eb7706c8690581d8494c88cb9874b7">MAXIMUM_ITERATIONS</a> = 15</td></tr>
-<tr class="memdesc:a98eb7706c8690581d8494c88cb9874b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of iterations for iterative computations.  <a href="#a98eb7706c8690581d8494c88cb9874b7">More...</a><br /></td></tr>
-<tr class="separator:a98eb7706c8690581d8494c88cb9874b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5d82ede8edbfac72d8c1b10ce798b00a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a5d82ede8edbfac72d8c1b10ce798b00a">checkInverseTransform</a> (final double[] srcPts, final int srcOff, final double[] dstPts, final int dstOff, final double λ, final double φ)  throws ProjectionException         </td></tr>
-<tr class="memdesc:a5d82ede8edbfac72d8c1b10ce798b00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes using ellipsoidal formulas and compare with the result from spherical formulas.  <a href="#a5d82ede8edbfac72d8c1b10ce798b00a">More...</a><br /></td></tr>
-<tr class="separator:a5d82ede8edbfac72d8c1b10ce798b00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a3238d314ecdee14d2966760945d00c3b"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a3238d314ecdee14d2966760945d00c3b">serialVersionUID</a> = -4790138052004333003L</td></tr>
-<tr class="memdesc:a3238d314ecdee14d2966760945d00c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For cross-version compatibility.  <a href="#a3238d314ecdee14d2966760945d00c3b">More...</a><br /></td></tr>
-<tr class="separator:a3238d314ecdee14d2966760945d00c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a16391f8f2c1aeadda36bfdc54fcc4892"><td class="memItemLeft" align="right" valign="top">final NameFactory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#a16391f8f2c1aeadda36bfdc54fcc4892">nameFactory</a></td></tr>
+<tr class="memdesc:a16391f8f2c1aeadda36bfdc54fcc4892"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name factory to use for creating <a class="el" href="">GenericName</a>.  <a href="#a16391f8f2c1aeadda36bfdc54fcc4892">More...</a><br /></td></tr>
+<tr class="separator:a16391f8f2c1aeadda36bfdc54fcc4892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbaaeb9d6f038ea1c7cfc1184e32aef2"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a07559.html">ReferencingFactoryContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">factories</a></td></tr>
+<tr class="memdesc:adbaaeb9d6f038ea1c7cfc1184e32aef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying factories used for objects creation.  <a href="#adbaaeb9d6f038ea1c7cfc1184e32aef2">More...</a><br /></td></tr>
+<tr class="separator:adbaaeb9d6f038ea1c7cfc1184e32aef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides the transform equations for the spherical case of the Equatorial <a class="el" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. ">Stereographic</a> projection. </p>
-<dl class="section author"><dt>Author</dt><dd>Gerald Evenden (USGS) </dd>
-<dd>
-André Gosselin (MPO) </dd>
-<dd>
-Martin Desruisseaux (MPO, IRD) </dd>
-<dd>
-Rueben Schulz (UBC) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.00</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>2.4  </dd></dl>
+<div class="textblock"><p>The base class for authority factories that create referencing object directly. </p>
+<p>This is in contrast with other factories like the  AuthorityFactoryAdapter adapter} or  CachingAuthorityFactory caching} ones, which delegates their work to an other factory.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="a03729.html#_deprecated000033">Deprecated:</a></b></dt><dd>Moved to <a class="el" href="">org.apache.sis.referencing.factory.GeodeticAuthorityFactory</a> in Apache SIS. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a13c89e7d025afb94b30e28468cb4bf41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13c89e7d025afb94b30e28468cb4bf41">&#9670;&nbsp;</a></span>Spherical()</h2>
+<a id="a578c49804986d50ef1e25ee5c2f96d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578c49804986d50ef1e25ee5c2f96d59">&#9670;&nbsp;</a></span>DirectAuthorityFactory() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,21 +161,36 @@ Rueben Schulz (UBC) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07551.html">Spherical</a> </td>
+          <td class="memname"><a class="el" href="a07551.html">DirectAuthorityFactory</a> </td>
           <td>(</td>
-          <td class="paramtype">final OperationMethod&#160;</td>
-          <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">final Parameters&#160;</td>
-          <td class="paramname"><em>parameters</em>&#160;</td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                       {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">this</span>(<span class="keyword">new</span> ReferencingFactoryContainer());</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="afebe9bad44a3314091515fc043f46572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afebe9bad44a3314091515fc043f46572">&#9670;&nbsp;</a></span>DirectAuthorityFactory() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="a07551.html">DirectAuthorityFactory</a> </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="a07559.html">ReferencingFactoryContainer</a>&#160;</td>
+          <td class="paramname"><em>factories</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -232,19 +200,24 @@ Rueben Schulz (UBC) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a new map projection from the supplied parameters. </p>
+<p>Constructs an instance using the specified set of factories. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>The parameters of the projection to be created. </td></tr>
+    <tr><td class="paramname">factories</td><td>The low-level factories to use. </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                                                       {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            super(method, parameters);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div></div><!-- fragment -->
+
+<p class="reference">References <a class="el" href="a07551.html#a676c6e59e16b6f62dc142e287fbab5f9">DirectAuthorityFactory.ensureNonNull()</a>, and <a class="el" href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">DirectAuthorityFactory.factories</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                                                  {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="a07551.html#a676c6e59e16b6f62dc142e287fbab5f9">ensureNonNull</a>(<span class="stringliteral">&quot;factories&quot;</span>, <a class="code" href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">factories</a>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        this.<a class="code" href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">factories</a> = <a class="code" href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">factories</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="a07551.html#a16391f8f2c1aeadda36bfdc54fcc4892">nameFactory</a> = DefaultFactories.forBuildin(NameFactory.class);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="ttc" id="a07551_html_adbaaeb9d6f038ea1c7cfc1184e32aef2"><div class="ttname"><a href="a07551.html#adbaaeb9d6f038ea1c7cfc1184e32aef2">org.geotoolkit.referencing.factory.DirectAuthorityFactory.factories</a></div><div class="ttdeci">final ReferencingFactoryContainer factories</div><div class="ttdoc">The underlying factories used for objects creation. </div><div class="ttdef"><b>Definition:</b> DirectAuthorityFactory.java:69</div></div>
+<div class="ttc" id="a07551_html_a16391f8f2c1aeadda36bfdc54fcc4892"><div class="ttname"><a href="a07551.html#a16391f8f2c1aeadda36bfdc54fcc4892">org.geotoolkit.referencing.factory.DirectAuthorityFactory.nameFactory</a></div><div class="ttdeci">final NameFactory nameFactory</div><div class="ttdoc">The name factory to use for creating GenericName. </div><div class="ttdef"><b>Definition:</b> DirectAuthorityFactory.java:64</div></div>
+<div class="ttc" id="a07551_html_a676c6e59e16b6f62dc142e287fbab5f9"><div class="ttname"><a href="a07551.html#a676c6e59e16b6f62dc142e287fbab5f9">org.geotoolkit.referencing.factory.DirectAuthorityFactory.ensureNonNull</a></div><div class="ttdeci">static void ensureNonNull(final String name, final Object object)</div><div class="ttdoc">Makes sure that an argument is non-null. </div><div class="ttdef"><b>Definition:</b> DirectAuthorityFactory.java:179</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5d82ede8edbfac72d8c1b10ce798b00a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d82ede8edbfac72d8c1b10ce798b00a">&#9670;&nbsp;</a></span>checkInverseTransform()</h2>
+<a id="af061a0a9fcae1571a9480c7f59bb3136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af061a0a9fcae1571a9480c7f59bb3136">&#9670;&nbsp;</a></span>dispose()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,358 +226,11 @@ Rueben Schulz (UBC) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean checkInverseTransform </td>
+          <td class="memname">void dispose </td>
           <td>(</td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>srcPts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>shutdown</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>srcOff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>dstPts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>dstOff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>λ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>φ</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws ProjectionException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes using ellipsoidal formulas and compare with the result from spherical formulas. </p>
-<p>Used in assertions only. </p>
-
-<p class="reference">References <a class="el" href="a07531.html#a8f01a7acdf7c6ea20a9003b2e01f75c6">Assertions.checkInverseTransform()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07551.html#a1e97fee4bc82504e5827dd19844559a7">EquatorialStereographic.Spherical.inverseTransform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            super.inverseTransform(srcPts, srcOff, dstPts, dstOff);</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span> Assertions.checkInverseTransform(dstPts, dstOff, λ, φ);</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="ac046bc9548876e0c290ef90f56f24b4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac046bc9548876e0c290ef90f56f24b4d">&#9670;&nbsp;</a></span>create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static MathTransform2D create </td>
-          <td>(</td>
-          <td class="paramtype">final OperationMethod&#160;</td>
-          <td class="paramname"><em>descriptor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final ParameterValueGroup&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a <a class="el" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. ">Stereographic</a> projection from the given parameters. </p>
-<p>The descriptor argument is usually <a class="el" href="a07631.html#ab5e69de77a0ae51d2777912d2d63b133">org.geotoolkit.referencing.operation.provider.Stereographic#PARAMETERS</a>, but is not restricted to. If a different descriptor is supplied, it is user's responsibility to ensure that it is suitable to a <a class="el" href="a07575.html" title="&lt;cite&gt;Stereographic&lt;/cite&gt; projection using USGS formulas. ">Stereographic</a> projection.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">descriptor</td><td>Typically<div class="fragment"><div class="line"><a class="code" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic</a>.PARAMETERS </div></div><!-- fragment --> . </td></tr>
-    <tr><td class="paramname">values</td><td>The parameter values of the projection to create. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The map projection. </dd></dl>
-
-<p class="reference">References <a class="el" href="a07583.html#ace47a8e4c0535939fae80f2d0fe9b9dc">UnitaryProjection.ANGLE_TOLERANCE</a>, <a class="el" href="a07583.html#a0b4a253948f710327e6caa3665cf64a4">UnitaryProjection.isSpherical()</a>, <a class="el" href="a07631.html#a94cfdda279961bf01e756aa4217c4f7e">Stereographic.LATITUDE_OF_ORIGIN</a>, and <a class="el" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic.Stereographic()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07631.html#a18fd2cc70a438bd7c02797415570c219">Stereographic.createMathTransform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">final</span> Parameters parameters = Parameters.castOrWrap(values);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> latitudeOfOrigin = toRadians(parameters.doubleValue(<a class="code" href="a03746.html">org</a>.<a class="code" href="a03755.html">geotoolkit</a>.<a class="code" href="a03793.html">referencing</a>.<a class="code" href="a03798.html">operation</a>.<a class="code" href="a03801.html">provider</a>.<a class="code" href="a07631.html">Stereographic</a>.<a class="code" href="a07631.html#a94cfdda279961bf01e756aa4217c4f7e">LATITUDE_OF_ORIGIN</a>));</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">final</span> DefaultMathTransformFactory factory = DefaultFactories.forBuildin(MathTransformFactory.class, DefaultMathTransformFactory.class);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keyword">final</span> NormalizedProjection projection;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span> (abs(latitudeOfOrigin - PI/2) &lt; <a class="code" href="a07583.html#ace47a8e4c0535939fae80f2d0fe9b9dc">ANGLE_TOLERANCE</a>) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                projection = <span class="keyword">new</span> PolarStereographic(factory.getOperationMethod(PolarStereographicA.NAME), parameters);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="a07583.html#a0b4a253948f710327e6caa3665cf64a4">isSpherical</a> = <a class="code" href="a07583.html#a0b4a253948f710327e6caa3665cf64a4">isSpherical</a>(parameters);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">if</span> (abs(latitudeOfOrigin) &lt; <a class="code" href="a07583.html#ace47a8e4c0535939fae80f2d0fe9b9dc">ANGLE_TOLERANCE</a>) {</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    <span class="keywordflow">if</span> (isSpherical) {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        projection = <span class="keyword">new</span> EquatorialStereographic.Spherical(descriptor, parameters);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        projection = <span class="keyword">new</span> EquatorialStereographic(descriptor, parameters);</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    }</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (isSpherical) {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    projection = <span class="keyword">new</span> <a class="code" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic</a>.Spherical(descriptor, parameters);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    projection = <span class="keyword">new</span> <a class="code" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic</a>(descriptor, parameters);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                }</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> (MathTransform2D) projection.createMapProjection(factory);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        } <span class="keywordflow">catch</span> (FactoryException e) {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(e); <span class="comment">// TODO</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div><div class="ttc" id="a03793_html"><div class="ttname"><a href="a03793.html">org.geotoolkit.referencing</a></div><div class="ttdoc">Miscellaneous utilities related to CRS objects. </div></div>
-<div class="ttc" id="a03801_html"><div class="ttname"><a href="a03801.html">org.geotoolkit.referencing.operation.provider</a></div><div class="ttdoc">Providers for the Geotk extensions to Apache SIS. </div><div class="ttdef"><b>Definition:</b> provider/CassiniSoldner.java:18</div></div>
-<div class="ttc" id="a07575_html_a4ca40229e5b689fce5582152a6be2dc0"><div class="ttname"><a href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">org.geotoolkit.referencing.operation.projection.Stereographic.Stereographic</a></div><div class="ttdeci">Stereographic(final OperationMethod method, final Parameters parameters)</div><div class="ttdoc">Constructs an oblique stereographic projection (USGS equations). </div><div class="ttdef"><b>Definition:</b> projection/Stereographic.java:156</div></div>
-<div class="ttc" id="a03755_html"><div class="ttname"><a href="a03755.html">org.geotoolkit</a></div></div>
-<div class="ttc" id="a07631_html_a94cfdda279961bf01e756aa4217c4f7e"><div class="ttname"><a href="a07631.html#a94cfdda279961bf01e756aa4217c4f7e">org.geotoolkit.referencing.operation.provider.Stereographic.LATITUDE_OF_ORIGIN</a></div><div class="ttdeci">static final ParameterDescriptor&lt; Double &gt; LATITUDE_OF_ORIGIN</div><div class="ttdoc">The operation parameter descriptor for the  org.geotoolkit.referencing.operation.projection.UnitaryProjection.Parameters::latitudeOfOrigin latitude of origin} parameter value. </div><div class="ttdef"><b>Definition:</b> provider/Stereographic.java:82</div></div>
-<div class="ttc" id="a07631_html"><div class="ttname"><a href="a07631.html">org.geotoolkit.referencing.operation.provider.Stereographic</a></div><div class="ttdoc">The provider for &quot;&lt;cite&gt;Stereographic&lt;/cite&gt;&quot; projections using USGS equations. </div><div class="ttdef"><b>Definition:</b> provider/Stereographic.java:58</div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-<div class="ttc" id="a07583_html_ace47a8e4c0535939fae80f2d0fe9b9dc"><div class="ttname"><a href="a07583.html#ace47a8e4c0535939fae80f2d0fe9b9dc">org.geotoolkit.referencing.operation.projection.UnitaryProjection.ANGLE_TOLERANCE</a></div><div class="ttdeci">static final double ANGLE_TOLERANCE</div><div class="ttdoc">Maximum difference allowed when comparing longitudes or latitudes in radians. </div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:59</div></div>
-<div class="ttc" id="a03798_html"><div class="ttname"><a href="a03798.html">org.geotoolkit.referencing.operation</a></div><div class="ttdoc">Extension to the coordinate operation implementations provided in Apache SIS. </div><div class="ttdef"><b>Definition:</b> DefiningConversion.java:21</div></div>
-<div class="ttc" id="a07583_html_a0b4a253948f710327e6caa3665cf64a4"><div class="ttname"><a href="a07583.html#a0b4a253948f710327e6caa3665cf64a4">org.geotoolkit.referencing.operation.projection.UnitaryProjection.isSpherical</a></div><div class="ttdeci">static boolean isSpherical(final Parameters parameters)</div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:150</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa88cb968fea1be82b311caba0041902b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa88cb968fea1be82b311caba0041902b">&#9670;&nbsp;</a></span>dqsfn_dφ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double dqsfn_dφ </td>
-          <td>(</td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>sinφ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>cosφ</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the derivative of the <a class="el" href="a07583.html#a8df228f7e99fb92bd85136fe7a007563">qsfn(double)</a> method. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sinφ</td><td>The sine of latitude. </td></tr>
-    <tr><td class="paramname">cosφ</td><td>The cosines of latitude. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The<div class="fragment"><div class="line"><a class="code" href="a07583.html#a8df228f7e99fb92bd85136fe7a007563">qsfn</a> </div></div><!-- fragment --> derivative at the specified latitude.</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.18 </dd></dl>
-
-<p class="reference">References <a class="el" href="a07583.html#aa7e735b665504743a9a2c0832f051303">UnitaryProjection.ARGUMENT_TOLERANCE</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07559.html#a288eee0c4e06db0f1e725c81c297669b">LambertAzimuthalEqualArea.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                                                   {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        assert !(abs(sinφ*sinφ + cosφ*cosφ - 1) &gt; <a class="code" href="a07583.html#aa7e735b665504743a9a2c0832f051303">ARGUMENT_TOLERANCE</a>);</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordtype">double</span> esinφ2 = eccentricity * sinφ;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        esinφ2 *= esinφ2;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> (1 - eccentricitySquared) * (cosφ / (1 - esinφ2)) * (1 + ((1 + esinφ2) / (1 - esinφ2)));</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div><div class="ttc" id="a07583_html_aa7e735b665504743a9a2c0832f051303"><div class="ttname"><a href="a07583.html#aa7e735b665504743a9a2c0832f051303">org.geotoolkit.referencing.operation.projection.UnitaryProjection.ARGUMENT_TOLERANCE</a></div><div class="ttdeci">static final double ARGUMENT_TOLERANCE</div><div class="ttdoc">Tolerance in the correctness of argument values provided to the mathematical functions defined in thi...</div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:47</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8775177e71f194a34a0ceedd54731242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8775177e71f194a34a0ceedd54731242">&#9670;&nbsp;</a></span>dssfn_dφ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double dssfn_dφ </td>
-          <td>(</td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>φ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>sinφ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>cosφ</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes the derivative of the <a class="el" href="a07583.html#a313c896cda05264dd17655569781da0b">ssfn(double, double)</a> method divided by. </p>
-<div class="fragment"><div class="line"><a class="code" href="a07583.html#a313c896cda05264dd17655569781da0b">ssfn</a> </div></div><!-- fragment --><p> . Callers must multiply the return value by</p><div class="fragment"><div class="line"><a class="code" href="a07583.html#a313c896cda05264dd17655569781da0b">ssfn</a> </div></div><!-- fragment --><p> in order to get the actual value.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">φ</td><td>The latitude. </td></tr>
-    <tr><td class="paramname">sinφ</td><td>the sine of latitude. </td></tr>
-    <tr><td class="paramname">cosφ</td><td>The cosine of latitude. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The<div class="fragment"><div class="line">dssfn </div></div><!-- fragment --> derivative at the specified latitude.</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.18 </dd></dl>
-
-<p class="reference">References <a class="el" href="a07583.html#aa7e735b665504743a9a2c0832f051303">UnitaryProjection.ARGUMENT_TOLERANCE</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07547.html#a288eee0c4e06db0f1e725c81c297669b">EquatorialStereographic.transform()</a>, and <a class="el" href="a07575.html#a288eee0c4e06db0f1e725c81c297669b">Stereographic.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                                                                    {</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        assert !(abs(sinφ - sin(φ)) &gt; <a class="code" href="a07583.html#aa7e735b665504743a9a2c0832f051303">ARGUMENT_TOLERANCE</a>) : φ;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        assert !(abs(cosφ - cos(φ)) &gt; <a class="code" href="a07583.html#aa7e735b665504743a9a2c0832f051303">ARGUMENT_TOLERANCE</a>) : φ;</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> (1/cosφ) - (eccentricitySquared*cosφ)/(1-eccentricitySquared*sinφ*sinφ);</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">         * NOTE: 0.5*(t + 1/t)   =   1/cosφ</span></div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div><div class="ttc" id="a07583_html_aa7e735b665504743a9a2c0832f051303"><div class="ttname"><a href="a07583.html#aa7e735b665504743a9a2c0832f051303">org.geotoolkit.referencing.operation.projection.UnitaryProjection.ARGUMENT_TOLERANCE</a></div><div class="ttdeci">static final double ARGUMENT_TOLERANCE</div><div class="ttdoc">Tolerance in the correctness of argument values provided to the mathematical functions defined in thi...</div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:47</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0092a3ac544b9de0540a1e4c4ae32d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0092a3ac544b9de0540a1e4c4ae32d96">&#9670;&nbsp;</a></span>equals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean equals </td>
-          <td>(</td>
-          <td class="paramtype">final <a class="el" href="a13339.html">Object</a>&#160;</td>
-          <td class="paramname"><em>object</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final ComparisonMode&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares the given object with this transform for equivalence. </p>
-
-<p class="reference">References <a class="el" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic.Stereographic()</a>, and <a class="el" href="a07575.html#a69dfd5af0601ebd8a7cb94b93ad992c5">Stereographic.φ0</a>.</p>
-<div class="fragment"><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                                                                          {</div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">if</span> (super.equals(<span class="keywordtype">object</span>, mode)) {</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            <span class="keyword">final</span> <a class="code" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic</a> that = (<a class="code" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic</a>) <span class="keywordtype">object</span>;</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <span class="keywordflow">return</span> epsilonEqual(this.<a class="code" href="a07575.html#a69dfd5af0601ebd8a7cb94b93ad992c5">φ0</a>, that.φ0, mode);</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            <span class="comment">// All other fields are derived from the latitude of origin.</span></div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        }</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div><div class="ttc" id="a07575_html_a69dfd5af0601ebd8a7cb94b93ad992c5"><div class="ttname"><a href="a07575.html#a69dfd5af0601ebd8a7cb94b93ad992c5">org.geotoolkit.referencing.operation.projection.Stereographic.φ0</a></div><div class="ttdeci">final double φ0</div><div class="ttdoc">The latitude of origin, in radians. </div><div class="ttdef"><b>Definition:</b> projection/Stereographic.java:89</div></div>
-<div class="ttc" id="a07575_html_a4ca40229e5b689fce5582152a6be2dc0"><div class="ttname"><a href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">org.geotoolkit.referencing.operation.projection.Stereographic.Stereographic</a></div><div class="ttdeci">Stereographic(final OperationMethod method, final Parameters parameters)</div><div class="ttdoc">Constructs an oblique stereographic projection (USGS equations). </div><div class="ttdef"><b>Definition:</b> projection/Stereographic.java:156</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a24bf8dc43ab1bab1c9112a94797ae504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24bf8dc43ab1bab1c9112a94797ae504">&#9670;&nbsp;</a></span>getAndStore()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double getAndStore </td>
-          <td>(</td>
-          <td class="paramtype">final Parameters&#160;</td>
-          <td class="paramname"><em>parameters</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final ParameterDescriptor&lt; Double &gt;&#160;</td>
-          <td class="paramname"><em>descriptor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a07535.html#a0aec663401f781fdc8c73e07d1db6480">CassiniOrMercator.CassiniOrMercator()</a>, <a class="el" href="a07555.html#aa29312261402fbfc99b1080014a5af9a">Krovak.Krovak()</a>, <a class="el" href="a07559.html#ad575a5bd5b8c18d87f4a29342c5a57a2">LambertAzimuthalEqualArea.LambertAzimuthalEqualArea()</a>, <a class="el" href="a07567.html#a352e4a3fcfe6a5ab527df109f5045226">NewZealandMapGrid.NewZealandMapGrid()</a>, <a class="el" href="a07571.html#a4ec978fa9033449ea59649546064f36b">Orthographic.Orthographic()</a>, and <a class="el" href="a07575.html#ae033b6f1583e7026859561c093f3cdf5">Stereographic.Stereographic()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                                                                                        {</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> value = parameters.doubleValue(descriptor);    <span class="comment">// Apply a unit conversion if needed.</span></div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keyword">final</span> Double defaultValue = descriptor.getDefaultValue();</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">if</span> (defaultValue == null || !defaultValue.equals(value)) {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.<a class="code" href="a03752.html">internal</a>.referencing.provider.MapProjection.validate(descriptor, value);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            String name = IdentifiedObjects.getName(descriptor, parameters.getDescriptor().getName().getAuthority());</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">if</span> (name == null) {</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                name = descriptor.getName().getCode();</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            getContextualParameters().parameter(name).setValue(value);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> value;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03752_html"><div class="ttname"><a href="a03752.html">org.apache.sis.internal</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1e97fee4bc82504e5827dd19844559a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e97fee4bc82504e5827dd19844559a7">&#9670;&nbsp;</a></span>inverseTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void inverseTransform </td>
-          <td>(</td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>srcPts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>srcOff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>dstPts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>dstOff</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws ProjectionException</td>
         </tr>
       </table>
   </td>
@@ -614,16 +240,13 @@ Rueben Schulz (UBC) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p></p>
-
-<p class="reference">References <a class="el" href="a07551.html#a5d82ede8edbfac72d8c1b10ce798b00a">EquatorialStereographic.Spherical.checkInverseTransform()</a>, and <a class="el" href="a07575.html#a44ae62b0034749ec109720daee36233f">Stereographic.EPSILON</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        {</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordtype">double</span> x = srcPts[srcOff  ];</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordtype">double</span> y = srcPts[srcOff+1];</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> ρ = hypot(x, y);</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span> (ρ &lt; <a class="code" href="a07575.html#a44ae62b0034749ec109720daee36233f">EPSILON</a>) {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                y = 0; <span class="comment">// φ0</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                x = 0;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> c    = 2*atan(ρ);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> sinc = sin(c);</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> ct   = ρ*cos(c);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> t    = x*sinc;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                y = asin(y * sinc/ρ);  <span class="comment">// (20-14)  with φ1=0</span></div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                x = atan2(t, ct);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            assert <a class="code" href="a07551.html#a5d82ede8edbfac72d8c1b10ce798b00a">checkInverseTransform</a>(srcPts, srcOff, dstPts, dstOff, x, y);</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            dstPts[dstOff  ] = x;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            dstPts[dstOff+1] = y;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div><div class="ttc" id="a07575_html_a44ae62b0034749ec109720daee36233f"><div class="ttname"><a href="a07575.html#a44ae62b0034749ec109720daee36233f">org.geotoolkit.referencing.operation.projection.Stereographic.EPSILON</a></div><div class="ttdeci">static final double EPSILON</div><div class="ttdoc">Maximum difference allowed when comparing real numbers. </div><div class="ttdef"><b>Definition:</b> projection/Stereographic.java:84</div></div>
-<div class="ttc" id="a07551_html_a5d82ede8edbfac72d8c1b10ce798b00a"><div class="ttname"><a href="a07551.html#a5d82ede8edbfac72d8c1b10ce798b00a">org.geotoolkit.referencing.operation.projection.EquatorialStereographic.Spherical.checkInverseTransform</a></div><div class="ttdeci">boolean checkInverseTransform(final double[] srcPts, final int srcOff, final double[] dstPts, final int dstOff, final double λ, final double φ)</div><div class="ttdoc">Computes using ellipsoidal formulas and compare with the result from spherical formulas. </div><div class="ttdef"><b>Definition:</b> EquatorialStereographic.java:207</div></div>
-</div><!-- fragment -->
+<p>Releases resources immediately instead of waiting for the garbage collector. </p>
+<p>Once a factory has been disposed, further</p><div class="fragment"><div class="line">create(...) </div></div><!-- fragment --><p> invocations may throw a <a class="el" href="">FactoryException</a>. Disposing a previously-disposed factory, however, has no effect. </p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                   {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// To be overridden by subclasses.</span></div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a0b4a253948f710327e6caa3665cf64a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b4a253948f710327e6caa3665cf64a4">&#9670;&nbsp;</a></span>isSpherical()</h2>
+<a id="a676c6e59e16b6f62dc142e287fbab5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676c6e59e16b6f62dc142e287fbab5f9">&#9670;&nbsp;</a></span>ensureNonNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -632,28 +255,135 @@ Rueben Schulz (UBC) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boolean isSpherical </td>
+          <td class="memname">static void ensureNonNull </td>
           <td>(</td>
-          <td class="paramtype">final Parameters&#160;</td>
-          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Object&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws InvalidParameterValueException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes sure that an argument is non-null. </p>
+<p>This is a convenience method for subclass methods.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Argument name. </td></tr>
+    <tr><td class="paramname">object</td><td>User argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidParameterValueException</td><td>if<div class="fragment"><div class="line"><span class="keywordtype">object</span> </div></div><!-- fragment --> is null. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a07779.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07783.html#a893d63d942b3bead5ca6594b0aedd076">Errors.Keys.NullArgument_1</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07551.html#afebe9bad44a3314091515fc043f46572">DirectAuthorityFactory.DirectAuthorityFactory()</a>, <a class="el" href="a07571.html#a167866fbb3406ff5ae125bae8bb0f516">DirectPostgisFactory.getPrimaryKey()</a>, <a class="el" href="a07583.html#a3d5ee94e113c24c5a46a351a98616ab9">WKTParsingAuthorityFactory.getWKT()</a>, <a class="el" href="a07575.html#ad593eb1e7ef127bc784f62b40ca6fa30">PropertyAuthorityFactory.load()</a>, and <a class="el" href="a07583.html#a5dee302b5ffb72d2d160fcd665ea3702">WKTParsingAuthorityFactory.WKTParsingAuthorityFactory()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordtype">object</span> == null) {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidParameterValueException(Errors.format(</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    Errors.Keys.NullArgument_1, name), name, object);</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6d6cd7e952e1b53cb176433878a16e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6cd7e952e1b53cb176433878a16e87">&#9670;&nbsp;</a></span>getAuthority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract Citation getAuthority </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a07583.html#af96ccc066bbb2ef62d809c6f5abeb4f4">UnitaryProjection.inverseTransform()</a>.</p>
+<p>Returns the organization or party responsible for definition and maintenance of the database. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07539.html#ac046bc9548876e0c290ef90f56f24b4d">CassiniSoldner.create()</a>, <a class="el" href="a07575.html#ac046bc9548876e0c290ef90f56f24b4d">Stereographic.create()</a>, <a class="el" href="a07559.html#ac046bc9548876e0c290ef90f56f24b4d">LambertAzimuthalEqualArea.create()</a>, and <a class="el" href="a07559.html#ad575a5bd5b8c18d87f4a29342c5a57a2">LambertAzimuthalEqualArea.LambertAzimuthalEqualArea()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                            {</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> parameters.parameter(<span class="stringliteral">&quot;semi_major&quot;</span>).doubleValue() == parameters.parameter(<span class="stringliteral">&quot;semi_minor&quot;</span>).doubleValue();</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a07551.html#aad8d36bb4131ce1be5b51c75fc5f7c17">DirectAuthorityFactory.getVendor()</a>, and <a class="el" href="a07551.html#ae518ac5e58a807eaa7645ff84ea72a46">DirectAuthorityFactory.noSuchAuthorityCode()</a>.</p>
+
 </div>
 </div>
-<a id="ad0132249242eea8e8e8e1bf37b1c2f26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0132249242eea8e8e8e1bf37b1c2f26">&#9670;&nbsp;</a></span>msfn()</h2>
+<a id="afe1a5a304e0e01ffa19130cb3d555fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1a5a304e0e01ffa19130cb3d555fbe">&#9670;&nbsp;</a></span>getBackingStoreDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String getBackingStoreDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws FactoryException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a description of the underlying backing store, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if unknown. This is for example the database software used for storing the data. The default implementation returns always</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> .</p>
+<dl class="section return"><dt>Returns</dt><dd>The description of the underlying backing store, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> . </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">FactoryException</td><td>if a failure occurs while fetching the engine description. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                                                       {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aad8d36bb4131ce1be5b51c75fc5f7c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8d36bb4131ce1be5b51c75fc5f7c17">&#9670;&nbsp;</a></span>getVendor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Citation getVendor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the vendor responsible for creating this factory implementation. </p>
+<p>Many implementations from different vendors may be available for the same factory interface. </p>
+<p>The default for Geotk implementations is to return  Citations::GEOTOOLKIT Geotoolkit.org}.</p>
+<dl class="section return"><dt>Returns</dt><dd>The vendor for this factory implementation.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Citations::GEOTOOLKIT </dd></dl>
+
+<p class="reference">References <a class="el" href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">DirectAuthorityFactory.getAuthority()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> SimpleCitation(getClass().getName().startsWith(<span class="stringliteral">&quot;org.geotoolkit.&quot;</span>) ? <span class="stringliteral">&quot;Geotk&quot;</span> : <span class="stringliteral">&quot;Unknown&quot;</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae518ac5e58a807eaa7645ff84ea72a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae518ac5e58a807eaa7645ff84ea72a46">&#9670;&nbsp;</a></span>noSuchAuthorityCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,16 +392,16 @@ Rueben Schulz (UBC) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double msfn </td>
+          <td class="memname">final NoSuchAuthorityCodeException noSuchAuthorityCode </td>
           <td>(</td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>sinφ</em>, </td>
+          <td class="paramtype">final Class&lt;?&gt;&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>cosφ</em>&#160;</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -681,35 +411,32 @@ Rueben Schulz (UBC) </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes function <code>f(s,c,e²) = c/sqrt(1 - s²&times;e²)</code> needed for the true scale latitude (Snyder 14-15), where <em>s</em> and <em>c</em> are the sine and cosine of the true scale latitude, and <em>e²</em> is the  #eccentricitySquared eccentricity squared}. </p>
-<p>Special cases: </p><ul>
-<li>
-If φ is 0°, then this method returns 1. </li>
-<li>
-If φ is ±90°, then this method returns 0 provided that we are not in the spherical case (otherwise we get <a class="el" href="">Double#NaN</a>). </li>
-</ul>
+<p>Creates an exception for an unknown authority code. </p>
+<p>This convenience method is provided for implementation of</p><div class="fragment"><div class="line">createXXX </div></div><!-- fragment --><p> methods.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sinφ</td><td>The sine of the φ latitude in radians. </td></tr>
-    <tr><td class="paramname">cosφ</td><td>The cosine of the φ latitude in radians. </td></tr>
+    <tr><td class="paramname">type</td><td>The GeoAPI interface that was to be created (e.g.<div class="fragment"><div class="line">CoordinateReferenceSystem.class </div></div><!-- fragment --> ). </td></tr>
+    <tr><td class="paramname">code</td><td>The unknown authority code. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>An exception initialized with an error message built from the specified informations. </dd></dl>
 
-<p class="reference">References <a class="el" href="a07583.html#aa7e735b665504743a9a2c0832f051303">UnitaryProjection.ARGUMENT_TOLERANCE</a>.</p>
+<p class="reference">References <a class="el" href="a07779.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, <a class="el" href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">DirectAuthorityFactory.getAuthority()</a>, <a class="el" href="a07783.html#ac0b349c69929257e22d01b2fc6d03ced">Errors.Keys.NoSuchAuthorityCode_3</a>, and <a class="el" href="a07551.html#a66fde2d8b5e60c41ac52c66771527827">DirectAuthorityFactory.trimAuthority()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic.Stereographic()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                              {               <span class="comment">// == cosφ / rν(sinφ)</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        assert !(abs(sinφ*sinφ + cosφ*cosφ - 1) &gt; <a class="code" href="a07583.html#aa7e735b665504743a9a2c0832f051303">ARGUMENT_TOLERANCE</a>);</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">return</span> cosφ / sqrt(1.0 - (sinφ*sinφ) * eccentricitySquared);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div><div class="ttc" id="a07583_html_aa7e735b665504743a9a2c0832f051303"><div class="ttname"><a href="a07583.html#aa7e735b665504743a9a2c0832f051303">org.geotoolkit.referencing.operation.projection.UnitaryProjection.ARGUMENT_TOLERANCE</a></div><div class="ttdeci">static final double ARGUMENT_TOLERANCE</div><div class="ttdoc">Tolerance in the correctness of argument values provided to the mathematical functions defined in thi...</div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:47</div></div>
+<p class="reference">Referenced by <a class="el" href="a07163.html#a1dc6a98cd2638ba3d981b9cb673fad58">IGNF.createCoordinateReferenceSystem()</a>, <a class="el" href="a07571.html#a167866fbb3406ff5ae125bae8bb0f516">DirectPostgisFactory.getPrimaryKey()</a>, and <a class="el" href="a07583.html#a3d5ee94e113c24c5a46a351a98616ab9">WKTParsingAuthorityFactory.getWKT()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                                                                             {</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keyword">final</span> InternationalString authority = <a class="code" href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">getAuthority</a>().getTitle();</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> NoSuchAuthorityCodeException(Errors.format(Errors.Keys.NoSuchAuthorityCode_3,</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                   code, authority, type), authority.toString(), <a class="code" href="a07551.html#a66fde2d8b5e60c41ac52c66771527827">trimAuthority</a>(code), code);</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div><div class="ttc" id="a07551_html_a6d6cd7e952e1b53cb176433878a16e87"><div class="ttname"><a href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">org.geotoolkit.referencing.factory.DirectAuthorityFactory.getAuthority</a></div><div class="ttdeci">abstract Citation getAuthority()</div><div class="ttdoc">Returns the organization or party responsible for definition and maintenance of the database...</div></div>
+<div class="ttc" id="a07551_html_a66fde2d8b5e60c41ac52c66771527827"><div class="ttname"><a href="a07551.html#a66fde2d8b5e60c41ac52c66771527827">org.geotoolkit.referencing.factory.DirectAuthorityFactory.trimAuthority</a></div><div class="ttdeci">String trimAuthority(String code)</div><div class="ttdoc">Trims the authority scope, if presents. </div><div class="ttdef"><b>Definition:</b> DirectAuthorityFactory.java:139</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8df228f7e99fb92bd85136fe7a007563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8df228f7e99fb92bd85136fe7a007563">&#9670;&nbsp;</a></span>qsfn()</h2>
+<a id="a66fde2d8b5e60c41ac52c66771527827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fde2d8b5e60c41ac52c66771527827">&#9670;&nbsp;</a></span>trimAuthority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -718,150 +445,39 @@ If φ is ±90°, then this method returns 0 provided that we are not in the sphe
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double qsfn </td>
+          <td class="memname">String trimAuthority </td>
           <td>(</td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>sinφ</em></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calculates <em>q</em>, Snyder equation (3-12). </p>
-<p>This equation has the following properties: </p><ul>
-<li>
-Input in the [-1 ... +1] range. </li>
-<li>
-Output in the [-2 ... +2] range. </li>
-<li>
-Output is 0 when input is 0. </li>
-<li>
-Output of the same sign than input. </li>
-<li>
-<div class="fragment"><div class="line"><a class="code" href="a07583.html#a8df228f7e99fb92bd85136fe7a007563">qsfn</a>(-sinφ) == -<a class="code" href="a07583.html#a8df228f7e99fb92bd85136fe7a007563">qsfn</a>(sinφ) </div></div><!-- fragment --> . </li>
-</ul>
+<p>Trims the authority scope, if presents. </p>
+<p>For example if this factory is an EPSG authority factory and the specified code start with the</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;EPSG:&quot;</span> </div></div><!-- fragment --><p> prefix, then the prefix is removed. Otherwise, the string is returned unchanged (except for leading and trailing spaces).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sinφ</td><td>Sine of the latitude <em>q</em> is calculated for. </td></tr>
+    <tr><td class="paramname">code</td><td>The code to trim. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><em>q</em> from Snyder equation (3-12). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The code without the authority scope. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a07559.html#ad575a5bd5b8c18d87f4a29342c5a57a2">LambertAzimuthalEqualArea.LambertAzimuthalEqualArea()</a>, and <a class="el" href="a07559.html#a288eee0c4e06db0f1e725c81c297669b">LambertAzimuthalEqualArea.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                          {</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">if</span> (eccentricity &lt; <a class="code" href="a07583.html#a44ae62b0034749ec109720daee36233f">EPSILON</a>) {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span> 2 * sinφ;</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">         * Above check was required because the expression below would simplify to</span></div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">         * sinφ - 0.5/0*log(1) where the right terms are infinity multiplied by</span></div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">         * zero, thus producing NaN.</span></div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span> esinφ = eccentricity * sinφ;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> (1 - eccentricitySquared) * (sinφ / (1 - esinφ*esinφ) + atanh(esinφ)/eccentricity);</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div><div class="ttc" id="a07583_html_a44ae62b0034749ec109720daee36233f"><div class="ttname"><a href="a07583.html#a44ae62b0034749ec109720daee36233f">org.geotoolkit.referencing.operation.projection.UnitaryProjection.EPSILON</a></div><div class="ttdeci">static final double EPSILON</div><div class="ttdoc">Maximum difference allowed when comparing real numbers (other cases). </div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:80</div></div>
+<p class="reference">Referenced by <a class="el" href="a07163.html#a1dc6a98cd2638ba3d981b9cb673fad58">IGNF.createCoordinateReferenceSystem()</a>, and <a class="el" href="a07551.html#ae518ac5e58a807eaa7645ff84ea72a46">DirectAuthorityFactory.noSuchAuthorityCode()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                                {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">         * IMPLEMENTATION NOTE: This method is overridden in PropertyAuthorityFactory. If</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">         * implementation below is modified, it is probably worth to revisit the overridden</span></div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">         * method as well.</span></div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        code = code.trim();</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">final</span> GenericName name  = <a class="code" href="a07551.html#a16391f8f2c1aeadda36bfdc54fcc4892">nameFactory</a>.parseGenericName(null, code);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">if</span> (name instanceof ScopedName) {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keyword">final</span> GenericName scope = ((ScopedName) name).path();</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (Citations.identifierMatches(<a class="code" href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">getAuthority</a>(), scope.toString())) {</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">return</span> name.tip().toString().trim();</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> code;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div><div class="ttc" id="a07551_html_a6d6cd7e952e1b53cb176433878a16e87"><div class="ttname"><a href="a07551.html#a6d6cd7e952e1b53cb176433878a16e87">org.geotoolkit.referencing.factory.DirectAuthorityFactory.getAuthority</a></div><div class="ttdeci">abstract Citation getAuthority()</div><div class="ttdoc">Returns the organization or party responsible for definition and maintenance of the database...</div></div>
+<div class="ttc" id="a07551_html_a16391f8f2c1aeadda36bfdc54fcc4892"><div class="ttname"><a href="a07551.html#a16391f8f2c1aeadda36bfdc54fcc4892">org.geotoolkit.referencing.factory.DirectAuthorityFactory.nameFactory</a></div><div class="ttdeci">final NameFactory nameFactory</div><div class="ttdoc">The name factory to use for creating GenericName. </div><div class="ttdef"><b>Definition:</b> DirectAuthorityFactory.java:64</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a313c896cda05264dd17655569781da0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a313c896cda05264dd17655569781da0b">&#9670;&nbsp;</a></span>ssfn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double ssfn </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>φ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sinφ</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes part of function (3-1) from Snyder. </p>
-<p>This is numerically equivalent to <code> #tsfn tsfn}(-φ, sinφ)</code>, but is defined as a separated function for clarity and because the function properties are not the same.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">φ</td><td>The latitude in radians. </td></tr>
-    <tr><td class="paramname">sinφ</td><td>The sine of the φ argument. This is provided explicitly because in many cases, the caller has already computed this value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a07583.html#aa7e735b665504743a9a2c0832f051303">UnitaryProjection.ARGUMENT_TOLERANCE</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a07575.html#ae033b6f1583e7026859561c093f3cdf5">Stereographic.Stereographic()</a>, <a class="el" href="a07547.html#a288eee0c4e06db0f1e725c81c297669b">EquatorialStereographic.transform()</a>, and <a class="el" href="a07575.html#a288eee0c4e06db0f1e725c81c297669b">Stereographic.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                               {</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        assert !(abs(sinφ - sin(φ)) &gt; <a class="code" href="a07583.html#aa7e735b665504743a9a2c0832f051303">ARGUMENT_TOLERANCE</a>) : φ;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        sinφ *= eccentricity;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> tan(PI/4 + 0.5*φ) * pow((1-sinφ) / (1+sinφ), 0.5*eccentricity);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div><div class="ttc" id="a07583_html_aa7e735b665504743a9a2c0832f051303"><div class="ttname"><a href="a07583.html#aa7e735b665504743a9a2c0832f051303">org.geotoolkit.referencing.operation.projection.UnitaryProjection.ARGUMENT_TOLERANCE</a></div><div class="ttdeci">static final double ARGUMENT_TOLERANCE</div><div class="ttdoc">Tolerance in the correctness of argument values provided to the mathematical functions defined in thi...</div><div class="ttdef"><b>Definition:</b> UnitaryProjection.java:47</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a288eee0c4e06db0f1e725c81c297669b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a288eee0c4e06db0f1e725c81c297669b">&#9670;&nbsp;</a></span>transform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Matrix transform </td>
-          <td>(</td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>srcPts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>srcOff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>dstPts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>dstOff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final boolean&#160;</td>
-          <td class="paramname"><em>derivate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws ProjectionException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p></p>
-
-<p class="reference">References <a class="el" href="a07531.html#a389504a0d09f6355dbd35c0ef5004414">Assertions.checkDerivative()</a>, and <a class="el" href="a07531.html#a20cd87c223c269a9caa2600a21ee5906">Assertions.checkTransform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> λ        = srcPts[srcOff];</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> φ        = srcPts[srcOff + 1];</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> sinφ     = sin(φ);</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> sinλ     = sin(λ);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> cosφ     = cos(φ);</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> cosλ     = cos(λ);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> cosφcosλ = cosφ*cosλ;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> cosφsinλ = cosφ*sinλ;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> F        = 1 + cosφcosλ;   <span class="comment">// Inverse of (21-14)</span></div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> x        = cosφsinλ / F;   <span class="comment">// (21-2)</span></div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">double</span> y        = sinφ     / F;   <span class="comment">// (21-13)</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            Matrix derivative = null;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">if</span> (derivate) {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">double</span> sinφcosλ = sinφ*cosλ;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                derivative = <span class="keyword">new</span> Matrix2(</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                        (cosφsinλ*cosφsinλ/F + cosφcosλ)  / F,</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                        (sinφcosλ*cosφsinλ/F - sinφ*sinλ) / F,</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                         cosφsinλ*sinφ / (F*F),</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        (sinφcosλ*sinφ/F + cosφ) / F);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            }</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="comment">// Following part is common to all spherical projections: verify, store and return.</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            assert Assertions.checkDerivative(derivative, super.transform(srcPts, srcOff, dstPts, dstOff, derivate))</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                &amp;&amp; Assertions.checkTransform(dstPts, dstOff, x, y); <span class="comment">// dstPts = result from ellipsoidal formulas.</span></div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (dstPts != null) {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                dstPts[dstOff  ] = x;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                dstPts[dstOff+1] = y;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            }</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">return</span> derivative;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ace47a8e4c0535939fae80f2d0fe9b9dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace47a8e4c0535939fae80f2d0fe9b9dc">&#9670;&nbsp;</a></span>ANGLE_TOLERANCE</h2>
+<a id="adbaaeb9d6f038ea1c7cfc1184e32aef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbaaeb9d6f038ea1c7cfc1184e32aef2">&#9670;&nbsp;</a></span>factories</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -870,26 +486,24 @@ Output of the same sign than input. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double ANGLE_TOLERANCE = 1E-6</td>
+          <td class="memname">final <a class="el" href="a07559.html">ReferencingFactoryContainer</a> factories</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Maximum difference allowed when comparing longitudes or latitudes in radians. </p>
-<p>A tolerance of 1E-6 is about 0.2 second of arcs, which is about 6 kilometers (computed from the standard length of nautical mile). </p>
-<p>Some formulas use this tolerance value for testing sinus or cosinus of an angle. In the sinus case, this is justified because <code>sin(&theta;) ≅ &theta;</code> when &theta; is small. Similar reasoning applies to cosinus with <code>cos(&theta;) ≅ &theta; + &pi;/2</code> when &theta; is small. </p>
+<p>The underlying factories used for objects creation. </p>
 
-<p class="reference">Referenced by <a class="el" href="a07575.html#ac046bc9548876e0c290ef90f56f24b4d">Stereographic.create()</a>, <a class="el" href="a07571.html#a1e97fee4bc82504e5827dd19844559a7">Orthographic.inverseTransform()</a>, <a class="el" href="a07559.html#a1e97fee4bc82504e5827dd19844559a7">LambertAzimuthalEqualArea.inverseTransform()</a>, <a class="el" href="a07571.html#a4ec978fa9033449ea59649546064f36b">Orthographic.Orthographic()</a>, and <a class="el" href="a07575.html#ae033b6f1583e7026859561c093f3cdf5">Stereographic.Stereographic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07163.html#a1dc6a98cd2638ba3d981b9cb673fad58">IGNF.createCoordinateReferenceSystem()</a>, and <a class="el" href="a07551.html#afebe9bad44a3314091515fc043f46572">DirectAuthorityFactory.DirectAuthorityFactory()</a>.</p>
 
 </div>
 </div>
-<a id="a568ce0a57eba7f9938c0c5565083a4a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568ce0a57eba7f9938c0c5565083a4a1">&#9670;&nbsp;</a></span>cosφ0</h2>
+<a id="ab1d069f56091df4f6436f8c713ab2f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1d069f56091df4f6436f8c713ab2f39">&#9670;&nbsp;</a></span>LOGGER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -898,20 +512,24 @@ Output of the same sign than input. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double cosφ0</td>
+          <td class="memname">final Logger LOGGER = Logging.getLogger(&quot;org.geotoolkit.referencing.factory&quot;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>The logger for event related to Geotk factories. </p>
+
+<p class="reference">Referenced by <a class="el" href="a07571.html#a6a2224f2572fc123637bf1313dd90eda">DirectPostgisFactory.getAuthorities()</a>, <a class="el" href="a07575.html#aaa16710fff939352111a06c02e80fc7c">PropertyAuthorityFactory.log()</a>, and <a class="el" href="a07575.html#a75bced5094acbaf18642db185fdb5a09">PropertyAuthorityFactory.PropertyAuthorityFactory()</a>.</p>
+
 </div>
 </div>
-<a id="a4c4ef9c8b2b67448f8dace85d0069b5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4ef9c8b2b67448f8dace85d0069b5d">&#9670;&nbsp;</a></span>cosχ1</h2>
+<a id="a16391f8f2c1aeadda36bfdc54fcc4892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16391f8f2c1aeadda36bfdc54fcc4892">&#9670;&nbsp;</a></span>nameFactory</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -920,171 +538,20 @@ Output of the same sign than input. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double cosχ1</td>
+          <td class="memname">final NameFactory nameFactory</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a07575.html#a4ca40229e5b689fce5582152a6be2dc0">Stereographic.Stereographic()</a>, and <a class="el" href="a07575.html#a288eee0c4e06db0f1e725c81c297669b">Stereographic.transform()</a>.</p>
+<p>The name factory to use for creating <a class="el" href="">GenericName</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>3.00 </dd></dl>
 
-</div>
-</div>
-<a id="a44ae62b0034749ec109720daee36233f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44ae62b0034749ec109720daee36233f">&#9670;&nbsp;</a></span>EPSILON</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double EPSILON = 1E-6</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Maximum difference allowed when comparing real numbers. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07551.html#a1e97fee4bc82504e5827dd19844559a7">EquatorialStereographic.Spherical.inverseTransform()</a>, and <a class="el" href="a07575.html#a1e97fee4bc82504e5827dd19844559a7">Stereographic.inverseTransform()</a>.</p>
-
-</div>
-</div>
-<a id="a1a2bd5f5995eec3ad9aa93bb402a2cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a2bd5f5995eec3ad9aa93bb402a2cdb">&#9670;&nbsp;</a></span>ITERATION_TOLERANCE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double ITERATION_TOLERANCE = 1E-10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Difference allowed in iterative computations. </p>
-<p>A value of 1E-10 causes the <a class="el" href="">cphi2</a> function to compute the latitude at a precision of 1E-10 radians, which is slightly smaller than one millimetre. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07535.html#a7f098dc325e26e4b126fffebc700b762">CassiniOrMercator.inv_mlfn()</a>, and <a class="el" href="a07575.html#a1e97fee4bc82504e5827dd19844559a7">Stereographic.inverseTransform()</a>.</p>
-
-</div>
-</div>
-<a id="a98eb7706c8690581d8494c88cb9874b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98eb7706c8690581d8494c88cb9874b7">&#9670;&nbsp;</a></span>MAXIMUM_ITERATIONS</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int MAXIMUM_ITERATIONS = 15</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Maximum number of iterations for iterative computations. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07535.html#a7f098dc325e26e4b126fffebc700b762">CassiniOrMercator.inv_mlfn()</a>, <a class="el" href="a07575.html#a1e97fee4bc82504e5827dd19844559a7">Stereographic.inverseTransform()</a>, and <a class="el" href="a07555.html#a1e97fee4bc82504e5827dd19844559a7">Krovak.inverseTransform()</a>.</p>
-
-</div>
-</div>
-<a id="a3238d314ecdee14d2966760945d00c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3238d314ecdee14d2966760945d00c3b">&#9670;&nbsp;</a></span>serialVersionUID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final long serialVersionUID = -4790138052004333003L</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>For cross-version compatibility. </p>
-
-</div>
-</div>
-<a id="ab10944da075b2237099e4d4e274103d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab10944da075b2237099e4d4e274103d8">&#9670;&nbsp;</a></span>sinφ0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double sinφ0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constants used for the oblique projections. </p>
-<p>All those constants are completely determined by <a class="el" href="a07575.html#a69dfd5af0601ebd8a7cb94b93ad992c5">φ0</a>. Consequently, there is no need to test them in <a class="el" href="">hashCode</a> or <a class="el" href="a07575.html#a0092a3ac544b9de0540a1e4c4ae32d96">equals(Object, ComparisonMode)</a> methods. </p>
-
-</div>
-</div>
-<a id="a69dfd5af0601ebd8a7cb94b93ad992c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69dfd5af0601ebd8a7cb94b93ad992c5">&#9670;&nbsp;</a></span>φ0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double φ0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The latitude of origin, in radians. </p>
-
-<p class="reference">Referenced by <a class="el" href="a07575.html#a0092a3ac544b9de0540a1e4c4ae32d96">Stereographic.equals()</a>, <a class="el" href="a07547.html#af0a8de4c7a0a1f88d3294a6119d91bff">EquatorialStereographic.EquatorialStereographic()</a>, and <a class="el" href="a07579.html#a1e97fee4bc82504e5827dd19844559a7">Stereographic.Spherical.inverseTransform()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a07583.html#a66fde2d8b5e60c41ac52c66771527827">WKTParsingAuthorityFactory.trimAuthority()</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +561,7 @@ Output of the same sign than input. </li>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03793.html">referencing</a></li><li class="navelem"><a class="el" href="a03798.html">operation</a></li><li class="navelem"><a class="el" href="a03800.html">projection</a></li><li class="navelem"><a class="el" href="a07547.html">EquatorialStereographic</a></li><li class="navelem"><a class="el" href="a07551.html">Spherical</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03853.html">referencing</a></li><li class="navelem"><a class="el" href="a03855.html">factory</a></li><li class="navelem"><a class="el" href="a07551.html">DirectAuthorityFactory</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

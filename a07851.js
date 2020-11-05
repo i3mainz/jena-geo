@@ -1,17 +1,18 @@
 var a07851 =
 [
-    [ "CollectionChangeEvent", "a07851.html#a60d6987780f71b331a1f9ac43927d49a", null ],
-    [ "CollectionChangeEvent", "a07851.html#a14392b44c89137fbd9b7f2cd60ce905f", null ],
-    [ "getChangeEvent", "a07851.html#a2e1c635de155383a74611df95cf13625", null ],
-    [ "getItems", "a07851.html#af1ce66ece7b4491da6a6050c4a2b1c98", null ],
-    [ "getRange", "a07851.html#a92e98229a7179eeb3dda129db5b890a8", null ],
-    [ "getType", "a07851.html#aec389cbe6ac7aff8ce7196e7dbc007df", null ],
-    [ "ITEM_ADDED", "a07851.html#aa4a30a8b6503901587a92e560997cde5", null ],
-    [ "ITEM_CHANGED", "a07851.html#a128311940f5e275093d3e3890469d641", null ],
-    [ "ITEM_REMOVED", "a07851.html#a21703f5b666f325e8c1ddce6f2f041f9", null ],
-    [ "items", "a07851.html#a25825a62403a706a8a92d0cbd6e70cdc", null ],
-    [ "range", "a07851.html#aa355814d17dc76c0b94cf639a19c7be8", null ],
-    [ "serialVersionUID", "a07851.html#a3238d314ecdee14d2966760945d00c3b", null ],
-    [ "subEvent", "a07851.html#aa92a276f6ed4fc333a26244b76e8e756", null ],
-    [ "type", "a07851.html#a738253ca8df06ba8171d1b0a6c6726c6", null ]
+    [ "GeneralAssets", "a07851.html#a8cb8eb703ae57426d37205907719234a", null ],
+    [ "addData", "a07851.html#abdbaf293c51f5f6e353430ce37398001", null ],
+    [ "addListener", "a07851.html#abe82452a43ca55ea0fa6bfa26d12348d", null ],
+    [ "createMetadata", "a07851.html#ae838e446eb4ba7422dcdea347a4bd7fb", null ],
+    [ "forwardEvent", "a07851.html#a102930adafb3f0b356c51c15677b27b0", null ],
+    [ "getDatas", "a07851.html#a02394b96c9a23c0991dd64f7a8f72ed0", null ],
+    [ "getIdentifier", "a07851.html#a337d71dd87616b08836dacd4a3b1ba58", null ],
+    [ "getMetadata", "a07851.html#a1951f1407c08c90de9973b9b5316d5bd", null ],
+    [ "removeData", "a07851.html#ab059f288f6d7e98b5f8706b9a94be0a6", null ],
+    [ "removeListener", "a07851.html#a20aae1ede302e65839c69726c83e3e3a", null ],
+    [ "sendEvent", "a07851.html#ac8fd4c3e4521c565651cef847c570442", null ],
+    [ "toString", "a07851.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "datas", "a07851.html#a748a559ef76ce3877311f1dc57e8e79f", null ],
+    [ "identifier", "a07851.html#a6df0ca103b56b4d861d94fa5cb75e0d7", null ],
+    [ "listeners", "a07851.html#ae0d3a9cfc3827e8859dcdba53a58fb88", null ]
 ];

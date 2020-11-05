@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TWKBWriter.ExtendedPrecisionWriter Class Reference</title>
+<title>jena-geo: XInteger Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,108 +61,81 @@ $(document).ready(function(){initNavTree('a08167.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="a08164.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TWKBWriter.ExtendedPrecisionWriter Class Reference</div>  </div>
+<div class="title">XInteger Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Extend Integer class with paring capabilities within a CharSequence.  
+ <a href="a08167.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for TWKBWriter.ExtendedPrecisionWriter:</div>
+Collaboration diagram for XInteger:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08166.png" border="0" usemap="#TWKBWriter_8ExtendedPrecisionWriter_inherit__map" alt="Inheritance graph"/></div>
-<map name="TWKBWriter_8ExtendedPrecisionWriter_inherit__map" id="TWKBWriter_8ExtendedPrecisionWriter_inherit__map">
-<area shape="rect" id="node2" href="a08163.html" title="TWKBWriter.PrecisionWriter" alt="" coords="15,5,205,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for TWKBWriter.ExtendedPrecisionWriter:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08165.png" border="0" usemap="#TWKBWriter_8ExtendedPrecisionWriter_coll__map" alt="Collaboration graph"/></div>
-<map name="TWKBWriter_8ExtendedPrecisionWriter_coll__map" id="TWKBWriter_8ExtendedPrecisionWriter_coll__map">
-<area shape="rect" id="node2" href="a08163.html" title="TWKBWriter.PrecisionWriter" alt="" coords="142,96,332,123"/>
+<div class="center"><img src="a08165.png" border="0" usemap="#XInteger_coll__map" alt="Collaboration graph"/></div>
+<map name="XInteger_coll__map" id="XInteger_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b9dd1e59eac3a2a15cb68c19e994fe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08163.html">PrecisionWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a1b9dd1e59eac3a2a15cb68c19e994fe4">calculate</a> (final <a class="el" href="a08171.html">Coordinate</a>[] coordinates, final int <a class="el" href="a08159.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>)</td></tr>
-<tr class="separator:a1b9dd1e59eac3a2a15cb68c19e994fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a320ccd90ec0ef71a4353104b7fe98a1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a320ccd90ec0ef71a4353104b7fe98a1c">writeExtendedPrecision</a> (final DataOutput output)  throws IOException </td></tr>
-<tr class="separator:a320ccd90ec0ef71a4353104b7fe98a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adedb1cd853d00648be239477f7fe4e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#adedb1cd853d00648be239477f7fe4e2a">writePoint</a> (final <a class="el" href="a08171.html">Coordinate</a> coordinate, final DataOutput output)  throws IOException </td></tr>
-<tr class="separator:adedb1cd853d00648be239477f7fe4e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeed21e7153170021427b1e7001d952b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#afeed21e7153170021427b1e7001d952b">writePointArray</a> (final <a class="el" href="a08171.html">Coordinate</a>[] coordinates, final DataOutput output)  throws IOException </td></tr>
-<tr class="separator:afeed21e7153170021427b1e7001d952b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad5f62b4b939e2464f9156b1ce7a84936"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#ad5f62b4b939e2464f9156b1ce7a84936">parseIntSigned</a> (final CharSequence str, int i, final int max)  throws NumberFormatException </td></tr>
+<tr class="separator:ad5f62b4b939e2464f9156b1ce7a84936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d59703fef82717fa7c929bf7e766619"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a9d59703fef82717fa7c929bf7e766619">parseIntUnsigned</a> (final CharSequence str, int i, final int max)  throws NumberFormatException </td></tr>
+<tr class="separator:a9d59703fef82717fa7c929bf7e766619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0a01f90a7fe27e3b66f1c87f019e91bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a0a01f90a7fe27e3b66f1c87f019e91bc">checkCoordinate</a> (final <a class="el" href="a08171.html">Coordinate</a> c)</td></tr>
-<tr class="separator:a0a01f90a7fe27e3b66f1c87f019e91bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7626720b9bf807253dd702a0214dc9f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a7626720b9bf807253dd702a0214dc9f0">finalize</a> (final int <a class="el" href="a08159.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>)</td></tr>
-<tr class="separator:a7626720b9bf807253dd702a0214dc9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad559a69c12668e28c746aeac54fa5485"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#ad559a69c12668e28c746aeac54fa5485">XInteger</a> ()</td></tr>
+<tr class="separator:ad559a69c12668e28c746aeac54fa5485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a9aa85be4ec02c28a05cb552845fe08eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08163.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a> = 0</td></tr>
-<tr class="separator:a9aa85be4ec02c28a05cb552845fe08eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab356995ed7cff0226d75484d03a994f2"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a> = false</td></tr>
-<tr class="separator:ab356995ed7cff0226d75484d03a994f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd886294f53edb9018d91b1e049bef8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a> = <a class="el" href="a08155.html#ad70b66875f973adc5547402ec3ab512d">TWKBUtils.MIN_EXTENDED_PRECISION</a></td></tr>
-<tr class="separator:abdd886294f53edb9018d91b1e049bef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb32d6067d519044d8c44d52ab2cdd44"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">zPrecisionMultiplier</a> = 0</td></tr>
-<tr class="separator:abb32d6067d519044d8c44d52ab2cdd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eccf09f4c826ba480ec832ac4ce7718"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a> = false</td></tr>
-<tr class="separator:a1eccf09f4c826ba480ec832ac4ce7718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b92282fc8148f040078b9bb37b30b15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a> = <a class="el" href="a08155.html#ad70b66875f973adc5547402ec3ab512d">TWKBUtils.MIN_EXTENDED_PRECISION</a></td></tr>
-<tr class="separator:a1b92282fc8148f040078b9bb37b30b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea667f57906c038bb9717bc848df77a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a4ea667f57906c038bb9717bc848df77a">mPrecisionMultiplier</a> = 0</td></tr>
-<tr class="separator:a4ea667f57906c038bb9717bc848df77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a7c13ad25697cc2fbb7ffc7f24ac5f0cd"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a> = 10</td></tr>
+<tr class="separator:a7c13ad25697cc2fbb7ffc7f24ac5f0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b0210abf43a4c4651ec53ead06449f"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#ac9b0210abf43a4c4651ec53ead06449f">UNSIGNED_LIMIT</a> = -Integer.MAX_VALUE</td></tr>
+<tr class="separator:ac9b0210abf43a4c4651ec53ead06449f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c71eca1db00dfff5ac5e18787c9cf2"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08167.html#af2c71eca1db00dfff5ac5e18787c9cf2">UNSIGNED_MULMIN</a> = <a class="el" href="a08167.html#ac9b0210abf43a4c4651ec53ead06449f">UNSIGNED_LIMIT</a> / <a class="el" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a></td></tr>
+<tr class="separator:af2c71eca1db00dfff5ac5e18787c9cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Extend Integer class with paring capabilities within a CharSequence. </p>
+<p>This avoid calling substring on each part we need.</p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a03728.html#_todo000022">Todo:</a></b></dt><dd>May be replaced by</dd></dl>
+<div class="fragment"><div class="line">Integer.parseInt(CharSequence, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>) </div></div><!-- fragment --><p> after upgrade to JDK9. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad559a69c12668e28c746aeac54fa5485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad559a69c12668e28c746aeac54fa5485">&#9670;&nbsp;</a></span>XInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08167.html">XInteger</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{}</div></div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1b9dd1e59eac3a2a15cb68c19e994fe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b9dd1e59eac3a2a15cb68c19e994fe4">&#9670;&nbsp;</a></span>calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08163.html">PrecisionWriter</a> calculate </td>
-          <td>(</td>
-          <td class="paramtype">final <a class="el" href="a08171.html">Coordinate</a> []&#160;</td>
-          <td class="paramname"><em>coordinates</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>maxPrecision</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08163.html#a1b9dd1e59eac3a2a15cb68c19e994fe4">TWKBWriter.PrecisionWriter.calculate()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a08159.html#a1ad170fc53b3438a213305dcf054c951">TWKBWriter.write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                                                                             {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <a class="code" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a> = !Double.isNaN(coordinates[0].getZ());</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <a class="code" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a> = !Double.isNaN(coordinates[0].getM());</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      super.calculate(coordinates, <a class="code" href="a08159.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>);</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div><div class="ttc" id="a08159_html_a3790bdd1fc8284d93d59193536955934"><div class="ttname"><a href="a08159.html#a3790bdd1fc8284d93d59193536955934">org.locationtech.geowave.core.geotime.util.TWKBWriter.maxPrecision</a></div><div class="ttdeci">final int maxPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:28</div></div>
-<div class="ttc" id="a08167_html_a1eccf09f4c826ba480ec832ac4ce7718"><div class="ttname"><a href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasM</a></div><div class="ttdeci">boolean hasM</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:245</div></div>
-<div class="ttc" id="a08167_html_ab356995ed7cff0226d75484d03a994f2"><div class="ttname"><a href="a08167.html#ab356995ed7cff0226d75484d03a994f2">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasZ</a></div><div class="ttdeci">boolean hasZ</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:242</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0a01f90a7fe27e3b66f1c87f019e91bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a01f90a7fe27e3b66f1c87f019e91bc">&#9670;&nbsp;</a></span>checkCoordinate()</h2>
+<a id="ad5f62b4b939e2464f9156b1ce7a84936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f62b4b939e2464f9156b1ce7a84936">&#9670;&nbsp;</a></span>parseIntSigned()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,30 +144,43 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void checkCoordinate </td>
+          <td class="memname">static int parseIntSigned </td>
           <td>(</td>
-          <td class="paramtype">final <a class="el" href="a08171.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
+          <td class="paramtype">final CharSequence&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws NumberFormatException</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a08171.html#ab5e9bd8f66fd5c9a95233c34eaaff188">Coordinate.getM()</a>, and <a class="el" href="a08171.html#a12408ea71b830bfdbd24101b0b6ca49a">Coordinate.getZ()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                       {</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      super.checkCoordinate(c);</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a>) {</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keyword">final</span> BigDecimal zCoord = <span class="keyword">new</span> BigDecimal(Double.toString(c.getZ())).stripTrailingZeros();</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <a class="code" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a> = Math.max(zCoord.scale(), <a class="code" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a>);</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      }</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a>) {</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keyword">final</span> BigDecimal mCoord = <span class="keyword">new</span> BigDecimal(Double.toString(c.getM())).stripTrailingZeros();</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a> = Math.max(mCoord.scale(), <a class="code" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a>);</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      }</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div><div class="ttc" id="a08167_html_a1b92282fc8148f040078b9bb37b30b15"><div class="ttname"><a href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.mPrecision</a></div><div class="ttdeci">int mPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:246</div></div>
-<div class="ttc" id="a08167_html_a1eccf09f4c826ba480ec832ac4ce7718"><div class="ttname"><a href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasM</a></div><div class="ttdeci">boolean hasM</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:245</div></div>
-<div class="ttc" id="a08167_html_ab356995ed7cff0226d75484d03a994f2"><div class="ttname"><a href="a08167.html#ab356995ed7cff0226d75484d03a994f2">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasZ</a></div><div class="ttdeci">boolean hasZ</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:242</div></div>
-<div class="ttc" id="a08167_html_abdd886294f53edb9018d91b1e049bef8"><div class="ttname"><a href="a08167.html#abdd886294f53edb9018d91b1e049bef8">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.zPrecision</a></div><div class="ttdeci">int zPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:243</div></div>
+<p class="reference">References <a class="el" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">XInteger.RADIX</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                                                                {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (str == null) {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;null&quot;</span>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">int</span> result = 0;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">boolean</span> negative = <span class="keyword">false</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">int</span> limit;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">int</span> multmin;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> digit;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (max &gt; 0) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span> (str.charAt(i) == <span class="charliteral">&#39;-&#39;</span>) {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                negative = <span class="keyword">true</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                limit = Integer.MIN_VALUE;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                i++;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                limit = -Integer.MAX_VALUE;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            multmin = limit / <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (i &lt; max) {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                digit = Character.digit(str.charAt(i++), <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">if</span> (digit &lt; 0) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    result = -digit;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">while</span> (i &lt; max) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="comment">// Accumulating negatively avoids surprises near MAX_VALUE</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                digit = Character.digit(str.charAt(i++), <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">if</span> (digit &lt; 0) {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (result &lt; multmin) {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                result *= <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">if</span> (result &lt; limit + digit) {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                result -= digit;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (negative) {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (i &gt; 1) {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            } <span class="keywordflow">else</span> {    <span class="comment">/* Only got &quot;-&quot; */</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> -result;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div><div class="ttc" id="a08167_html_a7c13ad25697cc2fbb7ffc7f24ac5f0cd"><div class="ttname"><a href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">org.geotoolkit.util.XInteger.RADIX</a></div><div class="ttdeci">static final int RADIX</div><div class="ttdef"><b>Definition:</b> XInteger.java:31</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a7626720b9bf807253dd702a0214dc9f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7626720b9bf807253dd702a0214dc9f0">&#9670;&nbsp;</a></span>finalize()</h2>
+<a id="a9d59703fef82717fa7c929bf7e766619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d59703fef82717fa7c929bf7e766619">&#9670;&nbsp;</a></span>parseIntUnsigned()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,125 +189,46 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void finalize </td>
+          <td class="memname">static int parseIntUnsigned </td>
           <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>maxPrecision</em></td><td>)</td>
+          <td class="paramtype">final CharSequence&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws NumberFormatException</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a08155.html#a5b750380e571ae88f99a796f9d54e49f">TWKBUtils.MAX_EXTENDED_PRECISION</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                                    {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      super.finalize(<a class="code" href="a08159.html#a3790bdd1fc8284d93d59193536955934">maxPrecision</a>);</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a>) {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <a class="code" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a> = Math.min(TWKBUtils.MAX_EXTENDED_PRECISION, <a class="code" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a>);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">zPrecisionMultiplier</a> = Math.pow(10, <a class="code" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a>);</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      }</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a>) {</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a> = Math.min(TWKBUtils.MAX_EXTENDED_PRECISION, <a class="code" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a>);</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="a08167.html#a4ea667f57906c038bb9717bc848df77a">mPrecisionMultiplier</a> = Math.pow(10, <a class="code" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a>);</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      }</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div><div class="ttc" id="a08159_html_a3790bdd1fc8284d93d59193536955934"><div class="ttname"><a href="a08159.html#a3790bdd1fc8284d93d59193536955934">org.locationtech.geowave.core.geotime.util.TWKBWriter.maxPrecision</a></div><div class="ttdeci">final int maxPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:28</div></div>
-<div class="ttc" id="a08167_html_a1b92282fc8148f040078b9bb37b30b15"><div class="ttname"><a href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.mPrecision</a></div><div class="ttdeci">int mPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:246</div></div>
-<div class="ttc" id="a08167_html_a4ea667f57906c038bb9717bc848df77a"><div class="ttname"><a href="a08167.html#a4ea667f57906c038bb9717bc848df77a">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.mPrecisionMultiplier</a></div><div class="ttdeci">double mPrecisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:247</div></div>
-<div class="ttc" id="a08167_html_a1eccf09f4c826ba480ec832ac4ce7718"><div class="ttname"><a href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasM</a></div><div class="ttdeci">boolean hasM</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:245</div></div>
-<div class="ttc" id="a08167_html_ab356995ed7cff0226d75484d03a994f2"><div class="ttname"><a href="a08167.html#ab356995ed7cff0226d75484d03a994f2">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasZ</a></div><div class="ttdeci">boolean hasZ</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:242</div></div>
-<div class="ttc" id="a08167_html_abdd886294f53edb9018d91b1e049bef8"><div class="ttname"><a href="a08167.html#abdd886294f53edb9018d91b1e049bef8">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.zPrecision</a></div><div class="ttdeci">int zPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:243</div></div>
-<div class="ttc" id="a08167_html_abb32d6067d519044d8c44d52ab2cdd44"><div class="ttname"><a href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.zPrecisionMultiplier</a></div><div class="ttdeci">double zPrecisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:244</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a320ccd90ec0ef71a4353104b7fe98a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a320ccd90ec0ef71a4353104b7fe98a1c">&#9670;&nbsp;</a></span>writeExtendedPrecision()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void writeExtendedPrecision </td>
-          <td>(</td>
-          <td class="paramtype">final DataOutput&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08155.html#ac56ffa9468f6d51a81dfc6a16c7553e7">TWKBUtils.zigZagEncode()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                                                                   {</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      byte extendedDimensions = 0;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a>) {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        extendedDimensions |= 0x1;</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        extendedDimensions |= TWKBUtils.zigZagEncode(<a class="code" href="a08167.html#abdd886294f53edb9018d91b1e049bef8">zPrecision</a>) &lt;&lt; 2;</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      }</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a>) {</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        extendedDimensions |= 0x2;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        extendedDimensions |= TWKBUtils.zigZagEncode(<a class="code" href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">mPrecision</a>) &lt;&lt; 5;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      }</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      output.writeByte(extendedDimensions);</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div><div class="ttc" id="a08167_html_a1b92282fc8148f040078b9bb37b30b15"><div class="ttname"><a href="a08167.html#a1b92282fc8148f040078b9bb37b30b15">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.mPrecision</a></div><div class="ttdeci">int mPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:246</div></div>
-<div class="ttc" id="a08167_html_a1eccf09f4c826ba480ec832ac4ce7718"><div class="ttname"><a href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasM</a></div><div class="ttdeci">boolean hasM</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:245</div></div>
-<div class="ttc" id="a08167_html_ab356995ed7cff0226d75484d03a994f2"><div class="ttname"><a href="a08167.html#ab356995ed7cff0226d75484d03a994f2">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasZ</a></div><div class="ttdeci">boolean hasZ</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:242</div></div>
-<div class="ttc" id="a08167_html_abdd886294f53edb9018d91b1e049bef8"><div class="ttname"><a href="a08167.html#abdd886294f53edb9018d91b1e049bef8">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.zPrecision</a></div><div class="ttdeci">int zPrecision</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:243</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adedb1cd853d00648be239477f7fe4e2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adedb1cd853d00648be239477f7fe4e2a">&#9670;&nbsp;</a></span>writePoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void writePoint </td>
-          <td>(</td>
-          <td class="paramtype">final <a class="el" href="a08171.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>coordinate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final DataOutput&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                           {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      super.writePoint(coordinate, output);</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a>) {</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        Varint.writeSignedVarLong(Math.round(coordinate.getZ() * <a class="code" href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">zPrecisionMultiplier</a>), output);</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      }</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a>) {</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        Varint.writeSignedVarLong(Math.round(coordinate.getM() * <a class="code" href="a08167.html#a4ea667f57906c038bb9717bc848df77a">mPrecisionMultiplier</a>), output);</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      }</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div><div class="ttc" id="a08167_html_a4ea667f57906c038bb9717bc848df77a"><div class="ttname"><a href="a08167.html#a4ea667f57906c038bb9717bc848df77a">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.mPrecisionMultiplier</a></div><div class="ttdeci">double mPrecisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:247</div></div>
-<div class="ttc" id="a08167_html_a1eccf09f4c826ba480ec832ac4ce7718"><div class="ttname"><a href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasM</a></div><div class="ttdeci">boolean hasM</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:245</div></div>
-<div class="ttc" id="a08167_html_ab356995ed7cff0226d75484d03a994f2"><div class="ttname"><a href="a08167.html#ab356995ed7cff0226d75484d03a994f2">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasZ</a></div><div class="ttdeci">boolean hasZ</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:242</div></div>
-<div class="ttc" id="a08167_html_abb32d6067d519044d8c44d52ab2cdd44"><div class="ttname"><a href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.zPrecisionMultiplier</a></div><div class="ttdeci">double zPrecisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:244</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afeed21e7153170021427b1e7001d952b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeed21e7153170021427b1e7001d952b">&#9670;&nbsp;</a></span>writePointArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void writePointArray </td>
-          <td>(</td>
-          <td class="paramtype">final <a class="el" href="a08171.html">Coordinate</a> []&#160;</td>
-          <td class="paramname"><em>coordinates</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final DataOutput&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a08163.html#a9aa85be4ec02c28a05cb552845fe08eb">TWKBWriter.PrecisionWriter.precisionMultiplier</a>.</p>
-<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                           {</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keywordtype">long</span> lastX = 0;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keywordtype">long</span> lastY = 0;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="keywordtype">long</span> lastZ = 0;</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keywordtype">long</span> lastM = 0;</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      Varint.writeUnsignedVarInt(coordinates.length, output);</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">final</span> Coordinate c : coordinates) {</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span> x = Math.round(c.getX() * <a class="code" href="a08163.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>);</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span> y = Math.round(c.getY() * <a class="code" href="a08163.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>);</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        Varint.writeSignedVarLong(x - lastX, output);</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        Varint.writeSignedVarLong(y - lastY, output);</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        lastX = x;</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        lastY = y;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a08167.html#ab356995ed7cff0226d75484d03a994f2">hasZ</a>) {</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;          <span class="keyword">final</span> <span class="keywordtype">long</span> z = Math.round(c.getZ() * <a class="code" href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">zPrecisionMultiplier</a>);</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;          Varint.writeSignedVarLong(z - lastZ, output);</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;          lastZ = z;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">hasM</a>) {</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="keyword">final</span> <span class="keywordtype">long</span> m = Math.round(c.getZ() * <a class="code" href="a08167.html#a4ea667f57906c038bb9717bc848df77a">mPrecisionMultiplier</a>);</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;          Varint.writeSignedVarLong(m - lastM, output);</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;          lastM = m;</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        }</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      }</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div><div class="ttc" id="a08167_html_a4ea667f57906c038bb9717bc848df77a"><div class="ttname"><a href="a08167.html#a4ea667f57906c038bb9717bc848df77a">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.mPrecisionMultiplier</a></div><div class="ttdeci">double mPrecisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:247</div></div>
-<div class="ttc" id="a08163_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08163.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBWriter.PrecisionWriter.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:193</div></div>
-<div class="ttc" id="a08167_html_a1eccf09f4c826ba480ec832ac4ce7718"><div class="ttname"><a href="a08167.html#a1eccf09f4c826ba480ec832ac4ce7718">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasM</a></div><div class="ttdeci">boolean hasM</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:245</div></div>
-<div class="ttc" id="a08167_html_ab356995ed7cff0226d75484d03a994f2"><div class="ttname"><a href="a08167.html#ab356995ed7cff0226d75484d03a994f2">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.hasZ</a></div><div class="ttdeci">boolean hasZ</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:242</div></div>
-<div class="ttc" id="a08167_html_abb32d6067d519044d8c44d52ab2cdd44"><div class="ttname"><a href="a08167.html#abb32d6067d519044d8c44d52ab2cdd44">org.locationtech.geowave.core.geotime.util.TWKBWriter.ExtendedPrecisionWriter.zPrecisionMultiplier</a></div><div class="ttdeci">double zPrecisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBWriter.java:244</div></div>
+<p class="reference">References <a class="el" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">XInteger.RADIX</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                                                                                  {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (str == null) {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;null&quot;</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">int</span> result = 0;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> digit;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (i &lt; max) {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            digit = Character.digit(str.charAt(i++), <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">if</span> (digit &lt; 0) {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                result = -digit;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">while</span> (i &lt; max) {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="comment">// Accumulating negatively avoids surprises near MAX_VALUE</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                digit = Character.digit(str.charAt(i++), <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">if</span> (digit &lt; 0) {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                }</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">if</span> (result &lt; <a class="code" href="a08167.html#af2c71eca1db00dfff5ac5e18787c9cf2">UNSIGNED_MULMIN</a>) {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                result *= <a class="code" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a>;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">if</span> (result &lt; <a class="code" href="a08167.html#ac9b0210abf43a4c4651ec53ead06449f">UNSIGNED_LIMIT</a> + digit) {</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                }</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                result -= digit;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> NumberFormatException(<span class="stringliteral">&quot;Unvalid integer string :&quot;</span> + str.subSequence(i, max));</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> -result;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div><div class="ttc" id="a08167_html_af2c71eca1db00dfff5ac5e18787c9cf2"><div class="ttname"><a href="a08167.html#af2c71eca1db00dfff5ac5e18787c9cf2">org.geotoolkit.util.XInteger.UNSIGNED_MULMIN</a></div><div class="ttdeci">static final int UNSIGNED_MULMIN</div><div class="ttdef"><b>Definition:</b> XInteger.java:33</div></div>
+<div class="ttc" id="a08167_html_ac9b0210abf43a4c4651ec53ead06449f"><div class="ttname"><a href="a08167.html#ac9b0210abf43a4c4651ec53ead06449f">org.geotoolkit.util.XInteger.UNSIGNED_LIMIT</a></div><div class="ttdeci">static final int UNSIGNED_LIMIT</div><div class="ttdef"><b>Definition:</b> XInteger.java:32</div></div>
+<div class="ttc" id="a08167_html_a7c13ad25697cc2fbb7ffc7f24ac5f0cd"><div class="ttname"><a href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">org.geotoolkit.util.XInteger.RADIX</a></div><div class="ttdeci">static final int RADIX</div><div class="ttdef"><b>Definition:</b> XInteger.java:31</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1eccf09f4c826ba480ec832ac4ce7718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eccf09f4c826ba480ec832ac4ce7718">&#9670;&nbsp;</a></span>hasM</h2>
+<a id="a7c13ad25697cc2fbb7ffc7f24ac5f0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">&#9670;&nbsp;</a></span>RADIX</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,20 +237,44 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean hasM = false</td>
+          <td class="memname">final int RADIX = 10</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08167.html#ad5f62b4b939e2464f9156b1ce7a84936">XInteger.parseIntSigned()</a>, and <a class="el" href="a08167.html#a9d59703fef82717fa7c929bf7e766619">XInteger.parseIntUnsigned()</a>.</p>
+
+</div>
+</div>
+<a id="ac9b0210abf43a4c4651ec53ead06449f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b0210abf43a4c4651ec53ead06449f">&#9670;&nbsp;</a></span>UNSIGNED_LIMIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int UNSIGNED_LIMIT = -Integer.MAX_VALUE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab356995ed7cff0226d75484d03a994f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab356995ed7cff0226d75484d03a994f2">&#9670;&nbsp;</a></span>hasZ</h2>
+<a id="af2c71eca1db00dfff5ac5e18787c9cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c71eca1db00dfff5ac5e18787c9cf2">&#9670;&nbsp;</a></span>UNSIGNED_MULMIN</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,124 +283,12 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean hasZ = false</td>
+          <td class="memname">final int UNSIGNED_MULMIN = <a class="el" href="a08167.html#ac9b0210abf43a4c4651ec53ead06449f">UNSIGNED_LIMIT</a> / <a class="el" href="a08167.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd">RADIX</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b92282fc8148f040078b9bb37b30b15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b92282fc8148f040078b9bb37b30b15">&#9670;&nbsp;</a></span>mPrecision</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mPrecision = <a class="el" href="a08155.html#ad70b66875f973adc5547402ec3ab512d">TWKBUtils.MIN_EXTENDED_PRECISION</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4ea667f57906c038bb9717bc848df77a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ea667f57906c038bb9717bc848df77a">&#9670;&nbsp;</a></span>mPrecisionMultiplier</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double mPrecisionMultiplier = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9aa85be4ec02c28a05cb552845fe08eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa85be4ec02c28a05cb552845fe08eb">&#9670;&nbsp;</a></span>precisionMultiplier</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double precisionMultiplier = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08163.html#adedb1cd853d00648be239477f7fe4e2a">TWKBWriter.PrecisionWriter.writePoint()</a>, <a class="el" href="a08163.html#afeed21e7153170021427b1e7001d952b">TWKBWriter.PrecisionWriter.writePointArray()</a>, and <a class="el" href="a08167.html#afeed21e7153170021427b1e7001d952b">TWKBWriter.ExtendedPrecisionWriter.writePointArray()</a>.</p>
-
-</div>
-</div>
-<a id="abdd886294f53edb9018d91b1e049bef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdd886294f53edb9018d91b1e049bef8">&#9670;&nbsp;</a></span>zPrecision</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int zPrecision = <a class="el" href="a08155.html#ad70b66875f973adc5547402ec3ab512d">TWKBUtils.MIN_EXTENDED_PRECISION</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abb32d6067d519044d8c44d52ab2cdd44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb32d6067d519044d8c44d52ab2cdd44">&#9670;&nbsp;</a></span>zPrecisionMultiplier</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double zPrecisionMultiplier = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -482,7 +301,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03822.html">locationtech</a></li><li class="navelem"><a class="el" href="a03823.html">geowave</a></li><li class="navelem"><a class="el" href="a03824.html">core</a></li><li class="navelem"><a class="el" href="a03825.html">geotime</a></li><li class="navelem"><a class="el" href="a03821.html">util</a></li><li class="navelem"><a class="el" href="a08159.html">TWKBWriter</a></li><li class="navelem"><a class="el" href="a08167.html">ExtendedPrecisionWriter</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03865.html">util</a></li><li class="navelem"><a class="el" href="a08167.html">XInteger</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

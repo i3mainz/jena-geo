@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Finishes Class Reference</title>
+<title>jena-geo: NotSameAlignmentReason Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,21 @@ $(document).ready(function(){initNavTree('a05895.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a05892.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Finishes Class Reference</div>  </div>
+<div class="title">NotSameAlignmentReason Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for Finishes:</div>
+Inheritance diagram for NotSameAlignmentReason:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05894.png" border="0" usemap="#Finishes_inherit__map" alt="Inheritance graph"/></div>
-<map name="Finishes_inherit__map" id="Finishes_inherit__map">
+<div class="center"><img src="a05894.png" border="0" usemap="#NotSameAlignmentReason_inherit__map" alt="Inheritance graph"/></div>
+<map name="NotSameAlignmentReason_inherit__map" id="NotSameAlignmentReason_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Finishes:</div>
+Collaboration diagram for NotSameAlignmentReason:</div>
 <div class="dyncontent">
-<div class="center"><img src="a05893.png" border="0" usemap="#Finishes_coll__map" alt="Collaboration graph"/></div>
-<map name="Finishes_coll__map" id="Finishes_coll__map">
+<div class="center"><img src="a05893.png" border="0" usemap="#NotSameAlignmentReason_coll__map" alt="Collaboration graph"/></div>
+<map name="NotSameAlignmentReason_coll__map" id="NotSameAlignmentReason_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -114,8 +114,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06415.html#ae09164e634e58926681b4407f00c6139">TemporalRangeWrapper.extract()</a>, and <a class="el" href="a06407.html#a220e90554a7d4ef913d6bf891e740a4b">TemporalRange.to</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                                          {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                TemporalRange range1=TemporalRangeWrapper.extract(v1.getString(), v1.getDatatypeURI());</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                TemporalRange range2=TemporalRangeWrapper.extract(v2.getString(), v2.getDatatypeURI());</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keywordflow">if</span>(range1.to.equals(range2.to)) {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">true</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">false</span>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06451.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, and <a class="el" href="a06451.html#ac9c74df4dbbc54abf10d08d50e3a5cd8">CoverageWrapper.getGridGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                          {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        CoverageWrapper wrapper=CoverageWrapper.extract(v1);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                GridCoverage2D raster=wrapper.getGridGeometry();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        CoverageWrapper wrapper2=CoverageWrapper.extract(v2);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                GridCoverage2D raster2=wrapper2.getGridGeometry();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                RenderedImage image1;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        image1 = raster.getRenderedImage();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                RenderedImage image2 = raster2.getRenderedImage();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        Integer raster1_offset = image1.getData().getDataBuffer().getOffset();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        Integer raster2_offset = image2.getData().getDataBuffer().getOffset();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span>(raster1_offset!=raster2_offset) {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(<span class="stringliteral">&quot;Offset is different!&quot;</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span>(!raster.getGridGeometry().getCoordinateReferenceSystem().</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                equals(raster2.getGridGeometry().getCoordinateReferenceSystem())) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(<span class="stringliteral">&quot;Raster SRIDs are different!&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span>(raster.getGridGeometry().getEnvelope().getUpperCorner().</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                equals(raster.getGridGeometry().getEnvelope().getUpperCorner())</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              || raster.getGridGeometry().getEnvelope().getLowerCorner().</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              equals(raster.getGridGeometry().getEnvelope().getLowerCorner())) {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(<span class="stringliteral">&quot;Corner points are different!&quot;</span>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                } <span class="keywordflow">catch</span> (<a class="code" href="a03806.html">org</a>.opengis.coverage.CannotEvaluateException e) {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="comment">// TODO Auto-generated catch block</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        e.printStackTrace();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> NodeValue.makeString(<span class="stringliteral">&quot;Rasters have same alignment!&quot;</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div><div class="ttc" id="a03806_html"><div class="ttname"><a href="a03806.html">org</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -124,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03725.html">temporal</a></li><li class="navelem"><a class="el" href="a05895.html">Finishes</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03778.html">raster</a></li><li class="navelem"><a class="el" href="a03783.html">relation</a></li><li class="navelem"><a class="el" href="a05895.html">NotSameAlignmentReason</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

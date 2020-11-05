@@ -1,7 +1,8 @@
 var a07427 =
 [
-    [ "getDescriptor", "a07427.html#a33240cccc0214ce6f3cc015e56ae23ad", null ],
-    [ "getDescriptors", "a07427.html#a3b062fadf96ad92c0faeffdf56ca61d1", null ],
-    [ "getIdentification", "a07427.html#aad0fce6a98050a6cdd4e440842f8d7e1", null ],
-    [ "getNames", "a07427.html#a7ebb47ee686b6bb47c84ccafe549b80b", null ]
+    [ "PathChangedEvent", "a07427.html#a10790082c920880fff17182360f07142", null ],
+    [ "count", "a07427.html#a5cee82df24fbebee5a7e83193680ea24", null ],
+    [ "isDirectory", "a07427.html#afbc9fbd05c5ee7891325476611b062b1", null ],
+    [ "kind", "a07427.html#a065c3fa33315959a7f26ab6030d0a4bd", null ],
+    [ "target", "a07427.html#aafdc9e03f673beef105a0f339dcdec0f", null ]
 ];

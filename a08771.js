@@ -1,6 +1,8 @@
 var a08771 =
 [
-    [ "testOffsetCurve", "a08771.html#a838580dd525848eff0989cbeb9ce59a8", null ],
-    [ "result", "a08771.html#aab356d6554a7301750f11ec7a85ac47d", null ],
-    [ "testLineString", "a08771.html#a33797029fadbcba01b4a4fafec88cf41", null ]
+    [ "testLineString2D", "a08771.html#a100e1041d9eed0108cb20adfb3ccb714", null ],
+    [ "testLineString3D", "a08771.html#aed8078596e87405b402dec09f15eb681", null ],
+    [ "LineString2D", "a08771.html#a4a6127d0b7f1eecce2d32442325f7735", null ],
+    [ "LineString3D", "a08771.html#a7f1b41b47d9de827d79c109c50a189f5", null ],
+    [ "point", "a08771.html#a081811ff1c2bedd0a20703599f90114f", null ]
 ];

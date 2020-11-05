@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AsGeoJSONTest Class Reference</title>
+<title>jena-geo: MinimumClearanceLineTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,36 +65,36 @@ $(document).ready(function(){initNavTree('a08419.html','');});
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08416.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsGeoJSONTest Class Reference</div>  </div>
+<div class="title">MinimumClearanceLineTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for AsGeoJSONTest:</div>
+Collaboration diagram for MinimumClearanceLineTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08417.png" border="0" usemap="#AsGeoJSONTest_coll__map" alt="Collaboration graph"/></div>
-<map name="AsGeoJSONTest_coll__map" id="AsGeoJSONTest_coll__map">
+<div class="center"><img src="a08417.png" border="0" usemap="#MinimumClearanceLineTest_coll__map" alt="Collaboration graph"/></div>
+<map name="MinimumClearanceLineTest_coll__map" id="MinimumClearanceLineTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6aee2cc3188bbf40fb4d946ed66e57c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08419.html#a6aee2cc3188bbf40fb4d946ed66e57c2">testAsGeoJSON</a> ()</td></tr>
-<tr class="separator:a6aee2cc3188bbf40fb4d946ed66e57c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61877f78d0d415e1cd48f477474017e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08419.html#a61877f78d0d415e1cd48f477474017e6">testMinimumClearanceLine</a> ()</td></tr>
+<tr class="separator:a61877f78d0d415e1cd48f477474017e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08419.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;LINESTRING(1 2, 4 5)&quot;</td></tr>
-<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3187cbc25299380589200c398b3ffd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08419.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a> =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td></tr>
+<tr class="separator:a1e3187cbc25299380589200c398b3ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6aee2cc3188bbf40fb4d946ed66e57c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aee2cc3188bbf40fb4d946ed66e57c2">&#9670;&nbsp;</a></span>testAsGeoJSON()</h2>
+<a id="a61877f78d0d415e1cd48f477474017e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61877f78d0d415e1cd48f477474017e6">&#9670;&nbsp;</a></span>testMinimumClearanceLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testAsGeoJSON </td>
+          <td class="memname">void testMinimumClearanceLine </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -102,14 +102,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a04443.html#ae7a3cbabcf0592c2705ee280a231189a">AsGeoJSON.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                    {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08419.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        AsGeoJSON instance=<span class="keyword">new</span> AsGeoJSON();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;{\&quot;type\&quot;:\&quot;LineString\&quot;,\&quot;coordinates\&quot;:[[1.0,2.0],[4.0,5.0]]}&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08419_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08419.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.geometry.exporter.AsGeoJSONTest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> AsGeoJSONTest.java:13</div></div>
+<p class="reference">References <a class="el" href="a04331.html#ae7a3cbabcf0592c2705ee280a231189a">MinimumClearanceLine.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                               {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08419.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        MinimumClearanceLine instance=<span class="keyword">new</span> MinimumClearanceLine();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//LINESTRING(0.5 0.00032,0.5 0)</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(0.5,0.00032));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(0.5,0.));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="ttc" id="a08419_html_a1e3187cbc25299380589200c398b3ffd"><div class="ttname"><a href="a08419.html#a1e3187cbc25299380589200c398b3ffd">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.MinimumClearanceLineTest.testPolygon</a></div><div class="ttdeci">static final String testPolygon</div><div class="ttdef"><b>Definition:</b> MinimumClearanceLineTest.java:18</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abc3f514f005cba49e406658e2d3086eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
+<a id="a1e3187cbc25299380589200c398b3ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3187cbc25299380589200c398b3ffd">&#9670;&nbsp;</a></span>testPolygon</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,7 +118,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testGeometry =&quot;LINESTRING(1 2, 4 5)&quot;</td>
+          <td class="memname">final String testPolygon =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td>
         </tr>
       </table>
   </td>
@@ -136,7 +136,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03839.html">test</a></li><li class="navelem"><a class="el" href="a03842.html">geometry</a></li><li class="navelem"><a class="el" href="a03845.html">exporter</a></li><li class="navelem"><a class="el" href="a08419.html">AsGeoJSONTest</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03899.html">test</a></li><li class="navelem"><a class="el" href="a03902.html">geometry</a></li><li class="navelem"><a class="el" href="a03901.html">attribute</a></li><li class="navelem"><a class="el" href="a08419.html">MinimumClearanceLineTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

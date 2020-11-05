@@ -1,5 +1,5 @@
 var a08831 =
 [
-    [ "testY", "a08831.html#aa09d6b9dc5ef19f88e38f2d543d9715f", null ],
-    [ "testPoint", "a08831.html#af26f700ee129f846cac58735f6dcc380", null ]
+    [ "lineString", "a08831.html#a76e109dc83d6f4d16fcd2fa3e73054f6", null ],
+    [ "point", "a08831.html#a081811ff1c2bedd0a20703599f90114f", null ]
 ];

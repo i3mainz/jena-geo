@@ -1,9 +1,15 @@
 var a07967 =
 [
-    [ "Point2DList", "a07967.html#a13743ca16abe10fa3c27ea93b3ef66e7", null ],
-    [ "getDimension", "a07967.html#a56e1ed7f77c1dad3205d8c25e62c0432", null ],
-    [ "getPoint", "a07967.html#a0a85c8e0e311f358dc68e6e38394ef48", null ],
-    [ "isEmpty", "a07967.html#aa71d41fd3d95c354d4d5e922c6c21210", null ],
-    [ "size", "a07967.html#af4b57d21919c42d55af03391f91a1c08", null ],
-    [ "source", "a07967.html#afff0e84b83db0cbdf2918d59d99f13da", null ]
+    [ "Iter", "a07971.html", "a07971" ],
+    [ "LazyList", "a07967.html#a71a9fa41a68b291635cc98b2ffce9e4d", null ],
+    [ "addNext", "a07967.html#a47803e7d03bf0945918d17f716d9dcf2", null ],
+    [ "exists", "a07967.html#ab94715dc82b28f3a7cb2a22c01fcdbdb", null ],
+    [ "get", "a07967.html#a6bb3e4a13f92da39bda85bea42225b9c", null ],
+    [ "isEmpty", "a07967.html#a9fd6998bf5f652d6bba105da2db27a76", null ],
+    [ "listIterator", "a07967.html#a6813c05cf39dde522e3c8cbde71839f3", null ],
+    [ "size", "a07967.html#aeb0642a686a97f487e84ffd657524b3a", null ],
+    [ "trimToSize", "a07967.html#a63388d5ee382a32002098a15411c29d5", null ],
+    [ "elements", "a07967.html#a62b560f1bac27232cdbf9f28cb077558", null ],
+    [ "iterator", "a07967.html#a23a11999fcead4bdabd32213fb76348a", null ],
+    [ "next", "a07967.html#a142a1b51e133e50c0a72b175958ac412", null ]
 ];

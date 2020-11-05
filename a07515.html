@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MathTransforms Class Reference</title>
+<title>jena-geo: ProcessingRegistry Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,114 +61,134 @@ $(document).ready(function(){initNavTree('a07515.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a07512.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MathTransforms Class Reference</div>  </div>
+<div class="title">ProcessingRegistry Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Utility methods related to <a class="el" href="">MathTransform</a>s.  
+<p>A collection of <a class="el" href="a07499.html">ProcessDescriptor</a>s identified by name.  
  <a href="a07515.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for MathTransforms:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07514.png" border="0" usemap="#MathTransforms_inherit__map" alt="Inheritance graph"/></div>
-<map name="MathTransforms_inherit__map" id="MathTransforms_inherit__map">
-<area shape="rect" id="node2" href="a07235.html" title="Parent of classes that contain only static utility methods. " alt="" coords="36,5,92,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for MathTransforms:</div>
-<div class="dyncontent">
-<div class="center"><img src="a07513.png" border="0" usemap="#MathTransforms_coll__map" alt="Collaboration graph"/></div>
-<map name="MathTransforms_coll__map" id="MathTransforms_coll__map">
-<area shape="rect" id="node2" href="a07235.html" title="Parent of classes that contain only static utility methods. " alt="" coords="36,5,92,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa16f7c727006adab18a65cb3d8c1de15"><td class="memItemLeft" align="right" valign="top">static LinearTransform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html#aa16f7c727006adab18a65cb3d8c1de15">linear</a> (final AffineTransform matrix)</td></tr>
-<tr class="memdesc:aa16f7c727006adab18a65cb3d8c1de15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an affine transform from the specified Java2D object.  <a href="#aa16f7c727006adab18a65cb3d8c1de15">More...</a><br /></td></tr>
-<tr class="separator:aa16f7c727006adab18a65cb3d8c1de15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad80efc969941e71e8b99fc5b1ddcd045"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html#ad80efc969941e71e8b99fc5b1ddcd045">MathTransforms</a> ()</td></tr>
-<tr class="memdesc:ad80efc969941e71e8b99fc5b1ddcd045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not allow instantiation of this class.  <a href="#ad80efc969941e71e8b99fc5b1ddcd045">More...</a><br /></td></tr>
-<tr class="separator:ad80efc969941e71e8b99fc5b1ddcd045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aad0fce6a98050a6cdd4e440842f8d7e1"><td class="memItemLeft" align="right" valign="top">Identification&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html#aad0fce6a98050a6cdd4e440842f8d7e1">getIdentification</a> ()</td></tr>
+<tr class="memdesc:aad0fce6a98050a6cdd4e440842f8d7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">General information about this registry.  <a href="#aad0fce6a98050a6cdd4e440842f8d7e1">More...</a><br /></td></tr>
+<tr class="separator:aad0fce6a98050a6cdd4e440842f8d7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b062fadf96ad92c0faeffdf56ca61d1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a07499.html">ProcessDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html#a3b062fadf96ad92c0faeffdf56ca61d1">getDescriptors</a> ()</td></tr>
+<tr class="memdesc:a3b062fadf96ad92c0faeffdf56ca61d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all process descriptors available in this registry.  <a href="#a3b062fadf96ad92c0faeffdf56ca61d1">More...</a><br /></td></tr>
+<tr class="separator:a3b062fadf96ad92c0faeffdf56ca61d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebb47ee686b6bb47c84ccafe549b80b"><td class="memItemLeft" align="right" valign="top">List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html#a7ebb47ee686b6bb47c84ccafe549b80b">getNames</a> ()</td></tr>
+<tr class="memdesc:a7ebb47ee686b6bb47c84ccafe549b80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method returning a view over the names of all process descriptors.  <a href="#a7ebb47ee686b6bb47c84ccafe549b80b">More...</a><br /></td></tr>
+<tr class="separator:a7ebb47ee686b6bb47c84ccafe549b80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33240cccc0214ce6f3cc015e56ae23ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07499.html">ProcessDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html#a33240cccc0214ce6f3cc015e56ae23ad">getDescriptor</a> (String name)  throws NoSuchIdentifierException</td></tr>
+<tr class="memdesc:a33240cccc0214ce6f3cc015e56ae23ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the process descriptor for this given name.  <a href="#a33240cccc0214ce6f3cc015e56ae23ad">More...</a><br /></td></tr>
+<tr class="separator:a33240cccc0214ce6f3cc015e56ae23ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility methods related to <a class="el" href="">MathTransform</a>s. </p>
-<p>Moved to Apache SIS <a class="el" href="">org.apache.sis.referencing.operation.transform.MathTransforms</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad80efc969941e71e8b99fc5b1ddcd045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad80efc969941e71e8b99fc5b1ddcd045">&#9670;&nbsp;</a></span>MathTransforms()</h2>
+<div class="textblock"><p>A collection of <a class="el" href="a07499.html">ProcessDescriptor</a>s identified by name. </p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.19</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a33240cccc0214ce6f3cc015e56ae23ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33240cccc0214ce6f3cc015e56ae23ad">&#9670;&nbsp;</a></span>getDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a07515.html">MathTransforms</a> </td>
+          <td class="memname"><a class="el" href="a07499.html">ProcessDescriptor</a> getDescriptor </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> throws NoSuchIdentifierException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the process descriptor for this given name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the desired process descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The process descriptor (never null). </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NoSuchIdentifierException</td><td>if no descriptor exist for the given name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a07511.html#a1c5d0b3a35031cf95a81ebca088eec1a">ProcessFinder.getProcessDescriptor()</a>.</p>
+
+</div>
+</div>
+<a id="a3b062fadf96ad92c0faeffdf56ca61d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b062fadf96ad92c0faeffdf56ca61d1">&#9670;&nbsp;</a></span>getDescriptors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a07499.html">ProcessDescriptor</a>&gt; getDescriptors </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Do not allow instantiation of this class. </p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                             {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div></div><!-- fragment -->
+<p>Return all process descriptors available in this registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>All process descriptors </dd></dl>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa16f7c727006adab18a65cb3d8c1de15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa16f7c727006adab18a65cb3d8c1de15">&#9670;&nbsp;</a></span>linear()</h2>
+<a id="aad0fce6a98050a6cdd4e440842f8d7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0fce6a98050a6cdd4e440842f8d7e1">&#9670;&nbsp;</a></span>getIdentification()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static LinearTransform linear </td>
+          <td class="memname">Identification getIdentification </td>
           <td>(</td>
-          <td class="paramtype">final AffineTransform&#160;</td>
-          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates an affine transform from the specified Java2D object. </p>
-<p>The matrix coefficients are used in the same way than <a class="el" href="">linear(Matrix)</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">matrix</td><td>The matrix used to define the affine transform. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The affine transform. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                       {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        ensureNonNull(<span class="stringliteral">&quot;matrix&quot;</span>, matrix);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (matrix instanceof LinearTransform) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> (LinearTransform) matrix;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> matrix.isIdentity() ? <a class="code" href="a03746.html">org</a>.<a class="code" href="a03747.html">apache</a>.<a class="code" href="a03748.html">sis</a>.referencing.operation.transform.MathTransforms.identity(2) : <span class="keyword">new</span> AffineTransform2D(matrix);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="ttc" id="a03748_html"><div class="ttname"><a href="a03748.html">org.apache.sis</a></div></div>
-<div class="ttc" id="a03747_html"><div class="ttname"><a href="a03747.html">org.apache</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-</div><!-- fragment -->
+<p>General information about this registry. </p>
+<p>For every descriptors managed by this registry, the  Identifier::getAuthority() identifier authority} shall be equals to this  Identification::getCitation() identification citation}.</p>
+<dl class="section return"><dt>Returns</dt><dd>The identification of this registry. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a07511.html#a4dca017c8998fedfb7deef9e73adc7c3">ProcessFinder.getProcessFactory()</a>.</p>
+
+</div>
+</div>
+<a id="a7ebb47ee686b6bb47c84ccafe549b80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebb47ee686b6bb47c84ccafe549b80b">&#9670;&nbsp;</a></span>getNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;String&gt; getNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience method returning a view over the names of all process descriptors. </p>
+<p>The returned names are valid only within this factory.</p>
+<dl class="section return"><dt>Returns</dt><dd>The names of all process descriptors. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -177,7 +197,7 @@ Private Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03793.html">referencing</a></li><li class="navelem"><a class="el" href="a03798.html">operation</a></li><li class="navelem"><a class="el" href="a07515.html">MathTransforms</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03851.html">process</a></li><li class="navelem"><a class="el" href="a07515.html">ProcessingRegistry</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,5 @@
 var a08855 =
 [
-    [ "testPointFromWKB", "a08855.html#a9aed21a4e0ecbec04e059757d6c2dd24", null ],
-    [ "testPoint1", "a08855.html#ab20d196cb6e34afc2e9cff8074e43bfd", null ]
+    [ "testBezierSmoothing", "a08855.html#a2046c1e051bde433111c7665e11bf114", null ],
+    [ "testLineString", "a08855.html#a33797029fadbcba01b4a4fafec88cf41", null ]
 ];

@@ -1,13 +1,6 @@
 var a06559 =
 [
-    [ "InputStreamAdapter", "a06567.html", "a06567" ],
-    [ "Spi", "a06563.html", "a06563" ],
-    [ "WKBRasterImageReader", "a06559.html#a34badb2baa40331fceb6454a23e348b6", null ],
-    [ "getHeight", "a06559.html#aa6a67f2864766f83a712d6b2af292e7d", null ],
-    [ "getImageMetadata", "a06559.html#a20196cc76d82d0f6ba9e13e70d5141f1", null ],
-    [ "getImageTypes", "a06559.html#a3f778bb9f9d7fb146e110964293b3ab7", null ],
-    [ "getNumImages", "a06559.html#a9b92db5808f8a718d29f13c40e9702f4", null ],
-    [ "getStreamMetadata", "a06559.html#ad187387db939538f0b4ae68ed7fae7c1", null ],
-    [ "getWidth", "a06559.html#a2129107c2233c5e6135e17fe44d8c7fe", null ],
-    [ "read", "a06559.html#abeafb3f0edabe91a895599d6c54ba6cb", null ]
+    [ "PointToGridCoordinates", "a06559.html#ae910ae1145a923eccc9e6bf8c299a869", null ],
+    [ "crsToGrid", "a06559.html#a00d1d96327fe14b4cbc3c2372ac20857", null ],
+    [ "sourceCRS", "a06559.html#ac9e444db6156d4c172922a1aae6ec448", null ]
 ];

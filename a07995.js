@@ -1,24 +1,11 @@
 var a07995 =
 [
-    [ "NullProgressListener", "a07995.html#af7c0b8a8eeaa705d9fabf2a56d837277", null ],
-    [ "cancel", "a07995.html#a02d5fa6b14e221f3012a794b905be166", null ],
-    [ "completed", "a07995.html#aa553deba12d12f3decd58995515e4c65", null ],
-    [ "completed", "a07995.html#a0ec19bdaeb5d5cef48563752e80a6da1", null ],
-    [ "dismissed", "a07995.html#add5ff5158bef30465eaf5e5ba52afc7b", null ],
-    [ "exceptionOccurred", "a07995.html#a08d6a12665e67aeb58b58902a2963b71", null ],
-    [ "failed", "a07995.html#a61db47cc52b55964f1a7219f58a75831", null ],
-    [ "getLocale", "a07995.html#a362cdcad5fb74c2d67494d65e9dfd1f4", null ],
-    [ "getProgress", "a07995.html#afdfeed8666fff88f32b73cbd1d3a2770", null ],
-    [ "getTask", "a07995.html#aaa36e80247bbc15b63359b9be54b084e", null ],
-    [ "isCanceled", "a07995.html#a90c7639144114587960478e254b7f46a", null ],
-    [ "paused", "a07995.html#a8577167d93b219383049ecbb0c9bbb78", null ],
-    [ "paused", "a07995.html#ac8e0cd0580d54fa3020167eb33ef5b3c", null ],
-    [ "progressing", "a07995.html#a8fed868c01b58fc8fe9050fbaaaa6960", null ],
-    [ "resumed", "a07995.html#aff265abc7c08a4ac3a6537d051748859", null ],
-    [ "resumed", "a07995.html#acb7fbd2d229b790b93f111f3a4dc98c4", null ],
-    [ "setProgress", "a07995.html#a740c0fa486474b633dc99053b2cc1743", null ],
-    [ "setTask", "a07995.html#a166a8ce39a787ee84e0eb5729d8a4ebf", null ],
-    [ "started", "a07995.html#ac59cb86fdb92bce8c145ff49df37c940", null ],
-    [ "started", "a07995.html#a1aab917e5fa5f16d56c7f7b7b2ba2db9", null ],
-    [ "warningOccurred", "a07995.html#ae3ce9a50176f65806c0332b658e89327", null ]
+    [ "SequenceIterator", "a07995.html#ae429537707861a4e6a1ffa7377a3137e", null ],
+    [ "close", "a07995.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
+    [ "hasNext", "a07995.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "next", "a07995.html#add41522ac353d25ef498af510089750d", null ],
+    [ "remove", "a07995.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
+    [ "active", "a07995.html#a922926c1fb0e46273936ef910b965520", null ],
+    [ "currentIndex", "a07995.html#a8b41910066b877c9effd739880b6b15e", null ],
+    [ "wrapped", "a07995.html#a75d5da6281a78d859a907547c2d64858", null ]
 ];

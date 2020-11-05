@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: FloodFill Class Reference</title>
+<title>jena-geo: Interpolation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,120 +63,176 @@ $(document).ready(function(){initNavTree('a06887.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="a06884.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FloodFill Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Interpolation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Performs the Flood Fill operation on the given raster.  
- <a href="a06887.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for FloodFill:</div>
+Inheritance diagram for Interpolation:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06886.png" border="0" usemap="#FloodFill_inherit__map" alt="Inheritance graph"/></div>
-<map name="FloodFill_inherit__map" id="FloodFill_inherit__map">
+<div class="center"><img src="a06886.png" border="0" usemap="#Interpolation_inherit__map" alt="Inheritance graph"/></div>
+<map name="Interpolation_inherit__map" id="Interpolation_inherit__map">
+<area shape="rect" id="node2" href="a06895.html" title="Define Lanczos interpolation. " alt="" coords="151,5,293,32"/>
+<area shape="rect" id="node3" href="a06899.html" title="Define Interpolation from neighbor. " alt="" coords="149,56,295,83"/>
+<area shape="rect" id="node4" href="a06903.html" title="A class which aim is to override a given interpolation. " alt="" coords="151,107,293,133"/>
+<area shape="rect" id="node6" href="a06923.html" title="Interpolation which interpolate in X direction and Y direction independently. " alt="" coords="147,157,297,184"/>
+<area shape="rect" id="node5" href="a06919.html" title="An interpolation which stretch histogram into given interval. " alt="" coords="377,107,452,133"/>
+<area shape="rect" id="node7" href="a06867.html" title="Define BiCubic Interpolation. " alt="" coords="345,157,484,184"/>
+<area shape="rect" id="node10" href="a06879.html" title="Define Bilinear Interpolation. " alt="" coords="347,208,483,235"/>
+<area shape="rect" id="node8" href="a06871.html" title="Define a standard biCubic interpolation. " alt="" coords="532,132,679,159"/>
+<area shape="rect" id="node9" href="a06875.html" title="BiCubicInterpolation2" alt="" coords="532,183,679,209"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for FloodFill:</div>
+Collaboration diagram for Interpolation:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06885.png" border="0" usemap="#FloodFill_coll__map" alt="Collaboration graph"/></div>
-<map name="FloodFill_coll__map" id="FloodFill_coll__map">
+<div class="center"><img src="a06885.png" border="0" usemap="#Interpolation_coll__map" alt="Collaboration graph"/></div>
+<map name="Interpolation_coll__map" id="Interpolation_coll__map">
+<area shape="rect" id="node6" href="a06911.html" title="An enum to stipulate to resampling procedure which comportement adopted when projected destination co..." alt="" coords="406,5,611,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:accc7bdf6d6f71f43341ea927407c3144"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#accc7bdf6d6f71f43341ea927407c3144">FloodFill</a> (final RenderedImage source, final ImageLayout layout, final Map&lt;?,?&gt; configuration, double[][] <a class="el" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>, double[] <a class="el" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>)</td></tr>
-<tr class="memdesc:accc7bdf6d6f71f43341ea927407c3144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Flood Fill for the given image.  <a href="#accc7bdf6d6f71f43341ea927407c3144">More...</a><br /></td></tr>
-<tr class="separator:accc7bdf6d6f71f43341ea927407c3144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016c1e8b58082cf2add38a25a00fd20d"><td class="memItemLeft" align="right" valign="top">Vector&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a> ()</td></tr>
-<tr class="memdesc:a016c1e8b58082cf2add38a25a00fd20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source images.  <a href="#a016c1e8b58082cf2add38a25a00fd20d">More...</a><br /></td></tr>
-<tr class="separator:a016c1e8b58082cf2add38a25a00fd20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136d5b1354a85d28b4d72da647556f04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a136d5b1354a85d28b4d72da647556f04">Interpolation</a> (PixelIterator <a class="el" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, int windowSize, <a class="el" href="a06911.html">ResampleBorderComportement</a> <a class="el" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a>, double[] <a class="el" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>)</td></tr>
+<tr class="memdesc:a136d5b1354a85d28b4d72da647556f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build an <a class="el" href="a06887.html">Interpolation</a> object initialize by the given parameter.  <a href="#a136d5b1354a85d28b4d72da647556f04">More...</a><br /></td></tr>
+<tr class="separator:a136d5b1354a85d28b4d72da647556f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af241b811bee0e4ab680cc7c4ac013c0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation</a> (<a class="el" href="a06887.html">Interpolation</a> source)</td></tr>
+<tr class="separator:af241b811bee0e4ab680cc7c4ac013c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bf4bda9cd71a1cb509f188633a84e9"><td class="memItemLeft" align="right" valign="top">abstract double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a32bf4bda9cd71a1cb509f188633a84e9">interpolate</a> (double x, double y, int band)</td></tr>
+<tr class="memdesc:a32bf4bda9cd71a1cb509f188633a84e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return interpolate value from x, y pixel coordinate.  <a href="#a32bf4bda9cd71a1cb509f188633a84e9">More...</a><br /></td></tr>
+<tr class="separator:a32bf4bda9cd71a1cb509f188633a84e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48778145363cdd4ca1befc1131e9d63"><td class="memItemLeft" align="right" valign="top">abstract double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#ab48778145363cdd4ca1befc1131e9d63">interpolate</a> (double x, double y)</td></tr>
+<tr class="memdesc:ab48778145363cdd4ca1befc1131e9d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all pixel samples from interpolation at (x, y) sources coordinates.  <a href="#ab48778145363cdd4ca1befc1131e9d63">More...</a><br /></td></tr>
+<tr class="separator:ab48778145363cdd4ca1befc1131e9d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702cde82ec7ced2557c014814d367e5f"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a702cde82ec7ced2557c014814d367e5f">getMinMaxValue</a> (Rectangle area)</td></tr>
+<tr class="separator:a702cde82ec7ced2557c014814d367e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1080c81ae0fa8f01367d9dc7e88a506d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a1080c81ae0fa8f01367d9dc7e88a506d">getNumBands</a> ()</td></tr>
+<tr class="memdesc:a1080c81ae0fa8f01367d9dc7e88a506d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of bands from object that iterate.  <a href="#a1080c81ae0fa8f01367d9dc7e88a506d">More...</a><br /></td></tr>
+<tr class="separator:a1080c81ae0fa8f01367d9dc7e88a506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6491caa4e5ce585a6e291fd7df856406"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">fill</a> (final WritableRenderedImage image, final Color[] oldColors, final Color newColors, final Point... points)</td></tr>
-<tr class="memdesc:a6491caa4e5ce585a6e291fd7df856406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colors an area of connected pixels with the same set of color.  <a href="#a6491caa4e5ce585a6e291fd7df856406">More...</a><br /></td></tr>
-<tr class="separator:a6491caa4e5ce585a6e291fd7df856406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfe7967eb276eca3653218238782a6c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#acfe7967eb276eca3653218238782a6c7">fill</a> (final WritableRenderedImage image, final double[][] <a class="el" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>, final double[] <a class="el" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>, final Point... points)</td></tr>
-<tr class="memdesc:acfe7967eb276eca3653218238782a6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colors an area of connected pixels with the same set of color.  <a href="#acfe7967eb276eca3653218238782a6c7">More...</a><br /></td></tr>
-<tr class="separator:acfe7967eb276eca3653218238782a6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e708356aea22ee4cd331e11a3915abc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a5e708356aea22ee4cd331e11a3915abc">fill</a> (final WritableRenderedImage image, final Predicate&lt; <a class="el" href="a06907.html">SampleValues</a> &gt; oldSamples, final <a class="el" href="a06907.html">SampleValues</a> newSamples, final Point... points)</td></tr>
-<tr class="memdesc:a5e708356aea22ee4cd331e11a3915abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colors an area of connected pixels with the same set of color.  <a href="#a5e708356aea22ee4cd331e11a3915abc">More...</a><br /></td></tr>
-<tr class="separator:a5e708356aea22ee4cd331e11a3915abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1d891fd5124f008d2856ee73d6ecd7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06887.html">Interpolation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a6e1d891fd5124f008d2856ee73d6ecd7">create</a> (PixelIterator <a class="el" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, <a class="el" href="a06891.html">InterpolationCase</a> interpolationCase, int lanczosWindow)</td></tr>
+<tr class="separator:a6e1d891fd5124f008d2856ee73d6ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b990950ebf5c45d5f164d23b9a825a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06887.html">Interpolation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a39b990950ebf5c45d5f164d23b9a825a">create</a> (PixelIterator <a class="el" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, <a class="el" href="a06891.html">InterpolationCase</a> interpolationCase, int lanczosWindow, <a class="el" href="a06911.html">ResampleBorderComportement</a> rbc, double[] <a class="el" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>)</td></tr>
+<tr class="separator:a39b990950ebf5c45d5f164d23b9a825a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4ba7d667bd2c11bb15f09506d145b31e"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a4ba7d667bd2c11bb15f09506d145b31e">OPERATION_NAME</a> = &quot;org.geotoolkit.FloodFill&quot;</td></tr>
-<tr class="memdesc:a4ba7d667bd2c11bb15f09506d145b31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this operation in the JAI registry.  <a href="#a4ba7d667bd2c11bb15f09506d145b31e">More...</a><br /></td></tr>
-<tr class="separator:a4ba7d667bd2c11bb15f09506d145b31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4b1bd9debe6572e61954ebfc1f8caa49"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a4b1bd9debe6572e61954ebfc1f8caa49">checkInterpolate</a> (double x, double y)</td></tr>
+<tr class="memdesc:a4b1bd9debe6572e61954ebfc1f8caa49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify coordinates are within iterate area boundary.  <a href="#a4b1bd9debe6572e61954ebfc1f8caa49">More...</a><br /></td></tr>
+<tr class="separator:a4b1bd9debe6572e61954ebfc1f8caa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadb0fdfdf8a652432232f7a91776919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#abadb0fdfdf8a652432232f7a91776919">setInterpolateMin</a> (double x, double y)</td></tr>
+<tr class="memdesc:abadb0fdfdf8a652432232f7a91776919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return appropriate interpolation minX and minY coordinates from x, y interpolate coordinates.  <a href="#abadb0fdfdf8a652432232f7a91776919">More...</a><br /></td></tr>
+<tr class="separator:abadb0fdfdf8a652432232f7a91776919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a6fef2b52695e3f2b4aee3bc313659d7b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a6fef2b52695e3f2b4aee3bc313659d7b">fill</a> (final WritableRaster raster, final Raster rasterTop, final Raster rasterBottom, final Rectangle imageBounds, int x, int y, final Predicate&lt; <a class="el" href="a06907.html">SampleValues</a> &gt; <a class="el" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>, final <a class="el" href="a06907.html">SampleValues</a> <a class="el" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>, final IntegerList globalStack)</td></tr>
-<tr class="memdesc:a6fef2b52695e3f2b4aee3bc313659d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process to the Scan Line Flood Fill in one tile.  <a href="#a6fef2b52695e3f2b4aee3bc313659d7b">More...</a><br /></td></tr>
-<tr class="separator:a6fef2b52695e3f2b4aee3bc313659d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:affd1ff75bcaffdb4140ef320c21d9725"><td class="memItemLeft" align="right" valign="top">final PixelIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a></td></tr>
+<tr class="memdesc:affd1ff75bcaffdb4140ef320c21d9725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current.  <a href="#affd1ff75bcaffdb4140ef320c21d9725">More...</a><br /></td></tr>
+<tr class="separator:affd1ff75bcaffdb4140ef320c21d9725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8b817b89b958b862e489811688d6d7"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a></td></tr>
+<tr class="memdesc:a0d8b817b89b958b862e489811688d6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bands from object that iterate.  <a href="#a0d8b817b89b958b862e489811688d6d7">More...</a><br /></td></tr>
+<tr class="separator:a0d8b817b89b958b862e489811688d6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa3c0d2d4233efd85a2c5fbdea1549c"><td class="memItemLeft" align="right" valign="top">final Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a></td></tr>
+<tr class="memdesc:a2fa3c0d2d4233efd85a2c5fbdea1549c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary from object that iterate.  <a href="#a2fa3c0d2d4233efd85a2c5fbdea1549c">More...</a><br /></td></tr>
+<tr class="separator:a2fa3c0d2d4233efd85a2c5fbdea1549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af750c0c774a25ee7919fc55c69df0320"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#af750c0c774a25ee7919fc55c69df0320">precMinMax</a></td></tr>
+<tr class="memdesc:af750c0c774a25ee7919fc55c69df0320"><td class="mdescLeft">&#160;</td><td class="mdescRight">last search of min max value area.  <a href="#af750c0c774a25ee7919fc55c69df0320">More...</a><br /></td></tr>
+<tr class="separator:af750c0c774a25ee7919fc55c69df0320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfb6ca48f7fbfe5066be7d111b1df2d"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a></td></tr>
+<tr class="separator:afcfb6ca48f7fbfe5066be7d111b1df2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cce9bd1b67dabde20c4fdb7e5853bd"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#ad6cce9bd1b67dabde20c4fdb7e5853bd">data</a></td></tr>
+<tr class="memdesc:ad6cce9bd1b67dabde20c4fdb7e5853bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Table to keep all pixels values used to interpolate.  <a href="#ad6cce9bd1b67dabde20c4fdb7e5853bd">More...</a><br /></td></tr>
+<tr class="separator:ad6cce9bd1b67dabde20c4fdb7e5853bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c440999057ffb8b33b40958fb6f662"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a></td></tr>
+<tr class="memdesc:a89c440999057ffb8b33b40958fb6f662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower corner X coordinates from interpolation area.  <a href="#a89c440999057ffb8b33b40958fb6f662">More...</a><br /></td></tr>
+<tr class="separator:a89c440999057ffb8b33b40958fb6f662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa234d01574a8d00c2c39f7cdc1b6bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a></td></tr>
+<tr class="memdesc:acaa234d01574a8d00c2c39f7cdc1b6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower corner Y coordinates from interpolation area.  <a href="#acaa234d01574a8d00c2c39f7cdc1b6bf">More...</a><br /></td></tr>
+<tr class="separator:acaa234d01574a8d00c2c39f7cdc1b6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147377e4b2aefbf75d8d7c81abdd4837"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a></td></tr>
+<tr class="memdesc:a147377e4b2aefbf75d8d7c81abdd4837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Side of area interpolation.  <a href="#a147377e4b2aefbf75d8d7c81abdd4837">More...</a><br /></td></tr>
+<tr class="separator:a147377e4b2aefbf75d8d7c81abdd4837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3412b568b1a72d0f0a6012a6e435bcb"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#ac3412b568b1a72d0f0a6012a6e435bcb">result</a></td></tr>
+<tr class="memdesc:ac3412b568b1a72d0f0a6012a6e435bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a06887.html">Interpolation</a> results table.  <a href="#ac3412b568b1a72d0f0a6012a6e435bcb">More...</a><br /></td></tr>
+<tr class="separator:ac3412b568b1a72d0f0a6012a6e435bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6343f5a460f071666409283cbfa487"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a></td></tr>
+<tr class="memdesc:abd6343f5a460f071666409283cbfa487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains value use when pixel transformation is out of source image boundary.  <a href="#abd6343f5a460f071666409283cbfa487">More...</a><br /></td></tr>
+<tr class="separator:abd6343f5a460f071666409283cbfa487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ecd7c33eb12d8ebb1925a1b38d0b5f"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a06911.html">ResampleBorderComportement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a></td></tr>
+<tr class="memdesc:a75ecd7c33eb12d8ebb1925a1b38d0b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define comportement of the destination image border.  <a href="#a75ecd7c33eb12d8ebb1925a1b38d0b5f">More...</a><br /></td></tr>
+<tr class="separator:a75ecd7c33eb12d8ebb1925a1b38d0b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb8fb364ece6be311b9c5475e999ed5"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#aeeb8fb364ece6be311b9c5475e999ed5">bminX</a></td></tr>
+<tr class="memdesc:aeeb8fb364ece6be311b9c5475e999ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define boundary which accept extrapolation.  <a href="#aeeb8fb364ece6be311b9c5475e999ed5">More...</a><br /></td></tr>
+<tr class="separator:aeeb8fb364ece6be311b9c5475e999ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a334a29e711865f882722211eb6e52c"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a1a334a29e711865f882722211eb6e52c">boundMinX</a></td></tr>
+<tr class="memdesc:a1a334a29e711865f882722211eb6e52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define boundary which don't accept extrapolation.  <a href="#a1a334a29e711865f882722211eb6e52c">More...</a><br /></td></tr>
+<tr class="separator:a1a334a29e711865f882722211eb6e52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac7b24958fca59af19bd910fa3b6a78a3"><td class="memItemLeft" align="right" valign="top">final double [][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a></td></tr>
-<tr class="memdesc:ac7b24958fca59af19bd910fa3b6a78a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The old values in the source image.  <a href="#ac7b24958fca59af19bd910fa3b6a78a3">More...</a><br /></td></tr>
-<tr class="separator:ac7b24958fca59af19bd910fa3b6a78a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc20d928d61a2cbdd547761cb1acbe8"><td class="memItemLeft" align="right" valign="top">final double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a></td></tr>
-<tr class="memdesc:a2dc20d928d61a2cbdd547761cb1acbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The new values in the source image.  <a href="#a2dc20d928d61a2cbdd547761cb1acbe8">More...</a><br /></td></tr>
-<tr class="separator:a2dc20d928d61a2cbdd547761cb1acbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a7117efc7ad04ca5858cf3b5fdf69ad6b"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">getBoundary</a> ()</td></tr>
+<tr class="memdesc:a7117efc7ad04ca5858cf3b5fdf69ad6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns.  <a href="#a7117efc7ad04ca5858cf3b5fdf69ad6b">More...</a><br /></td></tr>
+<tr class="separator:a7117efc7ad04ca5858cf3b5fdf69ad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:ace2fec3b653a89fc3bf6e3c65a1194fd"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#ace2fec3b653a89fc3bf6e3c65a1194fd">bminY</a></td></tr>
+<tr class="separator:ace2fec3b653a89fc3bf6e3c65a1194fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38130e0cd806218c1bc81f4e21a11ef4"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">bmaxX</a></td></tr>
+<tr class="separator:a38130e0cd806218c1bc81f4e21a11ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d067700bb464f256be0c065b05a909"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a52d067700bb464f256be0c065b05a909">bmaxY</a></td></tr>
+<tr class="separator:a52d067700bb464f256be0c065b05a909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f31cecf0962014b738a78bd130b60c"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a65f31cecf0962014b738a78bd130b60c">boundMinY</a></td></tr>
+<tr class="separator:a65f31cecf0962014b738a78bd130b60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bc514c9e64b503eb52e2cb8a7b8e4a"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">boundMaxX</a></td></tr>
+<tr class="separator:a81bc514c9e64b503eb52e2cb8a7b8e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f59e8ab3bd44a0daf9922e28771757d"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">boundMaxY</a></td></tr>
+<tr class="separator:a7f59e8ab3bd44a0daf9922e28771757d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Performs the Flood Fill operation on the given raster. </p>
-<p>{</p>
-<h1><a class="anchor" id="Algorithm"></a>
-}</h1>
-<p>This class implements a &lt;cite&gt;Scan line flood fill&lt;/cite&gt; algorithm as <a href="http://en.wikipedia.org/wiki/Flood_fill">documented in Wikipedia</a> on June 2009, section &lt;cite&gt;Alternative implementations&lt;/cite&gt; (queue-based) modified as described in &lt;cite&gt;Scanline fill&lt;/cite&gt; section. The algorithm has been modified in order to work properly with tiled images.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.01</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.01 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a03668.html#_todo000006">Todo:</a></b></dt><dd>This class is abstract for now because not yet implemented as a JAI operation. However the static methods are ready for use. </dd></dl>
+<div class="textblock"><p>Define standard interpolation.<br />
+<br />
+</p>
+<p>Regardless interpolation type, each interpolation is computing from sample center.</p>
+<dl class="section author"><dt>Author</dt><dd>Rémi Maréchal (Geomatys). </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="accc7bdf6d6f71f43341ea927407c3144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc7bdf6d6f71f43341ea927407c3144">&#9670;&nbsp;</a></span>FloodFill()</h2>
+<a id="a136d5b1354a85d28b4d72da647556f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136d5b1354a85d28b4d72da647556f04">&#9670;&nbsp;</a></span>Interpolation() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06887.html">FloodFill</a> </td>
+          <td class="memname"><a class="el" href="a06887.html">Interpolation</a> </td>
           <td>(</td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">PixelIterator&#160;</td>
+          <td class="paramname"><em>pixelIterator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final ImageLayout&#160;</td>
-          <td class="paramname"><em>layout</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>windowSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final Map&lt;?,?&gt;&#160;</td>
-          <td class="paramname"><em>configuration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>oldValues</em>[][], </td>
+          <td class="paramtype"><a class="el" href="a06911.html">ResampleBorderComportement</a>&#160;</td>
+          <td class="paramname"><em>borderChoice</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double []&#160;</td>
-          <td class="paramname"><em>newValues</em>&#160;</td>
+          <td class="paramname"><em>fillValue</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,26 +242,84 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a new Flood Fill for the given image. </p>
-<p>While this constructor is public, it should usually not be invoked directly. You should use  javax.media.jai.JAI} factory methods instead.</p>
+<p>Build an <a class="el" href="a06887.html">Interpolation</a> object initialize by the given parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>The source image. </td></tr>
-    <tr><td class="paramname">layout</td><td>The image layout. </td></tr>
-    <tr><td class="paramname">configuration</td><td>The image properties and rendering hints. </td></tr>
-    <tr><td class="paramname">oldValues</td><td>The old values in the source images. </td></tr>
-    <tr><td class="paramname">newValues</td><td>The new values in the source images. </td></tr>
+    <tr><td class="paramname">pixelIterator</td><td><a class="el" href="">PixelIterator</a> which travel source image use to interpolate. </td></tr>
+    <tr><td class="paramname">windowSize</td><td>define width and height from needed area to interpolate value in function of interpolation instance. </td></tr>
+    <tr><td class="paramname">borderChoice</td><td>define comportement of the destination image border. </td></tr>
+    <tr><td class="paramname">fillValue</td><td>contains value use when pixel transformation is out of source image boundary. </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        super(<span class="keyword">new</span> Vector&lt;&gt;(Collections.singleton(source)), layout, configuration, <span class="keyword">false</span>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numBands = source.getSampleModel().getNumBands();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        this.<a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a> = <a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a> = <a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>.clone();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        this.<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a> = <a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a> = <a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.clone();</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.length; i++) {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>[i] = Arrays.copyOf(<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>[i], numBands);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div><div class="ttc" id="a06887_html_a2dc20d928d61a2cbdd547761cb1acbe8"><div class="ttname"><a href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">org.geotoolkit.image.jai.FloodFill.newValues</a></div><div class="ttdeci">final double [] newValues</div><div class="ttdoc">The new values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:79</div></div>
-<div class="ttc" id="a06887_html_ac7b24958fca59af19bd910fa3b6a78a3"><div class="ttname"><a href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">org.geotoolkit.image.jai.FloodFill.oldValues</a></div><div class="ttdeci">final double [][] oldValues</div><div class="ttdoc">The old values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:74</div></div>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06879.html#aa5cab872a520db29d250ce7945e88398" title="Create a Bilinear Interpolator. ">BilinearInterpolation::BilinearInterpolation</a>(org.geotoolkit.image.iterator.PixelIterator) </dd>
+<dd>
+<a class="el" href="a06867.html#ac9374079592f1ffcd46939b1d75a19ae">BiCubicInterpolation::BiCubicInterpolation</a>(org.geotoolkit.image.iterator.PixelIterator) </dd>
+<dd>
+<a class="el" href="a06895.html#a3679320c2a3250c3d92cafc7b412a9cb" title="Create a Lanczos interpolation. ">LanczosInterpolation::LanczosInterpolation</a>(org.geotoolkit.image.iterator.PixelIterator, int) </dd></dl>
+
+<p class="reference">References <a class="el" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">Interpolation.borderChoice</a>, <a class="el" href="a06887.html#abd6343f5a460f071666409283cbfa487">Interpolation.fillValue</a>, <a class="el" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">Interpolation.numBands</a>, and <a class="el" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">Interpolation.pixelIterator</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                                                                                                   {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        this.<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a> = <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        this.<a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>   = <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.getNumBands();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        this.<a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>   = <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.getDomain();</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (windowSize &gt; <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.width || windowSize &gt; <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.height)</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;windowSide argument is &quot;</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    + <span class="stringliteral">&quot;larger than object boundary. boundary = &quot;</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a> + <span class="stringliteral">&quot; windowSide = &quot;</span> + windowSize);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="a06887.html#aeeb8fb364ece6be311b9c5475e999ed5">bminX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x - 0.5;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="a06887.html#ace2fec3b653a89fc3bf6e3c65a1194fd">bminY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y - 0.5;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">bmaxX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.width - 0.5;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="a06887.html#a52d067700bb464f256be0c065b05a909">bmaxY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.height - 0.5;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="a06887.html#a1a334a29e711865f882722211eb6e52c">boundMinX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="a06887.html#a65f31cecf0962014b738a78bd130b60c">boundMinY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">boundMaxX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.width  - 1;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">boundMaxY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.height - 1;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        this.<a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>     = null;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        this.<a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> = windowSize;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        this.<a class="code" href="a06887.html#ad6cce9bd1b67dabde20c4fdb7e5853bd">data</a>       = <span class="keyword">new</span> <span class="keywordtype">double</span>[windowSize * windowSize * <a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>];</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="a06887.html#ac3412b568b1a72d0f0a6012a6e435bcb">result</a>          = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>];</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        this.<a class="code" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a> = <a class="code" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a>;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a> == null) {</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            this.<a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>];</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            Arrays.fill(this.<a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>, Double.NaN);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            this.<a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a> = <a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div><div class="ttc" id="a06887_html_a38130e0cd806218c1bc81f4e21a11ef4"><div class="ttname"><a href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">org.geotoolkit.image.interpolation.Interpolation.bmaxX</a></div><div class="ttdeci">final double bmaxX</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06887.html#a0d8b817b89b958b862e489811688d6d7">org.geotoolkit.image.interpolation.Interpolation.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">Number of bands from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:41</div></div>
+<div class="ttc" id="a06887_html_affd1ff75bcaffdb4140ef320c21d9725"><div class="ttname"><a href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">org.geotoolkit.image.interpolation.Interpolation.pixelIterator</a></div><div class="ttdeci">final PixelIterator pixelIterator</div><div class="ttdoc">Current. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:36</div></div>
+<div class="ttc" id="a06887_html_a65f31cecf0962014b738a78bd130b60c"><div class="ttname"><a href="a06887.html#a65f31cecf0962014b738a78bd130b60c">org.geotoolkit.image.interpolation.Interpolation.boundMinY</a></div><div class="ttdeci">final int boundMinY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_afcfb6ca48f7fbfe5066be7d111b1df2d"><div class="ttname"><a href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">org.geotoolkit.image.interpolation.Interpolation.minMax</a></div><div class="ttdeci">double [] minMax</div><div class="ttdef"><b>Definition:</b> Interpolation.java:56</div></div>
+<div class="ttc" id="a06887_html_a52d067700bb464f256be0c065b05a909"><div class="ttname"><a href="a06887.html#a52d067700bb464f256be0c065b05a909">org.geotoolkit.image.interpolation.Interpolation.bmaxY</a></div><div class="ttdeci">final double bmaxY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_ad6cce9bd1b67dabde20c4fdb7e5853bd"><div class="ttname"><a href="a06887.html#ad6cce9bd1b67dabde20c4fdb7e5853bd">org.geotoolkit.image.interpolation.Interpolation.data</a></div><div class="ttdeci">final double [] data</div><div class="ttdoc">Table to keep all pixels values used to interpolate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:61</div></div>
+<div class="ttc" id="a06887_html_a147377e4b2aefbf75d8d7c81abdd4837"><div class="ttname"><a href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">org.geotoolkit.image.interpolation.Interpolation.windowSide</a></div><div class="ttdeci">final int windowSide</div><div class="ttdoc">Side of area interpolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:76</div></div>
+<div class="ttc" id="a06887_html_a2fa3c0d2d4233efd85a2c5fbdea1549c"><div class="ttname"><a href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">org.geotoolkit.image.interpolation.Interpolation.boundary</a></div><div class="ttdeci">final Rectangle boundary</div><div class="ttdoc">Boundary from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:46</div></div>
+<div class="ttc" id="a06887_html_a75ecd7c33eb12d8ebb1925a1b38d0b5f"><div class="ttname"><a href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">org.geotoolkit.image.interpolation.Interpolation.borderChoice</a></div><div class="ttdeci">final ResampleBorderComportement borderChoice</div><div class="ttdoc">Define comportement of the destination image border. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:91</div></div>
+<div class="ttc" id="a06887_html_a7f59e8ab3bd44a0daf9922e28771757d"><div class="ttname"><a href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">org.geotoolkit.image.interpolation.Interpolation.boundMaxY</a></div><div class="ttdeci">final int boundMaxY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_a1a334a29e711865f882722211eb6e52c"><div class="ttname"><a href="a06887.html#a1a334a29e711865f882722211eb6e52c">org.geotoolkit.image.interpolation.Interpolation.boundMinX</a></div><div class="ttdeci">final int boundMinX</div><div class="ttdoc">Define boundary which don&amp;#39;t accept extrapolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_ace2fec3b653a89fc3bf6e3c65a1194fd"><div class="ttname"><a href="a06887.html#ace2fec3b653a89fc3bf6e3c65a1194fd">org.geotoolkit.image.interpolation.Interpolation.bminY</a></div><div class="ttdeci">final double bminY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_a81bc514c9e64b503eb52e2cb8a7b8e4a"><div class="ttname"><a href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">org.geotoolkit.image.interpolation.Interpolation.boundMaxX</a></div><div class="ttdeci">final int boundMaxX</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a06887_html_aeeb8fb364ece6be311b9c5475e999ed5"><div class="ttname"><a href="a06887.html#aeeb8fb364ece6be311b9c5475e999ed5">org.geotoolkit.image.interpolation.Interpolation.bminX</a></div><div class="ttdeci">final double bminX</div><div class="ttdoc">Define boundary which accept extrapolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_abd6343f5a460f071666409283cbfa487"><div class="ttname"><a href="a06887.html#abd6343f5a460f071666409283cbfa487">org.geotoolkit.image.interpolation.Interpolation.fillValue</a></div><div class="ttdeci">final double [] fillValue</div><div class="ttdoc">Contains value use when pixel transformation is out of source image boundary. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:86</div></div>
+<div class="ttc" id="a06887_html_ac3412b568b1a72d0f0a6012a6e435bcb"><div class="ttname"><a href="a06887.html#ac3412b568b1a72d0f0a6012a6e435bcb">org.geotoolkit.image.interpolation.Interpolation.result</a></div><div class="ttdeci">final double [] result</div><div class="ttdoc">Interpolation results table. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:81</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af241b811bee0e4ab680cc7c4ac013c0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af241b811bee0e4ab680cc7c4ac013c0f">&#9670;&nbsp;</a></span>Interpolation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06887.html">Interpolation</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a06887.html">Interpolation</a>&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">Interpolation.borderChoice</a>, <a class="el" href="a06887.html#abd6343f5a460f071666409283cbfa487">Interpolation.fillValue</a>, <a class="el" href="a06887.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">Interpolation.getBoundary()</a>, <a class="el" href="a06887.html#a1080c81ae0fa8f01367d9dc7e88a506d">Interpolation.getNumBands()</a>, <a class="el" href="a06887.html#a32bf4bda9cd71a1cb509f188633a84e9">Interpolation.interpolate()</a>, <a class="el" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">Interpolation.minMax</a>, <a class="el" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">Interpolation.numBands</a>, <a class="el" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">Interpolation.pixelIterator</a>, and <a class="el" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">Interpolation.windowSide</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                               {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        this.<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a> = source.pixelIterator;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        this.<a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>   = source.getNumBands();</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        this.<a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>   = source.getBoundary();</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="a06887.html#aeeb8fb364ece6be311b9c5475e999ed5">bminX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x - 0.5;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="a06887.html#ace2fec3b653a89fc3bf6e3c65a1194fd">bminY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y - 0.5;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">bmaxX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.width - 0.5;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="a06887.html#a52d067700bb464f256be0c065b05a909">bmaxY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.height - 0.5;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="a06887.html#a1a334a29e711865f882722211eb6e52c">boundMinX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="a06887.html#a65f31cecf0962014b738a78bd130b60c">boundMinY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">boundMaxX</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.width  - 1;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">boundMaxY</a> = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y + <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.height - 1;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        this.<a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>     = source.minMax;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        this.<a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> = source.windowSide;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        this.<a class="code" href="a06887.html#ad6cce9bd1b67dabde20c4fdb7e5853bd">data</a>       = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> * <a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> * <a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>];</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="a06887.html#ac3412b568b1a72d0f0a6012a6e435bcb">result</a>          = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>];</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        this.<a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>  = source.fillValue;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        this.<a class="code" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a> = source.borderChoice;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div><div class="ttc" id="a06887_html_a38130e0cd806218c1bc81f4e21a11ef4"><div class="ttname"><a href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">org.geotoolkit.image.interpolation.Interpolation.bmaxX</a></div><div class="ttdeci">final double bmaxX</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06887.html#a0d8b817b89b958b862e489811688d6d7">org.geotoolkit.image.interpolation.Interpolation.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">Number of bands from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:41</div></div>
+<div class="ttc" id="a06887_html_affd1ff75bcaffdb4140ef320c21d9725"><div class="ttname"><a href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">org.geotoolkit.image.interpolation.Interpolation.pixelIterator</a></div><div class="ttdeci">final PixelIterator pixelIterator</div><div class="ttdoc">Current. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:36</div></div>
+<div class="ttc" id="a06887_html_a65f31cecf0962014b738a78bd130b60c"><div class="ttname"><a href="a06887.html#a65f31cecf0962014b738a78bd130b60c">org.geotoolkit.image.interpolation.Interpolation.boundMinY</a></div><div class="ttdeci">final int boundMinY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_afcfb6ca48f7fbfe5066be7d111b1df2d"><div class="ttname"><a href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">org.geotoolkit.image.interpolation.Interpolation.minMax</a></div><div class="ttdeci">double [] minMax</div><div class="ttdef"><b>Definition:</b> Interpolation.java:56</div></div>
+<div class="ttc" id="a06887_html_a52d067700bb464f256be0c065b05a909"><div class="ttname"><a href="a06887.html#a52d067700bb464f256be0c065b05a909">org.geotoolkit.image.interpolation.Interpolation.bmaxY</a></div><div class="ttdeci">final double bmaxY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_ad6cce9bd1b67dabde20c4fdb7e5853bd"><div class="ttname"><a href="a06887.html#ad6cce9bd1b67dabde20c4fdb7e5853bd">org.geotoolkit.image.interpolation.Interpolation.data</a></div><div class="ttdeci">final double [] data</div><div class="ttdoc">Table to keep all pixels values used to interpolate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:61</div></div>
+<div class="ttc" id="a06887_html_a147377e4b2aefbf75d8d7c81abdd4837"><div class="ttname"><a href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">org.geotoolkit.image.interpolation.Interpolation.windowSide</a></div><div class="ttdeci">final int windowSide</div><div class="ttdoc">Side of area interpolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:76</div></div>
+<div class="ttc" id="a06887_html_a2fa3c0d2d4233efd85a2c5fbdea1549c"><div class="ttname"><a href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">org.geotoolkit.image.interpolation.Interpolation.boundary</a></div><div class="ttdeci">final Rectangle boundary</div><div class="ttdoc">Boundary from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:46</div></div>
+<div class="ttc" id="a06887_html_a75ecd7c33eb12d8ebb1925a1b38d0b5f"><div class="ttname"><a href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">org.geotoolkit.image.interpolation.Interpolation.borderChoice</a></div><div class="ttdeci">final ResampleBorderComportement borderChoice</div><div class="ttdoc">Define comportement of the destination image border. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:91</div></div>
+<div class="ttc" id="a06887_html_a7f59e8ab3bd44a0daf9922e28771757d"><div class="ttname"><a href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">org.geotoolkit.image.interpolation.Interpolation.boundMaxY</a></div><div class="ttdeci">final int boundMaxY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_a1a334a29e711865f882722211eb6e52c"><div class="ttname"><a href="a06887.html#a1a334a29e711865f882722211eb6e52c">org.geotoolkit.image.interpolation.Interpolation.boundMinX</a></div><div class="ttdeci">final int boundMinX</div><div class="ttdoc">Define boundary which don&amp;#39;t accept extrapolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_ace2fec3b653a89fc3bf6e3c65a1194fd"><div class="ttname"><a href="a06887.html#ace2fec3b653a89fc3bf6e3c65a1194fd">org.geotoolkit.image.interpolation.Interpolation.bminY</a></div><div class="ttdeci">final double bminY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_a81bc514c9e64b503eb52e2cb8a7b8e4a"><div class="ttname"><a href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">org.geotoolkit.image.interpolation.Interpolation.boundMaxX</a></div><div class="ttdeci">final int boundMaxX</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_aeeb8fb364ece6be311b9c5475e999ed5"><div class="ttname"><a href="a06887.html#aeeb8fb364ece6be311b9c5475e999ed5">org.geotoolkit.image.interpolation.Interpolation.bminX</a></div><div class="ttdeci">final double bminX</div><div class="ttdoc">Define boundary which accept extrapolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_abd6343f5a460f071666409283cbfa487"><div class="ttname"><a href="a06887.html#abd6343f5a460f071666409283cbfa487">org.geotoolkit.image.interpolation.Interpolation.fillValue</a></div><div class="ttdeci">final double [] fillValue</div><div class="ttdoc">Contains value use when pixel transformation is out of source image boundary. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:86</div></div>
+<div class="ttc" id="a06887_html_ac3412b568b1a72d0f0a6012a6e435bcb"><div class="ttname"><a href="a06887.html#ac3412b568b1a72d0f0a6012a6e435bcb">org.geotoolkit.image.interpolation.Interpolation.result</a></div><div class="ttdeci">final double [] result</div><div class="ttdoc">Interpolation results table. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:81</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6491caa4e5ce585a6e291fd7df856406"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6491caa4e5ce585a6e291fd7df856406">&#9670;&nbsp;</a></span>fill() <span class="overload">[1/4]</span></h2>
+<a id="a4b1bd9debe6572e61954ebfc1f8caa49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1bd9debe6572e61954ebfc1f8caa49">&#9670;&nbsp;</a></span>checkInterpolate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,254 +328,16 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void fill </td>
+          <td class="memname">boolean checkInterpolate </td>
           <td>(</td>
-          <td class="paramtype">final WritableRenderedImage&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Color []&#160;</td>
-          <td class="paramname"><em>oldColors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Color&#160;</td>
-          <td class="paramname"><em>newColors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point...&#160;</td>
-          <td class="paramname"><em>points</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Colors an area of connected pixels with the same set of color. </p>
-<p>The fill is performed in place in the given image. The operation is performed immediately; it is not deferred like usual JAI operations.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td>The image in which to colors an area. </td></tr>
-    <tr><td class="paramname">oldColors</td><td>The colors to replace (usually only 1 color, but more are allowed). </td></tr>
-    <tr><td class="paramname">newColors</td><td>The new colors replacing the old ones. </td></tr>
-    <tr><td class="paramname">points</td><td>The coordinate of the starting point. There is usually only one such point, but more are allowed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">FloodFill.newValues</a>, <a class="el" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">FloodFill.oldValues</a>, and <a class="el" href="a06723.html#ab1b8fc8a83c519214b447c6eaac4ae25">ColorUtilities.toDoubleValues()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06887.html#acfe7967eb276eca3653218238782a6c7">FloodFill.fill()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> numBands = image.getSampleModel().getNumBands();</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span>[][] <a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[oldColors.length][];</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;oldValues.length; i++) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            oldValues[i] = ColorUtilities.toDoubleValues(oldColors[i], numBands);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">double</span>[] <a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a> = ColorUtilities.toDoubleValues(newColors, numBands);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <a class="code" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">fill</a>(image, oldValues, newValues, points);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div><div class="ttc" id="a06887_html_a6491caa4e5ce585a6e291fd7df856406"><div class="ttname"><a href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">org.geotoolkit.image.jai.FloodFill.fill</a></div><div class="ttdeci">static void fill(final WritableRenderedImage image, final Color[] oldColors, final Color newColors, final Point... points)</div><div class="ttdoc">Colors an area of connected pixels with the same set of color. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:124</div></div>
-<div class="ttc" id="a06887_html_a2dc20d928d61a2cbdd547761cb1acbe8"><div class="ttname"><a href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">org.geotoolkit.image.jai.FloodFill.newValues</a></div><div class="ttdeci">final double [] newValues</div><div class="ttdoc">The new values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:79</div></div>
-<div class="ttc" id="a06887_html_ac7b24958fca59af19bd910fa3b6a78a3"><div class="ttname"><a href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">org.geotoolkit.image.jai.FloodFill.oldValues</a></div><div class="ttdeci">final double [][] oldValues</div><div class="ttdoc">The old values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:74</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="acfe7967eb276eca3653218238782a6c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfe7967eb276eca3653218238782a6c7">&#9670;&nbsp;</a></span>fill() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void fill </td>
-          <td>(</td>
-          <td class="paramtype">final WritableRenderedImage&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double&#160;</td>
-          <td class="paramname"><em>oldValues</em>[][], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final double []&#160;</td>
-          <td class="paramname"><em>newValues</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point...&#160;</td>
-          <td class="paramname"><em>points</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Colors an area of connected pixels with the same set of color. </p>
-<p>The fill is performed in place in the given image. The operation is performed immediately; it is not deferred like usual JAI operations.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td>The image in which to colors an area. </td></tr>
-    <tr><td class="paramname">oldValues</td><td>The colors to replace (usually only 1 color, but more are allowed). </td></tr>
-    <tr><td class="paramname">newValues</td><td>The new colors replacing the old ones. </td></tr>
-    <tr><td class="paramname">points</td><td>The coordinate of the starting point. There is usually only one such point, but more are allowed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">FloodFill.fill()</a>, and <a class="el" href="a06907.html#a3c3187a9ea5768277146d5961af9b768">SampleValues.getInstance()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">         * Copies the old values in a set of SampleValues objects. The exact type of SampleValues</span></div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">         * will depend on the transfer type.</span></div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> transferType = image.getSampleModel().getTransferType();</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">final</span> Set&lt;SampleValues&gt; oldSamples = <span class="keyword">new</span> HashSet&lt;&gt;(hashMapCapacity(<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.length));</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> <span class="keywordtype">double</span>[] samples : <a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>) {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            oldSamples.add(SampleValues.getInstance(transferType, samples));</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">final</span> SampleValues newSamples = SampleValues.getInstance(transferType, <a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        oldSamples.remove(newSamples); <span class="comment">// Necessary for avoiding infinite loop.</span></div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (oldSamples.isEmpty()) {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">return</span>;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">fill</a>(image, oldSamples::contains, newSamples, points);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div><div class="ttc" id="a06887_html_a6491caa4e5ce585a6e291fd7df856406"><div class="ttname"><a href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">org.geotoolkit.image.jai.FloodFill.fill</a></div><div class="ttdeci">static void fill(final WritableRenderedImage image, final Color[] oldColors, final Color newColors, final Point... points)</div><div class="ttdoc">Colors an area of connected pixels with the same set of color. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:124</div></div>
-<div class="ttc" id="a06887_html_a2dc20d928d61a2cbdd547761cb1acbe8"><div class="ttname"><a href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">org.geotoolkit.image.jai.FloodFill.newValues</a></div><div class="ttdeci">final double [] newValues</div><div class="ttdoc">The new values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:79</div></div>
-<div class="ttc" id="a06887_html_ac7b24958fca59af19bd910fa3b6a78a3"><div class="ttname"><a href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">org.geotoolkit.image.jai.FloodFill.oldValues</a></div><div class="ttdeci">final double [][] oldValues</div><div class="ttdoc">The old values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:74</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5e708356aea22ee4cd331e11a3915abc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e708356aea22ee4cd331e11a3915abc">&#9670;&nbsp;</a></span>fill() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void fill </td>
-          <td>(</td>
-          <td class="paramtype">final WritableRenderedImage&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Predicate&lt; <a class="el" href="a06907.html">SampleValues</a> &gt;&#160;</td>
-          <td class="paramname"><em>oldSamples</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final <a class="el" href="a06907.html">SampleValues</a>&#160;</td>
-          <td class="paramname"><em>newSamples</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Point...&#160;</td>
-          <td class="paramname"><em>points</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Colors an area of connected pixels with the same set of color. </p>
-<p>The fill is performed in place in the given image. The operation is performed immediately; it is not deferred like usual JAI operations.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td>The image in which to colors an area. </td></tr>
-    <tr><td class="paramname">oldSamples</td><td>The colors to replace (usually only 1 color, but more are allowed). </td></tr>
-    <tr><td class="paramname">newSamples</td><td>The new colors replacing the old ones. </td></tr>
-    <tr><td class="paramname">points</td><td>The coordinate of the starting point. There is usually only one such point, but more are allowed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">FloodFill.fill()</a>, <a class="el" href="a07691.html#a6a28bf4ed15b946061619d84a67eefdc">Errors.format()</a>, and <a class="el" href="a07695.html#a1c273aecd214ea6ffc703b8f042b5e34">Errors.Keys.PointOutsideCoverage_1</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">         * Copies the points coordinates in an IntegerList. The content of that list will be</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">         * (x,y) tupples translated in such a way that the upper left pixel is located at (0,0)</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">         * by definition (this is always the case with BufferedImage, but not necessarily with</span></div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">         * other kind of RenderedImage). Later we will call the fill(WritableRaster...) method</span></div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">         * in a loop as long as the list is not empty. Note that the fill(WritableRaster...)</span></div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">         * method may itself push more points in that list (can occur only if the image is tiled).</span></div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> xmin   = image.getMinX();</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ymin   = image.getMinY();</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> width  = image.getWidth();</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> height = image.getHeight();</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keyword">final</span> Rectangle bounds = <span class="keyword">new</span> Rectangle(xmin, ymin, width, height);</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">if</span> (bounds.isEmpty()) {</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">return</span>;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keyword">final</span> IntegerList stack = <span class="keyword">new</span> IntegerList(8, Math.max(width, height)-1);</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">final</span> Point point : points) {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordtype">int</span> x = point.x - xmin;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordtype">int</span> y = point.y - ymin;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> (x &lt; 0 || x &gt;= width || y &lt; 0 || y &gt;= height) {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(Errors.format(Errors.Keys.PointOutsideCoverage_1,</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                        <span class="keyword">new</span> StringBuilder().append(point.x).append(<span class="charliteral">&#39;,&#39;</span>).append(point.y).toString()));</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            stack.addInt(x);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            stack.addInt(y);</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">         * Now process to the filling tile by tile.</span></div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">         *</span></div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">         * TODO: need to process together every points on the same tile, in order to avoid</span></div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">         *       loading and flushing tiles too often.</span></div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileXOff   = image.getTileGridXOffset();</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileYOff   = image.getTileGridYOffset();</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileWidth  = image.getTileWidth();</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tileHeight = image.getTileHeight();</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> minTileY   = image.getMinTileY();</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> maxTileY   = image.getNumXTiles() + minTileY - 1; <span class="comment">// inclusive.</span></div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">while</span> (!stack.isEmpty()) {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> y = stack.removeLast() + ymin;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> x = stack.removeLast() + xmin;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> tileX = XToTileX(x, tileXOff, tileWidth);</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> tileY = YToTileY(y, tileYOff, tileHeight);</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keyword">final</span> Raster top    = (tileY != minTileY) ? image.getTile(tileX, tileY-1) : null;</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keyword">final</span> Raster bottom = (tileY != maxTileY) ? image.getTile(tileX, tileY+1) : null;</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keyword">final</span> WritableRaster raster = image.getWritableTile(tileX, tileY);</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <a class="code" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">fill</a>(raster, top, bottom, bounds, x, y, oldSamples, newSamples, stack);</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            } <span class="keywordflow">finally</span> {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                image.releaseWritableTile(tileX, tileY);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            }</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div><div class="ttc" id="a06887_html_a6491caa4e5ce585a6e291fd7df856406"><div class="ttname"><a href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">org.geotoolkit.image.jai.FloodFill.fill</a></div><div class="ttdeci">static void fill(final WritableRenderedImage image, final Color[] oldColors, final Color newColors, final Point... points)</div><div class="ttdoc">Colors an area of connected pixels with the same set of color. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:124</div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6fef2b52695e3f2b4aee3bc313659d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fef2b52695e3f2b4aee3bc313659d7b">&#9670;&nbsp;</a></span>fill() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void fill </td>
-          <td>(</td>
-          <td class="paramtype">final WritableRaster&#160;</td>
-          <td class="paramname"><em>raster</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Raster&#160;</td>
-          <td class="paramname"><em>rasterTop</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Raster&#160;</td>
-          <td class="paramname"><em>rasterBottom</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Rectangle&#160;</td>
-          <td class="paramname"><em>imageBounds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Predicate&lt; <a class="el" href="a06907.html">SampleValues</a> &gt;&#160;</td>
-          <td class="paramname"><em>oldValues</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final <a class="el" href="a06907.html">SampleValues</a>&#160;</td>
-          <td class="paramname"><em>newValues</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final IntegerList&#160;</td>
-          <td class="paramname"><em>globalStack</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -471,43 +347,274 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Process to the Scan Line Flood Fill in one tile. </p>
-<p>This method will be invoked for every tiles to process, and may be invoked more than once for the same tile. </p>
-<p>Every access on</p><div class="fragment"><div class="line">globalStack </div></div><!-- fragment --><p> will be performed in a synchronized block. This allow multi-threading, using a different thread for different tiles.</p>
+<p>Verify coordinates are within iterate area boundary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">raster</td><td>The tile in which to apply the Scan Line Flood Fill. </td></tr>
-    <tr><td class="paramname">rasterTop</td><td>The tile just above the given<div class="fragment"><div class="line">raster </div></div><!-- fragment --> , or null if none. </td></tr>
-    <tr><td class="paramname">rasterBottom</td><td>The tile just below the given<div class="fragment"><div class="line">raster </div></div><!-- fragment --> , or null if none. </td></tr>
-    <tr><td class="paramname">imageBounds</td><td>The bounds of the whole image (encompassing every tiles). </td></tr>
-    <tr><td class="paramname">x</td><td>The <em>x</em> ordinate of the starting point. </td></tr>
-    <tr><td class="paramname">y</td><td>The <em>y</em> ordinate of the starting point. </td></tr>
-    <tr><td class="paramname">oldValues</td><td>The set of old colors to replace. </td></tr>
-    <tr><td class="paramname">newValues</td><td>The new value to give to the filled pixels. </td></tr>
-    <tr><td class="paramname">globalStack</td><td>Where to push the point needed further examination by other tiles. </td></tr>
+    <tr><td class="paramname">x</td><td>pixel x coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>pixel y coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> if value should be interpolate at the given coordinates else<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> . </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14171.html">IllegalArgumentException</a></td><td>if pixel coordinates are out of iterate area boundary. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="a06907.html#ad21dc1a2584d1f2bec2f4e3309312889">SampleValues.getPixel()</a>, <a class="el" href="a06907.html#a3ed8d6cf4fcb4fbf2698c9ee3ad18bb2">SampleValues.instance()</a>, and <a class="el" href="a06907.html#af3f59e98fcf5be419babb0e263912b85">SampleValues.setPixel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    {</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keyword">final</span> SampleValues buffer = <a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>.instance();</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.test(buffer.getPixel(raster, x, y))) {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keywordflow">return</span>;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> width  = raster.getWidth();</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> height = raster.getHeight();</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> xmin   = raster.getMinX();</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ymin   = raster.getMinY();</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> xmax   = xmin + width  - 1; <span class="comment">// Inclusive</span></div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ymax   = ymin + height - 1; <span class="comment">// Inclusive</span></div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">         * Prepares a stack of coordinates to be processed in successive passes of</span></div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">         * the loop below. Note that the coordinates in this stack are relative to</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">         * the tile upper left corner, i.e. (xmin,ymin) must be subtracted.  This</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">         * is for allowing IntegerList to do its job (pack the data).</span></div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keyword">final</span> IntegerList stack = <span class="keyword">new</span> IntegerList(128, Math.max(width, height)-1);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">do</span> {</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">             * Scans the current line toward the left. After this loop,</span></div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">             * (x,y) will be the location of the leftmost pixel to replace.</span></div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            assert x &gt;= xmin &amp;&amp; x &lt;= xmax : x;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            assert y &gt;= ymin &amp;&amp; y &lt;= ymax : y;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="keywordflow">do</span> <span class="keywordflow">if</span> (--x &lt; xmin) {</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="comment">// We have reached the left border. The inspection will need to continue in</span></div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="comment">// the tile at the left, if any. It will be caller&#39;s responsibility to use</span></div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                <span class="comment">// the information that we put in &#39;globalStack&#39;.</span></div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="keywordflow">if</span> (imageBounds.contains(x,y)) {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    <span class="keyword">synchronized</span> (globalStack) {</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        globalStack.addInt(x - imageBounds.x);</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                        globalStack.addInt(y - imageBounds.y);</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    }</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                }</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            } <span class="keywordflow">while</span> (<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.test(buffer.getPixel(raster, x, y)));</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            x++;</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">             * The loop below scans toward the right as long as there is pixels to replace.</span></div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordtype">boolean</span> omitTopCheck    = <span class="keyword">false</span>;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordtype">boolean</span> omitBottomCheck = <span class="keyword">false</span>;</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">do</span> {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                <a class="code" href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">newValues</a>.setPixel(raster, x, y);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">                 * The do ... while loop below is executed exactly 2 times, for checking</span></div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">                 * the pixel on top and on bottom of the (x,y) location.</span></div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">                 *</span></div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">                 *  1: (checkingTop == true ) checks the pixel at the (x, y-1) location.</span></div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">                 *  2: (checkingTop == false) checks the pixel at the (x, y+1) location.</span></div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                <span class="keywordtype">boolean</span> checkingTop = <span class="keyword">true</span>;</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                <span class="keywordtype">boolean</span> omitCheck   = omitTopCheck;</div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                <span class="keywordtype">int</span>     checkAt     = y - 1;</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                Raster  border      = (y == ymin) ? rasterTop : raster;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    <span class="comment">/*</span></div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">                     * Checks the pixel at the top or the bottom (depending on &#39;checkingTop&#39; value)</span></div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">                     * of the current (x,y) location. For every sequences of consecutive pixels to</span></div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">                     * replace, push in the stack the location of the first pixel in that sequence.</span></div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">                     */</span></div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                    <span class="keywordflow">if</span> (border != null &amp;&amp; <a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.test(buffer.getPixel(border, x, checkAt)) != omitCheck) {</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                        <span class="keywordflow">if</span> ((omitCheck = !omitCheck) == <span class="keyword">true</span>) {</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                            <span class="keywordflow">if</span> (border == raster) {</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                <span class="comment">// Found a point which need further examination in this tile.</span></div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                stack.addInt(x       - xmin);</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                stack.addInt(checkAt - ymin);</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (imageBounds.contains(x, checkAt)) {</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                <span class="comment">// Found a point which need further examination in an other tile.</span></div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                <span class="keyword">synchronized</span> (globalStack) {</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                    globalStack.addInt(x       - imageBounds.x);</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                    globalStack.addInt(checkAt - imageBounds.y);</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                }</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                            }</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                        }</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    }</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    <span class="keywordflow">if</span> (checkingTop) {</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                        <span class="comment">/*</span></div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">                         * Just finished the first execution of the loop (checking the top pixel).</span></div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">                         * Saves the &quot;omitCheck&quot; state and prepare the loop for the check of the</span></div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">                         * bottom pixel.</span></div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">                         */</span></div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                        checkingTop  = <span class="keyword">false</span>;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                        omitTopCheck = omitCheck;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                        omitCheck    = omitBottomCheck;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                        checkAt      = y + 1;</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        border       = (y == ymax) ? rasterBottom : raster;</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    }</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                    <span class="comment">/*</span></div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">                     * Just finished the second execution of the loop (checking the bottom pixel).</span></div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment">                     * Saves the &quot;omitCheck&quot; state and we are done.</span></div><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">                     */</span></div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                    omitBottomCheck = omitCheck;</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                }</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                <span class="comment">/*</span></div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">                 * If we have not yet reached the right border, move one pixel to the right and</span></div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">                 * continue the inspection of current row. If we have reached the right border,</span></div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">                 * then the inspection will need to continue in the tile at the right, if any</span></div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">                 * This is the same processing than we did for the left border.</span></div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">                 */</span></div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="keywordflow">if</span> (x++ == xmax) {</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                    <span class="keywordflow">if</span> (imageBounds.contains(x,y)) {</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                        <span class="keyword">synchronized</span> (globalStack) {</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                            globalStack.addInt(x - imageBounds.x);</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                            globalStack.addInt(y - imageBounds.y);</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                        }</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                    }</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                    <span class="keywordflow">break</span>;</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                }</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            } <span class="keywordflow">while</span> (<a class="code" href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">oldValues</a>.test(buffer.getPixel(raster, x, y)));</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">             * The above loop may have pushed additional points to process on the stack.</span></div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">             * If this is the case, extract the point on the top of the stack an continue.</span></div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">             * Otherwise we are done.</span></div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="keywordflow">if</span> (stack.isEmpty()) {</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            }</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            y = stack.removeLast() + ymin;</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            x = stack.removeLast() + xmin;</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        } <span class="keywordflow">while</span> (<span class="keyword">true</span>);</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div><div class="ttc" id="a06887_html_a2dc20d928d61a2cbdd547761cb1acbe8"><div class="ttname"><a href="a06887.html#a2dc20d928d61a2cbdd547761cb1acbe8">org.geotoolkit.image.jai.FloodFill.newValues</a></div><div class="ttdeci">final double [] newValues</div><div class="ttdoc">The new values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:79</div></div>
-<div class="ttc" id="a06887_html_ac7b24958fca59af19bd910fa3b6a78a3"><div class="ttname"><a href="a06887.html#ac7b24958fca59af19bd910fa3b6a78a3">org.geotoolkit.image.jai.FloodFill.oldValues</a></div><div class="ttdeci">final double [][] oldValues</div><div class="ttdoc">The old values in the source image. </div><div class="ttdef"><b>Definition:</b> FloodFill.java:74</div></div>
+<p class="reference">References <a class="el" href="a06911.html#abb77bc360d361aa014883fe9affa44ca">ResampleBorderComportement.EXTRAPOLATION</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06907.html#ad42e7eec94d785c35a117231677c9c22">Resample.fillImageByAffineTransform()</a>, <a class="el" href="a06907.html#aa2d36ea1e23f06ea11b76f018221a0ae">Resample.fillImageByGrid()</a>, <a class="el" href="a06907.html#aac315215ae478d1c360cdfd109c654ef">Resample.fillImageByTransform()</a>, and <a class="el" href="a06907.html#a252de85e22da757d30b9a86d31dfd1e3">Resample.fillImagePx()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                                            {</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="comment">//-- accept extrapolation</span></div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">borderChoice</a>.equals(ResampleBorderComportement.EXTRAPOLATION)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">if</span> (x &lt; bminX || x &gt; <a class="code" href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">bmaxX</a> || y &lt; bminY || y &gt; <a class="code" href="a06887.html#a52d067700bb464f256be0c065b05a909">bmaxY</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">//-- no interpolation available</span></div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">//        if (borderChoice.equals(ResampleBorderComportement.EXTRAPOLATION)) return true;</span></div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> (!(x &lt; boundMinX || x &gt; <a class="code" href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">boundMaxX</a></div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;               || y &lt; boundMinY || y &gt; <a class="code" href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">boundMaxY</a>));</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div><div class="ttc" id="a06887_html_a38130e0cd806218c1bc81f4e21a11ef4"><div class="ttname"><a href="a06887.html#a38130e0cd806218c1bc81f4e21a11ef4">org.geotoolkit.image.interpolation.Interpolation.bmaxX</a></div><div class="ttdeci">final double bmaxX</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_a52d067700bb464f256be0c065b05a909"><div class="ttname"><a href="a06887.html#a52d067700bb464f256be0c065b05a909">org.geotoolkit.image.interpolation.Interpolation.bmaxY</a></div><div class="ttdeci">final double bmaxY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:96</div></div>
+<div class="ttc" id="a06887_html_a75ecd7c33eb12d8ebb1925a1b38d0b5f"><div class="ttname"><a href="a06887.html#a75ecd7c33eb12d8ebb1925a1b38d0b5f">org.geotoolkit.image.interpolation.Interpolation.borderChoice</a></div><div class="ttdeci">final ResampleBorderComportement borderChoice</div><div class="ttdoc">Define comportement of the destination image border. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:91</div></div>
+<div class="ttc" id="a06887_html_a7f59e8ab3bd44a0daf9922e28771757d"><div class="ttname"><a href="a06887.html#a7f59e8ab3bd44a0daf9922e28771757d">org.geotoolkit.image.interpolation.Interpolation.boundMaxY</a></div><div class="ttdeci">final int boundMaxY</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
+<div class="ttc" id="a06887_html_a81bc514c9e64b503eb52e2cb8a7b8e4a"><div class="ttname"><a href="a06887.html#a81bc514c9e64b503eb52e2cb8a7b8e4a">org.geotoolkit.image.interpolation.Interpolation.boundMaxX</a></div><div class="ttdeci">final int boundMaxX</div><div class="ttdef"><b>Definition:</b> Interpolation.java:101</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a016c1e8b58082cf2add38a25a00fd20d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a016c1e8b58082cf2add38a25a00fd20d">&#9670;&nbsp;</a></span>getSources()</h2>
+<a id="a6e1d891fd5124f008d2856ee73d6ecd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1d891fd5124f008d2856ee73d6ecd7">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a06887.html">Interpolation</a> create </td>
+          <td>(</td>
+          <td class="paramtype">PixelIterator&#160;</td>
+          <td class="paramname"><em>pixelIterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a06891.html">InterpolationCase</a>&#160;</td>
+          <td class="paramname"><em>interpolationCase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lanczosWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return <a class="el" href="a06887.html">Interpolation</a> object.<br />
+<br />
+</p>
+<p>Note : if lanczos interpolation doesn't choose lanczosWindow parameter has no impact.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixelIterator</td><td>Iterator which iterate to compute interpolation. </td></tr>
+    <tr><td class="paramname">interpolationCase</td><td>case of interpolation. </td></tr>
+    <tr><td class="paramname">lanczosWindow</td><td>only use about Lanczos interpolation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolation asked by caller. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06895.html#a3679320c2a3250c3d92cafc7b412a9cb" title="Create a Lanczos interpolation. ">LanczosInterpolation::LanczosInterpolation</a>(org.geotoolkit.image.iterator.PixelIterator, int) </dd></dl>
+
+<p class="reference">References <a class="el" href="a06911.html#a97f1943cc41c2c9259671f969ea86ac7">ResampleBorderComportement.FILL_VALUE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06907.html#a156ba99c1858666613f70adbf1cebd94">Resample.Resample()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                                                                                                            {</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06887.html#a6e1d891fd5124f008d2856ee73d6ecd7">create</a>(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, interpolationCase, lanczosWindow, ResampleBorderComportement.FILL_VALUE, null);</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div><div class="ttc" id="a06887_html_affd1ff75bcaffdb4140ef320c21d9725"><div class="ttname"><a href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">org.geotoolkit.image.interpolation.Interpolation.pixelIterator</a></div><div class="ttdeci">final PixelIterator pixelIterator</div><div class="ttdoc">Current. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:36</div></div>
+<div class="ttc" id="a06887_html_a6e1d891fd5124f008d2856ee73d6ecd7"><div class="ttname"><a href="a06887.html#a6e1d891fd5124f008d2856ee73d6ecd7">org.geotoolkit.image.interpolation.Interpolation.create</a></div><div class="ttdeci">static Interpolation create(PixelIterator pixelIterator, InterpolationCase interpolationCase, int lanczosWindow)</div><div class="ttdef"><b>Definition:</b> Interpolation.java:378</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a39b990950ebf5c45d5f164d23b9a825a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b990950ebf5c45d5f164d23b9a825a">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a06887.html">Interpolation</a> create </td>
+          <td>(</td>
+          <td class="paramtype">PixelIterator&#160;</td>
+          <td class="paramname"><em>pixelIterator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a06891.html">InterpolationCase</a>&#160;</td>
+          <td class="paramname"><em>interpolationCase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lanczosWindow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a06911.html">ResampleBorderComportement</a>&#160;</td>
+          <td class="paramname"><em>rbc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double []&#160;</td>
+          <td class="paramname"><em>fillValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return <a class="el" href="a06887.html">Interpolation</a> object.<br />
+<br />
+</p>
+<p>Note : if lanczos interpolation doesn't choose lanczosWindow parameter has no impact.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixelIterator</td><td>Iterator which iterate to compute interpolation. </td></tr>
+    <tr><td class="paramname">interpolationCase</td><td>case of interpolation. </td></tr>
+    <tr><td class="paramname">lanczosWindow</td><td>only use about Lanczos interpolation. </td></tr>
+    <tr><td class="paramname">rbc</td><td>comportement of the destination image border. </td></tr>
+    <tr><td class="paramname">fillValue</td><td>contains value use when pixel transformation is out of source image boundary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolation asked by caller. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06895.html#a3679320c2a3250c3d92cafc7b412a9cb" title="Create a Lanczos interpolation. ">LanczosInterpolation::LanczosInterpolation</a>(org.geotoolkit.image.iterator.PixelIterator, int) </dd></dl>
+<div class="fragment"><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                                                                           {</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">switch</span> (interpolationCase) {</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <span class="keywordflow">case</span> NEIGHBOR : <span class="keywordflow">return</span> <span class="keyword">new</span> NeighborInterpolation(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, <a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>);</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">case</span> BILINEAR : <span class="keywordflow">return</span> <span class="keyword">new</span> BilinearInterpolation(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, rbc, <a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>);</div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keywordflow">case</span> BICUBIC  : <span class="keywordflow">return</span> <span class="keyword">new</span> BiCubicInterpolation1(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, rbc, <a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>);</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="keywordflow">case</span> BICUBIC2 : <span class="keywordflow">return</span> <span class="keyword">new</span> BiCubicInterpolation2(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, rbc, <a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>);</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <span class="keywordflow">case</span> LANCZOS  : <span class="keywordflow">return</span> <span class="keyword">new</span> LanczosInterpolation(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>, lanczosWindow, rbc, <a class="code" href="a06887.html#abd6343f5a460f071666409283cbfa487">fillValue</a>);</div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            default       : <span class="keywordflow">throw</span>  <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;interpolation not supported yet&quot;</span>);</div><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div><div class="ttc" id="a06887_html_affd1ff75bcaffdb4140ef320c21d9725"><div class="ttname"><a href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">org.geotoolkit.image.interpolation.Interpolation.pixelIterator</a></div><div class="ttdeci">final PixelIterator pixelIterator</div><div class="ttdoc">Current. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:36</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a06887_html_abd6343f5a460f071666409283cbfa487"><div class="ttname"><a href="a06887.html#abd6343f5a460f071666409283cbfa487">org.geotoolkit.image.interpolation.Interpolation.fillValue</a></div><div class="ttdeci">final double [] fillValue</div><div class="ttdoc">Contains value use when pixel transformation is out of source image boundary. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:86</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7117efc7ad04ca5858cf3b5fdf69ad6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7117efc7ad04ca5858cf3b5fdf69ad6b">&#9670;&nbsp;</a></span>getBoundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle getBoundary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns. </p>
+<div class="fragment"><div class="line">Rectangle </div></div><!-- fragment --><p> which is Image or Raster boundary within this Interpolator.</p>
+<dl class="section return"><dt>Returns</dt><dd><div class="fragment"><div class="line">Rectangle </div></div><!-- fragment --> which is Image or Raster boundary within this Interpolator. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Resample::getSourcePixelValue(double, double) </dd></dl>
+
+<p class="reference">References <a class="el" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">Interpolation.boundary</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06887.html#a702cde82ec7ced2557c014814d367e5f">Interpolation.getMinMaxValue()</a>, <a class="el" href="a06887.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation.Interpolation()</a>, and <a class="el" href="a06907.html#ab33a2483be889f813ed48240fbf1df3d">Resample.Resample()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                            {</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>;</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div><div class="ttc" id="a06887_html_a2fa3c0d2d4233efd85a2c5fbdea1549c"><div class="ttname"><a href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">org.geotoolkit.image.interpolation.Interpolation.boundary</a></div><div class="ttdeci">final Rectangle boundary</div><div class="ttdoc">Boundary from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a702cde82ec7ced2557c014814d367e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702cde82ec7ced2557c014814d367e5f">&#9670;&nbsp;</a></span>getMinMaxValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Vector&lt;RenderedImage&gt; getSources </td>
+          <td class="memname">double [] getMinMaxValue </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle&#160;</td>
+          <td class="paramname"><em>area</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find minimum and maximum pixels values for each band.<br />
+ Moreover double table result has length equal to 6 * band number.<br />
+<br />
+ <em>min<sub>0</sub></em> : min from band 0.<br />
+ <em>minX<sub>0</sub></em> : x coordinate from min value from band 0.<br />
+ <em>minY<sub>0</sub></em> : y coordinate from min value from band 0.<br />
+ <em>max<sub>0</sub></em> : max from band 0.<br />
+ <em>maxX<sub>0</sub></em> : x coordinate from max value from band 0.<br />
+ <em>maxY<sub>0</sub></em> : y coordinate from max value from band 0.<br />
+ <em>min<sub>n</sub></em> : min from nth band.<br />
+ <em>minX<sub>n</sub></em> : x coordinate from min value from nth band.<br />
+ <em>minY<sub>n</sub></em> : y coordinate from min value from nth band.<br />
+ <em>max<sub>n</sub></em> : max from nth band.<br />
+ <em>maxX<sub>n</sub></em> : x coordinate from max value from nth band.<br />
+ <em>maxY<sub>n</sub></em> : y coordinate from max value from nth band.<br />
+<br />
+ Table is organize like this : <br />
+ [<em>min<sub>0</sub></em>, <em>minX<sub>0</sub></em>, <em>minY<sub>0</sub></em>, <em>max<sub>0</sub></em>, <em>maxX<sub>0</sub></em>, <em>maxY<sub>0</sub></em> ... <em>min<sub>n</sub></em>, <em>minX<sub>n</sub></em>, <em>minY<sub>n</sub></em>, <em>max<sub>n</sub></em>, <em>maxX<sub>n</sub></em>, <em>maxY<sub>n</sub></em>]<br />
+<br />
+</p>
+<p>If Rectangle area parameter is</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> method will search minimum and maximum on all iterate object.</p>
+<p>Note : This code is adapted for BiLinear and Neighbor interpolation. About another interpolation min and max values method isn't implemented yet.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>area within search min and max values. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double array witch represent minimum and maximum pixels values for each band. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06887.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">Interpolation.getBoundary()</a>, <a class="el" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">Interpolation.minMax</a>, and <a class="el" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">Interpolation.numBands</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06919.html#a4c9d138d85859b2e99c7055636e106fd">Rescaler.Rescaler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                                   {</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a> != null) {</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">if</span> ((area == null &amp;&amp; <a class="code" href="a06887.html#af750c0c774a25ee7919fc55c69df0320">precMinMax</a>.equals(<a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>))</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;              || area.equals(<a class="code" href="a06887.html#af750c0c774a25ee7919fc55c69df0320">precMinMax</a>)) <span class="keywordflow">return</span> <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">//-- compute minMax values</span></div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[6 * <a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>];</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">//-- initialize min and max value for each band</span></div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> band = 0;band&lt;<a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>; band++) {</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> minBandOrdinate = 6 * band;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="comment">//-- min value, x, y coordinates</span></div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate]     = Double.POSITIVE_INFINITY;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="comment">//-- max value, x, y coordinates</span></div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 3] = Double.NEGATIVE_INFINITY;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">         * If area is null iterate on all image area.</span></div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">if</span> (area == null) {</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordtype">double</span>[] pixel = null;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">while</span>(<a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.next()) {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                pixel = <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.getPixel(pixel);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> band = 0; band &lt; pixel.length; band++) {</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    <span class="keyword">final</span> <span class="keywordtype">int</span> minBandOrdinate = 6 * band;</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <span class="keyword">final</span> Point position = <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.getPosition();</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    <span class="keywordflow">if</span> (pixel[band] &lt; <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate]) {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                        <span class="comment">//-- min value, x, y coordinates</span></div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate] = pixel[band];</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 1] = position.x;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 2] = position.y;</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    }</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    <span class="keywordflow">if</span> (pixel[band] &gt; <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 3]) {</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                        <span class="comment">//-- max value, x, y coordinates</span></div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 3] = pixel[band];</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 4] = position.x;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                        <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 5] = position.y;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    }</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                }</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!<a class="code" href="a06887.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">getBoundary</a>().contains(area)) {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;impossible to define min and max in area out of Iterate object boundary&quot;</span>);</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordtype">double</span> value;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> maxAreaX = area.x + area.width;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">int</span> maxAreaY = area.y + area.height;</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = area.y; y &lt; maxAreaY; y++) {</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = area.x; x &lt; maxAreaX; x++) {</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                    <span class="comment">/*</span></div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">                     * Call moveTo at each pixel coordinates because we don&#39;t know Iterator implementation.</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">                     * Iterate row by row or raster by raster has different comportements.</span></div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">                     */</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.moveTo(x, y);</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> band = 0; band &lt; <a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>; band++) {</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                        value = <a class="code" href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">pixelIterator</a>.getSampleDouble(band);</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        <span class="keyword">final</span> <span class="keywordtype">int</span> minBandOrdinate = 6 * band;</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        <span class="keywordflow">if</span> (value &lt; <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate]) {</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                            <span class="comment">//-- min value, x, y coordinates</span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate] = value;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 1] = x;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 2] = y;</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        }</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <span class="keywordflow">if</span> (value &gt; <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 3]) {</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                            <span class="comment">//-- max value, x, y coordinates</span></div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 3] = value;</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 4] = x;</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                            <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>[minBandOrdinate + 5] = y;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        }</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    }</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                }</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            }</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        }</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="a06887.html#af750c0c774a25ee7919fc55c69df0320">precMinMax</a> = (area == null) ? <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a> : area;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">minMax</a>;</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div><div class="ttc" id="a06887_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06887.html#a0d8b817b89b958b862e489811688d6d7">org.geotoolkit.image.interpolation.Interpolation.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">Number of bands from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:41</div></div>
+<div class="ttc" id="a06887_html_affd1ff75bcaffdb4140ef320c21d9725"><div class="ttname"><a href="a06887.html#affd1ff75bcaffdb4140ef320c21d9725">org.geotoolkit.image.interpolation.Interpolation.pixelIterator</a></div><div class="ttdeci">final PixelIterator pixelIterator</div><div class="ttdoc">Current. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:36</div></div>
+<div class="ttc" id="a06887_html_af750c0c774a25ee7919fc55c69df0320"><div class="ttname"><a href="a06887.html#af750c0c774a25ee7919fc55c69df0320">org.geotoolkit.image.interpolation.Interpolation.precMinMax</a></div><div class="ttdeci">Rectangle precMinMax</div><div class="ttdoc">last search of min max value area. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:51</div></div>
+<div class="ttc" id="a06887_html_afcfb6ca48f7fbfe5066be7d111b1df2d"><div class="ttname"><a href="a06887.html#afcfb6ca48f7fbfe5066be7d111b1df2d">org.geotoolkit.image.interpolation.Interpolation.minMax</a></div><div class="ttdeci">double [] minMax</div><div class="ttdef"><b>Definition:</b> Interpolation.java:56</div></div>
+<div class="ttc" id="a06887_html_a7117efc7ad04ca5858cf3b5fdf69ad6b"><div class="ttname"><a href="a06887.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">org.geotoolkit.image.interpolation.Interpolation.getBoundary</a></div><div class="ttdeci">Rectangle getBoundary()</div><div class="ttdoc">Returns. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:353</div></div>
+<div class="ttc" id="a06887_html_a2fa3c0d2d4233efd85a2c5fbdea1549c"><div class="ttname"><a href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">org.geotoolkit.image.interpolation.Interpolation.boundary</a></div><div class="ttdeci">final Rectangle boundary</div><div class="ttdoc">Boundary from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:46</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1080c81ae0fa8f01367d9dc7e88a506d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1080c81ae0fa8f01367d9dc7e88a506d">&#9670;&nbsp;</a></span>getNumBands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getNumBands </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -515,13 +622,179 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the source images. </p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                              {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> super.getSources();</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div></div><!-- fragment -->
+<p>Return number of bands from object that iterate. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of bands from object that iterate. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Resample::getSourcePixelValue(double, double) </dd></dl>
+
+<p class="reference">References <a class="el" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">Interpolation.numBands</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06923.html#aba915737216fb5286697ae93c4f8fd85">SeparableInterpolation.interpolate()</a>, <a class="el" href="a06887.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation.Interpolation()</a>, and <a class="el" href="a06907.html#ab33a2483be889f813ed48240fbf1df3d">Resample.Resample()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                             {</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06887.html#a0d8b817b89b958b862e489811688d6d7">numBands</a>;</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div><div class="ttc" id="a06887_html_a0d8b817b89b958b862e489811688d6d7"><div class="ttname"><a href="a06887.html#a0d8b817b89b958b862e489811688d6d7">org.geotoolkit.image.interpolation.Interpolation.numBands</a></div><div class="ttdeci">final int numBands</div><div class="ttdoc">Number of bands from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a32bf4bda9cd71a1cb509f188633a84e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32bf4bda9cd71a1cb509f188633a84e9">&#9670;&nbsp;</a></span>interpolate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract double interpolate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>band</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return interpolate value from x, y pixel coordinate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pixel x coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>pixel y coordinate. </td></tr>
+    <tr><td class="paramname">band</td><td>index of band where sample are interpolate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolate value from x, y pixel coordinate. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06907.html#ad42e7eec94d785c35a117231677c9c22">Resample.fillImageByAffineTransform()</a>, <a class="el" href="a06907.html#aa2d36ea1e23f06ea11b76f018221a0ae">Resample.fillImageByGrid()</a>, <a class="el" href="a06907.html#aac315215ae478d1c360cdfd109c654ef">Resample.fillImageByTransform()</a>, <a class="el" href="a06907.html#a252de85e22da757d30b9a86d31dfd1e3">Resample.fillImagePx()</a>, <a class="el" href="a06903.html#a202020be9407129af8f19f6a9df720f8">PipeLineInterpolation.interpolate()</a>, and <a class="el" href="a06887.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation.Interpolation()</a>.</p>
+
+</div>
+</div>
+<a id="ab48778145363cdd4ca1befc1131e9d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48778145363cdd4ca1befc1131e9d63">&#9670;&nbsp;</a></span>interpolate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract double [] interpolate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns all pixel samples from interpolation at (x, y) sources coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pixel x coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>pixel y coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolate value from x, y pixel coordinate. </dd></dl>
+
+</div>
+</div>
+<a id="abadb0fdfdf8a652432232f7a91776919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abadb0fdfdf8a652432232f7a91776919">&#9670;&nbsp;</a></span>setInterpolateMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setInterpolateMin </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return appropriate interpolation minX and minY coordinates from x, y interpolate coordinates. </p>
+<p>MinX and minY represent lower corner coordinates from interpolation area.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pixel x coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>pixel y coordinate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a14171.html">IllegalArgumentException</a></td><td>if there are necessary pixels out of boundary. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a06923.html#aba915737216fb5286697ae93c4f8fd85">SeparableInterpolation.interpolate()</a>, and <a class="el" href="a06895.html#aba915737216fb5286697ae93c4f8fd85">LanczosInterpolation.interpolate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                                         {</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> boundW = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.width;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> boundH = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.height;</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> bx     = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.x;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> by     = <a class="code" href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">boundary</a>.y;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a>  = (int) x;</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a>  = (int) y;</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">//-- Adjust truncation.</span></div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (x &lt; <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a>) <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a>--;</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">if</span> (y &lt; <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a>) <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a>--;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="comment">//-- Adjust area interpolation on x, y center.</span></div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a> -= (<a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> &gt;&gt;&gt; 1) - 1;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a> -= (<a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> &gt;&gt;&gt; 1) - 1;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="comment">//-- Adjust area from lower corner.</span></div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a> = Math.max(<a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a>, bx);</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a> = Math.max(<a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a>, by);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">//-- Adjust area from upper corner.</span></div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> maxDiffX = <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a> + <a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> - (bx + boundW);</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> maxDiffY = <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a> + <a class="code" href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">windowSide</a> - (by + boundH);</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">if</span> (maxDiffX &gt; 0) <a class="code" href="a06887.html#a89c440999057ffb8b33b40958fb6f662">minX</a> -= maxDiffX;</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span> (maxDiffY &gt; 0) <a class="code" href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">minY</a> -= maxDiffY;</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div><div class="ttc" id="a06887_html_a147377e4b2aefbf75d8d7c81abdd4837"><div class="ttname"><a href="a06887.html#a147377e4b2aefbf75d8d7c81abdd4837">org.geotoolkit.image.interpolation.Interpolation.windowSide</a></div><div class="ttdeci">final int windowSide</div><div class="ttdoc">Side of area interpolation. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:76</div></div>
+<div class="ttc" id="a06887_html_a2fa3c0d2d4233efd85a2c5fbdea1549c"><div class="ttname"><a href="a06887.html#a2fa3c0d2d4233efd85a2c5fbdea1549c">org.geotoolkit.image.interpolation.Interpolation.boundary</a></div><div class="ttdeci">final Rectangle boundary</div><div class="ttdoc">Boundary from object that iterate. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:46</div></div>
+<div class="ttc" id="a06887_html_acaa234d01574a8d00c2c39f7cdc1b6bf"><div class="ttname"><a href="a06887.html#acaa234d01574a8d00c2c39f7cdc1b6bf">org.geotoolkit.image.interpolation.Interpolation.minY</a></div><div class="ttdeci">int minY</div><div class="ttdoc">Lower corner Y coordinates from interpolation area. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:71</div></div>
+<div class="ttc" id="a06887_html_a89c440999057ffb8b33b40958fb6f662"><div class="ttname"><a href="a06887.html#a89c440999057ffb8b33b40958fb6f662">org.geotoolkit.image.interpolation.Interpolation.minX</a></div><div class="ttdeci">int minX</div><div class="ttdoc">Lower corner X coordinates from interpolation area. </div><div class="ttdef"><b>Definition:</b> Interpolation.java:66</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2dc20d928d61a2cbdd547761cb1acbe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dc20d928d61a2cbdd547761cb1acbe8">&#9670;&nbsp;</a></span>newValues</h2>
+<a id="a38130e0cd806218c1bc81f4e21a11ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38130e0cd806218c1bc81f4e21a11ef4">&#9670;&nbsp;</a></span>bmaxX</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -530,25 +803,22 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double [] newValues</td>
+          <td class="memname">final double bmaxX</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The new values in the source image. </p>
-<p>The array length must matches the number of bands. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">FloodFill.fill()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06899.html#a4b1bd9debe6572e61954ebfc1f8caa49">NeighborInterpolation.checkInterpolate()</a>.</p>
 
 </div>
 </div>
-<a id="ac7b24958fca59af19bd910fa3b6a78a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b24958fca59af19bd910fa3b6a78a3">&#9670;&nbsp;</a></span>oldValues</h2>
+<a id="a52d067700bb464f256be0c065b05a909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d067700bb464f256be0c065b05a909">&#9670;&nbsp;</a></span>bmaxY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,24 +827,22 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double [][] oldValues</td>
+          <td class="memname">final double bmaxY</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The old values in the source image. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06887.html#a6491caa4e5ce585a6e291fd7df856406">FloodFill.fill()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06899.html#a4b1bd9debe6572e61954ebfc1f8caa49">NeighborInterpolation.checkInterpolate()</a>.</p>
 
 </div>
 </div>
-<a id="a4ba7d667bd2c11bb15f09506d145b31e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba7d667bd2c11bb15f09506d145b31e">&#9670;&nbsp;</a></span>OPERATION_NAME</h2>
+<a id="aeeb8fb364ece6be311b9c5475e999ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb8fb364ece6be311b9c5475e999ed5">&#9670;&nbsp;</a></span>bminX</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,18 +851,437 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String OPERATION_NAME = &quot;org.geotoolkit.FloodFill&quot;</td>
+          <td class="memname">final double bminX</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The name of this operation in the JAI registry. </p>
-<p>This is {}. </p>
+<p>Define boundary which accept extrapolation. </p>
+
+</div>
+</div>
+<a id="ace2fec3b653a89fc3bf6e3c65a1194fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2fec3b653a89fc3bf6e3c65a1194fd">&#9670;&nbsp;</a></span>bminY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double bminY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75ecd7c33eb12d8ebb1925a1b38d0b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ecd7c33eb12d8ebb1925a1b38d0b5f">&#9670;&nbsp;</a></span>borderChoice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06911.html">ResampleBorderComportement</a> borderChoice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define comportement of the destination image border. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06887.html#a136d5b1354a85d28b4d72da647556f04">Interpolation.Interpolation()</a>.</p>
+
+</div>
+</div>
+<a id="a2fa3c0d2d4233efd85a2c5fbdea1549c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa3c0d2d4233efd85a2c5fbdea1549c">&#9670;&nbsp;</a></span>boundary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Rectangle boundary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Boundary from object that iterate. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06867.html#ac9374079592f1ffcd46939b1d75a19ae">BiCubicInterpolation.BiCubicInterpolation()</a>, <a class="el" href="a06887.html#a7117efc7ad04ca5858cf3b5fdf69ad6b">Interpolation.getBoundary()</a>, and <a class="el" href="a06895.html#a3679320c2a3250c3d92cafc7b412a9cb">LanczosInterpolation.LanczosInterpolation()</a>.</p>
+
+</div>
+</div>
+<a id="a81bc514c9e64b503eb52e2cb8a7b8e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81bc514c9e64b503eb52e2cb8a7b8e4a">&#9670;&nbsp;</a></span>boundMaxX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int boundMaxX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f59e8ab3bd44a0daf9922e28771757d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f59e8ab3bd44a0daf9922e28771757d">&#9670;&nbsp;</a></span>boundMaxY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int boundMaxY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a334a29e711865f882722211eb6e52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a334a29e711865f882722211eb6e52c">&#9670;&nbsp;</a></span>boundMinX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int boundMinX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define boundary which don't accept extrapolation. </p>
+
+</div>
+</div>
+<a id="a65f31cecf0962014b738a78bd130b60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f31cecf0962014b738a78bd130b60c">&#9670;&nbsp;</a></span>boundMinY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int boundMinY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6cce9bd1b67dabde20c4fdb7e5853bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6cce9bd1b67dabde20c4fdb7e5853bd">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [] data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Table to keep all pixels values used to interpolate. </p>
+
+</div>
+</div>
+<a id="abd6343f5a460f071666409283cbfa487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd6343f5a460f071666409283cbfa487">&#9670;&nbsp;</a></span>fillValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [] fillValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contains value use when pixel transformation is out of source image boundary. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06887.html#a136d5b1354a85d28b4d72da647556f04">Interpolation.Interpolation()</a>.</p>
+
+</div>
+</div>
+<a id="afcfb6ca48f7fbfe5066be7d111b1df2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfb6ca48f7fbfe5066be7d111b1df2d">&#9670;&nbsp;</a></span>minMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] minMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Double table which contain minimum and maximum value, and x, y associate coordinates for each image band.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06887.html#a702cde82ec7ced2557c014814d367e5f">Interpolation.getMinMaxValue()</a>, <a class="el" href="a06887.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation.Interpolation()</a>, and <a class="el" href="a06919.html#a4c9d138d85859b2e99c7055636e106fd">Rescaler.Rescaler()</a>.</p>
+
+</div>
+</div>
+<a id="a89c440999057ffb8b33b40958fb6f662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c440999057ffb8b33b40958fb6f662">&#9670;&nbsp;</a></span>minX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int minX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lower corner X coordinates from interpolation area. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06923.html#a09147570fa8189181205a8b5178f7361">SeparableInterpolation.fillRow()</a>, <a class="el" href="a06923.html#aba915737216fb5286697ae93c4f8fd85">SeparableInterpolation.interpolate()</a>, and <a class="el" href="a06895.html#aba915737216fb5286697ae93c4f8fd85">LanczosInterpolation.interpolate()</a>.</p>
+
+</div>
+</div>
+<a id="acaa234d01574a8d00c2c39f7cdc1b6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa234d01574a8d00c2c39f7cdc1b6bf">&#9670;&nbsp;</a></span>minY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int minY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lower corner Y coordinates from interpolation area. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06923.html#a09147570fa8189181205a8b5178f7361">SeparableInterpolation.fillRow()</a>, <a class="el" href="a06923.html#aba915737216fb5286697ae93c4f8fd85">SeparableInterpolation.interpolate()</a>, and <a class="el" href="a06895.html#aba915737216fb5286697ae93c4f8fd85">LanczosInterpolation.interpolate()</a>.</p>
+
+</div>
+</div>
+<a id="a0d8b817b89b958b862e489811688d6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8b817b89b958b862e489811688d6d7">&#9670;&nbsp;</a></span>numBands</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int numBands</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of bands from object that iterate. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06887.html#a702cde82ec7ced2557c014814d367e5f">Interpolation.getMinMaxValue()</a>, <a class="el" href="a06887.html#a1080c81ae0fa8f01367d9dc7e88a506d">Interpolation.getNumBands()</a>, <a class="el" href="a06923.html#adba6834e0984fd8dbe9e86df345890c1">SeparableInterpolation.interpolate()</a>, <a class="el" href="a06887.html#a136d5b1354a85d28b4d72da647556f04">Interpolation.Interpolation()</a>, and <a class="el" href="a06919.html#a4c9d138d85859b2e99c7055636e106fd">Rescaler.Rescaler()</a>.</p>
+
+</div>
+</div>
+<a id="affd1ff75bcaffdb4140ef320c21d9725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd1ff75bcaffdb4140ef320c21d9725">&#9670;&nbsp;</a></span>pixelIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final PixelIterator pixelIterator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current. </p>
+<div class="fragment"><div class="line">PixelIterator </div></div><!-- fragment --><p> which is interpolate. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06867.html#a29c348a5edf1dc786f5be14a6a271687">BiCubicInterpolation.BiCubicInterpolation()</a>, <a class="el" href="a06879.html#a4c14035a3a8bc45d4a7cca354f7561b7">BilinearInterpolation.BilinearInterpolation()</a>, <a class="el" href="a06923.html#a09147570fa8189181205a8b5178f7361">SeparableInterpolation.fillRow()</a>, <a class="el" href="a06899.html#a202020be9407129af8f19f6a9df720f8">NeighborInterpolation.interpolate()</a>, <a class="el" href="a06895.html#aba915737216fb5286697ae93c4f8fd85">LanczosInterpolation.interpolate()</a>, <a class="el" href="a06887.html#a136d5b1354a85d28b4d72da647556f04">Interpolation.Interpolation()</a>, and <a class="el" href="a06895.html#a3555ada0580f60c9e9bfcb1d4828bd78">LanczosInterpolation.LanczosInterpolation()</a>.</p>
+
+</div>
+</div>
+<a id="af750c0c774a25ee7919fc55c69df0320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af750c0c774a25ee7919fc55c69df0320">&#9670;&nbsp;</a></span>precMinMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rectangle precMinMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>last search of min max value area. </p>
+
+</div>
+</div>
+<a id="ac3412b568b1a72d0f0a6012a6e435bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3412b568b1a72d0f0a6012a6e435bcb">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double [] result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="a06887.html">Interpolation</a> results table. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06899.html#adba6834e0984fd8dbe9e86df345890c1">NeighborInterpolation.interpolate()</a>, and <a class="el" href="a06923.html#adba6834e0984fd8dbe9e86df345890c1">SeparableInterpolation.interpolate()</a>.</p>
+
+</div>
+</div>
+<a id="a147377e4b2aefbf75d8d7c81abdd4837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147377e4b2aefbf75d8d7c81abdd4837">&#9670;&nbsp;</a></span>windowSide</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int windowSide</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Side of area interpolation. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06923.html#a09147570fa8189181205a8b5178f7361">SeparableInterpolation.fillRow()</a>, <a class="el" href="a06923.html#aba915737216fb5286697ae93c4f8fd85">SeparableInterpolation.interpolate()</a>, <a class="el" href="a06895.html#aba915737216fb5286697ae93c4f8fd85">LanczosInterpolation.interpolate()</a>, <a class="el" href="a06887.html#af241b811bee0e4ab680cc7c4ac013c0f">Interpolation.Interpolation()</a>, and <a class="el" href="a06923.html#a6e1070db0eaccda2c82b8f41227743fa">SeparableInterpolation.SeparableInterpolation()</a>.</p>
 
 </div>
 </div>
@@ -604,7 +1291,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03770.html">jai</a></li><li class="navelem"><a class="el" href="a06887.html">FloodFill</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03823.html">image</a></li><li class="navelem"><a class="el" href="a03827.html">interpolation</a></li><li class="navelem"><a class="el" href="a06887.html">Interpolation</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,8 +1,10 @@
 var a09187 =
 [
+    [ "displayRasterSummary", "a09187.html#a58e2b02539026083b8e4a001ac84f63c", null ],
+    [ "displayRasterSummary", "a09187.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09187.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09187.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testAsHexRastWKB", "a09187.html#a7b7e5105b7148ed7ede96af7822fd395", null ],
+    [ "testRasterIsEmptyFalse", "a09187.html#a84a92eab09d27516cd5aaed0af6eb63d", null ],
     [ "covJSONString1", "a09187.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09187.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09187.html#aa5e2b5a6005895fc20b9f35523569430", null ],
@@ -10,7 +12,6 @@ var a09187 =
     [ "rasterLiteral1", "a09187.html#a77798f856500689412dea069531a7606", null ],
     [ "rasters", "a09187.html#a2493164c78f27fd06d49475e13906abb", null ],
     [ "rasterWKB", "a09187.html#a0b58b160a0781303df2d16a468325f8b", null ],
-    [ "result", "a09187.html#aab356d6554a7301750f11ec7a85ac47d", null ],
     [ "wkbString1", "a09187.html#ab31191239807c546a14951cbe0abf83f", null ],
     [ "wkbString2", "a09187.html#acf429c99afb7dcd123827400ad89a122", null ],
     [ "wkbString3", "a09187.html#a37e98c0ad3c8af4b9f6eaf8c0a8f557c", null ],

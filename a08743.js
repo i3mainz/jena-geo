@@ -1,5 +1,5 @@
 var a08743 =
 [
-    [ "lineString", "a08743.html#a76e109dc83d6f4d16fcd2fa3e73054f6", null ],
-    [ "point", "a08743.html#a081811ff1c2bedd0a20703599f90114f", null ]
+    [ "testSimplifyVW", "a08743.html#a4b0417b619689d07743ff9d72212c847", null ],
+    [ "testGeom", "a08743.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ]
 ];

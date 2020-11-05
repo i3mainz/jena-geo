@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TileOpExecutor.ReadWork&lt; A &gt; Class Template Reference</title>
+<title>jena-geo: GridCoverage Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,108 +63,128 @@ $(document).ready(function(){initNavTree('a06539.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pac-static-methods">Static Package Functions</a> &#124;
 <a href="#pac-attribs">Package Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a06536.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TileOpExecutor.ReadWork&lt; A &gt; Class Template Reference</div>  </div>
+<div class="title">GridCoverage Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="a06535.html" title="Base class of workers which will read or write tiles. ">Worker</a> which will read tiles.  
+<p>Base class of coverages with domains defined as a set of grid points.  
  <a href="a06539.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for TileOpExecutor.ReadWork&lt; A &gt;:</div>
+Inheritance diagram for GridCoverage:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06538.png" border="0" usemap="#TileOpExecutor_8ReadWork_3_01A_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="TileOpExecutor_8ReadWork_3_01A_01_4_inherit__map" id="TileOpExecutor_8ReadWork_3_01A_01_4_inherit__map">
-<area shape="rect" id="node2" href="a06535.html" title="TileOpExecutor.Worker\l\&lt; RenderedImage, Raster, A \&gt;" alt="" coords="63,213,265,255"/>
-<area shape="rect" id="node3" href="a06535.html" title="Base class of workers which will read or write tiles. " alt="" coords="65,95,263,151"/>
-<area shape="rect" id="node4" href="a14031.html" title="Runnable" alt="" coords="5,5,83,32"/>
-<area shape="rect" id="node5" href="a13607.html" title="RenderedImage" alt="" coords="107,5,221,32"/>
-<area shape="rect" id="node6" href="a13867.html" title="Raster" alt="" coords="245,5,307,32"/>
+<div class="center"><img src="a06538.png" border="0" usemap="#GridCoverage_inherit__map" alt="Inheritance graph"/></div>
+<map name="GridCoverage_inherit__map" id="GridCoverage_inherit__map">
+<area shape="rect" id="node2" href="a06523.html" title="Decorates a GridCoverage in order to convert sample values on the fly. " alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node3" href="a06543.html" title="Basic access to grid data values backed by a two&#45;dimensional RenderedImage. " alt="" coords="193,80,311,107"/>
+<area shape="rect" id="node4" href="a06579.html" title="A GridCoverage with data stored in an in&#45;memory Java2D buffer. " alt="" coords="335,80,486,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for TileOpExecutor.ReadWork&lt; A &gt;:</div>
+Collaboration diagram for GridCoverage:</div>
 <div class="dyncontent">
-<div class="center"><img src="a06537.png" border="0" usemap="#TileOpExecutor_8ReadWork_3_01A_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="TileOpExecutor_8ReadWork_3_01A_01_4_coll__map" id="TileOpExecutor_8ReadWork_3_01A_01_4_coll__map">
-<area shape="rect" id="node2" href="a06535.html" title="TileOpExecutor.Worker\l\&lt; RenderedImage, Raster, A \&gt;" alt="" coords="1589,253,1792,294"/>
-<area shape="rect" id="node3" href="a06535.html" title="Base class of workers which will read or write tiles. " alt="" coords="1157,245,1356,301"/>
-<area shape="rect" id="node4" href="a14031.html" title="Runnable" alt="" coords="909,5,987,32"/>
-<area shape="rect" id="node9" href="a06531.html" title="Tile indices of the next tile to process in a multi&#45;threaded computation. " alt="" coords="467,253,689,294"/>
-<area shape="rect" id="node8" href="a06531.html" title="TileOpExecutor.Cursor\l\&lt; RI, A \&gt;" alt="" coords="871,253,1025,294"/>
-<area shape="rect" id="node17" href="a13607.html" title="RenderedImage" alt="" coords="214,445,329,472"/>
-<area shape="rect" id="node18" href="a13867.html" title="Raster" alt="" coords="917,524,979,551"/>
+<div class="center"><img src="a06537.png" border="0" usemap="#GridCoverage_coll__map" alt="Collaboration graph"/></div>
+<map name="GridCoverage_coll__map" id="GridCoverage_coll__map">
+<area shape="rect" id="node3" href="a06559.html" title="Holds the object necessary for converting a geospatial coordinates to grid coordinates. " alt="" coords="132,95,293,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c71443ed78646800cfa677fad85cacf"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#a2c71443ed78646800cfa677fad85cacf">run</a> ()</td></tr>
-<tr class="memdesc:a2c71443ed78646800cfa677fad85cacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles.  <a href="#a2c71443ed78646800cfa677fad85cacf">More...</a><br /></td></tr>
-<tr class="separator:a2c71443ed78646800cfa677fad85cacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ea7ca030ecd46451eb9394fd466e2d"><td class="memItemLeft" align="right" valign="top">CoordinateReferenceSystem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#ac3ea7ca030ecd46451eb9394fd466e2d">getCoordinateReferenceSystem</a> ()</td></tr>
+<tr class="memdesc:ac3ea7ca030ecd46451eb9394fd466e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the coordinate reference system to which the values in grid domain are referenced.  <a href="#ac3ea7ca030ecd46451eb9394fd466e2d">More...</a><br /></td></tr>
+<tr class="separator:ac3ea7ca030ecd46451eb9394fd466e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ef052a91bc730ac81996f6418da38d"><td class="memItemLeft" align="right" valign="top">GridGeometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d">getGridGeometry</a> ()</td></tr>
+<tr class="memdesc:a27ef052a91bc730ac81996f6418da38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage.  <a href="#a27ef052a91bc730ac81996f6418da38d">More...</a><br /></td></tr>
+<tr class="separator:a27ef052a91bc730ac81996f6418da38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e41e388a84548d37fa90cbd5dd8c8c"><td class="memItemLeft" align="right" valign="top">List&lt; SampleDimension &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a60e41e388a84548d37fa90cbd5dd8c8c">getSampleDimensions</a> ()</td></tr>
+<tr class="memdesc:a60e41e388a84548d37fa90cbd5dd8c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the &lt;cite&gt;range&lt;/cite&gt; of this grid coverage.  <a href="#a60e41e388a84548d37fa90cbd5dd8c8c">More...</a><br /></td></tr>
+<tr class="separator:a60e41e388a84548d37fa90cbd5dd8c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524c8fced640c55ac13e301c803026f0"><td class="memItemLeft" align="right" valign="top">synchronized <a class="el" href="a06539.html">GridCoverage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a524c8fced640c55ac13e301c803026f0">forConvertedValues</a> (final boolean converted)</td></tr>
+<tr class="memdesc:a524c8fced640c55ac13e301c803026f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a grid coverage that contains real values or sample values, depending if.  <a href="#a524c8fced640c55ac13e301c803026f0">More...</a><br /></td></tr>
+<tr class="separator:a524c8fced640c55ac13e301c803026f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfaee3bce5f0d98818dbea7975a63f7"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">evaluate</a> (final DirectPosition point, final double[] buffer)  throws CannotEvaluateException </td></tr>
+<tr class="memdesc:a9dfaee3bce5f0d98818dbea7975a63f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sequence of double values for a given point in the coverage.  <a href="#a9dfaee3bce5f0d98818dbea7975a63f7">More...</a><br /></td></tr>
+<tr class="separator:a9dfaee3bce5f0d98818dbea7975a63f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb9efea12d4f80e81726ec9ea0c9c39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a06531.html">FractionalGridCoordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">toGridCoordinates</a> (final DirectPosition point)  throws TransformException </td></tr>
+<tr class="memdesc:abfb9efea12d4f80e81726ec9ea0c9c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the specified geospatial position to grid coordinates.  <a href="#abfb9efea12d4f80e81726ec9ea0c9c39">More...</a><br /></td></tr>
+<tr class="separator:abfb9efea12d4f80e81726ec9ea0c9c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377e507a5ac3d5c1ad6b248064e77013"><td class="memItemLeft" align="right" valign="top">abstract RenderedImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013">render</a> (<a class="el" href="a06551.html">GridExtent</a> sliceExtent)  throws CannotEvaluateException</td></tr>
+<tr class="memdesc:a377e507a5ac3d5c1ad6b248064e77013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a two-dimensional slice of grid data as a rendered image.  <a href="#a377e507a5ac3d5c1ad6b248064e77013">More...</a><br /></td></tr>
+<tr class="separator:a377e507a5ac3d5c1ad6b248064e77013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad146fa8579a5f8a876c4688cc5a68520"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a> ()</td></tr>
+<tr class="memdesc:ad146fa8579a5f8a876c4688cc5a68520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this grid coverage for debugging purpose.  <a href="#ad146fa8579a5f8a876c4688cc5a68520">More...</a><br /></td></tr>
+<tr class="separator:ad146fa8579a5f8a876c4688cc5a68520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32798feeffc74937317bf91935b3ea60"><td class="memItemLeft" align="right" valign="top">TreeTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a32798feeffc74937317bf91935b3ea60">toTree</a> (final Locale locale, final int bitmask)</td></tr>
+<tr class="memdesc:a32798feeffc74937317bf91935b3ea60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a tree representation of some elements of this grid coverage.  <a href="#a32798feeffc74937317bf91935b3ea60">More...</a><br /></td></tr>
+<tr class="separator:a32798feeffc74937317bf91935b3ea60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">executeOnCurrentTile</a> ()</td></tr>
-<tr class="memdesc:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked by <a class="el" href="a06535.html#a2c71443ed78646800cfa677fad85cacf">Worker#run()</a> for processing the tile at current indices.  <a href="#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">More...</a><br /></td></tr>
-<tr class="separator:ad8a8fbbda36a5abfd1f2ebe64e31b8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a06531.html">Cursor</a>&lt; RI, A &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a></td></tr>
-<tr class="memdesc:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator over the indices of the next tiles to fetch.  <a href="#a21cca1f9a7342fbd8caeaf4e519c896a">More...</a><br /></td></tr>
-<tr class="separator:a21cca1f9a7342fbd8caeaf4e519c896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40590f55f82df430f8035df8dd4f03c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#a40590f55f82df430f8035df8dd4f03c2">tx</a></td></tr>
-<tr class="memdesc:a40590f55f82df430f8035df8dd4f03c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices of the tile to fetch.  <a href="#a40590f55f82df430f8035df8dd4f03c2">More...</a><br /></td></tr>
-<tr class="separator:a40590f55f82df430f8035df8dd4f03c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbeac52d84508f2507ba8348aafab09"><td class="memItemLeft" align="right" valign="top">final BiConsumer&lt; A, ? super RT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#a5fbeac52d84508f2507ba8348aafab09">processor</a></td></tr>
-<tr class="memdesc:a5fbeac52d84508f2507ba8348aafab09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>.  <a href="#a5fbeac52d84508f2507ba8348aafab09">More...</a><br /></td></tr>
-<tr class="separator:a5fbeac52d84508f2507ba8348aafab09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f9097774c75a5f0677b1abad167637"><td class="memItemLeft" align="right" valign="top">final A&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a></td></tr>
-<tr class="memdesc:ae6f9097774c75a5f0677b1abad167637"><td class="mdescLeft">&#160;</td><td class="mdescRight">A thread-local variable which is given to each invocation of the <a class="el" href="a06535.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.  <a href="#ae6f9097774c75a5f0677b1abad167637">More...</a><br /></td></tr>
-<tr class="separator:ae6f9097774c75a5f0677b1abad167637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71be5779428886df135eaef2033a8f21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a71be5779428886df135eaef2033a8f21">GridCoverage</a> (final GridGeometry domain, final Collection&lt;? extends SampleDimension &gt; range)</td></tr>
+<tr class="memdesc:a71be5779428886df135eaef2033a8f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a grid coverage using the specified grid geometry and sample dimensions.  <a href="#a71be5779428886df135eaef2033a8f21">More...</a><br /></td></tr>
+<tr class="separator:a71be5779428886df135eaef2033a8f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:a897d4e476be84070570b5b2fffbe355c"><td class="memItemLeft" align="right" valign="top">static&lt; A, R &gt; R&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a897d4e476be84070570b5b2fffbe355c">execute</a> (final <a class="el" href="a06527.html">TileOpExecutor</a> <a class="el" href="a06527.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>, final RenderedImage source, final Collector&lt;? super Raster, A, R &gt; collector, final Consumer&lt; LogRecord &gt; errorHandler)</td></tr>
-<tr class="memdesc:a897d4e476be84070570b5b2fffbe355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="">executeOnReadable(RenderedImage, Collector, Consumer)</a>.  <a href="#a897d4e476be84070570b5b2fffbe355c">More...</a><br /></td></tr>
-<tr class="separator:a897d4e476be84070570b5b2fffbe355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4524832c85292bbb425204e002fc20df"><td class="memItemLeft" align="right" valign="top">final NumberRange&lt;?&gt; []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a4524832c85292bbb425204e002fc20df">getRanges</a> ()</td></tr>
+<tr class="memdesc:a4524832c85292bbb425204e002fc20df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the range of values in each sample dimension, or.  <a href="#a4524832c85292bbb425204e002fc20df">More...</a><br /></td></tr>
+<tr class="separator:a4524832c85292bbb425204e002fc20df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72235f1662f94786b1e594a1354bc80"><td class="memItemLeft" align="right" valign="top">final ColorModel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#aa72235f1662f94786b1e594a1354bc80">createColorModel</a> (final int visibleBand, final int dataType)</td></tr>
+<tr class="memdesc:aa72235f1662f94786b1e594a1354bc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a color model for the expected range of sample values.  <a href="#aa72235f1662f94786b1e594a1354bc80">More...</a><br /></td></tr>
+<tr class="separator:aa72235f1662f94786b1e594a1354bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673bc851e761babeb646365359f05875"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="a06539.html">GridCoverage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a673bc851e761babeb646365359f05875">getView</a> (final boolean converted)</td></tr>
+<tr class="memdesc:a673bc851e761babeb646365359f05875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the converted or package view, or.  <a href="#a673bc851e761babeb646365359f05875">More...</a><br /></td></tr>
+<tr class="separator:a673bc851e761babeb646365359f05875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5697d07d9828702ade4ad4b9d070be8e"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a5697d07d9828702ade4ad4b9d070be8e">setView</a> (final boolean converted, final <a class="el" href="a06539.html">GridCoverage</a> view)</td></tr>
+<tr class="memdesc:a5697d07d9828702ade4ad4b9d070be8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the converted or package view.  <a href="#a5697d07d9828702ade4ad4b9d070be8e">More...</a><br /></td></tr>
+<tr class="separator:a5697d07d9828702ade4ad4b9d070be8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb9bd8a3661ad395b1335e325c4e381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a4bb9bd8a3661ad395b1335e325c4e381">appendDataLayout</a> (TreeTable.Node root, Vocabulary vocabulary, TableColumn&lt; CharSequence &gt; column)</td></tr>
+<tr class="memdesc:a4bb9bd8a3661ad395b1335e325c4e381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a "data layout" branch (if it exists) to the tree representation of this coverage.  <a href="#a4bb9bd8a3661ad395b1335e325c4e381">More...</a><br /></td></tr>
+<tr class="separator:a4bb9bd8a3661ad395b1335e325c4e381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
 Static Package Functions</h2></td></tr>
-<tr class="memitem:afdff4aa4324ad7460be67cf5007b5e86"><td class="memItemLeft" align="right" valign="top">static ImagingOpException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#afdff4aa4324ad7460be67cf5007b5e86">rethrowOrWrap</a> (final Throwable ex)</td></tr>
-<tr class="memdesc:afdff4aa4324ad7460be67cf5007b5e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given exception can be propagated as an error or unchecked exception, throws it.  <a href="#afdff4aa4324ad7460be67cf5007b5e86">More...</a><br /></td></tr>
-<tr class="separator:afdff4aa4324ad7460be67cf5007b5e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa5743125217b51809755e74a1ea888"><td class="memItemLeft" align="right" valign="top">static double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#afaa5743125217b51809755e74a1ea888">evaluate</a> (final RenderedImage data, final int x, final int y, final double[] buffer)</td></tr>
+<tr class="memdesc:afaa5743125217b51809755e74a1ea888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets sample values from the given image at the given index.  <a href="#afaa5743125217b51809755e74a1ea888">More...</a><br /></td></tr>
+<tr class="separator:afaa5743125217b51809755e74a1ea888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
 Package Attributes</h2></td></tr>
-<tr class="memitem:a75f29260f9728325050cd039109732b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06535.html#a75f29260f9728325050cd039109732b7">ty</a></td></tr>
-<tr class="separator:a75f29260f9728325050cd039109732b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c43e873b14f4bee9284b1150b5e472"><td class="memItemLeft" align="right" valign="top">final GridGeometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a></td></tr>
+<tr class="memdesc:a51c43e873b14f4bee9284b1150b5e472"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS.  <a href="#a51c43e873b14f4bee9284b1150b5e472">More...</a><br /></td></tr>
+<tr class="separator:a51c43e873b14f4bee9284b1150b5e472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1a5981a5db5b324a0686227d081d86"><td class="memItemLeft" align="right" valign="top">transient <a class="el" href="a06539.html">GridCoverage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a5d1a5981a5db5b324a0686227d081d86">convertedView</a></td></tr>
+<tr class="separator:a5d1a5981a5db5b324a0686227d081d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa2e91bc35e50ba9b0d5ed2731e1edb12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#aa2e91bc35e50ba9b0d5ed2731e1edb12">ReadWork</a> (final <a class="el" href="a06531.html">Cursor</a>&lt; RenderedImage, A &gt; <a class="el" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, final Collector&lt;? super Raster, A, ?&gt; collector)</td></tr>
-<tr class="memdesc:aa2e91bc35e50ba9b0d5ed2731e1edb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new worker for traversing the tiles identified by the given cursor.  <a href="#aa2e91bc35e50ba9b0d5ed2731e1edb12">More...</a><br /></td></tr>
-<tr class="separator:aa2e91bc35e50ba9b0d5ed2731e1edb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac180948d623add7fb218d9f1af81ceb9"><td class="memItemLeft" align="right" valign="top">final SampleDimension []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a></td></tr>
+<tr class="memdesc:ac180948d623add7fb218d9f1af81ceb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of sample dimension (band) information for the grid coverage.  <a href="#ac180948d623add7fb218d9f1af81ceb9">More...</a><br /></td></tr>
+<tr class="separator:ac180948d623add7fb218d9f1af81ceb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75461271c5e6e435946470300b1c4db1"><td class="memItemLeft" align="right" valign="top">transient <a class="el" href="a06539.html">GridCoverage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a75461271c5e6e435946470300b1c4db1">packedView</a></td></tr>
+<tr class="memdesc:a75461271c5e6e435946470300b1c4db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">View over this grid coverage after conversion of sample values, or.  <a href="#a75461271c5e6e435946470300b1c4db1">More...</a><br /></td></tr>
+<tr class="separator:a75461271c5e6e435946470300b1c4db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6e362a7f278c78978c6377e4d11d1f"><td class="memItemLeft" align="right" valign="top">transient volatile <a class="el" href="a06559.html">PointToGridCoordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06539.html#a4e6e362a7f278c78978c6377e4d11d1f">lastConverter</a></td></tr>
+<tr class="memdesc:a4e6e362a7f278c78978c6377e4d11d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last coordinate operation used by <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">toGridCoordinates(DirectPosition)</a>.  <a href="#a4e6e362a7f278c78978c6377e4d11d1f">More...</a><br /></td></tr>
+<tr class="separator:a4e6e362a7f278c78978c6377e4d11d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="a06535.html" title="Base class of workers which will read or write tiles. ">Worker</a> which will read tiles. </p>
-<p>Exactly one</p><div class="fragment"><div class="line"><a class="code" href="a06539.html#aa2e91bc35e50ba9b0d5ed2731e1edb12">ReadWork</a> </div></div><!-- fragment --><p> instance is created for each thread which will perform the computation on <a class="el" href="">Raster</a> tiles. The same</p><div class="fragment"><div class="line"><a class="code" href="a06539.html#aa2e91bc35e50ba9b0d5ed2731e1edb12">ReadWork</a> </div></div><!-- fragment --><p> instance can process an arbitrary amount of tiles.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">&lt;A&gt;</td><td>type of the thread-local object (the accumulator) for holding intermediate results. </td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Base class of coverages with domains defined as a set of grid points. </p>
+<p>The essential property of coverage is to be able to generate a value for any point within its domain. Since a grid coverage is represented by a grid of values, the value returned by the coverage for a point is that of the grid value whose location is nearest the point.</p>
+<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (IRD, Geomatys) </dd>
+<dd>
+Johann Sorel (Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.0  </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa2e91bc35e50ba9b0d5ed2731e1edb12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2e91bc35e50ba9b0d5ed2731e1edb12">&#9670;&nbsp;</a></span>ReadWork()</h2>
+<a id="a71be5779428886df135eaef2033a8f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71be5779428886df135eaef2033a8f21">&#9670;&nbsp;</a></span>GridCoverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,16 +193,16 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06539.html">ReadWork</a> </td>
+          <td class="memname"><a class="el" href="a06539.html">GridCoverage</a> </td>
           <td>(</td>
-          <td class="paramtype">final <a class="el" href="a06531.html">Cursor</a>&lt; RenderedImage, A &gt;&#160;</td>
-          <td class="paramname"><em>cursor</em>, </td>
+          <td class="paramtype">final GridGeometry&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final Collector&lt;? super Raster, A, ?&gt;&#160;</td>
-          <td class="paramname"><em>collector</em>&#160;</td>
+          <td class="paramtype">final Collection&lt;? extends SampleDimension &gt;&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -192,26 +212,28 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new worker for traversing the tiles identified by the given cursor. </p>
+<p>Constructs a grid coverage using the specified grid geometry and sample dimensions. </p>
+<p>The grid geometry defines the "domain" (inputs) of the coverage function, and the sample dimensions define the "range" (output) of that function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cursor</td><td>iterator over the indices of the tiles to fetch. </td></tr>
-    <tr><td class="paramname">collector</td><td>provides the process to execute on each tile. </td></tr>
+    <tr><td class="paramname">domain</td><td>the grid extent, CRS and conversion from cell indices to CRS. </td></tr>
+    <tr><td class="paramname">range</td><td>sample dimensions for each image band. </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                                                                                                                {</div><div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            super(<a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, collector);</div><div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        }</div><div class="ttc" id="a06535_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                                                                         {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;domain&quot;</span>, domain);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">//ArgumentChecks.ensureNonNull(&quot;range&quot;,  range);</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a> = domain;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>=<span class="keyword">new</span> SampleDimension[0];</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">/*sampleDimensions = range.toArray(new SampleDimension[range.size()]);</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">        for (int i=0; i&lt;sampleDimensions.length; i++) {</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">            ArgumentChecks.ensureNonNullElement(&quot;range&quot;, i, sampleDimensions[i]);</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">        }*/</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="ttc" id="a06539_html_a51c43e873b14f4bee9284b1150b5e472"><div class="ttname"><a href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">org.apache.sis.coverage.grid.GridCoverage.gridGeometry</a></div><div class="ttdeci">final GridGeometry gridGeometry</div><div class="ttdoc">The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS...</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:69</div></div>
+<div class="ttc" id="a06539_html_ac180948d623add7fb218d9f1af81ceb9"><div class="ttname"><a href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">org.apache.sis.coverage.grid.GridCoverage.sampleDimensions</a></div><div class="ttdeci">final SampleDimension [] sampleDimensions</div><div class="ttdoc">List of sample dimension (band) information for the grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:78</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a897d4e476be84070570b5b2fffbe355c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a897d4e476be84070570b5b2fffbe355c">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a4bb9bd8a3661ad395b1335e325c4e381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb9bd8a3661ad395b1335e325c4e381">&#9670;&nbsp;</a></span>appendDataLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,28 +242,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static&lt;A,R&gt; R execute </td>
+          <td class="memname">void appendDataLayout </td>
           <td>(</td>
-          <td class="paramtype">final <a class="el" href="a06527.html">TileOpExecutor</a>&#160;</td>
-          <td class="paramname"><em>executor</em>, </td>
+          <td class="paramtype">TreeTable.Node&#160;</td>
+          <td class="paramname"><em>root</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramtype">Vocabulary&#160;</td>
+          <td class="paramname"><em>vocabulary</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final Collector&lt;? super Raster, A, R &gt;&#160;</td>
-          <td class="paramname"><em>collector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final Consumer&lt; LogRecord &gt;&#160;</td>
-          <td class="paramname"><em>errorHandler</em>&#160;</td>
+          <td class="paramtype">TableColumn&lt; CharSequence &gt;&#160;</td>
+          <td class="paramname"><em>column</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -256,97 +272,23 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementation of <a class="el" href="">executeOnReadable(RenderedImage, Collector, Consumer)</a>. </p>
-<p>See the Javadoc of that method for details. </p>
-
-<p class="reference">References <a class="el" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.cursor</a>, <a class="el" href="a06531.html#a47ec4c7e5b7646e4a71b82402c2c82d1">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;.getNumWorkers()</a>, and <a class="el" href="a06535.html#a2c71443ed78646800cfa677fad85cacf">TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;.run()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06527.html#a5ad42afc2f4e97e36da69fa67f814806">TileOpExecutor.executeOnReadable()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        {</div><div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <span class="keyword">final</span> Cursor&lt;RenderedImage,A&gt; <a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a> = <a class="code" href="a06527.html#a1b5cfc428f0c5e326d6775db1204844f">executor</a>.new Cursor&lt;&gt;(source, collector, errorHandler == null);</div><div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            <span class="keyword">final</span> Future&lt;?&gt;[] workers = <span class="keyword">new</span> Future&lt;?&gt;[cursor.getNumWorkers()];</div><div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;workers.length; i++) {</div><div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                workers[i] = CommonExecutor.instance().submit(<span class="keyword">new</span> ReadWork&lt;&gt;(cursor, collector));</div><div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            }</div><div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            <span class="keyword">final</span> ReadWork&lt;A&gt; worker = <span class="keyword">new</span> ReadWork&lt;&gt;(<a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>, collector);</div><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            worker.run();</div><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            <span class="keywordflow">return</span> cursor.finish(workers, collector, errorHandler);</div><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        }</div><div class="ttc" id="a06527_html_a1b5cfc428f0c5e326d6775db1204844f"><div class="ttname"><a href="a06527.html#a1b5cfc428f0c5e326d6775db1204844f">org.apache.sis.internal.coverage.j2d.TileOpExecutor.executor</a></div><div class="ttdeci">static&lt; RT extends Raster &gt; Collector&lt; RT, Void, Void &gt; executor(final BiConsumer&lt; Void, RT &gt; action)</div><div class="ttdoc">Returns a collector to be used only as an executor: the accumulator is null and the combiner does not...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:323</div></div>
-<div class="ttc" id="a06535_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad8a8fbbda36a5abfd1f2ebe64e31b8c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">&#9670;&nbsp;</a></span>executeOnCurrentTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void executeOnCurrentTile </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invoked by <a class="el" href="a06535.html#a2c71443ed78646800cfa677fad85cacf">Worker#run()</a> for processing the tile at current indices. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a13939.html">RuntimeException</a></td><td>if any error occurred during the process. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06535.html#ae6f9097774c75a5f0677b1abad167637">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.accumulator</a>, <a class="el" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.cursor</a>, <a class="el" href="a06531.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">TileOpExecutor.Cursor&lt; RI extends RenderedImage, A &gt;.image</a>, <a class="el" href="a06535.html#a5fbeac52d84508f2507ba8348aafab09">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.processor</a>, <a class="el" href="a06535.html#a40590f55f82df430f8035df8dd4f03c2">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.tx</a>, and <a class="el" href="a06535.html#a75f29260f9728325050cd039109732b7">TileOpExecutor.Worker&lt; RI extends RenderedImage, RT extends Raster, A &gt;.ty</a>.</p>
-<div class="fragment"><div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                                              {</div><div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            <span class="keyword">final</span> Raster tile = <a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06531.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">image</a>.getTile(<a class="code" href="a06535.html#a40590f55f82df430f8035df8dd4f03c2">tx</a>, <a class="code" href="a06535.html#a75f29260f9728325050cd039109732b7">ty</a>);</div><div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            <a class="code" href="a06535.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>.accept(<a class="code" href="a06535.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>, tile);</div><div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        }</div><div class="ttc" id="a06535_html_a40590f55f82df430f8035df8dd4f03c2"><div class="ttname"><a href="a06535.html#a40590f55f82df430f8035df8dd4f03c2">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::tx</a></div><div class="ttdeci">int tx</div><div class="ttdoc">Indices of the tile to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:735</div></div>
-<div class="ttc" id="a06535_html_a5fbeac52d84508f2507ba8348aafab09"><div class="ttname"><a href="a06535.html#a5fbeac52d84508f2507ba8348aafab09">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::processor</a></div><div class="ttdeci">final BiConsumer&lt; A, ? super RT &gt; processor</div><div class="ttdoc">The process to execute on each Raster or WritableRaster. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:742</div></div>
-<div class="ttc" id="a06531_html_a7b7fa7d49ecd1dd3eb37fccb17f981d5"><div class="ttname"><a href="a06531.html#a7b7fa7d49ecd1dd3eb37fccb17f981d5">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.image</a></div><div class="ttdeci">final RI image</div><div class="ttdoc">The image from which to read tiles or where to write tiles. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:492</div></div>
-<div class="ttc" id="a06535_html_a75f29260f9728325050cd039109732b7"><div class="ttname"><a href="a06535.html#a75f29260f9728325050cd039109732b7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::ty</a></div><div class="ttdeci">int ty</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:735</div></div>
-<div class="ttc" id="a06535_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06535.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
-<div class="ttc" id="a06535_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afdff4aa4324ad7460be67cf5007b5e86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdff4aa4324ad7460be67cf5007b5e86">&#9670;&nbsp;</a></span>rethrowOrWrap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ImagingOpException rethrowOrWrap </td>
-          <td>(</td>
-          <td class="paramtype">final Throwable&#160;</td>
-          <td class="paramname"><em>ex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If the given exception can be propagated as an error or unchecked exception, throws it. </p>
-<p>Otherwise wraps it in an <a class="el" href="">ImagingOpException</a> with intentionally no error message (for allowing <a class="el" href="a06527.html#a517f50b4efda6d919cbe263504257ffb">trimImagingWrapper(Throwable)</a> to recognize and unwrap it).</p>
+<p>Appends a "data layout" branch (if it exists) to the tree representation of this coverage. </p>
+<p>That branch will be inserted between "coverage domain" and "sample dimensions" branches. The default implementation does nothing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ex</td><td>the exception to propagate if possible. </td></tr>
+    <tr><td class="paramname">root</td><td>root of the tree where to add a branch. </td></tr>
+    <tr><td class="paramname">vocabulary</td><td>localized resources for vocabulary. </td></tr>
+    <tr><td class="paramname">column</td><td>the single column where to write texts. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the exception to throw if the given exception can not be propagated. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;                                                                    {</div><div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            Throwable cause = ex.getCause();</div><div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keywordflow">if</span> (cause instanceof <a class="code" href="a13939.html">RuntimeException</a>) {</div><div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                <span class="keywordflow">throw</span> (RuntimeException) cause;</div><div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            }</div><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">if</span> (cause instanceof Error) {</div><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                <span class="keywordflow">throw</span> (Error) cause;</div><div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            }</div><div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment">             * May occur after call to `TileOpExecutor.readFrom(…)` or `TileOpExecutor.writeTo(…)`,</span></div><div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">             * in which case that exception will be removed by `trimImagingWrapper(…)` method and</span></div><div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">             * replaced by another exception providing a more complete error message.</span></div><div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">             *</span></div><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">             * Should not happen in other contexts because the other exception handlers where this</span></div><div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">             * `rethrowOrWrap(…)` method is invoked expect (indirectly) only unchecked exceptions.</span></div><div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">return</span> (ImagingOpException) <span class="keyword">new</span> ImagingOpException(null).initCause(cause != null ? cause : ex);</div><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div><div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
-</div><!-- fragment -->
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#a32798feeffc74937317bf91935b3ea60">GridCoverage.toTree()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                                                                                        {</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a2c71443ed78646800cfa677fad85cacf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c71443ed78646800cfa677fad85cacf">&#9670;&nbsp;</a></span>run()</h2>
+<a id="aa72235f1662f94786b1e594a1354bc80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72235f1662f94786b1e594a1354bc80">&#9670;&nbsp;</a></span>createColorModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +297,279 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final void run </td>
+          <td class="memname">final ColorModel createColorModel </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>visibleBand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>dataType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a color model for the expected range of sample values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visibleBand</td><td>the band to be made visible (usually 0). All other bands (if any) will be ignored. </td></tr>
+    <tr><td class="paramname">dataType</td><td>the color model type as one <a class="el" href="">java.awt.image.DataBuffer</a> constants. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>proposed color model, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if none. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06583.html#a3668a325460160a3ac51f36bf18debee">ColorModelFactory.createColorModel()</a>, and <a class="el" href="a06583.html#a63b75fcbb8f217072e82f0ca74e55b87">ColorModelFactory.GRAYSCALE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06543.html#ae62078507e9d20695831b176f5a4fd7f">GridCoverage2D.GridCoverage2D()</a>, and <a class="el" href="a06523.html#a6f23293e844748d4d07f822f11e65980">ConvertedGridCoverage.render()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                                                                 {</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> ColorModelFactory.createColorModel(<a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>, visibleBand, dataType, ColorModelFactory.GRAYSCALE);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div><div class="ttc" id="a06539_html_ac180948d623add7fb218d9f1af81ceb9"><div class="ttname"><a href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">org.apache.sis.coverage.grid.GridCoverage.sampleDimensions</a></div><div class="ttdeci">final SampleDimension [] sampleDimensions</div><div class="ttdoc">List of sample dimension (band) information for the grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:78</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9dfaee3bce5f0d98818dbea7975a63f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dfaee3bce5f0d98818dbea7975a63f7">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] evaluate </td>
+          <td>(</td>
+          <td class="paramtype">final DirectPosition&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws CannotEvaluateException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a sequence of double values for a given point in the coverage. </p>
+<p>The CRS of the given point may be any coordinate reference system; coordinate transformations will be applied as needed. If the CRS of the point is undefined, then it is assumed to be the same as this coverage. The returned sequence includes a value for each  SampleDimension sample dimension}.</p>
+<p>The default interpolation type used when accessing grid values for points which fall between grid cells is nearest neighbor. This default interpolation method may change in future version.</p>
+<p>The default implementation invokes <a class="el" href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013">render(GridExtent)</a> for a small region around the point. Subclasses should override with more efficient implementation.</p>
+<p>Warning: this method may change. See <a href="https://issues.apache.org/jira/browse/SIS-485">SIS-485</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>the coordinate point where to evaluate. </td></tr>
+    <tr><td class="paramname">buffer</td><td>an array in which to store values, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> to create a new array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the<div class="fragment"><div class="line">buffer </div></div><!-- fragment --> array, or a newly created array if<div class="fragment"><div class="line">buffer </div></div><!-- fragment --> was null. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">PointOutsideCoverageException</td><td>if the evaluation failed because the input point has invalid coordinates. </td></tr>
+    <tr><td class="paramname">CannotEvaluateException</td><td>if the values can not be computed at the specified coordinate for another reason. It may be thrown if the coverage data type can not be converted to<div class="fragment"><div class="line"><span class="keywordtype">double</span> </div></div><!-- fragment --> by an identity or widening conversion. Subclasses may relax this constraint if appropriate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>1.1 </dd></dl>
+
+<p class="reference">References <a class="el" href="a06531.html#abd74946782d37989bb539d6f690cf1a6">FractionalGridCoordinates.pointOutsideCoverage()</a>, <a class="el" href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013">GridCoverage.render()</a>, <a class="el" href="a06531.html#a69789ee6e2767e6891ebe8e7da8e908d">FractionalGridCoordinates.toExtent()</a>, and <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06523.html#abe4af51c16013c6ea5538ea23b9fa2d0">ConvertedGridCoverage.evaluate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                                                                                               {</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">/*</span></div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">         * TODO: instead of restricting to a single point, keep the automatic size (1 or 2),</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">         * invoke render for each plan, then interpolate. We would keep a value of 1 in the</span></div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">         * size array if we want to disable interpolation in some particular axis (e.g. time).</span></div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">         */</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">long</span>[] size = <span class="keyword">new</span> <span class="keywordtype">long</span>[<a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a>.getDimension()];</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        java.util.Arrays.fill(size, 1);</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keyword">final</span> FractionalGridCoordinates gc = <a class="code" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">toGridCoordinates</a>(point);</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="keyword">final</span> GridExtent subExtent = gc.toExtent(<a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a>.extent, size);</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">evaluate</a>(<a class="code" href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013">render</a>(subExtent), 0, 0, buffer);</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            } <span class="keywordflow">catch</span> (ArithmeticException | IndexOutOfBoundsException | DisjointExtentException ex) {</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">throw</span> (PointOutsideCoverageException) <span class="keyword">new</span> PointOutsideCoverageException(</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        gc.pointOutsideCoverage(<a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a>.extent), point).initCause(ex);</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            }</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        } <span class="keywordflow">catch</span> (PointOutsideCoverageException ex) {</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            ex.setOffendingLocation(point);</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">throw</span> ex;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        } <span class="keywordflow">catch</span> (<a class="code" href="a14083.html">RuntimeException</a> | TransformException ex) {</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> CannotEvaluateException(ex.getMessage(), ex);</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div><div class="ttc" id="a06539_html_a9dfaee3bce5f0d98818dbea7975a63f7"><div class="ttname"><a href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">org.apache.sis.coverage.grid.GridCoverage.evaluate</a></div><div class="ttdeci">double [] evaluate(final DirectPosition point, final double[] buffer)</div><div class="ttdoc">Returns a sequence of double values for a given point in the coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:266</div></div>
+<div class="ttc" id="a14083_html"><div class="ttname"><a href="a14083.html">RuntimeException</a></div></div>
+<div class="ttc" id="a06539_html_a51c43e873b14f4bee9284b1150b5e472"><div class="ttname"><a href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">org.apache.sis.coverage.grid.GridCoverage.gridGeometry</a></div><div class="ttdeci">final GridGeometry gridGeometry</div><div class="ttdoc">The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS...</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:69</div></div>
+<div class="ttc" id="a06539_html_a377e507a5ac3d5c1ad6b248064e77013"><div class="ttname"><a href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013">org.apache.sis.coverage.grid.GridCoverage.render</a></div><div class="ttdeci">abstract RenderedImage render(GridExtent sliceExtent)</div><div class="ttdoc">Returns a two-dimensional slice of grid data as a rendered image. </div></div>
+<div class="ttc" id="a06539_html_abfb9efea12d4f80e81726ec9ea0c9c39"><div class="ttname"><a href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">org.apache.sis.coverage.grid.GridCoverage.toGridCoordinates</a></div><div class="ttdeci">FractionalGridCoordinates toGridCoordinates(final DirectPosition point)</div><div class="ttdoc">Converts the specified geospatial position to grid coordinates. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:331</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afaa5743125217b51809755e74a1ea888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa5743125217b51809755e74a1ea888">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double [] evaluate </td>
+          <td>(</td>
+          <td class="paramtype">final RenderedImage&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets sample values from the given image at the given index. </p>
+<p>This method does not verify explicitly if the coordinates are out of bounds; we rely on the checks performed by the image and sample model implementations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>the data from which to get the sample values. </td></tr>
+    <tr><td class="paramname">x</td><td>column index of the value to get. </td></tr>
+    <tr><td class="paramname">y</td><td>row index of the value to get. </td></tr>
+    <tr><td class="paramname">buffer</td><td>an array in which to store values, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> to create a new array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the<div class="fragment"><div class="line">buffer </div></div><!-- fragment --> array, or a newly created array if<div class="fragment"><div class="line">buffer </div></div><!-- fragment --> was null. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArithmeticException</td><td>if an integer overflow occurred while computing indices. </td></tr>
+    <tr><td class="paramname">IndexOutOfBoundsException</td><td>if a coordinate is out of bounds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                                                                                        {</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> tx = Math.toIntExact(Math.floorDiv(x - (<span class="keywordtype">long</span>) data.getTileGridXOffset(), data.getTileWidth()));</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> ty = Math.toIntExact(Math.floorDiv(y - (<span class="keywordtype">long</span>) data.getTileGridYOffset(), data.getTileHeight()));</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">return</span> data.getTile(tx, ty).getPixel(x, y, buffer);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a524c8fced640c55ac13e301c803026f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a524c8fced640c55ac13e301c803026f0">&#9670;&nbsp;</a></span>forConvertedValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized <a class="el" href="a06539.html">GridCoverage</a> forConvertedValues </td>
+          <td>(</td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>converted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a grid coverage that contains real values or sample values, depending if. </p>
+<div class="fragment"><div class="line">converted </div></div><!-- fragment --><p> is</p><div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --><p> or</p><div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --><p> respectively. If there is no  SampleDimension::getTransferFunction() transfer function} defined by the  <a class="el" href="a06539.html#a60e41e388a84548d37fa90cbd5dd8c8c" title="Returns information about the &lt;cite&gt;range&lt;/cite&gt; of this grid coverage. ">getSampleDimensions()</a> sample dimensions}, then this method returns</p><div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --><p> . In all cases, the returned grid coverage <em>r</em> has the following properties:</p>
+<ul>
+<li>
+The list returned by<div class="fragment"><div class="line">r.getSampleDimensions() </div></div><!-- fragment --> is equal to the list returned by <code>this. <a class="el" href="a06539.html#a60e41e388a84548d37fa90cbd5dd8c8c" title="Returns information about the &lt;cite&gt;range&lt;/cite&gt; of this grid coverage. ">getSampleDimensions()</a>}</code> with each element <em>e</em> replaced by <code>e. SampleDimension::forConvertedValues(boolean) forConvertedValues}(converted)</code>. </li>
+<li>
+The <a class="el" href="">RenderedImage</a> produced by<div class="fragment"><div class="line">r.render(extent) </div></div><!-- fragment --> is equivalent to the image returned by <code>this. <a class="el" href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013" title="Returns a two-dimensional slice of grid data as a rendered image. ">render(GridExtent)</a> render}(extent)</code> with all sample values converted using the transfer function if<div class="fragment"><div class="line">converted </div></div><!-- fragment --> is<div class="fragment"><div class="line"><span class="keyword">true</span> </div></div><!-- fragment --> , or the inverse of transfer function if<div class="fragment"><div class="line">converted </div></div><!-- fragment --> is<div class="fragment"><div class="line"><span class="keyword">false</span> </div></div><!-- fragment --> . </li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">converted</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a06523.html#ab443371cdb566340dc7c63e8d99b1c71">ConvertedGridCoverage.create()</a>, <a class="el" href="a06539.html#a673bc851e761babeb646365359f05875">GridCoverage.getView()</a>, and <a class="el" href="a06539.html#a5697d07d9828702ade4ad4b9d070be8e">GridCoverage.setView()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                                                                 {</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="a06539.html#a71be5779428886df135eaef2033a8f21">GridCoverage</a> view = <a class="code" href="a06539.html#a673bc851e761babeb646365359f05875">getView</a>(converted);</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">if</span> (view == null) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            view = ConvertedGridCoverage.create(<span class="keyword">this</span>, converted);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <a class="code" href="a06539.html#a5697d07d9828702ade4ad4b9d070be8e">setView</a>(converted, view);</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        } <span class="keywordflow">catch</span> (NoninvertibleTransformException e) {</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> CannotEvaluateException(e.getMessage(), e);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> view;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div><div class="ttc" id="a06539_html_a673bc851e761babeb646365359f05875"><div class="ttname"><a href="a06539.html#a673bc851e761babeb646365359f05875">org.apache.sis.coverage.grid.GridCoverage.getView</a></div><div class="ttdeci">final GridCoverage getView(final boolean converted)</div><div class="ttdoc">Returns the converted or package view, or. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:189</div></div>
+<div class="ttc" id="a06539_html_a71be5779428886df135eaef2033a8f21"><div class="ttname"><a href="a06539.html#a71be5779428886df135eaef2033a8f21">org.apache.sis.coverage.grid.GridCoverage.GridCoverage</a></div><div class="ttdeci">GridCoverage(final GridGeometry domain, final Collection&lt;? extends SampleDimension &gt; range)</div><div class="ttdoc">Constructs a grid coverage using the specified grid geometry and sample dimensions. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:103</div></div>
+<div class="ttc" id="a06539_html_a5697d07d9828702ade4ad4b9d070be8e"><div class="ttname"><a href="a06539.html#a5697d07d9828702ade4ad4b9d070be8e">org.apache.sis.coverage.grid.GridCoverage.setView</a></div><div class="ttdeci">final void setView(final boolean converted, final GridCoverage view)</div><div class="ttdoc">Sets the converted or package view. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:197</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac3ea7ca030ecd46451eb9394fd466e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ea7ca030ecd46451eb9394fd466e2d">&#9670;&nbsp;</a></span>getCoordinateReferenceSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CoordinateReferenceSystem getCoordinateReferenceSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the coordinate reference system to which the values in grid domain are referenced. </p>
+<p>This is the CRS used when accessing a coverage with the</p><div class="fragment"><div class="line"><a class="code" href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">evaluate</a>(…) </div></div><!-- fragment --><p> methods. This coordinate reference system is usually different than the coordinate system of the grid. It is the target coordinate reference system of the <a class="el" href="">gridToCRS</a> math transform.</p>
+<p>The default implementation delegates to <a class="el" href="">GridGeometry#getCoordinateReferenceSystem()</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the CRS used when accessing a coverage with the<div class="fragment"><div class="line"><a class="code" href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">evaluate</a>(…) </div></div><!-- fragment --> methods. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IncompleteGridGeometryException</td><td>if the grid geometry has no CRS. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                                    {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a>.getCoordinateReferenceSystem();</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div><div class="ttc" id="a06539_html_a51c43e873b14f4bee9284b1150b5e472"><div class="ttname"><a href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">org.apache.sis.coverage.grid.GridCoverage.gridGeometry</a></div><div class="ttdeci">final GridGeometry gridGeometry</div><div class="ttdoc">The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS...</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a27ef052a91bc730ac81996f6418da38d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ef052a91bc730ac81996f6418da38d">&#9670;&nbsp;</a></span>getGridGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GridGeometry getGridGeometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage. </p>
+<p>Information includes the grid extent, CRS and conversion from cell indices to CRS. </p><div class="fragment"><div class="line">GridGeometry </div></div><!-- fragment --><p> can also provide derived information like bounding box and resolution.</p>
+<dl class="section return"><dt>Returns</dt><dd>grid extent, CRS and conversion from cell indices to CRS.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>org.apache.sis.storage.GridCoverageResource::getGridGeometry() </dd></dl>
+
+<p class="reference">References <a class="el" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">GridCoverage.gridGeometry</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06523.html#a7c6acf2cfd03bf90f2a86d906460a759">ConvertedGridCoverage.ConvertedGridCoverage()</a>, and <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                          {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a>;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div><div class="ttc" id="a06539_html_a51c43e873b14f4bee9284b1150b5e472"><div class="ttname"><a href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">org.apache.sis.coverage.grid.GridCoverage.gridGeometry</a></div><div class="ttdeci">final GridGeometry gridGeometry</div><div class="ttdoc">The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS...</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4524832c85292bbb425204e002fc20df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4524832c85292bbb425204e002fc20df">&#9670;&nbsp;</a></span>getRanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final NumberRange&lt;?&gt; [] getRanges </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -363,28 +577,310 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Invoked by <a class="el" href="">java.util.concurrent.ExecutorService#execute(Runnable)</a> for processing all tiles. </p>
-<p>This method delegates to <a class="el" href="a06539.html#ad8a8fbbda36a5abfd1f2ebe64e31b8c1">executeOnCurrentTile()</a> as long as there is tiles to process. Exceptions are handled (wrapped in a <a class="el" href="">LogRecord</a> or propagated). </p>
+<p>Returns the range of values in each sample dimension, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if none. </p>
 
-<p class="reference">Referenced by <a class="el" href="a06539.html#a897d4e476be84070570b5b2fffbe355c">TileOpExecutor.ReadWork&lt; A &gt;::execute()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                                {</div><div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06531.html#a311addae5779cead65ffaaad5824007c">next</a>(<span class="keyword">this</span>)) <span class="keywordflow">try</span> {</div><div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                <a class="code" href="a06535.html#a460b7efed78d9e1a0d37ae409e52f229">executeOnCurrentTile</a>();</div><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            } <span class="keywordflow">catch</span> (<a class="code" href="a13963.html">Exception</a> ex) {</div><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                <a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06531.html#aabf3c338904bae76660fd721a7492e85">recordError</a>(<span class="keyword">this</span>, trimImagingWrapper(ex));</div><div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            }</div><div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <a class="code" href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">cursor</a>.<a class="code" href="a06531.html#a4b14b31f07a7b5de8420315b985e05a7">accumulate</a>(<a class="code" href="a06535.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a>);</div><div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        }</div><div class="ttc" id="a06535_html_a460b7efed78d9e1a0d37ae409e52f229"><div class="ttname"><a href="a06535.html#a460b7efed78d9e1a0d37ae409e52f229">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::executeOnCurrentTile</a></div><div class="ttdeci">abstract void executeOnCurrentTile()</div><div class="ttdoc">Gets the tiles at the (tx, ty) indices and processes it. </div></div>
-<div class="ttc" id="a06531_html_a311addae5779cead65ffaaad5824007c"><div class="ttname"><a href="a06531.html#a311addae5779cead65ffaaad5824007c">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.next</a></div><div class="ttdeci">final boolean next(final Worker&lt; RI,?, A &gt; indices)</div><div class="ttdoc">Sets the given worker to the indices of the next tile. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:569</div></div>
-<div class="ttc" id="a13963_html"><div class="ttname"><a href="a13963.html">Exception</a></div></div>
-<div class="ttc" id="a06531_html_a4b14b31f07a7b5de8420315b985e05a7"><div class="ttname"><a href="a06531.html#a4b14b31f07a7b5de8420315b985e05a7">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.accumulate</a></div><div class="ttdeci">final void accumulate(final A result)</div><div class="ttdoc">Invoked when a thread finished to process all its tiles for combining its result with the result of p...</div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:585</div></div>
-<div class="ttc" id="a06531_html_aabf3c338904bae76660fd721a7492e85"><div class="ttname"><a href="a06531.html#aabf3c338904bae76660fd721a7492e85">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Cursor.recordError</a></div><div class="ttdeci">final void recordError(final Worker&lt; RI,?, A &gt; indices, final Throwable ex)</div><div class="ttdoc">Stores the given exception in a log record. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:674</div></div>
-<div class="ttc" id="a06535_html_ae6f9097774c75a5f0677b1abad167637"><div class="ttname"><a href="a06535.html#ae6f9097774c75a5f0677b1abad167637">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::accumulator</a></div><div class="ttdeci">final A accumulator</div><div class="ttdoc">A thread-local variable which is given to each invocation of the processor. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:750</div></div>
-<div class="ttc" id="a06535_html_a21cca1f9a7342fbd8caeaf4e519c896a"><div class="ttname"><a href="a06535.html#a21cca1f9a7342fbd8caeaf4e519c896a">org.apache.sis.internal.coverage.j2d.TileOpExecutor.Worker&lt; RenderedImage, Raster, A &gt;::cursor</a></div><div class="ttdeci">final Cursor&lt; RI, A &gt; cursor</div><div class="ttdoc">An iterator over the indices of the next tiles to fetch. </div><div class="ttdef"><b>Definition:</b> TileOpExecutor.java:730</div></div>
+<p class="reference">Referenced by <a class="el" href="a06523.html#a6f23293e844748d4d07f822f11e65980">ConvertedGridCoverage.render()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                       {</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        NumberRange&lt;?&gt;[] ranges = null;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>.length; i++) {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">final</span> Optional&lt;NumberRange&lt;?&gt;&gt; r = <a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>[i].getSampleRange();</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (r.isPresent()) {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">if</span> (ranges == null) {</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    ranges = <span class="keyword">new</span> NumberRange&lt;?&gt;[<a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>.length];</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                }</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                ranges[i] = r.get();</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> ranges;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div><div class="ttc" id="a06539_html_ac180948d623add7fb218d9f1af81ceb9"><div class="ttname"><a href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">org.apache.sis.coverage.grid.GridCoverage.sampleDimensions</a></div><div class="ttdeci">final SampleDimension [] sampleDimensions</div><div class="ttdoc">List of sample dimension (band) information for the grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:78</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60e41e388a84548d37fa90cbd5dd8c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e41e388a84548d37fa90cbd5dd8c8c">&#9670;&nbsp;</a></span>getSampleDimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;SampleDimension&gt; getSampleDimensions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns information about the &lt;cite&gt;range&lt;/cite&gt; of this grid coverage. </p>
+<p>Information include names, sample value ranges, fill values and transfer functions for all bands in this grid coverage. The length of the returned list should be equal to the  java.awt.image.SampleModel::getNumBands() number of bands} in the rendered image.</p>
+<dl class="section return"><dt>Returns</dt><dd>names, value ranges, fill values and transfer functions for all bands in this grid coverage.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>org.apache.sis.storage.GridCoverageResource::getSampleDimensions() </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06523.html#ab443371cdb566340dc7c63e8d99b1c71">ConvertedGridCoverage.create()</a>, and <a class="el" href="a06543.html#a524c8fced640c55ac13e301c803026f0">GridCoverage2D.forConvertedValues()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                                       {</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> UnmodifiableArrayList.wrap(<a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div><div class="ttc" id="a06539_html_ac180948d623add7fb218d9f1af81ceb9"><div class="ttname"><a href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">org.apache.sis.coverage.grid.GridCoverage.sampleDimensions</a></div><div class="ttdeci">final SampleDimension [] sampleDimensions</div><div class="ttdoc">List of sample dimension (band) information for the grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:78</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a673bc851e761babeb646365359f05875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673bc851e761babeb646365359f05875">&#9670;&nbsp;</a></span>getView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="a06539.html">GridCoverage</a> getView </td>
+          <td>(</td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>converted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the converted or package view, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if not yet computed. It is caller responsibility to ensure that this method is invoked in a synchronized block. </p>
+
+<p class="reference">References <a class="el" href="a06539.html#a5d1a5981a5db5b324a0686227d081d86">GridCoverage.convertedView</a>, and <a class="el" href="a06539.html#a75461271c5e6e435946470300b1c4db1">GridCoverage.packedView</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#a524c8fced640c55ac13e301c803026f0">GridCoverage.forConvertedValues()</a>, and <a class="el" href="a06543.html#a524c8fced640c55ac13e301c803026f0">GridCoverage2D.forConvertedValues()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                                        {</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> converted ? <a class="code" href="a06539.html#a5d1a5981a5db5b324a0686227d081d86">convertedView</a> : <a class="code" href="a06539.html#a75461271c5e6e435946470300b1c4db1">packedView</a>;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div><div class="ttc" id="a06539_html_a75461271c5e6e435946470300b1c4db1"><div class="ttname"><a href="a06539.html#a75461271c5e6e435946470300b1c4db1">org.apache.sis.coverage.grid.GridCoverage.packedView</a></div><div class="ttdeci">transient GridCoverage packedView</div><div class="ttdoc">View over this grid coverage after conversion of sample values, or. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:86</div></div>
+<div class="ttc" id="a06539_html_a5d1a5981a5db5b324a0686227d081d86"><div class="ttname"><a href="a06539.html#a5d1a5981a5db5b324a0686227d081d86">org.apache.sis.coverage.grid.GridCoverage.convertedView</a></div><div class="ttdeci">transient GridCoverage convertedView</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:86</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a377e507a5ac3d5c1ad6b248064e77013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377e507a5ac3d5c1ad6b248064e77013">&#9670;&nbsp;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract RenderedImage render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a06551.html">GridExtent</a>&#160;</td>
+          <td class="paramname"><em>sliceExtent</em></td><td>)</td>
+          <td> throws CannotEvaluateException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a two-dimensional slice of grid data as a rendered image. </p>
+<p>The given</p><div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --><p> argument specifies the coordinates of the slice in all dimensions that are not in the two-dimensional image. For example if this grid coverage has <em>(<em>x</em>,<em>y</em>,<em>z</em>,<em>t</em>)</em> dimensions and we want to render an image of data in the <em>(<em>x</em>,<em>y</em>)</em> dimensions, then the given</p><div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --><p> shall contain the <em>(<em>z</em>,<em>t</em>)</em> coordinates of the desired slice. Those coordinates are specified in a grid extent where  <a class="el" href="a06551.html#a78aa11b070f70f35c6eca82cc75cd56c" title="Returns the valid minimum inclusive grid coordinate along the specified dimension. ">GridExtent::getLow(int)</a> low coordinate} =  <a class="el" href="a06551.html#a58a9362940766e61cdec086c030b7b23" title="Returns the valid maximum inclusive grid coordinate along the specified dimension. ">GridExtent::getHigh(int)</a> high coordinate} in the <em>z</em> and <em>t</em> dimensions. The two dimensions of the data to be shown (<em>x</em> and <em>y</em> in our example) shall be the only dimensions having a  <a class="el" href="a06551.html#a303a45005b63f9028248adb1046eca80" title="Returns the number of integer grid coordinates along the specified dimension. ">GridExtent::getSize(int)</a> size} greater than 1 cell.</p>
+<p>If the</p><div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --><p> argument is</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> , then the default value is <code> <a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d" title="Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage. ">getGridGeometry()</a>}. GridGeometry::getExtent() getExtent()}</code>. This means that</p><div class="fragment"><div class="line">gridExtent </div></div><!-- fragment --><p> is optional for two-dimensional grid coverages or grid coverages where all dimensions except two have a size of 1 cell. If the grid extent contains more than 2 dimensions with a size greater than one cell, then a <a class="el" href="">SubspaceNotSpecifiedException</a> is thrown.</p>
+<div class="note"></div><div class="note"><b>How to compute a slice extent from a slice point in "real world" coordinates</b></div><div class="note"> The<div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --> is specified to this method as grid indices. If the <em>z</em> and <em>t</em> values are not grid indices but are relative to some Coordinate Reference System (CRS) instead, then the slice extent can be computed as below. First, a &lt;cite&gt;slice point&lt;/cite&gt; containing the <em>z</em> and <em>t</em> coordinates should be constructed as a <a class="el" href="">DirectPosition</a> in one of the following ways:</div><div class="note"><ul>
+<li>
+The<div class="fragment"><div class="line">slicePoint </div></div><!-- fragment --> has a CRS with two dimensions less than this grid coverage CRS. </li>
+<li>
+The<div class="fragment"><div class="line">slicePoint </div></div><!-- fragment --> has the same CRS than this grid coverage, but the two coordinates to exclude are set to <a class="el" href="">Double#NaN</a>. </li>
+</ul>
+</div><div class="note">Then:</div><div class="note"><blockquote class="doxtable">
+<p><code>sliceExtent =  <a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d" title="Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage. ">getGridGeometry()</a>}.<a class="el" href="">derive()</a>. GridDerivation::slice(DirectPosition) slice}(slicePoint). GridDerivation::getIntersection() getIntersection()};</code></p>
+</blockquote>
+</div><div class="note">If the<div class="fragment"><div class="line">slicePoint </div></div><!-- fragment --> CRS is different than this grid coverage CRS (except for the number of dimensions), a coordinate transformation will be applied as needed.</div><h4>Characteristics of the returned image</h4>
+<p>Image dimensions <em>x</em> and <em>y</em> map to the first and second dimension respectively of the two-dimensional</p><div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --><p>  <a class="el" href="a06551.html#ab95a59f72ecc8dc5ba7fefe8efdcaaaa" title="Returns indices of all dimensions where this grid extent has a size greater than 1. ">GridExtent::getSubspaceDimensions(int)</a> subspace}. The coordinates given by <a class="el" href="">RenderedImage#getMinX()</a> and <a class="el" href="">getMinY()</a> will be the image location <em>relative to</em> the location specified in</p><div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --><p>  <a class="el" href="a06551.html#a78aa11b070f70f35c6eca82cc75cd56c" title="Returns the valid minimum inclusive grid coordinate along the specified dimension. ">GridExtent::getLow(int)</a> low coordinates}. For example in the case of image  RenderedImage::getMinX() minimum X coordinate}:</p>
+<ul class="verbose">
+<li>
+A value of 0 means that the image left border is exactly where requested by<div class="fragment"><div class="line">sliceExtent.getLow(xDimension) </div></div><!-- fragment --> . </li>
+<li>
+A positive value means that the returned image is shifted to the right compared to specified extent. This implies that the image has less data than requested on left side. It may happen if the specified extent is partially outside grid coverage extent. </li>
+<li>
+A negative value means that the returned image is shifted to the left compared to specified extent. This implies that the image has more data than requested on left side. It may happen if the image is tiled, the specified<div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --> covers many tiles, and expanding the specified extent is necessary for returning an integer amount of tiles. </li>
+</ul>
+<p>Similar discussion applies to the  RenderedImage::getMinY() minimum Y coordinate}. The  RenderedImage::getWidth() image width} and  RenderedImage::getHeight() height} will be the</p><div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --><p>  <a class="el" href="a06551.html#a303a45005b63f9028248adb1046eca80" title="Returns the number of integer grid coordinates along the specified dimension. ">GridExtent::getSize(int)</a> sizes} if this method can honor exactly the request, or otherwise may be adjusted for the same reasons than <em>x</em> and <em>y</em> location discussed above.</p>
+<p>Implementations should return a view as much as possible, without copying sample values. </p><div class="fragment"><div class="line"><a class="code" href="a06539.html#a71be5779428886df135eaef2033a8f21">GridCoverage</a> </div></div><!-- fragment --><p> subclasses can use the <a class="el" href="">ImageRenderer</a> class as a helper tool for that purpose. This method does not mandate any behavior regarding tiling (size of tiles, their numbering system, <em>etc.</em>). Some implementations may defer data loading until  RenderedImage::getTile(int, int) a tile is requested}.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sliceExtent</td><td>a subspace of this grid coverage extent where all dimensions except two have a size of 1 cell. May be<div class="fragment"><div class="line">null </div></div><!-- fragment --> if this grid coverage has only two dimensions with a size greater than 1 cell. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the grid slice as a rendered image. Image location is relative to<div class="fragment"><div class="line">sliceExtent </div></div><!-- fragment --> . </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SubspaceNotSpecifiedException</td><td>if the given argument is not sufficient for reducing the grid to a two-dimensional slice. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a06527.html" title="Thrown when operations on a GridGeometry result in an area which does not intersect anymore the GridE...">DisjointExtentException</a></td><td>if the given extent does not intersect this grid coverage. </td></tr>
+    <tr><td class="paramname">CannotEvaluateException</td><td>if this method can not produce the rendered image for another reason. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage.evaluate()</a>, <a class="el" href="a06523.html#a6f23293e844748d4d07f822f11e65980">ConvertedGridCoverage.render()</a>, and <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
+
+</div>
+</div>
+<a id="a5697d07d9828702ade4ad4b9d070be8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5697d07d9828702ade4ad4b9d070be8e">&#9670;&nbsp;</a></span>setView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void setView </td>
+          <td>(</td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>converted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="a06539.html">GridCoverage</a>&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the converted or package view. </p>
+<p>The given view should not be null. It is caller responsibility to ensure that this method is invoked in a synchronized block. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#a524c8fced640c55ac13e301c803026f0">GridCoverage.forConvertedValues()</a>, and <a class="el" href="a06543.html#a524c8fced640c55ac13e301c803026f0">GridCoverage2D.forConvertedValues()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                                                         {</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span> (converted) {</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <a class="code" href="a06539.html#a5d1a5981a5db5b324a0686227d081d86">convertedView</a> = view;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <a class="code" href="a06539.html#a75461271c5e6e435946470300b1c4db1">packedView</a> = view;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div><div class="ttc" id="a06539_html_a75461271c5e6e435946470300b1c4db1"><div class="ttname"><a href="a06539.html#a75461271c5e6e435946470300b1c4db1">org.apache.sis.coverage.grid.GridCoverage.packedView</a></div><div class="ttdeci">transient GridCoverage packedView</div><div class="ttdoc">View over this grid coverage after conversion of sample values, or. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:86</div></div>
+<div class="ttc" id="a06539_html_a5d1a5981a5db5b324a0686227d081d86"><div class="ttname"><a href="a06539.html#a5d1a5981a5db5b324a0686227d081d86">org.apache.sis.coverage.grid.GridCoverage.convertedView</a></div><div class="ttdeci">transient GridCoverage convertedView</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:86</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abfb9efea12d4f80e81726ec9ea0c9c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb9efea12d4f80e81726ec9ea0c9c39">&#9670;&nbsp;</a></span>toGridCoordinates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a06531.html">FractionalGridCoordinates</a> toGridCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">final DirectPosition&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> throws TransformException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the specified geospatial position to grid coordinates. </p>
+<p>If the given position is associated to a non-null coordinate reference system (CRS) different than the CRS of this coverage, then this method automatically transforms that position to the  <a class="el" href="a06539.html#ac3ea7ca030ecd46451eb9394fd466e2d" title="Returns the coordinate reference system to which the values in grid domain are referenced. ">getCoordinateReferenceSystem()</a> coverage CRS} before to compute grid coordinates.</p>
+<p>This method does not put any restriction on the grid coordinates result. The result may be outside the  GridGeometry::getExtent() grid extent} if the  GridGeometry::getGridToCRS(PixelInCell) grid to CRS} transform allows it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>geospatial coordinates (in arbitrary CRS) to transform to grid coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the grid coordinates for the given geospatial coordinates. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IncompleteGridGeometryException</td><td>if the  <a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d" title="Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage. ">getGridGeometry()</a> grid geometry} does not define a "grid to CRS" transform, or if the given point has a non-null CRS but this coverage does not  <a class="el" href="a06539.html#ac3ea7ca030ecd46451eb9394fd466e2d" title="Returns the coordinate reference system to which the values in grid domain are referenced. ">getCoordinateReferenceSystem()</a> have a CRS}. </td></tr>
+    <tr><td class="paramname">TransformException</td><td>if the given coordinates can not be transformed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06531.html#ad70ac16ff1a0a5fa977512d70843590c" title="Returns the grid coordinates converted to a geospatial position using the given transform. ">FractionalGridCoordinates::toPosition(MathTransform)</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.1 </dd></dl>
+
+<p class="reference">References <a class="el" href="a06559.html#a00d1d96327fe14b4cbc3c2372ac20857">PointToGridCoordinates.crsToGrid</a>, <a class="el" href="a06531.html#a10c39e72f0b4afd8dca0723bb3e9130a">FractionalGridCoordinates.fromPosition()</a>, <a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a06539.html#a4e6e362a7f278c78978c6377e4d11d1f">GridCoverage.lastConverter</a>, <a class="el" href="a06539.html#a377e507a5ac3d5c1ad6b248064e77013">GridCoverage.render()</a>, and <a class="el" href="a06559.html#ac9e444db6156d4c172922a1aae6ec448">PointToGridCoordinates.sourceCRS</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage.evaluate()</a>, and <a class="el" href="a06543.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage2D.evaluate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                                                                                             {</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keyword">final</span> CoordinateReferenceSystem sourceCRS = point.getCoordinateReferenceSystem();</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        PointToGridCoordinates converter = <a class="code" href="a06539.html#a4e6e362a7f278c78978c6377e4d11d1f">lastConverter</a>;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span> (converter == null || !Objects.equals(converter.sourceCRS, sourceCRS)) {</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            converter = <span class="keyword">new</span> PointToGridCoordinates(sourceCRS, <span class="keyword">this</span>, <a class="code" href="a06539.html#a27ef052a91bc730ac81996f6418da38d">getGridGeometry</a>());</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <a class="code" href="a06539.html#a4e6e362a7f278c78978c6377e4d11d1f">lastConverter</a> = converter;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">return</span> FractionalGridCoordinates.fromPosition(point, converter.crsToGrid);</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div><div class="ttc" id="a06539_html_a4e6e362a7f278c78978c6377e4d11d1f"><div class="ttname"><a href="a06539.html#a4e6e362a7f278c78978c6377e4d11d1f">org.apache.sis.coverage.grid.GridCoverage.lastConverter</a></div><div class="ttdeci">transient volatile PointToGridCoordinates lastConverter</div><div class="ttdoc">The last coordinate operation used by toGridCoordinates(DirectPosition). </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:93</div></div>
+<div class="ttc" id="a06539_html_a27ef052a91bc730ac81996f6418da38d"><div class="ttname"><a href="a06539.html#a27ef052a91bc730ac81996f6418da38d">org.apache.sis.coverage.grid.GridCoverage.getGridGeometry</a></div><div class="ttdeci">GridGeometry getGridGeometry()</div><div class="ttdoc">Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:139</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad146fa8579a5f8a876c4688cc5a68520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146fa8579a5f8a876c4688cc5a68520">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a string representation of this grid coverage for debugging purpose. </p>
+<p>The returned string is implementation dependent and may change in any future version. Current implementation is equivalent to the following, where</p><div class="fragment"><div class="line">&lt;<span class="keywordflow">default</span> flags&gt; </div></div><!-- fragment --><p> is the same set of flags than <a class="el" href="">GridGeometry#toString()</a>.</p>
+<p>{ java return toTree(Locale.getDefault(), &lt;default flags&gt;=""&gt;).<a class="el" href="a06539.html#ad146fa8579a5f8a876c4688cc5a68520" title="Returns a string representation of this grid coverage for debugging purpose. ">toString()</a>; }</p>
+<dl class="section return"><dt>Returns</dt><dd>a string representation of this grid coverage for debugging purpose. </dd></dl>
+
+<p class="reference">References <a class="el" href="a06539.html#a32798feeffc74937317bf91935b3ea60">GridCoverage.toTree()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                             {</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06539.html#a32798feeffc74937317bf91935b3ea60">toTree</a>(Locale.getDefault(), GridGeometry.defaultFlags()).<a class="code" href="a06539.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a>();</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    }</div><div class="ttc" id="a06539_html_a32798feeffc74937317bf91935b3ea60"><div class="ttname"><a href="a06539.html#a32798feeffc74937317bf91935b3ea60">org.apache.sis.coverage.grid.GridCoverage.toTree</a></div><div class="ttdeci">TreeTable toTree(final Locale locale, final int bitmask)</div><div class="ttdoc">Returns a tree representation of some elements of this grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:445</div></div>
+<div class="ttc" id="a06539_html_ad146fa8579a5f8a876c4688cc5a68520"><div class="ttname"><a href="a06539.html#ad146fa8579a5f8a876c4688cc5a68520">org.apache.sis.coverage.grid.GridCoverage.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdoc">Returns a string representation of this grid coverage for debugging purpose. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:429</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a32798feeffc74937317bf91935b3ea60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32798feeffc74937317bf91935b3ea60">&#9670;&nbsp;</a></span>toTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TreeTable toTree </td>
+          <td>(</td>
+          <td class="paramtype">final Locale&#160;</td>
+          <td class="paramname"><em>locale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>bitmask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a tree representation of some elements of this grid coverage. </p>
+<p>The tree representation is for debugging purpose only and may change in any future SIS version.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">locale</td><td>the locale to use for textual labels. </td></tr>
+    <tr><td class="paramname">bitmask</td><td>combination of <a class="el" href="">GridGeometry</a> flags. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a tree representation of the specified elements.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GridGeometry::toTree(Locale, int) </dd></dl>
+
+<p class="reference">References <a class="el" href="a06539.html#a4bb9bd8a3661ad395b1335e325c4e381">GridCoverage.appendDataLayout()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#ad146fa8579a5f8a876c4688cc5a68520">GridCoverage.toString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                                                                    {</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;locale&quot;</span>, locale);</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keyword">final</span> Vocabulary vocabulary = Vocabulary.getResources(locale);</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keyword">final</span> TableColumn&lt;CharSequence&gt; column = TableColumn.VALUE_AS_TEXT;</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keyword">final</span> TreeTable tree = <span class="keyword">new</span> DefaultTreeTable(column);</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keyword">final</span> TreeTable.Node root = tree.getRoot();</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        root.setValue(column, Classes.getShortClassName(<span class="keyword">this</span>));</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        TreeTable.Node branch = root.newChild();</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        branch.setValue(column, vocabulary.getString(Vocabulary.Keys.CoverageDomain));</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <a class="code" href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">gridGeometry</a>.formatTo(locale, vocabulary, bitmask, branch);</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <a class="code" href="a06539.html#a4bb9bd8a3661ad395b1335e325c4e381">appendDataLayout</a>(root, vocabulary, column);</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        branch = root.newChild();</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        branch.setValue(column, vocabulary.getString(Vocabulary.Keys.SampleDimensions));</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        branch.newChild().setValue(column, SampleDimension.toString(locale, <a class="code" href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">sampleDimensions</a>));</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="keywordflow">return</span> tree;</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    }</div><div class="ttc" id="a06539_html_a4bb9bd8a3661ad395b1335e325c4e381"><div class="ttname"><a href="a06539.html#a4bb9bd8a3661ad395b1335e325c4e381">org.apache.sis.coverage.grid.GridCoverage.appendDataLayout</a></div><div class="ttdeci">void appendDataLayout(TreeTable.Node root, Vocabulary vocabulary, TableColumn&lt; CharSequence &gt; column)</div><div class="ttdoc">Appends a &quot;data layout&quot; branch (if it exists) to the tree representation of this coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:472</div></div>
+<div class="ttc" id="a06539_html_a51c43e873b14f4bee9284b1150b5e472"><div class="ttname"><a href="a06539.html#a51c43e873b14f4bee9284b1150b5e472">org.apache.sis.coverage.grid.GridCoverage.gridGeometry</a></div><div class="ttdeci">final GridGeometry gridGeometry</div><div class="ttdoc">The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS...</div><div class="ttdef"><b>Definition:</b> GridCoverage.java:69</div></div>
+<div class="ttc" id="a06539_html_ac180948d623add7fb218d9f1af81ceb9"><div class="ttname"><a href="a06539.html#ac180948d623add7fb218d9f1af81ceb9">org.apache.sis.coverage.grid.GridCoverage.sampleDimensions</a></div><div class="ttdeci">final SampleDimension [] sampleDimensions</div><div class="ttdoc">List of sample dimension (band) information for the grid coverage. </div><div class="ttdef"><b>Definition:</b> GridCoverage.java:78</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae6f9097774c75a5f0677b1abad167637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f9097774c75a5f0677b1abad167637">&#9670;&nbsp;</a></span>accumulator</h2>
+<a id="a5d1a5981a5db5b324a0686227d081d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1a5981a5db5b324a0686227d081d86">&#9670;&nbsp;</a></span>convertedView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,23 +889,22 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final A accumulator</td>
+          <td class="memname">transient <a class="el" href="a06539.html">GridCoverage</a> convertedView</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A thread-local variable which is given to each invocation of the <a class="el" href="a06535.html#a5fbeac52d84508f2507ba8348aafab09">processor</a>. </p>
-<p>Processor implementation can use this instance for storing or updating information. No synchronization is needed since this instance is not shared by other threads. This value may be</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if no such object is needed. </p>
+<p class="reference">Referenced by <a class="el" href="a06539.html#a673bc851e761babeb646365359f05875">GridCoverage.getView()</a>.</p>
 
 </div>
 </div>
-<a id="a21cca1f9a7342fbd8caeaf4e519c896a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21cca1f9a7342fbd8caeaf4e519c896a">&#9670;&nbsp;</a></span>cursor</h2>
+<a id="a51c43e873b14f4bee9284b1150b5e472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c43e873b14f4bee9284b1150b5e472">&#9670;&nbsp;</a></span>gridGeometry</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,23 +913,25 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="a06531.html">Cursor</a>&lt;RI,A&gt; cursor</td>
+          <td class="memname">final GridGeometry gridGeometry</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>An iterator over the indices of the next tiles to fetch. </p>
-<p>The same instance will be shared by all <a class="el" href="a06535.html">Worker</a> instances created by the same call to <a class="el" href="a06539.html#a897d4e476be84070570b5b2fffbe355c">ReadWork.execute(…)</a> or <a class="el" href="a06543.html#abbe05319666d3715eb016d69fe8426d4">WriteWork.execute(…)</a>. </p>
+<p>The grid extent, coordinate reference system (CRS) and conversion from cell indices to CRS. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d" title="Returns information about the &lt;cite&gt;domain&lt;/cite&gt; of this grid coverage. ">getGridGeometry()</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06543.html#a9dfaee3bce5f0d98818dbea7975a63f7">GridCoverage2D.evaluate()</a>, <a class="el" href="a06539.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a06543.html#a8d13a33e4262a8e9bdef9700adf49a39">GridCoverage2D.getGridGeometry2D()</a>, <a class="el" href="a06543.html#ae62078507e9d20695831b176f5a4fd7f">GridCoverage2D.GridCoverage2D()</a>, and <a class="el" href="a06543.html#a6f23293e844748d4d07f822f11e65980">GridCoverage2D.render()</a>.</p>
 
 </div>
 </div>
-<a id="a5fbeac52d84508f2507ba8348aafab09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fbeac52d84508f2507ba8348aafab09">&#9670;&nbsp;</a></span>processor</h2>
+<a id="a4e6e362a7f278c78978c6377e4d11d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6e362a7f278c78978c6377e4d11d1f">&#9670;&nbsp;</a></span>lastConverter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,23 +940,25 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final BiConsumer&lt;A, ? super RT&gt; processor</td>
+          <td class="memname">transient volatile <a class="el" href="a06559.html">PointToGridCoordinates</a> lastConverter</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The process to execute on each <a class="el" href="">Raster</a> or <a class="el" href="">WritableRaster</a>. </p>
-<p>Each invocation of that process will also receive the <a class="el" href="a06535.html#ae6f9097774c75a5f0677b1abad167637">accumulator</a> value, which is an instance unique to each thread. </p>
+<p>The last coordinate operation used by <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">toGridCoordinates(DirectPosition)</a>. </p>
+<p>This is cached for avoiding the costly process of fetching a coordinate operation in the common case where the coordinate reference systems did not changed. </p>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#abfb9efea12d4f80e81726ec9ea0c9c39">GridCoverage.toGridCoordinates()</a>.</p>
 
 </div>
 </div>
-<a id="a40590f55f82df430f8035df8dd4f03c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40590f55f82df430f8035df8dd4f03c2">&#9670;&nbsp;</a></span>tx</h2>
+<a id="a75461271c5e6e435946470300b1c4db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75461271c5e6e435946470300b1c4db1">&#9670;&nbsp;</a></span>packedView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,23 +967,26 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int tx</td>
+          <td class="memname">transient <a class="el" href="a06539.html">GridCoverage</a> packedView</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indices of the tile to fetch. </p>
-<p>Those indices are updated by <a class="el" href="">Cursor#next(Worker)</a>. </p>
+<p>View over this grid coverage after conversion of sample values, or. </p>
+<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if not yet created. May be</p><div class="fragment"><div class="line"><span class="keyword">this</span> </div></div><!-- fragment --><p> if we determined that there is no conversion or the conversion is identity.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06539.html#a524c8fced640c55ac13e301c803026f0" title="Returns a grid coverage that contains real values or sample values, depending if. ...">forConvertedValues(boolean)</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a06539.html#a673bc851e761babeb646365359f05875">GridCoverage.getView()</a>.</p>
 
 </div>
 </div>
-<a id="a75f29260f9728325050cd039109732b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75f29260f9728325050cd039109732b7">&#9670;&nbsp;</a></span>ty</h2>
+<a id="ac180948d623add7fb218d9f1af81ceb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac180948d623add7fb218d9f1af81ceb9">&#9670;&nbsp;</a></span>sampleDimensions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -493,15 +995,19 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int ty</td>
+          <td class="memname">final SampleDimension [] sampleDimensions</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of sample dimension (band) information for the grid coverage. </p>
+<p>Information include such things as description, the no data values, minimum and maximum values, <em>etc</em>. A coverage must have at least one sample dimension. The content of this array shall never be modified.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="a06539.html#a60e41e388a84548d37fa90cbd5dd8c8c" title="Returns information about the &lt;cite&gt;range&lt;/cite&gt; of this grid coverage. ">getSampleDimensions()</a> </dd></dl>
 
 </div>
 </div>
@@ -511,7 +1017,7 @@ Private Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03747.html">apache</a></li><li class="navelem"><a class="el" href="a03748.html">sis</a></li><li class="navelem"><a class="el" href="a03752.html">internal</a></li><li class="navelem"><a class="el" href="a03753.html">coverage</a></li><li class="navelem"><a class="el" href="a03751.html">j2d</a></li><li class="navelem"><a class="el" href="a06527.html">TileOpExecutor</a></li><li class="navelem"><a class="el" href="a06539.html">ReadWork</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03807.html">apache</a></li><li class="navelem"><a class="el" href="a03808.html">sis</a></li><li class="navelem"><a class="el" href="a03809.html">coverage</a></li><li class="navelem"><a class="el" href="a03805.html">grid</a></li><li class="navelem"><a class="el" href="a06539.html">GridCoverage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

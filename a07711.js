@@ -1,15 +1,20 @@
 var a07711 =
 [
-    [ "International", "a07719.html", "a07719" ],
-    [ "Keys", "a07715.html", "a07715" ],
-    [ "Vocabulary", "a07711.html#a8e57b5cd055fffc8543fca9edbf56fca", null ],
-    [ "format", "a07711.html#a6a28bf4ed15b946061619d84a67eefdc", null ],
-    [ "format", "a07711.html#afed51e22efeac75f6ec9a36aa6099af2", null ],
-    [ "format", "a07711.html#a8d4c35f328b9386fbe6599c4e1ef8577", null ],
-    [ "format", "a07711.html#af635db119352489fc85adb74abf42244", null ],
-    [ "formatInternational", "a07711.html#a5406b660af9b85b232e0536c91ae0a63", null ],
-    [ "formatInternational", "a07711.html#ab7d0acb13b5a650c5b5ddef8788604e0", null ],
-    [ "formatInternational", "a07711.html#a493fc4b2287b630687e933954ff16c6c", null ],
-    [ "getLabel", "a07711.html#ab83676c42b8bc370aaf7db85a6797a96", null ],
-    [ "getResources", "a07711.html#a337893308b8958a6d9cb598221a68649", null ]
+    [ "NewZealandMapGrid", "a07711.html#a04247900eb68539ac4688d4ffc20f045", null ],
+    [ "[static initializer]", "a07711.html#a2e87c5ede6b7235170d287cd2e254454", null ],
+    [ "createMathTransform", "a07711.html#a18fd2cc70a438bd7c02797415570c219", null ],
+    [ "getOperationType", "a07711.html#aa0ab8a8dcd0f0d099aac64f0b92d2de1", null ],
+    [ "sameNameAs", "a07711.html#ae7476925ddff42a20707cd2d210f6ce6", null ],
+    [ "sameParameterAs", "a07711.html#a53972f1c2c553bb5d272a9cc823c6062", null ],
+    [ "CENTRAL_MERIDIAN", "a07711.html#a103b72da3c965123251bbfb8e7d96153", null ],
+    [ "FALSE_EASTING", "a07711.html#a4db1353f8f59dca2bd2ad7e3666360b1", null ],
+    [ "FALSE_NORTHING", "a07711.html#ac674d9945acada0189d14c10f3097347", null ],
+    [ "LATITUDE_OF_ORIGIN", "a07711.html#a94cfdda279961bf01e756aa4217c4f7e", null ],
+    [ "PARAMETERS", "a07711.html#ab5e69de77a0ae51d2777912d2d63b133", null ],
+    [ "SEMI_MAJOR", "a07711.html#a3dcfb656c5e7adbcb9d68c7ad6745e7f", null ],
+    [ "SEMI_MINOR", "a07711.html#aec42dd028b5c673b9337911de44e2000", null ],
+    [ "serialVersionUID", "a07711.html#a3238d314ecdee14d2966760945d00c3b", null ],
+    [ "X_SCALE", "a07711.html#af4ad2bd6ed57caebe5986c6a8262ec55", null ],
+    [ "XY_PLANE_ROTATION", "a07711.html#ae3439a93b9abb72e107e9be681edae16", null ],
+    [ "Y_SCALE", "a07711.html#a333445bbc8b62a1154991e0e52498867", null ]
 ];

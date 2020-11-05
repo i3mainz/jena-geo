@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LengthToPoint Class Reference</title>
+<title>jena-geo: Split Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,34 +62,42 @@ $(document).ready(function(){initNavTree('a04939.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a04936.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LengthToPoint Class Reference</div>  </div>
+<div class="title">Split Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for LengthToPoint:</div>
+Inheritance diagram for Split:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04938.png" border="0" usemap="#LengthToPoint_inherit__map" alt="Inheritance graph"/></div>
-<map name="LengthToPoint_inherit__map" id="LengthToPoint_inherit__map">
+<div class="center"><img src="a04938.png" border="0" usemap="#Split_inherit__map" alt="Inheritance graph"/></div>
+<map name="Split_inherit__map" id="Split_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for LengthToPoint:</div>
+Collaboration diagram for Split:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04937.png" border="0" usemap="#LengthToPoint_coll__map" alt="Collaboration graph"/></div>
-<map name="LengthToPoint_coll__map" id="LengthToPoint_coll__map">
+<div class="center"><img src="a04937.png" border="0" usemap="#Split_coll__map" alt="Collaboration graph"/></div>
+<map name="Split_coll__map" id="Split_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04939.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
-<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5337fd861ad4940c5025973eef782d5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04939.html#af5337fd861ad4940c5025973eef782d5">exec</a> (NodeValue arg0, NodeValue arg1)</td></tr>
+<tr class="separator:af5337fd861ad4940c5025973eef782d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8447b1f7f6c9b9891eb753ab90ea8e31"><td class="memItemLeft" align="right" valign="top">static Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04939.html#a8447b1f7f6c9b9891eb753ab90ea8e31">polygonize</a> (Geometry geometry)</td></tr>
+<tr class="separator:a8447b1f7f6c9b9891eb753ab90ea8e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9f5bce8d97dd393f119f329e5cdb78"><td class="memItemLeft" align="right" valign="top">static Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04939.html#aba9f5bce8d97dd393f119f329e5cdb78">splitPolygon</a> (Geometry poly, Geometry line)</td></tr>
+<tr class="separator:aba9f5bce8d97dd393f119f329e5cdb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
+<a id="af5337fd861ad4940c5025973eef782d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5337fd861ad4940c5025973eef782d5">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,13 +106,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">NodeValue exec </td>
           <td>(</td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
+          <td class="paramname"><em>arg0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
+          <td class="paramname"><em>arg1</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -114,14 +122,77 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06423.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, <a class="el" href="a06423.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a06423.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+<p class="reference">References <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06511.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06511.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, <a class="el" href="a06511.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, <a class="el" href="a06511.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, <a class="el" href="a04939.html#aba9f5bce8d97dd393f119f329e5cdb78">Split.splitPolygon()</a>, and <a class="el" href="a06511.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                          {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            GeometryWrapper input = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            GeometryWrapper blade = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            GeometryWrapper transBlade = blade.transform(input.getSrsInfo());</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span>(input.getXYGeometry().getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;Polygon&quot;</span>)</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        &amp;&amp; transBlade.getXYGeometry().getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;LineString&quot;</span>)) {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                Geometry result=<a class="code" href="a04939.html#aba9f5bce8d97dd393f119f329e5cdb78">splitPolygon</a>(input.getXYGeometry(), transBlade.getXYGeometry());</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> GeometryWrapperFactory.createGeometry(result, input.getSrsURI(), input.getGeometryDatatypeURI()).asNodeValue();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(input.getXYGeometry().getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;LineString&quot;</span>) </div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        &amp;&amp; input.getXYGeometry().getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;Point&quot;</span>)) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;Constellation of input geometries is not supported by this Split operator&quot;</span>);       </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;Constellation of input geometries is not supported by this Split operator&quot;</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException | TransformException ex) {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="ttc" id="a04939_html_aba9f5bce8d97dd393f119f329e5cdb78"><div class="ttname"><a href="a04939.html#aba9f5bce8d97dd393f119f329e5cdb78">de.hsmainz.cs.semgis.arqextension.geometry.transform.Split.splitPolygon</a></div><div class="ttdeci">static Geometry splitPolygon(Geometry poly, Geometry line)</div><div class="ttdef"><b>Definition:</b> Split.java:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8447b1f7f6c9b9891eb753ab90ea8e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8447b1f7f6c9b9891eb753ab90ea8e31">&#9670;&nbsp;</a></span>polygonize()</h2>
 
-<p class="reference">Referenced by <a class="el" href="a08699.html#a7f7a47ff1561899ff3811348ec283964">LengthToPointTest.testLengthToPoint()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                          {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                GeometryWrapper geom1 = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        GeometryWrapper geom2 = GeometryWrapper.extract(v2);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        GeometryWrapper transGeom2;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                transGeom2 = geom2.transform(geom1.getSrsInfo());</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                <span class="keywordflow">if</span>(geom1.getXYGeometry().getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;LineString&quot;</span>) &amp;&amp; </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                transGeom2.getXYGeometry().getGeometryType().equalsIgnoreCase(<span class="stringliteral">&quot;Point&quot;</span>)) {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                        LineString line=(LineString) geom1.getXYGeometry();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                        Point point=(Point) transGeom2.getXYGeometry();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                        <span class="comment">//Double minDistance=Double.MAX_VALUE;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                        <a class="code" href="a03746.html">org</a>.<a class="code" href="a03822.html">locationtech</a>.<a class="code" href="a03832.html">jump</a>.<a class="code" href="a03831.html">algorithm</a>.<a class="code" href="a08191.html">LengthToPoint</a> ltop=<span class="keyword">new</span> <a class="code" href="a03746.html">org</a>.<a class="code" href="a03822.html">locationtech</a>.<a class="code" href="a03832.html">jump</a>.<a class="code" href="a03831.html">algorithm</a>.<a class="code" href="a08191.html">LengthToPoint</a>(line, point.getCoordinate());</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                        <span class="keywordflow">return</span> NodeValue.makeDouble(ltop.getLength());</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;Input geometries were not a point and a linestring&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        } <span class="keywordflow">catch</span> (MismatchedDimensionException | TransformException | FactoryException e) {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                <span class="comment">// TODO Auto-generated catch block</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                e.printStackTrace();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;An exception occurred: &quot;</span>+e.getMessage());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="ttc" id="a03822_html"><div class="ttname"><a href="a03822.html">org.locationtech</a></div></div>
-<div class="ttc" id="a03746_html"><div class="ttname"><a href="a03746.html">org</a></div></div>
-<div class="ttc" id="a03832_html"><div class="ttname"><a href="a03832.html">org.locationtech.jump</a></div></div>
-<div class="ttc" id="a03831_html"><div class="ttname"><a href="a03831.html">org.locationtech.jump.algorithm</a></div><div class="ttdef"><b>Definition:</b> LengthSubstring.java:1</div></div>
-<div class="ttc" id="a08191_html"><div class="ttname"><a href="a08191.html">org.locationtech.jump.algorithm.LengthToPoint</a></div><div class="ttdoc">Computes the length along a LineString to the point on the line nearest a given point. </div><div class="ttdef"><b>Definition:</b> org/locationtech/jump/algorithm/LengthToPoint.java:13</div></div>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Geometry polygonize </td>
+          <td>(</td>
+          <td class="paramtype">Geometry&#160;</td>
+          <td class="paramname"><em>geometry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a04939.html#aba9f5bce8d97dd393f119f329e5cdb78">Split.splitPolygon()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                         {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        List lines = LineStringExtracter.getLines(geometry);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Polygonizer polygonizer = <span class="keyword">new</span> Polygonizer();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        polygonizer.add(lines);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Collection polys = polygonizer.getPolygons();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        Polygon[] polyArray = GeometryFactory.toPolygonArray(polys);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> geometry.getFactory().createGeometryCollection(polyArray);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aba9f5bce8d97dd393f119f329e5cdb78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9f5bce8d97dd393f119f329e5cdb78">&#9670;&nbsp;</a></span>splitPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Geometry splitPolygon </td>
+          <td>(</td>
+          <td class="paramtype">Geometry&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Geometry&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04939.html#a8447b1f7f6c9b9891eb753ab90ea8e31">Split.polygonize()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a04939.html#af5337fd861ad4940c5025973eef782d5">Split.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                      {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        Geometry nodedLinework = poly.getBoundary().union(line);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        Geometry polys = <a class="code" href="a04939.html#a8447b1f7f6c9b9891eb753ab90ea8e31">polygonize</a>(nodedLinework);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// Only keep polygons which are inside the input</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        List output = <span class="keyword">new</span> ArrayList();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; polys.getNumGeometries(); i++) {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Polygon candpoly = (Polygon) polys.getGeometryN(i);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (poly.contains(candpoly.getInteriorPoint())) {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                output.add(candpoly);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> poly.getFactory().createGeometryCollection(GeometryFactory.toGeometryArray(output));</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div><div class="ttc" id="a04939_html_a8447b1f7f6c9b9891eb753ab90ea8e31"><div class="ttname"><a href="a04939.html#a8447b1f7f6c9b9891eb753ab90ea8e31">de.hsmainz.cs.semgis.arqextension.geometry.transform.Split.polygonize</a></div><div class="ttdeci">static Geometry polygonize(Geometry geometry)</div><div class="ttdef"><b>Definition:</b> Split.java:58</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -131,7 +202,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03700.html">linestring</a></li><li class="navelem"><a class="el" href="a03699.html">attribute</a></li><li class="navelem"><a class="el" href="a04939.html">LengthToPoint</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03750.html">geometry</a></li><li class="navelem"><a class="el" href="a03758.html">transform</a></li><li class="navelem"><a class="el" href="a04939.html">Split</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

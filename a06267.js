@@ -1,11 +1,11 @@
 var a06267 =
 [
-    [ "DataTypeCase", "a06267.html#ae1ed0e403e903bfe970b8b753ff83887", null ],
-    [ "getNumber", "a06267.html#a26b2bb379b3e56aedd0bd8846ed6aa7b", null ],
-    [ "valueOf", "a06267.html#a622395379b1a4a34b574dc7b2a791333", null ],
-    [ "DATATYPE_NOT_SET", "a06267.html#ab38fc07dbbe7b107c1a66958b5ee7a0d", null ],
-    [ "FEATURE", "a06267.html#a84a8847c4124b284d1d5ae20bc9be583", null ],
-    [ "FEATURE_COLLECTION", "a06267.html#a495c815c8d7e4f9fb304e0ba33439697", null ],
-    [ "GEOMETRY", "a06267.html#a80274176007424103d239bf9a975ef46", null ],
-    [ "value", "a06267.html#ac4f474c82e82cbb89ca7c36dd52be0ed", null ]
+    [ "Nodes", "a06271.html", "a06271" ],
+    [ "resource", "a06267.html#a80ae0caea829b764fec303825155b800", null ],
+    [ "degree", "a06267.html#ad22354116635c20bc50c0f29d69af8b0", null ],
+    [ "GridSpacing", "a06267.html#a1818843d75620fa217d1c7e072c18ba2", null ],
+    [ "metre", "a06267.html#abf83673894fb28f3d68794dc810a54dc", null ],
+    [ "radian", "a06267.html#a38b493918252197ef82b4161be1b6b72", null ],
+    [ "unity", "a06267.html#ac39d247bc57eda4b1df49883fd11db40", null ],
+    [ "uri", "a06267.html#aab0f23ef8a524efbe3d751ae18c972c5", null ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: ShortestLine3D Class Reference</title>
+<title>jena-geo: FrechetDistance Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,32 +64,38 @@ $(document).ready(function(){initNavTree('a04675.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04672.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ShortestLine3D Class Reference</div>  </div>
+<div class="title">FrechetDistance Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Returns the Fréchet distance between two geometries.  
+ <a href="a04675.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for ShortestLine3D:</div>
+Inheritance diagram for FrechetDistance:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04674.png" border="0" usemap="#ShortestLine3D_inherit__map" alt="Inheritance graph"/></div>
-<map name="ShortestLine3D_inherit__map" id="ShortestLine3D_inherit__map">
+<div class="center"><img src="a04674.png" border="0" usemap="#FrechetDistance_inherit__map" alt="Inheritance graph"/></div>
+<map name="FrechetDistance_inherit__map" id="FrechetDistance_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for ShortestLine3D:</div>
+Collaboration diagram for FrechetDistance:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04673.png" border="0" usemap="#ShortestLine3D_coll__map" alt="Collaboration graph"/></div>
-<map name="ShortestLine3D_coll__map" id="ShortestLine3D_coll__map">
+<div class="center"><img src="a04673.png" border="0" usemap="#FrechetDistance_coll__map" alt="Collaboration graph"/></div>
+<map name="FrechetDistance_coll__map" id="FrechetDistance_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5337fd861ad4940c5025973eef782d5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04675.html#af5337fd861ad4940c5025973eef782d5">exec</a> (NodeValue arg0, NodeValue arg1)</td></tr>
-<tr class="separator:af5337fd861ad4940c5025973eef782d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084e892d3d5d0a47151e34261fac8052"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04675.html#a084e892d3d5d0a47151e34261fac8052">exec</a> (NodeValue arg0, NodeValue arg1, NodeValue arg2)</td></tr>
+<tr class="separator:a084e892d3d5d0a47151e34261fac8052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5337fd861ad4940c5025973eef782d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5337fd861ad4940c5025973eef782d5">&#9670;&nbsp;</a></span>exec()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Returns the Fréchet distance between two geometries. </p>
+<p>This is a measure of similarity between curves that takes into account the location and ordering of the points along the curves. Units are in the units of the spatial reference system of the geometries. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a084e892d3d5d0a47151e34261fac8052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084e892d3d5d0a47151e34261fac8052">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,7 +110,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>arg2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -114,8 +126,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06423.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06423.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, <a class="el" href="a06423.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, <a class="el" href="a06423.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a06423.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                              {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                 <span class="keywordflow">try</span> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                    GeometryWrapper geometry1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                    GeometryWrapper geometry2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                    GeometryWrapper transGeometry2 = geometry2.transform(geometry1.getSrsInfo());</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    Distance3DOp distop = <span class="keyword">new</span> Distance3DOp(geometry1.getXYGeometry(), transGeometry2.getXYGeometry());</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    Coordinate[] coord = distop.nearestPoints();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createLineString(coord, geometry1.getSrsURI(), geometry1.getGeometryDatatypeURI());</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keywordflow">return</span> lineStringWrapper.asNodeValue();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                } <span class="keywordflow">catch</span> (<a class="code" href="a13963.html">Exception</a> ex) {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeString(ex.getMessage());</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    <span class="comment">//throw new ExprEvalException(ex.getMessage(), ex);</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div><div class="ttc" id="a13963_html"><div class="ttname"><a href="a13963.html">Exception</a></div></div>
+<p class="reference">References <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06511.html#a4eeeb44dd9300963ec4f50a73598a5d3">GeometryWrapper.getSRID()</a>, <a class="el" href="a06511.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a06511.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08603.html#a5bff1004c37a0e341e5f332b85af5df7">FrechetDistanceTest.testFrechetDistance()</a>, and <a class="el" href="a08603.html#ab636329ee1caf67c720cde627e984ebf">FrechetDistanceTest.testFrechetDistance2()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                                                              {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        GeometryWrapper geom1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        GeometryWrapper geom2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        GeometryWrapper transGeom2 = geom2.transform(geom1.getSRID());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                Double densifyFrac=arg2.getDouble();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="code" href="a03792.html">heigit</a>.<a class="code" href="a03793.html">ors</a>.<a class="code" href="a03791.html">util</a>.<a class="code" href="a06363.html">FrechetDistance</a> frechet=<span class="keyword">new</span> <a class="code" href="a03792.html">heigit</a>.<a class="code" href="a03793.html">ors</a>.<a class="code" href="a03791.html">util</a>.<a class="code" href="a06363.html">FrechetDistance</a>(geom1.getXYGeometry().getCoordinates(), transGeom2.getXYGeometry().getCoordinates());</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeDouble(frechet.computeFrechetDistance());</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        } <span class="keywordflow">catch</span> (MismatchedDimensionException | TransformException | FactoryException e) {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        <span class="comment">// TODO Auto-generated catch block</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        e.printStackTrace();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div><div class="ttc" id="a03793_html"><div class="ttname"><a href="a03793.html">heigit.ors</a></div></div>
+<div class="ttc" id="a03791_html"><div class="ttname"><a href="a03791.html">heigit.ors.util</a></div><div class="ttdef"><b>Definition:</b> heigit/ors/util/FrechetDistance.java:1</div></div>
+<div class="ttc" id="a06363_html"><div class="ttname"><a href="a06363.html">heigit.ors.util.FrechetDistance</a></div><div class="ttdef"><b>Definition:</b> heigit/ors/util/FrechetDistance.java:17</div></div>
+<div class="ttc" id="a03792_html"><div class="ttname"><a href="a03792.html">heigit</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -125,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03690.html">geometry</a></li><li class="navelem"><a class="el" href="a03695.html">relation</a></li><li class="navelem"><a class="el" href="a04675.html">ShortestLine3D</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03750.html">geometry</a></li><li class="navelem"><a class="el" href="a03755.html">relation</a></li><li class="navelem"><a class="el" href="a04675.html">FrechetDistance</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

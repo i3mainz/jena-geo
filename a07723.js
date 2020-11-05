@@ -1,18 +1,12 @@
 var a07723 =
 [
-    [ "AbstractResource", "a07723.html#a053e0191431aa93d8a771aad81604b71", null ],
-    [ "AbstractResource", "a07723.html#a9a9ce0650ea20a7735bf43286f3ac66f", null ],
-    [ "AbstractResource", "a07723.html#ac3c51bec6e726f822b1379eb2cffb5b3", null ],
-    [ "AbstractResource", "a07723.html#aec0a366902b0aed8a13342256725ee37", null ],
-    [ "addListener", "a07723.html#abe82452a43ca55ea0fa6bfa26d12348d", null ],
-    [ "createMetadata", "a07723.html#ae838e446eb4ba7422dcdea347a4bd7fb", null ],
-    [ "forwardEvent", "a07723.html#a102930adafb3f0b356c51c15677b27b0", null ],
-    [ "getIdentifier", "a07723.html#a337d71dd87616b08836dacd4a3b1ba58", null ],
-    [ "getMetadata", "a07723.html#a1951f1407c08c90de9973b9b5316d5bd", null ],
-    [ "removeListener", "a07723.html#a20aae1ede302e65839c69726c83e3e3a", null ],
-    [ "sendEvent", "a07723.html#ac8fd4c3e4521c565651cef847c570442", null ],
-    [ "toString", "a07723.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "identifier", "a07723.html#a6df0ca103b56b4d861d94fa5cb75e0d7", null ],
-    [ "listeners", "a07723.html#ae0d3a9cfc3827e8859dcdba53a58fb88", null ],
-    [ "metadata", "a07723.html#a5fa91702b5f3e9aca4a5b724facf21fb", null ]
+    [ "Inverse", "a07727.html", "a07727" ],
+    [ "AbstractMathTransform", "a07723.html#a8ae44eabafd231ad62a118a207a17d3b", null ],
+    [ "createTransformedShape", "a07723.html#a7c122bf019cb2cc5b390d2e3300e37d6", null ],
+    [ "derivative", "a07723.html#ab9fc607009e9ce685be1d5f49fd5eb83", null ],
+    [ "ensureNonNull", "a07723.html#a676c6e59e16b6f62dc142e287fbab5f9", null ],
+    [ "formatTo", "a07723.html#a25f94cf0f4c5e57980b944286464ec92", null ],
+    [ "getName", "a07723.html#a78ee178b6a73658d65ca60da4d1e6683", null ],
+    [ "mismatchedDimension", "a07723.html#ad2a419e3aa81af359b8f4b7515d0979b", null ],
+    [ "transform", "a07723.html#a44d37c18902f5d7e46ed007c000c6dda", null ]
 ];

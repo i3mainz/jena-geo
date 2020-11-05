@@ -1,5 +1,6 @@
 var a08747 =
 [
-    [ "testRemovePoint", "a08747.html#a5e9b64ff404fa9347af445dc61f510b7", null ],
-    [ "lineString", "a08747.html#a76e109dc83d6f4d16fcd2fa3e73054f6", null ]
+    [ "testSnap", "a08747.html#aa8a249951d6b07770ca87514b527e8c8", null ],
+    [ "testPolygon", "a08747.html#a1e3187cbc25299380589200c398b3ffd", null ],
+    [ "testPolygon2", "a08747.html#a882729aec95621b4ad261714738ae3fd", null ]
 ];

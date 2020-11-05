@@ -1,8 +1,11 @@
 var a09147 =
 [
+    [ "displayRasterSummary", "a09147.html#a58e2b02539026083b8e4a001ac84f63c", null ],
+    [ "displayRasterSummary", "a09147.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09147.html#af8afdd14b38b523d100805364a48ed63", null ],
     [ "getSampleRGBRaster", "a09147.html#afac6500e31befe34d15832bae188fd51", null ],
-    [ "testWorldToRasterCoord", "a09147.html#a4c973c81ca801ba3f2f23b0712cb9f38", null ],
+    [ "testSubtractConst", "a09147.html#aded17137e40500ef58611d80139e12b5", null ],
+    [ "combinedRasterLiteral", "a09147.html#a6efe8702be34a67e2bcbba55588c5b5f", null ],
     [ "covJSONString1", "a09147.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09147.html#a55fb5b5d665417265da09403128e396e", null ],
     [ "minwkbString", "a09147.html#aa5e2b5a6005895fc20b9f35523569430", null ],

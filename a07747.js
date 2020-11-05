@@ -1,11 +1,6 @@
 var a07747 =
 [
-    [ "canProcess", "a07747.html#a4aff32977a23d7b0a5bbe1e16a60a83c", null ],
-    [ "checkIdentifier", "a07747.html#a078e22c4628781778a3e8ca311b73702", null ],
-    [ "create", "a07747.html#a9ba292f0334916356e3b1132fa4908bc", null ],
-    [ "createFixedIdentifier", "a07747.html#ada3161ed65ea792018ba3357be30b9e3", null ],
-    [ "ensureCanProcess", "a07747.html#abc9fb4eb0367d5a5e46305017b492629", null ],
-    [ "open", "a07747.html#ab0b47f5a78dfd5a0272c6969769392d7", null ],
-    [ "probeContent", "a07747.html#af427a4892378ec2d900b224a80d53070", null ],
-    [ "IDENTIFIER", "a07747.html#a61b40ca566d6155bf02709c2f967ff54", null ]
+    [ "LOCALIZATION", "a07747.html#a98bcca2bbefab54c92e47741132d25a9", null ],
+    [ "NADCON", "a07747.html#a6fd3948b81f6ef0a1e6ad647a2f78078", null ],
+    [ "OFFSET", "a07747.html#abf4b83c5ad3ff0f7b84bc29139b0fdac", null ]
 ];

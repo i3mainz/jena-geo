@@ -1,13 +1,16 @@
 var a08019 =
 [
-    [ "Integer", "a08019.html#a67ff506bdddeda5e0f9cc1b941237ea7", null ],
-    [ "compareTo", "a08019.html#a98a51d8ad1e5503c87f17878896c7d88", null ],
-    [ "ranks", "a08019.html#abb150dc13c316a480c404b1703c03990", null ],
-    [ "ranks", "a08019.html#a7e3ac659899192333adea39b87f41331", null ],
-    [ "ranks", "a08019.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
-    [ "ranks", "a08019.html#abb82129695e9a7b212788912ccc45539", null ],
-    [ "ranks", "a08019.html#ad3b1488acd654783f7a4dc632814441f", null ],
-    [ "ranks", "a08019.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
-    [ "ranks", "a08019.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
-    [ "value", "a08019.html#a899c1b74df7f8fda2fcd2c85d9185da8", null ]
+    [ "DateRange", "a08019.html#aa4c9ee3da9dafc70fe5bfdd40504cc81", null ],
+    [ "DateRange", "a08019.html#a1975cd86f3bcda5878033bc41a6a4b38", null ],
+    [ "DateRange", "a08019.html#a8f703de7bc844a579c2febd8241f8d72", null ],
+    [ "DateRange", "a08019.html#ac4e52d1e65fa55048fc65f25aca3dd9e", null ],
+    [ "cast", "a08019.html#a6bfce4f6f5b0e1e9f713320da77eecd9", null ],
+    [ "clone", "a08019.html#ad57a70e638b1bdfb0941635b1ee1495c", null ],
+    [ "getConverter", "a08019.html#aab7dc1fe769f5c3e2dd2113cca65e5b8", null ],
+    [ "getMaxValue", "a08019.html#a6b3f8efbe6378153b07a39421693a397", null ],
+    [ "getMinValue", "a08019.html#ab64abf0c6674ecd270cb7a735771da99", null ],
+    [ "intersect", "a08019.html#a370acd306a3e1ee02c8384ee54b540fc", null ],
+    [ "subtract", "a08019.html#a6f82c2a1527ddb96c85cad5e00585b9f", null ],
+    [ "union", "a08019.html#a02bb0451371c3c41b9aa7f504a974b4e", null ],
+    [ "serialVersionUID", "a08019.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

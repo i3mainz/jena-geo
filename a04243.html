@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: IsValidReason Class Reference</title>
+<title>jena-geo: Dimension Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,21 @@ $(document).ready(function(){initNavTree('a04243.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04240.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IsValidReason Class Reference</div>  </div>
+<div class="title">Dimension Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for IsValidReason:</div>
+Inheritance diagram for Dimension:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04242.png" border="0" usemap="#IsValidReason_inherit__map" alt="Inheritance graph"/></div>
-<map name="IsValidReason_inherit__map" id="IsValidReason_inherit__map">
+<div class="center"><img src="a04242.png" border="0" usemap="#Dimension_inherit__map" alt="Inheritance graph"/></div>
+<map name="Dimension_inherit__map" id="Dimension_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for IsValidReason:</div>
+Collaboration diagram for Dimension:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04241.png" border="0" usemap="#IsValidReason_coll__map" alt="Collaboration graph"/></div>
-<map name="IsValidReason_coll__map" id="IsValidReason_coll__map">
+<div class="center"><img src="a04241.png" border="0" usemap="#Dimension_coll__map" alt="Collaboration graph"/></div>
+<map name="Dimension_coll__map" id="Dimension_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -104,8 +104,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06423.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                          {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            Geometry geom = geometry.getParsingGeometry();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            IsValidOp isvalid = <span class="keyword">new</span> IsValidOp(geom);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            TopologyValidationError error = isvalid.getValidationError();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (error != null) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(error.toString());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(<span class="stringliteral">&quot;Valid Geometry&quot;</span>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06511.html#a65232977958a1536feb315cb4118c8e5">GeometryWrapper.getTopologicalDimension()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span> NodeValue.makeInteger(geometry.getTopologicalDimension());</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03690.html">geometry</a></li><li class="navelem"><a class="el" href="a03691.html">attribute</a></li><li class="navelem"><a class="el" href="a04243.html">IsValidReason</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03750.html">geometry</a></li><li class="navelem"><a class="el" href="a03751.html">attribute</a></li><li class="navelem"><a class="el" href="a04243.html">Dimension</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

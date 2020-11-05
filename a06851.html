@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LargeCache Class Reference</title>
+<title>jena-geo: PlanarConfiguration Enum Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,145 +61,39 @@ $(document).ready(function(){initNavTree('a06851.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a06848.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LargeCache Class Reference</div>  </div>
+<div class="title">PlanarConfiguration Enum Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Manage <a class="el" href="">RenderedImage</a> and its <a class="el" href="">Raster</a> to don't exceed JVM memory capacity.  
+<p>Define internaly <a class="el" href="">SampleModel</a> planar configuration.  
  <a href="a06851.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for LargeCache:</div>
-<div class="dyncontent">
-<div class="center"><img src="a06850.png" border="0" usemap="#LargeCache_inherit__map" alt="Inheritance graph"/></div>
-<map name="LargeCache_inherit__map" id="LargeCache_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for LargeCache:</div>
-<div class="dyncontent">
-<div class="center"><img src="a06849.png" border="0" usemap="#LargeCache_coll__map" alt="Collaboration graph"/></div>
-<map name="LargeCache_coll__map" id="LargeCache_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:addc752b401012d303ef6d3ec8a216a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#addc752b401012d303ef6d3ec8a216a63">add</a> (RenderedImage ri, int tileX, int tileY, Raster raster)</td></tr>
-<tr class="memdesc:addc752b401012d303ef6d3ec8a216a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#addc752b401012d303ef6d3ec8a216a63">More...</a><br /></td></tr>
-<tr class="separator:addc752b401012d303ef6d3ec8a216a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26aacc64c8216089a331a7a3267cd10d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a26aacc64c8216089a331a7a3267cd10d">remove</a> (RenderedImage ri, int tileX, int tileY)</td></tr>
-<tr class="memdesc:a26aacc64c8216089a331a7a3267cd10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a26aacc64c8216089a331a7a3267cd10d">More...</a><br /></td></tr>
-<tr class="separator:a26aacc64c8216089a331a7a3267cd10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d892d0499aa412e02f01962847b5ef3"><td class="memItemLeft" align="right" valign="top">Raster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a0d892d0499aa412e02f01962847b5ef3">getTile</a> (RenderedImage ri, int tileX, int tileY)</td></tr>
-<tr class="memdesc:a0d892d0499aa412e02f01962847b5ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a0d892d0499aa412e02f01962847b5ef3">More...</a><br /></td></tr>
-<tr class="separator:a0d892d0499aa412e02f01962847b5ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b92c36f5eb1a79efa217776bff1450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ac1b92c36f5eb1a79efa217776bff1450">removeTiles</a> (RenderedImage ri)</td></tr>
-<tr class="memdesc:ac1b92c36f5eb1a79efa217776bff1450"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#ac1b92c36f5eb1a79efa217776bff1450">More...</a><br /></td></tr>
-<tr class="separator:ac1b92c36f5eb1a79efa217776bff1450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79979ce76518ba6d87984dd014b498c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a79979ce76518ba6d87984dd014b498c0">addTiles</a> (RenderedImage ri, Point[] points, Raster[] rasters, <a class="el" href="a13339.html">Object</a> o)</td></tr>
-<tr class="memdesc:a79979ce76518ba6d87984dd014b498c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a79979ce76518ba6d87984dd014b498c0">More...</a><br /></td></tr>
-<tr class="separator:a79979ce76518ba6d87984dd014b498c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827bdda258a74582f2a9b06abe53dbfa"><td class="memItemLeft" align="right" valign="top">Raster []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a827bdda258a74582f2a9b06abe53dbfa">getTiles</a> (RenderedImage ri, Point[] points)</td></tr>
-<tr class="memdesc:a827bdda258a74582f2a9b06abe53dbfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a827bdda258a74582f2a9b06abe53dbfa">More...</a><br /></td></tr>
-<tr class="separator:a827bdda258a74582f2a9b06abe53dbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeefa623b726b8faf9766192a49bb325f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#aeefa623b726b8faf9766192a49bb325f">setMemoryCapacity</a> (long l)</td></tr>
-<tr class="memdesc:aeefa623b726b8faf9766192a49bb325f"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#aeefa623b726b8faf9766192a49bb325f">More...</a><br /></td></tr>
-<tr class="separator:aeefa623b726b8faf9766192a49bb325f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991d1580034f81abda068aac29fc103b"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a991d1580034f81abda068aac29fc103b">getMemoryCapacity</a> ()</td></tr>
-<tr class="memdesc:a991d1580034f81abda068aac29fc103b"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a991d1580034f81abda068aac29fc103b">More...</a><br /></td></tr>
-<tr class="separator:a991d1580034f81abda068aac29fc103b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1641c5dcfb6d13e1b945896696aea929"><td class="memItemLeft" align="right" valign="top">Raster []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a1641c5dcfb6d13e1b945896696aea929">getTiles</a> (RenderedImage ri)</td></tr>
-<tr class="memdesc:a1641c5dcfb6d13e1b945896696aea929"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a1641c5dcfb6d13e1b945896696aea929">More...</a><br /></td></tr>
-<tr class="separator:a1641c5dcfb6d13e1b945896696aea929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5491a325e68e580713c6add9470bbeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#aa5491a325e68e580713c6add9470bbeb">setMemoryThreshold</a> (float f)</td></tr>
-<tr class="memdesc:aa5491a325e68e580713c6add9470bbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#aa5491a325e68e580713c6add9470bbeb">More...</a><br /></td></tr>
-<tr class="separator:aa5491a325e68e580713c6add9470bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d252c5049d30782458c357d7e49d29e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a5d252c5049d30782458c357d7e49d29e">getMemoryThreshold</a> ()</td></tr>
-<tr class="memdesc:a5d252c5049d30782458c357d7e49d29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a5d252c5049d30782458c357d7e49d29e">More...</a><br /></td></tr>
-<tr class="separator:a5d252c5049d30782458c357d7e49d29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c35f5e9c99c58a5ee6a00c0490dd8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a67c35f5e9c99c58a5ee6a00c0490dd8f">setTileComparator</a> (Comparator cmprtr)</td></tr>
-<tr class="memdesc:a67c35f5e9c99c58a5ee6a00c0490dd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a67c35f5e9c99c58a5ee6a00c0490dd8f">More...</a><br /></td></tr>
-<tr class="separator:a67c35f5e9c99c58a5ee6a00c0490dd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ae042ca77ed402f26ec91991c10887a"><td class="memItemLeft" align="right" valign="top">Comparator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a8ae042ca77ed402f26ec91991c10887a">getTileComparator</a> ()</td></tr>
-<tr class="memdesc:a8ae042ca77ed402f26ec91991c10887a"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a8ae042ca77ed402f26ec91991c10887a">More...</a><br /></td></tr>
-<tr class="separator:a8ae042ca77ed402f26ec91991c10887a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac116554b543b7c4228c018a85882f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#adac116554b543b7c4228c018a85882f5">flush</a> ()</td></tr>
-<tr class="memdesc:adac116554b543b7c4228c018a85882f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#adac116554b543b7c4228c018a85882f5">More...</a><br /></td></tr>
-<tr class="separator:adac116554b543b7c4228c018a85882f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69798bd6809ab0fafe4efcbf6c0d07e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a69798bd6809ab0fafe4efcbf6c0d07e8">memoryControl</a> ()</td></tr>
-<tr class="memdesc:a69798bd6809ab0fafe4efcbf6c0d07e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a69798bd6809ab0fafe4efcbf6c0d07e8">More...</a><br /></td></tr>
-<tr class="separator:a69798bd6809ab0fafe4efcbf6c0d07e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674f480e1a06deaf3d4ca2b1879cc762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a674f480e1a06deaf3d4ca2b1879cc762">setTileCapacity</a> (int i)</td></tr>
-<tr class="memdesc:a674f480e1a06deaf3d4ca2b1879cc762"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#a674f480e1a06deaf3d4ca2b1879cc762">More...</a><br /></td></tr>
-<tr class="separator:a674f480e1a06deaf3d4ca2b1879cc762"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c78d7cd5e6e8f6b3551b06f7630a18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ab6c78d7cd5e6e8f6b3551b06f7630a18">getTileCapacity</a> ()</td></tr>
-<tr class="memdesc:ab6c78d7cd5e6e8f6b3551b06f7630a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#ab6c78d7cd5e6e8f6b3551b06f7630a18">More...</a><br /></td></tr>
-<tr class="separator:ab6c78d7cd5e6e8f6b3551b06f7630a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6b9413c3c4b5334a45d04dfc764df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#aeb6b9413c3c4b5334a45d04dfc764df4">add</a> (RenderedImage ri, int i, int i1, Raster raster, <a class="el" href="a13339.html">Object</a> o)</td></tr>
-<tr class="memdesc:aeb6b9413c3c4b5334a45d04dfc764df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">.  <a href="#aeb6b9413c3c4b5334a45d04dfc764df4">More...</a><br /></td></tr>
-<tr class="separator:aeb6b9413c3c4b5334a45d04dfc764df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70b1ff77c820fe2b3e403bb560f28b83"><td class="memItemLeft" align="right" valign="top">static synchronized <a class="el" href="a06851.html">LargeCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a70b1ff77c820fe2b3e403bb560f28b83">getInstance</a> ()</td></tr>
-<tr class="separator:a70b1ff77c820fe2b3e403bb560f28b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5e13f8adf7c20156bdc8c032c14645"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06851.html">PlanarConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#abf5e13f8adf7c20156bdc8c032c14645">valueOf</a> (int planardConfiguration)</td></tr>
+<tr class="memdesc:abf5e13f8adf7c20156bdc8c032c14645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between <a class="el" href="">ImageUtils#getPlanarConfiguration(java.awt.image.ColorModel)</a> and <a class="el" href="">org.geotoolkit.image.internal.PlanarConfiguration</a> enum.  <a href="#abf5e13f8adf7c20156bdc8c032c14645">More...</a><br /></td></tr>
+<tr class="separator:abf5e13f8adf7c20156bdc8c032c14645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b135e20e389d3d6bb22ee9985d4ee2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a83b135e20e389d3d6bb22ee9985d4ee2">valueOf</a> (final <a class="el" href="a06851.html">PlanarConfiguration</a> planardConfiguration)</td></tr>
+<tr class="memdesc:a83b135e20e389d3d6bb22ee9985d4ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between <a class="el" href="">org.geotoolkit.image.internal.PlanarConfiguration</a> enum and <a class="el" href="">ImageUtils#getPlanarConfiguration(java.awt.image.ColorModel)</a>.  <a href="#a83b135e20e389d3d6bb22ee9985d4ee2">More...</a><br /></td></tr>
+<tr class="separator:a83b135e20e389d3d6bb22ee9985d4ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a8f655df9eb20ab7abbbe886ad45baa18"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a8f655df9eb20ab7abbbe886ad45baa18">isEnableSwap</a> ()</td></tr>
-<tr class="separator:a8f655df9eb20ab7abbbe886ad45baa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1db603052c78b286fce6eed536a14d7c"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a1db603052c78b286fce6eed536a14d7c">getCacheSizePerImage</a> ()</td></tr>
-<tr class="separator:a1db603052c78b286fce6eed536a14d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad9fc0580b2a911056d3e5f97a6fdc871"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache</a> (long <a class="el" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a>, boolean <a class="el" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">enableSwap</a>)</td></tr>
-<tr class="separator:ad9fc0580b2a911056d3e5f97a6fdc871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7810aab3ecd314463d0fccd24e32b619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a06847.html">ImageTilesCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">getOrCreateLargeMap</a> (final RenderedImage source)  throws IOException </td></tr>
-<tr class="memdesc:a7810aab3ecd314463d0fccd24e32b619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cache system associated to the given rendered image.  <a href="#a7810aab3ecd314463d0fccd24e32b619">More...</a><br /></td></tr>
-<tr class="separator:a7810aab3ecd314463d0fccd24e32b619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae3d437dcc4aa35309742d51d8adc33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">updateLList</a> ()</td></tr>
-<tr class="memdesc:a4ae3d437dcc4aa35309742d51d8adc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affect a new memory capacity and update <a class="el" href="">Raster</a> list from new memory capacity set.  <a href="#a4ae3d437dcc4aa35309742d51d8adc33">More...</a><br /></td></tr>
-<tr class="separator:a4ae3d437dcc4aa35309742d51d8adc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac74dcc80f7758126848a3f2859dd9dc4"><td class="memItemLeft" align="right" valign="top">final ReferenceQueue&lt; RenderedImage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ac74dcc80f7758126848a3f2859dd9dc4">phantomQueue</a> = new ReferenceQueue&lt;&gt;()</td></tr>
-<tr class="separator:ac74dcc80f7758126848a3f2859dd9dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873ffce3518434f955ff9651c4857cde"><td class="memItemLeft" align="right" valign="top">volatile long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a></td></tr>
-<tr class="separator:a873ffce3518434f955ff9651c4857cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac496b0076ef4bbebbe900de4f4a3fd1f"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">enableSwap</a></td></tr>
-<tr class="separator:ac496b0076ef4bbebbe900de4f4a3fd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd45b988832b5a40153d2d6f65c528c8"><td class="memItemLeft" align="right" valign="top">final WeakHashMap&lt; RenderedImage, <a class="el" href="a06847.html">ImageTilesCache</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a> = new WeakHashMap&lt;&gt;()</td></tr>
-<tr class="memdesc:abd45b988832b5a40153d2d6f65c528c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a tile manager for each cached rendered image.  <a href="#abd45b988832b5a40153d2d6f65c528c8">More...</a><br /></td></tr>
-<tr class="separator:abd45b988832b5a40153d2d6f65c528c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e6e54188500a229e782cba5a23899f"><td class="memItemLeft" align="right" valign="top">final Set&lt; <a class="el" href="a06847.html">ImageTilesCache</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ad7e6e54188500a229e782cba5a23899f">largemaps</a> = new HashSet&lt;&gt;()</td></tr>
-<tr class="separator:ad7e6e54188500a229e782cba5a23899f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:ab1d069f56091df4f6436f8c713ab2f39"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a> = Logging.getLogger(&quot;org.geotoolkit.image.io.large&quot;)</td></tr>
-<tr class="separator:ab1d069f56091df4f6436f8c713ab2f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab7373d89fc2b92eabf924c11349424"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a06851.html">LargeCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#acab7373d89fc2b92eabf924c11349424">INSTANCE</a></td></tr>
-<tr class="separator:acab7373d89fc2b92eabf924c11349424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a311406d6416e18cbe426971b3d724ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06851.html#a311406d6416e18cbe426971b3d724ef1">INTERLEAVED</a></td></tr>
+<tr class="memdesc:a311406d6416e18cbe426971b3d724ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer that define planar configuration as interleaved.  <a href="#a311406d6416e18cbe426971b3d724ef1">More...</a><br /></td></tr>
+<tr class="separator:a311406d6416e18cbe426971b3d724ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manage <a class="el" href="">RenderedImage</a> and its <a class="el" href="">Raster</a> to don't exceed JVM memory capacity. </p>
-<p>TODO : make memory be entirely managed by the cache, instead of allow a portion of memory to each <a class="el" href="a06847.html">org.geotoolkit.image.io.large.ImageTilesCache</a>. The aim is to just delegate tile manipulation to them, and get the total control over memory here. Maybe a priority system would be useful to determine which tile to release first (based on the number of times a tile has been queried ?)</p>
-<dl class="section author"><dt>Author</dt><dd>Rémi Maréchal (Geomatys) </dd>
-<dd>
-Alexis Manin (Geomatys) </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad9fc0580b2a911056d3e5f97a6fdc871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9fc0580b2a911056d3e5f97a6fdc871">&#9670;&nbsp;</a></span>LargeCache()</h2>
+<div class="textblock"><p>Define internaly <a class="el" href="">SampleModel</a> planar configuration. </p>
+<p>Define how datas are ordonnance within <a class="el" href="">SampleModel</a>.</p>
+<dl class="section author"><dt>Author</dt><dd>Remi Marechal (Geomatys). </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf5e13f8adf7c20156bdc8c032c14645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5e13f8adf7c20156bdc8c032c14645">&#9670;&nbsp;</a></span>valueOf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,252 +102,10 @@ Alexis Manin (Geomatys) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06851.html">LargeCache</a> </td>
+          <td class="memname">static <a class="el" href="a06851.html">PlanarConfiguration</a> valueOf </td>
           <td>(</td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>memoryCapacity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>enableSwap</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">LargeCache.enableSwap</a>, <a class="el" href="a06851.html#a873ffce3518434f955ff9651c4857cde">LargeCache.memoryCapacity</a>, <a class="el" href="a06847.html#ae6355b41fc259820fcb2bf1952b858cb">ImageTilesCache.remove()</a>, <a class="el" href="a06847.html#ac73602c55a5127d74142f30d5e00f167">ImageTilesCache.removeTiles()</a>, and <a class="el" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">LargeCache.updateLList()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06851.html#a70b1ff77c820fe2b3e403bb560f28b83">LargeCache.getInstance()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        this.<a class="code" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a> = <a class="code" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        this.<a class="code" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">enableSwap</a> = <a class="code" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">enableSwap</a>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">final</span> <a class="code" href="a14015.html">Thread</a> phantomCleaner = <span class="keyword">new</span> <a class="code" href="a14015.html">Thread</a>(<span class="keyword">new</span> <a class="code" href="a14031.html">Runnable</a>() {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            @Override</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> run() {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        <span class="keyword">final</span> ImageTilesCache removed = (ImageTilesCache) <a class="code" href="a06851.html#ac74dcc80f7758126848a3f2859dd9dc4">phantomQueue</a>.remove();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <a class="code" href="a06851.html#ad7e6e54188500a229e782cba5a23899f">largemaps</a>.remove(removed);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        removed.removeTiles();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        <span class="comment">// Re-distribute freed memory amount between remaining caches.</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        <a class="code" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">updateLList</a>();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    } <span class="keywordflow">catch</span> (InterruptedException e) {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                        <a class="code" href="a06851.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.WARNING, <span class="stringliteral">&quot;Reference cleaner has been interrupted ! It could cause severe memory leaks.&quot;</span>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    } <span class="keywordflow">catch</span> (Throwable t) {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        <a class="code" href="a06851.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.WARNING, <span class="stringliteral">&quot;An image reference cannot be released. It&#39;s likely to cause memory leaks !&quot;</span>);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        });</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        phantomCleaner.setName(<span class="stringliteral">&quot;LargeCache cleaner deamon&quot;</span>);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        phantomCleaner.setDaemon(<span class="keyword">true</span>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        phantomCleaner.start();</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div><div class="ttc" id="a06851_html_ac74dcc80f7758126848a3f2859dd9dc4"><div class="ttname"><a href="a06851.html#ac74dcc80f7758126848a3f2859dd9dc4">org.geotoolkit.image.io.large.LargeCache.phantomQueue</a></div><div class="ttdeci">final ReferenceQueue&lt; RenderedImage &gt; phantomQueue</div><div class="ttdef"><b>Definition:</b> LargeCache.java:49</div></div>
-<div class="ttc" id="a06851_html_ad7e6e54188500a229e782cba5a23899f"><div class="ttname"><a href="a06851.html#ad7e6e54188500a229e782cba5a23899f">org.geotoolkit.image.io.large.LargeCache.largemaps</a></div><div class="ttdeci">final Set&lt; ImageTilesCache &gt; largemaps</div><div class="ttdef"><b>Definition:</b> LargeCache.java:64</div></div>
-<div class="ttc" id="a06851_html_ab1d069f56091df4f6436f8c713ab2f39"><div class="ttname"><a href="a06851.html#ab1d069f56091df4f6436f8c713ab2f39">org.geotoolkit.image.io.large.LargeCache.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdef"><b>Definition:</b> LargeCache.java:47</div></div>
-<div class="ttc" id="a14031_html"><div class="ttname"><a href="a14031.html">Runnable</a></div></div>
-<div class="ttc" id="a06851_html_ac496b0076ef4bbebbe900de4f4a3fd1f"><div class="ttname"><a href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">org.geotoolkit.image.io.large.LargeCache.enableSwap</a></div><div class="ttdeci">final boolean enableSwap</div><div class="ttdef"><b>Definition:</b> LargeCache.java:52</div></div>
-<div class="ttc" id="a06851_html_a873ffce3518434f955ff9651c4857cde"><div class="ttname"><a href="a06851.html#a873ffce3518434f955ff9651c4857cde">org.geotoolkit.image.io.large.LargeCache.memoryCapacity</a></div><div class="ttdeci">volatile long memoryCapacity</div><div class="ttdef"><b>Definition:</b> LargeCache.java:51</div></div>
-<div class="ttc" id="a14015_html"><div class="ttname"><a href="a14015.html">Thread</a></div></div>
-<div class="ttc" id="a06851_html_a4ae3d437dcc4aa35309742d51d8adc33"><div class="ttname"><a href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">org.geotoolkit.image.io.large.LargeCache.updateLList</a></div><div class="ttdeci">void updateLList()</div><div class="ttdoc">Affect a new memory capacity and update Raster list from new memory capacity set. ...</div><div class="ttdef"><b>Definition:</b> LargeCache.java:294</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="addc752b401012d303ef6d3ec8a216a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addc752b401012d303ef6d3ec8a216a63">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void add </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Raster&#160;</td>
-          <td class="paramname"><em>raster</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06847.html#af8bcae42be7d229afa08a862dfa9e674">ImageTilesCache.add()</a>, and <a class="el" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">LargeCache.getOrCreateLargeMap()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06867.html#adfe572daf60b2437c8226f7f3aa243e8">WritableLargeRenderedImage.fillWritableImage()</a>, and <a class="el" href="a06867.html#ac32d5bbc75747a7750954fb15d709ade">WritableLargeRenderedImage.setData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                           {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// TODO : check existing tile, flush it before replacing it, or do nothing.</span></div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> (!(raster instanceof WritableRaster)) {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;raster must be WritableRaster instance&quot;</span>);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">final</span> ImageTilesCache lL = <a class="code" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">getOrCreateLargeMap</a>(ri);</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            lL.add(tileX, tileY, (WritableRaster) raster);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13939.html">RuntimeException</a>(<span class="stringliteral">&quot;impossible to add raster (write raster on disk)&quot;</span>, ex);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div><div class="ttc" id="a06851_html_a7810aab3ecd314463d0fccd24e32b619"><div class="ttname"><a href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">org.geotoolkit.image.io.large.LargeCache.getOrCreateLargeMap</a></div><div class="ttdeci">ImageTilesCache getOrCreateLargeMap(final RenderedImage source)</div><div class="ttdoc">Return the cache system associated to the given rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:127</div></div>
-<div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeb6b9413c3c4b5334a45d04dfc764df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb6b9413c3c4b5334a45d04dfc764df4">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void add </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Raster&#160;</td>
-          <td class="paramname"><em>raster</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a13339.html">Object</a>&#160;</td>
-          <td class="paramname"><em>o</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                                                              {</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a79979ce76518ba6d87984dd014b498c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79979ce76518ba6d87984dd014b498c0">&#9670;&nbsp;</a></span>addTiles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void addTiles </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Point []&#160;</td>
-          <td class="paramname"><em>points</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Raster []&#160;</td>
-          <td class="paramname"><em>rasters</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a13339.html">Object</a>&#160;</td>
-          <td class="paramname"><em>o</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06847.html#af8bcae42be7d229afa08a862dfa9e674">ImageTilesCache.add()</a>, and <a class="el" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">LargeCache.getOrCreateLargeMap()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                                                       {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span> (points.length != rasters.length)</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;point and raster tables must have same length.&quot;</span>);</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keyword">final</span> ImageTilesCache lL;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            lL = <a class="code" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">getOrCreateLargeMap</a>(ri);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13939.html">RuntimeException</a>(<span class="stringliteral">&quot;There is no cache system for the given image, and we cannot create any.&quot;</span>, e);</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <span class="keywordtype">id</span> = 0, l = points.length; <span class="keywordtype">id</span> &lt; l; <span class="keywordtype">id</span>++) {</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">if</span> (!(rasters[<span class="keywordtype">id</span>] instanceof WritableRaster))</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;raster must be WritableRaster instance&quot;</span>);</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                lL.add(points[<span class="keywordtype">id</span>].x, points[<span class="keywordtype">id</span>].y, (WritableRaster) rasters[<span class="keywordtype">id</span>]);</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13939.html">RuntimeException</a>(<span class="stringliteral">&quot;impossible to add raster (write raster on disk)&quot;</span>, ex);</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div><div class="ttc" id="a06851_html_a7810aab3ecd314463d0fccd24e32b619"><div class="ttname"><a href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">org.geotoolkit.image.io.large.LargeCache.getOrCreateLargeMap</a></div><div class="ttdeci">ImageTilesCache getOrCreateLargeMap(final RenderedImage source)</div><div class="ttdoc">Return the cache system associated to the given rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:127</div></div>
-<div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adac116554b543b7c4228c018a85882f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac116554b543b7c4228c018a85882f5">&#9670;&nbsp;</a></span>flush()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void flush </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                        {</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a1db603052c78b286fce6eed536a14d7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1db603052c78b286fce6eed536a14d7c">&#9670;&nbsp;</a></span>getCacheSizePerImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">long getCacheSizePerImage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06847.html#abf76a7a653bd5c3b931fa74d7977e4d7">ImageTilesCache.add()</a>, and <a class="el" href="a06847.html#a4a0663163ab4c1abf0f09e2a1f41161d">ImageTilesCache.checkMap()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                               {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a> / (<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.size() + 1);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a06851_html_a873ffce3518434f955ff9651c4857cde"><div class="ttname"><a href="a06851.html#a873ffce3518434f955ff9651c4857cde">org.geotoolkit.image.io.large.LargeCache.memoryCapacity</a></div><div class="ttdeci">volatile long memoryCapacity</div><div class="ttdef"><b>Definition:</b> LargeCache.java:51</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a70b1ff77c820fe2b3e403bb560f28b83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70b1ff77c820fe2b3e403bb560f28b83">&#9670;&nbsp;</a></span>getInstance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static synchronized <a class="el" href="a06851.html">LargeCache</a> getInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>planardConfiguration</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -463,63 +115,24 @@ Alexis Manin (Geomatys) </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Construct tile cache mechanic.<br />
- Stock Raster while memory capacity does not exceed else write in temporary file.</p>
-<dl class="section return"><dt>Returns</dt><dd>TileCache </dd></dl>
 
-<p class="reference">References <a class="el" href="a06843.html#aa47c5f2b0f521ba24c3900b10eb7c90c">ImageCacheConfiguration.getCacheMemorySize()</a>, <a class="el" href="a06851.html#acab7373d89fc2b92eabf924c11349424">LargeCache.INSTANCE</a>, <a class="el" href="a06843.html#a04d5869c9a096fb4ca8148caae3f1fa9">ImageCacheConfiguration.isCacheSwapEnable()</a>, and <a class="el" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache.LargeCache()</a>.</p>
+<p>Mapping between <a class="el" href="">ImageUtils#getPlanarConfiguration(java.awt.image.ColorModel)</a> and <a class="el" href="">org.geotoolkit.image.internal.PlanarConfiguration</a> enum. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planardConfiguration</td><td>integer compute by <a class="el" href="">ImageUtils#getPlanarConfiguration(java.awt.image.SampleModel)</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="a06855.html">org.geotoolkit.image.internal.SampleType</a> or<div class="fragment"><div class="line">null </div></div><!-- fragment --> if type undefined. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a06855.html#a44e0cf6846152ebf0b3050b1198c2134">LargeRenderedImage.LargeRenderedImage()</a>, and <a class="el" href="a06867.html#a1d2079a088a5d18c85b06b6ffcdab9e9">WritableLargeRenderedImage.WritableLargeRenderedImage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                        {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="a06851.html#acab7373d89fc2b92eabf924c11349424">INSTANCE</a>==null){</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">long</span> <a class="code" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a> = ImageCacheConfiguration.getCacheMemorySize();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">final</span> <span class="keywordtype">boolean</span> <a class="code" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">enableSwap</a>  = ImageCacheConfiguration.isCacheSwapEnable();</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="a06851.html#acab7373d89fc2b92eabf924c11349424">INSTANCE</a> = <span class="keyword">new</span> <a class="code" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache</a>(memoryCapacity, enableSwap);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06851.html#acab7373d89fc2b92eabf924c11349424">INSTANCE</a>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="ttc" id="a06851_html_ac496b0076ef4bbebbe900de4f4a3fd1f"><div class="ttname"><a href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">org.geotoolkit.image.io.large.LargeCache.enableSwap</a></div><div class="ttdeci">final boolean enableSwap</div><div class="ttdef"><b>Definition:</b> LargeCache.java:52</div></div>
-<div class="ttc" id="a06851_html_a873ffce3518434f955ff9651c4857cde"><div class="ttname"><a href="a06851.html#a873ffce3518434f955ff9651c4857cde">org.geotoolkit.image.io.large.LargeCache.memoryCapacity</a></div><div class="ttdeci">volatile long memoryCapacity</div><div class="ttdef"><b>Definition:</b> LargeCache.java:51</div></div>
-<div class="ttc" id="a06851_html_ad9fc0580b2a911056d3e5f97a6fdc871"><div class="ttname"><a href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">org.geotoolkit.image.io.large.LargeCache.LargeCache</a></div><div class="ttdeci">LargeCache(long memoryCapacity, boolean enableSwap)</div><div class="ttdef"><b>Definition:</b> LargeCache.java:68</div></div>
-<div class="ttc" id="a06851_html_acab7373d89fc2b92eabf924c11349424"><div class="ttname"><a href="a06851.html#acab7373d89fc2b92eabf924c11349424">org.geotoolkit.image.io.large.LargeCache.INSTANCE</a></div><div class="ttdeci">static LargeCache INSTANCE</div><div class="ttdef"><b>Definition:</b> LargeCache.java:66</div></div>
+<p class="reference">Referenced by <a class="el" href="a06835.html#aed3e5683b27dff3cd0a50eb881a3654a">ImageUtils.buildImageTypeSpecifier()</a>, <a class="el" href="a06835.html#a53486f84ed1b84ebeab781ed56260be1">ImageUtils.getEnumPlanarConfiguration()</a>, and <a class="el" href="a06943.html#a44e0cf6846152ebf0b3050b1198c2134">LargeRenderedImage.LargeRenderedImage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                        {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">switch</span> (planardConfiguration) {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">case</span> 1 : <span class="keywordflow">return</span> <a class="code" href="a06851.html#a311406d6416e18cbe426971b3d724ef1">INTERLEAVED</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">case</span> 2 : <span class="keywordflow">return</span> <a class="code" href="a06851.html#a568bf5a04c68f0c14515aa8a0bcf315f">BANDED</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="ttc" id="a06851_html_a311406d6416e18cbe426971b3d724ef1"><div class="ttname"><a href="a06851.html#a311406d6416e18cbe426971b3d724ef1">org.geotoolkit.image.internal.PlanarConfiguration.INTERLEAVED</a></div><div class="ttdeci">INTERLEAVED</div><div class="ttdoc">Integer that define planar configuration as interleaved. </div><div class="ttdef"><b>Definition:</b> PlanarConfiguration.java:33</div></div>
+<div class="ttc" id="a06851_html_a568bf5a04c68f0c14515aa8a0bcf315f"><div class="ttname"><a href="a06851.html#a568bf5a04c68f0c14515aa8a0bcf315f">org.geotoolkit.image.internal.PlanarConfiguration.BANDED</a></div><div class="ttdoc">Integer that define planar configuration as banded. </div><div class="ttdef"><b>Definition:</b> PlanarConfiguration.java:40</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a991d1580034f81abda068aac29fc103b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a991d1580034f81abda068aac29fc103b">&#9670;&nbsp;</a></span>getMemoryCapacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long getMemoryCapacity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06851.html#a873ffce3518434f955ff9651c4857cde">LargeCache.memoryCapacity</a>.</p>
-<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                    {</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a>;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div><div class="ttc" id="a06851_html_a873ffce3518434f955ff9651c4857cde"><div class="ttname"><a href="a06851.html#a873ffce3518434f955ff9651c4857cde">org.geotoolkit.image.io.large.LargeCache.memoryCapacity</a></div><div class="ttdeci">volatile long memoryCapacity</div><div class="ttdef"><b>Definition:</b> LargeCache.java:51</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5d252c5049d30782458c357d7e49d29e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d252c5049d30782458c357d7e49d29e">&#9670;&nbsp;</a></span>getMemoryThreshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float getMemoryThreshold </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                                      {</div><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a7810aab3ecd314463d0fccd24e32b619"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7810aab3ecd314463d0fccd24e32b619">&#9670;&nbsp;</a></span>getOrCreateLargeMap()</h2>
+<a id="a83b135e20e389d3d6bb22ee9985d4ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b135e20e389d3d6bb22ee9985d4ee2">&#9670;&nbsp;</a></span>valueOf() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,599 +141,57 @@ Alexis Manin (Geomatys) </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a06847.html">ImageTilesCache</a> getOrCreateLargeMap </td>
+          <td class="memname">static int valueOf </td>
           <td>(</td>
-          <td class="paramtype">final RenderedImage&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
-          <td> throws IOException</td>
+          <td class="paramtype">final <a class="el" href="a06851.html">PlanarConfiguration</a>&#160;</td>
+          <td class="paramname"><em>planardConfiguration</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the cache system associated to the given rendered image. </p>
-<p>If there's no such thing, it will be created / referenced then returned. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Mapping between <a class="el" href="">org.geotoolkit.image.internal.PlanarConfiguration</a> enum and <a class="el" href="">ImageUtils#getPlanarConfiguration(java.awt.image.ColorModel)</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>The image we want data from. </td></tr>
+    <tr><td class="paramname">planardConfiguration</td><td><a class="el" href="a06855.html">org.geotoolkit.image.internal.SampleType</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The found or creeated cache system. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the same integer as it compute by <a class="el" href="">ImageUtils#getPlanarConfiguration(java.awt.image.SampleModel)</a>. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IOException</td><td>If the image did not have any cache system, and we cannot create one. </td></tr>
+    <tr><td class="paramname"><a class="el" href="a14171.html">IllegalArgumentException</a></td><td>if planar configuration is unknow. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="reference">References <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>, and <a class="el" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">LargeCache.updateLList()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06851.html#addc752b401012d303ef6d3ec8a216a63">LargeCache.add()</a>, and <a class="el" href="a06851.html#a79979ce76518ba6d87984dd014b498c0">LargeCache.addTiles()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                                                               {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        ImageTilesCache lL;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">synchronized</span> (source) {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                lL = <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.get(source);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">if</span> (lL == null) {</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    lL = <span class="keyword">new</span> ImageTilesCache(source, <a class="code" href="a06851.html#ac74dcc80f7758126848a3f2859dd9dc4">phantomQueue</a>, <span class="keyword">this</span>);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13939.html">RuntimeException</a>(<span class="stringliteral">&quot;impossible to create cache list&quot;</span>, ex);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                }</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.put(source, lL);</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    <a class="code" href="a06851.html#ad7e6e54188500a229e782cba5a23899f">largemaps</a>.add(lL);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                }</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <a class="code" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">updateLList</a>();</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> lL;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a06851_html_ac74dcc80f7758126848a3f2859dd9dc4"><div class="ttname"><a href="a06851.html#ac74dcc80f7758126848a3f2859dd9dc4">org.geotoolkit.image.io.large.LargeCache.phantomQueue</a></div><div class="ttdeci">final ReferenceQueue&lt; RenderedImage &gt; phantomQueue</div><div class="ttdef"><b>Definition:</b> LargeCache.java:49</div></div>
-<div class="ttc" id="a06851_html_ad7e6e54188500a229e782cba5a23899f"><div class="ttname"><a href="a06851.html#ad7e6e54188500a229e782cba5a23899f">org.geotoolkit.image.io.large.LargeCache.largemaps</a></div><div class="ttdeci">final Set&lt; ImageTilesCache &gt; largemaps</div><div class="ttdef"><b>Definition:</b> LargeCache.java:64</div></div>
-<div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
-<div class="ttc" id="a06851_html_a4ae3d437dcc4aa35309742d51d8adc33"><div class="ttname"><a href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">org.geotoolkit.image.io.large.LargeCache.updateLList</a></div><div class="ttdeci">void updateLList()</div><div class="ttdoc">Affect a new memory capacity and update Raster list from new memory capacity set. ...</div><div class="ttdef"><b>Definition:</b> LargeCache.java:294</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0d892d0499aa412e02f01962847b5ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d892d0499aa412e02f01962847b5ef3">&#9670;&nbsp;</a></span>getTile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Raster getTile </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileY</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">java.lang.IllegalArgumentException</td><td>if TileCache is in memoryMode only and the requested raster is not found on cache. </td></tr>
-    <tr><td class="paramname">java.lang.RuntimeException</td><td>if raster can't be retrieve from cache (nested IOException). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06847.html#aeb95fde878113eda42f80436698cae66">ImageTilesCache.getRaster()</a>, and <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06867.html#a61598bd225152d9230163c37ec1013fa">WritableLargeRenderedImage.getData()</a>, and <a class="el" href="a06867.html#a565050e7adf86a89e49c949b14af58bc">WritableLargeRenderedImage.getTile()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                                                                  {</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keyword">final</span> ImageTilesCache cache;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            cache = <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.get(ri);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span> (cache == null){</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;renderedImage doesn&#39;t exist in this &quot;</span>+<a class="code" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache</a>.class.getName());</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">return</span> cache.getRaster(tileX, tileY);</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">throw</span> (<a class="code" href="a13939.html">RuntimeException</a>)(<span class="keyword">new</span> ImagingOpException(ex.getMessage()).initCause(ex));</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a06851_html_ad9fc0580b2a911056d3e5f97a6fdc871"><div class="ttname"><a href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">org.geotoolkit.image.io.large.LargeCache.LargeCache</a></div><div class="ttdeci">LargeCache(long memoryCapacity, boolean enableSwap)</div><div class="ttdef"><b>Definition:</b> LargeCache.java:68</div></div>
-<div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab6c78d7cd5e6e8f6b3551b06f7630a18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6c78d7cd5e6e8f6b3551b06f7630a18">&#9670;&nbsp;</a></span>getTileCapacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getTileCapacity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                                 {</div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a8ae042ca77ed402f26ec91991c10887a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ae042ca77ed402f26ec91991c10887a">&#9670;&nbsp;</a></span>getTileComparator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Comparator getTileComparator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                          {</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a827bdda258a74582f2a9b06abe53dbfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a827bdda258a74582f2a9b06abe53dbfa">&#9670;&nbsp;</a></span>getTiles() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Raster [] getTiles </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Point []&#160;</td>
-          <td class="paramname"><em>points</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06847.html#aeb95fde878113eda42f80436698cae66">ImageTilesCache.getRaster()</a>, and <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>.</p>
-<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                                               {</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keyword">final</span> ImageTilesCache lL;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            lL = <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.get(ri);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (lL == null)</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;renderedImage don&#39;t exist in this &quot;</span>+<a class="code" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache</a>.class.getName());</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> l = points.length;</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keyword">final</span> <a class="code" href="a13867.html">Raster</a>[] rasters = <span class="keyword">new</span> <a class="code" href="a13867.html">Raster</a>[l];</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <span class="keywordtype">id</span> = 0; <span class="keywordtype">id</span> &lt; l; <span class="keywordtype">id</span>++) {</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                rasters[id] = lL.getRaster(points[<span class="keywordtype">id</span>].x, points[<span class="keywordtype">id</span>].y);</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <a class="code" href="a06851.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a>.log(Level.WARNING, <span class="stringliteral">&quot;Unreadable tile : &quot;</span>+points[<span class="keywordtype">id</span>], ex);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            }</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">return</span> rasters;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a06851_html_ab1d069f56091df4f6436f8c713ab2f39"><div class="ttname"><a href="a06851.html#ab1d069f56091df4f6436f8c713ab2f39">org.geotoolkit.image.io.large.LargeCache.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdef"><b>Definition:</b> LargeCache.java:47</div></div>
-<div class="ttc" id="a06851_html_ad9fc0580b2a911056d3e5f97a6fdc871"><div class="ttname"><a href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">org.geotoolkit.image.io.large.LargeCache.LargeCache</a></div><div class="ttdeci">LargeCache(long memoryCapacity, boolean enableSwap)</div><div class="ttdef"><b>Definition:</b> LargeCache.java:68</div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-<div class="ttc" id="a13867_html"><div class="ttname"><a href="a13867.html">Raster</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1641c5dcfb6d13e1b945896696aea929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1641c5dcfb6d13e1b945896696aea929">&#9670;&nbsp;</a></span>getTiles() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Raster [] getTiles </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                               {</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">//        if (!tileManagers.containsKey(ri))</span></div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">//            throw new IllegalArgumentException(&quot;renderedImage don&#39;t exist in this &quot;+LargeCache.class.getName());</span></div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">//        try {</span></div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">//            return tileManagers.get(ri).getTiles();</span></div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">//        } catch (IOException ex) {</span></div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">//            Logging.getLogger(&quot;org.geotoolkit.image.io.large&quot;).log(Level.SEVERE, null, ex);</span></div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">//        }</span></div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">//        return null;</span></div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a8f655df9eb20ab7abbbe886ad45baa18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f655df9eb20ab7abbbe886ad45baa18">&#9670;&nbsp;</a></span>isEnableSwap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean isEnableSwap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">LargeCache.enableSwap</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06847.html#a4a0663163ab4c1abf0f09e2a1f41161d">ImageTilesCache.checkMap()</a>, and <a class="el" href="a06847.html#a202d382163631085086db6de0229fb9c">ImageTilesCache.ImageTilesCache()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                           {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">enableSwap</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div><div class="ttc" id="a06851_html_ac496b0076ef4bbebbe900de4f4a3fd1f"><div class="ttname"><a href="a06851.html#ac496b0076ef4bbebbe900de4f4a3fd1f">org.geotoolkit.image.io.large.LargeCache.enableSwap</a></div><div class="ttdeci">final boolean enableSwap</div><div class="ttdef"><b>Definition:</b> LargeCache.java:52</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a69798bd6809ab0fafe4efcbf6c0d07e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69798bd6809ab0fafe4efcbf6c0d07e8">&#9670;&nbsp;</a></span>memoryControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void memoryControl </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                {</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a26aacc64c8216089a331a7a3267cd10d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26aacc64c8216089a331a7a3267cd10d">&#9670;&nbsp;</a></span>remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void remove </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tileY</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06847.html#ae6355b41fc259820fcb2bf1952b858cb">ImageTilesCache.remove()</a>, and <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06867.html#ac32d5bbc75747a7750954fb15d709ade">WritableLargeRenderedImage.setData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                                               {</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keyword">final</span> ImageTilesCache lL;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            lL = <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.get(ri);</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">if</span> (lL == null){</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14027.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;renderedImage don&#39;t exist in this &quot;</span>+<a class="code" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache</a>.class.getName());</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        lL.remove(tileX, tileY);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a06851_html_ad9fc0580b2a911056d3e5f97a6fdc871"><div class="ttname"><a href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">org.geotoolkit.image.io.large.LargeCache.LargeCache</a></div><div class="ttdeci">LargeCache(long memoryCapacity, boolean enableSwap)</div><div class="ttdef"><b>Definition:</b> LargeCache.java:68</div></div>
-<div class="ttc" id="a14027_html"><div class="ttname"><a href="a14027.html">IllegalArgumentException</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac1b92c36f5eb1a79efa217776bff1450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1b92c36f5eb1a79efa217776bff1450">&#9670;&nbsp;</a></span>removeTiles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void removeTiles </td>
-          <td>(</td>
-          <td class="paramtype">RenderedImage&#160;</td>
-          <td class="paramname"><em>ri</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06847.html#ae6355b41fc259820fcb2bf1952b858cb">ImageTilesCache.remove()</a>, <a class="el" href="a06847.html#ac73602c55a5127d74142f30d5e00f167">ImageTilesCache.removeTiles()</a>, <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>, and <a class="el" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">LargeCache.updateLList()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06867.html#a32d626626eee0bc4ade146973f6abb1c">WritableLargeRenderedImage.finalize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                              {</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keyword">final</span> ImageTilesCache lL;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="comment">// De-reference image</span></div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            lL = <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.remove(ri);</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="comment">// Clear cache.</span></div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span> (lL != null) {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                lL.removeTiles();</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13939.html">RuntimeException</a>(<span class="stringliteral">&quot;Raster too large for remaining memory capacity&quot;</span>, ex);</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <a class="code" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">updateLList</a>();</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
-<div class="ttc" id="a06851_html_a4ae3d437dcc4aa35309742d51d8adc33"><div class="ttname"><a href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">org.geotoolkit.image.io.large.LargeCache.updateLList</a></div><div class="ttdeci">void updateLList()</div><div class="ttdoc">Affect a new memory capacity and update Raster list from new memory capacity set. ...</div><div class="ttdef"><b>Definition:</b> LargeCache.java:294</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeefa623b726b8faf9766192a49bb325f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeefa623b726b8faf9766192a49bb325f">&#9670;&nbsp;</a></span>setMemoryCapacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setMemoryCapacity </td>
-          <td>(</td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-
-<p class="reference">References <a class="el" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">LargeCache.updateLList()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                          {</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        this.<a class="code" href="a06851.html#a873ffce3518434f955ff9651c4857cde">memoryCapacity</a> = l;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <a class="code" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">updateLList</a>();</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div><div class="ttc" id="a06851_html_a873ffce3518434f955ff9651c4857cde"><div class="ttname"><a href="a06851.html#a873ffce3518434f955ff9651c4857cde">org.geotoolkit.image.io.large.LargeCache.memoryCapacity</a></div><div class="ttdeci">volatile long memoryCapacity</div><div class="ttdef"><b>Definition:</b> LargeCache.java:51</div></div>
-<div class="ttc" id="a06851_html_a4ae3d437dcc4aa35309742d51d8adc33"><div class="ttname"><a href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">org.geotoolkit.image.io.large.LargeCache.updateLList</a></div><div class="ttdeci">void updateLList()</div><div class="ttdoc">Affect a new memory capacity and update Raster list from new memory capacity set. ...</div><div class="ttdef"><b>Definition:</b> LargeCache.java:294</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa5491a325e68e580713c6add9470bbeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5491a325e68e580713c6add9470bbeb">&#9670;&nbsp;</a></span>setMemoryThreshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setMemoryThreshold </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                            {</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a674f480e1a06deaf3d4ca2b1879cc762"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a674f480e1a06deaf3d4ca2b1879cc762">&#9670;&nbsp;</a></span>setTileCapacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setTileCapacity </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                                       {</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a67c35f5e9c99c58a5ee6a00c0490dd8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67c35f5e9c99c58a5ee6a00c0490dd8f">&#9670;&nbsp;</a></span>setTileComparator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setTileComparator </td>
-          <td>(</td>
-          <td class="paramtype">Comparator&#160;</td>
-          <td class="paramname"><em>cmprtr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>. </p>
-<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                                     {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not supported yet.&quot;</span>);</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a4ae3d437dcc4aa35309742d51d8adc33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ae3d437dcc4aa35309742d51d8adc33">&#9670;&nbsp;</a></span>updateLList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void updateLList </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Affect a new memory capacity and update <a class="el" href="">Raster</a> list from new memory capacity set. </p>
-<p>TODO : delete this method when memory capacity will be entirely managed by <a class="el" href="">org.geotoolkit.image.io.large.LargeCache</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listMemoryCapacity</td><td>new memory capacity. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">LargeCache.tileManagers</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">LargeCache.getOrCreateLargeMap()</a>, <a class="el" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache.LargeCache()</a>, <a class="el" href="a06851.html#ac1b92c36f5eb1a79efa217776bff1450">LargeCache.removeTiles()</a>, and <a class="el" href="a06851.html#aeefa623b726b8faf9766192a49bb325f">LargeCache.setMemoryCapacity()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                               {</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="a13339.html">Object</a>[] array;</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keyword">synchronized</span>(<a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>){</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            array = <a class="code" href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">tileManagers</a>.values().toArray();</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        }</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="a13339.html">Object</a> lL : array) {</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">try</span> {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                ((ImageTilesCache)lL).capacityChanged();</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            } <span class="keywordflow">catch</span> (IOException ex) {</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a13939.html">RuntimeException</a>(<span class="stringliteral">&quot;Raster too large for remaining memory capacity&quot;</span>, ex);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            }</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div><div class="ttc" id="a06851_html_abd45b988832b5a40153d2d6f65c528c8"><div class="ttname"><a href="a06851.html#abd45b988832b5a40153d2d6f65c528c8">org.geotoolkit.image.io.large.LargeCache.tileManagers</a></div><div class="ttdeci">final WeakHashMap&lt; RenderedImage, ImageTilesCache &gt; tileManagers</div><div class="ttdoc">Contains a tile manager for each cached rendered image. </div><div class="ttdef"><b>Definition:</b> LargeCache.java:61</div></div>
-<div class="ttc" id="a13339_html"><div class="ttname"><a href="a13339.html">Object</a></div></div>
-<div class="ttc" id="a13939_html"><div class="ttname"><a href="a13939.html">RuntimeException</a></div></div>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                              {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">switch</span> (planardConfiguration) {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06851.html#a311406d6416e18cbe426971b3d724ef1">INTERLEAVED</a> : <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="a06851.html#a568bf5a04c68f0c14515aa8a0bcf315f">BANDED</a>      : <span class="keywordflow">return</span> 2;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;unknow planar configuration.&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="ttc" id="a06851_html_a311406d6416e18cbe426971b3d724ef1"><div class="ttname"><a href="a06851.html#a311406d6416e18cbe426971b3d724ef1">org.geotoolkit.image.internal.PlanarConfiguration.INTERLEAVED</a></div><div class="ttdeci">INTERLEAVED</div><div class="ttdoc">Integer that define planar configuration as interleaved. </div><div class="ttdef"><b>Definition:</b> PlanarConfiguration.java:33</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
+<div class="ttc" id="a06851_html_a568bf5a04c68f0c14515aa8a0bcf315f"><div class="ttname"><a href="a06851.html#a568bf5a04c68f0c14515aa8a0bcf315f">org.geotoolkit.image.internal.PlanarConfiguration.BANDED</a></div><div class="ttdoc">Integer that define planar configuration as banded. </div><div class="ttdef"><b>Definition:</b> PlanarConfiguration.java:40</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac496b0076ef4bbebbe900de4f4a3fd1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac496b0076ef4bbebbe900de4f4a3fd1f">&#9670;&nbsp;</a></span>enableSwap</h2>
+<a id="a311406d6416e18cbe426971b3d724ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311406d6416e18cbe426971b3d724ef1">&#9670;&nbsp;</a></span>INTERLEAVED</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final boolean enableSwap</td>
+          <td class="memname">INTERLEAVED</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a06851.html#a8f655df9eb20ab7abbbe886ad45baa18">LargeCache.isEnableSwap()</a>, and <a class="el" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache.LargeCache()</a>.</p>
+<p>Integer that define planar configuration as interleaved. </p>
+<p>For example in a RGB image, within the same band, pixel value will be order like follow : RGBRGBRGB ... </p>
 
-</div>
-</div>
-<a id="acab7373d89fc2b92eabf924c11349424"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab7373d89fc2b92eabf924c11349424">&#9670;&nbsp;</a></span>INSTANCE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a06851.html">LargeCache</a> INSTANCE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a06851.html#a70b1ff77c820fe2b3e403bb560f28b83">LargeCache.getInstance()</a>.</p>
-
-</div>
-</div>
-<a id="ad7e6e54188500a229e782cba5a23899f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7e6e54188500a229e782cba5a23899f">&#9670;&nbsp;</a></span>largemaps</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Set&lt;<a class="el" href="a06847.html">ImageTilesCache</a>&gt; largemaps = new HashSet&lt;&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab1d069f56091df4f6436f8c713ab2f39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1d069f56091df4f6436f8c713ab2f39">&#9670;&nbsp;</a></span>LOGGER</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final Logger LOGGER = Logging.getLogger(&quot;org.geotoolkit.image.io.large&quot;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a873ffce3518434f955ff9651c4857cde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a873ffce3518434f955ff9651c4857cde">&#9670;&nbsp;</a></span>memoryCapacity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile long memoryCapacity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a06851.html#a991d1580034f81abda068aac29fc103b">LargeCache.getMemoryCapacity()</a>, and <a class="el" href="a06851.html#ad9fc0580b2a911056d3e5f97a6fdc871">LargeCache.LargeCache()</a>.</p>
-
-</div>
-</div>
-<a id="ac74dcc80f7758126848a3f2859dd9dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac74dcc80f7758126848a3f2859dd9dc4">&#9670;&nbsp;</a></span>phantomQueue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final ReferenceQueue&lt;RenderedImage&gt; phantomQueue = new ReferenceQueue&lt;&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd45b988832b5a40153d2d6f65c528c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd45b988832b5a40153d2d6f65c528c8">&#9670;&nbsp;</a></span>tileManagers</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final WeakHashMap&lt;RenderedImage, <a class="el" href="a06847.html">ImageTilesCache</a>&gt; tileManagers = new WeakHashMap&lt;&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Contains a tile manager for each cached rendered image. </p>
-<p>A tile manager job is to swap / cache image tiles as we ask it.</p>
-<p>Note : we can not use ReentrantReadWriteLock with WeakHashMap because get and iteration methods may modify the content of the map. This is because the weak references are tested when a get occurs. </p>
-
-<p class="reference">Referenced by <a class="el" href="a06851.html#a1db603052c78b286fce6eed536a14d7c">LargeCache.getCacheSizePerImage()</a>, <a class="el" href="a06851.html#a7810aab3ecd314463d0fccd24e32b619">LargeCache.getOrCreateLargeMap()</a>, <a class="el" href="a06851.html#a0d892d0499aa412e02f01962847b5ef3">LargeCache.getTile()</a>, <a class="el" href="a06851.html#a827bdda258a74582f2a9b06abe53dbfa">LargeCache.getTiles()</a>, <a class="el" href="a06851.html#a26aacc64c8216089a331a7a3267cd10d">LargeCache.remove()</a>, <a class="el" href="a06851.html#ac1b92c36f5eb1a79efa217776bff1450">LargeCache.removeTiles()</a>, and <a class="el" href="a06851.html#a4ae3d437dcc4aa35309742d51d8adc33">LargeCache.updateLList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="a06835.html#abe302499208eef6e6b5e1ed38fbccb3c">ImageUtils.createARGBInterleavedImage()</a>, <a class="el" href="a06835.html#af42c41e1d7332008b7b36b289c4b3ca2">ImageUtils.createGreyScaledInterleavedImage()</a>, <a class="el" href="a06835.html#a5882f30ce6e8feef0f1959672194959f">ImageUtils.createPaletteImage()</a>, and <a class="el" href="a06835.html#a96a8d4bfc00881abea16df9fcefe90dd">ImageUtils.createRGBInterleavedImage()</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +201,7 @@ Alexis Manin (Geomatys) </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03763.html">image</a></li><li class="navelem"><a class="el" href="a03769.html">io</a></li><li class="navelem"><a class="el" href="a03768.html">large</a></li><li class="navelem"><a class="el" href="a06851.html">LargeCache</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03823.html">image</a></li><li class="navelem"><a class="el" href="a03826.html">internal</a></li><li class="navelem"><a class="el" href="a06851.html">PlanarConfiguration</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

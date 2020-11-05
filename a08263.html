@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: BoundingDiagonalTest Class Reference</title>
+<title>jena-geo: Coordinate.DimensionalComparator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,39 +62,65 @@ $(document).ready(function(){initNavTree('a08263.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a08260.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BoundingDiagonalTest Class Reference</div>  </div>
+<div class="title">Coordinate.DimensionalComparator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Compares two <a class="el" href="a08259.html">Coordinate</a>s, allowing for either a 2-dimensional or 3-dimensional comparison, and handling NaN values correctly.  
+ <a href="a08263.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for BoundingDiagonalTest:</div>
+Inheritance diagram for Coordinate.DimensionalComparator:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08261.png" border="0" usemap="#BoundingDiagonalTest_coll__map" alt="Collaboration graph"/></div>
-<map name="BoundingDiagonalTest_coll__map" id="BoundingDiagonalTest_coll__map">
+<div class="center"><img src="a08262.png" border="0" usemap="#Coordinate_8DimensionalComparator_inherit__map" alt="Inheritance graph"/></div>
+<map name="Coordinate_8DimensionalComparator_inherit__map" id="Coordinate_8DimensionalComparator_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Coordinate.DimensionalComparator:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08261.png" border="0" usemap="#Coordinate_8DimensionalComparator_coll__map" alt="Collaboration graph"/></div>
+<map name="Coordinate_8DimensionalComparator_coll__map" id="Coordinate_8DimensionalComparator_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5905b320ef165de047ef4ff2e9167268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#a5905b320ef165de047ef4ff2e9167268">testBoundingDiagonal</a> ()</td></tr>
-<tr class="separator:a5905b320ef165de047ef4ff2e9167268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd255213663b3596e2de221144f1ab1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#a5bd255213663b3596e2de221144f1ab1">DimensionalComparator</a> ()</td></tr>
+<tr class="memdesc:a5bd255213663b3596e2de221144f1ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a comparator for 2 dimensional coordinates.  <a href="#a5bd255213663b3596e2de221144f1ab1">More...</a><br /></td></tr>
+<tr class="separator:a5bd255213663b3596e2de221144f1ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12c933fd5275be6824111b1f2c92cd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#aa12c933fd5275be6824111b1f2c92cd6">DimensionalComparator</a> (int <a class="el" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a>)</td></tr>
+<tr class="memdesc:aa12c933fd5275be6824111b1f2c92cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a comparator for 2 or 3 dimensional coordinates, depending on the value provided.  <a href="#aa12c933fd5275be6824111b1f2c92cd6">More...</a><br /></td></tr>
+<tr class="separator:aa12c933fd5275be6824111b1f2c92cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ae744431802300f10565640dec04c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#a22ae744431802300f10565640dec04c5">compare</a> (<a class="el" href="a08259.html">Coordinate</a> c1, <a class="el" href="a08259.html">Coordinate</a> c2)</td></tr>
+<tr class="memdesc:a22ae744431802300f10565640dec04c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="a08259.html">Coordinate</a>s along to the number of dimensions specified.  <a href="#a22ae744431802300f10565640dec04c5">More...</a><br /></td></tr>
+<tr class="separator:a22ae744431802300f10565640dec04c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a1e3187cbc25299380589200c398b3ffd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a> =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td></tr>
-<tr class="separator:a1e3187cbc25299380589200c398b3ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a55bbcaf3b85142c9878f7b8ac44290fb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#a55bbcaf3b85142c9878f7b8ac44290fb">compare</a> (double a, double b)</td></tr>
+<tr class="memdesc:a55bbcaf3b85142c9878f7b8ac44290fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two <code>double</code>s, allowing for NaN values.  <a href="#a55bbcaf3b85142c9878f7b8ac44290fb">More...</a><br /></td></tr>
+<tr class="separator:a55bbcaf3b85142c9878f7b8ac44290fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6bb6df1c2db1f7b9fe46d4be2d0083af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a> = 2</td></tr>
+<tr class="separator:a6bb6df1c2db1f7b9fe46d4be2d0083af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5905b320ef165de047ef4ff2e9167268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5905b320ef165de047ef4ff2e9167268">&#9670;&nbsp;</a></span>testBoundingDiagonal()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Compares two <a class="el" href="a08259.html">Coordinate</a>s, allowing for either a 2-dimensional or 3-dimensional comparison, and handling NaN values correctly. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5bd255213663b3596e2de221144f1ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd255213663b3596e2de221144f1ab1">&#9670;&nbsp;</a></span>DimensionalComparator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testBoundingDiagonal </td>
+          <td class="memname"><a class="el" href="a08263.html">DimensionalComparator</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -102,14 +128,43 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a04159.html#ae7a3cbabcf0592c2705ee280a231189a">BoundingDiagonal.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                           {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08263.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        BoundingDiagonal instance=<span class="keyword">new</span> BoundingDiagonal();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//LINESTRING(0.5 0.00032,0.5 0)</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(0,0));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,1));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue expResult = GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="ttc" id="a08263_html_a1e3187cbc25299380589200c398b3ffd"><div class="ttname"><a href="a08263.html#a1e3187cbc25299380589200c398b3ffd">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.BoundingDiagonalTest.testPolygon</a></div><div class="ttdeci">static final String testPolygon</div><div class="ttdef"><b>Definition:</b> BoundingDiagonalTest.java:18</div></div>
+<p>Creates a comparator for 2 dimensional coordinates. </p>
+<div class="fragment"><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    {</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      <span class="keyword">this</span>(2);</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aa12c933fd5275be6824111b1f2c92cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa12c933fd5275be6824111b1f2c92cd6">&#9670;&nbsp;</a></span>DimensionalComparator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08263.html">DimensionalComparator</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dimensionsToTest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a comparator for 2 or 3 dimensional coordinates, depending on the value provided. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimensionsToTest</td><td>the number of dimensions to test </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">Coordinate.DimensionalComparator.dimensionsToTest</a>.</p>
+<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    {</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a> != 2 &amp;&amp; <a class="code" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a> != 3)</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="a14171.html">IllegalArgumentException</a>(<span class="stringliteral">&quot;only 2 or 3 dimensions may be specified&quot;</span>);</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      this.<a class="code" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a> = <a class="code" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a>;</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    }</div><div class="ttc" id="a08263_html_a6bb6df1c2db1f7b9fe46d4be2d0083af"><div class="ttname"><a href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">org.locationtech.jts.geom.Coordinate.DimensionalComparator.dimensionsToTest</a></div><div class="ttdeci">int dimensionsToTest</div><div class="ttdef"><b>Definition:</b> Coordinate.java:503</div></div>
+<div class="ttc" id="a14171_html"><div class="ttname"><a href="a14171.html">IllegalArgumentException</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1e3187cbc25299380589200c398b3ffd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e3187cbc25299380589200c398b3ffd">&#9670;&nbsp;</a></span>testPolygon</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a55bbcaf3b85142c9878f7b8ac44290fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bbcaf3b85142c9878f7b8ac44290fb">&#9670;&nbsp;</a></span>compare() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,7 +173,21 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testPolygon =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td>
+          <td class="memname">static int compare </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -128,6 +197,86 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Compare two <code>double</code>s, allowing for NaN values. </p>
+<p>NaN is treated as being less than any valid number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>a <code>double</code> </td></tr>
+    <tr><td class="paramname">b</td><td>a <code>double</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1, 0, or 1 depending on whether a is less than, equal to or greater than b </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="a08263.html#a22ae744431802300f10565640dec04c5">Coordinate.DimensionalComparator.compare()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    {</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;      <span class="keywordflow">if</span> (a &lt; b) <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      <span class="keywordflow">if</span> (a &gt; b) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;      <span class="keywordflow">if</span> (Double.isNaN(a)) {</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keywordflow">if</span> (Double.isNaN(b)) <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      }</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      <span class="keywordflow">if</span> (Double.isNaN(b)) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a22ae744431802300f10565640dec04c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ae744431802300f10565640dec04c5">&#9670;&nbsp;</a></span>compare() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a08259.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a08259.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares two <a class="el" href="a08259.html">Coordinate</a>s along to the number of dimensions specified. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o1</td><td>a <a class="el" href="a08259.html">Coordinate</a> </td></tr>
+    <tr><td class="paramname">o2</td><td>a {link <a class="el" href="a08259.html" title="A lightweight class used to store coordinates on the 2-dimensional Cartesian plane. ">Coordinate</a>} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1, 0, or 1 depending on whether o1 is less than, equal to, or greater than 02 </dd></dl>
+
+<p class="reference">References <a class="el" href="a08263.html#a55bbcaf3b85142c9878f7b8ac44290fb">Coordinate.DimensionalComparator.compare()</a>, <a class="el" href="a08259.html#a12408ea71b830bfdbd24101b0b6ca49a">Coordinate.getZ()</a>, <a class="el" href="a08259.html#af88b946fb90d5f08b5fb740c70e98c10">Coordinate.x</a>, and <a class="el" href="a08259.html#ab927965981178aa1fba979a37168db2a">Coordinate.y</a>.</p>
+<div class="fragment"><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    {</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      <span class="keywordtype">int</span> compX = <a class="code" href="a08263.html#a55bbcaf3b85142c9878f7b8ac44290fb">compare</a>(c1.x, c2.x);</div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      <span class="keywordflow">if</span> (compX != 0) <span class="keywordflow">return</span> compX;</div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;      <span class="keywordtype">int</span> compY = <a class="code" href="a08263.html#a55bbcaf3b85142c9878f7b8ac44290fb">compare</a>(c1.y, c2.y);</div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      <span class="keywordflow">if</span> (compY != 0) <span class="keywordflow">return</span> compY;</div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">dimensionsToTest</a> &lt;= 2) <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div><div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;      <span class="keywordtype">int</span> compZ = <a class="code" href="a08263.html#a55bbcaf3b85142c9878f7b8ac44290fb">compare</a>(c1.getZ(), c2.getZ());</div><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;      <span class="keywordflow">return</span> compZ;</div><div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    }</div><div class="ttc" id="a08263_html_a6bb6df1c2db1f7b9fe46d4be2d0083af"><div class="ttname"><a href="a08263.html#a6bb6df1c2db1f7b9fe46d4be2d0083af">org.locationtech.jts.geom.Coordinate.DimensionalComparator.dimensionsToTest</a></div><div class="ttdeci">int dimensionsToTest</div><div class="ttdef"><b>Definition:</b> Coordinate.java:503</div></div>
+<div class="ttc" id="a08263_html_a55bbcaf3b85142c9878f7b8ac44290fb"><div class="ttname"><a href="a08263.html#a55bbcaf3b85142c9878f7b8ac44290fb">org.locationtech.jts.geom.Coordinate.DimensionalComparator.compare</a></div><div class="ttdeci">static int compare(double a, double b)</div><div class="ttdoc">Compare two doubles, allowing for NaN values. </div><div class="ttdef"><b>Definition:</b> Coordinate.java:489</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6bb6df1c2db1f7b9fe46d4be2d0083af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb6df1c2db1f7b9fe46d4be2d0083af">&#9670;&nbsp;</a></span>dimensionsToTest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dimensionsToTest = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08263.html#aa12c933fd5275be6824111b1f2c92cd6">Coordinate.DimensionalComparator.DimensionalComparator()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -136,7 +285,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03839.html">test</a></li><li class="navelem"><a class="el" href="a03842.html">geometry</a></li><li class="navelem"><a class="el" href="a03841.html">attribute</a></li><li class="navelem"><a class="el" href="a08263.html">BoundingDiagonalTest</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03882.html">locationtech</a></li><li class="navelem"><a class="el" href="a03887.html">jts</a></li><li class="navelem"><a class="el" href="a03886.html">geom</a></li><li class="navelem"><a class="el" href="a08259.html">Coordinate</a></li><li class="navelem"><a class="el" href="a08263.html">DimensionalComparator</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

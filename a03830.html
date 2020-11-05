@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.locationtech.jtstest.util</title>
+<title>jena-geo: Package org.geotoolkit.image.jai</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,24 +61,86 @@ $(document).ready(function(){initNavTree('a03830.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Packages</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.locationtech.jtstest.util</div>  </div>
+<div class="title">Package org.geotoolkit.image.jai</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A set of <a href="http://java.sun.com/products/java-media/jai/">Java Advanced Imaging</a> operations.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Packages</h2></td></tr>
-<tr class="memitem:a03828"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03828.html">io</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06963.html">Combine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a set of arbitrary linear combinations of the bands of many rendered source images, using a specified matrix.  <a href="a06963.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06975.html">FloodFill</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the Flood Fill operation on the given raster.  <a href="a06975.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06979.html">Hysteresis</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a hysteresis threshold on an image.  <a href="a06979.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06983.html">Mask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a mask (typically a  javax.media.jai.operator.BinarizeDescriptor binary image}) on an source image.  <a href="a06983.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06987.html">NodataFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces <a class="el" href="">Double#NaN</a> values by the weighted average of neighbors values.  <a href="a06987.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06991.html">Registry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of static methods for managing JAI's  OperationRegistry operation registry}.  <a href="a06991.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06995.html">SampleValues</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sample value suitable for use in a <a class="el" href="">java.util.HashSet</a>.  <a href="a06995.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07011.html">SilhouetteMask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the silhouette of an image that isolates its content from its background.  <a href="a07011.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A set of <a href="http://java.sun.com/products/java-media/jai/">Java Advanced Imaging</a> operations. </p>
+<p>All operations defined here work on J2SE's  java.awt.image.RenderedImage rendered images}; there is no OpenGIS's  org.geotoolkit.coverage.grid.GridCoverage grid coverage} dependencies here. Examples. </p>
+<table align="center" cellpadding="15" border="1">
+<tr>
+<th>Operation</th><th>Input</th><th>output </th></tr>
+<tr>
+<td valign="center"><a class="el" href="a07011.html">org.geotoolkit.image.jai.SilhouetteMask</a> </td><td><div class="image">
+<img src="doc-files/sample-rgb.png" border="1"/>
+</div>
+ </td><td><div class="image">
+<img src="doc-files/silhouette.png" border="1"/>
+</div>
+ </td></tr>
+<tr>
+<td valign="center"><a class="el" href="a06983.html">org.geotoolkit.image.jai.Mask</a> </td><td><div class="image">
+<img src="doc-files/sample-rgb.png" border="1"/>
+</div>
+ , <div class="image">
+<img src="doc-files/silhouette.png" border="1"/>
+</div>
+ </td><td><div class="image">
+<img src="doc-files/mask.png" border="1"/>
+</div>
+ </td></tr>
+</table>
+<p>{</p>
+<h1><a class="anchor" id="Registration"></a>
+}</h1>
+<p>The JAI operations provided in this package should be registered automatically at JAI startup time, since they are declared in the</p><div class="fragment"><div class="line">META-INF/registryFile.jai </div></div><!-- fragment --><p> file. However, this default JAI mechanism may fail in some occasions, for example when the Geotk JAR file is unreachable from the JAI class loader. In such case, the <a class="el" href="a06991.html#ad8e84bc73acb3ddf81036b833a2946ed">registerGeotoolkitServices</a> method may be invoked programmatically as a fallback. This is done automatically by the <a class="el" href="">org.geotoolkit.coverage.processing</a> package; users need to care only if they want to use directly the custom JAI operations provided in this package.</p>
+<dl class="section author"><dt>Author</dt><dd>Lionel Flahaut (IRD) </dd>
+<dd>
+Rémi Eve (IRD) </dd>
+<dd>
+Martin Desruisseaux (IRD, Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.01</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.1  </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03822.html">locationtech</a></li><li class="navelem"><a class="el" href="a03829.html">jtstest</a></li><li class="navelem"><a class="el" href="a03830.html">util</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03823.html">image</a></li><li class="navelem"><a class="el" href="a03830.html">jai</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

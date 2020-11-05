@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MagneticModel Class Reference</title>
+<title>jena-geo: GridTraversal.Builder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,152 +62,205 @@ $(document).ready(function(){initNavTree('a08059.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="a08056.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MagneticModel Class Reference</div>  </div>
+<div class="title">GridTraversal.Builder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Java port of the NOAA's MAGtype_MagneticModel structure.  
+<p>Prepare a grid traversal tool.  
  <a href="a08059.html#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for MagneticModel:</div>
+Collaboration diagram for GridTraversal.Builder:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08057.png" border="0" usemap="#MagneticModel_coll__map" alt="Collaboration graph"/></div>
-<map name="MagneticModel_coll__map" id="MagneticModel_coll__map">
+<div class="center"><img src="a08057.png" border="0" usemap="#GridTraversal_8Builder_coll__map" alt="Collaboration graph"/></div>
+<map name="GridTraversal_8Builder_coll__map" id="GridTraversal_8Builder_coll__map">
+<area shape="rect" id="node2" href="a08047.html" title="A simple abstraction allowing to access input polyline points, whatever structure it is in..." alt="" coords="5,5,160,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9f9bc36531648cfcd2b9a1a4f8173826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08059.html">MagneticModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">timelyModify</a> (<a class="el" href="a08055.html">MagneticDate</a> userDate)</td></tr>
-<tr class="memdesc:a9f9bc36531648cfcd2b9a1a4f8173826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time change the Model coefficients from the base year of the model using secular variation coefficients.  <a href="#a9f9bc36531648cfcd2b9a1a4f8173826">More...</a><br /></td></tr>
-<tr class="separator:a9f9bc36531648cfcd2b9a1a4f8173826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a51396bbf497f4f198596df71b83e880c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a51396bbf497f4f198596df71b83e880c">MagneticModel</a> (int NumTerms)</td></tr>
-<tr class="separator:a51396bbf497f4f198596df71b83e880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7554e739473b789e07c6635d8b2558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08059.html">Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a7a7554e739473b789e07c6635d8b2558">setPolyline</a> (Point2D... coordinates)</td></tr>
+<tr class="separator:a7a7554e739473b789e07c6635d8b2558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06de18d5544d8bd9096c4b9e716c8ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08059.html">Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a06de18d5544d8bd9096c4b9e716c8ba9">setPolyline</a> (final List&lt; Point2D &gt; coordinates)</td></tr>
+<tr class="separator:a06de18d5544d8bd9096c4b9e716c8ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e47bd0027c9fa65621744ae4f98eddf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08059.html">Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a0e47bd0027c9fa65621744ae4f98eddf">setPolyline</a> (final double[] coordinates, final int dimension)</td></tr>
+<tr class="separator:a0e47bd0027c9fa65621744ae4f98eddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2367964120cdfa2839ba919123f513b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08059.html">Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a2367964120cdfa2839ba919123f513b2">setIncludeStart</a> (boolean <a class="el" href="a08059.html#ad68197afed9880f3a7101165cbca848f">includeStart</a>)</td></tr>
+<tr class="separator:a2367964120cdfa2839ba919123f513b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f70b24f39ad15887472eaa1272c9bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08059.html">Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ac7f70b24f39ad15887472eaa1272c9bb">setParallel</a> (boolean <a class="el" href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">parallel</a>)</td></tr>
+<tr class="separator:ac7f70b24f39ad15887472eaa1272c9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d349f14626a156d4206ab99c6eaf685"><td class="memItemLeft" align="right" valign="top">Stream&lt; double[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a2d349f14626a156d4206ab99c6eaf685">stream</a> ()</td></tr>
+<tr class="separator:a2d349f14626a156d4206ab99c6eaf685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
 Package Attributes</h2></td></tr>
-<tr class="memitem:ae65e62b66039116c9dc01b61e86e3d96"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ae65e62b66039116c9dc01b61e86e3d96">EditionDate</a></td></tr>
-<tr class="separator:ae65e62b66039116c9dc01b61e86e3d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd64b107b2f543872731cce5bdd2f167"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#acd64b107b2f543872731cce5bdd2f167">epoch</a></td></tr>
-<tr class="separator:acd64b107b2f543872731cce5bdd2f167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9040a807ab36de6d9fd568b14c1657d9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a9040a807ab36de6d9fd568b14c1657d9">ModelName</a></td></tr>
-<tr class="separator:a9040a807ab36de6d9fd568b14c1657d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a59610e1ba11eea1a10aa2c26c9dce7"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a></td></tr>
-<tr class="separator:a3a59610e1ba11eea1a10aa2c26c9dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac48c68a4fd92206d6ee678f73a75a50"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a></td></tr>
-<tr class="separator:aac48c68a4fd92206d6ee678f73a75a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5237677ba492a9d005d238fd6e7ad4"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a></td></tr>
-<tr class="separator:a5d5237677ba492a9d005d238fd6e7ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac757d81d52186da26e6c8a655abd0f2a"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a></td></tr>
-<tr class="separator:ac757d81d52186da26e6c8a655abd0f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d9f7b5895f47c027059c43a4589e4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a></td></tr>
-<tr class="separator:a23d9f7b5895f47c027059c43a4589e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac213db1f840d962e2a0b671676e8bff8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ac213db1f840d962e2a0b671676e8bff8">nMaxSecVar</a></td></tr>
-<tr class="separator:ac213db1f840d962e2a0b671676e8bff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add173407e0ae9c470d5ee0ecffc42756"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#add173407e0ae9c470d5ee0ecffc42756">SecularVariationUsed</a></td></tr>
-<tr class="separator:add173407e0ae9c470d5ee0ecffc42756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c7cf444ff24e0267a07abc44ff7144"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a17c7cf444ff24e0267a07abc44ff7144">CoefficientFileEndDate</a></td></tr>
-<tr class="separator:a17c7cf444ff24e0267a07abc44ff7144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b4bb6de717188b0d009eb1cda3ea9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08047.html">PointList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a></td></tr>
+<tr class="separator:a75b4bb6de717188b0d009eb1cda3ea9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68197afed9880f3a7101165cbca848f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#ad68197afed9880f3a7101165cbca848f">includeStart</a> = true</td></tr>
+<tr class="separator:ad68197afed9880f3a7101165cbca848f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0315a4dc5df2ff574b286cc18419263e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">parallel</a> = false</td></tr>
+<tr class="separator:a0315a4dc5df2ff574b286cc18419263e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Java port of the NOAA's MAGtype_MagneticModel structure. </p>
-<dl class="section author"><dt>Author</dt><dd>Hasdenteufel Eric (Geomatys) </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a51396bbf497f4f198596df71b83e880c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51396bbf497f4f198596df71b83e880c">&#9670;&nbsp;</a></span>MagneticModel()</h2>
+<div class="textblock"><p>Prepare a grid traversal tool. </p>
+<p>You have to specify at least the polyline to study using one of the setPolyline methods (see <a class="el" href="">setPolyline(double[], int)</a>, <a class="el" href="">setPolyline(java.awt.geom.Point2D...)</a> or <a class="el" href="">setPolyline(java.util.List)</a>.</p>
+<p>You can optionally specify if you want returned point stream to be evaluated with multi-threading using <a class="el" href="a08059.html#ac7f70b24f39ad15887472eaa1272c9bb">setParallel(boolean)</a> method.</p>
+<p>IMPORTANT: There's a method allowwing to configure resulting point stream to omit the polyline first point. That can be useful for ray analysis. By default, result stream return the given polyline start point as first element. Configure this behavior with <a class="el" href="a08059.html#a2367964120cdfa2839ba919123f513b2">setIncludeStart(boolean)</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2367964120cdfa2839ba919123f513b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2367964120cdfa2839ba919123f513b2">&#9670;&nbsp;</a></span>setIncludeStart()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a08059.html">MagneticModel</a> </td>
+          <td class="memname"><a class="el" href="a08059.html">Builder</a> setIncludeStart </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>NumTerms</em></td><td>)</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>includeStart</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">NumTerms</td><td>Total number of spherical harmonic coefficients in the model </td></tr>
+    <tr><td class="paramname">includeStart</td><td>True if you want the first point of result stream to be input polyline start point. False to omit it.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>this builder for further configuration. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.<a class="code" href="a08059.html#a17c7cf444ff24e0267a07abc44ff7144">CoefficientFileEndDate</a> = 0;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this.<a class="code" href="a08059.html#ae65e62b66039116c9dc01b61e86e3d96">EditionDate</a> = 0;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.<a class="code" href="a08059.html#a9040a807ab36de6d9fd568b14c1657d9">ModelName</a> = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        this.<a class="code" href="a08059.html#add173407e0ae9c470d5ee0ecffc42756">SecularVariationUsed</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        this.<a class="code" href="a08059.html#acd64b107b2f543872731cce5bdd2f167">epoch</a> = 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this.<a class="code" href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a> = 0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        this.<a class="code" href="a08059.html#ac213db1f840d962e2a0b671676e8bff8">nMaxSecVar</a> = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        this.<a class="code" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        this.<a class="code" href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this.<a class="code" href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this.<a class="code" href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NumTerms; i++) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this.<a class="code" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>[i] = 0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            this.<a class="code" href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a>[i] = 0;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            this.<a class="code" href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a>[i] = 0;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            this.<a class="code" href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a>[i] = 0;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="ttc" id="a08059_html_ac757d81d52186da26e6c8a655abd0f2a"><div class="ttname"><a href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_H</a></div><div class="ttdeci">double [] Secular_Var_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:32</div></div>
-<div class="ttc" id="a08059_html_aac48c68a4fd92206d6ee678f73a75a50"><div class="ttname"><a href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_H</a></div><div class="ttdeci">double [] Main_Field_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:30</div></div>
-<div class="ttc" id="a08059_html_a5d5237677ba492a9d005d238fd6e7ad4"><div class="ttname"><a href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_G</a></div><div class="ttdeci">double [] Secular_Var_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:31</div></div>
-<div class="ttc" id="a08059_html_a23d9f7b5895f47c027059c43a4589e4f"><div class="ttname"><a href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">org.geotoolkit.util.wmm.MagneticModel.nMax</a></div><div class="ttdeci">int nMax</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:33</div></div>
-<div class="ttc" id="a08059_html_ac213db1f840d962e2a0b671676e8bff8"><div class="ttname"><a href="a08059.html#ac213db1f840d962e2a0b671676e8bff8">org.geotoolkit.util.wmm.MagneticModel.nMaxSecVar</a></div><div class="ttdeci">int nMaxSecVar</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:34</div></div>
-<div class="ttc" id="a08059_html_ae65e62b66039116c9dc01b61e86e3d96"><div class="ttname"><a href="a08059.html#ae65e62b66039116c9dc01b61e86e3d96">org.geotoolkit.util.wmm.MagneticModel.EditionDate</a></div><div class="ttdeci">double EditionDate</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:26</div></div>
-<div class="ttc" id="a08059_html_a9040a807ab36de6d9fd568b14c1657d9"><div class="ttname"><a href="a08059.html#a9040a807ab36de6d9fd568b14c1657d9">org.geotoolkit.util.wmm.MagneticModel.ModelName</a></div><div class="ttdeci">String ModelName</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:28</div></div>
-<div class="ttc" id="a08059_html_add173407e0ae9c470d5ee0ecffc42756"><div class="ttname"><a href="a08059.html#add173407e0ae9c470d5ee0ecffc42756">org.geotoolkit.util.wmm.MagneticModel.SecularVariationUsed</a></div><div class="ttdeci">boolean SecularVariationUsed</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:35</div></div>
-<div class="ttc" id="a08059_html_acd64b107b2f543872731cce5bdd2f167"><div class="ttname"><a href="a08059.html#acd64b107b2f543872731cce5bdd2f167">org.geotoolkit.util.wmm.MagneticModel.epoch</a></div><div class="ttdeci">double epoch</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:27</div></div>
-<div class="ttc" id="a08059_html_a17c7cf444ff24e0267a07abc44ff7144"><div class="ttname"><a href="a08059.html#a17c7cf444ff24e0267a07abc44ff7144">org.geotoolkit.util.wmm.MagneticModel.CoefficientFileEndDate</a></div><div class="ttdeci">double CoefficientFileEndDate</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:36</div></div>
-<div class="ttc" id="a08059_html_a3a59610e1ba11eea1a10aa2c26c9dce7"><div class="ttname"><a href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_G</a></div><div class="ttdeci">double [] Main_Field_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:29</div></div>
+<p class="reference">Referenced by <a class="el" href="a08043.html#a3f03dd0e13ac9b847460a9667c295ac0">GridTraversal.stream()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                                             {</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            this.<a class="code" href="a08059.html#ad68197afed9880f3a7101165cbca848f">includeStart</a> = <a class="code" href="a08059.html#ad68197afed9880f3a7101165cbca848f">includeStart</a>;</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div><div class="ttc" id="a08059_html_ad68197afed9880f3a7101165cbca848f"><div class="ttname"><a href="a08059.html#ad68197afed9880f3a7101165cbca848f">org.geotoolkit.util.grid.GridTraversal.Builder.includeStart</a></div><div class="ttdeci">boolean includeStart</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:323</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9f9bc36531648cfcd2b9a1a4f8173826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f9bc36531648cfcd2b9a1a4f8173826">&#9670;&nbsp;</a></span>timelyModify()</h2>
+<a id="ac7f70b24f39ad15887472eaa1272c9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f70b24f39ad15887472eaa1272c9bb">&#9670;&nbsp;</a></span>setParallel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a08059.html">MagneticModel</a> timelyModify </td>
+          <td class="memname"><a class="el" href="a08059.html">Builder</a> setParallel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a08055.html">MagneticDate</a>&#160;</td>
-          <td class="paramname"><em>userDate</em></td><td>)</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>parallel</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Time change the Model coefficients from the base year of the model using secular variation coefficients. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userDate</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the Magnetic Model adjusted. </dd></dl>
+<p class="reference">Referenced by <a class="el" href="a08043.html#a3f03dd0e13ac9b847460a9667c295ac0">GridTraversal.stream()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                                     {</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            this.<a class="code" href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">parallel</a> = <a class="code" href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">parallel</a>;</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div><div class="ttc" id="a08059_html_a0315a4dc5df2ff574b286cc18419263e"><div class="ttname"><a href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">org.geotoolkit.util.grid.GridTraversal.Builder.parallel</a></div><div class="ttdeci">boolean parallel</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:324</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7a7554e739473b789e07c6635d8b2558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7554e739473b789e07c6635d8b2558">&#9670;&nbsp;</a></span>setPolyline() <span class="overload">[1/3]</span></h2>
 
-<p class="reference">References <a class="el" href="a08055.html#afb8201d541b7b916e28bdf9884f6c794">MagneticDate.DecimalYear</a>, <a class="el" href="a08059.html#ae65e62b66039116c9dc01b61e86e3d96">MagneticModel.EditionDate</a>, <a class="el" href="a08059.html#acd64b107b2f543872731cce5bdd2f167">MagneticModel.epoch</a>, <a class="el" href="a08059.html#a51396bbf497f4f198596df71b83e880c">MagneticModel.MagneticModel()</a>, <a class="el" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">MagneticModel.Main_Field_Coeff_G</a>, <a class="el" href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">MagneticModel.Main_Field_Coeff_H</a>, <a class="el" href="a08059.html#a9040a807ab36de6d9fd568b14c1657d9">MagneticModel.ModelName</a>, <a class="el" href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">MagneticModel.nMax</a>, <a class="el" href="a08059.html#ac213db1f840d962e2a0b671676e8bff8">MagneticModel.nMaxSecVar</a>, <a class="el" href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">MagneticModel.Secular_Var_Coeff_G</a>, and <a class="el" href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">MagneticModel.Secular_Var_Coeff_H</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                             {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="a08059.html#a51396bbf497f4f198596df71b83e880c">MagneticModel</a> timedMagneticModel = <span class="keyword">new</span> <a class="code" href="a08059.html#a51396bbf497f4f198596df71b83e880c">MagneticModel</a>(<a class="code" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>.length-1);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        timedMagneticModel.EditionDate = this.<a class="code" href="a08059.html#ae65e62b66039116c9dc01b61e86e3d96">EditionDate</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        timedMagneticModel.epoch = this.<a class="code" href="a08059.html#acd64b107b2f543872731cce5bdd2f167">epoch</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        timedMagneticModel.nMax = this.<a class="code" href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        timedMagneticModel.nMaxSecVar = this.<a class="code" href="a08059.html#ac213db1f840d962e2a0b671676e8bff8">nMaxSecVar</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> a = timedMagneticModel.nMaxSecVar;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> b = (a * (a + 1) / 2 + a);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        timedMagneticModel.ModelName = this.<a class="code" href="a08059.html#a9040a807ab36de6d9fd568b14c1657d9">ModelName</a>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n = 1; n &lt;= this.<a class="code" href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a>; n++)</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> m = 0; m &lt;= n; m++)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span> index = (n * (n + 1) / 2 + m);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">if</span>(index &lt;= b)</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    timedMagneticModel.Main_Field_Coeff_H[index] = this.<a class="code" href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a>[index] + (userDate.DecimalYear - this.<a class="code" href="a08059.html#acd64b107b2f543872731cce5bdd2f167">epoch</a>) * this.<a class="code" href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a>[index];</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    timedMagneticModel.Main_Field_Coeff_G[index] = this.<a class="code" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>[index] + (userDate.DecimalYear - this.<a class="code" href="a08059.html#acd64b107b2f543872731cce5bdd2f167">epoch</a>) * this.<a class="code" href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a>[index];</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    timedMagneticModel.Secular_Var_Coeff_H[index] = this.<a class="code" href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a>[index]; <span class="comment">/* We need a copy of the secular var coef to calculate secular change */</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    timedMagneticModel.Secular_Var_Coeff_G[index] = this.<a class="code" href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a>[index];</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                } <span class="keywordflow">else</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    timedMagneticModel.Main_Field_Coeff_H[index] = this.<a class="code" href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a>[index];</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    timedMagneticModel.Main_Field_Coeff_G[index] = this.<a class="code" href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>[index];</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> timedMagneticModel;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="ttc" id="a08059_html_ac757d81d52186da26e6c8a655abd0f2a"><div class="ttname"><a href="a08059.html#ac757d81d52186da26e6c8a655abd0f2a">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_H</a></div><div class="ttdeci">double [] Secular_Var_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:32</div></div>
-<div class="ttc" id="a08059_html_aac48c68a4fd92206d6ee678f73a75a50"><div class="ttname"><a href="a08059.html#aac48c68a4fd92206d6ee678f73a75a50">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_H</a></div><div class="ttdeci">double [] Main_Field_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:30</div></div>
-<div class="ttc" id="a08059_html_a5d5237677ba492a9d005d238fd6e7ad4"><div class="ttname"><a href="a08059.html#a5d5237677ba492a9d005d238fd6e7ad4">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_G</a></div><div class="ttdeci">double [] Secular_Var_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:31</div></div>
-<div class="ttc" id="a08059_html_a23d9f7b5895f47c027059c43a4589e4f"><div class="ttname"><a href="a08059.html#a23d9f7b5895f47c027059c43a4589e4f">org.geotoolkit.util.wmm.MagneticModel.nMax</a></div><div class="ttdeci">int nMax</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:33</div></div>
-<div class="ttc" id="a08059_html_ac213db1f840d962e2a0b671676e8bff8"><div class="ttname"><a href="a08059.html#ac213db1f840d962e2a0b671676e8bff8">org.geotoolkit.util.wmm.MagneticModel.nMaxSecVar</a></div><div class="ttdeci">int nMaxSecVar</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:34</div></div>
-<div class="ttc" id="a08059_html_ae65e62b66039116c9dc01b61e86e3d96"><div class="ttname"><a href="a08059.html#ae65e62b66039116c9dc01b61e86e3d96">org.geotoolkit.util.wmm.MagneticModel.EditionDate</a></div><div class="ttdeci">double EditionDate</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:26</div></div>
-<div class="ttc" id="a08059_html_a9040a807ab36de6d9fd568b14c1657d9"><div class="ttname"><a href="a08059.html#a9040a807ab36de6d9fd568b14c1657d9">org.geotoolkit.util.wmm.MagneticModel.ModelName</a></div><div class="ttdeci">String ModelName</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:28</div></div>
-<div class="ttc" id="a08059_html_acd64b107b2f543872731cce5bdd2f167"><div class="ttname"><a href="a08059.html#acd64b107b2f543872731cce5bdd2f167">org.geotoolkit.util.wmm.MagneticModel.epoch</a></div><div class="ttdeci">double epoch</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:27</div></div>
-<div class="ttc" id="a08059_html_a51396bbf497f4f198596df71b83e880c"><div class="ttname"><a href="a08059.html#a51396bbf497f4f198596df71b83e880c">org.geotoolkit.util.wmm.MagneticModel.MagneticModel</a></div><div class="ttdeci">MagneticModel(int NumTerms)</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:42</div></div>
-<div class="ttc" id="a08059_html_a3a59610e1ba11eea1a10aa2c26c9dce7"><div class="ttname"><a href="a08059.html#a3a59610e1ba11eea1a10aa2c26c9dce7">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_G</a></div><div class="ttdeci">double [] Main_Field_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:29</div></div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08059.html">Builder</a> setPolyline </td>
+          <td>(</td>
+          <td class="paramtype">Point2D...&#160;</td>
+          <td class="paramname"><em>coordinates</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08043.html#a3f03dd0e13ac9b847460a9667c295ac0">GridTraversal.stream()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                                           {</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">if</span> (coordinates == null || coordinates.length == 0) {</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                <a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a> = null;</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            }</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a08059.html#a7a7554e739473b789e07c6635d8b2558">setPolyline</a>(Arrays.asList(coordinates));</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div><div class="ttc" id="a08059_html_a75b4bb6de717188b0d009eb1cda3ea9c"><div class="ttname"><a href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">org.geotoolkit.util.grid.GridTraversal.Builder.polyline</a></div><div class="ttdeci">PointList polyline</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:322</div></div>
+<div class="ttc" id="a08059_html_a7a7554e739473b789e07c6635d8b2558"><div class="ttname"><a href="a08059.html#a7a7554e739473b789e07c6635d8b2558">org.geotoolkit.util.grid.GridTraversal.Builder.setPolyline</a></div><div class="ttdeci">Builder setPolyline(Point2D... coordinates)</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:326</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a06de18d5544d8bd9096c4b9e716c8ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06de18d5544d8bd9096c4b9e716c8ba9">&#9670;&nbsp;</a></span>setPolyline() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08059.html">Builder</a> setPolyline </td>
+          <td>(</td>
+          <td class="paramtype">final List&lt; Point2D &gt;&#160;</td>
+          <td class="paramname"><em>coordinates</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                                                    {</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a> = coordinates == null? null : <span class="keyword">new</span> Point2DList(coordinates);</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div><div class="ttc" id="a08059_html_a75b4bb6de717188b0d009eb1cda3ea9c"><div class="ttname"><a href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">org.geotoolkit.util.grid.GridTraversal.Builder.polyline</a></div><div class="ttdeci">PointList polyline</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:322</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0e47bd0027c9fa65621744ae4f98eddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e47bd0027c9fa65621744ae4f98eddf">&#9670;&nbsp;</a></span>setPolyline() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08059.html">Builder</a> setPolyline </td>
+          <td>(</td>
+          <td class="paramtype">final double []&#160;</td>
+          <td class="paramname"><em>coordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>dimension</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                                                                    {</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a> = coordinates == null? null : <span class="keyword">new</span> ContiguousArrayPoint(coordinates, dimension);</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        }</div><div class="ttc" id="a08059_html_a75b4bb6de717188b0d009eb1cda3ea9c"><div class="ttname"><a href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">org.geotoolkit.util.grid.GridTraversal.Builder.polyline</a></div><div class="ttdeci">PointList polyline</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:322</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d349f14626a156d4206ab99c6eaf685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d349f14626a156d4206ab99c6eaf685">&#9670;&nbsp;</a></span>stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stream&lt;double[]&gt; stream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a08047.html#a0a85c8e0e311f358dc68e6e38394ef48">GridTraversal.PointList.getPoint()</a>, <a class="el" href="a08043.html#a9d386a6ce9410626f6e5dde1029a6ecb">GridTraversal.GridTraversal()</a>, <a class="el" href="a08047.html#aa71d41fd3d95c354d4d5e922c6c21210">GridTraversal.PointList.isEmpty()</a>, and <a class="el" href="a08047.html#af4b57d21919c42d55af03391f91a1c08">GridTraversal.PointList.size()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a08043.html#a3f03dd0e13ac9b847460a9667c295ac0">GridTraversal.stream()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                         {</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            ArgumentChecks.ensureNonNull(<span class="stringliteral">&quot;Polyline&quot;</span>, <a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a>);</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a>.<a class="code" href="a08047.html#aa71d41fd3d95c354d4d5e922c6c21210">isEmpty</a>()) {</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                <span class="keywordflow">return</span> Stream.empty();</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a>.<a class="code" href="a08047.html#af4b57d21919c42d55af03391f91a1c08">size</a>() == 1) {</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a08059.html#ad68197afed9880f3a7101165cbca848f">includeStart</a> ? Stream.of(<a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a>.<a class="code" href="a08047.html#a0a85c8e0e311f358dc68e6e38394ef48">getPoint</a>(0)) : Stream.empty();</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                Stream&lt;double[]&gt; pointStream = StreamSupport.stream(<span class="keyword">new</span> <a class="code" href="a08043.html#a9d386a6ce9410626f6e5dde1029a6ecb">GridTraversal</a>(<a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a>), <a class="code" href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">parallel</a>);</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="a08059.html#ad68197afed9880f3a7101165cbca848f">includeStart</a>) {</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                    <span class="comment">// Spliterator omit the very first point, so we must add it manually.</span></div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                    <span class="keywordtype">double</span>[] firstPoint = <a class="code" href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">polyline</a>.<a class="code" href="a08047.html#a0a85c8e0e311f358dc68e6e38394ef48">getPoint</a>(0);</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    <span class="keyword">final</span> Stream&lt;double[]&gt; <a class="code" href="a08043.html#a0b2f886f7095c580870c506403ea234b">startPoint</a> = Stream.of(firstPoint);</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                    <span class="keywordflow">return</span> Stream.concat(startPoint, pointStream);</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                    <span class="keywordflow">return</span> pointStream;</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                }</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            }</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        }</div><div class="ttc" id="a08059_html_a75b4bb6de717188b0d009eb1cda3ea9c"><div class="ttname"><a href="a08059.html#a75b4bb6de717188b0d009eb1cda3ea9c">org.geotoolkit.util.grid.GridTraversal.Builder.polyline</a></div><div class="ttdeci">PointList polyline</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:322</div></div>
+<div class="ttc" id="a08047_html_aa71d41fd3d95c354d4d5e922c6c21210"><div class="ttname"><a href="a08047.html#aa71d41fd3d95c354d4d5e922c6c21210">org.geotoolkit.util.grid.GridTraversal.PointList.isEmpty</a></div><div class="ttdeci">boolean isEmpty()</div></div>
+<div class="ttc" id="a08047_html_af4b57d21919c42d55af03391f91a1c08"><div class="ttname"><a href="a08047.html#af4b57d21919c42d55af03391f91a1c08">org.geotoolkit.util.grid.GridTraversal.PointList.size</a></div><div class="ttdeci">int size()</div></div>
+<div class="ttc" id="a08059_html_ad68197afed9880f3a7101165cbca848f"><div class="ttname"><a href="a08059.html#ad68197afed9880f3a7101165cbca848f">org.geotoolkit.util.grid.GridTraversal.Builder.includeStart</a></div><div class="ttdeci">boolean includeStart</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:323</div></div>
+<div class="ttc" id="a08059_html_a0315a4dc5df2ff574b286cc18419263e"><div class="ttname"><a href="a08059.html#a0315a4dc5df2ff574b286cc18419263e">org.geotoolkit.util.grid.GridTraversal.Builder.parallel</a></div><div class="ttdeci">boolean parallel</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:324</div></div>
+<div class="ttc" id="a08047_html_a0a85c8e0e311f358dc68e6e38394ef48"><div class="ttname"><a href="a08047.html#a0a85c8e0e311f358dc68e6e38394ef48">org.geotoolkit.util.grid.GridTraversal.PointList.getPoint</a></div><div class="ttdeci">double [] getPoint(int index)</div></div>
+<div class="ttc" id="a08043_html_a0b2f886f7095c580870c506403ea234b"><div class="ttname"><a href="a08043.html#a0b2f886f7095c580870c506403ea234b">org.geotoolkit.util.grid.GridTraversal.startPoint</a></div><div class="ttdeci">int startPoint</div><div class="ttdef"><b>Definition:</b> GridTraversal.java:54</div></div>
+<div class="ttc" id="a08043_html_a9d386a6ce9410626f6e5dde1029a6ecb"><div class="ttname"><a href="a08043.html#a9d386a6ce9410626f6e5dde1029a6ecb">org.geotoolkit.util.grid.GridTraversal.GridTraversal</a></div><div class="ttdeci">GridTraversal(PointList trajectory)</div><div class="ttdoc">Create a new traversal analyzer for given polyline. </div><div class="ttdef"><b>Definition:</b> GridTraversal.java:66</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a17c7cf444ff24e0267a07abc44ff7144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c7cf444ff24e0267a07abc44ff7144">&#9670;&nbsp;</a></span>CoefficientFileEndDate</h2>
+<a id="ad68197afed9880f3a7101165cbca848f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68197afed9880f3a7101165cbca848f">&#9670;&nbsp;</a></span>includeStart</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +269,7 @@ Package Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double CoefficientFileEndDate</td>
+          <td class="memname">boolean includeStart = true</td>
         </tr>
       </table>
   </td>
@@ -226,12 +279,10 @@ Package Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>.</p>
-
 </div>
 </div>
-<a id="ae65e62b66039116c9dc01b61e86e3d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae65e62b66039116c9dc01b61e86e3d96">&#9670;&nbsp;</a></span>EditionDate</h2>
+<a id="a0315a4dc5df2ff574b286cc18419263e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0315a4dc5df2ff574b286cc18419263e">&#9670;&nbsp;</a></span>parallel</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +291,7 @@ Package Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double EditionDate</td>
+          <td class="memname">boolean parallel = false</td>
         </tr>
       </table>
   </td>
@@ -250,12 +301,10 @@ Package Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
 </div>
 </div>
-<a id="acd64b107b2f543872731cce5bdd2f167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd64b107b2f543872731cce5bdd2f167">&#9670;&nbsp;</a></span>epoch</h2>
+<a id="a75b4bb6de717188b0d009eb1cda3ea9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b4bb6de717188b0d009eb1cda3ea9c">&#9670;&nbsp;</a></span>polyline</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +313,7 @@ Package Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double epoch</td>
+          <td class="memname"><a class="el" href="a08047.html">PointList</a> polyline</td>
         </tr>
       </table>
   </td>
@@ -273,200 +322,6 @@ Package Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="a3a59610e1ba11eea1a10aa2c26c9dce7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a59610e1ba11eea1a10aa2c26c9dce7">&#9670;&nbsp;</a></span>Main_Field_Coeff_G</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double [] Main_Field_Coeff_G</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08075.html#ab47918998e4b55f7664c0578e3bb7dac">WorldMagneticModel.summation()</a>, <a class="el" href="a08075.html#a50ddd8565ac3efba61ecd0b81326c9b4">WorldMagneticModel.summationSpecial()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="aac48c68a4fd92206d6ee678f73a75a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac48c68a4fd92206d6ee678f73a75a50">&#9670;&nbsp;</a></span>Main_Field_Coeff_H</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double [] Main_Field_Coeff_H</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08075.html#ab47918998e4b55f7664c0578e3bb7dac">WorldMagneticModel.summation()</a>, <a class="el" href="a08075.html#a50ddd8565ac3efba61ecd0b81326c9b4">WorldMagneticModel.summationSpecial()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="a9040a807ab36de6d9fd568b14c1657d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9040a807ab36de6d9fd568b14c1657d9">&#9670;&nbsp;</a></span>ModelName</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String ModelName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="a23d9f7b5895f47c027059c43a4589e4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23d9f7b5895f47c027059c43a4589e4f">&#9670;&nbsp;</a></span>nMax</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int nMax</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08075.html#ab47918998e4b55f7664c0578e3bb7dac">WorldMagneticModel.summation()</a>, <a class="el" href="a08075.html#a50ddd8565ac3efba61ecd0b81326c9b4">WorldMagneticModel.summationSpecial()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="ac213db1f840d962e2a0b671676e8bff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac213db1f840d962e2a0b671676e8bff8">&#9670;&nbsp;</a></span>nMaxSecVar</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int nMaxSecVar</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08075.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>, <a class="el" href="a08075.html#a4d749f954c6418af91a3f3679c461618">WorldMagneticModel.secVarSummationSpecial()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="a5d5237677ba492a9d005d238fd6e7ad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d5237677ba492a9d005d238fd6e7ad4">&#9670;&nbsp;</a></span>Secular_Var_Coeff_G</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double [] Secular_Var_Coeff_G</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08075.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>, <a class="el" href="a08075.html#a4d749f954c6418af91a3f3679c461618">WorldMagneticModel.secVarSummationSpecial()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="ac757d81d52186da26e6c8a655abd0f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac757d81d52186da26e6c8a655abd0f2a">&#9670;&nbsp;</a></span>Secular_Var_Coeff_H</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double [] Secular_Var_Coeff_H</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08075.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>, <a class="el" href="a08075.html#a4d749f954c6418af91a3f3679c461618">WorldMagneticModel.secVarSummationSpecial()</a>, and <a class="el" href="a08059.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
-
-</div>
-</div>
-<a id="add173407e0ae9c470d5ee0ecffc42756"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add173407e0ae9c470d5ee0ecffc42756">&#9670;&nbsp;</a></span>SecularVariationUsed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean SecularVariationUsed</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="a08075.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>.</p>
 
 </div>
 </div>
@@ -476,7 +331,7 @@ Package Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03755.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03805.html">util</a></li><li class="navelem"><a class="el" href="a03811.html">wmm</a></li><li class="navelem"><a class="el" href="a08059.html">MagneticModel</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03865.html">util</a></li><li class="navelem"><a class="el" href="a03869.html">grid</a></li><li class="navelem"><a class="el" href="a08043.html">GridTraversal</a></li><li class="navelem"><a class="el" href="a08059.html">Builder</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

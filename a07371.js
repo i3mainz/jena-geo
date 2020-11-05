@@ -1,19 +1,15 @@
 var a07371 =
 [
-    [ "AbstractParameterValue", "a07371.html#a945aad466775464fdde7c3668380e003", null ],
-    [ "addChangeListener", "a07371.html#ae126d4d0df45ad96720f9a43dc19abf7", null ],
-    [ "clone", "a07371.html#a2fedcfc7912c5a68afcdcc008c3887cb", null ],
-    [ "ensureValidValue", "a07371.html#a666f0e01eba310e917d6bc5da89f59db", null ],
+    [ "Polynom", "a07371.html#a47e107823189c7aa3bc8fde3101ccc34", null ],
+    [ "cubicRoots", "a07371.html#ae97ccca59e75c351623a7a378c4c149d", null ],
     [ "equals", "a07371.html#a70e0ce6c9806cb2e0e343f0d059b1379", null ],
-    [ "fireValueChanged", "a07371.html#a3f991317d164365201278016ea6ee009", null ],
-    [ "formatTo", "a07371.html#a775f7b46beb7ce8509381e232c5f191f", null ],
-    [ "getDescriptor", "a07371.html#a8ea282272bb5b8f259bbfb2356e3996f", null ],
-    [ "getName", "a07371.html#a3356a580bf7f1cc5c4893bf39d527ab4", null ],
-    [ "getUnitMessageID", "a07371.html#a165b11c698574db7bcbbc3498ef0018a", null ],
     [ "hashCode", "a07371.html#a077e18fe97323c7194e2665ffc766399", null ],
-    [ "removeChangeListener", "a07371.html#a83c45da35d2406ea05eb2772d2ce762d", null ],
-    [ "unitlessParameter", "a07371.html#a259a87c5737c4d5093add36705bd3c71", null ],
-    [ "descriptor", "a07371.html#a3378a7c35945963bce2eff3d676fafc7", null ],
-    [ "listeners", "a07371.html#a1eff22e242a0d0480721effa36d80b72", null ],
+    [ "quadraticRoots", "a07371.html#adaedc6fd5665cd6f440c678d49c8c3a7", null ],
+    [ "roots", "a07371.html#a0dc8a62f365516fd700770077e458b00", null ],
+    [ "roots", "a07371.html#a1769a6cd692d57c2acb9804dbcbb2ed5", null ],
+    [ "toString", "a07371.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
+    [ "y", "a07371.html#a146749e21cee84aaea426fd1ba05b418", null ],
+    [ "c", "a07371.html#ad2c3e2c6226ad50919eb2fcf869fa959", null ],
+    [ "roots", "a07371.html#ac2d82d5774f99ca2b89c054c32612ce0", null ],
     [ "serialVersionUID", "a07371.html#a3238d314ecdee14d2966760945d00c3b", null ]
 ];

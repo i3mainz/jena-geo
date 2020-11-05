@@ -1,11 +1,11 @@
 var a03967 =
 [
-    [ "AccBBOX", "a03967.html#a6bfd5f2fadbc7baee5ea0f5c6eba240d", null ],
-    [ "accumulate", "a03967.html#a28817aa8b3ff9874c7550bbac242267d", null ],
-    [ "accumulateError", "a03967.html#a00612e8af24f1d01fca23bfa838b60f4", null ],
-    [ "getAccValue", "a03967.html#a97738b9e0a0bde3579a698473dc654a8", null ],
-    [ "maxXSoFar", "a03967.html#ae105f5144b2d95a9575c05304094d936", null ],
-    [ "maxYSoFar", "a03967.html#a779cc68ad604763dffa67756a214b6ed", null ],
-    [ "minXSoFar", "a03967.html#ae81ab4df2375b100c3217dddf31b56c5", null ],
-    [ "minYSoFar", "a03967.html#abee267f7fe5994847b544bbad9b08169", null ]
+    [ "GeobufDecoder", "a03967.html#a61d858768ad14d431108f3353b46b28d", null ],
+    [ "hasNext", "a03967.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
+    [ "next", "a03967.html#a97c41cb83f82bc0df1e2b4dc59adebe0", null ],
+    [ "featureCollection", "a03967.html#ad44d648901fab99ed773d4a899696180", null ],
+    [ "i", "a03967.html#acb559820d9ca11295b4500f179ef6392", null ],
+    [ "keys", "a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67", null ],
+    [ "maxFeat", "a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7", null ],
+    [ "precisionDivisor", "a03967.html#a49401dd19535ec33cc4f59b017e899aa", null ]
 ];

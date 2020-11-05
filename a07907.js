@@ -1,11 +1,14 @@
 var a07907 =
 [
-    [ "SequenceIterator", "a07907.html#ae429537707861a4e6a1ffa7377a3137e", null ],
-    [ "close", "a07907.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
-    [ "hasNext", "a07907.html#a58d1cc3d61071d927bf040bf0b035a22", null ],
-    [ "next", "a07907.html#add41522ac353d25ef498af510089750d", null ],
-    [ "remove", "a07907.html#a1fcb45e5d2428352eb36b487d1d4eea3", null ],
-    [ "active", "a07907.html#a922926c1fb0e46273936ef910b965520", null ],
-    [ "currentIndex", "a07907.html#a8b41910066b877c9effd739880b6b15e", null ],
-    [ "wrapped", "a07907.html#a75d5da6281a78d859a907547c2d64858", null ]
+    [ "ListIter", "a07907.html#aeea6c8d0b034f20f251d336ce72988a0", null ],
+    [ "add", "a07907.html#a03611638d27079f92945c0d1e5f9180d", null ],
+    [ "hasNext", "a07907.html#abd63d6cef7daf6f6a067f663920cb584", null ],
+    [ "hasPrevious", "a07907.html#a5102860cd9abee74b9509a0f224e779c", null ],
+    [ "next", "a07907.html#a4db4ce90b801a1f27525eee69b2044be", null ],
+    [ "nextIndex", "a07907.html#a456d33686336a77b2367f5b5220fabb1", null ],
+    [ "previous", "a07907.html#a8c3782f8286beb492e7ea0983222c200", null ],
+    [ "previousIndex", "a07907.html#a1b40dbb8cb0a1ebba0c70b73ea7a0792", null ],
+    [ "remove", "a07907.html#a0161d05dfcd00eb24193a955ce81c546", null ],
+    [ "set", "a07907.html#a7da297c42ddd4c9d66e617164dd8ed74", null ],
+    [ "iterator", "a07907.html#ae6424f6b26f2e9dbd839c984be8710a4", null ]
 ];

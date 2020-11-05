@@ -1,15 +1,11 @@
 var a03801 =
 [
-    [ "CassiniSoldner", "a07587.html", "a07587" ],
-    [ "EllipsoidToGeoid", "a07591.html", "a07591" ],
-    [ "Exponential", "a07595.html", "a07595" ],
-    [ "IdentifierCode", "a07599.html", "a07599" ],
-    [ "Krovak", "a07603.html", "a07603" ],
-    [ "LambertAzimuthalEqualArea", "a07607.html", "a07607" ],
-    [ "Logarithmic", "a07611.html", "a07611" ],
-    [ "MapProjection", "a07615.html", "a07615" ],
-    [ "MapProjectionDescriptor", "a07619.html", "a07619" ],
-    [ "NewZealandMapGrid", "a07623.html", "a07623" ],
-    [ "Orthographic", "a07627.html", "a07627" ],
-    [ "Stereographic", "a07631.html", "a07631" ]
+    [ "CoverageWrapper", "a06451.html", "a06451" ],
+    [ "CovJSONDatatype", "a06455.html", "a06455" ],
+    [ "GeoTIFFDatatype", "a06459.html", "a06459" ],
+    [ "GMLCOVDatatype", "a06463.html", "a06463" ],
+    [ "HexWKBRastDatatype", "a06467.html", "a06467" ],
+    [ "NetCDFDatatype", "a06471.html", "a06471" ],
+    [ "WKBRastDatatype", "a06475.html", "a06475" ],
+    [ "XYZDatatype", "a06479.html", "a06479" ]
 ];

@@ -1,19 +1,6 @@
 var a08199 =
 [
-    [ "ConcaveHull", "a08199.html#a7bbf1412f3105c2aad467fc9106cf182", null ],
-    [ "ConcaveHull", "a08199.html#ac77bf0881bf145a2c7727f222b7414de", null ],
-    [ "concaveHull", "a08199.html#ad8039bc8533539ed6ed6d0f0b7ce6249", null ],
-    [ "getConcaveHull", "a08199.html#adff6123dfd9fe0091f461a0e7e7d5a07", null ],
-    [ "transformIntoPointGeometryCollection", "a08199.html#af76486d13a8760b04bcf566bc80a482b", null ],
-    [ "transformIntoPointGeometryCollection", "a08199.html#a28d67e47c59650f16e4a04c6fd62506b", null ],
-    [ "coordinates", "a08199.html#a61a44258522a909c8bf31377a17eee8a", null ],
-    [ "edges", "a08199.html#a7c687df09648f6e4e6cecf128926bd54", null ],
-    [ "geometries", "a08199.html#a549a5755cbe36ae24c2530c3da57b276", null ],
-    [ "geomFactory", "a08199.html#a81ccfb25b5dff5882e427e6b5528a2aa", null ],
-    [ "lengths", "a08199.html#af7faf3c29255431e951ab035cefb08d9", null ],
-    [ "segments", "a08199.html#acc794425479c3203711be628c50c2ab1", null ],
-    [ "shortLengths", "a08199.html#a1885ec4f6edc8fa5a0c5c80e6b71f6b9", null ],
-    [ "threshold", "a08199.html#afcfbedec6ebde62c6a091ce335836ef1", null ],
-    [ "triangles", "a08199.html#aeeaa58076823607284de6ba3812f59ed", null ],
-    [ "vertices", "a08199.html#ad8434de36909a7e09d6f53f0f1512fa8", null ]
+    [ "getVersion", "a08199.html#ac0cb929ed90c5c09352f4ccb4ede3d61", null ],
+    [ "getVersion", "a08199.html#aa1a606779a2d23f45b232f1fed2774d5", null ],
+    [ "list", "a08199.html#a5283b7db5a0cae7c08c2650bbd83dd39", null ]
 ];

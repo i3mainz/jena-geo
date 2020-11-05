@@ -1,12 +1,19 @@
 var a06571 =
 [
-    [ "Spi", "a06575.html", "a06575" ],
-    [ "WKBRasterImageWriter", "a06571.html#a29f5e23f8d6a6bdde008b65e20e102b4", null ],
-    [ "canWriteRasters", "a06571.html#a24512d6b5c9adfb1dc1a28cecb2ecb35", null ],
-    [ "convertImageMetadata", "a06571.html#a2a8a5399de55ba4caaaf996902246d6d", null ],
-    [ "convertStreamMetadata", "a06571.html#ad362268b3fa2182971ad1a28e3df2119", null ],
-    [ "getDefaultImageMetadata", "a06571.html#a62c4d9d178374c5e65ab1d773d4558b1", null ],
-    [ "getDefaultStreamMetadata", "a06571.html#a09dcc889369a083b49726ba64c58d4f3", null ],
-    [ "write", "a06571.html#a59569930ae670262072972146da60c66", null ],
-    [ "write", "a06571.html#acbe4885b02e9237ff56dea55d56e2e11", null ]
+    [ "Writable", "a06575.html", "a06575" ],
+    [ "BandedSampleConverter", "a06571.html#a38d3fa2019bb1e055a432900ef938440", null ],
+    [ "computeTile", "a06571.html#a137f1d5956222eed138d532f55097b37", null ],
+    [ "create", "a06571.html#a89d4f7b0b4bb8a4f3a6efd49a02f2a1a", null ],
+    [ "getColorModel", "a06571.html#a2e9f91617f2855770996f11b9d2dd94d", null ],
+    [ "getHeight", "a06571.html#a07efb2a4e9a982688c8bb3c3f21d1092", null ],
+    [ "getMinTileX", "a06571.html#a221fbe8552df714e1483b0005f1d84d6", null ],
+    [ "getMinTileY", "a06571.html#a8574cc85ad8d13e052b8146b81825969", null ],
+    [ "getMinX", "a06571.html#a1ec43fe85c74aa5a7cadc2e6e8d2410f", null ],
+    [ "getMinY", "a06571.html#afc8e603e4bb15d663afe6fc2c98bc85d", null ],
+    [ "getProperty", "a06571.html#a8049f6987505f6bb10a9caabd780c748", null ],
+    [ "getPropertyNames", "a06571.html#a8fe92749c0f415ca061399e1a549f7c5", null ],
+    [ "getWidth", "a06571.html#a67a0997183f24da19b776d96c1052998", null ],
+    [ "colorModel", "a06571.html#ae6300c65e347a4e78a9bc7900d80fd91", null ],
+    [ "converters", "a06571.html#acc5b853af3ec99b5b068393cf3ca63c3", null ],
+    [ "sampleResolutions", "a06571.html#a8e6cec4511dd5e677bf3f9b2793b1f2e", null ]
 ];

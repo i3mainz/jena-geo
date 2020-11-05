@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: AsTextRoundTest Class Reference</title>
+<title>jena-geo: NumPointsTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,36 +65,36 @@ $(document).ready(function(){initNavTree('a08455.html','');});
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="a08452.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsTextRoundTest Class Reference</div>  </div>
+<div class="title">NumPointsTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for AsTextRoundTest:</div>
+Collaboration diagram for NumPointsTest:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08453.png" border="0" usemap="#AsTextRoundTest_coll__map" alt="Collaboration graph"/></div>
-<map name="AsTextRoundTest_coll__map" id="AsTextRoundTest_coll__map">
+<div class="center"><img src="a08453.png" border="0" usemap="#NumPointsTest_coll__map" alt="Collaboration graph"/></div>
+<map name="NumPointsTest_coll__map" id="NumPointsTest_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a48e3642d229bd7292cf49871d69ed015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08455.html#a48e3642d229bd7292cf49871d69ed015">testAsTextRound</a> ()</td></tr>
-<tr class="separator:a48e3642d229bd7292cf49871d69ed015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30b87a5d89bd6e36dae388ce20e61a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08455.html#ab30b87a5d89bd6e36dae388ce20e61a7">testNumPoints</a> ()</td></tr>
+<tr class="separator:ab30b87a5d89bd6e36dae388ce20e61a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:abc3f514f005cba49e406658e2d3086eb"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08455.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a> =&quot;LINESTRING(1.32453 2.65655, 4.96254 5.43341)&quot;</td></tr>
-<tr class="separator:abc3f514f005cba49e406658e2d3086eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08455.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)&quot;</td></tr>
+<tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a48e3642d229bd7292cf49871d69ed015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48e3642d229bd7292cf49871d69ed015">&#9670;&nbsp;</a></span>testAsTextRound()</h2>
+<a id="ab30b87a5d89bd6e36dae388ce20e61a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30b87a5d89bd6e36dae388ce20e61a7">&#9670;&nbsp;</a></span>testNumPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void testAsTextRound </td>
+          <td class="memname">void testNumPoints </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -102,14 +102,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a04507.html#a892f62c3bf1ab2917fc8745f0b6da2a3">AsTextRound.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                      {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08455.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        AsTextRound instance=<span class="keyword">new</span> AsTextRound();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeString(<span class="stringliteral">&quot;LINESTRING (1.32 2.66, 4.96 5.43)&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue round=NodeValue.makeInteger(2);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        NodeValue result = instance.exec(geometryLiteral,round);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div><div class="ttc" id="a08455_html_abc3f514f005cba49e406658e2d3086eb"><div class="ttname"><a href="a08455.html#abc3f514f005cba49e406658e2d3086eb">de.hsmainz.cs.semgis.arqextension.test.geometry.exporter.AsTextRoundTest.testGeometry</a></div><div class="ttdeci">static final String testGeometry</div><div class="ttdef"><b>Definition:</b> AsTextRoundTest.java:13</div></div>
+<p class="reference">References <a class="el" href="a04367.html#ae7a3cbabcf0592c2705ee280a231189a">NumPoints.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                    {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a08455.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        NumPoints instance=<span class="keyword">new</span> NumPoints();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeInteger(4);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a08455_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a08455.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.NumPointsTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> NumPointsTest.java:13</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abc3f514f005cba49e406658e2d3086eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc3f514f005cba49e406658e2d3086eb">&#9670;&nbsp;</a></span>testGeometry</h2>
+<a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,7 +118,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String testGeometry =&quot;LINESTRING(1.32453 2.65655, 4.96254 5.43341)&quot;</td>
+          <td class="memname">final String testGeom =&quot;LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)&quot;</td>
         </tr>
       </table>
   </td>
@@ -136,7 +136,7 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03839.html">test</a></li><li class="navelem"><a class="el" href="a03842.html">geometry</a></li><li class="navelem"><a class="el" href="a03845.html">exporter</a></li><li class="navelem"><a class="el" href="a08455.html">AsTextRoundTest</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03899.html">test</a></li><li class="navelem"><a class="el" href="a03902.html">geometry</a></li><li class="navelem"><a class="el" href="a03901.html">attribute</a></li><li class="navelem"><a class="el" href="a08455.html">NumPointsTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

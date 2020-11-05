@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: IsValidDetail Class Reference</title>
+<title>jena-geo: ConvexHull Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,21 @@ $(document).ready(function(){initNavTree('a04239.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04236.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IsValidDetail Class Reference</div>  </div>
+<div class="title">ConvexHull Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for IsValidDetail:</div>
+Inheritance diagram for ConvexHull:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04238.png" border="0" usemap="#IsValidDetail_inherit__map" alt="Inheritance graph"/></div>
-<map name="IsValidDetail_inherit__map" id="IsValidDetail_inherit__map">
+<div class="center"><img src="a04238.png" border="0" usemap="#ConvexHull_inherit__map" alt="Inheritance graph"/></div>
+<map name="ConvexHull_inherit__map" id="ConvexHull_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for IsValidDetail:</div>
+Collaboration diagram for ConvexHull:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04237.png" border="0" usemap="#IsValidDetail_coll__map" alt="Collaboration graph"/></div>
-<map name="IsValidDetail_coll__map" id="IsValidDetail_coll__map">
+<div class="center"><img src="a04237.png" border="0" usemap="#ConvexHull_coll__map" alt="Collaboration graph"/></div>
+<map name="ConvexHull_coll__map" id="ConvexHull_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -104,8 +104,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06423.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                          {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            Object[] details = <span class="keyword">new</span> Object[3];</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            IsValidOp validOP = <span class="keyword">new</span> IsValidOp(geometry.getParsingGeometry());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            GeometryFactory fac=<span class="keyword">new</span> GeometryFactory();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            TopologyValidationError error = validOP.getValidationError();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (error != null) {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                details[0] = false ;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                details[1] = error.getMessage();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                details[2] = fac.createPoint(error.getCoordinate());</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                details[0] = true ;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                details[1] = <span class="stringliteral">&quot;Valid Geometry&quot;</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> NodeValue.makeString(Arrays.toString(details));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">References <a class="el" href="a06511.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06511.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06511.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>, and <a class="el" href="a06511.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                          {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            GeometryWrapper geom = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="a03806.html">org</a>.<a class="code" href="a03882.html">locationtech</a>.<a class="code" href="a03887.html">jts</a>.algorithm.ConvexHull convex=<span class="keyword">new</span> <a class="code" href="a03806.html">org</a>.<a class="code" href="a03882.html">locationtech</a>.<a class="code" href="a03887.html">jts</a>.algorithm.ConvexHull(geom.getParsingGeometry());</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Geometry convexHull = convex.getConvexHull();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            GeometryWrapper concaveWrapper = GeometryWrapperFactory.createGeometry(convexHull, geom.getSrsURI(), geom.getGeometryDatatypeURI());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">return</span> concaveWrapper.asNodeValue();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="ttc" id="a03882_html"><div class="ttname"><a href="a03882.html">org.locationtech</a></div></div>
+<div class="ttc" id="a03806_html"><div class="ttname"><a href="a03806.html">org</a></div></div>
+<div class="ttc" id="a03887_html"><div class="ttname"><a href="a03887.html">org.locationtech.jts</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -114,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03690.html">geometry</a></li><li class="navelem"><a class="el" href="a03691.html">attribute</a></li><li class="navelem"><a class="el" href="a04239.html">IsValidDetail</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03750.html">geometry</a></li><li class="navelem"><a class="el" href="a03751.html">attribute</a></li><li class="navelem"><a class="el" href="a04239.html">ConvexHull</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

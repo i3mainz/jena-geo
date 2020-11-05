@@ -1,5 +1,6 @@
 var a03859 =
 [
-    [ "PolygonFromTextTest", "a08915.html", "a08915" ],
-    [ "PolygonFromWKBTest", "a08919.html", "a08919" ]
+    [ "GeneralMatrix", "a07607.html", "a07607" ],
+    [ "Matrices", "a07611.html", "a07611" ],
+    [ "XAffineTransform", "a07615.html", "a07615" ]
 ];

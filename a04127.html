@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Expand Class Reference</title>
+<title>jena-geo: OctogonalEnvelope Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,21 +64,21 @@ $(document).ready(function(){initNavTree('a04127.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a04124.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Expand Class Reference</div>  </div>
+<div class="title">OctogonalEnvelope Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for Expand:</div>
+Inheritance diagram for OctogonalEnvelope:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04126.png" border="0" usemap="#Expand_inherit__map" alt="Inheritance graph"/></div>
-<map name="Expand_inherit__map" id="Expand_inherit__map">
+<div class="center"><img src="a04126.png" border="0" usemap="#OctogonalEnvelope_inherit__map" alt="Inheritance graph"/></div>
+<map name="OctogonalEnvelope_inherit__map" id="OctogonalEnvelope_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for Expand:</div>
+Collaboration diagram for OctogonalEnvelope:</div>
 <div class="dyncontent">
-<div class="center"><img src="a04125.png" border="0" usemap="#Expand_coll__map" alt="Collaboration graph"/></div>
-<map name="Expand_coll__map" id="Expand_coll__map">
+<div class="center"><img src="a04125.png" border="0" usemap="#OctogonalEnvelope_coll__map" alt="Collaboration graph"/></div>
+<map name="OctogonalEnvelope_coll__map" id="OctogonalEnvelope_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -103,7 +103,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                                           {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                <span class="comment">// TODO Auto-generated method stub</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div></div><!-- fragment -->
+
+<p class="reference">References <a class="el" href="a06511.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>, <a class="el" href="a06511.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a06511.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a06511.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, <a class="el" href="a06511.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a06203.html#a70d2c83f032867b59a3af555f1ff6d98">LiteralUtils.toGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                           {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Geometry geom = geometry.getXYGeometry();           </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            GeometryWrapper minCircleWrapper = GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(<span class="keyword">new</span> OctagonalEnvelope(geom)), geometry.getSrsURI(), geometry.getGeometryDatatypeURI());</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> minCircleWrapper.asNodeValue();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -112,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03686.html">envelope</a></li><li class="navelem"><a class="el" href="a03688.html">transform</a></li><li class="navelem"><a class="el" href="a04127.html">Expand</a></li>
+    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03746.html">envelope</a></li><li class="navelem"><a class="el" href="a03745.html">constructor</a></li><li class="navelem"><a class="el" href="a04127.html">OctogonalEnvelope</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

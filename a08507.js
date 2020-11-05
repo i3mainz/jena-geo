@@ -1,8 +1,5 @@
 var a08507 =
 [
-    [ "testEqualTopoFalse", "a08507.html#a8274875a2d4c85b886223bd494666e36", null ],
-    [ "testEqualTopoTrue", "a08507.html#a523cb10739809e6f16d7ba6f26d34cde", null ],
-    [ "result", "a08507.html#aab356d6554a7301750f11ec7a85ac47d", null ],
-    [ "testGeom", "a08507.html#a03a5f5da0ccbeed8c1678d4317cf2672", null ],
-    [ "testGeom2", "a08507.html#a6b4be369c8f60e973cd5126e69cd33a4", null ]
+    [ "testAsGeoJSON", "a08507.html#a6aee2cc3188bbf40fb4d946ed66e57c2", null ],
+    [ "testGeometry", "a08507.html#abc3f514f005cba49e406658e2d3086eb", null ]
 ];

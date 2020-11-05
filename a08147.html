@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: TWKBReader.PrecisionReader Class Reference</title>
+<title>jena-geo: MagneticModel Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,104 +62,66 @@ $(document).ready(function(){initNavTree('a08147.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="a08144.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TWKBReader.PrecisionReader Class Reference</div>  </div>
+<div class="title">MagneticModel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Java port of the NOAA's MAGtype_MagneticModel structure.  
+ <a href="a08147.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for TWKBReader.PrecisionReader:</div>
+Collaboration diagram for MagneticModel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08146.png" border="0" usemap="#TWKBReader_8PrecisionReader_inherit__map" alt="Inheritance graph"/></div>
-<map name="TWKBReader_8PrecisionReader_inherit__map" id="TWKBReader_8PrecisionReader_inherit__map">
-<area shape="rect" id="node2" href="a08151.html" title="TWKBReader.ExtendedPrecision\lReader" alt="" coords="5,80,221,121"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for TWKBReader.PrecisionReader:</div>
-<div class="dyncontent">
-<div class="center"><img src="a08145.png" border="0" usemap="#TWKBReader_8PrecisionReader_coll__map" alt="Collaboration graph"/></div>
-<map name="TWKBReader_8PrecisionReader_coll__map" id="TWKBReader_8PrecisionReader_coll__map">
+<div class="center"><img src="a08145.png" border="0" usemap="#MagneticModel_coll__map" alt="Collaboration graph"/></div>
+<map name="MagneticModel_coll__map" id="MagneticModel_coll__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af4edc5e5b8d78201415bc23188bf2978"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#af4edc5e5b8d78201415bc23188bf2978">PrecisionReader</a> (final int precision)</td></tr>
-<tr class="separator:af4edc5e5b8d78201415bc23188bf2978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d3647950410c96c47734decf0e12b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08171.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a04d3647950410c96c47734decf0e12b5">readPoint</a> (final DataInput input)  throws IOException </td></tr>
-<tr class="separator:a04d3647950410c96c47734decf0e12b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bbf2e471d2964af19292437ad42729b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08171.html">Coordinate</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a1bbf2e471d2964af19292437ad42729b">readPointArray</a> (final DataInput input)  throws IOException </td></tr>
-<tr class="separator:a1bbf2e471d2964af19292437ad42729b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9bc36531648cfcd2b9a1a4f8173826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a08147.html">MagneticModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">timelyModify</a> (<a class="el" href="a08143.html">MagneticDate</a> userDate)</td></tr>
+<tr class="memdesc:a9f9bc36531648cfcd2b9a1a4f8173826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time change the Model coefficients from the base year of the model using secular variation coefficients.  <a href="#a9f9bc36531648cfcd2b9a1a4f8173826">More...</a><br /></td></tr>
+<tr class="separator:a9f9bc36531648cfcd2b9a1a4f8173826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a9aa85be4ec02c28a05cb552845fe08eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a></td></tr>
-<tr class="separator:a9aa85be4ec02c28a05cb552845fe08eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a51396bbf497f4f198596df71b83e880c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a51396bbf497f4f198596df71b83e880c">MagneticModel</a> (int NumTerms)</td></tr>
+<tr class="separator:a51396bbf497f4f198596df71b83e880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:ae65e62b66039116c9dc01b61e86e3d96"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#ae65e62b66039116c9dc01b61e86e3d96">EditionDate</a></td></tr>
+<tr class="separator:ae65e62b66039116c9dc01b61e86e3d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd64b107b2f543872731cce5bdd2f167"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#acd64b107b2f543872731cce5bdd2f167">epoch</a></td></tr>
+<tr class="separator:acd64b107b2f543872731cce5bdd2f167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9040a807ab36de6d9fd568b14c1657d9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a9040a807ab36de6d9fd568b14c1657d9">ModelName</a></td></tr>
+<tr class="separator:a9040a807ab36de6d9fd568b14c1657d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a59610e1ba11eea1a10aa2c26c9dce7"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a></td></tr>
+<tr class="separator:a3a59610e1ba11eea1a10aa2c26c9dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac48c68a4fd92206d6ee678f73a75a50"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a></td></tr>
+<tr class="separator:aac48c68a4fd92206d6ee678f73a75a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5237677ba492a9d005d238fd6e7ad4"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a></td></tr>
+<tr class="separator:a5d5237677ba492a9d005d238fd6e7ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac757d81d52186da26e6c8a655abd0f2a"><td class="memItemLeft" align="right" valign="top">double []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a></td></tr>
+<tr class="separator:ac757d81d52186da26e6c8a655abd0f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d9f7b5895f47c027059c43a4589e4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a></td></tr>
+<tr class="separator:a23d9f7b5895f47c027059c43a4589e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac213db1f840d962e2a0b671676e8bff8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#ac213db1f840d962e2a0b671676e8bff8">nMaxSecVar</a></td></tr>
+<tr class="separator:ac213db1f840d962e2a0b671676e8bff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add173407e0ae9c470d5ee0ecffc42756"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#add173407e0ae9c470d5ee0ecffc42756">SecularVariationUsed</a></td></tr>
+<tr class="separator:add173407e0ae9c470d5ee0ecffc42756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c7cf444ff24e0267a07abc44ff7144"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08147.html#a17c7cf444ff24e0267a07abc44ff7144">CoefficientFileEndDate</a></td></tr>
+<tr class="separator:a17c7cf444ff24e0267a07abc44ff7144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af4edc5e5b8d78201415bc23188bf2978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4edc5e5b8d78201415bc23188bf2978">&#9670;&nbsp;</a></span>PrecisionReader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08147.html">PrecisionReader</a> </td>
-          <td>(</td>
-          <td class="paramtype">final int&#160;</td>
-          <td class="paramname"><em>precision</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                               {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;     <a class="code" href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a> = Math.pow(10, precision);</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;   }</div><div class="ttc" id="a08147_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBReader.PrecisionReader.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBReader.java:232</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a04d3647950410c96c47734decf0e12b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04d3647950410c96c47734decf0e12b5">&#9670;&nbsp;</a></span>readPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08171.html">Coordinate</a> readPoint </td>
-          <td>(</td>
-          <td class="paramtype">final DataInput&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                                                         {</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;     <span class="keywordflow">return</span> <span class="keyword">new</span> Coordinate(</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;         (Varint.readSignedVarLong(input)) / <a class="code" href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>,</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;         (Varint.readSignedVarLong(input)) / <a class="code" href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>);</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;   }</div><div class="ttc" id="a08147_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBReader.PrecisionReader.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBReader.java:232</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1bbf2e471d2964af19292437ad42729b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bbf2e471d2964af19292437ad42729b">&#9670;&nbsp;</a></span>readPointArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a08171.html">Coordinate</a> [] readPointArray </td>
-          <td>(</td>
-          <td class="paramtype">final DataInput&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                                                {</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;     <span class="keyword">final</span> <span class="keywordtype">int</span> numCoordinates = Varint.readUnsignedVarInt(input);</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;     <span class="keyword">final</span> Coordinate[] coordinates = <span class="keyword">new</span> Coordinate[numCoordinates];</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;     <span class="keywordtype">long</span> lastX = 0;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;     <span class="keywordtype">long</span> lastY = 0;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numCoordinates; i++) {</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;       lastX = Varint.readSignedVarLong(input) + lastX;</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;       lastY = Varint.readSignedVarLong(input) + lastY;</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;       coordinates[i] =</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;           <span class="keyword">new</span> Coordinate((lastX) / <a class="code" href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>, (lastY) / <a class="code" href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">precisionMultiplier</a>);</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;     }</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;     <span class="keywordflow">return</span> coordinates;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;   }</div><div class="ttc" id="a08147_html_a9aa85be4ec02c28a05cb552845fe08eb"><div class="ttname"><a href="a08147.html#a9aa85be4ec02c28a05cb552845fe08eb">org.locationtech.geowave.core.geotime.util.TWKBReader.PrecisionReader.precisionMultiplier</a></div><div class="ttdeci">double precisionMultiplier</div><div class="ttdef"><b>Definition:</b> TWKBReader.java:232</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9aa85be4ec02c28a05cb552845fe08eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa85be4ec02c28a05cb552845fe08eb">&#9670;&nbsp;</a></span>precisionMultiplier</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Java port of the NOAA's MAGtype_MagneticModel structure. </p>
+<dl class="section author"><dt>Author</dt><dd>Hasdenteufel Eric (Geomatys) </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a51396bbf497f4f198596df71b83e880c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51396bbf497f4f198596df71b83e880c">&#9670;&nbsp;</a></span>MagneticModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,15 +130,343 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double precisionMultiplier</td>
+          <td class="memname"><a class="el" href="a08147.html">MagneticModel</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>NumTerms</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">NumTerms</td><td>Total number of spherical harmonic coefficients in the model </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this.<a class="code" href="a08147.html#a17c7cf444ff24e0267a07abc44ff7144">CoefficientFileEndDate</a> = 0;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this.<a class="code" href="a08147.html#ae65e62b66039116c9dc01b61e86e3d96">EditionDate</a> = 0;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.<a class="code" href="a08147.html#a9040a807ab36de6d9fd568b14c1657d9">ModelName</a> = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        this.<a class="code" href="a08147.html#add173407e0ae9c470d5ee0ecffc42756">SecularVariationUsed</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        this.<a class="code" href="a08147.html#acd64b107b2f543872731cce5bdd2f167">epoch</a> = 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this.<a class="code" href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a> = 0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        this.<a class="code" href="a08147.html#ac213db1f840d962e2a0b671676e8bff8">nMaxSecVar</a> = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        this.<a class="code" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        this.<a class="code" href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this.<a class="code" href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this.<a class="code" href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a> = <span class="keyword">new</span> <span class="keywordtype">double</span>[NumTerms+1];</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; NumTerms; i++) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this.<a class="code" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>[i] = 0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            this.<a class="code" href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a>[i] = 0;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            this.<a class="code" href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a>[i] = 0;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            this.<a class="code" href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a>[i] = 0;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="ttc" id="a08147_html_a5d5237677ba492a9d005d238fd6e7ad4"><div class="ttname"><a href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_G</a></div><div class="ttdeci">double [] Secular_Var_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:31</div></div>
+<div class="ttc" id="a08147_html_ac757d81d52186da26e6c8a655abd0f2a"><div class="ttname"><a href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_H</a></div><div class="ttdeci">double [] Secular_Var_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:32</div></div>
+<div class="ttc" id="a08147_html_aac48c68a4fd92206d6ee678f73a75a50"><div class="ttname"><a href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_H</a></div><div class="ttdeci">double [] Main_Field_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:30</div></div>
+<div class="ttc" id="a08147_html_add173407e0ae9c470d5ee0ecffc42756"><div class="ttname"><a href="a08147.html#add173407e0ae9c470d5ee0ecffc42756">org.geotoolkit.util.wmm.MagneticModel.SecularVariationUsed</a></div><div class="ttdeci">boolean SecularVariationUsed</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:35</div></div>
+<div class="ttc" id="a08147_html_a23d9f7b5895f47c027059c43a4589e4f"><div class="ttname"><a href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">org.geotoolkit.util.wmm.MagneticModel.nMax</a></div><div class="ttdeci">int nMax</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:33</div></div>
+<div class="ttc" id="a08147_html_a9040a807ab36de6d9fd568b14c1657d9"><div class="ttname"><a href="a08147.html#a9040a807ab36de6d9fd568b14c1657d9">org.geotoolkit.util.wmm.MagneticModel.ModelName</a></div><div class="ttdeci">String ModelName</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:28</div></div>
+<div class="ttc" id="a08147_html_ae65e62b66039116c9dc01b61e86e3d96"><div class="ttname"><a href="a08147.html#ae65e62b66039116c9dc01b61e86e3d96">org.geotoolkit.util.wmm.MagneticModel.EditionDate</a></div><div class="ttdeci">double EditionDate</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:26</div></div>
+<div class="ttc" id="a08147_html_a3a59610e1ba11eea1a10aa2c26c9dce7"><div class="ttname"><a href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_G</a></div><div class="ttdeci">double [] Main_Field_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:29</div></div>
+<div class="ttc" id="a08147_html_acd64b107b2f543872731cce5bdd2f167"><div class="ttname"><a href="a08147.html#acd64b107b2f543872731cce5bdd2f167">org.geotoolkit.util.wmm.MagneticModel.epoch</a></div><div class="ttdeci">double epoch</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:27</div></div>
+<div class="ttc" id="a08147_html_a17c7cf444ff24e0267a07abc44ff7144"><div class="ttname"><a href="a08147.html#a17c7cf444ff24e0267a07abc44ff7144">org.geotoolkit.util.wmm.MagneticModel.CoefficientFileEndDate</a></div><div class="ttdeci">double CoefficientFileEndDate</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:36</div></div>
+<div class="ttc" id="a08147_html_ac213db1f840d962e2a0b671676e8bff8"><div class="ttname"><a href="a08147.html#ac213db1f840d962e2a0b671676e8bff8">org.geotoolkit.util.wmm.MagneticModel.nMaxSecVar</a></div><div class="ttdeci">int nMaxSecVar</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9f9bc36531648cfcd2b9a1a4f8173826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9bc36531648cfcd2b9a1a4f8173826">&#9670;&nbsp;</a></span>timelyModify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a08147.html">MagneticModel</a> timelyModify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a08143.html">MagneticDate</a>&#160;</td>
+          <td class="paramname"><em>userDate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time change the Model coefficients from the base year of the model using secular variation coefficients. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userDate</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the Magnetic Model adjusted. </dd></dl>
+
+<p class="reference">References <a class="el" href="a08143.html#afb8201d541b7b916e28bdf9884f6c794">MagneticDate.DecimalYear</a>, <a class="el" href="a08147.html#ae65e62b66039116c9dc01b61e86e3d96">MagneticModel.EditionDate</a>, <a class="el" href="a08147.html#acd64b107b2f543872731cce5bdd2f167">MagneticModel.epoch</a>, <a class="el" href="a08147.html#a51396bbf497f4f198596df71b83e880c">MagneticModel.MagneticModel()</a>, <a class="el" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">MagneticModel.Main_Field_Coeff_G</a>, <a class="el" href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">MagneticModel.Main_Field_Coeff_H</a>, <a class="el" href="a08147.html#a9040a807ab36de6d9fd568b14c1657d9">MagneticModel.ModelName</a>, <a class="el" href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">MagneticModel.nMax</a>, <a class="el" href="a08147.html#ac213db1f840d962e2a0b671676e8bff8">MagneticModel.nMaxSecVar</a>, <a class="el" href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">MagneticModel.Secular_Var_Coeff_G</a>, and <a class="el" href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">MagneticModel.Secular_Var_Coeff_H</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                             {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="a08147.html#a51396bbf497f4f198596df71b83e880c">MagneticModel</a> timedMagneticModel = <span class="keyword">new</span> <a class="code" href="a08147.html#a51396bbf497f4f198596df71b83e880c">MagneticModel</a>(<a class="code" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>.length-1);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        timedMagneticModel.EditionDate = this.<a class="code" href="a08147.html#ae65e62b66039116c9dc01b61e86e3d96">EditionDate</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        timedMagneticModel.epoch = this.<a class="code" href="a08147.html#acd64b107b2f543872731cce5bdd2f167">epoch</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        timedMagneticModel.nMax = this.<a class="code" href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        timedMagneticModel.nMaxSecVar = this.<a class="code" href="a08147.html#ac213db1f840d962e2a0b671676e8bff8">nMaxSecVar</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> a = timedMagneticModel.nMaxSecVar;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">final</span> <span class="keywordtype">int</span> b = (a * (a + 1) / 2 + a);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        timedMagneticModel.ModelName = this.<a class="code" href="a08147.html#a9040a807ab36de6d9fd568b14c1657d9">ModelName</a>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n = 1; n &lt;= this.<a class="code" href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">nMax</a>; n++)</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> m = 0; m &lt;= n; m++)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keyword">final</span> <span class="keywordtype">int</span> index = (n * (n + 1) / 2 + m);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">if</span>(index &lt;= b)</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    timedMagneticModel.Main_Field_Coeff_H[index] = this.<a class="code" href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a>[index] + (userDate.DecimalYear - this.<a class="code" href="a08147.html#acd64b107b2f543872731cce5bdd2f167">epoch</a>) * this.<a class="code" href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a>[index];</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    timedMagneticModel.Main_Field_Coeff_G[index] = this.<a class="code" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>[index] + (userDate.DecimalYear - this.<a class="code" href="a08147.html#acd64b107b2f543872731cce5bdd2f167">epoch</a>) * this.<a class="code" href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a>[index];</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    timedMagneticModel.Secular_Var_Coeff_H[index] = this.<a class="code" href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">Secular_Var_Coeff_H</a>[index]; <span class="comment">/* We need a copy of the secular var coef to calculate secular change */</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    timedMagneticModel.Secular_Var_Coeff_G[index] = this.<a class="code" href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">Secular_Var_Coeff_G</a>[index];</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                } <span class="keywordflow">else</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    timedMagneticModel.Main_Field_Coeff_H[index] = this.<a class="code" href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">Main_Field_Coeff_H</a>[index];</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    timedMagneticModel.Main_Field_Coeff_G[index] = this.<a class="code" href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">Main_Field_Coeff_G</a>[index];</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> timedMagneticModel;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div><div class="ttc" id="a08147_html_a5d5237677ba492a9d005d238fd6e7ad4"><div class="ttname"><a href="a08147.html#a5d5237677ba492a9d005d238fd6e7ad4">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_G</a></div><div class="ttdeci">double [] Secular_Var_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:31</div></div>
+<div class="ttc" id="a08147_html_a51396bbf497f4f198596df71b83e880c"><div class="ttname"><a href="a08147.html#a51396bbf497f4f198596df71b83e880c">org.geotoolkit.util.wmm.MagneticModel.MagneticModel</a></div><div class="ttdeci">MagneticModel(int NumTerms)</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:42</div></div>
+<div class="ttc" id="a08147_html_ac757d81d52186da26e6c8a655abd0f2a"><div class="ttname"><a href="a08147.html#ac757d81d52186da26e6c8a655abd0f2a">org.geotoolkit.util.wmm.MagneticModel.Secular_Var_Coeff_H</a></div><div class="ttdeci">double [] Secular_Var_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:32</div></div>
+<div class="ttc" id="a08147_html_aac48c68a4fd92206d6ee678f73a75a50"><div class="ttname"><a href="a08147.html#aac48c68a4fd92206d6ee678f73a75a50">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_H</a></div><div class="ttdeci">double [] Main_Field_Coeff_H</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:30</div></div>
+<div class="ttc" id="a08147_html_a23d9f7b5895f47c027059c43a4589e4f"><div class="ttname"><a href="a08147.html#a23d9f7b5895f47c027059c43a4589e4f">org.geotoolkit.util.wmm.MagneticModel.nMax</a></div><div class="ttdeci">int nMax</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:33</div></div>
+<div class="ttc" id="a08147_html_a9040a807ab36de6d9fd568b14c1657d9"><div class="ttname"><a href="a08147.html#a9040a807ab36de6d9fd568b14c1657d9">org.geotoolkit.util.wmm.MagneticModel.ModelName</a></div><div class="ttdeci">String ModelName</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:28</div></div>
+<div class="ttc" id="a08147_html_ae65e62b66039116c9dc01b61e86e3d96"><div class="ttname"><a href="a08147.html#ae65e62b66039116c9dc01b61e86e3d96">org.geotoolkit.util.wmm.MagneticModel.EditionDate</a></div><div class="ttdeci">double EditionDate</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:26</div></div>
+<div class="ttc" id="a08147_html_a3a59610e1ba11eea1a10aa2c26c9dce7"><div class="ttname"><a href="a08147.html#a3a59610e1ba11eea1a10aa2c26c9dce7">org.geotoolkit.util.wmm.MagneticModel.Main_Field_Coeff_G</a></div><div class="ttdeci">double [] Main_Field_Coeff_G</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:29</div></div>
+<div class="ttc" id="a08147_html_acd64b107b2f543872731cce5bdd2f167"><div class="ttname"><a href="a08147.html#acd64b107b2f543872731cce5bdd2f167">org.geotoolkit.util.wmm.MagneticModel.epoch</a></div><div class="ttdeci">double epoch</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:27</div></div>
+<div class="ttc" id="a08147_html_ac213db1f840d962e2a0b671676e8bff8"><div class="ttname"><a href="a08147.html#ac213db1f840d962e2a0b671676e8bff8">org.geotoolkit.util.wmm.MagneticModel.nMaxSecVar</a></div><div class="ttdeci">int nMaxSecVar</div><div class="ttdef"><b>Definition:</b> MagneticModel.java:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a17c7cf444ff24e0267a07abc44ff7144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c7cf444ff24e0267a07abc44ff7144">&#9670;&nbsp;</a></span>CoefficientFileEndDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CoefficientFileEndDate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>.</p>
+
+</div>
+</div>
+<a id="ae65e62b66039116c9dc01b61e86e3d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65e62b66039116c9dc01b61e86e3d96">&#9670;&nbsp;</a></span>EditionDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double EditionDate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="acd64b107b2f543872731cce5bdd2f167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd64b107b2f543872731cce5bdd2f167">&#9670;&nbsp;</a></span>epoch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double epoch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="a3a59610e1ba11eea1a10aa2c26c9dce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a59610e1ba11eea1a10aa2c26c9dce7">&#9670;&nbsp;</a></span>Main_Field_Coeff_G</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] Main_Field_Coeff_G</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08163.html#ab47918998e4b55f7664c0578e3bb7dac">WorldMagneticModel.summation()</a>, <a class="el" href="a08163.html#a50ddd8565ac3efba61ecd0b81326c9b4">WorldMagneticModel.summationSpecial()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="aac48c68a4fd92206d6ee678f73a75a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac48c68a4fd92206d6ee678f73a75a50">&#9670;&nbsp;</a></span>Main_Field_Coeff_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] Main_Field_Coeff_H</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08163.html#ab47918998e4b55f7664c0578e3bb7dac">WorldMagneticModel.summation()</a>, <a class="el" href="a08163.html#a50ddd8565ac3efba61ecd0b81326c9b4">WorldMagneticModel.summationSpecial()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="a9040a807ab36de6d9fd568b14c1657d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9040a807ab36de6d9fd568b14c1657d9">&#9670;&nbsp;</a></span>ModelName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String ModelName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="a23d9f7b5895f47c027059c43a4589e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d9f7b5895f47c027059c43a4589e4f">&#9670;&nbsp;</a></span>nMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08163.html#ab47918998e4b55f7664c0578e3bb7dac">WorldMagneticModel.summation()</a>, <a class="el" href="a08163.html#a50ddd8565ac3efba61ecd0b81326c9b4">WorldMagneticModel.summationSpecial()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="ac213db1f840d962e2a0b671676e8bff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac213db1f840d962e2a0b671676e8bff8">&#9670;&nbsp;</a></span>nMaxSecVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nMaxSecVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08163.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>, <a class="el" href="a08163.html#a4d749f954c6418af91a3f3679c461618">WorldMagneticModel.secVarSummationSpecial()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="a5d5237677ba492a9d005d238fd6e7ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5237677ba492a9d005d238fd6e7ad4">&#9670;&nbsp;</a></span>Secular_Var_Coeff_G</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] Secular_Var_Coeff_G</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08163.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>, <a class="el" href="a08163.html#a4d749f954c6418af91a3f3679c461618">WorldMagneticModel.secVarSummationSpecial()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="ac757d81d52186da26e6c8a655abd0f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac757d81d52186da26e6c8a655abd0f2a">&#9670;&nbsp;</a></span>Secular_Var_Coeff_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] Secular_Var_Coeff_H</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a2590ee00de934c1534e262378ba2d673">WorldMagneticModel.readMagModel()</a>, <a class="el" href="a08163.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>, <a class="el" href="a08163.html#a4d749f954c6418af91a3f3679c461618">WorldMagneticModel.secVarSummationSpecial()</a>, and <a class="el" href="a08147.html#a9f9bc36531648cfcd2b9a1a4f8173826">MagneticModel.timelyModify()</a>.</p>
+
+</div>
+</div>
+<a id="add173407e0ae9c470d5ee0ecffc42756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add173407e0ae9c470d5ee0ecffc42756">&#9670;&nbsp;</a></span>SecularVariationUsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean SecularVariationUsed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a08163.html#a39db118fa53955530889e7c63b09c6b8">WorldMagneticModel.secVarSummation()</a>.</p>
 
 </div>
 </div>
@@ -186,7 +476,7 @@ Protected Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03746.html">org</a></li><li class="navelem"><a class="el" href="a03822.html">locationtech</a></li><li class="navelem"><a class="el" href="a03823.html">geowave</a></li><li class="navelem"><a class="el" href="a03824.html">core</a></li><li class="navelem"><a class="el" href="a03825.html">geotime</a></li><li class="navelem"><a class="el" href="a03821.html">util</a></li><li class="navelem"><a class="el" href="a08139.html">TWKBReader</a></li><li class="navelem"><a class="el" href="a08147.html">PrecisionReader</a></li>
+    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03865.html">util</a></li><li class="navelem"><a class="el" href="a03871.html">wmm</a></li><li class="navelem"><a class="el" href="a08147.html">MagneticModel</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

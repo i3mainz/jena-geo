@@ -1,17 +1,12 @@
 var a07155 =
 [
-    [ "Formatter", "a07159.html", "a07159" ],
-    [ "IndentedLineWriter", "a07155.html#a28b3540f49a1994cf4fd06f19823f5e1", null ],
-    [ "IndentedLineWriter", "a07155.html#a95d4445f9e69d5fe9b0340c21a32067d", null ],
-    [ "IndentedLineWriter", "a07155.html#a2cfc775c0bd98691738aa3ee4494e94f", null ],
-    [ "beginNewLine", "a07155.html#a201821920be72364057a68bb8d6e0115", null ],
-    [ "beginNewLine", "a07155.html#ab343177e8e0c07db04d0a3df90e75a9e", null ],
-    [ "content", "a07155.html#a798e6549f9920f48391fb99b802d29e0", null ],
-    [ "content", "a07155.html#abd2d8e3a0209ed6d972d7d4a47cd9d73", null ],
-    [ "getIdentation", "a07155.html#a481a82cbd4fa7955df5d5375eab7068c", null ],
-    [ "getMargin", "a07155.html#a81780590574f588b108afda5f71a906b", null ],
-    [ "setIndentation", "a07155.html#ad8ce95e52d965c3fbc5fa23d3b9c2b24", null ],
-    [ "setMargin", "a07155.html#af49f34a9fb2c467d19b60af3e0f36a5e", null ],
-    [ "toString", "a07155.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "margin", "a07155.html#a3cdc9c0deea1c4f92026c1ccde3662e4", null ]
+    [ "CRSUtilities", "a07155.html#acd4a71e0feab006538b7fa26758bd73b", null ],
+    [ "appendMissingDimensions", "a07155.html#aaa31ddd00eab46f7dd0b65243d25398c", null ],
+    [ "firstHorizontalAxis", "a07155.html#ad9fccc5aeb3991f7029a5829556606ca", null ],
+    [ "getAngularUnit", "a07155.html#ae2b0361e41e5195e1764c9e77c46f8a7", null ],
+    [ "getCRS2D", "a07155.html#a24f732e942e49a935b7f43a1f5e5daf8", null ],
+    [ "getDimensionOf", "a07155.html#a2718c035887ff99af49798a6f2308105", null ],
+    [ "getHorizontalResolution", "a07155.html#a0c1306f576a9a11d5840ceb29daac879", null ],
+    [ "getReferencingGroup", "a07155.html#a71b44adefaf0374941b1edba899c7396", null ],
+    [ "shiftAxisRange", "a07155.html#ad00bacdb287a41b6724201d9813d6828", null ]
 ];

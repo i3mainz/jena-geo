@@ -1,10 +1,10 @@
 var a06891 =
 [
-    [ "Hysteresis", "a06891.html#aa905a3fe2577bdc53cb3cae5d44562d5", null ],
-    [ "computeImage", "a06891.html#a5522f2e40982772e9fd940df4a96af81", null ],
-    [ "getSources", "a06891.html#a016c1e8b58082cf2add38a25a00fd20d", null ],
-    [ "high", "a06891.html#a59a8583be04a35d38786ebc27d1b5e33", null ],
-    [ "low", "a06891.html#adc5a7a331f0ffcd76abf8b46f4f76e7d", null ],
-    [ "OPERATION_NAME", "a06891.html#a4ba7d667bd2c11bb15f09506d145b31e", null ],
-    [ "padValue", "a06891.html#aa54b965fbb1edbc2743aff21e3f2933c", null ]
+    [ "InterpolationCase", "a06891.html#aad81949b89537d5869c85deec4d95979", null ],
+    [ "BICUBIC", "a06891.html#ae532779b4a97152af22fc25cd688ebe5", null ],
+    [ "BICUBIC2", "a06891.html#a0f1dc6fc0f37c3614207b5173fad9d9b", null ],
+    [ "BILINEAR", "a06891.html#a330cceaf462bb9b2c8d748b2e6f870f6", null ],
+    [ "LANCZOS", "a06891.html#a7905aa04510022c3f4be8eaebbf6e0d1", null ],
+    [ "margin", "a06891.html#a962b51c81e9bbe00d99fd54f39fd32b0", null ],
+    [ "NEIGHBOR", "a06891.html#a6ea6316ae077fef1db4977613c7b3374", null ]
 ];

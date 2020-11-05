@@ -1,9 +1,13 @@
 var a08079 =
 [
-    [ "XInteger", "a08079.html#ad559a69c12668e28c746aeac54fa5485", null ],
-    [ "parseIntSigned", "a08079.html#ad5f62b4b939e2464f9156b1ce7a84936", null ],
-    [ "parseIntUnsigned", "a08079.html#a9d59703fef82717fa7c929bf7e766619", null ],
-    [ "RADIX", "a08079.html#a7c13ad25697cc2fbb7ffc7f24ac5f0cd", null ],
-    [ "UNSIGNED_LIMIT", "a08079.html#ac9b0210abf43a4c4651ec53ead06449f", null ],
-    [ "UNSIGNED_MULMIN", "a08079.html#af2c71eca1db00dfff5ac5e18787c9cf2", null ]
+    [ "create", "a08079.html#aeb18f842096db3a0bcc084c570ee13ae", null ],
+    [ "create", "a08079.html#a161ace52b7f81b6e29f47e284d75a262", null ],
+    [ "create", "a08079.html#af1334cc1481735774c69413a6c20a708", null ],
+    [ "getNamespace", "a08079.html#a244fda4bbd55c2a410f69fa5c118673a", null ],
+    [ "match", "a08079.html#afd11bc7afdce45fc0860c69d59f4d95c", null ],
+    [ "match", "a08079.html#a6a5eff665e7080bac0947dd014a71c01", null ],
+    [ "toExpandedString", "a08079.html#ae5a4e5f4649079aa5861c4a3d32a5a85", null ],
+    [ "toExtendedForm", "a08079.html#af943b1fb25b0cba8adc1b078ac9da0b5", null ],
+    [ "toSessionNamespaceFromExtended", "a08079.html#abda4e6de975da6e257c16fd282850794", null ],
+    [ "valueOf", "a08079.html#a40cc4f345185d98688ced43f848a0ff0", null ]
 ];

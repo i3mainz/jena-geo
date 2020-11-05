@@ -1,11 +1,13 @@
 var a08099 =
 [
-    [ "Version", "a08099.html#a45372cf61bad3b3b6b44d8c1c4a013a4", null ],
-    [ "getDate", "a08099.html#a4a54f52996492cdc8a704b68ff5d43dd", null ],
-    [ "getHistory", "a08099.html#a4732e121fe00d99ef006ca0b0f760f45", null ],
-    [ "getLabel", "a08099.html#a86ad2cb533724ac728e0f96b2323cceb", null ],
-    [ "toString", "a08099.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "date", "a08099.html#a9e245c30a3ef36b1454531d572c4b0f5", null ],
-    [ "history", "a08099.html#ae2bbc5ff367930f62ff5109528dd4e6c", null ],
-    [ "label", "a08099.html#ac3f915eab3b535426bb9794989e9ea2e", null ]
+    [ "Float", "a08099.html#a97ba0b08151c0bf623660e829067ebd2", null ],
+    [ "compareTo", "a08099.html#a7893c80d4bedc3bc20cf1176e18d7f5b", null ],
+    [ "ranks", "a08099.html#abb150dc13c316a480c404b1703c03990", null ],
+    [ "ranks", "a08099.html#a7e3ac659899192333adea39b87f41331", null ],
+    [ "ranks", "a08099.html#a7d6b4c1a3487b8a95e888b35125e1a84", null ],
+    [ "ranks", "a08099.html#abb82129695e9a7b212788912ccc45539", null ],
+    [ "ranks", "a08099.html#ad3b1488acd654783f7a4dc632814441f", null ],
+    [ "ranks", "a08099.html#a61c17c529dc8bc76ab21e0c51bf9f06a", null ],
+    [ "ranks", "a08099.html#aba4cf5edced49d8515c8f2f019afa32c", null ],
+    [ "value", "a08099.html#a43c784cad5127c16dccd2f94e824d83d", null ]
 ];

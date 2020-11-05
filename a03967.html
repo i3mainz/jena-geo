@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: BoundingBox.AccBBOX Class Reference</title>
+<title>jena-geo: GeobufDecoder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,173 +62,135 @@ $(document).ready(function(){initNavTree('a03967.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="a03964.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BoundingBox.AccBBOX Class Reference</div>  </div>
+<div class="title">GeobufDecoder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Decode a Geobuf.  
+ <a href="a03967.html#details">More...</a></p>
 <div class="dynheader">
-Inheritance diagram for BoundingBox.AccBBOX:</div>
+Inheritance diagram for GeobufDecoder:</div>
 <div class="dyncontent">
-<div class="center"><img src="a03966.png" border="0" usemap="#BoundingBox_8AccBBOX_inherit__map" alt="Inheritance graph"/></div>
-<map name="BoundingBox_8AccBBOX_inherit__map" id="BoundingBox_8AccBBOX_inherit__map">
+<div class="center"><img src="a03966.png" border="0" usemap="#GeobufDecoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="GeobufDecoder_inherit__map" id="GeobufDecoder_inherit__map">
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for BoundingBox.AccBBOX:</div>
+Collaboration diagram for GeobufDecoder:</div>
 <div class="dyncontent">
-<div class="center"><img src="a03965.png" border="0" usemap="#BoundingBox_8AccBBOX_coll__map" alt="Collaboration graph"/></div>
-<map name="BoundingBox_8AccBBOX_coll__map" id="BoundingBox_8AccBBOX_coll__map">
+<div class="center"><img src="a03965.png" border="0" usemap="#GeobufDecoder_coll__map" alt="Collaboration graph"/></div>
+<map name="GeobufDecoder_coll__map" id="GeobufDecoder_coll__map">
+<area shape="rect" id="node3" href="a06283.html" title="Geobuf" alt="" coords="203,95,267,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6bfd5f2fadbc7baee5ea0f5c6eba240d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a6bfd5f2fadbc7baee5ea0f5c6eba240d">AccBBOX</a> (Expr expr)</td></tr>
-<tr class="separator:a6bfd5f2fadbc7baee5ea0f5c6eba240d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28817aa8b3ff9874c7550bbac242267d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a28817aa8b3ff9874c7550bbac242267d">accumulate</a> (NodeValue nv, Binding binding, FunctionEnv functionEnv)</td></tr>
-<tr class="separator:a28817aa8b3ff9874c7550bbac242267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97738b9e0a0bde3579a698473dc654a8"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a97738b9e0a0bde3579a698473dc654a8">getAccValue</a> ()</td></tr>
-<tr class="separator:a97738b9e0a0bde3579a698473dc654a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d858768ad14d431108f3353b46b28d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a61d858768ad14d431108f3353b46b28d">GeobufDecoder</a> (InputStream is)  throws IOException </td></tr>
+<tr class="memdesc:a61d858768ad14d431108f3353b46b28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Geobuf decoder, optionally backed by high-performance on-disk storage.  <a href="#a61d858768ad14d431108f3353b46b28d">More...</a><br /></td></tr>
+<tr class="separator:a61d858768ad14d431108f3353b46b28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d1cc3d61071d927bf040bf0b035a22"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a58d1cc3d61071d927bf040bf0b035a22">hasNext</a> ()</td></tr>
+<tr class="separator:a58d1cc3d61071d927bf040bf0b035a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c41cb83f82bc0df1e2b4dc59adebe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a03979.html">GeobufFeature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a97c41cb83f82bc0df1e2b4dc59adebe0">next</a> ()</td></tr>
+<tr class="separator:a97c41cb83f82bc0df1e2b4dc59adebe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a00612e8af24f1d01fca23bfa838b60f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a00612e8af24f1d01fca23bfa838b60f4">accumulateError</a> (Binding binding, FunctionEnv functionEnv)</td></tr>
-<tr class="separator:a00612e8af24f1d01fca23bfa838b60f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:acb559820d9ca11295b4500f179ef6392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0</td></tr>
+<tr class="separator:acb559820d9ca11295b4500f179ef6392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae105f5144b2d95a9575c05304094d936"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#ae105f5144b2d95a9575c05304094d936">maxXSoFar</a> = null</td></tr>
-<tr class="separator:ae105f5144b2d95a9575c05304094d936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a779cc68ad604763dffa67756a214b6ed"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a779cc68ad604763dffa67756a214b6ed">maxYSoFar</a> = null</td></tr>
-<tr class="separator:a779cc68ad604763dffa67756a214b6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae81ab4df2375b100c3217dddf31b56c5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">minXSoFar</a> = null</td></tr>
-<tr class="separator:ae81ab4df2375b100c3217dddf31b56c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee267f7fe5994847b544bbad9b08169"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#abee267f7fe5994847b544bbad9b08169">minYSoFar</a> = null</td></tr>
-<tr class="separator:abee267f7fe5994847b544bbad9b08169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a95d529e3b3e3512179e1a7dbc3bae7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7">maxFeat</a></td></tr>
+<tr class="separator:a4a95d529e3b3e3512179e1a7dbc3bae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44d648901fab99ed773d4a899696180"><td class="memItemLeft" align="right" valign="top">Geobuf.Data.FeatureCollection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#ad44d648901fab99ed773d4a899696180">featureCollection</a></td></tr>
+<tr class="separator:ad44d648901fab99ed773d4a899696180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b67fd2a3fd4f55257fd38f9624e7d67"><td class="memItemLeft" align="right" valign="top">List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67">keys</a></td></tr>
+<tr class="separator:a0b67fd2a3fd4f55257fd38f9624e7d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49401dd19535ec33cc4f59b017e899aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03967.html#a49401dd19535ec33cc4f59b017e899aa">precisionDivisor</a></td></tr>
+<tr class="separator:a49401dd19535ec33cc4f59b017e899aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6bfd5f2fadbc7baee5ea0f5c6eba240d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bfd5f2fadbc7baee5ea0f5c6eba240d">&#9670;&nbsp;</a></span>AccBBOX()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Decode a Geobuf. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a61d858768ad14d431108f3353b46b28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d858768ad14d431108f3353b46b28d">&#9670;&nbsp;</a></span>GeobufDecoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a03967.html">AccBBOX</a> </td>
+          <td class="memname"><a class="el" href="a03967.html">GeobufDecoder</a> </td>
           <td>(</td>
-          <td class="paramtype">Expr&#160;</td>
-          <td class="paramname"><em>expr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{ super(expr, <span class="keyword">false</span>) ; }</div></div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a28817aa8b3ff9874c7550bbac242267d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28817aa8b3ff9874c7550bbac242267d">&#9670;&nbsp;</a></span>accumulate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void accumulate </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>nv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Binding&#160;</td>
-          <td class="paramname"><em>binding</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FunctionEnv&#160;</td>
-          <td class="paramname"><em>functionEnv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">InputStream&#160;</td>
+          <td class="paramname"><em>is</em></td><td>)</td>
+          <td> throws IOException</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="a06423.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a06423.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        { </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                GeometryWrapper geometry = GeometryWrapper.extract(nv);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            Geometry geo=geometry.getParsingGeometry();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                NodeValue localMaxX=NodeValue.makeDouble(geo.getEnvelopeInternal().getMaxX());</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                NodeValue localMaxY=NodeValue.makeDouble(geo.getEnvelopeInternal().getMaxY());</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                NodeValue localMinX=NodeValue.makeDouble(geo.getEnvelopeInternal().getMinX());</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                NodeValue localMinY=NodeValue.makeDouble(geo.getEnvelopeInternal().getMinY());</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">minXSoFar</a>==null) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <a class="code" href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">minXSoFar</a>=localMinX;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">int</span> x = NodeValue.compareAlways(<a class="code" href="a03967.html#ae105f5144b2d95a9575c05304094d936">maxXSoFar</a>, localMaxX) ;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> ( x &lt; 0 )</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="a03967.html#ae105f5144b2d95a9575c05304094d936">maxXSoFar</a> = localMaxX ;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            x = NodeValue.compareAlways(<a class="code" href="a03967.html#a779cc68ad604763dffa67756a214b6ed">maxYSoFar</a>, localMaxY) ;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> ( x &lt; 0 )</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <a class="code" href="a03967.html#a779cc68ad604763dffa67756a214b6ed">maxYSoFar</a> = localMaxY ;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            x = NodeValue.compareAlways(<a class="code" href="a03967.html#a779cc68ad604763dffa67756a214b6ed">maxYSoFar</a>, localMinX) ;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> ( x &gt; 0 )</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">minXSoFar</a> = localMinX ;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            x = NodeValue.compareAlways(<a class="code" href="a03967.html#a779cc68ad604763dffa67756a214b6ed">maxYSoFar</a>, localMinY) ;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> ( x &gt; 0 )</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="a03967.html#abee267f7fe5994847b544bbad9b08169">minYSoFar</a> = localMinY ;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div><div class="ttc" id="a03967_html_abee267f7fe5994847b544bbad9b08169"><div class="ttname"><a href="a03967.html#abee267f7fe5994847b544bbad9b08169">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.minYSoFar</a></div><div class="ttdeci">NodeValue minYSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:63</div></div>
-<div class="ttc" id="a03967_html_ae81ab4df2375b100c3217dddf31b56c5"><div class="ttname"><a href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.minXSoFar</a></div><div class="ttdeci">NodeValue minXSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:62</div></div>
-<div class="ttc" id="a03967_html_ae105f5144b2d95a9575c05304094d936"><div class="ttname"><a href="a03967.html#ae105f5144b2d95a9575c05304094d936">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.maxXSoFar</a></div><div class="ttdeci">NodeValue maxXSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:60</div></div>
-<div class="ttc" id="a03967_html_a779cc68ad604763dffa67756a214b6ed"><div class="ttname"><a href="a03967.html#a779cc68ad604763dffa67756a214b6ed">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.maxYSoFar</a></div><div class="ttdeci">NodeValue maxYSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:61</div></div>
+<p>Create a Geobuf decoder, optionally backed by high-performance on-disk storage. </p>
+
+<p class="reference">References <a class="el" href="a03967.html#ad44d648901fab99ed773d4a899696180">GeobufDecoder.featureCollection</a>, and <a class="el" href="a06291.html#a960e4725e24ff8ebfdd9d301637b7141">Geobuf.Data.parseFrom()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                             {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">// read everything into memory</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        Geobuf.Data data = Geobuf.Data.parseFrom(is);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67">keys</a> = data.getKeysList();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="a03967.html#ad44d648901fab99ed773d4a899696180">featureCollection</a> = data.getFeatureCollection();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a03967.html#ad44d648901fab99ed773d4a899696180">featureCollection</a> == null)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Geobuf is not a feature collection&quot;</span>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7">maxFeat</a> = <a class="code" href="a03967.html#ad44d648901fab99ed773d4a899696180">featureCollection</a>.getFeaturesCount();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// calculate what to divide coords by; coords are stored as fixed-point longs</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="a03967.html#a49401dd19535ec33cc4f59b017e899aa">precisionDivisor</a> = Math.pow(10, data.getPrecision());</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        is.close();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div><div class="ttc" id="a03967_html_a49401dd19535ec33cc4f59b017e899aa"><div class="ttname"><a href="a03967.html#a49401dd19535ec33cc4f59b017e899aa">com.conveyal.data.geobuf.GeobufDecoder.precisionDivisor</a></div><div class="ttdeci">double precisionDivisor</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:20</div></div>
+<div class="ttc" id="a03967_html_ad44d648901fab99ed773d4a899696180"><div class="ttname"><a href="a03967.html#ad44d648901fab99ed773d4a899696180">com.conveyal.data.geobuf.GeobufDecoder.featureCollection</a></div><div class="ttdeci">Geobuf.Data.FeatureCollection featureCollection</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:16</div></div>
+<div class="ttc" id="a03967_html_a4a95d529e3b3e3512179e1a7dbc3bae7"><div class="ttname"><a href="a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7">com.conveyal.data.geobuf.GeobufDecoder.maxFeat</a></div><div class="ttdeci">int maxFeat</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:14</div></div>
+<div class="ttc" id="a03967_html_a0b67fd2a3fd4f55257fd38f9624e7d67"><div class="ttname"><a href="a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67">com.conveyal.data.geobuf.GeobufDecoder.keys</a></div><div class="ttdeci">List&lt; String &gt; keys</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:18</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a00612e8af24f1d01fca23bfa838b60f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00612e8af24f1d01fca23bfa838b60f4">&#9670;&nbsp;</a></span>accumulateError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void accumulateError </td>
-          <td>(</td>
-          <td class="paramtype">Binding&#160;</td>
-          <td class="paramname"><em>binding</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FunctionEnv&#160;</td>
-          <td class="paramname"><em>functionEnv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {}</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a97738b9e0a0bde3579a698473dc654a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97738b9e0a0bde3579a698473dc654a8">&#9670;&nbsp;</a></span>getAccValue()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a58d1cc3d61071d927bf040bf0b035a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d1cc3d61071d927bf040bf0b035a22">&#9670;&nbsp;</a></span>hasNext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">NodeValue getAccValue </td>
+          <td class="memname">boolean hasNext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        { </div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                Envelope env=<span class="keyword">new</span> Envelope(<span class="keyword">new</span> Coordinate(<a class="code" href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">minXSoFar</a>.getDouble(), <a class="code" href="a03967.html#abee267f7fe5994847b544bbad9b08169">minYSoFar</a>.getDouble()), <span class="keyword">new</span> Coordinate(<a class="code" href="a03967.html#ae105f5144b2d95a9575c05304094d936">maxXSoFar</a>.getDouble(),<a class="code" href="a03967.html#a779cc68ad604763dffa67756a214b6ed">maxYSoFar</a>.getDouble()));</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> GeometryWrapperFactory.createPolygon(env, <span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</span>).asNodeValue();</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div><div class="ttc" id="a03967_html_abee267f7fe5994847b544bbad9b08169"><div class="ttname"><a href="a03967.html#abee267f7fe5994847b544bbad9b08169">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.minYSoFar</a></div><div class="ttdeci">NodeValue minYSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:63</div></div>
-<div class="ttc" id="a03967_html_ae81ab4df2375b100c3217dddf31b56c5"><div class="ttname"><a href="a03967.html#ae81ab4df2375b100c3217dddf31b56c5">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.minXSoFar</a></div><div class="ttdeci">NodeValue minXSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:62</div></div>
-<div class="ttc" id="a03967_html_ae105f5144b2d95a9575c05304094d936"><div class="ttname"><a href="a03967.html#ae105f5144b2d95a9575c05304094d936">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.maxXSoFar</a></div><div class="ttdeci">NodeValue maxXSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:60</div></div>
-<div class="ttc" id="a03967_html_a779cc68ad604763dffa67756a214b6ed"><div class="ttname"><a href="a03967.html#a779cc68ad604763dffa67756a214b6ed">de.hsmainz.cs.semgis.arqextension.aggregate.BoundingBox.AccBBOX.maxYSoFar</a></div><div class="ttdeci">NodeValue maxYSoFar</div><div class="ttdef"><b>Definition:</b> BoundingBox.java:61</div></div>
+
+<p class="reference">References <a class="el" href="a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7">GeobufDecoder.maxFeat</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                       {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a03967.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; <a class="code" href="a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7">maxFeat</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="ttc" id="a03967_html_a4a95d529e3b3e3512179e1a7dbc3bae7"><div class="ttname"><a href="a03967.html#a4a95d529e3b3e3512179e1a7dbc3bae7">com.conveyal.data.geobuf.GeobufDecoder.maxFeat</a></div><div class="ttdeci">int maxFeat</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:14</div></div>
+<div class="ttc" id="a03967_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="a03967.html#acb559820d9ca11295b4500f179ef6392">com.conveyal.data.geobuf.GeobufDecoder.i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a97c41cb83f82bc0df1e2b4dc59adebe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c41cb83f82bc0df1e2b4dc59adebe0">&#9670;&nbsp;</a></span>next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a03979.html">GeobufFeature</a> next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a03967.html#ad44d648901fab99ed773d4a899696180">GeobufDecoder.featureCollection</a>, <a class="el" href="a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67">GeobufDecoder.keys</a>, and <a class="el" href="a03967.html#a49401dd19535ec33cc4f59b017e899aa">GeobufDecoder.precisionDivisor</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                          {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> GeobufFeature(<a class="code" href="a03967.html#ad44d648901fab99ed773d4a899696180">featureCollection</a>.getFeatures(<a class="code" href="a03967.html#acb559820d9ca11295b4500f179ef6392">i</a>++), <a class="code" href="a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67">keys</a>, <a class="code" href="a03967.html#a49401dd19535ec33cc4f59b017e899aa">precisionDivisor</a>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="ttc" id="a03967_html_a49401dd19535ec33cc4f59b017e899aa"><div class="ttname"><a href="a03967.html#a49401dd19535ec33cc4f59b017e899aa">com.conveyal.data.geobuf.GeobufDecoder.precisionDivisor</a></div><div class="ttdeci">double precisionDivisor</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:20</div></div>
+<div class="ttc" id="a03967_html_ad44d648901fab99ed773d4a899696180"><div class="ttname"><a href="a03967.html#ad44d648901fab99ed773d4a899696180">com.conveyal.data.geobuf.GeobufDecoder.featureCollection</a></div><div class="ttdeci">Geobuf.Data.FeatureCollection featureCollection</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:16</div></div>
+<div class="ttc" id="a03967_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="a03967.html#acb559820d9ca11295b4500f179ef6392">com.conveyal.data.geobuf.GeobufDecoder.i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:14</div></div>
+<div class="ttc" id="a03967_html_a0b67fd2a3fd4f55257fd38f9624e7d67"><div class="ttname"><a href="a03967.html#a0b67fd2a3fd4f55257fd38f9624e7d67">com.conveyal.data.geobuf.GeobufDecoder.keys</a></div><div class="ttdeci">List&lt; String &gt; keys</div><div class="ttdef"><b>Definition:</b> GeobufDecoder.java:18</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae105f5144b2d95a9575c05304094d936"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae105f5144b2d95a9575c05304094d936">&#9670;&nbsp;</a></span>maxXSoFar</h2>
+<a id="ad44d648901fab99ed773d4a899696180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44d648901fab99ed773d4a899696180">&#9670;&nbsp;</a></span>featureCollection</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +199,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">NodeValue maxXSoFar = null</td>
+          <td class="memname">Geobuf.Data.FeatureCollection featureCollection</td>
         </tr>
       </table>
   </td>
@@ -247,10 +209,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">Referenced by <a class="el" href="a03967.html#a61d858768ad14d431108f3353b46b28d">GeobufDecoder.GeobufDecoder()</a>, and <a class="el" href="a03967.html#a97c41cb83f82bc0df1e2b4dc59adebe0">GeobufDecoder.next()</a>.</p>
+
 </div>
 </div>
-<a id="a779cc68ad604763dffa67756a214b6ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a779cc68ad604763dffa67756a214b6ed">&#9670;&nbsp;</a></span>maxYSoFar</h2>
+<a id="acb559820d9ca11295b4500f179ef6392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb559820d9ca11295b4500f179ef6392">&#9670;&nbsp;</a></span>i</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +223,29 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">NodeValue maxYSoFar = null</td>
+          <td class="memname">int i = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b67fd2a3fd4f55257fd38f9624e7d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b67fd2a3fd4f55257fd38f9624e7d67">&#9670;&nbsp;</a></span>keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;String&gt; keys</td>
         </tr>
       </table>
   </td>
@@ -269,10 +255,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">Referenced by <a class="el" href="a03967.html#a97c41cb83f82bc0df1e2b4dc59adebe0">GeobufDecoder.next()</a>.</p>
+
 </div>
 </div>
-<a id="ae81ab4df2375b100c3217dddf31b56c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae81ab4df2375b100c3217dddf31b56c5">&#9670;&nbsp;</a></span>minXSoFar</h2>
+<a id="a4a95d529e3b3e3512179e1a7dbc3bae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a95d529e3b3e3512179e1a7dbc3bae7">&#9670;&nbsp;</a></span>maxFeat</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +269,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">NodeValue minXSoFar = null</td>
+          <td class="memname">int maxFeat</td>
         </tr>
       </table>
   </td>
@@ -291,10 +279,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">Referenced by <a class="el" href="a03967.html#a58d1cc3d61071d927bf040bf0b035a22">GeobufDecoder.hasNext()</a>.</p>
+
 </div>
 </div>
-<a id="abee267f7fe5994847b544bbad9b08169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abee267f7fe5994847b544bbad9b08169">&#9670;&nbsp;</a></span>minYSoFar</h2>
+<a id="a49401dd19535ec33cc4f59b017e899aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49401dd19535ec33cc4f59b017e899aa">&#9670;&nbsp;</a></span>precisionDivisor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +293,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">NodeValue minYSoFar = null</td>
+          <td class="memname">double precisionDivisor</td>
         </tr>
       </table>
   </td>
@@ -312,6 +302,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a03967.html#a97c41cb83f82bc0df1e2b4dc59adebe0">GeobufDecoder.next()</a>.</p>
 
 </div>
 </div>
@@ -321,7 +313,7 @@ Private Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03679.html">de</a></li><li class="navelem"><a class="el" href="a03680.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03681.html">cs</a></li><li class="navelem"><a class="el" href="a03682.html">semgis</a></li><li class="navelem"><a class="el" href="a03683.html">arqextension</a></li><li class="navelem"><a class="el" href="a03678.html">aggregate</a></li><li class="navelem"><a class="el" href="a03963.html">BoundingBox</a></li><li class="navelem"><a class="el" href="a03967.html">AccBBOX</a></li>
+    <li class="navelem"><a class="el" href="a03731.html">com</a></li><li class="navelem"><a class="el" href="a03732.html">conveyal</a></li><li class="navelem"><a class="el" href="a03733.html">data</a></li><li class="navelem"><a class="el" href="a03730.html">geobuf</a></li><li class="navelem"><a class="el" href="a03967.html">GeobufDecoder</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,5 @@
 var a08435 =
 [
-    [ "testAsLatLonText", "a08435.html#a294440bf0a1785c6cea76200ebf53818", null ],
-    [ "testGeometry", "a08435.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testMinimumRectangle", "a08435.html#a113f2072fe3a9c6603a02548b81f6545", null ],
+    [ "testPolygon", "a08435.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

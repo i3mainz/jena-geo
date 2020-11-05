@@ -1,5 +1,5 @@
 var a08427 =
 [
-    [ "testAsHexEWKB", "a08427.html#a2586cce6c4a80928a61100906b0624da", null ],
-    [ "testGeometry", "a08427.html#abc3f514f005cba49e406658e2d3086eb", null ]
+    [ "testMinimumDiameterLine", "a08427.html#ac6734228b3f88748ca1545e62811f616", null ],
+    [ "testPolygon", "a08427.html#a1e3187cbc25299380589200c398b3ffd", null ]
 ];

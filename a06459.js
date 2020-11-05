@@ -1,14 +1,15 @@
 var a06459 =
 [
-    [ "setValues", "a06459.html#a353261d7a81be417f065fb83897cc8fb", null ],
-    [ "setValues", "a06459.html#a6bcc5c80277fbbdd44f034e1d3c08d8f", null ],
-    [ "buffer", "a06459.html#a0e4a9bef867d50adccc97618cf5eeb1a", null ],
-    [ "bufferHeight", "a06459.html#a333ad7349b11d896631a145d67d9cc7c", null ],
-    [ "bufferNbSample", "a06459.html#a6410b61886b1acf6c87ade730f18c6dc", null ],
-    [ "bufferWidth", "a06459.html#aa50b43efa66641ef43bf1c57bc286ec8", null ],
-    [ "flippedAxis", "a06459.html#a793ab38e0e12f70fb8ad1df6e77272c1", null ],
-    [ "grid", "a06459.html#af99b8f387c230bde166cd43785111a15", null ],
-    [ "image", "a06459.html#ae0c733fd81fe196ccef3ac62f799d54c", null ],
-    [ "ranges", "a06459.html#af8b5ec90235f3104e1fe64fde41f1cbe", null ],
-    [ "raster", "a06459.html#abd1b8dfb48d18b0fb23a011c7aae8653", null ]
+    [ "GeoTIFFDatatype", "a06459.html#a0f1783ee69fc13c1e8875d3027ad02ef", null ],
+    [ "check", "a06459.html#afcce5db1b9f7c599c6be21e837b5489d", null ],
+    [ "checkURI", "a06459.html#a5df594a39203302c2daed2aed74735c7", null ],
+    [ "get", "a06459.html#a86f7801427aabe2a52b3157bbe8f4f33", null ],
+    [ "get", "a06459.html#ad25e18c958a48eb67e78436619ed8e8a", null ],
+    [ "parse", "a06459.html#a8d7111ceffa3ab3064b2363344b96112", null ],
+    [ "parse", "a06459.html#af07c28b2fbbd1b824b228bbddd17b048", null ],
+    [ "read", "a06459.html#a9e03c38c43e32b22335f9f098375960a", null ],
+    [ "registerDatatypes", "a06459.html#a1c0373662a2dcdd665113c7b0dd8421f", null ],
+    [ "unparse", "a06459.html#a5f9a3e6b51a268326f70a7c5e5695ab4", null ],
+    [ "INSTANCE", "a06459.html#aecdfcd6a73eb74b717778e66dcd51854", null ],
+    [ "URI", "a06459.html#addbf30e6c0ad68fa34277d59a2c6eb5e", null ]
 ];

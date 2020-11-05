@@ -1,11 +1,13 @@
 var a06655 =
 [
-    [ "OptionKey", "a06655.html#aa80e989517912ed86966f98001bc0f65", null ],
-    [ "getOptions", "a06655.html#a33acbb4dba9e105aa8b05cb9d0962868", null ],
-    [ "getValueClass", "a06655.html#add5d743fc6fb18232910028591c19fb9", null ],
-    [ "isCompatibleValue", "a06655.html#a08faba5eee0f9415af2a22c1009291b2", null ],
-    [ "toString", "a06655.html#ad146fa8579a5f8a876c4688cc5a68520", null ],
-    [ "writeReplace", "a06655.html#a7e303c648cb2ce8982a0e8c685d4e3cc", null ],
-    [ "options", "a06655.html#a5675276761bc5ee06e6fa7f4fe318a5a", null ],
-    [ "wildcard", "a06655.html#a1df6a2d09c848a7a4fb28c9974f65fef", null ]
+    [ "InputStreamAdapter", "a06655.html#af69e241062051882eccd0054ebf61dca", null ],
+    [ "close", "a06655.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
+    [ "mark", "a06655.html#adf174d002cece2e489005bb7d1bdc439", null ],
+    [ "markSupported", "a06655.html#a2085a25d5723c2f2c78cdac8cdb06230", null ],
+    [ "read", "a06655.html#aaab5dab5b969a87f538242e524431637", null ],
+    [ "read", "a06655.html#ac37221182275cc3971d30ff2f0bf0599", null ],
+    [ "read", "a06655.html#aa12fc1cdbd694717be9e6bad04648af0", null ],
+    [ "reset", "a06655.html#ad20897c5c8bd47f5d4005989bead0e55", null ],
+    [ "skip", "a06655.html#ae3954a0efb16f8d450ec0b543e172e01", null ],
+    [ "input", "a06655.html#a37ec8f3c8fa304270ef4760530a627e8", null ]
 ];

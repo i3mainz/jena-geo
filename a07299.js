@@ -1,13 +1,18 @@
 var a07299 =
 [
-    [ "clear", "a07299.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
-    [ "ignoreNaN", "a07299.html#a22e218505813600e1844d7b4d899f57d", null ],
-    [ "interpolate", "a07299.html#ae939fecd3ed5b2d3fea7056d8c7d04e9", null ],
-    [ "interpolateAt", "a07299.html#a3c28c1a787c8f0515aec182729e29a6c", null ],
-    [ "recompute", "a07299.html#a43ba393bb8bd89882094eb499ffe6d7f", null ],
-    [ "setData", "a07299.html#a7f4c5cdce430473a76ee647f0a041023", null ],
-    [ "throwArrayIndexOutOfBoundsException", "a07299.html#acbdd94cfa46f3161c548073aacc5739a", null ],
-    [ "ignoreYNaN", "a07299.html#ab7a26c935a4592383c96a6b2d89130ad", null ],
-    [ "x", "a07299.html#a99ee0c516ca235fc66902cb8d612eeab", null ],
-    [ "y", "a07299.html#a799e94d2434d7bf0fb8d2e845ebd55e7", null ]
+    [ "Writer", "a07299.html#a1f4b230fe75f6a1daf829651a6ca9569", null ],
+    [ "escape", "a07299.html#a9c7a80b58354b88a05f662d236213304", null ],
+    [ "format", "a07299.html#a4cdbcf3f1a20762406bb843ea5770096", null ],
+    [ "formatArray", "a07299.html#a9618c5ff3487e450fa373602811fb2a5", null ],
+    [ "formatEntries", "a07299.html#a3ab656e1ee54d8a7b84124731cfefae0", null ],
+    [ "formatValue", "a07299.html#a6de86af1f472ff3b6fe98734c96b7da3", null ],
+    [ "getStandard", "a07299.html#ac6dfb6332931419d582dd7436c276df1", null ],
+    [ "indent", "a07299.html#a189eba34a209327583f582f69ce4dfe4", null ],
+    [ "guard", "a07299.html#adf57c460ca1db95c70d056e6557c6811", null ],
+    [ "INDENTATION", "a07299.html#aabc26d8fc56c2743751bd8112654d8e7", null ],
+    [ "lineSeparator", "a07299.html#ab3cc0124e9fcfcc6532d491e19bee2a3", null ],
+    [ "margin", "a07299.html#a863a6ce49a581dba9da9e7def06f2e1c", null ],
+    [ "out", "a07299.html#af4fc82e81c5d55fd0d211f1bd98726b9", null ],
+    [ "standard", "a07299.html#abdceb9de9e609684ff8a0bb9f14561d8", null ],
+    [ "UNICODE_LENGTH", "a07299.html#a27ca63b44a10c2c6557771f615a014e9", null ]
 ];
