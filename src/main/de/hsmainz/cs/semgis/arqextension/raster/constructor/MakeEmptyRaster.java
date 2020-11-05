@@ -38,6 +38,8 @@ import org.opengis.coverage.grid.GridCoverage;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.util.FactoryException;
 
+import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
+
 public class MakeEmptyRaster extends FunctionBase0 {
 
 	@Override
@@ -66,7 +68,6 @@ public class MakeEmptyRaster extends FunctionBase0 {
 			envelope = new Envelope2D(CommonCRS.WGS84.defaultGeographic(), 0, 0, 30, 30);
 		}
 		
-
 		GridCoverageBuilder gcb = new GridCoverageBuilder();
 		gcb.setRenderedImage(raster);
 		gcb.setEnvelope(envelope);
@@ -75,4 +76,6 @@ public class MakeEmptyRaster extends FunctionBase0 {
 		return CoverageWrapper.createCoverage(gc, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();
 	}
 
+	
+	
 }

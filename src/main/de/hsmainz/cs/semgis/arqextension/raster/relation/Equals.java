@@ -31,7 +31,7 @@ public class Equals extends FunctionBase2 {
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
 			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
 			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();	
-			return NodeValue.makeBoolean(raster.equals(raster2));		
+			return NodeValue.makeBoolean(raster.getEnvelope().equals(raster2.getEnvelope()));		
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
 				GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();

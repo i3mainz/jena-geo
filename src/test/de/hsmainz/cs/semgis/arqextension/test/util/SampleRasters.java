@@ -26,6 +26,8 @@ public class SampleRasters {
 	
 	public static final String rasterBand="";
 	
+	public static final String THE_EMPTY_RASTER="01000001000000000000000000000000000000000000000000008036400000000000001E400000000000002EC00000000000002E40E6100000020002000A0000000000000000000000000000000000000000";
+	
 	public static String minwkbString="01"               /* little endian (uint8 ndr) */
 			 +"0000"             /* version (uint16 0) */
 			 +"0100"             /* nBands (uint16 1) */

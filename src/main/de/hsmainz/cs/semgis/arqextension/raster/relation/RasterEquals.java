@@ -34,6 +34,7 @@ public class RasterEquals extends FunctionBase2 {
 		        		}
 		        	}
 		        }
+		        return NodeValue.TRUE;
 			}
 		
 		}

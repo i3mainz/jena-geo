@@ -14,6 +14,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
+import io.github.galbiston.geosparql_jena.implementation.datatype.WKTDatatype;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 import org.apache.jena.sparql.expr.NodeValue;
@@ -30,7 +31,7 @@ public class Envelope extends FunctionBase1 {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage2D raster=wrapper.getParsingGeometry();
 	       Geometry envelope = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
-	        GeometryWrapper envelopeWrapper = GeometryWrapperFactory.createGeometry(envelope, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI());
+	        GeometryWrapper envelopeWrapper = GeometryWrapperFactory.createGeometry(envelope, wrapper.getSrsURI(), WKTDatatype.URI);
 	        return envelopeWrapper.asNodeValue();
 	}
 
