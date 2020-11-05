@@ -1,7 +1,5 @@
 package de.hsmainz.cs.semgis.arqextension.test.util;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,7 +10,6 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.geometry.Envelope2D;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.geotoolkit.coverage.grid.ViewType;
 import org.geotoolkit.referencing.crs.PredefinedCRS;
 
 import com.sun.jersey.core.util.Base64;

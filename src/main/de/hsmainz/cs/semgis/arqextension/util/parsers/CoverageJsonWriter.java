@@ -29,6 +29,8 @@
 package de.hsmainz.cs.semgis.arqextension.util.parsers;
 
 
+import java.awt.image.RenderedImage;
+
 import org.geotoolkit.coverage.Category;
 import org.geotoolkit.coverage.GridSampleDimension;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
@@ -127,6 +129,14 @@ public class CoverageJsonWriter {
 			}
 			//paramrange.put("shape",new JSONArray());
 			paramrange.put("values",new JSONArray());
+			JSONArray values=paramrange.getJSONArray("values");
+			RenderedImage rendered=coverage.getRenderedImage();
+	        	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
+	        		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
+	        			values.put(rendered.getData().getSample(i, j, 0));
+	        		}
+	        	}
+			
 			sampledim.put("type","Parameter");
 			JSONObject description=new JSONObject();
 			sampledim.put("description",description);
@@ -136,10 +146,10 @@ public class CoverageJsonWriter {
 				sampledim.put("unit",unit);
 				JSONObject unitlabel=new JSONObject();
 				unit.put("label",unitlabel);
-				unitlabel.put("en",dimension.getUnits().getName());
+				unitlabel.put("en",dimension.getUnits().toString());
 				JSONObject symbol=new JSONObject();
 				unit.put("symbol",symbol);
-				symbol.put("value",dimension.getUnits().getName());
+				symbol.put("value",dimension.getUnits().toString());
 			}
 			JSONObject observedProperty=new JSONObject();
 			sampledim.put("observedProperty",observedProperty);
@@ -152,10 +162,10 @@ public class CoverageJsonWriter {
 					JSONObject category=new JSONObject();
 					JSONObject catlabel=new JSONObject();
 					category.put("label",catlabel);
-					catlabel.put("en",dimension.getUnits().getName());
+					catlabel.put("en",dimension.getUnits().toString());
 					JSONObject catdesc=new JSONObject();
 					category.put("description",catdesc);
-					catdesc.put("en",dimension.getUnits().getName());
+					catdesc.put("en",dimension.getUnits().toString());
 					categories.put(category);
 				}
 			}

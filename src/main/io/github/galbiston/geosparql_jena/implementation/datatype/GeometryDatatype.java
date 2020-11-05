@@ -98,11 +98,11 @@ public abstract class GeometryDatatype extends SpatialDatatype {
 
     public static final GeometryDatatype get(RDFDatatype rdfDatatype) {
     	registerDatatypes();
-    	System.out.println(rdfDatatype);
-    	Iterator it=TYPE_MAPPER.listTypes();
-    	while(it.hasNext()) {
+    	//System.out.println(rdfDatatype);
+    	//Iterator it=TYPE_MAPPER.listTypes();
+    	/*while(it.hasNext()) {
     		System.out.println(it.next());
-    	}
+    	}*/
         if (rdfDatatype instanceof GeometryDatatype) {
             return (GeometryDatatype) rdfDatatype;
         } else {

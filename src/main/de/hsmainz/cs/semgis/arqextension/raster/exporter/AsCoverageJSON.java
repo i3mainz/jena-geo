@@ -14,7 +14,7 @@ public class AsCoverageJSON extends FunctionBase1{
 		public NodeValue exec(NodeValue v) {
 			CoverageWrapper wrapper=CoverageWrapper.extract(v);
 			GridCoverage2D raster=wrapper.getXYGeometry();	
-			return NodeValue.makeString(CoverageJsonWriter.coverageToCovJSON(raster).toString());
+			return NodeValue.makeString(CoverageJsonWriter.coverageToCovJSON(raster).toString(2));
 		}
 	
 }

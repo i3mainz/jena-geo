@@ -43,8 +43,7 @@ public class WorldToRasterCoord extends FunctionBase3 {
         Integer latitude = v3.getInteger().intValue();
         try {
         	CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-        	GridCoverage2D raster=wrapper.getXYGeometry();
-        	
+        	GridCoverage2D raster=wrapper.getXYGeometry();      	
         	 GridGeometry2D gg2D = raster.getGridGeometry();
              MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
              MathTransform crsToGrid = gridToCRS.inverse();

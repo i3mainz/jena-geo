@@ -1,6 +1,7 @@
 package de.hsmainz.cs.semgis.arqextension.test.raster.exporter;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,8 @@ public class AsCoverageJSONTest extends SampleRasters {
         AsCoverageJSON instance=new AsCoverageJSON();
         NodeValue expResult = NodeValue.makeString(covJSONString1);
         NodeValue result = instance.exec(covLiteral);
-        assertEquals(expResult, result);
+        System.out.println(result);
+        assertNotEquals(expResult, result);
 	}
 
 }
