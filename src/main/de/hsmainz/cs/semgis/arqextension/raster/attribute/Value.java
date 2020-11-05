@@ -12,18 +12,11 @@
  ****************************************************************************** */
 package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
-import java.util.List;
 
-import org.apache.jena.sparql.engine.binding.Binding;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
-import org.apache.jena.sparql.function.FunctionEnv;
-import org.apache.jena.vocabulary.XSD;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.opengis.coverage.CannotEvaluateException;
 
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
-import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
 public class Value extends FunctionBase4 {
@@ -35,26 +28,7 @@ public class Value extends FunctionBase4 {
 		Integer bandnum = v2.getInteger().intValue();
         Integer column = v3.getInteger().intValue();
         Integer row = v4.getInteger().intValue();
-        Double d;
-		try {
-			d = ((double[]) raster.getRenderedImage().getData().getDataElements(column, row, new double[]{0.}))[0];
-	        return NodeValue.makeDouble(d);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			int d2 = ((int[]) raster.getRenderedImage().getData().getDataElements(column, row, new double[]{0.}))[0];
-	        return NodeValue.makeInteger(d2);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			boolean d2 = ((boolean[]) raster.getRenderedImage().getData().getDataElements(column, row, new double[]{0.}))[0];
-	        return NodeValue.makeBoolean(d2);
-		} catch (Exception e) {
-			return null;
-		}
-
+        return NodeValue.makeString(raster.getRenderedImage().getData().getSample(column, row, bandnum)+"");
 	}
 
 }
