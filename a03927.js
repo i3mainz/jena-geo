@@ -1,6 +1,25 @@
 var a03927 =
 [
-    [ "AsCoverageJSONTest", "a09323.html", "a09323" ],
-    [ "AsHexRastWKBTest", "a09327.html", "a09327" ],
-    [ "AsRastWKBTest", "a09331.html", "a09331" ]
+    [ "AreaSimilarityTest", "a08597.html", "a08597" ],
+    [ "CentroidDistanceTest", "a08601.html", "a08601" ],
+    [ "ClosestPointTest", "a08605.html", "a08605" ],
+    [ "DifferenceTest", "a08609.html", "a08609" ],
+    [ "DistanceSphereTest", "a08613.html", "a08613" ],
+    [ "DistanceTest", "a08617.html", "a08617" ],
+    [ "EqualNormTest", "a08621.html", "a08621" ],
+    [ "EqualSRSTest", "a08625.html", "a08625" ],
+    [ "EqualTopoTest", "a08629.html", "a08629" ],
+    [ "EqualTypeTest", "a08633.html", "a08633" ],
+    [ "FrechetDistanceTest", "a08637.html", "a08637" ],
+    [ "FurthestCoordinateTest", "a08641.html", "a08641" ],
+    [ "HausdorffDistanceTest", "a08645.html", "a08645" ],
+    [ "IntersectionMatrixTest", "a08649.html", "a08649" ],
+    [ "IntersectionPercentageTest", "a08653.html", "a08653" ],
+    [ "IsMorePreciseTest", "a08657.html", "a08657" ],
+    [ "LongestLineTest", "a08661.html", "a08661" ],
+    [ "MaxDistanceTest", "a08665.html", "a08665" ],
+    [ "OrderingEqualsTest", "a08669.html", "a08669" ],
+    [ "RelateMatchTest", "a08673.html", "a08673" ],
+    [ "RelateTest", "a08677.html", "a08677" ],
+    [ "ShortestLineTest", "a08681.html", "a08681" ]
 ];

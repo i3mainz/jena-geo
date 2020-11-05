@@ -1,11 +1,11 @@
 var a03871 =
 [
-    [ "GeoMagneticElements", "a08135.html", "a08135" ],
-    [ "LegendreFunction", "a08139.html", "a08139" ],
-    [ "MagneticDate", "a08143.html", "a08143" ],
-    [ "MagneticModel", "a08147.html", "a08147" ],
-    [ "MagneticResults", "a08151.html", "a08151" ],
-    [ "SphericalHarmonicVariables", "a08155.html", "a08155" ],
-    [ "UTMParameters", "a08159.html", "a08159" ],
-    [ "WorldMagneticModel", "a08163.html", "a08163" ]
+    [ "AbstractParameter", "a07485.html", "a07485" ],
+    [ "AbstractParameterValue", "a07493.html", "a07493" ],
+    [ "DefaultParameterDescriptor", "a07497.html", "a07497" ],
+    [ "FloatParameter", "a07501.html", "a07501" ],
+    [ "Parameter", "a07505.html", "a07505" ],
+    [ "ParameterGroup", "a07509.html", "a07509" ],
+    [ "Parameters", "a07513.html", "a07513" ],
+    [ "ParameterValueList", "a07517.html", "a07517" ]
 ];

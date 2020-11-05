@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package de.hsmainz.cs.semgis.arqextension.polygon.constructor</title>
+<title>jena-geo: Package de.hsmainz.cs.semgis.arqextension.geometry.constructor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,38 +63,50 @@ $(document).ready(function(){initNavTree('a03773.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package de.hsmainz.cs.semgis.arqextension.polygon.constructor</div>  </div>
+<div class="title">Package de.hsmainz.cs.semgis.arqextension.geometry.constructor</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><hr/>
-<p> Copyright (c) 2017 Timo Homburg, i3Mainz.  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05335.html">MakePolygon</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="a05367.html">Polygon</a> formed by the given shell.  <a href="a05335.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04425.html">BuildArea</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an areal geometry formed by the constituent linework of given geometry.  <a href="a04425.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05339.html">MPolyFromText</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04429.html">GeomCollFromText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a collection Geometry from collection WKT with the given SRID.  <a href="a04429.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05343.html">PolygonFromText</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04433.html">GeomFromGeoHash</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a geometry from a GeoHash string.  <a href="a04433.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05347.html">PolygonFromWKB</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04437.html">GeomFromGeoJSON</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes as input a geojson representation of a geometry and outputs a PostGIS geometry object.  <a href="a04437.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04441.html">GeomFromGML</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes as input GML representation of geometry and outputs a PostGIS geometry object.  <a href="a04441.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04445.html">GeomFromKML</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes as input KML representation of geometry and outputs a PostGIS geometry object.  <a href="a04445.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04449.html">GeomFromPolyshape</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04453.html">GeomFromText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a specified ST_Geometry value from Well-Known Text representation (WKT).  <a href="a04453.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04457.html">GeomFromWKB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a geometry instance from a Well-Known Binary geometry representation (WKB) and optional SRID.  <a href="a04457.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04461.html">MakeCircle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04465.html">MakeEllipse</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><hr/>
-<p> Copyright (c) 2017 Timo Homburg, i3Mainz. </p>
-<p>All rights reserved. This program and the accompanying materials are made available under the terms of the BSD License which accompanies this distribution, and is available at <a href="https://directory.fsf.org/wiki/License:BSD_4Clause">https://directory.fsf.org/wiki/License:BSD_4Clause</a></p>
-<p>This project extends work by Ian Simmons who developed the Parliament Triple Store. <a href="http://parliament.semwebcentral.org">http://parliament.semwebcentral.org</a> and published his work und BSD License as well. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03739.html">de</a></li><li class="navelem"><a class="el" href="a03740.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03741.html">cs</a></li><li class="navelem"><a class="el" href="a03742.html">semgis</a></li><li class="navelem"><a class="el" href="a03743.html">arqextension</a></li><li class="navelem"><a class="el" href="a03771.html">polygon</a></li><li class="navelem"><a class="el" href="a03773.html">constructor</a></li>
+    <li class="navelem"><a class="el" href="a03760.html">de</a></li><li class="navelem"><a class="el" href="a03761.html">hsmainz</a></li><li class="navelem"><a class="el" href="a03762.html">cs</a></li><li class="navelem"><a class="el" href="a03763.html">semgis</a></li><li class="navelem"><a class="el" href="a03764.html">arqextension</a></li><li class="navelem"><a class="el" href="a03771.html">geometry</a></li><li class="navelem"><a class="el" href="a03773.html">constructor</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,6 @@
 var a03829 =
 [
-    [ "large", "a03828.html", "a03828" ],
-    [ "WritableImageByteChannel", "a06959.html", "a06959" ]
+    [ "coverage", "a03830.html", "a03830" ],
+    [ "image", "a03831.html", "a03831" ],
+    [ "internal", "a03833.html", "a03833" ]
 ];

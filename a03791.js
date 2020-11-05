@@ -1,4 +1,4 @@
 var a03791 =
 [
-    [ "FrechetDistance", "a06363.html", "a06363" ]
+    [ "ShearTransformation", "a05269.html", "a05269" ]
 ];

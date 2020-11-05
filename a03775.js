@@ -1,4 +1,29 @@
 var a03775 =
 [
-    [ "DumpRings", "a05363.html", "a05363" ]
+    [ "AsBinary", "a04509.html", "a04509" ],
+    [ "AsDXF", "a04513.html", "a04513" ],
+    [ "AsGeoBuf", "a04517.html", "a04517" ],
+    [ "AsGeoHash", "a04521.html", "a04521" ],
+    [ "AsGeoJSON", "a04525.html", "a04525" ],
+    [ "AsGeoJSONLD", "a04529.html", "a04529" ],
+    [ "AsGeoRSS", "a04533.html", "a04533" ],
+    [ "AsGeoURI", "a04537.html", "a04537" ],
+    [ "AsGML", "a04541.html", "a04541" ],
+    [ "AsGPX", "a04545.html", "a04545" ],
+    [ "AsHEXEWKB", "a04549.html", "a04549" ],
+    [ "AsKML", "a04553.html", "a04553" ],
+    [ "AsLatLonText", "a04557.html", "a04557" ],
+    [ "AsMVT", "a04561.html", "a04561" ],
+    [ "AsMVTGeom", "a04565.html", "a04565" ],
+    [ "AsOSMLink", "a04569.html", "a04569" ],
+    [ "AsPolyshape", "a04573.html", "a04573" ],
+    [ "AsSVG", "a04577.html", "a04577" ],
+    [ "AsText", "a04581.html", "a04581" ],
+    [ "AsTextRaw", "a04585.html", "a04585" ],
+    [ "AsTextRound", "a04589.html", "a04589" ],
+    [ "AsTopoJSON", "a04593.html", "a04593" ],
+    [ "AsTWKB", "a04597.html", "a04597" ],
+    [ "AsX3D", "a04601.html", "a04601" ],
+    [ "Dump", "a04605.html", "a04605" ],
+    [ "DumpPoints", "a04609.html", "a04609" ]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.geotoolkit.process</title>
+<title>jena-geo: Package org.geotoolkit.image.jai</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,79 +63,84 @@ $(document).ready(function(){initNavTree('a03851.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.geotoolkit.process</div>  </div>
+<div class="title">Package org.geotoolkit.image.jai</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Operation applied to some given data to achieve whatever analyze or model transformation.  
+<p>A set of <a href="http://java.sun.com/products/java-media/jai/">Java Advanced Imaging</a> operations.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07487.html">DismissProcessException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a  <a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} is dismissed.  <a href="a07487.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06997.html">Combine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a set of arbitrary linear combinations of the bands of many rendered source images, using a specified matrix.  <a href="a06997.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07491.html">Monitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Class passed to time consuming processes to provide cancellation support.  <a href="a07491.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07009.html">FloodFill</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the Flood Fill operation on the given raster.  <a href="a07009.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07495.html">Process</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An operation applied to some given data to achieve whatever analyze or model transformation.  <a href="a07495.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07013.html">Hysteresis</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a hysteresis threshold on an image.  <a href="a07013.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07499.html">ProcessDescriptor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of a  <a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} algorithm and its input/output parameters.  <a href="a07499.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07017.html">Mask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a mask (typically a  javax.media.jai.operator.BinarizeDescriptor binary image}) on an source image.  <a href="a07017.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07503.html">ProcessEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event sent by a running  <a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} to its  <a class="el" href="a07519.html" title="Receives general indications of  Process process} progress and events indicating start, completion or failure. ">ProcessListener</a> listeners}.  <a href="a07503.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07021.html">NodataFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces <a class="el" href="">Double#NaN</a> values by the weighted average of neighbors values.  <a href="a07021.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07507.html">ProcessException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thrown when a  <a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} failed.  <a href="a07507.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07025.html">Registry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of static methods for managing JAI's  OperationRegistry operation registry}.  <a href="a07025.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07511.html">ProcessFinder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to find <a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> factories and descriptors.  <a href="a07511.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07029.html">SampleValues</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sample value suitable for use in a <a class="el" href="">java.util.HashSet</a>.  <a href="a07029.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07515.html">ProcessingRegistry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of <a class="el" href="a07499.html">ProcessDescriptor</a>s identified by name.  <a href="a07515.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07519.html">ProcessListener</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives general indications of  <a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process} progress and events indicating start, completion or failure.  <a href="a07519.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07523.html">ProgressController</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitors the progress of some lengthly operation, and allows cancellation.  <a href="a07523.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07527.html">RollbackableProcess</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend <a class="el" href="a07495.html">org.geotoolkit.process.Process</a> interface to add a rollback method used to revert process <a class="el" href="a07495.html#a6fa09e7ca2ab88d0a3dd745ec28a5bca">org.geotoolkit.process.Process#call()</a> actions.  <a href="a07527.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07045.html">SilhouetteMask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the silhouette of an image that isolates its content from its background.  <a href="a07045.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Operation applied to some given data to achieve whatever analyze or model transformation. </p>
-<p>The interfaces are abstract enough to handle more than GIS data. Anything can be used here for whatever purpose that can be seen as a process. </p>
-<p>This package can be seen as an integration of ISO 19115 <a class="el" href="">org.opengis.metadata.lineage</a> package with the <a class="el" href="">java.util.concurrent</a> package, completed by the ISO 19111 <a class="el" href="">org.opengis.parameter</a> package. The integration is done as below: </p>
-<ul>
-<li>
-<a class="el" href="a07499.html">org.geotoolkit.process.ProcessDescriptor</a> extends the ISO 19115 <a class="el" href="">org.opengis.metadata.lineage.Processing</a> interface. </li>
-<li>
-<a class="el" href="a07495.html">org.geotoolkit.process.Process</a> extends the JDK <a class="el" href="">java.util.concurrent.Callable</a> interface, and thus can be given to an  java.util.concurrent.ExecutorService executor service} for execution in a background thread. </li>
-<li>
-<a class="el" href="a07495.html">org.geotoolkit.process.Process</a> input and output parameters are stored in ISO 19111 <a class="el" href="">org.opengis.parameter.ParameterValueGroup</a> objects. </li>
-</ul>
-<p>The following example creates a process for a task named</p><div class="fragment"><div class="line"><span class="stringliteral">&quot;MyProcess&quot;</span> </div></div><!-- fragment --><p> (the available process names are implementation-dependent), sets a few parameters and launches the process with progress reports sent to the  java.io.Console console}:</p>
-<p>{ java ExecutorService executor = Executors.newFixedThreadPool(nThreads); <a class="el" href="a07515.html" title="A collection of ProcessDescriptors identified by name. ">ProcessingRegistry</a> registry = ...; // Implementation-dependent <a class="el" href="a07499.html" title="Description of a  Process process} algorithm and its input/output parameters. ">ProcessDescriptor</a> desc = registry.getDescriptor("MyProcess"); ParameterValueGroup param = desc.getInputDescriptor().createValue(); param.parameter("someParam1").setValue(myValue1); param.parameter("someParam2").setValue(myValue2); // etc. for all other parameter values...</p>
-<p><a class="el" href="a07495.html" title="An operation applied to some given data to achieve whatever analyze or model transformation. ">Process</a> process = desc.create(param); process.addListener(new ProgressPrinter()); Future&lt;ParameterValueGroup&gt; task = executor.submit(process); doSomeOtherTasksWhileTheProcessRunInBackground(); ParameterValueGroup output = task.get(); }</p>
-<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys) </dd>
+<div class="textblock"><p>A set of <a href="http://java.sun.com/products/java-media/jai/">Java Advanced Imaging</a> operations. </p>
+<p>All operations defined here work on J2SE's  java.awt.image.RenderedImage rendered images}; there is no OpenGIS's  org.geotoolkit.coverage.grid.GridCoverage grid coverage} dependencies here. Examples. </p>
+<table align="center" cellpadding="15" border="1">
+<tr>
+<th>Operation</th><th>Input</th><th>output </th></tr>
+<tr>
+<td valign="center"><a class="el" href="a07045.html">org.geotoolkit.image.jai.SilhouetteMask</a> </td><td><div class="image">
+<img src="doc-files/sample-rgb.png" border="1"/>
+</div>
+ </td><td><div class="image">
+<img src="doc-files/silhouette.png" border="1"/>
+</div>
+ </td></tr>
+<tr>
+<td valign="center"><a class="el" href="a07017.html">org.geotoolkit.image.jai.Mask</a> </td><td><div class="image">
+<img src="doc-files/sample-rgb.png" border="1"/>
+</div>
+ , <div class="image">
+<img src="doc-files/silhouette.png" border="1"/>
+</div>
+ </td><td><div class="image">
+<img src="doc-files/mask.png" border="1"/>
+</div>
+ </td></tr>
+</table>
+<p>{</p>
+<h1><a class="anchor" id="Registration"></a>
+}</h1>
+<p>The JAI operations provided in this package should be registered automatically at JAI startup time, since they are declared in the</p><div class="fragment"><div class="line">META-INF/registryFile.jai </div></div><!-- fragment --><p> file. However, this default JAI mechanism may fail in some occasions, for example when the Geotk JAR file is unreachable from the JAI class loader. In such case, the <a class="el" href="a07025.html#ad8e84bc73acb3ddf81036b833a2946ed">registerGeotoolkitServices</a> method may be invoked programmatically as a fallback. This is done automatically by the <a class="el" href="">org.geotoolkit.coverage.processing</a> package; users need to care only if they want to use directly the custom JAI operations provided in this package.</p>
+<dl class="section author"><dt>Author</dt><dd>Lionel Flahaut (IRD) </dd>
 <dd>
-Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.20</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>org.opengis.metadata.lineage.Processing </dd>
+Rémi Eve (IRD) </dd>
 <dd>
-java.util.concurrent.ExecutorService</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.19  </dd></dl>
+Martin Desruisseaux (IRD, Geomatys) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.01</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.1  </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03806.html">org</a></li><li class="navelem"><a class="el" href="a03815.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03851.html">process</a></li>
+    <li class="navelem"><a class="el" href="a03827.html">org</a></li><li class="navelem"><a class="el" href="a03836.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a03844.html">image</a></li><li class="navelem"><a class="el" href="a03851.html">jai</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

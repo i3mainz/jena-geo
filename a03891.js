@@ -1,6 +1,5 @@
 var a03891 =
 [
-    [ "LengthSubstring", "a08275.html", "a08275" ],
-    [ "LengthToPoint", "a08279.html", "a08279" ],
-    [ "LocatePoint", "a08283.html", "a08283" ]
+    [ "LoggedFormat", "a08105.html", "a08105" ],
+    [ "LogProducer", "a08109.html", "a08109" ]
 ];

@@ -1,13 +1,12 @@
 var a03805 =
 [
-    [ "ConvertedGridCoverage", "a06523.html", "a06523" ],
-    [ "DisjointExtentException", "a06527.html", "a06527" ],
-    [ "FractionalGridCoordinates", "a06531.html", "a06531" ],
-    [ "GridCoverage", "a06539.html", "a06539" ],
-    [ "GridCoverage2D", "a06543.html", "a06543" ],
-    [ "GridCoverageBuilder2", "a06547.html", "a06547" ],
-    [ "GridExtent", "a06551.html", "a06551" ],
-    [ "IllegalGridGeometryException", "a06555.html", "a06555" ],
-    [ "PointToGridCoordinates", "a06559.html", "a06559" ],
-    [ "ReshapedImage", "a06563.html", "a06563" ]
+    [ "Grayscale", "a05961.html", "a05961" ],
+    [ "Reclass", "a05965.html", null ],
+    [ "Resize", "a05969.html", "a05969" ],
+    [ "Reskew", "a05973.html", null ],
+    [ "Retile", "a05977.html", null ],
+    [ "Rotation", "a05981.html", "a05981" ],
+    [ "SnapToGrid", "a05985.html", null ],
+    [ "SRID", "a05989.html", "a05989" ],
+    [ "Trim", "a05993.html", "a05993" ]
 ];

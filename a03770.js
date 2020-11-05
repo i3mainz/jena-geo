@@ -1,4 +1,6 @@
 var a03770 =
 [
-    [ "ShearTransformation", "a05247.html", "a05247" ]
+    [ "ExampleWebService", "a04213.html", "a04213" ],
+    [ "JDBCConnection", "a04217.html", "a04217" ],
+    [ "TripleStoreConnection", "a04221.html", "a04221" ]
 ];

@@ -1,12 +1,9 @@
 var a03782 =
 [
-    [ "AsBIL", "a05779.html", null ],
-    [ "AsBinary", "a05783.html", "a05783" ],
-    [ "AsCoverageJSON", "a05787.html", "a05787" ],
-    [ "AsHexRastWKB", "a05791.html", "a05791" ],
-    [ "AsJPG", "a05795.html", "a05795" ],
-    [ "AsPNG", "a05799.html", "a05799" ],
-    [ "AsRaster", "a05803.html", "a05803" ],
-    [ "AsTIFF", "a05807.html", "a05807" ],
-    [ "DumpAsPolygons", "a05811.html", "a05811" ]
+    [ "LineFromEncodedPolyline", "a05053.html", "a05053" ],
+    [ "LineFromMultiPoint", "a05057.html", "a05057" ],
+    [ "LineFromText", "a05061.html", "a05061" ],
+    [ "LineFromWKB", "a05065.html", "a05065" ],
+    [ "MakeLine", "a05069.html", "a05069" ],
+    [ "MLineFromText", "a05073.html", "a05073" ]
 ];

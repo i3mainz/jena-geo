@@ -1,5 +1,8 @@
 var a03930 =
 [
-    [ "SampleGeometries", "a09467.html", null ],
-    [ "SampleRasters", "a09471.html", "a09471" ]
+    [ "attribute", "a03929.html", "a03929" ],
+    [ "constructor", "a03931.html", "a03931" ],
+    [ "editor", "a03932.html", "a03932" ],
+    [ "exporter", "a03933.html", "a03933" ],
+    [ "transform", "a03934.html", "a03934" ]
 ];

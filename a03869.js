@@ -1,6 +1,7 @@
 var a03869 =
 [
-    [ "GridTraversal", "a08043.html", "a08043" ],
-    [ "MonoDimensionMove", "a08063.html", "a08063" ],
-    [ "MultiDimensionMove", "a08067.html", "a08067" ]
+    [ "FactoryMethod", "a07433.html", "a07433" ],
+    [ "MetadataFactory", "a07437.html", "a07437" ],
+    [ "MetadataUtilities", "a07441.html", "a07441" ],
+    [ "ValueRestriction", "a07445.html", "a07445" ]
 ];

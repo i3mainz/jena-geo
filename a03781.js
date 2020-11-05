@@ -1,12 +1,11 @@
 var a03781 =
 [
-    [ "AddBand", "a05743.html", "a05743" ],
-    [ "Crop", "a05747.html", "a05747" ],
-    [ "SetBandIsNoData", "a05751.html", "a05751" ],
-    [ "SetBandNoDataValue", "a05755.html", "a05755" ],
-    [ "SetGeoReference", "a05759.html", null ],
-    [ "SetRotation", "a05763.html", "a05763" ],
-    [ "SetScale", "a05767.html", "a05767" ],
-    [ "SetSkew", "a05771.html", "a05771" ],
-    [ "SetUpperLeft", "a05775.html", null ]
+    [ "attribute", "a03780.html", "a03780" ],
+    [ "constructor", "a03782.html", "a03782" ],
+    [ "editor", "a03783.html", "a03783" ],
+    [ "exporter", "a03784.html", "a03784" ],
+    [ "relation", "a03785.html", "a03785" ],
+    [ "transform", "a03786.html", "a03786" ],
+    [ "InterpolatePoint", "a05101.html", "a05101" ],
+    [ "LineLocatePoint", "a05105.html", "a05105" ]
 ];
