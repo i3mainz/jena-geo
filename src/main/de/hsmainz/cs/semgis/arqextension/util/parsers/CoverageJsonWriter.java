@@ -34,7 +34,6 @@ import org.geotoolkit.coverage.GridSampleDimension;
 import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.opengis.metadata.spatial.DimensionNameType;
 
 public class CoverageJsonWriter {
 	GridCoverage2D coverage;
@@ -57,10 +56,14 @@ public class CoverageJsonWriter {
 		if(coverage.getGridGeometry().getExtent2D().getDimension()>0) {
 			axes.put("x",new JSONObject());
 			geocoords.put("x");
-		}
-		else if(coverage.getGridGeometry().getExtent().getDimension()>1) {
 			axes.put("y",new JSONObject());
 			geocoords.put("y");
+			axes.getJSONObject("x").put("start", coverage.getGridGeometry().getExtent2D().getMinX());
+			axes.getJSONObject("x").put("stop", coverage.getGridGeometry().getExtent2D().getMaxX());
+			axes.getJSONObject("x").put("num", coverage.getRenderedImage().getNumXTiles());
+			axes.getJSONObject("y").put("start", coverage.getGridGeometry().getExtent2D().getMinY());
+			axes.getJSONObject("y").put("stop", coverage.getGridGeometry().getExtent2D().getMaxY());
+			axes.getJSONObject("y").put("num", coverage.getRenderedImage().getNumXTiles());
 		}
 		/*for(int i=0;i<coverage.getGridGeometry().getExtent().getDimension();i++) {
 
@@ -108,9 +111,13 @@ public class CoverageJsonWriter {
 		result.put("parameters", parameters);
 		for(GridSampleDimension dimension:coverage.getSampleDimensions()) {
 			JSONObject sampledim=new JSONObject();
-			parameters.put(dimension.getCategoryNames()[0].toString(),sampledim);
+			String range1="range1";
+			if(dimension.getCategoryNames()!=null) {
+				parameters.put(dimension.getCategoryNames()[0].toString(),sampledim);
+				range1=dimension.getCategoryNames()[0].toString();
+			}
 			JSONObject paramrange=new JSONObject();
-			ranges.put(dimension.getCategoryNames()[0].toString(),paramrange);
+			ranges.put(range1,paramrange);
 			paramrange.put("type","NdArray");
 			paramrange.put("dataType","float");
 			JSONArray axiss=new JSONArray();
@@ -118,12 +125,12 @@ public class CoverageJsonWriter {
 			for(String ax:axes.keySet()) {
 				axiss.put(ax);
 			}
-			paramrange.put("shape",new JSONArray());
+			//paramrange.put("shape",new JSONArray());
 			paramrange.put("values",new JSONArray());
 			sampledim.put("type","Parameter");
 			JSONObject description=new JSONObject();
 			sampledim.put("description",description);
-			description.put("en",dimension.getCategoryNames().toString());
+			description.put("en",range1);
 			if(dimension.getUnits()!=null) {
 				JSONObject unit=new JSONObject();
 				sampledim.put("unit",unit);
@@ -157,6 +164,8 @@ public class CoverageJsonWriter {
 			}
 			JSONObject oPLabel=new JSONObject();
 			observedProperty.put("label",oPLabel);
+			
+			//coverage.getGridGeometry().
 			/*oPLabel.put("en",dimension.)
 			
 			dimension.getCategories();
