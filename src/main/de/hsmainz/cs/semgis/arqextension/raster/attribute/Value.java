@@ -15,7 +15,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -24,11 +24,11 @@ public class Value extends FunctionBase4 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2, NodeValue v3, NodeValue v4) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		Integer bandnum = v2.getInteger().intValue();
         Integer column = v3.getInteger().intValue();
         Integer row = v4.getInteger().intValue();
-        return NodeValue.makeString(raster.getRenderedImage().getData().getSample(column, row, bandnum)+"");
+        return NodeValue.makeString(raster.render(null).getData().getSample(column, row, bandnum)+"");
 	}
 
 }

@@ -3,12 +3,11 @@ package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.crs.DefaultGeographicCRS;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.geotoolkit.coverage.wkb.WKBRasterReader;
 import org.geotoolkit.coverage.wkb.WKBRasterWriter;
-import org.geotoolkit.factory.Factories;
 import org.locationtech.jts.io.WKBReader;
 import org.locationtech.jts.io.WKBWriter;
 import org.opengis.referencing.crs.CRSAuthorityFactory;
@@ -48,7 +47,7 @@ public class HexWKBRastDatatype extends RasterDataType {
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
 		WKBRasterReader reader2=new WKBRasterReader();
-		GridCoverage2D coverage;
+		GridCoverage coverage;
 		try {
 			//BufferedImage img=reader2.read(WKBReader.hexToBytes(geometryLiteral));
 			//CRS.forCode("EPSG:4326").getCoordinateSystem().

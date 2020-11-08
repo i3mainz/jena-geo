@@ -15,6 +15,7 @@ public class AddConstTest extends SampleRasters {
 	
 	@Test
 	public void testAddConst() {
+        System.out.println(displayRasterSummary(wkbString1));
 		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
         NodeValue covLiteral2 = NodeValue.makeInteger(10);
         NodeValue bandnum = NodeValue.makeInteger(0);

@@ -9,19 +9,14 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.referencing.NamedIdentifier;
 import org.apache.sis.referencing.crs.DefaultTemporalCRS;
 import org.apache.sis.referencing.datum.DefaultTemporalDatum;
 import org.apache.sis.referencing.factory.GeodeticAuthorityFactory;
 import org.apache.sis.util.iso.Names;
-import org.geotoolkit.coverage.Category;
-import org.geotoolkit.coverage.GridSampleDimension;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.geotoolkit.coverage.grid.GridGeometry2D;
-import org.geotoolkit.image.io.metadata.SampleDimension;
-import org.geotoolkit.referencing.CRS;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.opengis.metadata.spatial.DimensionNameType;
@@ -35,7 +30,7 @@ import de.hsmainz.cs.semgis.arqextension.util.CovJSONCoverage;
 
 public class CoverageJSONReader {
 
-	public static GridCoverage2D covJSONStringToCoverage(String covjson) {
+	public static GridCoverage covJSONStringToCoverage(String covjson) {
 		return covJSONToCoverage(new JSONObject(covjson));
 	}
 	
@@ -176,7 +171,7 @@ public class CoverageJSONReader {
 		System.out.println("DimensionNameType: "+axestypes);
 		System.out.println("Mins: "+mins);
 		System.out.println("Maxs: "+maxs);
-		GridExtent2D extent=new GridExtent(axestypes.toArray(new DimensionNameType[0]),
+		/*GridExtent2D extent=new GridExtent(axestypes.toArray(new DimensionNameType[0]),
 				ArrayUtils.toPrimitive(mins.toArray(new Long[0])), 
 				ArrayUtils.toPrimitive(maxs.toArray(new Long[0])),true);	
 		Envelope2D gridenv=new Envelope2D();
@@ -185,7 +180,7 @@ public class CoverageJSONReader {
 			gridgeom=new GridGeometry2D(extent,null,null,sys);//domain
 		}else {
 			gridgeom=new GridGeometry2D(extent, gridenv);//domain
-		}
+		}*/
 
 		Map<String,List<Category>> categories=new TreeMap<>();
 		for(String key:covjson.getJSONObject("ranges").keySet()) {
@@ -212,7 +207,7 @@ public class CoverageJSONReader {
 		return result;
 	}
 	
-	public static GridCoverage2D covJSONToCoverage(JSONObject covjson) {
+	public static GridCoverage covJSONToCoverage(JSONObject covjson) {
 		JSONObject axes=covjson.getJSONObject("domain").getJSONObject("axes");
 		Integer minX=Integer.MAX_VALUE;
 		Integer maxX=0;
@@ -348,7 +343,7 @@ public class CoverageJSONReader {
 		System.out.println("DimensionNameType: "+axestypes);
 		System.out.println("Mins: "+mins);
 		System.out.println("Maxs: "+maxs);
-		Extent extent=new GridExtent(axestypes.toArray(new DimensionNameType[0]),
+		/*Extent extent=new GridExtent(axestypes.toArray(new DimensionNameType[0]),
 				ArrayUtils.toPrimitive(mins.toArray(new Long[0])), 
 				ArrayUtils.toPrimitive(maxs.toArray(new Long[0])),true);	
 		Envelope2D gridenv=new Envelope2D();
@@ -357,7 +352,7 @@ public class CoverageJSONReader {
 			gridgeom=new GridGeometry2D(extent,null,null,sys);//domain
 		}else {
 			gridgeom=new GridGeometry2D(extent, gridenv);//domain
-		}
+		}*/
 
 		Map<String,List<Category>> categories=new TreeMap<>();
 		for(String key:covjson.getJSONObject("ranges").keySet()) {
@@ -395,7 +390,7 @@ public class CoverageJSONReader {
         pb.add(readP);
         pb.add(READER_SPI.createReaderInstance());
 	*/
-		GridCoverageBuilder builder=new GridCoverageBuilder();
+	/*	GridCoverageBuilder builder=new GridCoverageBuilder();
 		builder.setSampleDimensions(raster1);
 		List<GridSampleDimension> dimensions=new LinkedList<GridSampleDimension>();
 		for(String key:covjson.getJSONObject("parameters").keySet()) {
@@ -413,7 +408,7 @@ public class CoverageJSONReader {
 		/*
 		 * Create the grid coverage, gets its image and set values directly as short
 		 * integers.
-		 */
+		 
 		BufferedGridCoverage coverage = new BufferedGridCoverage(gridgeom,
 				dimensions, DataBuffer.TYPE_INT);
 		System.out.println(coverage);
@@ -424,7 +419,8 @@ public class CoverageJSONReader {
 		
 		//rasterr.setDataElements(x, y, rasterr);
 		//rasterr.setRect(subtractedImage.getSourceImage(0).getData());
-		return coverage;
+		return coverage;*/
+		return null;
 	}
 	
 	
@@ -487,7 +483,7 @@ public class CoverageJSONReader {
 				"    }\r\n" + 
 				"  }\r\n" + 
 				"}";
-			GridCoverage2D cov=covJSONStringToCoverage(covjson);
+			GridCoverage cov=covJSONStringToCoverage(covjson);
 			System.out.println(CoverageJsonWriter.coverageToCovJSON(cov).toString(2));
 			
 	}

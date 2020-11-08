@@ -3,7 +3,7 @@ package de.hsmainz.cs.semgis.arqextension.envelope.relation;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
@@ -34,8 +34,8 @@ public class BBOXIntersects extends FunctionBase2 {
 			throw new ExprEvalException(e.getMessage(), e);
 		}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-    		GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-    		GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
+    		GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+    		GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
             try {
     			return NodeValue.makeBoolean(LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()).
     					intersects(LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope())));
@@ -45,14 +45,14 @@ public class BBOXIntersects extends FunctionBase2 {
     		}
     	}else {
     		if(wrapper1 instanceof CoverageWrapper) {
-    			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
+    			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
     			GeometryWrapper geom2 = GeometryWrapper.extract(v2);
-    			return NodeValue.makeBoolean(LiteralUtils.toGeometry(raster.getEnvelope2D()).
+    			return NodeValue.makeBoolean(LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()).
     					intersects(LiteralUtils.toGeometry(geom2.getEnvelope())));
     		}else {
-    			GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();
+    			GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
     			GeometryWrapper geom2 = GeometryWrapper.extract(v1);		
-    			return NodeValue.makeBoolean(LiteralUtils.toGeometry(raster.getEnvelope2D()).intersects(LiteralUtils.toGeometry(geom2.getEnvelope()))); 
+    			return NodeValue.makeBoolean(LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()).intersects(LiteralUtils.toGeometry(geom2.getEnvelope()))); 
     		}
     	}
         

@@ -15,7 +15,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 import java.math.BigInteger;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -24,9 +24,9 @@ public class BandPixelType extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		BigInteger bandNum=v2.getInteger();
-        return NodeValue.makeString(raster.getSampleDimension(bandNum.intValue()).getRange() + "");
+        return NodeValue.makeString(raster.getSampleDimensions().get(bandNum.intValue()).getSampleRange() + "");
 	}
 
 }

@@ -3,7 +3,7 @@ package de.hsmainz.cs.semgis.arqextension.envelope.relation;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
@@ -37,8 +37,8 @@ public class BBOXBelow extends FunctionBase2 {
 			return NodeValue.makeString(e.getMessage());
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
 	        try {
 				if(raster.getGridGeometry().getEnvelope().getUpperCorner().getCoordinate()[1]<
 				raster2.getGridGeometry().getEnvelope().getLowerCorner().getCoordinate()[1]) {
@@ -51,16 +51,16 @@ public class BBOXBelow extends FunctionBase2 {
 			}
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				GeometryWrapper geom2 = GeometryWrapper.extract(v2);
-				if(raster.getEnvelope().getUpperCorner().getCoordinate()[1]<geom2.getEnvelope().getMinY()) {
+				if(raster.getGridGeometry().getEnvelope().getUpperCorner().getCoordinate()[1]<geom2.getEnvelope().getMinY()) {
 					return NodeValue.TRUE;
 				}
 				return NodeValue.FALSE;
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				GeometryWrapper geom2 = GeometryWrapper.extract(v1);
-				if(raster.getEnvelope().getUpperCorner().getCoordinate()[1]<geom2.getEnvelope().getMinY()) {
+				if(raster.getGridGeometry().getEnvelope().getUpperCorner().getCoordinate()[1]<geom2.getEnvelope().getMinY()) {
 					return NodeValue.TRUE;
 				}
 				return NodeValue.FALSE;		

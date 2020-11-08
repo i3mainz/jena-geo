@@ -23,9 +23,9 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
 import org.apache.jena.sparql.function.FunctionBase3;
 import org.apache.jena.sparql.function.FunctionEnv;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
 import org.apache.sis.geometry.GeneralEnvelope;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.CoordinateXY;
 import org.opengis.referencing.operation.TransformException;
 
@@ -34,7 +34,7 @@ public class SummaryStats extends FunctionBase3 {
 	@Override
 	public NodeValue exec(NodeValue v1,NodeValue v2, NodeValue v3) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		Integer x = v2.getInteger().intValue();
         Integer y = v3.getInteger().intValue();
         Envelope2D pixelEnvelop;

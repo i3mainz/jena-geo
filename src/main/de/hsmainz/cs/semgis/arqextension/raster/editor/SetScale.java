@@ -12,11 +12,11 @@ import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.util.resources.Vocabulary;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.GeometryFactory;
-import org.opengis.coverage.grid.GridCoverage;
-import org.opengis.coverage.grid.GridGeometry;
 import org.opengis.parameter.InvalidParameterValueException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
@@ -42,11 +42,12 @@ public class SetScale extends FunctionBase3{
 
         //this.initilizeVariables(raster);
 
-        final int numBands = raster.getNumSampleDimensions();
+        final int numBands = raster.getSampleDimensions().size();
 
-        Envelope extent = (Envelope) raster.getGridGeometry().getExtent();
+        Envelope extent = (Envelope) raster.getGridGeometry().getEnvelope();
         GridGeometry gridGeometry2D = raster.getGridGeometry();
-        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS();
+		throw new UnsupportedOperationException("Not yet implemented");
+        /*AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS();
         Double cellSizeX = Math.abs(gridToWorld.getScaleX()) * xScale;
         Double cellSizeY = Math.abs(gridToWorld.getScaleY()) * yScale;
 
@@ -61,7 +62,7 @@ public class SetScale extends FunctionBase3{
         // resulting in a smaller extent because of a smaller cell size.
 
         // Rescale extent
-		throw new UnsupportedOperationException("Not yet implemented");
+
         /*final PlanarImage inputImage = (PlanarImage) raster.getRenderedImage();
         double maxX = extent.getMinX() + (inputImage.getWidth() * cellSizeX);
         double maxY = extent.getMinY() + (inputImage.getHeight() * cellSizeY);

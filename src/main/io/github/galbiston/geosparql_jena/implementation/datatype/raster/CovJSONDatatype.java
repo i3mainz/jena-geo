@@ -1,6 +1,6 @@
 package io.github.galbiston.geosparql_jena.implementation.datatype.raster;
 
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.json.JSONObject;
 
 import de.hsmainz.cs.semgis.arqextension.util.parsers.CoverageJSONReader;
@@ -21,7 +21,7 @@ public class CovJSONDatatype extends RasterDataType{
 
 	@Override
 	public CoverageWrapper read(String geometryLiteral) {
-		GridCoverage2D coverage=CoverageJSONReader.covJSONStringToCoverage(geometryLiteral);
+		GridCoverage coverage=CoverageJSONReader.covJSONStringToCoverage(geometryLiteral);
 		return new CoverageWrapper(coverage, URI);
 	}
 	

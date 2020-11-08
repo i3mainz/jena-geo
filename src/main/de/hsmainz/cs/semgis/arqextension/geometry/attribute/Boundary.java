@@ -4,7 +4,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.operation.BoundaryOp;
 
@@ -40,8 +40,8 @@ public class Boundary extends FunctionBase1 {
         }
     	}else if(wrapper1 instanceof CoverageWrapper) {
     		 CoverageWrapper covwrap = CoverageWrapper.extract(v);
-             GridCoverage2D cov = covwrap.getXYGeometry();
-             Geometry geom=LiteralUtils.toGeometry(cov.getEnvelope());
+             GridCoverage cov = covwrap.getXYGeometry();
+             Geometry geom=LiteralUtils.toGeometry(cov.getGridGeometry().getEnvelope());
              BoundaryOp boundop=new BoundaryOp(geom);
              GeometryWrapper wrapper = GeometryWrapperFactory.createGeometry(boundop.getBoundary(), WKTDatatype.URI);
              return wrapper.asNodeValue();                 

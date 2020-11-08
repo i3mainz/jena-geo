@@ -33,8 +33,6 @@ import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.stream.ImageInputStream;
 import org.apache.sis.util.ArraysExt;
-import org.geotoolkit.nio.IOUtilities;
-import org.geotoolkit.util.Utilities;
 
 /**
  * Draft java api image reader for WKB, used in postGIS 2 but can be used elsewhere.
@@ -89,7 +87,7 @@ public class WKBRasterImageReader extends ImageReader{
             if(input instanceof InputStream){
                 stream = (InputStream) input;
             }else{
-                stream = IOUtilities.open(input);
+                stream = org.apache.sis.internal.storage.io.IOUtilities.toInputStream((AutoCloseable) input);
                 stream = new BufferedInputStream(stream);
             }
             final BufferedImage image = reader.read(stream);
@@ -106,7 +104,7 @@ public class WKBRasterImageReader extends ImageReader{
             MIMETypes       = new String[] {"image/x-pgraster"};
             pluginClassName = "org.geotoolkit.coverage.wkb.WKBRasterImageReader";
             vendorName      = "Geotoolkit.org";
-            version         = Utilities.VERSION.toString();
+            version         = "";//Utilities.VERSION.toString();
             writerSpiNames  = new String[] {"PostGISWKBraster"};
             inputTypes      = new Class[0];
             inputTypes      = ArraysExt.append(inputTypes, ImageInputStream.class);

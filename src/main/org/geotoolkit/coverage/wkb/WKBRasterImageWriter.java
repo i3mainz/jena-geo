@@ -33,10 +33,12 @@ import javax.imageio.ImageWriter;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageOutputStream;
+
+import org.apache.sis.internal.storage.io.IOUtilities;
 import org.apache.sis.util.ArraysExt;
-import org.geotoolkit.image.io.metadata.SpatialMetadata;
-import org.geotoolkit.nio.IOUtilities;
-import org.geotoolkit.util.Utilities;
+//import org.geotoolkit.image.io.metadata.SpatialMetadata;
+//import org.geotoolkit.nio.IOUtilities;
+//import org.geotoolkit.util.Utilities;
 
 /**
  *
@@ -50,22 +52,22 @@ public class WKBRasterImageWriter extends ImageWriter{
 
     @Override
     public IIOMetadata getDefaultStreamMetadata(ImageWriteParam param) {
-        return new SpatialMetadata(true, this, null);
+        return null;//new SpatialMetadata(true, this, null);
     }
 
     @Override
     public IIOMetadata getDefaultImageMetadata(ImageTypeSpecifier imageType, ImageWriteParam param) {
-       return new SpatialMetadata(false, this, null);
+       return null;//new SpatialMetadata(false, this, null);
     }
 
     @Override
     public IIOMetadata convertStreamMetadata(IIOMetadata inData, ImageWriteParam param) {
-        return new SpatialMetadata(true, this, null);
+        return null;//new SpatialMetadata(true, this, null);
     }
 
     @Override
     public IIOMetadata convertImageMetadata(IIOMetadata inData, ImageTypeSpecifier imageType, ImageWriteParam param) {
-        return new SpatialMetadata(false, this, null);
+        return null;//new SpatialMetadata(false, this, null);
     }
 
     @Override
@@ -85,7 +87,7 @@ public class WKBRasterImageWriter extends ImageWriter{
             stream.write(data);
 
         }else{
-            final OutputStream stream = IOUtilities.openWrite(getOutput());
+            final OutputStream stream = IOUtilities.toOutputStream((AutoCloseable) getOutput());
             writer.write(ri, new AffineTransform(), 0, stream);
             stream.flush();
             stream.close();
@@ -104,7 +106,7 @@ public class WKBRasterImageWriter extends ImageWriter{
             stream.write(data);
 
         }else{
-            final OutputStream stream = IOUtilities.openWrite(getOutput());
+            final OutputStream stream = IOUtilities.toOutputStream((AutoCloseable) getOutput());
             writer.write(ri, new AffineTransform(), 0, stream);
             stream.flush();
             stream.close();
@@ -120,7 +122,7 @@ public class WKBRasterImageWriter extends ImageWriter{
             MIMETypes       = new String[] {"image/x-pgraster"};
             pluginClassName = "org.geotoolkit.coverage.wkb.WKBRasterImageWriter";
             vendorName      = "Geotoolkit.org";
-            version         = Utilities.VERSION.toString();
+            version         = "";//Utilities.VERSION.toString();
             readerSpiNames  = new String[] {"PostGISWKBraster"};
             outputTypes     = new Class[0];
             outputTypes     = ArraysExt.append(outputTypes, OutputStream.class);

@@ -3,7 +3,6 @@ package de.hsmainz.cs.semgis.arqextension.geometry.attribute;
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Polygon;
 import org.opengis.geometry.Envelope;

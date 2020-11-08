@@ -20,6 +20,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.WKBRast
 
 import java.awt.image.DataBuffer;
 import java.awt.image.WritableRaster;
+import java.util.LinkedList;
 import java.util.List;
 
 import javax.media.jai.RasterFactory;
@@ -29,13 +30,17 @@ import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase0;
 import org.apache.jena.sparql.function.FunctionEnv;
 import org.apache.jena.vocabulary.XSD;
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.Envelope2D;
+import org.apache.sis.internal.coverage.BufferedGridCoverage;
 import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.CommonCRS;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.opengis.coverage.grid.GridCoverage;
+import org.apache.sis.util.iso.DefaultNameFactory;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.util.FactoryException;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
@@ -56,7 +61,7 @@ public class MakeEmptyRaster extends FunctionBase0 {
 			}
 		}
 		//CoordinateReferenceSystem crs = CommonCRS.WGS84.defaultGeographic();
-		CoordinateReferenceSystem crss;
+		CoordinateReferenceSystem crss=null;
 		Envelope2D envelope=null;
 		try {
 			crss = CRS.forCode("EPSG:4326");
@@ -68,12 +73,18 @@ public class MakeEmptyRaster extends FunctionBase0 {
 			envelope = new Envelope2D(CommonCRS.WGS84.defaultGeographic(), 0, 0, 30, 30);
 		}
 		
-		GridCoverageBuilder gcb = new GridCoverageBuilder();
-		gcb.setRenderedImage(raster);
-		gcb.setEnvelope(envelope);
-		GridCoverage2D gc = (GridCoverage2D)gcb.build();
+        GridExtent extent=new GridExtent(raster.getWidth(), raster.getHeight());
+        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, null, crss);
+        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+        DefaultNameFactory fac=new DefaultNameFactory();
+        for(int i=0;i<raster.getNumBands();i++) {
+        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+        }
+        BufferedGridCoverage coverage=new BufferedGridCoverage(
+        		gridgeom, dimensions, raster.getDataBuffer());
 		
-		return CoverageWrapper.createCoverage(gc, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();
+		
+		return CoverageWrapper.createCoverage(coverage, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();
 	}
 
 	

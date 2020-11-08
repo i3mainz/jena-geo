@@ -1,15 +1,23 @@
 package de.hsmainz.cs.semgis.arqextension.raster.algebra;
 
+import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.opengis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.internal.coverage.BufferedGridCoverage;
+import org.apache.sis.util.iso.DefaultNameFactory;
+import org.opengis.referencing.datum.PixelInCell;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -18,47 +26,28 @@ public class Constant extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		Double numberVal=v2.getDouble();
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
-	     pbSubtracted.addSource(raster.getRenderedImage()); 
-	     pbSubtracted.add((float)raster.getRenderedImage().getWidth());
-	     pbSubtracted.add((float)raster.getRenderedImage().getHeight());
+		 RenderedImage image = raster.render(null);
+	     pbSubtracted.addSource(image); 
+	     pbSubtracted.add((float)image.getWidth());
+	     pbSubtracted.add((float)image.getHeight());
 	     pbSubtracted.add((Number[]) new Double[] {numberVal}); 
 	     RenderedOp subtractedImage = JAI.create("constant",pbSubtracted);
-			GridCoverageBuilder builder=new GridCoverageBuilder();
-			builder.setGridGeometry(raster.getGridGeometry());
-			builder.setNumBands(raster.getNumSampleDimensions());
-			builder.setExtent(raster.getGridGeometry().getExtent());
-			builder.setRenderedImage(subtractedImage);
-			/*final SampleDimension sd = new SampleDimension.Builder().setName("t")
-					.addQuantitative(
-							(raster.getSampleDimensions().get(rd1).getName() + "+"
-									+ raster2.getSampleDimensions().get(rd2).getName()).toString(),
-							raster.getSampleDimensions().get(0).getMeasurementRange().get(),
-							raster.getSampleDimensions().get(0).getTransferFunction().get(),
-							raster.getSampleDimensions().get(0).getUnits().get())
-					.build();
-			
+			final SampleDimension sd =raster.getSampleDimensions().get(0);
 			List<SampleDimension>sds=new LinkedList<SampleDimension>();
 			sds.add(sd);
-			/*
-			 * Create the grid coverage, gets its image and set values directly as short
-			 * integers.
-			 
-			BufferedGridCoverage coverage = new BufferedGridCoverage(raster2.getGridGeometry(),
-					sds, DataBuffer.TYPE_SHORT);
-			WritableRaster rasterr = ((BufferedImage) coverage.render(null)).getRaster();
-			rasterr.setRect(subtractedImage.getSourceImage(0).getData());
-			return CoverageWrapper.createCoverage(coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
-					.asNodeValue();	
-			} catch (CannotEvaluateException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				return null;
-			}*/
-			GridCoverage cov=builder.build();
-			return CoverageWrapper.createCoverage((GridCoverage2D)cov, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+	        GridExtent extent=new GridExtent(subtractedImage.getWidth(), subtractedImage.getHeight());
+	        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, raster.getGridGeometry().getGridToCRS(PixelInCell.CELL_CENTER), raster.getCoordinateReferenceSystem());
+	        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+	        DefaultNameFactory fac=new DefaultNameFactory();
+	        for(int i=0;i<subtractedImage.getNumBands();i++) {
+	        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+	        }
+	        BufferedGridCoverage coverage=new BufferedGridCoverage(
+	        		gridgeom, dimensions, subtractedImage.getData().getDataBuffer());
+			return CoverageWrapper.createCoverage((GridCoverage)coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
 					.asNodeValue();
 	     
 	} 

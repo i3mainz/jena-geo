@@ -19,8 +19,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.RenderedImage;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridGeometry2D;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.opengis.coverage.CannotEvaluateException;
 import org.opengis.referencing.datum.PixelInCell;
 
@@ -29,28 +29,27 @@ public class Summary extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);
-		GridCoverage2D raster=wrapper.getXYGeometry();
+		GridCoverage raster=wrapper.getXYGeometry();
 		StringBuilder builder = new StringBuilder();
 		RenderedImage rendered;
-		try {
-			rendered = raster.getRenderedImage();
-        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() +"\n MemSize: "+raster.getRenderedImage().getData().getDataBuffer().getSize()+ 
+				rendered = raster.render(null);
+        builder.append("Raster of " + rendered.getWidth() + "x" + rendered.getHeight() +"\n MemSize: "+raster.render(null).getData().getDataBuffer().getSize()+ 
         		"\nMINX/Y: ["+rendered.getMinX()+","+rendered.getMinY()+"] pixels has " 
-        		+ raster.getSampleDimensions().length + " bands\n and extent of " +raster.getEnvelope().toString()
-        		+"\n and grid geometry of "+ raster.getGridGeometry() + System.lineSeparator());
+        		+ raster.getSampleDimensions().size() + " bands\n and extent of " +raster.getGridGeometry().getEnvelope().toString()
+        		);//+"\n and grid geometry of "+ raster.getGridGeometry() + System.lineSeparator());
         builder.append("SampleModel: "+rendered.getSampleModel()+"\n");
         builder.append("PropertyNames: "+rendered.getPropertyNames()+"\n");
         builder.append("Tiles: "+rendered.getNumXTiles()+"/"+rendered.getNumYTiles()+"["+rendered.getTileWidth()+"/"+rendered.getTileHeight()+"] Offset: ["+rendered.getTileGridXOffset()+"/"+rendered.getTileGridYOffset()+"]\n");
-        builder.append("Dimensions: "+raster.getDimension()+"\n");
+        builder.append("Dimensions: "+raster.getGridGeometry().getDimension()+"\n");
         builder.append("DataElements: "+rendered.getData().getNumDataElements()+"\n");
         builder.append("DataType: "+rendered.getData().getDataBuffer().getDataType()+"\n");
         builder.append("ColorModel: "+rendered.getColorModel()+"\n");
-		GridGeometry2D gridGeometry2D = raster.getGridGeometry();
+		GridGeometry gridGeometry2D = raster.getGridGeometry();
         AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(PixelInCell.CELL_CENTER);
         builder.append("Shear: ["+gridToWorld.getShearX()+"/"+gridToWorld.getShearY()+"] Scale: ["+gridToWorld.getScaleX()+"/"+gridToWorld.getScaleY()+"]\n");
         builder.append("GridToWorld: ["+gridToWorld. getShearX()+"/"+gridToWorld.getShearY()+"] Scale: ["+gridToWorld.getScaleX()+"/"+gridToWorld.getScaleY()+"]\n");
         builder.append("PixelData: \n");
-        for(int k=0;k<raster.getNumSampleDimensions();k++) {
+        for(int k=0;k<raster.getSampleDimensions().size();k++) {
         	builder.append("Band "+k+"\n");
         	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
         		builder.append("| ");
@@ -61,13 +60,10 @@ public class Summary extends FunctionBase1 {
         	}
         }
         builder.append("CRS: "+raster.getGridGeometry().getCoordinateReferenceSystem().getName()+"\n");
-        for (int i = 0; i < raster.getNumSampleDimensions(); i++) {
-            builder.append("band " + i + " of pixtype " + raster.getSampleDimension(i).getScale() + " is in-db with NODATA value of " + raster.getSampleDimension(i).getNoDataValues() + System.lineSeparator());
+        for (int i = 0; i < raster.getSampleDimensions().size(); i++) {
+            builder.append("band " + i + " of pixtype " + raster.getSampleDimensions().get(i).getMeasurementRange() + " is in-db with NODATA value of " + raster.getSampleDimensions().get(i).getNoDataValues() + System.lineSeparator());
         }
         return NodeValue.makeString(builder.toString());
-		} catch (CannotEvaluateException e) {
-			return null;
-		}
 	}
 
 }

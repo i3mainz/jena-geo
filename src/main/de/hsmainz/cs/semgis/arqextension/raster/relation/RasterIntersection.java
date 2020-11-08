@@ -3,7 +3,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase3;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
@@ -36,12 +36,12 @@ public class RasterIntersection extends FunctionBase3 {
 				throw new RuntimeException("CRS transformation failed");
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
 			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 		    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 		    if(bbox1.equals(bbox2)) {
-				return CoverageWrapper.createCoverage((GridCoverage2D)raster, ((CoverageWrapper)wrapper1).getSrsURI(), ((CoverageWrapper)wrapper1).getRasterDatatypeURI())
+				return CoverageWrapper.createCoverage((GridCoverage)raster, ((CoverageWrapper)wrapper1).getSrsURI(), ((CoverageWrapper)wrapper1).getRasterDatatypeURI())
 						.asNodeValue();
 		    }
 		    if(!bbox1.intersects(bbox2)) {
@@ -65,7 +65,7 @@ public class RasterIntersection extends FunctionBase3 {
 		    }	
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 			    if(!bbox1.intersects(geom)) {
@@ -88,7 +88,7 @@ public class RasterIntersection extends FunctionBase3 {
 
 			    }	
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 			    if(!bbox1.intersects(geom)) {

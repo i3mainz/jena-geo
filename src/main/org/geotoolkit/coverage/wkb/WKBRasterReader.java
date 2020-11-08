@@ -17,13 +17,11 @@
 package org.geotoolkit.coverage.wkb;
 
 import java.awt.Point;
-import java.awt.Transparency;
-import java.awt.color.ColorSpace;
 import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
-import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.DataBufferByte;
+import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.io.ByteArrayInputStream;
@@ -31,18 +29,35 @@ import java.io.DataInput;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
 import javax.media.jai.PlanarImage;
 import javax.media.jai.RasterFactory;
+
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.geotoolkit.coverage.grid.GridCoverageBuilder;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.internal.coverage.BufferedGridCoverage;
+import org.apache.sis.internal.coverage.ColorModelFactory;
+import org.apache.sis.internal.referencing.j2d.AffineTransform2D;
+import org.apache.sis.metadata.iso.content.DefaultSampleDimension;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.util.iso.DefaultInternationalString;
+import org.apache.sis.util.iso.DefaultNameFactory;
+import org.apache.sis.util.iso.DefaultScopedName;
+
 import static org.geotoolkit.coverage.wkb.WKBRasterConstants.*;
 import org.geotoolkit.io.LEDataInputStream;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.internal.referencing.j2d.AffineTransform2D;
-import org.apache.sis.internal.coverage.ColorModelFactory;
+import org.opengis.coverage.CannotEvaluateException;
 import org.opengis.referencing.NoSuchAuthorityCodeException;
 import org.opengis.referencing.crs.CRSAuthorityFactory;
-import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.util.FactoryException;
 
 /**
@@ -105,16 +120,23 @@ public class WKBRasterReader {
     public GridCoverage readCoverage(final InputStream stream, CRSAuthorityFactory authorityFactory)
             throws IOException, NoSuchAuthorityCodeException, FactoryException{
         final BufferedImage image = read(stream);
-        final GridCoverageBuilder gcb = new GridCoverageBuilder();
         final String epsgCode = "EPSG:"+srid;
-        if(authorityFactory != null){
-            gcb.setCoordinateReferenceSystem(authorityFactory.createCoordinateReferenceSystem(epsgCode));
-        }else{
-            gcb.setCoordinateReferenceSystem(CRS.forCode(epsgCode));
+        final CoordinateReferenceSystem crs;
+        if (authorityFactory != null) {
+            crs = authorityFactory.createCoordinateReferenceSystem(epsgCode);
+        } else {
+            crs = CRS.forCode(epsgCode);
         }
-        gcb.setGridToCRS((MathTransform)getGridToCRS());
-        gcb.setRenderedImage(image);
-        return gcb.getGridCoverage2D();
+        GridExtent extent=new GridExtent(image.getWidth(), image.getHeight());
+        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, getGridToCRS(), crs);
+        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+        DefaultNameFactory fac=new DefaultNameFactory();
+        for(int i=0;i<image.getRaster().getNumBands();i++) {
+        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+        }
+        BufferedGridCoverage cov=new BufferedGridCoverage(
+        		gridgeom, dimensions, image.getData().getDataBuffer());
+        return cov;
     }
 
     /**
@@ -321,23 +343,13 @@ public class WKBRasterReader {
                 }
             }
         }
-
         //rebuild image
         final SampleModel sm = raster.getSampleModel();
         ColorModel cm = PlanarImage.getDefaultColorModel(sm.getDataType(), raster.getNumBands());
         if(cm==null){
             //fallback
-            cm = createGrayScaleColorModel(sm.getDataType(), raster.getNumBands(), 0, min, max);
+            cm = (ColorModel) ColorModelFactory.GRAYSCALE;  //createGrayScale(sm.getDataType(), raster.getNumBands(), 0, min, max);
         }
-
         return new BufferedImage(cm, raster, false, null);
     }
-
-
-    private static ColorModel createGrayScaleColorModel(int dataType, int nbBand, int visibleBand, double min, double max) {
-        final ColorSpace colors = ColorModelFactory.createColorSpace(nbBand, visibleBand, min, max);
-        final ColorModel cm = new ComponentColorModel(colors, false, false, Transparency.OPAQUE, dataType);
-        return cm;
-    }
-
 }

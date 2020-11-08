@@ -10,7 +10,6 @@ import javax.imageio.ImageWriteParam;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.opengis.coverage.CannotEvaluateException;
 
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriter;
@@ -42,7 +41,7 @@ public class GeoTIFFDatatype extends RasterDataType {
 			 * writerParam.setCompressionType(compression); }
 			 */
 			try {
-				writer.write(((CoverageWrapper) geometry).getParsingGeometry().getRenderedImage());
+				writer.write(((CoverageWrapper) geometry).getParsingGeometry().render(null));
 				writer.endWriteSequence();
 				return writer.getOutput().toString();
 			} catch (IOException e) {

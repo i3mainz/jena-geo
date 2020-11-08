@@ -4,7 +4,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.algorithm.match.AreaSimilarityMeasure;
 import org.locationtech.jts.geom.Geometry;
 
@@ -32,21 +32,21 @@ public class AreaSimilarity extends FunctionBase2 {
 	    
 	}
     	}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
 			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 		    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 		    AreaSimilarityMeasure areasim=new AreaSimilarityMeasure();
 	        return NodeValue.makeDouble(areasim.measure(bbox1, bbox2));	
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 			    AreaSimilarityMeasure areasim=new AreaSimilarityMeasure();
 		        return NodeValue.makeDouble(areasim.measure(bbox1, geom));	
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 				Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 			    AreaSimilarityMeasure areasim=new AreaSimilarityMeasure();

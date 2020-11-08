@@ -2,7 +2,7 @@ package de.hsmainz.cs.semgis.arqextension.raster.relation;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase4;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
@@ -23,12 +23,12 @@ public class SmallerIntersects extends FunctionBase4 {
 	if(wrapper1 instanceof GeometryWrapper && wrapper2 instanceof GeometryWrapper) {
 		throw new RuntimeException("Function only applicable to Vector/Raster Raster/Raster input");
 	}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-		GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-		GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
+		GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+		GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();		
 		Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 	    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 	    if(bbox1.equals(bbox2)) {
-			return CoverageWrapper.createCoverage((GridCoverage2D)raster, ((CoverageWrapper)wrapper1).getSrsURI(), ((CoverageWrapper)wrapper1).getRasterDatatypeURI())
+			return CoverageWrapper.createCoverage((GridCoverage)raster, ((CoverageWrapper)wrapper1).getSrsURI(), ((CoverageWrapper)wrapper1).getRasterDatatypeURI())
 					.asNodeValue();
 	    }
 	    if(!bbox1.intersects(bbox2)) {
@@ -36,7 +36,7 @@ public class SmallerIntersects extends FunctionBase4 {
 	    }else {
 	    	Geometry intersection=bbox1.intersection(bbox2);
 		    	try {
-					GridCoverage2D cov = LiteralUtils.cropRaster2((CoverageWrapper)wrapper2, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
+					GridCoverage cov = LiteralUtils.cropRaster2((CoverageWrapper)wrapper2, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
 					if(LiteralUtils.maxRasterValue(cov, bandnum)<value) {
 						return NodeValue.TRUE;
 					}
@@ -47,7 +47,7 @@ public class SmallerIntersects extends FunctionBase4 {
 	    }	
 	}else {
 		if(wrapper1 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
 			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 			Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 		    if(!bbox1.intersects(geom)) {
@@ -55,7 +55,7 @@ public class SmallerIntersects extends FunctionBase4 {
 		    }else {
 		    	Geometry intersection=bbox1.intersection(geom);
 			    	try {
-						GridCoverage2D cov=LiteralUtils.cropRaster2((CoverageWrapper)wrapper1, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
+						GridCoverage cov=LiteralUtils.cropRaster2((CoverageWrapper)wrapper1, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
 						if(LiteralUtils.maxRasterValue(cov, bandnum)<value) {
 							return NodeValue.TRUE;
 						}
@@ -65,7 +65,7 @@ public class SmallerIntersects extends FunctionBase4 {
 					}
 		    }	
 		}else {
-			GridCoverage2D raster=((CoverageWrapper)wrapper2).getGridGeometry();
+			GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();
 			Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
 			Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 		    if(!bbox1.intersects(geom)) {
@@ -73,7 +73,7 @@ public class SmallerIntersects extends FunctionBase4 {
 		    }else {
 		    	Geometry intersection=bbox1.intersection(geom);
 			    	try {
-						GridCoverage2D cov=LiteralUtils.cropRaster2((CoverageWrapper)wrapper2, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
+						GridCoverage cov=LiteralUtils.cropRaster2((CoverageWrapper)wrapper2, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
 						if(LiteralUtils.maxRasterValue(cov, bandnum)<value) {
 							return NodeValue.TRUE;
 						}

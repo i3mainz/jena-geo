@@ -4,7 +4,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 
@@ -38,10 +38,10 @@ public class BoundingDiagonal extends FunctionBase1{
         }
     	}else if(wrapper1 instanceof CoverageWrapper) {
    		 CoverageWrapper covwrap = CoverageWrapper.extract(arg0);
-         GridCoverage2D cov = covwrap.getXYGeometry();
+         GridCoverage cov = covwrap.getXYGeometry();
          GeometryWrapper lineStringWrapper = GeometryWrapperFactory.createLineString(new Coordinate[] {
-        		 new Coordinate(cov.getEnvelope().getLowerCorner().getCoordinate()[0],cov.getEnvelope().getLowerCorner().getCoordinate()[1]),
-        		 new Coordinate(cov.getEnvelope().getUpperCorner().getCoordinate()[0],cov.getEnvelope().getUpperCorner().getCoordinate()[1])}, WKTDatatype.URI);
+        		 new Coordinate(cov.getGridGeometry().getEnvelope().getLowerCorner().getCoordinate()[0],cov.getGridGeometry().getEnvelope().getLowerCorner().getCoordinate()[1]),
+        		 new Coordinate(cov.getGridGeometry().getEnvelope().getUpperCorner().getCoordinate()[0],cov.getGridGeometry().getEnvelope().getUpperCorner().getCoordinate()[1])}, WKTDatatype.URI);
          return lineStringWrapper.asNodeValue();              
 	}else {
 		return NodeValue.makeDouble(0.);

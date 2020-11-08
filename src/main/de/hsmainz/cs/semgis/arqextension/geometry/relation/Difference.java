@@ -2,7 +2,7 @@ package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.geometry.Envelope;
 import org.opengis.geometry.MismatchedDimensionException;
@@ -32,19 +32,19 @@ public class Difference extends FunctionBase2 {
 				return NodeValue.makeString(e.getMessage());
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();		
 	        Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 	        Envelope bbox2 = raster2.getGridGeometry().getEnvelope();
 	        return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).difference(LiteralUtils.toGeometry(bbox2)),((GeometryWrapper)wrapper1).getGeometryDatatypeURI()).asNodeValue();			
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				return GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(bbox1).difference(geom),((CoverageWrapper) wrapper1).getSrsURI()).asNodeValue();
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
 				Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				return GeometryWrapperFactory.createGeometry(geom.difference(LiteralUtils.toGeometry(bbox1)),((CoverageWrapper) wrapper1).getSrsURI()).asNodeValue();				

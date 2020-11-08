@@ -21,7 +21,7 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Point;
 
@@ -50,8 +50,8 @@ public class Centroid extends FunctionBase1 {
             throw new ExprEvalException(ex.getMessage(), ex);
         }
 		}else if(wrapper1 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-			return GeometryWrapperFactory.createPoint(LiteralUtils.toGeometry(raster.getEnvelope2D()).getCentroid().getCoordinate(),WKTDatatype.URI).asNodeValue();
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			return GeometryWrapperFactory.createPoint(LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()).getCentroid().getCoordinate(),WKTDatatype.URI).asNodeValue();
 		}else {
 			return NodeValue.nvEmptyString;
 		}

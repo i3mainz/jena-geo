@@ -4,8 +4,8 @@ import java.awt.geom.AffineTransform;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.opengis.coverage.grid.GridCoverage;
-import org.opengis.coverage.grid.GridGeometry;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.opengis.referencing.datum.PixelInCell;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
@@ -21,7 +21,7 @@ public class SkewY extends FunctionBase1 {
         CoverageWrapper wrapper=CoverageWrapper.extract(v);
 		GridCoverage raster=wrapper.getXYGeometry();
 		GridGeometry gridGeometry2D = raster.getGridGeometry();
-        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS();
+        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(PixelInCell.CELL_CENTER);
         return NodeValue.makeDouble(gridToWorld.getShearY());
 	}
 

@@ -25,7 +25,7 @@ import io.github.galbiston.geosparql_jena.implementation.datatype.raster.Coverag
 import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.function.FunctionBase1;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 /**
  * Returns the smallest circle polygon that can fully contain a geometry. Default uses 48 segments per quarter circle.
@@ -48,7 +48,7 @@ public class MinimumBoundingCircle extends FunctionBase1 {
         }
     	}else if(wrapper1 instanceof CoverageWrapper) {
    		 CoverageWrapper covwrap = CoverageWrapper.extract(arg0);
-         GridCoverage2D cov = covwrap.getXYGeometry();
+         GridCoverage cov = covwrap.getXYGeometry();
          Geometry geom=LiteralUtils.toGeometry(cov.getGridGeometry().getEnvelope());
          org.locationtech.jts.algorithm.MinimumBoundingCircle minCircle = new org.locationtech.jts.algorithm.MinimumBoundingCircle(geom);
          GeometryWrapper minCircleWrapper = GeometryWrapperFactory.createGeometry(minCircle.getCircle(),  WKTDatatype.URI);

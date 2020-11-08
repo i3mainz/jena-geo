@@ -14,8 +14,8 @@ package de.hsmainz.cs.semgis.arqextension.raster.attribute;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase1;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.GeneralDirectPosition;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.TransformException;
@@ -32,7 +32,7 @@ public class UpperLeftX extends FunctionBase1 {
 	@Override
 	public NodeValue exec(NodeValue v) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v);		
-		GridCoverage2D raster=wrapper.getXYGeometry();	
+		GridCoverage raster=wrapper.getXYGeometry();	
 		double[] coords=new double[] {0,0};
 		GeneralDirectPosition pos = new GeneralDirectPosition(coords);
 		DirectPosition position;

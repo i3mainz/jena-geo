@@ -2,7 +2,7 @@ package de.hsmainz.cs.semgis.arqextension.geometry.relation;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.geometry.Envelope;
 import org.opengis.geometry.MismatchedDimensionException;
@@ -35,10 +35,10 @@ public class IntersectionPercentage extends FunctionBase2 {
 				return NodeValue.makeString(e.getMessage());
 			}
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();
-			Geometry geom1=LiteralUtils.toGeometry(raster.getEnvelope());
-			Geometry geom2=LiteralUtils.toGeometry(raster2.getEnvelope());
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();
+			Geometry geom1=LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());
+			Geometry geom2=LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 			Double db = (geom1.getArea()/geom2.getArea());
 	    	if(db.equals(Double.NaN)){
 	    		return NodeValue.makeDouble(0.);
@@ -48,11 +48,11 @@ public class IntersectionPercentage extends FunctionBase2 {
 			Geometry geom;
 			Envelope bbox1;
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
 				bbox1 = raster.getGridGeometry().getEnvelope();
 				geom=((GeometryWrapper)wrapper2).getXYGeometry();
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
 				bbox1 = raster.getGridGeometry().getEnvelope();
 				geom=((GeometryWrapper)wrapper1).getXYGeometry();				
 			}

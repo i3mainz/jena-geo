@@ -16,7 +16,7 @@ import java.awt.image.RenderedImage;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.opengis.coverage.CannotEvaluateException;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
@@ -31,12 +31,12 @@ public class SameAlignment extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
         CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getGridGeometry();
+		GridCoverage raster=wrapper.getGridGeometry();
         CoverageWrapper wrapper2=CoverageWrapper.extract(v2);
-		GridCoverage2D raster2=wrapper2.getGridGeometry();
+		GridCoverage raster2=wrapper2.getGridGeometry();
 		try {
-		RenderedImage image1 = raster.getRenderedImage();
-		RenderedImage image2 = raster2.getRenderedImage();
+		RenderedImage image1 = raster.render(null);
+		RenderedImage image2 = raster2.render(null);
         Integer raster1_offset = image1.getData().getDataBuffer().getOffset();
         Integer raster2_offset = image2.getData().getDataBuffer().getOffset();
         if(raster1_offset==raster2_offset && 

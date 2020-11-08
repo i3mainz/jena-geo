@@ -4,7 +4,7 @@ import java.awt.image.RenderedImage;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 import de.hsmainz.cs.semgis.arqextension.util.LiteralUtils;
 import de.hsmainz.cs.semgis.arqextension.util.Wrapper;
@@ -17,11 +17,11 @@ public class RasterEquals extends FunctionBase2 {
 		Wrapper wrapper1=LiteralUtils.rasterOrVector(v1);
 		Wrapper wrapper2=LiteralUtils.rasterOrVector(v2);
 		if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getGridGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getGridGeometry();	
-			RenderedImage rendered = raster.getRenderedImage();
-			RenderedImage rendered2 = raster2.getRenderedImage();
-			if(!raster.getEnvelope2D().equals(raster2.getEnvelope2D())) {
+			GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();	
+			RenderedImage rendered = raster.render(null);
+			RenderedImage rendered2 = raster2.render(null);
+			if(!raster.getGridGeometry().getEnvelope().equals(raster2.getGridGeometry().getEnvelope())) {
 				return NodeValue.FALSE;
 			}else {
 				if(rendered.getWidth()!=rendered2.getWidth() || rendered.getHeight()!=rendered2.getHeight()) {

@@ -4,7 +4,7 @@ import java.awt.image.RenderedImage;
 
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridCoverage;
 
 import io.github.galbiston.geosparql_jena.implementation.datatype.raster.CoverageWrapper;
 
@@ -13,8 +13,8 @@ public class MaxValue extends FunctionBase2 {
 	@Override
 	public NodeValue exec(NodeValue v1, NodeValue v2) {
 		CoverageWrapper wrapper=CoverageWrapper.extract(v1);
-		GridCoverage2D raster=wrapper.getXYGeometry();
-		RenderedImage rendered=raster.getRenderedImage();
+		GridCoverage raster=wrapper.getXYGeometry();
+		RenderedImage rendered=raster.render(null);
 		Integer bandnum = v2.getInteger().intValue();
 		Double maxVal=Double.MIN_VALUE;
         	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {

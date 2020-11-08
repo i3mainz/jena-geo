@@ -31,20 +31,20 @@ package de.hsmainz.cs.semgis.arqextension.util.parsers;
 
 import java.awt.image.RenderedImage;
 
-import org.geotoolkit.coverage.Category;
-import org.geotoolkit.coverage.GridSampleDimension;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class CoverageJsonWriter {
-	GridCoverage2D coverage;
+	GridCoverage coverage;
 
-	public CoverageJsonWriter(GridCoverage2D coverage) {
+	public CoverageJsonWriter(GridCoverage coverage) {
 		this.coverage=coverage;
 	}
 	
-	public static JSONObject coverageToCovJSON(GridCoverage2D coverage) {
+	public static JSONObject coverageToCovJSON(GridCoverage coverage) {
 		JSONObject result=new JSONObject();
 		result.put("type","Coverage");
 		JSONObject domain=new JSONObject();
@@ -55,17 +55,17 @@ public class CoverageJsonWriter {
 		JSONArray tempcoords=new JSONArray();
 		JSONObject axes=new JSONObject();
 		domain.put("axes",axes);
-		if(coverage.getGridGeometry().getExtent2D().getDimension()>0) {
+		if(coverage.getGridGeometry().getExtent().getDimension()>0) {
 			axes.put("x",new JSONObject());
 			geocoords.put("x");
 			axes.put("y",new JSONObject());
 			geocoords.put("y");
-			axes.getJSONObject("x").put("start", coverage.getGridGeometry().getExtent2D().getMinX());
-			axes.getJSONObject("x").put("stop", coverage.getGridGeometry().getExtent2D().getMaxX());
-			axes.getJSONObject("x").put("num", coverage.getRenderedImage().getNumXTiles());
-			axes.getJSONObject("y").put("start", coverage.getGridGeometry().getExtent2D().getMinY());
-			axes.getJSONObject("y").put("stop", coverage.getGridGeometry().getExtent2D().getMaxY());
-			axes.getJSONObject("y").put("num", coverage.getRenderedImage().getNumXTiles());
+			axes.getJSONObject("x").put("start", coverage.getGridGeometry().getExtent().getLow().getCoordinateValue(0));
+			axes.getJSONObject("x").put("stop", coverage.getGridGeometry().getExtent().getHigh().getCoordinateValue(0));
+			axes.getJSONObject("x").put("num", coverage.render(null).getNumXTiles());
+			axes.getJSONObject("y").put("start", coverage.getGridGeometry().getExtent().getLow().getCoordinateValue(1));
+			axes.getJSONObject("y").put("stop", coverage.getGridGeometry().getExtent().getHigh().getCoordinateValue(1));
+			axes.getJSONObject("y").put("num", coverage.render(null).getNumXTiles());
 		}
 		/*for(int i=0;i<coverage.getGridGeometry().getExtent().getDimension();i++) {
 
@@ -111,12 +111,12 @@ public class CoverageJsonWriter {
 		result.put("ranges",ranges);
 		JSONObject parameters=new JSONObject();
 		result.put("parameters", parameters);
-		for(GridSampleDimension dimension:coverage.getSampleDimensions()) {
+		for(SampleDimension dimension:coverage.getSampleDimensions()) {
 			JSONObject sampledim=new JSONObject();
 			String range1="range1";
-			if(dimension.getCategoryNames()!=null) {
-				parameters.put(dimension.getCategoryNames()[0].toString(),sampledim);
-				range1=dimension.getCategoryNames()[0].toString();
+			if(dimension.getCategories()!=null) {
+				parameters.put(dimension.getCategories().get(0).toString(),sampledim);
+				range1=dimension.getCategories().get(0).toString();
 			}
 			JSONObject paramrange=new JSONObject();
 			ranges.put(range1,paramrange);
@@ -130,7 +130,7 @@ public class CoverageJsonWriter {
 			//paramrange.put("shape",new JSONArray());
 			paramrange.put("values",new JSONArray());
 			JSONArray values=paramrange.getJSONArray("values");
-			RenderedImage rendered=coverage.getRenderedImage();
+			RenderedImage rendered=coverage.render(null);
 	        	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
 	        		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
 	        			values.put(rendered.getData().getSample(i, j, 0));

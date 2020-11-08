@@ -4,8 +4,8 @@ import org.apache.jena.datatypes.DatatypeFormatException;
 import org.apache.jena.sparql.expr.ExprEvalException;
 import org.apache.jena.sparql.expr.NodeValue;
 import org.apache.jena.sparql.function.FunctionBase2;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.geometry.Envelope2D;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
@@ -37,21 +37,22 @@ public class Union extends FunctionBase2 {
 	            throw new ExprEvalException(ex.getMessage(), ex);
 	        }
 		}else if(wrapper1 instanceof CoverageWrapper && wrapper2 instanceof CoverageWrapper) {
-			GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
-			GridCoverage2D raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
-			Envelope2D uniongeom=raster.getEnvelope2D().createUnion(raster2.getEnvelope2D());
-	        GeometryWrapper unionWrapper = GeometryWrapperFactory.createGeometry(LiteralUtils.toGeometry(uniongeom), WKTDatatype.URI);
+			GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
+			GridCoverage raster2=((CoverageWrapper)wrapper2).getXYGeometry();	
+			Geometry uniongeom=LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()).
+					union(LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope()));
+	        GeometryWrapper unionWrapper = GeometryWrapperFactory.createGeometry(uniongeom, WKTDatatype.URI);
 	        return unionWrapper.asNodeValue();		
 		}else {
 			if(wrapper1 instanceof CoverageWrapper) {
-				GridCoverage2D raster=((CoverageWrapper)wrapper1).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
 				org.opengis.geometry.Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();
 				Geometry uniongeom=geom.union(LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()));
 		        GeometryWrapper unionWrapper = GeometryWrapperFactory.createGeometry(uniongeom, WKTDatatype.URI);
 		        return unionWrapper.asNodeValue();		
 			}else {
-				GridCoverage2D raster=((CoverageWrapper)wrapper2).getXYGeometry();
+				GridCoverage raster=((CoverageWrapper)wrapper2).getXYGeometry();
 				org.opengis.geometry.Envelope bbox1 = raster.getGridGeometry().getEnvelope();
 				Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();
 				Geometry uniongeom=geom.union(LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope()));
