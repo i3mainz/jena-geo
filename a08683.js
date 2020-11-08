@@ -3,7 +3,6 @@ var a08683 =
     [ "displayRasterSummary", "a08683.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a08683.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a08683.html#af8afdd14b38b523d100805364a48ed63", null ],
-    [ "getSampleRGBRaster", "a08683.html#afac6500e31befe34d15832bae188fd51", null ],
     [ "testEqualType", "a08683.html#a32f362d79e31456d862ae08626f7af7a", null ],
     [ "testEqualTypeRaster", "a08683.html#a2a48ce4abf9224cb20604869d320ab25", null ],
     [ "testNotEqualType", "a08683.html#a21ff5586cfd7fe09ca271eeb47b2c7ef", null ],

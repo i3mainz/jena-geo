@@ -3,7 +3,6 @@ var a08703 =
     [ "displayRasterSummary", "a08703.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a08703.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a08703.html#af8afdd14b38b523d100805364a48ed63", null ],
-    [ "getSampleRGBRaster", "a08703.html#afac6500e31befe34d15832bae188fd51", null ],
     [ "testIntersectionPercentage", "a08703.html#a49e1dab16866e800563f476db34781d5", null ],
     [ "testIntersectionPercentage2", "a08703.html#a90a7db3783150309d73dc80df07f4b85", null ],
     [ "testIntersectionPercentageRaster", "a08703.html#a5cba7aef17bc53d39651a4b12abb9fa1", null ],

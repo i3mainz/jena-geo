@@ -3,7 +3,6 @@ var a08667 =
     [ "displayRasterSummary", "a08667.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a08667.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a08667.html#af8afdd14b38b523d100805364a48ed63", null ],
-    [ "getSampleRGBRaster", "a08667.html#afac6500e31befe34d15832bae188fd51", null ],
     [ "testDistance", "a08667.html#a046a87b712c4f6ddedaf1e78a64c5524", null ],
     [ "testDistance2", "a08667.html#ae04fbd8c837f2115939842c0268c2a85", null ],
     [ "testDistanceRaster", "a08667.html#a200cdf8c95e4804a35b0a59d2e35fe1b", null ],

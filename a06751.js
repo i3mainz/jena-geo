@@ -1,7 +1,6 @@
 var a06751 =
 [
     [ "WKBRasterReader", "a06751.html#ae793783ce299284ee201fd7c8313c1d6", null ],
-    [ "createGrayScaleColorModel", "a06751.html#afcfcdba92bf5faa9dfc8a1c7a652c7a9", null ],
     [ "getGridToCRS", "a06751.html#aef748f2853b5fa1a44ed7c589b2bb197", null ],
     [ "getSRID", "a06751.html#ade744464aeafe5c61497905c4bac4d95", null ],
     [ "read", "a06751.html#a14456bc52e7f626048f58646a17a9039", null ],

@@ -3,7 +3,6 @@ var a08471 =
     [ "displayRasterSummary", "a08471.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a08471.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a08471.html#af8afdd14b38b523d100805364a48ed63", null ],
-    [ "getSampleRGBRaster", "a08471.html#afac6500e31befe34d15832bae188fd51", null ],
     [ "testGeometryCollectionIsCollection", "a08471.html#ab8f9e80081b7ac2106ef406ffbb215e2", null ],
     [ "testLineStringIsCollection", "a08471.html#a513937962f26a1affcc4d0c369733a79", null ],
     [ "testMultiLineStringIsCollection", "a08471.html#af185514d9e978598dc7aa4ba06572494", null ],

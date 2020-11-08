@@ -1796,6 +1796,8 @@ var hierarchy =
     [ "RejectedExecutionHandler", null, [
       [ "Threads", "a07307.html", null ]
     ] ],
+    [ "RenderedImage", "a13871.html", null ],
+    [ "RenderedImage", "a13871.html", null ],
     [ "RenderedImage", null, [
       [ "PlanarImage", "a06651.html", [
         [ "ReshapedImage", "a06647.html", null ],
@@ -1805,8 +1807,6 @@ var hierarchy =
       [ "LargeRenderedImage", "a07027.html", null ],
       [ "RecolorRenderedImage", "a07131.html", null ]
     ] ],
-    [ "RenderedImage", "a13871.html", null ],
-    [ "RenderedImage", "a13871.html", null ],
     [ "RenderingHints", null, [
       [ "Hints", "a06807.html", [
         [ "EmptyHints", "a06791.html", null ],

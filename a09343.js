@@ -3,7 +3,6 @@ var a09343 =
     [ "displayRasterSummary", "a09343.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a09343.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a09343.html#af8afdd14b38b523d100805364a48ed63", null ],
-    [ "getSampleRGBRaster", "a09343.html#afac6500e31befe34d15832bae188fd51", null ],
     [ "testTileGridXOffset", "a09343.html#ad9ad09302caaf22a9a11fdfd8552bd7b", null ],
     [ "covJSONString1", "a09343.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a09343.html#a55fb5b5d665417265da09403128e396e", null ],

@@ -1,6 +1,6 @@
 var a06295 =
 [
-    [ "CoverageJsonWriter", "a06295.html#ac6f79fa845c486d60aa70079f368f394", null ],
-    [ "coverageToCovJSON", "a06295.html#a081ecb6ebede2f8e1aa4c315ea00cd47", null ],
-    [ "coverage", "a06295.html#ab7cc11c190fd43acbfa83f7405388757", null ]
+    [ "CoverageJsonWriter", "a06295.html#a808b85bccc4d21848073a44984c752b7", null ],
+    [ "coverageToCovJSON", "a06295.html#a5f7211b80d30549d072ee3e90cc72ee0", null ],
+    [ "coverage", "a06295.html#a0db1f475b2dcaa5dfc0e64e99d84b135", null ]
 ];
