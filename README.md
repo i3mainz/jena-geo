@@ -11,14 +11,13 @@ Please also visit the sister projects of this implementation with aim for simila
 
 - https://github.com/i3mainz/kiwi-postgis
 
-Testbench at: http://www.i3mainz.de/projekte/semgis/postgis-jena
-
 ## Extensions of geospatial support
 
 The main contribution of this implementation is the provision of further geospatial processing functions which are available in comparable relational database implementations such as POSTGIS or Oracle Spatial but not yet in a Semantic Web implementation.
 Particular focus is given to highlight the compatibility of given functions with raster/coverage data representations.
 The status of the implementation is highlighted in the respective columns of the tables.
-Eventual goal is the implementation of most coverage/raster specific functions used in comparable non-semantic implementations.
+Eventual goal is the implementation of most coverage/raster specific functions used in comparable non-semantic implementations which may or may not become part of a new standardization process involving GeoSPARQL.
+The implementation can be tested using the provided JUnit tests. A deployment of the service is currently not available.
 
 ### Spatial Aggregate Functions
 
@@ -404,7 +403,7 @@ This section introduces supported raster/coverage functions.
 
 #### Raster literals
 <details>
-  <summary>This section includes raster literals.</summary>
+  <summary>This section includes raster literals which have been (partially) implemented. For now all given JUnit tests use the RasterHexWKB Format because of its ease of usage in JUnit tests and because of its compact representation. However, other literal types provide other opportunities for representing raster data. CoverageJSON is an emerging way to publish raster data, GeoTIFF may be used in already established OGC web services such as Web Map Services.</summary>
   
 - [CoverageJSON](https://covjson.org)
 - [RasterWKB](https://github.com/ihmeuw/wkb-raster)
@@ -414,8 +413,8 @@ Planned further implementations:
 
 - [XYZ Gridded ASCII](https://gdal.org/drivers/raster/xyz.html) for the integration of Digital Elevation models
 - [ASCIIGrid Format](https://gdal.org/drivers/raster/aaigrid.html)
-- [GeoTIFF](https://gdal.org/drivers/raster/gtiff.html)
-- [NetCDF](https://gdal.org/drivers/raster/netcdf.html)
+- [GeoTIFF](https://gdal.org/drivers/raster/gtiff.html) (using Apache SIS)
+- [NetCDF](https://gdal.org/drivers/raster/netcdf.html) (using Apache SIS)
 </details>
 
 #### Raster Attribute Functions
