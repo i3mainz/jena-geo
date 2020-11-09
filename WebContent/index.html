@@ -156,7 +156,7 @@ function clearMap() {
             		 	var value=trimcoords(feature.properties[prop],90)
                 		if(value.startsWith("http") || value.startsWith("https")){
                     		popup+="<a href=\""+value+"\" target=\"_blank\">"+value+"</a>"
-                		}else if(value.contains("^^")){
+                		}else if(value.includes("^^")){
                 			popup+="<a href=\""+value.substring(value.lastIndexOf('^')+1)+"\">"+value.substring(0,value.indexOf('^'))+"</a>"       			
                 		}else{
                 			popup+=value
