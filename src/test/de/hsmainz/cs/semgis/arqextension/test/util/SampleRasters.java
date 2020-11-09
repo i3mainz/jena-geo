@@ -136,4 +136,13 @@ public class SampleRasters {
         return result.asString();
 	}
 	
+	public static void main(String[] args) {
+		NodeValue covLiteral = NodeValue.makeNode(wkbString1, HexWKBRastDatatype.INSTANCE);
+		//covLiteral = NodeValue.makeNode(hexwkbString1, HexWKBRastDatatype.INSTANCE);
+		covLiteral = NodeValue.makeNode(wkbString2, HexWKBRastDatatype.INSTANCE);
+		//covLiteral = NodeValue.makeNode(wkbString3, HexWKBRastDatatype.INSTANCE);
+		covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
+		covLiteral = NodeValue.makeNode(THE_EMPTY_RASTER, HexWKBRastDatatype.INSTANCE);
+	}
+	
 }

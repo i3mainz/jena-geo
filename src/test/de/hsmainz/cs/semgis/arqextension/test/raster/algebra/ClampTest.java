@@ -17,6 +17,7 @@ public class ClampTest extends SampleRasters {
 	public void testClamp() {
         System.out.println(displayRasterSummary(wkbString4));
 		NodeValue covLiteral = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
+		System.out.println(covLiteral);
         Clamp instance=new Clamp();
         NodeValue expResult = NodeValue.makeNode(wkbString4, HexWKBRastDatatype.INSTANCE);
         NodeValue result = instance.exec(covLiteral,NodeValue.makeInteger(1),NodeValue.makeDouble(253),NodeValue.makeDouble(254));

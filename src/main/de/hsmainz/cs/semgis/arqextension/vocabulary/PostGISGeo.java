@@ -24,6 +24,7 @@ public class PostGISGeo {
    
    public static String uri2 = "http://www.opengis.net/ont/geosparqlplus#";
 
+
    protected static final Resource resource(String local) {
       return ResourceFactory.createResource(uri + local);
    }
@@ -320,11 +321,22 @@ public class PostGISGeo {
    public static final Property st_rast_algebra_addconst = property("ST_AddConst");
    public static final Property st_rast_algebra_and = property("ST_And");
    public static final Property st_rast_algebra_andconst = property("ST_AndConst");
+   public static final Property st_rast_algebra_binarize= property("ST_Binarize");
+   public static final Property st_rast_algebra_clamp= property("ST_Clamp");
    public static final Property st_rast_algebra_constant = property("ST_Constant");
+   public static final Property st_rast_algebra_crop = property("ST_Crop");
    public static final Property st_rast_algebra_dct = property("ST_DCT");
    public static final Property st_rast_algebra_div = property("ST_Div");
    public static final Property st_rast_algebra_divconst = property("ST_DivConst");
+   public static final Property st_rast_algebra_exp= property("ST_Exp");
+   public static final Property st_rast_algebra_idct = property("ST_IDCT");
    public static final Property st_rast_algebra_log = property("ST_Log");
+   public static final Property st_rast_algebra_max = property("ST_Max");
+   public static final Property st_rast_algebra_maxfilter = property("ST_MaxFilter");
+   public static final Property st_rast_algebra_mean = property("ST_Mean");
+   public static final Property st_rast_algebra_medianfilter = property("ST_MedianFilter");
+   public static final Property st_rast_algebra_min = property("ST_Min");
+   public static final Property st_rast_algebra_minfilter = property("ST_MinFilter");
    public static final Property st_rast_algebra_mult = property("ST_Mult");
    public static final Property st_rast_algebra_multconst = property("ST_MultConst");
    public static final Property st_rast_algebra_not = property("ST_Not");
@@ -332,6 +344,8 @@ public class PostGISGeo {
    public static final Property st_rast_algebra_orconst = property("ST_OrConst");
    public static final Property st_rast_algebra_subtract = property("ST_Subtract");
    public static final Property st_rast_algebra_subtractconst = property("ST_SubtractConst");
+   public static final Property st_rast_algebra_subtractfromconst = property("ST_SubtractFromConst");
+   public static final Property st_rast_algebra_threshold = property("ST_Threshold");
    public static final Property st_rast_algebra_xor = property("ST_Xor");
    public static final Property st_rast_algebra_xorconst = property("ST_XorConst");
    public static final Property st_rast_isEmpty = property("ST_isEmpty");
@@ -479,31 +493,31 @@ public class PostGISGeo {
    public static final Property USYardToMeter = property("USYardToMeter"); 
    public static final Property yardToMeter = property("YardToMeter"); 
    
-   public static final String WKB = "WKB";
-public static final String GeoJSON = "GeoJSON";
-public static final String GeoJSONLD = "GeoJSONLD";
-public static final String GeoHash = "GeoHash";
-public static final String GeoBuf = "GeoBuf";
-public static final String GeoURI="GeoURI";
-public static final String GeoRSS="GeoRSS";
-public static final String GMLCOV="GMLCOV";
-public static final String KML = "KML";
-public static final String WKBRaster = "WKBRaster";
-public static final String GEOTIFF = "GeoTIFF";
-public static final String EncodedPolyline = "EncodedPolyline";
-public static final String Polyshape= "Polyshape";
-public static final String TWKB = "TWKB";
-public static final String HEXWKB = "HEXWKB";
-public static final String DXF="DXF";
-public static final String MVT = "MVT";
-public static final String X3D = "X3D";
-public static final String OSM= "OSM";
-public static final String NetCDF="NetCDF";
-public static final String HexWKBRaster = "HexWKBRaster";
-public static final String TopoJSON = "TopoJSON";
+   public static final String WKB = "http://www.opengis.net/ont/geosparqlplus#wkbLiteral";
+public static final String GeoJSON = "http://www.opengis.net/ont/geosparqlplus#GeoJSONLiteral";
+public static final String GeoJSONLD = "http://www.opengis.net/ont/geosparqlplus#GeoJSONLDLiteral";
+public static final String GeoHash = "http://www.opengis.net/ont/geosparqlplus#GeoHashLiteral";
+public static final String GeoBuf = "http://www.opengis.net/ont/geosparqlplus#GeoBufLiteral";
+public static final String GeoURI="http://www.opengis.net/ont/geosparqlplus#GeoURILiteral";
+public static final String GeoRSS="http://www.opengis.net/ont/geosparqlplus#GeoRSSLiteral";
+public static final String GMLCOV="http://www.opengis.net/ont/geosparqlplus#GMLCOVLiteral";
+public static final String KML = "http://www.opengis.net/ont/geosparqlplus#KMLLiteral";
+public static final String WKBRaster = "http://www.opengis.net/ont/geosparqlplus#WKBRasterLiteral";
+public static final String GEOTIFF = "http://www.opengis.net/ont/geosparqlplus#GeoTIFFLiteral";
+public static final String EncodedPolyline = "http://www.opengis.net/ont/geosparqlplus#EncodedPolylineLiteral";
+public static final String Polyshape= "http://www.opengis.net/ont/geosparqlplus#PolyshapeLiteral";
+public static final String TWKB = "http://www.opengis.net/ont/geosparqlplus#TWKBLiteral";
+public static final String HEXWKB = "http://www.opengis.net/ont/geosparqlplus#HEXWKBLiteral";
+public static final String DXF="http://www.opengis.net/ont/geosparqlplus#DXFLiteral";
+public static final String MVT = "http://www.opengis.net/ont/geosparqlplus#MVTLiteral";
+public static final String X3D = "http://www.opengis.net/ont/geosparqlplus#X3DLiteral";
+public static final String OSM= "http://www.opengis.net/ont/geosparqlplus#OSMLiteral";
+public static final String NetCDF="http://www.opengis.net/ont/geosparqlplus#NetCDFLiteral";
+public static final String HexWKBRaster = "http://www.opengis.net/ont/geosparqlplus#HexWKBRasterLiteral";
+public static final String TopoJSON = "http://www.opengis.net/ont/geosparqlplus#TopoJSON";
 public static final String TemporalRange="TemporalRange";
-public static final String CoverageJSON = "CoverageJSON";
-public static final String XYZASCII = "XYZASCII";
+public static final String CoverageJSON = "http://www.opengis.net/ont/geosparqlplus#covJSONLiteral";
+public static final String XYZASCII = "http://www.opengis.net/ont/geosparqlplus#XYZASCIILiteral";
 
 
 
@@ -516,128 +530,6 @@ public static void main(String[] args) throws IllegalArgumentException, IllegalA
         System.out.println("<"+field.get(go)+"> rdf:type geo2:Function ; rdfs:label \""+field.getName()+"\" . ");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
    public static class Nodes {

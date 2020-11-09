@@ -30,7 +30,9 @@ public class TripleStoreConnection {
 	public static final TripleStoreConnection INSTANCE = new TripleStoreConnection();
 
 	public static final String prefixCollection = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>"
-			+ System.lineSeparator() + "PREFIX geo: <http://www.opengis.net/ont/geosparql#>";
+			+ System.lineSeparator() + "PREFIX geo: <http://www.opengis.net/ont/geosparql#>"
+					+ System.lineSeparator() + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+					+ System.lineSeparator() + "PREFIX geo2: <http://www.opengis.net/ont/geosparqlplus#>";
 
 	public final Map<String, OntModel> modelmap;
 
@@ -41,6 +43,7 @@ public class TripleStoreConnection {
 		PostGISConfig.setup();
 		modelmap = new TreeMap<String, OntModel>();
 		modelmap.put("testdata.ttl", ModelFactory.createOntologyModel());
+		modelmap.put("testdata2.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("linkedgeodata.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("cologne.ttl", ModelFactory.createOntologyModel());
 		modelmap.put("gag.ttl", ModelFactory.createOntologyModel());
@@ -72,6 +75,7 @@ public class TripleStoreConnection {
 		if (!INSTANCE.modelmap.containsKey(model)) {
 			model = INSTANCE.modelmap.keySet().iterator().next();
 		}
+		System.out.println(INSTANCE.modelmap.get(model));
 		QueryExecution qe = QueryExecutionFactory.create(query, INSTANCE.modelmap.get(model));
 			ResultSet rs = qe.execSelect();
 			//List<QuerySolution> test = ResultSetFormatter.toList(rs);
@@ -88,7 +92,6 @@ public class TripleStoreConnection {
 			JSONObject jsonobj = new JSONObject();
 			JSONObject properties = new JSONObject();
 			List<JSONObject> geoms = new LinkedList<JSONObject>();
-			System.out.println(resultSetSize);
 			String lastgeom="";
 			int geomvars=0;
 			while (rs.hasNext()) {
@@ -164,10 +167,10 @@ public class TripleStoreConnection {
 					//System.out.println(relationName);
 					//System.out.println(name);
 					//System.out.println(solu.get(name));
-					if(!geojsonout) {
+					//if(!geojsonout) {
 						jsonobj.put(name, solu.get(name));
 						obj.put(jsonobj);
-					}
+					//}
 				}
 				first = false;
 			}
@@ -176,6 +179,7 @@ public class TripleStoreConnection {
 			result.put("data", obj);
 			result.put("size", counter);
 			resultSetSize=counter;
+			System.out.println(resultSetSize);
 			if (geojsonout) {
 				return geojsonresults.toString();
 			}
@@ -184,20 +188,20 @@ public class TripleStoreConnection {
 
 	public static void main(String[] args) {
 		String res = TripleStoreConnection.executeQuery(
-				"SELECT ?geom ?wkt WHERE { ?geom geo:asWKT ?wkt . FILTER(!geo:ST_IsCollection(?wkt)) }",
-				"testdata2.ttl");
+				"SELECT ?a ?c WHERE { ?a rdf:type geo2:Raster . ?a geo2:asHexWKB ?c . } LIMIT 10",
+				"rasterexample.ttl");
 		// System.out.println(res[0]);
 		System.out.println(res);
-		System.out.println(
+		/*System.out.println(
 				"=====================================================================================================");
 		res = TripleStoreConnection.executeQuery(
-				"SELECT ?geom ?wkt WHERE { ?geom geo:asWKT ?wkt . FILTER(geo:ST_Area(?wkt)>10) }", "testdata2.ttl");
+				"SELECT ?geom ?wkt WHERE { ?geom geo:asWKT ?wkt . FILTER(geo2:ST_Area(?wkt)>10) }", "testdata.ttl");
 		// System.out.println(res[0]);
 		System.out.println(res);
 		res = TripleStoreConnection.executeQuery(
-				"SELECT ?wkt2 WHERE { ?geom geo:asWKT ?wkt . BIND(geo:ST_YMax(?wkt) AS ?wkt2). FILTER(geo:ST_Area(?wkt)>10) }",
-				"testdata2.ttl");
+				"SELECT ?wkt2 WHERE { ?geom geo:asWKT ?wkt . BIND(geo2:ST_YMax(?wkt) AS ?wkt2). FILTER(geo2:ST_Area(?wkt)>10) } ",
+				"testdata.ttl");
 		System.out.println(res);
-		System.out.println(res);
+		System.out.println(res);*/
 	}
 }
