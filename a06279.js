@@ -3,6 +3,7 @@ var a06279 =
     [ "displayRasterSummary", "a06279.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a06279.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a06279.html#af8afdd14b38b523d100805364a48ed63", null ],
+    [ "main", "a06279.html#a8b260eecbaabcef8473fd87ada040682", null ],
     [ "testRasterToWorldCoord", "a06279.html#a05d904f2ed50490f3d85777230dd7040", null ],
     [ "covJSONString1", "a06279.html#a993e2f127f3ec8f256e9799d77507223", null ],
     [ "hexwkbString1", "a06279.html#a55fb5b5d665417265da09403128e396e", null ],

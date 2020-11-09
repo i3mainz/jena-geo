@@ -16,6 +16,6 @@ var a02734 =
     [ "PixelAsPolygon", "a04639.html", "a04639" ],
     [ "PixelAsPolygons", "a04643.html", "a04643" ],
     [ "Polygon", "a04647.html", "a04647" ],
-    [ "SpatialFunctionBase", "a04743.html", "a04743" ],
-    [ "Tile", "a04747.html", "a04747" ]
+    [ "SpatialFunctionBase", "a04747.html", "a04747" ],
+    [ "Tile", "a04751.html", "a04751" ]
 ];

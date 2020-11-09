@@ -1,6 +1,5 @@
 var a02749 =
 [
-    [ "DXFDatatype", "a05111.html", "a05111" ],
     [ "EncodedPolylineDatatype", "a05115.html", "a05115" ],
     [ "GeoJSONDatatype", "a05119.html", "a05119" ],
     [ "GeoJSONLDDatatype", "a05123.html", "a05123" ],

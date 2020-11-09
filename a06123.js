@@ -3,6 +3,7 @@ var a06123 =
     [ "displayRasterSummary", "a06123.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a06123.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a06123.html#af8afdd14b38b523d100805364a48ed63", null ],
+    [ "main", "a06123.html#a8b260eecbaabcef8473fd87ada040682", null ],
     [ "testCrop", "a06123.html#a1ae6996204337bcd88eb92f46621539a", null ],
     [ "combinedRasterLiteral", "a06123.html#a6efe8702be34a67e2bcbba55588c5b5f", null ],
     [ "covJSONString1", "a06123.html#a993e2f127f3ec8f256e9799d77507223", null ],

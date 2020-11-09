@@ -3,6 +3,7 @@ var a05627 =
     [ "displayRasterSummary", "a05627.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a05627.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a05627.html#af8afdd14b38b523d100805364a48ed63", null ],
+    [ "main", "a05627.html#a8b260eecbaabcef8473fd87ada040682", null ],
     [ "testCentroidDistance", "a05627.html#a312e87d7afb4dd085ada4f2f2c8d288f", null ],
     [ "testCentroidDistanceRaster", "a05627.html#a5aca6729e0f0c5b52645f764f9dbe81e", null ],
     [ "testCentroidDistanceRaster2", "a05627.html#aaf391858e1fd3f6c16829e73738e6741", null ],

@@ -3,6 +3,7 @@ var a06399 =
     [ "displayRasterSummary", "a06399.html#a58e2b02539026083b8e4a001ac84f63c", null ],
     [ "displayRasterSummary", "a06399.html#ab05b52e92f9bbedfc46c83d64fbdc182", null ],
     [ "getInstance", "a06399.html#af8afdd14b38b523d100805364a48ed63", null ],
+    [ "main", "a06399.html#a8b260eecbaabcef8473fd87ada040682", null ],
     [ "testEqualsFalse", "a06399.html#ae8ff672d1b8fc6cf8aba2e082e294bd6", null ],
     [ "testEqualsTrue", "a06399.html#a3e8e6e3261c15eccc8e509b458987702", null ],
     [ "testRasterEqualsFalse", "a06399.html#a0fd79f1b8df68912904578bb64276d88", null ],

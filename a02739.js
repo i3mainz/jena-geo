@@ -18,9 +18,10 @@ var a02739 =
     [ "RasterEquals", "a04711.html", "a04711" ],
     [ "RasterIntersection", "a04715.html", "a04715" ],
     [ "SameAlignment", "a04719.html", "a04719" ],
-    [ "SmallerIntersects", "a04723.html", "a04723" ],
-    [ "SymDifference", "a04727.html", "a04727" ],
-    [ "Touches", "a04731.html", "a04731" ],
-    [ "ValueIntersects", "a04735.html", "a04735" ],
-    [ "Within", "a04739.html", "a04739" ]
+    [ "Smaller", "a04723.html", "a04723" ],
+    [ "SmallerIntersects", "a04727.html", "a04727" ],
+    [ "SymDifference", "a04731.html", "a04731" ],
+    [ "Touches", "a04735.html", "a04735" ],
+    [ "ValueIntersects", "a04739.html", "a04739" ],
+    [ "Within", "a04743.html", "a04743" ]
 ];

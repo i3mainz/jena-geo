@@ -1,8 +1,10 @@
 var a05019 =
 [
-    [ "endElement", "a05019.html#a10611466eae545076e06b863ab61bddc", null ],
-    [ "startElement", "a05019.html#a498ebb87fe1777ffb95b7425e8d91fc5", null ],
-    [ "coordinates", "a05019.html#abb24f058bb4de414d0a011098ce417d9", null ],
-    [ "currentIndex", "a05019.html#a1a96241ab9720c944927883db3f7c073", null ],
-    [ "insegment", "a05019.html#a806e19cbf1d5bbafe0133b9f2fd64cdd", null ]
+    [ "coords", "a05019.html#a02283cc9b2f04eb4509f1f1542a6f185", null ],
+    [ "epsg", "a05019.html#ae984b1b4178b56b80cdb7a80eac64541", null ],
+    [ "maxX", "a05019.html#af369ccafa1ca6898107a2607b6dfe331", null ],
+    [ "maxY", "a05019.html#afa05de94150304a2c6935e34e37b041a", null ],
+    [ "minX", "a05019.html#a01e1a7d34461af85618e634b6a7b9550", null ],
+    [ "minY", "a05019.html#a900ad391c7146d2d629306afdaa3ee5f", null ],
+    [ "ranges", "a05019.html#a9484c4a62ac1d6eac77e99e29f11b38c", null ]
 ];

@@ -4,5 +4,5 @@ var annotated_dup =
     [ "heigit", "a02747.html", "a02747" ],
     [ "io", "a02750.html", "a02750" ],
     [ "org", "a02761.html", "a02761" ],
-    [ "Exception", "a08103.html", null ]
+    [ "Exception", "a08063.html", null ]
 ];
