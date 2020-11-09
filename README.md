@@ -11,6 +11,10 @@ Please also visit the sister projects of this implementation with aim for simila
 
 - https://github.com/i3mainz/kiwi-postgis
 
+Testbench: 
+
+https://www.i3mainz.de/projekte/semgis/postgis-jena/
+
 ## Extensions of geospatial support
 
 The main contribution of this implementation is the provision of further geospatial processing functions which are available in comparable relational database implementations such as POSTGIS or Oracle Spatial but not yet in a Semantic Web implementation.
