@@ -156,8 +156,10 @@ function clearMap() {
             		 	var value=trimcoords(feature.properties[prop],90)
                 		if(value.startsWith("http") || value.startsWith("https")){
                     		popup+="<a href=\""+value+"\" target=\"_blank\">"+value+"</a>"
+                		}else if(value.contains("^^")){
+                			popup+="<a href=\""+value.substring(value.lastIndexOf('^')+1)+"\">"+value.substring(0,value.indexOf('^'))+"</a>"       			
                 		}else{
-                			popup+=value        			
+                			popup+=value
                 		}
             		 	popup+="</li>"
             		 }
@@ -217,7 +219,7 @@ function clearMap() {
   <div class="row">
   <div class="col-sm-5">
 Query Input:<br/>
-<span id="numberexamples"></span>Example Queries for New Functions:
+<span id="numberexamples"></span> Example Queries for New Functions:
 <script>
 $( document ).ready(function() {
 	$('#numberexamples').html($('#samplequeries option').length);
@@ -293,6 +295,7 @@ $( document ).ready(function() {
 <option value='SELECT ?distance ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Distance(?the_geom,"POINT(23.8263447 40.9248455)"^^geo:wktLiteral) AS ?distance) } LIMIT 100'>geo2:ST_Distance</option>
 <option value='SELECT ?distance3d ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Distance3D(?the_geom,"POINT(23.8263447 40.9248455)"^^geo:wktLiteral) AS ?distance3d) } LIMIT 100'>geo2:ST_Distance3D</option>
 <option value='SELECT ?distance ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_DistanceSphere(?the_geom,"POINT(23.8263447 40.9248455)"^^geo:wktLiteral) AS ?distance) } LIMIT 100'>geo2:ST_DistanceSphere</option>
+<option value='SELECT ?withindistance ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_DFullyWithin(?the_geom,?the_geom,10) AS ?withindistance) } LIMIT 100'>geo2:ST_DFullyWithin</option>
 <option value='SELECT ?withindistance ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_DWithin(?the_geom,?the_geom,10) AS ?withindistance) } LIMIT 100'>geo2:ST_DWithin</option>
 <option value='SELECT ?withindistance3d ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_DWithin3D(?the_geom,?the_geom,10) AS ?withindistance3d) } LIMIT 100'>geo2:ST_DWithin3D</option>
 <option value="SELECT ?dumped_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Dump(?the_geom) AS ?dumped_geom) } LIMIT 100">geo2:ST_Dump</option>
@@ -328,6 +331,7 @@ $( document ).ready(function() {
 <option value='SELECT ?the_geom WHERE { BIND(geo2:ST_GeomFromWKB("\\001\\002\\000\\000\\000\\002\\000\\000\\000\\037\\205\\353Q\\270~\\\\\\300\\323Mb\\020X\\231C@\\020X9\\264\\310~\\\\\\300)\\\\\\217\\302\\365\\230C@",4326) AS ?the_geom) }'>geo2:ST_GeomFromWKB</option>
 <option value='SELECT ?geohash ?the_geom WHERE { BIND(geo2:ST_GeoHash(geo2:ST_MakePoint(-126,48),0) AS ?geohash) }'>geo2:ST_GeoHash</option>
 <option value="SELECT ?hausdorff ?the_geom WHERE { ?geom geo:asWKT ?the_geom . ?geom geo:asWKT ?the_geom2 . BIND(geo2:ST_HausdorffDistance(?the_geom,geo2:ST_MakePoint(21.7967578, 37.5847536)) AS ?hausdorff) } LIMIT 100">geo2:ST_HausdorffDistance</option>
+<option value="SELECT ?hasConnInterior ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_HasConnectedInterior(?the_geom) AS ?hasConnInterior) } LIMIT 100">geo2:ST_HasConnectedInterior</option>
 <option value="SELECT ?hasDuplicateRings ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_HasDuplicateRings(?the_geom) AS ?hasDuplicateRings) } LIMIT 100">geo2:ST_HasDuplicateRings</option>
 <option value="SELECT ?hasHorizontalCRS ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_HasHorizontalCRS(?the_geom) AS ?hasHorizontalCRS) } LIMIT 100">geo2:ST_HasHorizontalCRS</option>
 <option value="SELECT ?hasRepeatedPoints ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_HasRepeatedPoints(?the_geom) AS ?hasRepeatedPoints) } LIMIT 100">geo2:ST_HasRepeatedPoints</option>
@@ -470,6 +474,8 @@ $( document ).ready(function() {
 <option value="SELECT ?rast1 ?rast2 WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_Summary(?raster_geom) AS ?rast1)  BIND(geo2:ST_Summary(geo2:ST_XorConst(?raster_geom,1,2)) AS ?rast2) } LIMIT 10">geo2:ST_XorConst</option>
 <option value="SELECT ?raster_geom ?numbands WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_NumBands(?raster_geom) AS ?numbands) } LIMIT 10">geo2:ST_NumBands</option>
 <option value="SELECT ?raster_geom ?hasnoband WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_HasNoBand(?raster_geom,1) AS ?hasnoband) } LIMIT 10">geo2:ST_HasNoBand</option>
+<option value="SELECT ?raster_geom ?rasterequals WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_RasterEquals(?raster_geom,?raster_geom) AS ?rasterequals) } LIMIT 10">geo2:ST_RasterEquals</option>
+<option value="SELECT ?raster_geom ?rasterint WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_RasterIntersection(?raster_geom,?raster_geom) AS ?rasterint) } LIMIT 10">geo2:ST_RasterIntersection</option>
 <option value="SELECT ?raster_geom ?height WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_Height(?raster_geom) AS ?height) } LIMIT 10">geo2:ST_Height</option>
 <option value="SELECT ?raster_geom ?isempty WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_IsEmpty(?raster_geom) AS ?isempty) } LIMIT 10">geo2:ST_IsEmpty</option>
 <option value="SELECT ?raster_geom ?numxtiles WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_NumXTiles(?raster_geom) AS ?numxtiles) } LIMIT 10">geo2:ST_NumXTiles</option>
@@ -482,6 +488,8 @@ $( document ).ready(function() {
 <option value="SELECT ?sum WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_SummaryStats(?raster_geom) AS ?sum) } LIMIT 10">geo2:ST_SummaryStats</option>
 <option value="SELECT ?sum WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_TileGridXOffset(?raster_geom) AS ?sum) } LIMIT 10">geo2:ST_TileGridXOffset</option>
 <option value="SELECT ?sum WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_TileGridYOffset(?raster_geom) AS ?sum) } LIMIT 10">geo2:ST_TileGridYOffset</option>
+<option value="SELECT ?sum WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_TileHeight(?raster_geom) AS ?sum) } LIMIT 10">geo2:ST_TileHeight</option>
+<option value="SELECT ?sum WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_TileWidth(?raster_geom) AS ?sum) } LIMIT 10">geo2:ST_TileWidth</option>
 <option value="SELECT ?raster_geom ?width WHERE { ?geom geo2:asHexWKB ?raster_geom . BIND(geo2:ST_Width(?raster_geom) AS ?width) } LIMIT 10">geo2:ST_Width</option>
 <option value="SELECT ?raster_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_RastFromWKB(?the_geom,12.0) AS ?raster_geom) } LIMIT 100">geo2:ST_RastFromWKB</option>
 <option value="SELECT ?raster_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_RastFromHexWKB(?the_geom,12.0) AS ?raster_geom) } LIMIT 100">geo2:ST_RastFromHexWKB</option>
@@ -522,6 +530,7 @@ $( document ).ready(function() {
 <option value="SELECT ?touches ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Touches(?the_geom,?the_geom) AS ?touches) } LIMIT 100">geo2:ST_Touches</option>
 <option value="SELECT ?rotated_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Rotate(?the_geom,12.0) AS ?rotated_geom) } LIMIT 100">geo2:ST_Rotate</option>
 <option value="SELECT ?reverse_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Reverse(?the_geom) AS ?reverse_geom) } LIMIT 100">geo2:ST_Reverse</option>
+<option value="SELECT ?reverse_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_ReverseRing(?the_geom,1) AS ?reverse_geom) } LIMIT 100">geo2:ST_ReverseRing</option>
 <option value="SELECT ?union_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_Union(?the_geom,?the_geom) AS ?union_geom) } LIMIT 100">geo2:ST_Union</option>
 <option value="SELECT ?unaryunion_geom ?the_geom WHERE { ?geom geo:asWKT ?the_geom . BIND(geo2:ST_UnaryUnion(?the_geom) AS ?unaryunion_geom) } LIMIT 100">geo2:ST_UnaryUnion</option>
 <option value="SELECT ?upperleftx ?the_geom WHERE { ?geom geo2:asHexWKB ?the_geom . BIND(geo2:ST_UpperLeftX(?the_geom) AS ?upperleftx) } LIMIT 100">geo2:ST_UpperLeftX</option>
