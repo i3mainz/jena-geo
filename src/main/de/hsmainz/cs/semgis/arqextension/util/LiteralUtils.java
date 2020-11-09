@@ -2,6 +2,7 @@ package de.hsmainz.cs.semgis.arqextension.util;
 
 import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
+import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.Arrays;
@@ -14,13 +15,17 @@ import javax.media.jai.RasterFactory;
 import javax.media.jai.RenderedOp;
 
 import org.apache.jena.sparql.expr.NodeValue;
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.geometry.DirectPosition2D;
 import org.apache.sis.geometry.Envelope2D;
+import org.apache.sis.internal.coverage.BufferedGridCoverage;
 import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.CommonCRS;
-import org.geotoolkit.coverage.grid.GridCoverage2D;
-import org.geotoolkit.coverage.grid.GridCoverageBuilder;
-import org.geotoolkit.coverage.grid.GridGeometry2D;
+import org.apache.sis.util.iso.DefaultNameFactory;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.Geometry;
@@ -28,7 +33,6 @@ import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.geom.LineString;
 import org.locationtech.jts.geom.OctagonalEnvelope;
 import org.locationtech.jts.geom.Polygon;
-import org.opengis.coverage.grid.GridCoverage;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
@@ -69,10 +73,79 @@ public class LiteralUtils {
 			}	
 	}
 	
+	public static Double maxRasterValue(CoverageWrapper wrapper,Integer bandnum) {
+		return maxRasterValue(wrapper.getXYGeometry(), bandnum);
+	}
+	
+	public static Double maxRasterValue(GridCoverage raster,Integer bandnum) {
+		RenderedImage rendered=raster.render(null);
+		Double maxVal=Double.MIN_VALUE;
+    	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
+    		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
+    			if(rendered.getData().getSample(i, j, bandnum)>maxVal) {
+    				maxVal=(double) rendered.getData().getSample(i, j, bandnum);
+    			}
+    		}
+    	}
+    	System.out.println("MaxRasterVal: "+maxVal);
+    	return maxVal;
+	}
+	
+	public static Double arithmeticMeanRasterValue(CoverageWrapper wrapper, Integer bandnum) {
+		return arithmeticMeanRasterValue(wrapper.getXYGeometry(), bandnum);
+	}
+	
+	public static Double arithmeticMeanRasterValue(GridCoverage raster, Integer bandnum) {
+		RenderedImage rendered=raster.render(null);
+		Double sum=0.,counter=0.;
+        for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
+        	for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
+        		sum+=(double) rendered.getData().getSample(i, j, bandnum);
+        		counter++;
+        	}
+        }
+    	System.out.println("MeanRasterVal: "+(sum/counter));
+		return (sum/counter);
+	}
+	
+	public static Double minRasterValue(CoverageWrapper wrapper, Integer bandnum) {
+		return minRasterValue(wrapper.getXYGeometry(), bandnum);
+	}
+	
+	public static Double minRasterValue(GridCoverage raster, Integer bandnum) {
+		RenderedImage rendered=raster.render(null);
+		Double maxVal=Double.MAX_VALUE;
+        	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
+        		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
+        			if(rendered.getData().getSample(i, j, bandnum)<maxVal) {
+        				maxVal=(double) rendered.getData().getSample(i, j, bandnum);
+        			}
+        		}
+        	}
+        System.out.println("MinRasterVal: "+maxVal);
+		return maxVal;
+	}
+	
+	
+	public static Boolean containsRasterValue(CoverageWrapper wrapper, Integer bandnum,Double value) {
+		return containsRasterValue(wrapper.getXYGeometry(), bandnum,value);
+	}
+	
+	public static Boolean containsRasterValue(GridCoverage raster, Integer bandnum, Double value) {
+		RenderedImage rendered=raster.render(null);
+        	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
+        		for(int j=0;j<rendered.getSampleModel().getHeight();j++) {
+        			if(rendered.getData().getSample(i, j, bandnum)==value) {
+        				return true;
+        			}
+        		}
+        	}
+		return false;
+	}
 	
 	public static Coordinate worldToRaster(CoverageWrapper wrapper, Double latitude, Double longitude) throws MismatchedDimensionException, TransformException {
-    	 GridCoverage2D raster=wrapper.getXYGeometry();      	
-    	 GridGeometry2D gg2D = raster.getGridGeometry();
+    	 GridCoverage raster=wrapper.getXYGeometry();      	
+    	 GridGeometry gg2D = raster.getGridGeometry();
          MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
          MathTransform crsToGrid = gridToCRS.inverse();
          DirectPosition realPos=new DirectPosition2D(latitude, longitude);
@@ -82,8 +155,8 @@ public class LiteralUtils {
          return coord;
 	}
 	
-	public static NodeValue cropRaster(CoverageWrapper wrapper,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
-		 GridCoverage2D raster=wrapper.getXYGeometry();
+	public static GridCoverage cropRaster2(CoverageWrapper wrapper,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
+		 GridCoverage raster=wrapper.getXYGeometry();
 		 Coordinate coord=worldToRaster(wrapper, x, y);
 		 Coordinate coord2=worldToRaster(wrapper, x+width, y+height);
 		 Double xx=coord.getX();
@@ -91,24 +164,93 @@ public class LiteralUtils {
 		 xx=Double.valueOf(xx.intValue())-1;
 		 yy=Double.valueOf(yy.intValue())-1;
 		 Double widthh=coord2.getX()-x;
-		 Double heightt=coord2.getY()-y;		 
+		 Double heightt=coord2.getY()-y;	
+		 if(widthh==0)
+			 widthh=1.;
+		 if(heightt==0)
+			 heightt=1.;
 		 ParameterBlock pbSubtracted = new ParameterBlock(); 
-	     pbSubtracted.addSource(raster.getRenderedImage()); 
+	     pbSubtracted.addSource(raster.render(null)); 
 	     pbSubtracted.add(xx.floatValue()); 
 	     pbSubtracted.add(yy.floatValue()); 
 	     pbSubtracted.add(widthh.floatValue());
 	     pbSubtracted.add(heightt.floatValue());
-	     System.out.println(raster.getRenderedImage().getWidth()+" "+raster.getRenderedImage().getHeight());
+	     System.out.println(raster.render(null).getMinX()+" "+raster.render(null).getMinY());
+	     System.out.println(raster.render(null).getWidth()+" "+raster.render(null).getHeight());
 	     System.out.println(xx+" "+yy+" "+widthh+" "+heightt);
 	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
+			final SampleDimension sd =raster.getSampleDimensions().get(0);
+			List<SampleDimension>sds=new LinkedList<SampleDimension>();
+			sds.add(sd);
+	        GridExtent extent=new GridExtent(subtractedImage.getWidth(), subtractedImage.getHeight());
+	        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, raster.getGridGeometry().getGridToCRS(PixelInCell.CELL_CENTER), raster.getCoordinateReferenceSystem());
+	        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+	        DefaultNameFactory fac=new DefaultNameFactory();
+	        for(int i=0;i<subtractedImage.getNumBands();i++) {
+	        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+	        }
+	        BufferedGridCoverage coverage=new BufferedGridCoverage(
+	        		gridgeom, dimensions, subtractedImage.getData().getDataBuffer());
+	        return coverage;
+	        /*
+			return CoverageWrapper.createCoverage((GridCoverage)coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+					.asNodeValue();
 			GridCoverageBuilder builder=new GridCoverageBuilder();
 			builder.setGridGeometry(raster.getGridGeometry());
-			builder.setNumBands(raster.getNumSampleDimensions());
+			builder.setNumBands(raster.getSampleDimensions().size());
 			builder.setExtent(raster.getGridGeometry().getExtent());
 			builder.setRenderedImage(subtractedImage);
 			GridCoverage cov=builder.build();
-			return CoverageWrapper.createCoverage((GridCoverage2D)cov, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+			return (GridCoverage) cov;*/
+	}
+	
+	public static NodeValue cropRaster(CoverageWrapper wrapper,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
+		 GridCoverage raster=wrapper.getXYGeometry();
+		 Coordinate coord=worldToRaster(wrapper, x, y);
+		 Coordinate coord2=worldToRaster(wrapper, x+width, y+height);
+		 Double xx=coord.getX();
+		 Double yy=coord.getY();
+		 xx=Double.valueOf(xx.intValue())-1;
+		 yy=Double.valueOf(yy.intValue())-1;
+		 Double widthh=coord2.getX()-x;
+		 Double heightt=coord2.getY()-y;
+		 if(widthh==0)
+			 widthh=1.;
+		 if(heightt==0)
+			 heightt=1.;
+		 ParameterBlock pbSubtracted = new ParameterBlock(); 
+	     pbSubtracted.addSource(raster.render(null)); 
+	     pbSubtracted.add(xx.floatValue()); 
+	     pbSubtracted.add(yy.floatValue()); 
+	     pbSubtracted.add(widthh.floatValue());
+	     pbSubtracted.add(heightt.floatValue());
+	     System.out.println(raster.render(null).getMinX()+" "+raster.render(null).getMinY());
+	     System.out.println(raster.render(null).getWidth()+" "+raster.render(null).getHeight());
+	     System.out.println(xx+" "+yy+" "+widthh+" "+heightt);
+	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
+			final SampleDimension sd =raster.getSampleDimensions().get(0);
+			List<SampleDimension>sds=new LinkedList<SampleDimension>();
+			sds.add(sd);
+	        GridExtent extent=new GridExtent(subtractedImage.getWidth(), subtractedImage.getHeight());
+	        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, raster.getGridGeometry().getGridToCRS(PixelInCell.CELL_CENTER), raster.getCoordinateReferenceSystem());
+	        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+	        DefaultNameFactory fac=new DefaultNameFactory();
+	        for(int i=0;i<subtractedImage.getNumBands();i++) {
+	        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+	        }
+	        BufferedGridCoverage coverage=new BufferedGridCoverage(
+	        		gridgeom, dimensions, subtractedImage.getData().getDataBuffer());
+			return CoverageWrapper.createCoverage((GridCoverage)coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
 					.asNodeValue();
+	        /*return coverage;
+			GridCoverageBuilder builder=new GridCoverageBuilder();
+			builder.setGridGeometry(raster.getGridGeometry());
+			builder.setNumBands(raster.getSampleDimensions().size());
+			builder.setExtent(raster.getGridGeometry().getExtent());
+			builder.setRenderedImage(subtractedImage);
+			GridCoverage cov=builder.build();
+			return CoverageWrapper.createCoverage((GridCoverage)cov, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
+					.asNodeValue();*/
 	}
 	
 	
@@ -138,12 +280,12 @@ public class LiteralUtils {
 			
 			envelope = new Envelope2D(CommonCRS.WGS84.defaultGeographic(), 0, 0, 30, 30);
 		}
-		
+		return null;/*
 		GridCoverageBuilder gcb = new GridCoverageBuilder();
 		gcb.setRenderedImage(raster);
 		gcb.setEnvelope(envelope);
-		GridCoverage2D gc = (GridCoverage2D)gcb.build();		
-		return CoverageWrapper.createCoverage(gc, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();
+		GridCoverage gc = (GridCoverage)gcb.build();		
+		return CoverageWrapper.createCoverage(gc, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();*/
 	}
 	
 	public static Geometry getCorrectVectorRepresentation(Wrapper wrapper) {
