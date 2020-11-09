@@ -29,7 +29,7 @@ public class MedianIntersects extends FunctionBase4 {
 	    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());
 	    if(bbox1.equals(bbox2)) {
 	    	try {
-				GridCoverage cov = LiteralUtils.cropRaster2((CoverageWrapper)wrapper1, bbox1.getEnvelopeInternal().getWidth(), bbox1.getEnvelopeInternal().getHeight(), bbox1.getEnvelopeInternal().getMaxX(), bbox1.getEnvelopeInternal().getMaxY());
+				GridCoverage cov = LiteralUtils.cropRaster2(((CoverageWrapper)wrapper1).getXYGeometry(), bbox1.getEnvelopeInternal().getWidth(), bbox1.getEnvelopeInternal().getHeight(), bbox1.getEnvelopeInternal().getMaxX(), bbox1.getEnvelopeInternal().getMaxY());
 				Double mean=LiteralUtils.arithmeticMeanRasterValue(cov, bandnum);
 				if(mean<=value+1 && mean>=value-1) {
 					return NodeValue.TRUE;
@@ -44,7 +44,7 @@ public class MedianIntersects extends FunctionBase4 {
 	    }else {
 	    	Geometry intersection=bbox1.intersection(bbox2);
 		    	try {
-					GridCoverage cov = LiteralUtils.cropRaster2((CoverageWrapper)wrapper1, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
+					GridCoverage cov = LiteralUtils.cropRaster2(((CoverageWrapper)wrapper1).getXYGeometry(), intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
 					Double mean=LiteralUtils.arithmeticMeanRasterValue(cov, bandnum);
 					if(mean<=value+1 && mean>=value-1) {
 						return NodeValue.TRUE;
@@ -64,7 +64,7 @@ public class MedianIntersects extends FunctionBase4 {
 		    }else {
 		    	Geometry intersection=bbox1.intersection(geom);
 			    	try {
-						GridCoverage cov=LiteralUtils.cropRaster2((CoverageWrapper)wrapper1, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
+						GridCoverage cov=LiteralUtils.cropRaster2(((CoverageWrapper)wrapper1).getXYGeometry(), intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
 						Double mean=LiteralUtils.arithmeticMeanRasterValue(cov, bandnum);
 						if(mean<=value+1 && mean>=value-1) {
 							return NodeValue.TRUE;
@@ -83,7 +83,7 @@ public class MedianIntersects extends FunctionBase4 {
 		    }else {
 		    	Geometry intersection=bbox1.intersection(geom);
 			    	try {
-						GridCoverage cov=LiteralUtils.cropRaster2((CoverageWrapper)wrapper2, intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
+						GridCoverage cov=LiteralUtils.cropRaster2(((CoverageWrapper)wrapper2).getXYGeometry(), intersection.getEnvelopeInternal().getWidth(), intersection.getEnvelopeInternal().getHeight(), intersection.getEnvelopeInternal().getMaxX(), intersection.getEnvelopeInternal().getMaxY());
 						Double mean=LiteralUtils.arithmeticMeanRasterValue(cov, bandnum);
 						if(mean<=value+1 && mean>=value-1) {
 							return NodeValue.TRUE;

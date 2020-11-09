@@ -44,7 +44,6 @@ import org.opengis.util.FactoryException;
 
 import com.vividsolutions.jts.geom.Point;
 
-import de.hsmainz.cs.semgis.arqextension.test.util.SampleRasters;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapper;
 import io.github.galbiston.geosparql_jena.implementation.GeometryWrapperFactory;
 import io.github.galbiston.geosparql_jena.implementation.datatype.GeometryDatatype;
@@ -90,11 +89,7 @@ public class LiteralUtils {
     	System.out.println("MaxRasterVal: "+maxVal);
     	return maxVal;
 	}
-	
-	public static Double arithmeticMeanRasterValue(CoverageWrapper wrapper, Integer bandnum) {
-		return arithmeticMeanRasterValue(wrapper.getXYGeometry(), bandnum);
-	}
-	
+
 	public static Double arithmeticMeanRasterValue(GridCoverage raster, Integer bandnum) {
 		RenderedImage rendered=raster.render(null);
 		Double sum=0.,counter=0.;
@@ -107,11 +102,7 @@ public class LiteralUtils {
     	System.out.println("MeanRasterVal: "+(sum/counter));
 		return (sum/counter);
 	}
-	
-	public static Double minRasterValue(CoverageWrapper wrapper, Integer bandnum) {
-		return minRasterValue(wrapper.getXYGeometry(), bandnum);
-	}
-	
+
 	public static Double minRasterValue(GridCoverage raster, Integer bandnum) {
 		RenderedImage rendered=raster.render(null);
 		Double maxVal=Double.MAX_VALUE;
@@ -127,10 +118,6 @@ public class LiteralUtils {
 	}
 	
 	
-	public static Boolean containsRasterValue(CoverageWrapper wrapper, Integer bandnum,Double value) {
-		return containsRasterValue(wrapper.getXYGeometry(), bandnum,value);
-	}
-	
 	public static Boolean containsRasterValue(GridCoverage raster, Integer bandnum, Double value) {
 		RenderedImage rendered=raster.render(null);
         	for(int i=0;i<rendered.getSampleModel().getWidth();i++) {
@@ -141,6 +128,18 @@ public class LiteralUtils {
         		}
         	}
 		return false;
+	}
+	
+	
+	public static Coordinate worldToRaster(GridCoverage raster, Double latitude, Double longitude) throws MismatchedDimensionException, TransformException {    	
+    	 GridGeometry gg2D = raster.getGridGeometry();
+         MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);
+         MathTransform crsToGrid = gridToCRS.inverse();
+         DirectPosition realPos=new DirectPosition2D(latitude, longitude);
+         DirectPosition gridPos = new DirectPosition2D();
+         DirectPosition res=crsToGrid.transform(realPos, gridPos);
+         Coordinate coord=new Coordinate(res.getCoordinate()[0],res.getCoordinate()[1]);
+         return coord;
 	}
 	
 	public static Coordinate worldToRaster(CoverageWrapper wrapper, Double latitude, Double longitude) throws MismatchedDimensionException, TransformException {
@@ -155,7 +154,47 @@ public class LiteralUtils {
          return coord;
 	}
 	
-	public static GridCoverage cropRaster2(CoverageWrapper wrapper,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
+	public static GridCoverage cropRaster2(GridCoverage raster,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
+		 Coordinate coord=worldToRaster(raster, x, y);
+		 Coordinate coord2=worldToRaster(raster, x+width, y+height);
+		 Double xx=coord.getX();
+		 Double yy=coord.getY();
+		 xx=Double.valueOf(xx.intValue())-1;
+		 yy=Double.valueOf(yy.intValue())-1;
+		 Double widthh=coord2.getX()-x;
+		 Double heightt=coord2.getY()-y;	
+		 if(widthh==0)
+			 widthh=1.;
+		 if(heightt==0)
+			 heightt=1.;
+	     RenderedImage rendered = raster.render(null);
+		 ParameterBlock pbSubtracted = new ParameterBlock(); 
+	     pbSubtracted.addSource(rendered); 
+	     pbSubtracted.add(xx.floatValue()); 
+	     pbSubtracted.add(yy.floatValue()); 
+	     pbSubtracted.add(widthh.floatValue());
+	     pbSubtracted.add(heightt.floatValue());
+
+	     System.out.println(rendered.getMinX()+" "+rendered.getMinY());
+	     System.out.println(rendered.getWidth()+" "+rendered.getHeight());
+	     System.out.println(xx+" "+yy+" "+widthh+" "+heightt);
+	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
+			final SampleDimension sd =raster.getSampleDimensions().get(0);
+			List<SampleDimension>sds=new LinkedList<SampleDimension>();
+			sds.add(sd);
+	        GridExtent extent=new GridExtent(subtractedImage.getWidth(), subtractedImage.getHeight());
+	        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, raster.getGridGeometry().getGridToCRS(PixelInCell.CELL_CENTER), raster.getCoordinateReferenceSystem());
+	        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+	        DefaultNameFactory fac=new DefaultNameFactory();
+	        for(int i=0;i<subtractedImage.getNumBands();i++) {
+	        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+	        }
+	        BufferedGridCoverage coverage=new BufferedGridCoverage(
+	        		gridgeom, dimensions, subtractedImage.getData().getDataBuffer());
+			return coverage;
+	}
+	
+	public static NodeValue cropRaster(CoverageWrapper wrapper,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
 		 GridCoverage raster=wrapper.getXYGeometry();
 		 Coordinate coord=worldToRaster(wrapper, x, y);
 		 Coordinate coord2=worldToRaster(wrapper, x+width, y+height);
@@ -175,60 +214,10 @@ public class LiteralUtils {
 	     pbSubtracted.add(yy.floatValue()); 
 	     pbSubtracted.add(widthh.floatValue());
 	     pbSubtracted.add(heightt.floatValue());
-	     System.out.println(raster.render(null).getMinX()+" "+raster.render(null).getMinY());
 	     System.out.println(raster.render(null).getWidth()+" "+raster.render(null).getHeight());
 	     System.out.println(xx+" "+yy+" "+widthh+" "+heightt);
 	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
-			final SampleDimension sd =raster.getSampleDimensions().get(0);
-			List<SampleDimension>sds=new LinkedList<SampleDimension>();
-			sds.add(sd);
-	        GridExtent extent=new GridExtent(subtractedImage.getWidth(), subtractedImage.getHeight());
-	        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, raster.getGridGeometry().getGridToCRS(PixelInCell.CELL_CENTER), raster.getCoordinateReferenceSystem());
-	        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
-	        DefaultNameFactory fac=new DefaultNameFactory();
-	        for(int i=0;i<subtractedImage.getNumBands();i++) {
-	        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
-	        }
-	        BufferedGridCoverage coverage=new BufferedGridCoverage(
-	        		gridgeom, dimensions, subtractedImage.getData().getDataBuffer());
-	        return coverage;
-	        /*
-			return CoverageWrapper.createCoverage((GridCoverage)coverage, wrapper.getSrsURI(), wrapper.getRasterDatatypeURI())
-					.asNodeValue();
-			GridCoverageBuilder builder=new GridCoverageBuilder();
-			builder.setGridGeometry(raster.getGridGeometry());
-			builder.setNumBands(raster.getSampleDimensions().size());
-			builder.setExtent(raster.getGridGeometry().getExtent());
-			builder.setRenderedImage(subtractedImage);
-			GridCoverage cov=builder.build();
-			return (GridCoverage) cov;*/
-	}
-	
-	public static NodeValue cropRaster(CoverageWrapper wrapper,Double width, Double height, Double x, Double y) throws MismatchedDimensionException, TransformException {
-		 GridCoverage raster=wrapper.getXYGeometry();
-		 Coordinate coord=worldToRaster(wrapper, x, y);
-		 Coordinate coord2=worldToRaster(wrapper, x+width, y+height);
-		 Double xx=coord.getX();
-		 Double yy=coord.getY();
-		 xx=Double.valueOf(xx.intValue())-1;
-		 yy=Double.valueOf(yy.intValue())-1;
-		 Double widthh=coord2.getX()-x;
-		 Double heightt=coord2.getY()-y;
-		 if(widthh==0)
-			 widthh=1.;
-		 if(heightt==0)
-			 heightt=1.;
-		 ParameterBlock pbSubtracted = new ParameterBlock(); 
-	     pbSubtracted.addSource(raster.render(null)); 
-	     pbSubtracted.add(xx.floatValue()); 
-	     pbSubtracted.add(yy.floatValue()); 
-	     pbSubtracted.add(widthh.floatValue());
-	     pbSubtracted.add(heightt.floatValue());
-	     System.out.println(raster.render(null).getMinX()+" "+raster.render(null).getMinY());
-	     System.out.println(raster.render(null).getWidth()+" "+raster.render(null).getHeight());
-	     System.out.println(xx+" "+yy+" "+widthh+" "+heightt);
-	     RenderedOp subtractedImage = JAI.create("crop",pbSubtracted);
-			final SampleDimension sd =raster.getSampleDimensions().get(0);
+	     final SampleDimension sd =raster.getSampleDimensions().get(0);
 			List<SampleDimension>sds=new LinkedList<SampleDimension>();
 			sds.add(sd);
 	        GridExtent extent=new GridExtent(subtractedImage.getWidth(), subtractedImage.getHeight());
@@ -269,7 +258,7 @@ public class LiteralUtils {
 			}
 		}
 		//CoordinateReferenceSystem crs = CommonCRS.WGS84.defaultGeographic();
-		CoordinateReferenceSystem crss;
+		CoordinateReferenceSystem crss=null;
 		Envelope2D envelope=null;
 		try {
 			crss = CRS.forCode("EPSG:4326");
@@ -280,12 +269,16 @@ public class LiteralUtils {
 			
 			envelope = new Envelope2D(CommonCRS.WGS84.defaultGeographic(), 0, 0, 30, 30);
 		}
-		return null;/*
-		GridCoverageBuilder gcb = new GridCoverageBuilder();
-		gcb.setRenderedImage(raster);
-		gcb.setEnvelope(envelope);
-		GridCoverage gc = (GridCoverage)gcb.build();		
-		return CoverageWrapper.createCoverage(gc, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();*/
+        GridExtent extent=new GridExtent(raster.getWidth(), raster.getHeight());
+        GridGeometry gridgeom=new GridGeometry(extent, PixelInCell.CELL_CENTER, null, crss);
+        List<SampleDimension> dimensions=new LinkedList<SampleDimension>();
+        DefaultNameFactory fac=new DefaultNameFactory();
+        for(int i=0;i<raster.getNumBands();i++) {
+        	dimensions.add(new SampleDimension(fac.createGenericName(null,  "Dimension "+i),0.,new LinkedList<Category>()));
+        }
+        BufferedGridCoverage coverage=new BufferedGridCoverage(
+        		gridgeom, dimensions, raster.getDataBuffer());		
+		return CoverageWrapper.createCoverage(coverage, "EPSG:4326", HexWKBRastDatatype.URI.toString()).asNodeValue();
 	}
 	
 	public static Geometry getCorrectVectorRepresentation(Wrapper wrapper) {
