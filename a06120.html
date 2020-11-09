@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: GeomFromTextTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,111 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06123.html','');});
+$(document).ready(function(){initNavTree('a06120.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a06117.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PeriodPreceding Member List</div>  </div>
+<div class="title">GeomFromTextTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for GeomFromTextTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06118.png" border="0" usemap="#GeomFromTextTest_coll__map" alt="Collaboration graph"/></div>
+<map name="GeomFromTextTest_coll__map" id="GeomFromTextTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2678d2fcc796b673cc52b0e000a954b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06120.html#a2678d2fcc796b673cc52b0e000a954b0">testGeomFromText</a> ()  throws ParseException </td></tr>
+<tr class="separator:a2678d2fcc796b673cc52b0e000a954b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a117e8ff340791b5aa0658f5840b5dcf4"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06120.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a> =&quot;POINT(48.23456 20.12345)&quot;</td></tr>
+<tr class="separator:a117e8ff340791b5aa0658f5840b5dcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5086d43cfaac403f2a79addec33322"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06120.html#a9a5086d43cfaac403f2a79addec33322">inputText</a> =&quot;POINT(48.23456 20.12345)&quot;</td></tr>
+<tr class="separator:a9a5086d43cfaac403f2a79addec33322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2678d2fcc796b673cc52b0e000a954b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2678d2fcc796b673cc52b0e000a954b0">&#9670;&nbsp;</a></span>testGeomFromText()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a06123.html">PeriodPreceding</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06123.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a>(NodeValue v1, NodeValue v2)</td><td class="entry"><a class="el" href="a06123.html">PeriodPreceding</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testGeomFromText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws ParseException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a03508.html#ae7a3cbabcf0592c2705ee280a231189a">GeomFromText.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                             {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        GeomFromText instance=<span class="keyword">new</span> GeomFromText();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        NodeValue expResult = NodeValue.makeNode(<a class="code" href="a06120.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a>,WKTDatatype.INSTANCE);      </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue result = instance.exec(NodeValue.makeString(<a class="code" href="a06120.html#a117e8ff340791b5aa0658f5840b5dcf4">geoJsonTestGeom</a>));</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="ttc" id="a06120_html_a117e8ff340791b5aa0658f5840b5dcf4"><div class="ttname"><a href="a06120.html#a117e8ff340791b5aa0658f5840b5dcf4">de.hsmainz.cs.semgis.arqextension.test.geometry.constructor.GeomFromTextTest.geoJsonTestGeom</a></div><div class="ttdeci">static final String geoJsonTestGeom</div><div class="ttdef"><b>Definition:</b> GeomFromTextTest.java:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a117e8ff340791b5aa0658f5840b5dcf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117e8ff340791b5aa0658f5840b5dcf4">&#9670;&nbsp;</a></span>geoJsonTestGeom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String geoJsonTestGeom =&quot;POINT(48.23456 20.12345)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a5086d43cfaac403f2a79addec33322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5086d43cfaac403f2a79addec33322">&#9670;&nbsp;</a></span>inputText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String inputText =&quot;POINT(48.23456 20.12345)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03004.html">geometry</a></li><li class="navelem"><a class="el" href="a03005.html">constructor</a></li><li class="navelem"><a class="el" href="a06120.html">GeomFromTextTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

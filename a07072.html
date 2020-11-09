@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: MeterToFathomTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,31 +56,50 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07075.html','');});
+$(document).ready(function(){initNavTree('a07072.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07069.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Registry Member List</div>  </div>
+<div class="title">MeterToFathomTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a552bf8a09ce03815f5e94975e454df5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07072.html#a552bf8a09ce03815f5e94975e454df5c">testMeterToFathom</a> ()</td></tr>
+<tr class="separator:a552bf8a09ce03815f5e94975e454df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a552bf8a09ce03815f5e94975e454df5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552bf8a09ce03815f5e94975e454df5c">&#9670;&nbsp;</a></span>testMeterToFathom()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a07075.html">Registry</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07075.html#a63c298905b82697d517ee5911aa9d0a1">log</a>(final String method, final LogRecord record)</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07075.html#ad8e84bc73acb3ddf81036b833a2946ed">registerGeotoolkitServices</a>(final OperationRegistry registry)</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07075.html#ab4b863169dfe28f6712034a6a879a72f">Registry</a>()</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07075.html#a2c4ba200b76ea53e78a1ea9aaad679fe">setDefaultCodecPreferences</a>()</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07075.html#a010221b7211b0e51e2af0b1514bda1a6">setNativeAccelerationAllowed</a>(final String operation, final boolean allowed, final JAI jai)</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07075.html#a73bedb18f00b780f5acd87b359e74ea0">setNativeAccelerationAllowed</a>(final String operation, final boolean allowed)</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07075.html#af2346016f945ebdce01089452088457a">setNativeCodecAllowed</a>(final String format, final Class&lt; T &gt; category, final boolean allowed)</td><td class="entry"><a class="el" href="a07075.html">Registry</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07407.html#a6713f4ef0e5017eefa1b00c080924796">Static</a>()</td><td class="entry"><a class="el" href="a07407.html">Static</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testMeterToFathom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05212.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">MeterToFathom.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                        {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        NodeValue unitamount = NodeValue.makeDouble(1.);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        MeterToFathom instance=<span class="keyword">new</span> MeterToFathom();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        NodeValue expResult = NodeValue.makeDouble(0.5468066492);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue result = instance.exec(unitamount);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03032.html">unit</a></li><li class="navelem"><a class="el" href="a07072.html">MeterToFathomTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

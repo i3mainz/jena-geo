@@ -1,0 +1,26 @@
+var a02940 =
+[
+    [ "Contains", "a04936.html", "a04936" ],
+    [ "ContainsProperly", "a04940.html", "a04940" ],
+    [ "CoveredBy", "a04944.html", "a04944" ],
+    [ "Covers", "a04948.html", "a04948" ],
+    [ "Crosses", "a04952.html", "a04952" ],
+    [ "DFullyWithin", "a04956.html", "a04956" ],
+    [ "Disjoint", "a04960.html", "a04960" ],
+    [ "DWithin", "a04964.html", "a04964" ],
+    [ "Equals", "a04968.html", "a04968" ],
+    [ "GreaterIntersects", "a04972.html", "a04972" ],
+    [ "Intersection", "a04976.html", "a04976" ],
+    [ "Intersects", "a04980.html", "a04980" ],
+    [ "MedianIntersects", "a04984.html", "a04984" ],
+    [ "NotSameAlignmentReason", "a04988.html", "a04988" ],
+    [ "Overlaps", "a04992.html", "a04992" ],
+    [ "RasterEquals", "a04996.html", "a04996" ],
+    [ "RasterIntersection", "a05000.html", "a05000" ],
+    [ "SameAlignment", "a05004.html", "a05004" ],
+    [ "SmallerIntersects", "a05008.html", "a05008" ],
+    [ "SymDifference", "a05012.html", "a05012" ],
+    [ "Touches", "a05016.html", "a05016" ],
+    [ "ValueIntersects", "a05020.html", "a05020" ],
+    [ "Within", "a05024.html", "a05024" ]
+];

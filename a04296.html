@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: MakePointM Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,88 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04299.html','');});
+$(document).ready(function(){initNavTree('a04296.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04293.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">GeometryN Member List</div>  </div>
+<div class="title">MakePointM Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a04299.html">GeometryN</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04299.html#af5337fd861ad4940c5025973eef782d5">exec</a>(NodeValue arg0, NodeValue arg1)</td><td class="entry"><a class="el" href="a04299.html">GeometryN</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Creates a point geometry with an x y and m coordinate.  
+ <a href="a04296.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for MakePointM:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04295.png" border="0" usemap="#MakePointM_inherit__map" alt="Inheritance graph"/></div>
+<map name="MakePointM_inherit__map" id="MakePointM_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for MakePointM:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04294.png" border="0" usemap="#MakePointM_coll__map" alt="Collaboration graph"/></div>
+<map name="MakePointM_coll__map" id="MakePointM_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a084e892d3d5d0a47151e34261fac8052"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04296.html#a084e892d3d5d0a47151e34261fac8052">exec</a> (NodeValue arg0, NodeValue arg1, NodeValue arg2)</td></tr>
+<tr class="separator:a084e892d3d5d0a47151e34261fac8052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Creates a point geometry with an x y and m coordinate. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a084e892d3d5d0a47151e34261fac8052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084e892d3d5d0a47151e34261fac8052">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>arg2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05620.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06584.html#aaa00422b067345c9efd512d8757b16a7">MakePointMTest.testMakePointM1()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                          {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        Coordinate coord = <span class="keyword">new</span> CoordinateXYM(arg0.getDouble(), arg1.getDouble(), arg2.getDouble());</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, SRS_URI.DEFAULT_WKT_CRS84, WKTDatatype.URI);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02925.html">point</a></li><li class="navelem"><a class="el" href="a02926.html">constructor</a></li><li class="navelem"><a class="el" href="a04296.html">MakePointM</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

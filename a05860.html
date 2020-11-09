@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: DefaultJMXClient Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,324 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05863.html','');});
+$(document).ready(function(){initNavTree('a05860.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="a05857.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AsRaster Member List</div>  </div>
+<div class="title">DefaultJMXClient Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a05863.html">AsRaster</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a05863.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a>(NodeValue v)</td><td class="entry"><a class="el" href="a05863.html">AsRaster</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Base class for a JMX Client.  
+ <a href="a05860.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for DefaultJMXClient:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05858.png" border="0" usemap="#DefaultJMXClient_coll__map" alt="Collaboration graph"/></div>
+<map name="DefaultJMXClient_coll__map" id="DefaultJMXClient_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a99d7030316401434445bf8f24bbb14e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#a99d7030316401434445bf8f24bbb14e8">DefaultJMXClient</a> (final String jmxURL, final String user, final String password)  throws MalformedURLException, IOException </td></tr>
+<tr class="separator:a99d7030316401434445bf8f24bbb14e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac321618f1bc626a1b5e248b8c54d785b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#ac321618f1bc626a1b5e248b8c54d785b">DefaultJMXClient</a> (final JMXServiceURL jmxURL, final String user, final String password)  throws IOException </td></tr>
+<tr class="separator:ac321618f1bc626a1b5e248b8c54d785b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15700bd28f5af2d1f34e00fa17af911"><td class="memItemLeft" align="right" valign="top">JMXConnector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#af15700bd28f5af2d1f34e00fa17af911">getJMXConnector</a> ()</td></tr>
+<tr class="separator:af15700bd28f5af2d1f34e00fa17af911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc02e977114186594117b5982566dfaa"><td class="memItemLeft" align="right" valign="top">MBeanServerConnection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#adc02e977114186594117b5982566dfaa">getMBeanServerConnection</a> ()</td></tr>
+<tr class="separator:adc02e977114186594117b5982566dfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab953e90edb69534eb052f9064f6b40e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#ab953e90edb69534eb052f9064f6b40e9">dispose</a> ()  throws IOException</td></tr>
+<tr class="memdesc:ab953e90edb69534eb052f9064f6b40e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release jmx connection.  <a href="#ab953e90edb69534eb052f9064f6b40e9">More...</a><br /></td></tr>
+<tr class="separator:ab953e90edb69534eb052f9064f6b40e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:a32630b49f397c36d67d8e58c6118c083"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#a32630b49f397c36d67d8e58c6118c083">getMBean</a> (final String name, final Class&lt; T &gt; beanClass)  throws MalformedObjectNameException</td></tr>
+<tr class="memdesc:a32630b49f397c36d67d8e58c6118c083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an MBean proxy of T class.  <a href="#a32630b49f397c36d67d8e58c6118c083">More...</a><br /></td></tr>
+<tr class="separator:a32630b49f397c36d67d8e58c6118c083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac848e7615c801738b93a39e00c5b2c12"><td class="memItemLeft" align="right" valign="top">final JMXConnector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">connector</a></td></tr>
+<tr class="separator:ac848e7615c801738b93a39e00c5b2c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d443b19d1cc995b802af59543d91e7"><td class="memItemLeft" align="right" valign="top">final MBeanServerConnection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05860.html#a69d443b19d1cc995b802af59543d91e7">mbsc</a></td></tr>
+<tr class="separator:a69d443b19d1cc995b802af59543d91e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for a JMX Client. </p>
+<p>This class only avoid the boil plate code of creating the connection.</p>
+<dl class="section author"><dt>Author</dt><dd>Johann Sorel (Geomatys)  </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a99d7030316401434445bf8f24bbb14e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d7030316401434445bf8f24bbb14e8">&#9670;&nbsp;</a></span>DefaultJMXClient() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a05860.html">DefaultJMXClient</a> </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>jmxURL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws MalformedURLException, IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jmxURL</td><td>: jmx url, example : service:jmx:rmi://172.16.30.88:8686/jndi/rmi://172.16.30.88:8686/jmxrmi </td></tr>
+    <tr><td class="paramname">user</td><td></td></tr>
+    <tr><td class="paramname">password</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MalformedURLException</td><td></td></tr>
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                                                                                                     {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">this</span>(<span class="keyword">new</span> JMXServiceURL(jmxURL),user,password);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac321618f1bc626a1b5e248b8c54d785b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac321618f1bc626a1b5e248b8c54d785b">&#9670;&nbsp;</a></span>DefaultJMXClient() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a05860.html">DefaultJMXClient</a> </td>
+          <td>(</td>
+          <td class="paramtype">final JMXServiceURL&#160;</td>
+          <td class="paramname"><em>jmxURL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                                                                     {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">final</span> Map&lt;String,Object&gt; env = <span class="keyword">new</span> HashMap&lt;String, Object&gt;();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">final</span> String[] credentials = <span class="keyword">new</span> String[]{user, password};</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        env.put(JMXConnector.CREDENTIALS, credentials);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        this.<a class="code" href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">connector</a> = JMXConnectorFactory.connect(jmxURL, env);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.<a class="code" href="a05860.html#a69d443b19d1cc995b802af59543d91e7">mbsc</a> = <a class="code" href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">connector</a>.getMBeanServerConnection();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="ttc" id="a05860_html_a69d443b19d1cc995b802af59543d91e7"><div class="ttname"><a href="a05860.html#a69d443b19d1cc995b802af59543d91e7">org.geotoolkit.management.DefaultJMXClient.mbsc</a></div><div class="ttdeci">final MBeanServerConnection mbsc</div><div class="ttdef"><b>Definition:</b> DefaultJMXClient.java:42</div></div>
+<div class="ttc" id="a05860_html_ac848e7615c801738b93a39e00c5b2c12"><div class="ttname"><a href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">org.geotoolkit.management.DefaultJMXClient.connector</a></div><div class="ttdeci">final JMXConnector connector</div><div class="ttdef"><b>Definition:</b> DefaultJMXClient.java:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab953e90edb69534eb052f9064f6b40e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab953e90edb69534eb052f9064f6b40e9">&#9670;&nbsp;</a></span>dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws IOException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release jmx connection. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IOException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                            {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">connector</a>.close();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div><div class="ttc" id="a05860_html_ac848e7615c801738b93a39e00c5b2c12"><div class="ttname"><a href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">org.geotoolkit.management.DefaultJMXClient.connector</a></div><div class="ttdeci">final JMXConnector connector</div><div class="ttdef"><b>Definition:</b> DefaultJMXClient.java:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af15700bd28f5af2d1f34e00fa17af911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15700bd28f5af2d1f34e00fa17af911">&#9670;&nbsp;</a></span>getJMXConnector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JMXConnector getJMXConnector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">DefaultJMXClient.connector</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                          {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">connector</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div><div class="ttc" id="a05860_html_ac848e7615c801738b93a39e00c5b2c12"><div class="ttname"><a href="a05860.html#ac848e7615c801738b93a39e00c5b2c12">org.geotoolkit.management.DefaultJMXClient.connector</a></div><div class="ttdeci">final JMXConnector connector</div><div class="ttdef"><b>Definition:</b> DefaultJMXClient.java:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a32630b49f397c36d67d8e58c6118c083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32630b49f397c36d67d8e58c6118c083">&#9670;&nbsp;</a></span>getMBean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">public&lt;T&gt; T getMBean </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Class&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>beanClass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws MalformedObjectNameException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an MBean proxy of T class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;T&gt;</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>example : org.samples:type=Manager </td></tr>
+    <tr><td class="paramname">beanClass</td><td>: expected bean class </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T MBean proxy instance </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MalformedObjectNameException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                                          {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">final</span> ObjectName mbeanName = <span class="keyword">new</span> ObjectName(name);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">final</span> T mbeanProxy = JMX.newMBeanProxy(<a class="code" href="a05860.html#a69d443b19d1cc995b802af59543d91e7">mbsc</a>, mbeanName, beanClass, <span class="keyword">true</span>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> mbeanProxy;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div><div class="ttc" id="a05860_html_a69d443b19d1cc995b802af59543d91e7"><div class="ttname"><a href="a05860.html#a69d443b19d1cc995b802af59543d91e7">org.geotoolkit.management.DefaultJMXClient.mbsc</a></div><div class="ttdeci">final MBeanServerConnection mbsc</div><div class="ttdef"><b>Definition:</b> DefaultJMXClient.java:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adc02e977114186594117b5982566dfaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc02e977114186594117b5982566dfaa">&#9670;&nbsp;</a></span>getMBeanServerConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MBeanServerConnection getMBeanServerConnection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05860.html#a69d443b19d1cc995b802af59543d91e7">DefaultJMXClient.mbsc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                            {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a05860.html#a69d443b19d1cc995b802af59543d91e7">mbsc</a>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="ttc" id="a05860_html_a69d443b19d1cc995b802af59543d91e7"><div class="ttname"><a href="a05860.html#a69d443b19d1cc995b802af59543d91e7">org.geotoolkit.management.DefaultJMXClient.mbsc</a></div><div class="ttdeci">final MBeanServerConnection mbsc</div><div class="ttdef"><b>Definition:</b> DefaultJMXClient.java:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac848e7615c801738b93a39e00c5b2c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac848e7615c801738b93a39e00c5b2c12">&#9670;&nbsp;</a></span>connector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final JMXConnector connector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a05860.html#af15700bd28f5af2d1f34e00fa17af911">DefaultJMXClient.getJMXConnector()</a>.</p>
+
+</div>
+</div>
+<a id="a69d443b19d1cc995b802af59543d91e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d443b19d1cc995b802af59543d91e7">&#9670;&nbsp;</a></span>mbsc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final MBeanServerConnection mbsc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a05860.html#adc02e977114186594117b5982566dfaa">DefaultJMXClient.getMBeanServerConnection()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02963.html">org</a></li><li class="navelem"><a class="el" href="a02972.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a02977.html">management</a></li><li class="navelem"><a class="el" href="a05860.html">DefaultJMXClient</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

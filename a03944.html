@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Package org.opensphere.geometry.algorithm</title>
+<title>jena-geo: Node Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,25 +61,60 @@ $(document).ready(function(){initNavTree('a03944.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a03941.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Package org.opensphere.geometry.algorithm</div>  </div>
+<div class="title">Node Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Node:</div>
+<div class="dyncontent">
+<div class="center"><img src="a03943.png" border="0" usemap="#Node_inherit__map" alt="Inheritance graph"/></div>
+<map name="Node_inherit__map" id="Node_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Node:</div>
+<div class="dyncontent">
+<div class="center"><img src="a03942.png" border="0" usemap="#Node_coll__map" alt="Collaboration graph"/></div>
+<map name="Node_coll__map" id="Node_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08371.html">ConcaveHull</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a concave hull of a <a class="el" href="">Geometry</a> which is a concave <a class="el" href="">Geometry</a> that contains all the points in the input <a class="el" href="">Geometry</a>.  <a href="a08371.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03944.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
+<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05620.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a05620.html#a427a0904853f42cd5dffbd708478731b">GeometryWrapper.getGeometryDatatypeURI()</a>, <a class="el" href="a05620.html#a7d7dded4f73b0a90d90f68ccc5f16bc3">GeometryWrapper.getSrsURI()</a>, and <a class="el" href="a05620.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                           {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                GeometryWrapper geom1 = GeometryWrapper.extract(v);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                 Noder noder = <span class="keyword">new</span> MCIndexNoder(<span class="keyword">new</span> IntersectionAdder(<span class="keyword">new</span> RobustLineIntersector()));</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                noder.computeNodes(SegmentStringUtil.extractNodedSegmentStrings(geom1.getXYGeometry()));</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                GeometryFactory fac=<span class="keyword">new</span> GeometryFactory();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> GeometryWrapperFactory.createGeometry(SegmentStringUtil.toGeometry(noder.getNodedSubstrings(), fac),geom1.getSrsURI(),geom1.getGeometryDatatypeURI()).asNodeValue();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a03857.html">org</a></li><li class="navelem"><a class="el" href="a03945.html">opensphere</a></li><li class="navelem"><a class="el" href="a03946.html">geometry</a></li><li class="navelem"><a class="el" href="a03944.html">algorithm</a></li>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02907.html">geometry</a></li><li class="navelem"><a class="el" href="a02915.html">transform</a></li><li class="navelem"><a class="el" href="a03944.html">Node</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

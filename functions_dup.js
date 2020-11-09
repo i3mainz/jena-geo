@@ -26,8 +26,5 @@ var functions_dup =
     [ "w", "functions_w.html", null ],
     [ "x", "functions_x.html", null ],
     [ "y", "functions_y.html", null ],
-    [ "z", "functions_z.html", null ],
-    [ "Î»", "functions_».html", null ],
-    [ "Ï†", "functions_Æ.html", null ],
-    [ "Ï‡", "functions_Ç.html", null ]
+    [ "z", "functions_z.html", null ]
 ];

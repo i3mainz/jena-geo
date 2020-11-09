@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: TileGridYOffset Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,67 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04763.html','');});
+$(document).ready(function(){initNavTree('a04760.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04757.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MaxDistance Member List</div>  </div>
+<div class="title">TileGridYOffset Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for TileGridYOffset:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04759.png" border="0" usemap="#TileGridYOffset_inherit__map" alt="Inheritance graph"/></div>
+<map name="TileGridYOffset_inherit__map" id="TileGridYOffset_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for TileGridYOffset:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04758.png" border="0" usemap="#TileGridYOffset_coll__map" alt="Collaboration graph"/></div>
+<map name="TileGridYOffset_coll__map" id="TileGridYOffset_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04760.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
+<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a04763.html">MaxDistance</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04763.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a>(NodeValue v1, NodeValue v2)</td><td class="entry"><a class="el" href="a04763.html">MaxDistance</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05560.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, <a class="el" href="a05560.html#a71f11b05f3fe6a38e7781be178db85dd">CoverageWrapper.getXYGeometry()</a>, and <a class="el" href="a05648.html#a377e507a5ac3d5c1ad6b248064e77013">GridCoverage.render()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06916.html#a8c050b8bfc80a070faa4272b5d0e424f">TileGridYOffsetTest.testTileGridYOffset()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                           {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                GridCoverage raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeInteger(raster.render(null).getTileGridYOffset());</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                } <span class="keywordflow">catch</span> (CannotEvaluateException e) {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                }</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02935.html">raster</a></li><li class="navelem"><a class="el" href="a02936.html">attribute</a></li><li class="navelem"><a class="el" href="a04760.html">TileGridYOffset</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

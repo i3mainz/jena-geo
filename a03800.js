@@ -1,6 +1,4 @@
 var a03800 =
 [
-    [ "ExampleWebService", "a04243.html", "a04243" ],
-    [ "JDBCConnection", "a04247.html", "a04247" ],
-    [ "TripleStoreConnection", "a04251.html", "a04251" ]
+    [ "exec", "a03800.html#a892f62c3bf1ab2917fc8745f0b6da2a3", null ]
 ];

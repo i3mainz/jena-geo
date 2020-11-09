@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: YMinTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,86 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05995.html','');});
+$(document).ready(function(){initNavTree('a05992.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a05989.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ValueIntersects Member List</div>  </div>
+<div class="title">YMinTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for YMinTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a05990.png" border="0" usemap="#YMinTest_coll__map" alt="Collaboration graph"/></div>
+<map name="YMinTest_coll__map" id="YMinTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae9287504522420380f967a4bad0ce136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05992.html#ae9287504522420380f967a4bad0ce136">testYMin</a> ()  throws ParseException </td></tr>
+<tr class="separator:ae9287504522420380f967a4bad0ce136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a33797029fadbcba01b4a4fafec88cf41"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05992.html#a33797029fadbcba01b4a4fafec88cf41">testLineString</a> =&quot;LINESTRING(1 3 4, 5 6 7)&quot;</td></tr>
+<tr class="separator:a33797029fadbcba01b4a4fafec88cf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae9287504522420380f967a4bad0ce136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9287504522420380f967a4bad0ce136">&#9670;&nbsp;</a></span>testYMin()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a05995.html">ValueIntersects</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a05995.html#ac0ceb42be2816e65dd030a8a1ee950e3">exec</a>(NodeValue v1, NodeValue v2, NodeValue v3, NodeValue v4)</td><td class="entry"><a class="el" href="a05995.html">ValueIntersects</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testYMin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws ParseException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04264.html#ae7a3cbabcf0592c2705ee280a231189a">YMin.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                     {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        YMin instance=<span class="keyword">new</span> YMin();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        List&lt;Coordinate&gt; coords=<span class="keyword">new</span> LinkedList&lt;Coordinate&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(1,3,4)); </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        coords.add(<span class="keyword">new</span> Coordinate(5,6,7)); </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        NodeValue input=GeometryWrapperFactory.createLineString(coords, WKTDatatype.URI).asNodeValue();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue expResult = NodeValue.makeDouble(3);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        NodeValue result = instance.exec(input);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a33797029fadbcba01b4a4fafec88cf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33797029fadbcba01b4a4fafec88cf41">&#9670;&nbsp;</a></span>testLineString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testLineString =&quot;LINESTRING(1 3 4, 5 6 7)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03002.html">envelope</a></li><li class="navelem"><a class="el" href="a05992.html">YMinTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,21 +1,15 @@
 var annotated_dup =
 [
-    [ "com", "a03782.html", "a03782" ],
-    [ "de", "a03790.html", "a03790" ],
-    [ "geobuf", "a03841.html", "a03841" ],
-    [ "heigit", "a03843.html", "a03843" ],
-    [ "io", "a03846.html", "a03846" ],
-    [ "org", "a03857.html", "a03857" ],
-    [ "Cloneable", "a14219.html", null ],
-    [ "Comparable", "a14215.html", null ],
-    [ "DefaultParameterDescriptor", "a14207.html", null ],
-    [ "DefaultParameterValue", "a14243.html", null ],
-    [ "Exception", "a14227.html", null ],
-    [ "IllegalArgumentException", "a14291.html", null ],
-    [ "IllegalStateException", "a14211.html", null ],
-    [ "Line", "a14299.html", null ],
-    [ "Runnable", "a14295.html", null ],
-    [ "RuntimeException", "a14203.html", null ],
-    [ "Thread", "a14279.html", null ],
-    [ "VectorProcess", "a14239.html", null ]
+    [ "com", "a02888.html", "a02888" ],
+    [ "de", "a02896.html", "a02896" ],
+    [ "geobuf", "a02947.html", "a02947" ],
+    [ "heigit", "a02949.html", "a02949" ],
+    [ "io", "a02952.html", "a02952" ],
+    [ "org", "a02963.html", "a02963" ],
+    [ "Cloneable", "a09664.html", null ],
+    [ "Comparable", "a09660.html", null ],
+    [ "Exception", "a09672.html", null ],
+    [ "IllegalArgumentException", "a09696.html", null ],
+    [ "Runnable", "a09700.html", null ],
+    [ "VectorProcess", "a09676.html", null ]
 ];

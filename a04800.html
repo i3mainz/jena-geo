@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: WorldToRasterCoordX Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,88 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04803.html','');});
+$(document).ready(function(){initNavTree('a04800.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04797.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">EPSGToSRID Member List</div>  </div>
+<div class="title">WorldToRasterCoordX Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a04803.html">EPSGToSRID</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04803.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a>(NodeValue v)</td><td class="entry"><a class="el" href="a04803.html">EPSGToSRID</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Returns the column in the raster of the point geometry (pt) or a X and Y world coordinate (xw, yw) represented in world spatial reference system of raster.  
+ <a href="a04800.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for WorldToRasterCoordX:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04799.png" border="0" usemap="#WorldToRasterCoordX_inherit__map" alt="Inheritance graph"/></div>
+<map name="WorldToRasterCoordX_inherit__map" id="WorldToRasterCoordX_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for WorldToRasterCoordX:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04798.png" border="0" usemap="#WorldToRasterCoordX_coll__map" alt="Collaboration graph"/></div>
+<map name="WorldToRasterCoordX_coll__map" id="WorldToRasterCoordX_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c490cbe392d82e6bccb464329ee50f4"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04800.html#a2c490cbe392d82e6bccb464329ee50f4">exec</a> (NodeValue v1, NodeValue v2, NodeValue v3)</td></tr>
+<tr class="separator:a2c490cbe392d82e6bccb464329ee50f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Returns the column in the raster of the point geometry (pt) or a X and Y world coordinate (xw, yw) represented in world spatial reference system of raster. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c490cbe392d82e6bccb464329ee50f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c490cbe392d82e6bccb464329ee50f4">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05560.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, <a class="el" href="a05648.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a05560.html#a71f11b05f3fe6a38e7781be178db85dd">CoverageWrapper.getXYGeometry()</a>, and <a class="el" href="a05912.html#af88b946fb90d5f08b5fb740c70e98c10">Coordinate.x</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06956.html#a6e94cee45e46d07a602e9ce792812c08">WorldToRasterCoordXTest.testWorldToRasterCoordX()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                        {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                Integer longitude = v2.getInteger().intValue();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        Integer latitude = v3.getInteger().intValue();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v1);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                GridCoverage raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                 GridGeometry gg2D = raster.getGridGeometry();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;             MathTransform gridToCRS = gg2D.getGridToCRS(PixelInCell.CELL_CENTER);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;             MathTransform crsToGrid = gridToCRS.inverse();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;             DirectPosition realPos=<span class="keyword">new</span> DirectPosition2D(latitude, longitude);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;             DirectPosition gridPos = <span class="keyword">new</span> DirectPosition2D();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;             DirectPosition res=crsToGrid.transform(realPos, gridPos);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             Coordinate coord=<span class="keyword">new</span> Coordinate(res.getCoordinate()[0],res.getCoordinate()[1]);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             <span class="keywordflow">return</span> NodeValue.makeDouble(coord.x);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        } <span class="keywordflow">catch</span> (TransformException e) {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> NodeValue.nvNothing;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02935.html">raster</a></li><li class="navelem"><a class="el" href="a02936.html">attribute</a></li><li class="navelem"><a class="el" href="a04800.html">WorldToRasterCoordX</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

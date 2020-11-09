@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: IsPointInRing Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,75 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04211.html','');});
+$(document).ready(function(){initNavTree('a04208.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04205.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BBOXIsContainedBy Member List</div>  </div>
+<div class="title">IsPointInRing Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for IsPointInRing:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04207.png" border="0" usemap="#IsPointInRing_inherit__map" alt="Inheritance graph"/></div>
+<map name="IsPointInRing_inherit__map" id="IsPointInRing_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for IsPointInRing:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04206.png" border="0" usemap="#IsPointInRing_coll__map" alt="Collaboration graph"/></div>
+<map name="IsPointInRing_coll__map" id="IsPointInRing_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04208.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
+<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a04211.html">BBOXIsContainedBy</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04211.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a>(NodeValue v1, NodeValue v2)</td><td class="entry"><a class="el" href="a04211.html">BBOXIsContainedBy</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05620.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a05620.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                          {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                GeometryWrapper pointgeometry = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                Geometry pointgeom = pointgeometry.getXYGeometry();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                GeometryWrapper ringgeometry = GeometryWrapper.extract(v1);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                Geometry ringgeom = ringgeometry.getXYGeometry();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeBoolean(CGAlgorithms.isPointInRing(pointgeom.getCoordinate(), ringgeom.getCoordinates()));</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02925.html">point</a></li><li class="navelem"><a class="el" href="a02924.html">attribute</a></li><li class="navelem"><a class="el" href="a04208.html">IsPointInRing</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

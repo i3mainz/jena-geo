@@ -25,8 +25,5 @@ var functions_vars =
     [ "w", "functions_vars_w.html", null ],
     [ "x", "functions_vars_x.html", null ],
     [ "y", "functions_vars_y.html", null ],
-    [ "z", "functions_vars_z.html", null ],
-    [ "Î»", "functions_vars_».html", null ],
-    [ "Ï†", "functions_vars_Æ.html", null ],
-    [ "Ï‡", "functions_vars_Ç.html", null ]
+    [ "z", "functions_vars_z.html", null ]
 ];

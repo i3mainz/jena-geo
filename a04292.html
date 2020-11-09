@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: MakePoint Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,102 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04295.html','');});
+$(document).ready(function(){initNavTree('a04292.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04289.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Dimension Member List</div>  </div>
+<div class="title">MakePoint Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a04295.html">Dimension</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04295.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a>(NodeValue arg0)</td><td class="entry"><a class="el" href="a04295.html">Dimension</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Creates a 2D, 3DZ or 4D point geometry.  
+ <a href="a04292.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for MakePoint:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04291.png" border="0" usemap="#MakePoint_inherit__map" alt="Inheritance graph"/></div>
+<map name="MakePoint_inherit__map" id="MakePoint_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for MakePoint:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04290.png" border="0" usemap="#MakePoint_coll__map" alt="Collaboration graph"/></div>
+<map name="MakePoint_coll__map" id="MakePoint_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aef8acfa09c0ce086ff6d82b4d078a8fb"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04292.html#aef8acfa09c0ce086ff6d82b4d078a8fb">exec</a> (List&lt; NodeValue &gt; args)</td></tr>
+<tr class="separator:aef8acfa09c0ce086ff6d82b4d078a8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908bef876c8fe4b8007fa987e58efa1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04292.html#a908bef876c8fe4b8007fa987e58efa1c">checkBuild</a> (String uri, ExprList args)</td></tr>
+<tr class="separator:a908bef876c8fe4b8007fa987e58efa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Creates a 2D, 3DZ or 4D point geometry. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a908bef876c8fe4b8007fa987e58efa1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908bef876c8fe4b8007fa987e58efa1c">&#9670;&nbsp;</a></span>checkBuild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void checkBuild </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ExprList&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                      {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (args.size() &lt; 2 || args.size() &gt; 4) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> QueryBuildException(<span class="stringliteral">&quot;Function &#39;&quot;</span> + Lib.className(<span class="keyword">this</span>) + <span class="stringliteral">&quot;&#39; takes two, three or four arguments&quot;</span>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aef8acfa09c0ce086ff6d82b4d078a8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8acfa09c0ce086ff6d82b4d078a8fb">&#9670;&nbsp;</a></span>exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; NodeValue &gt;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05620.html#a350e6284abe8ddef719fc175d4a3aef6">GeometryWrapper.asNodeValue()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a06588.html#a2f24e9ad47589d2191a0512d20a8a9ba">MakePointTest.testMakePoint1()</a>, and <a class="el" href="a06588.html#a3ba406df071dd5b2e9404776e414c4cd">MakePointTest.testMakePointXYZ()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        Coordinate coord;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">switch</span> (args.size()) {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> 3:</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                coord = <span class="keyword">new</span> Coordinate(args.get(0).getDouble(), args.get(1).getDouble(), args.get(2).getDouble());</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">case</span> 4:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                coord = <span class="keyword">new</span> CoordinateXYZM(args.get(0).getDouble(), args.get(1).getDouble(), args.get(2).getDouble(), args.get(3).getDouble());</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">default</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                coord = <span class="keyword">new</span> CoordinateXY(args.get(0).getDouble(), args.get(1).getDouble());</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        GeometryWrapper pointWrapper = GeometryWrapperFactory.createPoint(coord, SRS_URI.DEFAULT_WKT_CRS84, WKTDatatype.URI);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> pointWrapper.asNodeValue();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02925.html">point</a></li><li class="navelem"><a class="el" href="a02926.html">constructor</a></li><li class="navelem"><a class="el" href="a04292.html">MakePoint</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

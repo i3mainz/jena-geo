@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: MeterToCentimeterTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,30 +56,50 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a07063.html','');});
+$(document).ready(function(){initNavTree('a07060.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a07057.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Hysteresis Member List</div>  </div>
+<div class="title">MeterToCentimeterTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad881d0b4c30327357ebf8cc8dabec013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07060.html#ad881d0b4c30327357ebf8cc8dabec013">testCentimeterToMeter</a> ()</td></tr>
+<tr class="separator:ad881d0b4c30327357ebf8cc8dabec013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad881d0b4c30327357ebf8cc8dabec013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad881d0b4c30327357ebf8cc8dabec013">&#9670;&nbsp;</a></span>testCentimeterToMeter()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a07063.html">Hysteresis</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a07063.html#a5522f2e40982772e9fd940df4a96af81">computeImage</a>(final Raster[] sources, final WritableRaster dest, final Rectangle destRect)</td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07063.html#a016c1e8b58082cf2add38a25a00fd20d">getSources</a>()</td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07063.html#a59a8583be04a35d38786ebc27d1b5e33">high</a></td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07063.html#aa905a3fe2577bdc53cb3cae5d44562d5">Hysteresis</a>(final RenderedImage source, final ImageLayout layout, final Map&lt;?,?&gt; configuration, final double low, final double high, final double padValue)</td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07063.html#adc5a7a331f0ffcd76abf8b46f4f76e7d">low</a></td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a07063.html#a4ba7d667bd2c11bb15f09506d145b31e">OPERATION_NAME</a></td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a07063.html#aa54b965fbb1edbc2743aff21e3f2933c">padValue</a></td><td class="entry"><a class="el" href="a07063.html">Hysteresis</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testCentimeterToMeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05200.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">MeterToCentimeter.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                            {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        NodeValue unitamount = NodeValue.makeDouble(1.);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        MeterToCentimeter instance=<span class="keyword">new</span> MeterToCentimeter();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        NodeValue expResult = NodeValue.makeDouble(100.);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue result = instance.exec(unitamount);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        System.out.println(result);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03032.html">unit</a></li><li class="navelem"><a class="el" href="a07060.html">MeterToCentimeterTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

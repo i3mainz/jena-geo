@@ -1,0 +1,27 @@
+var a02942 =
+[
+    [ "After", "a05072.html", "a05072" ],
+    [ "Before", "a05076.html", "a05076" ],
+    [ "Between", "a05080.html", "a05080" ],
+    [ "During", "a05084.html", "a05084" ],
+    [ "EqualsPeriod", "a05088.html", "a05088" ],
+    [ "Finishes", "a05092.html", "a05092" ],
+    [ "IsMetBy", "a05096.html", "a05096" ],
+    [ "Meets", "a05100.html", "a05100" ],
+    [ "MeetsAfter", "a05104.html", "a05104" ],
+    [ "MeetsBefore", "a05108.html", "a05108" ],
+    [ "Minus", "a05112.html", "a05112" ],
+    [ "NotEqualsPeriod", "a05116.html", "a05116" ],
+    [ "Overleft", "a05120.html", "a05120" ],
+    [ "Overright", "a05124.html", "a05124" ],
+    [ "Period", "a05128.html", "a05128" ],
+    [ "PeriodContains", "a05132.html", "a05132" ],
+    [ "PeriodEnd", "a05136.html", "a05136" ],
+    [ "PeriodIntersect", "a05140.html", "a05140" ],
+    [ "PeriodOverlaps", "a05144.html", "a05144" ],
+    [ "PeriodPreceding", "a05148.html", "a05148" ],
+    [ "PeriodStart", "a05152.html", "a05152" ],
+    [ "PeriodSucceding", "a05156.html", "a05156" ],
+    [ "PeriodUnion", "a05160.html", "a05160" ],
+    [ "Starts", "a05164.html", "a05164" ]
+];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: Summary Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,24 +56,67 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04751.html','');});
+$(document).ready(function(){initNavTree('a04748.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04745.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IsMorePrecise Member List</div>  </div>
+<div class="title">Summary Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Summary:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04747.png" border="0" usemap="#Summary_inherit__map" alt="Inheritance graph"/></div>
+<map name="Summary_inherit__map" id="Summary_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Summary:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04746.png" border="0" usemap="#Summary_coll__map" alt="Collaboration graph"/></div>
+<map name="Summary_coll__map" id="Summary_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04748.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
+<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a04751.html">IsMorePrecise</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04751.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a>(NodeValue v1, NodeValue v2)</td><td class="entry"><a class="el" href="a04751.html">IsMorePrecise</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05560.html#a08974e1b42e6906556680bdaab356bb9">CoverageWrapper.extract()</a>, <a class="el" href="a05648.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a05648.html#a60e41e388a84548d37fa90cbd5dd8c8c">GridCoverage.getSampleDimensions()</a>, <a class="el" href="a05560.html#a71f11b05f3fe6a38e7781be178db85dd">CoverageWrapper.getXYGeometry()</a>, and <a class="el" href="a05648.html#a377e507a5ac3d5c1ad6b248064e77013">GridCoverage.render()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a07160.html#a58e2b02539026083b8e4a001ac84f63c">SampleRasters.displayRasterSummary()</a>, and <a class="el" href="a06908.html#a1361cf1669e482a160d09c90463a694e">SummaryTest.testSummary()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                           {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                CoverageWrapper wrapper=CoverageWrapper.extract(v);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                GridCoverage raster=wrapper.getXYGeometry();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                StringBuilder builder = <span class="keyword">new</span> StringBuilder();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                RenderedImage rendered;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                rendered = raster.render(null);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        builder.append(<span class="stringliteral">&quot;Raster of &quot;</span> + rendered.getWidth() + <span class="stringliteral">&quot;x&quot;</span> + rendered.getHeight() +<span class="stringliteral">&quot;\n MemSize: &quot;</span>+raster.render(null).getData().getDataBuffer().getSize()+ </div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        <span class="stringliteral">&quot;\nMINX/Y: [&quot;</span>+rendered.getMinX()+<span class="stringliteral">&quot;,&quot;</span>+rendered.getMinY()+<span class="stringliteral">&quot;] pixels has &quot;</span> </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        + raster.getSampleDimensions().size() + <span class="stringliteral">&quot; bands\n and extent of &quot;</span> +raster.getGridGeometry().getEnvelope().toString()</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        );<span class="comment">//+&quot;\n and grid geometry of &quot;+ raster.getGridGeometry() + System.lineSeparator());</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        builder.append(<span class="stringliteral">&quot;SampleModel: &quot;</span>+rendered.getSampleModel()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        builder.append(<span class="stringliteral">&quot;PropertyNames: &quot;</span>+rendered.getPropertyNames()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        builder.append(<span class="stringliteral">&quot;Tiles: &quot;</span>+rendered.getNumXTiles()+<span class="stringliteral">&quot;/&quot;</span>+rendered.getNumYTiles()+<span class="stringliteral">&quot;[&quot;</span>+rendered.getTileWidth()+<span class="stringliteral">&quot;/&quot;</span>+rendered.getTileHeight()+<span class="stringliteral">&quot;] Offset: [&quot;</span>+rendered.getTileGridXOffset()+<span class="stringliteral">&quot;/&quot;</span>+rendered.getTileGridYOffset()+<span class="stringliteral">&quot;]\n&quot;</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        builder.append(<span class="stringliteral">&quot;Dimensions: &quot;</span>+raster.getGridGeometry().getDimension()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        builder.append(<span class="stringliteral">&quot;DataElements: &quot;</span>+rendered.getData().getNumDataElements()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        builder.append(<span class="stringliteral">&quot;DataType: &quot;</span>+rendered.getData().getDataBuffer().getDataType()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        builder.append(<span class="stringliteral">&quot;ColorModel: &quot;</span>+rendered.getColorModel()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                GridGeometry gridGeometry2D = raster.getGridGeometry();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        AffineTransform gridToWorld = (AffineTransform) gridGeometry2D.getGridToCRS(PixelInCell.CELL_CENTER);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        builder.append(<span class="stringliteral">&quot;Shear: [&quot;</span>+gridToWorld.getShearX()+<span class="stringliteral">&quot;/&quot;</span>+gridToWorld.getShearY()+<span class="stringliteral">&quot;] Scale: [&quot;</span>+gridToWorld.getScaleX()+<span class="stringliteral">&quot;/&quot;</span>+gridToWorld.getScaleY()+<span class="stringliteral">&quot;]\n&quot;</span>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        builder.append(<span class="stringliteral">&quot;GridToWorld: [&quot;</span>+gridToWorld. getShearX()+<span class="stringliteral">&quot;/&quot;</span>+gridToWorld.getShearY()+<span class="stringliteral">&quot;] Scale: [&quot;</span>+gridToWorld.getScaleX()+<span class="stringliteral">&quot;/&quot;</span>+gridToWorld.getScaleY()+<span class="stringliteral">&quot;]\n&quot;</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        builder.append(<span class="stringliteral">&quot;PixelData: \n&quot;</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0;k&lt;raster.getSampleDimensions().size();k++) {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                builder.append(<span class="stringliteral">&quot;Band &quot;</span>+k+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rendered.getSampleModel().getWidth();i++) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        builder.append(<span class="stringliteral">&quot;| &quot;</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;rendered.getSampleModel().getHeight();j++) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                builder.append(rendered.getData().getSample(i, j, k)+<span class="stringliteral">&quot; | &quot;</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        builder.append(<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        builder.append(<span class="stringliteral">&quot;CRS: &quot;</span>+raster.getGridGeometry().getCoordinateReferenceSystem().getName()+<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; raster.getSampleDimensions().size(); i++) {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            builder.append(<span class="stringliteral">&quot;band &quot;</span> + i + <span class="stringliteral">&quot; of pixtype &quot;</span> + raster.getSampleDimensions().get(i).getMeasurementRange() + <span class="stringliteral">&quot; is in-db with NODATA value of &quot;</span> + raster.getSampleDimensions().get(i).getNoDataValues() + System.lineSeparator());</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> NodeValue.makeString(builder.toString());</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02935.html">raster</a></li><li class="navelem"><a class="el" href="a02936.html">attribute</a></li><li class="navelem"><a class="el" href="a04748.html">Summary</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

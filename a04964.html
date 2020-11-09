@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: DWithin Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,25 +56,81 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04967.html','');});
+$(document).ready(function(){initNavTree('a04964.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a04961.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Scale Member List</div>  </div>
+<div class="title">DWithin Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for DWithin:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04963.png" border="0" usemap="#DWithin_inherit__map" alt="Inheritance graph"/></div>
+<map name="DWithin_inherit__map" id="DWithin_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for DWithin:</div>
+<div class="dyncontent">
+<div class="center"><img src="a04962.png" border="0" usemap="#DWithin_coll__map" alt="Collaboration graph"/></div>
+<map name="DWithin_coll__map" id="DWithin_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c490cbe392d82e6bccb464329ee50f4"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04964.html#a2c490cbe392d82e6bccb464329ee50f4">exec</a> (NodeValue v1, NodeValue v2, NodeValue v3)</td></tr>
+<tr class="separator:a2c490cbe392d82e6bccb464329ee50f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c490cbe392d82e6bccb464329ee50f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c490cbe392d82e6bccb464329ee50f4">&#9670;&nbsp;</a></span>exec()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a04967.html">Scale</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a04967.html#a908bef876c8fe4b8007fa987e58efa1c">checkBuild</a>(String uri, ExprList args)</td><td class="entry"><a class="el" href="a04967.html">Scale</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a04967.html#aef8acfa09c0ce086ff6d82b4d078a8fb">exec</a>(List&lt; NodeValue &gt; args)</td><td class="entry"><a class="el" href="a04967.html">Scale</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeValue exec </td>
+          <td>(</td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeValue&#160;</td>
+          <td class="paramname"><em>v3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a05312.html#a12e2b8ceb06209d8b13dc78d58cdad22">LiteralUtils.rasterOrVector()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                       {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                Wrapper wrapper1=LiteralUtils.rasterOrVector(v1);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                Wrapper wrapper2=LiteralUtils.rasterOrVector(v2);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        Double withinDistance = v3.getDouble();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">/*GeodeticCalculator calc = new GeodeticCalculator();</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">                if(wrapper1 instanceof GeometryWrapper &amp;&amp; wrapper2 instanceof GeometryWrapper) {</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">                        Double actualDistance=((GeometryWrapper)wrapper1).getXYGeometry().distance(((GeometryWrapper)wrapper2).getXYGeometry());</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">                        return NodeValue.makeBoolean(actualDistance&lt;=withinDistance);</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">                }else if(wrapper1 instanceof CoverageWrapper &amp;&amp; wrapper2 instanceof CoverageWrapper) {</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">                        GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">                        GridCoverage raster2=((CoverageWrapper)wrapper2).getGridGeometry();     </span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">                        Geometry bbox1 = LiteralUtils.toGeometry(raster.getGridGeometry().getEnvelope());</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">                    Geometry bbox2 = LiteralUtils.toGeometry(raster2.getGridGeometry().getEnvelope());</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">                        Coordinate[] points = DistanceOp.nearestPoints(bbox1,bbox2);</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">                calc.setStartingGeographicPoint(points[0].x, points[0].y);</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">                calc.setDestinationGeographicPoint(points[1].x, points[1].y);</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">                Double actualdistance = calc.getOrthodromicDistance();</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">                        return NodeValue.makeBoolean(actualdistance&lt;=withinDistance);           </span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">                }else {</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">                        if(wrapper1 instanceof CoverageWrapper) {</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">                                GridCoverage raster=((CoverageWrapper)wrapper1).getGridGeometry();</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">                                Rectangle2D bbox1 = raster.getGridGeometry().getEnvelope().getBounds();</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">                                Geometry geom=((GeometryWrapper)wrapper2).getXYGeometry();</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">                                Coordinate[] points = DistanceOp.nearestPoints(LiteralUtils.toGeometry(bbox1.getBounds()), geom);</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">                        calc.setStartingGeographicPoint(points[0].x, points[0].y);</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">                        calc.setDestinationGeographicPoint(points[1].x, points[1].y);</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">                        Double actualdistance = calc.getOrthodromicDistance();</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">                                return NodeValue.makeBoolean(actualdistance&lt;=withinDistance);</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">                        }else {</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">                                GridCoverage raster=((CoverageWrapper)wrapper2).getGridGeometry();</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">                                Rectangle2D bbox1 = raster.getEnvelope2D().getBounds2D();</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">                                Geometry geom=((GeometryWrapper)wrapper1).getXYGeometry();</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">                                Coordinate[] points = DistanceOp.nearestPoints(LiteralUtils.toGeometry(bbox1.getBounds()), geom);</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">                        calc.setStartingGeographicPoint(points[0].x, points[0].y);</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">                        calc.setDestinationGeographicPoint(points[1].x, points[1].y);</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">                        Double actualdistance = calc.getOrthodromicDistance();</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">                                return NodeValue.makeBoolean(actualdistance&lt;=withinDistance);                           </span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">                        }</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">                }*/</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="stringliteral">&quot;Not yet implemented&quot;</span>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02935.html">raster</a></li><li class="navelem"><a class="el" href="a02940.html">relation</a></li><li class="navelem"><a class="el" href="a04964.html">DWithin</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

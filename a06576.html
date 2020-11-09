@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Member List</title>
+<title>jena-geo: ZTest Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,26 +56,87 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06579.html','');});
+$(document).ready(function(){initNavTree('a06576.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a06573.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TemporalRange Member List</div>  </div>
+<div class="title">ZTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for ZTest:</div>
+<div class="dyncontent">
+<div class="center"><img src="a06574.png" border="0" usemap="#ZTest_coll__map" alt="Collaboration graph"/></div>
+<map name="ZTest_coll__map" id="ZTest_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac463fcc72b3892f24bbd0dc3b8902044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06576.html#ac463fcc72b3892f24bbd0dc3b8902044">testZ</a> ()</td></tr>
+<tr class="separator:ac463fcc72b3892f24bbd0dc3b8902044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af26f700ee129f846cac58735f6dcc380"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06576.html#af26f700ee129f846cac58735f6dcc380">testPoint</a> =&quot;POINT ZM(1 2 3 4)&quot;</td></tr>
+<tr class="separator:af26f700ee129f846cac58735f6dcc380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac463fcc72b3892f24bbd0dc3b8902044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac463fcc72b3892f24bbd0dc3b8902044">&#9670;&nbsp;</a></span>testZ()</h2>
 
-<p>This is the complete list of members for <a class="el" href="a06579.html">TemporalRange</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a06579.html#ad951563fb8d5f38fd9cdb8ef9eea8ac4">from</a></td><td class="entry"><a class="el" href="a06579.html">TemporalRange</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a06579.html#a68ff4736e85a45d68ab7739852885b66">TemporalRange</a>(Date from, Date to)</td><td class="entry"><a class="el" href="a06579.html">TemporalRange</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a06579.html#a220e90554a7d4ef913d6bf891e740a4b">to</a></td><td class="entry"><a class="el" href="a06579.html">TemporalRange</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void testZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="a04268.html#ae7a3cbabcf0592c2705ee280a231189a">Z.exec()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                            {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a06576.html#af26f700ee129f846cac58735f6dcc380">testPoint</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        Z instance=<span class="keyword">new</span> Z();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeDouble(3);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a06576_html_af26f700ee129f846cac58735f6dcc380"><div class="ttname"><a href="a06576.html#af26f700ee129f846cac58735f6dcc380">de.hsmainz.cs.semgis.arqextension.test.point.attribute.ZTest.testPoint</a></div><div class="ttdeci">static final String testPoint</div><div class="ttdef"><b>Definition:</b> ZTest.java:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af26f700ee129f846cac58735f6dcc380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26f700ee129f846cac58735f6dcc380">&#9670;&nbsp;</a></span>testPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String testPoint =&quot;POINT ZM(1 2 3 4)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03017.html">point</a></li><li class="navelem"><a class="el" href="a03016.html">attribute</a></li><li class="navelem"><a class="el" href="a06576.html">ZTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
