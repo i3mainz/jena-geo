@@ -1,6 +1,4 @@
 var a02959 =
 [
-    [ "TemporalRange", "a05604.html", "a05604" ],
-    [ "TemporalRangeDatatype", "a05608.html", "a05608" ],
-    [ "TemporalRangeWrapper", "a05612.html", "a05612" ]
+    [ "exec", "a02959.html#a174fc72f535c65dd518643dd305d8999", null ]
 ];

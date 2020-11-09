@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: LineReader Interface Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,89 +56,25 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05820.html','');});
+$(document).ready(function(){initNavTree('a05823.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a05817.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LineReader Interface Reference</div>  </div>
+<div class="title">VoronoiLinesTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Read lines of text from various sources like <a class="el" href="">BufferedReader</a>, <a class="el" href="">RandomAccessFile</a> or multi-lines <a class="el" href="">String</a>.  
- <a href="a05820.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for LineReader:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05819.png" border="0" usemap="#LineReader_inherit__map" alt="Inheritance graph"/></div>
-<map name="LineReader_inherit__map" id="LineReader_inherit__map">
-<area shape="rect" id="node3" href="a05828.html" title="A BufferedReader which implement the LineReader interface. " alt="" coords="5,155,153,181"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for LineReader:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05818.png" border="0" usemap="#LineReader_coll__map" alt="Collaboration graph"/></div>
-<map name="LineReader_coll__map" id="LineReader_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a79e7f2ee2b5e510148a290e49333c1e7"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05820.html#a79e7f2ee2b5e510148a290e49333c1e7">readLine</a> ()  throws IOException</td></tr>
-<tr class="memdesc:a79e7f2ee2b5e510148a290e49333c1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next line, or.  <a href="#a79e7f2ee2b5e510148a290e49333c1e7">More...</a><br /></td></tr>
-<tr class="separator:a79e7f2ee2b5e510148a290e49333c1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Read lines of text from various sources like <a class="el" href="">BufferedReader</a>, <a class="el" href="">RandomAccessFile</a> or multi-lines <a class="el" href="">String</a>. </p>
-<p>Implementations of this interface accept the Unix and Windows style of &lt;cite&gt;End Of Line&lt;/cite&gt; (EOL). </p>
-<p>Instances of</p><div class="fragment"><div class="line">LineReader </div></div><!-- fragment --><p> are created by the static methods defined in <a class="el" href="a05824.html">LineReaders</a>.</p>
-<dl class="section author"><dt>Author</dt><dd>Martin Desruisseaux (Geomatys) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.19</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>java.io.DataInput::readLine() </dd>
-<dd>
-BufferedReader::readLine()</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>3.02  </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79e7f2ee2b5e510148a290e49333c1e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79e7f2ee2b5e510148a290e49333c1e7">&#9670;&nbsp;</a></span>readLine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String readLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> throws IOException</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the next line, or. </p>
-<div class="fragment"><div class="line">null </div></div><!-- fragment --><p> if there is no more line to read. A line is considered to be terminated by any one of a line feed (</p><div class="fragment"><div class="line"><span class="charliteral">&#39;\n&#39;</span> </div></div><!-- fragment --><p> ), a carriage return (</p><div class="fragment"><div class="line"><span class="charliteral">&#39;\r&#39;</span> </div></div><!-- fragment --><p> ), or a carriage return followed immediately by a linefeed.</p>
-<dl class="section return"><dt>Returns</dt><dd>The next line, or<div class="fragment"><div class="line">null </div></div><!-- fragment --> on &lt;cite&gt;End Of File&lt;/cite&gt; (EOF). </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IOException</td><td>If an error occurred while reading the line. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="a05824.html#a183580db1f84bd621c6aa52935aee659">LineReaders.wrap()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a05823.html">VoronoiLinesTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a05823.html#ab8deaae2f0a5506ff9fd02ff15e921cc">res</a></td><td class="entry"><a class="el" href="a05823.html">VoronoiLinesTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05823.html#abc3f514f005cba49e406658e2d3086eb">testGeometry</a></td><td class="entry"><a class="el" href="a05823.html">VoronoiLinesTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02963.html">org</a></li><li class="navelem"><a class="el" href="a02972.html">geotoolkit</a></li><li class="navelem"><a class="el" href="a02974.html">io</a></li><li class="navelem"><a class="el" href="a05820.html">LineReader</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

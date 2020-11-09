@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: PeriodContains Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,75 +56,41 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05132.html','');});
+$(document).ready(function(){initNavTree('a05135.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a05129.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PeriodContains Class Reference</div>  </div>
+<div class="title">GPXDatatype Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for PeriodContains:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05131.png" border="0" usemap="#PeriodContains_inherit__map" alt="Inheritance graph"/></div>
-<map name="PeriodContains_inherit__map" id="PeriodContains_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for PeriodContains:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05130.png" border="0" usemap="#PeriodContains_coll__map" alt="Collaboration graph"/></div>
-<map name="PeriodContains_coll__map" id="PeriodContains_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05132.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
-<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05612.html#ae09164e634e58926681b4407f00c6139">TemporalRangeWrapper.extract()</a>, <a class="el" href="a05604.html#ad951563fb8d5f38fd9cdb8ef9eea8ac4">TemporalRange.from</a>, and <a class="el" href="a05604.html#a220e90554a7d4ef913d6bf891e740a4b">TemporalRange.to</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                                          {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                TemporalRange range1=TemporalRangeWrapper.extract(v1.getString(), v1.getDatatypeURI());</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                TemporalRange range2=TemporalRangeWrapper.extract(v2.getString(), v2.getDatatypeURI());</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="keywordflow">if</span>(range2.from.after(range1.from) &amp;&amp; range2.to.before(range1.to)) {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">true</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">false</span>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a05135.html">GPXDatatype</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#afcce5db1b9f7c599c6be21e837b5489d">check</a>(RDFDatatype rdfDatatype)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05183.html#a5df594a39203302c2daed2aed74735c7">checkURI</a>(String datatypeURI)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#a3720281f7f788ad5309cd499c0684499">GeometryDatatype</a>(String uri)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a05183.html#ad1ee2f6512af0e5dba3d40a3e8b731f9">get</a>(RDFDatatype rdfDatatype)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#a0a24dee6650e86f3f00a406a199073cd">get</a>(String datatypeURI)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05135.html#af2085ef29baf4ddd204088543d829f83">GPXDatatype</a>()</td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05135.html#adbea894b7f5a12d5d110c7b4f9ae435e">INSTANCE</a></td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05135.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a></td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05135.html#ab64766cccc4f8fdf5c87b8bcc9493c4a">out</a></td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05135.html#a48b1d378681cc025612af2d5d3f4e749">out2</a></td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05135.html#aaa6d0ac1bcefab2bfcec1f103c1aec4d">out3</a></td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05183.html#a6ca6e70f10f54a3b0e7fdc14be052483">parse</a>(String lexicalForm)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#adb0c0c075ba104124ca28f2d25ef76d5">parse</a>(String lexicalForm, GeometryIndex targetIndex)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a05135.html#ab987fb3c5c1835116368b15c0761d3b0">read</a>(String geometryLiteral)</td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#a1c0373662a2dcdd665113c7b0dd8421f">registerDatatypes</a>()</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05223.html#a15bec69aa612b57c4ca9a99d5aecb3e3">SpatialDatatype</a>(String uri)</td><td class="entry"><a class="el" href="a05223.html">SpatialDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05135.html#a5f9a3e6b51a268326f70a7c5e5695ab4">unparse</a>(Object geometry)</td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a05135.html#addbf30e6c0ad68fa34277d59a2c6eb5e">URI</a></td><td class="entry"><a class="el" href="a05135.html">GPXDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02942.html">temporal</a></li><li class="navelem"><a class="el" href="a05132.html">PeriodContains</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

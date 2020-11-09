@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MinimumBoundingRadius Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,75 +56,26 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a03400.html','');});
+$(document).ready(function(){initNavTree('a03403.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a03397.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MinimumBoundingRadius Class Reference</div>  </div>
+<div class="title">AsX3D Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Returns the center point and radius of the smallest circle that can fully contain a geometry.  
- <a href="a03400.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for MinimumBoundingRadius:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03399.png" border="0" usemap="#MinimumBoundingRadius_inherit__map" alt="Inheritance graph"/></div>
-<map name="MinimumBoundingRadius_inherit__map" id="MinimumBoundingRadius_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for MinimumBoundingRadius:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03398.png" border="0" usemap="#MinimumBoundingRadius_coll__map" alt="Collaboration graph"/></div>
-<map name="MinimumBoundingRadius_coll__map" id="MinimumBoundingRadius_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7a3cbabcf0592c2705ee280a231189a"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03400.html#ae7a3cbabcf0592c2705ee280a231189a">exec</a> (NodeValue arg0)</td></tr>
-<tr class="separator:ae7a3cbabcf0592c2705ee280a231189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Returns the center point and radius of the smallest circle that can fully contain a geometry. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae7a3cbabcf0592c2705ee280a231189a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7a3cbabcf0592c2705ee280a231189a">&#9670;&nbsp;</a></span>exec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05648.html#a27ef052a91bc730ac81996f6418da38d">GridCoverage.getGridGeometry()</a>, <a class="el" href="a05560.html#a71f11b05f3fe6a38e7781be178db85dd">CoverageWrapper.getXYGeometry()</a>, <a class="el" href="a05620.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, <a class="el" href="a05312.html#a12e2b8ceb06209d8b13dc78d58cdad22">LiteralUtils.rasterOrVector()</a>, and <a class="el" href="a05312.html#a70d2c83f032867b59a3af555f1ff6d98">LiteralUtils.toGeometry()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06068.html#a5667209a5677a7711029bc6a83d59d32">MinimumBoundingRadiusTest.testMinimumBoundingRadius()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                          {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Wrapper wrapper1=LiteralUtils.rasterOrVector(arg0);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span>(wrapper1 instanceof GeometryWrapper) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            Geometry geom = geometry.getXYGeometry();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="a02963.html">org</a>.<a class="code" href="a02984.html">locationtech</a>.<a class="code" href="a02989.html">jts</a>.algorithm.MinimumBoundingCircle minCircle = <span class="keyword">new</span> <a class="code" href="a02963.html">org</a>.<a class="code" href="a02984.html">locationtech</a>.<a class="code" href="a02989.html">jts</a>.algorithm.MinimumBoundingCircle(geom);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeDouble(minCircle.getRadius());</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(wrapper1 instanceof CoverageWrapper) {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                 CoverageWrapper covwrap = CoverageWrapper.extract(arg0);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;       GridCoverage cov = covwrap.getXYGeometry();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;       Geometry geom=LiteralUtils.toGeometry(cov.getGridGeometry().getEnvelope());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;       <a class="code" href="a02963.html">org</a>.<a class="code" href="a02984.html">locationtech</a>.<a class="code" href="a02989.html">jts</a>.algorithm.MinimumBoundingCircle minCircle = <span class="keyword">new</span> <a class="code" href="a02963.html">org</a>.<a class="code" href="a02984.html">locationtech</a>.<a class="code" href="a02989.html">jts</a>.algorithm.MinimumBoundingCircle(geom);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;       <span class="keywordflow">return</span> NodeValue.makeDouble(minCircle.getRadius());</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(<span class="stringliteral">&quot;No geometry or coverage literal&quot;</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="ttc" id="a02984_html"><div class="ttname"><a href="a02984.html">org.locationtech</a></div></div>
-<div class="ttc" id="a02963_html"><div class="ttname"><a href="a02963.html">org</a></div></div>
-<div class="ttc" id="a02989_html"><div class="ttname"><a href="a02989.html">org.locationtech.jts</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a03403.html">AsX3D</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a03403.html#a2c490cbe392d82e6bccb464329ee50f4">exec</a>(NodeValue v1, NodeValue v2, NodeValue v3)</td><td class="entry"><a class="el" href="a03403.html">AsX3D</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a03403.html#ae2cf110c268b6495afa9b7d5977a61dd">footer</a></td><td class="entry"><a class="el" href="a03403.html">AsX3D</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a03403.html#ab0ec96c07fa61607300be12482e94511">header</a></td><td class="entry"><a class="el" href="a03403.html">AsX3D</a></td><td class="entry"><span class="mlabel">package</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02907.html">geometry</a></li><li class="navelem"><a class="el" href="a02908.html">attribute</a></li><li class="navelem"><a class="el" href="a03400.html">MinimumBoundingRadius</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

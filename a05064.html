@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: SRID Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,65 +56,59 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05064.html','');});
+$(document).ready(function(){initNavTree('a05067.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a05061.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SRID Class Reference</div>  </div>
+<div class="title">Geof Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for SRID:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05063.png" border="0" usemap="#SRID_inherit__map" alt="Inheritance graph"/></div>
-<map name="SRID_inherit__map" id="SRID_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for SRID:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05062.png" border="0" usemap="#SRID_coll__map" alt="Collaboration graph"/></div>
-<map name="SRID_coll__map" id="SRID_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05064.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
-<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05648.html#ac3ea7ca030ecd46451eb9394fd466e2d">GridCoverage.getCoordinateReferenceSystem()</a>, and <a class="el" href="a05312.html#a12e2b8ceb06209d8b13dc78d58cdad22">LiteralUtils.rasterOrVector()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                           {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                Wrapper wrapper1=LiteralUtils.rasterOrVector(v);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">if</span>(wrapper1 instanceof GeometryWrapper) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeString(((GeometryWrapper)wrapper1).getXYGeometry().getSRID()+<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }<span class="keywordflow">else</span> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeString(raster.getCoordinateReferenceSystem().getCoordinateSystem().getName().toString());                  </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a05067.html">Geof</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a4cdb98519c460c7473ff1f3ae811428c">boundary</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a234993e27efe0dba4da1d79c3ae5e515">buffer</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a0c620189c8fa5fb86ce13c8b99dcb62f">convexHull</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a16e12efa69637fe233ec832942fb54f9">difference</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a8a34a14052c28b49f85c819d8e7a2beb">distance</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#acf945b8610fa4c0fa643a9488e830890">eh_contains</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a70ec7f2ceba4e5d42f10dd3fabb27058">eh_coveredBy</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#ae0b44c4e67975bb770ecc73dbcd3697f">eh_covers</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a0a7470399ce34affd2726968f36c1a46">eh_disjoint</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#afbd20e5a930fcb34106713d74332b10f">eh_equals</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#aedc8bc99879e202a2c18113cf94ed992">eh_inside</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a96b9bb6ef2f8d92e74bcffaf24542748">eh_meet</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a908b9bb66243571720aba10e690e4e95">eh_overlap</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#ad82eadaba86f3322a55d676969998e94">envelope</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#ae984a00c8d6ee09d8067e85aff6870d7">intersection</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a0e53055193e347cf163b4556bfef64dc">property</a>(String local)</td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a31358dce27f1146c643effb641f28fbd">property</a>(&quot;union&quot;)</td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#ac6879de5483c66675d8cb7a218268e8f">rcc8_dc</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#ada2130d752d32f15cd4af7c62819ccea">rcc8_ec</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a90fd0d54fadf45bfadfe34d59670b852">rcc8_eq</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a408ceeb4a1976540fc0d2fc0a9a1421f">rcc8_ntpp</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a0f1d5fd9322ca54bf670ccc1f3e062db">rcc8_ntppi</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a7fdfed2023c5a437aa42a4ceab7311a2">rcc8_po</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#aa787e7c980f48426e8fdab203a5088ae">rcc8_tpp</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a2e8e50cfc27bc2535f6f1af41abe3aea">rcc8_tppi</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#af637097fefa533cc49001188ad384bb2">relate</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a37b564361ef67b9b328a64c55b087635">sf_contains</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a80afb413bddae5781f607fdcf18a1db7">sf_crosses</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#ab888592d81805645c6dd255716f40df7">sf_disjoint</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a2565a2839c1b555c29dda0cbd2388f2c">sf_equals</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#acbe829a2fc002727749f2e781460e2d5">sf_intersects</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a6557a04a046aa996880f796888b474ee">sf_overlaps</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#aba7fb515b8bed3a40c3fc7d21edd99b7">sf_touches</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#a740b9f4ea6058eb0ebee0e2ade9c5136">sf_within</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05067.html#a38d7ab4031facda5a233ee435d9c3c24">symDifference</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05067.html#aab0f23ef8a524efbe3d751ae18c972c5">uri</a></td><td class="entry"><a class="el" href="a05067.html">Geof</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02935.html">raster</a></li><li class="navelem"><a class="el" href="a02941.html">transform</a></li><li class="navelem"><a class="el" href="a05064.html">SRID</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

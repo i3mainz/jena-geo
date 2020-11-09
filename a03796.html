@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: OrderingEquals Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,77 +56,24 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a03796.html','');});
+$(document).ready(function(){initNavTree('a03799.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a03793.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">OrderingEquals Class Reference</div>  </div>
+<div class="title">IsNodingValid Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for OrderingEquals:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03795.png" border="0" usemap="#OrderingEquals_inherit__map" alt="Inheritance graph"/></div>
-<map name="OrderingEquals_inherit__map" id="OrderingEquals_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for OrderingEquals:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03794.png" border="0" usemap="#OrderingEquals_coll__map" alt="Collaboration graph"/></div>
-<map name="OrderingEquals_coll__map" id="OrderingEquals_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af5337fd861ad4940c5025973eef782d5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03796.html#af5337fd861ad4940c5025973eef782d5">exec</a> (NodeValue arg0, NodeValue arg1)</td></tr>
-<tr class="separator:af5337fd861ad4940c5025973eef782d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5337fd861ad4940c5025973eef782d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5337fd861ad4940c5025973eef782d5">&#9670;&nbsp;</a></span>exec()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05620.html#a0af0b390fba3995d3862f4b67b2a4571">GeometryWrapper.equalsExact()</a>, <a class="el" href="a05620.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a05620.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, and <a class="el" href="a05620.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06288.html#a35b0ff8ac582857f1742c06e5db14fb2">OrderingEqualsTest.testOrderingEquals1()</a>, and <a class="el" href="a06288.html#a258a7b3f7cf473377b4aaed9d19641c4">OrderingEqualsTest.testOrderingEquals2()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                              {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">try</span> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                        GeometryWrapper geom1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                        GeometryWrapper geom2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        GeometryWrapper transGeom2 = geom2.transform(geom1.getSrsInfo());</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        <span class="keywordtype">boolean</span> equalsExact = geom1.equalsExact(transGeom2);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(equalsExact);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException | TransformException ex) {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a03799.html">IsNodingValid</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a03799.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a>(NodeValue v)</td><td class="entry"><a class="el" href="a03799.html">IsNodingValid</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02907.html">geometry</a></li><li class="navelem"><a class="el" href="a02912.html">relation</a></li><li class="navelem"><a class="el" href="a03796.html">OrderingEquals</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

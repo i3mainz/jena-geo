@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Minus Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,75 +56,42 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a05112.html','');});
+$(document).ready(function(){initNavTree('a05115.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a05109.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Minus Class Reference</div>  </div>
+<div class="title">EncodedPolylineDatatype Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for Minus:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05111.png" border="0" usemap="#Minus_inherit__map" alt="Inheritance graph"/></div>
-<map name="Minus_inherit__map" id="Minus_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Minus:</div>
-<div class="dyncontent">
-<div class="center"><img src="a05110.png" border="0" usemap="#Minus_coll__map" alt="Collaboration graph"/></div>
-<map name="Minus_coll__map" id="Minus_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a05112.html#a892f62c3bf1ab2917fc8745f0b6da2a3">exec</a> (NodeValue v1, NodeValue v2)</td></tr>
-<tr class="separator:a892f62c3bf1ab2917fc8745f0b6da2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a892f62c3bf1ab2917fc8745f0b6da2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892f62c3bf1ab2917fc8745f0b6da2a3">&#9670;&nbsp;</a></span>exec()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05612.html#ae09164e634e58926681b4407f00c6139">TemporalRangeWrapper.extract()</a>, <a class="el" href="a05604.html#ad951563fb8d5f38fd9cdb8ef9eea8ac4">TemporalRange.from</a>, and <a class="el" href="a05604.html#a220e90554a7d4ef913d6bf891e740a4b">TemporalRange.to</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                          {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                TemporalRange range1=TemporalRangeWrapper.extract(v1.getString(), v1.getDatatypeURI());</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                TemporalRange range2=TemporalRangeWrapper.extract(v2.getString(), v2.getDatatypeURI());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                Calendar start = Calendar.getInstance();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                Calendar end = Calendar.getInstance();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                start.setTime(range1.to);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                end.setTime(range1.from);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                start.set(2010, 7, 23);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                end.set(2010, 8, 26);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="comment">//range2.to. range2.from</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">if</span>(range1.from.equals(range2.from) &amp;&amp; range1.to.equals(range2.to)) {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">true</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeNodeBoolean(<span class="keyword">false</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a05115.html">EncodedPolylineDatatype</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#afcce5db1b9f7c599c6be21e837b5489d">check</a>(RDFDatatype rdfDatatype)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05183.html#a5df594a39203302c2daed2aed74735c7">checkURI</a>(String datatypeURI)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05115.html#afdf77a0767731ca8ed4f32b202562e6c">decodePolyline</a>(String polyline, int precision)</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05115.html#a876025a55fcd314232a8273361dcc990">encode</a>(long v, StringBuffer result)</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05115.html#ab5a701b80416b6e8dc563bc5f1cb2f36">EncodedPolylineDatatype</a>()</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05115.html#aaa65610c4aa6918ed9f9e78ba2d8d9a9">encodePolyline</a>(final LineString linestring)</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#a3720281f7f788ad5309cd499c0684499">GeometryDatatype</a>(String uri)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a05183.html#ad1ee2f6512af0e5dba3d40a3e8b731f9">get</a>(RDFDatatype rdfDatatype)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#a0a24dee6650e86f3f00a406a199073cd">get</a>(String datatypeURI)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05115.html#a3be1b7911f02ee6aa966eb957e250fb7">INSTANCE</a></td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05115.html#ab1d069f56091df4f6436f8c713ab2f39">LOGGER</a></td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05183.html#a6ca6e70f10f54a3b0e7fdc14be052483">parse</a>(String lexicalForm)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#adb0c0c075ba104124ca28f2d25ef76d5">parse</a>(String lexicalForm, GeometryIndex targetIndex)</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a05115.html#ab987fb3c5c1835116368b15c0761d3b0">read</a>(String geometryLiteral)</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05183.html#a1c0373662a2dcdd665113c7b0dd8421f">registerDatatypes</a>()</td><td class="entry"><a class="el" href="a05183.html">GeometryDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a05223.html#a15bec69aa612b57c4ca9a99d5aecb3e3">SpatialDatatype</a>(String uri)</td><td class="entry"><a class="el" href="a05223.html">SpatialDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05115.html#ad146fa8579a5f8a876c4688cc5a68520">toString</a>()</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a05115.html#a5f9a3e6b51a268326f70a7c5e5695ab4">unparse</a>(Object geometry)</td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a05115.html#addbf30e6c0ad68fa34277d59a2c6eb5e">URI</a></td><td class="entry"><a class="el" href="a05115.html">EncodedPolylineDatatype</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02942.html">temporal</a></li><li class="navelem"><a class="el" href="a05112.html">Minus</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

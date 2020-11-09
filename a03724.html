@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: Distance3D Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,75 +56,25 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a03724.html','');});
+$(document).ready(function(){initNavTree('a03727.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a03721.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Distance3D Class Reference</div>  </div>
+<div class="title">Scale Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for Distance3D:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03723.png" border="0" usemap="#Distance3D_inherit__map" alt="Inheritance graph"/></div>
-<map name="Distance3D_inherit__map" id="Distance3D_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Distance3D:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03722.png" border="0" usemap="#Distance3D_coll__map" alt="Collaboration graph"/></div>
-<map name="Distance3D_coll__map" id="Distance3D_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af5337fd861ad4940c5025973eef782d5"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a03724.html#af5337fd861ad4940c5025973eef782d5">exec</a> (NodeValue arg0, NodeValue arg1)</td></tr>
-<tr class="separator:af5337fd861ad4940c5025973eef782d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5337fd861ad4940c5025973eef782d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5337fd861ad4940c5025973eef782d5">&#9670;&nbsp;</a></span>exec()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>arg1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05620.html#a69b698107cd52f1e15bec91bc505a5da">GeometryWrapper.distance()</a>, <a class="el" href="a05620.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, <a class="el" href="a05620.html#add1e559fd6c7e9ac1aeadd3b142e519d">GeometryWrapper.getSrsInfo()</a>, <a class="el" href="a05620.html#ab5632de0b3a1ed85545cd995dff63c46">GeometryWrapper.getXYGeometry()</a>, and <a class="el" href="a05620.html#a67f95c6b3b0d068ad5c6c4a1e7d6e41a">GeometryWrapper.transform()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                              {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            GeometryWrapper geom1 = GeometryWrapper.extract(arg0);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            GeometryWrapper geom2 = GeometryWrapper.extract(arg1);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            GeometryWrapper transGeom2 = geom2.transform(geom1.getSrsInfo());</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            Distance3DOp op3d=<span class="keyword">new</span> Distance3DOp(geom1.getXYGeometry(), transGeom2.getXYGeometry());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordtype">double</span> distance3d=op3d.distance();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">return</span> NodeValue.makeDouble(distance3d);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException | FactoryException | MismatchedDimensionException | TransformException ex) {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a03727.html">Scale</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a03727.html#a908bef876c8fe4b8007fa987e58efa1c">checkBuild</a>(String uri, ExprList args)</td><td class="entry"><a class="el" href="a03727.html">Scale</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a03727.html#aef8acfa09c0ce086ff6d82b4d078a8fb">exec</a>(List&lt; NodeValue &gt; args)</td><td class="entry"><a class="el" href="a03727.html">Scale</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02907.html">geometry</a></li><li class="navelem"><a class="el" href="a02912.html">relation</a></li><li class="navelem"><a class="el" href="a03724.html">Distance3D</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

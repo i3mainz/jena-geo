@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: MinimumClearanceTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,87 +56,25 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06076.html','');});
+$(document).ready(function(){initNavTree('a06079.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a06073.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MinimumClearanceTest Class Reference</div>  </div>
+<div class="title">ForcePolygonCCWTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for MinimumClearanceTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a06074.png" border="0" usemap="#MinimumClearanceTest_coll__map" alt="Collaboration graph"/></div>
-<map name="MinimumClearanceTest_coll__map" id="MinimumClearanceTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a66deeca736cad11f886ba1567bcb6fe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06076.html#a66deeca736cad11f886ba1567bcb6fe1">testMinimumClearance</a> ()</td></tr>
-<tr class="separator:a66deeca736cad11f886ba1567bcb6fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a1e3187cbc25299380589200c398b3ffd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06076.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a> =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td></tr>
-<tr class="separator:a1e3187cbc25299380589200c398b3ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a66deeca736cad11f886ba1567bcb6fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66deeca736cad11f886ba1567bcb6fe1">&#9670;&nbsp;</a></span>testMinimumClearance()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testMinimumClearance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a03404.html#ae7a3cbabcf0592c2705ee280a231189a">MinimumClearance.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                           {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a06076.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        MinimumClearance instance=<span class="keyword">new</span> MinimumClearance();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue expResult = NodeValue.makeDouble(0.00032);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="ttc" id="a06076_html_a1e3187cbc25299380589200c398b3ffd"><div class="ttname"><a href="a06076.html#a1e3187cbc25299380589200c398b3ffd">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.MinimumClearanceTest.testPolygon</a></div><div class="ttdeci">static final String testPolygon</div><div class="ttdef"><b>Definition:</b> MinimumClearanceTest.java:13</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1e3187cbc25299380589200c398b3ffd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e3187cbc25299380589200c398b3ffd">&#9670;&nbsp;</a></span>testPolygon</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testPolygon =&quot;POLYGON ((0 0, 1 0, 1 1, 0.5 3.2e-4, 0 0))&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a06079.html">ForcePolygonCCWTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a06079.html#a1e3187cbc25299380589200c398b3ffd">testPolygon</a></td><td class="entry"><a class="el" href="a06079.html">ForcePolygonCCWTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06079.html#a882729aec95621b4ad261714738ae3fd">testPolygon2</a></td><td class="entry"><a class="el" href="a06079.html">ForcePolygonCCWTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03004.html">geometry</a></li><li class="navelem"><a class="el" href="a03003.html">attribute</a></li><li class="navelem"><a class="el" href="a06076.html">MinimumClearanceTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

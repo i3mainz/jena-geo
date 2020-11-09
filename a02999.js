@@ -1,6 +1,4 @@
 var a02999 =
 [
-    [ "Edge", "a05948.html", "a05948" ],
-    [ "Triangle", "a05952.html", "a05952" ],
-    [ "Vertex", "a05956.html", "a05956" ]
+    [ "exec", "a02999.html#a892f62c3bf1ab2917fc8745f0b6da2a3", null ]
 ];

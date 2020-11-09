@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: IsPolygonCCW Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,72 +56,24 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a04380.html','');});
+$(document).ready(function(){initNavTree('a04383.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a04377.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IsPolygonCCW Class Reference</div>  </div>
+<div class="title">MemSize Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Returns true if all exterior rings are oriented counter-clockwise and all interior rings are oriented clockwise.  
- <a href="a04380.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for IsPolygonCCW:</div>
-<div class="dyncontent">
-<div class="center"><img src="a04379.png" border="0" usemap="#IsPolygonCCW_inherit__map" alt="Inheritance graph"/></div>
-<map name="IsPolygonCCW_inherit__map" id="IsPolygonCCW_inherit__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for IsPolygonCCW:</div>
-<div class="dyncontent">
-<div class="center"><img src="a04378.png" border="0" usemap="#IsPolygonCCW_coll__map" alt="Collaboration graph"/></div>
-<map name="IsPolygonCCW_coll__map" id="IsPolygonCCW_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memItemLeft" align="right" valign="top">NodeValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a04380.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a> (NodeValue v)</td></tr>
-<tr class="separator:a4cd5b69d6ec07b0cf45215fe1fcadd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Returns true if all exterior rings are oriented counter-clockwise and all interior rings are oriented clockwise. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4cd5b69d6ec07b0cf45215fe1fcadd60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd5b69d6ec07b0cf45215fe1fcadd60">&#9670;&nbsp;</a></span>exec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NodeValue exec </td>
-          <td>(</td>
-          <td class="paramtype">NodeValue&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a05620.html#a03c87eeff2c460a0d5519ab7426645fe">GeometryWrapper.extract()</a>, and <a class="el" href="a05620.html#a12bf5a87236cf6d2467122a25d6cf4d6">GeometryWrapper.getParsingGeometry()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="a06628.html#a68f9159867e6465340465684732c1eb6">IsPolygonCCWTest.testIsPolygonCCWFalse()</a>, and <a class="el" href="a06628.html#a1f97fe37dded953f0f1c89d25f651edc">IsPolygonCCWTest.testIsPolygonCCWTrue()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                           {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            GeometryWrapper geometry = GeometryWrapper.extract(v);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Geometry geom = geometry.getParsingGeometry();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">if</span> (geom instanceof Polygon) {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">return</span> NodeValue.makeBoolean(Orientation.isCCW(geom.getCoordinates()));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">return</span> NodeValue.FALSE;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        } <span class="keywordflow">catch</span> (DatatypeFormatException ex) {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExprEvalException(ex.getMessage(), ex);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div></div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a04383.html">MemSize</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a04383.html#a4cd5b69d6ec07b0cf45215fe1fcadd60">exec</a>(NodeValue v)</td><td class="entry"><a class="el" href="a04383.html">MemSize</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a02928.html">polygon</a></li><li class="navelem"><a class="el" href="a02929.html">attribute</a></li><li class="navelem"><a class="el" href="a04380.html">IsPolygonCCW</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jena-geo: NumGeometriesTest Class Reference</title>
+<title>jena-geo: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,133 +56,42 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a06104.html','');});
+$(document).ready(function(){initNavTree('a06107.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="a06101.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">NumGeometriesTest Class Reference</div>  </div>
+<div class="title">AndTest Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for NumGeometriesTest:</div>
-<div class="dyncontent">
-<div class="center"><img src="a06102.png" border="0" usemap="#NumGeometriesTest_coll__map" alt="Collaboration graph"/></div>
-<map name="NumGeometriesTest_coll__map" id="NumGeometriesTest_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a66251605d7d3ce37996ccd2d7fa613fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06104.html#a66251605d7d3ce37996ccd2d7fa613fd">testNumGeometries</a> ()</td></tr>
-<tr class="separator:a66251605d7d3ce37996ccd2d7fa613fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad2fa8733f1826ddd7c66355901ff7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06104.html#a2ad2fa8733f1826ddd7c66355901ff7d">testNumGeometriesCollection</a> ()</td></tr>
-<tr class="separator:a2ad2fa8733f1826ddd7c66355901ff7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06104.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a> =&quot;LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)&quot;</td></tr>
-<tr class="separator:a03a5f5da0ccbeed8c1678d4317cf2672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4be369c8f60e973cd5126e69cd33a4"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a06104.html#a6b4be369c8f60e973cd5126e69cd33a4">testGeom2</a> =&quot;GEOMETRYCOLLECTION(MULTIPOINT(-2 3 , -2 2),LINESTRING(5 5 ,10 10),POLYGON((-7 4.2,-7.1 5,-7.1 4.3,-7 4.2)))&quot;</td></tr>
-<tr class="separator:a6b4be369c8f60e973cd5126e69cd33a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a66251605d7d3ce37996ccd2d7fa613fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66251605d7d3ce37996ccd2d7fa613fd">&#9670;&nbsp;</a></span>testNumGeometries()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testNumGeometries </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a03436.html#ae7a3cbabcf0592c2705ee280a231189a">NumGeometries.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                        {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a06104.html#a03a5f5da0ccbeed8c1678d4317cf2672">testGeom</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        NumGeometries instance=<span class="keyword">new</span> NumGeometries();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        NodeValue expResult = NodeValue.makeInteger(1);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="ttc" id="a06104_html_a03a5f5da0ccbeed8c1678d4317cf2672"><div class="ttname"><a href="a06104.html#a03a5f5da0ccbeed8c1678d4317cf2672">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.NumGeometriesTest.testGeom</a></div><div class="ttdeci">static final String testGeom</div><div class="ttdef"><b>Definition:</b> NumGeometriesTest.java:13</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2ad2fa8733f1826ddd7c66355901ff7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad2fa8733f1826ddd7c66355901ff7d">&#9670;&nbsp;</a></span>testNumGeometriesCollection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void testNumGeometriesCollection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="a03436.html#ae7a3cbabcf0592c2705ee280a231189a">NumGeometries.exec()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                  {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        NodeValue geometryLiteral = NodeValue.makeNode(<a class="code" href="a06104.html#a6b4be369c8f60e973cd5126e69cd33a4">testGeom2</a>, WKTDatatype.INSTANCE);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        NumGeometries instance=<span class="keyword">new</span> NumGeometries();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        NodeValue expResult = NodeValue.makeInteger(3);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        NodeValue result = instance.exec(geometryLiteral);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        assertEquals(expResult, result);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div><div class="ttc" id="a06104_html_a6b4be369c8f60e973cd5126e69cd33a4"><div class="ttname"><a href="a06104.html#a6b4be369c8f60e973cd5126e69cd33a4">de.hsmainz.cs.semgis.arqextension.test.geometry.attribute.NumGeometriesTest.testGeom2</a></div><div class="ttdeci">static final String testGeom2</div><div class="ttdef"><b>Definition:</b> NumGeometriesTest.java:15</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a03a5f5da0ccbeed8c1678d4317cf2672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a5f5da0ccbeed8c1678d4317cf2672">&#9670;&nbsp;</a></span>testGeom</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeom =&quot;LINESTRING(77.29 29.07,77.42 29.26,77.27 29.31,77.29 29.07)&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b4be369c8f60e973cd5126e69cd33a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4be369c8f60e973cd5126e69cd33a4">&#9670;&nbsp;</a></span>testGeom2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String testGeom2 =&quot;GEOMETRYCOLLECTION(MULTIPOINT(-2 3 , -2 2),LINESTRING(5 5 ,10 10),POLYGON((-7 4.2,-7.1 5,-7.1 4.3,-7 4.2)))&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a06107.html">AndTest</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a06107.html#a6efe8702be34a67e2bcbba55588c5b5f">combinedRasterLiteral</a></td><td class="entry"><a class="el" href="a06107.html">AndTest</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a993e2f127f3ec8f256e9799d77507223">covJSONString1</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#a58e2b02539026083b8e4a001ac84f63c">displayRasterSummary</a>(String rast)</td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#ab05b52e92f9bbedfc46c83d64fbdc182">displayRasterSummary</a>(NodeValue covLiteral)</td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#af8afdd14b38b523d100805364a48ed63">getInstance</a>()</td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a55fb5b5d665417265da09403128e396e">hexwkbString1</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#aa5e2b5a6005895fc20b9f35523569430">minwkbString</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a44dd712968b2420bbfbf9ae21d476b87">rasterBand</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#a77798f856500689412dea069531a7606">rasterLiteral1</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a2493164c78f27fd06d49475e13906abb">rasters</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#a0b58b160a0781303df2d16a468325f8b">rasterWKB</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a4f8947d10db17e548a714e09dc63de87">SampleRasters</a>()</td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06107.html#ad8956827844f69009bc4c23a46ed322a">testAnd</a>()</td><td class="entry"><a class="el" href="a06107.html">AndTest</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a9e0a3c2ab3d7438a05e7dd1922d4387e">THE_EMPTY_RASTER</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#ab31191239807c546a14951cbe0abf83f">wkbString1</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#acf429c99afb7dcd123827400ad89a122">wkbString2</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#a37e98c0ad3c8af4b9f6eaf8c0a8f557c">wkbString3</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a06559.html#a7454f587563532e0dbe47b119ade3dc4">wkbString4</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a06559.html#a9286e7be98b5e28acfb98dc23ca8cf49">wkbString5</a></td><td class="entry"><a class="el" href="a06559.html">SampleRasters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a02896.html">de</a></li><li class="navelem"><a class="el" href="a02897.html">hsmainz</a></li><li class="navelem"><a class="el" href="a02898.html">cs</a></li><li class="navelem"><a class="el" href="a02899.html">semgis</a></li><li class="navelem"><a class="el" href="a02900.html">arqextension</a></li><li class="navelem"><a class="el" href="a03001.html">test</a></li><li class="navelem"><a class="el" href="a03004.html">geometry</a></li><li class="navelem"><a class="el" href="a03003.html">attribute</a></li><li class="navelem"><a class="el" href="a06104.html">NumGeometriesTest</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
