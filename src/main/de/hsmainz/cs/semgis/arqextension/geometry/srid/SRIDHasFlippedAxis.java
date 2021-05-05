@@ -28,7 +28,7 @@ public class SRIDHasFlippedAxis extends FunctionBase1 {
 				}
 			}else if(wrapper1 instanceof CoverageWrapper) {
 				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				crs = CRS.forCode("EPSG:"+raster.getGridGeometry().CRS);
+				crs =raster.getGridGeometry().getCoordinateReferenceSystem();
 				if("Y".equals(crs.getCoordinateSystem().getAxis(0).getName().toString()) && "X".equals(crs.getCoordinateSystem().getAxis(1).getName().toString())){
 					return NodeValue.TRUE;
 				}else {

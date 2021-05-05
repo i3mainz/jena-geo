@@ -24,7 +24,7 @@ public class SRIDGetAxis1Orientation extends FunctionBase1 {
 				return NodeValue.makeString(crs.getCoordinateSystem().getAxis(0).getDirection().identifier());
 			}else if(wrapper1 instanceof CoverageWrapper) {
 				GridCoverage raster=((CoverageWrapper)wrapper1).getXYGeometry();
-				crs = CRS.forCode("EPSG:"+raster.getGridGeometry().CRS);
+				crs =raster.getGridGeometry().getCoordinateReferenceSystem();
 				return NodeValue.makeString(crs.getCoordinateSystem().getAxis(0).getDirection().identifier());		
 			}
 		} catch (FactoryException e) {
