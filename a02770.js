@@ -1,4 +1,5 @@
 var a02770 =
 [
-    [ "SVGWriter", "a05339.html", "a05339" ]
+    [ "LEDataInputStream", "a05313.html", "a05313" ],
+    [ "LEDataOutputStream", "a05317.html", "a05317" ]
 ];

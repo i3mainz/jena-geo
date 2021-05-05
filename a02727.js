@@ -1,11 +1,9 @@
 var a02727 =
 [
-    [ "attribute", "a02728.html", "a02728" ],
-    [ "constructor", "a02729.html", "a02729" ],
-    [ "editor", "a02730.html", "a02730" ],
-    [ "exporter", "a02731.html", "a02731" ],
-    [ "transform", "a02732.html", "a02732" ],
-    [ "ApproximateMedialAxis", "a04047.html", "a04047" ],
-    [ "Polygon", "a04163.html", "a04163" ],
-    [ "Tesselate", "a04167.html", "a04167" ]
+    [ "CurveToLine", "a03917.html", "a03917" ],
+    [ "LineMerge", "a03921.html", "a03921" ],
+    [ "LineSubstring", "a03925.html", "a03925" ],
+    [ "LineToCurve", "a03929.html", "a03929" ],
+    [ "OffsetCurve", "a03933.html", "a03933" ],
+    [ "Segmentize", "a03937.html", "a03937" ]
 ];

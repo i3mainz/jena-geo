@@ -1,8 +1,8 @@
 var a02786 =
 [
-    [ "AddGeometryTest", "a05543.html", "a05543" ],
-    [ "EnsureClosedTest", "a05547.html", "a05547" ],
-    [ "RemoveGeometryTest", "a05551.html", "a05551" ],
-    [ "RemoveRepeatedPointsTest", "a05555.html", "a05555" ],
-    [ "SetGeometryTest", "a05559.html", "a05559" ]
+    [ "BBOXAboveTest", "a05389.html", "a05389" ],
+    [ "BBOXBelowTest", "a05393.html", "a05393" ],
+    [ "BBOXDistanceTest", "a05397.html", "a05397" ],
+    [ "BBOXLeftOfTest", "a05401.html", "a05401" ],
+    [ "BBOXRightOfTest", "a05405.html", "a05405" ]
 ];

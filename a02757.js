@@ -1,6 +1,4 @@
 var a02757 =
 [
-    [ "TemporalRange", "a05231.html", "a05231" ],
-    [ "TemporalRangeDatatype", "a05235.html", "a05235" ],
-    [ "TemporalRangeWrapper", "a05239.html", "a05239" ]
+    [ "galbiston", "a02758.html", "a02758" ]
 ];

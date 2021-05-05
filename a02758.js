@@ -1,4 +1,4 @@
 var a02758 =
 [
-    [ "TopoJSONDatatype", "a05243.html", "a05243" ]
+    [ "geosparql_jena", "a02759.html", "a02759" ]
 ];

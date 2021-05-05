@@ -1,5 +1,6 @@
 var a02808 =
 [
-    [ "AddBandTest", "a06379.html", "a06379" ],
-    [ "SetUpperLeftTest", "a06383.html", "a06383" ]
+    [ "AddRingTest", "a06077.html", "a06077" ],
+    [ "RemoveRingTest", "a06081.html", "a06081" ],
+    [ "SetRingTest", "a06085.html", "a06085" ]
 ];

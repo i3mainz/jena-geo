@@ -1,8 +1,6 @@
 var a02791 =
 [
-    [ "attribute", "a02790.html", "a02790" ],
-    [ "constructor", "a02792.html", "a02792" ],
-    [ "editor", "a02793.html", "a02793" ],
-    [ "exporter", "a02794.html", "a02794" ],
-    [ "transform", "a02795.html", "a02795" ]
+    [ "GeomFromGeoJSONTest", "a05545.html", "a05545" ],
+    [ "GeomFromTextTest", "a05549.html", "a05549" ],
+    [ "GeomFromWKBTest", "a05553.html", "a05553" ]
 ];

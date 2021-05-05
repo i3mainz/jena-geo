@@ -1,9 +1,27 @@
 var a02745 =
 [
-    [ "Geo", "a05063.html", "a05063" ],
-    [ "Geof", "a05071.html", "a05071" ],
-    [ "GML", "a05079.html", "a05079" ],
-    [ "PostGISGeo", "a05087.html", "a05087" ],
-    [ "Units", "a05095.html", "a05095" ],
-    [ "WKT", "a05103.html", "a05103" ]
+    [ "Contains", "a04665.html", "a04665" ],
+    [ "ContainsProperly", "a04669.html", "a04669" ],
+    [ "CoveredBy", "a04673.html", "a04673" ],
+    [ "Covers", "a04677.html", "a04677" ],
+    [ "Crosses", "a04681.html", "a04681" ],
+    [ "DFullyWithin", "a04685.html", "a04685" ],
+    [ "Disjoint", "a04689.html", "a04689" ],
+    [ "DWithin", "a04693.html", "a04693" ],
+    [ "Equals", "a04697.html", "a04697" ],
+    [ "GreaterIntersects", "a04701.html", "a04701" ],
+    [ "Intersection", "a04705.html", "a04705" ],
+    [ "Intersects", "a04709.html", "a04709" ],
+    [ "MedianIntersects", "a04713.html", "a04713" ],
+    [ "NotSameAlignmentReason", "a04717.html", "a04717" ],
+    [ "Overlaps", "a04721.html", "a04721" ],
+    [ "RasterEquals", "a04725.html", "a04725" ],
+    [ "RasterIntersection", "a04729.html", "a04729" ],
+    [ "SameAlignment", "a04733.html", "a04733" ],
+    [ "Smaller", "a04737.html", "a04737" ],
+    [ "SmallerIntersects", "a04741.html", "a04741" ],
+    [ "SymDifference", "a04745.html", "a04745" ],
+    [ "Touches", "a04749.html", "a04749" ],
+    [ "ValueIntersects", "a04753.html", "a04753" ],
+    [ "Within", "a04757.html", "a04757" ]
 ];

@@ -1,4 +1,5 @@
 var a02750 =
 [
-    [ "github", "a02751.html", "a02751" ]
+    [ "CoverageJSONReader", "a05049.html", "a05049" ],
+    [ "CoverageJsonWriter", "a05053.html", "a05053" ]
 ];

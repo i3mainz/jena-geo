@@ -1,8 +1,8 @@
 var a02792 =
 [
-    [ "LineFromEncodedPolylineTest", "a05871.html", "a05871" ],
-    [ "LineFromMultiPointTest", "a05875.html", "a05875" ],
-    [ "LineFromTextTest", "a05879.html", "a05879" ],
-    [ "LineFromWKBTest", "a05883.html", "a05883" ],
-    [ "MakeLineTest", "a05887.html", "a05887" ]
+    [ "AddGeometryTest", "a05557.html", "a05557" ],
+    [ "EnsureClosedTest", "a05561.html", "a05561" ],
+    [ "RemoveGeometryTest", "a05565.html", "a05565" ],
+    [ "RemoveRepeatedPointsTest", "a05569.html", "a05569" ],
+    [ "SetGeometryTest", "a05573.html", "a05573" ]
 ];

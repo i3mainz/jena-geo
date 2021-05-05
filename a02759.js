@@ -1,4 +1,4 @@
 var a02759 =
 [
-    [ "GeometryLiteralIndex", "a05251.html", "a05251" ]
+    [ "implementation", "a02760.html", "a02760" ]
 ];

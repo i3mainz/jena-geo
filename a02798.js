@@ -1,8 +1,8 @@
 var a02798 =
 [
-    [ "GeneratePointsTest", "a05979.html", "a05979" ],
-    [ "MakePointMTest", "a05983.html", "a05983" ],
-    [ "MakePointTest", "a05987.html", "a05987" ],
-    [ "PointFromTextTest", "a05991.html", "a05991" ],
-    [ "PointFromWKBTest", "a05995.html", "a05995" ]
+    [ "LineFromEncodedPolylineTest", "a05885.html", "a05885" ],
+    [ "LineFromMultiPointTest", "a05889.html", "a05889" ],
+    [ "LineFromTextTest", "a05893.html", "a05893" ],
+    [ "LineFromWKBTest", "a05897.html", "a05897" ],
+    [ "MakeLineTest", "a05901.html", "a05901" ]
 ];
