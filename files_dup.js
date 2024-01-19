@@ -99,10 +99,10 @@ var files_dup =
     [ "AsBIL.java", "a01298.html", [
       [ "AsBIL", "a04597.html", null ]
     ] ],
-    [ "geometry/exporter/AsBinary.java", "a08070.html", [
+    [ "geometry/exporter/AsBinary.java", "a08090.html", [
       [ "AsBinary", "a03329.html", "a03329" ]
     ] ],
-    [ "raster/exporter/AsBinary.java", "a08073.html", [
+    [ "raster/exporter/AsBinary.java", "a08093.html", [
       [ "AsBinary", "a04601.html", "a04601" ]
     ] ],
     [ "AsBinaryTest.java", "a01955.html", [
@@ -469,10 +469,10 @@ var files_dup =
     [ "CompactnessRatioTest.java", "a01853.html", [
       [ "CompactnessRatioTest", "a05441.html", "a05441" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/geometry/attribute/ConcaveHull.java", "a08076.html", [
+    [ "de/hsmainz/cs/semgis/arqextension/geometry/attribute/ConcaveHull.java", "a08096.html", [
       [ "ConcaveHull", "a03077.html", "a03077" ]
     ] ],
-    [ "org/opensphere/geometry/algorithm/ConcaveHull.java", "a08079.html", [
+    [ "org/opensphere/geometry/algorithm/ConcaveHull.java", "a08099.html", [
       [ "ConcaveHull", "a05369.html", "a05369" ]
     ] ],
     [ "Constant.java", "a01025.html", [
@@ -517,10 +517,10 @@ var files_dup =
     [ "CovJSONDatatype.java", "a01709.html", [
       [ "CovJSONDatatype", "a05205.html", "a05205" ]
     ] ],
-    [ "algebra/Crop.java", "a08082.html", [
+    [ "algebra/Crop.java", "a08102.html", [
       [ "Crop", "a04233.html", "a04233" ]
     ] ],
-    [ "editor/Crop.java", "a08085.html", [
+    [ "editor/Crop.java", "a08105.html", [
       [ "Crop", "a04565.html", "a04565" ]
     ] ],
     [ "CropTest.java", "a02369.html", [
@@ -790,10 +790,10 @@ var files_dup =
     [ "ForceSFS.java", "a00614.html", [
       [ "ForceSFS", "a03681.html", "a03681" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/geometry/relation/FrechetDistance.java", "a08088.html", [
+    [ "de/hsmainz/cs/semgis/arqextension/geometry/relation/FrechetDistance.java", "a08108.html", [
       [ "FrechetDistance", "a03505.html", "a03505" ]
     ] ],
-    [ "heigit/ors/util/FrechetDistance.java", "a08091.html", [
+    [ "heigit/ors/util/FrechetDistance.java", "a08111.html", [
       [ "FrechetDistance", "a05125.html", "a05125" ]
     ] ],
     [ "FrechetDistanceTest.java", "a02030.html", [
@@ -1203,10 +1203,10 @@ var files_dup =
     [ "LengthTest.java", "a01886.html", [
       [ "LengthTest", "a05485.html", "a05485" ]
     ] ],
-    [ "de/hsmainz/cs/semgis/arqextension/linestring/attribute/LengthToPoint.java", "a08094.html", [
+    [ "de/hsmainz/cs/semgis/arqextension/linestring/attribute/LengthToPoint.java", "a08114.html", [
       [ "LengthToPoint", "a03825.html", "a03825" ]
     ] ],
-    [ "org/locationtech/jump/algorithm/LengthToPoint.java", "a08097.html", [
+    [ "org/locationtech/jump/algorithm/LengthToPoint.java", "a08117.html", [
       [ "LengthToPoint", "a05361.html", "a05361" ]
     ] ],
     [ "LengthToPointTest.java", "a02162.html", [
@@ -1752,10 +1752,10 @@ var files_dup =
     [ "NotEqualsPeriod.java", "a01478.html", [
       [ "NotEqualsPeriod", "a04849.html", "a04849" ]
     ] ],
-    [ "attribute/NotSameAlignmentReason.java", "a08100.html", [
+    [ "attribute/NotSameAlignmentReason.java", "a08120.html", [
       [ "NotSameAlignmentReason", "a04417.html", null ]
     ] ],
-    [ "relation/NotSameAlignmentReason.java", "a08103.html", [
+    [ "relation/NotSameAlignmentReason.java", "a08123.html", [
       [ "NotSameAlignmentReason", "a04717.html", "a04717" ]
     ] ],
     [ "NotTest.java", "a02417.html", [
@@ -1861,14 +1861,14 @@ var files_dup =
     [ "Overright.java", "a01484.html", [
       [ "Overright", "a04857.html", "a04857" ]
     ] ],
-    [ "envelope/package-info.java", "a08106.html", null ],
-    [ "geometry/package-info.java", "a08109.html", null ],
-    [ "linestring/package-info.java", "a08112.html", null ],
+    [ "envelope/package-info.java", "a08126.html", null ],
+    [ "geometry/package-info.java", "a08129.html", null ],
+    [ "linestring/package-info.java", "a08132.html", null ],
     [ "package-info.java", "a00080.html", null ],
-    [ "point/package-info.java", "a08115.html", null ],
-    [ "polygon/package-info.java", "a08118.html", null ],
-    [ "raster/package-info.java", "a08121.html", null ],
-    [ "vocabulary/package-info.java", "a08124.html", null ],
+    [ "point/package-info.java", "a08135.html", null ],
+    [ "polygon/package-info.java", "a08138.html", null ],
+    [ "raster/package-info.java", "a08141.html", null ],
+    [ "vocabulary/package-info.java", "a08144.html", null ],
     [ "PatchN.java", "a00263.html", [
       [ "PatchN", "a03213.html", "a03213" ]
     ] ],
@@ -1971,10 +1971,10 @@ var files_dup =
     [ "PointsTest.java", "a01997.html", [
       [ "PointsTest", "a05633.html", "a05633" ]
     ] ],
-    [ "polygon/Polygon.java", "a08127.html", [
+    [ "polygon/Polygon.java", "a08147.html", [
       [ "Polygon", "a04177.html", "a04177" ]
     ] ],
-    [ "raster/Polygon.java", "a08130.html", [
+    [ "raster/Polygon.java", "a08150.html", [
       [ "Polygon", "a04661.html", "a04661" ]
     ] ],
     [ "PolygonFromText.java", "a00968.html", [
@@ -2111,10 +2111,10 @@ var files_dup =
     [ "RemoveRepeatedPoints.java", "a00344.html", [
       [ "RemoveRepeatedPoints", "a03321.html", "a03321" ]
     ] ],
-    [ "editor/RemoveRepeatedPointsTest.java", "a08133.html", [
+    [ "editor/RemoveRepeatedPointsTest.java", "a08153.html", [
       [ "RemoveRepeatedPointsTest", "a05569.html", "a05569" ]
     ] ],
-    [ "transform/RemoveRepeatedPointsTest.java", "a08136.html", [
+    [ "transform/RemoveRepeatedPointsTest.java", "a08156.html", [
       [ "RemoveRepeatedPointsTest", "a05789.html", "a05789" ]
     ] ],
     [ "RemoveRing.java", "a00977.html", [
@@ -2291,7 +2291,7 @@ var files_dup =
     [ "ShortestLine3D.java", "a00527.html", [
       [ "ShortestLine3D", "a03565.html", "a03565" ]
     ] ],
-    [ "relation/ShortestLineTest.java", "a08139.html", [
+    [ "relation/ShortestLineTest.java", "a08159.html", [
       [ "ShortestLineTest", "a05721.html", "a05721" ]
     ] ],
     [ "ShortestLineTest.java", "a02063.html", [
